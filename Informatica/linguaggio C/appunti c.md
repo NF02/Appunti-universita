@@ -20,9 +20,16 @@ int main(){
 | Nome funzione |                   Descrizione               |
 | ------------- | ------------------------------------------- |
 | printf()      | Funzione per stampare una stringa a schermo |
-  scanf()       | Funzione che consente di assegnare un valore ad una variabile |
+| scanf()       | Funzione che consente di assegnare un valore ad una variabile |
+
+queste due funzioni consentono di avere una interazione con il programma
+anche se non in modo persistente.
+```
+Il termine persistenza in informatica, il concetto di persistenza si riferisce alla caratteristica dei dati di un programma di sopravvivere all'esecuzione del programma stesso che li ha creati: senza questa capacità questi infatti verrebbero salvati solo in memoria Ram venendo dunque persi allo spegnimento del computer. 
+```
+By <a href="https://it.wikipedia.org/wiki/Persistenza_(informatica)">Wikipedia</a>
 ## Variabili
-queste sono le variabili primitive presenti all'interno del C che compongono anche le variabili complesse e anche le strutture
+Queste sono le variabili primitive presenti all'interno del C che compongono anche le variabili complesse e anche le strutture
 dati.
 | Nome        | Descrizione                                                                                       |
 | ----------- | --------------------------------------------------------------------------------------------------|
@@ -48,6 +55,14 @@ int i=0; // in questo caso il valore all'interno della variabile è stato sostit
 i=4; // adesso all'interno di i non è resente più 0 ma è presente il 4. Il valore 0 è stato eliminato definitivamente.
 ```
 Ovviamente questo metodo funziona per le variabili primitive non per quelle composte.
+### Casting
+Il casting è un pratica che consente convertire il contenuto di una variabile di un determinato tipo in quello di un altra differente, questa pratica consente di svolgere delle operazioni che altrimenti non sarebbero possibili, come il poter avere il resto tra due interi trasformandolo in un numero relativo e quindi permette di avere un valore più preciso. <br>Esempio:
+```c
+int a=42;
+int b=3;
+float ris=(float)a%b;
+```
+Il tipo lo si specifica tra parentesi tonde prima delle operazione di cui si vuole adattare il risultato.
 ## Operatori logici
 Come tutti i linguaggi di programmazione, possiede una parte legata all'algebra booleana e anche agli aspetti logici in generare 
 come maggiore, minore e uguale, anche le funzioni di comparazione.
@@ -58,7 +73,6 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
 |  \|\|   | OR logico                  |
 |    !=   | Differenza                 |
 
-
 ## Operatori aritmetici
 | Simboli | funzione                 |
 | ------- | ------------------------ |
@@ -66,3 +80,20 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
 |    -    | sottrazione              |
 |    /    | divisione                |
 |    %    | modulo (resto divisione) |
+
+## Gestione dei file
+Come in tutti i linguaggi strutturati, il C ha la possibilità di gestire dei file, ovviamente è sempre il C, quindi le operazioni vanno svolte manualmente. E
+soprattutto richiedono una certa attenzione, perché il rischio è quello di sovrascrivere qualche documento in portante che una volta perso non lo si recupera, 
+è perso definitivamente. 
+### Variabili dedicate
+| Nome variabile |                   Descrizione               |
+| -------------- | ------------------------------------------- |
+| FILE           | questo tipo di variabile indira un file fisico presente sul device d'archiviazione in questione |
+
+Effettivamente la cosa importate in questi casi è fornire un percorso valido in cui salvare lo stesso.
+
+### Funzioni dedicate
+| Nome funzione |                   Descrizione               |
+| ------------- | ------------------------------------------- |
+| fprintf()     | Funzione per stampare una stringa in un file|
+| fscanf()      | Funzione che consente di assegnare un valore da file |
