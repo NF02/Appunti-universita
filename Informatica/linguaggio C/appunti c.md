@@ -6,7 +6,7 @@ negli anni 70' e quindi ha un ottica di programmazione orientata per quello che 
 che i programmatori usavano all'epoca, seguendo il loro schema mentale, che risultava leggermente diverso dal quello dei 
 programmatori odierni, abbituati a linguaggi orientati alla programmazione ad Oggetti e poco abbituati a gestire manualmente
 le risorse. Il C è stato modificato nel tampo e attualmente lo standard è il **C11** del 2011.
-### Programma base "hello world"
+### Programma base "**hello world**"
 ```c
 #include<stdio.h>
 #include<stdlib.h>
@@ -97,3 +97,31 @@ Effettivamente la cosa importate in questi casi è fornire un percorso valido in
 | ------------- | ------------------------------------------- |
 | fprintf()     | Funzione per stampare una stringa in un file|
 | fscanf()      | Funzione che consente di assegnare un valore da file |
+### esempi di caricampento
+```c
+
+/* librerie standard */
+
+int main() {
+  FILE *fd;
+  int x=-32;
+
+		/* apre il file in scrittura */
+  fd=fopen("scrivi.txt", "w");
+  if( fd==NULL ) {
+    perror("Errore in apertura del file");
+    exit(1);
+  }
+
+
+		/* scrive il numero */
+  fprintf(fd, "%d\n", x);
+
+
+		/* chiude il file */
+  fclose(fd);
+
+  return 0;
+}
+```
+Il consiglio è di scrivere una funzione esterna al `main` per gestire questa oparazione
