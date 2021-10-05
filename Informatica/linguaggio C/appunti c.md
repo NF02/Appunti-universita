@@ -97,9 +97,12 @@ Effettivamente la cosa importate in questi casi è fornire un percorso valido in
 | ------------- | ------------------------------------------- |
 | fprintf()     | Funzione per stampare una stringa in un file|
 | fscanf()      | Funzione che consente di assegnare un valore da file |
-### esempi di caricampento
-```c
+| fopen()       | Funzione che consente di aprire un file |
+| fclose()      | Funzione che consente di chiudere un file |
 
+### esempi di caricampento
+#### Operazione di scrittura su file
+```c
 /* librerie standard */
 
 int main() {
@@ -124,4 +127,11 @@ int main() {
   return 0;
 }
 ```
-Il consiglio è di scrivere una funzione esterna al `main` per gestire questa oparazione
+Il consiglio è di scrivere una funzione esterna al `main` per gestire queste operazioni, perché così si possono gestire
+al meglio le eccezioni e quindi si può impedire all'utente finale di fare potenziali danni al suo stesso sistema delimitando
+le operazioni possibili guidandolo nel gio sto modo. Perché l'utente non sa cosa sta facendo.
+### ATTENZIONE!!!!
+Quando si apre un file bisogna sempre e comunque chiuderlo quando si finisce di esequire una determinata operazione, altrementi 
+si rischia creare degli effettivi problemi, uno dei tanti è che il file risulta in utilizzo finché il programma è aperto anche se
+non è più necessario, per di più rischi di danneggiare lo stesso scrivendoci per errore e tanti altri problemi logici che non possono 
+essere espressi in due righe
