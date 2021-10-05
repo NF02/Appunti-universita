@@ -1,4 +1,8 @@
 # Linguaggio C
+---
+author: "Nicola Ferru"
+
+---
 ## Definizione
 Il linguaggio C è un linguaggio compilato, fortemente tipizzato e case sensitive. Ovvimanete essendo un linguaggio compilato
 richiederà una ricompilazione nel caso in cui si cambi l'OS oppute l'architettura. È un linguaggio nato per i sistemi Unix 
@@ -134,4 +138,4 @@ le operazioni possibili guidandolo nel gio sto modo. Perché l'utente non sa cos
 Quando si apre un file bisogna sempre e comunque chiuderlo quando si finisce di esequire una determinata operazione, altrementi 
 si rischia creare degli effettivi problemi, uno dei tanti è che il file risulta in utilizzo finché il programma è aperto anche se
 non è più necessario, per di più rischi di danneggiare lo stesso scrivendoci per errore e tanti altri problemi logici che non possono 
-essere espressi in due righe
+essere espressi in due righe.
