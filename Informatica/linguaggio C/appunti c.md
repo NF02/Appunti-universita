@@ -17,10 +17,10 @@ int main(){
 }
 ```
 ## funzioni d'input/output basilari
-| Nome funzione |                   Descrizione               |
-| ------------- | ------------------------------------------- |
-| printf()      | Funzione per stampare una stringa a schermo |
-| scanf()       | Funzione che consente di assegnare un valore ad una variabile |
+| Nome funzione   |                   Descrizione               |
+| --------------- | ------------------------------------------- |
+| `printf()`      | Funzione per stampare una stringa a schermo |
+| `scanf()`       | Funzione che consente di assegnare un valore ad una variabile |
 
 queste due funzioni consentono di avere una interazione con il programma
 anche se non in modo persistente.
@@ -47,7 +47,7 @@ dati.
   quindi risulta più ottimizzato se non è necessario l'utilizzo di un **int** completo.
 ### Operatore d'assegnamento
 l'operatore d'assegnamento è un operatore che viene utilizzato per assegnare un dato valore all'interno di una variabile.
-viene espresso dal carattere =, non va confuso con l'operatore di confronto che viene espresso con == perché altrimenti sorgono
+viene espresso dal carattere `=`, non va confuso con l'operatore di confronto che viene espresso con `==` perché altrimenti sorgono
 dei problemi seri.
 #### Esempio:
 ```c
@@ -82,7 +82,7 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
 |    %    | modulo (resto divisione) |
 
 ## Gestione dei file
-Come in tutti i linguaggi strutturati, il C ha la possibilità di gestire dei file, ovviamente è sempre il C, quindi le operazioni vanno svolte manualmente. E
+Come in tutti i linguaggi strutturati, il `C` ha la possibilità di gestire dei file, ovviamente è sempre il C, quindi le operazioni vanno svolte manualmente. E
 soprattutto richiedono una certa attenzione, perché il rischio è quello di sovrascrivere qualche documento in portante che una volta perso non lo si recupera, 
 è perso definitivamente. 
 ### Variabili dedicate
