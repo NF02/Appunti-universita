@@ -83,7 +83,10 @@ i=4; // adesso all'interno di i non è resente più 0 ma è presente il 4. Il va
 ```
 Ovviamente questo metodo funziona per le variabili primitive non per quelle composte.
 ### Casting
-Il casting è un pratica che consente convertire il contenuto di una variabile di un determinato tipo in quello di un altra differente, questa pratica consente di svolgere delle operazioni che altrimenti non sarebbero possibili, come il poter avere il resto tra due interi trasformandolo in un numero relativo e quindi permette di avere un valore più preciso. <br>Esempio:
+Il casting è un pratica che consente convertire il contenuto di una variabile di un determinato tipo in 
+quello di un altra differente, questa pratica consente di svolgere delle operazioni che altrimenti non sarebbero
+possibili, come il poter avere il resto tra due interi trasformandolo in un numero relativo e quindi permette di 
+avere un valore più preciso. <br>Esempio:
 ```c
 int a=42;
 int b=3;
@@ -106,7 +109,7 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
 | ------- | -------------------------- |
 |    `==` | Comparazione               |
 |    `&&` | AND logico                 |
-|  `||` | OR logico                  |
+|  `||`   | OR logico                  |
 |    `!=` | Differenza                 |
 
 ## Operatori aritmetici
@@ -177,7 +180,22 @@ int main() {
 }
 ```
 #### Operazione di recupero dei dati da un file
-
+```c
+int main(){
+  FILE *pf;
+  char nome_file[128];
+  printf("Inserisci il nome di un file (percorso completo): "); 
+  scanf ("%s" , nome_file );
+  pf = fopen(nome_file , "r"); if (pf) {
+      fseek(pf, SEEK_END);
+      printf ("%s è lungo %ld bytes" , nome_file , ftell (pf )); 
+      fclose( pf );
+  }else{
+    printf("%s non esiste !", nome_file );
+  }
+  return 0;
+}
+```
 ### Consiglio
 Il consiglio è di scrivere una funzione esterna al `main` per gestire queste operazioni, perché così si possono gestire
 al meglio le eccezioni e quindi si può impedire all'utente finale di fare potenziali danni al suo stesso sistema delimitando
