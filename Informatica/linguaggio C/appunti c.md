@@ -50,7 +50,10 @@ By <a href="https://it.wikipedia.org/wiki/Persistenza_(informatica)">Wikipedia</
     // con testo statico
     printf("testo");
     // con testo dimanico
-    printf()
+    int c=4;
+    printf("%d",c);
+    // acquisizione di un valore
+    scanf("%d",&c);
 ```
 ## Variabili
 Queste sono le variabili primitive presenti all'interno del C che compongono anche le variabili complesse e anche le strutture
@@ -113,7 +116,20 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
 |    -    | sottrazione              |
 |    /    | divisione                |
 |    %    | modulo (resto divisione) |
-
+### Operatori composti
+| Simboli | funzione                 |
+| ------- | ------------------------ |
+|    +=   | somma                    |
+|    -=   | sottrazione              |
+|    /=   | divisione                |
+|    %=   | modulo (resto divisione) |
+#### esempio
+```c
+  cont+=5
+  // invece di 
+  count=count+5
+```
+occhio alle variabili non inizializzate perché non sono gestibili quindi non si può sapere che valore possa assumere il risultato.
 ## Gestione dei file
 Come in tutti i linguaggi strutturati, il `C` ha la possibilità di gestire dei file, ovviamente è sempre il C, quindi le operazioni vanno svolte manualmente. E
 soprattutto richiedono una certa attenzione, perché il rischio è quello di sovrascrivere qualche documento in portante che una volta perso non lo si recupera, 
