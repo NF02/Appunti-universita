@@ -76,7 +76,11 @@ Il tipo lo si specifica tra parentesi tonde prima delle operazione di cui si vuo
 Dare sempre un nome valido alle variabili, perché così il programma risulta più leggibile dopo averlo scritto, cioè quando si scrive un
 programma non lo si fa mai di fila, molte volte è necessario prendere una pausa quindi se si danno dei nomi senza senso alle variabili diventarà più
 difficile interpretare l'utilizzo della stessa.
-### 
+### Contenuto delle variabili
+Quando viene dichiarata una variabile senza averla inizializzata con un valore, il contenuto che si trova al suo interno è ""ignoto"", cioè
+il valore all'interno allo spazio di memoria è quello del programma che la stava utilizzando prima quindi non è gestibile e risulta totalmente
+random per il programmatore.
+
 ## Operatori logici
 Come tutti i linguaggi di programmazione, possiede una parte legata all'algebra booleana e anche agli aspetti logici in generare 
 come maggiore, minore e uguale, anche le funzioni di comparazione.
@@ -114,7 +118,7 @@ Effettivamente la cosa importate in questi casi è fornire un percorso valido in
 | fopen()       | Funzione che consente di aprire un file |
 | fclose()      | Funzione che consente di chiudere un file |
 
-### esempi di caricampento
+### esempi
 #### Operazione di scrittura su file
 ```c
 /* librerie standard */
