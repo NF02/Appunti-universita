@@ -20,6 +20,11 @@ int main(){
     return 0;
 }
 ```
+## Librerie
+In C viengono utilizzate delle librerie per caricare e implementare nuove funzionalità, questo consente di ottimizzare al massimo 
+il programma, per caricare una libreria è necessario utilizzare la direttiva al preprocessore `#include<nomeLibreria>`  nel caso delle
+librerie di sistema, mentre, nel caso di librerie locali scritte ad hoc per il programma bisogna utilizzare la direttiva `#include "nomeLibreria"`.
+
 ## funzioni d'input/output basilari
 | Nome funzione   |                   Descrizione               |
 | --------------- | ------------------------------------------- |
@@ -67,15 +72,20 @@ int b=3;
 float ris=(float)a%b;
 ```
 Il tipo lo si specifica tra parentesi tonde prima delle operazione di cui si vuole adattare il risultato.
+### Consigli
+Dare sempre un nome valido alle variabili, perché così il programma risulta più leggibile dopo averlo scritto, cioè quando si scrive un
+programma non lo si fa mai di fila, molte volte è necessario prendere una pausa quindi se si danno dei nomi senza senso alle variabili diventarà più
+difficile interpretare l'utilizzo della stessa.
+### 
 ## Operatori logici
 Come tutti i linguaggi di programmazione, possiede una parte legata all'algebra booleana e anche agli aspetti logici in generare 
 come maggiore, minore e uguale, anche le funzioni di comparazione.
 | Simboli | funzione                   |
 | ------- | -------------------------- |
-|    ==   | Comparazione               |
-|    &&   | AND logico                 |
-|  \|\|   | OR logico                  |
-|    !=   | Differenza                 |
+|    `==` | Comparazione               |
+|    `&&` | AND logico                 |
+|  `\|\|` | OR logico                  |
+|    `!=` | Differenza                 |
 
 ## Operatori aritmetici
 | Simboli | funzione                 |
@@ -131,6 +141,9 @@ int main() {
   return 0;
 }
 ```
+#### Operazione di recupero dei dati da un file
+
+### Consiglio
 Il consiglio è di scrivere una funzione esterna al `main` per gestire queste operazioni, perché così si possono gestire
 al meglio le eccezioni e quindi si può impedire all'utente finale di fare potenziali danni al suo stesso sistema delimitando
 le operazioni possibili guidandolo nel gio sto modo. Perché l'utente non sa cosa sta facendo.
