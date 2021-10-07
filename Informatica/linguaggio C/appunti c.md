@@ -24,7 +24,15 @@ int main(){
 In C viengono utilizzate delle librerie per caricare e implementare nuove funzionalità, questo consente di ottimizzare al massimo 
 il programma, per caricare una libreria è necessario utilizzare la direttiva al preprocessore `#include<nomeLibreria>`  nel caso delle
 librerie di sistema, mentre, nel caso di librerie locali scritte ad hoc per il programma bisogna utilizzare la direttiva `#include "nomeLibreria"`.
+## Commenti
+Come in ogni buon linguaggio di programmazione anche il C supporta l'utilizzo dei commenti sia per singola linea sia multi-linea,
+i caratteri che vengono utilizzarti per indicare questo tipo di testo sono ripportati qui sotto nella tabella.
+| Nome funzione   |                   Descrizione               |
+| --------------- | ------------------------------------------- |
+| ` // testo`     | Commento a linea singola                    |
+| `/* testo */`   | Commento multi-linea                        |
 
+Il commento è un istruzione che non viene interpretata come codice eseguibile dal compilatore, che lo ignorarà e passerà alla prossima istruzione.
 ## funzioni d'input/output basilari
 | Nome funzione   |                   Descrizione               |
 | --------------- | ------------------------------------------- |
@@ -37,6 +45,13 @@ anche se non in modo persistente.
 Il termine persistenza in informatica, il concetto di persistenza si riferisce alla caratteristica dei dati di un programma di sopravvivere all'esecuzione del programma stesso che li ha creati: senza questa capacità questi infatti verrebbero salvati solo in memoria Ram venendo dunque persi allo spegnimento del computer. 
 ```
 By <a href="https://it.wikipedia.org/wiki/Persistenza_(informatica)">Wikipedia</a>
+### esempi
+```c
+    // con testo statico
+    printf("testo");
+    // con testo dimanico
+    printf()
+```
 ## Variabili
 Queste sono le variabili primitive presenti all'interno del C che compongono anche le variabili complesse e anche le strutture
 dati.
@@ -88,7 +103,7 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
 | ------- | -------------------------- |
 |    `==` | Comparazione               |
 |    `&&` | AND logico                 |
-|  `\|\|` | OR logico                  |
+|  `||` | OR logico                  |
 |    `!=` | Differenza                 |
 
 ## Operatori aritmetici
