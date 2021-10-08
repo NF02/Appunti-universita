@@ -10,6 +10,8 @@ negli anni 70' e quindi ha un ottica di programmazione orientata per quello che 
 che i programmatori usavano all'epoca, seguendo il loro schema mentale, che risultava leggermente diverso dal quello dei 
 programmatori odierni, abbituati a linguaggi orientati alla programmazione ad Oggetti e poco abbituati a gestire manualmente
 le risorse. Il C è stato modificato nel tampo e attualmente lo standard è il **C11** del 2011.
+### Architettura
+I computer sono basati solitamente sulla architettura x86, più nello specifico x86_64, ma non è l'unica architettura esistente di altre un esempio è l'architettura arm e anche quella powerpc che comunque risultano diffuse e in quel caso la gestione della memoria è diversa e non è certo che le variabili vengano gestite allo stesso modo. ma è sostanzialmente non è un problema perché è possibile verificare la dimensiome delle stesse . 
 ### Programma base "**hello world**"
 ```c
 #include<stdio.h>
@@ -72,6 +74,7 @@ dati.
 - *esteso* - consente di inserire un valore più grande all'interno della variabile, ma occupa più spazio in memoria
 - *ridotto* - permette di inserire un valore più piccolo rispetto alla variabile standard ma pesa meno memoria e
   quindi risulta più ottimizzato se non è necessario l'utilizzo di un **int** completo.
+
 ### Operatore d'assegnamento
 l'operatore d'assegnamento è un operatore che viene utilizzato per assegnare un dato valore all'interno di una variabile.
 viene espresso dal carattere `=`, non va confuso con l'operatore di confronto che viene espresso con `==` perché altrimenti sorgono
@@ -100,12 +103,14 @@ difficile interpretare l'utilizzo della stessa.
 ### Contenuto delle variabili
 Quando viene dichiarata una variabile senza averla inizializzata con un valore, il contenuto che si trova al suo interno è ""ignoto"", cioè
 il valore all'interno allo spazio di memoria è quello del programma che la stava utilizzando prima quindi non è gestibile e risulta totalmente
-random per il programmatore.
+random per il programmatore. Comunque per verificare la dimensione in memoria di una variabile bisogna utilizzare il `sizeof()`, non in tutti i computer
+è identico perché dipende dall'architettura.
 ### Limite delle variabili
 le variabili avendo un valore fisso hanno un limite nella rapresentazione del dato, quindi per forza di cose è necessario conoscere questo limite per evitare 
-troncature del risultato, perché ovviamente il sistema non ti avvisa del problema  
-## Operatori logici
-Come tutti i linguaggi di programmazione, possiede una parte legata all'algebra booleana e anche agli aspetti logici in generare 
+troncature del risultato, perché ovviamente il sistema non ti avvisa del problema ma il risultato perde di precisione.
+### Rapresentazione 
+## Operatori logici e relazionali
+Come tutti i linguaggi di programmazione, possiede una parte legata all'algebra booleana e anche agli aspetti logici come AND e l'OR e relazionali 
 come maggiore, minore e uguale, anche le funzioni di comparazione.
 | Simboli | funzione                   |
 | ------- | -------------------------- |
@@ -113,6 +118,10 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
 |    `&&` | AND logico                 |
 |  `||`   | OR logico                  |
 |    `!=` | Differenza                 |
+|   `<`   | minore                     |
+|   `>`   | maggiore                   |
+|   `<=`  | minore\uguale              |
+|   `>=`  | minore\uguale              |
 
 ## Operatori aritmetici
 | Simboli | funzione                 |
@@ -137,7 +146,7 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
 occhio alle variabili non inizializzate perché non sono gestibili quindi non si può sapere che valore possa assumere il risultato.
 ## Logica dei puntatori
 i puntattori vengono utilizzati in modo esplicito nel C, per gestire la mamoria, infatti, esistono le variabili dedicate, che vengono dichiarate come le altre variabili ma con un * davanti al nome della stessa `int *i`. Sono fondamentali per l'utilizzo degli array dinamici e anche per la gestione dei file, proprio per la loro natura. Una delle funzioni che utilizza un puntatore è proprio la ruimentale scanf(), ogni variabile possiede il suo pountatore, per accedere al puntatore invece che al contenuto della stessa è necesario mettere davanti al nome il carattere `&`.
- 
+
 ## Gestione dei file
 Come in tutti i linguaggi strutturati, il `C` ha la possibilità di gestire dei file, ovviamente è sempre il C, quindi le operazioni vanno svolte manualmente. E
 soprattutto richiedono una certa attenzione, perché il rischio è quello di sovrascrivere qualche documento in portante che una volta perso non lo si recupera, 
@@ -150,12 +159,12 @@ soprattutto richiedono una certa attenzione, perché il rischio è quello di sov
 Effettivamente la cosa importate in questi casi è fornire un percorso valido in cui salvare lo stesso.
 
 ### Funzioni dedicate
-| Nome funzione |                   Descrizione               |
-| ------------- | ------------------------------------------- |
-| fprintf()     | Funzione per stampare una stringa in un file|
-| fscanf()      | Funzione che consente di assegnare un valore da file |
-| fopen()       | Funzione che consente di aprire un file |
-| fclose()      | Funzione che consente di chiudere un file |
+| Nome funzione   |                   Descrizione               |
+| --------------- | ------------------------------------------- |
+| `fprintf()`     | Funzione per stampare una stringa in un file|
+| `fscanf()`      | Funzione che consente di assegnare un valore da file |
+| `fopen()`       | Funzione che consente di aprire un file |
+| `fclose()`      | Funzione che consente di chiudere un file |
 
 ### esempi
 #### Operazione di scrittura su file
