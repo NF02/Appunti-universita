@@ -128,7 +128,7 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
 |   `<`   | minore                     |
 |   `>`   | maggiore                   |
 |   `<=`  | minore\uguale              |
-|   `>=`  | minore\uguale              |
+|   `>=`  | maggiore\uguale            |
 
 ## Operatori aritmetici
 | Simboli | funzione                 |
@@ -152,6 +152,15 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
   count=count+5
 ```
 occhio alle variabili non inizializzate perché non sono gestibili quindi non si può sapere che valore possa assumere il risultato.
+## Contizioni "**i casi**"
+In C è possibile verificare dei casi, con l'utilizzo della funzione `if` che consente di valutare una determinata valutare una condizione e nel caso sia prevista una condizione alternativa va utilizzato la funzione `else` e poi l'opzione alternativa.
+### esempio
+```c
+if(x!=0)
+  printf("il valore è maggiore di 0, perché il valore è %d",x);
+else
+
+```
 ## Logica dei puntatori
 i puntattori vengono utilizzati in modo esplicito nel C, per gestire la mamoria, infatti, esistono le variabili dedicate, che vengono dichiarate come le altre variabili ma con un * davanti al nome della stessa `int *i`. Sono fondamentali per l'utilizzo degli array dinamici e anche per la gestione dei file, proprio per la loro natura. Una delle funzioni che utilizza un puntatore è proprio la ruimentale scanf(), ogni variabile possiede il suo pountatore, per accedere al puntatore invece che al contenuto della stessa è necesario mettere davanti al nome il carattere `&`.
 
