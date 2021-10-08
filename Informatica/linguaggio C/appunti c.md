@@ -101,7 +101,9 @@ difficile interpretare l'utilizzo della stessa.
 Quando viene dichiarata una variabile senza averla inizializzata con un valore, il contenuto che si trova al suo interno è ""ignoto"", cioè
 il valore all'interno allo spazio di memoria è quello del programma che la stava utilizzando prima quindi non è gestibile e risulta totalmente
 random per il programmatore.
-
+### Limite delle variabili
+le variabili avendo un valore fisso hanno un limite nella rapresentazione del dato, quindi per forza di cose è necessario conoscere questo limite per evitare 
+troncature del risultato, perché ovviamente il sistema non ti avvisa del problema  
 ## Operatori logici
 Come tutti i linguaggi di programmazione, possiede una parte legata all'algebra booleana e anche agli aspetti logici in generare 
 come maggiore, minore e uguale, anche le funzioni di comparazione.
