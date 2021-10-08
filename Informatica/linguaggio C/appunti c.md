@@ -158,9 +158,31 @@ In C è possibile verificare dei casi, con l'utilizzo della funzione `if` che co
 ```c
 if(x!=0)
   printf("il valore è maggiore di 0, perché il valore è %d",x);
-else
-
+else printf("il numero è 0");
 ```
+### switch case
+ovviamente esistendo casi con più possibilità esiste una funzione che consente aquisendo una variabile o una condizione di gestire diversi casi più uno "`default`" che viene scelto nel caso in cui il contenuto della variabile in questione non sia stato previsto.
+```c
+int x;
+scanf("%d",&x);
+switch (x) {
+  case (x>5):
+  // istruzioni
+  break;
+  case (x-4>=0):
+  // istruzioni
+  break;
+  default:
+  // istruzione predefinita
+  break;
+
+}
+```
+## Cicli
+### while & do/while
+
+### for
+
 ## Logica dei puntatori
 i puntattori vengono utilizzati in modo esplicito nel C, per gestire la mamoria, infatti, esistono le variabili dedicate, che vengono dichiarate come le altre variabili ma con un * davanti al nome della stessa `int *i`. Sono fondamentali per l'utilizzo degli array dinamici e anche per la gestione dei file, proprio per la loro natura. Una delle funzioni che utilizza un puntatore è proprio la ruimentale scanf(), ogni variabile possiede il suo pountatore, per accedere al puntatore invece che al contenuto della stessa è necesario mettere davanti al nome il carattere `&`.
 
@@ -235,3 +257,18 @@ le operazioni possibili guidandolo nel gio sto modo. Perché l'utente non sa cos
 Quando si apre un file bisogna sempre e comunque chiuderlo quando si finisce di esequire una determinata operazione, altrementi 
 si rischia creare degli effettivi problemi, uno dei tanti è che il file risulta in utilizzo finché il programma è aperto anche se
 non è più necessario, per di più rischi di danneggiare lo stesso scrivendoci per errore e tanti altri problemi logici che non possono essere espressi in due righe.
+## Le funzioni
+Le funzioni vengono utilizzate in programmazione per poter scomporre un problema complesso in tanti più piccoli più semplici da gestire e da scrivere.
+La funzione può essere di diversi tipi, infatti, proprio come una variabile condivide gli stessi tipi proprio per il fatto che la stessa deve rendere qualcosa indietro che sia un intero o un numero reale, l'importante è che tutto venga gestito nel migliore dei modi e venga scritto modo più ordinato possibile.
+### esempio 
+#### funzione che rende una media
+```c
+float media (int v[]) {
+  int i, 
+  float ris=0;
+  for (i=0;i<N;i++)
+    ris+=(float)v[i];
+    ris/=N;
+  return ris; 
+}
+```
