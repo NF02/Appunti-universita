@@ -11,7 +11,7 @@ che i programmatori usavano all'epoca, seguendo il loro schema mentale, che risu
 programmatori odierni, abbituati a linguaggi orientati alla programmazione ad Oggetti e poco abbituati a gestire manualmente
 le risorse. Il C è stato modificato nel tampo e attualmente lo standard è il **C11** del 2011.
 ### Architettura
-I computer sono basati solitamente sulla architettura x86, più nello specifico x86_64, ma non è l'unica architettura esistente di altre un esempio è l'architettura arm e anche quella powerpc che comunque risultano diffuse e in quel caso la gestione della memoria è diversa e non è certo che le variabili vengano gestite allo stesso modo. ma è sostanzialmente non è un problema perché è possibile verificare la dimensiome delle stesse . 
+I computer sono basati solitamente sulla architettura x86, più nello specifico x86_64, ma non è l'unica architettura esistente di altre un esempio è l'architettura arm e anche quella powerpc che comunque risultano diffuse e in quel caso la gestione della memoria è diversa e non è certo che le variabili vengano gestite allo stesso modo. ma è sostanzialmente non è un problema perché è possibile verificare la dimensiome delle stesse.
 ### Programma base "**hello world**"
 ```c
 #include<stdio.h>
@@ -108,7 +108,14 @@ random per il programmatore. Comunque per verificare la dimensione in memoria di
 ### Limite delle variabili
 le variabili avendo un valore fisso hanno un limite nella rapresentazione del dato, quindi per forza di cose è necessario conoscere questo limite per evitare 
 troncature del risultato, perché ovviamente il sistema non ti avvisa del problema ma il risultato perde di precisione.
-### Rapresentazione 
+### Rapresentazione nello standard input
+| rapresentazione | tipo variabile |
+| --------------- | -------------- |
+|       `%d`      | interi         |
+|       `%f`	    | float / double |
+|       `%e`      | decimali, in notazione esponenziale |
+|       `%c`      | caratteri      |
+
 ## Operatori logici e relazionali
 Come tutti i linguaggi di programmazione, possiede una parte legata all'algebra booleana e anche agli aspetti logici come AND e l'OR e relazionali 
 come maggiore, minore e uguale, anche le funzioni di comparazione.
@@ -130,6 +137,7 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
 |    -    | sottrazione              |
 |    /    | divisione                |
 |    %    | modulo (resto divisione) |
+
 ### Operatori composti
 | Simboli | funzione                 |
 | ------- | ------------------------ |
