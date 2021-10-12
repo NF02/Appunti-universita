@@ -178,9 +178,19 @@ switch (x) {
 
 }
 ```
-## Cicli
-### while & do/while
+## Cicli "interogazioni"
+L'iterazione è l'atto di ripetere un processo con l'obiettivo di avvicinarsi a un risultato desiderato. Ogni ripetizione del processo è essa stessa definita un'iterazione, e i 
+risultati di una sono utilizzati come punto di partenza per quella successiva. Diffuso è l'utilizzo negli algoritmi e nella programmazione in ambito informatico, ma anche in 
+campi come il project management.<br> By <a href="https://it.wikipedia.org/wiki/Iterazione">Wikipedia</a>
+### Teorema di Jacopini-Bohm
+Nella programmazione informatica, l'iterazione, chiamata anche ciclo o con il termine inglese loop, è una struttura di controllo, all'interno di un algoritmo risolutivo di un problema dato, che ordina all'elaboratore di eseguire ripetutamente una sequenza di istruzioni, solitamente fino al verificarsi di particolari condizioni logiche specificate.
 
+Assieme alla sequenza o blocco e alla selezione è una delle tre strutture fondamentali per la risoluzione algoritmica di un dato problema secondo il Teorema di Böhm-Jacopini. Esistono varie forme di iterazione; le più conosciute sono il MENTRE (in inglese: while..do), il RIPETI (in inglese: repeat..until o do..while), ed il PER (comunemente detto ciclo for). Si può dire che l'iterazione è l'anello forte della programmazione che consente di automatizzare portando a termine un processo, al quale non basta la semplice esecuzione in sequenza di istruzioni.
+
+Il cosiddetto "**ciclo infinito**", o "**loop infinito**", è un caso di iterazione dovuto solitamente ad un errore di programmazione che manda in stallo l'esecuzione del programma, mentre in alcune tecniche di programmazione soprattutto con microcontrollori è utilizzato in maniera voluta per iterare infinitamente all'interno del programma. 
+### while & do/while
+Il while e il do/while sono molto simili tra loro, nel caso del primo controlla la condizione all'inizio, mentre, il secondo controlla la conzione alla fine. questa funzione
+è molto utilizzata ed è l'unico modo per le più svariate operazioni, quindi bisogna avere una totale padronanza del 
 ### for
 
 ## Logica dei puntatori
