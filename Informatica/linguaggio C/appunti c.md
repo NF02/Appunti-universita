@@ -165,11 +165,11 @@ ovviamente esistendo casi con più possibilità esiste una funzione che consente
 ```c
 int x;
 scanf("%d",&x);
-switch (x) {
-  case (x>5):
+switch (x%3) {
+  case 0:
   // istruzioni
   break;
-  case (x-4>=0):
+  case 3:
   // istruzioni
   break;
   default:
@@ -189,10 +189,17 @@ Assieme alla sequenza o blocco e alla selezione è una delle tre strutture fonda
 
 Il cosiddetto "**ciclo infinito**", o "**loop infinito**", è un caso di iterazione dovuto solitamente ad un errore di programmazione che manda in stallo l'esecuzione del programma, mentre in alcune tecniche di programmazione soprattutto con microcontrollori è utilizzato in maniera voluta per iterare infinitamente all'interno del programma. 
 ### while & do/while
-Il while e il do/while sono molto simili tra loro, nel caso del primo controlla la condizione all'inizio, mentre, il secondo controlla la conzione alla fine. questa funzione
-è molto utilizzata ed è l'unico modo per le più svariate operazioni, quindi bisogna avere una totale padronanza del 
+Il **while** e il **do/while** sono molto simili tra loro, nel caso del primo controlla la condizione all'inizio, mentre, il secondo controlla la conzione alla fine. questa funzione
+è molto utilizzata ed è l'unico modo per le più svariate operazioni, quindi bisogna avere una totale padronanza delle funzion in questione conoscendo ogni minimo aspetto.
+#### While
+```c
+    while(/* condizione */){
+      // istruzioni da ripetere N volte
+    }
+```
+N = numero determinato di volte che dipendono esclusivamente da quello che si vuole fare.
 ### for
-
+Il for è un'altra funzione che consente di 
 ## Logica dei puntatori
 i puntattori vengono utilizzati in modo esplicito nel C, per gestire la mamoria, infatti, esistono le variabili dedicate, che vengono dichiarate come le altre variabili ma con un * davanti al nome della stessa `int *i`. Sono fondamentali per l'utilizzo degli array dinamici e anche per la gestione dei file, proprio per la loro natura. Una delle funzioni che utilizza un puntatore è proprio la ruimentale scanf(), ogni variabile possiede il suo pountatore, per accedere al puntatore invece che al contenuto della stessa è necesario mettere davanti al nome il carattere `&`.
 
