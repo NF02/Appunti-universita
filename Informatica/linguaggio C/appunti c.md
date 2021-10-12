@@ -184,7 +184,7 @@ switch (x%3) {
 
 }
 ```
-## Cicli "interogazioni"
+## Cicli "iterazioni"
 L'iterazione è l'atto di ripetere un processo con l'obiettivo di avvicinarsi a un risultato desiderato. Ogni ripetizione del processo è essa stessa definita un'iterazione, e i 
 risultati di una sono utilizzati come punto di partenza per quella successiva. Diffuso è l'utilizzo negli algoritmi e nella programmazione in ambito informatico, ma anche in 
 campi come il project management.<br> By <a href="https://it.wikipedia.org/wiki/Iterazione">Wikipedia</a>
@@ -204,8 +204,24 @@ Il **while** e il **do/while** sono molto simili tra loro, nel caso del primo co
     }
 ```
 N = numero determinato di volte che dipendono esclusivamente da quello che si vuole fare.
+#### do/while
+```c
+    do{
+      // istruzioni da ripetere N volte
+    }while(/* condizione */);
+```
 ### for
-Il for è un'altra funzione che consente di effettuare un ciclo, controlla la condizione prima di effettuare un nuovo ciclo proprio come il while ma al contrario del while il for richiede di avere un numero fisso di volte, la
+Il for è un'altra funzione che consente di effettuare un ciclo, controlla la condizione prima di effettuare un nuovo ciclo proprio come il while ma al contrario del while il for richiede di avere un numero fisso di volte, quindi è comodo per popolare gli array monodimensionali o binimensionali "matrici".
+```c
+    int i;
+    for(i=0; i<N, i++){
+      // istruzioni da ripetere.
+    }
+```
+Ovviamente in questo caso vendiamo le versioni iterative, ma tutto questo lo si può effettuare pure un modo ricorsivo, che risulta meno ottimizzato ma allo stesso tempo risulta molto più rapido da scrivere in molti casi se sono complessi da scrivere conviene sfruttare la ricorsione.
+#### iterativo
+<img whidt="50%" src="https://www.liceotosi.edu.it/inote/wp-content/uploads/sites/18/2016/05/tipoiterazione.jpg">
+
 ## Logica dei puntatori
 i puntattori vengono utilizzati in modo esplicito nel C, per gestire la mamoria, infatti, esistono le variabili dedicate, che vengono dichiarate come le altre variabili ma con un * davanti al nome della stessa `int *i`. Sono fondamentali per l'utilizzo degli array dinamici e anche per la gestione dei file, proprio per la loro natura. Una delle funzioni che utilizza un puntatore è proprio la ruimentale scanf(), ogni variabile possiede il suo pountatore, per accedere al puntatore invece che al contenuto della stessa è necesario mettere davanti al nome il carattere `&`.
 
