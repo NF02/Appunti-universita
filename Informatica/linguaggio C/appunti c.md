@@ -57,6 +57,12 @@ By <a href="https://it.wikipedia.org/wiki/Persistenza_(informatica)">Wikipedia</
     // acquisizione di un valore
     scanf("%d",&c);
 ```
+### Problemi con lo `scanf`? Sei di sicuro sotto Windows!
+Microsoft Windows al contrario del resto del mondo usa due caratteri per gestire l'operazione "Vai a capo", quindi il buffer terrà in memoria il secondo carattere catturandolo nella `scanf` successiva il secondo carattere con tutti i problemi del caso, in pratica salterà un operaizione di input da perte dell'utente rendendo inutile l'operazione in questione. Questo problema ovviamente è ovviabile ed esistono in due modi differenti per risolvere il problema:
+1. Usando il comando `fflush(stdin)` che andrà a ripulire il buffer e risulta anche il modo più corretto di gestire il problema perché in questo modo viene eliminata una parte inutile;
+2. mettere una spazio perma del %tipoVariabile, ottenendo questo risultato `scanf(" %tipoVariabile",&x)`.
+
+
 ## Variabili
 Queste sono le variabili primitive presenti all'interno del C che compongono anche le variabili complesse e anche le strutture
 dati.
@@ -190,7 +196,7 @@ Assieme alla sequenza o blocco e alla selezione è una delle tre strutture fonda
 Il cosiddetto "**ciclo infinito**", o "**loop infinito**", è un caso di iterazione dovuto solitamente ad un errore di programmazione che manda in stallo l'esecuzione del programma, mentre in alcune tecniche di programmazione soprattutto con microcontrollori è utilizzato in maniera voluta per iterare infinitamente all'interno del programma. 
 ### while & do/while
 Il **while** e il **do/while** sono molto simili tra loro, nel caso del primo controlla la condizione all'inizio, mentre, il secondo controlla la conzione alla fine. questa funzione
-è molto utilizzata ed è l'unico modo per le più svariate operazioni, quindi bisogna avere una totale padronanza delle funzion in questione conoscendo ogni minimo aspetto.
+è molto utilizzata ed è l'unico modo per le più svariate operazioni, quindi bisogna avere una totale padronanza delle funzioni in questione conoscendo ogni minimo aspetto.
 #### While
 ```c
     while(/* condizione */){
@@ -199,7 +205,7 @@ Il **while** e il **do/while** sono molto simili tra loro, nel caso del primo co
 ```
 N = numero determinato di volte che dipendono esclusivamente da quello che si vuole fare.
 ### for
-Il for è un'altra funzione che consente di 
+Il for è un'altra funzione che consente di effettuare un ciclo, controlla la condizione prima di effettuare un nuovo ciclo proprio come il while ma al contrario del while il for richiede di avere un numero fisso di volte, la
 ## Logica dei puntatori
 i puntattori vengono utilizzati in modo esplicito nel C, per gestire la mamoria, infatti, esistono le variabili dedicate, che vengono dichiarate come le altre variabili ma con un * davanti al nome della stessa `int *i`. Sono fondamentali per l'utilizzo degli array dinamici e anche per la gestione dei file, proprio per la loro natura. Una delle funzioni che utilizza un puntatore è proprio la ruimentale scanf(), ogni variabile possiede il suo pountatore, per accedere al puntatore invece che al contenuto della stessa è necesario mettere davanti al nome il carattere `&`.
 
