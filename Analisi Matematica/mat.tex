@@ -34,6 +34,7 @@
 \usepackage{circuitikz}
 \usepackage{pifont}
 \usepackage{imakeidx}
+\usepackage{verbatim}
 
 \usepackage{listings}
 \usepackage{color}
@@ -126,8 +127,29 @@ Per rappresentare un insieme abbiamo tre possibilità:
 \begin{enumerate}
 	\item Rappresentazione estensive $A=[0,1,2,3,4]$
 	\item Rappresentazione intensiva $A=[x|x\in N e x<5]$
-	\item Rappresentazione con diagrammi di Eulero - Venn
+	\item Rappresentazione con diagrammi di Eulero - Venn\\
+	\begin{tikzpicture}domain=0:10] 
+		 \draw (0,0) ellipse (2cm and 1cm);
+    		 \filldraw  (0,0.3) circle (2pt) node[align=left,   below] {1}
+    			(1,0.11) circle (2pt) node[align=left,   below] {2}
+    			(-1,-0.4) circle (2pt) node[align=left,   below] {0}
+    			(-1,0.1) circle (2pt) node[align=left,   below] {3}
+    			(0.1,-0.5) circle (2pt) node[align=left,   below] {4};
+		\end{tikzpicture}
 \end{enumerate}
+\subsection{Operazioni tra gli insiemi}
+Un insieme può essere contenuto in un altro:\\
+\begin{tikzpicture}domain=0:10] 
+    \draw (0,0) ellipse (2cm and 1cm);
+     \draw (0,0) ellipse (0.7cm and 0.5cm);
+
+    \filldraw  (0,0.3) circle (2pt) node[align=left,   below] {1}
+    (1,0.11) circle (2pt) node[align=left,   below] {2}
+    (-1,-0.4) circle (2pt) node[align=left,   below] {0}
+    (-1,0.1) circle (2pt) node[align=left,   below] {3}
+    (0.1,-0.5) circle (2pt) node[align=left,   below] {4};
+\end{tikzpicture}
+
 \section{Limiti}
 \subsection{Infinitesimi e infiniti}
 \paragraph{Definizione}

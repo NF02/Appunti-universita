@@ -4,20 +4,21 @@
 \contentsline {section}{\numberline {0.1}Simboli}{7}{section.0.1}%
 \contentsline {chapter}{\numberline {1}Studio di funzione}{9}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Cenni di teoria degli insiemi}{9}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Operazioni tra gli insiemi}{9}{subsection.1.1.1}%
 \contentsline {section}{\numberline {1.2}Limiti}{9}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Infinitesimi e infiniti}{9}{subsection.1.2.1}%
 \contentsline {paragraph}{Definizione}{9}{paragraph*.2}%
 \contentsline {subsubsection}{Esempi}{9}{subsubsection*.3}%
-\contentsline {subsubsection}{Ordine di infinitesimo}{9}{subsubsection*.4}%
-\contentsline {paragraph}{Esempi}{9}{paragraph*.5}%
+\contentsline {subsubsection}{Ordine di infinitesimo}{10}{subsubsection*.4}%
+\contentsline {paragraph}{Esempi}{10}{paragraph*.5}%
 \contentsline {subsubsection}{Confronto tra infinitesimi}{10}{subsubsection*.6}%
 \contentsline {subparagraph}{esempio}{10}{subparagraph*.7}%
 \contentsline {paragraph}{Definizione di funzioni asintotiche}{10}{paragraph*.8}%
 \contentsline {subparagraph}{esempi}{10}{subparagraph*.9}%
 \contentsline {paragraph}{Definizione di funzioni infinite}{10}{paragraph*.10}%
 \contentsline {subparagraph}{Esempi}{10}{subparagraph*.11}%
-\contentsline {subparagraph}{Regole aritmetiche}{10}{subparagraph*.12}%
-\contentsline {paragraph}{Ordine di infinito}{10}{paragraph*.13}%
+\contentsline {subparagraph}{Regole aritmetiche}{11}{subparagraph*.12}%
+\contentsline {paragraph}{Ordine di infinito}{11}{paragraph*.13}%
 \contentsline {subparagraph}{Esempi}{11}{subparagraph*.14}%
 \contentsline {subparagraph}{Cofronto tra infiniti}{11}{subparagraph*.15}%
 \contentsline {subparagraph}{Esempio}{11}{subparagraph*.16}%
