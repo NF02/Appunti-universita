@@ -1,0 +1,157 @@
+\documentclass{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{easylist}
+\usepackage{hanging}
+\usepackage{hyperref}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=3.0cm]{geometry}
+\usepackage{blindtext}
+\usepackage{tipa}
+\usepackage{epigraph}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{pbox}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{textcomp}
+\usepackage{circuitikz}
+\usepackage{pifont}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  firstnumber=1000,                % start line enumeration with line 1000
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\linespread{1.2} % l'interlinea
+
+\frenchspacing
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+\usepackage{floatflt,epsfig}
+
+\usepackage{multicol}
+\newcommand\yellowbigsqcup[1][\displaystyle]{%
+  \fboxrule0pt
+  \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
+  \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
+
+\title{Appunti Matematica analisi}
+\author{Nicola Ferru}
+\date{}
+\begin{document}
+\maketitle
+\part{Matematica analisi 1}
+\chapter{Studio di funzione}
+\section{Limiti}
+\subsection{Infinitesimi e infiniti}
+\paragraph{Definizione}
+Una funzione $f(x)$ su dice \underline{infinitesima} per $x\to x_0$ (per $x\to \infty$), $x_0$ punto di accumulazione per il dominio di $f(x)$, se: $\lim_{x\to x_0}f(x)=0$ (oppure $lim_{x\to \infty}f(x)=0$).
+\subsubsection{Esempi}
+\begin{itemize}
+	\item $y=e^x$ è un infinitesimo per $x\to -\infty$
+	\item $y=\ln{x}$ è un infinitesimo per $x\to 1$
+	\item $y=\sin{x}$ è un infinitesimo per $x\to 0$ (ma anche per $x\to \pi,2\pi$, etc.)
+	\item $y=\ln{1+x}$ è un infinitesimo per $x\to 1$ 
+\end{itemize}
+\subsubsection{Ordine di infinitesimo}
+Siano $f(x)$ e $g(x)$ infinitesimi per $x\to{x_0}$ (o per $x\to \infty$), con $g(x)\neq 0$. Se $\exists\alpha R+$ e $l\in R$, $l\neq 0$ tale che\\
+$\lim_{x\to{x_0}}=\frac{f(x)}{[g(x)]^\alpha}=l$ (oppure $\lim_{x\to{\infty}}=\frac{f(x)}{[g(x)]^\alpha}=l$)\\
+Allora, si dice che per $x\to x_0$ (o per $x\to \infty$), $f(x)$ è un infinitesimo di ordine $\alpha$ rispetto all'infinitesimo campione $g(x)$.
+\paragraph{Esempi}
+\begin{itemize}
+	\item $y=\sin{x}$ è un infinitesimo per $x\to 0$ di ordine 1 rispetto all'infinitesimo campione $g(x)=x$, infatti, $\lim_{x\to 0}=\frac{\sin{x}}{x^\alpha}=1$ solo se $\alpha = 1$
+	\item $y=\tan^2x$ è un infinitesimo di ordine 2 rispetto ad x, per $x\to 0$
+	\item $ord(l-\cos{x})=2$ rispetto ad $x$ per $x\to 0$
+\end{itemize}
+\subsubsection{Confronto tra infinitesimi}
+Siano $f(x)$ e $g(x)$ infinitesime per $x\to x_{0}$,\\
+$\lim_{x\to x_0}\frac{f(x)}{g(x)}=
+\begin{cases}
+l\neq 0&ord(f)=ord(g)\\
+\pm \infty&ord(f)<ord(g)\\
+0&ord(f)>ord(g)\\
+non esiste, & f e g non confrontabile \\ 
+\end{cases}
+$\\
+Stesso risultato se $f(x)$ e $g(x)$ sono infinitesime per $x\to \infty$. Utilizzando il confronto tra infinitesimi nel calcolo dei limiti del tipo $\lim_{x\to x_0}\frac{f_1+f_2}{g_1+g_2}$, dove $f_1,f_2,g_1,g_2$ sono funzioni infinitesime per $x\to x_0$, si possono {\color{blue} \em trascurare gli infinitesimi di ordine maggiore} (analogo discorso per funzioni infinitesime $x\to \infty$).
+\subparagraph{esempio}
+$\lim_{x\to 0}\frac{x^2+x^3+2\tan{x}}{(e^x-1)^2+\sin{x}}=\lim_{x\to 0}\frac{2\tan x}{\sin x}=2$
+\paragraph{Definizione di funzioni asintotiche}
+Si dice che due funzioni $f,g$ sono asintotiche per $x\to x_0$ se $\lim_{x\to x_0}\frac{f(x)}{g(x)}=1$ e si scrive $f\sim g$ per $x\to x_0$
+\subparagraph{esempi}
+\begin{itemize}
+	\item $\sin x\sim x$ per $x\to 0$
+	\item $\ln(1+x)\sim x$ per $x\to 0$
+	\item $e^x-1\sim x$ per $x\to 0$ 
+\end{itemize}
+\paragraph{Definizione di funzioni infinite}
+Una funzione $f(x)$ si dice \textit{infinita} per $x\to x_0$ (o per $x \to \infty$) , $x_0$ punto di accumulazione per il dominio di $f(x)$, (o per $x\to \infty$) se:
+\begin {center}
+	$\lim_{x\to x_0}f(x)=\infty$ (oppure $\lim_{x\to \infty}f(x)=\infty$)
+\end{center}
+\subparagraph{Esempi}
+\begin{itemize}
+	\item $y=e^x$ è un infinito per $x\to +\infty$
+	\item $y=\ln{x}$ è un infinito per $x\to 0^+$
+	\item $y=x^2+x$ è un infinito per $x\to \infty$
+\end{itemize}
+\subparagraph{Regole aritmetiche}
+Siano $f(x)=o(x^\alpha)$ (si legge <<o piccolo di>>) e $g(x)=o(x^\beta)$ due funzioni \textit{infinitesime} rispettivamente di ordine $\alpha$ e $\beta$ per $x \to 0$ Allora si ha
+\begin{itemize}
+	\item $cf(x))o(x^\alpha)$, $\forall c \in R$
+	\item $x^\lambda f(x)=o(x^{\lambda+\alpha})$
+	\item $f(x)g(x)=o(x^{\alpha+\beta})$
+	\item $f(x)+g(x)=o(x^y)$, $\gamma=min(\alpha,\beta)$
+\end{itemize}
+\paragraph{Definizione di ordine di infinito}
+Siamo $f(x)$ e $g(x)$ infiniti per $x\to x_0$ (o per $x$)
+\end{document}

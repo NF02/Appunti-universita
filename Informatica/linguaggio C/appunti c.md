@@ -158,6 +158,11 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
   count=count+5
 ```
 occhio alle variabili non inizializzate perché non sono gestibili quindi non si può sapere che valore possa assumere il risultato.
+### incremento di 1 di una variabile trammite ++
+il C ha una funzione che ti consente di incrementare un numero prima o dopo il richiamo della variabile, nel sequinte modo:
+| casi | funzione |
+| ---- | -------- |
+ 
 ## Contizioni "**i casi**"
 In C è possibile verificare dei casi, con l'utilizzo della funzione `if` che consente di valutare una determinata valutare una condizione e nel caso sia prevista una condizione alternativa va utilizzato la funzione `else` e poi l'opzione alternativa.
 ### esempio
