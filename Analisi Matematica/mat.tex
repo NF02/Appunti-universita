@@ -33,6 +33,7 @@
 \usepackage{textcomp}
 \usepackage{circuitikz}
 \usepackage{pifont}
+\usepackage{imakeidx}
 
 \usepackage{listings}
 \usepackage{color}
@@ -84,11 +85,14 @@
   \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
   \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
 
-\title{Appunti Matematica analisi}
+\title{Appunti di Matematica}
 \author{Nicola Ferru}
 \date{}
+\makeindex[columns=3, title=Alphabetical Index, intoc]
+
 \begin{document}
 \maketitle
+\tableofcontents
 \part{Matematica analisi 1}
 \chapter{Studio di funzione}
 \section{Limiti}
@@ -154,4 +158,5 @@ Siano $f(x)=o(x^\alpha)$ (si legge <<o piccolo di>>) e $g(x)=o(x^\beta)$ due fun
 \end{itemize}
 \paragraph{Definizione di ordine di infinito}
 Siamo $f(x)$ e $g(x)$ infiniti per $x\to x_0$ (o per $x$)
+\printindex
 \end{document}

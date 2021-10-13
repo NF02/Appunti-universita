@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  13 OCT 2021 15:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  13 OCT 2021 16:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -982,84 +982,55 @@ LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count368
-\lst@gtempboxa=\box70
-\lst@token=\toks46
-\lst@length=\count369
-\lst@currlwidth=\dimen353
-\lst@column=\count370
-\lst@pos=\count371
-\lst@lostspace=\dimen354
-\lst@width=\dimen355
-\lst@newlines=\count372
-\lst@lineno=\count373
-\lst@maxwidth=\dimen356
+(/usr/local/texlive/2021/texmf-dist/tex/latex/imakeidx/imakeidx.sty
+Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
+nous mode
 
-(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count374
-\lst@skipnumbers=\count375
-\lst@framebox=\box71
+(/usr/local/texlive/2021/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks46
+\XKV@tempa@toks=\toks47
 )
-(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2020/03/24 1.8d listings configuration
+\XKV@depth=\count368
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-Package: listings 2020/03/24 1.8d (Carsten Heinz)
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
+(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
-(/usr/local/texlive/2021/texmf-dist/tex/latex/floatflt/floatflt.sty
-Package: floatflt 1997/07/16 v. 1.31
-\c@OptionTest=\count376
-\figbox=\box72
-\tabbox=\box73
-\pagebox=\box74
-\ffigcount=\count377
-\ftabcount=\count378
-\fftest=\count379
-\hangcount=\count380
-\nosuccesstryfig=\count381
-\nosuccesstrytab=\count382
-\figgutter=\dimen357
-\tabgutter=\dimen358
-\htdone=\dimen359
-\pageht=\dimen360
-\startpageht=\dimen361
-\tabbredd=\dimen362
-\floatfltwidth=\dimen363
-\fltitemwidth=\dimen364
-\outputpretest=\toks47
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/epsfig.sty
-Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen365
-\epsfysize=\dimen366
+(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count383
-\mult@box=\box75
-\multicol@leftmargin=\dimen367
-\c@unbalance=\count384
-\c@collectmore=\count385
-\doublecol@number=\count386
-\multicoltolerance=\count387
-\multicolpretolerance=\count388
-\full@width=\dimen368
-\page@free=\dimen369
-\premulticols=\dimen370
-\postmulticols=\dimen371
+\c@tracingmulticols=\count369
+\mult@box=\box70
+\multicol@leftmargin=\dimen353
+\c@unbalance=\count370
+\c@collectmore=\count371
+\doublecol@number=\count372
+\multicoltolerance=\count373
+\multicolpretolerance=\count374
+\full@width=\dimen354
+\page@free=\dimen355
+\premulticols=\dimen356
+\postmulticols=\dimen357
 \multicolsep=\skip93
 \multicolbaselineskip=\skip94
-\partial@page=\box76
-\last@line=\box77
-\maxbalancingoverflow=\dimen372
-\mult@rightbox=\box78
-\mult@grightbox=\box79
-\mult@gfirstbox=\box80
-\mult@firstbox=\box81
+\partial@page=\box71
+\last@line=\box72
+\maxbalancingoverflow=\dimen358
+\mult@rightbox=\box73
+\mult@grightbox=\box74
+\mult@gfirstbox=\box75
+\mult@firstbox=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
 \@tempa=\box82
 \@tempa=\box83
 \@tempa=\box84
@@ -1092,55 +1063,110 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box111
 \@tempa=\box112
 \@tempa=\box113
-\@tempa=\box114
-\@tempa=\box115
-\@tempa=\box116
-\@tempa=\box117
-\@tempa=\box118
-\c@minrows=\count389
-\c@columnbadness=\count390
-\c@finalcolumnbadness=\count391
-\last@try=\dimen373
-\multicolovershoot=\dimen374
-\multicolundershoot=\dimen375
-\mult@nat@firstbox=\box119
-\colbreak@box=\box120
-\mc@col@check@num=\count392
+\c@minrows=\count375
+\c@columnbadness=\count376
+\c@finalcolumnbadness=\count377
+\last@try=\dimen359
+\multicolovershoot=\dimen360
+\multicolundershoot=\dimen361
+\mult@nat@firstbox=\box114
+\colbreak@box=\box115
+\mc@col@check@num=\count378
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count379
+\lst@gtempboxa=\box116
+\lst@token=\toks48
+\lst@length=\count380
+\lst@currlwidth=\dimen362
+\lst@column=\count381
+\lst@pos=\count382
+\lst@lostspace=\dimen363
+\lst@width=\dimen364
+\lst@newlines=\count383
+\lst@lineno=\count384
+\lst@maxwidth=\dimen365
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count385
+\lst@skipnumbers=\count386
+\lst@framebox=\box117
 )
+(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/floatflt/floatflt.sty
+Package: floatflt 1997/07/16 v. 1.31
+\c@OptionTest=\count387
+\figbox=\box118
+\tabbox=\box119
+\pagebox=\box120
+\ffigcount=\count388
+\ftabcount=\count389
+\fftest=\count390
+\hangcount=\count391
+\nosuccesstryfig=\count392
+\nosuccesstrytab=\count393
+\figgutter=\dimen366
+\tabgutter=\dimen367
+\htdone=\dimen368
+\pageht=\dimen369
+\startpageht=\dimen370
+\tabbredd=\dimen371
+\floatfltwidth=\dimen372
+\fltitemwidth=\dimen373
+\outputpretest=\toks49
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+\epsfxsize=\dimen374
+\epsfysize=\dimen375
+)
+\mat@idxfile=\write4
+\openout4 = `mat.idx'.
+
+
+Writing index file mat.idx
 (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count393
+\l__color_backend_stack_int=\count394
 \l__pdf_internal_box=\box121
 )
 (./mat.aux)
 \openout1 = `mat.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 90.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 90
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 93.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 93
 .
  (/usr/local/texlive/2021/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 90.
-Package hyperref Info: Link coloring OFF on input line 90.
+LaTeX Font Info:    ... okay on input line 93.
+Package hyperref Info: Link coloring OFF on input line 93.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1152,14 +1178,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count394
+\c@section@level=\count395
 )
-LaTeX Info: Redefining \ref on input line 90.
-LaTeX Info: Redefining \pageref on input line 90.
-LaTeX Info: Redefining \nameref on input line 90.
+LaTeX Info: Redefining \ref on input line 93.
+LaTeX Info: Redefining \pageref on input line 93.
+LaTeX Info: Redefining \nameref on input line 93.
  (./mat.out) (./mat.out)
-\@outlinefile=\write4
-\openout4 = `mat.out'.
+\@outlinefile=\write5
+\openout5 = `mat.out'.
 
 
 *geometry* driver: auto-detecting
@@ -1198,17 +1224,17 @@ LaTeX Info: Redefining \nameref on input line 90.
 
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count395
+\scratchcounter=\count396
 \scratchdimen=\dimen376
 \scratchbox=\box122
-\nofMPsegments=\count396
-\nofMParguments=\count397
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count398
+\nofMPsegments=\count397
+\nofMParguments=\count398
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count399
 \MPscratchDim=\dimen377
-\MPnumerator=\count399
-\makeMPintoPDFobject=\count400
-\everyMPtoPDFconversion=\toks49
+\MPnumerator=\count400
+\makeMPintoPDFobject=\count401
+\everyMPtoPDFconversion=\toks51
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1218,27 +1244,27 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \it@ocap on input line 90.
-LaTeX Info: Redefining \it@ccap on input line 90.
+LaTeX Info: Redefining \it@ocap on input line 93.
+LaTeX Info: Redefining \it@ccap on input line 93.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count401
-LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
+\c@lstlisting=\count402
+LaTeX Font Info:    Trying to load font information for U+msa on input line 95.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 95.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 92
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 95
 .
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -1248,26 +1274,30 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-] [3] [4]
+] (./mat.toc)
+\tf@toc=\write6
+\openout6 = `mat.toc'.
+
+
+[3] [4
+
+] [5] [6]
 Capitolo 1.
-[5
+[7
 
-] [6] (./mat.aux)
+] [8]
+runsystem(makeindex mat.idx)...executed safely (allowed).
 
-Package rerunfilecheck Warning: File `mat.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `mat.out':
-(rerunfilecheck)             Before: 96511E56FBE3812561582307BEEE689A;405
-(rerunfilecheck)             After:  F276D4DB4758680ED89CF4DF078E14D7;571.
+ (./mat.ind) (./mat.aux)
+Package rerunfilecheck Info: File `mat.out' has not changed.
+(rerunfilecheck)             Checksum: F276D4DB4758680ED89CF4DF078E14D7;571.
  ) 
 Here is how much of TeX's memory you used:
- 39983 strings out of 478994
- 864778 string characters out of 5858184
- 1568621 words of memory out of 5000000
- 56849 multiletter control sequences out of 15000+600000
- 422319 words of font info for 78 fonts, out of 8000000 for 9000
+ 40359 strings out of 478994
+ 870732 string characters out of 5858184
+ 1581403 words of memory out of 5000000
+ 57196 multiletter control sequences out of 15000+600000
+ 423091 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,7n,89p,416b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -1291,10 +1321,10 @@ mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf
 ist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dis
 t/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2021/texmf-dist/
 fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on mat.pdf (6 pages, 210525 bytes).
+Output written on mat.pdf (8 pages, 213695 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 166 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

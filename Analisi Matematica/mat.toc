@@ -1,0 +1,18 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {part}{I\hspace {1em}Matematica analisi 1}{5}{part.1}%
+\contentsline {chapter}{\numberline {1}Studio di funzione}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Limiti}{7}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Infinitesimi e infiniti}{7}{subsection.1.1.1}%
+\contentsline {paragraph}{Definizione}{7}{paragraph*.2}%
+\contentsline {subsubsection}{Esempi}{7}{subsubsection*.3}%
+\contentsline {subsubsection}{Ordine di infinitesimo}{7}{subsubsection*.4}%
+\contentsline {paragraph}{Esempi}{7}{paragraph*.5}%
+\contentsline {subsubsection}{Confronto tra infinitesimi}{7}{subsubsection*.6}%
+\contentsline {subparagraph}{esempio}{8}{subparagraph*.7}%
+\contentsline {paragraph}{Definizione di funzioni asintotiche}{8}{paragraph*.8}%
+\contentsline {subparagraph}{esempi}{8}{subparagraph*.9}%
+\contentsline {paragraph}{Definizione di funzioni infinite}{8}{paragraph*.10}%
+\contentsline {subparagraph}{Esempi}{8}{subparagraph*.11}%
+\contentsline {subparagraph}{Regole aritmetiche}{8}{subparagraph*.12}%
+\contentsline {paragraph}{Definizione di ordine di infinito}{8}{paragraph*.13}%
