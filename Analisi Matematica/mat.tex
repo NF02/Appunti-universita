@@ -94,7 +94,40 @@
 \maketitle
 \tableofcontents
 \part{Matematica analisi 1}
+\section{Simboli}
+\begin{multicols}{3}
+ $\in$ Appartiene\\
+ $\notin$ Non appartiene\\
+ $\exists$ Esiste\\
+ $\exists !$ Esiste unico\\
+ $\subset$ Contenuto strettamente\\
+ $\subseteq$ Contenuto\\
+ $\supset$ Contenuto strettamente\\
+ $\supseteq$ Contiene\\
+$\Rightarrow$ Implica\\
+$\Longleftrightarrow$ Se e solo se\\
+$\neq$ Diverso\\
+$\forall$ Per ogni\\
+$\ni :$ Tale che\\
+$\leq$ Minore o uguale\\
+$\geq$ Maggiore o uguale\\
+$\alpha$ alfa\\
+$\beta$ beta\\
+$\gamma$ gamma\\
+$\Gamma$ Gamma\\
+$\delta,\Delta$ delta\\
+$\epsilon$ epsilon\\
+$\sigma,\Sigma$ sigma\\
+$\rho$ rho
+\end{multicols}
 \chapter{Studio di funzione}
+\section{Cenni di teoria degli insiemi}
+Per rappresentare un insieme abbiamo tre possibilità:
+\begin{enumerate}
+	\item Rappresentazione estensive $A=[0,1,2,3,4]$
+	\item Rappresentazione intensiva $A=[x|x\in N e x<5]$
+	\item Rappresentazione con diagrammi di Eulero - Venn
+\end{enumerate}
 \section{Limiti}
 \subsection{Infinitesimi e infiniti}
 \paragraph{Definizione}
@@ -156,7 +189,38 @@ Siano $f(x)=o(x^\alpha)$ (si legge <<o piccolo di>>) e $g(x)=o(x^\beta)$ due fun
 	\item $f(x)g(x)=o(x^{\alpha+\beta})$
 	\item $f(x)+g(x)=o(x^y)$, $\gamma=min(\alpha,\beta)$
 \end{itemize}
-\paragraph{Definizione di ordine di infinito}
-Siamo $f(x)$ e $g(x)$ infiniti per $x\to x_0$ (o per $x$)
+\paragraph{Ordine di infinito}
+Siamo $f(x)$ e $g(x)$ infiniti per $x\to x_0$ (o per $x$), con $g\neq 0$. Se $\exists\alpha\in R+$ e $l\in R$, $l\neq 0$ tale che\\
+$\lim_{x\to x_0}\frac{f(x)}{[g(x)]^2}=l$ (o $\lim_{x\to \infty}\frac{f(x)}{[g(x)]^\alpha}=l$)\\
+Allora, per $x\to x_0$ (o per $x\to \infty$), $f(x)$ è un infinito di ordine $\alpha$ rispetto all'infinito compione $g(x)$.
+\subparagraph{Esempi}
+\begin{itemize}
+	\item $ord(\sqrt{x})=\frac{1}{2}$ rispetto ad $x$ per $x\to +\infty$
+	\item $ord(\frac{1}{\sin x})=1$ rispetto ad $\frac{1}{x}$ per $x\to 0$
+	\item $ord(\frac{1}{e^x-1})=1$ rispetto ad $\frac{1}{x}$ per $x\to 0$
+\end{itemize}
+\subparagraph{Cofronto tra infiniti}
+Siamo $f(x)$ e $g(x)$ infiniti per $x\to x_0$\\
+$\lim_{x\to x_0}\frac{f(x)}{g(x)}=\begin{cases}
+l\neq 0&ord(f)=ord(g)\\
+\pm \infty&ord(f)>ord(g)\\
+0&ord(f)<ord(g)\\
+non esiste, & f e g non confrontabile \\ 
+\end{cases}
+$\\
+Stesso risultato se $f(x)$ e $g(x)$ sono infinite per $x \to \infty$. Utilizzando il confronto tra infiniti nel calcolo dei limiti del tipo $\lim_{x\to x_0}\frac{f_1+f_2}{g_1+g_2}$, deve $f_1,f_2,g_1,g_2$ sono funzioni infinite per $x\to x_0$, si possono {\color{red}trascurare gli \underline{infiniti} di ordine minore} (analogo discorso per funzione infinito $x\to \infty$).
+\subparagraph{Esempio}
+$\lim_{x\to +\infty}\frac{x^2+x^3+3\sqrt{x}}{x^2(2x-1)+\sqrt{3x}}=\lim_{x\to +\infty}\frac{x^3}{2x^3}=\frac{1}{2}$.
+\paragraph{Gerarchia degli infiniti}
+Per $x\to +\infty$ si ha $(\log_\alpha x)^\alpha<<x^\beta<<b^x$, con $\alpha,\beta>0,a,b>1$ Non sempre è possibile calcolare l'ordine di infinito (o di infinitesimo) rispetto alla funzione campione usuale.\\
+\subparagraph{Esempio}
+$\lim_{x\to +\infty}\frac{a^x}{x^a}=+\infty, \forall \alpha>0, a>1$, $\lim_{x\to +\infty}\frac{(\log_a x)^\beta}{x^a}=+\infty, \forall \alpha, \beta>0, a>1$
+\subparagraph{Regole aritmetiche}
+Siano $f(x)$ e $g(x)$ due funzioni \emph{infinite} di ordine rispettivamente $\alpha$ e $\beta$. Allora si ha
+\begin{itemize}
+	\item $ord(f(x)+g(x))=\max{\alpha,\beta}$
+	\item $ord(f(x)*g(x))=\alpha+\beta$
+	\item $ord((f(x))^\gamma)=\alpha\gamma$
+\end{itemize}
 \printindex
 \end{document}
