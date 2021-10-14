@@ -26,6 +26,18 @@ int main(){
 In C viengono utilizzate delle librerie per caricare e implementare nuove funzionalità, questo consente di ottimizzare al massimo 
 il programma, per caricare una libreria è necessario utilizzare la direttiva al preprocessore `#include<nomeLibreria>`  nel caso delle
 librerie di sistema, mentre, nel caso di librerie locali scritte ad hoc per il programma bisogna utilizzare la direttiva `#include "nomeLibreria"`.
+### Quelle fondamentali
+|   Nome    |                   Descrizione                                     |
+| --------- | ----------------------------------------------------------------- |
+| `<stdio.h>` | Contiene le funzioni per lo standard input\output                 |
+| `<stdlib.h>`| Contiene funzioni di utilità generica                             |
+| `<errno.h>` | Contiene tutto il necessario per la gestione degli errori         |
+| `<math.h>`  | Contiene le funzioni matematiche avanzate utili per semplificare la vita al programmatore. |
+| `<string.h>`| Una libreria che consente di gestire le stringhe "array di caratteri" |
+| `<time.h>`  | È una libreria che consente di sfruttare funzioni di tipo temporale "timer e letture dell'orario" |
+| `ctype.h`   | Dichiara funzioni per la classificazione dei caratteri. |
+| `float.h`   | Contiene le macro che vengono espanse ai vari limiti e parametri dei tipi in virgola mobile (floating-point) standard. |
+
 ## Commenti
 Come in ogni buon linguaggio di programmazione anche il C supporta l'utilizzo dei commenti sia per singola linea sia multi-linea,
 i caratteri che vengono utilizzarti per indicare questo tipo di testo sono ripportati qui sotto nella tabella.
@@ -172,7 +184,18 @@ Nel caso della prima la variabile viene letta e poi dopo viene incrementata, men
 Essettivamente una domanda che può essere posta è "Ma le variabile sono leggibili da tutte le funzioni?", la risposta a questa domanda è un sonoro no... Una variabile è disponibile solo dentro la funzione in cui viene dichiarata, ovviamente esistono anche le variabili globali ma effettivamente sono sconsigliate per una questione di sicurezza e di ordine. Infatti, per "sfruttare" (leggere) una variabile dichiareta altrove in un'altra funzione bisogna passarla tramite parametri e oltre tutto questa variabile non sarà modificabile se passata in questo modo, quindi qualunque modifica apportata dentro la funzione ospite non verrà realmente apportata. ovviamente un valore può essere reso e quindi salvato in questo modo, altrimente l'altro metodo per poter passare una variabile esterna è passandola tramite il puntatore della stessa. Onestamente questo implica una certa attenzioneda parte del programmatore per effettuare tali operazioni.
 #### Dichiarare variabili globali
 Per Dichiarare una variabile globale è sufficiente dichiarare una variabile al difuori di un corbo funzione.
+```c
+  /* librerie importate */
 
+  static int nomeVariabile=3;
+  
+  int main(){
+    return 0;
+  }
+```
+Ovviamente il consiglio è quello di inizializzare sempre una variabile globale.
+### Le costanti
+Le costanti come dice lo stesso nome sono dei valori che vengono assegnati staticamente, quindi non possono essere modificati durante l'esecuzione e neanche tramite altre operazioni, semplicemente sono  
 ## Contizioni "**i casi**"
 In C è possibile verificare dei casi, con l'utilizzo della funzione `if` che consente di valutare una determinata valutare una condizione e nel caso sia prevista una condizione alternativa va utilizzato la funzione `else` e poi l'opzione alternativa.
 ### esempio
@@ -327,4 +350,30 @@ float media (int v[]) {
     ris/=N;
   return ris; 
 }
+```
+#### funzione che svolge le tabelline
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+void tabelline(int n, int nv){
+	int ris=1,i;
+	printf("-- tabelline --");
+	for (i=0;i<nv;i++){
+		ris=n*i;
+		printf("\n%d * %d = %d",n,i,ris);
+	}
+	printf("\n%d * %d = %d\n",n,i,ris);
+	
+}
+
+int main (){
+	int base, numeroVolte;
+	printf("inserisci il tabellina: ");
+	scanf("%d", &base);
+	printf("inserisci numero di moltiplicazione: ");
+	scanf("%d", &numeroVolte);
+	tabelline(base,numeroVolte);
+}
+
 ```
