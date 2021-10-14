@@ -9,7 +9,7 @@ richiederà una ricompilazione nel caso in cui si cambi l'OS oppute l'architettu
 negli anni 70' e quindi ha un ottica di programmazione orientata per quello che erano gli elaboratori all'epoca e anche quello
 che i programmatori usavano all'epoca, seguendo il loro schema mentale, che risultava leggermente diverso dal quello dei 
 programmatori odierni, abbituati a linguaggi orientati alla programmazione ad Oggetti e poco abbituati a gestire manualmente
-le risorse. Il C è stato modificato nel tampo e attualmente lo standard è il **C11** del 2011.
+le risorse. Il C è stato modificato nel tampo e attualmente lo standard è il **C11** del 2011, anche se maggiormente viene adottato il **C99**.
 ### Architettura
 I computer sono basati solitamente sulla architettura x86, più nello specifico x86_64, ma non è l'unica architettura esistente di altre un esempio è l'architettura arm e anche quella powerpc che comunque risultano diffuse e in quel caso la gestione della memoria è diversa e non è certo che le variabili vengano gestite allo stesso modo. ma è sostanzialmente non è un problema perché è possibile verificare la dimensiome delle stesse.
 ### Programma base "**hello world**"
@@ -158,11 +158,21 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
   count=count+5
 ```
 occhio alle variabili non inizializzate perché non sono gestibili quindi non si può sapere che valore possa assumere il risultato.
-### incremento di 1 di una variabile trammite ++
+### incremento di 1 di una variabile trammite ++ e decremento tramite il --
 il C ha una funzione che ti consente di incrementare un numero prima o dopo il richiamo della variabile, nel sequinte modo:
-| casi | funzione |
-| ---- | -------- |
- 
+|       casi      |      funzione         |
+| --------------- | --------------------- |
+| NomeVariabile++ | incremento postumo    |
+| ++NomeVariabile | incremento anticipato |
+| NomeVariabile-- | decremento postumo    |
+| --NomeVariabile | decermento anticipato |
+
+Nel caso della prima la variabile viene letta e poi dopo viene incrementata, mentre, nel secondo caso la variabile viene prima incrementata e poi letta. stesso concetto per il decremento.
+### Visibilità delle variabili
+Essettivamente una domanda che può essere posta è "Ma le variabile sono leggibili da tutte le funzioni?", la risposta a questa domanda è un sonoro no... Una variabile è disponibile solo dentro la funzione in cui viene dichiarata, ovviamente esistono anche le variabili globali ma effettivamente sono sconsigliate per una questione di sicurezza e di ordine. Infatti, per "sfruttare" (leggere) una variabile dichiareta altrove in un'altra funzione bisogna passarla tramite parametri e oltre tutto questa variabile non sarà modificabile se passata in questo modo, quindi qualunque modifica apportata dentro la funzione ospite non verrà realmente apportata. ovviamente un valore può essere reso e quindi salvato in questo modo, altrimente l'altro metodo per poter passare una variabile esterna è passandola tramite il puntatore della stessa. Onestamente questo implica una certa attenzioneda parte del programmatore per effettuare tali operazioni.
+#### Dichiarare variabili globali
+Per Dichiarare una variabile globale è sufficiente dichiarare una variabile al difuori di un corbo funzione.
+
 ## Contizioni "**i casi**"
 In C è possibile verificare dei casi, con l'utilizzo della funzione `if` che consente di valutare una determinata valutare una condizione e nel caso sia prevista una condizione alternativa va utilizzato la funzione `else` e poi l'opzione alternativa.
 ### esempio
@@ -226,6 +236,8 @@ Il for è un'altra funzione che consente di effettuare un ciclo, controlla la co
 Ovviamente in questo caso vendiamo le versioni iterative, ma tutto questo lo si può effettuare pure un modo ricorsivo, che risulta meno ottimizzato ma allo stesso tempo risulta molto più rapido da scrivere in molti casi se sono complessi da scrivere conviene sfruttare la ricorsione.
 #### iterativo
 <img whidt="50%" src="https://www.liceotosi.edu.it/inote/wp-content/uploads/sites/18/2016/05/tipoiterazione.jpg">
+#### Attenzione!!
+Bisogna prestare particolare attenzione al contatore del ciclo, perché deve essere sempre inizializzata perché altrimenti potrebbero creare dei problemi seri e sostanzialmete non funzionerà come da prassi.
 
 ## Logica dei puntatori
 i puntattori vengono utilizzati in modo esplicito nel C, per gestire la mamoria, infatti, esistono le variabili dedicate, che vengono dichiarate come le altre variabili ma con un * davanti al nome della stessa `int *i`. Sono fondamentali per l'utilizzo degli array dinamici e anche per la gestione dei file, proprio per la loro natura. Una delle funzioni che utilizza un puntatore è proprio la ruimentale scanf(), ogni variabile possiede il suo pountatore, per accedere al puntatore invece che al contenuto della stessa è necesario mettere davanti al nome il carattere `&`.
