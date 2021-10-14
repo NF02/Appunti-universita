@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  14 OCT 2021 09:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  14 OCT 2021 15:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1315,7 +1315,7 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no ] in font nullfont!
 [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
@@ -1325,12 +1325,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--239
 runsystem(makeindex mat.idx)...executed safely (allowed).
 
  (./mat.ind) (./mat.aux)
-Package rerunfilecheck Info: File `mat.out' has not changed.
-(rerunfilecheck)             Checksum: 9AD2CDABC121129F5A97C6A5E3413526;1068.
+
+Package rerunfilecheck Warning: File `mat.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `mat.out':
+(rerunfilecheck)             Before: 9AD2CDABC121129F5A97C6A5E3413526;1068
+(rerunfilecheck)             After:  1D62F72BE81B6561E017A8FCDC00921D;1227.
  ) 
 Here is how much of TeX's memory you used:
- 40419 strings out of 478994
- 871963 string characters out of 5858184
+ 40420 strings out of 478994
+ 871979 string characters out of 5858184
  1585403 words of memory out of 5000000
  57240 multiletter control sequences out of 15000+600000
  423091 words of font info for 79 fonts, out of 8000000 for 9000
@@ -1357,10 +1363,10 @@ mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf
 ist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dis
 t/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2021/texmf-dist/
 fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on mat.pdf (12 pages, 239931 bytes).
+Output written on mat.pdf (12 pages, 240680 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
+ 212 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
  69 words of extra memory for PDF output out of 10000 (max. 10000000)
 
