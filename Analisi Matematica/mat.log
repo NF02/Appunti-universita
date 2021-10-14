@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  13 OCT 2021 21:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  14 OCT 2021 09:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1315,7 +1315,7 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no ] in font nullfont!
 [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
@@ -1329,10 +1329,10 @@ Package rerunfilecheck Info: File `mat.out' has not changed.
 (rerunfilecheck)             Checksum: 9AD2CDABC121129F5A97C6A5E3413526;1068.
  ) 
 Here is how much of TeX's memory you used:
- 40417 strings out of 478994
- 871927 string characters out of 5858184
+ 40419 strings out of 478994
+ 871963 string characters out of 5858184
  1585403 words of memory out of 5000000
- 57238 multiletter control sequences out of 15000+600000
+ 57240 multiletter control sequences out of 15000+600000
  423091 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,8n,89p,416b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1357,7 +1357,7 @@ mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf
 ist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dis
 t/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2021/texmf-dist/
 fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on mat.pdf (12 pages, 239478 bytes).
+Output written on mat.pdf (12 pages, 239931 bytes).
 PDF statistics:
  210 PDF objects out of 1000 (max. 8388607)
  175 compressed objects within 2 object streams
