@@ -265,7 +265,17 @@ Bisogna prestare particolare attenzione al contatore del ciclo, perché deve ess
 ## Array
 gli array sono un tipo di struttura dati che risulta composto da una serie di celle di memoria contigue, il contenuto delle singole celle deve essere dello stesso tipo, quindi quando si dichiara un array si deve avere un'idea chiara di quello che si vuole ottenere perché il tipo non lo si può cambiare inseguito dopo il run del programma. Di array ne esistono di due tipi statico e dinamico, il primo viene inizializzato con una dimensione e non potra essere modificato in seguito. Mentre il secondo viene creato tramite i tool del C per gestire la memoria e poi verrà gestito tramite una variabile puntatore. Un ulteriore divisione che viene fatta per gli array è il fatto di essere monodimensionali (**vettore**) o bidimensionali (**matrice**).
 ### Array statici
-Gli arrai statici sono molto comodi quando sappiamo già quanti valori deve contenere, solitamente per gestire questo categoria viene utilizzata una costante N per gestire la dimensione
+Gli arrai statici sono molto comodi quando sappiamo già quanti valori deve contenere, solitamente per gestire questo categoria viene utilizzata una costante N per gestire la dimensione.
+```c
+#define N 10 // ovviamente il numero lo si sceglie 
+
+int main(){
+    int v[N]; // dimensione che va da 0 a N-1
+    // ...
+    return 0;
+}
+```
+per popolare un array sarà necessario utilizzare un ciclo. Ma si popolare anche per cella singola utilizzando l'indice dello stesso. Comunque non bisogna mai e poi mai sforare dalla array perché i risutati sono imprevedibili e soprattutto potrebbe portare ad un crush dell'applicativo per non dire del programma che sta utilizzando la memoria in questione.
 ## Logica dei puntatori
 i puntattori vengono utilizzati in modo esplicito nel C, per gestire la mamoria, infatti, esistono le variabili dedicate, che vengono dichiarate come le altre variabili ma con un * davanti al nome della stessa `int *i`. Sono fondamentali per l'utilizzo degli array dinamici e anche per la gestione dei file, proprio per la loro natura. Una delle funzioni che utilizza un puntatore è proprio la ruimentale scanf(), ogni variabile possiede il suo pountatore, per accedere al puntatore invece che al contenuto della stessa è necesario mettere davanti al nome il carattere `&`.
 
