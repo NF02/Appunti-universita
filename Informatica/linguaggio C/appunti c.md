@@ -262,7 +262,10 @@ Ovviamente in questo caso vendiamo le versioni iterative, ma tutto questo lo si 
 
 #### Attenzione!!
 Bisogna prestare particolare attenzione al contatore del ciclo, perché deve essere sempre inizializzata perché altrimenti potrebbero creare dei problemi seri e sostanzialmete non funzionerà come da prassi.
-
+## Array
+gli array sono un tipo di struttura dati che risulta composto da una serie di celle di memoria contigue, il contenuto delle singole celle deve essere dello stesso tipo, quindi quando si dichiara un array si deve avere un'idea chiara di quello che si vuole ottenere perché il tipo non lo si può cambiare inseguito dopo il run del programma. Di array ne esistono di due tipi statico e dinamico, il primo viene inizializzato con una dimensione e non potra essere modificato in seguito. Mentre il secondo viene creato tramite i tool del C per gestire la memoria e poi verrà gestito tramite una variabile puntatore. Un ulteriore divisione che viene fatta per gli array è il fatto di essere monodimensionali (**vettore**) o bidimensionali (**matrice**).
+### Array statici
+Gli arrai statici sono molto comodi quando sappiamo già quanti valori deve contenere, solitamente per gestire questo categoria viene utilizzata una costante N per gestire la dimensione
 ## Logica dei puntatori
 i puntattori vengono utilizzati in modo esplicito nel C, per gestire la mamoria, infatti, esistono le variabili dedicate, che vengono dichiarate come le altre variabili ma con un * davanti al nome della stessa `int *i`. Sono fondamentali per l'utilizzo degli array dinamici e anche per la gestione dei file, proprio per la loro natura. Una delle funzioni che utilizza un puntatore è proprio la ruimentale scanf(), ogni variabile possiede il suo pountatore, per accedere al puntatore invece che al contenuto della stessa è necesario mettere davanti al nome il carattere `&`.
 
