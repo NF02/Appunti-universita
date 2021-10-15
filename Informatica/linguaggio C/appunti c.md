@@ -258,7 +258,8 @@ Il for è un'altra funzione che consente di effettuare un ciclo, controlla la co
 ```
 Ovviamente in questo caso vendiamo le versioni iterative, ma tutto questo lo si può effettuare pure un modo ricorsivo, che risulta meno ottimizzato ma allo stesso tempo risulta molto più rapido da scrivere in molti casi se sono complessi da scrivere conviene sfruttare la ricorsione.
 #### iterativo
-<img whidt="50%" src="https://www.liceotosi.edu.it/inote/wp-content/uploads/sites/18/2016/05/tipoiterazione.jpg">
+<img whidt="50%" src="img/tipoiterazione.jpg">
+
 #### Attenzione!!
 Bisogna prestare particolare attenzione al contatore del ciclo, perché deve essere sempre inizializzata perché altrimenti potrebbero creare dei problemi seri e sostanzialmete non funzionerà come da prassi.
 
