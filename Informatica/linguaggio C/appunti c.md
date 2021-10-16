@@ -276,6 +276,13 @@ int main(){
 }
 ```
 per popolare un array sarà necessario utilizzare un ciclo. Ma si popolare anche per cella singola utilizzando l'indice dello stesso. Comunque non bisogna mai e poi mai sforare dalla array perché i risutati sono imprevedibili e soprattutto potrebbe portare ad un crush dell'applicativo per non dire del programma che sta utilizzando la memoria in questione.
+#### esempli di popolamento di un arrai statico
+```c
+    for (int i=0;i<N;i++){
+        v[i]=N*i+4-random%10;
+        // ...
+    }
+```
 ## Logica dei puntatori
 i puntattori vengono utilizzati in modo esplicito nel C, per gestire la mamoria, infatti, esistono le variabili dedicate, che vengono dichiarate come le altre variabili ma con un * davanti al nome della stessa `int *i`. Sono fondamentali per l'utilizzo degli array dinamici e anche per la gestione dei file, proprio per la loro natura. Una delle funzioni che utilizza un puntatore è proprio la ruimentale scanf(), ogni variabile possiede il suo pountatore, per accedere al puntatore invece che al contenuto della stessa è necesario mettere davanti al nome il carattere `&`.
 

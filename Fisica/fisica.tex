@@ -1,0 +1,152 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{easylist}
+\usepackage{hanging}
+\usepackage{hyperref}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=3.0cm]{geometry}
+\usepackage{blindtext}
+\usepackage{tipa}
+\usepackage{epigraph}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{pbox}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{textcomp}
+\usepackage{circuitikz}
+\usepackage{pifont}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  firstnumber=1000,                % start line enumeration with line 1000
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\linespread{1.5} % l'interlinea
+
+\frenchspacing
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+\usepackage{floatflt,epsfig}
+
+\usepackage{multicol}
+\newcommand\yellowbigsqcup[1][\displaystyle]{%
+  \fboxrule0pt
+  \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
+  \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
+
+\title{Appunti Fisica 1}
+\author{Nicola Ferru}
+\date{}
+\begin{document}
+\maketitle
+\section{moto rettilineo uniformemente accelerato}
+Moto rettilineo uniformemente accelerato. La definizione di moto rettilineo uniformemente accelerato è: il moto di un corpo con accelerazione costante lungo una traiettoria retta sempre nella stessa direzione e identico verso.
+\begin{multicols}{3} 
+$V_{S_0}=30,0m/s$\\
+$V_F=5,00m/s$\\
+$A_s=-2.00m/s$\\
+$X_{F_0}=I_{SF}=155,5m$\\
+$X_s(t)=X_{S_0}+X_{S_0}t+\frac{1}{2}A_st^2$\\
+$X_s(t)=V_{S_0}+\frac{1}{2}A_st^2$\\
+$X_F(t)=X_{F_0}+V_{F_0}t$
+\end{multicols}
+\begin{multicols}{2} 
+ \begin{tikzpicture}[domain=-2:6] 
+    \draw[very thin,color=gray] (-2.1,-1.1) grid (5.9,3.9);
+    \draw[->] (-2.2,0) -- (6.2,0) node[right] {$t$}; 
+    \draw[->] (0,-1.2) -- (0,4.2) node[above] {$x$};
+  \end{tikzpicture}\\
+  $(x_f(t)-x_{f_0})=X_{f}(t_0)$\\
+  $X_s(t_c)=X_f(t_0)$\\
+  $V_st_e+\frac{1}{2}A_st^2c=X_{F_0}+V_{F_0}+V_{F_0}+V_{F_0}tc$
+\end{multicols}
+$\alpha{x^2}+\beta{x}+\gamma=0$\\
+$x=\frac{-\beta\pm\sqrt{\beta-\gamma}}{2\alpha}$ $\Delta\geq 0$\\
+$\tilde{x^2}+\tilde{2\beta x}+\gamma=0$\\
+$x=\sqrt{\tilde{\beta}}$\\
+$\frac{1}{2}(V_{s_0}-V_{F_0})T_c-X_{F0}=0$\\
+\section{I vettori}
+\subsection{proiezione dei vettori prodotto scalare}
+ \begin{tikzpicture}[domain=-2:6] 
+    \draw[very thin,color=gray] (-2.1,-1.1) grid (5.9,3.9);
+    \draw[->] (-2.2,0) -- (6.2,0) node[right] {$t$}; 
+    \draw[->] (0,-1.2) -- (0,4.2) node[above] {$x$};
+  \end{tikzpicture}\\
+\begin{multicols}{3} 
+$L*L=1$\\
+$J*J=1$\\
+$\overrightarrow{a}*\overrightarrow{i}=a_x$\\
+$\overrightarrow{a}*$\\
+$\overrightarrow{a}=\overrightarrow{a}_x\overrightarrow{I}+a_y\overrightarrow{J}$\\
+$ax=\overrightarrow{a}*\overrightarrow{J}=||a||*||\overrightarrow{J}||\cos{\phi}=||\overrightarrow{a}||*\cos{\phi}$\\
+$\overrightarrow{a}=a_x\overrightarrow{L}+a_y\overrightarrow{J}$\\
+$\overrightarrow{b}=b_x\overrightarrow{L}+b_y\overrightarrow{J}$\\
+$\overrightarrow{a}*\overrightarrow{b}=(a_x\overrightarrow{J}+a_y\overrightarrow{J})*(b_x\overrightarrow{J}+b_y\overrightarrow{J})$\\
+$\overrightarrow{a}*\overrightarrow{b}=a_x*b_x+a_yb_y$\\
+$||\overrightarrow{a}||=a_{x^*2}+a_{y^2}=\overrightarrow{a}*\overrightarrow{a}$\\
+$\overrightarrow{r(t)}=\overrightarrow{r_0}+V_0t+\frac{1}{2}\overrightarrow{y}t^2$\\
+$\overrightarrow{r}*\overrightarrow{J}=y=\overrightarrow{r}*\overrightarrow{J}+\overrightarrow{V_0}*\overrightarrow{J}$\\
+$\cos{\frac{\pi}{2}*\phi}=\sin{\phi}$\\
+$x=x_0+V_xt$\\
+$y=y_0+V_0t-\frac{1}{2}gt^2$\\
+\end{multicols} 
+\subsubsection{moto balistico}
+$x=x_0+V_{0x}t$\\
+$y=y_0+V_{0y}t-\frac{1}{2}gt^2$\\
+$x=0$\\
+$y=h$\\
+$V_{0y}=\overrightarrow{V_0}*\overrightarrow{J}=||\overrightarrow{V}||*||\overrightarrow{J}||$\\
+$h=\frac{1}{2}gt^2$\\
+$\tag$
+
+\end{document}
