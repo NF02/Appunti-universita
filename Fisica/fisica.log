@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  16 OCT 2021 10:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  16 OCT 2021 17:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1246,70 +1246,73 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (42.05623pt too wide) in paragraph at lines 108--112
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+] [3] [4]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 93.
+
+
+Overfull \hbox (70.50897pt too wide) in paragraph at lines 114--118
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--118
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 128.
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--126
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 126--142
+Underfull \hbox (badness 10000) in paragraph at lines 160--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--150
+Underfull \hbox (badness 10000) in paragraph at lines 178--184
 
  []
 
-[3] (./fisica.aux)
-
-Package rerunfilecheck Warning: File `fisica.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `fisica.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  1194BA4A7665B24490E6C9E3CDE7406A;615.
+[6] [7] (./fisica.aux)
+Package rerunfilecheck Info: File `fisica.out' has not changed.
+(rerunfilecheck)             Checksum: 7F55EAEE2AE1E41A6E011F1A86F40B64;901.
  ) 
 Here is how much of TeX's memory you used:
- 40049 strings out of 478994
- 866743 string characters out of 5858184
- 1580627 words of memory out of 5000000
- 56935 multiletter control sequences out of 15000+600000
- 418974 words of font info for 73 fonts, out of 8000000 for 9000
+ 40152 strings out of 478994
+ 868674 string characters out of 5858184
+ 1588627 words of memory out of 5000000
+ 57029 multiletter control sequences out of 15000+600000
+ 421298 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,14n,89p,410b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/loc
-al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/tex
-live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texli
-ve/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive
-/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2
-021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/202
-1/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/te
-xmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texm
-f-dist/fonts/type1/public/cm-super/sfsl1000.pfb>
-Output written on fisica.pdf (3 pages, 167919 bytes).
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
+/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
+/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2
+021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/202
+1/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2021/
+texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2021/te
+xmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2021/texm
+f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-
+dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-di
+st/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dist
+/fonts/type1/public/cm-super/sfsl1000.pfb>
+Output written on fisica.pdf (7 pages, 212011 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 145 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 14 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
