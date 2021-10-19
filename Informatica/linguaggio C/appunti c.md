@@ -198,6 +198,12 @@ Per Dichiarare una variabile globale è sufficiente dichiarare una variabile al 
 Ovviamente il consiglio è quello di inizializzare sempre una variabile globale.
 ### Le costanti
 Le costanti come dice lo stesso nome sono dei valori che vengono assegnati staticamente, quindi non possono essere modificati durante l'esecuzione e neanche tramite altre operazioni, semplicemente sono dei valori assegnati e immutabili, ovviamente il programmatore può cambiare il valore quando la definisce ma non possono essere effettuate su di essa altre operazioni arbitrarie.
+| funzione                      |         Descrizione        |
+| ----------------------------- | -------------------------- |
+| `#define nomeCostante valore` | Direttiva al preprogessore |
+| `const tipoVariabile valore`  | come variabile costrante   |
+
+Il il risultato è lo stesso, ma gli utilizzi possibili sono differenti. 
 
 ## Contizioni "**i casi**"
 In C è possibile verificare dei casi, con l'utilizzo della funzione `if` che consente di valutare una determinata valutare una condizione e nel caso sia prevista una condizione alternativa va utilizzato la funzione `else` e poi l'opzione alternativa.
@@ -260,7 +266,7 @@ Il for è un'altra funzione che consente di effettuare un ciclo, controlla la co
     }
 ```
 Ovviamente in questo caso vendiamo le versioni iterative, ma tutto questo lo si può effettuare pure un modo ricorsivo, che risulta meno ottimizzato ma allo stesso tempo risulta molto più rapido da scrivere in molti casi se sono complessi da scrivere conviene sfruttare la ricorsione.
-#### iterativo
+#### Iterativo
 <img whidt="50%" src="img/tipoiterazione.jpg">
 
 #### Attenzione!!
