@@ -27,4 +27,7 @@
 \contentsline {subparagraph}{Esempio}{11}{subparagraph*.18}%
 \contentsline {subparagraph}{Regole aritmetiche}{11}{subparagraph*.19}%
 \contentsline {subsection}{\numberline {1.2.3}Funzioni continue}{11}{subsection.1.2.3}%
-\contentsline {paragraph}{Definizione}{11}{paragraph*.20}%
+\contentsline {paragraph}{Definizione}{12}{paragraph*.20}%
+\contentsline {subsubsection}{Teorema della permanenza del segno}{12}{subsubsection*.21}%
+\contentsline {subsubsection}{Teorema degli zeri}{12}{subsubsection*.22}%
+\contentsline {paragraph}{Teorema dell'esistenza dei valori intermedi (\textit {conseguenza del teorema degli zeri})}{12}{paragraph*.23}%

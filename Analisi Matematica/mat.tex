@@ -217,7 +217,7 @@ Siano $f(x)=o(x^\alpha)$ (si legge <<o piccolo di>>) e $g(x)=o(x^\beta)$ due fun
 \paragraph{Ordine di infinito}
 Siamo $f(x)$ e $g(x)$ infiniti per $x\to x_0$ (o per $x$), con $g\neq 0$. Se $\exists\alpha\in R+$ e $l\in R$, $l\neq 0$ tale che\\
 $\lim_{x\to x_0}\frac{f(x)}{[g(x)]^2}=l$ (o $\lim_{x\to \infty}\frac{f(x)}{[g(x)]^\alpha}=l$)\\
-Allora, per $x\to x_0$ (o per $x\to \infty$), $f(x)$ è un infinito di ordine $\alpha$ rispetto all'infinito compione $g(x)$.
+Allora, per $x\to x_0$ (o per $x\to \infty$), $f(x)$ è un infinito di ordine $\alpha$ rispetto all'infinito compone $g(x)$.
 \subparagraph{Esempi}
 \begin{itemize}
 	\item $ord(\sqrt{x})=\frac{1}{2}$ rispetto ad $x$ per $x\to +\infty$
@@ -250,7 +250,15 @@ Siano $f(x)$ e $g(x)$ due funzioni \emph{infinite} di ordine rispettivamente $\a
 \subsection{Funzioni continue}
 Una funzione continua è una funzione che, intuitivamente, fa corrispondere ad elementi sufficientemente vicini del dominio elementi arbitrariamente vicini del codominio.
 \paragraph{Definizione} Una funzione $f(x)$ è continua in $x_0$, se: $l_1=\lim_{x\to x^+_0}=\lim_{x\to x_0}f(x)=l_2=\lim_{x\to x_0}f(x)=f(x_0)$ ossia $\forall\in>0\exists \delta_\mathcal{E} > 0$: $|f(x)-f(x_0)|<\mathcal{E}$ $\forall_x\in I(x_0,\delta_\mathcal{E})$ $(l=f(x_0))$
-
-
+\subsubsection{Teorema della permanenza del segno}
+Sia f(x) definita almeno in un intorno di $x_0$ e continua in $x_0$. Se $f(x_0)>0$ allora $\exists \delta >0 : f(x) >0 \forall x\in (x_0-\delta ,x_0+\delta{})$
+\subsubsection{Teorema degli zeri}
+Sia $f(x)$ continua in $[a,b]$ $f(a)*f(b)<0$ allora $\exists x_0 \in (a,b): f(x_0)=0$. Se $f$ è anche strettamente monotona, lo zero è unico.
+\paragraph{Teorema dell'esistenza dei valori intermedi (\textit{conseguenza del teorema degli zeri})}  
+Una funzione $f(x)$ continue in $[a,b]$ assume tutti i valori compresi tra $f(a)$ ed $f(b)$.
+\subsubsection{Teorema di Wierstrass (sul massimo e il minimo)}
+Sia $f(x)$ continua in $[a,b]$. Allora $f(x)$ assume massimo e il minimo assoluto in $[a,b]$, cioé $\exists x_1, x_2 \in [a,b]: f(x_1)\leq f$
+\subsection{Criteri di invertibilità}
+Una funzione continua e strettamente monotona in [a,b] è invertibile in tale intervallo. Dimostrazione.
 \printindex
 \end{document}
