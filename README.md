@@ -3,5 +3,8 @@ in questo repo pubblico tutti gli Appunti che realizzo con il Markdown e con il 
 ## Travate degli errori?
 Scrivetemi in privato e vedrò di correggere il problema il prima possibile, grazie.
 
-## ritardi nelle pubblicazioni
+## Ritardi nelle pubblicazioni
 Scusate per potenziali ritardi nella pubblicazioni delle versioni degli appunti ma anche io sono umano e quindi ho bisogno dei miei tempi.
+
+## Come è strutturata
+Il Repo è strutturato in modo lineare e ovviamente è suddifiviso per materie e anche alle volte per singolo argomento, quando superano un tot di pagine è prefisto un indice analitico all'inizio del documento. Anche in questo caso 
