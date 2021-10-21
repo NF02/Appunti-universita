@@ -284,14 +284,42 @@ int main(){
     return 0;
 }
 ```
-per popolare un array sarà necessario utilizzare un ciclo. Ma si popolare anche per cella singola utilizzando l'indice dello stesso. Comunque non bisogna mai e poi mai sforare dalla array perché i risutati sono imprevedibili e soprattutto potrebbe portare ad un crush dell'applicativo per non dire del programma che sta utilizzando la memoria in questione.
-#### Esempli di popolamento di un arrai statico
+Per popolare un array sarà necessario utilizzare un ciclo. Ma si popolare anche per cella singola utilizzando l'indice dello stesso. Comunque non bisogna mai e poi mai sforare dalla array perché i risutati sono imprevedibili e soprattutto potrebbe portare ad un crush dell'applicativo per non dire del programma che sta utilizzando la memoria in questione.
+
+#### Esempi di popolamento di un arrai statico
 ```c
     for (int i=0;i<N;i++){
         v[i]=N*i+4-random%10;
         // ...
     }
 ```
+
+#### Un piccolo esempio
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#define N 10
+
+int main(){
+    int vet[N];
+    int i,ris,n=0;
+    do {
+        printf("inserisci il numero di elementi da sommare: ");
+        scanf("%d", &n);
+        if (n<0 || n>N){
+            printf("Il valore inserito non è valido, ritenta\n");
+        }
+    }while (n<0 || n>N);
+    for (i=0;i<n;i++){
+        printf("inserisci il %d valore: ", i+1);
+        scanf("%d",&vet[i]);
+        ris+=vet[i];
+    }   
+    printf("il risultato è %d\n",ris);
+    return 0;
+}
+```
+
 ## Logica dei puntatori
 I puntattori vengono utilizzati in modo esplicito nel C, per gestire la memoria, infatti, esistono le variabili dedicate, che vengono dichiarate come le altre variabili ma con un * davanti al nome della stessa `int *i`. Sono fondamentali per l'utilizzo degli array dinamici e anche per la gestione dei file, proprio per la loro natura. Una delle funzioni che utilizza un puntatore come la scanf(), ogni variabile possiede il suo puntatore, per accedere al puntatore invece che al contenuto della stessa è necesario mettere davanti al nome il carattere `&`.
 
