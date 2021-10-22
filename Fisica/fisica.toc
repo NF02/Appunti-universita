@@ -1,0 +1,10 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {part}{I\hspace {1em}fisica 1}{5}{part.1}%
+\contentsline {section}{\numberline {0.1}moto rettilineo uniformemente accelerato}{7}{section.0.1}%
+\contentsline {subsection}{\numberline {0.1.1}Un problema d'esempio}{7}{subsection.0.1.1}%
+\contentsline {section}{\numberline {0.2}I vettori}{9}{section.0.2}%
+\contentsline {subsection}{\numberline {0.2.1}Proiezione dei vettori prodotto scalare}{9}{subsection.0.2.1}%
+\contentsline {subsubsection}{Moto balistico}{9}{subsubsection*.2}%
+\contentsline {subsection}{\numberline {0.2.2}Primitive di una funsione}{10}{subsection.0.2.2}%
+\contentsline {subsubsection}{Integrali definito}{10}{subsubsection*.3}%

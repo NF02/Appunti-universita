@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  16 OCT 2021 17:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  22 OCT 2021 12:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1248,58 +1248,77 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-] [3] [4]
+] (./fisica.toc)
+\tf@toc=\write5
+\openout5 = `fisica.toc'.
+
+
+[3] [4
+
+] [5] [6]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 93.
+(hyperref)                than one, level fixed on input line 94.
 
 
-Overfull \hbox (70.50897pt too wide) in paragraph at lines 114--118
+Overfull \hbox (70.50897pt too wide) in paragraph at lines 115--119
 [][] 
  []
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 128.
+(hyperref)                than one, level fixed on input line 129.
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 138--157
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 140--159
 \OML/cmm/m/it/10 h \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 ([] + 
 []) \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--157
+Underfull \hbox (badness 10000) in paragraph at lines 140--159
 []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--169
+Underfull \hbox (badness 10000) in paragraph at lines 189--212
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 239--241
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--185
+Underfull \hbox (badness 10000) in paragraph at lines 241--257
 
  []
 
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
+[]$\OMS/cmsy/m/n/10 A\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [][
+] \OML/cmm/m/it/10 i\OMS/cmsy/m/n/10 A\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/c
+mr/m/n/10 ) =
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--193
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
 
  []
 
-[6] (./fisica.aux)
+[10] (./fisica.aux)
 Package rerunfilecheck Info: File `fisica.out' has not changed.
-(rerunfilecheck)             Checksum: 7F55EAEE2AE1E41A6E011F1A86F40B64;901.
+(rerunfilecheck)             Checksum: D7EB165FDE765FC30F98B165DD1C180F;1096.
  ) 
 Here is how much of TeX's memory you used:
- 40151 strings out of 478994
- 868668 string characters out of 5858184
- 1592627 words of memory out of 5000000
- 57029 multiletter control sequences out of 15000+600000
- 421298 words of font info for 76 fonts, out of 8000000 for 9000
+ 40168 strings out of 478994
+ 868871 string characters out of 5858184
+ 1585627 words of memory out of 5000000
+ 57035 multiletter control sequences out of 15000+600000
+ 422070 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,14n,89p,410b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,15n,89p,410b,630s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
@@ -1320,10 +1339,10 @@ f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-
 dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-di
 st/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dist
 /fonts/type1/public/cm-super/sfsl1000.pfb>
-Output written on fisica.pdf (6 pages, 211287 bytes).
+Output written on fisica.pdf (10 pages, 230848 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
- 13 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 170 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
