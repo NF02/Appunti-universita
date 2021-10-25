@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.10.15)  25 OCT 2021 11:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.10.15)  25 OCT 2021 13:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -940,25 +940,47 @@ LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
 (/usr/share/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
+(/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2021/03/18 v1.25 mathematical typesetting tools
+
+(/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count368
+\l_MT_multwidth_dim=\dimen353
+\origjot=\skip93
+\l_MT_shortvdotswithinadjustabove_dim=\dimen354
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen355
+\l_MT_above_intertext_sep=\dimen356
+\l_MT_below_intertext_sep=\dimen357
+\l_MT_above_shortintertext_sep=\dimen358
+\l_MT_below_shortintertext_sep=\dimen359
+\xmathstrut@box=\box70
+\xmathstrut@dim=\dimen360
+)
 (/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count368
-\lst@gtempboxa=\box70
+\lst@mode=\count369
+\lst@gtempboxa=\box71
 \lst@token=\toks46
-\lst@length=\count369
-\lst@currlwidth=\dimen353
-\lst@column=\count370
-\lst@pos=\count371
-\lst@lostspace=\dimen354
-\lst@width=\dimen355
-\lst@newlines=\count372
-\lst@lineno=\count373
-\lst@maxwidth=\dimen356
+\lst@length=\count370
+\lst@currlwidth=\dimen361
+\lst@column=\count371
+\lst@pos=\count372
+\lst@lostspace=\dimen362
+\lst@width=\dimen363
+\lst@newlines=\count373
+\lst@lineno=\count374
+\lst@maxwidth=\dimen364
 
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count374
-\lst@skipnumbers=\count375
-\lst@framebox=\box71
+\c@lstnumber=\count375
+\lst@skipnumbers=\count376
+\lst@framebox=\box72
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -970,55 +992,54 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texmf-dist/tex/latex/floatflt/floatflt.sty
 Package: floatflt 1997/07/16 v. 1.31
-\c@OptionTest=\count376
-\figbox=\box72
-\tabbox=\box73
-\pagebox=\box74
-\ffigcount=\count377
-\ftabcount=\count378
-\fftest=\count379
-\hangcount=\count380
-\nosuccesstryfig=\count381
-\nosuccesstrytab=\count382
-\figgutter=\dimen357
-\tabgutter=\dimen358
-\htdone=\dimen359
-\pageht=\dimen360
-\startpageht=\dimen361
-\tabbredd=\dimen362
-\floatfltwidth=\dimen363
-\fltitemwidth=\dimen364
+\c@OptionTest=\count377
+\figbox=\box73
+\tabbox=\box74
+\pagebox=\box75
+\ffigcount=\count378
+\ftabcount=\count379
+\fftest=\count380
+\hangcount=\count381
+\nosuccesstryfig=\count382
+\nosuccesstrytab=\count383
+\figgutter=\dimen365
+\tabgutter=\dimen366
+\htdone=\dimen367
+\pageht=\dimen368
+\startpageht=\dimen369
+\tabbredd=\dimen370
+\floatfltwidth=\dimen371
+\fltitemwidth=\dimen372
 \outputpretest=\toks47
 )
 (/usr/share/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen365
-\epsfysize=\dimen366
+\epsfxsize=\dimen373
+\epsfysize=\dimen374
 )
 (/usr/share/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count383
-\mult@box=\box75
-\multicol@leftmargin=\dimen367
-\c@unbalance=\count384
-\c@collectmore=\count385
-\doublecol@number=\count386
-\multicoltolerance=\count387
-\multicolpretolerance=\count388
-\full@width=\dimen368
-\page@free=\dimen369
-\premulticols=\dimen370
-\postmulticols=\dimen371
-\multicolsep=\skip93
-\multicolbaselineskip=\skip94
-\partial@page=\box76
-\last@line=\box77
-\maxbalancingoverflow=\dimen372
-\mult@rightbox=\box78
-\mult@grightbox=\box79
-\mult@gfirstbox=\box80
-\mult@firstbox=\box81
-\@tempa=\box82
+\c@tracingmulticols=\count384
+\mult@box=\box76
+\multicol@leftmargin=\dimen375
+\c@unbalance=\count385
+\c@collectmore=\count386
+\doublecol@number=\count387
+\multicoltolerance=\count388
+\multicolpretolerance=\count389
+\full@width=\dimen376
+\page@free=\dimen377
+\premulticols=\dimen378
+\postmulticols=\dimen379
+\multicolsep=\skip94
+\multicolbaselineskip=\skip95
+\partial@page=\box77
+\last@line=\box78
+\maxbalancingoverflow=\dimen380
+\mult@rightbox=\box79
+\mult@grightbox=\box80
+\mult@gfirstbox=\box81
+\mult@firstbox=\box82
 \@tempa=\box83
 \@tempa=\box84
 \@tempa=\box85
@@ -1055,51 +1076,52 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box116
 \@tempa=\box117
 \@tempa=\box118
-\c@minrows=\count389
-\c@columnbadness=\count390
-\c@finalcolumnbadness=\count391
-\last@try=\dimen373
-\multicolovershoot=\dimen374
-\multicolundershoot=\dimen375
-\mult@nat@firstbox=\box119
-\colbreak@box=\box120
-\mc@col@check@num=\count392
+\@tempa=\box119
+\c@minrows=\count390
+\c@columnbadness=\count391
+\c@finalcolumnbadness=\count392
+\last@try=\dimen381
+\multicolovershoot=\dimen382
+\multicolundershoot=\dimen383
+\mult@nat@firstbox=\box120
+\colbreak@box=\box121
+\mc@col@check@num=\count393
 )
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count393
-\l__pdf_internal_box=\box121
+\l__color_backend_stack_int=\count394
+\l__pdf_internal_box=\box122
 )
 (/home/nico/Documenti/GitHub/Appunti-universita/Fisica/fisica.aux)
 \openout1 = `fisica.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 90.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 90
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 91.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 91
 .
 
 (/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 90.
-Package hyperref Info: Link coloring OFF on input line 90.
+LaTeX Font Info:    ... okay on input line 91.
+Package hyperref Info: Link coloring OFF on input line 91.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1110,11 +1132,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count394
+\c@section@level=\count395
 )
-LaTeX Info: Redefining \ref on input line 90.
-LaTeX Info: Redefining \pageref on input line 90.
-LaTeX Info: Redefining \nameref on input line 90.
+LaTeX Info: Redefining \ref on input line 91.
+LaTeX Info: Redefining \pageref on input line 91.
+LaTeX Info: Redefining \nameref on input line 91.
 
 (/home/nico/Documenti/GitHub/Appunti-universita/Fisica/fisica.out)
 (/home/nico/Documenti/GitHub/Appunti-universita/Fisica/fisica.out)
@@ -1158,16 +1180,16 @@ LaTeX Info: Redefining \nameref on input line 90.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count395
-\scratchdimen=\dimen376
-\scratchbox=\box122
-\nofMPsegments=\count396
-\nofMParguments=\count397
+\scratchcounter=\count396
+\scratchdimen=\dimen384
+\scratchbox=\box123
+\nofMPsegments=\count397
+\nofMParguments=\count398
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count398
-\MPscratchDim=\dimen377
-\MPnumerator=\count399
-\makeMPintoPDFobject=\count400
+\MPscratchCnt=\count399
+\MPscratchDim=\dimen385
+\MPnumerator=\count400
+\makeMPintoPDFobject=\count401
 \everyMPtoPDFconversion=\toks49
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1178,27 +1200,27 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \it@ocap on input line 90.
-LaTeX Info: Redefining \it@ccap on input line 90.
+LaTeX Info: Redefining \it@ocap on input line 91.
+LaTeX Info: Redefining \it@ccap on input line 91.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count401
-LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
+\c@lstlisting=\count402
+LaTeX Font Info:    Trying to load font information for U+msa on input line 93.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 93.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 92
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 93
 .
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -1219,55 +1241,50 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 [5] [6]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 94.
+(hyperref)                than one, level fixed on input line 95.
 
 
-Overfull \hbox (70.50897pt too wide) in paragraph at lines 115--119
+Overfull \hbox (70.50897pt too wide) in paragraph at lines 116--120
 [][] 
  []
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 129.
+(hyperref)                than one, level fixed on input line 130.
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 140--159
+Underfull \hbox (badness 10000) in paragraph at lines 141--160
 \OML/cmm/m/it/10 h \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 ([] + 
 []) \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--159
+Underfull \hbox (badness 10000) in paragraph at lines 141--160
 []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--212
+Underfull \hbox (badness 10000) in paragraph at lines 190--213
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 239--241
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--257
+Underfull \hbox (badness 10000) in paragraph at lines 242--258
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 277--280
+Underfull \hbox (badness 10000) in paragraph at lines 278--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--312
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--324
+Underfull \hbox (badness 10000) in paragraph at lines 306--313
 
  []
 
@@ -1276,10 +1293,10 @@ Package rerunfilecheck Info: File `fisica.out' has not changed.
 (rerunfilecheck)             Checksum: 17F7D27E60407CCC5A01E503F42D9F16;1291.
  ) 
 Here is how much of TeX's memory you used:
- 40176 strings out of 478994
- 863779 string characters out of 5864750
- 1591627 words of memory out of 5000000
- 57038 multiletter control sequences out of 15000+600000
+ 40663 strings out of 478994
+ 872683 string characters out of 5864750
+ 1606505 words of memory out of 5000000
+ 57518 multiletter control sequences out of 15000+600000
  422405 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,20n,89p,460b,630s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1302,7 +1319,7 @@ type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm
 -super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1000
 .pfb>
 Output written on /home/nico/Documenti/GitHub/Appunti-universita/Fisica/fisica.
-pdf (11 pages, 235359 bytes).
+pdf (11 pages, 235891 bytes).
 PDF statistics:
  183 PDF objects out of 1000 (max. 8388607)
  149 compressed objects within 2 object streams

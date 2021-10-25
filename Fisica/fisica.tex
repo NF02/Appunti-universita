@@ -33,6 +33,7 @@
 \usepackage{textcomp}
 \usepackage{circuitikz}
 \usepackage{pifont}
+\usepackage{mathtools}
 
 \usepackage{listings}
 \usepackage{color}
@@ -312,7 +313,7 @@ $K=\frac{1}{2}mV^2$ energia cinetica\\
 \subsubsection{esempi $\sigma$}
 \subsection{Primitive di una funsione}
 $ax=g\sin{\sigma}$ $F_r=m\overrightarrow{g}+\overrightarrow{F}n$\\
-$F_{R_{y}}=0$ $F_{R_{x}}=ma_{x}=mg\sin\sigma$\\
+$F_{R_{y^,}}=0$ $F_{R_{x}}=ma_{x^,}=mg\sin\sigma$\\
 \begin{tikzpicture}[domain=-2:6] 
     \draw[very thin,color=gray] (-2.1,-1.1) grid (5.9,3.9);
     \draw[->] (-2.2,0) -- (6.2,0) node[right] {$t$}; 
@@ -321,6 +322,9 @@ $F_{R_{y}}=0$ $F_{R_{x}}=ma_{x}=mg\sin\sigma$\\
 
     \draw [green, thick, domain=-2:2] plot (\x, {4-\x*\x}); 
 \end{tikzpicture}\\
+$dL=\overrightarrow{F_R}*d\overrightarrow{r^,}=F_{R_{x^,}}*dx^,+F_{R_{y^,}}*dy^,=0$\\
+$dL=F_{R_{x^,}}*dx^,$ $L=\frac{h}{\sin\sigma}$\\
+$L_{0,2}=\int$
 
 
 \end{document}
