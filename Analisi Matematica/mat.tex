@@ -95,34 +95,8 @@
 \maketitle
 \tableofcontents
 \part{Matematica analisi 1}
-\section{Simboli}
-\begin{multicols}{3}
- $\in$ Appartiene\\
- $\notin$ Non appartiene\\
- $\exists$ Esiste\\
- $\exists !$ Esiste unico\\
- $\subset$ Contenuto strettamente\\
- $\subseteq$ Contenuto\\
- $\supset$ Contenuto strettamente\\
- $\supseteq$ Contiene\\
-$\Rightarrow$ Implica\\
-$\Longleftrightarrow$ Se e solo se\\
-$\neq$ Diverso\\
-$\forall$ Per ogni\\
-$\ni :$ Tale che\\
-$\leq$ Minore o uguale\\
-$\geq$ Maggiore o uguale\\
-$\alpha$ alfa\\
-$\beta$ beta\\
-$\gamma$ gamma\\
-$\Gamma$ Gamma\\
-$\delta,\Delta$ delta\\
-$\epsilon$ epsilon\\
-$\sigma,\Sigma$ sigma\\
-$\rho$ rho
-\end{multicols}
-\chapter{Studio di funzione}
-\section{Cenni di teoria degli insiemi}
+\input{pag/simboli.tex}
+\chapter{Cenni di teoria degli insiemi}
 Per rappresentare un insieme abbiamo tre possibilità:
 \begin{enumerate}
 	\item Rappresentazione estensive $A=[0,1,2,3,4]$
@@ -150,7 +124,89 @@ Un insieme può essere contenuto in un altro:\\
     (-1,0.1) circle (2pt) node[align=left,   below] {3}
     (0.6,-0.55) circle (2pt) node[align=left,   below] {4};
 \end{tikzpicture}
+\section{Sottoinsiemi di R}
+\subsection{Definizione}
+\begin{enumerate}
+	\item Un punto $x_0$ si dice intero ad A se esiste un suo interno I($x_0,\delta$)
+con $\delta>0$ contenuto in A.
+	\item Si dice esterno ad A se è interno al CA ($A^c$).
+	\item Si dice di frontiera per A se non è né interno né esterno ad A.
+\end{enumerate}
+\subsubsection{Interno di A}
+\paragraph{°A} Insieme dei punti interni ad A.
+\paragraph{Esempio} se $A=(1,3], A=(1,3)$
+\paragraph{$\partial$A,FA} Insieme dei punti di frontiera di A
+\paragraph{Esempio} se $A=(1,3]$, i punti di frontiera sono i punti $x=1$ e
+$x=3$
+\subsubsection{Osservazioni}
+\begin{itemize}
+	\item Se $x_0\in {^\circ A}\Rightarrow x_0\notin A$
+	\item Se $x_0\notin {^\circ A} \text{ (esterno)} \Rightarrow x_0\notin A$
+	\item Se $x_0\in\partial A \text{ (frontiera) può essere }x_0\in A \text{
+			oppure} x_0 \notin A, \text{ in ogni caso per} \forall
+		I(x_0.\delta) $ continue sia punti di A sia punti CA.
+\end{itemize}
+\paragraph{Definizione}
+$x_0$ è un punto di accumulazione per A se in $\forall I(x_0,\delta)$ esiste un
+punti di A diverso da $x_0$. (Cioè in ogni interno di $x_0 \exists$ infiniti
+elementi di A)
+\subparagraph{Esempio} se $A=(-2,3],x=-2$ è accumulazione per A, ma anche
+$x=3,x=0,x=1,\dots$, cioè è di accumulazione per A, qualunque $x\in [2,3]$.\\
+DA=A'=derivato di A è l'insieme dei punti di accumulazione per A. Se $x_0\in
+DA$ allora può aversi $x_0\in A$ oppure $x_0\notin A$
+\paragraph{Esercizio} $x=1 \text{e} x=3$ sono entrambi punti di accumulazione
+per l'intervallo $(1.3],x=3$ appartiene all'intervallo dato, x=1 NO.
+\begin{enumerate}
+	\item Se $x_0\in A \Rightarrow x_0\in DA$;
+	\item Se $x\notin DA$ allora $x_0$ si dice isolato;
+	\item Se $DA=\phi\Rightarrow$ A si dice discreto \textbf{Esempio}
+		$A=\{1,2,3,4\}$
+	\item Se $DA=A\Rightarrow A$ si dice perfetto \textbf{Esempio} $A=[a,b]$
+\end{enumerate}
+\paragraph{Definizione}
+Dato $A\subset R$ si definisce chiusura di A e si indica con $\bar{A}$,
+l'insieme:
+\begin{tabular}{|c|}
+	\hline
+	$\bar{A}=A\bigcup \partial A$\\
+	\hline
+\end{tabular} A è chiuso $\Leftrightarrow A=\bar{A}$
+\paragraph{Esempio} se $A=(2,5]$, allora $\bar{A}=[2,5]$
+\subsubsection{Teorema di Bolzano Weierstrass}
+Ogni $A\subset R^n$ limitato e finito possiede almeno un punto di
+accumulazione. Un insieme chiuso e limitato in $R^n$ ammette massimo e minimo
+assoluto.
+\paragraph{Esempio} $A=[1,4],\text{ } max(A)=4,\text{ } min(A)=1 \text{ }
+A=\{x\in R:x^2\leq 1\} \text{ } max{A}=1, \text{ } min(A)=-1$
+\section{Funzione di una variabile}
+\subsection{Definizione}
+Dati A, $B\subseteq R$ una funzione A in B è una legge (o relazione, o mappa)
+che ad ogni elemento x di A associa uno ed un solo elemento y di B.
+\textit{f}: $A\to B$ oppure $y=f(x)$ $x\in A$ e $y=f(x)\in R$
+\begin{itemize}
+	\item A = dominio o insieme di definizione di f.
+	\item B = codominio di f.
+\end{itemize}
+\begin{tikzpicture}domain=0:10] 
+		 \draw (0,0) ellipse (2cm and 1cm);
+    		 \filldraw  (0,0.3) circle (2pt) node[align=left,   below] {1}
+    			(1,0.11) circle (2pt) node[align=left,   below] {2}
+    			(-1,-0.4) circle (2pt) node[align=left,   below] {0}
+    			(-1,0.1) circle (2pt) node[align=left,   below] {3}
+    			(0.1,-0.5) circle (2pt) node[align=left,   below] {4};
+\end{tikzpicture}
+Il grafico di f è un insieme di punti del piano (generalmente una curva) che è
+sottoinsieme del prodotto cartesiano AxB costituito da (x, f(x)) con $x\in A,
+f(x)\in B$
+\paragraph{Definizione}
+L'immagine di A tramite f, f(A), è l'insieme dei valori di y tale che $\exists
+x \in A$ tale che $f(x) \in B$.
+\subparagraph{Esempio} Se \textit{f}: $A\to B$ $f(x)=x^2 \text{ } A=R,
+f(A)=[0,+\infty)$\\
 
+
+
+\chapter{Studio di funzione}
 \section{Limiti}
 \subsection{Forme indeterminate}
 $+\infty-\infty$ $\frac{\infty}{\infty}$ $\frac{0}{0}$ $1^\infty$ $e^{+\infty*0}$
@@ -181,7 +237,7 @@ $\lim_{x\to x_0}\frac{f(x)}{g(x)}=
 l\neq 0&ord(f)=ord(g)\\
 \pm \infty&ord(f)<ord(g)\\
 0&ord(f)>ord(g)\\
-non esiste, & f e g non confrontabile \\ 
+	\text{non esiste,} & \text{f e g non confrontabile} \\ 
 \end{cases}
 $\\
 Stesso risultato se $f(x)$ e $g(x)$ sono infinitesime per $x\to \infty$. Utilizzando il confronto tra infinitesimi nel calcolo dei limiti del tipo $\lim_{x\to x_0}\frac{f_1+f_2}{g_1+g_2}$, dove $f_1,f_2,g_1,g_2$ sono funzioni infinitesime per $x\to x_0$, si possono {\color{blue} \em trascurare gli infinitesimi di ordine maggiore} (analogo discorso per funzioni infinitesime $x\to \infty$).
@@ -230,7 +286,7 @@ $\lim_{x\to x_0}\frac{f(x)}{g(x)}=\begin{cases}
 l\neq 0&ord(f)=ord(g)\\
 \pm \infty&ord(f)>ord(g)\\
 0&ord(f)<ord(g)\\
-non esiste, & f e g non confrontabile \\ 
+	\text{non esiste,} & \text{f e g non confrontabile} \\ 
 \end{cases}
 $\\
 Stesso risultato se $f(x)$ e $g(x)$ sono infinite per $x \to \infty$. Utilizzando il confronto tra infiniti nel calcolo dei limiti del tipo $\lim_{x\to x_0}\frac{f_1+f_2}{g_1+g_2}$, deve $f_1,f_2,g_1,g_2$ sono funzioni infinite per $x\to x_0$, si possono {\color{red}trascurare gli \underline{infiniti} di ordine minore} (analogo discorso per funzione infinito $x\to \infty$).
