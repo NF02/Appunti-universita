@@ -273,7 +273,7 @@ $h=\frac{1}{2}gt^2$
     \draw [green, thick, domain=-2:2] plot (\x, {4-\x*\x}); 
 \end{tikzpicture}\\
 $\frac{d}{ax}\mathcal{A}_x=f(x)$
-\begin{multicols}{3}
+\begin{multicols}{2}
 $\mathcal{A}(x)=\int^?_? i\mathcal{A}(x)=\int^?_? f(x)dx=$integrale indefinita\\
 $P(x)=\mathcal{A}(x)+c\to$costante arbitraria\\
 $P(x_2)-P(x_1)=\mathcal{A}(x_2)+c-\mathcal{A}(x_1)-c=\mathcal{A}(x_2)-\mathcal{A}(x_1)$\\
@@ -283,9 +283,44 @@ $\mathcal{A}(x_2)-\mathcal{A}(x_1)=\int^{\mathcal{A}(x_2)}_{\mathcal{A}(x_1)}d\m
 Teorema dell'energia cinetica $\overrightarrow{F}_R$ risultante delle forze.\\
 $dL=\overrightarrow{F}_R*d\overrightarrow{r}$ lavoro elementare fonte della risultante.
 \begin{multicols}{2}
-$L_{1,2}=\int^{\overrightarrow{r}_2}_{\overrightarrow{r}_1}F_R*d\overrightarrow{r}$\\ 
-$\overrightarrow{F}_R=m\overrightarrow{a}=m\frac{d\overrightarrow{v}}{dt}$\\
-$L_{1,2}=m\int^{\overrightarrow{r}_2}_{\overrightarrow{r}_1}\frac{d\overrightarrow{v}}{dt}*d\overrightarrow{r}=m\int^{\overrightarrow{r}_2}_{\overrightarrow{r}_1}d\overrightarrow{v}*\frac{d\overrightarrow{r}}{dt}=m\int^{\overrightarrow{r}_2}_{\overrightarrow{r}_1}d\overrightarrow{v}*\overrightarrow{v}$
-$\frac{d}{dt}v^2=\frac{d}{dt}\overrightarrow{v}*\overrightarrow{v}=$
- \end{multicols}
- \end{document}
+	$L_{1,2}=\int^{\overrightarrow{r}_2}_{\overrightarrow{r}_1}F_R*d\overrightarrow{r}$\\ 
+	$\overrightarrow{F}_R=m\overrightarrow{a}=m\frac{d\overrightarrow{v}}{dt}$\\
+	$L_{1,2}=m\int^{\overrightarrow{r}_2}_{\overrightarrow{r}_1}\frac{d\overrightarrow{v}}{dt}*d\overrightarrow{r}=m\int^{\overrightarrow{r}_2}_{\overrightarrow{r}_1}d\overrightarrow{v}*\frac{d\overrightarrow{r}}{dt}=m\int^{\overrightarrow{r}_2}_{\overrightarrow{r}_1}d\overrightarrow{v}*\overrightarrow{v}$
+	$\frac{d}{dt}v^2=\frac{d}{dt}\overrightarrow{v}*\overrightarrow{v}=m\int^{
+		\overrightarrow{V}_2}_{\overrightarrow{V}_1}d\overrightarrow{V}*\overrightarrow{V}$\\
+	$\frac{d}{dt}V^2=\frac{d}{dt}\overrightarrow{V}*\overrightarrow{V}=\frac{d}{dt}\overrightarrow{V}
+	+\overrightarrow{V}\frac{d\overrightarrow{V}}{dt}=2\overrightarrow{V}*\frac{d\overrightarrow{V}}{dt}$
+\end{multicols}
+Derivata del prodotto di funzione $\sigma$
+\begin{itemize}
+	\item $\frac{d}{dt}(f(t)*g(t))=(\frac{d}{at}*f(t))g(r)+f(t)*\frac{d}{dt}g(t)$
+	\item $\frac{dV^2}{dt}=2\overrightarrow{V}*\frac{d\overrightarrow{V}}{dt}$
+	\item $dV^2=2\overrightarrow{V}*d\overrightarrow{V}$
+		\begin{tabular}{|l|}
+			\hline
+				$\overrightarrow{V}*d\overrightarrow{V}=\frac{1}{2}dV^2$\\
+			\hline
+		\end{tabular}
+\end{itemize}
+$L_{1,2}=\frac{1}{2}m\int^{V^2_2}_{V^2_1}dV^2=\frac{1}{2}m(V^2_2-V^2_1)$\\
+\begin{tabular}{|l|}
+	\hline
+		$L_{1,2}=\frac{1}{2}mV^2_2-\frac{1}{2}mV^2_1$
+	\\\hline
+\end{tabular}
+$K=\frac{1}{2}mV^2$ energia cinetica\\
+\subsubsection{esempi $\sigma$}
+\subsection{Primitive di una funsione}
+$ax=g\sin{\sigma}$ $F_r=m\overrightarrow{g}+\overrightarrow{F}n$\\
+$F_{R_{y}}=0$ $F_{R_{x}}=ma_{x}=mg\sin\sigma$\\
+\begin{tikzpicture}[domain=-2:6] 
+    \draw[very thin,color=gray] (-2.1,-1.1) grid (5.9,3.9);
+    \draw[->] (-2.2,0) -- (6.2,0) node[right] {$t$}; 
+    \draw[->] (0,-1.2) -- (0,4.2) node[above] {$x$};
+    \filldraw (-1,-0.4) circle (2pt) node[align=left,   below] {0};
+
+    \draw [green, thick, domain=-2:2] plot (\x, {4-\x*\x}); 
+\end{tikzpicture}\\
+
+
+\end{document}

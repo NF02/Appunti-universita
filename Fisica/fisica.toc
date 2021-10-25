@@ -8,3 +8,5 @@
 \contentsline {subsubsection}{Moto balistico}{9}{subsubsection*.2}%
 \contentsline {subsection}{\numberline {0.2.2}Primitive di una funsione}{10}{subsection.0.2.2}%
 \contentsline {subsubsection}{Integrali definito}{10}{subsubsection*.3}%
+\contentsline {subsubsection}{esempi $\sigma $}{11}{subsubsection*.4}%
+\contentsline {subsection}{\numberline {0.2.3}Primitive di una funsione}{11}{subsection.0.2.3}%
