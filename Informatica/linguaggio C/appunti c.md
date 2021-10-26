@@ -9,7 +9,7 @@ richiederà una ricompilazione nel caso in cui si cambi l'OS oppute l'architettu
 negli anni 70' e quindi ha un ottica di programmazione orientata per quello che erano gli elaboratori all'epoca e anche quello
 che i programmatori usavano all'epoca, seguendo il loro schema mentale, che risultava leggermente diverso dal quello dei 
 programmatori odierni, abbituati a linguaggi orientati alla programmazione ad Oggetti e poco abbituati a gestire manualmente
-le risorse. Il C è stato modificato nel tempo e attualmente lo standard è il **C11** del 2011, anche se maggiormente viene adottato il **C99**.
+le risorse. Il **C** è stato modificato nel tempo e attualmente lo standard è il **C11** del 2011, anche se maggiormente viene adottato il **C99**.
 ### Architettura
 I computer sono basati solitamente sulla architettura x86, più nello specifico x86_64, ma non è l'unica architettura esistente di altre un esempio è l'architettura arm e anche quella powerpc (**vecchi Machintosh e anche alcuni server della IBM**) che comunque risultano diffuse e in quel caso la gestione della memoria è diversa e non è certo che le variabili vengano gestite allo stesso modo. ma è sostanzialmente non è un problema perché è possibile verificare la dimensiome delle stesse.
 ### Programma base "**hello world**"
@@ -381,6 +381,31 @@ int main() {
 
   return 0;
 }
+```
+
+## Strutture
+In C è possibile accorpare una serie di variabili a sieme, permettendo di sopperire al limite dell'array di una variabile convinzionele, quindi si crea una variabile composta per ottenere il risultato tanto desiderato, il suo nome è struttura e va dichiarata prima del corpo **main()** e sostanzialmente funzionano da contenitore.
+```c
+struct nomeStruttura {
+  int a;
+  char b;
+  //...
+};
+```
+#### Esempio
+Una data è composta da tre numeri interi quindi il metodo migliore per rapresentare questo tipo di elemento è proprio la struttura e lo fa anche in modo eccellente visto che di strutture possono essere anche fatti degli array.
+```c
+struct data{
+  int giorno;
+  int mese;
+  int anno;
+};
+```
+E così si risolve un problema gestionale che normalmente fa pardere diverso tempo. Per fruttare la veriabile contenuta all'interno della struttura basta utilizzare la sintassi `nomeStruttura.nomeVariabile=Valore`.
+```c
+  data.giorno=31;
+  data.mese=10;
+  data.anno=3002;
 ```
 #### Operazione di recupero dei dati da un file
 ```c
