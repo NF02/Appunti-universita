@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.10.15)  26 OCT 2021 20:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.10.15)  26 OCT 2021 22:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1299,17 +1299,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--206
 
  []
 
-[11] [12
-
-]
+<img/insiemi funzioni composte.pdf, id=163, 1035.68033pt x 731.23586pt>
+File: img/insiemi funzioni composte.pdf Graphic file (type pdf)
+<use img/insiemi funzioni composte.pdf>
+Package pdftex.def Info: img/insiemi funzioni composte.pdf  used on input line 
+243.
+(pdftex.def)             Requested size: 322.38506pt x 227.62204pt.
+[11] [12 </home/nico/Documenti/GitHub/Appunti-universita/Analisi Matematica/img
+/insiemi funzioni composte.pdf, page is rotated 90 degrees>]
 Capitolo 2.
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+[13
+
+] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
 
-Overfull \hbox (5.15337pt too wide) in paragraph at lines 321--322
+Overfull \hbox (5.15337pt too wide) in paragraph at lines 348--349
 [] []\T1/cmr/bx/n/10 De-fi-ni-zio-ne[] \T1/cmr/m/n/10 Una fun-zio-ne $\OML/cmm/
 m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 è
  con-ti-nua in $\OML/cmm/m/it/10 x[]$\T1/cmr/m/n/10 , se: $\OML/cmm/m/it/10 l[]
@@ -1328,13 +1335,13 @@ Package rerunfilecheck Info: File `mat.out' has not changed.
 (rerunfilecheck)             Checksum: 24A3BD85BB778675F5425AF569BDA35F;2129.
  ) 
 Here is how much of TeX's memory you used:
- 40485 strings out of 478994
- 867895 string characters out of 5864750
+ 40513 strings out of 478994
+ 868461 string characters out of 5864750
  1587403 words of memory out of 5000000
- 57253 multiletter control sequences out of 15000+600000
+ 57271 multiletter control sequences out of 15000+600000
  425666 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,10n,89p,480b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,10n,89p,480b,754s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
 exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1354,10 +1361,10 @@ type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm
 -super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1000
 .pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
 Output written on "/home/nico/Documenti/GitHub/Appunti-universita/Analisi Matem
-atica/mat.pdf" (16 pages, 288410 bytes).
+atica/mat.pdf" (16 pages, 296053 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
- 85 named destinations out of 1000 (max. 500000)
- 125 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 326 PDF objects out of 1000 (max. 8388607)
+ 282 compressed objects within 3 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
