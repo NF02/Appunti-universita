@@ -11,7 +11,7 @@ che i programmatori usavano all'epoca, seguendo il loro schema mentale, che risu
 programmatori odierni, abbituati a linguaggi orientati alla programmazione ad Oggetti e poco abbituati a gestire manualmente
 le risorse. Il C è stato modificato nel tempo e attualmente lo standard è il **C11** del 2011, anche se maggiormente viene adottato il **C99**.
 ### Architettura
-I computer sono basati solitamente sulla architettura x86, più nello specifico x86_64, ma non è l'unica architettura esistente di altre un esempio è l'architettura arm e anche quella powerpc che comunque risultano diffuse e in quel caso la gestione della memoria è diversa e non è certo che le variabili vengano gestite allo stesso modo. ma è sostanzialmente non è un problema perché è possibile verificare la dimensiome delle stesse.
+I computer sono basati solitamente sulla architettura x86, più nello specifico x86_64, ma non è l'unica architettura esistente di altre un esempio è l'architettura arm e anche quella powerpc (**vecchi Machintosh e anche alcuni server della IBM**) che comunque risultano diffuse e in quel caso la gestione della memoria è diversa e non è certo che le variabili vengano gestite allo stesso modo. ma è sostanzialmente non è un problema perché è possibile verificare la dimensiome delle stesse.
 ### Programma base "**hello world**"
 ```c
 #include<stdio.h>
@@ -25,7 +25,7 @@ int main(){
 ## Librerie
 In C viengono utilizzate delle librerie per caricare e implementare nuove funzionalità, questo consente di ottimizzare al massimo 
 il programma, per caricare una libreria è necessario utilizzare la direttiva al preprocessore `#include<nomeLibreria>`  nel caso delle
-librerie di sistema, mentre, nel caso di librerie locali scritte ad hoc per il programma bisogna utilizzare la direttiva `#include "nomeLibreria"`.
+librerie di sistema, mentre, nel caso di librerie locali scritte ad'hoc per il programma bisogna utilizzare la direttiva `#include "nomeLibreria"`.
 ### Quelle fondamentali
 |   Nome    |                   Descrizione                                     |
 | --------- | ----------------------------------------------------------------- |
@@ -35,8 +35,8 @@ librerie di sistema, mentre, nel caso di librerie locali scritte ad hoc per il p
 | `<math.h>`  | Contiene le funzioni matematiche avanzate utili per semplificare la vita al programmatore. |
 | `<string.h>`| Una libreria che consente di gestire le stringhe "array di caratteri" |
 | `<time.h>`  | È una libreria che consente di sfruttare funzioni di tipo temporale "timer e letture dell'orario" |
-| `ctype.h`   | Dichiara funzioni per la classificazione dei caratteri. |
-| `float.h`   | Contiene le macro che vengono espanse ai vari limiti e parametri dei tipi in virgola mobile (floating-point) standard. |
+| `<ctype.h>`   | Dichiara funzioni per la classificazione dei caratteri. |
+| `<float.h>`   | Contiene le macro che vengono espanse ai vari limiti e parametri dei tipi in virgola mobile (floating-point) standard. |
 
 ## Commenti
 Come in ogni buon linguaggio di programmazione anche il C supporta l'utilizzo dei commenti sia per singola linea sia multi-linea,
@@ -151,8 +151,8 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
 ## Operatori aritmetici
 | Simboli | funzione                 |
 | ------- | ------------------------ |
-|    +    | somma                    |
 |    -    | sottrazione              |
+|    +    | somma                    |
 |    /    | divisione                |
 |    *    | moltiplicazione          |
 |    %    | modulo (resto divisione) |
@@ -174,12 +174,12 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
 Occhio alle variabili non inizializzate perché non sono gestibili quindi non si può sapere che valore possa assumere il risultato.
 ### Incremento di 1 di una variabile trammite ++ e decremento tramite il --
 Il C ha una funzione che ti consente di incrementare un numero prima o dopo il richiamo della variabile, nel seguinte modo:
-|       casi      |      funzione         |
-| --------------- | --------------------- |
-| NomeVariabile++ | incremento postumo    |
-| ++NomeVariabile | incremento anticipato |
-| NomeVariabile-- | decremento postumo    |
-| --NomeVariabile | decermento anticipato |
+|       casi        |      funzione         |
+| ----------------- | --------------------- |
+| `NomeVariabile++` | incremento postumo    |
+| `++NomeVariabile` | incremento anticipato |
+| `NomeVariabile--` | decremento postumo    |
+| `--NomeVariabile` | decermento anticipato |
 
 Nel caso della prima la variabile viene letta e poi dopo viene incrementata, mentre, nel secondo caso la variabile viene prima incrementata e poi letta. Stesso concetto per il decremento.
 ### Visibilità delle variabili
@@ -213,6 +213,7 @@ if(x!=0)
   printf("il valore è maggiore di 0, perché il valore è %d",x);
 else printf("il numero è 0");
 ```
+Occhio, l'`else` non accetta parametri, per specificarli sarà necessario utilizzare un altro `if`.
 ### switch case
 Ovviamente esistendo casi con più possibilità esiste una funzione che consente aquisendo una variabile o una condizione di gestire diversi casi più uno "`default`" che viene scelto nel caso in cui il contenuto della variabile in questione non sia stato previsto.
 ```c
@@ -273,6 +274,18 @@ Ovviamente in questo caso vendiamo le versioni iterative, ma tutto questo lo si 
 Bisogna prestare particolare attenzione al contatore del ciclo, perché deve essere sempre inizializzata perché altrimenti potrebbero creare dei problemi seri e sostanzialmete non funzionerà come da prassi.
 ## Array
 gli array sono un tipo di struttura dati che risulta composto da una serie di celle di memoria contigue, il contenuto delle singole celle deve essere dello stesso tipo, quindi quando si dichiara un array si deve avere un'idea chiara di quello che si vuole ottenere perché il tipo non lo si può cambiare inseguito dopo il run del programma. Di array ne esistono di due tipi statico e dinamico, il primo viene inizializzato con una dimensione e non potra essere modificato in seguito. Mentre il secondo viene creato tramite i tool del C per gestire la memoria e poi verrà gestito tramite una variabile puntatore. Un ulteriore divisione che viene fatta per gli array è il fatto di essere monodimensionali (**vettore**) o bidimensionali (**matrice**).
+### Rapresentazione del array in memoria
+#### Array mono dimensionale
+|      v[0]      |  v[1]  | v[2] | v[N]|
+| -------------- | ------ | ---- | --- |
+|        1       |    2   |  0   |  35 |
+#### Array bidimensionali
+|       |      m[0][0]   |  m[0][1]  | m[0][2] | m[0][N]|
+|-------| -------------- | --------- | ------- | ------ |
+| m[1][0] |        1       |    2      |  0      |   35   |
+| m[1][0] |      5       |   6       |   7     |  8     |
+| m[2][0] |      4       | 23        |  3       | 43    |
+| m[0][M] |     6        |    4      |  5       | 9     |
 ### Array statici
 Gli arrai statici sono molto comodi quando sappiamo già quanti valori deve contenere, solitamente per gestire questo categoria viene utilizzata una costante N per gestire la dimensione.
 ```c
@@ -434,4 +447,17 @@ int main (){
 	tabelline(base,numeroVolte);
 }
 
+```
+#### Stampa di un array monodimensionale
+Il problema più elementare è la dupplicazione del codice, quindi la solunzione migliore nella gestione degli array è la seguente. 
+```c
+  void stampaVet(int V[], int dim /* La dimensione dell'array */){
+    if(dim<0){
+      printf("Errore: dimensione errata");
+      return ;
+    } else{
+      for(int i=0;i<dim,i++)
+        printf("%3d ",v[i]);
+    }
+  }
 ```
