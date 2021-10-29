@@ -407,6 +407,8 @@ E così si risolve un problema gestionale che normalmente fa pardere diverso tem
   data.mese=10;
   data.anno=3002;
 ```
+Ovviamenre i campi presenti all'interno di una struttura possono essere anche degli array, proprio per il fatto che le strutture possono contenere delle variabili e quindi va bene così, ti semplifica la vita e riduce lo sfrorzo durante la programmazione.
+
 #### Operazione di recupero dei dati da un file
 ```c
 int main(){
