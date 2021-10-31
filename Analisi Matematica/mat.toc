@@ -42,33 +42,55 @@
 \contentsline {chapter}{\numberline {2}Studio di funzione}{13}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Grafica delle funzioni elementari}{13}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Funzione lineare $y=mx+qm, q\in R$}{13}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Funzione valore assoluto $y=|x|$}{13}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Funzione potenza $y=x^n,n\in N, pari$}{13}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Limiti}{13}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Forme indeterminate}{13}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Infinitesimi e infiniti}{14}{subsection.2.2.2}%
-\contentsline {paragraph}{Definizione}{14}{paragraph*.36}%
-\contentsline {subsubsection}{Esempi}{14}{subsubsection*.37}%
-\contentsline {subsubsection}{Ordine di infinitesimo}{14}{subsubsection*.38}%
-\contentsline {paragraph}{Esempi}{14}{paragraph*.39}%
-\contentsline {subsubsection}{Confronto tra infinitesimi}{15}{subsubsection*.40}%
-\contentsline {subparagraph}{esempio}{15}{subparagraph*.41}%
-\contentsline {paragraph}{Definizione di funzioni asintotiche}{15}{paragraph*.42}%
-\contentsline {subparagraph}{esempi}{15}{subparagraph*.43}%
-\contentsline {paragraph}{Definizione di funzioni infinite}{15}{paragraph*.44}%
-\contentsline {subparagraph}{Esempi}{15}{subparagraph*.45}%
-\contentsline {subparagraph}{Regole aritmetiche}{15}{subparagraph*.46}%
-\contentsline {paragraph}{Ordine di infinito}{15}{paragraph*.47}%
-\contentsline {subparagraph}{Esempi}{16}{subparagraph*.48}%
-\contentsline {subparagraph}{Cofronto tra infiniti}{16}{subparagraph*.49}%
-\contentsline {subparagraph}{Esempio}{16}{subparagraph*.50}%
-\contentsline {paragraph}{Gerarchia degli infiniti}{16}{paragraph*.51}%
-\contentsline {subparagraph}{Esempio}{16}{subparagraph*.52}%
-\contentsline {subparagraph}{Regole aritmetiche}{16}{subparagraph*.53}%
-\contentsline {subsection}{\numberline {2.2.3}Funzioni continue}{16}{subsection.2.2.3}%
-\contentsline {paragraph}{Definizione}{16}{paragraph*.54}%
-\contentsline {subsubsection}{Teorema della permanenza del segno}{16}{subsubsection*.55}%
-\contentsline {subsubsection}{Teorema degli zeri}{16}{subsubsection*.56}%
-\contentsline {paragraph}{Teorema dell'esistenza dei valori intermedi (\textit {conseguenza del teorema degli zeri})}{16}{paragraph*.57}%
-\contentsline {subsubsection}{Teorema di Wierstrass (sul massimo e il minimo)}{17}{subsubsection*.58}%
-\contentsline {subsection}{\numberline {2.2.4}Criteri di invertibilità}{17}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.1.2}Funzione valore assoluto $y=|x|$}{14}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Funzione potenza $y=x^n,n\in N, pari$}{14}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Funzione potenza $y=x^\alpha ,\alpha \in R$ (\textit {ma non razionale})}{15}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Funzione potenziale $y=x^{\frac {m}{n}},m, n\in Z$}{15}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Funzione logaritmo $y=\qopname \relax o{log}_a{x}$}{15}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.7}Le coniche: la circonferenza}{16}{subsection.2.1.7}%
+\contentsline {subsection}{\numberline {2.1.8}Le coniche: l'ellisse}{17}{subsection.2.1.8}%
+\contentsline {subsection}{\numberline {2.1.9}Le coniche: iperbole}{17}{subsection.2.1.9}%
+\contentsline {subsection}{\numberline {2.1.10}Le coniche: iperbole equilattera}{18}{subsection.2.1.10}%
+\contentsline {subsection}{\numberline {2.1.11}Le coniche: parabola}{18}{subsection.2.1.11}%
+\contentsline {subsection}{\numberline {2.1.12}Le funzioni trigonometriche}{19}{subsection.2.1.12}%
+\contentsline {subsubsection}{Funzione $\qopname \relax o{sin}x$}{19}{subsubsection*.46}%
+\contentsline {subsubsection}{Funzione $\qopname \relax o{cos}x$}{20}{subsubsection*.48}%
+\contentsline {subsubsection}{Funzione $\qopname \relax o{tan}x$}{20}{subsubsection*.50}%
+\contentsline {subsubsection}{Funzione $\qopname \relax o{cot}x$}{21}{subsubsection*.52}%
+\contentsline {subsection}{\numberline {2.1.13}Le funzioni trigonometriche inverse}{21}{subsection.2.1.13}%
+\contentsline {subsubsection}{Funzione $\qopname \relax o{arcsin}x$}{21}{subsubsection*.54}%
+\contentsline {subsubsection}{Funzione $\qopname \relax o{arccos}x$}{22}{subsubsection*.56}%
+\contentsline {subsubsection}{Funzione $\qopname \relax o{arctan}x$}{22}{subsubsection*.58}%
+\contentsline {subsubsection}{Operazione sul grafico: traslazione della asse X}{23}{subsubsection*.60}%
+\contentsline {subsubsection}{Operazione sul grafico: traslazione della asse Y}{23}{subsubsection*.62}%
+\contentsline {subsubsection}{Operazione sul grafico: contrazione e dilatazione in direzione verticale}{24}{subsubsection*.64}%
+\contentsline {subsubsection}{Operazione sul grafico: contrazione e dilatazione in direzione orizzontale}{24}{subsubsection*.66}%
+\contentsline {subsubsection}{Operazione sul grafico: $y=|f(x)|$}{25}{subsubsection*.68}%
+\contentsline {section}{\numberline {2.2}Limiti}{25}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Forme indeterminate}{25}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Infinitesimi e infiniti}{25}{subsection.2.2.2}%
+\contentsline {paragraph}{Definizione}{25}{paragraph*.70}%
+\contentsline {subsubsection}{Esempi}{25}{subsubsection*.71}%
+\contentsline {subsubsection}{Ordine di infinitesimo}{25}{subsubsection*.72}%
+\contentsline {paragraph}{Esempi}{25}{paragraph*.73}%
+\contentsline {subsubsection}{Confronto tra infinitesimi}{26}{subsubsection*.74}%
+\contentsline {subparagraph}{esempio}{26}{subparagraph*.75}%
+\contentsline {paragraph}{Definizione di funzioni asintotiche}{26}{paragraph*.76}%
+\contentsline {subparagraph}{esempi}{26}{subparagraph*.77}%
+\contentsline {paragraph}{Definizione di funzioni infinite}{26}{paragraph*.78}%
+\contentsline {subparagraph}{Esempi}{26}{subparagraph*.79}%
+\contentsline {subparagraph}{Regole aritmetiche}{26}{subparagraph*.80}%
+\contentsline {paragraph}{Ordine di infinito}{26}{paragraph*.81}%
+\contentsline {subparagraph}{Esempi}{27}{subparagraph*.82}%
+\contentsline {subparagraph}{Cofronto tra infiniti}{27}{subparagraph*.83}%
+\contentsline {subparagraph}{Esempio}{27}{subparagraph*.84}%
+\contentsline {paragraph}{Gerarchia degli infiniti}{27}{paragraph*.85}%
+\contentsline {subparagraph}{Esempio}{27}{subparagraph*.86}%
+\contentsline {subparagraph}{Regole aritmetiche}{27}{subparagraph*.87}%
+\contentsline {subsection}{\numberline {2.2.3}Funzioni continue}{27}{subsection.2.2.3}%
+\contentsline {paragraph}{Definizione}{27}{paragraph*.88}%
+\contentsline {subsubsection}{Teorema della permanenza del segno}{27}{subsubsection*.89}%
+\contentsline {subsubsection}{Teorema degli zeri}{27}{subsubsection*.90}%
+\contentsline {paragraph}{Teorema dell'esistenza dei valori intermedi (\textit {conseguenza del teorema degli zeri})}{27}{paragraph*.91}%
+\contentsline {subsubsection}{Teorema di Wierstrass (sul massimo e il minimo)}{28}{subsubsection*.92}%
+\contentsline {subsection}{\numberline {2.2.4}Criteri di invertibilità}{28}{subsection.2.2.4}%
