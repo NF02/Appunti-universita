@@ -37,7 +37,10 @@ librerie di sistema, mentre, nel caso di librerie locali scritte ad'hoc per il p
 | `<time.h>`  | È una libreria che consente di sfruttare funzioni di tipo temporale "timer e letture dell'orario" |
 | `<ctype.h>`   | Dichiara funzioni per la classificazione dei caratteri. |
 | `<float.h>`   | Contiene le macro che vengono espanse ai vari limiti e parametri dei tipi in virgola mobile (floating-point) standard. |
-
+## Scelta dell'IDE
+Per iniziare a programmare bisogan scegliere un IDE, un ambiente di sviluppo che ci consenta di lavorare ai potensiali progetti futuri.
+### discriminanti nella scelta
+Un IDE moderno deve possedere determinati prerequisiti, uno tra tutti, è il riconoscimento della sintassi, che consente di verificare potenziali errori di pattitura e riduce l'errore. Un altro punto fondamentale è una buona integrazione con **GIT** che permette di tenere salvate le varie fasi di sviluppo rendendo più semplice la regressione in caso di problemi. I suggerimente sono ben accetti, quindi se l'editor possiede anche questa funzione tramete una shortcut è tutto un pro.   
 ## Commenti
 Come in ogni buon linguaggio di programmazione anche il C supporta l'utilizzo dei commenti sia per singola linea sia multi-linea,
 i caratteri che vengono utilizzarti per indicare questo tipo di testo sono riportati qui sotto nella tabella.
@@ -55,7 +58,7 @@ Il commento è un istruzione che non viene interpretata come codice eseguibile d
 
 Queste due funzioni consentono di avere una interazione con il programma
 anche se non in modo persistente.
-```
+```it
 Il termine persistenza in informatica, il concetto di persistenza si riferisce alla caratteristica dei dati di un programma di sopravvivere all'esecuzione del programma stesso che li ha creati: senza questa capacità questi infatti verrebbero salvati solo in memoria Ram venendo dunque persi allo spegnimento del computer. 
 ```
 By <a href="https://it.wikipedia.org/wiki/Persistenza_(informatica)">Wikipedia</a>
@@ -133,6 +136,7 @@ troncature del risultato, perché ovviamente il sistema non ti avvisa del proble
 |       `%f`	    | float / double |
 |       `%e`      | decimali, in notazione esponenziale |
 |       `%c`      | caratteri      |
+|       `%s`      | stringhe       |
 
 ## Operatori logici e relazionali
 Come tutti i linguaggi di programmazione, possiede una parte legata all'algebra booleana e anche agli aspetti logici come AND e l'OR e relazionali 
@@ -282,10 +286,11 @@ gli array sono un tipo di struttura dati che risulta composto da una serie di ce
 #### Array bidimensionali
 |       |      m[0][0]   |  m[0][1]  | m[0][2] | m[0][N]|
 |-------| -------------- | --------- | ------- | ------ |
-| m[1][0] |        1       |    2      |  0      |   35   |
+| m[1][0] |        1       |    2      |  0      |   35 | 
 | m[1][0] |      5       |   6       |   7     |  8     |
 | m[2][0] |      4       | 23        |  3       | 43    |
 | m[0][M] |     6        |    4      |  5       | 9     |
+
 ### Array statici
 Gli arrai statici sono molto comodi quando sappiamo già quanti valori deve contenere, solitamente per gestire questo categoria viene utilizzata una costante N per gestire la dimensione.
 ```c
@@ -332,10 +337,17 @@ int main(){
     return 0;
 }
 ```
-
+### Le stringe
+Una stringa è sempre un array di char ma un array di char non è detto che sia una stringa, cioè oltre al contenuto visibile è all'interno di un stringa è presente un carattere che indica la fine della stessa, che vale `NULL`, in questo caso viene rapresentato in questo modo `'\0'` che viene sfruttato dalle funzioni dedicate e effettivamente lo si frutta regolarmente per ridurre la complessità delle operazioni. In oltre bisogna sempre ricordare che questo non va mai eliminato, pena la trasformazione dello stesso in una semplice array di char rendendo inutilizzabili tutte le funzione scritte dai programmatori del C per rendere la gestione più semplice la gestione degli stessi. Infatti, l'intera libreria `<string.h>` è dedicata a questo scopo.
+#### funzioni integrate della classe `<string.h>`
+- strcpy(stringa_destinataria, stringa_originale) - permette di copiare una stringa in un'altra in modo automatizzato;
+- strcpy(stringa_destinataria, stringa_originale, n_char) - permette di copiare una stringa in un'altra in modo automatizzato, poi scegliere il numero di caratteri da copiare;
+- strcat(str1,str2) - contatena le stringhe;
+- strlen(str) - rende la dimensione della stringa;
+- strcmp - compara due stringhe e rende un intero che oscilla tra - infinito e + infinito, in base alle differenza di dimensione.
 ## Logica dei puntatori
 I puntattori vengono utilizzati in modo esplicito nel C, per gestire la memoria, infatti, esistono le variabili dedicate, che vengono dichiarate come le altre variabili ma con un * davanti al nome della stessa `int *i`. Sono fondamentali per l'utilizzo degli array dinamici e anche per la gestione dei file, proprio per la loro natura. Una delle funzioni che utilizza un puntatore come la scanf(), ogni variabile possiede il suo puntatore, per accedere al puntatore invece che al contenuto della stessa è necesario mettere davanti al nome il carattere `&`.
-
+Esistono anche i famigerati puntatori universali di tipo `void` che possono puntare a qualunque spazio di memoria a prescendere dal tipo della variabile con 
 ## Gestione dei file
 Come in tutti i linguaggi strutturati, il `C` ha la possibilità di gestire dei file, ovviamente è sempre il C, quindi le operazioni vanno svolte manualmente. E
 soprattutto richiedono una certa attenzione, perché il rischio è quello di sovrascrivere qualche documento in portante che una volta perso non lo si recupera, 
