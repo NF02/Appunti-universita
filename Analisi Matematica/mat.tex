@@ -355,12 +355,106 @@ orizzontale}
 	\caption{Operazione sul grafico: $y=|f(x)|$}
 \end{figure}
 
-
-
-
-
+% passaggio ai limiti
 
 \section{Limiti}
+\begin{figure}[!ht]
+	\centering
+	\begin{tikzpicture}
+		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/esempio limite
+		di funzione.pdf}};
+	\end{tikzpicture}
+	\begin{tabular}{|l|l|}
+		\hline
+		x&f(x)\\\hline\hline
+		0,1& 0,998\\
+		0,001&0,999\\\hline
+	\end{tabular}
+	$C.E.=R\textbackslash{}\{0\}$
+	\caption{Esempio limite di funzione}
+\end{figure}
+Il limite di una funzione è un operazione, o meglio un operatore, che permette
+di studiare il comportamento di una funzione nell'intorno di un punto $x_0$.\\
+\textit{Mediamente il limite è possibile stabilire a quale valore tende la
+funzione man mano che i valori della variabile si approssimano al punto $x_0$}.
+\begin{figure}[!ht]
+	\centering
+	\begin{tikzpicture}
+		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/esempio di
+		limite di una funzione.pdf}};
+	\end{tikzpicture}
+	\caption{Esempio di limite di una funzione}
+\end{figure}
+\subsection{Limite di una funzione}
+Sia $f(x)$ definita in $A\in R$, e sia $x_0$ un punto di accumulazione per A.
+Si dice che $f(x)$ ha limite $l$ per $x$ che tende a $x_0$, se $V\varepsilon
+>0 \exists \delta_\varepsilon > 0: |f(x)-l|=\varepsilon\Rightarrow x\in
+I(x_0,\delta_\varepsilon) \text{ escluso al più } x_0 \text{ cioè }
+|x-x_0|<\delta_\varepsilon$
+\begin{itemize}
+	\item $l-\varepsilon < f(x) < l+\varepsilon$
+	\item $x_0-\varepsilon < x<x_0+\delta_\varepsilon$
+\end{itemize}
+\subsubsection{In simboli}
+$\lim_{x\to x_0} f(x)=l \text{   } f(x)\xrightarrow{x\to x_0} l$ 
+\subsection{Definizione di Limite destro}
+$l_1$ si definisce \textit{limite 
+destro} di $f(x)$ per x che tende a $x_0^+$: $\lim_{x\to x_0^+ f(x)=l_1}$\\
+se $\forall \varepsilon > 0 \exists \delta_\varepsilon>0 :
+|f(x)-l_1|<\varepsilon\Rightarrow x_0<x<x_0+\delta_\varepsilon \text{ cioè }
+x\in(x_0,x_0+\delta_\varepsilon)$
+\subsection{Definizione di limite sinistro}
+$l_2$ si definisce \textit{limite sinistro} di $f(x)$ per \textit{x} che tende
+a $x^-_0$: $\lim_{x\to x_0^-}f(x)=l^2$ se $\forall \varepsilon>0 \exists
+\delta_\varepsilon>0: |f(x)-l_2|<\varepsilon\Rightarrow
+x_0-\delta_\varepsilon<x<x_0$ cioè $x\in(x_0-\delta_\varepsilon,x_0)$
+\subsection{Teorema d'unicità del limite}
+Se $\lim_{x\to x_0} f(x)=l\Rightarrow l è unico$\\
+Dimostrazione. Per assurdo: supponiamo che $\exists l_1,l_2: l_1 \neq l_2$
+con $l_1=lim_{x\to x_0}f(x)$ in $I(x_0,\delta_{1\varepsilon})$, $l_2=lim_{x\to
+x_0}f(x)$ in $I(x_0,\delta_{2\varepsilon})$\\
+Fissato $\varepsilon=\frac{|l_1-l_2|}{2}$\\
+$2\varepsilon=|l_1-l_2|=|l_1-f(x)+f(x)-l_2|\leq|f(x)-l_2|+|f(x)-l_2|<2\varepsilon$
+in $I(x_0,\delta_{\varepsilon})$,
+$\delta_{\varepsilon}=min(\delta_{1\varepsilon},\delta_{2\varepsilon})$
+Assurdo! $\Rightarrow l_1=l_2$
+\subsubsection{Esempi}
+\begin{tabular}{lc}
+	$y=\frac{|x|}{x}$ & $C.E. = R\textbackslash \{0\}$\\
+	$\lim_{x\to 0^+}\frac{|x|}{x}=1$&\multirow{2}{*}{$\nexists \text{ limitate}$} \\
+	$\lim_{x\to 0^-}\frac{|x|}{x}=-1$&\\
+\end{tabular}
+\paragraph{Definizione} Sia $f(x)$ definita in $A \in R$, e sia $x_0$ un punto
+di accumulazione per A. Si dice che $f(x)$ ha limite $+\infty$ per x che tende
+a $x_0$, se $\forall M>0,\exists \delta_M>0:\forall x \in
+I(x_0,\delta_m)\Rightarrow f(x)>M$
+\begin{center}
+	\begin{tabular}{|l|}
+		\hline
+		$\lim_{x\to x_0}f(x)=+\infty$\\\hline
+	\end{tabular}
+\end{center}
+\paragraph{Definizione} Sia $f(x)$ definita in $A\in R$, e sia $x_0$ un punto
+di accumulazione per A. Si dice che $f(x)$ ha limite $-\infty$ per $x$ che
+tende a $x_0$, se $\forall M>0, \exists \delta_M>0:\forall x \in
+I(x_0,\delta_m)$\\
+risulta $f(x)<-M$.
+\begin{center}
+	\begin{tabular}{|l|}
+		\hline
+		$\lim_{x\to x_0}f(x)=-\infty$\\\hline
+	\end{tabular}
+\end{center}
+\paragraph{Definizione di Asintoto verticale}
+Se 	\begin{tabular}{|l|}
+		\hline
+		$\lim_{x\to x_0}f(x)=\infty$\\\hline
+\end{tabular} allora la retta verticale \begin{tabular}{|l|}
+	\hline
+	$x=x_0$\\\hline
+\end{tabular}v si chiama asintoto verticale
+
+
 \subsection{Forme indeterminate}
 $+\infty-\infty$ $\frac{\infty}{\infty}$ $\frac{0}{0}$ $1^\infty$ $e^{+\infty*0}$
 \subsection{Infinitesimi e infiniti}
