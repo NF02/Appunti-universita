@@ -37,6 +37,8 @@ librerie di sistema, mentre, nel caso di librerie locali scritte ad'hoc per il p
 | `<time.h>`  | È una libreria che consente di sfruttare funzioni di tipo temporale "timer e letture dell'orario" |
 | `<ctype.h>`   | Dichiara funzioni per la classificazione dei caratteri. |
 | `<float.h>`   | Contiene le macro che vengono espanse ai vari limiti e parametri dei tipi in virgola mobile (floating-point) standard. |
+
+Il compilatore per sciendere li file da compilare da quelli libreria utilizza l'estensione del file per fare la verifica del compito del singolo file durante l'assemplaggio del file eseguibile. 
 ## Scelta dell'IDE
 Per iniziare a programmare bisogan scegliere un IDE, un ambiente di sviluppo che ci consenta di lavorare ai potensiali progetti futuri.
 ### discriminanti nella scelta
@@ -347,7 +349,24 @@ Una stringa è sempre un array di char ma un array di char non è detto che sia 
 - strcmp - compara due stringhe e rende un intero che oscilla tra - infinito e + infinito, in base alle differenza di dimensione.
 ## Logica dei puntatori
 I puntattori vengono utilizzati in modo esplicito nel C, per gestire la memoria, infatti, esistono le variabili dedicate, che vengono dichiarate come le altre variabili ma con un * davanti al nome della stessa `int *i`. Sono fondamentali per l'utilizzo degli array dinamici e anche per la gestione dei file, proprio per la loro natura. Una delle funzioni che utilizza un puntatore come la scanf(), ogni variabile possiede il suo puntatore, per accedere al puntatore invece che al contenuto della stessa è necesario mettere davanti al nome il carattere `&`.
-Esistono anche i famigerati puntatori universali di tipo `void` che possono puntare a qualunque spazio di memoria a prescendere dal tipo della variabile con 
+Esistono anche i famigerati puntatori universali di tipo `void` che possono puntare a qualunque spazio di memoria a prescendere dal tipo della variabile. Ovviamente la dimensione occupata dal puntatore è sempre la stessa ma viene in suddivi in base alla rapresentazione fisica in memoria, perché ovviamente bisogna ricordare che i tipi di variabili hanno dimensioni defferenti tra loro proprio per il fatto che devono contenere delle rappresentazioni differenti.
+### Perché si utilizzano i puntatori
+I puntatori sostanzialmente vengono utilizzati in due casi: 
+1. È indispensabile per modificare direttamente una variabile all'interno di una funzione, perché il C altrimenti va a creare una copia della stessa e quindi se si effettua una modifica alla stessa nel corso della funzione il valore contenuto nella variabile non verrà modificato;
+2. la gestione della memoria in modo diretto consentendo la creazione di un array dinamico e anche altre strutture dati con dimensione variabili ma non continue. 
+
+Questo tipo di operazioni saranno molto frequenti all'interno della scrittura dei programmi. Si arriverà proprio ad un punto in cui non ci saranno più passaggi diretti ed espiciti.
+### Esempio
+```c
+int main (){
+    int *p;
+    int a=3;
+    p=&a; // assegno a p l'indirizzo della variabile a 
+    printf("%d",*p); // stampo il valore contenuto nel indirizzo a cui punta p.
+    
+}
+```
+Come dovreste aver notato quando si vuole accedere al puntatore si utilizzano due modalità, la prima quella senza l'asterisco * consente di utilizzare il puntatore come quello che è una variabile che può contenere solo indirizzi, mentre, il secondo quando si mette davanti l'asterisco consente di accedere al contenuto della varabile puntata.
 ## Gestione dei file
 Come in tutti i linguaggi strutturati, il `C` ha la possibilità di gestire dei file, ovviamente è sempre il C, quindi le operazioni vanno svolte manualmente. E
 soprattutto richiedono una certa attenzione, perché il rischio è quello di sovrascrivere qualche documento in portante che una volta perso non lo si recupera, 
