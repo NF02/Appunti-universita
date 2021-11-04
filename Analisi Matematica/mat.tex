@@ -98,263 +98,7 @@
 \part{Matematica analisi 1}
 \input{pag/simboli.tex}
 \input{pag/Cenni di teoria degli insiemi.tex}
-\chapter{Studio di funzione}
-\texttt{In analisi matematica la locuzione studio di funzione indica 
-	l'applicazione pratica dei teoremi e delle tecniche del calcolo 
-	infinitesimale nello specifico caso di una funzione di cui è nota 
-	l'espressione analitica. Lo studio di funzione è utile per ricavare 
-	esplicitamente le informazioni che descrivono il comportamento di una 
-	funzione nel suo dominio. Spesso, le informazioni ottenute mediante uno 
-	studio di funzione sono sufficienti per poter tracciare, anche a mano, un 
-	grafico qualitativo della funzione studiata e che in genere, per funzioni a 
-	valori reali di una variabile reale, viene rappresentato su un piano 
-	cartesiano, anche se in taluni casi potrebbe essere più semplice ricorrere 
-	un sistema di coordinate differente. In genere, con "studio di funzione" ci 
-	si riferisce implicitamente al solo e specifico caso delle funzioni reali di
-	una sola variabile reale, ma con le opportune modifiche è comunque possibile 
-	adattare le considerazioni seguenti anche al caso delle funzioni di più
-	variabili reali, nonché anche per le funzioni di una o più variabili 
-	complesse.}
-\begin{center}
-	By \href{https://it.wikipedia.org/wiki/Studio_di_funzione}{Wikipedia}
-\end{center}
-
-\section{Grafica delle funzioni elementari}
-\subsection{Funzione lineare $y=mx+qm, q\in R$}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/funzione
-		lineare.pdf}};
-	\end{tikzpicture}
-	\caption{Grafico di Funzione lineare $y=mx+qm, q\in R$}
-\end{figure}
-$C.E. \equiv R\text{ Non Limitata}$
-\subsection{Funzione valore assoluto $y=|x|$}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/funzione valore assoluto.pdf}};
-	\end{tikzpicture}
-	\caption{Grafico di Funzione valore assoluto $y=|x|$}
-\end{figure}
-$C.E. \equiv R\text{ Limitata inferiormente in } x=0$\\
-$|x|=\begin{cases}
-	x&x\geq0\\
-	-x& x<0
-\end{cases}$
-\subsection{Funzione potenza $y=x^n,n\in N, pari$}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/funzione
-		potenziale x^n.pdf}};
-	\end{tikzpicture}
-	\caption{Grafico di Funzione potenza $y=x^n,n\in N, pari$}
-\end{figure}\newpage
-\subsection{Funzione potenza $y=x^\alpha,\alpha \in R$ (\textit{ma non
-razionale})}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/funzione
-		potenziale x^a.pdf}};
-	\end{tikzpicture}
-	\caption{Grafico di Funzione potenza $y=x^\alpha,\alpha \in R$ (\textit{ma non
-razionale})}
-\end{figure}
-$C.E.:\{x\in R: x\geq 0\}$ Limitata inferiormente da $x=0$ non limitata
-superiormente Strettamente crescente
-\subsection{Funzione potenziale $y=x^{\frac{m}{n}},m, n\in Z$}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/funzione
-		potenziale fratta.pdf}};
-	\end{tikzpicture}
-	\caption{Grafico di Funzione potenza $y=x^\alpha,\alpha \in R$ (\textit{ma non
-razionale})}
-\end{figure}
-\subsection{Funzione logaritmo $y=\log_a{x}$}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/funzione
-		logaritmica.pdf}};
-	\end{tikzpicture}
-	\caption{Funzione logaritmo $y=\log_a{x}$}
-\end{figure}
-$C.E.\equiv x>0$ Non limitata, strettamente crescente se $a>1$, Strettamente
-decrescente se $0<a<1$.\newpage
-\subsection{Le coniche: la circonferenza}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/le coniche
-		circonferenze.pdf}};
-	\end{tikzpicture}
-	\caption{Le coniche: la circonferenza}
-\end{figure}\newpage
-\subsection{Le coniche: l'ellisse}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/le coniche
-		ellisse.pdf}};
-	\end{tikzpicture}
-	\caption{Le coniche: l'ellisse}
-\end{figure}
-\subsection{Le coniche: iperbole}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/le coniche
-		iperbole.pdf}};
-	\end{tikzpicture}
-	\caption{Le coniche: iperbole}
-\end{figure}\newpage
-\subsection{Le coniche: iperbole equilattera}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/le coniche
-		iperbole equilattera.pdf}};
-	\end{tikzpicture}
-	\caption{Le coniche: iperbole equilattera}
-\end{figure}
-\subsection{Le coniche: parabola}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/le coniche
-		parabola.pdf}};
-	\end{tikzpicture}
-	\caption{Le coniche: parabola}
-\end{figure}\newpage
-\subsection{Le funzioni trigonometriche}
-Funzioni trigonometriche elementati:
-$y=\sin x, y=cos x, y=\tan x, y=\cot x$\\
-\textit{Relazioni fondamentali:} $(\sin x)^2+(\cos x)^2=1$, $\tan x=\frac{\sin
-x}{\cos x}$, $\cot x=\frac{\cos x}{\sin x}$
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/funzioni
-		trigonometriche.pdf}};
-	\end{tikzpicture}
-	\caption{Le funzioni trigonometriche}
-\end{figure}
-\subsubsection{Funzione $\sin x$}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/funzione
-		sin.pdf}};
-	\end{tikzpicture}
-	\caption{Funzione $\sin x$}
-\end{figure}\newpage
-\subsubsection{Funzione $\cos x$}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/funzione
-		cos.pdf}};
-	\end{tikzpicture}
-	\caption{Funzione $\cos x$}
-\end{figure}
-\subsubsection{Funzione $\tan x$}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/funzione
-		tg.pdf}};
-	\end{tikzpicture}
-	\caption{Funzione $\tan x$}
-\end{figure}\newpage
-\subsubsection{Funzione $\cot x$}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/funzione
-		ctg.pdf}};
-	\end{tikzpicture}
-	\caption{Funzione $\cot x$}
-\end{figure}
-\subsection{Le funzioni trigonometriche inverse}
-\subsubsection{Funzione $\arcsin x$}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/funzione
-		arcsin.pdf}};
-	\end{tikzpicture}
-	\caption{Funzione $\arcsin x$}
-\end{figure}\newpage
-\subsubsection{Funzione $\arccos x$}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/funzione
-		arccos.pdf}};
-	\end{tikzpicture}
-	\caption{Funzione $\arccos x$}
-\end{figure}
-\subsubsection{Funzione $\arctan x$}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/funzione
-		arctg.pdf}};
-	\end{tikzpicture}
-	\caption{Funzione $\arctan x$}
-\end{figure}\newpage
-\subsubsection{Operazione sul grafico: traslazione della asse X}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/operazione sul
-		grafico traslazione della asse x.pdf}};
-	\end{tikzpicture}
-	\caption{Operazione sul grafico: traslazione della asse X}
-\end{figure}
-\subsubsection{Operazione sul grafico: traslazione della asse Y}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/operazione sul
-		grafico traslazione della asse y.pdf}};
-	\end{tikzpicture}
-	\caption{Operazione sul grafico: traslazione della asse Y}
-\end{figure}\newpage
-\subsubsection{Operazione sul grafico: contrazione e dilatazione in direzione verticale}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/contrazione e
-		dilatazione in direzione verticale.pdf}};
-	\end{tikzpicture}
-	\caption{Operazione sul grafico: contrazione e dilatazione in direzione verticale}
-\end{figure}
-\subsubsection{Operazione sul grafico: contrazione e dilatazione in direzione
-orizzontale}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/compressione e
-		dilatazione in direzione orizzontale.pdf}};
-	\end{tikzpicture}
-	\caption{Operazione sul grafico: contrazione e dilatazione in direzione
-	orizzontale}
-\end{figure}\newpage
-\subsubsection{Operazione sul grafico: $y=|f(x)|$}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/y=_lnx_.pdf}};
-	\end{tikzpicture}
-	\caption{Operazione sul grafico: $y=|f(x)|$}
-\end{figure}
-
+\input{pag/Studio di funzione.tex}
 % passaggio ai limiti
 
 \section{Limiti}
@@ -403,13 +147,13 @@ destro} di $f(x)$ per x che tende a $x_0^+$: $\lim_{x\to x_0^+ f(x)=l_1}$\\
 se $\forall \varepsilon > 0 \exists \delta_\varepsilon>0 :
 |f(x)-l_1|<\varepsilon\Rightarrow x_0<x<x_0+\delta_\varepsilon \text{ cioè }
 x\in(x_0,x_0+\delta_\varepsilon)$
-\subsection{Definizione di limite sinistro}
+\subsection{Definizione di limite sinistro ``da sinistra''}
 $l_2$ si definisce \textit{limite sinistro} di $f(x)$ per \textit{x} che tende
 a $x^-_0$: $\lim_{x\to x_0^-}f(x)=l^2$ se $\forall \varepsilon>0 \exists
 \delta_\varepsilon>0: |f(x)-l_2|<\varepsilon\Rightarrow
 x_0-\delta_\varepsilon<x<x_0$ cioè $x\in(x_0-\delta_\varepsilon,x_0)$
-\subsection{Teorema d'unicità del limite}
-Se $\lim_{x\to x_0} f(x)=l\Rightarrow l è unico$\\
+\subsection{Teorema d'unicità del limite ``da destra''}
+Se $\lim_{x\to x_0} f(x)=l\Rightarrow \text{l è unico}$\\
 Dimostrazione. Per assurdo: supponiamo che $\exists l_1,l_2: l_1 \neq l_2$
 con $l_1=lim_{x\to x_0}f(x)$ in $I(x_0,\delta_{1\varepsilon})$, $l_2=lim_{x\to
 x_0}f(x)$ in $I(x_0,\delta_{2\varepsilon})$\\
@@ -452,10 +196,68 @@ Se 	\begin{tabular}{|l|}
 \end{tabular} allora la retta verticale \begin{tabular}{|l|}
 	\hline
 	$x=x_0$\\\hline
-\end{tabular}v si chiama asintoto verticale
+\end{tabular} si chiama asintoto verticale
+\begin{figure}[!ht]
+	\centering
+	\begin{tikzpicture}
+		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/asintoto
+		verticale.pdf}};
+	\end{tikzpicture}
+	\caption{Asintoto verticale}
+\end{figure}\\
+Sia $f(x)$ definita in $A\in R$, si dice che $f(x)$ ha limite $l$, per $x$ che
+tende a $+\infty$, se: $\forall_\varepsilon>0, \exists K_\varepsilon >0:\forall
+x \in I (K_\varepsilon, +\infty)$ risulta $|f(x)-l|<\varepsilon$
+\begin{tabular}{|l|}
+	\hline
+	$\lim_{x\to+\infty}f(x)=l$\\\hline
+\end{tabular}
+\newpage
+\paragraph{Definizione di Asintoto orizzontale} Se \begin{tabular}{|l|}
+	\hline
+	$\lim_{x\to \infty}f(x)=l$\\\hline
+\end{tabular} Allora la retta orizzontale \begin{tabular}{|l|}
+	\hline
+	$y=l$\\\hline
+\end{tabular} si chiama Asintoto orizzontale
+\begin{figure}[!ht]
+	\centering
+	\begin{tikzpicture}
+		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/asintoto
+		orizzontale.pdf}};
+	\end{tikzpicture}
+	\caption{Asintoto orizzontale}
+\end{figure}\\
+Sia $f(x)$ definita in $A \in R$, si dice che $f(x)$ ha limite $+\infty$, per x
+che tende a $+\infty$, se: $\forall M>0, \exists K_M >0: \forall x \in (K_M,
++\infty)$ risulta $f(x)\in (M,+\infty)$ \begin{tabular}{|l|}
+	$\lim_{x\to +\infty}f(x) = +\infty$
+\end{tabular}
+\subsection{Teorema (\texttt{\color{red} algebra dei limiti})}
+Se:
+\begin{itemize}
+	\item $\lim_{x\to x_0} f(x)=l_1$ $\lim_{x\to x_0} g(x) = l_2$
+	\item $\lim_{x\to x_0} f(x)\pm g(x)=l_1\pm l_2$
+	\item $\lim_{x\to x_0} f(x)*g(x)=l_1*l_2$
+	\item $\lim_{x\to x_0} \frac{f(x)}{g(x)}=\frac{l_1}{l_2}, g(x), l_2\neq 0$
 
+\end{itemize}
+\subsection{Convenzioni con $\infty$}
+\begin{itemize}
+	\item $\forall a >0, a\pm \infty=\pm \infty$
+	\item $+\infty+\infty=+\infty$
+	\item $-\infty-\infty=-\infty$
+	\item $\forall a> 0, a*(\pm \infty)=\pm \infty$
+	\item $\forall b< 0, b*(\pm \infty)=\mp \infty$
+	\item $(\pm\infty)*(\pm \infty)=+\infty$
+	\item $(\pm\infty)*(\mp \infty)=-\infty$
+
+\end{itemize}
+\subsubsection{Convenzioni con $\infty$}
+$\frac{a}{\infty}=0$ $\frac{a}{0}=\infty$
 
 \subsection{Forme indeterminate}
+
 $+\infty-\infty$ $\frac{\infty}{\infty}$ $\frac{0}{0}$ $1^\infty$ $e^{+\infty*0}$
 \subsection{Infinitesimi e infiniti}
 \paragraph{Definizione}
