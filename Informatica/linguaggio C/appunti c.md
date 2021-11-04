@@ -343,10 +343,10 @@ int main(){
 Una stringa è sempre un array di char ma un array di char non è detto che sia una stringa, cioè oltre al contenuto visibile è all'interno di un stringa è presente un carattere che indica la fine della stessa, che vale `NULL`, in questo caso viene rapresentato in questo modo `'\0'` che viene sfruttato dalle funzioni dedicate e effettivamente lo si frutta regolarmente per ridurre la complessità delle operazioni. In oltre bisogna sempre ricordare che questo non va mai eliminato, pena la trasformazione dello stesso in una semplice array di char rendendo inutilizzabili tutte le funzione scritte dai programmatori del C per rendere la gestione più semplice la gestione degli stessi. Infatti, l'intera libreria `<string.h>` è dedicata a questo scopo.
 #### funzioni integrate della classe `<string.h>`
 - strcpy(stringa_destinataria, stringa_originale) - permette di copiare una stringa in un'altra in modo automatizzato;
-- strcpy(stringa_destinataria, stringa_originale, n_char) - permette di copiare una stringa in un'altra in modo automatizzato, poi scegliere il numero di caratteri da copiare;
-- strcat(str1,str2) - contatena le stringhe;
-- strlen(str) - rende la dimensione della stringa;
-- strcmp - compara due stringhe e rende un intero che oscilla tra - infinito e + infinito, in base alle differenza di dimensione.
+- `strcpy(stringa_destinataria, stringa_originale, n_char)` - permette di copiare una stringa in un'altra in modo automatizzato, poi scegliere il numero di caratteri da copiare;
+- `strcat(str1,str2)` - contatena le stringhe;
+- `strlen(str)` - rende la dimensione della stringa;
+- `strcmp(str1,str2)` - compara due stringhe e rende un intero che oscilla tra - infinito e + infinito, in base alle differenza di dimensione.
 ## Logica dei puntatori
 I puntattori vengono utilizzati in modo esplicito nel C, per gestire la memoria, infatti, esistono le variabili dedicate, che vengono dichiarate come le altre variabili ma con un * davanti al nome della stessa `int *i`. Sono fondamentali per l'utilizzo degli array dinamici e anche per la gestione dei file, proprio per la loro natura. Una delle funzioni che utilizza un puntatore come la scanf(), ogni variabile possiede il suo puntatore, per accedere al puntatore invece che al contenuto della stessa è necesario mettere davanti al nome il carattere `&`.
 Esistono anche i famigerati puntatori universali di tipo `void` che possono puntare a qualunque spazio di memoria a prescendere dal tipo della variabile. Ovviamente la dimensione occupata dal puntatore è sempre la stessa ma viene in suddivi in base alla rapresentazione fisica in memoria, perché ovviamente bisogna ricordare che i tipi di variabili hanno dimensioni defferenti tra loro proprio per il fatto che devono contenere delle rappresentazioni differenti.
