@@ -257,8 +257,96 @@ Se:
 $\frac{a}{\infty}=0$ $\frac{a}{0}=\infty$
 
 \subsection{Forme indeterminate}
+\begin{tabular}{|llllll|}
+	\hline
+	$+\infty-\infty$&$\frac{\infty}{\infty}$&$\frac{0}{0}$&$1^\infty$&$e^{+\infty*0}$&$0-\infty$\\
+	\hline
+\end{tabular}
+\begin{itemize}
+	\item $a^{+\infty}=\begin{cases}
+			+\infty,&a>1\\
+			0,&0<a<1
+	\end{cases}$
+	\item $a^{-\infty}=\begin{cases}
+			0,&a>1\\
+			+\infty,&0<a<1
+	\end{cases}$
+\end{itemize}
+\subsection{Teorema del confronto}
+Siano $f(x),f_1(x),f_2(x)$ tre funzioni definite in $A\subseteq R$ sia $x_0$ un
+punto di accumulazione per A e $f_1(x)\leq f(x) \leq f_2(x)$ se $\lim_{x\to
+x_0}f_1(x)=\lim_{x\to x_0} f_2(x)=l$ allora $\lim_{x\to x_0} f(x)=l$
+\subsubsection{Dimostrazione}
+Se $\lim_{x\to x_0} f_1(x)=\lim_{x\to x_0} f_2(x)=l$ allora per definizione di
+limite:
+\begin{itemize}
+	\item $\exists \delta_1:|f_1(x)-l|<\varepsilon$ $\forall x \in I(x_0,\delta_1)$
+	\item $\exists \delta_2:|f_2(x)-l|<\varepsilon$ $\forall x \in
+		I(x_0,\delta_2)$
+\end{itemize}
+\begin{center}
+	$\Rightarrow l-\varepsilon < f_1(x) \leq f(x)\leq f_2(x) < l+ \varepsilon$
+\end{center}
+$\forall x \in I(x_0,\delta_2), \delta = \min (\delta_1,\delta_2)$
+\subsubsection{Casi particolari di $\lim_{x\to x_0} f(x)*g(x)$}
+\paragraph{Teorema}
+Se $\lim_{x\to x_0} f(x)=x$; $|g(x)|\leq M$ per $x\in I(x_0,\delta)\Rightarrow
+\lim_{x\to x_0}f(x)*g(x)=0$
+\subparagraph{Esempio} $\lim_{x\to x_0}x*\sin\frac{1}{x}=0$
+\subsection{Limite di \texttt{funzione composta}}
+Siano $g:A\to B:B\to R:$ $\lim_{x\to x_0}g(x)=y_0$ e $\lim_{y\to y_0}f(y)=l$
+con $l=f(y_0)$ (\textit{se f è continua})\\
+$\Rightarrow$\begin{tabular}{|l|}
+	\hline$\lim_{x\to x_0}f[g(x)]=l$\\\hline
+\end{tabular}
+\subsection{Limiti Notevoli}
+\begin{multicols}{2}
+	\begin{itemize}
+		\item \begin{tabular}{|l|}
+				\hline
+				$\lim_{x\to x_0}\frac{\sin (x)}{x}=1$\\\hline
+		\end{tabular}
+		\item \begin{tabular}{|l|}
+				\hline
+				$\lim_{x\to x_0}\frac{\tan (x)}{x}=1$\\\hline
+		\end{tabular}
+		\item \begin{tabular}{|l|}
+				\hline
+				$\lim_{x\to x_0}\frac{1-\cos (x)}{x}=\frac{1}{2}$\\\hline
+		\end{tabular}
+		\item \begin{tabular}{|l|}
+				\hline
+				$\lim_{x\to x_0}(1+\frac{1)}{x})=e$\\\hline
+		\end{tabular}
+		\item \begin{tabular}{|l|}
+				\hline
+				$\lim_{x\to x_0}\frac{\log_a (1+x)}{x}=log_ae$\\\hline
+		\end{tabular}
+		\item \begin{tabular}{|l|}
+				\hline
+				$\lim_{x\to x_0}\frac{a^x-1}{x}=\log_ea$\\\hline
+		\end{tabular}
+	\end{itemize}
+\end{multicols}
+\paragraph{Esempi}
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item $\lim_{x\to x_0^+}xe^x+e^{-\frac{1}{x}}=0$
+		\item $\lim_{x\to x_0^-}xe^x+e^{-\frac{1}{x}}=\infty$
+		\item $\lim_{x\to x_0}\frac{1-\cos (x)}{x^2}=\lim_{x\to
+			x_0}\frac{(1-\cos (x))(1+\cos (x))}{x^2(1+\cos x)}=\frac{1}{2}$
+		\item $\lim_{x\to +\infty}\frac{1}{x}+\arctan{x}=\frac{\pi}{2}$
+	\end{enumerate}
+\end{multicols}
+\begin{figure}[!ht]
+	\centering
+	\begin{tikzpicture}
+		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/esempio studio
+		di funzione 2.pdf}};
+	\end{tikzpicture}
+	\caption{Esempio di limite notevole di una funzione}
+\end{figure}
 
-$+\infty-\infty$ $\frac{\infty}{\infty}$ $\frac{0}{0}$ $1^\infty$ $e^{+\infty*0}$
 \subsection{Infinitesimi e infiniti}
 \paragraph{Definizione}
 Una funzione $f(x)$ su dice \underline{infinitesima} per $x\to x_0$ (per $x\to \infty$), $x_0$ punto di accumulazione per il dominio di $f(x)$, se: $\lim_{x\to x_0}f(x)=0$ (oppure $lim_{x\to \infty}f(x)=0$).

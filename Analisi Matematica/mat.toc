@@ -81,29 +81,37 @@
 \contentsline {subsection}{\numberline {2.2.6}Convenzioni con $\infty $}{28}{subsection.2.2.6}%
 \contentsline {subsubsection}{Convenzioni con $\infty $}{28}{subsubsection*.80}%
 \contentsline {subsection}{\numberline {2.2.7}Forme indeterminate}{29}{subsection.2.2.7}%
-\contentsline {subsection}{\numberline {2.2.8}Infinitesimi e infiniti}{29}{subsection.2.2.8}%
-\contentsline {paragraph}{Definizione}{29}{paragraph*.81}%
-\contentsline {subsubsection}{Esempi}{29}{subsubsection*.82}%
-\contentsline {subsubsection}{Ordine di infinitesimo}{29}{subsubsection*.83}%
-\contentsline {paragraph}{Esempi}{29}{paragraph*.84}%
-\contentsline {subsubsection}{Confronto tra infinitesimi}{29}{subsubsection*.85}%
-\contentsline {subparagraph}{esempio}{29}{subparagraph*.86}%
-\contentsline {paragraph}{Definizione di funzioni asintotiche}{29}{paragraph*.87}%
-\contentsline {subparagraph}{esempi}{29}{subparagraph*.88}%
-\contentsline {paragraph}{Definizione di funzioni infinite}{30}{paragraph*.89}%
-\contentsline {subparagraph}{Esempi}{30}{subparagraph*.90}%
-\contentsline {subparagraph}{Regole aritmetiche}{30}{subparagraph*.91}%
-\contentsline {paragraph}{Ordine di infinito}{30}{paragraph*.92}%
-\contentsline {subparagraph}{Esempi}{30}{subparagraph*.93}%
-\contentsline {subparagraph}{Cofronto tra infiniti}{30}{subparagraph*.94}%
-\contentsline {subparagraph}{Esempio}{30}{subparagraph*.95}%
-\contentsline {paragraph}{Gerarchia degli infiniti}{30}{paragraph*.96}%
-\contentsline {subparagraph}{Esempio}{30}{subparagraph*.97}%
-\contentsline {subparagraph}{Regole aritmetiche}{31}{subparagraph*.98}%
-\contentsline {subsection}{\numberline {2.2.9}Funzioni continue}{31}{subsection.2.2.9}%
-\contentsline {paragraph}{Definizione}{31}{paragraph*.99}%
-\contentsline {subsubsection}{Teorema della permanenza del segno}{31}{subsubsection*.100}%
-\contentsline {subsubsection}{Teorema degli zeri}{31}{subsubsection*.101}%
-\contentsline {paragraph}{Teorema dell'esistenza dei valori intermedi (\textit {conseguenza del teorema degli zeri})}{31}{paragraph*.102}%
-\contentsline {subsubsection}{Teorema di Wierstrass (sul massimo e il minimo)}{31}{subsubsection*.103}%
-\contentsline {subsection}{\numberline {2.2.10}Criteri di invertibilità}{31}{subsection.2.2.10}%
+\contentsline {subsection}{\numberline {2.2.8}Teorema del confronto}{29}{subsection.2.2.8}%
+\contentsline {subsubsection}{Dimostrazione}{29}{subsubsection*.81}%
+\contentsline {subsubsection}{Casi particolari di $\qopname \relax m{lim}_{x\to x_0} f(x)*g(x)$}{29}{subsubsection*.82}%
+\contentsline {paragraph}{Teorema}{29}{paragraph*.83}%
+\contentsline {subparagraph}{Esempio}{29}{subparagraph*.84}%
+\contentsline {subsection}{\numberline {2.2.9}Limite di \texttt {funzione composta}}{29}{subsection.2.2.9}%
+\contentsline {subsection}{\numberline {2.2.10}Limiti Notevoli}{29}{subsection.2.2.10}%
+\contentsline {paragraph}{Esempi}{29}{paragraph*.85}%
+\contentsline {subsection}{\numberline {2.2.11}Infinitesimi e infiniti}{30}{subsection.2.2.11}%
+\contentsline {paragraph}{Definizione}{30}{paragraph*.87}%
+\contentsline {subsubsection}{Esempi}{30}{subsubsection*.88}%
+\contentsline {subsubsection}{Ordine di infinitesimo}{30}{subsubsection*.89}%
+\contentsline {paragraph}{Esempi}{30}{paragraph*.90}%
+\contentsline {subsubsection}{Confronto tra infinitesimi}{31}{subsubsection*.91}%
+\contentsline {subparagraph}{esempio}{31}{subparagraph*.92}%
+\contentsline {paragraph}{Definizione di funzioni asintotiche}{31}{paragraph*.93}%
+\contentsline {subparagraph}{esempi}{31}{subparagraph*.94}%
+\contentsline {paragraph}{Definizione di funzioni infinite}{31}{paragraph*.95}%
+\contentsline {subparagraph}{Esempi}{31}{subparagraph*.96}%
+\contentsline {subparagraph}{Regole aritmetiche}{31}{subparagraph*.97}%
+\contentsline {paragraph}{Ordine di infinito}{31}{paragraph*.98}%
+\contentsline {subparagraph}{Esempi}{32}{subparagraph*.99}%
+\contentsline {subparagraph}{Cofronto tra infiniti}{32}{subparagraph*.100}%
+\contentsline {subparagraph}{Esempio}{32}{subparagraph*.101}%
+\contentsline {paragraph}{Gerarchia degli infiniti}{32}{paragraph*.102}%
+\contentsline {subparagraph}{Esempio}{32}{subparagraph*.103}%
+\contentsline {subparagraph}{Regole aritmetiche}{32}{subparagraph*.104}%
+\contentsline {subsection}{\numberline {2.2.12}Funzioni continue}{32}{subsection.2.2.12}%
+\contentsline {paragraph}{Definizione}{32}{paragraph*.105}%
+\contentsline {subsubsection}{Teorema della permanenza del segno}{32}{subsubsection*.106}%
+\contentsline {subsubsection}{Teorema degli zeri}{32}{subsubsection*.107}%
+\contentsline {paragraph}{Teorema dell'esistenza dei valori intermedi (\textit {conseguenza del teorema degli zeri})}{32}{paragraph*.108}%
+\contentsline {subsubsection}{Teorema di Wierstrass (sul massimo e il minimo)}{33}{subsubsection*.109}%
+\contentsline {subsection}{\numberline {2.2.13}Criteri di invertibilità}{33}{subsection.2.2.13}%
