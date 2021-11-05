@@ -178,7 +178,7 @@ come maggiore, minore e uguale, anche le funzioni di comparazione.
   count=count+5
 ```
 Occhio alle variabili non inizializzate perché non sono gestibili quindi non si può sapere che valore possa assumere il risultato.
-### Incremento di 1 di una variabile trammite ++ e decremento tramite il --
+### Incremento di 1 di una variabile trammite `++` e decremento tramite il `--`
 Il C ha una funzione che ti consente di incrementare un numero prima o dopo il richiamo della variabile, nel seguinte modo:
 |       casi        |      funzione         |
 | ----------------- | --------------------- |
@@ -363,10 +363,26 @@ int main (){
     int a=3;
     p=&a; // assegno a p l'indirizzo della variabile a 
     printf("%d",*p); // stampo il valore contenuto nel indirizzo a cui punta p.
-    
 }
 ```
 Come dovreste aver notato quando si vuole accedere al puntatore si utilizzano due modalità, la prima quella senza l'asterisco * consente di utilizzare il puntatore come quello che è una variabile che può contenere solo indirizzi, mentre, il secondo quando si mette davanti l'asterisco consente di accedere al contenuto della varabile puntata.
+### Algebra dei puntatori
+Come le altre variabili 
+### Liste concatenate
+Le liste concatenate sono delle strutture dati che sono composte da celle non contigue tra di loro e sostanzilemnte sono composte da un campo informativo e da un campo next che contiene il valore della cella successiva, ovvamente essendo strutture dati dipicamente dinamiche hanno tutti gli attributi di quella categoria di strutture. Il primo elemento viene definito `head` e se si perde quello si perde tutta la lista e non c'è niente da fare, quindi attenzione...
+<img src="img/lista%20concatenata.svg">
+Occhio, il campo next deve essere dello stesso tipo della struttura perché deve puntare ad un elemento di tipo struttura dichiarata.
+```c
+struct nodo{
+    // Campo informativo
+    int a;
+    char b;
+    float c;
+    // Puntatore all'elemento successivo
+    struct *nodo next;
+};
+```
+
 ## Gestione dei file
 Come in tutti i linguaggi strutturati, il `C` ha la possibilità di gestire dei file, ovviamente è sempre il C, quindi le operazioni vanno svolte manualmente. E
 soprattutto richiedono una certa attenzione, perché il rischio è quello di sovrascrivere qualche documento in portante che una volta perso non lo si recupera, 
