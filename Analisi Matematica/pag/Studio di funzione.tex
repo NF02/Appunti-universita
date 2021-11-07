@@ -255,4 +255,357 @@ orizzontale}
 	\caption{Operazione sul grafico: $y=|f(x)|$}
 \end{figure}
 
+% passaggio ai limiti
 
+\section{Limiti}
+\begin{figure}[!ht]
+	\centering
+	\begin{tikzpicture}
+		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/esempio limite
+		di funzione.pdf}};
+	\end{tikzpicture}
+	\begin{tabular}{|l|l|}
+		\hline
+		x&f(x)\\\hline\hline
+		0,1& 0,998\\
+		0,001&0,999\\\hline
+	\end{tabular}
+	$C.E.=R\textbackslash{}\{0\}$
+	\caption{Esempio limite di funzione}
+\end{figure}
+Il limite di una funzione è un operazione, o meglio un operatore, che permette
+di studiare il comportamento di una funzione nell'intorno di un punto $x_0$.\\
+\textit{Mediamente il limite è possibile stabilire a quale valore tende la
+funzione man mano che i valori della variabile si approssimano al punto $x_0$}.
+\begin{figure}[!ht]
+	\centering
+	\begin{tikzpicture}
+		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/esempio di
+		limite di una funzione.pdf}};
+	\end{tikzpicture}
+	\caption{Esempio di limite di una funzione}
+\end{figure}
+\subsection{Limite di una funzione}
+Sia $f(x)$ definita in $A\in R$, e sia $x_0$ un punto di accumulazione per A.
+Si dice che $f(x)$ ha limite $l$ per $x$ che tende a $x_0$, se $V\varepsilon
+>0 \exists \delta_\varepsilon > 0: |f(x)-l|=\varepsilon\Rightarrow x\in
+I(x_0,\delta_\varepsilon) \text{ escluso al più } x_0 \text{ cioè }
+|x-x_0|<\delta_\varepsilon$
+\begin{itemize}
+	\item $l-\varepsilon < f(x) < l+\varepsilon$
+	\item $x_0-\varepsilon < x<x_0+\delta_\varepsilon$
+\end{itemize}
+\subsubsection{In simboli}
+$\lim_{x\to x_0} f(x)=l \text{   } f(x)\xrightarrow{x\to x_0} l$ 
+\subsection{Definizione di Limite destro}
+$l_1$ si definisce \textit{limite 
+destro} di $f(x)$ per x che tende a $x_0^+$: $\lim_{x\to x_0^+ f(x)=l_1}$\\
+se $\forall \varepsilon > 0 \exists \delta_\varepsilon>0 :
+|f(x)-l_1|<\varepsilon\Rightarrow x_0<x<x_0+\delta_\varepsilon \text{ cioè }
+x\in(x_0,x_0+\delta_\varepsilon)$
+\subsection{Definizione di limite sinistro ``da sinistra''}
+$l_2$ si definisce \textit{limite sinistro} di $f(x)$ per \textit{x} che tende
+a $x^-_0$: $\lim_{x\to x_0^-}f(x)=l^2$ se $\forall \varepsilon>0 \exists
+\delta_\varepsilon>0: |f(x)-l_2|<\varepsilon\Rightarrow
+x_0-\delta_\varepsilon<x<x_0$ cioè $x\in(x_0-\delta_\varepsilon,x_0)$
+\subsection{Teorema d'unicità del limite ``da destra''}
+Se $\lim_{x\to x_0} f(x)=l\Rightarrow \text{l è unico}$\\
+Dimostrazione. Per assurdo: supponiamo che $\exists l_1,l_2: l_1 \neq l_2$
+con $l_1=lim_{x\to x_0}f(x)$ in $I(x_0,\delta_{1\varepsilon})$, $l_2=lim_{x\to
+x_0}f(x)$ in $I(x_0,\delta_{2\varepsilon})$\\
+Fissato $\varepsilon=\frac{|l_1-l_2|}{2}$\\
+$2\varepsilon=|l_1-l_2|=|l_1-f(x)+f(x)-l_2|\leq|f(x)-l_2|+|f(x)-l_2|<2\varepsilon$
+in $I(x_0,\delta_{\varepsilon})$,
+$\delta_{\varepsilon}=min(\delta_{1\varepsilon},\delta_{2\varepsilon})$
+Assurdo! $\Rightarrow l_1=l_2$
+\subsubsection{Esempi}
+\begin{tabular}{lc}
+	$y=\frac{|x|}{x}$ & $C.E. = R\textbackslash \{0\}$\\
+	$\lim_{x\to 0^+}\frac{|x|}{x}=1$&\multirow{2}{*}{$\nexists \text{ limitate}$} \\
+	$\lim_{x\to 0^-}\frac{|x|}{x}=-1$&\\
+\end{tabular}
+\paragraph{Definizione} Sia $f(x)$ definita in $A \in R$, e sia $x_0$ un punto
+di accumulazione per A. Si dice che $f(x)$ ha limite $+\infty$ per x che tende
+a $x_0$, se $\forall M>0,\exists \delta_M>0:\forall x \in
+I(x_0,\delta_m)\Rightarrow f(x)>M$
+\begin{center}
+	\begin{tabular}{|l|}
+		\hline
+		$\lim_{x\to x_0}f(x)=+\infty$\\\hline
+	\end{tabular}
+\end{center}
+\paragraph{Definizione} Sia $f(x)$ definita in $A\in R$, e sia $x_0$ un punto
+di accumulazione per A. Si dice che $f(x)$ ha limite $-\infty$ per $x$ che
+tende a $x_0$, se $\forall M>0, \exists \delta_M>0:\forall x \in
+I(x_0,\delta_m)$\\
+risulta $f(x)<-M$.
+\begin{center}
+	\begin{tabular}{|l|}
+		\hline
+		$\lim_{x\to x_0}f(x)=-\infty$\\\hline
+	\end{tabular}
+\end{center}
+\paragraph{Definizione di Asintoto verticale}
+Se 	\begin{tabular}{|l|}
+		\hline
+		$\lim_{x\to x_0}f(x)=\infty$\\\hline
+\end{tabular} allora la retta verticale \begin{tabular}{|l|}
+	\hline
+	$x=x_0$\\\hline
+\end{tabular} si chiama asintoto verticale
+\begin{figure}[!ht]
+	\centering
+	\begin{tikzpicture}
+		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/asintoto
+		verticale.pdf}};
+	\end{tikzpicture}
+	\caption{Asintoto verticale}
+\end{figure}\\
+Sia $f(x)$ definita in $A\in R$, si dice che $f(x)$ ha limite $l$, per $x$ che
+tende a $+\infty$, se: $\forall_\varepsilon>0, \exists K_\varepsilon >0:\forall
+x \in I (K_\varepsilon, +\infty)$ risulta $|f(x)-l|<\varepsilon$
+\begin{tabular}{|l|}
+	\hline
+	$\lim_{x\to+\infty}f(x)=l$\\\hline
+\end{tabular}
+\newpage
+\paragraph{Definizione di Asintoto orizzontale} Se \begin{tabular}{|l|}
+	\hline
+	$\lim_{x\to \infty}f(x)=l$\\\hline
+\end{tabular} Allora la retta orizzontale \begin{tabular}{|l|}
+	\hline
+	$y=l$\\\hline
+\end{tabular} si chiama Asintoto orizzontale
+\begin{figure}[!ht]
+	\centering
+	\begin{tikzpicture}
+		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/asintoto
+		orizzontale.pdf}};
+	\end{tikzpicture}
+	\caption{Asintoto orizzontale}
+\end{figure}\\
+Sia $f(x)$ definita in $A \in R$, si dice che $f(x)$ ha limite $+\infty$, per x
+che tende a $+\infty$, se: $\forall M>0, \exists K_M >0: \forall x \in (K_M,
++\infty)$ risulta $f(x)\in (M,+\infty)$ \begin{tabular}{|l|}
+	$\lim_{x\to +\infty}f(x) = +\infty$
+\end{tabular}
+\subsection{Teorema (\texttt{\color{red} algebra dei limiti})}
+Se:
+\begin{itemize}
+	\item $\lim_{x\to x_0} f(x)=l_1$ $\lim_{x\to x_0} g(x) = l_2$
+	\item $\lim_{x\to x_0} f(x)\pm g(x)=l_1\pm l_2$
+	\item $\lim_{x\to x_0} f(x)*g(x)=l_1*l_2$
+	\item $\lim_{x\to x_0} \frac{f(x)}{g(x)}=\frac{l_1}{l_2}, g(x), l_2\neq 0$
+
+\end{itemize}
+\subsection{Convenzioni con $\infty$}
+\begin{itemize}
+	\item $\forall a >0, a\pm \infty=\pm \infty$
+	\item $+\infty+\infty=+\infty$
+	\item $-\infty-\infty=-\infty$
+	\item $\forall a> 0, a*(\pm \infty)=\pm \infty$
+	\item $\forall b< 0, b*(\pm \infty)=\mp \infty$
+	\item $(\pm\infty)*(\pm \infty)=+\infty$
+	\item $(\pm\infty)*(\mp \infty)=-\infty$
+
+\end{itemize}
+\subsubsection{Convenzioni con $\infty$}
+$\frac{a}{\infty}=0$ $\frac{a}{0}=\infty$
+
+\subsection{Forme indeterminate}
+\begin{tabular}{|llllll|}
+	\hline
+	$+\infty-\infty$&$\frac{\infty}{\infty}$&$\frac{0}{0}$&$1^\infty$&$e^{+\infty*0}$&$0-\infty$\\
+	\hline
+\end{tabular}
+\begin{itemize}
+	\item $a^{+\infty}=\begin{cases}
+			+\infty,&a>1\\
+			0,&0<a<1
+	\end{cases}$
+	\item $a^{-\infty}=\begin{cases}
+			0,&a>1\\
+			+\infty,&0<a<1
+	\end{cases}$
+\end{itemize}
+\subsection{Teorema del confronto}
+Siano $f(x),f_1(x),f_2(x)$ tre funzioni definite in $A\subseteq R$ sia $x_0$ un
+punto di accumulazione per A e $f_1(x)\leq f(x) \leq f_2(x)$ se $\lim_{x\to
+x_0}f_1(x)=\lim_{x\to x_0} f_2(x)=l$ allora $\lim_{x\to x_0} f(x)=l$
+\subsubsection{Dimostrazione}
+Se $\lim_{x\to x_0} f_1(x)=\lim_{x\to x_0} f_2(x)=l$ allora per definizione di
+limite:
+\begin{itemize}
+	\item $\exists \delta_1:|f_1(x)-l|<\varepsilon$ $\forall x \in I(x_0,\delta_1)$
+	\item $\exists \delta_2:|f_2(x)-l|<\varepsilon$ $\forall x \in
+		I(x_0,\delta_2)$
+\end{itemize}
+\begin{center}
+	$\Rightarrow l-\varepsilon < f_1(x) \leq f(x)\leq f_2(x) < l+ \varepsilon$
+\end{center}
+$\forall x \in I(x_0,\delta_2), \delta = \min (\delta_1,\delta_2)$
+\subsubsection{Casi particolari di $\lim_{x\to x_0} f(x)*g(x)$}
+\paragraph{Teorema}
+Se $\lim_{x\to x_0} f(x)=x$; $|g(x)|\leq M$ per $x\in I(x_0,\delta)\Rightarrow
+\lim_{x\to x_0}f(x)*g(x)=0$
+\subparagraph{Esempio} $\lim_{x\to x_0}x*\sin\frac{1}{x}=0$
+\subsection{Limite di \texttt{funzione composta}}
+Siano $g:A\to B:B\to R:$ $\lim_{x\to x_0}g(x)=y_0$ e $\lim_{y\to y_0}f(y)=l$
+con $l=f(y_0)$ (\textit{se f è continua})\\
+$\Rightarrow$\begin{tabular}{|l|}
+	\hline$\lim_{x\to x_0}f[g(x)]=l$\\\hline
+\end{tabular}
+\subsection{Limiti Notevoli}
+\begin{multicols}{2}
+	\begin{itemize}
+		\item \begin{tabular}{|l|}
+				\hline
+				$\lim_{x\to x_0}\frac{\sin (x)}{x}=1$\\\hline
+		\end{tabular}
+		\item \begin{tabular}{|l|}
+				\hline
+				$\lim_{x\to x_0}\frac{\tan (x)}{x}=1$\\\hline
+		\end{tabular}
+		\item \begin{tabular}{|l|}
+				\hline
+				$\lim_{x\to x_0}\frac{1-\cos (x)}{x}=\frac{1}{2}$\\\hline
+		\end{tabular}
+		\item \begin{tabular}{|l|}
+				\hline
+				$\lim_{x\to x_0}(1+\frac{1)}{x})=e$\\\hline
+		\end{tabular}
+		\item \begin{tabular}{|l|}
+				\hline
+				$\lim_{x\to x_0}\frac{\log_a (1+x)}{x}=log_ae$\\\hline
+		\end{tabular}
+		\item \begin{tabular}{|l|}
+				\hline
+				$\lim_{x\to x_0}\frac{a^x-1}{x}=\log_ea$\\\hline
+		\end{tabular}
+	\end{itemize}
+\end{multicols}
+\paragraph{Esempi}
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item $\lim_{x\to x_0^+}xe^x+e^{-\frac{1}{x}}=0$
+		\item $\lim_{x\to x_0^-}xe^x+e^{-\frac{1}{x}}=\infty$
+		\item $\lim_{x\to x_0}\frac{1-\cos (x)}{x^2}=\lim_{x\to
+			x_0}\frac{(1-\cos (x))(1+\cos (x))}{x^2(1+\cos x)}=\frac{1}{2}$
+		\item $\lim_{x\to +\infty}\frac{1}{x}+\arctan{x}=\frac{\pi}{2}$
+	\end{enumerate}
+\end{multicols}
+\begin{figure}[!ht]
+	\centering
+	\begin{tikzpicture}
+		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/esempio studio
+		di funzione 2.pdf}};
+	\end{tikzpicture}
+	\caption{Esempio di limite notevole di una funzione}
+\end{figure}
+
+\subsection{Infinitesimi e infiniti}
+\paragraph{Definizione}
+Una funzione $f(x)$ su dice \underline{infinitesima} per $x\to x_0$ (per $x\to \infty$), $x_0$ punto di accumulazione per il dominio di $f(x)$, se: $\lim_{x\to x_0}f(x)=0$ (oppure $lim_{x\to \infty}f(x)=0$).
+\subsubsection{Esempi}
+\begin{itemize}
+	\item $y=e^x$ è un infinitesimo per $x\to -\infty$
+	\item $y=\ln{x}$ è un infinitesimo per $x\to 1$
+	\item $y=\sin{x}$ è un infinitesimo per $x\to 0$ (ma anche per $x\to \pi,2\pi$, etc.)
+	\item $y=\ln{1+x}$ è un infinitesimo per $x\to 1$ 
+\end{itemize}
+\subsubsection{Ordine di infinitesimo}
+Siano $f(x)$ e $g(x)$ infinitesimi per $x\to{x_0}$ (o per $x\to \infty$), con $g(x)\neq 0$. Se $\exists\alpha R+$ e $l\in R$, $l\neq 0$ tale che\\
+$\lim_{x\to{x_0}}=\frac{f(x)}{[g(x)]^\alpha}=l$ (oppure $\lim_{x\to{\infty}}=\frac{f(x)}{[g(x)]^\alpha}=l$)\\
+Allora, si dice che per $x\to x_0$ (o per $x\to \infty$), $f(x)$ è un infinitesimo di ordine $\alpha$ rispetto all'infinitesimo campione $g(x)$.
+\paragraph{Esempi}
+\begin{itemize}
+	\item $y=\sin{x}$ è un infinitesimo per $x\to 0$ di ordine 1 rispetto all'infinitesimo campione $g(x)=x$, infatti, $\lim_{x\to 0}=\frac{\sin{x}}{x^\alpha}=1$ solo se $\alpha = 1$
+	\item $y=\tan^2x$ è un infinitesimo di ordine 2 rispetto ad x, per $x\to 0$
+	\item $ord(l-\cos{x})=2$ rispetto ad $x$ per $x\to 0$
+\end{itemize}
+\subsubsection{Confronto tra infinitesimi}
+Siano $f(x)$ e $g(x)$ infinitesime per $x\to x_{0}$,\\
+$\lim_{x\to x_0}\frac{f(x)}{g(x)}=
+\begin{cases}
+l\neq 0&ord(f)=ord(g)\\
+\pm \infty&ord(f)<ord(g)\\
+0&ord(f)>ord(g)\\
+	\text{non esiste,} & \text{f e g non confrontabile} \\ 
+\end{cases}
+$\\
+Stesso risultato se $f(x)$ e $g(x)$ sono infinitesime per $x\to \infty$. Utilizzando il confronto tra infinitesimi nel calcolo dei limiti del tipo $\lim_{x\to x_0}\frac{f_1+f_2}{g_1+g_2}$, dove $f_1,f_2,g_1,g_2$ sono funzioni infinitesime per $x\to x_0$, si possono {\color{blue} \em trascurare gli infinitesimi di ordine maggiore} (analogo discorso per funzioni infinitesime $x\to \infty$).
+\subparagraph{esempio}
+$\lim_{x\to 0}\frac{x^2+x^3+2\tan{x}}{(e^x-1)^2+\sin{x}}=\lim_{x\to 0}\frac{2\tan x}{\sin x}=2$
+\paragraph{Definizione di funzioni asintotiche}
+Si dice che due funzioni $f,g$ sono asintotiche per $x\to x_0$ se $\lim_{x\to x_0}\frac{f(x)}{g(x)}=1$ e si scrive $f\sim g$ per $x\to x_0$
+\subparagraph{esempi}
+\begin{itemize}
+	\item $\sin x\sim x$ per $x\to 0$
+	\item $\ln(1+x)\sim x$ per $x\to 0$
+	\item $e^x-1\sim x$ per $x\to 0$ 
+\end{itemize}
+\paragraph{Definizione di funzioni infinite}
+Una funzione $f(x)$ si dice \textit{infinita} per $x\to x_0$ (o per $x \to \infty$) , $x_0$ punto di accumulazione per il dominio di $f(x)$, (o per $x\to \infty$) se:
+\begin {center}
+	$\lim_{x\to x_0}f(x)=\infty$ (oppure $\lim_{x\to \infty}f(x)=\infty$)
+\end{center}
+\subparagraph{Esempi}
+\begin{itemize}
+	\item $y=e^x$ è un infinito per $x\to +\infty$
+	\item $y=\ln{x}$ è un infinito per $x\to 0^+$
+	\item $y=x^2+x$ è un infinito per $x\to \infty$
+\end{itemize}
+\subparagraph{Regole aritmetiche}
+Siano $f(x)=o(x^\alpha)$ (si legge <<o piccolo di>>) e $g(x)=o(x^\beta)$ due funzioni \textit{infinitesime} rispettivamente di ordine $\alpha$ e $\beta$ per $x \to 0$ Allora si ha
+\begin{itemize}
+	\item $cf(x))o(x^\alpha)$, $\forall c \in R$
+	\item $x^\lambda f(x)=o(x^{\lambda+\alpha})$
+	\item $f(x)g(x)=o(x^{\alpha+\beta})$
+	\item $f(x)+g(x)=o(x^y)$, $\gamma=min(\alpha,\beta)$
+\end{itemize}
+\paragraph{Ordine di infinito}
+Siamo $f(x)$ e $g(x)$ infiniti per $x\to x_0$ (o per $x$), con $g\neq 0$. Se $\exists\alpha\in R+$ e $l\in R$, $l\neq 0$ tale che\\
+$\lim_{x\to x_0}\frac{f(x)}{[g(x)]^2}=l$ (o $\lim_{x\to \infty}\frac{f(x)}{[g(x)]^\alpha}=l$)\\
+Allora, per $x\to x_0$ (o per $x\to \infty$), $f(x)$ è un infinito di ordine $\alpha$ rispetto all'infinito compone $g(x)$.
+\subparagraph{Esempi}
+\begin{itemize}
+	\item $ord(\sqrt{x})=\frac{1}{2}$ rispetto ad $x$ per $x\to +\infty$
+	\item $ord(\frac{1}{\sin x})=1$ rispetto ad $\frac{1}{x}$ per $x\to 0$
+	\item $ord(\frac{1}{e^x-1})=1$ rispetto ad $\frac{1}{x}$ per $x\to 0$
+\end{itemize}
+\subparagraph{Cofronto tra infiniti}
+Siamo $f(x)$ e $g(x)$ infiniti per $x\to x_0$\\
+$\lim_{x\to x_0}\frac{f(x)}{g(x)}=\begin{cases}
+l\neq 0&ord(f)=ord(g)\\
+\pm \infty&ord(f)>ord(g)\\
+0&ord(f)<ord(g)\\
+	\text{non esiste,} & \text{f e g non confrontabile} \\ 
+\end{cases}
+$\\
+Stesso risultato se $f(x)$ e $g(x)$ sono infinite per $x \to \infty$. Utilizzando il confronto tra infiniti nel calcolo dei limiti del tipo $\lim_{x\to x_0}\frac{f_1+f_2}{g_1+g_2}$, deve $f_1,f_2,g_1,g_2$ sono funzioni infinite per $x\to x_0$, si possono {\color{red}trascurare gli \underline{infiniti} di ordine minore} (analogo discorso per funzione infinito $x\to \infty$).
+\subparagraph{Esempio}
+$\lim_{x\to +\infty}\frac{x^2+x^3+3\sqrt{x}}{x^2(2x-1)+\sqrt{3x}}=\lim_{x\to +\infty}\frac{x^3}{2x^3}=\frac{1}{2}$.
+\paragraph{Gerarchia degli infiniti}
+Per $x\to +\infty$ si ha $(\log_\alpha x)^\alpha<<x^\beta<<b^x$, con $\alpha,\beta>0,a,b>1$ Non sempre è possibile calcolare l'ordine di infinito (o di infinitesimo) rispetto alla funzione campione usuale.\\
+\subparagraph{Esempio}
+$\lim_{x\to +\infty}\frac{a^x}{x^a}=+\infty, \forall \alpha>0, a>1$, $\lim_{x\to +\infty}\frac{(\log_a x)^\beta}{x^a}=+\infty, \forall \alpha, \beta>0, a>1$
+\subparagraph{Regole aritmetiche}
+Siano $f(x)$ e $g(x)$ due funzioni \emph{infinite} di ordine rispettivamente $\alpha$ e $\beta$. Allora si ha
+\begin{itemize}
+	\item $ord(f(x)+g(x))=\max{\alpha,\beta}$
+	\item $ord(f(x)*g(x))=\alpha+\beta$
+	\item $ord((f(x))^\gamma)=\alpha\gamma$
+\end{itemize}
+\subsection{Funzioni continue}
+Una funzione continua è una funzione che, intuitivamente, fa corrispondere ad elementi sufficientemente vicini del dominio elementi arbitrariamente vicini del codominio.
+\paragraph{Definizione} Una funzione $f(x)$ è continua in $x_0$, se: $l_1=\lim_{x\to x^+_0}=\lim_{x\to x_0}f(x)=l_2=\lim_{x\to x_0}f(x)=f(x_0)$ ossia $\forall\in>0\exists \delta_\mathcal{E} > 0$: $|f(x)-f(x_0)|<\mathcal{E}$ $\forall_x\in I(x_0,\delta_\mathcal{E})$ $(l=f(x_0))$
+\subsubsection{Teorema della permanenza del segno}
+Sia f(x) definita almeno in un intorno di $x_0$ e continua in $x_0$. Se $f(x_0)>0$ allora $\exists \delta >0 : f(x) >0 \forall x\in (x_0-\delta ,x_0+\delta{})$
+\subsubsection{Teorema degli zeri}
+Sia $f(x)$ continua in $[a,b]$ $f(a)*f(b)<0$ allora $\exists x_0 \in (a,b): f(x_0)=0$. Se $f$ è anche strettamente monotona, lo zero è unico.
+\paragraph{Teorema dell'esistenza dei valori intermedi (\textit{conseguenza del teorema degli zeri})}  
+Una funzione $f(x)$ continue in $[a,b]$ assume tutti i valori compresi tra $f(a)$ ed $f(b)$.
+\subsubsection{Teorema di Wierstrass (sul massimo e il minimo)}
+Sia $f(x)$ continua in $[a,b]$. Allora $f(x)$ assume massimo e il minimo assoluto in $[a,b]$, cioé $\exists x_1, x_2 \in [a,b]: f(x_1)\leq f$
+\subsection{Criteri di invertibilità}
+Una funzione continua e strettamente monotona in [a,b] è invertibile in tale intervallo. Dimostrazione.

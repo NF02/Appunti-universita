@@ -115,3 +115,15 @@
 \contentsline {paragraph}{Teorema dell'esistenza dei valori intermedi (\textit {conseguenza del teorema degli zeri})}{32}{paragraph*.108}%
 \contentsline {subsubsection}{Teorema di Wierstrass (sul massimo e il minimo)}{33}{subsubsection*.109}%
 \contentsline {subsection}{\numberline {2.2.13}Criteri di invertibilità}{33}{subsection.2.2.13}%
+\contentsline {section}{\numberline {2.3}Calcolo differenziale per funzioni di una variabile}{33}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Derivata di una funzione}{33}{subsection.2.3.1}%
+\contentsline {paragraph}{Significato geometrico della derivata in un punto e equazione della retta tangente}{33}{paragraph*.110}%
+\contentsline {subsection}{\numberline {2.3.2}Definizione}{33}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Continuità e derivabilità}{33}{subsection.2.3.3}%
+\contentsline {subsubsection}{Teorema}{33}{subsubsection*.111}%
+\contentsline {paragraph}{Esempio}{33}{paragraph*.112}%
+\contentsline {section}{\numberline {2.4}Punti di non derivabilità}{34}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Punto angoloso}{34}{subsection.2.4.1}%
+\contentsline {subsubsection}{Esempio}{34}{subsubsection*.113}%
+\contentsline {subsubsection}{Un altro esempio}{34}{subsubsection*.115}%
+\contentsline {subsection}{\numberline {2.4.2}Punto cuspude}{35}{subsection.2.4.2}%
