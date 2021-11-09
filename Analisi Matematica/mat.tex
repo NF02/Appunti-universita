@@ -35,7 +35,7 @@
 \usepackage{pifont}
 \usepackage{imakeidx}
 \usepackage{verbatim}
-
+\usepackage{dsfont}
 \usepackage{listings}
 \usepackage{color}
 
@@ -99,106 +99,45 @@
 \input{pag/simboli.tex}
 \input{pag/Cenni di teoria degli insiemi.tex}
 \input{pag/Studio di funzione.tex}
-\section{Calcolo differenziale per funzioni di una variabile}
-Sia \textit{f}: $(a,b)\to R$, si definisce derivata di \textit{f} nel punto
-$x_0\in (a,b)$ il numero, se $\exists$ finito:
-\begin{center}
-	$f^, (x_0)=\lim_{h\to 0}\frac{f(x_0+h)-f(x_0)}{h}$\\
-	$f^,(x_0),y^,(x_0),\frac{df}{dx}|_{x_0}, \frac{dy}{dx}|_{x_0},
-	Df(x_0),Dy(x_0)$
-\end{center}
-\subsection{Derivata di una funzione}
-\paragraph{Significato geometrico della derivata in un punto e equazione della
-retta tangente}
-Sia $x_0\in (a,b): x_0+h\in (a,b)$\\
-\textit{Si definisce Rapporto incrementale} $\frac{\Delta f}{\Delta x}
-=\frac{f(x_0+h)+f(x_0)}{h}=\tan \beta$\\
-% possibile grafico
-Sia $\beta$ l'angolo che la retta \textit{r} forma con l'asse delle x,
-considerando il triangolo ABC possiamo scrivere $f(x+h)-f(x_0) = \tan\beta
-[x_0+h-x_0]$ Ossia: $\tan\beta=\frac{f(x_0+h)-f(x_0)}{h}$
-% possibile grafico
-Ma $m=\frac{f(x_0+h)-f(x_0)}{h}$ È il coefficiente angolare della retta
-\textit{f} passante per AB\\
-Per cui $\tan\beta=m$
-% possibile grafico
-Ossia $\tan \beta$ è il coefficiente angolare della retta secante per AB\\
-Quando $h\to 0$ in punto B si sposta sulla curva avvicinandosi ad A, la retta
-\textit{r} diventa tangente alla curva in A e si ha: $\lim_{h\to 0}
-\frac{f(x_0+h)-f(x_0)}{h}=f^,(x_0)=\tan \alpha$ coefficiente angolare di t
-% possibile grafico
-Equazione della retta tangente dal grafico di \textit{f(x)} nel punto di
-ascissa $x_0$: $y=f^,(x_0)(x-x_0)+f(x_0)$ Infatti, tra tutte le rette del
-fascio proprio passanti $A(x_0,f(x_0)) di eq.$ $y-f(x_0)=m(x-x_0)$ per $
-m=f^,(x_0)$ si ottiene l'equazione di t.
-% possibile grafico
-Se $f^,(x)$ è definita $\forall x \in (a,b)$ allora f(x) è derivabile in (a,b)
-e risulta definita la funzione $f^,:(a,b)\to R$ detta derivata prima di
-$f(x)$\\
-\textit{f(x) è derivabile in [a,b], se è derivabile $\forall x \in (a,b)$ e
-ammette derivata destra in x=a (si scrive $f^,_+(a)$) e derivata sinistra in
-$x=b$ (si scrive $f^,_-(b)$)}
-\subsection{Definizione}
-\begin{itemize}
-	\item \underline{Derivata destra} $\lim_{h\to 0^+}\frac{f(x_0+h)-f(x_0)}{h}
-		= f^,_+(x_0)$
-	\item \underline{Derivata sinistra} $\lim_{h\to 0^-}\frac{f(x_0+h)-f(x_0)}{h}
-		= f^,_-(x_0)$
-\end{itemize}
-Se $f^,_+(x)=f^,_-(x)$ \textit{f è derivabile in x}
-\subsection{Continuità e derivabilità}
-\subsubsection{Teorema}
-Sia $f: (a,b) \to R$. \textit{Se f è derivabile in $x_0 \in (a,b)$ allora f è
-continua in $x_0,x+h\in (a,b)$: $\lim_{h\to 0} f(x_0+h)-f(x_0)=\lim_{h\to
-0}\frac{f(x_0+h)-f(x_0)}{h}*h=0$}.
-Da cui $\lim_{h\to 0}f(x_0+h)=f(x_0)$ che è la continuità di $f$ in $x_0$.\\
-Quindi \textit{\color{red} derivabilità $\Rightarrow$ continuità} Occhio non è
-vero il contrario perché non per forza una funzione continua è derivabile.
-\paragraph{Esempio} $y=|x|$ è continua ma non è derivabile in $x=0$.
-Infatti,\\ $y=|x|=\begin{cases}
-	x&x\geq 0\\
-	-x&x<0
-\end{cases} \text{ e } y^,=\frac{|x|}{x}=\begin{cases}
-	1&x> 0\\
-	-1&x<0
-\end{cases}$
-\section{Punti di non derivabilità}
-\subsection{Punto angoloso}
-Se $f^,_+(x)\neq f^,_-(x)$ e almeno un $\exists$ finita $x_0$ si dice
-\colorbox{yellow}{punto
-angoloso}, in quanto le rette tangenti alla f(x) nel punto di ascissa $x_0$
-formano un angolo.
-\subsubsection{Esempio}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/funzione valore assoluto.pdf}};
-	\end{tikzpicture}
-	\caption{Grafico di Funzione valore assoluto $y=|x|$ e quindi $f^,_+(0)=1\neq
-	f^,_+=-1$}
-\end{figure}
-\subsubsection{Un altro esempio}
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/esempio punto
-		angoloso.pdf}};
-	\end{tikzpicture}
-	\caption{Grafico di Funzione $x=|x^2-1|$}
-\end{figure}
-\subsection{Punto cuspude}
-Se $f^,_+(x)\neq f^,_-(x)$ sono $\infty$, $x_0$ si dece \colorbox{yellow}{punto
-cuspide}; la retta tangente alla \textit{f(x)} nel punto di ascissa $x_0$ è
-verticale.
-\begin{figure}[!ht]
-	\centering
-	\begin{tikzpicture}
-		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/esempio punto
-		cuspide.pdf}};
-	\end{tikzpicture}
-	\caption{Grafico di Funzione $f(x)=\frac{(x-3)^{\frac{2}{3}}}{2}$}
-\end{figure}
-
-
+\section{Esercizio d'esempio}
+$f(x)=\frac{x^3}{2(1+x)^2}$
+\begin{enumerate}
+	\item Dominio: $\forall x \in \mathds{R} -\{-1\}$\\
+		%\textbf{Numeratore}: $x^3=0 \Rightarrow \sqrt[3]{x^3}=0\Rightarrow x=0$\\
+		\textbf{Denominatore $\neq 0$}: $2(x+1)^2\neq0\Rightarrow x\neq -1$
+	\item Intersezione con gli assi:\\
+		asse x$\begin{cases}
+			y=0\\
+			\frac{x^3}{2(1+x)^2}=0
+		\end{cases}
+		\begin{cases}
+			y=0\\
+			x^3=0 \Rightarrow \sqrt[3]{x^3}=0\Rightarrow x=0
+		\end{cases}$\\
+		asse y $\begin{cases}
+			x=0\\
+			\frac{0^3}{2(1+0)^2}=0
+		\end{cases}
+		\begin{cases}
+			y=0\\
+			x=0\\
+		\end{cases}$\\
+		\textit{nel caso dello studio del intersezione con gli assi si può escludere lo studio del denominatore}
+	\item Segno:\\
+		f(x)>0
+		\begin{itemize}
+			\item \textbf{Numeratore}: $x^3>0 \Rightarrow \sqrt[3]{x^3}>0\Rightarrow x>0$
+			\item \textbf{Denominatore}: $2(x+1)^2>0\Rightarrow x\neq -1$
+		\end{itemize}
+	\item Simmetrie: \\
+		$f(x)=f(-x)=\frac{-x^3}{2(1-x)^2}$ La funzione non è ne pari ne dispari.
+	\item Asintoto verticale:\\
+		$\lim_{x\to-1^+}\frac{x^3}{2(1+x)^2}=\frac{(-1)^3}{2(1+(-1^+))^2}=\frac{-1}{0}=-\infty$\\
+		$\lim_{x\to-1^-}\frac{x^3}{2(1+x)^2}=\frac{(-1)^3}{2(1+(-1^-))^2}=\frac{-1}{0}=-\infty$
+	\item Asintoto orizzontale:\\
+		$\lim_{x\to+\infty}=\frac{x^3}{2(1+x)^2}=\frac{(+\infty)^3}{2(1+(+\infty))^2}=\frac{\infty}{\infty}$\\
+		$\lim_{x\to+\infty}\frac{f^,(x)}{g^,(x)}=\lim_{x\to+\infty}\frac{3x^2}{4(1+x)}=\frac{\infty}{\infty}=\frac{6x}{4}=\infty$
+		
+\end{enumerate}
 \printindex
 \end{document}
