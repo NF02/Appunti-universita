@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  11 NOV 2021 10:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  11 NOV 2021 12:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1275,90 +1275,113 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \openout5 = `fisica.toc'.
 
 
-(./pag/premesse.tex) (./pag/simboli.tex) [3] [4
+[3] [4
 
-] [5] [6]
+] (./fisica.lot)
+\tf@lot=\write6
+\openout6 = `fisica.lot'.
+
+ [5] [6
+
+] (./fisica.lof)
+\tf@lof=\write7
+\openout7 = `fisica.lof'.
+
+ (./pag/premesse.tex)
+(./pag/simboli.tex) [7] [8
+
+] [9] [10]
 Capitolo 1.
+[11
 
-Overfull \hbox (70.50897pt too wide) in paragraph at lines 121--125
+] [12
+
+]
+Capitolo 2.
+
+Overfull \hbox (70.50897pt too wide) in paragraph at lines 135--139
 [][] 
  []
 
-[7
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 146--165
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 160--179
 \OML/cmm/m/it/10 h \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 ([] + 
 []) \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--165
+Underfull \hbox (badness 10000) in paragraph at lines 160--179
 []$
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
-Underfull \hbox (badness 10000) in paragraph at lines 195--218
+ [14]
+Underfull \hbox (badness 10000) in paragraph at lines 209--232
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--247
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9]
-Underfull \hbox (badness 10000) in paragraph at lines 247--263
+Underfull \hbox (badness 10000) in paragraph at lines 259--261
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
-Underfull \hbox (badness 10000) in paragraph at lines 283--286
+ [15]
+Underfull \hbox (badness 10000) in paragraph at lines 261--277
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--318
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+Underfull \hbox (badness 10000) in paragraph at lines 297--300
 
  []
 
-[11] [12] (./fisica.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--332
+
+ []
+
+[17] [18] (./fisica.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 
 Package rerunfilecheck Warning: File `fisica.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `fisica.out':
-(rerunfilecheck)             Before: 17F7D27E60407CCC5A01E503F42D9F16;1291
-(rerunfilecheck)             After:  5CC6181EE2F8946AB6B8596B95834D90;1603.
+(rerunfilecheck)             Before: 5CC6181EE2F8946AB6B8596B95834D90;1603
+(rerunfilecheck)             After:  266886F35C3131394954CD51592406C5;2084.
  ) 
 Here is how much of TeX's memory you used:
- 40682 strings out of 478994
- 878187 string characters out of 5858184
- 1604505 words of memory out of 5000000
- 57522 multiletter control sequences out of 15000+600000
+ 40714 strings out of 478994
+ 878533 string characters out of 5858184
+ 1605505 words of memory out of 5000000
+ 57536 multiletter control sequences out of 15000+600000
  423091 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,20n,89p,410b,630s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.0.2.3} has been referenced but does no
+ 87i,20n,89p,735b,630s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{subsection.1.2.3} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.0.2.2} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.1.2.2} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.0.2.1} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.1.2.1} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.0.1.1} has been referenced but does not 
+pdfTeX warning (dest): name{section.1.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.1.1} has been referenced but does not 
 exist, replaced by a fixed one
 
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{
@@ -1383,10 +1406,10 @@ t/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/
 fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dist/fo
 nts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2021/texmf-dist/font
 s/type1/public/cm-super/sfti1000.pfb>
-Output written on fisica.pdf (12 pages, 256786 bytes).
+Output written on fisica.pdf (18 pages, 271666 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 69 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 250 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
