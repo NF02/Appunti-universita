@@ -43,6 +43,19 @@ Il compilatore per sciendere li file da compilare da quelli libreria utilizza l'
 Per iniziare a programmare bisogan scegliere un IDE, un ambiente di sviluppo che ci consenta di lavorare ai potensiali progetti futuri.
 ### Discriminanti nella scelta
 Un IDE moderno deve possedere determinati prerequisiti, uno tra tutti, è il riconoscimento della sintassi, che consente di verificare potenziali errori di pattitura e riduce l'errore. Un altro punto fondamentale è una buona integrazione con **GIT** che permette di tenere salvate le varie fasi di sviluppo rendendo più semplice la regressione in caso di problemi. I suggerimente sono ben accetti, quindi se l'editor possiede anche questa funzione tramete una shortcut è tutto un pro.   
+### Qualche IDE o editor interessante
+1. **VIM/neovim** - editor pensato un logica Unix molto rigido e molto personalizzabile ma non complesso, fa solo quello che gli viene richiesto e ognuno implemente solo quello che vuole, risulta comodo 
+  perché possiede una versione a riga di comando accessibile tramite shell di sistema e anche un versione grafica chiamata 
+  Gvim, ane neovim è interessante è rispetta pienamente la struttura degli OS Linux più moderni con un directory all'interno di `~/.config`
+  invece della vecchia `~/.vim` e `~/.vimrc` del originale. È un open source.
+2. **GNU/Emacs** - rivale diretto di Vim, software tolamente free software, pensato dalla Free Software Foundation e pensato per essere 
+   un vero e proprio IDE multifunzione con ogni pregio di questa filosofia, ha un gestore interno dei pacchetti e dei plugin e questo lo rende
+   molto personalizzabile, anche se le shortcuts sono meno intuitive rispetto a Vim e il fatto che sia già multi funzione lo rende meno scalabile.
+3. **Code::Blocks** - IDE di sviluppo multi-linguaggio, ammastanza diffuso che ha il vero e unico difetto di essere poco aggiornato e non avere delle shortcuts comode.
+4. **Dev-C++** - Un IDE funzionale abastanza aggiornato e che tutto sommatto funziona bene.
+5. **CLion** - software proprietario Creato da JetBrains e che sostanzialmente essendo molto diffuso e dando le licenze alle scuole e le Università riesce a predere la sua fetta di mercato,
+   ovviamente la licenza ha un costo anuale.
+6. **Geany** - un buon IDE semplice e rapido da utilizzare e da configurare.
 ## Commenti
 Come in ogni buon linguaggio di programmazione anche il C supporta l'utilizzo dei commenti sia per singola linea sia multi-linea,
 i caratteri che vengono utilizzarti per indicare questo tipo di testo sono riportati qui sotto nella tabella.
@@ -367,7 +380,15 @@ int main (){
 ```
 Come dovreste aver notato quando si vuole accedere al puntatore si utilizzano due modalità, la prima quella senza l'asterisco * consente di utilizzare il puntatore come quello che è una variabile che può contenere solo indirizzi, mentre, il secondo quando si mette davanti l'asterisco consente di accedere al contenuto della varabile puntata.
 ### Algebra dei puntatori
-Come le altre variabili 
+Come le altre variabili anche quelle puntatori posseggono una propria algebra che consente di spostarsi tra gli indirizzi: infatti, 
+all'interno del C gli sviluppatori hanno previsto dei macchanismi di gestione della mameria contigua che sono abbastanza semplici, 
+ovviamente con delle regole abbastanza rigide da rispettare, che se vengono infrante distruggono tutto il lavoro, quindi è buona 
+norma seguire rigidamente le stesse e organizzarsi il lavoro in modo ordinato e netto. I matodi sono gli stessi che si utilizzono
+per incrementare e degrementare le variabili. `Quindi puntatore++ o ++puntarore` e `puntatore--` o `--puntatore`, `puntatore+i` o `puntatore-i`.
+#### Attenzione!!
+Il metodo compatto `putatore++` o `puntatore--` vanno a modificare il puntatore quindi occhi perché poi davvero creare dei problemi, perché quando si ha solo il puntatore
+come riferimento di uno spazio di memoria in caso di fuori iscita si andrabbe a perdere lo spazio puntato creando spazzatura in memoria che nessuno cancellerà.
+
 ### Liste concatenate
 Le liste concatenate sono delle strutture dati che sono composte da celle non contigue tra di loro e sostanzilemnte sono composte da un campo informativo e da un campo next che contiene il valore della cella successiva, ovviamente essendo strutture dati diplicamente dinamiche hanno tutti gli attributi di quella categoria di strutture. Il primo elemento viene definito `head` e se si perde quello si perde tutta la lista e non c'è niente da fare, quindi attenzione...
 <img src="img/lista%20concatenata.svg">
