@@ -3,6 +3,7 @@
 author: "Nicola Ferru"
 
 ---
+
 ## Definizione
 Il linguaggio C è un linguaggio compilato, fortemente tipizzato e case sensitive. Ovvimanete essendo un linguaggio compilato
 richiederà una ricompilazione nel caso in cui si cambi l'OS oppute l'architettura. È un linguaggio nato per i sistemi Unix 
@@ -37,6 +38,7 @@ librerie di sistema, mentre, nel caso di librerie locali scritte ad'hoc per il p
 | `<time.h>`  | È una libreria che consente di sfruttare funzioni di tipo temporale "timer e letture dell'orario" |
 | `<ctype.h>`   | Dichiara funzioni per la classificazione dei caratteri. |
 | `<float.h>`   | Contiene le macro che vengono espanse ai vari limiti e parametri dei tipi in virgola mobile (floating-point) standard. |
+| `<stdbool.h>`   | Introduce il tipo `bool` e anche dei metodi per gestirlo | 
 
 Il compilatore per sciendere li file da compilare da quelli libreria utilizza l'estensione del file per fare la verifica del compito del singolo file durante l'assemplaggio del file eseguibile. 
 ## Scelta dell'IDE
@@ -519,6 +521,7 @@ float media (int v[]) {
 }
 ```
 #### Funzione che svolge le tabelline
+Primo modo di scrivere una funzione:
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -542,7 +545,33 @@ int main (){
 	scanf("%d", &numeroVolte);
 	tabelline(base,numeroVolte);
 }
+```
+Altro modo di scriverlo molto più chiaro del primo:
+```c
+#include <stdio.h>
+#include <stdlib.h>
 
+void tabelline(int n, int nv);
+
+int main (){
+	int base, numeroVolte;
+	printf("inserisci il tabellina: ");
+	scanf("%d", &base);
+	printf("inserisci numero di moltiplicazione: ");
+	scanf("%d", &numeroVolte);
+	tabelline(base,numeroVolte);
+}
+
+void tabelline(int n, int nv){
+	int ris=1,i;
+	printf("-- tabelline --");
+	for (i=0;i<nv;i++){
+		ris=n*i;
+		printf("\n%d * %d = %d",n,i,ris);
+	}
+	printf("\n%d * %d = %d\n",n,i,ris);
+	
+}
 ```
 #### Stampa di un array monodimensionale
 Il problema più elementare è la dupplicazione del codice, quindi la solunzione migliore nella gestione degli array è la seguente. 
@@ -557,3 +586,16 @@ Il problema più elementare è la dupplicazione del codice, quindi la solunzione
     }
   }
 ```
+## L'importanza della documentazione del codice sorgente
+L'obiettivo del progetto è la diffusione il punto fondamentale è saper scrivere una buona relazione tecnica o comunque della documentazione precisa e affidabile. Nel tempo sono nati degli strumenti precisi e affidabili, i più famosi sono il Markdown e il LaTeX che permettono di importare il codice sorgente e anche di poter scrivere in modo ordinato e pratico il tutto, con pochi sfrorzi e con un eccellente risultato.
+### Come va impostata una tesi
+Per un maggio il tutto verrà soddiviso in punti:
+1. Elenco delle librerie con una definizione stringata;
+2. Obbiettivo del progetto;
+3. Basi Teoriche;
+4. Parte pratica con tanto di funzioni commentate;
+5. Grafica del programma con tanto di screenshots;
+6. Qualche commento o manuale d'uso del programma;
+7. Conclusioni.
+
+Con questa scaletta sarà molto più semplice impostare il proprio lavoro. Infatti, questo è fondamentale seguire quest'ordine per creare un qualcosa che abbia effettivamente senso.
