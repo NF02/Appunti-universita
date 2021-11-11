@@ -99,6 +99,39 @@
 \input{pag/simboli.tex}
 \input{pag/Cenni di teoria degli insiemi.tex}
 \input{pag/Studio di funzione.tex}
+\subsubsection{Punto di flesso a tangente verticale}
+Se $f^,_+(x_0)=f^,_-(x_0)=\pm \infty$ sono $\infty$, $x_0$ si dice punto di
+flesso a tangente verticale; la retta tangente alla $f(x)$ nel punto di ascissa
+$x_0$ è verticale.
+\subsection{Esempi di derivate}
+\begin{multicols}{2}
+	\begin{itemize}
+		\item $D(x^n)=n*x^{n-1}$
+		\item $D(\log_ax=\frac{1}{x}\log_a e)$
+		\item $D(a^x)=a^x\ln a$
+		\item $D(\sin x)=\cos x$
+		\item $D(\cos x)=-\sin x$
+		\item $D(k)=0$
+		\item $D(\ln x)=\frac{1}{x}$
+		\item $D(e^x)=e^x$
+		\item $D(\tan x)=\frac{1}{\cos^2 x}=1+\tan^2x$
+		\item $D(\arcsin x)=\frac{1}{\sqrt{1-x^2}}$
+		\item $D(\arccos x)=-\frac{1}{\sqrt{1-x^2}}$
+		\item $D(\arctan x)=\frac{1}{1+x^2}$
+	\end{itemize}
+\end{multicols}
+\subsubsection{Qualche esercizio dimostrativo}
+Utilizzando la definizione calcolare la derivata di
+\begin{enumerate}
+	\item $f(x)=k$\\
+		$f^,(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}=\lim_{h\to 0}\frac{k-k}{h}=0$
+	\item $f(x)=e^x$\\
+		$f^,(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}=\lim_{h\to
+		0}\frac{e^x(e^h-1)}{h}=e^x$
+	\item 
+\end{enumerate}
+
+
 \section{Esercizio d'esempio}
 $f(x)=\frac{x^3}{2(1+x)^2}$
 \begin{enumerate}
