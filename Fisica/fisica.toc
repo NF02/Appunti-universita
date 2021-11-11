@@ -1,12 +1,15 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
+\contentsline {section}{\numberline {0.1}Premesse\dots }{3}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Simboli}{3}{section.0.2}%
 \contentsline {part}{I\hspace {1em}fisica 1}{5}{part.1}%
-\contentsline {section}{\numberline {0.1}moto rettilineo uniformemente accelerato}{7}{section.0.1}%
-\contentsline {subsection}{\numberline {0.1.1}Un problema d'esempio}{7}{subsection.0.1.1}%
-\contentsline {section}{\numberline {0.2}I vettori}{9}{section.0.2}%
-\contentsline {subsection}{\numberline {0.2.1}Proiezione dei vettori prodotto scalare}{9}{subsection.0.2.1}%
-\contentsline {subsubsection}{Moto balistico}{9}{subsubsection*.2}%
-\contentsline {subsection}{\numberline {0.2.2}Primitive di una funsione}{10}{subsection.0.2.2}%
-\contentsline {subsubsection}{Integrali definito}{10}{subsubsection*.3}%
+\contentsline {chapter}{\numberline {1}Grandezze fisiche}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}moto rettilineo uniformemente accelerato}{7}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Un problema d'esempio}{8}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}I vettori}{10}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Proiezione dei vettori prodotto scalare}{10}{subsection.1.2.1}%
+\contentsline {subsubsection}{Moto balistico}{10}{subsubsection*.2}%
+\contentsline {subsection}{\numberline {1.2.2}Primitive di una funsione}{11}{subsection.1.2.2}%
+\contentsline {subsubsection}{Integrali definito}{11}{subsubsection*.3}%
 \contentsline {subsubsection}{esempi $\sigma $}{11}{subsubsection*.4}%
-\contentsline {subsection}{\numberline {0.2.3}Primitive di una funsione}{11}{subsection.0.2.3}%
+\contentsline {subsection}{\numberline {1.2.3}Primitive di una funsione}{11}{subsection.1.2.3}%
