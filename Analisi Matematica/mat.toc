@@ -127,4 +127,11 @@
 \contentsline {subsubsection}{Esempio}{38}{subsubsection*.115}%
 \contentsline {subsubsection}{Un altro esempio}{38}{subsubsection*.117}%
 \contentsline {subsection}{\numberline {2.4.2}Punto cuspude}{39}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Esercizio d'esempio}{39}{section.2.5}%
+\contentsline {subsubsection}{Punto di flesso a tangente verticale}{39}{subsubsection*.120}%
+\contentsline {subsection}{\numberline {2.4.3}Esempi di derivate}{39}{subsection.2.4.3}%
+\contentsline {subsubsection}{Qualche esercizio dimostrativo}{39}{subsubsection*.121}%
+\contentsline {subsubsection}{Esercizio}{40}{subsubsection*.122}%
+\contentsline {subsection}{\numberline {2.4.4}Teorema di derivazione della funzione composta}{40}{subsection.2.4.4}%
+\contentsline {subsubsection}{Esercizio}{40}{subsubsection*.123}%
+\contentsline {subsection}{\numberline {2.4.5}Teorema di derivazione della funzione inversa}{41}{subsection.2.4.5}%
+\contentsline {section}{\numberline {2.5}Esercizio d'esempio}{41}{section.2.5}%
