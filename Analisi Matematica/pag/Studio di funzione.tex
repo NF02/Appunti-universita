@@ -708,3 +708,150 @@ verticale.
 	\end{tikzpicture}
 	\caption{Grafico di Funzione $f(x)=\frac{(x-3)^{\frac{2}{3}}}{2}$}
 \end{figure}
+\subsubsection{Punto di flesso a tangente verticale}
+Se $f^,_+(x_0)=f^,_-(x_0)=\pm \infty$ sono $\infty$, $x_0$ si dice punto di
+flesso a tangente verticale; la retta tangente alla $f(x)$ nel punto di ascissa
+$x_0$ è verticale.
+\subsection{Esempi di derivate}
+\begin{multicols}{2}
+	\begin{itemize}
+		\item $D(x^n)=n*x^{n-1}$
+		\item $D(\log_ax=\frac{1}{x}\log_a e)$
+		\item $D(a^x)=a^x\ln a$
+		\item $D(\sin x)=\cos x$
+		\item $D(\cos x)=-\sin x$
+		\item $D(k)=0$
+		\item $D(\ln x)=\frac{1}{x}$
+		\item $D(e^x)=e^x$
+		\item $D(\tan x)=\frac{1}{\cos^2 x}=1+\tan^2x$
+		\item $D(\arcsin x)=\frac{1}{\sqrt{1-x^2}}$
+		\item $D(\arccos x)=-\frac{1}{\sqrt{1-x^2}}$
+		\item $D(\arctan x)=\frac{1}{1+x^2}$
+	\end{itemize}
+\end{multicols}
+\subsubsection{Qualche esercizio dimostrativo}
+Utilizzando la definizione calcolare la derivata di
+\begin{enumerate}
+	\item $f(x)=k$\\
+		$f^\prime(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}=\lim_{h\to 0}\frac{k-k}{h}=0$
+	\item $f(x)=e^x$\\
+		$f^\prime(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}=\lim_{h\to
+		0}\frac{e^x(e^h-1)}{h}=e^x$
+	\item $f(x)=\ln x$\\
+		$f^\prime(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}=\lim_{h\to
+		0}\frac{\ln(x+h)\ln x}{h}=\frac{\ln(1+\frac{h}{x})}{h}=\frac{1}{x}$
+	\item $f(x)=\cos x$\\
+		$f^\prime(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}=\lim_{h\to
+		0}\frac{\cos(x+h)-\cos(x)}{h}=\lim_{h\to 0}\frac{\cos x*\cos h-\sin
+		x*\sin h-\cos(x)}{h}=$\\$\lim_{h\to 0}\frac{\cos x (\cos h -
+		1)}{h}-\frac{\sin x\sin h}{h}=-\sin x$
+	\item $f(x)=\sin x$\\
+		$f^\prime(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}=\lim_{h\to
+		0}\frac{\sin(x+h)-\sin(x)}{h}=\frac{\sin x \cos h +\sin h \cos x-\sin
+		x}{h}=\lim_{h\to 0}\frac{\sin x(\cos h-1)}{h}+\lim_{h\to 0}\frac{\sin
+		h\cos x}{h}=\cos x$
+\end{enumerate}
+\textit{Se f e g sono derivabile in x, allora sono derivabili in x anche la
+somma, la differenza, il prodotto, il quoziente (con il denominatore$\neq 0$) e
+si ha:}
+\begin{enumerate}
+	\item $(f\pm g)^\prime=f^\prime\pm g^\prime$
+	\item $(f*g)^\prime=f^\prime*g+f*g^\prime$
+	\item $(\frac{f}{g})^\prime=\frac{f^\prime*g-f*g^\prime}{g^2}, g\neq 0$
+\end{enumerate}
+\begin{itemize}
+	\item \textit{Dimostriamo la 2)} $(f*g)^\prime=f^\prime*g+f*g^\prime$\\
+		$(f*g)^\prime=\lim_{h\to 0}\frac{f(x+h)g(x+h)-f(x)g(x)}{h}=\lim_{h\to
+0}\frac{f(x+h)g(x+h)\pm f(x)g(x+h)-f(x)g(x)}{h}=$\\
+		$\lim_{h\to
+0}\frac{g(x+h)[f(x+h)-f(x)]}{h}+\lim_{h\to 0}\frac{f(x)[f(x+h)-f(x)]}{h}$\\
+Per ipotesi f e g sono derivabile, quindi continue in x, perciò:\\
+$\lim_{h\to 0}g(x+h)=g(x),$
+\begin{center}
+	$(f*g)^\prime=...=f^\prime(x)*g(x)+f(x)*g^\prime(x)$
+\end{center}
+\item \textit{Dimostriamo la 3)}\\
+	$(\frac{f}{g})^\prime=\frac{\frac{f(x+h)}{g(x+h)}-\frac{f(x)}{g(x)}}{h}=\frac{f(x+h)g(x)-f(x)g(x+h)}{g(x+h)g(x)*h}=\frac{f(x+h)g(x)-f(x)g(x+h)\pm
+		f(x)g(x)}{g(x+h)g(x)*h}$\\
+		$\frac{[f(x+h)-f(x)]g(x)-f(x)[g(x+h)-g(x)]}{g(x+h)g(x)*h}=\frac{\frac{[f(x+h)-f(x)]g(x)}{h}-\frac{f(x)[g(x+h)-g(x)]}{h}}{g(x+h)g(x)*h}=$\\$\frac{f^,(x)g(x)-f(x)g^,(x)}{g(x+h)g(x)*h}=\frac{f^,(x)g(x)-f(x)g^,(x)}{[g(x)]^2*h}$
+
+\end{itemize}
+\subsubsection{Esercizio}
+\begin{itemize}
+	\item \textit{Calcolare la derivata di $f(x)=\sin x \ln x$}\\
+		$f^\prime(x)=\cos x \ln x+\frac{sin x}{x}$
+	\item \textit{Scrivere l'equazione della retta tangente alla curva di eq
+		$f(x)=2e^x\sqrt[3]{x}$ nel punto di ascissa x=1}\\
+		$f^\prime(x)=2e^x\sqrt[3]{x}+2\frac{e^x}{3\sqrt[3]{x^2}}$
+\end{itemize}
+\subsection{Teorema di derivazione della funzione composta}
+\textit{Sia g(x) una funzione derivabile in x, e se f(x) è una funzione
+derivabile nel punto g(x), allora la funzione composta f(g(x)) è derivabile in
+x, e si ha:}
+\begin{center}
+	$[f(g(x))]^\prime=f^\prime(g(x))*g^\prime(x)$
+\end{center}
+Dimostrazione. Se $h\neq 0$ si ha $\lim_{h\to
+0}\frac{f(g(x+h))-f(g(x))}{h}=\lim_{h\to
+0}\frac{f(g(x+h))-f(g(x))}{h}*\frac{g(x+h)-g(x)}{h}=f^\prime(g(x))*g^\prime(x)$
+\textit{in quanto se $h\to 0$ allora $k\to 0$ con $k=g(x+h)-g(x)$, essendo
+g(x) continua in x. Se h=0, il teorema continua a valere.}
+\subsubsection{Esercizio}
+\begin{enumerate}
+	\item Calcolare la derivata di $f(x)=\ln(\sin x)$.\\
+		$f^\prime (x)=\frac{\cos x}{\sin x}=\cot{x}$
+	\item Calcolare la derivata di $f(x)=e^{\sqrt{2x^3+x}}.$\\
+		$f^\prime (x)=e^{\sqrt{x^3+x}}\frac{6x^2+1}{2\sqrt{2x^3+x}}$
+	\item Calcolare la derivata di $f(x)=\sin(\ln x)$\\
+		$f^\prime (x)=\frac{\cos(\ln x)}{x}$
+\end{enumerate}
+Scrivere l'equazione della retta alla curva di equazione $f(x)=(xe^{2x}-1)^3$
+nel punto di ascissa x=0, L'eq. Retta tangente a $f(x)$ in $x=x_0:
+y=f^\prime(x_0)(x-x_0)+f(x_0)$\\
+Per noi $x_0=0$\\
+$f^\prime(x)=3(xe^{2x}-1)^2(e^{3x}+xe^{2x})\Rightarrow f^\prime (0)=3$\\
+$f(0)=-1$\\
+Quindi l'equazione è: $y=3x-1$
+\subsection{Teorema di derivazione della funzione inversa}
+\textit{Sia f(x) una funzione continua e strettamente monotona in [a,b]. Se f è
+derivabile in $x_0\in(a,b)$ e se allora anche la funzione inversa di $f^{-1}$ è
+derivabile nel punto $y_0=f(x_0)$, e la derivata vale:}
+\begin{center}
+	$[f^{-1}(y_0)]^\prime=\frac{1}{f^\prime(x_0)}$
+\end{center}
+Dimostrazione. Si ha
+$\frac{f^{-1}(y_0+k)-f^{-1}(y_0))}{k}=\frac{h}{f(x_0+h)-f(x_0}$
+% grafici
+Se $k\to 0$ anche $h\to0$ in quanto $f^\prime$ è continua
+\subsection{Esercizio}
+Utilizzando il teorema di derivazione della funzione inversa, dimostrare che:
+\begin{center}
+	$D[\arcsin(y)]=\frac{1}{\sqrt{1-y^2}}$
+\end{center}
+$x=\arcsin(y)$ è la funzione inversa di $y=\sin(x)$ quest'ultima è invertibile
+per $x\in [-\frac{\pi}{2};\frac{\pi}{2}]$. Applichiamo il teorema della
+funzione inversa, $f^{-1}(y)=\frac{1}{f^\prime(x)}$\\
+\begin{tabular}{|l|}
+	\hline
+	$[\arcsin(y)]^\prime=\frac{1}{[\sin(x)]^\prime}=\frac{1}{\cos(x)}$\\\hline
+\end{tabular}\\
+Ma sappiamo che: $\cos(x)=\sqrt{1-\sin^2x}$\\
+\begin{tabular}{|l|}
+	\hline
+	$[\arcsin(y)]^\prime=\frac{1}{\sqrt{1-\sin^2x}}=\frac{1}{\sqrt{1-y^2}}$\\\hline
+\end{tabular}
+\subsection{Esercizio}
+Calcolare la derivata della funzione $y=e^x$ vista come funzione inversa di
+$f(x)=\ln x$. Per $x>0$, si ha $x=f^{-1}(y)=e^y$
+$f(x)=\ln x\Rightarrow f^\prime(x)=\frac{1}{x}$ Perciò, per il teorema della
+derivata della funzione inversa si ha
+$(f^{-1}(y))^\prime=\frac{1}{f^\prime(x)}\Rightarrow (e^y)^\prime=x=e^y$.
+Quindi $(e^x)^\prime=e^x$
+\subsection{Esercizio}
+Utilizzando il teorema di derivazione della funzione inversa, dimostrare che
+$(\arctan x)^\prime=\frac{1}{1+x^2}$. Sia $f(x)=\tan x$, in
+$x\in[-\frac{\pi}{2},\frac{\pi}{2}]$ si ha $x=f^{-1}(x)=\arctan y$\\
+$f(x)=\tan x\Rightarrow f^\prime(x)=1+\tan^2x$. Perciò, per il teorema della
+derivata della funzione inversa si ha
+$(f^{-1}(y))^\prime=\frac{1}{f^\prime(x)}\Rightarrow (\arctan
+y)^\prime=\frac{1}{1+\tan^2 x}=\frac{1}{1+y^2}$
