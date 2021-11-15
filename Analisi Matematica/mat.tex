@@ -143,11 +143,76 @@ $\frac{f(x_0+h)+f(x_0)}{h}\begin{cases}
 \end{cases}$ e 
 \begin{itemize}
 	\item $\lim_{h\to 0^+}\frac{f(x_0+h)-f(x_0)}{h}=f^\prime_+\leq 0$
-	\item $\lim_{h\to 0^-}\frac{f(x_0+h)-f(x_0)}{h}=f^\prime_-\leq 0$
+	\item $\lim_{h\to 0^-}\frac{f(x_0+h)-f(x_0)}{h}=f^\prime_-\geq 0$
 \end{itemize}
 Ma essendo $f(x)$ derivabile in $x_0$:
 \begin{center}
 	$f^\prime_+(x_0)=f^\prime_-(x_0)\Rightarrow f^\prime=0$
+\end{center}
+Se $x_0=a$ allora $0<h<\delta$ e se $x_0$ è un punto di \texttt{massimo 
+relativo} si ha $\lim_{h\to 0^+}\frac{f(a+h)-f(x)}{h}=f^\prime(a)\leq 0$.
+Mentre, se parliamo del \texttt{minimo relativo} in $x_0=a$: 
+$\lim_{h\to 0^-}\frac{f(a+h)-f(x)}{h}=f^\prime(a)\leq 0$ In modo analogo: se
+$x_0=b$ è punto di \texttt{massimo relativo} (con $-\delta<h<0$) allora
+$f^\prime(b)\geq 0$, se invece $x_0=b$ è un punto di \texttt{minimo relativo},
+allora $f^\prime(b)\leq 0$
+\section{Teorema di Rolle}
+Sia $f:[a,b]\to R$.
+\begin{enumerate}
+	\item \textit{f è continua in $[a,b]$},
+	\item \textit{f è derivabile in $(a,b)_{f(a)=f(b)}$}
+	\item $f(a)=f(b)$
+\end{enumerate}
+Allora $\exists x_0 \in (a,b):f^\prime(x_0)=0$ Per il Teorema di Rolle esistono
+almeno un punto a tangente orizzontale.
+\subsection{Dimostrazione}
+Per il Teorema di Weiestrass, $f$ ha massimo e minimo assoluti in $[a,b]$
+($x_1,x_2\in[a,b]$):
+\begin{center}
+	$f(x_1)\leq f(x)\leq f(x_2).$
+\end{center}
+\textit{Se uno dei due è interno ad $[a,b]$, per esempio $x_1$ allora per il
+Teorema di Fermat $f^\prime(x_1)=0$. Se invece nessuno dei due è interno ad
+$[a,b]$ per esempio $x_1=a, \text{ } x_2=b$. Dall'ipotesi $f(a)=f(b)$ si ottiene
+minimo=massimo, cioè $f(x)$ è costante $\forall x \in[a,b]$ e quindi
+$f^\prime(x)=0\text{ } \forall x \in [a,b]$}.
+\subsection{Esercizio dimostrativo}
+\subsubsection{Testo}
+Dire se la funzione $f(x)=e^{x^2-1}$ soddisfa il teorema di Rolle
+nell'intervallo $[-1,1]$ e in caso affermativo calcolare il punto (o i punto
+del Teorema.)
+\subsubsection{soluzione}
+Sono verificate tutte le ipotesi del teorema di Rolle, infatti:
+\begin{enumerate}
+	\item $f(x)=e^{x^2-1}$ è continua in tutte R e quindi anche in $[-1,1]$
+	\item f(x) è derivabile in tutto R, quindi anche in (-1,1),
+	\item $f(-1)=f(1)$
+\end{enumerate}
+Allora $\forall x_0 \in (-1,1):f^\prime(x_0)=0$\\
+$x_0$ Si ricava facendo il calcolo: $f^\prime (x_0)=0$, cioè
+$2xe^{x^2-1}=0\Rightarrow x_0=0$
+\subsection{Esercizio dimostrativo}
+\subsubsection{Testo}
+Dire se la funzione $f(x)=\ln|x|$ soddisfa il teorema di Rolle nell'intervallo
+[-e,e].
+\subsubsection{soluzione}
+Il teorema di Rolle non è applicabile perché $f(x)=\ln|x|$ non è definita in
+$x=0$, quindi non è né continua né definita in $x=0$ e perciò non soddisfa
+tutte le ipotesi del teorema.
+\section{Teorema di Lagrange ({\em o del valor medio})}
+Sia $f:[a,b]\to R$.
+\begin{enumerate}
+	\item \textit{f è continua in $[a,b]$},
+	\item \textit{f è derivabile in $(a,b)$},
+\end{enumerate}
+Allora $\forall x_0\in(a,b):f^\prime (x_0)=\frac{f(b)-f(a)}{b-a}$\\
+\textit{Per il Teorema di Lagrange $\exists$ almeno un punto ($x_0,f(x_0)$) sul
+grafico di f(x) in cui la retta tangente \textbf{t} è parallela alla retta
+\textbf{r} secante la curva in $(a,f(a))$ e $b,f(b)$}.
+\subsection{Dimostrazione}
+Si considera la funzione ausiliaria 
+\begin{center}
+	$g(x)=f(x)-[f(a)+\frac{f(b)-f(a)}{b-a}(x-a)]$
 \end{center}
 
 

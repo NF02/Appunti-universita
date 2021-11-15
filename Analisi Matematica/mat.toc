@@ -144,5 +144,15 @@
 \contentsline {subsection}{\numberline {2.6.1}Punti Stazionari}{42}{subsection.2.6.1}%
 \contentsline {section}{\numberline {2.7}Teorema di Fermat}{42}{section.2.7}%
 \contentsline {paragraph}{Dimostrazione}{42}{paragraph*.126}%
-\contentsline {section}{\numberline {2.8}Punti per lo svolgimento dello studio di funzione}{42}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Esercizio d'esempio}{43}{section.2.9}%
+\contentsline {section}{\numberline {2.8}Teorema di Rolle}{42}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Dimostrazione}{42}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}Esercizio dimostrativo}{43}{subsection.2.8.2}%
+\contentsline {subsubsection}{Testo}{43}{subsubsection*.127}%
+\contentsline {subsubsection}{soluzione}{43}{subsubsection*.128}%
+\contentsline {subsection}{\numberline {2.8.3}Esercizio dimostrativo}{43}{subsection.2.8.3}%
+\contentsline {subsubsection}{Testo}{43}{subsubsection*.129}%
+\contentsline {subsubsection}{soluzione}{43}{subsubsection*.130}%
+\contentsline {section}{\numberline {2.9}Teorema di Lagrange ({\em o del valor medio})}{43}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Dimostrazione}{43}{subsection.2.9.1}%
+\contentsline {section}{\numberline {2.10}Punti per lo svolgimento dello studio di funzione}{43}{section.2.10}%
+\contentsline {section}{\numberline {2.11}Esercizio d'esempio}{44}{section.2.11}%
