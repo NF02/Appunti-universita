@@ -98,12 +98,60 @@
 \listoffigures
 
 \input{pag/premesse.tex}
-\part{Matematica analisi 1}
 \input{pag/simboli.tex}
+\part{Matematica analisi 1}
 \input{pag/Cenni di teoria degli insiemi.tex}
 \input{pag/Studio di funzione.tex}
+\section{Massimo e minimo assoluto}
+Sia $f:[a,b]\to R$, si dice M è \texttt{massimo assoluto} (o globale) di
+\textit{f} in $[a, b]$ e $x_0\in[a, b]$ è un punto di massimo se
+\begin{center}
+	$f(x_0)=M\geq f(x),\forall x \in [a, b]$
+\end{center}
+\paragraph{in modo analogo:}
+Si dice che m è un \texttt{minimo assoluto} (o globale) di
+\textit{f} in $[a, b]$ e $x_1\in[a, b]$ è punto di minimo se 
+\begin{center}
+	$f(x_1)=M\leq f(x),\forall x \in [a, b]$
+\end{center}
+\section{Massimo e minimo relativo (o estremi locali)}
+Sia $f:[a,b]\to R$, si dice che $x_0\in[a, b]$ è un punto di \texttt{massimo
+relativo} (o locale) per $f(x)$ se $\exists I (x_0,\delta)$:
+\begin{center}
+	$f(x_0)\geq f(x),\forall x \in I (x_0,\delta)$
+\end{center}
+\paragraph{In modo analogo:}
+si dice che $x_0\in[a, b]$ è un punto di \texttt{minimo relativo} (o locale)
+per $f(x)$ se $\exists I (x_0,\delta)$:
+\begin{center}
+	$f(x_0)\leq f(x),\forall x \in I (x_0,\delta)$
+\end{center}
+\subsection{Punti Stazionari}
+\textit{I punti in cui f(x) ha derivata nulla ($f^\prime=0$) Si dice punti
+stazionari o critici.}
+\section{Teorema di Fermat}
+\textit{Sia $f(x)$ definita in [a,b] e derivabile in $x_0\in(a, b)$. Se $x_0$ è
+un punto di estremo locale allora}
+\begin{center}
+	$f^\prime (x_0)=0$
+\end{center}
+\paragraph{Dimostrazione} Sia $x_0$ un punto di massimo relativo, cioè $\exists
+I (x_0,\delta)$: $f(x_0)\leq f(x_0+h), \forall h: |h|<\delta$ si ha:
+$\frac{f(x_0+h)+f(x_0)}{h}\begin{cases}
+	\leq 0 & \text{ se } 0<h<\delta\\
+	\geq 0 & \text{ se } -\delta<h<0 
+\end{cases}$ e 
+\begin{itemize}
+	\item $\lim_{h\to 0^+}\frac{f(x_0+h)-f(x_0)}{h}=f^\prime_+\leq 0$
+	\item $\lim_{h\to 0^-}\frac{f(x_0+h)-f(x_0)}{h}=f^\prime_-\leq 0$
+\end{itemize}
+Ma essendo $f(x)$ derivabile in $x_0$:
+\begin{center}
+	$f^\prime_+(x_0)=f^\prime_-(x_0)\Rightarrow f^\prime=0$
+\end{center}
 
-\section{Punti per lo svolgimento del limite}
+
+\section{Punti per lo svolgimento dello studio di funzione}
 Per svolgere correttamente lo studio di funzione, bisogna suddividere il tutto
 in punti per svolgere correttamente lo studio in modo ordinato ed efficiente.
 Se effettivamente. 
