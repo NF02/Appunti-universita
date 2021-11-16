@@ -181,7 +181,7 @@ $f^\prime(x)=0\text{ } \forall x \in [a,b]$}.
 Dire se la funzione $f(x)=e^{x^2-1}$ soddisfa il teorema di Rolle
 nell'intervallo $[-1,1]$ e in caso affermativo calcolare il punto (o i punto
 del Teorema.)
-\subsubsection{soluzione}
+\subsubsection{Soluzione}
 Sono verificate tutte le ipotesi del teorema di Rolle, infatti:
 \begin{enumerate}
 	\item $f(x)=e^{x^2-1}$ è continua in tutte R e quindi anche in $[-1,1]$
@@ -195,7 +195,7 @@ $2xe^{x^2-1}=0\Rightarrow x_0=0$
 \subsubsection{Testo}
 Dire se la funzione $f(x)=\ln|x|$ soddisfa il teorema di Rolle nell'intervallo
 [-e,e].
-\subsubsection{soluzione}
+\subsubsection{Soluzione}
 Il teorema di Rolle non è applicabile perché $f(x)=\ln|x|$ non è definita in
 $x=0$, quindi non è né continua né definita in $x=0$ e perciò non soddisfa
 tutte le ipotesi del teorema.
@@ -212,10 +212,60 @@ grafico di f(x) in cui la retta tangente \textbf{t} è parallela alla retta
 \subsection{Dimostrazione}
 Si considera la funzione ausiliaria 
 \begin{center}
-	$g(x)=f(x)-[f(a)+\frac{f(b)-f(a)}{b-a}(x-a)]$
+	$g(x)=f(x)-[\overset{\text{equazione di
+	r}}{f(a)+\frac{f(b)-f(a)}{b-a}(x-a)}]$
 \end{center}
-
-
+Per g(x) vale il Teorema di Rolle, infatti:
+\begin{enumerate}
+	\item \textit{g(x) è continua in $[a,b]$ perché lo è f(x) (l'altro pezzo è
+		lineare)};
+	\item \textit{g(x) è derivabile in $(a,b)$ perché f(x) (l'altro pezzo è
+		lineare)};
+	\item $g(a)=g(b)=0$.
+\end{enumerate}
+\begin{itemize}
+	\item $\Rightarrow x_0:g^\prime (x)=0$
+	\item $g^\prime (x_0)=f^\prime(x_0)-\frac{f(b)-f(a)}{b-a}=0$
+	\item $\Rightarrow f^\prime(x_0)=\frac{f(b)-f(a)}{b-a}$
+\end{itemize}
+\subsection{Esempio}
+$f(x)=x^2 \text{ in } [a,b]$, per il Teorema di Lagrange $\forall x_0 \in
+[a,b]$:
+\begin{center}
+	$\frac{b^2-a^2}{b-a}=2x_0\Rightarrow x_0=\frac{b+a}{2}$ Media aritmetica di
+	a e b
+\end{center}
+\subsection{Esercizio dimostrativo}
+\subsubsection{Testo}
+\textit{Dire se è applicabile in Teorema di Lagrange alla funzione
+$f(x)=\arcsin x$ nell'intervallo $[-1,1]$ e in caso affermativo calcolare i
+punti teorema.}
+\subsubsection{Soluzione}
+La funzione data soddisfa tutte le ipotesi del teorema di Lagrange, infatti:
+\begin{enumerate}
+	\item $f$ è continua in [-1,1] (è il suo campo di esistenza),
+	\item $f$ è derivabile in (-1,1)\\
+		Allora $\forall x_0\in (-1.1):f^\prime
+		(x_0)=\frac{f(1)-f(-1)}{2}\Rightarrow
+		\frac{1}{\sqrt{1-x^2_0}}=\frac{\pi}{2}\Rightarrow
+		x_0=\pm\frac{\sqrt{\pi^2-4}}{\pi}$
+\end{enumerate}
+\subsection{Esercizio dimostrativo}
+\subsubsection{Testo}
+Determinare un intervallo in cui è applicabile il Teorema di Lagrange alla
+funzione $f(x)=|x-\frac{1}{x}|$.
+\subsubsection{Soluzione}
+\begin{enumerate}
+	\item La funzione data è contenuta nel suo campo di esistenza cioè
+		nell'insieme: $A=\{x \in R: x\neg 0\}$
+	\item f è derivabile nell'insieme $B=\{x\in R: x\neq 0,\pm 1\}$ con
+		derivata: $f^\prime(x)=|\frac{x^2-1}{x}|\frac{x^2+1}{x(x^2-1)}$
+\end{enumerate}
+Perciò un intervallo in cui $f$ soddisfa il teorema di Lagrange, è un qualunque
+intervallo $[a,b]$ che contiene $x=0$ e tale che punti $x=-1$ non siano interni
+ad esso (potrebbero stare agli estremi)\\
+Per esempio: $[1,2]$ (f è continua in [1,2] e derivabile in (1,2), da notare
+che è derivabile anche in $x=2$ ma non serve\dots) oppure $[-4,-3]$. etc\dots
 \section{Punti per lo svolgimento dello studio di funzione}
 Per svolgere correttamente lo studio di funzione, bisogna suddividere il tutto
 in punti per svolgere correttamente lo studio in modo ordinato ed efficiente.

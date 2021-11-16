@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.10.15)  15 NOV 2021 23:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.10.15)  16 NOV 2021 11:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1309,7 +1309,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--106
  []
 
 [14]
-<img/insiemi funzioni composte.pdf, id=493, 1035.68033pt x 731.23586pt>
+<img/insiemi funzioni composte.pdf, id=514, 1035.68033pt x 731.23586pt>
 File: img/insiemi funzioni composte.pdf Graphic file (type pdf)
 <use img/insiemi funzioni composte.pdf>
 Package pdftex.def Info: img/insiemi funzioni composte.pdf  used on input line 
@@ -1403,7 +1403,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/funzione lineare.pdf): PDF inclusion: found PDF version <
 1.7>, but at most version <1.5> allowed
-<img/funzione lineare.pdf, id=532, 1521.685pt x 996.72375pt>
+<img/funzione lineare.pdf, id=552, 1521.685pt x 996.72375pt>
 File: img/funzione lineare.pdf Graphic file (type pdf)
 <use img/funzione lineare.pdf>
 Package pdftex.def Info: img/funzione lineare.pdf  used on input line 28.
@@ -1425,7 +1425,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/funzione valore assoluto.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<img/funzione valore assoluto.pdf, id=540, 1521.685pt x 996.72375pt>
+<img/funzione valore assoluto.pdf, id=560, 1521.685pt x 996.72375pt>
 File: img/funzione valore assoluto.pdf Graphic file (type pdf)
 <use img/funzione valore assoluto.pdf>
 Package pdftex.def Info: img/funzione valore assoluto.pdf  used on input line 3
@@ -1452,7 +1452,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/funzione potenziale x^n.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<img/funzione potenziale x^n.pdf, id=541, 1521.685pt x 996.72375pt>
+<img/funzione potenziale x^n.pdf, id=561, 1521.685pt x 996.72375pt>
 File: img/funzione potenziale x^n.pdf Graphic file (type pdf)
 <use img/funzione potenziale x^n.pdf>
 Package pdftex.def Info: img/funzione potenziale x^n.pdf  used on input line 51
@@ -1490,7 +1490,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/funzione potenziale x^a.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<img/funzione potenziale x^a.pdf, id=549, 1521.685pt x 996.72375pt>
+<img/funzione potenziale x^a.pdf, id=569, 1521.685pt x 996.72375pt>
 File: img/funzione potenziale x^a.pdf Graphic file (type pdf)
 <use img/funzione potenziale x^a.pdf>
 Package pdftex.def Info: img/funzione potenziale x^a.pdf  used on input line 61
@@ -1529,7 +1529,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/funzione potenziale fratta.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<img/funzione potenziale fratta.pdf, id=550, 1521.685pt x 996.72375pt>
+<img/funzione potenziale fratta.pdf, id=570, 1521.685pt x 996.72375pt>
 File: img/funzione potenziale fratta.pdf Graphic file (type pdf)
 <use img/funzione potenziale fratta.pdf>
 Package pdftex.def Info: img/funzione potenziale fratta.pdf  used on input line
@@ -1568,7 +1568,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/funzione logaritmica.pdf): PDF inclusion: found PDF versi
 on <1.7>, but at most version <1.5> allowed
-<img/funzione logaritmica.pdf, id=551, 1521.685pt x 996.72375pt>
+<img/funzione logaritmica.pdf, id=571, 1521.685pt x 996.72375pt>
 File: img/funzione logaritmica.pdf Graphic file (type pdf)
 <use img/funzione logaritmica.pdf>
 Package pdftex.def Info: img/funzione logaritmica.pdf  used on input line 83.
@@ -1580,7 +1580,7 @@ i Matematica/img/funzione potenziale fratta.pdf>]
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/le coniche circonferenze.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<img/le coniche circonferenze.pdf, id=561, 1521.685pt x 996.72375pt>
+<img/le coniche circonferenze.pdf, id=581, 1521.685pt x 996.72375pt>
 File: img/le coniche circonferenze.pdf Graphic file (type pdf)
 <use img/le coniche circonferenze.pdf>
 Package pdftex.def Info: img/le coniche circonferenze.pdf  used on input line 9
@@ -1593,7 +1593,7 @@ atematica/img/le coniche circonferenze.pdf>]
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/le coniche ellisse.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.5> allowed
-<img/le coniche ellisse.pdf, id=568, 1533.73pt x 1008.76875pt>
+<img/le coniche ellisse.pdf, id=588, 1533.73pt x 1008.76875pt>
 File: img/le coniche ellisse.pdf Graphic file (type pdf)
 <use img/le coniche ellisse.pdf>
 Package pdftex.def Info: img/le coniche ellisse.pdf  used on input line 103.
@@ -1603,7 +1603,7 @@ Package pdftex.def Info: img/le coniche ellisse.pdf  used on input line 103.
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/le coniche iperbole.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<img/le coniche iperbole.pdf, id=569, 1533.73pt x 1008.76875pt>
+<img/le coniche iperbole.pdf, id=589, 1533.73pt x 1008.76875pt>
 File: img/le coniche iperbole.pdf Graphic file (type pdf)
 <use img/le coniche iperbole.pdf>
 Package pdftex.def Info: img/le coniche iperbole.pdf  used on input line 112.
@@ -1615,7 +1615,7 @@ ematica/img/le coniche iperbole.pdf>]
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/le coniche iperbole equilattera.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<img/le coniche iperbole equilattera.pdf, id=576, 1533.73pt x 1008.76875pt>
+<img/le coniche iperbole equilattera.pdf, id=596, 1533.73pt x 1008.76875pt>
 File: img/le coniche iperbole equilattera.pdf Graphic file (type pdf)
 <use img/le coniche iperbole equilattera.pdf>
 Package pdftex.def Info: img/le coniche iperbole equilattera.pdf  used on input
@@ -1626,7 +1626,7 @@ Package pdftex.def Info: img/le coniche iperbole equilattera.pdf  used on input
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/le coniche parabola.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<img/le coniche parabola.pdf, id=577, 1531.7225pt x 1008.76875pt>
+<img/le coniche parabola.pdf, id=597, 1531.7225pt x 1008.76875pt>
 File: img/le coniche parabola.pdf Graphic file (type pdf)
 <use img/le coniche parabola.pdf>
 Package pdftex.def Info: img/le coniche parabola.pdf  used on input line 130.
@@ -1638,7 +1638,7 @@ a/Analisi Matematica/img/le coniche parabola.pdf>]
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/funzioni trigonometriche.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<img/funzioni trigonometriche.pdf, id=584, 1531.7225pt x 1008.76875pt>
+<img/funzioni trigonometriche.pdf, id=604, 1531.7225pt x 1008.76875pt>
 File: img/funzioni trigonometriche.pdf Graphic file (type pdf)
 <use img/funzioni trigonometriche.pdf>
 Package pdftex.def Info: img/funzioni trigonometriche.pdf  used on input line 1
@@ -1649,7 +1649,7 @@ Package pdftex.def Info: img/funzioni trigonometriche.pdf  used on input line 1
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/funzione sin.pdf): PDF inclusion: found PDF version <1.7>
 , but at most version <1.5> allowed
-<img/funzione sin.pdf, id=585, 1531.7225pt x 1008.76875pt>
+<img/funzione sin.pdf, id=605, 1531.7225pt x 1008.76875pt>
 File: img/funzione sin.pdf Graphic file (type pdf)
 <use img/funzione sin.pdf>
 Package pdftex.def Info: img/funzione sin.pdf  used on input line 152.
@@ -1661,7 +1661,7 @@ si Matematica/img/funzione sin.pdf>]
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/funzione cos.pdf): PDF inclusion: found PDF version <1.7>
 , but at most version <1.5> allowed
-<img/funzione cos.pdf, id=593, 1533.73pt x 1008.76875pt>
+<img/funzione cos.pdf, id=614, 1533.73pt x 1008.76875pt>
 File: img/funzione cos.pdf Graphic file (type pdf)
 <use img/funzione cos.pdf>
 Package pdftex.def Info: img/funzione cos.pdf  used on input line 161.
@@ -1671,7 +1671,7 @@ Package pdftex.def Info: img/funzione cos.pdf  used on input line 161.
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/funzione tg.pdf): PDF inclusion: found PDF version <1.7>,
  but at most version <1.5> allowed
-<img/funzione tg.pdf, id=594, 1533.73pt x 1008.76875pt>
+<img/funzione tg.pdf, id=615, 1533.73pt x 1008.76875pt>
 File: img/funzione tg.pdf Graphic file (type pdf)
 <use img/funzione tg.pdf>
 Package pdftex.def Info: img/funzione tg.pdf  used on input line 170.
@@ -1683,7 +1683,7 @@ a/img/funzione tg.pdf>]
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/funzione ctg.pdf): PDF inclusion: found PDF version <1.7>
 , but at most version <1.5> allowed
-<img/funzione ctg.pdf, id=604, 1533.73pt x 1008.76875pt>
+<img/funzione ctg.pdf, id=624, 1533.73pt x 1008.76875pt>
 File: img/funzione ctg.pdf Graphic file (type pdf)
 <use img/funzione ctg.pdf>
 Package pdftex.def Info: img/funzione ctg.pdf  used on input line 179.
@@ -1693,7 +1693,7 @@ Package pdftex.def Info: img/funzione ctg.pdf  used on input line 179.
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/funzione arcsin.pdf): PDF inclusion: found PDF version <1
 .7>, but at most version <1.5> allowed
-<img/funzione arcsin.pdf, id=605, 1533.73pt x 1008.76875pt>
+<img/funzione arcsin.pdf, id=625, 1533.73pt x 1008.76875pt>
 File: img/funzione arcsin.pdf Graphic file (type pdf)
 <use img/funzione arcsin.pdf>
 Package pdftex.def Info: img/funzione arcsin.pdf  used on input line 189.
@@ -1705,7 +1705,7 @@ a/img/funzione arcsin.pdf>]
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/funzione arccos.pdf): PDF inclusion: found PDF version <1
 .7>, but at most version <1.5> allowed
-<img/funzione arccos.pdf, id=615, 1533.73pt x 1008.76875pt>
+<img/funzione arccos.pdf, id=635, 1533.73pt x 1008.76875pt>
 File: img/funzione arccos.pdf Graphic file (type pdf)
 <use img/funzione arccos.pdf>
 Package pdftex.def Info: img/funzione arccos.pdf  used on input line 198.
@@ -1715,7 +1715,7 @@ Package pdftex.def Info: img/funzione arccos.pdf  used on input line 198.
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/funzione arctg.pdf): PDF inclusion: found PDF version <1.
 7>, but at most version <1.5> allowed
-<img/funzione arctg.pdf, id=616, 1533.73pt x 1008.76875pt>
+<img/funzione arctg.pdf, id=636, 1533.73pt x 1008.76875pt>
 File: img/funzione arctg.pdf Graphic file (type pdf)
 <use img/funzione arctg.pdf>
 Package pdftex.def Info: img/funzione arctg.pdf  used on input line 207.
@@ -1727,7 +1727,7 @@ tica/img/funzione arctg.pdf>]
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/operazione sul grafico traslazione della asse x.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/operazione sul grafico traslazione della asse x.pdf, id=625, 1533.73pt x 1
+<img/operazione sul grafico traslazione della asse x.pdf, id=645, 1533.73pt x 1
 008.76875pt>
 File: img/operazione sul grafico traslazione della asse x.pdf Graphic file (typ
 e pdf)
@@ -1740,7 +1740,7 @@ f  used on input line 216.
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/operazione sul grafico traslazione della asse y.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/operazione sul grafico traslazione della asse y.pdf, id=626, 1533.73pt x 1
+<img/operazione sul grafico traslazione della asse y.pdf, id=646, 1533.73pt x 1
 008.76875pt>
 File: img/operazione sul grafico traslazione della asse y.pdf Graphic file (typ
 e pdf)
@@ -1756,7 +1756,7 @@ la asse y.pdf>]
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/contrazione e dilatazione in direzione verticale.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/contrazione e dilatazione in direzione verticale.pdf, id=635, 1533.73pt x 
+<img/contrazione e dilatazione in direzione verticale.pdf, id=655, 1533.73pt x 
 1008.76875pt>
 File: img/contrazione e dilatazione in direzione verticale.pdf Graphic file (ty
 pe pdf)
@@ -1769,7 +1769,7 @@ df  used on input line 234.
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/compressione e dilatazione in direzione orizzontale.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/compressione e dilatazione in direzione orizzontale.pdf, id=636, 1533.73pt
+<img/compressione e dilatazione in direzione orizzontale.pdf, id=656, 1533.73pt
  x 1008.76875pt>
 File: img/compressione e dilatazione in direzione orizzontale.pdf Graphic file 
 (type pdf)
@@ -1785,7 +1785,7 @@ ne orizzontale.pdf>]
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/y=_lnx_.pdf): PDF inclusion: found PDF version <1.7>, but
  at most version <1.5> allowed
-<img/y=_lnx_.pdf, id=647, 1533.73pt x 1008.76875pt>
+<img/y=_lnx_.pdf, id=667, 1533.73pt x 1008.76875pt>
 File: img/y=_lnx_.pdf Graphic file (type pdf)
 <use img/y=_lnx_.pdf>
 Package pdftex.def Info: img/y=_lnx_.pdf  used on input line 253.
@@ -1795,7 +1795,7 @@ Package pdftex.def Info: img/y=_lnx_.pdf  used on input line 253.
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/esempio limite di funzione.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<img/esempio limite di funzione.pdf, id=648, 1521.685pt x 996.72375pt>
+<img/esempio limite di funzione.pdf, id=668, 1521.685pt x 996.72375pt>
 File: img/esempio limite di funzione.pdf Graphic file (type pdf)
 <use img/esempio limite di funzione.pdf>
 Package pdftex.def Info: img/esempio limite di funzione.pdf  used on input line
@@ -1809,7 +1809,7 @@ LaTeX Warning: Command \textbackslash invalid in math mode on input line 273.
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/esempio di limite di una funzione.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<img/esempio di limite di una funzione.pdf, id=649, 1521.685pt x 996.72375pt>
+<img/esempio di limite di una funzione.pdf, id=669, 1521.685pt x 996.72375pt>
 File: img/esempio di limite di una funzione.pdf Graphic file (type pdf)
 <use img/esempio di limite di una funzione.pdf>
 Package pdftex.def Info: img/esempio di limite di una funzione.pdf  used on inp
@@ -1827,7 +1827,7 @@ pio di limite di una funzione.pdf>]
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/asintoto verticale.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.5> allowed
-<img/asintoto verticale.pdf, id=664, 1421.31pt x 996.72375pt>
+<img/asintoto verticale.pdf, id=684, 1421.31pt x 996.72375pt>
 File: img/asintoto verticale.pdf Graphic file (type pdf)
 <use img/asintoto verticale.pdf>
 Package pdftex.def Info: img/asintoto verticale.pdf  used on input line 360.
@@ -1838,7 +1838,7 @@ toto verticale.pdf>]
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/asintoto orizzontale.pdf): PDF inclusion: found PDF versi
 on <1.7>, but at most version <1.5> allowed
-<img/asintoto orizzontale.pdf, id=677, 1425.325pt x 996.72375pt>
+<img/asintoto orizzontale.pdf, id=697, 1425.325pt x 996.72375pt>
 File: img/asintoto orizzontale.pdf Graphic file (type pdf)
 <use img/asintoto orizzontale.pdf>
 Package pdftex.def Info: img/asintoto orizzontale.pdf  used on input line 383.
@@ -1872,7 +1872,7 @@ Overfull \hbox (12.64789pt too wide) in paragraph at lines 492--494
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/esempio studio di funzione 2.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
-<img/esempio studio di funzione 2.pdf, id=687, 1767.60374pt x 1008.76875pt>
+<img/esempio studio di funzione 2.pdf, id=707, 1767.60374pt x 1008.76875pt>
 File: img/esempio studio di funzione 2.pdf Graphic file (type pdf)
 <use img/esempio studio di funzione 2.pdf>
 Package pdftex.def Info: img/esempio studio di funzione 2.pdf  used on input li
@@ -1905,7 +1905,7 @@ Package pdftex.def Info: img/funzione valore assoluto.pdf  used on input line 6
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/esempio punto angoloso.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
-<img/esempio punto angoloso.pdf, id=747, 1382.16376pt x 1008.76875pt>
+<img/esempio punto angoloso.pdf, id=767, 1382.16376pt x 1008.76875pt>
 File: img/esempio punto angoloso.pdf Graphic file (type pdf)
 <use img/esempio punto angoloso.pdf>
 Package pdftex.def Info: img/esempio punto angoloso.pdf  used on input line 695
@@ -1916,7 +1916,7 @@ Package pdftex.def Info: img/esempio punto angoloso.pdf  used on input line 695
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/A
 nalisi Matematica/img/esempio punto cuspide.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<img/esempio punto cuspide.pdf, id=748, 1529.715pt x 1008.76875pt>
+<img/esempio punto cuspide.pdf, id=768, 1529.715pt x 1008.76875pt>
 File: img/esempio punto cuspide.pdf Graphic file (type pdf)
 <use img/esempio punto cuspide.pdf>
 Package pdftex.def Info: img/esempio punto cuspide.pdf  used on input line 707.
@@ -1939,31 +1939,28 @@ m/n/10 ^^C [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m
 ^^C
  []
 
-[40]) [41] [42] [43]
+[40]) [41] [42] [43] [44]
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 2
-44.
- (/usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+94.
+
+(/usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-)
-[44]
+) [45] [46
+
+]
 runsystem(makeindex mat.idx)...executed safely (allowed).
 
- (/home/nico/Documenti/GitHub/Appunti-universita/Analisi Matematica/mat.ind) (/
-home/nico/Documenti/GitHub/Appunti-universita/Analisi Matematica/mat.aux)
 
-Package rerunfilecheck Warning: File `mat.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `mat.out':
-(rerunfilecheck)             Before: 2F8C157F550F941B302956BCB7675BD5;11642
-(rerunfilecheck)             After:  B7765648DBC58702D7205FAEC3EC6229;11769.
+(/home/nico/Documenti/GitHub/Appunti-universita/Analisi Matematica/mat.ind)
+(/home/nico/Documenti/GitHub/Appunti-universita/Analisi Matematica/mat.aux)
+Package rerunfilecheck Info: File `mat.out' has not changed.
+(rerunfilecheck)             Checksum: 3BF3EFCF1720C5BA4C0AFB88A23971D0;12216.
  ) 
 Here is how much of TeX's memory you used:
- 41032 strings out of 478994
- 881251 string characters out of 5864750
+ 41052 strings out of 478994
+ 881506 string characters out of 5864750
  1592496 words of memory out of 5000000
- 57523 multiletter control sequences out of 15000+600000
+ 57527 multiletter control sequences out of 15000+600000
  429354 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,12n,89p,515b,754s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1988,17 +1985,18 @@ r/sfbi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb>
 </usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/tex
 mf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/t
 ype1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.
-pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share
-/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fon
-ts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/public
-/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1
-000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.
+pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share
+/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fon
+ts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public
+/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1
+000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
 Output written on "/home/nico/Documenti/GitHub/Appunti-universita/Analisi Matem
-atica/mat.pdf" (44 pages, 1091230 bytes).
+atica/mat.pdf" (46 pages, 1111531 bytes).
 PDF statistics:
- 1004 PDF objects out of 1200 (max. 8388607)
- 884 compressed objects within 9 object streams
- 295 named destinations out of 1000 (max. 500000)
- 669 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1049 PDF objects out of 1200 (max. 8388607)
+ 925 compressed objects within 10 object streams
+ 311 named destinations out of 1000 (max. 500000)
+ 701 words of extra memory for PDF output out of 10000 (max. 10000000)
 
