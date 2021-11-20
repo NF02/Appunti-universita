@@ -315,7 +315,22 @@ Tale polinomio si chiama polinomio di Taylor ed è
 	+ \frac{f^{\prime\prime}(x_0)}{n!}(x-x_0)^n$
 \end{center}
 Polinomio di centro $x_0$ e grado n
+\begin{center}
+	$T_n(x)=\sum^n_{k=0}\frac{f^{(b)}(x_0)(x-x_0)^k}{k!}(x-x_0)^k$
+\end{center}
+Se $x_0=0T_n(x)$ è detto polinomio di Mac Laurin di grado n. $R_n(x)=$ errore
+che si commette quando si approssima $f(x)$ con $T_n(x)$:\\
+Si ha: $R_n(x)=f(x)-T_n(x)$
+\begin{itemize}
+	\item $R_n(x)=o((x-x_0)^n)$ per $x\to x_0$, \underline{Formula di Peano}\\
+		cioè $\lim_{x\to x_0}\frac{R_n(x)}{(x-x_0)^n}=0$
+	\item \textit{Se f è derivabile $n+1$ volte in $(a,b)$ ecluso al più
+		$x_0$,}\\
+		$\forall x\in(a,b), \exists c$ compreso tra $x$ e $x_0$:\\
+		$R_n(x)=\frac{f^{(n+1)}(c)}{(n+1)!}(x-x_0)^{n+1}$ Formula di Lagrange
+\end{itemize}
 
+<++>
 \section{Esercizio d'esempio}
 $f(x)=\frac{x^3}{2(1+x)^2}$
 \begin{enumerate}
