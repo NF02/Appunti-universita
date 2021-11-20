@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.10.15)  12 NOV 2021 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.10.15)  16 NOV 2021 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1272,13 +1272,13 @@ Overfull \hbox (70.50897pt too wide) in paragraph at lines 161--165
 [13
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 186--205
+Underfull \hbox (badness 10000) in paragraph at lines 187--206
 \OML/cmm/m/it/10 h \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 ([] + 
 []) \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--205
+Underfull \hbox (badness 10000) in paragraph at lines 187--206
 []$
  []
 
@@ -1286,12 +1286,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--205
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
-Underfull \hbox (badness 10000) in paragraph at lines 235--258
+Underfull \hbox (badness 10000) in paragraph at lines 236--259
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--287
+Underfull \hbox (badness 10000) in paragraph at lines 286--288
 
  []
 
@@ -1299,7 +1299,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 285--287
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15]
-Underfull \hbox (badness 10000) in paragraph at lines 287--303
+Underfull \hbox (badness 10000) in paragraph at lines 288--304
 
  []
 
@@ -1307,12 +1307,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--303
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
-Underfull \hbox (badness 10000) in paragraph at lines 323--326
+Underfull \hbox (badness 10000) in paragraph at lines 324--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--358
+Underfull \hbox (badness 10000) in paragraph at lines 352--359
 
  []
 
@@ -1323,7 +1323,7 @@ Package rerunfilecheck Info: File `fisica.out' has not changed.
 Here is how much of TeX's memory you used:
  40733 strings out of 478994
  874314 string characters out of 5864750
- 1604505 words of memory out of 5000000
+ 1605505 words of memory out of 5000000
  57553 multiletter control sequences out of 15000+600000
  423404 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1348,7 +1348,7 @@ type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm
 .pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/shar
 e/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
 Output written on /home/nico/Documenti/GitHub/Appunti-universita/Fisica/fisica.
-pdf (18 pages, 303509 bytes).
+pdf (18 pages, 303505 bytes).
 PDF statistics:
  259 PDF objects out of 1000 (max. 8388607)
  215 compressed objects within 3 object streams
