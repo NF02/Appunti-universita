@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  23 NOV 2021 16:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  23 NOV 2021 17:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1504,7 +1504,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--106
  []
 
 [14]
-<img/insiemi funzioni composte.pdf, id=609, 1035.68033pt x 731.23586pt>
+<img/insiemi funzioni composte.pdf, id=614, 1035.68033pt x 731.23586pt>
 File: img/insiemi funzioni composte.pdf Graphic file (type pdf)
 <use img/insiemi funzioni composte.pdf>
 Package pdftex.def Info: img/insiemi funzioni composte.pdf  used on input line 
@@ -1595,7 +1595,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/funzione lineare.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/funzione lineare.pdf, id=647, 1521.685pt x 996.72375pt>
+<img/funzione lineare.pdf, id=653, 1521.685pt x 996.72375pt>
 File: img/funzione lineare.pdf Graphic file (type pdf)
 <use img/funzione lineare.pdf>
 Package pdftex.def Info: img/funzione lineare.pdf  used on input line 28.
@@ -1616,7 +1616,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/funzione valore assolu
 to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
 wed
-<img/funzione valore assoluto.pdf, id=656, 1521.685pt x 996.72375pt>
+<img/funzione valore assoluto.pdf, id=661, 1521.685pt x 996.72375pt>
 File: img/funzione valore assoluto.pdf Graphic file (type pdf)
 <use img/funzione valore assoluto.pdf>
 Package pdftex.def Info: img/funzione valore assoluto.pdf  used on input line 3
@@ -1643,7 +1643,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/funzione potenziale x^
 n.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<img/funzione potenziale x^n.pdf, id=657, 1521.685pt x 996.72375pt>
+<img/funzione potenziale x^n.pdf, id=662, 1521.685pt x 996.72375pt>
 File: img/funzione potenziale x^n.pdf Graphic file (type pdf)
 <use img/funzione potenziale x^n.pdf>
 Package pdftex.def Info: img/funzione potenziale x^n.pdf  used on input line 51
@@ -1679,7 +1679,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/funzione potenziale x^
 a.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<img/funzione potenziale x^a.pdf, id=665, 1521.685pt x 996.72375pt>
+<img/funzione potenziale x^a.pdf, id=670, 1521.685pt x 996.72375pt>
 File: img/funzione potenziale x^a.pdf Graphic file (type pdf)
 <use img/funzione potenziale x^a.pdf>
 Package pdftex.def Info: img/funzione potenziale x^a.pdf  used on input line 61
@@ -1718,7 +1718,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/funzione potenziale fr
 atta.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
 lowed
-<img/funzione potenziale fratta.pdf, id=666, 1521.685pt x 996.72375pt>
+<img/funzione potenziale fratta.pdf, id=671, 1521.685pt x 996.72375pt>
 File: img/funzione potenziale fratta.pdf Graphic file (type pdf)
 <use img/funzione potenziale fratta.pdf>
 Package pdftex.def Info: img/funzione potenziale fratta.pdf  used on input line
@@ -1756,7 +1756,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/funzione logaritmica.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/funzione logaritmica.pdf, id=667, 1521.685pt x 996.72375pt>
+<img/funzione logaritmica.pdf, id=672, 1521.685pt x 996.72375pt>
 File: img/funzione logaritmica.pdf Graphic file (type pdf)
 <use img/funzione logaritmica.pdf>
 Package pdftex.def Info: img/funzione logaritmica.pdf  used on input line 83.
@@ -1767,7 +1767,7 @@ Package pdftex.def Info: img/funzione logaritmica.pdf  used on input line 83.
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/le coniche circonferen
 ze.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
 wed
-<img/le coniche circonferenze.pdf, id=677, 1521.685pt x 996.72375pt>
+<img/le coniche circonferenze.pdf, id=682, 1521.685pt x 996.72375pt>
 File: img/le coniche circonferenze.pdf Graphic file (type pdf)
 <use img/le coniche circonferenze.pdf>
 Package pdftex.def Info: img/le coniche circonferenze.pdf  used on input line 9
@@ -1777,7 +1777,7 @@ Package pdftex.def Info: img/le coniche circonferenze.pdf  used on input line 9
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/le coniche ellisse.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/le coniche ellisse.pdf, id=684, 1533.73pt x 1008.76875pt>
+<img/le coniche ellisse.pdf, id=689, 1533.73pt x 1008.76875pt>
 File: img/le coniche ellisse.pdf Graphic file (type pdf)
 <use img/le coniche ellisse.pdf>
 Package pdftex.def Info: img/le coniche ellisse.pdf  used on input line 103.
@@ -1786,7 +1786,7 @@ Package pdftex.def Info: img/le coniche ellisse.pdf  used on input line 103.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/le coniche iperbole.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/le coniche iperbole.pdf, id=685, 1533.73pt x 1008.76875pt>
+<img/le coniche iperbole.pdf, id=690, 1533.73pt x 1008.76875pt>
 File: img/le coniche iperbole.pdf Graphic file (type pdf)
 <use img/le coniche iperbole.pdf>
 Package pdftex.def Info: img/le coniche iperbole.pdf  used on input line 112.
@@ -1796,7 +1796,7 @@ Package pdftex.def Info: img/le coniche iperbole.pdf  used on input line 112.
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/le coniche iperbole eq
 uilattera.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.
 5> allowed
-<img/le coniche iperbole equilattera.pdf, id=692, 1533.73pt x 1008.76875pt>
+<img/le coniche iperbole equilattera.pdf, id=697, 1533.73pt x 1008.76875pt>
 File: img/le coniche iperbole equilattera.pdf Graphic file (type pdf)
 <use img/le coniche iperbole equilattera.pdf>
 Package pdftex.def Info: img/le coniche iperbole equilattera.pdf  used on input
@@ -1806,7 +1806,7 @@ Package pdftex.def Info: img/le coniche iperbole equilattera.pdf  used on input
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/le coniche parabola.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/le coniche parabola.pdf, id=693, 1531.7225pt x 1008.76875pt>
+<img/le coniche parabola.pdf, id=698, 1531.7225pt x 1008.76875pt>
 File: img/le coniche parabola.pdf Graphic file (type pdf)
 <use img/le coniche parabola.pdf>
 Package pdftex.def Info: img/le coniche parabola.pdf  used on input line 130.
@@ -1817,7 +1817,7 @@ Package pdftex.def Info: img/le coniche parabola.pdf  used on input line 130.
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/funzioni trigonometric
 he.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
 wed
-<img/funzioni trigonometriche.pdf, id=700, 1531.7225pt x 1008.76875pt>
+<img/funzioni trigonometriche.pdf, id=705, 1531.7225pt x 1008.76875pt>
 File: img/funzioni trigonometriche.pdf Graphic file (type pdf)
 <use img/funzioni trigonometriche.pdf>
 Package pdftex.def Info: img/funzioni trigonometriche.pdf  used on input line 1
@@ -1827,7 +1827,7 @@ Package pdftex.def Info: img/funzioni trigonometriche.pdf  used on input line 1
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/funzione sin.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/funzione sin.pdf, id=701, 1531.7225pt x 1008.76875pt>
+<img/funzione sin.pdf, id=706, 1531.7225pt x 1008.76875pt>
 File: img/funzione sin.pdf Graphic file (type pdf)
 <use img/funzione sin.pdf>
 Package pdftex.def Info: img/funzione sin.pdf  used on input line 152.
@@ -1836,7 +1836,7 @@ Package pdftex.def Info: img/funzione sin.pdf  used on input line 152.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/funzione cos.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/funzione cos.pdf, id=709, 1533.73pt x 1008.76875pt>
+<img/funzione cos.pdf, id=714, 1533.73pt x 1008.76875pt>
 File: img/funzione cos.pdf Graphic file (type pdf)
 <use img/funzione cos.pdf>
 Package pdftex.def Info: img/funzione cos.pdf  used on input line 161.
@@ -1845,7 +1845,7 @@ Package pdftex.def Info: img/funzione cos.pdf  used on input line 161.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/funzione tg.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/funzione tg.pdf, id=710, 1533.73pt x 1008.76875pt>
+<img/funzione tg.pdf, id=715, 1533.73pt x 1008.76875pt>
 File: img/funzione tg.pdf Graphic file (type pdf)
 <use img/funzione tg.pdf>
 Package pdftex.def Info: img/funzione tg.pdf  used on input line 170.
@@ -1854,7 +1854,7 @@ Package pdftex.def Info: img/funzione tg.pdf  used on input line 170.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/funzione ctg.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/funzione ctg.pdf, id=719, 1533.73pt x 1008.76875pt>
+<img/funzione ctg.pdf, id=724, 1533.73pt x 1008.76875pt>
 File: img/funzione ctg.pdf Graphic file (type pdf)
 <use img/funzione ctg.pdf>
 Package pdftex.def Info: img/funzione ctg.pdf  used on input line 179.
@@ -1863,7 +1863,7 @@ Package pdftex.def Info: img/funzione ctg.pdf  used on input line 179.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/funzione arcsin.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/funzione arcsin.pdf, id=720, 1533.73pt x 1008.76875pt>
+<img/funzione arcsin.pdf, id=725, 1533.73pt x 1008.76875pt>
 File: img/funzione arcsin.pdf Graphic file (type pdf)
 <use img/funzione arcsin.pdf>
 Package pdftex.def Info: img/funzione arcsin.pdf  used on input line 189.
@@ -1872,7 +1872,7 @@ Package pdftex.def Info: img/funzione arcsin.pdf  used on input line 189.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/funzione arccos.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/funzione arccos.pdf, id=730, 1533.73pt x 1008.76875pt>
+<img/funzione arccos.pdf, id=735, 1533.73pt x 1008.76875pt>
 File: img/funzione arccos.pdf Graphic file (type pdf)
 <use img/funzione arccos.pdf>
 Package pdftex.def Info: img/funzione arccos.pdf  used on input line 198.
@@ -1881,7 +1881,7 @@ Package pdftex.def Info: img/funzione arccos.pdf  used on input line 198.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/funzione arctg.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/funzione arctg.pdf, id=731, 1533.73pt x 1008.76875pt>
+<img/funzione arctg.pdf, id=736, 1533.73pt x 1008.76875pt>
 File: img/funzione arctg.pdf Graphic file (type pdf)
 <use img/funzione arctg.pdf>
 Package pdftex.def Info: img/funzione arctg.pdf  used on input line 207.
@@ -1891,7 +1891,7 @@ Package pdftex.def Info: img/funzione arctg.pdf  used on input line 207.
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/operazione sul grafico
  traslazione della asse x.pdf): PDF inclusion: found PDF version <1.7>, but at 
 most version <1.5> allowed
-<img/operazione sul grafico traslazione della asse x.pdf, id=740, 1533.73pt x 1
+<img/operazione sul grafico traslazione della asse x.pdf, id=745, 1533.73pt x 1
 008.76875pt>
 File: img/operazione sul grafico traslazione della asse x.pdf Graphic file (typ
 e pdf)
@@ -1904,7 +1904,7 @@ f  used on input line 216.
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/operazione sul grafico
  traslazione della asse y.pdf): PDF inclusion: found PDF version <1.7>, but at 
 most version <1.5> allowed
-<img/operazione sul grafico traslazione della asse y.pdf, id=741, 1533.73pt x 1
+<img/operazione sul grafico traslazione della asse y.pdf, id=746, 1533.73pt x 1
 008.76875pt>
 File: img/operazione sul grafico traslazione della asse y.pdf Graphic file (typ
 e pdf)
@@ -1918,7 +1918,7 @@ ne sul grafico traslazione della asse y.pdf>]
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/contrazione e dilatazi
 one in direzione verticale.pdf): PDF inclusion: found PDF version <1.7>, but at
  most version <1.5> allowed
-<img/contrazione e dilatazione in direzione verticale.pdf, id=750, 1533.73pt x 
+<img/contrazione e dilatazione in direzione verticale.pdf, id=756, 1533.73pt x 
 1008.76875pt>
 File: img/contrazione e dilatazione in direzione verticale.pdf Graphic file (ty
 pe pdf)
@@ -1931,7 +1931,7 @@ df  used on input line 234.
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/compressione e dilataz
 ione in direzione orizzontale.pdf): PDF inclusion: found PDF version <1.7>, but
  at most version <1.5> allowed
-<img/compressione e dilatazione in direzione orizzontale.pdf, id=751, 1533.73pt
+<img/compressione e dilatazione in direzione orizzontale.pdf, id=757, 1533.73pt
  x 1008.76875pt>
 File: img/compressione e dilatazione in direzione orizzontale.pdf Graphic file 
 (type pdf)
@@ -1944,7 +1944,7 @@ sione e dilatazione in direzione orizzontale.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/y=_lnx_.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/y=_lnx_.pdf, id=763, 1533.73pt x 1008.76875pt>
+<img/y=_lnx_.pdf, id=768, 1533.73pt x 1008.76875pt>
 File: img/y=_lnx_.pdf Graphic file (type pdf)
 <use img/y=_lnx_.pdf>
 Package pdftex.def Info: img/y=_lnx_.pdf  used on input line 253.
@@ -1954,7 +1954,7 @@ Package pdftex.def Info: img/y=_lnx_.pdf  used on input line 253.
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/esempio limite di funz
 ione.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
 lowed
-<img/esempio limite di funzione.pdf, id=764, 1521.685pt x 996.72375pt>
+<img/esempio limite di funzione.pdf, id=769, 1521.685pt x 996.72375pt>
 File: img/esempio limite di funzione.pdf Graphic file (type pdf)
 <use img/esempio limite di funzione.pdf>
 Package pdftex.def Info: img/esempio limite di funzione.pdf  used on input line
@@ -1968,7 +1968,7 @@ LaTeX Warning: Command \textbackslash invalid in math mode on input line 273.
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/esempio di limite di u
 na funzione.pdf): PDF inclusion: found PDF version <1.7>, but at most version <
 1.5> allowed
-<img/esempio di limite di una funzione.pdf, id=765, 1521.685pt x 996.72375pt>
+<img/esempio di limite di una funzione.pdf, id=770, 1521.685pt x 996.72375pt>
 File: img/esempio di limite di una funzione.pdf Graphic file (type pdf)
 <use img/esempio di limite di una funzione.pdf>
 Package pdftex.def Info: img/esempio di limite di una funzione.pdf  used on inp
@@ -1982,7 +1982,7 @@ LaTeX Warning: Command \textbackslash invalid in math mode on input line 323.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/asintoto verticale.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/asintoto verticale.pdf, id=780, 1421.31pt x 996.72375pt>
+<img/asintoto verticale.pdf, id=785, 1421.31pt x 996.72375pt>
 File: img/asintoto verticale.pdf Graphic file (type pdf)
 <use img/asintoto verticale.pdf>
 Package pdftex.def Info: img/asintoto verticale.pdf  used on input line 360.
@@ -1991,7 +1991,7 @@ Package pdftex.def Info: img/asintoto verticale.pdf  used on input line 360.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/asintoto orizzontale.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/asintoto orizzontale.pdf, id=793, 1425.325pt x 996.72375pt>
+<img/asintoto orizzontale.pdf, id=798, 1425.325pt x 996.72375pt>
 File: img/asintoto orizzontale.pdf Graphic file (type pdf)
 <use img/asintoto orizzontale.pdf>
 Package pdftex.def Info: img/asintoto orizzontale.pdf  used on input line 383.
@@ -2024,7 +2024,7 @@ Overfull \hbox (12.64789pt too wide) in paragraph at lines 492--494
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/esempio studio di funz
 ione 2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
 allowed
-<img/esempio studio di funzione 2.pdf, id=803, 1767.60374pt x 1008.76875pt>
+<img/esempio studio di funzione 2.pdf, id=808, 1767.60374pt x 1008.76875pt>
 File: img/esempio studio di funzione 2.pdf Graphic file (type pdf)
 <use img/esempio studio di funzione 2.pdf>
 Package pdftex.def Info: img/esempio studio di funzione 2.pdf  used on input li
@@ -2056,7 +2056,7 @@ Package pdftex.def Info: img/funzione valore assoluto.pdf  used on input line 6
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/esempio punto angoloso
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<img/esempio punto angoloso.pdf, id=863, 1382.16376pt x 1008.76875pt>
+<img/esempio punto angoloso.pdf, id=868, 1382.16376pt x 1008.76875pt>
 File: img/esempio punto angoloso.pdf Graphic file (type pdf)
 <use img/esempio punto angoloso.pdf>
 Package pdftex.def Info: img/esempio punto angoloso.pdf  used on input line 695
@@ -2067,7 +2067,7 @@ Package pdftex.def Info: img/esempio punto angoloso.pdf  used on input line 695
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/esempio punto cuspide.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<img/esempio punto cuspide.pdf, id=864, 1529.715pt x 1008.76875pt>
+<img/esempio punto cuspide.pdf, id=869, 1529.715pt x 1008.76875pt>
 File: img/esempio punto cuspide.pdf Graphic file (type pdf)
 <use img/esempio punto cuspide.pdf>
 Package pdftex.def Info: img/esempio punto cuspide.pdf  used on input line 707.
@@ -2114,13 +2114,13 @@ runsystem(makeindex mat.idx)...executed safely (allowed).
 
  (./mat.ind) (./mat.aux)
 Package rerunfilecheck Info: File `mat.out' has not changed.
-(rerunfilecheck)             Checksum: 03A54504128A91B5B966353ABCCDEFD9;16474.
+(rerunfilecheck)             Checksum: C7E240B4F9AE15213F882AA418CE911A;16641.
  ) 
 Here is how much of TeX's memory you used:
- 43946 strings out of 478994
- 960689 string characters out of 5858184
+ 43950 strings out of 478994
+ 960757 string characters out of 5858184
  1674466 words of memory out of 5000000
- 60308 multiletter control sequences out of 15000+600000
+ 60309 multiletter control sequences out of 15000+600000
  430870 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,12n,89p,828b,752s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2158,10 +2158,10 @@ e1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
 /public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
 lic/cm-super/sftt1200.pfb>
-Output written on mat.pdf (52 pages, 1139314 bytes).
+Output written on mat.pdf (52 pages, 1141788 bytes).
 PDF statistics:
- 1203 PDF objects out of 1440 (max. 8388607)
- 1072 compressed objects within 11 object streams
- 359 named destinations out of 1000 (max. 500000)
- 853 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1212 PDF objects out of 1440 (max. 8388607)
+ 1081 compressed objects within 11 object streams
+ 362 named destinations out of 1000 (max. 500000)
+ 861 words of extra memory for PDF output out of 10000 (max. 10000000)
 

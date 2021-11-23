@@ -457,7 +457,27 @@ Per convenzione, se $a<b$ si pone $\int\limits^b_a f(x)dx=-\int\limits^b_a f(x)d
 	\task Indichiamo con $y_0$ il valore $y_0=\frac{1}{b-a}\int\limits_a^b f(x)dx$ che è un valore compreso tra m ed M.
 \end{tasks}
 \textit{Essendo f continua, per il teorema dei valori intermedi, esisterà $x_0\in (a,b): f(x_0)=y_0$ cioè la tesi}
-
+\subsection{Integrale indefinito}
+Sia f continua in [a,b], allora la funzione integrale $F(x)=\int^x_af(t)dt$ è di classe $c^1([a,b])$
+\begin{equation*}
+	F^\prime (x)=f(x) \forall x \in [a,b]
+\end{equation*}
+\subsubsection{Dimostrazione}
+Scriviamo il rapporto incrementale di F(x):
+\begin{equation*}
+	\frac{F(x+h)-F(x)}{x}=\frac{1}{h}\Bigg[\int^{x+h}_a f(t)dt-\int^{x}_a f(t)dt\Bigg]=\frac{1}{h}\Bigg[\int^{x+h}_a f(t)dt\Bigg]
+\end{equation*}
+\textit{Per il Teorema della media integrale applicato ad f in} $[x,x+h], \exists x (h,x+h)$:
+\begin{equation*}
+	\frac{1}{h}\Bigg[\int^{x+h}_a f(t)dt\Bigg]=f(x(h))
+\end{equation*}
+Si è ottenuto $\frac{F(x+h)-f(x)}{h}=f(x(h))$\\
+Ed essendo f continua in $[a,b]$ si ha la tesi:
+\begin{equation*}
+	F^\prime (x)=\lim_{h\to0} \frac{F(x+h)-F(x)}{h}=\lim_{h\to 0} f(x(h))=f(x)
+\end{equation*}
+\paragraph{Osservazione}
+L’ipotesi di continuità per f è fondamentale per la derivabilità di F. Infatti, se f è solo integrabile \underline{non} si può affermare che F è derivabile.
 \section{Integrali impropri o generalizzati}
 In analisi matematica, l'integrale improprio o generalizzato è il limite di un integrale definito al tendere di un estremo di integrazione (o entrambi) ad un numero reale oppure all'infinito; tale numero reale può appartenere all'insieme di definizione della funzione integranda (\textit{e in tal caso si ottiene lo stesso risultato che si ha calcolando un integrale definito}), oppure può rappresentare un punto di discontinuità. Gli integrali impropri si utilizzano per rendere calcolabili integrali riguardanti intervalli illimitati e/o funzioni non limitate, che non sono trattabili con l'integrale di Riemann. Esso richiede infatti la limitatezza sia per l'intervallo di integrazione, sia per la funzione integranda.\\ By \href{https://it.wikipedia.org/wiki/Integrale_improprio}{Wikipedia}
 
