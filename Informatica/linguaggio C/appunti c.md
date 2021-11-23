@@ -598,4 +598,4 @@ Per un maggio il tutto verrà soddiviso in punti:
 6. Qualche commento o manuale d'uso del programma;
 7. Conclusioni.
 
-Con questa scaletta sarà molto più semplice impostare il proprio lavoro. Infatti, questo è fondamentale seguire quest'ordine per creare un qualcosa che abbia effettivamente senso. Un altro consiglio può essere segnarale potenziali bug che non si è riusciti a risolvere, perché così qualche altro developer (collega di lavoro o di percorso formativo) può metterci una pezza se riesce a mente fredda a trovarlo.
+Con questa scaletta sarà molto più semplice impostare il proprio lavoro. Infatti, questo è fondamentale seguire quest'ordine per creare un qualcosa che abbia effettivamente senso. Un altro consiglio può essere segnarale potenziali bug che non si è riusciti a risolvere, perché così qualche altro developer (**collega di lavoro o di percorso formativo**) può metterci una pezza se riesce a mente fredda a trovarlo.
