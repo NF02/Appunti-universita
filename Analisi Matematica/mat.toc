@@ -178,4 +178,12 @@
 \contentsline {subsection}{\numberline {2.13.1}Studio del grafico di f(x), Asintoti}{47}{subsection.2.13.1}%
 \contentsline {section}{\numberline {2.14}Approssimazione di funzioni con polinomi}{48}{section.2.14}%
 \contentsline {subsection}{\numberline {2.14.1}Polinomio di Taylor}{48}{subsection.2.14.1}%
-\contentsline {section}{\numberline {2.15}Esercizio d'esempio}{48}{section.2.15}%
+\contentsline {section}{\numberline {2.15}Calcolo integrale per funzioni di una variabile}{48}{section.2.15}%
+\contentsline {subsection}{\numberline {2.15.1}integrale definito}{48}{subsection.2.15.1}%
+\contentsline {subsection}{\numberline {2.15.2}Integrale definito}{48}{subsection.2.15.2}%
+\contentsline {paragraph}{Definizione}{48}{paragraph*.139}%
+\contentsline {subparagraph}{Variabile muta}{48}{subparagraph*.140}%
+\contentsline {subsection}{\numberline {2.15.3}Integrale definito, interpretazione geometrica}{49}{subsection.2.15.3}%
+\contentsline {subsection}{\numberline {2.15.4}Integrale definito, classi di funzioni integrali}{49}{subsection.2.15.4}%
+\contentsline {section}{\numberline {2.16}Integrali impropri o generalizzati}{49}{section.2.16}%
+\contentsline {section}{\numberline {2.17}Esercizio d'esempio}{49}{section.2.17}%
