@@ -185,5 +185,7 @@
 \contentsline {subparagraph}{Variabile muta}{48}{subparagraph*.140}%
 \contentsline {subsection}{\numberline {2.15.3}Integrale definito, interpretazione geometrica}{49}{subsection.2.15.3}%
 \contentsline {subsection}{\numberline {2.15.4}Integrale definito, classi di funzioni integrali}{49}{subsection.2.15.4}%
-\contentsline {section}{\numberline {2.16}Integrali impropri o generalizzati}{49}{section.2.16}%
-\contentsline {section}{\numberline {2.17}Esercizio d'esempio}{49}{section.2.17}%
+\contentsline {subsection}{\numberline {2.15.5}Integrale definito, proprietà}{49}{subsection.2.15.5}%
+\contentsline {subsection}{\numberline {2.15.6}Teorema della media integrale}{50}{subsection.2.15.6}%
+\contentsline {subsubsection}{Dimostrazione}{50}{subsubsection*.141}%
+\contentsline {section}{\numberline {2.16}Integrali impropri o generalizzati}{51}{section.2.16}%

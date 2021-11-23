@@ -40,7 +40,9 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{upgreek}
-
+\usepackage{tasks}
+\usepackage{exsheets}
+\SetupExSheets[question]{type=exam}
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
@@ -342,25 +344,26 @@ Dove la suddivisione dell'intervallo $[a,b]$ è individuata dai punti $a=x_0,x_1
 la scelta dei punti $\xi_j$ è arbitraria. All'aumentare dei punti della suddivisione di $[a,b]$ aumenta il numero degli addendi della somma di Couchy-Riemann e diminuisce il valore assoluto di tali addendi.
 \paragraph{Definizione}
 Si dice che una funzione $f:[a,b]\to R$, limitata, è integrabile secondo Riemann in $[a,b]$, se detta $S_n$ una sua qualsiasi successione di Couchy-Riemann, esiste finito in limite di $S_n$ (per $n\to \infty$), e tale limite non dipende dalla scelta dei punti $\xi_j$. Allora si pone:
-\begin{center}
-	$\lim_{n\to\infty}S_n=\int^h_a=f(x)dx$
-\end{center}
+\begin{equation*}
+	\lim_{n\to\infty}S_n=\int\limits^h_a=f(x)dx
+\end{equation*}
+
 Si legge <<Integrale da $a$ a $b$ in $dx$>> $f(x)$ si chiama funzione integrale e x è la variabile d'integrazione ed è una variabile muta:
 \begin{center}
-	$\int^b_af(t)dt$ ha lo stesso significato di $\int\limits^b_af(t)dt$ 
+	$\int\limits^b_af(t)dt$ ha lo stesso significato di $\int\limits^b_af(t)dt$ 
 \end{center}
 \subparagraph{Variabile muta} - è una variabile che la si può nominare come meglio si crede, perché tanto il risultato è identico e quindi non ci sono vincoli nominativi.
 \subsection{Integrale definito, interpretazione geometrica}
 \begin{center}
-	$\int^b_af(x)dx, \int_If(x)dx,\int^b_af$
+	$\int\limits^b_af(x)dx, \int_If(x)dx,\int^b_af$
 \end{center}
 $I=[a,b]$ è dominio di integrazione, a e b sono gli estremi di integrazione.\\
-Se $f(x)$ è positiva allora $\int^b_a f(x)dx$ rappresenta l'aria del <<sottografico>> di f(x). Infatti la somma $S_n$ un'approssimazione dell'area del <<trapezoide T>> individuato da $f$:
+Se $f(x)$ è positiva allora $\int\limits^b_a f(x)dx$ rappresenta l'aria del <<sottografico>> di f(x). Infatti la somma $S_n$ un'approssimazione dell'area del <<trapezoide T>> individuato da $f$:
 \begin{equation*}
 	T: \{(x,y)\in R^2: a\leq x\leq b, 0\leq y\leq f(x)\}
 \end{equation*}
 Se $f\geq 0\Rightarrow \int\limits_a^b f(x)dx=$ area di T\\
-Se in $[a,b], f$ cambia segno allora $\int^b_a f(x)dx$ è sempre un numero ma non rappresenta più l'area del sottografico di $f$.\\
+Se in $[a,b], f$ cambia segno allora $\int\limits^b_a f(x)dx$ è sempre un numero ma non rappresenta più l'area del sottografico di $f$.\\
 Osservazione $\int^b_af(x)dx$ è un numero, non dipende da $x$. L'insieme dele funzioni integrabili secondo Riemann in $I=[a,b]$ si indica con $R(I)$ o $R([a,b])$.\\
 R(I) non è vuoto, infatti ogni funzione costante $y=c$ è integrabile su qualunque intervallo $[a,b]$ e si ha
 \begin{center}
@@ -376,49 +379,87 @@ Per qualunque suddivisione di $[a,b]$ si ha
 	\item Se $f:[a,b]\to R$ è Monotona e limitata, e allora è integrabile.
 	\item Se $f:[a,b]\to R$ è limitata in $[a,b]$ con un numero finito di punti di discontinuità, allora è integrabile.
 \end{enumerate}
-Questo teorema si può estendere alle funzioni limitate con un infinità numerabile di punti di discontinuità, cioè i punti di discontinuità possono essere infiniti ma non devono essere <<troppi>>.
+Questo teorema si può estendere alle funzioni limitate con un infinità numerabile di punti di discontinuità, cioè i punti di discontinuità possono essere infiniti ma non devono essere <<troppi>>.\\
+La funzione di Dirichlet su [a,b]:
+\begin{equation*}
+f(x)=\begin{cases}
+		1 &\text{se x}\in Q \cap [a,b]\\
+		0&\text{se x}\in [a,b] -Q
+	\end{cases}
+\end{equation*}
+è limitata e non è integrabile secondo Riemann (\textit{i punti di discontinuità sono <<troppo>>: tutto $[a,b]$}) Infatti se si scelgono i punti $\xi_j$ razionali si ha
+\begin{equation*}
+	S_n=\sideset{}{^n}\sum_{j=1}f(\xi_j)*(x_j-x_{j-1})=\sideset{}{^n}\sum_{j=1}1*(x-x_{j-1})=(b-a)
+\end{equation*} 
+\subsection{Integrale definito, proprietà}
+Se invece si scelgono i punti $\xi_j$ irrazionali si ha
+\begin{equation*}
+	S_n=\sideset{}{^n}\sum_{j=1}f(\xi_j)*(x_j-x_{j-1})=\sideset{}{^n}\sum_{j=1}0*(x-x_{j-1})=0
+\end{equation*} 
+\textit{Siano f e g integrabili in $[a,b]$, allora:}
+\begin{enumerate}
+	\item Linearità dell'integrale: se $\alpha$ e $\beta$ sono costanti la funzione $af(x)+\beta g(x)$ è integrabile e si ha
+	\begin{equation*}
+		\int\limits^b_a \alpha f(x)+\beta g(x)dx=\int\limits^b_a \alpha f(x)dx+\int\limits^b_a \beta g(x)dx
+	\end{equation*}
+	\item Addittività dell'integrale rispetto all'intervallo di integrazione: Se $a\leq s \leq b$ allora $f$ è integrabile anche su 
+	$[a,s]$ e $[s,b]$ e:
+	\begin{equation*}
+		\int\limits^b_a f(x)dx=\int\limits^b_a f(x)dx+\int\limits^b_af(x)dx
+	\end{equation*}
+	\item Positività e monotonia:
+	\begin{equation*}
+		f\geq 0 \Rightarrow \int\limits^b_a f(x)dx\geq 0
+	\end{equation*}
+	\begin{equation*}
+		f\geq \int\limits^b_a f(x)dx\geq \int\limits^b_a f(x)dx
+	\end{equation*}
+In particolare
+\begin{equation*}
+	| \int\limits^b_a f(x)dx |\leq \int\limits^b_a f(x)dx
+\end{equation*}
+\end{enumerate}
+Per convenzione, se $a<b$ si pone $\int\limits^b_a f(x)dx=-\int\limits^b_a f(x)dx$
+\subsection{Teorema della media integrale}
+\begin{tasks}(1)
+	\task Sia f limitata e integrabile secondo Riemann in [a,b] Allora
+	\fbox{
+ 		\addtolength{\linewidth}{-2\fboxsep}%
+ 		\addtolength{\linewidth}{-2\fboxrule}%
+ 		\begin{minipage}{\linewidth}
+  			\begin{equation}
+   				m\leq\frac{1}{b-a}\int\limits^b_a f(x)dx\leq M
+  			\end{equation}
+ 		\end{minipage}
+	}
+	 \begin{equation*} \text{Dove } m=\operatorname*{\inf}_{[a,b]} f \text{ e } M=\operatorname*{sup}_{[a,b]} f\end{equation*}
+	\task Se f è continua su $[a,b] \exists x_0 \in (a,b)$:\\
+	\fbox{
+ 		\addtolength{\linewidth}{-2\fboxsep}%
+ 		\addtolength{\linewidth}{-2\fboxrule}%
+ 		\begin{minipage}{\linewidth}
+  			\begin{equation}
+   				\frac{1}{b-a}\int\limits^b_a f(x) dx=f(x_0)
+  			\end{equation}
+ 		\end{minipage}
+	}\\(valor medio integrale di f su [a,b])
+\end{tasks}
+\subsubsection{Dimostrazione}
+\begin{tasks}(1)
+	\task Essendo $f(x)$ limitata si ha
+		\begin{equation*}
+			m\leq f(x)\leq M
+		\end{equation*}
+		Integrando membro a membro su $[a,b]$:
+		\begin{equation*}
+			m\leq \frac{1}{b-a}\int\limits_a^b f(x)dx\leq M
+		\end{equation*}
+	\task Indichiamo con $y_0$ il valore $y_0=\frac{1}{b-a}\int\limits_a^b f(x)dx$ che è un valore compreso tra m ed M.
+\end{tasks}
+\textit{Essendo f continua, per il teorema dei valori intermedi, esisterà $x_0\in (a,b): f(x_0)=y_0$ cioè la tesi}
 
 \section{Integrali impropri o generalizzati}
 In analisi matematica, l'integrale improprio o generalizzato è il limite di un integrale definito al tendere di un estremo di integrazione (o entrambi) ad un numero reale oppure all'infinito; tale numero reale può appartenere all'insieme di definizione della funzione integranda (\textit{e in tal caso si ottiene lo stesso risultato che si ha calcolando un integrale definito}), oppure può rappresentare un punto di discontinuità. Gli integrali impropri si utilizzano per rendere calcolabili integrali riguardanti intervalli illimitati e/o funzioni non limitate, che non sono trattabili con l'integrale di Riemann. Esso richiede infatti la limitatezza sia per l'intervallo di integrazione, sia per la funzione integranda.\\ By \href{https://it.wikipedia.org/wiki/Integrale_improprio}{Wikipedia}
-\section{Esercizio d'esempio}
-$f(x)=\frac{x^3}{2(1+x)^2}$
-\begin{enumerate}
-	\item Dominio: $\forall x \in \mathds{R} -\{-1\}$\\
-		%\textbf{Numeratore}: $x^3=0 \Rightarrow \sqrt[3]{x^3}=0\Rightarrow x=0$\\
-		\textbf{Denominatore $\neq 0$}: $2(x+1)^2\neq0\Rightarrow x\neq -1$
-	\item Intersezione con gli assi:\\
-		asse x$\begin{cases}
-			y=0\\
-			\frac{x^3}{2(1+x)^2}=0
-		\end{cases}
-		\begin{cases}
-			y=0\\
-			x^3=0 \Rightarrow \sqrt[3]{x^3}=0\Rightarrow x=0
-		\end{cases}$\\
-		asse y $\begin{cases}
-			x=0\\
-			\frac{0^3}{2(1+0)^2}=0
-		\end{cases}
-		\begin{cases}
-			y=0\\
-			x=0\\
-		\end{cases}$\\
-		\textit{nel caso dello studio del intersezione con gli assi si può escludere lo studio del denominatore}
-	\item Segno:\\
-		f(x)>0
-		\begin{itemize}
-			\item \textbf{Numeratore}: $x^3>0 \Rightarrow \sqrt[3]{x^3}>0\Rightarrow x>0$
-			\item \textbf{Denominatore}: $2(x+1)^2>0\Rightarrow x\neq -1$
-		\end{itemize}
-	\item Simmetrie: \\
-		$f(x)=f(-x)=\frac{-x^3}{2(1-x)^2}$ La funzione non è ne pari ne dispari.
-	\item Asintoto verticale:\\
-		$\lim_{x\to-1^+}\frac{x^3}{2(1+x)^2}=\frac{(-1)^3}{2(1+(-1^+))^2}=\frac{-1}{0}=-\infty$\\
-		$\lim_{x\to-1^-}\frac{x^3}{2(1+x)^2}=\frac{(-1)^3}{2(1+(-1^-))^2}=\frac{-1}{0}=-\infty$
-	\item Asintoto orizzontale:\\
-		$\lim_{x\to+\infty}=\frac{x^3}{2(1+x)^2}=\frac{(+\infty)^3}{2(1+(+\infty))^2}=\frac{\infty}{\infty}$\\
-		$\lim_{x\to+\infty}\frac{f^,(x)}{g^,(x)}=\lim_{x\to+\infty}\frac{3x^2}{4(1+x)}=\frac{\infty}{\infty}=\frac{6x}{4}=\infty$
-		
-\end{enumerate}
+
 \printindex
 \end{document}
