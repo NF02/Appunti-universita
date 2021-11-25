@@ -2,7 +2,7 @@
 \babel@toc {italian}{}
 \contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Simboli}{9}{section.0.2}%
-\contentsline {part}{I\hspace {1em}Matematica analisi 1}{11}{part.1}%
+\contentsline {part}{I\hspace {1em}Matematica analisi 1\\ \texttt {2021/22}}{11}{part.1}%
 \contentsline {chapter}{\numberline {1}Cenni di teoria degli insiemi}{13}{chapter.1}%
 \contentsline {subsection}{\numberline {1.0.1}Operazioni tra gli insiemi}{13}{subsection.1.0.1}%
 \contentsline {section}{\numberline {1.1}Sottoinsiemi di R}{13}{section.1.1}%
