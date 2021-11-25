@@ -15,3 +15,5 @@
 \contentsline {subsubsection}{Integrali definito}{17}{subsubsection*.7}%
 \contentsline {subsubsection}{esempi $\sigma $}{17}{subsubsection*.8}%
 \contentsline {subsection}{\numberline {2.2.3}Primitive di una funsione}{17}{subsection.2.2.3}%
+\contentsline {chapter}{\numberline {3}Modelli atomici}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Modello atomico di Bohr-Sommerfeld}{19}{section.3.1}%

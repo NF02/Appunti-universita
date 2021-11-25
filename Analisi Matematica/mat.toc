@@ -179,7 +179,7 @@
 \contentsline {section}{\numberline {2.14}Approssimazione di funzioni con polinomi}{48}{section.2.14}%
 \contentsline {subsection}{\numberline {2.14.1}Polinomio di Taylor}{48}{subsection.2.14.1}%
 \contentsline {section}{\numberline {2.15}Calcolo integrale per funzioni di una variabile}{48}{section.2.15}%
-\contentsline {subsection}{\numberline {2.15.1}integrale definito}{48}{subsection.2.15.1}%
+\contentsline {subsection}{\numberline {2.15.1}Integrale definito}{48}{subsection.2.15.1}%
 \contentsline {subsection}{\numberline {2.15.2}Integrale definito}{48}{subsection.2.15.2}%
 \contentsline {paragraph}{Definizione}{48}{paragraph*.139}%
 \contentsline {subparagraph}{Variabile muta}{48}{subparagraph*.140}%
@@ -191,4 +191,14 @@
 \contentsline {subsection}{\numberline {2.15.7}Integrale indefinito}{51}{subsection.2.15.7}%
 \contentsline {subsubsection}{Dimostrazione}{51}{subsubsection*.142}%
 \contentsline {paragraph}{Osservazione}{51}{paragraph*.143}%
-\contentsline {section}{\numberline {2.16}Integrali impropri o generalizzati}{51}{section.2.16}%
+\contentsline {paragraph}{Definizione di primitiva}{51}{paragraph*.144}%
+\contentsline {subparagraph}{Esempio}{51}{subparagraph*.145}%
+\contentsline {subparagraph}{Definizione}{51}{subparagraph*.146}%
+\contentsline {subsection}{\numberline {2.15.8}Corollario del Teorema fondamentale del calcolo integrale}{51}{subsection.2.15.8}%
+\contentsline {subsubsection}{Dimostrazione}{52}{subsubsection*.147}%
+\contentsline {subsection}{\numberline {2.15.9}Integrali indefiniti immediati}{52}{subsection.2.15.9}%
+\contentsline {subsubsection}{Esercizio}{52}{subsubsection*.148}%
+\contentsline {subsubsection}{Integrazione per parti}{52}{subsubsection*.149}%
+\contentsline {subsection}{\numberline {2.15.10}Integrazione per parti}{52}{subsection.2.15.10}%
+\contentsline {subsubsection}{Dimostrazione}{52}{subsubsection*.150}%
+\contentsline {section}{\numberline {2.16}Integrali impropri o generalizzati}{53}{section.2.16}%
