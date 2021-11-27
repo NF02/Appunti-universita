@@ -23,10 +23,10 @@
 			$f^\prime(x)\geq 0$
 		\end{center}
 		Analoga dimostrazione per
-		\begin{center}
-			f è decrescente in $[a,b]\Leftrightarrow f^\prime\leq 0 \forall
-			x\in [a,b]$
-		\end{center}
+		\begin{equation}
+			\text{f è decrescente in} [a,b]\Leftrightarrow f^\prime\leq 0 \forall
+			x\in [a,b]
+		\end{equation}
 		Analoga dimostrazione per $f$ è decrescente in $[a,b]\Leftrightarrow
 		f^\prime(x)\leq 0 \forall x \in [a,b]$\\
 		Si ha inoltre
@@ -35,9 +35,9 @@
 			\item $f^\prime (x)<0\Rightarrow$ strettamente decrescente
 		\end{itemize}
 	\item Sia $f(x):[a,b]\to R$, derivabile in (a,b).
-		\begin{center}
-			f è costante $Leftrightarrow f^\prime (x)=0 \forall x\in(a,b)$
-		\end{center}
+		\begin{equation}
+			\text{f è costante} \Leftrightarrow f^\prime (x)=0 \forall x\in(a,b)
+		\end{equation}		
 	\item Sia $x_0\in (a,b)$ e $f^\prime (x_0)=0$\\
 		\textit{Se esiste un intorno destro (sinistro), in cui $f^\prime (x)>0$
 		e un intorno sinistro (destro) in cui $f^\prime (x)<0$, allora $x_0$ è
@@ -183,14 +183,15 @@ Se effettivamente.
 \end{enumerate}
 \subsection{Studio del grafico di f(x), Asintoti}
 Se esiste una retta di equazione $y=mx+q$:
-\begin{center}
-	$\lim_{x\to\infty}\{f(x)- (mx+q)\}=0$
-\end{center}
+\begin{equation*}
+	\lim_{x\to\infty}\{f(x)- (mx+q)\}=0
+\end{equation*}
 Allora $y=mx+q$ si definisce \underline{\color{red}asintoto obliquo} per f(x).
-Si ha 
-\begin{center}
-	$m=\lim_{x\to \infty}\frac{f(x)}{x}; q=\lim_{x\to \infty} f(x)-mx$
-\end{center}
+Si ha
+\begin{equation*}
+	m=\lim_{x\to \infty}\frac{f(x)}{x}; q=\lim_{x\to \infty} f(x)-mx
+\end{equation*}
+
 Se $\lim_{x\to \infty}f(x)=l, y=l$ si chiama asintoto orizzontale.
 Se l'asintoto orizzontale non c'è (il limite sopra è infinito) allora potrebbe
 esserci quello obliquo. Se $\lim_{x\to x_0}f(x)=\infty, x=x_0$ si chiama
@@ -198,38 +199,63 @@ asintoto verticale con $x_0$ punto di accumulazione per f.
 \section{Approssimazione di funzioni con polinomi}
 \subsection{Polinomio di Taylor}
 Data una funzione $f$ derivabile $n$ volte in $x_0$, esiste uno e un solo
-polinomio 
-\begin{center}
-	$T_n(x_0)=f(x_0),T^\prime_n(x_0)=f^\prime(x_0),\dots, T^{(n)}(x_0)=
-f^{(n)}(x_0).$
-\end{center}
+polinomio
+\begin{equation}
+	T_n(x_0)=f(x_0),T^\prime_n(x_0)=f^\prime(x_0),\dots, T^{(n)}(x_0)=f^{(n)}(x_0).
+\end{equation}
 Tale polinomio si chiama polinomio di Taylor ed è
-\begin{center}
-	$T_n(x)=f(x_0)+f^\prime(x_0)(x-x_0)+\frac{f^{\prime\prime}(x_0)}{2}(x-x_0)^2+\dots
-	+ \frac{f^{\prime\prime}(x_0)}{n!}(x-x_0)^n$
-\end{center}
+\begin{equation}
+	T_n(x)=f(x_0)+f^\prime(x_0)(x-x_0)+\frac{f^{\prime\prime}(x_0)}{2}(x-x_0)^2+\dots
+	+ \frac{f^{\prime\prime}(x_0)}{n!}(x-x_0)^n
+\end{equation}
+
 Polinomio di centro $x_0$ e grado n
-\begin{center}
-	$T_n(x)=\sum^n_{k=0}\frac{f^{(b)}(x_0)(x-x_0)^k}{k!}(x-x_0)^k$
-\end{center}
+\begin{equation}
+	T_n(x)=\sideset{}{^n}\sum_{k=0}\frac{f^{(b)}(x_0)(x-x_0)^k}{k!}(x-x_0)^k
+\end{equation}
+
 Se $x_0=0T_n(x)$ è detto polinomio di Mac Laurin di grado n. $R_n(x)=$ errore
 che si commette quando si approssima $f(x)$ con $T_n(x)$:\\
 Si ha: $R_n(x)=f(x)-T_n(x)$
 \begin{itemize}
-	\item $R_n(x)=o((x-x_0)^n)$ per $x\to x_0$, \underline{Formula di Peano}\\
-		cioè $\lim_{x\to x_0}\frac{R_n(x)}{(x-x_0)^n}=0$
+	\item $R_n(x)=o((x-x_0)^n)$ per $x\to x_0$, \underline{Formula di Peano}
+		\begin{equation*}
+			\text{cioè }\lim_{x\to x_0}\frac{R_n(x)}{(x-x_0)^n}=0
+		\end{equation*}
 	\item \textit{Se f è derivabile $n+1$ volte in $(a,b)$ ecluso al più
 		$x_0$,}\\
 		$\forall x\in(a,b), \exists c$ compreso tra $x$ e $x_0$:\\
 		$R_n(x)=\frac{f^{(n+1)}(c)}{(n+1)!}(x-x_0)^{n+1}$ Formula di Lagrange
 \end{itemize}
+Esempio.
+\begin{equation*}
+	y=\sin x \text{ in } x=0,\text{ }T_{2n+1}(x)=\sideset{}{^n}\sum_{k=0}(-1)^k \frac{x^{2k+1}}{(2k+1)!} \text{ solo potenze dispari}
+\end{equation*}
+\begin{itemize}
+	\item $T_1(x)=x$
+	\item $T_3(x)=x-\frac{x^3}{3!}$
+	\item $T_5(x)=x\frac{x^3}{3!}+\frac{x^5}{5!}$
+\end{itemize}
+\begin{equation*}
+	\text{Analogamente in } x=0,\text{ si ottiene}
+\end{equation*}
+\begin{equation*}
+	\ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}-\dots (-1)^{n+1}\frac{x^{n}}{n}+R_n(x)
+\end{equation*}
+\begin{equation*}
+	e^x=1+x+\frac{x^2}{2}+\frac{x^3}{3!}-\dots\frac{x^{n}}{n!}+R_n(x)
+\end{equation*}
+\begin{equation*}
+	\arctan x = x-\frac{x^3}{3}+\frac{x^5}{5}-\dots\frac{x^{2n+1}}{2n+1}+R_{2n+1}(x)
+\end{equation*}
+
 \section{Calcolo integrale per funzioni di una variabile}
 \subsection{Integrale definito}
 Sia $f:[a,b]\to R$, \text{limitata}
 Costruiamo la somma di Cauchy-Riemann
-\begin{center}
-	$S_n=\Sigma^n_{j=1}f(\xi_j)*(x_j-x_{j-1})=\frac{b-a}{n}\Sigma^{n}_{j=1}f(\xi_j)$
-\end{center}
+\begin{equation*}
+	S_n= \sideset{}{^n}\sum_{j=1}f(\xi_j)*(x_j-x_{j-1})=\frac{b-a}{n}\sideset{}{^n}\sum_{j=1}f(\xi_j)
+\end{equation*}
 Dove la suddivisione dell'intervallo $[a,b]$ è individuata dai punti $a=x_0,x_1,x_2,\dots x_{n-1},x_n=b, x_j=a+jh, h=\frac{b-a}{n}$
 \subsection{Integrale definito}
 la scelta dei punti $\xi_j$ è arbitraria. All'aumentare dei punti della suddivisione di $[a,b]$ aumenta il numero degli addendi della somma di Couchy-Riemann e diminuisce il valore assoluto di tali addendi.
@@ -433,7 +459,89 @@ Siano f e g due funzioni derivabili con derivata continua, si ha
 \textit{f(x)=fattore finito}\\
 $g^\prime(x)dx=$\textit{fattore differenziale}\\
 L'ipotesi che le derivate di f e g siano continue assicura che gli integrali siano ben definiti.
+\subsection{Integrale indefinito, proprietà}
+Dalle proprietà delle derivate si ottiene:
+\begin{description}
+	\item[I] \begin{equation*}
+			\int[f(x)+g(x)]dx=\int f(x)dx+\int g(x)dx,
+		\end{equation*}
+	\item[II] \begin{equation*}
+			\int cf(x)dx=c\int f(x)dx, c=costante
+	\end{equation*}
+\end{description}
+\subsection{Integrale indefinito}
+Integrali indefiniti immediati
+\begin{multicols}{2}
+	\begin{equation*}
+		\int x^\alpha dx=\frac{x^{\alpha+1}}{\alpha+1}+x \alpha\neq -1
+	\end{equation*}
+	\begin{equation*}
+		\int \frac{1}{x}dx=\ln|x|+c  \alpha=1
+	\end{equation*}
+	\begin{equation*}
+		\int e^xdx=e^x+c
+	\end{equation*}
+	\begin{equation*}
+		\int \sin x dx=-\cos x+c
+	\end{equation*}
+	\begin{equation*}
+		\int \cos x dx=\sin x+c
+	\end{equation*}
+	\begin{equation*}
+		\int\frac{1}{\cos^2x}dx=\tan x+c
+	\end{equation*}
+	\begin{equation*}
+		\int \frac{1}{\sqrt{1-x^2}}dx=\arcsin x+c
+	\end{equation*}
+	\begin{equation*}
+		\int \frac{-1}{\sqrt{1-x^2}}dx=\arccos x+c
+	\end{equation*}
+	\begin{equation*}
+		\int \frac{1}{1+x^2}dx=\arctan x + c
+	\end{equation*}
+\end{multicols}
+\subsection{Integrazione per sostituzione}
+Sia F una primitiva di f in un intervallo I, ossia 
+\begin{equation*}
+	F^\prime (t)=f(t) \forall t\in I
+\end{equation*}
+Sia $t=g(x)$ una funzione derivabile con derivata continua in $[a,b]:g([a,b])\subset I$ del teorema della derivata di una funzione composta
+\begin{equation*}
+	D[F(g(x))]=F^\prime(g(x))+g^\prime(x)=f(g(x))*g^\prime(x)
+\end{equation*}
+Integrando otteniamo
+\begin{equation*}
+	\int D[F(g(x))]=\int f(g(x))*g^\prime(x)dx
+\end{equation*}
+Ovvero 
+\begin{eqnarray*}
+	\int f(g(x))*g^\prime(x)dx=F(g(x))+c
+\end{eqnarray*}
+Esercizio
+\begin{equation*}
+	\int \frac{\sin x}{\cos x}dx=-\int \frac{1}{\cos x}(-sin x)dx=-\ln |\cos x| +c 
+\end{equation*}
+\begin{itemize}
+	\item \begin{equation*}
+			\int \sin x \cos^2 x=-\int-\sin x \cos^2xdx=\frac{\cos^3 x}{3}+c
+		\end{equation*}
+	\item \begin{equation*}
+			\int \frac{x}{\sqrt{1+x^2}}dx=(1+x^2)^\frac{1}{2}+c
+		\end{equation*}
+	\item \begin{equation*}
+		\int \frac{1}{(1+x^2)\arctan x}dx=\int \frac{1}{(1+x^2)}\frac{1}{\arctan x}dx=\ln(\arctan x)+c
+	\end{equation*}
+\end{itemize}
 \subsection{Integrazione per parti}
+Siano f e g due funzioni derivabili con derivata comune, si ha
+\begin{equation}
+	\int f(x)g^\prime(x)dx=f(x)g(x)-\int f^\prime(x)g(x)dx
+\end{equation}
+\begin{enumerate}
+	\item $f(x)$=fattore finito
+	\item $g^\prime (x)dx$= fattore differenziale
+\end{enumerate}
+L'ipotesi che le derivate di f e g siano continue assicura che gli integrali siano ben definiti.
 \subsubsection{Dimostrazione}
 Consideriamo la formula di derivazione di un prodotto
 \begin{equation*}
@@ -443,7 +551,106 @@ Integrando membro a membro si ha
 \begin{equation*}
 	\int [f(x)g(x)]^\prime dx=\int f^\prime g(x)dx+\int f g^\prime(x)dx
 \end{equation*}
-essendo $f*g$ una primitive della sua derivata $[f*g]^\prime$ si ottiene le tesi 
+essendo $f*g$ una primitive della sua derivata $[f*g]^\prime$ si ottiene le tesi.
+\paragraph{Esercizio}
+\textit{Utilizzando il metodo di integrazione per parti calcolare}
+\begin{itemize}
+	\item $\int x\cos x dx=x\sin x-\int \sin xdx=x\sin x+\cos x +c$
+	\item $\int \ln xdx=\int 1*\ln xdx=x\ln x-\int x*\frac{1}{x}dx=x\ln x+c$
+	\item $\int e^x\sin xdx=\int e^x\sin x-\int e^x \cos xdx=e^x\sin x-(e^x \cos x+\int e^x \sin xdx) \Rightarrow \int e^x \sin xdx=\frac{e^x\cos x+\int e^x \sin xdx}{2}=\frac{e^x(\sin x-\cos x)}{2}+c$
+	\item $\int \cos^2 xdx=\int \cos x*\cos xdx =\cos x \sin x + \int \sin^2 xdx=\cos x\sin x +x-\int \cos^2 xdx \Rightarrow\cos xdx=\frac{\cos x\sin x +x}{2}+c$
+\end{itemize}
+Se l'integrale è definito:
+\begin{equation}
+	\int^b_a f(x)dx
+\end{equation}
+e si effettua la sostituzione x=g(t). supponendo che
+\begin{tasks}
+	\task $x=a\Rightarrow c=g^{-1}(a)$
+	\task $x=b\Rightarrow d=g^{-1}(b)$
+\end{tasks}
+si ha
+\begin{equation*}
+	\int^b_a f(x)dx=\int^d_c f(g(t))g^\prime(t)dt
+\end{equation*}
+Metodo di integrazione delle funzioni razionali fratte
+\begin{equation*}
+	\int \frac{N(x)}{D(x)}dx, N(x), D(x) \text{ polinomi di x}
+\end{equation*}
+\begin{description}
+	\item[1°caso:] $grado(N(x))<grado(D(x))$
+		\begin{tasks}
+			\task D(x) ha radice \underline{radicale semplice}: si determinano le radici del denominatore $D(x)$ e lo si scompone in fattori\\
+			Esercizio
+			\begin{equation}
+				\int\frac{1}{x^2-3x+2}
+			\end{equation}
+			$D(x)=x^2-3x+2=(x-2)(x-1)$\\
+			Si devono cercare 2 costanti A e B (in quanto 2 sono i fattori semplici in cui è scomposto il polinomio D(x)):
+			\begin{equation*}
+				\frac{1}{x^2-3x+2}=\frac{A}{x-2}+\frac{B}{x-1}=\frac{(A+B)x-A2B}{(x-2)(x-1)}
+			\end{equation*}
+			Per il principio di identità dei polinomi, i polinomi a numeratore del 1° e dell'ultimo membro, sono uguali se sono uguali i rispettivi i rispettivi coefficienti cioè
+			\begin{equation*}
+				\begin{cases}
+					A+B=0\\
+					-A-2B=1
+				\end{cases}\Rightarrow A=1\text{ }B=-1\Rightarrow \frac{1}{x^2-3x+2}-\frac{1}{x-1}
+			\end{equation*}
+			e quindi
+			\begin{equation*}
+				\int\frac{1}{x^2-3x+2}dx=\int\frac{1}{x-2}dx-\int \frac{1}{x-1}dx=\ln \bigg|\frac{x-2}{x-1}\bigg|+c
+			\end{equation*}
+			\task $D(x)$ ha radici \underline{reali multiple}\\
+			Esercizio
+			\begin{equation*}
+				\int \frac{1}{x^3-x^2}dx
+			\end{equation*}
+			si ha $D(x)=x^3-x^2=x^2(x-1)$:\\
+			una radice semplice (x=1) e una radice multipla di molteplicità (radice doppia x=0) si devono cercare 3 costanti:
+			\begin{equation*}
+				\Rightarrow \frac{1}{x^3-x^2}=\frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-1}=\frac{Ax(x-1)+B(x-1)+Cx^2}{x^2(x-1)}
+			\end{equation*}
+			\begin{equation*}
+				\Rightarrow \frac{1}{x^3-x^2}=\frac{(A+C)x^2+(-A+B)x-B}{x^2(x-1)}
+			\end{equation*}
+			\begin{equation*}
+				\begin{cases}
+					A+C=0&A=-1\\
+					-A+B=0\Rightarrow&B=-1\\
+					-B=1&C=1
+				\end{cases}
+			\end{equation*}
+			\begin{equation*}
+				\int \frac{1}{x^3-x^2}dx=-\int -\frac{1}{x}dx+\int-\frac{1}{x^2}dx+\int \frac{1}{x-1}dx=\ln\bigg|\frac{x-1}{x}\bigg|+\frac{1}{x}+c
+			\end{equation*}
+			\task $D(x)$ ha radici \textit{complesse coniugate e semplici}\\
+				Esercizio
+				\begin{equation*}
+					\int \frac{1}{x^3+x^2+x+1}dx
+				\end{equation*}
+				\begin{equation*}
+					D(x)=x^3+x^2+x+1=(x+1)(x^2+1)
+				\end{equation*}
+				3 radici: $x=-1$ reale semplice\\
+				$x=\mp 1$ complesse coniugate
+				\begin{equation*}
+					\Rightarrow\frac{1}{x^3+x^2+x+1}=\frac{1}{(x+1)(x^2+1)}=\frac{A}{x+1}+\frac{Bx+C}{x^2+1}\Rightarrow
+					 \begin{cases}
+						A+B=0&a=\frac{1}{2}\\
+						B+C=0\Rightarrow&B=-\frac{1}{2}\\
+						A+C=1&C=\frac{1}{2}
+					\end{cases}
+				\end{equation*}
+				E quindi si ottiene
+				%\begin{equation*}
+				%	\int \frac{1}{x^3+x^2+x+1}dx=\frac{1}{2}\int\frac{1}{x+1}dx-\frac{1}{2}\int\frac{x-1}{x^2+1}dx=\frac{1}{2}\int\frac{1}{x+1}dx-\frac{1}{4}\int\frac{2x}{x^2+1}dx+\frac{1}{2}\int\frac{2x}{x^2+1}dx
+				%\end{equation*}
+		\end{tasks} 
+		\item [2° caso: ] grado(N(x)) grado(D(x))\\
+		In questo caso si deve eseguire la deriv
+		
+\end{description}
 
 \section{Integrali impropri o generalizzati}
 In analisi matematica, l'integrale improprio o generalizzato è il limite di un integrale definito al tendere di un estremo di integrazione (o entrambi) ad un numero reale oppure all'infinito; tale numero reale può appartenere all'insieme di definizione della funzione integranda (\textit{e in tal caso si ottiene lo stesso risultato che si ha calcolando un integrale definito}), oppure può rappresentare un punto di discontinuità. Gli integrali impropri si utilizzano per rendere calcolabili integrali riguardanti intervalli illimitati e/o funzioni non limitate, che non sono trattabili con l'integrale di Riemann. Esso richiede infatti la limitatezza sia per l'intervallo di integrazione, sia per la funzione integranda.\\ By \href{https://it.wikipedia.org/wiki/Integrale_improprio}{Wikipedia}

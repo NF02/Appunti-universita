@@ -1,204 +1,208 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
-\contentsline {section}{\numberline {0.2}Simboli}{9}{section.0.2}%
-\contentsline {part}{I\hspace {1em}Matematica analisi 1\\ \texttt {2021/22}}{11}{part.1}%
-\contentsline {chapter}{\numberline {1}Cenni di teoria degli insiemi}{13}{chapter.1}%
-\contentsline {subsection}{\numberline {1.0.1}Operazioni tra gli insiemi}{13}{subsection.1.0.1}%
-\contentsline {section}{\numberline {1.1}Sottoinsiemi di R}{13}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Definizione}{13}{subsection.1.1.1}%
-\contentsline {subsubsection}{Interno di A}{13}{subsubsection*.4}%
-\contentsline {paragraph}{°A}{13}{paragraph*.5}%
-\contentsline {paragraph}{Esempio}{13}{paragraph*.6}%
-\contentsline {paragraph}{$\partial $A,FA}{13}{paragraph*.7}%
-\contentsline {paragraph}{Esempio}{13}{paragraph*.8}%
-\contentsline {subsubsection}{Osservazioni}{14}{subsubsection*.9}%
-\contentsline {paragraph}{Definizione}{14}{paragraph*.10}%
-\contentsline {subparagraph}{Esempio}{14}{subparagraph*.11}%
-\contentsline {paragraph}{Esercizio}{14}{paragraph*.12}%
-\contentsline {paragraph}{Definizione}{14}{paragraph*.13}%
-\contentsline {paragraph}{Esempio}{14}{paragraph*.14}%
-\contentsline {subsubsection}{Teorema di Bolzano Weierstrass}{14}{subsubsection*.15}%
-\contentsline {paragraph}{Esempio}{14}{paragraph*.16}%
-\contentsline {section}{\numberline {1.2}Funzione di una variabile}{14}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Definizione}{14}{subsection.1.2.1}%
-\contentsline {paragraph}{Definizione di funzione Immagine}{15}{paragraph*.18}%
-\contentsline {subparagraph}{Esempio}{15}{subparagraph*.19}%
-\contentsline {paragraph}{Definizione di funzione suriettiva}{15}{paragraph*.20}%
-\contentsline {paragraph}{Definizione di funzione iniettiva}{15}{paragraph*.21}%
-\contentsline {paragraph}{Una funzione può essere sia iniettiva che suriettiva ``biiettiva''}{15}{paragraph*.22}%
-\contentsline {paragraph}{Quando una funzione è pari?}{15}{paragraph*.23}%
-\contentsline {paragraph}{Quando una funzione è dispari?}{15}{paragraph*.24}%
-\contentsline {paragraph}{Quando una funzione è periodica?}{15}{paragraph*.25}%
-\contentsline {subparagraph}{Esempio}{15}{subparagraph*.26}%
-\contentsline {paragraph}{Quando una funzione è limitata superiormente?}{15}{paragraph*.27}%
-\contentsline {paragraph}{Quando una funzione è limitata inferiormente?}{15}{paragraph*.28}%
-\contentsline {paragraph}{Quando una funzione viene definita \textit {composta}?}{15}{paragraph*.29}%
-\contentsline {subparagraph}{Esempio}{15}{subparagraph*.30}%
-\contentsline {subparagraph}{Esempio}{15}{subparagraph*.31}%
-\contentsline {paragraph}{Quando una funzione è inversa?}{15}{paragraph*.33}%
-\contentsline {paragraph}{Nota}{15}{paragraph*.34}%
-\contentsline {paragraph}{Quando una funzione viene definita monotona?}{16}{paragraph*.35}%
-\contentsline {chapter}{\numberline {2}Studio di funzione}{17}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Grafica delle funzioni elementari}{17}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Funzione lineare $y=mx+qm, q\in R$}{17}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Funzione valore assoluto $y=|x|$}{18}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Funzione potenza $y=x^n,n\in N, pari$}{18}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Funzione potenza $y=x^\alpha ,\alpha \in R$ (\textit {ma non razionale})}{19}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Funzione potenziale $y=x^{\frac {m}{n}},m, n\in Z$}{19}{subsection.2.1.5}%
-\contentsline {subsection}{\numberline {2.1.6}Funzione logaritmo $y=\qopname \relax o{log}_a{x}$}{19}{subsection.2.1.6}%
-\contentsline {subsection}{\numberline {2.1.7}Le coniche: la circonferenza}{20}{subsection.2.1.7}%
-\contentsline {subsection}{\numberline {2.1.8}Le coniche: l'ellisse}{21}{subsection.2.1.8}%
-\contentsline {subsection}{\numberline {2.1.9}Le coniche: iperbole}{21}{subsection.2.1.9}%
-\contentsline {subsection}{\numberline {2.1.10}Le coniche: iperbole equilattera}{22}{subsection.2.1.10}%
-\contentsline {subsection}{\numberline {2.1.11}Le coniche: parabola}{22}{subsection.2.1.11}%
-\contentsline {subsection}{\numberline {2.1.12}Le funzioni trigonometriche}{23}{subsection.2.1.12}%
-\contentsline {subsubsection}{Funzione $\qopname \relax o{sin}x$}{23}{subsubsection*.48}%
-\contentsline {subsubsection}{Funzione $\qopname \relax o{cos}x$}{24}{subsubsection*.50}%
-\contentsline {subsubsection}{Funzione $\qopname \relax o{tan}x$}{24}{subsubsection*.52}%
-\contentsline {subsubsection}{Funzione $\qopname \relax o{cot}x$}{25}{subsubsection*.54}%
-\contentsline {subsection}{\numberline {2.1.13}Le funzioni trigonometriche inverse}{25}{subsection.2.1.13}%
-\contentsline {subsubsection}{Funzione $\qopname \relax o{arcsin}x$}{25}{subsubsection*.56}%
-\contentsline {subsubsection}{Funzione $\qopname \relax o{arccos}x$}{26}{subsubsection*.58}%
-\contentsline {subsubsection}{Funzione $\qopname \relax o{arctan}x$}{26}{subsubsection*.60}%
-\contentsline {subsubsection}{Operazione sul grafico: traslazione della asse X}{27}{subsubsection*.62}%
-\contentsline {subsubsection}{Operazione sul grafico: traslazione della asse Y}{27}{subsubsection*.64}%
-\contentsline {subsubsection}{Operazione sul grafico: contrazione e dilatazione in direzione verticale}{28}{subsubsection*.66}%
-\contentsline {subsubsection}{Operazione sul grafico: contrazione e dilatazione in direzione orizzontale}{28}{subsubsection*.68}%
-\contentsline {subsubsection}{Operazione sul grafico: $y=|f(x)|$}{29}{subsubsection*.70}%
-\contentsline {section}{\numberline {2.2}Limiti}{29}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Limite di una funzione}{30}{subsection.2.2.1}%
-\contentsline {subsubsection}{In simboli}{30}{subsubsection*.74}%
-\contentsline {subsection}{\numberline {2.2.2}Definizione di Limite destro}{30}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Definizione di limite sinistro ``da sinistra''}{30}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Teorema d'unicità del limite ``da destra''}{30}{subsection.2.2.4}%
-\contentsline {subsubsection}{Esempi}{31}{subsubsection*.75}%
-\contentsline {paragraph}{Definizione}{31}{paragraph*.76}%
-\contentsline {paragraph}{Definizione}{31}{paragraph*.77}%
-\contentsline {paragraph}{Definizione di Asintoto verticale}{31}{paragraph*.78}%
-\contentsline {paragraph}{Definizione di Asintoto orizzontale}{32}{paragraph*.80}%
-\contentsline {subsection}{\numberline {2.2.5}Teorema (\texttt {\color {red} algebra dei limiti})}{32}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}Convenzioni con $\infty $}{32}{subsection.2.2.6}%
-\contentsline {subsubsection}{Convenzioni con $\infty $}{32}{subsubsection*.82}%
-\contentsline {subsection}{\numberline {2.2.7}Forme indeterminate}{33}{subsection.2.2.7}%
-\contentsline {subsection}{\numberline {2.2.8}Teorema del confronto}{33}{subsection.2.2.8}%
-\contentsline {subsubsection}{Dimostrazione}{33}{subsubsection*.83}%
-\contentsline {subsubsection}{Casi particolari di $\qopname \relax m{lim}_{x\to x_0} f(x)*g(x)$}{33}{subsubsection*.84}%
-\contentsline {paragraph}{Teorema}{33}{paragraph*.85}%
-\contentsline {subparagraph}{Esempio}{33}{subparagraph*.86}%
-\contentsline {subsection}{\numberline {2.2.9}Limite di \texttt {funzione composta}}{33}{subsection.2.2.9}%
-\contentsline {subsection}{\numberline {2.2.10}Limiti Notevoli}{33}{subsection.2.2.10}%
-\contentsline {paragraph}{Esempi}{33}{paragraph*.87}%
-\contentsline {subsection}{\numberline {2.2.11}Infinitesimi e infiniti}{34}{subsection.2.2.11}%
-\contentsline {paragraph}{Definizione}{34}{paragraph*.89}%
-\contentsline {subsubsection}{Esempi}{34}{subsubsection*.90}%
-\contentsline {subsubsection}{Ordine di infinitesimo}{34}{subsubsection*.91}%
-\contentsline {paragraph}{Esempi}{34}{paragraph*.92}%
-\contentsline {subsubsection}{Confronto tra infinitesimi}{35}{subsubsection*.93}%
-\contentsline {subparagraph}{esempio}{35}{subparagraph*.94}%
-\contentsline {paragraph}{Definizione di funzioni asintotiche}{35}{paragraph*.95}%
-\contentsline {subparagraph}{esempi}{35}{subparagraph*.96}%
-\contentsline {paragraph}{Definizione di funzioni infinite}{35}{paragraph*.97}%
-\contentsline {subparagraph}{Esempi}{35}{subparagraph*.98}%
-\contentsline {subparagraph}{Regole aritmetiche}{35}{subparagraph*.99}%
-\contentsline {paragraph}{Ordine di infinito}{35}{paragraph*.100}%
-\contentsline {subparagraph}{Esempi}{36}{subparagraph*.101}%
-\contentsline {subparagraph}{Cofronto tra infiniti}{36}{subparagraph*.102}%
-\contentsline {subparagraph}{Esempio}{36}{subparagraph*.103}%
-\contentsline {paragraph}{Gerarchia degli infiniti}{36}{paragraph*.104}%
-\contentsline {subparagraph}{Esempio}{36}{subparagraph*.105}%
-\contentsline {subparagraph}{Regole aritmetiche}{36}{subparagraph*.106}%
-\contentsline {subsection}{\numberline {2.2.12}Funzioni continue}{36}{subsection.2.2.12}%
-\contentsline {paragraph}{Definizione}{36}{paragraph*.107}%
-\contentsline {subsubsection}{Teorema della permanenza del segno}{36}{subsubsection*.108}%
-\contentsline {subsubsection}{Teorema degli zeri}{36}{subsubsection*.109}%
-\contentsline {paragraph}{Teorema dell'esistenza dei valori intermedi (\textit {conseguenza del teorema degli zeri})}{36}{paragraph*.110}%
-\contentsline {subsubsection}{Teorema di Wierstrass (sul massimo e il minimo)}{37}{subsubsection*.111}%
-\contentsline {subsection}{\numberline {2.2.13}Criteri di invertibilità}{37}{subsection.2.2.13}%
-\contentsline {section}{\numberline {2.3}Calcolo differenziale per funzioni di una variabile}{37}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Derivata di una funzione}{37}{subsection.2.3.1}%
-\contentsline {paragraph}{Significato geometrico della derivata in un punto e equazione della retta tangente}{37}{paragraph*.112}%
-\contentsline {subsection}{\numberline {2.3.2}Definizione}{37}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Continuità e derivabilità}{37}{subsection.2.3.3}%
-\contentsline {subsubsection}{Teorema}{37}{subsubsection*.113}%
-\contentsline {paragraph}{Esempio}{37}{paragraph*.114}%
-\contentsline {section}{\numberline {2.4}Punti di non derivabilità}{38}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Punto angoloso}{38}{subsection.2.4.1}%
-\contentsline {subsubsection}{Esempio}{38}{subsubsection*.115}%
-\contentsline {subsubsection}{Un altro esempio}{38}{subsubsection*.117}%
-\contentsline {subsection}{\numberline {2.4.2}Punto cuspude}{39}{subsection.2.4.2}%
-\contentsline {subsubsection}{Punto di flesso a tangente verticale}{39}{subsubsection*.120}%
-\contentsline {subsection}{\numberline {2.4.3}Esempi di derivate}{39}{subsection.2.4.3}%
-\contentsline {subsubsection}{Qualche esercizio dimostrativo}{39}{subsubsection*.121}%
-\contentsline {subsubsection}{Esercizio}{40}{subsubsection*.122}%
-\contentsline {subsection}{\numberline {2.4.4}Teorema di derivazione della funzione composta}{40}{subsection.2.4.4}%
-\contentsline {subsubsection}{Esercizio}{40}{subsubsection*.123}%
-\contentsline {subsection}{\numberline {2.4.5}Teorema di derivazione della funzione inversa}{41}{subsection.2.4.5}%
-\contentsline {subsection}{\numberline {2.4.6}Esercizio}{41}{subsection.2.4.6}%
-\contentsline {subsection}{\numberline {2.4.7}Esercizio}{41}{subsection.2.4.7}%
-\contentsline {subsection}{\numberline {2.4.8}Esercizio}{41}{subsection.2.4.8}%
-\contentsline {section}{\numberline {2.5}Massimo e minimo assoluto}{41}{section.2.5}%
-\contentsline {paragraph}{in modo analogo:}{41}{paragraph*.124}%
-\contentsline {section}{\numberline {2.6}Massimo e minimo relativo (o estremi locali)}{42}{section.2.6}%
-\contentsline {paragraph}{In modo analogo:}{42}{paragraph*.125}%
-\contentsline {subsection}{\numberline {2.6.1}Punti Stazionari}{42}{subsection.2.6.1}%
-\contentsline {section}{\numberline {2.7}Teorema di Fermat}{42}{section.2.7}%
-\contentsline {paragraph}{Dimostrazione}{42}{paragraph*.126}%
-\contentsline {section}{\numberline {2.8}Teorema di Rolle}{42}{section.2.8}%
-\contentsline {subsection}{\numberline {2.8.1}Dimostrazione}{42}{subsection.2.8.1}%
-\contentsline {subsection}{\numberline {2.8.2}Esercizio dimostrativo}{43}{subsection.2.8.2}%
-\contentsline {subsubsection}{Testo}{43}{subsubsection*.127}%
-\contentsline {subsubsection}{Soluzione}{43}{subsubsection*.128}%
-\contentsline {subsection}{\numberline {2.8.3}Esercizio dimostrativo}{43}{subsection.2.8.3}%
-\contentsline {subsubsection}{Testo}{43}{subsubsection*.129}%
-\contentsline {subsubsection}{Soluzione}{43}{subsubsection*.130}%
-\contentsline {section}{\numberline {2.9}Teorema di Lagrange ({\em o del valor medio})}{43}{section.2.9}%
-\contentsline {subsection}{\numberline {2.9.1}Dimostrazione}{43}{subsection.2.9.1}%
-\contentsline {subsection}{\numberline {2.9.2}Esempio}{44}{subsection.2.9.2}%
-\contentsline {subsection}{\numberline {2.9.3}Esercizio dimostrativo}{44}{subsection.2.9.3}%
-\contentsline {subsubsection}{Testo}{44}{subsubsection*.131}%
-\contentsline {subsubsection}{Soluzione}{44}{subsubsection*.132}%
-\contentsline {subsection}{\numberline {2.9.4}Esercizio dimostrativo}{44}{subsection.2.9.4}%
-\contentsline {subsubsection}{Testo}{44}{subsubsection*.133}%
-\contentsline {subsubsection}{Soluzione}{44}{subsubsection*.134}%
-\contentsline {paragraph}{Dimostrazione}{44}{paragraph*.135}%
-\contentsline {paragraph}{Viceversa}{45}{paragraph*.136}%
-\contentsline {section}{\numberline {2.10}Teorema di Cauchy}{45}{section.2.10}%
-\contentsline {subsection}{\numberline {2.10.1}Dimostrazione}{45}{subsection.2.10.1}%
-\contentsline {section}{\numberline {2.11}Teorema di de l'Hopital}{45}{section.2.11}%
-\contentsline {section}{\numberline {2.12}Funzioni convesse e concave}{46}{section.2.12}%
-\contentsline {subsection}{\numberline {2.12.1}Definizione di funziona convessa}{46}{subsection.2.12.1}%
-\contentsline {paragraph}{Analogamenente:}{46}{paragraph*.137}%
-\contentsline {subsection}{\numberline {2.12.2}Definizione di funziona concave}{46}{subsection.2.12.2}%
-\contentsline {subsection}{\numberline {2.12.3}Derivata seconda}{46}{subsection.2.12.3}%
-\contentsline {subsection}{\numberline {2.12.4}Criterio di convessità}{46}{subsection.2.12.4}%
-\contentsline {subsection}{\numberline {2.12.5}Criterio per i punti di massimo e di minimo relativo}{47}{subsection.2.12.5}%
-\contentsline {subsubsection}{Definizione}{47}{subsubsection*.138}%
-\contentsline {section}{\numberline {2.13}Punti per lo svolgimento dello studio di funzione}{47}{section.2.13}%
-\contentsline {subsection}{\numberline {2.13.1}Studio del grafico di f(x), Asintoti}{47}{subsection.2.13.1}%
-\contentsline {section}{\numberline {2.14}Approssimazione di funzioni con polinomi}{48}{section.2.14}%
-\contentsline {subsection}{\numberline {2.14.1}Polinomio di Taylor}{48}{subsection.2.14.1}%
-\contentsline {section}{\numberline {2.15}Calcolo integrale per funzioni di una variabile}{48}{section.2.15}%
-\contentsline {subsection}{\numberline {2.15.1}Integrale definito}{48}{subsection.2.15.1}%
-\contentsline {subsection}{\numberline {2.15.2}Integrale definito}{48}{subsection.2.15.2}%
-\contentsline {paragraph}{Definizione}{48}{paragraph*.139}%
-\contentsline {subparagraph}{Variabile muta}{48}{subparagraph*.140}%
-\contentsline {subsection}{\numberline {2.15.3}Integrale definito, interpretazione geometrica}{49}{subsection.2.15.3}%
-\contentsline {subsection}{\numberline {2.15.4}Integrale definito, classi di funzioni integrali}{49}{subsection.2.15.4}%
-\contentsline {subsection}{\numberline {2.15.5}Integrale definito, proprietà}{49}{subsection.2.15.5}%
-\contentsline {subsection}{\numberline {2.15.6}Teorema della media integrale}{50}{subsection.2.15.6}%
-\contentsline {subsubsection}{Dimostrazione}{50}{subsubsection*.141}%
-\contentsline {subsection}{\numberline {2.15.7}Integrale indefinito}{51}{subsection.2.15.7}%
-\contentsline {subsubsection}{Dimostrazione}{51}{subsubsection*.142}%
-\contentsline {paragraph}{Osservazione}{51}{paragraph*.143}%
-\contentsline {paragraph}{Definizione di primitiva}{51}{paragraph*.144}%
-\contentsline {subparagraph}{Esempio}{51}{subparagraph*.145}%
-\contentsline {subparagraph}{Definizione}{51}{subparagraph*.146}%
-\contentsline {subsection}{\numberline {2.15.8}Corollario del Teorema fondamentale del calcolo integrale}{51}{subsection.2.15.8}%
-\contentsline {subsubsection}{Dimostrazione}{52}{subsubsection*.147}%
-\contentsline {subsection}{\numberline {2.15.9}Integrali indefiniti immediati}{52}{subsection.2.15.9}%
-\contentsline {subsubsection}{Esercizio}{52}{subsubsection*.148}%
-\contentsline {subsubsection}{Integrazione per parti}{52}{subsubsection*.149}%
-\contentsline {subsection}{\numberline {2.15.10}Integrazione per parti}{52}{subsection.2.15.10}%
-\contentsline {subsubsection}{Dimostrazione}{52}{subsubsection*.150}%
-\contentsline {section}{\numberline {2.16}Integrali impropri o generalizzati}{53}{section.2.16}%
+\contentsline {section}{\numberline {0.1}Premesse\dots }{9}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Simboli}{11}{section.0.2}%
+\contentsline {part}{I\hspace {1em}Matematica analisi 1 \texttt {2021/22}}{13}{part.1}%
+\contentsline {chapter}{\numberline {1}Cenni di teoria degli insiemi}{15}{chapter.1}%
+\contentsline {subsection}{\numberline {1.0.1}Operazioni tra gli insiemi}{15}{subsection.1.0.1}%
+\contentsline {section}{\numberline {1.1}Sottoinsiemi di R}{15}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Definizione}{15}{subsection.1.1.1}%
+\contentsline {subsubsection}{Interno di A}{15}{subsubsection*.4}%
+\contentsline {paragraph}{°A}{15}{paragraph*.5}%
+\contentsline {paragraph}{Esempio}{15}{paragraph*.6}%
+\contentsline {paragraph}{$\partial $A,FA}{15}{paragraph*.7}%
+\contentsline {paragraph}{Esempio}{15}{paragraph*.8}%
+\contentsline {subsubsection}{Osservazioni}{16}{subsubsection*.9}%
+\contentsline {paragraph}{Definizione}{16}{paragraph*.10}%
+\contentsline {subparagraph}{Esempio}{16}{subparagraph*.11}%
+\contentsline {paragraph}{Esercizio}{16}{paragraph*.12}%
+\contentsline {paragraph}{Definizione}{16}{paragraph*.13}%
+\contentsline {paragraph}{Esempio}{16}{paragraph*.14}%
+\contentsline {subsubsection}{Teorema di Bolzano Weierstrass}{16}{subsubsection*.15}%
+\contentsline {paragraph}{Esempio}{16}{paragraph*.16}%
+\contentsline {section}{\numberline {1.2}Funzione di una variabile}{16}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Definizione}{16}{subsection.1.2.1}%
+\contentsline {paragraph}{Definizione di funzione Immagine}{17}{paragraph*.18}%
+\contentsline {subparagraph}{Esempio}{17}{subparagraph*.19}%
+\contentsline {paragraph}{Definizione di funzione suriettiva}{17}{paragraph*.20}%
+\contentsline {paragraph}{Definizione di funzione iniettiva}{17}{paragraph*.21}%
+\contentsline {paragraph}{Una funzione può essere sia iniettiva che suriettiva ``biiettiva''}{17}{paragraph*.22}%
+\contentsline {paragraph}{Quando una funzione è pari?}{17}{paragraph*.23}%
+\contentsline {paragraph}{Quando una funzione è dispari?}{17}{paragraph*.24}%
+\contentsline {paragraph}{Quando una funzione è periodica?}{17}{paragraph*.25}%
+\contentsline {subparagraph}{Esempio}{17}{subparagraph*.26}%
+\contentsline {paragraph}{Quando una funzione è limitata superiormente?}{17}{paragraph*.27}%
+\contentsline {paragraph}{Quando una funzione è limitata inferiormente?}{17}{paragraph*.28}%
+\contentsline {paragraph}{Quando una funzione viene definita \textit {composta}?}{17}{paragraph*.29}%
+\contentsline {subparagraph}{Esempio}{17}{subparagraph*.30}%
+\contentsline {subparagraph}{Esempio}{17}{subparagraph*.31}%
+\contentsline {paragraph}{Quando una funzione è inversa?}{17}{paragraph*.33}%
+\contentsline {paragraph}{Nota}{17}{paragraph*.34}%
+\contentsline {paragraph}{Quando una funzione viene definita monotona?}{18}{paragraph*.35}%
+\contentsline {chapter}{\numberline {2}Studio di funzione}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Grafica delle funzioni elementari}{19}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Funzione lineare $y=mx+qm, q\in R$}{19}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Funzione valore assoluto $y=|x|$}{20}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Funzione potenza $y=x^n,n\in N, pari$}{20}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Funzione potenza $y=x^\alpha ,\alpha \in R$ (\textit {ma non razionale})}{21}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Funzione potenziale $y=x^{\frac {m}{n}},m, n\in Z$}{21}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Funzione logaritmo $y=\qopname \relax o{log}_a{x}$}{21}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.7}Le coniche: la circonferenza}{22}{subsection.2.1.7}%
+\contentsline {subsection}{\numberline {2.1.8}Le coniche: l'ellisse}{23}{subsection.2.1.8}%
+\contentsline {subsection}{\numberline {2.1.9}Le coniche: iperbole}{23}{subsection.2.1.9}%
+\contentsline {subsection}{\numberline {2.1.10}Le coniche: iperbole equilattera}{24}{subsection.2.1.10}%
+\contentsline {subsection}{\numberline {2.1.11}Le coniche: parabola}{24}{subsection.2.1.11}%
+\contentsline {subsection}{\numberline {2.1.12}Le funzioni trigonometriche}{25}{subsection.2.1.12}%
+\contentsline {subsubsection}{Funzione $\qopname \relax o{sin}x$}{25}{subsubsection*.48}%
+\contentsline {subsubsection}{Funzione $\qopname \relax o{cos}x$}{26}{subsubsection*.50}%
+\contentsline {subsubsection}{Funzione $\qopname \relax o{tan}x$}{26}{subsubsection*.52}%
+\contentsline {subsubsection}{Funzione $\qopname \relax o{cot}x$}{27}{subsubsection*.54}%
+\contentsline {subsection}{\numberline {2.1.13}Le funzioni trigonometriche inverse}{27}{subsection.2.1.13}%
+\contentsline {subsubsection}{Funzione $\qopname \relax o{arcsin}x$}{27}{subsubsection*.56}%
+\contentsline {subsubsection}{Funzione $\qopname \relax o{arccos}x$}{28}{subsubsection*.58}%
+\contentsline {subsubsection}{Funzione $\qopname \relax o{arctan}x$}{28}{subsubsection*.60}%
+\contentsline {subsubsection}{Operazione sul grafico: traslazione della asse X}{29}{subsubsection*.62}%
+\contentsline {subsubsection}{Operazione sul grafico: traslazione della asse Y}{29}{subsubsection*.64}%
+\contentsline {subsubsection}{Operazione sul grafico: contrazione e dilatazione in direzione verticale}{30}{subsubsection*.66}%
+\contentsline {subsubsection}{Operazione sul grafico: contrazione e dilatazione in direzione orizzontale}{30}{subsubsection*.68}%
+\contentsline {subsubsection}{Operazione sul grafico: $y=|f(x)|$}{31}{subsubsection*.70}%
+\contentsline {section}{\numberline {2.2}Limiti}{31}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Limite di una funzione}{32}{subsection.2.2.1}%
+\contentsline {subsubsection}{In simboli}{32}{subsubsection*.74}%
+\contentsline {subsection}{\numberline {2.2.2}Definizione di Limite destro}{32}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Definizione di limite sinistro ``da sinistra''}{32}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Teorema d'unicità del limite ``da destra''}{32}{subsection.2.2.4}%
+\contentsline {subsubsection}{Esempi}{33}{subsubsection*.75}%
+\contentsline {paragraph}{Definizione}{33}{paragraph*.76}%
+\contentsline {paragraph}{Definizione}{33}{paragraph*.77}%
+\contentsline {paragraph}{Definizione di Asintoto verticale}{33}{paragraph*.78}%
+\contentsline {paragraph}{Definizione di Asintoto orizzontale}{34}{paragraph*.80}%
+\contentsline {subsection}{\numberline {2.2.5}Teorema (\texttt {\color {red} algebra dei limiti})}{34}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Convenzioni con $\infty $}{34}{subsection.2.2.6}%
+\contentsline {subsubsection}{Convenzioni con $\infty $}{34}{subsubsection*.82}%
+\contentsline {subsection}{\numberline {2.2.7}Forme indeterminate}{35}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.8}Teorema del confronto}{35}{subsection.2.2.8}%
+\contentsline {subsubsection}{Dimostrazione}{35}{subsubsection*.83}%
+\contentsline {subsubsection}{Casi particolari di $\qopname \relax m{lim}_{x\to x_0} f(x)*g(x)$}{35}{subsubsection*.84}%
+\contentsline {paragraph}{Teorema}{35}{paragraph*.85}%
+\contentsline {subparagraph}{Esempio}{35}{subparagraph*.86}%
+\contentsline {subsection}{\numberline {2.2.9}Limite di \texttt {funzione composta}}{35}{subsection.2.2.9}%
+\contentsline {subsection}{\numberline {2.2.10}Limiti Notevoli}{35}{subsection.2.2.10}%
+\contentsline {paragraph}{Esempi}{35}{paragraph*.87}%
+\contentsline {subsection}{\numberline {2.2.11}Infinitesimi e infiniti}{36}{subsection.2.2.11}%
+\contentsline {paragraph}{Definizione}{36}{paragraph*.89}%
+\contentsline {subsubsection}{Esempi}{36}{subsubsection*.90}%
+\contentsline {subsubsection}{Ordine di infinitesimo}{36}{subsubsection*.91}%
+\contentsline {paragraph}{Esempi}{36}{paragraph*.92}%
+\contentsline {subsubsection}{Confronto tra infinitesimi}{37}{subsubsection*.93}%
+\contentsline {subparagraph}{esempio}{37}{subparagraph*.94}%
+\contentsline {paragraph}{Definizione di funzioni asintotiche}{37}{paragraph*.95}%
+\contentsline {subparagraph}{esempi}{37}{subparagraph*.96}%
+\contentsline {paragraph}{Definizione di funzioni infinite}{37}{paragraph*.97}%
+\contentsline {subparagraph}{Esempi}{37}{subparagraph*.98}%
+\contentsline {subparagraph}{Regole aritmetiche}{37}{subparagraph*.99}%
+\contentsline {paragraph}{Ordine di infinito}{37}{paragraph*.100}%
+\contentsline {subparagraph}{Esempi}{38}{subparagraph*.101}%
+\contentsline {subparagraph}{Cofronto tra infiniti}{38}{subparagraph*.102}%
+\contentsline {subparagraph}{Esempio}{38}{subparagraph*.103}%
+\contentsline {paragraph}{Gerarchia degli infiniti}{38}{paragraph*.104}%
+\contentsline {subparagraph}{Esempio}{38}{subparagraph*.105}%
+\contentsline {subparagraph}{Regole aritmetiche}{38}{subparagraph*.106}%
+\contentsline {subsection}{\numberline {2.2.12}Funzioni continue}{38}{subsection.2.2.12}%
+\contentsline {paragraph}{Definizione}{38}{paragraph*.107}%
+\contentsline {subsubsection}{Teorema della permanenza del segno}{38}{subsubsection*.108}%
+\contentsline {subsubsection}{Teorema degli zeri}{38}{subsubsection*.109}%
+\contentsline {paragraph}{Teorema dell'esistenza dei valori intermedi (\textit {conseguenza del teorema degli zeri})}{38}{paragraph*.110}%
+\contentsline {subsubsection}{Teorema di Wierstrass (sul massimo e il minimo)}{39}{subsubsection*.111}%
+\contentsline {subsection}{\numberline {2.2.13}Criteri di invertibilità}{39}{subsection.2.2.13}%
+\contentsline {section}{\numberline {2.3}Calcolo differenziale per funzioni di una variabile}{39}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Derivata di una funzione}{39}{subsection.2.3.1}%
+\contentsline {paragraph}{Significato geometrico della derivata in un punto e equazione della retta tangente}{39}{paragraph*.112}%
+\contentsline {subsection}{\numberline {2.3.2}Definizione}{39}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Continuità e derivabilità}{39}{subsection.2.3.3}%
+\contentsline {subsubsection}{Teorema}{39}{subsubsection*.113}%
+\contentsline {paragraph}{Esempio}{39}{paragraph*.114}%
+\contentsline {section}{\numberline {2.4}Punti di non derivabilità}{40}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Punto angoloso}{40}{subsection.2.4.1}%
+\contentsline {subsubsection}{Esempio}{40}{subsubsection*.115}%
+\contentsline {subsubsection}{Un altro esempio}{40}{subsubsection*.117}%
+\contentsline {subsection}{\numberline {2.4.2}Punto cuspude}{41}{subsection.2.4.2}%
+\contentsline {subsubsection}{Punto di flesso a tangente verticale}{41}{subsubsection*.120}%
+\contentsline {subsection}{\numberline {2.4.3}Esempi di derivate}{41}{subsection.2.4.3}%
+\contentsline {subsubsection}{Qualche esercizio dimostrativo}{41}{subsubsection*.121}%
+\contentsline {subsubsection}{Esercizio}{42}{subsubsection*.122}%
+\contentsline {subsection}{\numberline {2.4.4}Teorema di derivazione della funzione composta}{42}{subsection.2.4.4}%
+\contentsline {subsubsection}{Esercizio}{42}{subsubsection*.123}%
+\contentsline {subsection}{\numberline {2.4.5}Teorema di derivazione della funzione inversa}{43}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Esercizio}{43}{subsection.2.4.6}%
+\contentsline {subsection}{\numberline {2.4.7}Esercizio}{43}{subsection.2.4.7}%
+\contentsline {subsection}{\numberline {2.4.8}Esercizio}{43}{subsection.2.4.8}%
+\contentsline {section}{\numberline {2.5}Massimo e minimo assoluto}{43}{section.2.5}%
+\contentsline {paragraph}{in modo analogo:}{43}{paragraph*.124}%
+\contentsline {section}{\numberline {2.6}Massimo e minimo relativo (o estremi locali)}{44}{section.2.6}%
+\contentsline {paragraph}{In modo analogo:}{44}{paragraph*.125}%
+\contentsline {subsection}{\numberline {2.6.1}Punti Stazionari}{44}{subsection.2.6.1}%
+\contentsline {section}{\numberline {2.7}Teorema di Fermat}{44}{section.2.7}%
+\contentsline {paragraph}{Dimostrazione}{44}{paragraph*.126}%
+\contentsline {section}{\numberline {2.8}Teorema di Rolle}{44}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Dimostrazione}{44}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}Esercizio dimostrativo}{45}{subsection.2.8.2}%
+\contentsline {subsubsection}{Testo}{45}{subsubsection*.127}%
+\contentsline {subsubsection}{Soluzione}{45}{subsubsection*.128}%
+\contentsline {subsection}{\numberline {2.8.3}Esercizio dimostrativo}{45}{subsection.2.8.3}%
+\contentsline {subsubsection}{Testo}{45}{subsubsection*.129}%
+\contentsline {subsubsection}{Soluzione}{45}{subsubsection*.130}%
+\contentsline {section}{\numberline {2.9}Teorema di Lagrange ({\em o del valor medio})}{45}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Dimostrazione}{45}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}Esempio}{46}{subsection.2.9.2}%
+\contentsline {subsection}{\numberline {2.9.3}Esercizio dimostrativo}{46}{subsection.2.9.3}%
+\contentsline {subsubsection}{Testo}{46}{subsubsection*.131}%
+\contentsline {subsubsection}{Soluzione}{46}{subsubsection*.132}%
+\contentsline {subsection}{\numberline {2.9.4}Esercizio dimostrativo}{46}{subsection.2.9.4}%
+\contentsline {subsubsection}{Testo}{46}{subsubsection*.133}%
+\contentsline {subsubsection}{Soluzione}{46}{subsubsection*.134}%
+\contentsline {paragraph}{Dimostrazione}{46}{paragraph*.135}%
+\contentsline {paragraph}{Viceversa}{47}{paragraph*.136}%
+\contentsline {section}{\numberline {2.10}Teorema di Cauchy}{47}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}Dimostrazione}{47}{subsection.2.10.1}%
+\contentsline {section}{\numberline {2.11}Teorema di de l'Hopital}{47}{section.2.11}%
+\contentsline {section}{\numberline {2.12}Funzioni convesse e concave}{48}{section.2.12}%
+\contentsline {subsection}{\numberline {2.12.1}Definizione di funziona convessa}{48}{subsection.2.12.1}%
+\contentsline {paragraph}{Analogamenente:}{48}{paragraph*.137}%
+\contentsline {subsection}{\numberline {2.12.2}Definizione di funziona concave}{48}{subsection.2.12.2}%
+\contentsline {subsection}{\numberline {2.12.3}Derivata seconda}{48}{subsection.2.12.3}%
+\contentsline {subsection}{\numberline {2.12.4}Criterio di convessità}{48}{subsection.2.12.4}%
+\contentsline {subsection}{\numberline {2.12.5}Criterio per i punti di massimo e di minimo relativo}{49}{subsection.2.12.5}%
+\contentsline {subsubsection}{Definizione}{49}{subsubsection*.138}%
+\contentsline {section}{\numberline {2.13}Punti per lo svolgimento dello studio di funzione}{49}{section.2.13}%
+\contentsline {subsection}{\numberline {2.13.1}Studio del grafico di f(x), Asintoti}{49}{subsection.2.13.1}%
+\contentsline {section}{\numberline {2.14}Approssimazione di funzioni con polinomi}{50}{section.2.14}%
+\contentsline {subsection}{\numberline {2.14.1}Polinomio di Taylor}{50}{subsection.2.14.1}%
+\contentsline {section}{\numberline {2.15}Calcolo integrale per funzioni di una variabile}{51}{section.2.15}%
+\contentsline {subsection}{\numberline {2.15.1}Integrale definito}{51}{subsection.2.15.1}%
+\contentsline {subsection}{\numberline {2.15.2}Integrale definito}{51}{subsection.2.15.2}%
+\contentsline {paragraph}{Definizione}{51}{paragraph*.139}%
+\contentsline {subparagraph}{Variabile muta}{51}{subparagraph*.140}%
+\contentsline {subsection}{\numberline {2.15.3}Integrale definito, interpretazione geometrica}{51}{subsection.2.15.3}%
+\contentsline {subsection}{\numberline {2.15.4}Integrale definito, classi di funzioni integrali}{52}{subsection.2.15.4}%
+\contentsline {subsection}{\numberline {2.15.5}Integrale definito, proprietà}{52}{subsection.2.15.5}%
+\contentsline {subsection}{\numberline {2.15.6}Teorema della media integrale}{53}{subsection.2.15.6}%
+\contentsline {subsubsection}{Dimostrazione}{53}{subsubsection*.141}%
+\contentsline {subsection}{\numberline {2.15.7}Integrale indefinito}{53}{subsection.2.15.7}%
+\contentsline {subsubsection}{Dimostrazione}{53}{subsubsection*.142}%
+\contentsline {paragraph}{Osservazione}{54}{paragraph*.143}%
+\contentsline {paragraph}{Definizione di primitiva}{54}{paragraph*.144}%
+\contentsline {subparagraph}{Esempio}{54}{subparagraph*.145}%
+\contentsline {subparagraph}{Definizione}{54}{subparagraph*.146}%
+\contentsline {subsection}{\numberline {2.15.8}Corollario del Teorema fondamentale del calcolo integrale}{54}{subsection.2.15.8}%
+\contentsline {subsubsection}{Dimostrazione}{54}{subsubsection*.147}%
+\contentsline {subsection}{\numberline {2.15.9}Integrali indefiniti immediati}{55}{subsection.2.15.9}%
+\contentsline {subsubsection}{Esercizio}{55}{subsubsection*.148}%
+\contentsline {subsubsection}{Integrazione per parti}{55}{subsubsection*.149}%
+\contentsline {subsection}{\numberline {2.15.10}Integrale indefinito, proprietà}{55}{subsection.2.15.10}%
+\contentsline {subsection}{\numberline {2.15.11}Integrale indefinito}{55}{subsection.2.15.11}%
+\contentsline {subsection}{\numberline {2.15.12}Integrazione per sostituzione}{55}{subsection.2.15.12}%
+\contentsline {subsection}{\numberline {2.15.13}Integrazione per parti}{56}{subsection.2.15.13}%
+\contentsline {subsubsection}{Dimostrazione}{56}{subsubsection*.150}%
+\contentsline {paragraph}{Esercizio}{56}{paragraph*.151}%
+\contentsline {section}{\numberline {2.16}Integrali impropri o generalizzati}{58}{section.2.16}%
