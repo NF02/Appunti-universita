@@ -643,14 +643,68 @@ Metodo di integrazione delle funzioni razionali fratte
 					\end{cases}
 				\end{equation*}
 				E quindi si ottiene
-				%\begin{equation*}
-				%	\int \frac{1}{x^3+x^2+x+1}dx=\frac{1}{2}\int\frac{1}{x+1}dx-\frac{1}{2}\int\frac{x-1}{x^2+1}dx=\frac{1}{2}\int\frac{1}{x+1}dx-\frac{1}{4}\int\frac{2x}{x^2+1}dx+\frac{1}{2}\int\frac{2x}{x^2+1}dx
-				%\end{equation*}
+				\begin{equation*}
+					\int
+					\frac{1}{x^3+x^2+x+1}dx=\frac{1}{2}
+					\int\frac{1}{x+1}dx-\frac{1}{2}\int\frac{x-1}{x^2+1}dx=
+					\frac{1}{2}\int\frac{1}{4}\int\frac{2x}{x^2+1}dx+
+					\frac{1}{2}\int\frac{1}{x^2+1}dx
+				\end{equation*}
 		\end{tasks} 
 		\item [2° caso: ] grado(N(x)) grado(D(x))\\
-		In questo caso si deve eseguire la deriv
-		
+		In questo caso si deve eseguire la divisione tra il polinomio a
+		numeratore (N(x)) e polinomio a denominatore (D(x)):\\
+		$g(x)=$ guoziente della divisione\\
+		$r(x)=$ resto della divisione\\
+		\begin{equation*}
+			\Rightarrow \frac{N(x)}{D(x)}=q(x)+\frac{r(x)}{D(x)}
+		\end{equation*}
+		\textit{con r(x) un polinomio di grado inferiore a quello di N(x):}
+		\begin{equation*}
+			\int \frac{N(x)}{D(x)}dx=\int q(x)dx+\int \frac{r(x)}{D(x)}dx
+		\end{equation*}
+		Esercizio
+		\begin{equation*}
+			\int \frac{x^5-x+1}{x^4+x^2}dx \text{ grado (N(x))=5 > grado
+			(D(x))=4}
+		\end{equation*}
+		Effettuando la divisione tra i due polinomi si ottiene $g(x)=x, \text{
+		} r(x)=-x^3-x+1$
+		\begin{equation*}
+			\Rightarrow \frac{x^5-x+1}{x^4+x^2}=x-\frac{x^3+x-1}{x^4+x^2}
+		\end{equation*}
+		\begin{equation*}
+			\frac{x^3+x-1}{x^4+x^2}=\frac{x^3+x-1}{x^2(x^2+1)}=\frac{A}{x}+
+			\frac{B}{x^2}+\frac{Cx+D}{x^2+1}=
+			\frac{(A+C)x^3+(B+D)x^2+Ax+B}{x^2(x+1)}
+		\end{equation*}
+		\begin{equation*}
+			\begin{cases}
+				A+C=1\\
+				B+C=0\\
+				A=1\\
+				B=-1
+			\end{cases}\Rightarrow
+			\begin{cases}
+				A=1\\
+				B=-1\\
+				C=0\\
+				D=1
+			\end{cases}
+		\end{equation*}
+		Si ha
+		\begin{equation*}
+			\int \frac{x^5-x+1}{x^4+x^2}dx=\inf xdx-\int
+			\frac{x^3+x-1}{x^4+x^2}dx=\int xdx-\int \frac{1}{x}dx+\int
+			\frac{1}{x^2} dx-
+		\end{equation*}
+		\begin{equation*}
+			\int\frac{1}{x^2+1}dx=\frac{x^2}{2}-\ln|x|-\frac{1}{x}-\arctan x+c
+		\end{equation*}
 \end{description}
-
+\textit{\color{red}Calcolo dell'area di una figura piana}
+\begin{equation*}
+	\text{Sia } T=\{(x,y)\in R^2:a\leq x\leq b, 0\leq y\leq f(x)\}
+\end{equation*}
 \section{Integrali impropri o generalizzati}
 In analisi matematica, l'integrale improprio o generalizzato è il limite di un integrale definito al tendere di un estremo di integrazione (o entrambi) ad un numero reale oppure all'infinito; tale numero reale può appartenere all'insieme di definizione della funzione integranda (\textit{e in tal caso si ottiene lo stesso risultato che si ha calcolando un integrale definito}), oppure può rappresentare un punto di discontinuità. Gli integrali impropri si utilizzano per rendere calcolabili integrali riguardanti intervalli illimitati e/o funzioni non limitate, che non sono trattabili con l'integrale di Riemann. Esso richiede infatti la limitatezza sia per l'intervallo di integrazione, sia per la funzione integranda.\\ By \href{https://it.wikipedia.org/wiki/Integrale_improprio}{Wikipedia}

@@ -205,4 +205,4 @@
 \contentsline {subsection}{\numberline {2.15.13}Integrazione per parti}{56}{subsection.2.15.13}%
 \contentsline {subsubsection}{Dimostrazione}{56}{subsubsection*.150}%
 \contentsline {paragraph}{Esercizio}{56}{paragraph*.151}%
-\contentsline {section}{\numberline {2.16}Integrali impropri o generalizzati}{58}{section.2.16}%
+\contentsline {section}{\numberline {2.16}Integrali impropri o generalizzati}{59}{section.2.16}%
