@@ -290,6 +290,24 @@ Per qualunque suddivisione di $[a,b]$ si ha
 \begin{equation*}
 	S_n=\sideset{}{^n}\sum_{j=1}f(\xi_j)*(x_j-x_{j-1})=\frac{b.a}{n}\sideset{}{^n}\sum_{j=1}c=(b-a)c
 \end{equation*}
+\subsection{Sviluppo $e^{2x}$: metodo rapido (Taylor-McLaurin)}
+\begin{equation*}
+	e^t=1+t+\frac{t^2}{2}+\frac{t^3}{6}+\frac{t^4}{24}+o(x^4)
+\end{equation*}
+Quindi sostituendo la $t$ con un'altro l'argomento di $e$ il risultato è il seguente
+\begin{equation*}
+	e^{2x}=1+2x^2+\frac{(2x)^2}{2}+\frac{(2x)^3}{6}+\frac{(2x)^4}{24}+o(x^4)
+\end{equation*}
+Svolgiamo le potenze e poi semplifichiamo il numeratore e il denominatore tramite un divisore comune.
+\begin{equation*}
+	e^{2x}=1+2x^2+\frac{4}{3}x^3+\frac{2}{3}x^4+o(x^4)
+\end{equation*}
+\subsection{Sviluppo di $e^{x^2}$ con il metodo Taylor-McLaurin}
+\begin{equation*}
+	e^{x^2}=1+x^2+\frac{x^4}{2}+\frac{x^6}{6}+\frac{x^8}{24}+o(x^9)
+\end{equation*}
+Visto che gli esponenti sono tutti pare e quelli dispari non sono accetti per validare $o(x^9)$ dobbiamo anche esprimere questa formula $o(x^9)=k*x^{10}$
+
 \subsection{Integrale definito, classi di funzioni integrali}
 \begin{enumerate}
 	\item Se $f:[a,b]\to R$ è continua, allora è integrabile.
@@ -706,5 +724,177 @@ Metodo di integrazione delle funzioni razionali fratte
 \begin{equation*}
 	\text{Sia } T=\{(x,y)\in R^2:a\leq x\leq b, 0\leq y\leq f(x)\}
 \end{equation*}
+\subsection{Esercizio di esempio}
+calcolare l'area tra $f(x)=x$ e $g(x)=x^2$:
+\begin{equation*}
+	due=\int^b_a x-x^2 
+\end{equation*}
+
 \section{Integrali impropri o generalizzati}
-In analisi matematica, l'integrale improprio o generalizzato è il limite di un integrale definito al tendere di un estremo di integrazione (o entrambi) ad un numero reale oppure all'infinito; tale numero reale può appartenere all'insieme di definizione della funzione integranda (\textit{e in tal caso si ottiene lo stesso risultato che si ha calcolando un integrale definito}), oppure può rappresentare un punto di discontinuità. Gli integrali impropri si utilizzano per rendere calcolabili integrali riguardanti intervalli illimitati e/o funzioni non limitate, che non sono trattabili con l'integrale di Riemann. Esso richiede infatti la limitatezza sia per l'intervallo di integrazione, sia per la funzione integranda.\\ By \href{https://it.wikipedia.org/wiki/Integrale_improprio}{Wikipedia}
+In analisi matematica, l'integrale improprio o generalizzato è il limite di un integrale definito al tendere di un estremo di integrazione (o entrambi) ad un numero reale oppure all'infinito; tale numero reale può appartenere all'insieme di definizione della funzione integranda (\textit{e in tal caso si ottiene lo stesso risultato che si ha calcolando un integrale definito}), oppure può rappresentare un punto di discontinuità. Gli integrali impropri si utilizzano per rendere calcolabili integrali riguardanti intervalli illimitati e/o funzioni non limitate, che non sono trattabili con l'integrale di Riemann. Esso richiede infatti la limitatezza sia per l'intervallo di integrazione, sia per la funzione integranda.\\ By \href{https://it.wikipedia.org/wiki/Integrale_improprio}{Wikipedia}\\
+L'operazione di integrazione può estendere al caso di funzioni non limitate e di intervalli non limitati
+\begin{equation}
+	\int^{1}_{{\color{red}0}}\frac{1}{\sqrt{x}}dx\text{ } \int^{{\color{red} +\infty}}_1=\frac{1}{x^2}dx
+\end{equation}
+Sia $f:(a,b]\to R$ tale che, $\forall\delta >0$, f è integrabile secondo Riemann in $[a+\delta],b$ cioè esiste l'integrale
+\begin{equation}
+	I(\delta) =\int^{b}_{a+\delta}f(x)dx
+\end{equation}
+\subsection{Definizione}
+Se esiste finito il liminte
+\begin{equation*}
+	\lim_{\delta\to0^+}I(\delta)
+\end{equation*}
+allora si dice che f è integrabile in senso improprio, tale limite si chiama integrale improprio o generalizzato e si indica con
+\begin{equation*}
+	\lim_{\delta\to0^+}I(\delta)=\int^b_a f(x)dx
+\end{equation*}
+Esercizio
+\begin{equation*}
+	\int^1_0\frac{1}{\sqrt{x}}dx
+\end{equation*}
+\begin{equation*}
+	I(\delta)=\int^1_\delta \frac{1}{\sqrt{x}}dx=2-2\sqrt{\delta},\text{ } \lim_{\delta \to 0^+} I(\delta)=\lim_{\delta\to0^+}2-2\sqrt{\delta}=2
+\end{equation*}
+\begin{equation}
+	\text{L'integrale converge e si può scrivere: } \int^1_0\frac{1}{\sqrt{x}}dx=2
+\end{equation}
+Esercizio
+\begin{equation*}
+	\int^1_{-1}\frac{1}{\sqrt{1-x^2}}dx
+\end{equation*}
+\begin{equation*}
+	I(\delta)=\int^{1-\delta}_{-1+\delta}\frac{1}{\sqrt{1-x^2}}dx=\arcsin(1-\delta)-\arcsin(-1+\delta), \text{ } \lim_{\delta\to0^+}I(\delta)=\frac{\pi}{2}-(-\frac{\pi}{2})=\pi
+\end{equation*}
+\begin{equation*}
+	\text{L'integrale converge e si può scrivere: } \int^1_{-1}\frac{1}{\sqrt{1-x^2}}dx=\pi
+\end{equation*}
+Esercizio. Studiare la convergenza del seguente integrale
+\begin{equation*}
+	\int^1_0 x^{-\alpha}dx,\alpha>0
+\end{equation*}
+\begin{equation*}
+	\text{si ha } \in^1_0x^{-\alpha} dx=\begin{cases}
+		\frac{1}{1-\alpha} &\text{ se }\alpha<1\\
+		\text{non converge} &\text{ se }\alpha\geq1
+	\end{cases}
+\end{equation*}
+\textit{Nel caso in cui $f:[a,b)\to R$ non è limitata in ma è integrabile in $[a,b-\delta] \text{ } \forall \delta>0$ allora si pone}
+\begin{equation*}
+	\int f(x)dx=\lim_{\delta\to 0^+}\int f(x)dx
+\end{equation*}
+Se tale limite esiste finito. Se in oltre la funzione f non è limitata in $c\in (a,b)$ allora si dice che f è integrabile in senso improprio se f è integrabile in senso improprio in $[a,c]$ e in $[c,b]$ e si pone
+\begin{equation*}
+	\int^b_a f(x)dx=\int^c_a f(x)dx+\int^b_cf(x)dx
+\end{equation*}
+Consideriamo ora intervalli illimitati:
+\begin{equation*}
+	[a,+\infty) \text{ } (-\infty,b]\text{ }(+\infty,-\infty)
+\end{equation*}
+Sia $f:[a,+\infty)\to R$ integrabile su ogni intervallo $[\alpha, \beta]$ con $\beta >a,$ poniamo
+\begin{equation}
+	J(\beta)=\int^\beta_\alpha f(x)dx
+\end{equation}
+Se esiste finito il $\lim_{\beta\to+\infty}J(\beta)$ allora $f$ si dice integrabile in senso improprio su $[a,+\infty)$ e tale limite si chiama {\color{red}integrale impropria o generalizzato} di f in $[a,b)$:
+\begin{equation*}
+	\int^{+\infty}_{\alpha}f(x)dx=\lim_{\beta\to+\infty}\int^\beta_\alpha f(x)dx
+\end{equation*}
+Analogamente definizione per $\int^b_{-\infty}f(x)dx$ dove $f:(-\infty,b]\to R$ è integrabile su $[-\beta,b]$, per il quale riguarda integrabile $\int_{-\infty}^{+\infty}f(x)dx$ con $f$ integrabile su ogni intervallo limitato, si pone:
+\begin{equation*}
+	\int^{+\infty}_{-\infty}f(x)dx=\int^{c}_{-\infty}f(x)dx+\int^{+\infty}_{c}f(x)dx, c\in R
+\end{equation*}
+e i due integrali impropri convergenti.\\
+Esercizio. Dire se converge o esiste in senso improprio in seguente
+\begin{equation*}
+	\int^{+\infty}_{-\infty}\frac{1}{1+x^2}dx
+\end{equation*}
+\begin{equation*}
+	\text{Si ha: } J(\beta)=\int^\beta_{-\beta}\frac{1}{1+x^2}dx=\arctan x \bigg|^\beta_{-\beta}
+\end{equation*}
+\begin{equation*}
+	\lim_{\beta\to+\infty}J(\beta)=\frac{\pi}{2}-(-\frac{\pi}{2})=\pi
+\end{equation*}
+Esercizio
+\begin{equation*}
+	 \int^{+\infty}_1x^\alpha dx, \alpha>0
+\end{equation*}
+\begin{equation*}
+	\text{si ha }\int^{+\infty}_1x^\alpha dx=\begin{cases}
+		\frac{1}{\alpha-1}&se \alpha >1\\
+		\text{non converge}&se \alpha\leq 1
+	\end{cases}
+\end{equation*}
+\section{Equazioni differenziali ordinarie}
+\begin{itemize}
+	\item Equazione differenziali del 1° ordine a variabili separabili,
+	\item Equazione differenziali \underline{lineari} del 1° ordine
+	\item Equazioni differenziali del 1° ordine \underline{non lineare}
+	\begin{itemize}
+		\item Equazione di Bernoulli
+		\item Equazione di Clairaut
+	\end{itemize}
+	\item Problema di Cauchy le eq. diff. del 1° ordine in forma normale,
+	\item Equazioni differenziali lineari di ordine $n\geq 2$.
+\end{itemize}
+\subsection{Definizione}
+Sia $I\subseteq R$ si definisce {\color{blue} equazione differenziale ordinaria di ordine n}, 
+\begin{equation*}
+	g(x,y,y^\prime,y^{\prime\prime},\dots,y^{(n)})=0
+\end{equation*}
+Con $y^\prime=y^\prime(x),y^{\prime\prime}=y^{\prime\prime}(x),\dots,y^{(n)}=\dots,y^{(n)}$ e $g$ funzione reale.
+Se $g$ è un polinomio in cui $y,y^\prime,y^{\prime\prime},y^{(n)}$ sono di primo grado, allora l'equazione si dice:
+equazione differenziale lineare (\textit{l'ordine dell'equazione è dato dall'ordine massimo di derivazione che compare}) - $y=y(x)$ è soluzione dell'equazione differenziale di ordine n se, $y(x)$ insieme alle sue derivate seddisfa l'equazione, cioè
+\begin{equation*}
+	g(y(x),y^\prime, y^{\prime\prime},\dots, y^{(n)}(x))=0, \forall x \in I
+\end{equation*}
+Un'equazione differenziale è in forma normale se è esplicitata rispetto alla derivata di ordine massimo:
+\begin{equation*}
+	y^{(x)}=f(x,y,y^\prime,y^{\prime\prime},\dots,y^{(n-1)}),
+\end{equation*}
+altrimenti si dice in forma non-normale. Integrare un'equazione differenziale significa trovare tutte le soluzione. L'insieme delle soluzioni di un'equazione differenziale di ordine n dipende da n parametri reali: le costanti $c_1,c_2,1dots,c_n$: 
+\begin{equation}
+	y=y(x,c_1,c_2,\dots,c_n)\text{ INTEGRALE GENERALE}
+\end{equation}
+Fissando i parametri $c_1,c_2,\dots,c_n$ si ottiene una soluzione particolare dell'equazione differenziale e viene chiamata INTEGRALE PARTICOLARE. Nel caso di un equazione differenziale del 1°ordine: $g(x,y,y^\prime)=0$ $y=y(x,c)$.\\
+\textit{Nel caso di un'equazione differenziale del 1°ordine:}
+\begin{description}
+	\item[ ] $g(x,y,y^\prime)=0$ forma non normale
+	\item[ ] $y^\prime =f(x,y)$ forma normale o splicita
+	\item[ ] $y=y(x,c)$ integrale generale 
+\end{description}
+\paragraph{\color{red}Note} Non è sempre ogni soluzione dell'equazione differenziale data è anche un integrale particolare: ci sono casi di equazioni differenziali che ammettono anche \texttt{INTEGRALI SINGOLARI}, cioè integrali non ottenibili per nessun valore della costante c.
+\subsection{Equazioni differenziali a variabili separabili}
+\begin{equation}
+	y^\prime=f(x)*g(y)
+\end{equation}
+Con $f(x)$ e $g(y)$ funzioni continue se $\exists y_0:g(y_0)=0\Rightarrow y=y_0 è soluzione$\\
+Se $g(y)\neq 0 \forall y$, allora si divide l'equazione per $g(y)$ e si integra:
+\begin{equation}
+	\frac{y^\prime}{g(y)}=f(x), \text{ ma } y^\prime=\frac{dy}{dx}, \Rightarrow \int \frac{1}{g(y)}dy=\int f(x)dx
+\end{equation}
+$G(y)=F(x)+c$, c=costante.
+\paragraph{Esempio.} Integrare la seguente equazione differenziale
+\begin{equation*}
+	y^\prime=2x+2xy^2
+\end{equation*}
+\begin{multicols}{2}
+	\begin{equation*}
+		\Rightarrow y^\prime=2x(1+y^2)
+	\end{equation*}
+	\begin{equation*}
+		\Rightarrow \int \frac{dy}{1+y^2}=\int2xdx
+	\end{equation*}
+	\begin{equation*}
+		\arctan y=x^2+c
+	\end{equation*}
+	\begin{equation*}
+		y=\tan(x^2+c) \text{ Integrale generale}
+	\end{equation*}
+	\begin{equation*}
+		g(y)=1+y^2 \neq 0\text{ } \forall y
+	\end{equation*}
+
+\end{multicols}
+
+
+

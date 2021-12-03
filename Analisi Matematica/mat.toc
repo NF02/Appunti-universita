@@ -184,25 +184,34 @@
 \contentsline {paragraph}{Definizione}{51}{paragraph*.139}%
 \contentsline {subparagraph}{Variabile muta}{51}{subparagraph*.140}%
 \contentsline {subsection}{\numberline {2.15.3}Integrale definito, interpretazione geometrica}{51}{subsection.2.15.3}%
-\contentsline {subsection}{\numberline {2.15.4}Integrale definito, classi di funzioni integrali}{52}{subsection.2.15.4}%
-\contentsline {subsection}{\numberline {2.15.5}Integrale definito, proprietà}{52}{subsection.2.15.5}%
-\contentsline {subsection}{\numberline {2.15.6}Teorema della media integrale}{53}{subsection.2.15.6}%
+\contentsline {subsection}{\numberline {2.15.4}Sviluppo $e^{2x}$: metodo rapido (Taylor-McLaurin)}{52}{subsection.2.15.4}%
+\contentsline {subsection}{\numberline {2.15.5}Sviluppo di $e^{x^2}$ con il metodo Taylor-McLaurin}{52}{subsection.2.15.5}%
+\contentsline {subsection}{\numberline {2.15.6}Integrale definito, classi di funzioni integrali}{52}{subsection.2.15.6}%
+\contentsline {subsection}{\numberline {2.15.7}Integrale definito, proprietà}{52}{subsection.2.15.7}%
+\contentsline {subsection}{\numberline {2.15.8}Teorema della media integrale}{53}{subsection.2.15.8}%
 \contentsline {subsubsection}{Dimostrazione}{53}{subsubsection*.141}%
-\contentsline {subsection}{\numberline {2.15.7}Integrale indefinito}{53}{subsection.2.15.7}%
-\contentsline {subsubsection}{Dimostrazione}{53}{subsubsection*.142}%
+\contentsline {subsection}{\numberline {2.15.9}Integrale indefinito}{54}{subsection.2.15.9}%
+\contentsline {subsubsection}{Dimostrazione}{54}{subsubsection*.142}%
 \contentsline {paragraph}{Osservazione}{54}{paragraph*.143}%
 \contentsline {paragraph}{Definizione di primitiva}{54}{paragraph*.144}%
 \contentsline {subparagraph}{Esempio}{54}{subparagraph*.145}%
 \contentsline {subparagraph}{Definizione}{54}{subparagraph*.146}%
-\contentsline {subsection}{\numberline {2.15.8}Corollario del Teorema fondamentale del calcolo integrale}{54}{subsection.2.15.8}%
-\contentsline {subsubsection}{Dimostrazione}{54}{subsubsection*.147}%
-\contentsline {subsection}{\numberline {2.15.9}Integrali indefiniti immediati}{55}{subsection.2.15.9}%
+\contentsline {subsection}{\numberline {2.15.10}Corollario del Teorema fondamentale del calcolo integrale}{54}{subsection.2.15.10}%
+\contentsline {subsubsection}{Dimostrazione}{55}{subsubsection*.147}%
+\contentsline {subsection}{\numberline {2.15.11}Integrali indefiniti immediati}{55}{subsection.2.15.11}%
 \contentsline {subsubsection}{Esercizio}{55}{subsubsection*.148}%
 \contentsline {subsubsection}{Integrazione per parti}{55}{subsubsection*.149}%
-\contentsline {subsection}{\numberline {2.15.10}Integrale indefinito, proprietà}{55}{subsection.2.15.10}%
-\contentsline {subsection}{\numberline {2.15.11}Integrale indefinito}{55}{subsection.2.15.11}%
-\contentsline {subsection}{\numberline {2.15.12}Integrazione per sostituzione}{55}{subsection.2.15.12}%
-\contentsline {subsection}{\numberline {2.15.13}Integrazione per parti}{56}{subsection.2.15.13}%
-\contentsline {subsubsection}{Dimostrazione}{56}{subsubsection*.150}%
-\contentsline {paragraph}{Esercizio}{56}{paragraph*.151}%
-\contentsline {section}{\numberline {2.16}Integrali impropri o generalizzati}{59}{section.2.16}%
+\contentsline {subsection}{\numberline {2.15.12}Integrale indefinito, proprietà}{55}{subsection.2.15.12}%
+\contentsline {subsection}{\numberline {2.15.13}Integrale indefinito}{56}{subsection.2.15.13}%
+\contentsline {subsection}{\numberline {2.15.14}Integrazione per sostituzione}{56}{subsection.2.15.14}%
+\contentsline {subsection}{\numberline {2.15.15}Integrazione per parti}{56}{subsection.2.15.15}%
+\contentsline {subsubsection}{Dimostrazione}{57}{subsubsection*.150}%
+\contentsline {paragraph}{Esercizio}{57}{paragraph*.151}%
+\contentsline {subsection}{\numberline {2.15.16}Esercizio di esempio}{60}{subsection.2.15.16}%
+\contentsline {section}{\numberline {2.16}Integrali impropri o generalizzati}{60}{section.2.16}%
+\contentsline {subsection}{\numberline {2.16.1}Definizione}{60}{subsection.2.16.1}%
+\contentsline {section}{\numberline {2.17}Equazioni differenziali ordinarie}{62}{section.2.17}%
+\contentsline {subsection}{\numberline {2.17.1}Definizione}{62}{subsection.2.17.1}%
+\contentsline {paragraph}{\color {red}Note}{62}{paragraph*.152}%
+\contentsline {subsection}{\numberline {2.17.2}Equazioni differenziali a variabili separabili}{63}{subsection.2.17.2}%
+\contentsline {paragraph}{Esempio.}{63}{paragraph*.153}%
