@@ -8,3 +8,4 @@ Scusate per potenziali ritardi nella pubblicazioni delle versioni degli appunti 
 
 ## Come è strutturata
 Il Repo è strutturato in modo lineare e ovviamente è suddifiviso per materie e anche alle volte per singolo argomento, quando superano un tot di pagine è prefisto un indice analitico all'inizio del documento. Comunque ringrazio tutti quelli che hanno deciso di collaborare.
+
