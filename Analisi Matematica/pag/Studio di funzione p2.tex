@@ -895,6 +895,160 @@ $G(y)=F(x)+c$, c=costante.
 	\end{equation*}
 
 \end{multicols}
-
-
+\paragraph{Esempio} Risolvere $y^\prime=xy^2$
+\begin{equation*}
+	y=0 \text{ è soluzione}
+\end{equation*}
+se $y\neq 0$:
+\begin{equation*}
+	\int\frac{1}{y^2}dy=\int xdx\Rightarrow - \frac{1}{y}=\frac{x^2}{2}+c\Rightarrow y=-\frac{2}{x^2+2c} \text{ integrale generico}
+\end{equation*}
+$y=0$ integrale singolare
+\begin{equation*}
+	y^\prime+a(x)y=b(x)S
+\end{equation*}
+con $a(x)$ e $b(x)$ funzioni continue in I.\\
+Se $b(x)=0$ allora $y^\prime +a(x)y=0$ si dice omogenea
+\subsection{Teorema}
+Tutte le soluzioni dell'equazioni differenziale lineare del 1°ordine non omogenea
+\begin{equation}
+	y^\prime+a(x)y=b(x)
+\end{equation}
+sono date da
+\begin{equation*}
+	y(x)=e^{-d(x)}\bigg(\int e^{A(x)}b(x)dx+c\bigg)
+\end{equation*}
+con $A(x)$ primitiva di $a(x)$
+\subsection{Dimostrazione}
+Sia $A(x)$ una primitiva di a(x), cioè $A^\prime=a(x)$, Moltiplicando entrambi i membri dell'equazione differenziale per fattore $e^{A(x)}$ si ha
+\begin{equation}
+	e^{A(x)}y^\prime(x)+e^{A(x)}a(x)y(x)=e^{A(x)}b(x)
+\end{equation}
+cioè
+\begin{equation}
+	\frac{d}{dx}(e^{A(x)}y(x))=e^{A(x)}b(x)
+\end{equation}
+Integrando membro a membro si ha
+\begin{equation*}
+	e^{A(x)}y(x)=\int e^{A(x)}b(x)dx+c \Rightarrow y(x)=e^{-A(x)}\bigg(\int e^{A(x)} b(x)dx+c\bigg)
+\end{equation*}
+Se $b(x)=0$ allora $y(x)=ce^{-A(x)}$
+\paragraph{Esempio} Integrare la seguente equazione differenziale
+\begin{equation}
+	y^\prime+2xy=xe^{-x^2}
+\end{equation}
+\begin{equation*}
+	a(x)=2x\Rightarrow A(x)=x^2,b(x)=xe^{-x^2}
+\end{equation*}
+\begin{description}
+\item[$\Rightarrow$ ] $y(x)=e^{-x^2}\bigg(\int e^{x^2}xe^{-x^2}dx+c\bigg)$ 
+\item[$\Rightarrow$ ] $e^{-x^2}\bigg(\frac{x^2}{2}+c\bigg)$ Integrale generale
+\end{description}
+\paragraph{Esercizi} Integrare le seguenti equazioni differenziali
+\begin{equation*}
+	(1+x^2)y^\prime+y=\arctan x
+\end{equation*}
+\begin{equation*}
+	y^\prime+\cos x*y=0
+\end{equation*}
+\subsection{Equazione di Bernoulli}
+\begin{equation*}
+	y^\prime+a(x)y=b(x)y^\alpha, \text{ } \alpha\in R,\text{ con } \alpha\neq 0,1
+\end{equation*}
+$a(x),\text{ } b(x)$ funzioni continue, $\alpha\neq 0,1$ altrimenti si ricade nelle equazione lineari. (\textit{Se $\alpha>0$ è una soluzione: {\color{red} integrale singolare}}) Se y è dicerso da zero, si divide tutto per $y^\prime$:
+\begin{equation*}
+	y^\prime y^{-\alpha}+a(x)y^{1-\alpha}=b(x)
+\end{equation*}
+Posto:
+ \begin{equation*}
+	z(x)=y^{1-\alpha}
+\end{equation*}
+Si ha: $z^\prime(x)=(1-\alpha)y^{-\alpha}y^\prime$ e sostituendo nella equazione precedente si ottiene un'equazione differenziale lineare del primo ordine rispetto a z.
+\begin{equation*}
+	\boxed{z^\prime(x)+(1-\alpha)a(x)z(x)=(1-\alpha)b(x)}
+\end{equation*}
+\paragraph{Esercizio.} Integrare la seguente equazione differenziale
+\begin{equation}
+	y^\prime-y=xy^2
+\end{equation}
+y=0 è la soluzione\\
+se $y\neq 0$:
+\begin{equation*}
+	y^\prime y^{-2}-y^{-1}=x\Rightarrow z(x)=y^{-1},\text{ } z^\prime=-y^{-2}y^\prime
+\end{equation*}
+$z^\prime+z=-x,$ Equazione differenziale lineare in z(x).
+\begin{description}
+	\item[$\Rightarrow$] $z(x)=e^{-x}\bigg(-\int xe^xdx+c\bigg)$ 
+\end{description}
+Quindi $z(x)=e^{-x}(-xe^x+e^x+c)\Rightarrow z=-x+1+ce^{-x}$ Ed essendo $z(z)=y^{-1}$ se ha
+\begin{equation*}
+	y(x)=z^{-1}\Rightarrow y=\frac{1}{-x+1+ce^{-x}}
+\end{equation*}
+$y=0$ Integrale singolare\\
+$y=\frac{1}{-x+1+ce^{-x}}$ Integrale generale
+\subsection{Equazione di Clairaut}
+\begin{equation*}
+	y=xy^\prime+g(y^\prime)
+\end{equation*}
+con \textit{g} funzione derivabile.\\
+Si tratta di un'equazione differenziale del primo ordine in forma non normale. Derivando rispetto a \textbf{x} primo e sendo membro dell'equazione differenziale si ha:
+\begin{equation*}
+	y^\prime=y^\prime+xy^{\prime\prime}+g^\prime(y^\prime)y^{\prime\prime}
+\end{equation*}
+ \begin{equation*}
+	y^{\prime\prime}[x+g^\prime(y^\prime)]=0
+\end{equation*}
+\begin{enumerate}
+	\item $y^{\prime\prime}=0\to y^\prime=c$\\
+	sostituendo nell'equazione differenziale di partenza
+	\begin{description}
+		\item[i) ] $y=cx+g(x)$ 
+	\end{description}
+	ottengo una \textbf{famiglia di rette} al variare di c
+	\item $x+g^\prime(y^\prime)$\\
+		Posto $t=y^\prime$ dalla precedente si ricava:
+		\begin{description}
+			\item[ii) ]\begin{equation*}
+				\begin{cases}
+					x(t)=-g^\prime(t)\\
+					y(t)=-tg^\prime(t)+g(t)
+				\end{cases}
+			\end{equation*} 
+ 		\end{description}
+		Tale soluzione è un \textit{integrale singrale singolare} ed è l'inviluppo della famiglia di rette (i)
+\end{enumerate}
+\paragraph{Esercizio}
+\begin{equation*}
+	y=\frac{x(y^\prime)^3-1}{(y^\prime)^2}
+\end{equation*}
+Si ha $y=xy^\prime-(y^\prime)^{-2}$ 
+\begin{equation*}
+	y^\prime=y^\prime+xy^{\prime\prime}+2(y^\prime)^{-3}y^{\prime\prime}\Rightarrow y^{\prime\prime}(x+2(y^\prime)^{-3})=0
+\end{equation*}
+$y^{\prime\prime}=0$ $x+2(y^\prime)^{-3}=0$\\
+da $y^{\prime\prime}=0$ si ottiene $y^\prime=c\Rightarrow y=cx-\frac{1}{c^2} \text{ famiglia di rette}$
+da $x+2(y^\prime)^{-3}=0$ ponendo $y^\prime=t$ si ottiene
+\begin{multicols}{2}
+	\begin{equation*}
+		\begin{cases}
+			x=-2t^{-3}\\
+			y=tx-2t^{-2}\Rightarrow y=-4t^{-2}
+		\end{cases}
+	\end{equation*}
+	\textit{Integrale singolare o curva inviluppo del fascio di rette}
+\end{multicols}
+Equazione di Clairaut
+\begin{equation*}
+	y=xy^\prime-\sin y^\prime
+\end{equation*}
+La soluzione è $cx-\sin x$ fascio di rette
+\begin{multicols}{2}
+	\begin{equation*}
+		\begin{cases}
+			x=\cos t\\
+			y=t\cos t-\sin t
+		\end{cases}
+	\end{equation*}
+	\textit{Integrale singolare o curva inviluppo del fascio di rette}
+\end{multicols}
 
