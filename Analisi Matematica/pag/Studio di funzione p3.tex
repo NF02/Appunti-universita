@@ -1,0 +1,107 @@
+\section{Equazioni differenziali lineari di ordine n}
+\begin{equation}
+	y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}(x)y^\prime+a_n(x)y=b(x)
+\end{equation}
+\begin{equation*}
+	\left.
+	\begin{aligned}
+		 a_i(x)=\text{coefficienti}\\
+		b(x)=\text{termine noto}
+       	\end{aligned}
+ 	\right\} \text{Definizione in } I\subseteq \mathfrak{R}
+\end{equation*}
+Se $b(x)=0$ l'equazioone si dice \textit{omogenea}, altrimenti \textit{non omogenea}
+\subsection{Teorema}
+Se $y_1(x),\dots,y_n(x),\text{ }x\in I \subseteq R$, sono soluzioni particolari dell'equazione differenziale lineare omogenea di ordine n allora $c_1y_1+\dots+c_ny_n$ è soluzione.\\
+L'integrale generale dell'equazione differenziale lineare omogenea di ordine n è
+\begin{equation*}
+	y_0(x)=c_1y_1(x)+\dots+c_ny_n(x)
+\end{equation*}
+$y_1(x),\dots,y_n(x)$, sono n soluzioni linearmente indipendenti, $c_1,\dots, c_n$, sono n costanti arbitrarie.
+\subsection{Definizione di funzione linearmente indipendente}
+$y_1(x),\dots,y_n(x)$, sono funzioni \underline{linearmente indipendenti} se
+\begin{equation*}
+	c_1y_1+\dots+c_ny_n=0\Rightarrow c_1=c_2=\dots=c_n=0
+\end{equation*}
+\textit{Condizione necessaria e sufficiente affinché n soluzioni, di un'equazione differenziale di ordine n, siano linearmente indipendenti è che il determinante Wronskiano:}
+\begin{equation*}
+	\begin{vmatrix}
+		y_1,&\cdots&y_n\\
+		y_1^\prime&\cdots&y^\prime_n\\
+		\vdots&&\vdots\\
+		y_1^{(n-1)}&\cdots&y_n^{(n-1)}
+	\end{vmatrix}\neq 0
+\end{equation*}
+Data l'equazione non omogenea
+\begin{description}
+	\item[(1) ] $y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}(x)y^\prime+a_n(x)y=b(x)$ 
+\end{description}
+e la sua omogenea associata:
+\begin{description}
+	\item[(2) ] $y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}(x)y^\prime+a_n(x)y=0$  
+\end{description}
+l'integrale generale di (1) è:
+\begin{equation*}
+	y(x)=y_0(x)+\overline{y}(x)
+\end{equation*}
+dove $y_0(x)$ è l'integrale generale di (2) e $\overline{y}(x)$ è un integrale particolare di (1).
+\subsubsection{omogenee a coefficiente costanti}
+\begin{equation}
+	y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}(x)y^\prime+a_n(x)y=0
+\end{equation}
+$a_1,\dots,a_n\in \mathfrak{R}$\\
+A tale equazione si associa l'equazione caratteristica:
+\begin{equation*}
+	\lambda^n+a_1\lambda^{n-1}+\dots+a_{n-1}\lambda+a_n=0
+\end{equation*}
+che, per il teorema fondamentale dell'algebra, ha in C n radici ciascuna ciascuna contata con la propria molteplicità.
+$y=e^{\alpha x}$ è soluzione dell'equazione differenziale lineare omogenea se $\alpha$ è soluzione dell'equazione caratteristica
+\begin{equation}
+	\text{Infatti se } y=e^{\alpha x}, y^\prime=\alpha x, \dots, y^{(n)}=a^ne^{\alpha x}
+\end{equation}
+ sostituendo nell'equazione differenziale si ha
+ \begin{equation}
+	e^{\alpha x}(a^n+a_1\alpha^{n-1}+\dots+a_{n-1}\alpha+a_n)=0
+\end{equation}
+\begin{description}
+\item[$\Rightarrow e^{\alpha x}$ ]  è soluzione dell'equazione omogenea se $\alpha$ è soluzione dell'equazione caratteristica
+\end{description}
+\begin{description}
+	\item[1° Caso)] L'equazione caratteristica ammette n radici reali e distinte $\lambda, \dots,\lambda_n$, allora gli n integrali linearmente indipendenti (\textit{dell'equazione omogenea}) sono:
+	\begin{equation*}
+		y_1=\lambda1x,y_2=e^{\lambda2x},\dots, y_n=e^{\lambda_n x}
+	\end{equation*}
+ 	e l'integrale generale è
+	\begin{equation*}
+		y_0=c_1e^{\lambda2x}+\dots+c_ne^{\lambda_nx}
+	\end{equation*}
+	Esempio $y^{\prime\prime}-5y^\prime+6y=0$
+	\item [2°Caso)] L'equazione caratteristica ammette radici reali e multiple, per esempio se $\lambda_1$ è di moltiplicità m, allora m integrali particolari (\textit{dell'equazione omogenea}) sono:
+	\begin{equation*}
+		y=e^{\lambda1x},y_2=xe^{\lambda1x},\dots,y_m?x^{m_1}e^{\lambda 1x}
+	\end{equation*}
+	in generale per ogni radice $\lambda_k$ di moltiplicità $m_k$, gli n integrali linearmente indipemndenti sono
+	\begin{eqnarray}
+		e^{\lambda k^x},xe^{\lambda k^x},x^2e^{\lambda k^x}, \dots, x^{mk^{-1}}e^{\lambda k^x} & k=1,\dots,r,&m_1+m_2+\dots+m_r=n
+	\end{eqnarray}
+	Es. $y^{\prime\prime\prime}+y^{\prime\prime}=0$
+	\item[3° Caso)] L'equazione caratteristica ammette radici complesse coniugate:
+		\begin{eqnarray*}
+			\lambda=\alpha+i\beta&\text{di molteplicità m} \\
+			\overline{\lambda}=\alpha+i\beta&\text{di molteplicità m}
+		\end{eqnarray*}
+		allora:
+		\begin{eqnarray*}
+			e^{\alpha x}\cos \beta x,&xe^{\alpha x} \cos\beta x,\dots, x^{m-1}e^{\alpha x} \cos\beta x\\
+			e^{\alpha x}\sin \beta x,&xe^{\alpha x} \sin\beta x,\dots, x^{m-1}e^{\alpha x} \sin\beta x
+		\end{eqnarray*}
+		sono soluzioni dell'equazione omogenea (2m). Si arriva a tali soluzioni considerando gli integrali.\\
+		Si arriva a tali soluzioni considerando gli integrali
+		\begin{eqnarray*}
+			x^ke^{(\alpha+i\beta)x},&x^ke^{(\alpha+i\beta)x},&k=0,1,\dots m-1
+		\end{eqnarray*}
+		a cui vengono applicate le formule di Eulero\\
+		Esempio $y^{(4)}+2y^{\prime\prime}+y=0$
+	 
+\end{description}
+

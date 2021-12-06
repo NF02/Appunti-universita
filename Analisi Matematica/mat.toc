@@ -224,3 +224,7 @@
 \contentsline {paragraph}{Esercizio.}{64}{paragraph*.157}%
 \contentsline {subsection}{\numberline {2.17.6}Equazione di Clairaut}{65}{subsection.2.17.6}%
 \contentsline {paragraph}{Esercizio}{65}{paragraph*.158}%
+\contentsline {section}{\numberline {2.18}Equazioni differenziali lineari di ordine n}{65}{section.2.18}%
+\contentsline {subsection}{\numberline {2.18.1}Teorema}{66}{subsection.2.18.1}%
+\contentsline {subsection}{\numberline {2.18.2}Definizione di funzione linearmente indipendente}{66}{subsection.2.18.2}%
+\contentsline {subsubsection}{omogenee a coefficiente costanti}{66}{subsubsection*.159}%
