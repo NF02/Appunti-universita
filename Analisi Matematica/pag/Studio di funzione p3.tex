@@ -102,6 +102,87 @@ $y=e^{\alpha x}$ è soluzione dell'equazione differenziale lineare omogenea se $
 		\end{eqnarray*}
 		a cui vengono applicate le formule di Eulero\\
 		Esempio $y^{(4)}+2y^{\prime\prime}+y=0$
-	 
 \end{description}
-
+\subsubsection{Ricerca di un integrale particolare per un'equazione differenziale lineare di ordine n non omogenea}
+\begin{equation*}
+	\boxed{y^{(n)} +a_1y^{(n-1)}+\dots+a_{(n-1)}y^\prime+a_ny=b(x)}
+\end{equation*}
+\subsubsection{Eq. diff. lineari a coefficienti costanti}
+L’integrale generale dell’equazione non omogenea è
+\begin{equation*}
+	\boxed{y(x)=y_0(x)+\overline{y}(x)}
+\end{equation*}
+Dove:
+\begin{itemize}
+	\item $y_0(x)$ è la soluzione dell'omogenea associata;
+	\item $\overline{y}_0(x)$ è un integrale particolare della non omogenea;
+\end{itemize}
+\paragraph{Calcolo di $\overline{y}(x)$: Metodo della somiglianza}
+\begin{enumerate}
+	\item $b(x)=P_m(x)e^{\gamma x}$ polinomio di grado m
+		\begin{enumerate}
+			\item $\sigma$ non è radice dell'equazione caratteristica
+				\begin{equation}
+					\overline{y}(x)=Q_m(x)e^{\gamma x}
+				\end{equation}
+			\item $\sigma$ è radice dell'equazione caratteristica con molteplicità $k$
+				\begin{equation*}
+					\overline{y}(x)=x^kQ_m(x)e^{\gamma x}
+				\end{equation*}
+			
+		\end{enumerate}
+	\item $b(x)=P_m(x)e^{\gamma x}\cos(\mu x) \text{ o } b(x)=P_m(x)e^{\gamma x}\sin(\mu x)$
+		\begin{enumerate}
+			\item $\gamma\pm i\mu$ non sono radici dell'equazione caratteristica
+			\begin{equation*}
+				\overline{y}(x)=[Q_m(x)\cos(\mu x)+R_m(x)\sin(\mu x)]e^{\mu x}
+			\end{equation*}
+			\item $\gamma\pm i\mu$  è radice dell'equazione caratteristica con molteplicità $k$
+			\begin{equation*}
+				\overline{y}(x)=x^k[Q_m(x)\cos(\mu x)+R_m(x)\sin(\mu x)]e^{\mu x}
+			\end{equation*}
+		\end{enumerate}
+\end{enumerate}
+Esempio $y^{\prime\prime}-2y^\prime+2y=x^2$\\
+L'integrale generale dell'equazione non omogenea è
+\begin{equation*}
+	\boxed{y(x)=y-0(x)+\overline{y}(x)}
+\end{equation*}
+\begin{equation*}
+	y^{\prime\prime}-2y^\prime+2y=0\Rightarrow\lambda^2-2\lambda+2=0\Rightarrow \lambda=1\pm i
+\end{equation*}
+\begin{equation*}
+	y_0(x)=c_1e^x\cos x+c_2e^x\sin x
+\end{equation*}
+\begin{equation*}
+	b(x)=x^2\Rightarrow m=2,\gamma=0\text{ non è soluzione dell'equazione caratteristica, } \overline{y}(x)=ax^2+bx+c
+\end{equation*}
+\textit{Se $\overline{y}(x)$ è soluzione della nostra equazione differenziale non omogenea, allora sostituendo $\overline{y}(x),\overline{y}^\prime(x),\overline{y}^{\prime\prime}(x)$ nell'equazione differenziale si deve avere un'identità.}\\
+Calcoliamo  $\overline{y}^\prime(x),\overline{y}^{\prime\prime}(x)$
+\begin{equation*}
+	\overline{y}^\prime=2ax+b,\overline{y}^{\prime\prime}=2a
+\end{equation*}
+Sostituendo nell’eq diff si ha
+\begin{equation}
+	2a-4ax-2b+2ax^2+2bx+2c=x^2
+\end{equation}
+\begin{equation*}
+	\Rightarrow 2ax^2+(2b-4a)x+2a-2b+2c=x^2
+\end{equation*}
+Per il principio di identità dei polinomi si ha
+\begin{equation}
+	\begin{cases}
+		2a=1\\
+		2b-4a=0\\
+		2a-2b+2c=0
+	\end{cases}\Rightarrow
+	\begin{cases}
+		a=\frac{1}{2}\\
+		b=0\\
+		c=\frac{1}{2}
+	\end{cases}
+\end{equation}
+Perciò $\overline{y}(x)=\frac{x^2}{2}+x+\frac{1}{2}$. E quindi l'integrale generale dell'equazione completa è
+\begin{equation*}
+	y(x)=c_1e^x\cos x+c_2e^x\sin x+\frac{x^2+2x+1}{2}
+\end{equation*}

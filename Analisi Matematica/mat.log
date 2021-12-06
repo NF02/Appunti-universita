@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  6 DEC 2021 17:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  6 DEC 2021 19:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2176,10 +2176,8 @@ LaTeX Font Info:    Trying to load font information for U+euf on input line 11.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [65] [66])
-[67] [68
-
-]
+) [65] [66]
+[67]) [68]
 runsystem(makeindex mat.idx)...executed safely (allowed).
 
  (./mat.ind) (./mat.aux)
@@ -2187,8 +2185,8 @@ Package rerunfilecheck Info: File `mat.out' has not changed.
 (rerunfilecheck)             Checksum: 2CBF48F4A0A78DF8E97E7FD477F565E5;20914.
  ) 
 Here is how much of TeX's memory you used:
- 44083 strings out of 478994
- 962839 string characters out of 5858184
+ 44095 strings out of 478994
+ 962979 string characters out of 5858184
  1673466 words of memory out of 5000000
  60342 multiletter control sequences out of 15000+600000
  432268 words of font info for 101 fonts, out of 8000000 for 9000
@@ -2233,10 +2231,10 @@ public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
 blic/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
 ic/cm-super/sftt1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public
 /cm-super/sftt2488.pfb>
-Output written on mat.pdf (68 pages, 1243402 bytes).
+Output written on mat.pdf (68 pages, 1248384 bytes).
 PDF statistics:
- 1471 PDF objects out of 1728 (max. 8388607)
- 1316 compressed objects within 14 object streams
- 448 named destinations out of 1000 (max. 500000)
+ 1485 PDF objects out of 1728 (max. 8388607)
+ 1330 compressed objects within 14 object streams
+ 460 named destinations out of 1000 (max. 500000)
  1021 words of extra memory for PDF output out of 10000 (max. 10000000)
 
