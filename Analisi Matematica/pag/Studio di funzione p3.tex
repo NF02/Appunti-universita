@@ -186,3 +186,65 @@ Perciò $\overline{y}(x)=\frac{x^2}{2}+x+\frac{1}{2}$. E quindi l'integrale gene
 \begin{equation*}
 	y(x)=c_1e^x\cos x+c_2e^x\sin x+\frac{x^2+2x+1}{2}
 \end{equation*}
+\subsection{Metodo della variazione delle costanti arbitrarie (\textit{o di Lagrange})}
+(valido per un equazione differenziale lineare a coefficiente variabili)
+\subparagraph{Teorema}
+Siano $y_1,\dots,y_n(x),\text{ } x\in I \subseteq R,\text{ }n$ integrali  linearmente indipendenti dell'equazione omogenea. Siano $c_1(x),\dots,c_n(x),\text{ }n$ funzioni le cui derivate soddisfano in I il sistema di equazioni lineari in $c_1(x),\dots,c_n^\prime(x)$:
+\begin{equation*}
+	\begin{cases}
+		c_1^\prime(x)y_1+\dots+c_n^\prime(x)y_n=0\\
+		c_1^\prime(x)y_1^\prime+\dots+c_n^\prime(x)y_n^\prime=0\\
+		\dots\\
+		\dots\\
+		c_1^\prime(x)y_1^{(n-1)}+\dots+c_n^\prime(x)y_{(n-1)}=b(x)\\
+	\end{cases}
+\end{equation*}
+Allora un integrale particolare dell'equazione differenziale lineare di ordine n è
+\begin{equation*}
+	\overline{y}(x)=c_1(x)y_1(x)+\dots+c_n(x)y_n(x)
+\end{equation*}
+\subsection{Equazioni differenziali lineari, Metodo di Lagrange: esempio}
+\begin{equation*}
+	y^{\prime\prime}+y=\frac{1}{\cos x}
+\end{equation*}
+\begin{eqnarray*}
+	\lambda^2+1=0\Rightarrow \gamma=\pm1,&y_0(x)=c_1\cos x+c_2\sin x\\
+	c_1,c_2\text{ costanti}.\\
+	y(x)=y_0(x)+\overline{y}(x)\\
+	\overline{y}(x)=c_1(x)\cos x+c_2(x)\sin x\\
+	c_1(x),c_2(x)&\text{funzione da determinare}\\
+	\begin{cases}
+		c_1^\prime(x)\cos x_1+\dots+c_n^\prime(x)\sin x_n=0\\
+		c_1^\prime(x)\sin x_1^\prime+\dots+c_n^\prime(x)\cos x_n^\prime=\frac{1}{\cos x}
+	\end{cases}&W(x)=\begin{vmatrix}
+		y_1(x)&y_2(x)\\
+		y^\prime_1(x)&y^\prime_2(x)
+	\end{vmatrix}=\begin{vmatrix}
+		\cos x&\sin x\\
+		-\sin x&\cos x\\
+	\end{vmatrix}=1\\
+	c_1^\prime(x)=\frac{\begin{vmatrix}
+		0&y_2(x)\\
+		b(x)&y^\prime_2(x)
+	\end{vmatrix}}{W(x)}=\frac{\begin{vmatrix}
+		0&\sin(x)\\
+		\frac{1}{\cos x}&\cos(x)
+	\end{vmatrix}}{W(x)}=-\frac{\sin x}{\cos x}=-\tan x&c_2^\prime(x)=\frac{\begin{vmatrix}
+		0&y_1(x)\\
+		y^\prime_1(x)&b(x)
+	\end{vmatrix}}{W(x)}=\frac{\begin{vmatrix}
+		\cos x&0\\
+		-\sin x&\frac{1}{\cos x}\\
+	\end{vmatrix}}{W(x)}=1\\
+	c_1=\int\frac{-\sin x}{\cos x}dx=\ln|\cos x|,&c_2(x)=\int 1dx=x\\
+	\overline{y}(x)=c_1(x)\cos x+c_2(x)\sin x=\cos x \ln|\cos x|+x\sin x\\
+	\text{l'integrale generale è}&y(x)=c_1\cos x+c_2\sin x+\cos x\ln|\cos x|+x\sin x
+\end{eqnarray*}
+\begin{equation}
+	y^{\prime\prime\prime}-2y^{\prime\prime}+y^\prime=e^x
+\end{equation}
+\begin{eqnarray*}
+	\lambda^3-2\lambda^2+\lambda=0\Rightarrow\lambda(\lambda^2-2\lambda+1)=0\\
+	\lambda=0(\lambda-1)^2=0&\lambda=1&m=2\\
+	y_0=c_1e^2x
+\end{eqnarray*}
