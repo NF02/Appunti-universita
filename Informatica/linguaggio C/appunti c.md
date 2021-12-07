@@ -23,6 +23,10 @@ int main(){
     return 0;
 }
 ```
+### Definizione di un algoritmo
+Un insieme di instruzioni che deve essere applicato per eseguire un'elaborazione o risolvere un problema.
+La semplice descrizioene del problema non fornisce la soluzione allo stesso, questo accade nel 99% del casi.
+Molte volte basta la logica ma alle volte non basta, potrebbero servire anche delle conoscenza specifiche (*la conoscenza delle formule matematiche o di determinati comportaminti di un elemento*). Ovviamento visto che stiamo parlando di elaboratori digitali, il linguaggio da utilizzare è un linguaggio che prende dati certi, perché l'elaboratore non supporta discorsi astratti e quindi l'unico modo è parsargli delle istruzioni univoche e valide. È per questo che sono prima nati degli alfabeti basilari come il linguaggio binario su cui sono basati tutti i nostri elaboratori moderni e in seguito del linguaggio a basso livello che si interfacciano strettamente all'architettura di riferimento come l'assembler che risulta specifico in base al processore. Può i linguaggi a più alto livello come il C che mantengono ancora al loro interno delle parti molto legate ai primi linguaggi e poi i linguaggi ad altissimo livello come il Java e il Python in in cui le funzioni dell'hardware vengono gestite automaticamente e anche orientati agli Oggetti, con quest'ultimi vengono realizzati rapidamente progetti molto complessi ma poco ottimizzati rispetto alla controparte.
 ## Librerie
 In C viengono utilizzate delle librerie per caricare e implementare nuove funzionalità, questo consente di ottimizzare al massimo 
 il programma, per caricare una libreria è necessario utilizzare la direttiva al preprocessore `#include<nomeLibreria>`  nel caso delle
