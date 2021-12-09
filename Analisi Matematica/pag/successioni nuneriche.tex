@@ -1,0 +1,112 @@
+\chapter{Successioni numeriche}
+\section{Definizione}
+Una successione $\{a_n\}$ è una funzione che ad ogni numero naturale n associa un numero reale $a_n$
+\begin{multicols}{2}
+	\begin{equation*}
+		\{a_n\}: \begin{matrix}
+			n&\to&a_n\\
+			0&\to&a_0\\
+			1&\to&a_1\\
+			\vdots&&\vdots\\
+			n&\to&a_n
+		\end{matrix}
+	\end{equation*}
+	Esempio:
+	\begin{equation*}
+		\bigg\{\frac{1}{n}\bigg\}: \begin{matrix}
+			n&\to&a_n\\
+			1&\to&1\\
+			2&\to&\frac{1}{2}\\
+			\vdots&&\vdots\\
+			n&\to&\frac{1}{n}
+		 \end	{matrix}
+	\end{equation*}
+\end{multicols}
+Il limite della successione $\{a_n\}$ è il numero reale a (\textit{si dice anche che $a_n$ converga ad a}) e si indica
+\begin{eqnarray*}
+	\lim_{n\to\infty}a_n=a&(a_n\to a)
+\end{eqnarray*}
+se, qualunque sia $\varepsilon>0 \exists v_\varepsilon:$ $|a_n-a|<\varepsilon\text{ } \forall n>v_\varepsilon$. Esempio tramite la definizione dimostriamo che
+\begin{equation*}
+	\lim_{n\to\infty}\frac{1}{n}=0
+\end{equation*}
+Si ha $|a_n-a|=\bigg|\frac{1}{n}-0\bigg|=\frac{1}{n}<\varepsilon\Rightarrow n>\frac{1}{\varepsilon}$. Quindi basta porre $v=\frac{1}{\varepsilon}$ e si ha che $\forall n>v\text{ }\lim_{n\to \infty}\frac{1}{n}=0$
+\begin{itemize}
+	\item Se il limite della successione $\{a_n\}$ è un numero finito allora la successione si dirà convergente (o regolare);
+	\item Se il limite di $\{a_n\}$ è infinito, allora si dirà divergente (regolare);
+	\item Se invece tale limite non esiste, allora $\{a_n\}$ si dice indeterminata (o irregolare);
+\end{itemize}
+La definizione di limite per la successione $\{a_n\}$ e i teoremi sui limiti sono analoghi a quelli visti per le funzioni.
+\paragraph{Definizione}
+\begin{eqnarray*}
+	\lim_{n\to+\infty}a_n=+\infty&\Leftrightarrow&\forall K>0 \exists N=N(K):\forall n\geq N:a_n>K\\
+	\lim_{n\to+\infty}a_n=-\infty&\Leftrightarrow&\forall H>0 \exists M=M(K):\forall n\geq M:a_n<-H
+\end{eqnarray*}
+\paragraph{Teorema dell'unicità del limite}
+\begin{equation*}
+	\text{Se } \lim_{n\to \infty} a_n=a\Rightarrow a \text{ a è unico.}
+\end{equation*}
+\section{Teorema della permanenza del segno}
+Se una successione $\{a_n\}$ converge ad un limite strettamente positivo $a>0$ (che può essere anche $+\infty$), ossia se $\lim_{n\to+\infty}a_n=a>0$ (o $a<0$)\\
+Allora $a_n>0$ definitivamente (o $a<0$), ossia ha definitivamente soltanto termini positivi (o negativi). Per le successioni, <<definitivamente>> significa per n abbastanza grande. - In altre parole, esiste un N tale che $a_n>0$ per ogni $n>N$. Esempio $n-10\sqrt{n}$ è definitivamente positiva per $n>100$
+\section{Teorema della permanenza del segno}
+Una successione che converge a zero può avere infiniti termini di ambo i segni, ad esempio
+\begin{eqnarray*}
+	a_n=\frac{(-1)^n}{n}
+\end{eqnarray*}
+Non è vero in generale che una successione $\{a_n\}$ di termini positivi $a_n>0$ convergente debba avere un limite strettamente positivo $a>0$: ad esempio la successione $a_n=\frac{1}{n}$ è fatta di termini positivi, ma converge a zero. Ogni successione $\{a_n\}$ si dice limitata se $\exists M$:
+\begin{equation*}
+	|a_n|\neq M.
+\end{equation*}
+Esempio $*\{a_n\}=(-1)^n$ è limitata: $|a_n|=1$ $(M=1)$, ma non ha limite, intatti
+\begin{equation*}
+	\lim_{n\to +\infty}a_n=\lim_{n\to +\infty}(-1)^n\text{ non esite}
+\end{equation*} 
+$*\{a_n\}=\sin x$ è limitata ma non ammette limite
+\section{Teorema del confronto (o dei due carabinieri)}
+Siano $\{a_n\},\{b_n\},\{c_n\}$ tre successioni tali che
+\begin{eqnarray*}
+	a_n\leq b_n\leq c_n&\forall n\in N.
+\end{eqnarray*}
+Se $\lim_{n\to \infty} a_n=\lim_{n\to +\infty} c_n=a$, allora anche la successione $b_n$ è convergente e si ha
+\begin{equation*}
+	\lim_{n\to +\infty}b_n=a.
+\end{equation*}
+esempio $b_n=\frac{\cos n}{n}$.\\
+Se $a_n \leq b_n$ definitivamente, e se $\lim_{n\to+\infty}a_n=+\infty$ allora anche $\lim_{n\to +\infty}b_n=+\infty$, analogamente se $b_n\leq c_n$ e $c_n\to -\infty$ allora anche $b\to -\infty$ - S $\{a_n\}$ è una successione limitata e $\lim_{n\to +\infty}b_n=0$, allora la sccessione prodotto $a_n*b_n\to 0$. 
+\begin{eqnarray*}
+	\text{esempio }&\lim_{n\to +\infty}\frac{\sin n}{n}=\lim_{n\to+\infty}(\sin n)\frac{1}{n}=0
+\end{eqnarray*}
+in quanto $\sin n$ è limitata: $|\sin n|\leq 1$ e $\lim_{n\to+\infty}\frac{1}{n}=0$\\
+Successioni infinitesime (cioè convergenti a zero) o infinite (cioè divergenti) possono essere confrontabili come si è fatto per le funzioni. Le definizioni sono analoghe.\\
+Si ha, anche per le successioni
+\begin{equation*}
+	\ln n<<n^b<<a^n<<n!<<n^n, b>0, a>1.
+\end{equation*}
+Anche per le successioni valgono le operazioni con i limiti e le convenzioni con l’$\infty$, visti per le funzioni.
+Anche i limiti notevoli visti per le funzioni, si adattano alle successioni - Esempio
+\begin{eqnarray*}
+	\lim_{n\to+\infty}\frac{\sin\frac{1}{2}}{\frac{1}{n}}=\lim_{n\to+\infty} n\sin\frac{1}{n}=1\\
+	\lim_{n\to+\infty}\frac{\cos\frac{1}{2}}{\frac{1}{n^2}}=\lim_{n\to+\infty}\bigg(1-\cos\frac{1}{n}\bigg)=\frac{1}{2}\\
+	\lim_{n\to+\infty}\frac{\ln(1+\frac{1}{2})}{\frac{1}{n}}=\ln\bigg(1+\frac{1}{2}\bigg)=1
+\end{eqnarray*}
+\section{Riassunto}
+La successione $\{a_n\}$ si definisce
+\begin{eqnarray*}
+	\text{monotona \underline{crescente} se}&a_n\leq a_{n+1},&\forall n \in N\\
+	\text{monotona \underline{strettamente crescente} se}&a_n<a_{n+1},&\forall n \in N\\
+	\text{monotona \underline{decrescente} se}&a_n\geq a_{n+1},&\forall n \in N\\
+	\text{monotona \underline{strettamente decrescente} se}&a_n> a_{n+1},&\forall n \in N
+\end{eqnarray*}
+Ogni successione monotona ammette limite. In particolare ogni successione monotona limitata è convergente (\textit{cioè ammette limite finito: per es $l=\sup a_n$ se $a_n$ è limitata e crescente})
+\paragraph{Esercizio. Calcolo del limite:}
+\begin{enumerate}
+	\item $\lim_{n\to+\infty}\sqrt{n+1}-\sqrt{n}$
+	\begin{equation*}
+		\lim_{n\to+\infty}\sqrt{n+1}-\sqrt{n}=\lim_{n\to+\infty}\frac{\sqrt{n+1}-\sqrt{n}}{\sqrt{n+1}-\sqrt{n}}(\sqrt{n+1}+\sqrt{n})=\lim_{n\to+\infty}\frac{1}{\sqrt{n+1}+\sqrt{n}}=0
+	\end{equation*}
+	\item $\lim_{n\to+\infty}\sqrt[n]{n}=\lim_{n\to+\infty}e^{\frac{\ln n}{n}}=e^0=1$
+	
+\end{enumerate}
+
+
