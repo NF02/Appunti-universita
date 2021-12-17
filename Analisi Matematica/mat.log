@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  9 DEC 2021 23:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  17 DEC 2021 23:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2021,7 +2021,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 392.
 
 [34 <./img/asintoto orizzontale.pdf>]
-Overfull \hbox (12.64789pt too wide) in paragraph at lines 483--485
+Overfull \hbox (6.66504pt too wide) in paragraph at lines 440--442
+[][]
+ []
+
+
+Overfull \hbox (36.83698pt too wide) detected at line 457
+[] [] \OT1/cmr/m/n/10 = [] [][][] = [] []
+ []
+
+[35]
+Overfull \hbox (6.66504pt too wide) in paragraph at lines 489--491
+[][]
+ []
+
+[36]
+Overfull \hbox (12.64789pt too wide) in paragraph at lines 564--566
 []$[][] [] \OT1/cmr/m/n/10 = [][] [] =
  []
 
@@ -2030,19 +2045,19 @@ Overfull \hbox (12.64789pt too wide) in paragraph at lines 483--485
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/esempio studio di funz
 ione 2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
 allowed
-<img/esempio studio di funzione 2.pdf, id=958, 1767.60374pt x 1008.76875pt>
+<img/esempio studio di funzione 2.pdf, id=978, 1767.60374pt x 1008.76875pt>
 File: img/esempio studio di funzione 2.pdf Graphic file (type pdf)
 <use img/esempio studio di funzione 2.pdf>
 Package pdftex.def Info: img/esempio studio di funzione 2.pdf  used on input li
-ne 492.
+ne 573.
 (pdftex.def)             Requested size: 398.82649pt x 227.62204pt.
-[35] [36 <./img/esempio studio di funzione 2.pdf>] [37]
-Underfull \hbox (badness 10000) in paragraph at lines 580--581
+[37 <./img/esempio studio di funzione 2.pdf>] [38]
+Underfull \hbox (badness 10000) in paragraph at lines 661--662
 
  []
 
 
-Overfull \hbox (5.15337pt too wide) in paragraph at lines 592--593
+Overfull \hbox (5.15337pt too wide) in paragraph at lines 673--674
 [] []\T1/cmr/bx/n/10 De-fi-ni-zio-ne[] \T1/cmr/m/n/10 Una fun-zio-ne $\OML/cmm/
 m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 è
  con-ti-nua in $\OML/cmm/m/it/10 x[]$\T1/cmr/m/n/10 , se: $\OML/cmm/m/it/10 l[]
@@ -2051,21 +2066,21 @@ m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 è
 /it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) =
  []
 
-[38] [39]
+[39] [40]
 File: img/funzione valore assoluto.pdf Graphic file (type pdf)
 <use img/funzione valore assoluto.pdf>
-Package pdftex.def Info: img/funzione valore assoluto.pdf  used on input line 6
-76.
+Package pdftex.def Info: img/funzione valore assoluto.pdf  used on input line 7
+57.
 (pdftex.def)             Requested size: 347.49576pt x 227.62204pt.
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/esempio punto angoloso
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<img/esempio punto angoloso.pdf, id=1018, 1382.16376pt x 1008.76875pt>
+<img/esempio punto angoloso.pdf, id=1028, 1382.16376pt x 1008.76875pt>
 File: img/esempio punto angoloso.pdf Graphic file (type pdf)
 <use img/esempio punto angoloso.pdf>
-Package pdftex.def Info: img/esempio punto angoloso.pdf  used on input line 686
+Package pdftex.def Info: img/esempio punto angoloso.pdf  used on input line 767
 .
 (pdftex.def)             Requested size: 311.8592pt x 227.62204pt.
 
@@ -2073,20 +2088,20 @@ Package pdftex.def Info: img/esempio punto angoloso.pdf  used on input line 686
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/esempio punto cuspide.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<img/esempio punto cuspide.pdf, id=1019, 1529.715pt x 1008.76875pt>
+<img/esempio punto cuspide.pdf, id=1029, 1529.715pt x 1008.76875pt>
 File: img/esempio punto cuspide.pdf Graphic file (type pdf)
 <use img/esempio punto cuspide.pdf>
-Package pdftex.def Info: img/esempio punto cuspide.pdf  used on input line 698.
+Package pdftex.def Info: img/esempio punto cuspide.pdf  used on input line 779.
 
 (pdftex.def)             Requested size: 345.15137pt x 227.62204pt.
-[40 <./img/esempio punto angoloso.pdf>] [41 <./img/esempio punto cuspide.pdf>]
-Overfull \hbox (12.04529pt too wide) in paragraph at lines 739--744
+[41] [42 <./img/esempio punto angoloso.pdf> <./img/esempio punto cuspide.pdf>]
+Overfull \hbox (12.04529pt too wide) in paragraph at lines 820--825
 \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [][]
  [] = [][] [] = [] = [][] [] +
  []
 
-
-Overfull \hbox (1.72758pt too wide) in paragraph at lines 785--790
+[43]
+Overfull \hbox (1.72758pt too wide) in paragraph at lines 866--871
 \T1/cmr/m/n/10 Dimostrazione. Se $\OML/cmm/m/it/10 h \OMS/cmsy/m/n/10 6\OT1/cmr
 /m/n/10 = 0$ \T1/cmr/m/n/10 si ha $[][] [] \OT1/cmr/m/n/10 = [][] [] \OMS/cmsy/
 m/n/10 ^^C [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m
@@ -2094,7 +2109,7 @@ m/n/10 ^^C [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m
 ^^C
  []
 
-[42] [43] [44] [45]) (./pag/Studio di funzione p2.tex [46]
+[44] [45] [46] [47]) (./pag/Studio di funzione p2.tex [48]
 Overfull \hbox (29.07301pt too wide) in paragraph at lines 73--80
 \T1/cmtt/m/n/10 Il teorema è valido anche per $\OML/cmm/m/it/10 x \OMS/cmsy/m/n
 /10 ! \OML/cmm/m/it/10 x[]$ \T1/cmtt/m/n/10 o $\OML/cmm/m/it/10 x \OMS/cmsy/m/n
@@ -2102,7 +2117,7 @@ Overfull \hbox (29.07301pt too wide) in paragraph at lines 73--80
 /m/n/10 ! ^^F1$ \T1/cmtt/m/n/10 (f e g derivabili in intervalli
  []
 
-[47] [48] [49] [50] [51]
+[49] [50] [51] [52]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 293.
@@ -2131,69 +2146,75 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 305.
 
-[52]
-Overfull \hbox (6.66504pt too wide) in paragraph at lines 381--381
-[] 
- []
-
-
-Overfull \hbox (6.66504pt too wide) in paragraph at lines 381--381
-[] 
- []
-
 [53]
+Overfull \hbox (6.66504pt too wide) in paragraph at lines 381--381
+[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54]
+Overfull \hbox (6.66504pt too wide) in paragraph at lines 381--381
+[] 
+ []
+
+[55]
 Underfull \hbox (badness 10000) in paragraph at lines 429--432
 
  []
 
-[54] [55] [56]
-Underfull \vbox (badness 7540) has occurred while \output is active []
-
- [57]
+[56] [57] [58]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58]
+ [59]
 Underfull \hbox (badness 10000) in paragraph at lines 672--677
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2799) has occurred while \output is active []
 
- [59]
-[60]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [60]
+Underfull \vbox (badness 3058) has occurred while \output is active []
 
  [61]
-[62]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62]
+[63]
 
 LaTeX Warning: Command \` invalid in math mode on input line 870.
 
 Missing character: There is no è in font cmr10!
-[63] [64]) (./pag/Studio di funzione p3.tex
+[64] [65] [66]) (./pag/Studio di funzione p3.tex
 LaTeX Font Info:    Trying to load font information for U+euf on input line 11.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [65] [66]
-[67]
-Underfull \vbox (badness 1796) has occurred while \output is active []
+) [67]
+Underfull \vbox (badness 1460) has occurred while \output is active []
 
  [68]
+[69]
 Overfull \hbox (44.9247pt too wide) in alignment at lines 210--242
  [][][] []
  []
 
-) (./pag/successioni nuneriche.tex [69] [70
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [70])
+(./pag/successioni nuneriche.tex [71] [72
 
 ]
 Capitolo 3.
-[71]
+[73]
 Underfull \vbox (badness 2556) has occurred while \output is active []
 
- [72])
-[73] [74
+ [74])
+[75] [76
 
 ]
 runsystem(makeindex mat.idx)...executed safely (allowed).
@@ -2203,10 +2224,10 @@ Package rerunfilecheck Info: File `mat.out' has not changed.
 (rerunfilecheck)             Checksum: 7DA92CF7F7C90D1AAEEFE0BC4B138232;22869.
  ) 
 Here is how much of TeX's memory you used:
- 44128 strings out of 478994
- 963434 string characters out of 5858184
- 1674466 words of memory out of 5000000
- 60351 multiletter control sequences out of 15000+600000
+ 44135 strings out of 478994
+ 963515 string characters out of 5858184
+ 1675466 words of memory out of 5000000
+ 60353 multiletter control sequences out of 15000+600000
  432268 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,14n,89p,868b,752s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2249,10 +2270,10 @@ public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
 blic/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
 ic/cm-super/sftt1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public
 /cm-super/sftt2488.pfb>
-Output written on mat.pdf (74 pages, 1267143 bytes).
+Output written on mat.pdf (76 pages, 1275202 bytes).
 PDF statistics:
- 1564 PDF objects out of 1728 (max. 8388607)
- 1402 compressed objects within 15 object streams
- 481 named destinations out of 1000 (max. 500000)
+ 1580 PDF objects out of 1728 (max. 8388607)
+ 1416 compressed objects within 15 object streams
+ 486 named destinations out of 1000 (max. 500000)
  1085 words of extra memory for PDF output out of 10000 (max. 10000000)
 

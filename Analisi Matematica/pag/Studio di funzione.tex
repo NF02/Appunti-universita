@@ -308,7 +308,7 @@ $l_2$ si definisce \textit{limite sinistro} di $f(x)$ per \textit{x} che tende
 a $x^-_0$: $\lim_{x\to x_0^-}f(x)=l^2$ se $\forall \varepsilon>0 \exists
 \delta_\varepsilon>0: |f(x)-l_2|<\varepsilon\Rightarrow
 x_0-\delta_\varepsilon<x<x_0$ cioè $x\in(x_0-\delta_\varepsilon,x_0)$
-\subsection{Teorema d'unicità del limite ``da destra''}
+\subsection{Teorema d'unicità del limite ``da destra''\label{dadestra}}
 Se $\lim_{x\to x_0} f(x)=l\Rightarrow \text{l è unico}$\\
 Dimostrazione. Per assurdo: supponiamo che $\exists l_1,l_2: l_1 \neq l_2$
 con $l_1=lim_{x\to x_0}f(x)$ in $I(x_0,\delta_{1\varepsilon})$, $l_2=lim_{x\to
@@ -404,21 +404,102 @@ Se:
 $\frac{a}{\infty}=0$ $\frac{a}{0}=\infty$
 
 \subsection{Forme indeterminate}
-\begin{tabular}{|llllll|}
+\begin{tabular}{|llllllll|}
 	\hline
-	$+\infty-\infty$&$\frac{\infty}{\infty}$&$\frac{0}{0}$&$1^\infty$&$e^{+\infty*0}$&$0-\infty$\\
+	$+\infty-\infty$&$\frac{\infty}{\infty}$&$\frac{0}{0}$&$1^\infty$&$e^{+\infty*0}$&$0-\infty$&$0^0$&$0*\infty$\\
 	\hline
 \end{tabular}
 \begin{itemize}
-	\item $a^{+\infty}=\begin{cases}
+	\item 
+	\begin{equation*}
+		a^{+\infty}=\begin{cases}
 			+\infty,&a>1\\
 			0,&0<a<1
-	\end{cases}$
-	\item $a^{-\infty}=\begin{cases}
+		\end{cases}
+	\end{equation*}
+	\item 
+	\begin{equation*}
+		a^{-\infty}=\begin{cases}
 			0,&a>1\\
 			+\infty,&0<a<1
-	\end{cases}$
+		\end{cases}
+	\end{equation*}
 \end{itemize}
+\subsubsection{Come si risolvono?}
+\begin{description}
+	\item [$\frac{\infty}{\infty}$ e $\frac{0}{0}$ ] Il limite che andremo a studiare è
+	
+	\fbox{
+ 		\addtolength{\linewidth}{-2\fboxsep}%
+		\addtolength{\linewidth}{-2\fboxrule}%
+		\begin{minipage}{\linewidth}
+ 			\begin{equation}
+				\lim_{x\to 0} \frac{\arctan{x}}{\ln{(1+x)}}  \text{ forma ineterinata}
+ 			\end{equation}
+		\end{minipage}
+	}
+	In questo caso possiamo applicare la regola di \underline{de l'Hopital} [\ref{del'hop}], che ci consente di eseguire il calcolo in modo abbastanza rapido, consiste nel derivare singolarmente il \textbf{numeratore} e il \textbf{denominatore} e in questo caso il risultato sarà $\arctan x=\frac{1}{1+x^2}$ e $\ln{(1+x)}=\frac{1}{1+x}$, adesso rimettiamo assieme il limite di prima e il risultato è questo:
+	\begin{equation*}
+		\lim_{x\to 0}\bigg[\frac{\big(\frac{1}{1+x^2}\big)}{\big(\frac{1}{1+x}\big)}\bigg]
+	\end{equation*}
+	Ovviamente in questo caso conviene utilizzare le regole delle frazioni per renderci il lavoro più semplice, quindi, lo esprimiamo sotto forma di moltiplicazione e il risultato è il seguente:
+	 \begin{equation*}
+		\lim_{x\to0} \bigg[\frac{1}{1+x^2}*(1+x)\bigg]=\frac{1}{1+0}*(1)=1
+	\end{equation*}
+	Ed ecco che adesso il limite assume un valore determinato.
+	\item[$+\infty-\infty$ ] Il limite che andremo a studiare è
+		\begin{equation*}
+			\lim_{x\to\infty} \big(\sqrt{x^2+x}-\sqrt{x^2-x}\big)=\infty-\infty
+		\end{equation*}
+		In questo caso va per forza di cose razionalizzato
+		\begin{equation*}
+			\lim_{x\to\infty}\frac{(\sqrt{x^2+x}-\sqrt{x^2-x})(\sqrt{x^2+x}+\sqrt{x^2-x})}{\sqrt{x^2+x}+\sqrt{x^2-x}}=\lim_{x\to\infty}\bigg[\frac{(x^2+x)-(x^2)}{\sqrt{x^2+x}+\sqrt{x^2-x}} \bigg]=\lim_{x\to\infty}\frac{2x}{\sqrt{x^2+x}+\sqrt{x^2-x}}
+		\end{equation*}
+		\begin{equation*}
+			=\frac{\infty}{\infty}
+		\end{equation*}
+		Ovviamente una volta che otteniamo questa forma indeterminata, possiamo proseguire con la regola di de l’Hopital [\ref{del'hop}] che è valida solo per due casi di indeterminazione: $\frac{0}{0}$ e $\frac{\infty}{\infty}$, quindi deriviamo numeratore e denominatore singolarmente e il risultato è il seguente:
+		\begin{equation*}
+			\lim_{x\to \infty}\frac{2}{\frac{1}{2\sqrt{x^2+x}}*(2x+1)+\frac{1}{2\sqrt{x^2-x}}*(2x-1)}=\frac{2}{1+1}=\frac{\not{2}}{\not{2}}=1
+		\end{equation*}
+		Ed ecco che il limite assume un valore determinato\dots Nel modo più semplice e indoloro possibile.
+	\item [$0*\infty$ ] Il limite che adesso studieremo è
+		\begin{equation*}
+			\lim_{x\to 0}[x*e^\frac{1}{x}]=0*e^\infty=0*\infty=\text{ forma indeterminata}
+		\end{equation*}
+		Ovviamente in questa forma non è molto comoda da studiare quindi, bisogna scriverla in questo modo, per poterla studiare con il metodo di \underline{de l'Hopital}.
+		\begin{equation*}
+			\lim_{x\to 0}\bigg[\frac{e^\frac{1}{x}}{\frac{1}{x^2}}\bigg]
+		\end{equation*}
+		Quindi dopo aver sfruttato le proprietà delle frazioni, perché ovviamente $x*e^\frac{1}{x}=\frac{e^\frac{1}{x}}{\frac{1}{x}}$, dopo averla in questo modo possiamo applichiamo la regola di  \underline{de l'Hopital} [\ref{del'hop}], Quindi procediamo come nel precedente caso ``$+\infty-\infty$''
+		\begin{equation*}
+			\lim_{x\to 0}\bigg[\frac{e^\frac{1}{x}*(-\frac{1}{x^2})}{(-\frac{1}{x^2})}\bigg]=\lim_{x\to 0}e^\frac{1}{x}=e^\frac{1}{0^+}=e^\infty=\infty
+		\end{equation*}
+		E adesso da un valore determinato.
+	\item [$0^0$ ] Il limite che andiamo a studiare in questo caso è
+		
+		\fbox{
+ 			\addtolength{\linewidth}{-2\fboxsep}%
+ 			\addtolength{\linewidth}{-2\fboxrule}%
+ 			\begin{minipage}{\linewidth}
+  				\begin{equation}
+   					\lim_{x\to 0}x^x=0^0 \text{ 	forma ineterinata}
+  				\end{equation}
+ 			\end{minipage}
+		}
+		In questo caso bisogna procedere in questo modo:
+		\begin{equation*}
+			x^x=e^{\ln{x^x}}=e^{{x*\ln x}}=e^\frac{\ln x}{\frac{1}{x}}
+		\end{equation*}
+		In definitiva bisogna procedere con regola di \underline{de l'Hopital} [\ref{del'hop}] e lo svolgimento sarà il seguente
+		\begin{equation*}
+			\lim_{x\to 0^+}e^\frac{\ln x}{x}=\lim_{x\to 0^+}e^{\bigg(\frac{\frac{1}{x}}{-\frac{1}{x}}\bigg)}=\lim_{x\to 0^+}e^{-x}=e^0=1
+		\end{equation*}
+		Ovviamente essendo un logaritmo si prende solo lo $0^+$ ``da destra'' [\ref{dadestra}], anche in questo caso alla fine ha reso un valore determinato.
+		
+		
+\end{description}
+
 \subsection{Teorema del confronto}
 Siano $f(x),f_1(x),f_2(x)$ tre funzioni definite in $A\subseteq R$ sia $x_0$ un
 punto di accumulazione per A e $f_1(x)\leq f(x) \leq f_2(x)$ se $\lim_{x\to
