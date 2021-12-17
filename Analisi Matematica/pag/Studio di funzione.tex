@@ -298,8 +298,7 @@ I(x_0,\delta_\varepsilon) \text{ escluso al più } x_0 \text{ cioè }
 \subsubsection{In simboli}
 $\lim_{x\to x_0} f(x)=l \text{   } f(x)\xrightarrow{x\to x_0} l$ 
 \subsection{Definizione di Limite destro}
-$l_1$ si definisce \textit{limite 
-destro} di $f(x)$ per x che tende a $x_0^+$: $\lim_{x\to x_0^+ f(x)=l_1}$\\
+$l_1$ si definisce \textit{limite destro} di $f(x)$ per x che tende a $x_0^+$: $\lim_{x\to x_0^+ f(x)=l_1}$\\
 se $\forall \varepsilon > 0 \exists \delta_\varepsilon>0 :
 |f(x)-l_1|<\varepsilon\Rightarrow x_0<x<x_0+\delta_\varepsilon \text{ cioè }
 x\in(x_0,x_0+\delta_\varepsilon)$
@@ -328,23 +327,32 @@ Assurdo! $\Rightarrow l_1=l_2$
 di accumulazione per A. Si dice che $f(x)$ ha limite $+\infty$ per x che tende
 a $x_0$, se $\forall M>0,\exists \delta_M>0:\forall x \in
 I(x_0,\delta_m)\Rightarrow f(x)>M$
-\begin{center}
-	\begin{tabular}{|l|}
-		\hline
-		$\lim_{x\to x_0}f(x)=+\infty$\\\hline
-	\end{tabular}
-\end{center}
+
+\fbox{
+	\addtolength{\linewidth}{-2\fboxsep}%
+	\addtolength{\linewidth}{-2\fboxrule}%
+	\begin{minipage}{\linewidth}
+ 		\begin{equation}
+   			\lim_{x\to x_0}f(x)=+\infty
+ 		\end{equation}
+ 	\end{minipage}
+}
 \paragraph{Definizione} Sia $f(x)$ definita in $A\in R$, e sia $x_0$ un punto
 di accumulazione per A. Si dice che $f(x)$ ha limite $-\infty$ per $x$ che
 tende a $x_0$, se $\forall M>0, \exists \delta_M>0:\forall x \in
-I(x_0,\delta_m)$\\
+I(x_0,\delta_m)$
 risulta $f(x)<-M$.
-\begin{center}
-	\begin{tabular}{|l|}
-		\hline
-		$\lim_{x\to x_0}f(x)=-\infty$\\\hline
-	\end{tabular}
-\end{center}
+
+\fbox{
+	\addtolength{\linewidth}{-2\fboxsep}%
+	\addtolength{\linewidth}{-2\fboxrule}%
+	\begin{minipage}{\linewidth}
+ 		\begin{equation}
+   			\lim_{x\to x_0}f(x)=-\infty
+ 		\end{equation}
+ 	\end{minipage}
+}
+
 \paragraph{Definizione di Asintoto verticale}
 Se $\boxed{\lim_{x\to x_0}f(x)=\infty}$ allora la retta verticale $\boxed{x=x_0}$
 si chiama asintoto verticale
@@ -496,10 +504,14 @@ $\frac{a}{\infty}=0$ $\frac{a}{0}=\infty$
 			\lim_{x\to 0^+}e^\frac{\ln x}{x}=\lim_{x\to 0^+}e^{\bigg(\frac{\frac{1}{x}}{-\frac{1}{x}}\bigg)}=\lim_{x\to 0^+}e^{-x}=e^0=1
 		\end{equation*}
 		Ovviamente essendo un logaritmo si prende solo lo $0^+$ ``da destra'' [\ref{dadestra}], anche in questo caso alla fine ha reso un valore determinato.
-		
-		
 \end{description}
-
+\fbox{
+ 	\addtolength{\linewidth}{-2\fboxsep}%
+ 	\addtolength{\linewidth}{-2\fboxrule}%
+ 	\begin{minipage}{\linewidth}
+		\paragraph{Consiglio:} Utilizza sempre le parentesi per isolare le parti e evitare inutili confusioni, indica da che parte stai studiano il limite solo dove è rilevante e esegui tutti i passaggi se ci sono dubbi, perché non bisogna mai sottovalutare quello che viene chiesto dall'esercizio, perché può essere abbastanza insidioso e anche una vera e propria trappola che serve a provare il livello della comprensione del testo del candidato.
+	\end{minipage}
+}
 \subsection{Teorema del confronto}
 Siano $f(x),f_1(x),f_2(x)$ tre funzioni definite in $A\subseteq R$ sia $x_0$ un
 punto di accumulazione per A e $f_1(x)\leq f(x) \leq f_2(x)$ se $\lim_{x\to
