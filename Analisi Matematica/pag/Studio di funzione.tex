@@ -513,7 +513,7 @@ $\frac{a}{\infty}=0$ $\frac{a}{0}=\infty$
 	\end{minipage}
 }
 \subsection{Teorema del confronto}
-Siano $f(x),f_1(x),f_2(x)$ tre funzioni definite in $A\subseteq R$ sia $x_0$ un
+Siano $f(x)\text{ },f_1(x)\text{ },f_2(x)$ tre funzioni definite in $A\subseteq R$ sia $x_0$ un
 punto di accumulazione per A e $f_1(x)\leq f(x) \leq f_2(x)$ se $\lim_{x\to
 x_0}f_1(x)=\lim_{x\to x_0} f_2(x)=l$ allora $\lim_{x\to x_0} f(x)=l$
 \subsubsection{Dimostrazione}
@@ -524,9 +524,10 @@ limite:
 	\item $\exists \delta_2:|f_2(x)-l|<\varepsilon$ $\forall x \in
 		I(x_0,\delta_2)$
 \end{itemize}
-\begin{center}
-	$\Rightarrow l-\varepsilon < f_1(x) \leq f(x)\leq f_2(x) < l+ \varepsilon$
-\end{center}
+\begin{equation*}
+	\Rightarrow l-\varepsilon < f_1(x) \leq f(x)\leq f_2(x) < l+ \varepsilon
+\end{equation*}
+
 $\forall x \in I(x_0,\delta_2), \delta = \min (\delta_1,\delta_2)$
 \subsubsection{Casi particolari di $\lim_{x\to x_0} f(x)*g(x)$}
 \paragraph{Teorema}
@@ -728,7 +729,7 @@ Siano $f(x)=o(x^\alpha)$ (si legge <<o piccolo di>>) e $g(x)=o(x^\beta)$ due fun
 	\item $cf(x))o(x^\alpha)$, $\forall c \in R$
 	\item $x^\lambda f(x)=o(x^{\lambda+\alpha})$
 	\item $f(x)g(x)=o(x^{\alpha+\beta})$
-	\item $f(x)+g(x)=o(x^y)$, $\gamma=min(\alpha,\beta)$
+	\item $f(x)+g(x)=o(x^y)$, $\gamma=\min(\alpha,\beta)$
 \end{itemize}
 \paragraph{Ordine di infinito}
 Siamo $f(x)$ e $g(x)$ infiniti per $x\to x_0$ (o per $x$), con $g\neq 0$. Se $\exists\alpha\in R+$ e $l\in R$, $l\neq 0$ tale che\\

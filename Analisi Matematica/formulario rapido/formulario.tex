@@ -103,6 +103,24 @@
 		\item $D(\arctan x)=\frac{1}{1+x^2}$
 	\end{itemize}
 \end{multicols}
+Casi:
+\begin{multicols}{2}
+	\begin{equation}
+		D[k*f(x)]=k*f^\prime(x)
+	\end{equation}
+	\begin{equation}
+		D[f(x)+g(x)+h(x)]=f^\prime+g^\prime+h^\prime
+	\end{equation}
+	\begin{equation}
+		D\left[\frac{f(x)}{g(x)}\right]=\frac{f^\prime*g-f*g^\prime}{\left[ g\right]}
+	\end{equation}
+	\begin{equation}
+		D\left[\frac{1}{f(x)}\right]=\frac{f^\prime(x)}{\left[f(x)\right]}^2
+	\end{equation}
+	\begin{equation}
+		D[f(g(x))]=	f^\prime[g(x)]*g^\prime
+	\end{equation}
+\end{multicols}
 \subsection{Limiti Notevoli}
 \subsubsection{esponenziali e logaritmici}
 \begin{multicols}{2}
@@ -180,16 +198,10 @@
 	\lim_{x\to0}\frac{\tan x}{x}=1
 \end{equation}
 \begin{equation}
-	\lim_{x\to0}\frac{\tan ax}{bx}=\frac{a}{b}
-\end{equation}
-\begin{equation}
 	\lim_{x\to0}\frac{1-\cos x}{x}=0
 \end{equation}
 \begin{equation}
 	\lim_{x\to0}\frac{1-\cos x}{x^2}=\frac{1}{2}
-\end{equation}
-\begin{equation}
-	\lim_{x\to0}\frac{\arcsin x}{x}=1
 \end{equation}
 \begin{equation}
 	\lim_{x\to0}\frac{\arcsin ax}{bx}=\frac{a}{b}
@@ -197,23 +209,14 @@
 \begin{equation}
 	\lim_{x\to0}\frac{arctan x}{x}=1
 \end{equation}
-\begin{equation}
-	\lim_{x\to0}\frac{\arctan ax}{bx}=\frac{a}{b}
-\end{equation}
-\begin{equation}
-	\lim_{x\to0}\frac{\sinh x}{x}=1
-\end{equation}
-\begin{equation}
-	\lim_{x\to0}\frac{\mbox{settsinh}(x)}{x}=1
-\end{equation}
-\begin{equation}
-	\lim_{x\to0}\frac{x-\sin x}{x^3}=\frac{1}{6}
-\end{equation}
-\begin{equation}
-	\lim_{x\to0}\frac{x-\arctan x}{x^3}=\frac{1}{3}
-\end{equation}
-
 \end{multicols}
+\section{formula retta tangente}
+\begin{equation}
+(y - y_0) = m·( x - x_0)
+\end{equation}
+\begin{eqnarray}
+	m=f^\prime(x_0)
+\end{eqnarray}
 
 
 \end{document}
