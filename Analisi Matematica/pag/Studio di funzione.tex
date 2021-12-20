@@ -540,35 +540,118 @@ $\Rightarrow$\begin{tabular}{|l|}
 	\hline$\lim_{x\to x_0}f[g(x)]=l$\\\hline
 \end{tabular}
 \subsection{Limiti Notevoli}
+\subsubsection{esponenziali e logaritmici}
 \begin{multicols}{2}
-	\begin{itemize}
-		\item \begin{tabular}{|l|}
-				\hline
-				$\lim_{x\to x_0}\frac{\sin (x)}{x}=1$\\\hline
-		\end{tabular}
-		\item \begin{tabular}{|l|}
-				\hline
-				$\lim_{x\to x_0}\frac{\tan (x)}{x}=1$\\\hline
-		\end{tabular}
-		\item \begin{tabular}{|l|}
-				\hline
-				$\lim_{x\to x_0}\frac{1-\cos (x)}{x}=\frac{1}{2}$\\\hline
-		\end{tabular}
-		\item \begin{tabular}{|l|}
-				\hline
-				$\lim_{x\to x_0}(1+\frac{1)}{x})=e$\\\hline
-		\end{tabular}
-		\item \begin{tabular}{|l|}
-				\hline
-				$\lim_{x\to x_0}\frac{\log_a (1+x)}{x}=log_ae$\\\hline
-		\end{tabular}
-		\item \begin{tabular}{|l|}
-				\hline
-				$\lim_{x\to x_0}\frac{a^x-1}{x}=\log_ea$\\\hline
-		\end{tabular}
-	\end{itemize}
+\begin{equation}
+	\lim_{x\to\pm\infty}\left(1+\frac{1}{x}\right)^x=e
+\end{equation}
+\begin{equation}
+	\lim_{x\to+\infty}\left(1+\frac{a}{x}\right)^x=e^a
+\end{equation}
+\begin{equation}
+	\lim_{x\to+\infty}\left(1+\frac{a}{x}\right)^{nx}=e^{na}
+\end{equation}
+\begin{equation}
+	\lim_{x\to-\infty}\left(1+\frac{a}{x}\right)^x=\frac{1}{e}
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\left(1+ax\right)^{\frac{1}{x}}=e^{a}
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\lg_a\left(1+x\right)^\frac{1}{x}=\frac{1}{\lg_e a}
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{\lg_a\left(1+x\right)}{x}=\lg_ae=\frac{1}{\ln a}
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{a^x-1}{x}=\ln a
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{\left(1+x\right)^a-1}{x}=a
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{\left(1+x\right)^a-1}{x}=1
+\end{equation}
+\begin{equation}
+	\begin{matrix}
+		\lim_{x\to0}x^r\lg_a x=0&\forall \in R^+-\{1\},&\forall r\in R^+
+	\end{matrix}
+\end{equation}
+\begin{equation}
+	\begin{matrix}
+		\lim_{x\to0}\frac{\lg_a x}{x^r}=0&\forall \in R^+-\{1\},&\forall r\in R^+
+	\end{matrix}
+\end{equation}
+\begin{equation}
+	\lim_{x\to+\infty}x^ra^x=\lim_{x\to+\infty}a^x
+\end{equation}
+\begin{equation}
+	\lim_{x\to-\infty}\abs{x}^ra^x=\lim_{x\to\infty}a^x
+\end{equation}
+\begin{equation}
+	\begin{matrix}
+		\lim_{x\to+\infty}\frac{e^x}{x^r}=\lim_{x\to+\infty}a^x&\forall r \in R^+
+	\end{matrix}
+\end{equation}
+\begin{equation}
+	\begin{matrix}
+		\lim_{x\to+\infty}\frac{x^x}{e^r}=\lim_{x\to+\infty}a^x&\forall r \in R^+
+	\end{matrix}
+\end{equation}
+\begin{equation}
+	\begin{matrix}
+		\lim_{x\to-\infty}e^x*x^r=0&\forall r \in R^+
+	\end{matrix}
+\end{equation}
+\end{multicols}
+\subsection{Goniometrici}
+\begin{multicols}{2}
+\begin{equation}
+	\lim_{x\to0}\frac{\sin x}{x}=1
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{\sin ax}{bx}=\frac{a}{b}
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{\tan x}{x}=1
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{\tan ax}{bx}=\frac{a}{b}
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{1-\cos x}{x}=0
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{1-\cos x}{x^2}=\frac{1}{2}
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{\arcsin x}{x}=1
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{\arcsin ax}{bx}=\frac{a}{b}
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{arctan x}{x}=1
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{\arctan ax}{bx}=\frac{a}{b}
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{\sinh x}{x}=1
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{\mbox{settsinh}(x)}{x}=1
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{x-\sin x}{x^3}=\frac{1}{6}
+\end{equation}
+\begin{equation}
+	\lim_{x\to0}\frac{x-\arctan x}{x^3}=\frac{1}{3}
+\end{equation}
+
 \end{multicols}
 \paragraph{Esempi}
+
 \begin{multicols}{2}
 	\begin{enumerate}
 		\item $\lim_{x\to x_0^+}xe^x+e^{-\frac{1}{x}}=0$
