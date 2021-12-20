@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  19 DEC 2021 13:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  19 DEC 2021 23:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1260,35 +1260,147 @@ Package: ulem 2019/11/18
 Package: translations 2021/01/17 v1.10a internationalization of LaTeX2e package
 s (CN)
 ))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2020/02/29 v1.17 Data Visualization (1.17)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks52
+\t@pgfplots@tokb=\toks53
+\t@pgfplots@tokc=\toks54
+\pgfplots@tmpa=\dimen389
+\c@pgfplots@coordindex=\count423
+\c@pgfplots@scanlineindex=\count424
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
+.code.tex))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.c
+ode.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_loader.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
+.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructure.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructureext.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+array.code.tex
+\c@pgfplotsarray@tmp=\count425
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+matrix.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+shared.code.tex
+\c@pgfplotstable@counta=\count426
+\t@pgfplotstable@a=\toks55
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+deque.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.co
+de.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.da
+ta.code.tex))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb
+.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+s.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count427
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
+.surfshading.pgfsys-pdftex.def)))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
+code.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
+e.tex))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.c
+ode.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.c
+ode.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandle
+r.code.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.
+code.tex)))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.
+tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessin
+g.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.cod
+e.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.
+tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.te
+x)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.code.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+s.code.tex
+\pgfdecoratedcompleteddistance=\dimen390
+\pgfdecoratedremainingdistance=\dimen391
+\pgfdecoratedinputsegmentcompleteddistance=\dimen392
+\pgfdecoratedinputsegmentremainingdistance=\dimen393
+\pgf@decorate@distancetomove=\dimen394
+\pgf@decorate@repeatstate=\count428
+\pgfdecorationsegmentamplitude=\dimen395
+\pgfdecorationsegmentlength=\dimen396
+)
+\tikz@lib@dec@box=\box134
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathmorphing.code.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathmorphing.code.tex))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathreplacing.code.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count429
+\pgfplots@xmin@reg=\dimen397
+\pgfplots@xmax@reg=\dimen398
+\pgfplots@ymin@reg=\dimen399
+\pgfplots@ymax@reg=\dimen400
+\pgfplots@zmin@reg=\dimen401
+\pgfplots@zmax@reg=\dimen402
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmar
+ks.code.tex
+File: pgflibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/floatflt/floatflt.sty
 Package: floatflt 1997/07/16 v. 1.31
-\c@OptionTest=\count423
-\figbox=\box134
-\tabbox=\box135
-\pagebox=\box136
-\ffigcount=\count424
-\ftabcount=\count425
-\fftest=\count426
-\hangcount=\count427
-\nosuccesstryfig=\count428
-\nosuccesstrytab=\count429
-\figgutter=\dimen389
-\tabgutter=\dimen390
-\htdone=\dimen391
-\pageht=\dimen392
-\startpageht=\dimen393
-\tabbredd=\dimen394
-\floatfltwidth=\dimen395
-\fltitemwidth=\dimen396
-\outputpretest=\toks52
+\c@OptionTest=\count430
+\figbox=\box135
+\tabbox=\box136
+\pagebox=\box137
+\ffigcount=\count431
+\ftabcount=\count432
+\fftest=\count433
+\hangcount=\count434
+\nosuccesstryfig=\count435
+\nosuccesstrytab=\count436
+\figgutter=\dimen403
+\tabgutter=\dimen404
+\htdone=\dimen405
+\pageht=\dimen406
+\startpageht=\dimen407
+\tabbredd=\dimen408
+\floatfltwidth=\dimen409
+\fltitemwidth=\dimen410
+\outputpretest=\toks56
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen397
-\epsfysize=\dimen398
+\epsfxsize=\dimen411
+\epsfysize=\dimen412
 )
 \mat@idxfile=\write4
 \openout4 = `mat.idx'.
@@ -1298,32 +1410,32 @@ Writing index file mat.idx
 (./mat.aux)
 \openout1 = `mat.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 99.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 99
-.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 101.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 10
+1.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 99.
-Package hyperref Info: Link coloring OFF on input line 99.
+LaTeX Font Info:    ... okay on input line 101.
+Package hyperref Info: Link coloring OFF on input line 101.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1335,11 +1447,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count430
+\c@section@level=\count437
 )
-LaTeX Info: Redefining \ref on input line 99.
-LaTeX Info: Redefining \pageref on input line 99.
-LaTeX Info: Redefining \nameref on input line 99.
+LaTeX Info: Redefining \ref on input line 101.
+LaTeX Info: Redefining \pageref on input line 101.
+LaTeX Info: Redefining \nameref on input line 101.
  (./mat.out) (./mat.out)
 \@outlinefile=\write5
 \openout5 = `mat.out'.
@@ -1381,17 +1493,17 @@ LaTeX Info: Redefining \nameref on input line 99.
 
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count431
-\scratchdimen=\dimen399
-\scratchbox=\box137
-\nofMPsegments=\count432
-\nofMParguments=\count433
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count434
-\MPscratchDim=\dimen400
-\MPnumerator=\count435
-\makeMPintoPDFobject=\count436
-\everyMPtoPDFconversion=\toks54
+\scratchcounter=\count438
+\scratchdimen=\dimen413
+\scratchbox=\box138
+\nofMPsegments=\count439
+\nofMParguments=\count440
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count441
+\MPscratchDim=\dimen414
+\MPnumerator=\count442
+\makeMPintoPDFobject=\count443
+\everyMPtoPDFconversion=\toks58
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1401,14 +1513,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \it@ocap on input line 99.
-LaTeX Info: Redefining \it@ccap on input line 99.
+LaTeX Info: Redefining \it@ocap on input line 101.
+LaTeX Info: Redefining \it@ccap on input line 101.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count437
+\c@lstlisting=\count444
 
 Package exsheets Info: Loading custom configurations file
 (exsheets)             `exsheets_configurations.cfg'.
@@ -1419,20 +1531,27 @@ cfg
 File: exsheets_configurations.cfg 
 )
 Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 99.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 101
+alian.trsl' found. on input line 101.
+
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
+your preamble.
+ on input line 101.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 103
 .
- (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 101
+LaTeX Font Info:    Trying to load font information for U+msb on input line 103
 .
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
-1.
+3.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1472,7 +1591,7 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 107.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 109.
  [13] [14]
 (./pag/Cenni di teoria degli insiemi.tex
 Capitolo 1.
@@ -2230,11 +2349,11 @@ Overfull \hbox (44.9247pt too wide) in alignment at lines 210--242
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [70])
-(./pag/esercizi.tex [71]) (./pag/successioni nuneriche.tex [72]
-Capitolo 3.
-[73
+(./pag/esercizi.tex) (./pag/successioni nuneriche.tex [71] [72
 
 ]
+Capitolo 3.
+[73]
 Underfull \vbox (badness 2556) has occurred while \output is active []
 
  [74])
@@ -2244,17 +2363,20 @@ Underfull \vbox (badness 2556) has occurred while \output is active []
 runsystem(makeindex mat.idx)...executed safely (allowed).
 
  (./mat.ind) (./mat.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `mat.out' has not changed.
 (rerunfilecheck)             Checksum: 810970D8BFE171686712AD1E6D550513;23109.
  ) 
 Here is how much of TeX's memory you used:
- 44157 strings out of 478994
- 963823 string characters out of 5858184
- 1675466 words of memory out of 5000000
- 60356 multiletter control sequences out of 15000+600000
+ 53617 strings out of 478994
+ 1289688 string characters out of 5858184
+ 2090852 words of memory out of 5000000
+ 69698 multiletter control sequences out of 15000+600000
  432268 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,14n,89p,868b,752s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,14n,89p,868b,764s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
@@ -2294,10 +2416,10 @@ public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
 blic/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
 ic/cm-super/sftt1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public
 /cm-super/sftt2488.pfb>
-Output written on mat.pdf (76 pages, 1280497 bytes).
+Output written on mat.pdf (76 pages, 1275957 bytes).
 PDF statistics:
- 1607 PDF objects out of 1728 (max. 8388607)
- 1443 compressed objects within 15 object streams
- 502 named destinations out of 1000 (max. 500000)
+ 1595 PDF objects out of 1728 (max. 8388607)
+ 1431 compressed objects within 15 object streams
+ 492 named destinations out of 1000 (max. 500000)
  1101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
