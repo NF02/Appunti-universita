@@ -248,3 +248,68 @@ Allora un integrale particolare dell'equazione differenziale lineare di ordine n
 	\lambda=0(\lambda-1)^2=0&\lambda=1&m=2\\
 	y_0=c_1e^2x
 \end{eqnarray*}
+\section{Problema di Cauchy}
+Sia $f:R^2\supseteq D\to R,$ con D aperto, $(x_0,y_0)\in D$
+\begin{equation*}
+	\begin{cases}
+		y^\prime=f(x,y)
+		y(x_0)=y_0
+	\end{cases} \text{ Problema di Cauchy}
+\end{equation*}
+$y=y(x)$ è detta soluzione (locale) del Problema di
+Cauchy se è definita ed è derivabile in un intorno del
+punto x0, tale che in tale intorno
+\begin{equation*}
+	y^\prime(x)=f(x,y(x))
+\end{equation*}
+\subsection{Esempio}
+\begin{equation}
+	\begin{cases}
+		y^\prime=y-1\\
+		y(0)=4
+	\end{cases}
+\end{equation}
+\begin{equation*}
+	y^\prime-y=-1\text{ } y=e^{\int1dx}\left[\int e^{\int1dx}*(-1)dx+c\right]
+\end{equation*}
+\begin{equation*}
+	y=e^x\left(\int e^{-x}*(-1)dx+c\right)=e^x\left(e^{-x}+c\right)
+\end{equation*}
+\begin{eqnarray*}
+	y=1+c*e^x\\
+	y(0)=4
+\end{eqnarray*}
+\begin{eqnarray*}
+	4=1+c*e^0\\
+	c=3
+\end{eqnarray*}
+\begin{eqnarray}
+	\begin{cases}
+		y^\prime=y^{\frac{2}{3}}\\
+		y(0)=0
+	\end{cases}&y=0 \text{ è soluzione}
+\end{eqnarray}
+Se $y\neq 0:$
+\begin{equation*}
+	\begin{matrix}
+		\frac{dy}{y^{\frac{2}{3}}}=dx&\int\frac{dy}{y^\frac{2}{3}}=\int dx\\
+		y=\left(\frac{x+c}{3}\right)&y=\frac{x^3}{27} \text{ altra soluzione}
+	\end{matrix}
+\end{equation*}
+
+\subsection{Teorema di Peano}
+Se $f(x,y)$ è continua un aperto $D\supseteq R^2$ e $(x_0,y_0)\in D$, allora esiste una soluzione del problema di Cauchy
+\begin{equation*}
+	\begin{cases}
+		y^\prime=f(x,y)\\
+		y(0)=y_0
+	\end{cases}
+\end{equation*}
+\paragraph{Teorema di Cauchy} (\textit{di esistenza e unicità locale}) Sia $f:D\supseteq R^2\to R$, con D aperto. Se:
+\begin{enumerate}
+	\item $f$ è continua in D
+	\item $f$ è localmente \textit{LIPSCHITZIANA} in D rispetto a y e uniformemente in x, allora
+\end{enumerate}
+
+
+
