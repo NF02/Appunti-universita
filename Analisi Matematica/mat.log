@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.1)  9 JAN 2022 18:16
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.1)  2 JAN 2022 21:52
+>>>>>>> Stashed changes
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1664,7 +1668,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/funzione lineare.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/funzione lineare.pdf, id=827, 1521.685pt x 996.72375pt>
+=======
+<img/funzione lineare.pdf, id=820, 1521.685pt x 996.72375pt>
+>>>>>>> Stashed changes
 File: img/funzione lineare.pdf Graphic file (type pdf)
 <use img/funzione lineare.pdf>
 Package pdftex.def Info: img/funzione lineare.pdf  used on input line 28.
@@ -1684,7 +1692,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/funzione valore assoluto.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/funzione valore assoluto.pdf, id=836, 1521.685pt x 996.72375pt>
+=======
+<img/funzione valore assoluto.pdf, id=829, 1521.685pt x 996.72375pt>
+>>>>>>> Stashed changes
 File: img/funzione valore assoluto.pdf Graphic file (type pdf)
 <use img/funzione valore assoluto.pdf>
 Package pdftex.def Info: img/funzione valore assoluto.pdf  used on input line 3
@@ -1710,7 +1722,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/funzione potenziale x^n.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/funzione potenziale x^n.pdf, id=837, 1521.685pt x 996.72375pt>
+=======
+<img/funzione potenziale x^n.pdf, id=830, 1521.685pt x 996.72375pt>
+>>>>>>> Stashed changes
 File: img/funzione potenziale x^n.pdf Graphic file (type pdf)
 <use img/funzione potenziale x^n.pdf>
 Package pdftex.def Info: img/funzione potenziale x^n.pdf  used on input line 51
@@ -1745,7 +1761,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/funzione potenziale x^a.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/funzione potenziale x^a.pdf, id=845, 1521.685pt x 996.72375pt>
+=======
+<img/funzione potenziale x^a.pdf, id=838, 1521.685pt x 996.72375pt>
+>>>>>>> Stashed changes
 File: img/funzione potenziale x^a.pdf Graphic file (type pdf)
 <use img/funzione potenziale x^a.pdf>
 Package pdftex.def Info: img/funzione potenziale x^a.pdf  used on input line 61
@@ -1783,7 +1803,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/funzione potenziale fratta.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/funzione potenziale fratta.pdf, id=846, 1521.685pt x 996.72375pt>
+=======
+<img/funzione potenziale fratta.pdf, id=839, 1521.685pt x 996.72375pt>
+>>>>>>> Stashed changes
 File: img/funzione potenziale fratta.pdf Graphic file (type pdf)
 <use img/funzione potenziale fratta.pdf>
 Package pdftex.def Info: img/funzione potenziale fratta.pdf  used on input line
@@ -1821,7 +1845,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/funzione logaritmica.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/funzione logaritmica.pdf, id=847, 1521.685pt x 996.72375pt>
+=======
+<img/funzione logaritmica.pdf, id=840, 1521.685pt x 996.72375pt>
+>>>>>>> Stashed changes
 File: img/funzione logaritmica.pdf Graphic file (type pdf)
 <use img/funzione logaritmica.pdf>
 Package pdftex.def Info: img/funzione logaritmica.pdf  used on input line 83.
@@ -1831,7 +1859,11 @@ Package pdftex.def Info: img/funzione logaritmica.pdf  used on input line 83.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/le coniche circonferenze.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/le coniche circonferenze.pdf, id=856, 1521.685pt x 996.72375pt>
+=======
+<img/le coniche circonferenze.pdf, id=849, 1521.685pt x 996.72375pt>
+>>>>>>> Stashed changes
 File: img/le coniche circonferenze.pdf Graphic file (type pdf)
 <use img/le coniche circonferenze.pdf>
 Package pdftex.def Info: img/le coniche circonferenze.pdf  used on input line 9
@@ -1841,7 +1873,11 @@ Package pdftex.def Info: img/le coniche circonferenze.pdf  used on input line 9
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/le coniche ellisse.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/le coniche ellisse.pdf, id=863, 1533.73pt x 1008.76875pt>
+=======
+<img/le coniche ellisse.pdf, id=856, 1533.73pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/le coniche ellisse.pdf Graphic file (type pdf)
 <use img/le coniche ellisse.pdf>
 Package pdftex.def Info: img/le coniche ellisse.pdf  used on input line 103.
@@ -1850,7 +1886,11 @@ Package pdftex.def Info: img/le coniche ellisse.pdf  used on input line 103.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/le coniche iperbole.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/le coniche iperbole.pdf, id=864, 1533.73pt x 1008.76875pt>
+=======
+<img/le coniche iperbole.pdf, id=857, 1533.73pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/le coniche iperbole.pdf Graphic file (type pdf)
 <use img/le coniche iperbole.pdf>
 Package pdftex.def Info: img/le coniche iperbole.pdf  used on input line 112.
@@ -1859,7 +1899,11 @@ Package pdftex.def Info: img/le coniche iperbole.pdf  used on input line 112.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/le coniche iperbole equilattera.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/le coniche iperbole equilattera.pdf, id=871, 1533.73pt x 1008.76875pt>
+=======
+<img/le coniche iperbole equilattera.pdf, id=864, 1533.73pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/le coniche iperbole equilattera.pdf Graphic file (type pdf)
 <use img/le coniche iperbole equilattera.pdf>
 Package pdftex.def Info: img/le coniche iperbole equilattera.pdf  used on input
@@ -1869,7 +1913,11 @@ Package pdftex.def Info: img/le coniche iperbole equilattera.pdf  used on input
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/le coniche parabola.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/le coniche parabola.pdf, id=872, 1531.7225pt x 1008.76875pt>
+=======
+<img/le coniche parabola.pdf, id=865, 1531.7225pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/le coniche parabola.pdf Graphic file (type pdf)
 <use img/le coniche parabola.pdf>
 Package pdftex.def Info: img/le coniche parabola.pdf  used on input line 130.
@@ -1879,7 +1927,11 @@ Package pdftex.def Info: img/le coniche parabola.pdf  used on input line 130.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/funzioni trigonometriche.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/funzioni trigonometriche.pdf, id=879, 1531.7225pt x 1008.76875pt>
+=======
+<img/funzioni trigonometriche.pdf, id=872, 1531.7225pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/funzioni trigonometriche.pdf Graphic file (type pdf)
 <use img/funzioni trigonometriche.pdf>
 Package pdftex.def Info: img/funzioni trigonometriche.pdf  used on input line 1
@@ -1889,7 +1941,11 @@ Package pdftex.def Info: img/funzioni trigonometriche.pdf  used on input line 1
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/funzione sin.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/funzione sin.pdf, id=880, 1531.7225pt x 1008.76875pt>
+=======
+<img/funzione sin.pdf, id=873, 1531.7225pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/funzione sin.pdf Graphic file (type pdf)
 <use img/funzione sin.pdf>
 Package pdftex.def Info: img/funzione sin.pdf  used on input line 152.
@@ -1898,7 +1954,11 @@ Package pdftex.def Info: img/funzione sin.pdf  used on input line 152.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/funzione cos.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/funzione cos.pdf, id=889, 1533.73pt x 1008.76875pt>
+=======
+<img/funzione cos.pdf, id=882, 1533.73pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/funzione cos.pdf Graphic file (type pdf)
 <use img/funzione cos.pdf>
 Package pdftex.def Info: img/funzione cos.pdf  used on input line 161.
@@ -1907,7 +1967,11 @@ Package pdftex.def Info: img/funzione cos.pdf  used on input line 161.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/funzione tg.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/funzione tg.pdf, id=890, 1533.73pt x 1008.76875pt>
+=======
+<img/funzione tg.pdf, id=883, 1533.73pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/funzione tg.pdf Graphic file (type pdf)
 <use img/funzione tg.pdf>
 Package pdftex.def Info: img/funzione tg.pdf  used on input line 170.
@@ -1916,7 +1980,11 @@ Package pdftex.def Info: img/funzione tg.pdf  used on input line 170.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/funzione ctg.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/funzione ctg.pdf, id=899, 1533.73pt x 1008.76875pt>
+=======
+<img/funzione ctg.pdf, id=892, 1533.73pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/funzione ctg.pdf Graphic file (type pdf)
 <use img/funzione ctg.pdf>
 Package pdftex.def Info: img/funzione ctg.pdf  used on input line 179.
@@ -1925,7 +1993,11 @@ Package pdftex.def Info: img/funzione ctg.pdf  used on input line 179.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/funzione arcsin.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/funzione arcsin.pdf, id=900, 1533.73pt x 1008.76875pt>
+=======
+<img/funzione arcsin.pdf, id=893, 1533.73pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/funzione arcsin.pdf Graphic file (type pdf)
 <use img/funzione arcsin.pdf>
 Package pdftex.def Info: img/funzione arcsin.pdf  used on input line 189.
@@ -1934,7 +2006,11 @@ Package pdftex.def Info: img/funzione arcsin.pdf  used on input line 189.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/funzione arccos.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/funzione arccos.pdf, id=909, 1533.73pt x 1008.76875pt>
+=======
+<img/funzione arccos.pdf, id=902, 1533.73pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/funzione arccos.pdf Graphic file (type pdf)
 <use img/funzione arccos.pdf>
 Package pdftex.def Info: img/funzione arccos.pdf  used on input line 198.
@@ -1943,7 +2019,11 @@ Package pdftex.def Info: img/funzione arccos.pdf  used on input line 198.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/funzione arctg.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/funzione arctg.pdf, id=910, 1533.73pt x 1008.76875pt>
+=======
+<img/funzione arctg.pdf, id=903, 1533.73pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/funzione arctg.pdf Graphic file (type pdf)
 <use img/funzione arctg.pdf>
 Package pdftex.def Info: img/funzione arctg.pdf  used on input line 207.
@@ -1953,7 +2033,11 @@ Package pdftex.def Info: img/funzione arctg.pdf  used on input line 207.
 pdfTeX warning: /usr/bin/pdflatex (file ./img/operazione sul grafico traslazion
 e della asse x.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
 n <1.5> allowed
+<<<<<<< Updated upstream
 <img/operazione sul grafico traslazione della asse x.pdf, id=919, 1533.73pt x 1
+=======
+<img/operazione sul grafico traslazione della asse x.pdf, id=912, 1533.73pt x 1
+>>>>>>> Stashed changes
 008.76875pt>
 File: img/operazione sul grafico traslazione della asse x.pdf Graphic file (typ
 e pdf)
@@ -1966,7 +2050,11 @@ f  used on input line 216.
 pdfTeX warning: /usr/bin/pdflatex (file ./img/operazione sul grafico traslazion
 e della asse y.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
 n <1.5> allowed
+<<<<<<< Updated upstream
 <img/operazione sul grafico traslazione della asse y.pdf, id=920, 1533.73pt x 1
+=======
+<img/operazione sul grafico traslazione della asse y.pdf, id=913, 1533.73pt x 1
+>>>>>>> Stashed changes
 008.76875pt>
 File: img/operazione sul grafico traslazione della asse y.pdf Graphic file (typ
 e pdf)
@@ -1980,7 +2068,11 @@ ne sul grafico traslazione della asse y.pdf>]
 pdfTeX warning: /usr/bin/pdflatex (file ./img/contrazione e dilatazione in dire
 zione verticale.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
+<<<<<<< Updated upstream
 <img/contrazione e dilatazione in direzione verticale.pdf, id=930, 1533.73pt x 
+=======
+<img/contrazione e dilatazione in direzione verticale.pdf, id=923, 1533.73pt x 
+>>>>>>> Stashed changes
 1008.76875pt>
 File: img/contrazione e dilatazione in direzione verticale.pdf Graphic file (ty
 pe pdf)
@@ -1993,7 +2085,11 @@ df  used on input line 234.
 pdfTeX warning: /usr/bin/pdflatex (file ./img/compressione e dilatazione in dir
 ezione orizzontale.pdf): PDF inclusion: found PDF version <1.7>, but at most ve
 rsion <1.5> allowed
+<<<<<<< Updated upstream
 <img/compressione e dilatazione in direzione orizzontale.pdf, id=931, 1533.73pt
+=======
+<img/compressione e dilatazione in direzione orizzontale.pdf, id=924, 1533.73pt
+>>>>>>> Stashed changes
  x 1008.76875pt>
 File: img/compressione e dilatazione in direzione orizzontale.pdf Graphic file 
 (type pdf)
@@ -2006,7 +2102,11 @@ sione e dilatazione in direzione orizzontale.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/y=_lnx_.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/y=_lnx_.pdf, id=942, 1533.73pt x 1008.76875pt>
+=======
+<img/y=_lnx_.pdf, id=935, 1533.73pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/y=_lnx_.pdf Graphic file (type pdf)
 <use img/y=_lnx_.pdf>
 Package pdftex.def Info: img/y=_lnx_.pdf  used on input line 253.
@@ -2015,7 +2115,11 @@ Package pdftex.def Info: img/y=_lnx_.pdf  used on input line 253.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/esempio limite di funzione.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/esempio limite di funzione.pdf, id=943, 1521.685pt x 996.72375pt>
+=======
+<img/esempio limite di funzione.pdf, id=936, 1521.685pt x 996.72375pt>
+>>>>>>> Stashed changes
 File: img/esempio limite di funzione.pdf Graphic file (type pdf)
 <use img/esempio limite di funzione.pdf>
 Package pdftex.def Info: img/esempio limite di funzione.pdf  used on input line
@@ -2029,7 +2133,11 @@ LaTeX Warning: Command \textbackslash invalid in math mode on input line 273.
 pdfTeX warning: /usr/bin/pdflatex (file ./img/esempio di limite di una funzione
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
+<<<<<<< Updated upstream
 <img/esempio di limite di una funzione.pdf, id=944, 1521.685pt x 996.72375pt>
+=======
+<img/esempio di limite di una funzione.pdf, id=937, 1521.685pt x 996.72375pt>
+>>>>>>> Stashed changes
 File: img/esempio di limite di una funzione.pdf Graphic file (type pdf)
 <use img/esempio di limite di una funzione.pdf>
 Package pdftex.def Info: img/esempio di limite di una funzione.pdf  used on inp
@@ -2053,7 +2161,11 @@ Overfull \hbox (21.66504pt too wide) in paragraph at lines 354--355
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/asintoto verticale.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/asintoto verticale.pdf, id=960, 1421.31pt x 996.72375pt>
+=======
+<img/asintoto verticale.pdf, id=953, 1421.31pt x 996.72375pt>
+>>>>>>> Stashed changes
 File: img/asintoto verticale.pdf Graphic file (type pdf)
 <use img/asintoto verticale.pdf>
 Package pdftex.def Info: img/asintoto verticale.pdf  used on input line 363.
@@ -2062,7 +2174,11 @@ Package pdftex.def Info: img/asintoto verticale.pdf  used on input line 363.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/asintoto orizzontale.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/asintoto orizzontale.pdf, id=974, 1425.325pt x 996.72375pt>
+=======
+<img/asintoto orizzontale.pdf, id=967, 1425.325pt x 996.72375pt>
+>>>>>>> Stashed changes
 File: img/asintoto orizzontale.pdf Graphic file (type pdf)
 <use img/asintoto orizzontale.pdf>
 Package pdftex.def Info: img/asintoto orizzontale.pdf  used on input line 382.
@@ -2112,7 +2228,11 @@ Overfull \hbox (12.64789pt too wide) in paragraph at lines 660--662
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/esempio studio di funzione 2.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/esempio studio di funzione 2.pdf, id=1047, 1767.60374pt x 1008.76875pt>
+=======
+<img/esempio studio di funzione 2.pdf, id=1040, 1767.60374pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/esempio studio di funzione 2.pdf Graphic file (type pdf)
 <use img/esempio studio di funzione 2.pdf>
 Package pdftex.def Info: img/esempio studio di funzione 2.pdf  used on input li
@@ -2134,7 +2254,21 @@ t/10 x\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 l[] \OT1/cmr/m/n/10 = [][] \OML/cmm/
 m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) =
  []
 
+<<<<<<< Updated upstream
 [41] [42]
+=======
+
+Overfull \hbox (5.15337pt too wide) in paragraph at lines 769--770
+[] [] \T1/cmr/bx/n/10 De-fi-ni-zio-ne[] \T1/cmr/m/n/10 Una fun-zio-ne $\OML/cmm
+/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 
+è con-ti-nua in $\OML/cmm/m/it/10 x[]$\T1/cmr/m/n/10 , se: $\OML/cmm/m/it/10 l[
+] \OT1/cmr/m/n/10 = [][] = [][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/i
+t/10 x\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 l[] \OT1/cmr/m/n/10 = [][] \OML/cmm/
+m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) =
+ []
+
+[40] [41]
+>>>>>>> Stashed changes
 File: img/funzione valore assoluto.pdf Graphic file (type pdf)
 <use img/funzione valore assoluto.pdf>
 Package pdftex.def Info: img/funzione valore assoluto.pdf  used on input line 9
@@ -2144,7 +2278,11 @@ Package pdftex.def Info: img/funzione valore assoluto.pdf  used on input line 9
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/esempio punto angoloso.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/esempio punto angoloso.pdf, id=1119, 1382.16376pt x 1008.76875pt>
+=======
+<img/esempio punto angoloso.pdf, id=1085, 1382.16376pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/esempio punto angoloso.pdf Graphic file (type pdf)
 <use img/esempio punto angoloso.pdf>
 Package pdftex.def Info: img/esempio punto angoloso.pdf  used on input line 911
@@ -2154,20 +2292,33 @@ Package pdftex.def Info: img/esempio punto angoloso.pdf  used on input line 911
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/esempio punto cuspide.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< Updated upstream
 <img/esempio punto cuspide.pdf, id=1120, 1529.715pt x 1008.76875pt>
+=======
+<img/esempio punto cuspide.pdf, id=1086, 1529.715pt x 1008.76875pt>
+>>>>>>> Stashed changes
 File: img/esempio punto cuspide.pdf Graphic file (type pdf)
 <use img/esempio punto cuspide.pdf>
 Package pdftex.def Info: img/esempio punto cuspide.pdf  used on input line 923.
 
 (pdftex.def)             Requested size: 345.15137pt x 227.62204pt.
+<<<<<<< Updated upstream
 [43] [44 <./img/esempio punto angoloso.pdf> <./img/esempio punto cuspide.pdf>]
 Overfull \hbox (12.04529pt too wide) in paragraph at lines 964--969
+=======
+[42 <./img/esempio punto angoloso.pdf>] [43 <./img/esempio punto cuspide.pdf>]
+Overfull \hbox (12.04529pt too wide) in paragraph at lines 916--921
+>>>>>>> Stashed changes
 \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [][]
  [] = [][] [] = [] = [][] [] +
  []
 
 
+<<<<<<< Updated upstream
 Overfull \hbox (1.72758pt too wide) in paragraph at lines 1010--1015
+=======
+Overfull \hbox (1.72758pt too wide) in paragraph at lines 962--967
+>>>>>>> Stashed changes
 \T1/cmr/m/n/10 Dimostrazione. Se $\OML/cmm/m/it/10 h \OMS/cmsy/m/n/10 6\OT1/cmr
 /m/n/10 = 0$ \T1/cmr/m/n/10 si ha $[][] [] \OT1/cmr/m/n/10 = [][] [] \OMS/cmsy/
 m/n/10 ^^C [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m
@@ -2175,7 +2326,11 @@ m/n/10 ^^C [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m
 ^^C
  []
 
+<<<<<<< Updated upstream
 [45] [46] [47] [48] [49]) (./pag/Studio di funzione p2.tex [50]
+=======
+[44] [45] [46] [47]) (./pag/Studio di funzione p2.tex [48]
+>>>>>>> Stashed changes
 Overfull \hbox (29.07301pt too wide) in paragraph at lines 73--80
 \T1/cmtt/m/n/10 Il teorema è valido anche per $\OML/cmm/m/it/10 x \OMS/cmsy/m/n
 /10 ! \OML/cmm/m/it/10 x[]$ \T1/cmtt/m/n/10 o $\OML/cmm/m/it/10 x \OMS/cmsy/m/n
@@ -2183,7 +2338,11 @@ Overfull \hbox (29.07301pt too wide) in paragraph at lines 73--80
 /m/n/10 ! ^^F1$ \T1/cmtt/m/n/10 (f e g derivabili in intervalli
  []
 
+<<<<<<< Updated upstream
 [51] [52] [53] [54]
+=======
+[49] [50] [51] [52] [53]
+>>>>>>> Stashed changes
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 293.
@@ -2218,19 +2377,33 @@ Overfull \hbox (6.66504pt too wide) in paragraph at lines 381--381
  []
 
 
+<<<<<<< Updated upstream
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56]
+=======
+>>>>>>> Stashed changes
 Overfull \hbox (6.66504pt too wide) in paragraph at lines 381--381
 [] 
  []
 
+<<<<<<< Updated upstream
 [57]
+=======
+[55]
+>>>>>>> Stashed changes
 Underfull \hbox (badness 10000) in paragraph at lines 429--432
 
  []
 
+<<<<<<< Updated upstream
 [58] [59] [60]
+=======
+[56] [57] [58]
+Underfull \vbox (badness 7540) has occurred while \output is active []
+
+ [59]
+>>>>>>> Stashed changes
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [61]
@@ -2239,12 +2412,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 672--677
  []
 
 
-Underfull \vbox (badness 2799) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+<<<<<<< Updated upstream
  [62]
 Underfull \vbox (badness 3058) has occurred while \output is active []
 
  [63]
+=======
+ [61]
+[62]
+>>>>>>> Stashed changes
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [64]
@@ -2253,21 +2431,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Warning: Command \` invalid in math mode on input line 870.
 
 Missing character: There is no è in font cmr10!
+<<<<<<< Updated upstream
 [66] [67] [68]) (./pag/Studio di funzione p3.tex
+=======
+[65] [66]) (./pag/Studio di funzione p3.tex
+>>>>>>> Stashed changes
 LaTeX Font Info:    Trying to load font information for U+euf on input line 11.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+<<<<<<< Updated upstream
 ) [69]
 Underfull \vbox (badness 1460) has occurred while \output is active []
 
  [70]
 [71]
+=======
+) [67] [68] [69] [70]
+>>>>>>> Stashed changes
 Overfull \hbox (44.9247pt too wide) in alignment at lines 210--242
  [][][] []
  []
 
+<<<<<<< Updated upstream
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2275,8 +2462,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [73]) (./pag/successioni nuneriche.tex [74]
 Capitolo 3.
 [75
+=======
+) (./pag/esercizi.tex) (./pag/successioni nuneriche.tex [71] [72
+>>>>>>> Stashed changes
 
 ]
+Capitolo 3.
+[73]
 Underfull \vbox (badness 2556) has occurred while \output is active []
 
  [76])
@@ -2290,10 +2482,17 @@ Package rerunfilecheck Info: File `mat.out' has not changed.
 (rerunfilecheck)             Checksum: 78C7159C64B6666886409B714C90DA4F;23397.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< Updated upstream
  56303 strings out of 478353
  1368905 string characters out of 5854636
  2170220 words of memory out of 5000000
  72986 multiletter control sequences out of 15000+600000
+=======
+ 56287 strings out of 478353
+ 1368529 string characters out of 5854636
+ 2170220 words of memory out of 5000000
+ 72979 multiletter control sequences out of 15000+600000
+>>>>>>> Stashed changes
  432268 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,14n,89p,868b,764s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2329,10 +2528,19 @@ xmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts/
 type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm
 -super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200
 .pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt2488.pfb>
+<<<<<<< Updated upstream
 Output written on mat.pdf (78 pages, 1333011 bytes).
 PDF statistics:
  1726 PDF objects out of 1728 (max. 8388607)
  1512 compressed objects within 16 object streams
  536 named destinations out of 1000 (max. 500000)
  1122 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+Output written on mat.pdf (76 pages, 1313656 bytes).
+PDF statistics:
+ 1679 PDF objects out of 1728 (max. 8388607)
+ 1475 compressed objects within 15 object streams
+ 525 named destinations out of 1000 (max. 500000)
+ 1109 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> Stashed changes
 
