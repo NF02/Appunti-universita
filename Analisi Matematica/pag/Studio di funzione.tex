@@ -674,13 +674,7 @@ $\Rightarrow$\begin{tabular}{|l|}
 \subsection{Infinitesimi e infiniti}
 \paragraph{Definizione}
 Una funzione $f(x)$ su dice \underline{infinitesima} per $x\to x_0$ (per $x\to \infty$), $x_0$ punto di accumulazione per il dominio di $f(x)$, se: $\lim_{x\to x_0}f(x)=0$ (oppure $lim_{x\to \infty}f(x)=0$).
-\subsubsection{Esempi}
-\begin{itemize}
-	\item $y=e^x$ è un infinitesimo per $x\to -\infty$
-	\item $y=\ln{x}$ è un infinitesimo per $x\to 1$
-	\item $y=\sin{x}$ è un infinitesimo per $x\to 0$ (ma anche per $x\to \pi,2\pi$, etc.)
-	\item $y=\ln{1+x}$ è un infinitesimo per $x\to 1$ 
-\end{itemize}
+
 \subsubsection{Ordine di infinitesimo}
 Siano $f(x)$ e $g(x)$ infinitesimi per $x\to{x_0}$ (o per $x\to \infty$), con $g(x)\neq 0$. Se $\exists\alpha R+$ e $l\in R$, $l\neq 0$ tale che\\
 $\lim_{x\to{x_0}}=\frac{f(x)}{[g(x)]^\alpha}=l$ (oppure $\lim_{x\to{\infty}}=\frac{f(x)}{[g(x)]^\alpha}=l$)\\
@@ -694,15 +688,17 @@ Allora, si dice che per $x\to x_0$ (o per $x\to \infty$), $f(x)$ è un infinites
 	\item La moltiplicazione somma gli ordini
 \end{itemize}
 \subsubsection{Confronto tra infinitesimi}
-Siano $f(x)$ e $g(x)$ infinitesime per $x\to x_{0}$,\\
-$\lim_{x\to x_0}\frac{f(x)}{g(x)}=
-\begin{cases}
-l\neq 0&ord(f)=ord(g)\\
-\pm \infty&ord(f)<ord(g)\\
-0&ord(f)>ord(g)\\
-	\text{non esiste,} & \text{f e g non confrontabile} \\ 
-\end{cases}
-$\\
+Siano $f(x)$ e $g(x)$ infinitesime per $x\to x_{0}$,
+\begin{equation}\label{Confronto tra infinitesimi}
+	\lim_{x\to x_0}\frac{f(x)}{g(x)}=
+	\begin{cases}
+		l\neq 0&ord(f)=ord(g)\\
+		\pm \infty&ord(f)<ord(g)\\
+		0&ord(f)>ord(g)\\
+		\text{non esiste,} & \text{f e g non confrontabile} \\ 
+	\end{cases}	
+\end{equation}
+
 Stesso risultato se $f(x)$ e $g(x)$ sono infinitesime per $x\to \infty$. Utilizzando il confronto tra infinitesimi nel calcolo dei limiti del tipo $\lim_{x\to x_0}\frac{f_1+f_2}{g_1+g_2}$, dove $f_1,f_2,g_1,g_2$ sono funzioni infinitesime per $x\to x_0$, si possono {\color{blue} \em trascurare gli infinitesimi di ordine maggiore} (analogo discorso per funzioni infinitesime $x\to \infty$).
 \subparagraph{esempio}
 $\lim_{x\to 0}\frac{x^2+x^3+2\tan{x}}{(e^x-1)^2+\sin{x}}=\lim_{x\to 0}\frac{2\tan x}{\sin x}=2$
@@ -733,7 +729,53 @@ Siano $f(x)=o(x^\alpha)$ (si legge <<o piccolo di>>) e $g(x)=o(x^\beta)$ due fun
 	\item $f(x)g(x)=o(x^{\alpha+\beta})$
 	\item $f(x)+g(x)=o(x^y)$, $\gamma=\min(\alpha,\beta)$
 \end{itemize}
-\paragraph{Ordine di infinito}
+\subsubsection{Esempi}
+\begin{itemize}
+	\item $y=e^x$ è un infinitesimo per $x\to -\infty$
+	\item $y=\ln{x}$ è un infinitesimo per $x\to 1$
+	\item $y=\sin{x}$ è un infinitesimo per $x\to 0$ (ma anche per $x\to \pi,2\pi$, etc.)
+	\item $y=\ln{1+x}$ è un infinitesimo per $x\to 1$ 
+\end{itemize}
+\subsection*{definizione di infinitesimo}
+$f(x)$ è un infinitesimo di ordine $\alpha$ se:
+\begin{equation*}
+	\lim_{x\to0}\frac{f(x)}{x^\alpha}=l
+\end{equation*}
+$x^\alpha$ = infinitesimo campione.
+\subparagraph*{Esempio}
+\begin{equation*}
+	f(x)=\arcsin x^2 \text{ è un infinitesimo di ordine 2 perché}
+\end{equation*}
+\begin{equation*}
+	\lim_{x\to 0}\frac{\arcsin x^2}{x^2}=\lim_{x\to 0}\frac{\frac{1}{1+x^4}*\not{2x}}{\not{2x}}=1
+\end{equation*}
+\subparagraph*{Esercizio}
+\begin{equation*}
+	\lim_{x\to 0}\left[ \frac{\sin x +\arctan x^2+\ln\left(1+x^3\right)}{2x+\sin^2x}\right] =\frac{0}{0}
+\end{equation*}
+\textbf{Come si svolge?}
+\begin{itemize}
+	\item $\arctan x^2$ infinitesimo di ordine 2
+	\item $\ln \left(1+x^3\right)$ infinitesimo di ordine 3
+	\item $\sin^2 x$ infinitesimo di ordine 2
+\end{itemize}
+Si ha
+\begin{equation*}
+	\lim_{x\to 0}\left[ \frac{\sin x}{x}*\frac{1}{2}\right]=\frac{1}{2}
+\end{equation*}
+\subsubsection*{Esercizio dimostrativo}
+Dimostra che $\ln\left(1+x^2\right)$ è un infinitesimo di ordine 2:
+\begin{equation*}
+	\lim_{x\to 0}\frac{\ln\left(1+x^2\right)}{x^2}=\frac{\frac{1}{1+x^2}*\not{2x}}{\not{2x}}=1
+\end{equation*}
+\subsubsection{Ordine di infinito}
+\begin{figure}[!ht]
+	\centering
+	\begin{tikzpicture}
+		\node[] (pic) at (0,0) {\includegraphics[height=8cm]{img/ordine di infiniti.pdf}};
+	\end{tikzpicture}
+	\caption{Ordine di infiniti}
+\end{figure}
 Siamo $f(x)$ e $g(x)$ infiniti per $x\to x_0$ (o per $x$), con $g\neq 0$. Se $\exists\alpha\in R+$ e $l\in R$, $l\neq 0$ tale che\\
 $\lim_{x\to x_0}\frac{f(x)}{[g(x)]^2}=l$ (o $\lim_{x\to \infty}\frac{f(x)}{[g(x)]^\alpha}=l$)\\
 Allora, per $x\to x_0$ (o per $x\to \infty$), $f(x)$ è un infinito di ordine $\alpha$ rispetto all'infinito compone $g(x)$.
@@ -743,22 +785,26 @@ Allora, per $x\to x_0$ (o per $x\to \infty$), $f(x)$ è un infinito di ordine $\
 	\item $ord(\frac{1}{\sin x})=1$ rispetto ad $\frac{1}{x}$ per $x\to 0$
 	\item $ord(\frac{1}{e^x-1})=1$ rispetto ad $\frac{1}{x}$ per $x\to 0$
 \end{itemize}
-\subparagraph{Cofronto tra infiniti}
-Siamo $f(x)$ e $g(x)$ infiniti per $x\to x_0$\\
-$\lim_{x\to x_0}\frac{f(x)}{g(x)}=\begin{cases}
-l\neq 0&ord(f)=ord(g)\\
-\pm \infty&ord(f)>ord(g)\\
-0&ord(f)<ord(g)\\
-	\text{non esiste,} & \text{f e g non confrontabile} \\ 
-\end{cases}
-$\\
+\subparagraph{Confronto tra infiniti}
+Siamo $f(x)$ e $g(x)$ infiniti per $x\to x_0$
+\begin{equation*}
+	\lim_{x\to x_0}\frac{f(x)}{g(x)}=\begin{cases}
+		l\neq 0&ord(f)=ord(g)\\
+		\pm \infty&ord(f)>ord(g)\\
+		0&ord(f)<ord(g)\\
+		\text{non esiste,} & \text{f e g non confrontabile} \\ 
+	\end{cases}	
+\end{equation*}
+
 Stesso risultato se $f(x)$ e $g(x)$ sono infinite per $x \to \infty$. Utilizzando il confronto tra infiniti nel calcolo dei limiti del tipo $\lim_{x\to x_0}\frac{f_1+f_2}{g_1+g_2}$, deve $f_1,f_2,g_1,g_2$ sono funzioni infinite per $x\to x_0$, si possono {\color{red}trascurare gli \underline{infiniti} di ordine minore} (analogo discorso per funzione infinito $x\to \infty$).
 \subparagraph{Esempio}
 $\lim_{x\to +\infty}\frac{x^2+x^3+3\sqrt{x}}{x^2(2x-1)+\sqrt{3x}}=\lim_{x\to +\infty}\frac{x^3}{2x^3}=\frac{1}{2}$.
 \paragraph{Gerarchia degli infiniti}
-Per $x\to +\infty$ si ha $(\log_\alpha x)^\alpha<<x^\beta<<b^x$, con $\alpha,\beta>0,a,b>1$ Non sempre è possibile calcolare l'ordine di infinito (o di infinitesimo) rispetto alla funzione campione usuale.\\
+Per $x\to +\infty$ si ha $(\log_\alpha x)^\alpha<<x^\beta<<b^x$, con $\alpha,\beta>0,a,b>1$ Non sempre è possibile calcolare l'ordine di infinito (o di infinitesimo) rispetto alla funzione campione usuale.
 \subparagraph{Esempio}
-$\lim_{x\to +\infty}\frac{a^x}{x^a}=+\infty, \forall \alpha>0, a>1$, $\lim_{x\to +\infty}\frac{(\log_a x)^\beta}{x^a}=+\infty, \forall \alpha, \beta>0, a>1$
+\begin{equation}\label{Esempio di gerarchia degli infiniti}
+	\lim_{x\to +\infty}\frac{a^x}{x^a}=+\infty, \forall \alpha>0, a>1, \lim_{x\to +\infty}\frac{(\log_a x)^\beta}{x^a}=+\infty, \forall \alpha, \beta>0, a>1	
+\end{equation}
 \subparagraph{Regole aritmetiche}
 Siano $f(x)$ e $g(x)$ due funzioni \emph{infinite} di ordine rispettivamente $\alpha$ e $\beta$. Allora si ha
 \begin{itemize}
@@ -799,7 +845,7 @@ considerando il triangolo ABC possiamo scrivere $f(x+h)-f(x_0) = \tan\beta
 [x_0+h-x_0]$ Ossia: $\tan\beta=\frac{f(x_0+h)-f(x_0)}{h}$
 % possibile grafico
 Ma $m=\frac{f(x_0+h)-f(x_0)}{h}$ È il coefficiente angolare della retta
-\textit{f} passante per AB\\
+\textit{f} passante per \textbf{AB}\\
 Per cui $\tan\beta=m$
 % possibile grafico
 Ossia $\tan \beta$ è il coefficiente angolare della retta secante per AB\\

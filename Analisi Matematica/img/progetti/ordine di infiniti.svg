@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 1122.5197 793.7008"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   sodipodi:docname="ordine di infiniti.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.60756173"
+     inkscape:cx="397.49047"
+     inkscape:cy="541.50876"
+     inkscape:window-width="1920"
+     inkscape:window-height="1022"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="776.54789"
+       y="551.57718"
+       width="246.34843"
+       height="112.26354"
+       id="rect24307" />
+    <rect
+       x="455.19423"
+       y="331.4478"
+       width="221.78816"
+       height="67.868618"
+       id="rect13506" />
+  </defs>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.35246px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 58.94463,117.06527 h 317.9729 V 412.30979 H 732.39238 V 700.0135 h 301.82612"
+       id="path42" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:71.3291px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.78323"
+       x="172.5442"
+       y="98.283257"
+       id="text2854"
+       transform="scale(1.038083,0.9633141)"><tspan
+         sodipodi:role="line"
+         id="tspan2852"
+         x="172.5442"
+         y="98.283257"
+         style="stroke-width:1.78323">e<tspan
+   style="font-size:46.3639px;baseline-shift:super;stroke-width:1.78323"
+   id="tspan9062">x</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text13504"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect13506);fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(2.2018889,0,0,2.0767536,-494.16779,-379.74993)"><tspan
+         x="455.19336"
+         y="366.83789"
+         id="tspan30448">x<tspan
+   style="font-size:65%;baseline-shift:super"
+   id="tspan30446">α</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text24305"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect24307);fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(1.8391204,0,0,1.8391204,-587.55537,-413.49455)"><tspan
+         x="776.54883"
+         y="586.96875"
+         id="tspan30452">ln<tspan
+   style="font-style:italic"
+   id="tspan30450">x</tspan></tspan></text>
+  </g>
+</svg>
