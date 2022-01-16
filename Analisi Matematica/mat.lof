@@ -33,7 +33,11 @@
 \contentsline {figure}{\numberline {2.28}{\ignorespaces Asintoto orizzontale\relax }}{34}{figure.caption.82}%
 \contentsline {figure}{\numberline {2.29}{\ignorespaces Esempio di limite notevole di una funzione\relax }}{38}{figure.caption.92}%
 \contentsline {figure}{\numberline {2.30}{\ignorespaces Ordine di infiniti\relax }}{41}{figure.caption.105}%
-\contentsline {figure}{\numberline {2.31}{\ignorespaces Grafico di Funzione valore assoluto $y=|x|$ e quindi $f^,_+(0)=1\neq f^,_+=-1$\relax }}{44}{figure.caption.123}%
-\contentsline {figure}{\numberline {2.32}{\ignorespaces Grafico di Funzione $x=|x^2-1|$\relax }}{44}{figure.caption.125}%
-\contentsline {figure}{\numberline {2.33}{\ignorespaces Grafico di Funzione $f(x)=\frac {\left (x-3\right )^{\frac {2}{3}}}{2}$\relax }}{45}{figure.caption.126}%
+\contentsline {figure}{\numberline {2.31}{\ignorespaces $\frac {\Delta f}{\Delta x} =\frac {f(x_0+h)+f(x_0)}{h}=\qopname \relax o{tan}\beta $\relax }}{43}{figure.caption.119}%
+\contentsline {figure}{\numberline {2.32}{\ignorespaces $\qopname \relax o{tan}\beta =\frac {f(x_0+h)-f(x_0)}{h}$\relax }}{43}{figure.caption.120}%
+\contentsline {figure}{\numberline {2.33}{\ignorespaces $\qopname \relax o{tan}\beta =m$\relax }}{44}{figure.caption.121}%
+\contentsline {figure}{\numberline {2.34}{\ignorespaces $\qopname \relax m{lim}\limits _{h\to 0}\frac {f(x_0+h)-f(x_0)}{h}=f^\prime (x_0)=\qopname \relax o{tan}\alpha $\relax }}{44}{figure.caption.122}%
+\contentsline {figure}{\numberline {2.35}{\ignorespaces Grafico di Funzione valore assoluto $y=|x|$ e quindi $f^,_+(0)=1\neq f^,_+=-1$\relax }}{46}{figure.caption.127}%
+\contentsline {figure}{\numberline {2.36}{\ignorespaces Grafico di Funzione $x=|x^2-1|$\relax }}{46}{figure.caption.129}%
+\contentsline {figure}{\numberline {2.37}{\ignorespaces Grafico di Funzione $f(x)=\frac {\left (x-3\right )^{\frac {2}{3}}}{2}$\relax }}{47}{figure.caption.130}%
 \addvspace {10\p@ }
