@@ -15,5 +15,6 @@
 \contentsline {subsubsection}{Soluzione}{15}{subsubsection*.8}%
 \contentsline {subsection}{\numberline {2.1.4}Esercitazione 4}{15}{subsection.2.1.4}%
 \contentsline {subsubsection}{Soluzione}{16}{subsubsection*.9}%
-\contentsline {chapter}{\numberline {3}Modelli atomici}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Modello atomico di Bohr-Sommerfeld}{17}{section.3.1}%
+\contentsline {subsection}{\numberline {2.1.5}Esercitazione 5}{16}{subsection.2.1.5}%
+\contentsline {chapter}{\numberline {3}Modelli atomici}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Modello atomico di Bohr-Sommerfeld}{19}{section.3.1}%
