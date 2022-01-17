@@ -1221,34 +1221,27 @@ Il teorema di Rolle non è applicabile perché $f(x)=\ln|x|$ non è definita in
 $x=0$, quindi non è né continua né definita in $x=0$ e perciò non soddisfa
 tutte le ipotesi del teorema.
 \section{Teorema di Lagrange ({\em o del valor medio})}
-Sia $f:[a,b]\to R$.
+\begin{figure}[!ht]
+	\centering
+	\begin{tikzpicture}
+		\node[] (pic) at (0,0) {\includegraphics[height=6cm]{img/grafico
+		dimostrativo di lagrange.pdf}};
+	\end{tikzpicture}
+	\caption{Grafico dimostrativo del teorema di Lagrange}
+\end{figure}
+
+Sia $f:[a,b]\to R$. Per applicare il teorema devono essere rispettati i
+seguenti punti:
 \begin{enumerate}
-	\item \textit{f è continua in $[a,b]$},
-	\item \textit{f è derivabile in $(a,b)$},
+	\item {\em La funzione deve essere continua in $\left[a,b\right]$;}
+	\item {\em La funzione deve essere derivabile in $\left(a,b\right)$;}
+	\item {\em La retta C deve tangere la funzione almeno una volta.}
 \end{enumerate}
 Allora $\forall x_0\in(a,b):f^\prime (x_0)=\frac{f(b)-f(a)}{b-a}$\\
 \textit{Per il Teorema di Lagrange $\exists$ almeno un punto ($x_0,f(x_0)$) sul
 grafico di f(x) in cui la retta tangente \textbf{t} è parallela alla retta
 \textbf{r} secante la curva in $(a,f(a))$ e $b,f(b)$}.
-\subsection{Dimostrazione}
-Si considera la funzione ausiliaria 
-\begin{center}
-	$g(x)=f(x)-[\overset{\text{equazione di
-	r}}{f(a)+\frac{f(b)-f(a)}{b-a}(x-a)}]$
-\end{center}
-Per g(x) vale il Teorema di Rolle, infatti:
-\begin{enumerate}
-	\item \textit{g(x) è continua in $[a,b]$ perché lo è f(x) (l'altro pezzo è
-		lineare)};
-	\item \textit{g(x) è derivabile in $(a,b)$ perché f(x) (l'altro pezzo è
-		lineare)};
-	\item $g(a)=g(b)=0$.
-\end{enumerate}
-\begin{itemize}
-	\item $\Rightarrow x_0:g^\prime (x)=0$
-	\item $g^\prime (x_0)=f^\prime(x_0)-\frac{f(b)-f(a)}{b-a}=0$
-	\item $\Rightarrow f^\prime(x_0)=\frac{f(b)-f(a)}{b-a}$
-\end{itemize}
+
 \subsection{Esempio}
 $f(x)=x^2 \text{ in } [a,b]$, per il Teorema di Lagrange $\forall x_0 \in
 [a,b]$:
