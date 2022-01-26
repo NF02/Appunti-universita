@@ -1,47 +1,47 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Grafico di insieme di \textit {f}=$x^2,g(x)=3x+2$\relax }}{18}{figure.caption.32}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Grafico di insieme di \textit {f}=$x^2,g(x)=3x+2$\relax }}{14}{figure.caption.32}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Grafico di Funzione lineare $y=mx+qm, q\in R$\relax }}{19}{figure.caption.37}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Grafico di Funzione valore assoluto $y=|x|$\relax }}{20}{figure.caption.38}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Grafico di Funzione potenza $y=x^n,n\in N, pari$\relax }}{20}{figure.caption.39}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Grafico di Funzione potenza $y=x^\alpha ,\alpha \in R$ (\textit {ma non razionale})\relax }}{21}{figure.caption.40}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Grafico di Funzione potenza $y=x^\alpha ,\alpha \in R$ (\textit {ma non razionale})\relax }}{21}{figure.caption.41}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Funzione logaritmo $y=\qopname \relax o{log}_a{x}$\relax }}{22}{figure.caption.42}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Le coniche: la circonferenza\relax }}{22}{figure.caption.43}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Le coniche: l'ellisse\relax }}{23}{figure.caption.44}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Le coniche: iperbole\relax }}{23}{figure.caption.45}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Le coniche: iperbole equilattera\relax }}{24}{figure.caption.46}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Le coniche: parabola\relax }}{24}{figure.caption.47}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Le funzioni trigonometriche\relax }}{25}{figure.caption.48}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Funzione $\qopname \relax o{sin}x$\relax }}{25}{figure.caption.50}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Funzione $\qopname \relax o{cos}x$\relax }}{26}{figure.caption.52}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Funzione $\qopname \relax o{tan}x$\relax }}{26}{figure.caption.54}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Funzione $\qopname \relax o{cot}x$\relax }}{27}{figure.caption.56}%
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Funzione $\qopname \relax o{arcsin}x$\relax }}{27}{figure.caption.58}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Funzione $\qopname \relax o{arccos}x$\relax }}{28}{figure.caption.60}%
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Funzione $\qopname \relax o{arctan}x$\relax }}{28}{figure.caption.62}%
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Operazione sul grafico: traslazione della asse X\relax }}{29}{figure.caption.64}%
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Operazione sul grafico: traslazione della asse Y\relax }}{29}{figure.caption.66}%
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Operazione sul grafico: contrazione e dilatazione in direzione verticale\relax }}{30}{figure.caption.68}%
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Operazione sul grafico: contrazione e dilatazione in direzione orizzontale\relax }}{30}{figure.caption.70}%
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Operazione sul grafico: $y=|f(x)|$\relax }}{31}{figure.caption.72}%
-\contentsline {figure}{\numberline {2.25}{\ignorespaces Esempio limite di funzione\relax }}{31}{figure.caption.73}%
-\contentsline {figure}{\numberline {2.26}{\ignorespaces Esempio di limite di una funzione\relax }}{32}{figure.caption.74}%
-\contentsline {figure}{\numberline {2.27}{\ignorespaces Asintoto verticale\relax }}{33}{figure.caption.80}%
-\contentsline {figure}{\numberline {2.28}{\ignorespaces Asintoto orizzontale\relax }}{34}{figure.caption.82}%
-\contentsline {figure}{\numberline {2.29}{\ignorespaces Esempio di limite notevole di una funzione\relax }}{38}{figure.caption.92}%
-\contentsline {figure}{\numberline {2.30}{\ignorespaces Ordine di infiniti\relax }}{41}{figure.caption.105}%
-\contentsline {figure}{\numberline {2.31}{\ignorespaces $\frac {\Delta f}{\Delta x} =\frac {f(x_0+h)+f(x_0)}{h}=\qopname \relax o{tan}\beta $\relax }}{43}{figure.caption.119}%
-\contentsline {figure}{\numberline {2.32}{\ignorespaces $\qopname \relax o{tan}\beta =\frac {f(x_0+h)-f(x_0)}{h}$\relax }}{43}{figure.caption.120}%
-\contentsline {figure}{\numberline {2.33}{\ignorespaces $\qopname \relax o{tan}\beta =m$\relax }}{44}{figure.caption.121}%
-\contentsline {figure}{\numberline {2.34}{\ignorespaces $\qopname \relax m{lim}\limits _{h\to 0}\frac {f(x_0+h)-f(x_0)}{h}=f^\prime (x_0)=\qopname \relax o{tan}\alpha $\relax }}{44}{figure.caption.122}%
-\contentsline {figure}{\numberline {2.35}{\ignorespaces Grafico di Funzione lineare $y=mx+qm, q\in R$\relax }}{46}{figure.caption.128}%
-\contentsline {figure}{\numberline {2.36}{\ignorespaces Grafico di Funzione valore assoluto $y=|x|$ e quindi $f^,_+(0)=1\neq f^,_+=-1$\relax }}{47}{figure.caption.133}%
-\contentsline {figure}{\numberline {2.37}{\ignorespaces Grafico di Funzione $x=|x^2-1|$\relax }}{47}{figure.caption.135}%
-\contentsline {figure}{\numberline {2.38}{\ignorespaces Grafico di Funzione $f(x)=\frac {\left (x-3\right )^{\frac {2}{3}}}{2}$\relax }}{48}{figure.caption.136}%
-\contentsline {figure}{\numberline {2.39}{\ignorespaces Grafico dimostrativo del teorema di Lagrange\relax }}{52}{figure.caption.148}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Grafico di Funzione lineare $y=mx+qm, q\in R$\relax }}{15}{figure.caption.37}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Grafico di Funzione valore assoluto $y=|x|$\relax }}{16}{figure.caption.38}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Grafico di Funzione potenza $y=x^n,n\in N, pari$\relax }}{16}{figure.caption.39}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Grafico di Funzione potenza $y=x^\alpha ,\alpha \in R$ (\textit {ma non razionale})\relax }}{17}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Grafico di Funzione potenza $y=x^\alpha ,\alpha \in R$ (\textit {ma non razionale})\relax }}{17}{figure.caption.41}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Funzione logaritmo $y=\qopname \relax o{log}_a{x}$\relax }}{18}{figure.caption.42}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Le coniche: la circonferenza\relax }}{18}{figure.caption.43}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Le coniche: l'ellisse\relax }}{19}{figure.caption.44}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Le coniche: iperbole\relax }}{19}{figure.caption.45}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Le coniche: iperbole equilattera\relax }}{20}{figure.caption.46}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Le coniche: parabola\relax }}{20}{figure.caption.47}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Le funzioni trigonometriche\relax }}{21}{figure.caption.48}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Funzione $\qopname \relax o{sin}x$\relax }}{21}{figure.caption.50}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Funzione $\qopname \relax o{cos}x$\relax }}{22}{figure.caption.52}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Funzione $\qopname \relax o{tan}x$\relax }}{22}{figure.caption.54}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Funzione $\qopname \relax o{cot}x$\relax }}{23}{figure.caption.56}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Funzione $\qopname \relax o{arcsin}x$\relax }}{23}{figure.caption.58}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Funzione $\qopname \relax o{arccos}x$\relax }}{24}{figure.caption.60}%
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Funzione $\qopname \relax o{arctan}x$\relax }}{24}{figure.caption.62}%
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Operazione sul grafico: traslazione della asse X\relax }}{25}{figure.caption.64}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Operazione sul grafico: traslazione della asse Y\relax }}{25}{figure.caption.66}%
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Operazione sul grafico: contrazione e dilatazione in direzione verticale\relax }}{26}{figure.caption.68}%
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Operazione sul grafico: contrazione e dilatazione in direzione orizzontale\relax }}{26}{figure.caption.70}%
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Operazione sul grafico: $y=|f(x)|$\relax }}{27}{figure.caption.72}%
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Esempio limite di funzione\relax }}{27}{figure.caption.73}%
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Esempio di limite di una funzione\relax }}{28}{figure.caption.74}%
+\contentsline {figure}{\numberline {2.27}{\ignorespaces Asintoto verticale\relax }}{29}{figure.caption.80}%
+\contentsline {figure}{\numberline {2.28}{\ignorespaces Asintoto orizzontale\relax }}{30}{figure.caption.82}%
+\contentsline {figure}{\numberline {2.29}{\ignorespaces Esempio di limite notevole di una funzione\relax }}{34}{figure.caption.92}%
+\contentsline {figure}{\numberline {2.30}{\ignorespaces Ordine di infiniti\relax }}{37}{figure.caption.105}%
+\contentsline {figure}{\numberline {2.31}{\ignorespaces $\frac {\Delta f}{\Delta x} =\frac {f(x_0+h)+f(x_0)}{h}=\qopname \relax o{tan}\beta $\relax }}{39}{figure.caption.119}%
+\contentsline {figure}{\numberline {2.32}{\ignorespaces $\qopname \relax o{tan}\beta =\frac {f(x_0+h)-f(x_0)}{h}$\relax }}{39}{figure.caption.120}%
+\contentsline {figure}{\numberline {2.33}{\ignorespaces $\qopname \relax o{tan}\beta =m$\relax }}{40}{figure.caption.121}%
+\contentsline {figure}{\numberline {2.34}{\ignorespaces $\qopname \relax m{lim}\limits _{h\to 0}\frac {f(x_0+h)-f(x_0)}{h}=f^\prime (x_0)=\qopname \relax o{tan}\alpha $\relax }}{40}{figure.caption.122}%
+\contentsline {figure}{\numberline {2.35}{\ignorespaces Grafico di Funzione lineare $y=mx+qm, q\in R$\relax }}{42}{figure.caption.128}%
+\contentsline {figure}{\numberline {2.36}{\ignorespaces Grafico di Funzione valore assoluto $y=|x|$ e quindi $f^,_+(0)=1\neq f^,_+=-1$\relax }}{43}{figure.caption.133}%
+\contentsline {figure}{\numberline {2.37}{\ignorespaces Grafico di Funzione $x=|x^2-1|$\relax }}{43}{figure.caption.135}%
+\contentsline {figure}{\numberline {2.38}{\ignorespaces Grafico di Funzione $f(x)=\frac {\left (x-3\right )^{\frac {2}{3}}}{2}$\relax }}{44}{figure.caption.136}%
+\contentsline {figure}{\numberline {2.39}{\ignorespaces Grafico dimostrativo del teorema di Lagrange\relax }}{48}{figure.caption.148}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Grafico di Funzione $f(x)=\qopname \relax o{ln}\left (x-x^3\right )$\relax }}{85}{figure.caption.187}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Grafico di Funzione $f(x)=\qopname \relax o{ln}\left (x-x^3\right )$\relax }}{81}{figure.caption.187}%

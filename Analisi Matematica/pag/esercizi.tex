@@ -27,7 +27,7 @@ Da questo si evince che $ord\left[(1+x)^2-1\right]=1$, quindi è un infinitesimo
 \end{equation}
 \paragraph{Ipotesi:} $\lim\limits_{x\to0}\tan x$ è di ordine 1
 \begin{equation}
-	\lim_{x\to0}\frac{\tan x}{x}=\frac{
+	\lim_{x\to0}\frac{\tan x}{x}=\lim_{x\to0}\frac{\frac{1}{\cos^2x}*x-\tan x*1}{x^2}=\lim_{x\to0}\frac{\frac{x}{\cos^2x}-\tan x}{x^2}=\lim_{x\to0}\frac{\frac{x-\tan x \cos^2x}{\cos^2x}}{x^2}=\frac{x-\tan x \cos^2x}{\cos^2x}*x^2=
 \end{equation}
 
 \section{Studio di funzione}
@@ -59,7 +59,7 @@ Da questo si evince che $ord\left[(1+x)^2-1\right]=1$, quindi è un infinitesimo
 		\end{equation*}
 	\item comportamento agli estremi del dominio
 		\begin{equation*}
-			\lim_{x\to -\infty}\ln\left(x-x^3\right)=-\infty+infty
+			\lim_{x\to -\infty}\ln\left(x-x^3\right)=-\infty+\infty
 		\end{equation*}
 		in questo caso non può essere utilizzata la regola di De l'Hopital per risolvere la forma indeterminata, quindi il metodo più semplice è quello di mettere in evidenza la x e procedere.
 		
