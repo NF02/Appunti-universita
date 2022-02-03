@@ -273,3 +273,5 @@
 \contentsline {subsection}{\numberline {4.3.2}esercitazione 2}{89}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}esercitazione 3}{89}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}esercitazione 4}{90}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}esercitazione 5}{90}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}esercitazione 6}{90}{subsection.4.3.6}%

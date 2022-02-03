@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.8)  31 JAN 2022 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.8)  31 JAN 2022 19:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2436,12 +2436,18 @@ runsystem(makeindex mat.idx)...executed safely (allowed).
 
 (/home/nico/Documenti/GitHub/Appunti-universita/Analisi Matematica/mat.ind)
 (/home/nico/Documenti/GitHub/Appunti-universita/Analisi Matematica/mat.aux)
-Package rerunfilecheck Info: File `mat.out' has not changed.
-(rerunfilecheck)             Checksum: E290A8178E2D536A29911A991B75B7EE;25266.
+
+Package rerunfilecheck Warning: File `mat.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `mat.out':
+(rerunfilecheck)             Before: E290A8178E2D536A29911A991B75B7EE;25266
+(rerunfilecheck)             After:  BE74695D94F7E70BB2FF83403D6A3B24;25548.
  ) 
 Here is how much of TeX's memory you used:
- 56433 strings out of 478353
- 1374114 string characters out of 5854636
+ 56437 strings out of 478353
+ 1374176 string characters out of 5854636
  2170220 words of memory out of 5000000
  73044 multiletter control sequences out of 15000+600000
  432268 words of font info for 101 fonts, out of 8000000 for 9000
@@ -2480,10 +2486,10 @@ type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm
 -super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200
 .pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt2488.pfb>
 Output written on "/home/nico/Documenti/GitHub/Appunti-universita/Analisi Matem
-atica/mat.pdf" (90 pages, 1804288 bytes).
+atica/mat.pdf" (90 pages, 1804833 bytes).
 PDF statistics:
- 1909 PDF objects out of 2073 (max. 8388607)
- 1671 compressed objects within 17 object streams
- 594 named destinations out of 1000 (max. 500000)
+ 1914 PDF objects out of 2073 (max. 8388607)
+ 1676 compressed objects within 17 object streams
+ 598 named destinations out of 1000 (max. 500000)
  1261 words of extra memory for PDF output out of 10000 (max. 10000000)
 
