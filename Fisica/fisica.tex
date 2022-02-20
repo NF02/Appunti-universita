@@ -100,6 +100,20 @@
 \part{fisica 1}
 \input{pag/unita di misura.tex}
 \chapter{I moti}
+\section{Moto uniforme rettilineo}
+\begin{equation}
+	x=v*t+x_0
+\end{equation}
+Un punto \textit{P} si muove sull'asse \textit{y} con $v=4\frac{m}{s}$ e
+posizione iniziale $-6m$. Determina la legge del moto. Dopo quanto tempo
+$y=24m$. Quel è lo spazio percorso dopo 8 secondi.
+\begin{equation}
+	\begin{matrix}
+		y=v*t+y_0\\
+		\boxed{y=4*t-6}
+	\end{matrix}
+\end{equation}
+
 \section{moto rettilineo uniformemente accelerato}
 Moto rettilineo uniformemente accelerato. La definizione di moto rettilineo uniformemente accelerato è: il moto di un corpo con accelerazione costante lungo una traiettoria retta sempre nella stessa direzione e identico verso.
 \subsection{Esercitazione 1}
@@ -231,11 +245,9 @@ figura e la loro somma vettoriale è r. Trovare:
 	\caption{figura 1}
 \end{figure}
 \begin{multicols}{2}
+	Con questa formula ricavo il vettore \textbf{r}
 	\begin{equation*}
-		\overrightarrow{r}=(r_x,r_y)=r_x \hat{i}+r_y*\hat{i}=(a_x+b_x, a_y+b_y)
-	\end{equation*}
-	\begin{equation*}
-		|\overrightarrow{a}|=|\overrightarrow{b}|=12*7
+		|\overrightarrow{a}|=|\overrightarrow{b}|=12.7
 	\end{equation*}
 	\begin{equation*}
 		\alpha=28.2^o
@@ -244,15 +256,18 @@ figura e la loro somma vettoriale è r. Trovare:
 		\beta=115^o
 	\end{equation*}
 	\begin{equation*}
+		\overrightarrow{r}=(r_x,r_y)=r_x \hat{i}+r_y*\hat{i}=(a_x+b_x, a_y+b_y)
+	\end{equation*}
+	\begin{equation*}
 		\overrightarrow{r}=\overrightarrow{a}+\overrightarrow{b}
 	\end{equation*}
 \end{multicols}
 \begin{multicols}{2}
 	\begin{equation*}
-		a_x=|\bar{a}|\cos \alpha=12*7\cos 28.2^o=11.2
+		a_x=|\bar{a}|\cos \alpha=12.7\cos 28.2^o=11.2
 	\end{equation*}
 	\begin{equation*}
-		a_y=|\bar{a}|\sin \alpha=12*7\sin 28.2^o=6
+		a_y=|\bar{a}|\sin \alpha=12.7\sin 28.2^o=6
 	\end{equation*}
 	\begin{equation*}
 		\sigma=180^o-\alpha-\beta=46,8^o
@@ -270,9 +285,65 @@ figura e la loro somma vettoriale è r. Trovare:
 	\begin{equation*}
 		|\overrightarrow{r}|=\sqrt{r^2_x+r^2_y}=\sqrt{2.5^2+15.3^2}=15.5
 	\end{equation*}
+	\begin{equation*}
+		r_x=|\overrightarrow{r}|*\cos \delta
+	\end{equation*}
+	\begin{equation*}
+		r_x=|\overrightarrow{r}|*\cos \delta
+	\end{equation*}
+	\begin{equation*}
+		\cos \delta=\frac{r_x}{|\overrightarrow{r}|}
+	\end{equation*}
+	\begin{equation*}
+		\delta=\arccos\left(\frac{r_x}{\abs{\overrightarrow{r}}}\right)=80.7^o
+	\end{equation*}
+	\begin{equation*}
+		V_1=100km/h=\frac{100}{3.6}\frac{m}{s}=27.9m/s
+	\end{equation*}
+	\begin{equation*}
+		V_2=130km/h=36.1m/s
+	\end{equation*}
+	\begin{equation*}
+		\Delta t=3.0min=180s
+	\end{equation*}
+\subsection{Esercitazione 5}
+	\begin{equation*}
+		V_1=100km/h=\frac{100}{3.6}\frac{m}{3.6}\frac{m}{s}=27.8m/s
+	\end{equation*}
+	\begin{equation*}
+		V_2=100km/h=130km/h=36*1m/s
+	\end{equation*}
+	\begin{equation*}
+		\Delta t=3.0min=180s
+	\end{equation*}
+	\begin{equation*}
+		S(t)=S_0+vt
+	\end{equation*}
+	\begin{equation*}
+		\text{camion: } s_1(t)=S_0+r_1t \text{ } s_0=v_1*\Delta
+		t=27.8m/s*180s=5*10^3m
+	\end{equation*}
+	\begin{equation*}
+		\text{auto: } s_2(t)=v_2*t
+	\end{equation*}
+	\begin{equation*}
+		s_1(t_f)=s_2(t_f)
+	\end{equation*}
+\begin{multicols}{2}
+	\begin{equation*}
+		s_0+r_1t_f=v_2f_y
+	\end{equation*}
+	\begin{equation*}
+		s_1=v_2t_f-v_1t_f=t_f(v_2-v_1)
+	\end{equation*}
+	\begin{equation*}
+		\boxed{t_f=\frac{s_0}{v_2-v_1}}=\frac{5*10^3m}{(36.1-27.8)m/s}=602s=10min
+	\end{equation*}
+	\begin{equation*}
+		s_1(t_f)=s_0+v_1t_f=5*10^3m+27.8m/s*602s=21735m=22km
+	\end{equation*}
 
-
-
+\end{multicols}
 \chapter{Modelli atomici}
 \section{Modello atomico di Bohr-Sommerfeld}
 Il modello atomico proposto da Niels Bohr nel 1913, successivamente ampliato da Arnold Sommerfeld nel 1916, è la più famosa applicazione della quantizzazione dell'energia che, insieme alle spiegazioni teoriche sulla radiazione del corpo nero, sull'effetto fotoelettrico e sullo scattering Compton, e all'equazione di Schrödinger, costituiscono la base della meccanica quantistica.\\
