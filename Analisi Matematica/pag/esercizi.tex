@@ -190,14 +190,55 @@ Da questo si evince che $ord\left[(1+x)^2-1\right]=1$, quindi è un infinitesimo
 			=\frac{3}{5}\sqrt[3]{y^5}
 		\end{matrix}
 	\end{equation}
-\subsubsection{esercitazione 11}
+\subsection{esercitazione 11}
 	\begin{equation}
 		\begin{matrix}
-			\int \sqrt[3]{y^2}dy=\int
+			\int \sqrt[3]{y^2}\,dy=\int
 			y^{\frac{2}{3}}dy\\
 			=\frac{1}{\frac{2}{3}+1}y^{\frac{2}{3}+1}dy+C\\
 			=\frac{1}{\frac{5}{3}}y^{\frac{5}{3}}+C\\
 			=\frac{3}{5}\sqrt[3]{y^5}+C
+		\end{matrix}
+	\end{equation}
+\section{Integrali definiti}
+\subsection{Esercitazione 1}
+	\begin{equation}
+		\begin{matrix}
+			\int_{1}^{3} \frac{x+1}{x+2}\,dx\\
+			\left[x-\ln\abs{x+2}\right]_{1}^{3}\\
+			=[3-\ln 5]-[1-\ln 3]\\
+			=3-\ln 5-1+\ln 3\\
+			=2+\ln\frac{3}{5}
+		\end{matrix}
+	\end{equation}
+\subsection{Esercitazione 2}
+	\begin{equation}
+		\begin{matrix}
+			\int_{1}^{3} \frac{x+1}{x+2}\,dx\\
+			\int \frac{x+1+1-1{x+2}}\,dx\\
+			=\int \frac{(x+2)+1}{x+2}\,dx\\
+			=\int \frac{x+2}{x+2}\,dx-\int \frac{1}{x+2}\,dx\\
+			=\int 2\,dx-\int\frac{1}{x+2}\,dx\\
+			=x-\ln\abs{x+2}\\
+			\left[x-\ln\abs{x+2}\right]_{1}^{3}\\
+			=[3-\ln 5]-[1-\ln 3]\\
+			=3-\ln 5-1+\ln 3\\
+			=2+\ln\frac{3}{5}
+		\end{matrix}
+	\end{equation}
+\section{Equazioni differenziali}
+\subsection{Esercitazione 1}
+	\begin{equation}
+		\begin{matrix}
+			y^\prime=y*x\\
+			\frac{dy}{dx}=y*x\,dx\\
+			dy=y*xdx\\
+			\frac{dx}{y}=x*dx\\
+			\int\frac{1}{y}=\int x\,dx\\
+			\ln y=\frac{1}{2}x^2+C\\
+			y=e^{\frac{1}{2}x^2+C}\\
+			y=e^{\frac{1}{2}x^2}*e^c\\
+			y=k*e^{\frac{1}{2}x^2}
 		\end{matrix}
 	\end{equation}
 

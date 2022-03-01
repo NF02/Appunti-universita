@@ -1,20 +1,29 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
 \contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Simboli}{7}{section.0.2}%
 \contentsline {part}{I\hspace {1em}fisica 1}{9}{part.1}%
 \contentsline {chapter}{\numberline {1}Grandezze fisiche e unità di misura}{11}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Sistema internazionale delle unità di misura}{11}{section.1.1}%
 \contentsline {chapter}{\numberline {2}I moti}{13}{chapter.2}%
-\contentsline {section}{\numberline {2.1}moto rettilineo uniformemente accelerato}{13}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Esercitazione 1}{13}{subsection.2.1.1}%
-\contentsline {paragraph}{Forma ridotta}{14}{paragraph*.6}%
-\contentsline {subsection}{\numberline {2.1.2}Esercitazione 2}{14}{subsection.2.1.2}%
-\contentsline {subsubsection}{Soluzione}{14}{subsubsection*.7}%
-\contentsline {subsection}{\numberline {2.1.3}Esercitazione 3}{15}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.1}Moto uniforme rettilineo}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}moto rettilineo uniformemente accelerato}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Un esempio}{14}{subsection.2.2.1}%
+\contentsline {subsubsection}{soluzione}{14}{subsubsection*.6}%
+\contentsline {paragraph}{Verifica}{14}{paragraph*.7}%
+\contentsline {subsection}{\numberline {2.2.2}Un problema tipico}{14}{subsection.2.2.2}%
 \contentsline {subsubsection}{Soluzione}{15}{subsubsection*.8}%
-\contentsline {subsection}{\numberline {2.1.4}Esercitazione 4}{15}{subsection.2.1.4}%
-\contentsline {subsubsection}{Soluzione}{16}{subsubsection*.9}%
-\contentsline {subsection}{\numberline {2.1.5}Esercitazione 5}{16}{subsection.2.1.5}%
-\contentsline {chapter}{\numberline {3}Modelli atomici}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Modello atomico di Bohr-Sommerfeld}{19}{section.3.1}%
+\contentsline {subsection}{\numberline {2.2.3}Esercitazione 1}{15}{subsection.2.2.3}%
+\contentsline {paragraph}{Forma ridotta}{16}{paragraph*.9}%
+\contentsline {subsection}{\numberline {2.2.4}Esercitazione 2}{16}{subsection.2.2.4}%
+\contentsline {subsubsection}{Soluzione}{16}{subsubsection*.10}%
+\contentsline {subsection}{\numberline {2.2.5}Esercitazione 3}{17}{subsection.2.2.5}%
+\contentsline {subsubsection}{Soluzione}{17}{subsubsection*.11}%
+\contentsline {subsection}{\numberline {2.2.6}Esercitazione 4}{17}{subsection.2.2.6}%
+\contentsline {subsubsection}{Soluzione}{17}{subsubsection*.12}%
+\contentsline {subsection}{\numberline {2.2.7}Esercitazione 5}{18}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.8}Esercitazione 5}{19}{subsection.2.2.8}%
+\contentsline {subsection}{\numberline {2.2.9}Esercitazione}{20}{subsection.2.2.9}%
+\contentsline {subsubsection}{Soluzione}{20}{subsubsection*.14}%
+\contentsline {chapter}{\numberline {3}Modelli atomici}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Modello atomico di Bohr-Sommerfeld}{21}{section.3.1}%
