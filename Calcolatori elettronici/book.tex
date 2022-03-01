@@ -1,0 +1,260 @@
+\documentclass{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{easylist}
+\usepackage{hanging}
+\usepackage{hyperref}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=2.0cm]{geometry}
+\usepackage{blindtext}
+\usepackage{tipa}
+\usepackage{epigraph}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{pbox}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{qtree}
+\usepackage{tikz-qtree}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{textcomp}
+\usepackage{circuitikz}
+
+\linespread{1.5} % l'interlinea
+
+\frenchspacing
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+\usepackage{floatflt,epsfig}
+
+\usepackage{multicol}
+\newcommand\yellowbigsqcup[1][\displaystyle]{%
+  \fboxrule0pt
+  \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
+  \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
+
+\tikzset{
+	% async
+	latch/.style={flipflop, flipflop def={t1=D, t6=Q, t3=CLK, 
+	t4=\ctikztextnot{Q}}},
+	flipflop SR/.style={flipflop, flipflop def={t1=S, t3=R, c2=1, t6=Q, 
+	t4=\ctikztextnot{Q}}},
+	% sync
+	flipflop D/.style={flipflop, flipflop def={t1=D, t6=Q, c3=1, 
+	t4=\ctikztextnot{Q}}},
+	flipflop T/.style={flipflop, flipflop def={t1=T, t6=Q, c3=1, 
+	t4=\ctikztextnot{Q}}},
+	flipflop JK/.style={flipflop,
+	flipflop def={t1=J, t3=K, c2=1, t6=Q, t4=\ctikztextnot{Q}}},
+	% additional features
+	add async SR/.style={flipflop def={%
+	tu={\ctikztextnot{SET}}, td={\ctikztextnot{RST}}}},
+	dot on notQ/.style={flipflop def={t4={Q}, n4=1}},
+}
+
+\title{Calcolatori Elettronici}
+\author{Nicola Ferru}
+\begin{document}
+\maketitle
+\chapter{Introduzione}
+\section{Programma}
+\begin{enumerate}
+	\item Reti logiche;
+	\item Unità di memoria;
+	\item CPU - Set di Istruzioni;
+	\item CPU - ALU;
+	\item Unità di Input/Output.
+\end{enumerate}
+\section{Algebra di Bool}
+\subsubsection{Primarie}
+AND rende il valore unitario solo nel caso in cui entrambe le variabili sono ad 1, in caso contrario rende 0, questo è molto utile in programmazione per controllare se i valori contenuti in due variabili sono uguali o due condizioni sono uguali. La formula matematica è $A\wedge B$.
+\begin{figure}[h!]
+    \centering
+    \begin{circuitikz}  
+        \draw
+        (0,0) node[and port] (and1) {};
+     \end{circuitikz}
+    \caption{AND porta logica}
+\end{figure}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{||c c c||} 
+		\hline
+		a&b&risultato\\\hline
+		0&0&0\\
+		0&1&0\\
+		1&0&0\\
+		1&1&1\\\hline
+	\end{tabular}
+	\caption{AND}
+	\label{table:1.1}
+\end{table}\\
+OR rende il valore unitario se almeno una delle due variabili è a 1, infatti, in questo caso vale la regola del uno, l'altro o tutti e due. La formula matematica è $A \vee B$.
+\begin{figure}[h!]
+    \centering
+    \begin{circuitikz}  
+        \draw
+        (0,0) node[or port] (or1) {}
+        
+    ;\end{circuitikz}
+    \caption{OR porta logica}
+\end{figure}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{||c c c||} 
+		\hline
+		a&b&risultato\\\hline
+		0&0&0\\
+		0&1&1\\
+		1&0&1\\
+		1&1&1\\\hline
+	\end{tabular}
+	\caption{OR}
+	\label{table:1.2}
+\end{table}\\
+NOT nega il contenuto di una variabile quindi se il valore è pari a 1 il risultato sarà 0 e viceversa.
+\begin{figure}[h!]
+    \centering
+    \begin{circuitikz}  
+        \draw
+        (0,0) node[not port] (not1) {}
+        
+    ;\end{circuitikz}
+    \caption{NOT porta logica}
+\end{figure}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{||c c||} 
+		\hline
+		a&risultato\\\hline\
+		1&0\\
+		0&1\\\hline
+	\end{tabular}
+	\caption{NOT}
+	\label{table:1.3}
+\end{table}
+\subsubsection{Composte}
+NAND è la congiunzione negata di AND, $\overline{A\wedge B} = A\overline{\wedge}B$, in uscita rende 1 se i risultati delle due operazioni sono ad 1.
+\begin{figure}[h!]
+    \centering
+    \begin{circuitikz}  
+        \draw
+        (0,0) node[nand port] (nand1) {}
+        
+    ;\end{circuitikz}
+    \caption{NAND porta logica}
+\end{figure}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{||c c c c c c c||} 
+		\hline
+		A&B&$A\wedge B$&$A \overline{\wedge}B$&$\neg A$&$\neg B$&$\neg A \vee \neg B$\\\hline
+		0&0&0&1&1&1&1\\
+		0&1&0&1&1&0&1\\
+		1&0&0&1&0&1&1\\
+		1&1&1&0&0&0&0\\\hline
+	\end{tabular}
+	\caption{NAND}
+	\label{table:1.4}
+\end{table}\\
+La negazione della disgiunzione $\neg (A \vee B)\equiv A \overline{\vee} B$, e l'unione delle congiunzioni $\neg A \wedge \neg B$ risultano così di seguito:
+\begin{figure}[h!]
+    \centering
+    \begin{circuitikz}  
+        \draw
+        (0,0) node[nor port] (nor1) {}
+        
+    ;\end{circuitikz}
+    \caption{NOR porta logica}
+\end{figure}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{||c c c c c c c||} 
+		\hline
+		A&B&$A\vee B$&$A \overline{\vee}B$&$\neg A$&$\neg B$&$\neg A \wedge \neg B$\\\hline
+		0&0&0&1&1&1&1\\
+		0&1&1&0&1&0&0\\
+		1&0&1&0&0&1&0\\
+		1&1&1&0&0&0&0\\\hline
+	\end{tabular}
+	\caption{NOR}
+	\label{table:1.5}
+\end{table}\\
+La XOR è un operatore che è simile alla OR ma va ad escludere i valori uguali, quindi se A = B il risultato reso sarà 0.
+\begin{figure}[h!]
+    \centering
+    \begin{circuitikz}  
+        \draw
+        (0,0) node[xor port] (xor1) {}
+        
+    ;\end{circuitikz}
+    \caption{XOR porta logica}
+\end{figure}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{||c c c||} 
+		\hline
+		a&b&risultato\\\hline
+		0&0&0\\
+		0&1&1\\
+		1&0&1\\
+		1&1&0\\\hline
+	\end{tabular}
+	\caption{XOR}
+	\label{table:1.6}
+\end{table}\\
+Ovviamente come tutti le perte esiste la sua versione negata quindi esiste la XNOR.
+\begin{figure}[h!]
+    \centering
+    \begin{circuitikz}  
+        \draw
+        (0,0) node[xnor port] (xnor1) {}
+        
+    ;\end{circuitikz}
+    \caption{XNOR porta logica}
+\end{figure}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{||c c c||} 
+		\hline
+		a&b&risultato\\\hline
+		0&0&1\\
+		0&1&0\\
+		1&0&0\\
+		1&1&1\\\hline
+	\end{tabular}
+	\caption{XOR}
+	\label{table:1.7}
+\end{table}\\
+Sostanzialmente gli operatori che vengono più utilizzati nella programmazione sono AND, OR, NOT. Gli altri sono molto secondari e vengono utilizzati raramente. In alcuni manuali lo 0 diventa Falso e 1 diventa Vero.
+\section{Rappresentazione grafica dei latch}
+\begin{circuitikz}
+	\draw  (0,0) node[flipflop JK]{JK};
+\end{circuitikz}
+\begin{circuitikz}
+	\draw  (0,0) node[flipflop D]{D};
+\end{circuitikz}
+\begin{circuitikz}
+	\draw  (0,0) node[flipflop T]{T};
+\end{circuitikz}
+\begin{circuitikz}
+	\draw  (0,0) node[flipflop SR]{SR};
+\end{circuitikz}
+
+
+\end{document}
