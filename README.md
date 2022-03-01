@@ -9,3 +9,5 @@ Scusate per potenziali ritardi nella pubblicazioni delle versioni degli appunti 
 ## Come è strutturata
 Il Repo è strutturato in modo lineare e ovviamente è suddifiviso per materie e anche alle volte per singolo argomento, quando superano un tot di pagine è prefisto un indice analitico all'inizio del documento. Comunque ringrazio tutti quelli che hanno deciso di collaborare.
 
+### modelli utilizzati per realizzare questi documenti
+I template utilizzati sono disponibili nel mio repo ```LaTeX-Model```, per accedere a tale repo cliccare <a href="https://github.com/NF02/LaTeX-model">qui</a>
