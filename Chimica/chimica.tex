@@ -1,0 +1,204 @@
+\documentclass{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{easylist}
+\usepackage{hanging}
+\usepackage{hyperref}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=3.0cm]{geometry}
+\usepackage{blindtext}
+\usepackage{tipa}
+\usepackage{epigraph}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{pbox}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{textcomp}
+\usepackage{circuitikz}
+\usepackage{pifont}
+\usepackage{imakeidx}
+\usepackage{verbatim}
+\usepackage{dsfont}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{upgreek}
+\usepackage{tasks}
+\usepackage{exsheets}
+\usepackage{pgfplots}
+\usepackage{amsthm}
+
+\SetupExSheets[question]{type=exam}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  firstnumber=1000,                % start line enumeration with line 1000
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\linespread{1.2} % l'interlinea
+
+\frenchspacing
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+\usepackage{floatflt,epsfig}
+
+\usepackage{multicol}
+\newcommand\yellowbigsqcup[1][\displaystyle]{%
+  \fboxrule0pt
+  \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
+  \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
+
+\title{Appunti di Chimica}
+\author{Nicola Ferru}
+\date{}
+\makeindex[columns=3, title=Alphabetical Index, intoc]
+
+\begin{document}
+\maketitle
+\tableofcontents
+\listoftables
+\listoffigures
+\chapter{Introduzione}
+La chimica è la scienza che studia la composizione, la struttura e le trasformazioni della \textit{MATERIA}\\
+La Materia
+\begin{enumerate}
+	\item Composizione (analisi qualitativa e qualitativa)
+	\item Struttura-proprietà (es. diamante-grafite)
+	\item Modellizzazione e progettazione
+\end{enumerate}
+Le trasformazione della Materia
+\begin{enumerate}
+	\item Corrosione (\textbf{es. ferro-ruggine})
+	\item Combustione (es. sorgenti di energia)
+	\item Sintesi (es. farmaci, pigmenti, nanomateriali, polimeri\dots)
+	
+\end{enumerate}
+\begin{figure}[h]
+	\centering
+	\Tree[.Universo [.Energia ciò\ che\ occupa\ spazio\ e\ ha\ massa  ] [.Materia Capacità\ di\ \underline{eseguire un lavoro} ] ]
+	\caption{suddivisione tra energia e materia}
+	\label{fig:enmat1}
+\end{figure}
+Un sistema è una porzione delimitata di spazio che rappresenta l’oggetto dello studio mentre l’ambiente è tutto ciò che sta attorno al sistema: l’insieme di sistema e ambiente costituisce l’Universo.
+\section{Gli stati della materia}
+La materia possiede sostanzialmente tre stati:
+\begin{enumerate}
+	\item Solida - ha una forma definita e un volume proprio;
+	\item Liquido - ha un volume ma non possiede una forma propria;
+	\item Gas - non ha né forma, né un volume proprio, si espande in modo da riempire il contenitore che lo contiene.
+\end{enumerate}
+\section{Proprietà fisiche}
+\newtheorem{profisiche}{Definitione}
+\begin{profisiche} 
+	Proprietà che possono essere osservate e misurate SENZA alterare la composizione della sostanza
+\end{profisiche}
+\begin{enumerate}
+	\item colore;
+	\item punto di fusione e di ebollizione;
+	\item indice di rifrazione;
+	\item densità.
+\end{enumerate}
+\section{Trasformazioni della materia}
+\subsection{Trasformazioni Fisiche}
+\newtheorem{trfisiche}{Definizione}
+\begin{trfisiche}
+	Trasformazioni che avvengono senza alterare la composizione della sostanza
+\end{trfisiche}
+Esempi di trasformazione fisiche:
+\begin{tasks}{2}
+	\task ebollizione di un liquido;
+	\task fusione di un solido;
+	\task sciogliere un solido in un liquido per ottenere una miscela omogenea (ovvero una \textbf{soluzione})
+\end{tasks}
+\subsection{Trasformazioni Chimiche}
+\newtheorem{trchimiche}{Definizione}
+\begin{trchimiche}
+	Trasformazioni che avvengono ALTERANDO la natura delle sostanze coinvolte e portando alla formazione di nuovi composti.
+\end{trchimiche}
+Un esempio di questo tipo di trasformazione: La combustione del metano. Si parte dal metano e dal ossigeno e si arriva a biossido di carbonio e acqua:
+\begin{equation*}
+	CH_4+ 2O_2\to CO_2+2H_2O
+\end{equation*}
+Al termine della trasformazione abbiamo una sostanza differente da quella di partenza, in alcuni casi la procedura non è reversibile, come in questo caso.
+\section{Sostanza pure}
+\newtheorem{sopure}{Definizione}
+\begin{sopure}
+	MATERIA DI COMPOSIZIONE OMOGENEA CHE NON PUÒ ESSERE SEPARATA
+IN ALTRI TIPI DI MATERIA PER MEZZO DI TRASFORMAZIONI FISICHE
+\end{sopure}
+\begin{figure}[h]
+	\centering
+	\Tree [.Può\ essere\ scomposta\ Chimicamente\ in\ sostanze\ più\ semplici? [.Composto ] [.Elemento ] ]
+	\caption{Sostanza pura suddivisione}
+	\label{fig:Sostanza pura suddivisione}
+\end{figure}
+\begin{enumerate}
+	\item Composto - sostanza formato da almeno due tipi di atomi;
+	\item Elemento - tutti gli atomi la costituiscono sono dello stesso tipo.
+\end{enumerate}
+\begin{table}[htp]
+\begin{center}
+\begin{tabular}{|c|c|}
+	\hline
+	Composti&Elemento\\\hline\hline
+	Acqua $H_2O$&Ossigeno $O_2$\\
+	Anidride carbonica $CO_2$&Diamante $C$\\
+	Cloruro di sodio $NaCl$&\\
+	Benzene $C_6H_6$&\\
+	Etanolo $C_2H_5OH$&\\\hline
+\end{tabular}
+\end{center}
+\caption{Sostanza pura suddivisione}
+\label{tab:Sostanza pura suddivisione}
+\end{table}%
+\section{Miscela}
+Composti di Due o più sostanze pure
+
+\printindex
+\end{document}
