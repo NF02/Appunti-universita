@@ -29,15 +29,23 @@
 \usepackage{subfig}
 \usepackage{xcolor}
 \usepackage{amssymb}
+\usepackage{amsmath}
 \usepackage{mathrsfs}
 \usepackage{textcomp}
 \usepackage{circuitikz}
 \usepackage{pifont}
-\usepackage{mathtools}
-\usepackage{amsmath}
+\usepackage{imakeidx}
+\usepackage{verbatim}
+\usepackage{dsfont}
 \usepackage{listings}
 \usepackage{color}
+\usepackage{upgreek}
 \usepackage{tasks}
+\usepackage{exsheets}
+\usepackage{pgfplots}
+\usepackage{amsthm}
+
+\SetupExSheets[question]{type=exam}
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
@@ -72,7 +80,7 @@
   title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
 
-\linespread{1.5} % l'interlinea
+\linespread{1.2} % l'interlinea
 
 \frenchspacing
 
@@ -86,22 +94,39 @@
   \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
   \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
 
-\title{Appunti Fisica}
+\title{Appunti di Algebra e geometria}
 \author{Nicola Ferru}
 \date{}
+\makeindex[columns=3, title=Alphabetical Index, intoc]
+
 \begin{document}
 \maketitle
 \tableofcontents
 \listoftables
 \listoffigures
-% pagine dedicate
 \input{pag/premesse.tex}
 \input{pag/simboli.tex}
-\part{fisica 1}
-\input{pag/unita di misura.tex}
-\input{pag/moti.tex}
-\input{pag/modelli atomici.tex}
-\part {Fisica 2}
-\input{pag/programma 2.tex}
+\chapter{Vettori}
 
+\chapter {Numeri Complessi}
+\newtheorem{NumComp}{Numeri reali}
+\begin{NumComp}
+	Un numero complesso è definito come un numero della forma $x+iy$, con x e y numeri reali e i una
+	soluzione dell'equazione $x^2=-1$ detta unità immaginaria. i numeri reali sono 
+\end{NumComp}
+\section{Operazioni con Numeri complessi}
+\begin{enumerate}
+\item Modulo e distanza
+	\begin{equation}
+		\abs{z}=\sqrt{x^2+y^2}
+	\end{equation}
+	Il valore assoluto (modulo) ha proprietà queste proprietà:
+	\begin{equation*}
+		\abs{z+w}\geq \abs{z}+\abs{w}, \text{ } \abs{zw}=\abs{z}\abs{w}, \text{ } \left|\frac{z}{w}\right|=\frac{\abs z}{\abs w}
+	\end{equation*}
+	Valide per tutti i numeri complessi $z$ e $w$. La prima proprietà è una versione della disuguaglianza triangolare.
+
+\end{enumerate}
+
+\printindex
 \end{document}
