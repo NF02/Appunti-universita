@@ -107,12 +107,38 @@
 \input{pag/premesse.tex}
 \input{pag/simboli.tex}
 \chapter{Vettori}
+\section{Spazio Vettoriale}
+\newtheorem{SpaVet}{Spazio Vettoriale}
+\begin{SpaVet}
+	Uno spazio vettoriale reale (R-spazio vettoriale) è un insieme \textit{V} in
+	cui sono definite un'operazione di \texttt{SOMMA} tra elementi di
+	\textit{V} e un'operazione di \texttt{Prodotto tra un reale} e un elemento
+	di V che soddisfano 8 proprietà:
+\end{SpaVet}
+\begin{enumerate}
+	\item La somma è assoaativa quando $\forall v_1, \text{ } v_2, \text{ } v_3 
+		\in V$ $\left(v_1+v_2\right)+v_3=v_1+\left(v_2+v_3\right)$;
+	\item La somma è commutativa quando $\forall v_1, v_2 \in V\text{ }
+		v_1+v_2=v_2+v_1$
+	\item Esistenza elemento neutro 0 se e solo se $\forall v\in V \text{ }
+		v+0=0+v=v$
+	\item Esistenza opposto $-v$ se e solo se $\forall v \in V \text{ }
+		v+(-v)=(-v)+v=0$
+	\item Il prodotto per uno scalare è assoluto quando $\forall c_1,c_2 \in
+		R, \forall v\in V \text{ } c_1(c_2v)=(c_1c_2)v$
+	\item Il prodotto per uno scalare è distributiva quando $\forall c_1,c_2 \in
+		R, \forall v\in V \text{ } (c_1+c_2)v=c_1v+c_2v$
+	\item Il prodotto per uno scalare è distributiva quando $\forall c \in
+		R, \forall v_1, v_2\in V \text{ }c(v_1+v_2)=cv_1+cv_2$
+	\item Esistenza elemento neutro 1 quando $\forall v\in V \text{ } 1v=v$
+\end{enumerate}
 
 \chapter {Numeri Complessi}
 \newtheorem{NumComp}{Numeri reali}
 \begin{NumComp}
 	Un numero complesso è definito come un numero della forma $x+iy$, con x e y numeri reali e i una
-	soluzione dell'equazione $x^2=-1$ detta unità immaginaria. i numeri reali sono 
+	soluzione dell'equazione $x^2=-1$ detta unità immaginaria. i numeri reali
+	sono
 \end{NumComp}
 \section{Operazioni con Numeri complessi}
 \begin{enumerate}
@@ -127,6 +153,5 @@
 	Valide per tutti i numeri complessi $z$ e $w$. La prima proprietà è una versione della disuguaglianza triangolare.
 
 \end{enumerate}
-
 \printindex
 \end{document}
