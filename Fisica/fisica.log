@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  4 MAR 2022 13:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.30)  11 MAR 2022 13:44
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **fisica.tex
 (./fisica.tex
@@ -1360,9 +1359,9 @@ Underfull \vbox (badness 7722) has occurred while \output is active []
 ]
 [14] [15] [16] [17]
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/esercizio 5 im1.pdf): 
-PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/esercizio 5 im1.pdf, id=244, 1521.685pt x 994.71625pt>
+pdfTeX warning: pdflatex (file ./img/esercizio 5 im1.pdf): PDF inclusion: found
+ PDF version <1.7>, but at most version <1.5> allowed
+<img/esercizio 5 im1.pdf, id=229, 1521.685pt x 994.71625pt>
 File: img/esercizio 5 im1.pdf Graphic file (type pdf)
 <use img/esercizio 5 im1.pdf>
 Package pdftex.def Info: img/esercizio 5 im1.pdf  used on input line 252.
@@ -1397,15 +1396,28 @@ Capitolo 3.
 Capitolo 4.
 ) [25
 
-] (./fisica.aux)
+] [26
+
+]
+Capitolo 5.
+[27]
+
+Package tasks Warning: You've placed
+(tasks)                
+(tasks)                2
+(tasks)                
+(tasks)                before the first \task  on line 154. I will throw it
+(tasks)                away and ignore it for the rest of the list.
+
+[28] (./fisica.aux)
 Package rerunfilecheck Info: File `fisica.out' has not changed.
-(rerunfilecheck)             Checksum: 4CDE124D8930133E90C360C7E2788958;3361.
+(rerunfilecheck)             Checksum: 6A627F22518A6EBBD019D0A80B44B286;3793.
  ) 
 Here is how much of TeX's memory you used:
- 41200 strings out of 478994
- 892051 string characters out of 5858184
+ 41223 strings out of 478994
+ 892264 string characters out of 5858184
  1600941 words of memory out of 5000000
- 57947 multiletter control sequences out of 15000+600000
+ 57950 multiletter control sequences out of 15000+600000
  425315 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,18n,89p,827b,711s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1430,10 +1442,10 @@ mf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf
 ist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2021/texmf-dis
 t/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-dist/
 fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on fisica.pdf (25 pages, 317835 bytes).
+Output written on fisica.pdf (28 pages, 321406 bytes).
 PDF statistics:
- 371 PDF objects out of 1000 (max. 8388607)
- 320 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 387 PDF objects out of 1000 (max. 8388607)
+ 333 compressed objects within 4 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 
