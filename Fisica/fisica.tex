@@ -40,6 +40,9 @@
 \usepackage{tasks}
 \usepackage{amsthm}
 
+\usetikzlibrary{angles, arrows.meta, quotes}
+\usepackage{siunitx}
+
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
@@ -154,11 +157,70 @@ In natura esistono le seguenti tipologie di materiali:
 	di sorta.
 \end{tasks}
 \newtheorem{pcariche}{Particelle Cariche}
-\begin{pcarica}
+\begin{pcariche}
 	La materia composte di atomi. Gli atomi hanno un \textbf{nucleo} con
 	\begin{itemize}
-		\item 
+		\item Protoni - cariche positive;
+		\item Elettroni - carica negativa.
 	\end{itemize}
-
-\end{pcarica}
+	La carica dell'elettrone e del protone hanno la stessa intensità ma segno
+	opposto. Gli elettroni sono \textbf{attratti verso il nucleo}. Nei
+	conduttori, alcuni elettroni sono \textit{liberi di muoversi}, un isolante
+	\textit{non ha elettroni liberi}.
+\end{pcariche}
+\subsection{Carica indotta}
+Una carica negativa \textit{respinge} gli elettroni nel rame, risulta una
+carica positiva indotta vicino alla carica esterna. Risulta una \textbf{forza
+attrattiva} tra una carica negativa e un conduttore, Anche per una carica
+positiva ed un conduttore la forza risulta \textbf{attrattiva}.
+\section{Legge di Coulomb}
+Tra due cariche puntiformi esiste una \textit{forza elettrostatica}. La forza è
+diretta \textit{lungo la retta congiungente} le due cariche.
+Se le cariche sono della stessa polarità le stesse si respingono, invece, se
+sono di carica opposta, avviene un attrazione tra le cariche.
+\subsubsection{Riassunto sui vettori}
+\paragraph{Componenti:}
+\begin{equation}
+	F_x=F\cos 0;\text{ }F_y=F\sin 0
+\end{equation}
+\paragraph{Modulo e angolo:}
+\begin{equation}
+	F=\abs{\vec{F}}=\sqrt{F_x^2+F_y^2};\text{ } \tan 0 =\frac{F_y}{F_x}
+\end{equation}
+\paragraph{Versore:}
+\begin{equation}
+	\hat{a}=\frac{\vec{a}}{\abs{\vec{a}}}=\frac{\vec{a}}{a}
+\end{equation}
+\paragraph{Sommare:}
+\begin{equation}
+	\vec{F}=\vec{F}_1+\vec{F}_2\to F_x=F_{1x}+F_{2x};\text{ } F_y=F_{1y}+F_{2y}
+\end{equation}
+La forza di una carica $q_1$ in presenza di un'altra $q_2$ è:
+\begin{equation}
+	\vec{F}_{12}=k\frac{q_1q_2}{r^2}\hat{r}
+\end{equation}
+Dove $k=8,99*10^9Nm^2C^{-2}$ è la \textbf{costante di Coulomb} e $\vec{r}$ è il
+vettore di lunghezza pare alla distanzia $q_2$ a $q_1$.
+\begin{enumerate}
+	\item Se $q_1$ e $q_2$ hanno la stessa polarità, il prodotto $q_1q_2$ è 
+		\textbf{positivo} e la forza è \textit{repulsiva}.
+	\item Se $q_1$ e $q_2$ hanno la polarità \textbf{opposta}, il
+		prodotto $q_1q_2$ è \textbf{negativo} e la forza è \textit{attrattiva}.
+\end{enumerate}
+La forma è una coppia di azione-reazione: $\vec{F}_{21}=-\vec{F}_{12}$
+\subsection{Unità do misura}
+L'unità di carica nel SI è il \texttt{Coulomb} (\ref{}). La derivata del unità
+fondamentale di corrente elettrica, \textbf{Ampere}. La corrente \textit{i} è
+data dal rapporto $\frac{dq}{dt}$ con cui transita la carica \textit{q}: 
+$i=\frac{dq}{dt}$.
+Risulta $1C=1As$
+\subsection{La costante dielettrica del vuoto}
+La costante di \textit{Coulomb} viene anche espressa come
+$k=\frac{1}{4\pi\xi_0}$ dove $\xi_0 = 8,85*10^{-12}C^2N^{-1}m^{-2}$ è la
+\textbf{constante dielettrica del vuoto}.\\
+Così scriviamo $\vec{F}=\frac{q_1q_2}{4\pi\xi_0r^2}\hat{r}$, o per ottenere il
+modulo $F=\frac{\abs{q_1}\abs{q_2}}{4\pi\xi_0r^2}\hat{r}$
+\subsection{Forze multiple}
+Le forze elettrostatiche obbediscono al \textbf{principio di sovrapposizione}.
+Se molte particelle sono vicine alla carica $q_1$, la forza netta è
 \end{document}

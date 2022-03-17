@@ -1,5 +1,5 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
 \contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Simboli}{7}{section.0.2}%
 \contentsline {part}{I\hspace {1em}fisica 1}{9}{part.1}%
@@ -36,3 +36,13 @@
 \contentsline {subsection}{\numberline {5.1.1}La carica elettrica}{27}{subsection.5.1.1}%
 \contentsline {subsubsection}{Le proprietà delle cariche}{27}{subsubsection*.15}%
 \contentsline {subsubsection}{Conduttori e isolanti}{28}{subsubsection*.16}%
+\contentsline {subsection}{\numberline {5.1.2}Carica indotta}{28}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Legge di Coulomb}{28}{section.5.2}%
+\contentsline {subsubsection}{Riassunto sui vettori}{28}{subsubsection*.17}%
+\contentsline {paragraph}{Componenti:}{28}{paragraph*.18}%
+\contentsline {paragraph}{Modulo e angolo:}{28}{paragraph*.19}%
+\contentsline {paragraph}{Versore:}{28}{paragraph*.20}%
+\contentsline {paragraph}{Sommare:}{29}{paragraph*.21}%
+\contentsline {subsection}{\numberline {5.2.1}Unità do misura}{29}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}La costante dielettrica del vuoto}{29}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Forze multiple}{29}{subsection.5.2.3}%
