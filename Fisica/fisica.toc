@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {2.2.6}Esercitazione 4}{17}{subsection.2.2.6}%
 \contentsline {subsubsection}{Soluzione}{17}{subsubsection*.12}%
 \contentsline {subsection}{\numberline {2.2.7}Esercitazione 5}{18}{subsection.2.2.7}%
-\contentsline {subsection}{\numberline {2.2.8}Esercitazione 5}{19}{subsection.2.2.8}%
+\contentsline {subsection}{\numberline {2.2.8}Esercitazione 6}{19}{subsection.2.2.8}%
 \contentsline {subsection}{\numberline {2.2.9}Esercitazione}{20}{subsection.2.2.9}%
 \contentsline {subsubsection}{Soluzione}{20}{subsubsection*.14}%
 \contentsline {chapter}{\numberline {3}Modelli atomici}{21}{chapter.3}%

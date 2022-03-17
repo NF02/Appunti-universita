@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.8)  17 MAR 2022 20:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.8)  17 MAR 2022 20:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1378,7 +1378,7 @@ Underfull \vbox (badness 7722) has occurred while \output is active []
 pdfTeX warning: pdflatex (file /home/nico/Documenti/GitHub/Appunti-universita/F
 isica/img/esercizio 5 im1.pdf): PDF inclusion: found PDF version <1.7>, but at 
 most version <1.5> allowed
-<img/esercizio 5 im1.pdf, id=279, 1521.685pt x 994.71625pt>
+<img/esercizio 5 im1.pdf, id=284, 1521.685pt x 994.71625pt>
 File: img/esercizio 5 im1.pdf Graphic file (type pdf)
 <use img/esercizio 5 im1.pdf>
 Package pdftex.def Info: img/esercizio 5 im1.pdf  used on input line 252.
@@ -1444,14 +1444,14 @@ Package rerunfilecheck Warning: File `fisica.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `fisica.out':
-(rerunfilecheck)             Before: 226B28CEFA1F297A7BF8BDB04F286AD2;4454
-(rerunfilecheck)             After:  9131B050D6EB45F28E6CE68266A462BB;4589.
+(rerunfilecheck)             Before: 9131B050D6EB45F28E6CE68266A462BB;4589
+(rerunfilecheck)             After:  8256F517293267AB4CC5BAA0EB04A3F2;4589.
  ) 
 Here is how much of TeX's memory you used:
- 46840 strings out of 478353
- 1057710 string characters out of 5854636
+ 46841 strings out of 478353
+ 1057728 string characters out of 5854636
  1742555 words of memory out of 5000000
- 64168 multiletter control sequences out of 15000+600000
+ 64169 multiletter control sequences out of 15000+600000
  426016 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,89p,878b,902s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1474,10 +1474,10 @@ type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm
 -super/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000
 .pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
 Output written on /home/nico/Documenti/GitHub/Appunti-universita/Fisica/fisica.
-pdf (29 pages, 377731 bytes).
+pdf (29 pages, 377637 bytes).
 PDF statistics:
- 485 PDF objects out of 1000 (max. 8388607)
- 406 compressed objects within 5 object streams
+ 489 PDF objects out of 1000 (max. 8388607)
+ 410 compressed objects within 5 object streams
  117 named destinations out of 1000 (max. 500000)
- 258 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 266 words of extra memory for PDF output out of 10000 (max. 10000000)
 
