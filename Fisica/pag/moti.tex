@@ -405,3 +405,116 @@ E poi ricalcoliamo il discriminante
 \end{equation*}
 Quindi da questo si può dedurre che il percorso in quel lasso di tempo è di 344
 metri.
+\section{Moto Armonico}
+In fisica, il moto armonico è il particolare moto vario descritto da un
+oscillatore armonico, cioè un sistema meccanico che reagisce ad una
+perturbazione dell'equilibrio con una accelerazione di richiamo
+$a_{x}=\frac{d^{2}x}{dt^{2}}$ proporzionale allo spostamento subito x.
+
+\begin{multicols}{2}
+	\begin{equation*}
+		F=k*x
+	\end{equation*}
+	\begin{equation*}
+		F=m*a
+	\end{equation*}
+	\begin{equation*}
+		a=\frac{F}{m}=\frac{kx}{m}=\omega^2x
+	\end{equation*}
+	\begin{equation*}
+		\omega^2=\frac{k}{m}
+	\end{equation*}
+	\begin{equation*}
+		\omega=\sqrt{\frac{k}{m}}
+	\end{equation*}
+	\begin{equation*}
+		x=A*\cos (\omega t)
+	\end{equation*}
+	\begin{equation*}
+		v=\frac{dx}{dt}=-A*\omega*\cos (\omega t)
+	\end{equation*}
+\end{multicols}
+I primi pensieri che tipicamente vanno associati a questo fenomeno sono i
+seguenti:
+\begin{enumerate}
+	\item La forza elastica;
+	\item moto armonico.
+\end{enumerate}
+Infatti, questo fenomeno tipicamente riguarda delle \textit{molle/corde},
+quindi gli esercizi riguarderanno questi due casi: \texttt{il pendolo con un
+determinato moto oppure una massa appesa ad una molla o fune}.
+\begin{equation*}
+	\boxed{
+		\begin{matrix}
+			a=\frac{dv}{dt}=-A\omega^2\cos\omega t\\
+			a=-\omega^2*A\cos\omega t\\
+			a=-\omega^2x
+		\end{matrix}
+	}
+\end{equation*}
+\subsection{Esercitazione 1}
+Una molla $k=1500\frac{N}{m}$ è collegata alla massa $m=250g$. L'ampiezza
+$A=30cm$. Esprimi le leggi.
+\subsection{Soluzioni}
+Come al solito la prima cosa da fare è estrarre dal testo, quindi k, m e A.
+\begin{multicols}{2}
+	\begin{equation*}
+		A=30cm=0,3m
+	\end{equation*}
+	\begin{equation*}
+		k=1500\frac{N}{m}
+	\end{equation*}
+	\begin{equation*}
+		m=250g
+	\end{equation*}
+\end{multicols}
+Ora dopo aver messo in evidenza i dati possiamo procedere, ricavandoci l'omega.
+\begin{equation*}
+	\omega=\sqrt{\frac{k}{m}}=\sqrt{\frac{1500}{0,35}}=77,5Hz
+\end{equation*}
+Ora possiamo definire la frequenza e il periodo.
+\begin{equation*}
+	\boxed{
+		\begin{matrix}
+			f=\frac{\omega}{2\pi}=\frac{77,5}{2\pi}=12,3Hz\\
+			T=\frac{1}{f}=\frac{1}{12,3}=0,081s
+		\end{matrix}
+	}
+\end{equation*}
+ora convertiamo i secondi in ms usando il classico metodo
+$Hz=\frac{1}{s}=81ms$.
+Con questo l'esercizio è concluso.
+\subsection{Delucidazioni}
+\begin{itemize}
+	\item T = Periodo = tempo impiegato per una oscillazione completa;
+	\item f = frequenza = numero di oscillazioni in un secondo
+		$f=\frac{1}{T};\text{ } T=\frac{1}{f}\left[Hz=\frac{1}{s}\right]$
+	\item Pulsazione =$\omega=2\pi f$
+	\item x = elongazione = distanza della massa dalla posizione di equilibrio
+		\begin{tasks}
+			\task $x=A*\cos(\omega t)$
+			\task $x=0,3*\cos(77*t)$
+		\end{tasks}
+\end{itemize}
+\begin{tikzpicture}[domain=0:6] 
+	\draw[very thin,color=gray] (-0.1,-1.1) grid (6.9,3.9);
+	\draw[->] (-0.2,0) -- (7.2,0) node[right] {$T$}; 
+	\draw[->] (0,-1.2) -- (0,4.2) node[above] {$x$};
+	\draw[color=blue]   plot (\x,{cos(\x r)})    node[right] {$T=81ms$}; 
+\end{tikzpicture}\\
+Prendendo l'esempio del pendolo
+\begin{center}
+	\begin{tikzpicture}
+		% Support
+		\fill (-1.5,0) rectangle(1.5,0.1);
+		% Rod + Bob
+		\draw (0,0) -- (-60:4) node[fill,circle](m){};
+	\end{tikzpicture}
+\end{center}
+\begin{tikzpicture}[domain=0:12] 
+	\draw[very thin,color=gray] (-0.1,-1.1) grid (12.9,2.9);
+	\draw[->] (-0.2,0) -- (13.2,0) node[right] {$a$}; 
+	\draw[->] (0,-1.2) -- (0,3.2) node[above] {$t$};
+	\draw[color=blue]   plot (\x,{-cos(\x r)})    node[right] {$T$}; 
+\end{tikzpicture}\\
+

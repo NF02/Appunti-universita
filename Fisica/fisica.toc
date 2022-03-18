@@ -1,5 +1,5 @@
-\babel@toc {italian}{}\relax 
-\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}
+\babel@toc {italian}{}
 \contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Simboli}{7}{section.0.2}%
 \contentsline {part}{I\hspace {1em}fisica 1}{9}{part.1}%
@@ -25,24 +25,28 @@
 \contentsline {subsection}{\numberline {2.2.8}Esercitazione 6}{19}{subsection.2.2.8}%
 \contentsline {subsection}{\numberline {2.2.9}Esercitazione}{20}{subsection.2.2.9}%
 \contentsline {subsubsection}{Soluzione}{20}{subsubsection*.14}%
-\contentsline {chapter}{\numberline {3}Modelli atomici}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Modello atomico di Bohr-Sommerfeld}{21}{section.3.1}%
-\contentsline {part}{II\hspace {1em}Fisica 2}{23}{part.2}%
-\contentsline {chapter}{\numberline {4}programma}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Base}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Argomenti aggiuntivi}{25}{section.4.2}%
-\contentsline {chapter}{\numberline {5}La legge di Coulomb}{27}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduzione}{27}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}La carica elettrica}{27}{subsection.5.1.1}%
-\contentsline {subsubsection}{Le proprietà delle cariche}{27}{subsubsection*.15}%
-\contentsline {subsubsection}{Conduttori e isolanti}{28}{subsubsection*.16}%
-\contentsline {subsection}{\numberline {5.1.2}Carica indotta}{28}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Legge di Coulomb}{28}{section.5.2}%
-\contentsline {subsubsection}{Riassunto sui vettori}{28}{subsubsection*.17}%
-\contentsline {paragraph}{Componenti:}{28}{paragraph*.18}%
-\contentsline {paragraph}{Modulo e angolo:}{28}{paragraph*.19}%
-\contentsline {paragraph}{Versore:}{28}{paragraph*.20}%
-\contentsline {paragraph}{Sommare:}{29}{paragraph*.21}%
-\contentsline {subsection}{\numberline {5.2.1}Unità do misura}{29}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}La costante dielettrica del vuoto}{29}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Forze multiple}{29}{subsection.5.2.3}%
+\contentsline {section}{\numberline {2.3}Moto Armonico}{20}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Esercitazione 1}{21}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Soluzioni}{21}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Delucidazioni}{22}{subsection.2.3.3}%
+\contentsline {chapter}{\numberline {3}Modelli atomici}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Modello atomico di Bohr-Sommerfeld}{23}{section.3.1}%
+\contentsline {part}{II\hspace {1em}Fisica 2}{25}{part.2}%
+\contentsline {chapter}{\numberline {4}programma}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Base}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Argomenti aggiuntivi}{27}{section.4.2}%
+\contentsline {chapter}{\numberline {5}La legge di Coulomb}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduzione}{29}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}La carica elettrica}{29}{subsection.5.1.1}%
+\contentsline {subsubsection}{Le proprietà delle cariche}{29}{subsubsection*.15}%
+\contentsline {subsubsection}{Conduttori e isolanti}{30}{subsubsection*.16}%
+\contentsline {subsection}{\numberline {5.1.2}Carica indotta}{30}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Legge di Coulomb}{30}{section.5.2}%
+\contentsline {subsubsection}{Riassunto sui vettori}{30}{subsubsection*.17}%
+\contentsline {paragraph}{Componenti:}{30}{paragraph*.18}%
+\contentsline {paragraph}{Modulo e angolo:}{30}{paragraph*.19}%
+\contentsline {paragraph}{Versore:}{30}{paragraph*.20}%
+\contentsline {paragraph}{Sommare:}{31}{paragraph*.21}%
+\contentsline {subsection}{\numberline {5.2.1}Unità do misura}{31}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}La costante dielettrica del vuoto}{31}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Forze multiple}{31}{subsection.5.2.3}%
