@@ -1,0 +1,315 @@
+\section{Equazioni differenziali lineari di ordine n}
+\begin{equation}
+	y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}(x)y^\prime+a_n(x)y=b(x)
+\end{equation}
+\begin{equation*}
+	\left.
+	\begin{aligned}
+		 a_i(x)=\text{coefficienti}\\
+		b(x)=\text{termine noto}
+       	\end{aligned}
+ 	\right\} \text{Definizione in } I\subseteq \mathfrak{R}
+\end{equation*}
+Se $b(x)=0$ l'equazioone si dice \textit{omogenea}, altrimenti \textit{non omogenea}
+\subsection{Teorema}
+Se $y_1(x),\dots,y_n(x),\text{ }x\in I \subseteq R$, sono soluzioni particolari dell'equazione differenziale lineare omogenea di ordine n allora $c_1y_1+\dots+c_ny_n$ è soluzione.\\
+L'integrale generale dell'equazione differenziale lineare omogenea di ordine n è
+\begin{equation*}
+	y_0(x)=c_1y_1(x)+\dots+c_ny_n(x)
+\end{equation*}
+$y_1(x),\dots,y_n(x)$, sono n soluzioni linearmente indipendenti, $c_1,\dots, c_n$, sono n costanti arbitrarie.
+\subsection{Definizione di funzione linearmente indipendente}
+$y_1(x),\dots,y_n(x)$, sono funzioni \underline{linearmente indipendenti} se
+\begin{equation*}
+	c_1y_1+\dots+c_ny_n=0\Rightarrow c_1=c_2=\dots=c_n=0
+\end{equation*}
+\textit{Condizione necessaria e sufficiente affinché n soluzioni, di un'equazione differenziale di ordine n, siano linearmente indipendenti è che il determinante Wronskiano:}
+\begin{equation*}
+	\begin{vmatrix}
+		y_1,&\cdots&y_n\\
+		y_1^\prime&\cdots&y^\prime_n\\
+		\vdots&&\vdots\\
+		y_1^{(n-1)}&\cdots&y_n^{(n-1)}
+	\end{vmatrix}\neq 0
+\end{equation*}
+Data l'equazione non omogenea
+\begin{description}
+	\item[(1) ] $y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}(x)y^\prime+a_n(x)y=b(x)$ 
+\end{description}
+e la sua omogenea associata:
+\begin{description}
+	\item[(2) ] $y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}(x)y^\prime+a_n(x)y=0$  
+\end{description}
+l'integrale generale di (1) è:
+\begin{equation*}
+	y(x)=y_0(x)+\overline{y}(x)
+\end{equation*}
+dove $y_0(x)$ è l'integrale generale di (2) e $\overline{y}(x)$ è un integrale particolare di (1).
+\subsubsection{omogenee a coefficiente costanti}
+\begin{equation}
+	y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}(x)y^\prime+a_n(x)y=0
+\end{equation}
+$a_1,\dots,a_n\in \mathfrak{R}$\\
+A tale equazione si associa l'equazione caratteristica:
+\begin{equation*}
+	\lambda^n+a_1\lambda^{n-1}+\dots+a_{n-1}\lambda+a_n=0
+\end{equation*}
+che, per il teorema fondamentale dell'algebra, ha in C n radici ciascuna ciascuna contata con la propria molteplicità.
+$y=e^{\alpha x}$ è soluzione dell'equazione differenziale lineare omogenea se $\alpha$ è soluzione dell'equazione caratteristica
+\begin{equation}
+	\text{Infatti se } y=e^{\alpha x}, y^\prime=\alpha x, \dots, y^{(n)}=a^ne^{\alpha x}
+\end{equation}
+ sostituendo nell'equazione differenziale si ha
+ \begin{equation}
+	e^{\alpha x}(a^n+a_1\alpha^{n-1}+\dots+a_{n-1}\alpha+a_n)=0
+\end{equation}
+\begin{description}
+\item[$\Rightarrow e^{\alpha x}$ ]  è soluzione dell'equazione omogenea se $\alpha$ è soluzione dell'equazione caratteristica
+\end{description}
+\begin{description}
+	\item[1° Caso)] L'equazione caratteristica ammette n radici reali e distinte $\lambda, \dots,\lambda_n$, allora gli n integrali linearmente indipendenti (\textit{dell'equazione omogenea}) sono:
+	\begin{equation*}
+		y_1=\lambda 1x,y_2=e^{\lambda2x},\dots, y_n=e^{\lambda_n x}
+	\end{equation*}
+ 	e l'integrale generale è
+	\begin{equation*}
+		y_0=c_1e^{\lambda2x}+\dots+c_ne^{\lambda_nx}
+	\end{equation*}
+	Esempio $y^{\prime\prime}-5y^\prime+6y=0$
+	\item [2°Caso)] L'equazione caratteristica ammette radici reali e multiple, per esempio se $\lambda_1$ è di moltiplicità m, allora m integrali particolari (\textit{dell'equazione omogenea}) sono:
+	\begin{equation*}
+		y=e^{\lambda1x},y_2=xe^{\lambda1x},\dots,y_m?x^{m_1}e^{\lambda 1x}
+	\end{equation*}
+	in generale per ogni radice $\lambda_k$ di moltiplicità $m_k$, gli n integrali linearmente indipemndenti sono
+	\begin{eqnarray}
+		e^{\lambda k^x},xe^{\lambda k^x},x^2e^{\lambda k^x}, \dots, x^{mk^{-1}}e^{\lambda k^x} & k=1,\dots,r,&m_1+m_2+\dots+m_r=n
+	\end{eqnarray}
+	Es. $y^{\prime\prime\prime}+y^{\prime\prime}=0$
+	\item[3° Caso)] L'equazione caratteristica ammette radici complesse coniugate:
+		\begin{eqnarray*}
+			\lambda=\alpha+i\beta&\text{di molteplicità m} \\
+			\overline{\lambda}=\alpha+i\beta&\text{di molteplicità m}
+		\end{eqnarray*}
+		allora:
+		\begin{eqnarray*}
+			e^{\alpha x}\cos \beta x,&xe^{\alpha x} \cos\beta x,\dots, x^{m-1}e^{\alpha x} \cos\beta x\\
+			e^{\alpha x}\sin \beta x,&xe^{\alpha x} \sin\beta x,\dots, x^{m-1}e^{\alpha x} \sin\beta x
+		\end{eqnarray*}
+		sono soluzioni dell'equazione omogenea (2m). Si arriva a tali soluzioni considerando gli integrali.\\
+		Si arriva a tali soluzioni considerando gli integrali
+		\begin{eqnarray*}
+			x^ke^{(\alpha+i\beta)x},&x^ke^{(\alpha+i\beta)x},&k=0,1,\dots m-1
+		\end{eqnarray*}
+		a cui vengono applicate le formule di Eulero\\
+		Esempio $y^{(4)}+2y^{\prime\prime}+y=0$
+\end{description}
+\subsubsection{Ricerca di un integrale particolare per un'equazione differenziale lineare di ordine n non omogenea}
+\begin{equation*}
+	\boxed{y^{(n)} +a_1y^{(n-1)}+\dots+a_{(n-1)}y^\prime+a_ny=b(x)}
+\end{equation*}
+\subsubsection{Eq. diff. lineari a coefficienti costanti}
+L’integrale generale dell’equazione non omogenea è
+\begin{equation*}
+	\boxed{y(x)=y_0(x)+\overline{y}(x)}
+\end{equation*}
+Dove:
+\begin{itemize}
+	\item $y_0(x)$ è la soluzione dell'omogenea associata;
+	\item $\overline{y}_0(x)$ è un integrale particolare della non omogenea;
+\end{itemize}
+\paragraph{Calcolo di $\overline{y}(x)$: Metodo della somiglianza}
+\begin{enumerate}
+	\item $b(x)=P_m(x)e^{\gamma x}$ polinomio di grado m
+		\begin{enumerate}
+			\item $\sigma$ non è radice dell'equazione caratteristica
+				\begin{equation}
+					\overline{y}(x)=Q_m(x)e^{\gamma x}
+				\end{equation}
+			\item $\sigma$ è radice dell'equazione caratteristica con molteplicità $k$
+				\begin{equation*}
+					\overline{y}(x)=x^kQ_m(x)e^{\gamma x}
+				\end{equation*}
+			
+		\end{enumerate}
+	\item $b(x)=P_m(x)e^{\gamma x}\cos(\mu x) \text{ o } b(x)=P_m(x)e^{\gamma x}\sin(\mu x)$
+		\begin{enumerate}
+			\item $\gamma\pm i\mu$ non sono radici dell'equazione caratteristica
+			\begin{equation*}
+				\overline{y}(x)=[Q_m(x)\cos(\mu x)+R_m(x)\sin(\mu x)]e^{\mu x}
+			\end{equation*}
+			\item $\gamma\pm i\mu$  è radice dell'equazione caratteristica con molteplicità $k$
+			\begin{equation*}
+				\overline{y}(x)=x^k[Q_m(x)\cos(\mu x)+R_m(x)\sin(\mu x)]e^{\mu x}
+			\end{equation*}
+		\end{enumerate}
+\end{enumerate}
+Esempio $y^{\prime\prime}-2y^\prime+2y=x^2$\\
+L'integrale generale dell'equazione non omogenea è
+\begin{equation*}
+	\boxed{y(x)=y-0(x)+\overline{y}(x)}
+\end{equation*}
+\begin{equation*}
+	y^{\prime\prime}-2y^\prime+2y=0\Rightarrow\lambda^2-2\lambda+2=0\Rightarrow \lambda=1\pm i
+\end{equation*}
+\begin{equation*}
+	y_0(x)=c_1e^x\cos x+c_2e^x\sin x
+\end{equation*}
+\begin{equation*}
+	b(x)=x^2\Rightarrow m=2,\gamma=0\text{ non è soluzione dell'equazione caratteristica, } \overline{y}(x)=ax^2+bx+c
+\end{equation*}
+\textit{Se $\overline{y}(x)$ è soluzione della nostra equazione differenziale non omogenea, allora sostituendo $\overline{y}(x),\overline{y}^\prime(x),\overline{y}^{\prime\prime}(x)$ nell'equazione differenziale si deve avere un'identità.}\\
+Calcoliamo  $\overline{y}^\prime(x),\overline{y}^{\prime\prime}(x)$
+\begin{equation*}
+	\overline{y}^\prime=2ax+b,\overline{y}^{\prime\prime}=2a
+\end{equation*}
+Sostituendo nell’eq diff si ha
+\begin{equation}
+	2a-4ax-2b+2ax^2+2bx+2c=x^2
+\end{equation}
+\begin{equation*}
+	\Rightarrow 2ax^2+(2b-4a)x+2a-2b+2c=x^2
+\end{equation*}
+Per il principio di identità dei polinomi si ha
+\begin{equation}
+	\begin{cases}
+		2a=1\\
+		2b-4a=0\\
+		2a-2b+2c=0
+	\end{cases}\Rightarrow
+	\begin{cases}
+		a=\frac{1}{2}\\
+		b=0\\
+		c=\frac{1}{2}
+	\end{cases}
+\end{equation}
+Perciò $\overline{y}(x)=\frac{x^2}{2}+x+\frac{1}{2}$. E quindi l'integrale generale dell'equazione completa è
+\begin{equation*}
+	y(x)=c_1e^x\cos x+c_2e^x\sin x+\frac{x^2+2x+1}{2}
+\end{equation*}
+\subsection{Metodo della variazione delle costanti arbitrarie (\textit{o di Lagrange})}
+(valido per un equazione differenziale lineare a coefficiente variabili)
+\subparagraph{Teorema}
+Siano $y_1,\dots,y_n(x),\text{ } x\in I \subseteq R,\text{ }n$ integrali  linearmente indipendenti dell'equazione omogenea. Siano $c_1(x),\dots,c_n(x),\text{ }n$ funzioni le cui derivate soddisfano in I il sistema di equazioni lineari in $c_1(x),\dots,\text{ } c_n^\prime(x)$:
+\begin{equation*}
+	\begin{cases}
+		c_1^\prime(x)y_1+\dots+c_n^\prime(x)y_n=0\\
+		c_1^\prime(x)y_1^\prime+\dots+c_n^\prime(x)y_n^\prime=0\\
+		\dots\\
+		\dots\\
+		c_1^\prime(x)y_1^{(n-1)}+\dots+c_n^\prime(x)y_{(n-1)}=b(x)\\
+	\end{cases}
+\end{equation*}
+Allora un integrale particolare dell'equazione differenziale lineare di ordine n è
+\begin{equation*}
+	\overline{y}(x)=c_1(x)y_1(x)+\dots+c_n(x)y_n(x)
+\end{equation*}
+\subsection{Equazioni differenziali lineari, Metodo di Lagrange: esempio}
+\begin{equation*}
+	y^{\prime\prime}+y=\frac{1}{\cos x}
+\end{equation*}
+\begin{eqnarray*}
+	\lambda^2+1=0\Rightarrow \gamma=\pm1,&y_0(x)=c_1\cos x+c_2\sin x\\
+	c_1,c_2\text{ costanti}.\\
+	y(x)=y_0(x)+\overline{y}(x)\\
+	\overline{y}(x)=c_1(x)\cos x+c_2(x)\sin x\\
+	c_1(x),c_2(x)&\text{funzione da determinare}\\
+	\begin{cases}
+		c_1^\prime(x)\cos x_1+\dots+c_n^\prime(x)\sin x_n=0\\
+		c_1^\prime(x)\sin x_1^\prime+\dots+c_n^\prime(x)\cos x_n^\prime=\frac{1}{\cos x}
+	\end{cases}&W(x)=\begin{vmatrix}
+a		y_1(x)&y_2(x)\\
+		y^\prime_1(x)&y^\prime_2(x)
+	\end{vmatrix}=\begin{vmatrix}
+		\cos x&\sin x\\
+		-\sin x&\cos x\\
+	\end{vmatrix}=1\\
+	c_1^\prime(x)=\frac{\begin{vmatrix}
+		0&y_2(x)\\
+		b(x)&y^\prime_2(x)
+	\end{vmatrix}}{W(x)}=\frac{\begin{vmatrix}
+		0&\sin(x)\\
+		\frac{1}{\cos x}&\cos(x)
+	\end{vmatrix}}{W(x)}=-\frac{\sin x}{\cos x}=-\tan x&c_2^\prime(x)=\frac{\begin{vmatrix}
+		0&y_1(x)\\
+		y^\prime_1(x)&b(x)
+	\end{vmatrix}}{W(x)}=\frac{\begin{vmatrix}
+		\cos x&0\\
+		-\sin x&\frac{1}{\cos x}\\
+	\end{vmatrix}}{W(x)}=1\\
+	c_1=\int\frac{-\sin x}{\cos x}dx=\ln|\cos x|,&c_2(x)=\int 1dx=x\\
+	\overline{y}(x)=c_1(x)\cos x+c_2(x)\sin x=\cos x \ln|\cos x|+x\sin x\\
+	\text{l'integrale generale è}&y(x)=c_1\cos x+c_2\sin x+\cos x\ln|\cos x|+x\sin x
+\end{eqnarray*}
+\begin{equation}
+	y^{\prime\prime\prime}-2y^{\prime\prime}+y^\prime=e^x
+\end{equation}
+\begin{eqnarray*}
+	\lambda^3-2\lambda^2+\lambda=0\Rightarrow\lambda(\lambda^2-2\lambda+1)=0\\
+	\lambda=0(\lambda-1)^2=0&\lambda=1&m=2\\
+	y_0=c_1e^2x
+\end{eqnarray*}
+\section{Problema di Cauchy}
+Sia $f:R^2\supseteq D\to R,$ con D aperto, $(x_0,y_0)\in D$
+\begin{equation*}
+	\begin{cases}
+		y^\prime=f(x,y)
+		y(x_0)=y_0
+	\end{cases} \text{ Problema di Cauchy}
+\end{equation*}
+$y=y(x)$ è detta soluzione (locale) del Problema di
+Cauchy se è definita ed è derivabile in un intorno del
+punto x0, tale che in tale intorno
+\begin{equation*}
+	y^\prime(x)=f(x,y(x))
+\end{equation*}
+\subsection{Esempio}
+\begin{equation}
+	\begin{cases}
+		y^\prime=y-1\\
+		y(0)=4
+	\end{cases}
+\end{equation}
+\begin{equation*}
+	y^\prime-y=-1\text{ } y=e^{\int1dx}\left[\int e^{\int1dx}*(-1)dx+c\right]
+\end{equation*}
+\begin{equation*}
+	y=e^x\left(\int e^{-x}*(-1)dx+c\right)=e^x\left(e^{-x}+c\right)
+\end{equation*}
+\begin{eqnarray*}
+	y=1+c*e^x\\
+	y(0)=4
+\end{eqnarray*}
+\begin{eqnarray*}
+	4=1+c*e^0\\
+	c=3
+\end{eqnarray*}
+\begin{eqnarray}
+	\begin{cases}
+		y^\prime=y^{\frac{2}{3}}\\
+		y(0)=0
+	\end{cases}&y=0 \text{ è soluzione}
+\end{eqnarray}
+Se $y\neq 0:$
+\begin{equation*}
+	\begin{matrix}
+		\frac{dy}{y^{\frac{2}{3}}}=dx&\int\frac{dy}{y^\frac{2}{3}}=\int dx\\
+		y=\left(\frac{x+c}{3}\right)&y=\frac{x^3}{27} \text{ altra soluzione}
+	\end{matrix}
+\end{equation*}
+
+\subsection{Teorema di Peano}
+Se $f(x,y)$ è continua un aperto $D\supseteq R^2$ e $(x_0,y_0)\in D$, allora esiste una soluzione del problema di Cauchy
+\begin{equation*}
+	\begin{cases}
+		y^\prime=f(x,y)\\
+		y(0)=y_0
+	\end{cases}
+\end{equation*}
+\paragraph{Teorema di Cauchy} (\textit{di esistenza e unicità locale}) Sia $f:D\supseteq R^2\to R$, con D aperto. Se:
+\begin{enumerate}
+	\item $f$ è continua in D
+	\item $f$ è localmente \textit{LIPSCHITZIANA} in D rispetto a y e uniformemente in x, allora
+a\end{enumerate}
+
+
+
