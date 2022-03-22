@@ -125,14 +125,20 @@ del documento
 				quelle che possono assumere tutti i valori intermedi
 				all'interno di un dato intervallo; Si dicono grandezze digitali
 				quelle che vengono espresse in modo numerico, senza possibilità
-				di discriminare valori intermedi tra due cifre consecutive.\\
-				By \href{https://it.wikipedia.org/wiki/Analogico}{Wikipedia}
+				di discriminare valori intermedi tra due cifre consecutive. 
+				Ulteriori approfondimenti presenti in (\ref{sanalog})
+				\begin{center}
+					By
+					\underline{\href{https://it.wikipedia.org/wiki/Analogico}{Wikipedia}}
+				\end{center}
 			\item Informazioni Digitali: Con digitale o numerico, in 
 				informatica ed elettronica, ci si riferisce a tutto ciò che
 				viene rappresentato con numeri o che opera manipolando numeri,
-				contrapposto all'analogico.\\
-				By
-				\href{https://it.wikipedia.org/wiki/Digitale_(informatica)}{Wikipedia}
+				contrapposto all'analogico. Ulteriori approfondimenti presenti
+				in (\ref{sdigital})
+				\begin{center}
+					By \underline{\href{https://it.wikipedia.org/wiki/Digitale_(informatica)}{Wikipedia}}
+				\end{center}
 		\end{itemize}
 \end{itemize}
 \texttt{Oggi ormai utilizziamo il digitale perché effettivamente i calcolatori
@@ -185,7 +191,113 @@ occupando i convertire da analogico a digitale e viceversa.
 	\item Aleatorio (dal latino ``alea'', gioco di dati) è sinonimo di non
 		predicibile a priori (in contrapposizione con deterministico).
 \end{itemize}
+\subsection{Rappresentazione dell'informazione}
+\begin{itemize}
+	\item Associazione tra caratteristiche (di valore e temporali) dei segnali
+		e le informazioni che essi rappresentano;
+	\item Le caratteristiche sono impresse dal dispositivo generatore del
+		segnale;
+	\item Quali caratteristiche?
+		\begin{itemize}
+			\item valore, andamento temporale ed eventi del segnale (es.
+				superare una soglia), etc.
+		\end{itemize}
+\end{itemize}
+\subsection{Osservazione}
+\begin{itemize}
+	\item L'associazione informazione-segnale può essere arbitraria,
+		tecnologie permettendo
+	\item Esempi
+		\begin{itemize}
+			\item valore costante $\to$ segnale a frequenza costante evento
+				$\to$ segnale ad ampiezza costante
+		\end{itemize}
+	\item Occorre quindi chiaramente distinguere tra stati, andamenti ed eventi
+		del segnale e del fenomeno (\textit{cioè dell'informazione}) da esso
+		descritto.
+\end{itemize}
+\subsection{Classificazione di segnali}
+\begin{tasks}(3)
+	\task In base alla loro natura fisica [grandezza fisica $\to$ trasduttore
+	$\to$ segnale elettrico]
+	\begin{itemize}
+		\item elettrici;
+		\item acustici;
+		\item etc.
+	\end{itemize}
+	\task In base a come vengono rappresentati
+	\begin{itemize}
+		\item analogici;
+		\item digitali.
+	\end{itemize}
+	\task Segnali elettrici
+	\begin{itemize}
+		\item Trasmissione di informazione tramite una variazione di corrente
+			elettrica o di tensione all'interno di un conduttore oppure in un
+			punto di un circuito elettrico o elettronico.
+		\item grazie ai trasduttori qualsiasi segnale fisico può diventare
+			elettrico
+		\item Esempio: segnale acustico (\textit{vibrazione})
+	\end{itemize}
+\end{tasks}
+\section{Segnali}
+\subsection{Segnali analogici \label{sanalog}}
+\begin{itemize}
+	\item il valore dell'informazione rappresentata è una funzione continua
+		della grandezza significativa;
+	\item rappresentazione attraverso un numero reale (\textit{con precisione
+		teoricamente infinita})
+	\item generati da sensori o trasduttori che creano una corrispondenza tra
+		la grandezza fisica che è oggetto di informazione (\textbf{esempio
+		temperatura}) e il segnale (\textbf{esempio tensione elettrica})
+\end{itemize}
+\paragraph{Esempi}
+\begin{itemize}
+	\item \textbf{Temperatura:} altezza in \texttt{mm} del mercurio nel
+		termometro;
+	\item \textbf{Acustico:} variazione di pressione ad un microfono;
+	\item \textbf{Elettrico:} tensione ai capi di un conduttore.
+\end{itemize}
+\subsection{Segnali digitali\label{sdigital}}
+\begin{itemize}
+	\item rappresentazione come sequenza di numeri presi da un insieme di
+		valori discreti, ovvero appartenenti a uno stesso insieme ben definito
+		e circoscritto;
+	\item rappresentazione ``{\bf a fasce}''
+\end{itemize}
+\paragraph{Osservazione importante}
+\begin{itemize}
+	\item L'attributo ``analogico'' o ``digitale'' non si riferisce a
+		caratteristiche intrinseche del segnale ma a caratteristiche
+		dell'informazione da esso rappresentato:
+	\item {\color{red} I segnali digitali nascono come analogici}
+\end{itemize}
+\subsection{Pregi e difetti}
+\paragraph{Analogico}
+\subparagraph{Pregi}
+\begin{tasks}(2)
+	\task Sono più ``naturali'', le leggi della fisica classica operano
+	tipicamente nel ``continuo'';
+	\task Il rumore deforma ma non stravolge il segnale (errori proporzionali
+	all'entità del disturbo ``{\bf in onde media la radio analogica la senti,
+	anche se con un forte rumore bianco di fondo.}'')
+\end{tasks}
+\subparagraph{Difetti}
+\begin{tasks}(2)
+	\task Dispositivi di elaborazione relativamente poco precisi, poco stabili
+	nel tempo ``maggiormente predisposti ai guasti, alle intemperie e anche a
+	potenziali variazioni atmosferiche'' e poco immuni alle perturbazioni;\\
+	({\tt esempio}: il video registratore VHS ``M-matic'' o sony U-matic, sono
+	apparecchi estremamente complessi, soprattutto gli ultimi per metà digitali
+	con tante funzionalità e tasti programmabili per fasce orarie, perfetti per
+	registrale le trasmissioni in modo autonomo.)
+	\task Le elaborazioni su di essi sono poco flessibili e producono degrado.
+\end{tasks}
 
+
+
+
+%%% fine capitolo uno
 
 \chapter{Livelli architetturali bassi}
 
