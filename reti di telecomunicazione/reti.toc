@@ -1,11 +1,15 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduzione}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Sommario}{9}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Alcune osservazioni}{9}{subsection.1.1.1}%
+\contentsline {subsubsection}{I risultati di Shannon}{10}{subsubsection*.4}%
+\contentsline {section}{\numberline {1.2}I segnali}{10}{section.1.2}%
 \contentsline {chapter}{\numberline {2}Livelli architetturali bassi}{11}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Gestione degli errori}{11}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Rivelazione di errore}{11}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Controllo di parità}{11}{subsection.2.1.2}%
-\contentsline {subsubsection}{Esempio}{12}{subsubsection*.4}%
+\contentsline {subsubsection}{Esempio}{12}{subsubsection*.5}%
 \contentsline {chapter}{\numberline {3}Reti in area Locale e geografica}{13}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Rete internet}{15}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Applicazione delle reti}{17}{chapter.5}%

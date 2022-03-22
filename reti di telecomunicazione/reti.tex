@@ -93,7 +93,7 @@
   \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
   \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
 
-\title{Appunti di Matematica}
+\title{Appunti di Reti di telecomunicazioni}
 \author{Nicola Ferru}
 \date{}
 \makeindex[columns=3, title=Alphabetical Index, intoc]
@@ -104,6 +104,88 @@
 \listoftables
 \listoffigures
 \chapter{Introduzione}
+\section{Sommario}
+Qui di seguito sono riportati i concetti fondamentali trattati all'interno
+del documento
+\begin{itemize}
+	\item Informazione e segnali;
+		\begin{tasks}(2)
+			\task L'informazione sussiste solo se il ricevente della
+			trasmissione non conosce il contenuto della suddetta;
+			\task Per esistere una trasmissione devono esserci:
+				\begin{enumerate}
+					\item Comunicazione;
+					\item mezzo di trasmissione;
+					\item informazione.
+				\end{enumerate}
+		\end{tasks}
+	\item Informazioni analogiche e digitali.
+		\begin{itemize}
+			\item Informazioni analogiche: si dicono grandezze analogiche
+				quelle che possono assumere tutti i valori intermedi
+				all'interno di un dato intervallo; Si dicono grandezze digitali
+				quelle che vengono espresse in modo numerico, senza possibilità
+				di discriminare valori intermedi tra due cifre consecutive.\\
+				By \href{https://it.wikipedia.org/wiki/Analogico}{Wikipedia}
+			\item Informazioni Digitali: Con digitale o numerico, in 
+				informatica ed elettronica, ci si riferisce a tutto ciò che
+				viene rappresentato con numeri o che opera manipolando numeri,
+				contrapposto all'analogico.\\
+				By
+				\href{https://it.wikipedia.org/wiki/Digitale_(informatica)}{Wikipedia}
+		\end{itemize}
+\end{itemize}
+\texttt{Oggi ormai utilizziamo il digitale perché effettivamente i calcolatori
+elettronici gestiscono meglio una codifica rispetto a dei numeri reali. Per di
+più costa meno produrre un dispositivo che gestisca segnali digitali rispetto
+ad un dispositivo che gestisce mezzi analogici, per esempio la differenza tra
+lo standard VHS e lo standard CD/DVD/Blue Ray.}\\
+Bisogna anche dire che le trasmissione vengono comunque trasmessi tramite dei
+canali fisici ({\bf Analogici}), semplicemente all'interno dei dispositivi che si
+occupando i convertire da analogico a digitale e viceversa.
+\subsection{Alcune osservazioni}
+\begin{itemize}
+	\item Non tutte le informazioni costituiscono informazione
+		\begin{enumerate}
+			\item La notizia comunicata deve per noi essere eclatante;
+			\item una persona noiosa non apporta informazione perché ripete
+				continuamente gli stessi argomenti.
+		\end{enumerate}
+	\item Problema di misurazione del contenuto informativo
+		\begin{itemize}
+			\item {\bf Claude E. Shannon} ({\tt 1916-2001}), fondatore della
+				\textit{Teoria Matematica dell'Informazione}, è stato il primo
+				ad introdurre la distinzione tra forma e significato nel
+				processo comunicativo.
+		\end{itemize}
+\end{itemize}
+\subsubsection{I risultati di Shannon}
+\begin{itemize}
+	\item Non è possibile definire la quantità di informazione associata ad un
+		messaggio già ricevuto, ma piuttosto la quantità di informazione
+		associata ad un papabile messaggio
+		\begin{itemize}
+			\item \textit{``information is that which reduces uncertainty''}
+		\end{itemize}
+	\item La quantità di informazione associata ad un massaggio è tanto più
+		altra quanto più esso è inatteso
+		\begin{itemize}
+			\item il messaggio ``{\bf domani sorgerà il sole}'' ha un bassissimo
+				contenuto informativo perché è assolutamente scontato e banale
+			\item il messaggio ``{\bf Domani scoppierà la guerra}'' ha un alto
+				contenuto informativo.
+		\end{itemize}
+\end{itemize}
+\section{I segnali}
+\begin{itemize}
+	\item \textit{Grandezze fisiche variabili nel tempo a cui è associata
+		un'informazione};
+	\item \textit{L'informazione è associata ad una variazione ({\color{red}
+		aleatorio} e non deterministica) della grandezza fisica};
+	\item Aleatorio (dal latino ``alea'', gioco di dati) è sinonimo di non
+		predicibile a priori (in contrapposizione con deterministico).
+\end{itemize}
+
 
 \chapter{Livelli architetturali bassi}
 
@@ -120,11 +202,11 @@ principali sono:
 \begin{itemize}
 	\item Normalmente si basa sull'aggiunta di ridondanza in trasmissione
 		\begin{itemize}
-			\item utilizzata in ricezione per rivelare (ma non correggere)
+			\item utilizzata in ricezione per rivelare ({\bf ma non correggere})
 				gli errori;
 			\item la ridondanza richiesta per la rivelazione è molto più
 				contenuta rispetto a quella che sarebbe richiesta per la
-				correzione (16-32bit)
+				correzione (\textit{16-32bit})
 		\end{itemize}
 	\item Può essere alla base di un'eventuale correzione/recupero
 	\item Differenti meccanismi di gestione del codice di rivelazione di errore
