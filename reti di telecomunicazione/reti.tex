@@ -50,7 +50,7 @@
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 
-\lstset{ 
+\lstset{
   backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
   basicstyle=\footnotesize,        % the size of the fonts that are used for the code
   breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
@@ -125,13 +125,13 @@ del documento
 				quelle che possono assumere tutti i valori intermedi
 				all'interno di un dato intervallo; Si dicono grandezze digitali
 				quelle che vengono espresse in modo numerico, senza possibilità
-				di discriminare valori intermedi tra due cifre consecutive. 
+				di discriminare valori intermedi tra due cifre consecutive.
 				Ulteriori approfondimenti presenti in (\ref{sanalog})
 				\begin{center}
 					By
 					\underline{\href{https://it.wikipedia.org/wiki/Analogico}{Wikipedia}}
 				\end{center}
-			\item Informazioni Digitali: Con digitale o numerico, in 
+			\item Informazioni Digitali: Con digitale o numerico, in
 				informatica ed elettronica, ci si riferisce a tutto ciò che
 				viene rappresentato con numeri o che opera manipolando numeri,
 				contrapposto all'analogico. Ulteriori approfondimenti presenti
@@ -293,8 +293,140 @@ occupando i convertire da analogico a digitale e viceversa.
 	registrale le trasmissioni in modo autonomo.)
 	\task Le elaborazioni su di essi sono poco flessibili e producono degrado.
 \end{tasks}
-
-
+\paragraph{Digitale}
+\subparagraph{Pregi}
+\begin{tasks}(3)
+	\task Rappresentazione esatta di simboli di un alfabeto finito;
+	\task Semplicità e robustezza dei circuiti di gestione ed elaborazione;
+	\task Elevata immunità ai disturbi.
+\end{tasks}
+\subparagraph{Difetti}
+\begin{tasks}(3)
+	\task Gli errori possono stravolgere l'informazione;
+	\task Servono molti bit per rappresentare informazioni ricche;
+	\task Le informazioni intrinsecamente continue vanno convertite.
+\end{tasks}
+\subsection{Il binario}
+\begin{itemize}
+	\item Due stati previsti e possibili:
+		\begin{itemize}
+			\item 1 = Vero ``TRUE'' = ON = HIGH ``\textit{Livello alto}''
+			\item 0 = Falso ``False'' = OFF = Low ``\textit{Livello basso}''
+		\end{itemize}
+	\item Logica positiva o negativa;
+	\item Rappresentazione necessaria per un calcolatore.
+	\item Rappresentazione senza segno
+		\begin{itemize}
+			\item base \textit{b} e lunghezza \textit{n};
+			\item conversione in base 10;
+			\item con \textit{n} bit rappresento qualsiasi decimale senza segno
+				tra 0 e $2^n-1$
+				\begin{equation}
+					(a_{n-1},\dots, a_1,a_0)_2 \to
+					\sum^{n-1}_{\substack{i=0}}a_ib^i
+				\end{equation}
+				Dove ($a_{n-1}$) è la cifra più significativa e $a_0$ è quella
+				meno significativa.\\
+				Un esempio:
+				\begin{equation}
+					(10101110)_2\Leftrightarrow (174)_{10} \Leftrightarrow
+					(AE)_{16}
+				\end{equation}
+		\end{itemize}
+	\item Rappresentazione in modulo e segno
+		\begin{itemize}
+			\item il bit più significativo rappresenta il segno (0 = positivo e
+				1 = segno negativo), mentre i restanti rappresentano il modulo;
+			\item scomoda per operazioni aritmetiche (due modi per scrivere 0);
+			\item la somma tra due numeri A e B si svolge come da tabella
+				\begin{table}[h!]
+					\centering
+					\begin{tabular}{l|ccc|}
+						&&\multicolumn{2}{c|}{Segno di B} \\
+						&&+&-\\
+						\multirow{2}{*}{Segno di A}&+&$A+B$&$a-\abs B$\\
+						&-&$B-\abs A$&$\abs A +\abs B$
+					\end{tabular}
+					\caption {Somma tra A e B}
+				\end{table}
+		\end{itemize}
+	\item Rappresentazione in complemento a 1
+		\begin{tasks}
+			\task il bit più significativo rappresenta ({\tt come prima}) il
+			segno
+			\begin{itemize}
+				\item stesso intervallo di valori rappresentabili con modulo e
+					segno.
+			\end{itemize}
+			\task un numero negativo si ottiene dal suo positivo e cambiando
+			tutti i bit
+			\begin{itemize}
+				\item esempio a 4 bit: 0110 corrisponde a 6, mentre, 1001
+					corrisponde a -6
+			\end{itemize}
+			\task nella operazione aritmetiche (\textit{ad esempio la somma})
+			si utilizza l'eventuale riporto in fase di somma.
+			\task esempio: 22+3=25
+			\begin{center}
+				\begin{tabular}{lccc}
+					riporto&&{\color{red}1100}\\
+					&0001&0110&(22)\\
+					+&0000&0011&(3)\\\hline
+					&0001&1001&(25)
+				\end{tabular}
+			\end{center}
+		\end{tasks}
+	\item Rappresentazione in complemento a 2
+	\begin{tasks}(2)
+		\task vantaggio: unica rappresentazione per lo zero;
+		\task si ignora l'overflow;
+		\task esempio: 31-5=26
+			\begin{center}
+				\begin{tabular}{lccc}
+					riporto&{\color{red}1111}&{\color{red}1110}\\
+					&0001&1111&(31)\\
+					+&0000&1011&(-5)\\\hline
+					&0001&1010&(26)
+				\end{tabular}
+			\end{center}
+	\end{tasks}
+\end{itemize}
+\subsection{Confronto}
+\begin{tasks}(3)
+	\task Rappresentazione in modulo e il segno
+	\begin{itemize}
+		\item il bit più significativo rappresenta il segno (\textit{1 =
+			negativo}) e i restanti il modulo.
+		\item scomoda per operazioni aritmetiche
+	\end{itemize}
+	\task Rappresentazione in complemento a 1
+	\begin{itemize}
+		\item si complementano tutti i bit
+		\item utilizzo del riporto in fase di somma
+	\end{itemize}
+	\task Rappresentazione in complemento a 2
+	\begin{itemize}
+		\item si complementano tutti i bit e si somma 1
+		\item unica rappresentazione per per lo zero
+	\end{itemize}
+\end{tasks}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		\multirow{2}{*}{Stringa}&\multicolumn{4}{c|}{rappresentazione}\\
+		&senza segno&modulo e segno&complemento a 1&complemento a 2\\\hline
+		000&0&0&0&0\\\hline
+		001&1&1&1&1\\\hline
+		010&2&2&2&2\\\hline
+		011&3&3&3&3\\\hline
+		100&4&0&-3&-4\\\hline
+		101&5&-1&-2&-3\\\hline
+		110&6&-2&-1&-2\\\hline
+		111&7&-3&0&-1\\\hline
+	\end{tabular}
+	\caption {Confronto tra il modulo e segno, complemento 1 \& 2}
+\end{table}
 
 
 %%% fine capitolo uno

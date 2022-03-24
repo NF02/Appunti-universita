@@ -17,11 +17,16 @@
 \contentsline {paragraph}{Analogico}{11}{paragraph*.7}%
 \contentsline {subparagraph}{Pregi}{12}{subparagraph*.8}%
 \contentsline {subparagraph}{Difetti}{12}{subparagraph*.9}%
-\contentsline {chapter}{\numberline {2}Livelli architetturali bassi}{13}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Gestione degli errori}{13}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Rivelazione di errore}{13}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Controllo di parità}{13}{subsection.2.1.2}%
-\contentsline {subsubsection}{Esempio}{14}{subsubsection*.10}%
-\contentsline {chapter}{\numberline {3}Reti in area Locale e geografica}{15}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Rete internet}{17}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Applicazione delle reti}{19}{chapter.5}%
+\contentsline {paragraph}{Digitale}{12}{paragraph*.10}%
+\contentsline {subparagraph}{Pregi}{12}{subparagraph*.11}%
+\contentsline {subparagraph}{Difetti}{12}{subparagraph*.12}%
+\contentsline {subsection}{\numberline {1.3.4}Il binario}{12}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Confronto}{13}{subsection.1.3.5}%
+\contentsline {chapter}{\numberline {2}Livelli architetturali bassi}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Gestione degli errori}{15}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Rivelazione di errore}{15}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Controllo di parità}{15}{subsection.2.1.2}%
+\contentsline {subsubsection}{Esempio}{16}{subsubsection*.15}%
+\contentsline {chapter}{\numberline {3}Reti in area Locale e geografica}{17}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Rete internet}{19}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Applicazione delle reti}{21}{chapter.5}%
