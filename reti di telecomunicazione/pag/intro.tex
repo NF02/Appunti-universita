@@ -1,0 +1,324 @@
+\section{Sommario}
+Qui di seguito sono riportati i concetti fondamentali trattati all'interno
+del documento
+\begin{itemize}
+	\item Informazione e segnali;
+		\begin{tasks}(2)
+			\task L'informazione sussiste solo se il ricevente della
+			trasmissione non conosce il contenuto della suddetta;
+			\task Per esistere una trasmissione devono esserci:
+				\begin{enumerate}
+					\item Comunicazione;
+					\item mezzo di trasmissione;
+					\item informazione.
+				\end{enumerate}
+		\end{tasks}
+	\item Informazioni analogiche e digitali.
+		\begin{itemize}
+			\item Informazioni analogiche: si dicono grandezze analogiche
+				quelle che possono assumere tutti i valori intermedi
+				all'interno di un dato intervallo; Si dicono grandezze digitali
+				quelle che vengono espresse in modo numerico, senza possibilità
+				di discriminare valori intermedi tra due cifre consecutive.
+				Ulteriori approfondimenti presenti in (\ref{sanalog})
+				\begin{center}
+					By
+					\underline{\href{https://it.wikipedia.org/wiki/Analogico}{Wikipedia}}
+				\end{center}
+			\item Informazioni Digitali: Con digitale o numerico, in
+				informatica ed elettronica, ci si riferisce a tutto ciò che
+				viene rappresentato con numeri o che opera manipolando numeri,
+				contrapposto all'analogico. Ulteriori approfondimenti presenti
+				in (\ref{sdigital})
+				\begin{center}
+					By \underline{\href{https://it.wikipedia.org/wiki/Digitale_(informatica)}{Wikipedia}}
+				\end{center}
+		\end{itemize}
+\end{itemize}
+\texttt{Oggi ormai utilizziamo il digitale perché effettivamente i calcolatori
+elettronici gestiscono meglio una codifica rispetto a dei numeri reali. Per di
+più costa meno produrre un dispositivo che gestisca segnali digitali rispetto
+ad un dispositivo che gestisce mezzi analogici, per esempio la differenza tra
+lo standard VHS e lo standard CD/DVD/Blue Ray.}\\
+Bisogna anche dire che le trasmissione vengono comunque trasmessi tramite dei
+canali fisici ({\bf Analogici}), semplicemente all'interno dei dispositivi che si
+occupando i convertire da analogico a digitale e viceversa.
+\subsection{Alcune osservazioni}
+\begin{itemize}
+	\item Non tutte le informazioni costituiscono informazione
+		\begin{enumerate}
+			\item La notizia comunicata deve per noi essere eclatante;
+			\item una persona noiosa non apporta informazione perché ripete
+				continuamente gli stessi argomenti.
+		\end{enumerate}
+	\item Problema di misurazione del contenuto informativo
+		\begin{itemize}
+			\item {\bf Claude E. Shannon} ({\tt 1916-2001}), fondatore della
+				\textit{Teoria Matematica dell'Informazione}, è stato il primo
+				ad introdurre la distinzione tra forma e significato nel
+				processo comunicativo.
+		\end{itemize}
+\end{itemize}
+\subsubsection{I risultati di Shannon}
+\begin{itemize}
+	\item Non è possibile definire la quantità di informazione associata ad un
+		messaggio già ricevuto, ma piuttosto la quantità di informazione
+		associata ad un papabile messaggio
+		\begin{itemize}
+			\item \textit{``information is that which reduces uncertainty''}
+		\end{itemize}
+	\item La quantità di informazione associata ad un massaggio è tanto più
+		altra quanto più esso è inatteso
+		\begin{itemize}
+			\item il messaggio ``{\bf domani sorgerà il sole}'' ha un bassissimo
+				contenuto informativo perché è assolutamente scontato e banale
+			\item il messaggio ``{\bf Domani scoppierà la guerra}'' ha un alto
+				contenuto informativo.
+		\end{itemize}
+\end{itemize}
+\section{I segnali}
+\begin{itemize}
+	\item \textit{Grandezze fisiche variabili nel tempo a cui è associata
+		un'informazione};
+	\item \textit{L'informazione è associata ad una variazione ({\color{red}
+		aleatorio} e non deterministica) della grandezza fisica};
+	\item Aleatorio (dal latino ``alea'', gioco di dati) è sinonimo di non
+		predicibile a priori (in contrapposizione con deterministico).
+\end{itemize}
+\subsection{Rappresentazione dell'informazione}
+\begin{itemize}
+	\item Associazione tra caratteristiche (di valore e temporali) dei segnali
+		e le informazioni che essi rappresentano;
+	\item Le caratteristiche sono impresse dal dispositivo generatore del
+		segnale;
+	\item Quali caratteristiche?
+		\begin{itemize}
+			\item valore, andamento temporale ed eventi del segnale (es.
+				superare una soglia), etc.
+		\end{itemize}
+\end{itemize}
+\subsection{Osservazione}
+\begin{itemize}
+	\item L'associazione informazione-segnale può essere arbitraria,
+		tecnologie permettendo
+	\item Esempi
+		\begin{itemize}
+			\item valore costante $\to$ segnale a frequenza costante evento
+				$\to$ segnale ad ampiezza costante
+		\end{itemize}
+	\item Occorre quindi chiaramente distinguere tra stati, andamenti ed eventi
+		del segnale e del fenomeno (\textit{cioè dell'informazione}) da esso
+		descritto.
+\end{itemize}
+\subsection{Classificazione di segnali}
+\begin{tasks}(3)
+	\task In base alla loro natura fisica [grandezza fisica $\to$ trasduttore
+	$\to$ segnale elettrico]
+	\begin{itemize}
+		\item elettrici;
+		\item acustici;
+		\item etc.
+	\end{itemize}
+	\task In base a come vengono rappresentati
+	\begin{itemize}
+		\item analogici;
+		\item digitali.
+	\end{itemize}
+	\task Segnali elettrici
+	\begin{itemize}
+		\item Trasmissione di informazione tramite una variazione di corrente
+			elettrica o di tensione all'interno di un conduttore oppure in un
+			punto di un circuito elettrico o elettronico.
+		\item grazie ai trasduttori qualsiasi segnale fisico può diventare
+			elettrico
+		\item Esempio: segnale acustico (\textit{vibrazione})
+	\end{itemize}
+\end{tasks}
+\section{Segnali}
+\subsection{Segnali analogici \label{sanalog}}
+\begin{itemize}
+	\item il valore dell'informazione rappresentata è una funzione continua
+		della grandezza significativa;
+	\item rappresentazione attraverso un numero reale (\textit{con precisione
+		teoricamente infinita})
+	\item generati da sensori o trasduttori che creano una corrispondenza tra
+		la grandezza fisica che è oggetto di informazione (\textbf{esempio
+		temperatura}) e il segnale (\textbf{esempio tensione elettrica})
+\end{itemize}
+\paragraph{Esempi}
+\begin{itemize}
+	\item \textbf{Temperatura:} altezza in \texttt{mm} del mercurio nel
+		termometro;
+	\item \textbf{Acustico:} variazione di pressione ad un microfono;
+	\item \textbf{Elettrico:} tensione ai capi di un conduttore.
+\end{itemize}
+\subsection{Segnali digitali\label{sdigital}}
+\begin{itemize}
+	\item rappresentazione come sequenza di numeri presi da un insieme di
+		valori discreti, ovvero appartenenti a uno stesso insieme ben definito
+		e circoscritto;
+	\item rappresentazione ``{\bf a fasce}''
+\end{itemize}
+\paragraph{Osservazione importante}
+\begin{itemize}
+	\item L'attributo ``analogico'' o ``digitale'' non si riferisce a
+		caratteristiche intrinseche del segnale ma a caratteristiche
+		dell'informazione da esso rappresentato:
+	\item {\color{red} I segnali digitali nascono come analogici}
+\end{itemize}
+\subsection{Pregi e difetti}
+\paragraph{Analogico}
+\subparagraph{Pregi}
+\begin{tasks}(2)
+	\task Sono più ``naturali'', le leggi della fisica classica operano
+	tipicamente nel ``continuo'';
+	\task Il rumore deforma ma non stravolge il segnale (errori proporzionali
+	all'entità del disturbo ``{\bf in onde media la radio analogica la senti,
+	anche se con un forte rumore bianco di fondo.}'')
+\end{tasks}
+\subparagraph{Difetti}
+\begin{tasks}(2)
+	\task Dispositivi di elaborazione relativamente poco precisi, poco stabili
+	nel tempo ``maggiormente predisposti ai guasti, alle intemperie e anche a
+	potenziali variazioni atmosferiche'' e poco immuni alle perturbazioni;\\
+	({\tt esempio}: il video registratore VHS ``M-matic'' o sony U-matic, sono
+	apparecchi estremamente complessi, soprattutto gli ultimi per metà digitali
+	con tante funzionalità e tasti programmabili per fasce orarie, perfetti per
+	registrale le trasmissioni in modo autonomo.)
+	\task Le elaborazioni su di essi sono poco flessibili e producono degrado.
+\end{tasks}
+\paragraph{Digitale}
+\subparagraph{Pregi}
+\begin{tasks}(3)
+	\task Rappresentazione esatta di simboli di un alfabeto finito;
+	\task Semplicità e robustezza dei circuiti di gestione ed elaborazione;
+	\task Elevata immunità ai disturbi.
+\end{tasks}
+\subparagraph{Difetti}
+\begin{tasks}(3)
+	\task Gli errori possono stravolgere l'informazione;
+	\task Servono molti bit per rappresentare informazioni ricche;
+	\task Le informazioni intrinsecamente continue vanno convertite.
+\end{tasks}
+\subsection{Il binario}
+\begin{itemize}
+	\item Due stati previsti e possibili:
+		\begin{itemize}
+			\item 1 = Vero ``TRUE'' = ON = HIGH ``\textit{Livello alto}''
+			\item 0 = Falso ``False'' = OFF = Low ``\textit{Livello basso}''
+		\end{itemize}
+	\item Logica positiva o negativa;
+	\item Rappresentazione necessaria per un calcolatore.
+	\item Rappresentazione senza segno
+		\begin{itemize}
+			\item base \textit{b} e lunghezza \textit{n};
+			\item conversione in base 10;
+			\item con \textit{n} bit rappresento qualsiasi decimale senza segno
+				tra 0 e $2^n-1$
+				\begin{equation}
+					(a_{n-1},\dots, a_1,a_0)_2 \to
+					\sum^{n-1}_{\substack{i=0}}a_ib^i
+				\end{equation}
+				Dove ($a_{n-1}$) è la cifra più significativa e $a_0$ è quella
+				meno significativa.\\
+				Un esempio:
+				\begin{equation}
+					(10101110)_2\Leftrightarrow (174)_{10} \Leftrightarrow
+					(AE)_{16}
+				\end{equation}
+		\end{itemize}
+	\item Rappresentazione in modulo e segno
+		\begin{itemize}
+			\item il bit più significativo rappresenta il segno (0 = positivo e
+				1 = segno negativo), mentre i restanti rappresentano il modulo;
+			\item scomoda per operazioni aritmetiche (due modi per scrivere 0);
+			\item la somma tra due numeri A e B si svolge come da tabella
+				\begin{table}[h!]
+					\centering
+					\begin{tabular}{l|ccc|}
+						&&\multicolumn{2}{c|}{Segno di B} \\
+						&&+&-\\
+						\multirow{2}{*}{Segno di A}&+&$A+B$&$a-\abs B$\\
+						&-&$B-\abs A$&$\abs A +\abs B$
+					\end{tabular}
+					\caption {Somma tra A e B}
+				\end{table}
+		\end{itemize}
+	\item Rappresentazione in complemento a 1
+		\begin{tasks}
+			\task il bit più significativo rappresenta ({\tt come prima}) il
+			segno
+			\begin{itemize}
+				\item stesso intervallo di valori rappresentabili con modulo e
+					segno.
+			\end{itemize}
+			\task un numero negativo si ottiene dal suo positivo e cambiando
+			tutti i bit
+			\begin{itemize}
+				\item esempio a 4 bit: 0110 corrisponde a 6, mentre, 1001
+					corrisponde a -6
+			\end{itemize}
+			\task nella operazione aritmetiche (\textit{ad esempio la somma})
+			si utilizza l'eventuale riporto in fase di somma.
+			\task esempio: 22+3=25
+			\begin{center}
+				\begin{tabular}{lccc}
+					riporto&&{\color{red}1100}\\
+					&0001&0110&(22)\\
+					+&0000&0011&(3)\\\hline
+					&0001&1001&(25)
+				\end{tabular}
+			\end{center}
+		\end{tasks}
+	\item Rappresentazione in complemento a 2
+	\begin{tasks}(2)
+		\task vantaggio: unica rappresentazione per lo zero;
+		\task si ignora l'overflow;
+		\task esempio: 31-5=26
+			\begin{center}
+				\begin{tabular}{lccc}
+					riporto&{\color{red}1111}&{\color{red}1110}\\
+					&0001&1111&(31)\\
+					+&0000&1011&(-5)\\\hline
+					&0001&1010&(26)
+				\end{tabular}
+			\end{center}
+	\end{tasks}
+\end{itemize}
+\subsection{Confronto}
+\begin{tasks}(3)
+	\task Rappresentazione in modulo e il segno
+	\begin{itemize}
+		\item il bit più significativo rappresenta il segno (\textit{1 =
+			negativo}) e i restanti il modulo.
+		\item scomoda per operazioni aritmetiche
+	\end{itemize}
+	\task Rappresentazione in complemento a 1
+	\begin{itemize}
+		\item si complementano tutti i bit
+		\item utilizzo del riporto in fase di somma
+	\end{itemize}
+	\task Rappresentazione in complemento a 2
+	\begin{itemize}
+		\item si complementano tutti i bit e si somma 1
+		\item unica rappresentazione per per lo zero
+	\end{itemize}
+\end{tasks}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		\multirow{2}{*}{Stringa}&\multicolumn{4}{c|}{rappresentazione}\\
+		&senza segno&modulo e segno&complemento a 1&complemento a 2\\\hline
+		000&0&0&0&0\\\hline
+		001&1&1&1&1\\\hline
+		010&2&2&2&2\\\hline
+		011&3&3&3&3\\\hline
+		100&4&0&-3&-4\\\hline
+		101&5&-1&-2&-3\\\hline
+		110&6&-2&-1&-2\\\hline
+		111&7&-3&0&-1\\\hline
+	\end{tabular}
+	\caption {Confronto tra il modulo e segno, complemento 1 \& 2}
+\end{table}
+

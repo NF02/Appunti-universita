@@ -1,5 +1,5 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduzione}{9}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Gli stati della materia}{9}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Proprietà fisiche}{10}{section.1.2}%
@@ -16,4 +16,6 @@
 \contentsline {section}{\numberline {6.1}Introduzione}{21}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Teorema di Lewis}{21}{subsection.6.1.1}%
 \contentsline {subsection}{\numberline {6.1.2}Struttura di Lewis}{21}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Strutture di Lewis}{21}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.3}Elettronegatività \textit {x}}{21}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Elettronegatività di Pauling}{22}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Momento dipolare e polarità Molecole biatomiche}{22}{subsection.6.1.5}%

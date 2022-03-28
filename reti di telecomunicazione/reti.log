@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.8)  24 MAR 2022 23:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.8)  28 MAR 2022 15:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1308,21 +1308,28 @@ File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+))) (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count434
+\l__lipsum_a_int=\count435
+\l__lipsum_b_int=\count436
+
+(/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texmf-dist/tex/latex/floatflt/floatflt.sty
 Package: floatflt 1997/07/16 v. 1.31
-\c@OptionTest=\count434
+\c@OptionTest=\count437
 \figbox=\box139
 \tabbox=\box140
 \pagebox=\box141
-\ffigcount=\count435
-\ftabcount=\count436
-\fftest=\count437
-\hangcount=\count438
-\nosuccesstryfig=\count439
-\nosuccesstrytab=\count440
+\ffigcount=\count438
+\ftabcount=\count439
+\fftest=\count440
+\hangcount=\count441
+\nosuccesstryfig=\count442
+\nosuccesstrytab=\count443
 \figgutter=\dimen403
 \tabgutter=\dimen404
 \htdone=\dimen405
@@ -1346,32 +1353,32 @@ Writing index file reti.idx
 (./reti.aux)
 \openout1 = `reti.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 101.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 102.
 LaTeX Font Info:    Trying to load font information for T3+cmr on input line 10
-1.
+2.
  (/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 101.
-Package hyperref Info: Link coloring OFF on input line 101.
+LaTeX Font Info:    ... okay on input line 102.
+Package hyperref Info: Link coloring OFF on input line 102.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1382,11 +1389,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count441
+\c@section@level=\count444
 )
-LaTeX Info: Redefining \ref on input line 101.
-LaTeX Info: Redefining \pageref on input line 101.
-LaTeX Info: Redefining \nameref on input line 101.
+LaTeX Info: Redefining \ref on input line 102.
+LaTeX Info: Redefining \pageref on input line 102.
+LaTeX Info: Redefining \nameref on input line 102.
 
 (./reti.out) (./reti.out)
 \@outlinefile=\write5
@@ -1429,16 +1436,16 @@ LaTeX Info: Redefining \nameref on input line 101.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count442
+\scratchcounter=\count445
 \scratchdimen=\dimen413
 \scratchbox=\box142
-\nofMPsegments=\count443
-\nofMParguments=\count444
+\nofMPsegments=\count446
+\nofMParguments=\count447
 \everyMPshowfont=\toks58
-\MPscratchCnt=\count445
+\MPscratchCnt=\count448
 \MPscratchDim=\dimen414
-\MPnumerator=\count446
-\makeMPintoPDFobject=\count447
+\MPnumerator=\count449
+\makeMPintoPDFobject=\count450
 \everyMPtoPDFconversion=\toks59
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1449,14 +1456,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \it@ocap on input line 101.
-LaTeX Info: Redefining \it@ccap on input line 101.
+LaTeX Info: Redefining \it@ocap on input line 102.
+LaTeX Info: Redefining \it@ccap on input line 102.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count448
+\c@lstlisting=\count451
 
 Package exsheets Info: Loading custom configurations file
 (exsheets)             `exsheets_configurations.cfg'.
@@ -1466,27 +1473,27 @@ Package exsheets Info: Loading custom configurations file
 File: exsheets_configurations.cfg 
 )
 Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 101.
+alian.trsl' found. on input line 102.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 101.
+ on input line 102.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 103
+LaTeX Font Info:    Trying to load font information for U+msa on input line 104
 .
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 103
+LaTeX Font Info:    Trying to load font information for U+msb on input line 104
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
-3.
+4.
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1516,45 +1523,45 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 ]
 Capitolo 1.
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 121--121
+(./pag/intro.tex
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 15--15
  [] [] [] 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-48.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
+2.
 (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (32.88669pt too wide) in paragraph at lines 148--152
+Overfull \hbox (32.88669pt too wide) in paragraph at lines 42--46
 \T1/cmtt/m/n/10 Oggi ormai utilizziamo il digitale perché effettivamente i calc
 olatori elettronici gestiscono
  []
 
 
-Overfull \hbox (38.1354pt too wide) in paragraph at lines 148--152
+Overfull \hbox (38.1354pt too wide) in paragraph at lines 42--46
 \T1/cmtt/m/n/10 meglio una codifica rispetto a dei numeri reali. Per di più cos
 ta meno produrre un dispositivo
  []
 
 
-Overfull \hbox (17.14053pt too wide) in paragraph at lines 148--152
+Overfull \hbox (17.14053pt too wide) in paragraph at lines 42--46
 \T1/cmtt/m/n/10 che gestisca segnali digitali rispetto ad un dispositivo che ge
 stisce mezzi analogici, per
  []
 
 [9]
-Overfull \hbox (0.99782pt too wide) in paragraph at lines 242--242
+Overfull \hbox (0.99782pt too wide) in paragraph at lines 136--136
 []\T1/cmr/m/n/10 Trasmissione di in-for-ma-
  []
 
 
-Overfull \hbox (4.52473pt too wide) in paragraph at lines 242--242
+Overfull \hbox (4.52473pt too wide) in paragraph at lines 136--136
 []\T1/cmr/m/n/10 grazie ai tra-sdut-to-ri qual-
  []
 
 
-Overfull \hbox (3.2195pt too wide) in paragraph at lines 242--242
+Overfull \hbox (3.2195pt too wide) in paragraph at lines 136--136
 \T1/cmr/m/n/10 sia-si se-gna-le fi-si-co può di-
  []
 
@@ -1563,91 +1570,209 @@ Underfull \vbox (badness 2368) has occurred while \output is active []
 
  [10]
 [11]
-Overfull \hbox (9.37929pt too wide) in paragraph at lines 302--302
+Overfull \hbox (9.37929pt too wide) in paragraph at lines 196--196
 []|\T1/cmr/m/n/10 Rappresentazione esat-ta di sim-
  []
 
 
-Overfull \hbox (5.54689pt too wide) in paragraph at lines 302--302
+Overfull \hbox (5.54689pt too wide) in paragraph at lines 196--196
 |\T1/cmr/m/n/10 Semplicità e ro-bu-stez-za dei cir-
  []
 
 
-Overfull \hbox (11.90645pt too wide) in paragraph at lines 302--302
+Overfull \hbox (11.90645pt too wide) in paragraph at lines 196--196
 \T1/cmr/m/n/10 cui-ti di ge-stio-ne ed elaborazione;| 
  []
 
 
-Overfull \hbox (6.24117pt too wide) in paragraph at lines 308--308
+Overfull \hbox (6.24117pt too wide) in paragraph at lines 202--202
 |\T1/cmr/m/n/10 Le in-for-ma-zio-ni in-trin-se-ca-men-
  []
 
 [12]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 378--378
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 272--272
  [] 
  []
 
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 378--378
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 272--272
  [] 
  []
 
 
-Overfull \hbox (4.43878pt too wide) in paragraph at lines 392--392
+Overfull \hbox (4.43878pt too wide) in paragraph at lines 286--286
 []|\T1/cmr/m/n/10 vantaggio: uni-ca rap-pre-sen-ta-zio-ne per lo zero;| 
  []
 
 
-Overfull \hbox (5.30232pt too wide) in paragraph at lines 412--412
+Overfull \hbox (5.30232pt too wide) in paragraph at lines 306--306
 []\T1/cmr/m/n/10 il bit più si-gni-fi-ca-ti-vo rap-
  []
 
 
-Overfull \hbox (3.4361pt too wide) in paragraph at lines 412--412
+Overfull \hbox (3.4361pt too wide) in paragraph at lines 306--306
 \T1/cmr/m/n/10 pre-sen-ta il se-gno (\T1/cmr/m/it/10 1 = ne-
  []
 
 
-Overfull \hbox (10.35664pt too wide) in paragraph at lines 412--412
+Overfull \hbox (10.35664pt too wide) in paragraph at lines 306--306
 []\T1/cmr/m/n/10 unica rap-pre-sen-ta-zio-ne per
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13] [14]
-Capitolo 2.
-[15
+) [13] [14]
+Overfull \hbox (4.96541pt too wide) in paragraph at lines 196--196
+\T1/cmr/m/n/10 vei-co-li) ``Ov-via-men-te nei li-mi-ti pre-vi-sta dal-
+ []
 
-] [16]
-Capitolo 3.
+
+Overfull \hbox (16.2348pt too wide) in paragraph at lines 219--219
+[]\T1/cmr/m/n/10 area per-so-na-le (\T1/cmr/m/it/10 cir-
+ []
+
+
+Overfull \hbox (2.92693pt too wide) in paragraph at lines 219--219
+[]\T1/cmr/m/n/10 Area lo-ca-le (\T1/cmr/m/it/10 edi-
+ []
+
+
+Overfull \hbox (1.27173pt too wide) in paragraph at lines 219--219
+\T1/cmr/m/it/10 fi-ci nel rag-gio di
+ []
+
+
+Overfull \hbox (2.36154pt too wide) in paragraph at lines 219--219
+[]\T1/cmr/m/n/10 Ethernet, Wi-Fi 
+ []
+
+
+Overfull \hbox (10.44179pt too wide) in paragraph at lines 219--219
+[]\T1/cmr/m/n/10 Area re-la-ti-va-men-
+ []
+
+
+Overfull \hbox (3.52681pt too wide) in paragraph at lines 219--219
+[]\T1/cmr/m/n/10 Area mol-to este-
+ []
+
+
+Overfull \hbox (3.77786pt too wide) in paragraph at lines 219--219
+\T1/cmr/m/n/10 sa (na-zio-ne, cen-
+ []
+
+
+Overfull \hbox (3.77786pt too wide) in paragraph at lines 219--219
+[]\T1/cmr/m/n/10 Internet, re-te te-
+ []
+
+[15]
+Overfull \hbox (2.52522pt too wide) in paragraph at lines 271--271
+\T1/cmr/m/n/10 la piat-ta-for-ma di re-te per
+ []
+
+
+Overfull \hbox (2.91402pt too wide) in paragraph at lines 271--271
+\T1/cmr/m/n/10 as-si-cu-ra-re la frui-zio-ne dei
+ []
+
+
+Overfull \hbox (4.21925pt too wide) in paragraph at lines 271--271
+\T1/cmr/m/n/10 frui-bi-le il ser-vi-zio al clien-
+ []
+
+
+Overfull \hbox (1.66432pt too wide) in paragraph at lines 271--271
+\T1/cmr/m/n/10 te se-con-do mo-da-li-tà (e.g.
+ []
+
+
+Overfull \hbox (2.1642pt too wide) in paragraph at lines 271--271
+[]\T1/cmr/m/n/10 Soggetto del-la co-mu-ni-ca-
+ []
+
+[16]
+Capitolo 2.
 [17
 
-] [18
+] [18]
+Capitolo 3.
+
+Overfull \hbox (23.80367pt too wide) in paragraph at lines 357--370
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19
+
+]
+Overfull \hbox (6.80196pt too wide) in paragraph at lines 424--424
+[]\T1/cmr/m/n/10 Trasmissione in ban-da ba-
+ []
+
+
+Overfull \hbox (17.40843pt too wide) in paragraph at lines 424--424
+|\T1/cmr/m/n/10 10Base2: ca-vo coas-sia-le fi-ne (thin-
+ []
+
+
+Overfull \hbox (0.6368pt too wide) in paragraph at lines 445--445
+[]\T1/cmr/m/n/10 i due con-dut-to-ri tra-spor-
+ []
+
+
+Overfull \hbox (3.35835pt too wide) in paragraph at lines 445--445
+[]\T1/cmr/m/n/10 richieste l'a-do-zio-ne di ap-
+ []
+
+
+Overfull \hbox (1.58101pt too wide) in paragraph at lines 445--445
+[]\T1/cmr/m/n/10 Lunghezza mas-si-ma con-
+ []
+
+
+Overfull \hbox (1.94203pt too wide) in paragraph at lines 445--445
+\T1/cmr/m/n/10 si-glia-ta 100m (90m di ca-
+ []
+
+
+Overfull \hbox (4.21925pt too wide) in paragraph at lines 445--445
+\T1/cmr/m/n/10 blag-gio strut-tu-ra-to e 10m
+ []
+
+
+Overfull \hbox (3.96931pt too wide) in paragraph at lines 445--445
+[]\T1/cmr/m/n/10 prestazioni in-fe-rio-ri al ca-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+[21] [22
 
 ]
 Capitolo 4.
-[19] [20
-
-]
-Capitolo 5.
-[21] [22
+[23] [24
 
 ]
 runsystem(makeindex reti.idx)...executed safely (allowed).
 
  (./reti.ind) (./reti.aux)
 Package rerunfilecheck Info: File `reti.out' has not changed.
-(rerunfilecheck)             Checksum: D84D4462D0F3F05C386E53BC3F8DA36F;2957.
+(rerunfilecheck)             Checksum: 07B33B367194E5412C40C670D6BD9F6E;6060.
  ) 
 Here is how much of TeX's memory you used:
- 55401 strings out of 478353
- 1349651 string characters out of 5854636
- 2161222 words of memory out of 5000000
- 72601 multiletter control sequences out of 15000+600000
+ 55981 strings out of 478353
+ 1362042 string characters out of 5854636
+ 2257368 words of memory out of 5000000
+ 73112 multiletter control sequences out of 15000+600000
  425208 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,89p,700b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,11n,89p,719b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
 exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1665,10 +1790,10 @@ b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/t
 exmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts
 /type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/c
 m-super/sftt1000.pfb>
-Output written on reti.pdf (22 pages, 295524 bytes).
+Output written on reti.pdf (24 pages, 322657 bytes).
 PDF statistics:
- 377 PDF objects out of 1000 (max. 8388607)
- 312 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 500000)
- 173 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 520 PDF objects out of 1000 (max. 8388607)
+ 452 compressed objects within 5 object streams
+ 149 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
 
