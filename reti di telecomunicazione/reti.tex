@@ -488,6 +488,17 @@ altro''.
 	\task In caso di collisioni consecutivi deve partizionare le porte
 	interessate.
 \end{tasks}
+\subsection{Bridge/switch}
+\begin{tasks}(2)
+	\task Nascono per sezionare le LAN in differenti domini di broadcast a
+	livello fisico
+	\task Apparati centro-stella in sostituzione degli hub
+	\begin{itemize}
+		\item traffico tra coppie di stazioni confinato su coppie di rami
+		\item banda aggregata molto superiore a quella su coppie di rami
+		\item molte trasmissioni in contemporanea tra segmenti
+	\end{itemize}
+\end{tasks}
 
 \subsection{La differenza tra HUB e Switch}
 Gli HUB e gli switch esteriormente sono molto simili, ma se andiamo a vedere su
@@ -498,6 +509,19 @@ lo switch al primo avvio funziona allo stesso modo, ma poi dopo associa il MAC
 delle schede di rete presenti all'interno della rete che sta gestendo e andrà
 ad inviare il pacchetto solo al diretto interessato evitando di mandarlo a
 tutti, tramite un apposito algoritmo.
+
+\subsection{Domini di collisione}
+\begin{tasks}
+	\task Al crescere del numero di stazioni e/o del traffico aumenta la
+	probabilità di collisioni e quindi diminuisce l'efficienza della rete
+	\task È possibile suddividere la rete in più sottoreti in modo che la
+	contesa del mezzo avvenga soltanto tra le stazioni appartenenti ad una
+	singola sottorete
+	\begin{itemize}
+		\item singolo dominio di \textit{broadcast} a livello fisico o dominio
+			di collisione
+	\end{itemize}
+\end{tasks}
 
 \subsection{Livello DL: Indirizzamento}
 \begin{table}[h!]

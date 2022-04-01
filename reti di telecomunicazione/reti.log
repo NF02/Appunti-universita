@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.31)  1 APR 2022 09:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.31)  1 APR 2022 10:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1750,24 +1750,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
 [21]
-Overfull \hbox (2.99367pt too wide) in paragraph at lines 522--522
+Overfull \hbox (2.99367pt too wide) in paragraph at lines 546--546
 []\T1/cmr/m/n/10 individuale (ad esem-pio 01-00-5e-12-34-56) 
  []
 
-
-Overfull \hbox (8.64125pt too wide) in paragraph at lines 571--571
+[22]
+Overfull \hbox (8.64125pt too wide) in paragraph at lines 595--595
 []\T1/cmr/m/n/10 controllo del-la lun-ghez-za mi-ni-ma (\T1/cmr/m/it/10 riem-
  []
 
 
-Overfull \hbox (0.88307pt too wide) in paragraph at lines 571--571
+Overfull \hbox (0.88307pt too wide) in paragraph at lines 595--595
 []\T1/cmr/m/n/10 Ricevere un flus-so se-ria-le di da-ti dal-lo stra-
  []
 
-
-Underfull \vbox (badness 1297) has occurred while \output is active []
-
- [22]
 [23] [24
 
 ]
@@ -1779,13 +1775,13 @@ runsystem(makeindex reti.idx)...executed safely (allowed).
 
  (./reti.ind) (./reti.aux)
 Package rerunfilecheck Info: File `reti.out' has not changed.
-(rerunfilecheck)             Checksum: F2933C37C7675A6022D32904908D48B3;6659.
+(rerunfilecheck)             Checksum: 9595BF8633F2D7E47A29F7D1288B66B9;6956.
  ) 
 Here is how much of TeX's memory you used:
- 56028 strings out of 478276
- 1362461 string characters out of 5853013
+ 56036 strings out of 478276
+ 1362569 string characters out of 5853013
  2249959 words of memory out of 5000000
- 73211 multiletter control sequences out of 15000+600000
+ 73213 multiletter control sequences out of 15000+600000
  491037 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,11n,89p,719b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1806,10 +1802,10 @@ b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/t
 exmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts
 /type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/c
 m-super/sftt1000.pfb>
-Output written on reti.pdf (26 pages, 330348 bytes).
+Output written on reti.pdf (26 pages, 331484 bytes).
 PDF statistics:
- 578 PDF objects out of 1000 (max. 8388607)
- 507 compressed objects within 6 object streams
- 180 named destinations out of 1000 (max. 500000)
- 333 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 594 PDF objects out of 1000 (max. 8388607)
+ 523 compressed objects within 6 object streams
+ 186 named destinations out of 1000 (max. 500000)
+ 349 words of extra memory for PDF output out of 10000 (max. 10000000)
 

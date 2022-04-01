@@ -52,8 +52,10 @@
 \contentsline {subsubsection}{Fast e Gigabit Ethernet}{21}{subsubsection*.22}%
 \contentsline {subsubsection}{Perché le coppie dei cavi sono intrecciati?}{21}{subsubsection*.23}%
 \contentsline {subsection}{\numberline {3.2.5}Repeater (hub)}{21}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}La differenza tra HUB e Switch}{22}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Livello DL: Indirizzamento}{22}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}Livello DL: Pacchetti}{22}{subsection.3.2.8}%
-\contentsline {subsection}{\numberline {3.2.9}Procedura di emissione/ricezione}{23}{subsection.3.2.9}%
+\contentsline {subsection}{\numberline {3.2.6}Bridge/switch}{22}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}La differenza tra HUB e Switch}{22}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Domini di collisione}{22}{subsection.3.2.8}%
+\contentsline {subsection}{\numberline {3.2.9}Livello DL: Indirizzamento}{22}{subsection.3.2.9}%
+\contentsline {subsection}{\numberline {3.2.10}Livello DL: Pacchetti}{22}{subsection.3.2.10}%
+\contentsline {subsection}{\numberline {3.2.11}Procedura di emissione/ricezione}{23}{subsection.3.2.11}%
 \contentsline {chapter}{\numberline {4}Applicazione delle reti}{25}{chapter.4}%
