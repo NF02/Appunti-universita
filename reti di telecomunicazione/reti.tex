@@ -443,6 +443,25 @@ Interfaccia unificata verso il livello di rete
 		\item basso costo e facilità di posa e connessione (connettori RJ45)
 	\end{itemize}
 \end{tasks}
+\subsubsection{Fast e Gigabit Ethernet}
+\begin{tasks}(2)
+	\task Fast Ethernet
+	\begin{itemize}
+		\item 100BaseT
+		\item stesso accesso al mezzo dello standard originale ma velocità
+			dieci volte superiore
+		\item distanze dieci volte inferiori (stessa lunghezza del pacchetto)
+		\item compatibilità a livello di scheda con 10BaseT
+	\end{itemize}
+	\task Gigabit Ethernet
+	\begin{itemize}
+		\item formato e dimensione del pacchetto uguali a Ethernet 10 al 100Mb/s
+		\item offre i vantaggi tipici di Ethernet
+		\item facile evoluzione (\textit{e costi contenuti}) a partire da LAN
+			già esistenti.
+	\end{itemize}
+\end{tasks}
+
 \subsubsection{Perché le coppie dei cavi sono intrecciati?}
 La risposta è un semplice motivo fisico, infatti, i cavi producono di loro dei
 disturbi ``diafonia'' e intrecciarli il fenomeno si riduce, oltre tutto
@@ -453,6 +472,22 @@ perfetti anche per quei contesti, industriali ``per officine e industrie con
 macchinari che creano rumore che potrebbero disturbare la trasmissione e tanto
 altro''.
 \subsection{Repeater (hub)}
+\begin{tasks}(2)
+	\task Ripete e rigenera di una sequenza di bit ricevuti da una porta su tutte
+	le altre porte (\textit{retiming})
+	\task {\it Repeater} quando è costituito da 2 porte
+	\task {\it Multiport repeater} quando è costituito da più di 2 porte 
+	\task \textit{Hub} per cablaggi a coppie simmetriche con connettore RJ45
+	\task Rilevazione di una collisione
+	\begin{itemize}
+		\item ripetizione sulle altre porte viene interrotta;
+		\item viene trasmesso una sequenza di \textit{jamming}.
+	\end{itemize}
+	\task L'\textit{hub} deve poter anche rilevare una collisione che avviene
+	al suo interno invece che su un segmento
+	\task In caso di collisioni consecutivi deve partizionare le porte
+	interessate.
+\end{tasks}
 
 \subsection{La differenza tra HUB e Switch}
 Gli HUB e gli switch esteriormente sono molto simili, ma se andiamo a vedere su
@@ -463,6 +498,77 @@ lo switch al primo avvio funziona allo stesso modo, ma poi dopo associa il MAC
 delle schede di rete presenti all'interno della rete che sta gestendo e andrà
 ad inviare il pacchetto solo al diretto interessato evitando di mandarlo a
 tutti, tramite un apposito algoritmo.
+
+\subsection{Livello DL: Indirizzamento}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c||c||c||c||c||c|}
+		\hline
+		B1&B2&B3&B4&B5&B6\\\hline
+		\multicolumn{3}{c}{assegnato dall'IEEE}&\multicolumn{3}{c}{assegnato
+		dal costruttore}
+	\end{tabular}
+	\caption{Come è composto l'indirizzo}
+\end{table}
+\begin{tasks}(2)
+	\task Al Livello PH le UI vengono inviate a a tutte le stazioni
+	\task Al Livello DL le UI vengono ricevute sulla base dell'indicazione
+	\task Indirizzi Ethernet o MAC
+	\task Rappresentazione esadecimale
+	\begin{itemize}
+		\item individuale (ad esempio 01-00-5e-12-34-56)
+		\item broadcast (ff-ff-ff-ff-ff-ff)
+	\end{itemize}
+\end{tasks}
+\subsection{Livello DL: Pacchetti}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\multicolumn{1}{c}{7+1B}&\multicolumn{1}{c}{6B}&\multicolumn{1}{c}{6B}&\multicolumn{1}{c}{2B}&\multicolumn{1}{c}{0-1500B}&\multicolumn{1}{c}{0-46B}&\multicolumn{1}{c}{4B}\\
+		\hline
+	preamobolo + SFD&DSAP&SSAP&L/T&SDU&PAD&FCS\\\hline
+		
+	\end{tabular}
+	\caption{Come è composto il pacchetto}
+\end{table}
+\begin{itemize}
+	\item Preambolo: alternanza di 1 e 0 per la sincronizzazione
+	\item Start Frame Delimiter (SFD): valore 10101011 che indica l'inizio
+		trama
+	\item Indirizzo di destinazione (DSAP)
+	\item Indirizzo di sorgente (SSAP)
+	\item Lunghezza del campo dati (IEEE 802.3) o Protocol Type (Ethernet)
+	\item SDU: PDU di strato LLC
+	\item PAD: per garantire che la trama abbia una lunghezza minima di 64 byte
+	\item Frame Check Sequence (FCS): CRC
+\end{itemize}
+\subsection{Procedura di emissione/ricezione}
+\begin{tasks}(2)
+	\task Emissione
+	\begin{enumerate}
+		\item Accettare i dati dello strato superiore (\textit{ad esempio LLC})
+			e l'indirizzo di destinazione
+		\item Formare la PDU
+			\begin{itemize}
+				\item indirizzamento
+				\item controllo della lunghezza minima (\textit{riempimento se
+					inferiore})
+				\item calcolo del CRC
+			\end{itemize}
+		\item Presentare un flusso di dati seriale allo strato fisico di dati
+			seriale allo strato fisico per la codifica e per la successiva
+			emissione
+	\end{enumerate}
+	\task Ricezione
+	\begin{enumerate}
+		\item Ricevere un flusso seriale di dati dallo strato fisico
+		\item Elaborare la PDU
+		\item controllo di integrità della PDU tramite il CRC
+		\item controllo dell'indirizzo di destinazione della PDU
+		\item Presentare allo strato superiore le PDU indirizzate al terminale
+			locale.
+	\end{enumerate}
+\end{tasks}
 
 
 \chapter{Applicazione delle reti}
