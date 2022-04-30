@@ -35,7 +35,7 @@
 \contentsline {chapter}{\numberline {4}programma}{27}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Base}{27}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Argomenti aggiuntivi}{27}{section.4.2}%
-\contentsline {chapter}{\numberline {5}La legge di Coulomb}{29}{chapter.5}%
+\contentsline {chapter}{\numberline {5}La legge di Couloumb}{29}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Introduzione}{29}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}La carica elettrica}{29}{subsection.5.1.1}%
 \contentsline {subsubsection}{Le proprietà delle cariche}{29}{subsubsection*.15}%
@@ -50,3 +50,18 @@
 \contentsline {subsection}{\numberline {5.2.1}Unità do misura}{31}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}La costante dielettrica del vuoto}{31}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}Forze multiple}{31}{subsection.5.2.3}%
+\contentsline {paragraph}{Attenzione:}{31}{paragraph*.22}%
+\contentsline {section}{\numberline {5.3}Teorema del guscio}{31}{section.5.3}%
+\contentsline {section}{\numberline {5.4}La quantizzazione della carica}{31}{section.5.4}%
+\contentsline {section}{\numberline {5.5}La conservazione della carica}{32}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Verifica}{32}{section.5.6}%
+\contentsline {paragraph}{Soluzione primo problema}{32}{paragraph*.23}%
+\contentsline {paragraph}{Soluzione secondo problema}{32}{paragraph*.24}%
+\contentsline {chapter}{\numberline {6}Campi elettrici}{33}{chapter.6}%
+\contentsline {section}{\numberline {6.1}L'aspetto fisico}{33}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Il campo elettrico}{33}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Linee di campo elettrico}{33}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Altro esempio delle linee di campo}{34}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Campo $\vec {E}$ di una carica puntiforme}{34}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Il principio di sovrapposizione}{34}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Verifica}{35}{section.6.7}%

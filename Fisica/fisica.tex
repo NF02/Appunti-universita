@@ -107,120 +107,90 @@
 \input{pag/modelli atomici.tex}
 \part {Fisica 2}
 \input{pag/programma 2.tex}
-\chapter{La legge di Coulomb}
-\section{Introduzione}
-L'elettromagnetismo costituisce il fondamento su cui sono costruiti i computer,
-le radio e televisori, le telecomunicazioni, illuminazioni ecc.
-L'elettromagnetismo spiega come gli atomi siano tenuti insieme, come
-avvengono i fulmini, le aurore e gli arcobaleni. Gli antichi filosofi greci
-scoprirono che l'ambra strofinata attrae pagliuzze sottili e che pietre
-magnetiche naturali attraggono pezzetti di ferro. Tra i tanti scienziati che
-svilupparono l'elettromagnetismo moderno, notiamo il fisico sperimentale
-\texttt{Michael Faraday} ed il teorico \texttt{James Clerk Maxwell}.
-\subsection{La carica elettrica}
-Una bacchetta di vetro strofinata con seta si \texttt{allontana} da un'altra
-bacchetta di vetro strofinata con della seta.
-\begin{enumerate}
-	\item \textit{Forza repulsiva} - Una bacchetta di vetro strofinata con
-		della seta si \textit{avvicina} ad una bacchetta di plastica strofinata
-		con la pelle di camoscio.
-	\item \textit{Forza attrattiva} - Le forze sono dovute alla \textbf{carica
-		elettrica}.
-\end{enumerate}
-Esistono due tipi di carica:
-\begin{enumerate}
-	\item Carica positiva, contrassegnata con il segno +;
-	\item Carica negativa, contrassegnata con il segno -
-\end{enumerate}
-Si definisce neutro un oggetto che ha le cariche positive e negative
-perfettamente bilanciate.
-Spostando la carica da un oggetto all'altro, si crea una carica in eccesso.
-L'oggetto può scaricarsi con scintille oppure con l'umidità dell'aria.
-\subsubsection{Le proprietà delle cariche}
-\begin{enumerate}
-	\item Le particelle cariche dello \textit{stesso segno} si respingono;
-	\item Le particelle di carica opposta si attraggono;
-	\item Se strofiniamo il vetro con un panno di seta risulta in una
-		\textit{carica potenziale} nel vetro;
-	\item Strofinando della plastica con della pelle di camoscio si ottiene una
-		\textit{carica negativa} sulla stessa.
-\end{enumerate}
-\subsubsection{Conduttori e isolanti}
-In natura esistono le seguenti tipologie di materiali:
-\begin{tasks}{2}
-	\task I conduttori - le cariche si muovono liberamente;
-	\task Gli isolanti - le cariche non si muovono, per l'appunto restano
-	isolate;
-	\task I semiconduttori - le cariche si muovono, ma il materiale possiede un
-	alta resistenza;
-	\task I superconduttori - le cariche si muovono senza incontrare ostacoli
-	di sorta.
+\input{pag/legge di Couloumb.tex}
+.\chapter{Campi elettrici}
+\section {L'aspetto fisico}
+La forza elettrostatica tra 2 cariche sembra una} ``azione a distanza''
+\begin{itemize}
+\item Spiegazione alternativa:\\
+  \textit{La carica 1 crea un campo elettrico nello spazio circostante}\\
+  \textit{La carica 2 sente l'effetto del campo 1}\\
+\item vice versa:\\
+  \textit{La carica 2 crea un campo elettrico nello spazio circostante}\\
+  \textit{La carica 1 sente l'effetti del campo 2}
+\end{itemize}
+\section {Il campo elettrico}
+\begin{tasks}(2)
+\task campo scalare: temperatura, pressione, densità
+\task campo vetoriale: velocità, accelerazione, forza
 \end{tasks}
-\newtheorem{pcariche}{Particelle Cariche}
-\begin{pcariche}
-	La materia composte di atomi. Gli atomi hanno un \textbf{nucleo} con
-	\begin{itemize}
-		\item Protoni - cariche positive;
-		\item Elettroni - carica negativa.
-	\end{itemize}
-	La carica dell'elettrone e del protone hanno la stessa intensità ma segno
-	opposto. Gli elettroni sono \textbf{attratti verso il nucleo}. Nei
-	conduttori, alcuni elettroni sono \textit{liberi di muoversi}, un isolante
-	\textit{non ha elettroni liberi}.
-\end{pcariche}
-\subsection{Carica indotta}
-Una carica negativa \textit{respinge} gli elettroni nel rame, risulta una
-carica positiva indotta vicino alla carica esterna. Risulta una \textbf{forza
-attrattiva} tra una carica negativa e un conduttore, Anche per una carica
-positiva ed un conduttore la forza risulta \textbf{attrattiva}.
-\section{Legge di Coulomb}
-Tra due cariche puntiformi esiste una \textit{forza elettrostatica}. La forza è
-diretta \textit{lungo la retta congiungente} le due cariche.
-Se le cariche sono della stessa polarità le stesse si respingono, invece, se
-sono di carica opposta, avviene un attrazione tra le cariche.
-\subsubsection{Riassunto sui vettori}
-\paragraph{Componenti:}
+La forza $\vec{F}$ su un \textbf{carica esplorativa} $q_0$ determina il campo elettrico $\vec{E}$:
 \begin{equation}
-	F_x=F\cos 0;\text{ }F_y=F\sin 0
+  \vec{E}=\frac{\vec{F}}{q_0}
 \end{equation}
-\paragraph{Modulo e angolo:}
+$\vec{E}$ è un campo vettoriale. Nel SI ``Sistema Internazione'', si esprime in N/C (o V/m)
+\section{Linee di campo elettrico}
+Per visualizzare $\vec{E}$, disegnamo delle linee:
+\begin{itemize}
+	\item Il vettore $\vec{E}$ è \textbf{tangente} alla linea 
+	\item La \textbf{densità} delle linee rappresenta $\abs{\vec{E}}$
+        \item Le linee \textbf{escono} dalle cariche positive
+        \item Le linee \textbf{entrano} nelle cariche negative
+\end {itemize}
+\section {Altro esempio delle linee di campo}
+\begin{figure}[!h]
+ 	\centering
+	\includegraphics[height=4cm]{img/linee elettriche repulsione.png}
+\end{figure}
+Due cariche positive identifiche\\
+Sempre:
+\begin{itemize}
+\item Il vettore $\vec{E}$ è tangente alla linea
+\item La densità delle linee rappresenta $\abs {\vec{E}}$
+\item Le linee escono dalla cariche positive
+\item Le linee entrano nelle cariche negative
+\end{itemize}
+Il disegno stesso suggersce l'idea di una repulsione
+\section{Campo $\vec{E}$ di una carica puntiforme}
+Una carica esploratrice positiva $q_0$ attorno ad una \textit{carica puntiforme} $q$ sente una forza $\vec{F}=\frac{qq_0}{4\pi \xi_0r^2}\hat{r}$. \\
+Per il campo $\vec{E}$ troviamo:
 \begin{equation}
-	F=\abs{\vec{F}}=\sqrt{F_x^2+F_y^2};\text{ } \tan 0 =\frac{F_y}{F_x}
+	\vec{E}=\frac{\vec{F}}{q_0}=\frac{q}{4\pi \xi_0r^2}\hat{r}
 \end{equation}
-\paragraph{Versore:}
-\begin{equation}
-	\hat{a}=\frac{\vec{a}}{\abs{\vec{a}}}=\frac{\vec{a}}{a}
-\end{equation}
-\paragraph{Sommare:}
-\begin{equation}
-	\vec{F}=\vec{F}_1+\vec{F}_2\to F_x=F_{1x}+F_{2x};\text{ } F_y=F_{1y}+F_{2y}
-\end{equation}
-La forza di una carica $q_1$ in presenza di un'altra $q_2$ è:
-\begin{equation}
-	\vec{F}_{12}=k\frac{q_1q_2}{r^2}\hat{r}
-\end{equation}
-Dove $k=8,99*10^9Nm^2C^{-2}$ è la \textbf{costante di Coulomb} e $\vec{r}$ è il
-vettore di lunghezza pare alla distanzia $q_2$ a $q_1$.
+La direzione di $\vec{E}$ è \textbf{radiale}
 \begin{enumerate}
-	\item Se $q_1$ e $q_2$ hanno la stessa polarità, il prodotto $q_1q_2$ è 
-		\textbf{positivo} e la forza è \textit{repulsiva}.
-	\item Se $q_1$ e $q_2$ hanno la polarità \textbf{opposta}, il
-		prodotto $q_1q_2$ è \textbf{negativo} e la forza è \textit{attrattiva}.
+\item Per $q>0$, il verso di $\vec{E}$ è uscente
+\item Per $q<0$, il verso di $\vec{E}$ è entrante
 \end{enumerate}
-La forma è una coppia di azione-reazione: $\vec{F}_{21}=-\vec{F}_{12}$
-\subsection{Unità do misura}
-L'unità di carica nel SI è il \texttt{Coulomb} (\ref{}). La derivata del unità
-fondamentale di corrente elettrica, \textbf{Ampere}. La corrente \textit{i} è
-data dal rapporto $\frac{dq}{dt}$ con cui transita la carica \textit{q}: 
-$i=\frac{dq}{dt}$.
-Risulta $1C=1As$
-\subsection{La costante dielettrica del vuoto}
-La costante di \textit{Coulomb} viene anche espressa come
-$k=\frac{1}{4\pi\xi_0}$ dove $\xi_0 = 8,85*10^{-12}C^2N^{-1}m^{-2}$ è la
-\textbf{constante dielettrica del vuoto}.\\
-Così scriviamo $\vec{F}=\frac{q_1q_2}{4\pi\xi_0r^2}\hat{r}$, o per ottenere il
-modulo $F=\frac{\abs{q_1}\abs{q_2}}{4\pi\xi_0r^2}\hat{r}$
-\subsection{Forze multiple}
-Le forze elettrostatiche obbediscono al \textbf{principio di sovrapposizione}.
-Se molte particelle sono vicine alla carica $q_1$, la forza netta è
+Per il \textbf{modulo:} $E=\abs{\vec{E}}=\frac{\abs q}{4\pi \xi_0r^2}$  
+\section{Il principio di sovrapposizione}
+In presenza di \textbf{più cariche}, le forze obbediscono al principio di sovrapposizione:
+\begin{equation}
+  \vec{F}_0=\vec{F}_{01}+\vec{F}_{02}+\dots+\vec{F}_{0n}
+\end{equation}
+Il principio di sovrapposizione vale anche per $\vec{E}$:
+\begin{equation}
+  \vec{E}=\frac{\vec{F}_0}{q_0}+\frac{\vec{F}_{01}}{q_0}+\frac{\vec{F}_{02}}{q_0}+\dots+\frac{\vec{F}_{0n}}{q_0}=\vec{E}_1+\vec{E}_2+\dots+\vec{E}_n
+\end{equation}
+Il campo $\vec{E}$ di più particelle cariche è la somma vettoriale dei singoli contributi
+\section{Verifica}
+\begin{center}
+\begin{tikzpicture} 
+ \filldraw 
+(0,0) circle (0pt) node[align=left,   below] {}      --
+(1,0) circle (2pt) node[align=center, below] {S}     -- 
+(4,0) circle (3pt) node[align=right, below] {e}     -- 
+(5,0) circle (2pt) node[align=right,  below] {R}     --
+(8,0) circle (3pt) node[align=right, below] {P}     --
+(10,0) circle (0pt) node[align=left, below] {x};
+\end{tikzpicture}
+\end{center}
+Il disegno mostra un elettrone ($e$) e un protone ($p$) sull'asse $x$
+\begin{itemize}
+	\item Indicare la direzione di 𝐸 dovuta all’elettrone nel
+          punto \textit{S} e nel punto \textit{R}
+        \item Indicare la direzione di \textit{E} dovuta al protone nel
+punto 𝑆 e nel punto \textit{R}
+\end{itemize}
+
 \end{document}
