@@ -110,7 +110,7 @@
 \input{pag/legge di Couloumb.tex}
 .\chapter{Campi elettrici}
 \section {L'aspetto fisico}
-La forza elettrostatica tra 2 cariche sembra una} ``azione a distanza''
+La forza elettrostatica tra 2 cariche sembra una ``azione a distanza''
 \begin{itemize}
 \item Spiegazione alternativa:\\
   \textit{La carica 1 crea un campo elettrico nello spazio circostante}\\
@@ -120,7 +120,7 @@ La forza elettrostatica tra 2 cariche sembra una} ``azione a distanza''
   \textit{La carica 1 sente l'effetti del campo 2}
 \end{itemize}
 \section {Il campo elettrico}
-\begin{tasks}(2)
+\begin{tasks}{2}
 \task campo scalare: temperatura, pressione, densità
 \task campo vetoriale: velocità, accelerazione, forza
 \end{tasks}
@@ -187,10 +187,122 @@ Il campo $\vec{E}$ di più particelle cariche è la somma vettoriale dei singoli
 \end{center}
 Il disegno mostra un elettrone ($e$) e un protone ($p$) sull'asse $x$
 \begin{itemize}
-	\item Indicare la direzione di 𝐸 dovuta all’elettrone nel
-          punto \textit{S} e nel punto \textit{R}
+	\item Indicare la direzione di \textit{E} dovuta all’elettrone nel
+           punto \textit{S} e nel punto \textit{R}
         \item Indicare la direzione di \textit{E} dovuta al protone nel
-punto 𝑆 e nel punto \textit{R}
+punto \textit{S} e nel punto \textit{R}
 \end{itemize}
-
+\subsection {Soluzione}
+\begin{equation}
+  \begin{matrix}
+    q_1=+2e\\
+    q_2=-2e\\
+    q_3=-4e
+  \end{matrix}
+\end{equation}
+Ovviamente il primo passo da fare è quello di ricavare $\vec{E}$ nel origine
+\begin{equation}
+  E_1=E_2=\frac{2e}{4\pi\xi_0d^2}
+\end{equation}
+\begin{equation}
+	E_3=\frac{4e}{4\pi\xi_0d^2}
+\end{equation}
+Ora ricaviamo $E_x$ tramite una somma tra $E_{1x}$, $E_{2x}$ e $E_{3x}$.
+\begin{equation}
+	E_x=E_{1x}+E_{2x}+E_{3x}=\frac{2e}{4\pi\xi_0d^2}\cos{30^o}+\frac{2e}{4\pi\xi_0d^2}\cos{30^o}+\frac{4e}{4\pi\xi_0d^2}\cos{30^o}=\frac{8e}{4\pi\xi_0d^2}\cos{30^o}
+\end{equation}
+\begin{equation}
+	E_x=E_{1y}+E_{2y}+E_{3y}=\frac{-2e}{4\pi\xi_0d^2}\cos{30^o}+\frac{-2e}{4\pi\xi_0d^2}\cos{30^o}+\frac{4e}{4\pi\xi_0d^2}\cos{30^o}=0
+\end{equation}
+\section{Campo $\vec{E}$ di un dipolo elettrico}
+Due particelle cariche, $-q$ e $+q$ separate da distanza $d$ e sull'asse dipolare $z$. Il prodotto $qd$ viene chiamato \textbf{momento di dipolo elettrico}: $p=qd$ e $\vec{p}$ vettoriale.
+\begin{itemize}
+\item direzione: l'asse dipolare
+\item verso: da $-q$ a $+q$
+\end{itemize}
+Il campo $\vec{E}$ sull'asse dipolare distante $z$ dal centro del dipolo:
+\begin{equation}
+  \begin{matrix}
+    E=E_+-E_-=\frac{q}{4\pi \xi\left(z-\frac{d}{2}\right)^2}-\frac{q}{4\pi \xi\left(z-\frac{d}{2}\right)^2}
+    =\frac{q}{4\pi\xi_0}\frac{\left(z-\frac{d}{2}\right)^2-\left(z-\frac{d}{2}\right)^2}{\left(z-\frac{d}{2}\right)^2\left(z-\frac{d}{2}\right)^2}
+    =\frac{q}{4\pi\xi_0}\frac{2zd}{\left(\left(z-\frac{d}{2}\right)^2\right)^{2}}\\
+    =\frac{qd}{2\pi\xi_0z^3}\left(1-\left(\frac{d}{2z}\right)^2\right)^{-2}
+    \end{matrix}
+\end{equation}
+Per $z>>d$ troviamo $E(z)=\frac{p}{2\pi\xi_0z^3}$, anche fuori dell'asse $z$, $E\propto r^{-3}$ per $r>>d$\\
+Materiale isolandte (\textbf{e. g. plastica}). Raggio \textit{R}, carica \textbf{superficiale} $\sigma$ - Punto \textit{P} sull'asse centrale, direzione \textit{z}. Ogni anello ha carica $dq=\sigma 2\pi rdr$ e contribuisce a $dE=\frac{zdq}{4\pi\xi_0\left(4r^2+z^2\right)^{\frac{3}{2}}}$
+\begin{equation}
+  E=\inf dE=\int^R_0\frac{z\sigma2\pi rdr}{4\pi\xi_0\left(4r^2+z^2\right)^{\frac{3}{2}}}=\frac{z\sigma}{4\xi_0}\left[\frac{\left(4r^2+z^2\right)^{-\frac{1}{2}}}{-\frac{1}{2}}\right]^R_0
+\end{equation}
+Il risultato è $E=\frac{\sigma}{2\xi_0}\left(1-\frac{z}{\sqrt{R^2+z^2}}\right)$. Per $z<<R$ troviamo $E=\frac{\sigma}{2\xi_0}$.\\
+Su una carica $q$ in un campo elettrico esterno $\vec{E}$ agisce un forza elettrostatica $\vec{F}=q\vec{E}$
+\begin{itemize}
+  \item per $q>0$, $\vec F$ ha lo stesso orientamento di $\vec E$
+  \item per $q<0$, $\vec F$ ha l'orientamento opposto di $\vec E$
+\end{itemize}
+NB: Una carica non sente il proprio campo elettrico esterno!
+\section{Misura della carica elementare}
+\subsection{Millikan 1910}
+\fbox{
+ 	\addtolength{\linewidth}{-2\fboxsep}%
+ 	\addtolength{\linewidth}{-2\fboxrule}%
+ 	\begin{minipage}{\linewidth}
+          L'esperimento di Millikan per antonomasia è l'esperimento della goccia d'olio, il cui obiettivo, cioè
+          misurare la carica elettrica dell'elettrone, fu raggiunto nel 1909. Il valore ricavato da Robert
+          Millikan fu $4,774(5) x 10^{−10}$ statcoulomb, equivalenti a $1,5924(17)x10^{−19}$ coulomb, minore
+          dello 0,6\% circa rispetto a quello oggi comunemente accettato, pari a $1,602176634 x 10^{−19}$ coulomb.
+	\end{minipage}
+}
+\begin{center}
+  \href{https://it.wikipedia.org/wiki/Esperimento_di_Millikan}{By Wikipedia}
+\end{center}
+\subsubsection{Problema svolto}
+Una goccia con $m=1,3*10^{-10}$, $Q=-1,5*10^{-13}C$ e $V_x=18m/s$ attraverso una zona di lunghezza $L=1,6cm$ e campo elettrico $E=1,4*10^6N/C$ verso il basso,
+Qual'è la deflessione verticale?
+\begin{equation}
+  y=\frac{1}{2}at^2=\frac{1}{2}\frac{EQ}{m}\left(\frac{L}{vx}\right)^2=6,4*10^{-4}m=0,64mm
+\end{equation}
+\section{Prodotto scalare}
+Esistono due prodotti tra vettori: il \underline{prodotto calare} e il \underline{prodotto vettoriale}.\\
+Il prodotto scalare è appunto uno scalare (un \textbf{singolo numero}) funzione di due vettori, indicato con
+$s=\vec{A}*\vec{B}$ e perciò anche detto \textbf{dot product}. Operativamente, posto $\abs{A}$ il modulo del vettore $\vec{A}$, $\abs{B}$ il modulo del vettore $\vec{B}$, e $\alpha$ l'\textbf{angolo} compreso tra i due vettori, il prodotto scalare si calcola con
+\begin{equation}
+	s=\vec{A}*\vec{B}=\abs{\vec{A}}\abs{\vec{B}}\cos \alpha
+\end{equation}
+Oppure equivalentemente, poste $A_x$ ecc. le componenti dei vettori comme la somma e i prodotti delle componenti
+omologhe
+\begin{equation}
+  \vec{A}*\vec{B}=A_xB_x+A_yB_y+A_zB_z
+\end{equation}
+L'interpretazione geometrica è che il prodotto scalare è la \textbf{proiezione} di uno dei due vettori
+sull'altro.
+\section{Prodotto vettoriale}
+Il prodotot vettoriale è un vettore funzione di due vettori, è si indica con $\vec{V}=\vec{A}*\vec{B}$ oppove
+$\vec{V}=A\textturnv \vec{B}$. È anche detto \textbf{cross product}. Il modulo
+$\abs{\vec{V}}=\vec{A}*\vec{B}\sin0$.\\
+$\vec{V}$ è \textbf{perpendicolare} a $\vec{A}$ e a
+$\vec{B}:\vec{V}\bot \abs{\vec{A}},\abs{\vec{V}}\bot\abs{\vec{B}}$. Il verso di $\vec{V}$ è determinato della
+regola della mano destra: girando le dita da $abs{A} \text { a } \vec{B}$, il pollice indica il verso di $\vec{V}$. L'espressione esplicita è
+\begin{equation}
+  \vec{V}=(A_yB_z-A_zB_y)\hat{x}+(A_zB_x-A_xB_z)\hat{y}+(A_xB_y-A_yB_x)\hat{z}
+\end{equation}
+oppure si ottiene del \textbf{determinante:}
+\begin{equation}
+  \vec{V}=\begin{vmatrix}
+            \hat{x}&\hat{y}&\hat{z}\\
+            A_x&A_y&A_z\\
+            B_x&B_y&B_x
+          \end{vmatrix}
+\end{equation}
+\section{Dipolo in un campo elettrico}
+In acqua ($H_2O$), il lato ossigeno è leggermente più negativo di quello dell'idrogeno. Posto in un campo
+elettrico esterno $\vec{E}$, \textbf{si comporta come un dipolo} generico. Il \textbf{momento di dipolo elettrico} $\vec{p}$ è diretto lungo l'asse di simmetria della molecola e ha verso dalla carica negativa alla carica positiva.
+\begin{equation}
+  p(H_2O)=6,2*10^{-30}Cm
+\end{equation}
+Dipolo rapprensentato
+\begin{figure}[!h]
+ 	\centering
+	\includegraphics[height=8cm]{img/grafuci del dipolo elettrico.png}
+\end{figure}
 \end{document}

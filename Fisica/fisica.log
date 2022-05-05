@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.28)  29 APR 2022 19:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.18)  2 MAY 2022 11:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1362,7 +1362,7 @@ Underfull \vbox (badness 7722) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./img/esercizio 5 im1.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<img/esercizio 5 im1.pdf, id=365, 1521.685pt x 994.71625pt>
+<img/esercizio 5 im1.pdf, id=400, 1521.685pt x 994.71625pt>
 File: img/esercizio 5 im1.pdf Graphic file (type pdf)
 <use img/esercizio 5 im1.pdf>
 Package pdftex.def Info: img/esercizio 5 im1.pdf  used on input line 252.
@@ -1427,72 +1427,144 @@ Overfull \hbox (0.5108pt too wide) in paragraph at lines 125--125
 
 [31]) [32]
 Capitolo 6.
-./fisica.tex:113: Too many }'s.
-l.113 ... elettrostatica tra 2 cariche sembra una}
-                                                   ``azione a distanza''
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 115--118
 
  []
 
-<img/linee elettriche repulsione.png, id=484, 803.0pt x 571.13374pt>
+
+Package tasks Warning: You've placed
+(tasks)                
+(tasks)                2
+(tasks)                
+(tasks)                before the first \task  on line 126. I will throw it
+(tasks)                away and ignore it for the rest of the list.
+
+[33
+
+]
+<img/linee elettriche repulsione.png, id=526, 803.0pt x 571.13374pt>
 File: img/linee elettriche repulsione.png Graphic file (type png)
 <use img/linee elettriche repulsione.png>
 Package pdftex.def Info: img/linee elettriche repulsione.png  used on input lin
 e 143.
 (pdftex.def)             Requested size: 160.00902pt x 113.81102pt.
-[33
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 154.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 154.
 
-[34 <./img/linee elettriche repulsione.png>] [35] (./fisica.aux)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 154.
+
+[34 <./img/linee elettriche repulsione.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 217.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 217.
+
+[35]
+
+./fisica.tex:255: LaTeX Error: Unicode character − (U+2212)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.255 }
+       
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./fisica.tex:255: LaTeX Error: Unicode character − (U+2212)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.255 }
+       
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./fisica.tex:255: LaTeX Error: Unicode character − (U+2212)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.255 }
+       
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Overfull \hbox (6.66504pt too wide) in paragraph at lines 255--256
+[] 
+ []
+
+[36]
+
+LaTeX Warning: Command \textturnv invalid in math mode on input line 281.
+
+
+LaTeX Warning: Command \textturnv invalid in math mode on input line 281.
+
+<img/grafuci del dipolo elettrico.png, id=563, 1059.96pt x 819.06pt>
+File: img/grafuci del dipolo elettrico.png Graphic file (type png)
+<use img/grafuci del dipolo elettrico.png>
+Package pdftex.def Info: img/grafuci del dipolo elettrico.png  used on input li
+ne 306.
+(pdftex.def)             Requested size: 294.57098pt x 227.62204pt.
+[37 <./img/grafuci del dipolo elettrico.png>] (./fisica.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `fisica.out' has not changed.
-(rerunfilecheck)             Checksum: F012ADB4C0CDED96DCD819CEC7B3D5CB;7140.
+(rerunfilecheck)             Checksum: 5FB65073E3C1B20C6E4E5F19F1B6B90B;8307.
  ) 
 Here is how much of TeX's memory you used:
- 47120 strings out of 478276
- 1061757 string characters out of 5853013
- 1736051 words of memory out of 5000000
- 64478 multiletter control sequences out of 15000+600000
- 493555 words of font info for 92 fonts, out of 8000000 for 9000
+ 47162 strings out of 478276
+ 1062512 string characters out of 5853013
+ 1740051 words of memory out of 5000000
+ 64494 multiletter control sequences out of 15000+600000
+ 494011 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,89p,828b,977s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
 exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
-usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/share/texmf
--dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
-per/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pf
-b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts
-/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/c
-m-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl100
-0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on fisica.pdf (35 pages, 461598 bytes).
+/amsfonts/cmextra/cmex7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/font
+s/type1/public/cm-super/sfbi1000.pfb></usr/share/texmf-dist/fonts/type1/public/
+cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx12
+00.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/
+fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
+rm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></us
+r/share/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-d
+ist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1
+/public/cm-super/sftt1000.pfb>
+Output written on fisica.pdf (37 pages, 540256 bytes).
 PDF statistics:
- 640 PDF objects out of 1000 (max. 8388607)
- 550 compressed objects within 6 object streams
- 167 named destinations out of 1000 (max. 500000)
- 399 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 720 PDF objects out of 1000 (max. 8388607)
+ 621 compressed objects within 7 object streams
+ 191 named destinations out of 1000 (max. 500000)
+ 460 words of extra memory for PDF output out of 10000 (max. 10000000)
 

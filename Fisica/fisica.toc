@@ -65,3 +65,11 @@
 \contentsline {section}{\numberline {6.5}Campo $\vec {E}$ di una carica puntiforme}{34}{section.6.5}%
 \contentsline {section}{\numberline {6.6}Il principio di sovrapposizione}{34}{section.6.6}%
 \contentsline {section}{\numberline {6.7}Verifica}{35}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Soluzione}{35}{subsection.6.7.1}%
+\contentsline {section}{\numberline {6.8}Campo $\vec {E}$ di un dipolo elettrico}{35}{section.6.8}%
+\contentsline {section}{\numberline {6.9}Misura della carica elementare}{36}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}Millikan 1910}{36}{subsection.6.9.1}%
+\contentsline {subsubsection}{Problema svolto}{36}{subsubsection*.26}%
+\contentsline {section}{\numberline {6.10}Prodotto scalare}{36}{section.6.10}%
+\contentsline {section}{\numberline {6.11}Prodotto vettoriale}{37}{section.6.11}%
+\contentsline {section}{\numberline {6.12}Dipolo in un campo elettrico}{37}{section.6.12}%
