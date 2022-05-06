@@ -24,6 +24,7 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{longtable}
+\usepackage{upgreek}
 \usepackage{tikz}
 \usepackage{tikz-qtree}
 \usepackage{subfig}
@@ -246,12 +247,12 @@ NB: Una carica non sente il proprio campo elettrico esterno!
 \fbox{
  	\addtolength{\linewidth}{-2\fboxsep}%
  	\addtolength{\linewidth}{-2\fboxrule}%
- 	\begin{minipage}{\linewidth}
+	\begin{minipage}{\linewidth}
           L'esperimento di Millikan per antonomasia è l'esperimento della goccia d'olio, il cui obiettivo, cioè
           misurare la carica elettrica dell'elettrone, fu raggiunto nel 1909. Il valore ricavato da Robert
-          Millikan fu $4,774(5) x 10^{−10}$ statcoulomb, equivalenti a $1,5924(17)x10^{−19}$ coulomb, minore
-          dello 0,6\% circa rispetto a quello oggi comunemente accettato, pari a $1,602176634 x 10^{−19}$ coulomb.
-	\end{minipage}
+          Millikan fu $4,774(5) x 10^{-10}$ statcoulomb, equivalenti a $1,5924(17)x10^{-19}$ coulomb, minore
+          dello 0,6\% circa rispetto a quello oggi comunemente accettato, pari a $1,602176634 x 10^{-19}$ coulomb.
+        \end{minipage}
 }
 \begin{center}
   \href{https://it.wikipedia.org/wiki/Esperimento_di_Millikan}{By Wikipedia}
@@ -300,9 +301,55 @@ elettrico esterno $\vec{E}$, \textbf{si comporta come un dipolo} generico. Il \t
 \begin{equation}
   p(H_2O)=6,2*10^{-30}Cm
 \end{equation}
-Dipolo rapprensentato
+Dipolo rapprensentato da due cariche $-q$ e $+q$ a distanza $d$. Il momento dipolo elettrico
+$\vec{p}$ forma un angolo di $\texttheta$ col campo elettrico esterno $\vec{E}$ (uniforme)\\
 \begin{figure}[!h]
  	\centering
 	\includegraphics[height=8cm]{img/grafuci del dipolo elettrico.png}
 \end{figure}
+$\vec{F} (+q) e \vec{F} (-q)$ hanno intensità uguali e direzioni opposta. La forza netta è zero, ma esercitano un \textbf{momento torcente} $\vec{\uptau}$:
+\begin{equation}
+\uptau=-Fd \sin {\texttheta} = -pE sin {\texttheta}
+\end{equation}
+(\textit{segno meno perché il verso è orario}).
+In forma vettore: $\vec{\uptau}=\vec{p}*\vec{E}$
+\section{Energia potenziale di un dipolo elettrico}
+L'energia potenziale $U$ di un dipolo elettrico $\vec{p}$ dipende dal suo \textit{orientamento}.
+$U$ è minimo quando $\vec{p}$ è allineaTo Con il campo $\vec{E}$ - Nel mimimo è in equilibro:
+$\abs{\vec{\uptau}}=\abs{p}\abs{E}\sin \texttheta=0$. Scegliamo $U=0$ per $\texttheta=90^o$.\\
+L'energia potenziale diventa
+\begin{equation}
+  U=-L=\int^{\texttheta}_{90^o}\uptau d \texttheta= \int_{90^o}^\texttheta pE\sin \texttheta d\texttheta =-pE\cos\texttheta
+\end{equation}
+In forma vettoriale: $U=-\vec{p}*\vec{E}$
+\section{Problema}
+\begin{tasks}
+  \task A quale distanza si trovano i cewntri delle cariche positiva e negativa di una molecola d'acqua?
+  \begin{eqnarray*}
+    p=qd\to d=\frac{p}{q}\\
+    p(H_2O)=10e=1,6*10^{-30}C\\
+    q(H_2O))10e)=1,6*10^{-18}C\\
+    d=\frac{p}{q}=\frac{6,2*10^{-30}Cm}{1,6*10^{-18}C}=3,9*10^{-12}m=3,9pm
+  \end{eqnarray*}
+  \task Qual'è la differenza di energia potenziale tra le orientazioni $\texttheta=0^o$ e $\texttheta=180^o$ in un campo esterno $E=1,5*10^4\frac{N}{C}$?
+  \begin{equation}
+	\Delta U=2pE=2*6,2*10^{-30}Cm*1,5*10^3\frac{N}{C}=1,9*10^{-25}J
+  \end{equation}
+\end{tasks}
+\section{La legge di Gauss}
+\subsection{L'aspetto fisico}
+Per calcolare il campo elettrico $\vec{E}$ di una distribuzione di carica si può \textbf{sommare} (integrare). La procedura è \textit{laboriosa}. Se esiste la simmetria, possiamo utilizzare un metodo più semplòice che sfrutta la relazione tra carica e campo, la \textbf{legge di Gauss}
+\subsection{La superficie Gaussiana}
+Scegliamo una superficie Gaussiana ({\it cioè una superficie chiusa}) intorno ad una carica.
+Per la carica puntiforme, la {\bf sfera} è la superficie più simmetrica.
+Le linee di campo intercettano la superficie.
+\begin{tasks}
+  \task Per una carica $Q$ il campo è $E=\frac{kQ}{r^2}$
+  \task Per una carica 2Q, più linee intercettano la superficie
+  \task la carica è $-\frac{Q}{2}$
+\end{task}
+Serve una grandezza che \textbf{quantifica} quanto una superificie è attraversata da un campo.
+\section {Il flusso elettrico}
+Un campo $\vec{E}$ attraversa un elemento di superficie $\Delta \vec{A}$ \texttt{vettore di area $\Delta \vec{A}$: \textbf{perpendicolare} alla superficie}
+
 \end{document}

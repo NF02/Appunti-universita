@@ -73,3 +73,9 @@
 \contentsline {section}{\numberline {6.10}Prodotto scalare}{36}{section.6.10}%
 \contentsline {section}{\numberline {6.11}Prodotto vettoriale}{37}{section.6.11}%
 \contentsline {section}{\numberline {6.12}Dipolo in un campo elettrico}{37}{section.6.12}%
+\contentsline {section}{\numberline {6.13}Energia potenziale di un dipolo elettrico}{38}{section.6.13}%
+\contentsline {section}{\numberline {6.14}Problema}{38}{section.6.14}%
+\contentsline {section}{\numberline {6.15}La legge di Gauss}{38}{section.6.15}%
+\contentsline {subsection}{\numberline {6.15.1}L'aspetto fisico}{38}{subsection.6.15.1}%
+\contentsline {subsection}{\numberline {6.15.2}La superficie Gaussiana}{39}{subsection.6.15.2}%
+\contentsline {section}{\numberline {6.16}Il flusso elettrico}{39}{section.6.16}%
