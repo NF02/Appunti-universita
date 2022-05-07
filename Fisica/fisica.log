@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  6 MAY 2022 12:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  6 MAY 2022 18:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1411,7 +1411,7 @@ Underfull \vbox (badness 7722) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./img/esercizio 5 im1.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<img/esercizio 5 im1.pdf, id=425, 1521.685pt x 994.71625pt>
+<img/esercizio 5 im1.pdf, id=435, 1521.685pt x 994.71625pt>
 File: img/esercizio 5 im1.pdf Graphic file (type pdf)
 <use img/esercizio 5 im1.pdf>
 Package pdftex.def Info: img/esercizio 5 im1.pdf  used on input line 252.
@@ -1492,7 +1492,7 @@ Package tasks Warning: You've placed
 [33
 
 ]
-<img/linee elettriche repulsione.png, id=552, 803.0pt x 571.13374pt>
+<img/linee elettriche repulsione.png, id=562, 803.0pt x 571.13374pt>
 File: img/linee elettriche repulsione.png Graphic file (type png)
 <use img/linee elettriche repulsione.png>
 Package pdftex.def Info: img/linee elettriche repulsione.png  used on input lin
@@ -1534,7 +1534,7 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 305.
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 305.
 
-<img/grafuci del dipolo elettrico.png, id=588, 1059.96pt x 819.06pt>
+<img/grafuci del dipolo elettrico.png, id=598, 1059.96pt x 819.06pt>
 File: img/grafuci del dipolo elettrico.png Graphic file (type png)
 <use img/grafuci del dipolo elettrico.png>
 Package pdftex.def Info: img/grafuci del dipolo elettrico.png  used on input li
@@ -1577,16 +1577,6 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
 
-./fisica.tex:322: Missing { inserted.
-<to be read again> 
-                   \begingroup 
-l.322 ...ptau d \texttheta= \int_{90^o}^\texttheta
-                                                   pE\sin \texttheta d\textt...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
 
@@ -1610,27 +1600,6 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
 
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
-
-./fisica.tex:323: You can't use `\eqno' in math mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.323 \end{equation}
-                    
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-./fisica.tex:323: Missing } inserted.
-<inserted text> 
-                }
-l.323 \end{equation}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 338.
@@ -1645,23 +1614,18 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 338.
 LaTeX Warning: Command \texttheta invalid in math mode on input line 338.
 
 [38]
-
-./fisica.tex:350: LaTeX Error: \begin{tasks} on input line 346 ended by \end{ta
-sk}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.350 \end{task}
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+Capitolo 7.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 353.
-[39] (./fisica.aux)
+
+LaTeX Warning: Command \texttheta invalid in math mode on input line 355.
+
+
+LaTeX Warning: Command \texttheta invalid in math mode on input line 355.
+
+[39
+
+] [40] (./fisica.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1671,47 +1635,67 @@ Package rerunfilecheck Warning: File `fisica.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `fisica.out':
-(rerunfilecheck)             Before: 0E8CDB6F159B4C14F9C617F28DBA4A27;9161
-(rerunfilecheck)             After:  899F52F8A78EF2D320EDE3C9A27B9868;9318.
+(rerunfilecheck)             Before: BBBEDD151C536C02BDC55FA9C51095B3;9513
+(rerunfilecheck)             After:  66AC04681D8AE20784E812B372DFB05C;9636.
  ) 
 Here is how much of TeX's memory you used:
- 47304 strings out of 478268
- 1070655 string characters out of 5846348
+ 47317 strings out of 478268
+ 1070815 string characters out of 5846348
  1740119 words of memory out of 5000000
- 64614 multiletter control sequences out of 15000+600000
+ 64615 multiletter control sequences out of 15000+600000
  495992 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,89p,828b,977s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
-/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
-></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
-sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/loca
-l/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
-exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texliv
-e/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/
-2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/20
-22/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022
-/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf
--dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-d
-ist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dis
-t/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/
-fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on fisica.pdf (39 pages, 551879 bytes).
+
+pdfTeX warning (dest): name{section.6.17} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.6.16} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.6.15.2} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.6.15.1} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.6.15} has been referenced but does not exis
+t, replaced by a fixed one
+
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
+usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><
+/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
+ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/
+texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
+live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/
+2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/20
+22/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022
+/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/t
+exmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf
+-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-d
+ist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dis
+t/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dist/
+fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fo
+nts/type1/public/cm-super/sftt1000.pfb>
+Output written on fisica.pdf (40 pages, 554371 bytes).
 PDF statistics:
- 770 PDF objects out of 1000 (max. 8388607)
- 667 compressed objects within 7 object streams
- 207 named destinations out of 1000 (max. 500000)
- 500 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 798 PDF objects out of 1000 (max. 8388607)
+ 694 compressed objects within 7 object streams
+ 219 named destinations out of 1000 (max. 500000)
+ 516 words of extra memory for PDF output out of 10000 (max. 10000000)
 

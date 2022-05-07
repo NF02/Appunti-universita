@@ -319,7 +319,7 @@ $U$ è minimo quando $\vec{p}$ è allineaTo Con il campo $\vec{E}$ - Nel mimimo 
 $\abs{\vec{\uptau}}=\abs{p}\abs{E}\sin \texttheta=0$. Scegliamo $U=0$ per $\texttheta=90^o$.\\
 L'energia potenziale diventa
 \begin{equation}
-  U=-L=\int^{\texttheta}_{90^o}\uptau d \texttheta= \int_{90^o}^\texttheta pE\sin \texttheta d\texttheta =-pE\cos\texttheta
+  U=-L=\int^{\texttheta}_{90^o}\uptau d \texttheta= \int^{\texttheta}_{90^o} pE\sin \texttheta d\texttheta =-pE\cos\texttheta
 \end{equation}
 In forma vettoriale: $U=-\vec{p}*\vec{E}$
 \section{Problema}
@@ -336,10 +336,10 @@ In forma vettoriale: $U=-\vec{p}*\vec{E}$
 	\Delta U=2pE=2*6,2*10^{-30}Cm*1,5*10^3\frac{N}{C}=1,9*10^{-25}J
   \end{equation}
 \end{tasks}
-\section{La legge di Gauss}
-\subsection{L'aspetto fisico}
+\chapter{La legge di Gauss}
+\section{L'aspetto fisico}
 Per calcolare il campo elettrico $\vec{E}$ di una distribuzione di carica si può \textbf{sommare} (integrare). La procedura è \textit{laboriosa}. Se esiste la simmetria, possiamo utilizzare un metodo più semplòice che sfrutta la relazione tra carica e campo, la \textbf{legge di Gauss}
-\subsection{La superficie Gaussiana}
+\section{La superficie Gaussiana}
 Scegliamo una superficie Gaussiana ({\it cioè una superficie chiusa}) intorno ad una carica.
 Per la carica puntiforme, la {\bf sfera} è la superficie più simmetrica.
 Le linee di campo intercettano la superficie.
@@ -347,9 +347,46 @@ Le linee di campo intercettano la superficie.
   \task Per una carica $Q$ il campo è $E=\frac{kQ}{r^2}$
   \task Per una carica 2Q, più linee intercettano la superficie
   \task la carica è $-\frac{Q}{2}$
-\end{task}
+\end{tasks}
 Serve una grandezza che \textbf{quantifica} quanto una superificie è attraversata da un campo.
 \section {Il flusso elettrico}
-Un campo $\vec{E}$ attraversa un elemento di superficie $\Delta \vec{A}$ \texttt{vettore di area $\Delta \vec{A}$: \textbf{perpendicolare} alla superficie}
+Un campo $\vec{E}$ attraversa un elemento di superficie $\Delta \vec{A}$ \texttt{vettore di area $\Delta \vec{A}$: \textbf{perpendicolare} alla superficie}.\\ Definizione del flusso elettrico $\Delta \vec{\upphi}$:
+\begin{equation}
+	\Delta \upphi =\vec{E}*\Delta\vec{A}=E\Delta A\cos\texttheta
+\end{equation}
+Per l'\textit{intera} superficie:
+$\upphi = \sigma \vec{E}*\Delta \vec{A}=\int \vec{E}*d\vec{A}$ - Per una superficie chiusa, l'orientamento di $\Delta \vec{A}$ è uscente.
+\begin{itemize}
+\item $\vec{E}$ uscente contribuisce $\Delta \upphi >0$
+\item $\vec{E}$ entrante contribuisce $\Delta \upphi <0$
+\item $\vec{E} || \Delta \vec{A}$ da $\Delta \upphi =0$
+\end{itemize}
+Il flusso netto di una superficie chiusa è
+\begin{equation}
+	\upphi=\oint \vec{E}*d\vec{A}
+\end{equation}
+\section{Cilindro in campo uniforme}
+Superficie guessiana a forma di \textbf{cilindro} di raggio \textit{R}. Campo elettrico $\vec{E}$
+\textbf{uniforme}, parallelo all'asse. Quanto vale il fluso netto?
+\begin{equation}
+  \upphi=\oint \vec{E}*d\vec{A}=\int_a \vec{E}*d\vec{A}+\int_b\vec{E}*d\vec{A}+\int_c \vec{E}*
+  d\vec{A}
+\end{equation}
+\begin{itemize}
+\item $\int_a \vec{E}*d\vec{A}=-\pi R^2E$
+\item $\int_b \vec{E}*d\vec{A}=0$
+\item $\int_c\vec{E}*d\vec{A}=\pi R^2E$
+\item $\upphi =0$  
+\end{itemize}
+\section{La legge di Gauss}
+Relazione tra il flusso $\upphi$ attraverso una superficie chiusa e la carica netta $q_{int}$ racchiusa all'interno della superficie:
+\begin{equation}
+	\xi_0\upphi=q_{int} \text{ o } \xi_0\oint \vec{E}*d\vec{A}=q_{int}
+\end{equation}
+\begin{itemize}
+\item \textit{se $q_{int}$ è positiva, il flusso netto è uscente}
+\item \textit{se $q_{int}$ è negativo, il flusso netto è entrante}
+\end{itemize}
+Una carica esterna alla superficie può cambiare $\vec{E}$ localmente, ma non influisce sul flusso totale.
 
 \end{document}
