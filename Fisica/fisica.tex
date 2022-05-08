@@ -109,7 +109,7 @@
 \part {Fisica 2}
 \input{pag/programma 2.tex}
 \input{pag/legge di Couloumb.tex}
-.\chapter{Campi elettrici}
+\chapter{Campi elettrici}
 \section {L'aspetto fisico}
 La forza elettrostatica tra 2 cariche sembra una ``azione a distanza''
 \begin{itemize}
@@ -388,5 +388,44 @@ Relazione tra il flusso $\upphi$ attraverso una superficie chiusa e la carica ne
 \item \textit{se $q_{int}$ è negativo, il flusso netto è entrante}
 \end{itemize}
 Una carica esterna alla superficie può cambiare $\vec{E}$ localmente, ma non influisce sul flusso totale.
+\begin{figure}[!h]
+ 	\centering
+	\includegraphics[height=5cm]{img/cariche opposte.jpg}
+    	\caption{Due cariche di intensità uguale, ma di segno opposto}
+\end{figure}
+\begin{itemize}
+\item $S_1$: $\vec{E}$ uscente in tutti i punti. $\Phi$ positivo, $q_{int}$ negativa
+\item $S_2$: $\vec{E}$ entrante in tutti i punti. $\Phi$ negativa, $q_{int}$ negativa
+\item $S_3$ Non racchiude nessuna carica. Ogni linea di campo che entra, esce, quindi $\Phi = 0$
+  \item $S_4$ $q_{int}$ = $Q-Q=0$, quindi $\Phi = 0$
+\end{itemize}
+
+\section{La legge di Gauss e di Coulomb}
+Racchiudiamo una \textbf{carica puntiforme} in una superficie sferica di raggio $r$.
+Per simmetria, il campo elettronico ha il medesimo modulo $E$ su \textbf{tutti i punti della sfera}.\\
+Applichiamo Gauss:
+\begin{eqnarray*}
+  \xi_0\oint \vec{E}*d\vec{A}=q_{int}\\
+  \xi_0 E(4\pi r^2) = q\\
+  E=\frac{q}{4\pi\xi_0r^2}
+\end{eqnarray*}
+Cioè, la legge di coulomb!
+\subsection{Problema svolto}
+Guscio sferica di raggio $R=10cm$ - dotato di carica uniforme $Q=-16e$ - Al centro carca puntiforme $q=5e$. Calcolare il campo $\vec{E}$
+\begin{itemize}
+\item nel punto $P_1$ a $r_1=6cm$
+\item nel punto $P_2$ a $r_2=12cm$
+\end{itemize}
+\begin{eqnarray*}
+  \xi_0 E_1(4\pi r_1^2)=q\to E=\frac{q}{4\pi \xi_0 r^2_1}=\frac{4e}{4\pi \xi_0 (0,06m)^2}=2,0*10^{-6}\frac{N}{C} \text{ verso l'esterno}\\
+  \xi_0 E_2 (4\pi r^2_2)=q+Q\to \frac{q+Q}{4\pi \xi_0 r^2_2}=\frac{4e}{4\pi \xi_0 (0,12m)^2}=1,1 *10^{-6}\frac{N}{C} \text{ verso l'interno}
+\end{eqnarray*}
+\section{Un conduttore carico isolato}
+Il campo elettrico all'\textit{interno} di un conduttore in equilibrio elettrostatico è \textit{nullo}
+\begin{center}
+	se no, si spostano le cariche
+\end{center}
+Scegliamo una superficie gaussiana appena sotto la superficie,
+
 
 \end{document}
