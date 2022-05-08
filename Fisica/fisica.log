@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  7 MAY 2022 21:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  8 MAY 2022 22:16
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **fisica.tex
 (./fisica.tex
@@ -1370,52 +1371,52 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ] (./fisica.toc
-[3])
+[3] [4])
 \tf@toc=\write5
 \openout5 = `fisica.toc'.
 
- [4] (./fisica.lot)
+ [5] [6
+
+] (./fisica.lot)
 \tf@lot=\write6
 \openout6 = `fisica.lot'.
 
- [5
-
-] [6
+ [7] [8
 
 ] (./fisica.lof)
 \tf@lof=\write7
 \openout7 = `fisica.lof'.
 
  (./pag/premesse.tex)
-(./pag/simboli.tex) [7] [8
+(./pag/simboli.tex) [9] [10
 
-] [9] [10] (./pag/unita di misura.tex
+] [11] [12] (./pag/unita di misura.tex
 Capitolo 1.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
 .
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )) (./pag/moti.tex
-[11
+[13
 
-] [12]
+] [14]
 Capitolo 2.
 
 Underfull \vbox (badness 7722) has occurred while \output is active []
 
- [13
+ [15
 
 ]
-[14] [15] [16] [17]
+[16] [17] [18] [19]
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/esercizio 5 im1.pdf): 
-PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/esercizio 5 im1.pdf, id=457, 1521.685pt x 994.71625pt>
+pdfTeX warning: pdflatex (file ./img/esercizio 5 im1.pdf): PDF inclusion: found
+ PDF version <1.7>, but at most version <1.5> allowed
+<img/esercizio 5 im1.pdf, id=487, 1521.685pt x 994.71625pt>
 File: img/esercizio 5 im1.pdf Graphic file (type pdf)
 <use img/esercizio 5 im1.pdf>
 Package pdftex.def Info: img/esercizio 5 im1.pdf  used on input line 252.
 (pdftex.def)             Requested size: 174.09616pt x 113.81102pt.
-[18 <./img/esercizio 5 im1.pdf>]
+[20 <./img/esercizio 5 im1.pdf>]
 Overfull \hbox (3.9333pt too wide) detected at line 350
 [] \OT1/cmr/m/n/10 = [] = 602\OML/cmm/m/it/10 s \OT1/cmr/m/n/10 = 10\OML/cmm/m/
 it/10 min
@@ -1434,27 +1435,27 @@ m \OT1/cmr/m/n/10 = 22\OML/cmm/m/it/10 km
 
 Underfull \vbox (badness 3612) has occurred while \output is active []
 
- [19]
-[20] [21]
+ [21]
+[22] [23]
 Underfull \hbox (badness 10000) in paragraph at lines 519--520
 
  []
 
-) (./pag/modelli atomici.tex [22]
+) (./pag/modelli atomici.tex [24]
 Capitolo 3.
-) [23
+) [25
 
-] [24
+] [26
 
-] [25] [26] (./pag/programma 2.tex
+] [27] [28] (./pag/programma 2.tex
 Capitolo 4.
-) (./pag/legge di Couloumb.tex [27
+) (./pag/legge di Couloumb.tex [29
 
-] [28
+] [30
 
 ]
 Capitolo 5.
-[29]
+[31]
 
 Package tasks Warning: You've placed
 (tasks)                
@@ -1464,16 +1465,16 @@ Package tasks Warning: You've placed
 (tasks)                away and ignore it for the rest of the list.
 
 \c@pcariche=\count430
-[30]
+[32]
 
-LaTeX Warning: Reference `' on page 31 undefined on input line 103.
+LaTeX Warning: Reference `' on page 33 undefined on input line 103.
 
 
 Overfull \hbox (0.5108pt too wide) in paragraph at lines 125--125
 \T1/cmr/m/it/10 Una su-per-fi-cie sfe-ri-ca uni-for-me-men-te ca-ri-ca at-
  []
 
-[31]) [32]
+[33]) [34]
 Capitolo 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 116--119
@@ -1488,10 +1489,10 @@ Package tasks Warning: You've placed
 (tasks)                before the first \task  on line 127. I will throw it
 (tasks)                away and ignore it for the rest of the list.
 
-[33
+[35
 
 ]
-<img/linee elettriche repulsione.png, id=584, 803.0pt x 571.13374pt>
+<img/linee elettriche repulsione.png, id=612, 803.0pt x 571.13374pt>
 File: img/linee elettriche repulsione.png Graphic file (type png)
 <use img/linee elettriche repulsione.png>
 Package pdftex.def Info: img/linee elettriche repulsione.png  used on input lin
@@ -1506,7 +1507,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 155.
 
-[34 <./img/linee elettriche repulsione.png>]
+[36 <./img/linee elettriche repulsione.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 218.
@@ -1515,12 +1516,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 218.
 
-[35]
+[37]
 Overfull \hbox (6.66504pt too wide) in paragraph at lines 256--257
 [] 
  []
 
-[36]
+[38]
 
 LaTeX Warning: Command \textturnv invalid in math mode on input line 282.
 
@@ -1533,7 +1534,7 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 305.
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 305.
 
-<img/grafuci del dipolo elettrico.png, id=620, 1059.96pt x 819.06pt>
+<img/grafuci del dipolo elettrico.png, id=649, 1059.96pt x 819.06pt>
 File: img/grafuci del dipolo elettrico.png Graphic file (type png)
 <use img/grafuci del dipolo elettrico.png>
 Package pdftex.def Info: img/grafuci del dipolo elettrico.png  used on input li
@@ -1551,7 +1552,7 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 312.
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 312.
 
-[37 <./img/grafuci del dipolo elettrico.png>]
+[39 <./img/grafuci del dipolo elettrico.png>]
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 319.
 
@@ -1612,7 +1613,7 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 338.
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 338.
 
-[38]
+[40]
 Capitolo 7.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 353.
@@ -1622,26 +1623,26 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 355.
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 355.
 
-[39
+[41
 
 ]
-<img/cariche opposte.jpg, id=649, 167.62625pt x 303.1325pt>
+<img/cariche opposte.jpg, id=678, 167.62625pt x 303.1325pt>
 File: img/cariche opposte.jpg Graphic file (type jpg)
 <use img/cariche opposte.jpg>
 Package pdftex.def Info: img/cariche opposte.jpg  used on input line 393.
 (pdftex.def)             Requested size: 78.66924pt x 142.26378pt.
- [40 <./img/cariche opposte.jpg>] [41] (./fisica.aux)
+ [42 <./img/cariche opposte.jpg>] [43] [44] [45] (./fisica.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `fisica.out' has not changed.
-(rerunfilecheck)             Checksum: 6698CD5A588873AB852C30B0589D5C18;10203.
+(rerunfilecheck)             Checksum: BA681CCA8535C34AB7C6E8F6920C8509;10941.
  ) 
 Here is how much of TeX's memory you used:
- 47329 strings out of 478268
- 1071041 string characters out of 5846348
+ 47347 strings out of 478268
+ 1071248 string characters out of 5846348
  1740119 words of memory out of 5000000
- 64625 multiletter control sequences out of 15000+600000
+ 64629 multiletter control sequences out of 15000+600000
  495992 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,89p,828b,977s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1671,10 +1672,10 @@ mf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf
 ist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dis
 t/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on fisica.pdf (41 pages, 574228 bytes).
+Output written on fisica.pdf (45 pages, 581767 bytes).
 PDF statistics:
- 820 PDF objects out of 1000 (max. 8388607)
- 713 compressed objects within 8 object streams
- 219 named destinations out of 1000 (max. 500000)
- 553 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 865 PDF objects out of 1000 (max. 8388607)
+ 754 compressed objects within 8 object streams
+ 233 named destinations out of 1000 (max. 500000)
+ 585 words of extra memory for PDF output out of 10000 (max. 10000000)
 
