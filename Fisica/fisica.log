@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  8 MAY 2022 22:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  13 MAY 2022 12:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1411,7 +1411,7 @@ Underfull \vbox (badness 7722) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./img/esercizio 5 im1.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<img/esercizio 5 im1.pdf, id=487, 1521.685pt x 994.71625pt>
+<img/esercizio 5 im1.pdf, id=532, 1521.685pt x 994.71625pt>
 File: img/esercizio 5 im1.pdf Graphic file (type pdf)
 <use img/esercizio 5 im1.pdf>
 Package pdftex.def Info: img/esercizio 5 im1.pdf  used on input line 252.
@@ -1474,10 +1474,10 @@ Overfull \hbox (0.5108pt too wide) in paragraph at lines 125--125
 \T1/cmr/m/it/10 Una su-per-fi-cie sfe-ri-ca uni-for-me-men-te ca-ri-ca at-
  []
 
-[33]) [34]
+[33]) (./pag/campi_elettrici.tex [34]
 Capitolo 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--119
+Underfull \hbox (badness 10000) in paragraph at lines 5--8
 
  []
 
@@ -1486,163 +1486,182 @@ Package tasks Warning: You've placed
 (tasks)                
 (tasks)                2
 (tasks)                
-(tasks)                before the first \task  on line 127. I will throw it
+(tasks)                before the first \task  on line 16. I will throw it
 (tasks)                away and ignore it for the rest of the list.
 
 [35
 
 ]
-<img/linee elettriche repulsione.png, id=612, 803.0pt x 571.13374pt>
+<img/linee elettriche repulsione.png, id=657, 803.0pt x 571.13374pt>
 File: img/linee elettriche repulsione.png Graphic file (type png)
 <use img/linee elettriche repulsione.png>
 Package pdftex.def Info: img/linee elettriche repulsione.png  used on input lin
-e 144.
+e 33.
 (pdftex.def)             Requested size: 160.00902pt x 113.81102pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 155.
+(hyperref)                removing `math shift' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 155.
+(hyperref)                removing `math shift' on input line 44.
 
 [36 <./img/linee elettriche repulsione.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 218.
+(hyperref)                removing `math shift' on input line 107.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 218.
+(hyperref)                removing `math shift' on input line 107.
 
 [37]
-Overfull \hbox (6.66504pt too wide) in paragraph at lines 256--257
+Overfull \hbox (6.66504pt too wide) in paragraph at lines 145--146
 [] 
  []
 
 [38]
 
-LaTeX Warning: Command \textturnv invalid in math mode on input line 282.
+LaTeX Warning: Command \textturnv invalid in math mode on input line 171.
 
 
-LaTeX Warning: Command \textturnv invalid in math mode on input line 282.
+LaTeX Warning: Command \textturnv invalid in math mode on input line 171.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 305.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 194.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 305.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 194.
 
-<img/grafuci del dipolo elettrico.png, id=649, 1059.96pt x 819.06pt>
+<img/grafuci del dipolo elettrico.png, id=695, 1059.96pt x 819.06pt>
 File: img/grafuci del dipolo elettrico.png Graphic file (type png)
 <use img/grafuci del dipolo elettrico.png>
 Package pdftex.def Info: img/grafuci del dipolo elettrico.png  used on input li
-ne 308.
+ne 197.
 (pdftex.def)             Requested size: 294.57098pt x 227.62204pt.
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 312.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 201.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 312.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 201.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 312.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 201.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 312.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 201.
 
 [39 <./img/grafuci del dipolo elettrico.png>]
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 319.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 208.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 319.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 208.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 319.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 208.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 319.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 208.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 211.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 211.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 211.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 211.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 211.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 211.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 211.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 211.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 211.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 211.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 211.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 322.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 211.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 338.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 227.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 338.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 227.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 338.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 227.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 338.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 227.
 
-[40]
+) (./pag/legge_di_gauss.tex [40]
 Capitolo 7.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 353.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 15.
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 355.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 17.
 
 
-LaTeX Warning: Command \texttheta invalid in math mode on input line 355.
+LaTeX Warning: Command \texttheta invalid in math mode on input line 17.
 
 [41
 
 ]
-<img/cariche opposte.jpg, id=678, 167.62625pt x 303.1325pt>
+<img/cariche opposte.jpg, id=723, 167.62625pt x 303.1325pt>
 File: img/cariche opposte.jpg Graphic file (type jpg)
 <use img/cariche opposte.jpg>
-Package pdftex.def Info: img/cariche opposte.jpg  used on input line 393.
+Package pdftex.def Info: img/cariche opposte.jpg  used on input line 55.
 (pdftex.def)             Requested size: 78.66924pt x 142.26378pt.
- [42 <./img/cariche opposte.jpg>] [43] [44] [45] (./fisica.aux)
+ [42 <./img/cariche opposte.jpg>] [43] [44]) [45] [46
+
+]
+Capitolo 8.
+[47]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 141.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 141.
+
+[48] [49] (./fisica.aux)
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `fisica.out' has not changed.
-(rerunfilecheck)             Checksum: BA681CCA8535C34AB7C6E8F6920C8509;10941.
+
+Package rerunfilecheck Warning: File `fisica.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `fisica.out':
+(rerunfilecheck)             Before: D13BB6FC65B50BA254634B99A23EE315;12564
+(rerunfilecheck)             After:  DB777D59C84A7D56819CA2A8CAAAD4C6;12666.
  ) 
 Here is how much of TeX's memory you used:
- 47347 strings out of 478268
- 1071248 string characters out of 5846348
+ 47386 strings out of 478268
+ 1071824 string characters out of 5846348
  1740119 words of memory out of 5000000
- 64629 multiletter control sequences out of 15000+600000
+ 64642 multiletter control sequences out of 15000+600000
  495992 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,89p,828b,977s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1658,24 +1677,25 @@ sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
 ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/loca
 l/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texliv
-e/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/
-2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/20
-22/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022
-/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf
--dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-d
-ist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dis
-t/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/
-fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on fisica.pdf (45 pages, 581767 bytes).
+xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/
+2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/20
+22/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022
+/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/t
+exmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf
+-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-d
+ist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dis
+t/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dist/
+fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fo
+nts/type1/public/cm-super/sftt1000.pfb>
+Output written on fisica.pdf (49 pages, 602559 bytes).
 PDF statistics:
- 865 PDF objects out of 1000 (max. 8388607)
- 754 compressed objects within 8 object streams
- 233 named destinations out of 1000 (max. 500000)
- 585 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 945 PDF objects out of 1000 (max. 8388607)
+ 827 compressed objects within 9 object streams
+ 253 named destinations out of 1000 (max. 500000)
+ 657 words of extra memory for PDF output out of 10000 (max. 10000000)
 

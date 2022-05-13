@@ -45,6 +45,10 @@
 \usepackage{pgfplots}
 \usepackage{amsthm}
 
+\newtheorem*{definizione}{Definizione}
+\newtheorem*{esempio} {Esempio}
+\newtheorem*{esercizio} {Esercizio}
+
 \SetupExSheets[question]{type=exam}
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
@@ -200,6 +204,26 @@
 	Valide per tutti i numeri complessi $z$ e $w$. La prima proprietà è una versione della disuguaglianza triangolare.
 
 \end{enumerate}
+\chapter {Autovalori e autovettori}
+\section{Definizione, esempi e applicazioni}
+\begin{definizione}
+	Sia $V$ un $\mathds{K}$-spazio vettoriale e $f:V\to V$ un endomorfismo$^1$. Un dice \textit{autovettore} di $f$ se si ha 
+\end{definizione}
+\begin{equation}
+	f(v)=\lambda v
+\end{equation}
+per qualche $\lambda \in \mathds{K}$.
+Il coefficiente numerico $\lambda$ si dice \textit{autovalore relativo all'autovettore v}.\\\\
+In altre parole, un autovettore è un vettore non nullo che viene mandato dalla funzione in un suo multiplo. Notiamo che questo è sempre banalmente vero per il vettore nullo $\bar{0}$, in quanto come sappiamo (\textit{si deve l'inizio dela dimostrazione della Proposizione}) se $f$ è un lineare allora $f(\bar{0})=\bar{0}$ è verifica sempre per qualunque endomorfismo e qualunque scalare $\lambda$ (è per questo motivo che questo caso banale viene escluso dalla definizione).\\
+Vediamo subito alcuni esempi di autovettori:
+\begin{esempio}
+  Sia $V=V_O^2$ lo spazio dei vettori geometrici applicati in un punto $O$ del piano e sia $f:V^2_O\to V_O^2$ la ruflessione rispetto a una retta $r$ che passa per $O$. Quando riflettiamo un vettore $v=\vec{OP}$ perpendicolare alla retta $r$, il vettore viene mandato nel suo opposto, ovvero $f(v) = -v =(-1)v$. Quinmdi tale vettore è un atovettore $f$ con autovalore associato $-1$.
+\end{esempio}
+\begin{esempio}
+
+
+\end{esempio}
+
 
 \printindex
 \end{document}
