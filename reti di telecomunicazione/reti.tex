@@ -593,7 +593,160 @@ tutti, tramite un apposito algoritmo.
 			locale.
 	\end{enumerate}
 \end{tasks}
-
+\subsection{Tabella di switching}
+\begin{itemize}
+\item I bridge/switch rilanciano le trame sulla base del loro indizzo di destinazione
+  \begin{itemize}
+  \item se è nota l'interfaccia attraverso la quale è raggiungibile la destinazione, la trama è rilanciata su questa interfaccia;
+  \item altrimenti, la trama è rilanciata su tutte le interfacce tranne quella di provenienza.
+  \end{itemize}
+\item I bridge/switch ``apprendono'' la struttura di rete osservando il campo ``Source Address'' delle trame ricevute
+  \begin{itemize}
+	\item le tabelle di instradamento vengono aggiorgate in accordo a tale inforamzione ({\it backword learning})
+  \end{itemize}
+ \item Tale approccio funziona solo su reti di tipologia ad albero 
+  \begin{itemize}
+	\item in caso di reti a maglia questa deve essere trasformata in albero con un algoritmo/protocollo di \textit{spanning tree} (\href{https://standards.ieee.org/ieee/802.1D/3387/}{IEEE 802.1D})
+  \end{itemize} 
+\end{itemize}
+\subsection{Wireless LAN (WLAN)}
+\begin{tasks}(3)
+  \task \textbf{IEEE 802.11a} (2001)
+  \begin{itemize}
+  \item velocità massima 54 Mb/s (può essere ridotta), velocità reale circa
+    20 Mb/s
+    \item utilizza spazio di frequenze intorno ai 5 GHz ({ \it banda riservata in
+        molti paesi})
+  \end{itemize}
+  \task \textbf{IEEE 802.11g} (2003)
+  \begin{itemize}
+  \item stessa banda (2.4 GHz) dello standard IEEE 802.11b
+  \item capacità teorica 54 Mb/s, velocità reale 24,7 Mb/s
+  \item totalmente compatibile con lo standard 802.11b
+  \end{itemize}
+  \task \textbf{IEEE 802.11n} (2009)
+  \begin{itemize}
+  \item velocità sino a 600 Mb/s (utilizzo di più antenne)
+  \item possibilità di operare sia intorno ai 2.4 GHz che 5 GHz
+  \end{itemize}
+\end{tasks}
+\subsection{Modalità di funzionamento}
+\begin{tasks} (2)
+  \task \textbf{Ad-hoc}
+  \begin{itemize}
+  \item solo stanzioni all'interno del rispettivo raggio di copertura possono comunicare tra loro
+  \end{itemize}
+  \task \textbf{Con infrastruttura}
+  \begin{itemize}
+	\item ogni stazione invia e riceve tutti i pacchetti tramite un'unica stazione centrale chiamata AP (\textit{Access Point})
+  \end{itemize}
+\end{tasks}
+\subsection{Caratteristiche del servizio}
+\begin{itemize}
+\item \textbf{Basic Service Set} (BSS)
+  \begin{itemize}
+  \item gruppo di stazioni sotto la stessa area di copertura
+  \item ogni stazione all'interno di una BSS potrebbe comunicare direttamente con un'altra
+  \end{itemize}
+\item \textbf{Extended Service Set} (ESS)
+  \begin{itemize}
+  \item due o più BSS sono collegate tra loro tramite un sistema di distribuzione
+    (Distribution System, DS)
+  \item gli Ap agiscono come bridge tra le BSS e il DS
+  \end{itemize}
+\end{itemize}
+\subsection{Livello MAC}
+\begin{tasks} (2)
+  \task \textbf{\underline{Trame di management}}
+  \begin{itemize}
+  \item assiciazione/disassociazione con un AP
+  \item sincronizzazione
+  \item autenticazione
+  \end{itemize}
+  \task \textbf{\underline{Trame di controllo}}
+  \begin{itemize}
+	\item gestruibe di contese ed accesso al mezzo
+  \end{itemize}
+  \task \textbf{\underline{Trame di dati}}      
+\end{tasks}
+\subsection{Associazione dei terminali}
+\begin{tasks}
+  \task Relazione da stabilire tra due stazioni (esempio: terminale e AP) prima che queste possano comunicare
+  \task Procedura
+  \begin{itemize}
+  \item tutti gli AP trasmettono periodicamente dei {\it beacon}
+  \item il terminale ascolta eventuali {\it beacon} per identificare un eventuale AP
+  \item il terminale sceglie il BSS in modi diversi, basati su preconfigurazione o su scelta dell'utente, ad sempio in base al nome della rete
+  \item un terminale può anche inviare una trama per sollecitare uno specifico SSID (Service Set ID), che possono essere anche occultati tramite un impostazione del AP ``semplicemente non apparirà nella lista dei wifi dei spositivi, se usiamo un programa che scansiona tutte le trasmissioni lo si becca comunque'' 
+  \item dopo aver identificato l'AP, il terminale inizia una procedura di mutua autenticazione utilizzando diverse trame di controllo
+  \end{itemize}
+\end{tasks}
+\subsection{Sicurezza in WLAN}
+\begin{tasks} (2)
+  \task Problematiche
+  \begin{itemize}
+    \item la trasmissione via radio può essere ricevuta da utenti non autorizzati
+    \item è semplice ricevere il segnale di una WLAN
+    \item gli AP danno accesso alle stazioni indipendentemente dalla loro posizione fisica e quindi risulta molto più agevole introdursi all'interno di una rete ``con la giusta antenna si può effettuare un accesso anche da Km di distanza''.
+  \end{itemize}
+  \task Meccanismi di protezione in 802.11
+  \begin{itemize}
+  \item MAC address filtering ``tramite le impostazione dell'access point è possibile impostare i MAC address dei dispositivi che possono accedere allo stesso, questo permette di bloccare l'attaccante dei primi 5 minuti, ovviamente con applicativi come Macchanger questa cosa può essere bypassata senza problemi, ovviamente cercando di capire quale mac address che sia autorizzato''
+  \item Wired Equivalent Privacy (WEP): protocollo di crittofrafia piuttosto debole ``era un prodocollo della prima era delle reti WiFi, è facile da brutare (attacco dizionario, con un po' di forza bruta lo si rompe facendo accesso alla rete) anche con password mediamente complesse, questo ha causato la sua sostituzione con il WPA/WPA2 che risultano sicuramente molto più sicuri rispetto a questo protocollo ancestrale''
+  \item WPA/WPA2: un algoritmo di crittografia basato su AES che ha soppiantato il vecchio WEP, oggi giorno è il sistema più diffuso per evitare accessi non autorizzati agli access point. ``\textit{Per una password mediamente complassa ci possono volere anche dei mesi se non anni, cosa che rende sicuramente più affidabile questo sistema, ovviuamente non ci deve essere attivo il WPS altrimenti la sicurezza non esiste, perché quelle poche cifre di cui è composta la chiave WPS li si copre appastanza ficilmente (anche qui vale il sempre valido metodo della forza bruta con un dizionario)}''
+  \item captive portal: autenticazione a livello applicativo tramite \textit{browser} con filtraggio a livello Ethernet
+    \end{itemize}
+\end{tasks}
+\subsection{Collisioni}
+\begin{tasks}(2)
+	\task Due stazioni collidono se accedono al canale in istanti che distano tra
+        loro un tempo inferiore a quello di propagazione tra le due stazioni.
+        \task Lo strato MAC Ethernet NON deve terminare l’emissione completa di una trama prima che sia
+        certo lo stato di NON collisione
+        \begin{itemize}
+        \item Lo strato MAC Ethernet NON deve terminare l’emissione completa di una trama prima che sia
+          certo lo stato di NON collisione.
+          \item in caso di collisione chi trasmette può aggiungere alla trama in invio informazione
+            che segnali l’evento.
+        \end{itemize}
+\end{tasks}
+\subsection{Esempio}
+\begin{itemize}
+\item Ethernet 100BeseT
+  \begin{itemize}
+  \item velocità di 100Mb/s
+  \item lunghezza minima del pacchetto di 64B
+  \item tempo necessario a trasmettere tale trama di 5.12 miscrosecondi
+  \item propagazione nel cavo a circa 200'000Km/s
+  \end{itemize}
+\end{itemize}
+\begin{equation}
+	d_{max}<v\frac{L_{min}}{2R} = 2*10^8\frac{512}{2*10^8}=512m
+\end{equation}
+\subsection{Protocollo CSMA/CD}
+\begin{center}
+  Carrier Sense Multiple Access with Collision Detection
+\end{center}
+\Tree[.vericia\ dello\ stato\ del\ mezzo [.occupato procedura\ di\ persistenza ] [.libero [.attesa\ si\ un\ tempo\ di\ deferring\ e\ tx [.collisione interruzione,\ jamming,\ algoritmo\ di\ subentro ] tx\ ok ] ] ]
+\subsection{Algoritmo di \textit{backoff}}
+\begin{itemize}
+\item Algoritmo che controlla le ritrasmissioni in caso di collisioni
+  attraverso un tempo casuale di attesa
+\item $n$ tentativi di trasmissione (\textbf{al più 16})
+  \item {\color{red} Idea: ad ogni collisione rilevata l’intervallo entro cui scegliere il
+tempo casuale di attesa cresce esponenzialmente per ridurre la
+probabilità di collisione al nuovo tentativo}
+\end{itemize}
+\begin{equation}
+	T=r*\tau
+\end{equation}
+\begin{itemize}
+\item $r\to$ intero casuale tra 0 e $2^k$
+  \begin{equation}
+	k=\min\{n,10\}
+  \end{equation}
+  
+\end{itemize}
 
 \chapter{Applicazione delle reti}
 \printindex
