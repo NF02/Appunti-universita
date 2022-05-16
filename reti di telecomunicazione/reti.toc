@@ -72,4 +72,11 @@
 \contentsline {subsection}{\numberline {3.2.23}Protocollo MAC 802.11}{28}{subsection.3.2.23}%
 \contentsline {subsubsection}{DCF}{28}{subsubsection*.27}%
 \contentsline {subsubsection}{PCF}{28}{subsubsection*.28}%
-\contentsline {chapter}{\numberline {4}Applicazione delle reti}{29}{chapter.4}%
+\contentsline {section}{\numberline {3.3}Reti in area geografica}{28}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Velocità di trasferimento di una WAN}{29}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Caratteristiche e classificazione}{29}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Reti a commutazione di circuito}{29}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Reti a commutazione di pacchetto}{30}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Implementazioni}{30}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Canali telefonici digitali}{30}{subsection.3.3.6}%
+\contentsline {chapter}{\numberline {4}Applicazione delle reti}{33}{chapter.4}%

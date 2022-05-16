@@ -274,69 +274,8 @@ una rete di trasmissione.
 \subsection{Teoria dei grafi}
 
 %%% fine capitolo uno
+\input{pag/Livelli architetturali bassi.tex}
 
-\chapter{Livelli architetturali bassi}
-
-\section{Gestione degli errori}
-Visto che i mezzi fisici possono generare degli errori di trasmissione o
-recezione, sono stati inventati dei metodi per riuscire a comprendere se
-l'informazione trasmessa sia arrivata a destinazione integra. I due metodi
-principali sono:
-\begin{enumerate}
-	\item Controllo e correzione d'errore;
-	\item Recupero d'errore.
-\end{enumerate}
-\subsection{Rivelazione di errore}
-\begin{itemize}
-	\item Normalmente si basa sull'aggiunta di ridondanza in trasmissione
-		\begin{itemize}
-			\item utilizzata in ricezione per rivelare ({\bf ma non correggere})
-				gli errori;
-			\item la ridondanza richiesta per la rivelazione è molto più
-				contenuta rispetto a quella che sarebbe richiesta per la
-				correzione (\textit{16-32bit})
-		\end{itemize}
-	\item Può essere alla base di un'eventuale correzione/recupero
-	\item Differenti meccanismi di gestione del codice di rivelazione di errore
-		\begin{itemize}
-			\item controllo di parità (a blocchi), somma completo a 1
-				(\textit{checksum}), etc.
-		\end{itemize}
-	\item un codice di rivelazione di errore deve rilevare solo modifiche
-		casuali.
-\end{itemize}
-\subsection{Controllo di parità}
-\begin{itemize}
-	\item Per ogni blocco di bit viene aggiunto un bit pari se il numero di 1
-		nel blocco è dispari, altrimenti viene aggiunto uno 0 (parità pari)
-		\begin{itemize}
-			\item il numero di bit di parità generato è pari al numero di
-				blocchi
-			\item tali bit possono essere singolarmente aggiunti di seguito a
-				ciascun blocco o tutti insieme in punto precisi delle UI (ad
-				esempio alla fine).
-		\end{itemize}
-	\item Il bit di parità permette di riconoscere errori in numero dispari.
-\end{itemize}
-Ovviamente questi sistemi hanno un margine di errore, infatti, rilevano bene
-tutti gli errori dispari, ma nel caso degli errori peri non li rilevano sempre,
-proprio per questo motivo si parla di tolleranza d'errore di un algoritmo di
-correzione.
-\subsubsection{Esempio}
-Possiamo usare il vecchio e classico metodo con il bit di parità a blocchi, in
-questo caso utilizziamo quello a blocchi di 8 bit.
-\begin{center}
-	\begin{tabular}{ll}
-		m=10010010&10100011\\
-		$m_1$=10010010&$m_2$=10100011\\
-		$x_1$=10010010{\bf\color{red}1}&$x_2$=10100011{\bf\color{red}0}\\
-		x=10010010{\bf\color{red}1}&10100011{\bf\color{red}0}
-	\end{tabular}
-\end{center}
-Quindi per convenzione quando il messaggio si presenterà in questo modo:
-($x=1001001010100011${\bf\color{red}10}). Per convenzione il valori di check
-sono collocati nel pacchetto o all'inizio o alla fine (\texttt{tipicamente alla
-fine})
 \chapter{Reti in area Locale e geografica}
 \section{Reti in area locale}
 \begin{tasks}(2)
@@ -789,6 +728,105 @@ probabilità di collisione al nuovo tentativo}
 \item L'asse dei tempi è diviso in intervalli di accesso senza contesa ({\it Contention-Free Period}, CFP) alternati con intervalli co contesa ({\it Contention Period}, CP).
 \item All'istante di inizio nominale di un CFP l'AP acolta il mezzo e se libero, aspetta un certo tempo prima di iniziare il CFP con una trama di {\it beacon}
 \end{itemize}
+\section{Reti in area geografica}
+\begin{itemize}
+\item {\it Wide Area Network} (WAN)
+\item Obiettivo: interconnessione senza limiti di distanza (almeno qualche km)
+\item Tecnologia tipicamente più costosa delle LAN
+\item Differenti velocità possibili
+\item Internet come interconnessione ``opportuna'' di LAN/MAN/WAN
+\end{itemize}
+\subsection{Velocità di trasferimento di una WAN}
+\begin{tasks}(2)
+  \task 100m - 1km
+  \begin{itemize}
+  \item {\bf LAN ad alta velocità: {\color{red} 100Kb/s - 10Gb/s}}
+  \item {\bf LAN a bassa velocità: {\color{red} 1-10Mb/s}}
+  \end{itemize}
+  \task 1km-1000km 
+  \begin{itemize}
+  \item {\bf MAN ad alta velocità: {\color{red} 10Mb/s - 10Gb/s}}
+    \item {\bf MAN a bassa velocità: {\color{red} 100Kb/s - 10Mb/s}}
+  \end{itemize}
+\end{tasks}
+\subsection{Caratteristiche e classificazione}
+\begin{itemize}
+\item Una LAN tipicamente interconnette sistemi terminali, mentre una
+  WAN interconnette anche {\it switch, router e modem}
+\item Una LAN è proprietà dell’organizzazione che la utilizza, mentre una
+  WAN è gestita da un operatore di telecomunicazioni ({\bf ISP})
+\item WAN punto-punto
+  \begin{itemize}
+	\item collega due dispositivi di comunicazione tramite un mezzo
+		trasmissivo ({\bf cablato o senza fili})
+  \end{itemize}
+\item WAN a commutazione (switched) $\to$ v. funzione di commutazione
+  \begin{itemize}
+  	\item due o più punti di terminazione
+  	\item tipocamente usata nelle dorsali Internet
+  \end{itemize}
+\item {\it Internetwork} tra LAN tramite WAN  
+\end{itemize}
+\subsection{Reti a commutazione di circuito}
+\begin{itemize}
+\item Tra due dispositivi è sempre possibile un collegamento dedicato (circuito)
+\item La \textit{switch} che collega i due dispositivi può solo attivarlo/disattivarlo
+\item Efficiente solo quando utilizzate alla massima capacità
+\end{itemize}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[weight=4cm,height=8cm]{img/Reti a commutazione di circuito.jpg}
+  \caption{Reti a commutazione di circuito}
+\end{figure}
+\subsection{Reti a commutazione di pacchetto}
+\begin{itemize}
+\item Due dispositivi si scambiano blocchi di dati ({\tt pacchetto})
+\item Lo {\it switch} può memorizzare i pacchetti per inviarli successivamente
+\item più tipicamente funzione svolta dal {\em router}
+\end{itemize}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[weight=4cm,height=8cm]{img/Reti a commutazione di pacchetto.jpg}
+  \caption{Reti a commutazione di pacchetto}
+\end{figure}
+\subsection{Implementazioni}
+\begin{itemize}
+\item Il sistema PDH non è univoco ovunque, me prevede tre standard differenti
+  \begin{itemize}
+  \item europeo (sistema analogo in india) con base a 32 canali
+  \item statunitense con base a 24 canali
+  \item giapponese con base a 24 canali
+  \end{itemize}
+\item Condividono lo stesso meccanismo di base ma differiscono per alcuni dettagli di funzionamento e per le gerarchie di multiplazione
+  \begin{itemize}
+  \item di fatto assenza di interoperabilità
+  \item di fatto poco usati oggigiorno
+    \begin{itemize}
+    \item sostituiti da sistemi SDH ({\bf che vedremo più avanti in questa lezione})
+    \item attivi solo nelle zone terminali delle reti per la multiplazione di traffico telefonico
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+\subsection{Canali telefonici digitali}
+\begin{itemize}
+\item Modulazione a impulsi codificati
+  \begin{itemize}
+  \item {\tt Pulse-Code Modulation (PCM)}
+  \item anche in altre applicazioni come CD e DVD
+  \end{itemize}
+\item Campionamento + quantizzazione + rappresentazione binaria (ADC/DAC)
+  \begin{itemize}
+  \item quantizzazione operazione rumorosa
+  \item 8, 16, 20 o 24 bit per campione
+  \end{itemize}
+\item PCM lineare: i livelli quantizzazione sono linearmente uniformi
+\item PCM non lineare
+  \begin{itemize}
+  \item i segnali maggiormente affetti dell'approssimazione sono quelli a bassa intensità (errore relativo maggiore)
+    \item quantizzazione non lineare: livelli più piccoli e ravvicinati nella regione di segnale debole e più distanziati nella regione in cui il segnale è più intenso
+  \end{itemize}
+\end{itemize}
+
 
 \chapter{Applicazione delle reti}
 \printindex
