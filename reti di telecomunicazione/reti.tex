@@ -44,6 +44,8 @@
 \usepackage{exsheets}
 \usepackage{pgfplots}
 \usepackage{lipsum}
+\usepackage{array} 
+\usepackage{booktabs}
 
 \SetupExSheets[question]{type=exam}
 
@@ -744,8 +746,48 @@ probabilità di collisione al nuovo tentativo}
 \item $r\to$ intero casuale tra 0 e $2^k$
   \begin{equation}
 	k=\min\{n,10\}
-  \end{equation}
-  
+  \end{equation}  
+\end{itemize}
+\subsection{Protocollo MAC 802.11}
+\textit{Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA)}
+\begin{itemize}
+\item CSMA/CD di Ethernet non può essere usato
+  \begin{itemize}
+  \item impossibile trasmettere e ascoltare in un canale radio nello stesso istante
+  \item problema dei nodi nascosti
+  \end{itemize}
+\item DCF sia in ad'hoc che con AP (deve essere sempre supportata)
+\item PCF solo in presenza di AP (opzionale)
+\end{itemize}
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c|c|cc}
+    \cline{2-2}
+    \multirow{2}{*}{\textit{MAC}}&\textit{Point Coordination Function (PCF)}&senza contesa\\
+    		\cline{2-3}
+    		&\multicolumn{2}{c|}{\textit{Distributed Coordination Function (DCF)}}&con contesa\\
+    		\cline{2-3}
+    		&\multicolumn{2}{c|}{livello fisico}&\\\cline{2-3}
+  \end{tabular}
+\end{table}
+\subsubsection{DCF}
+\begin{itemize}
+\item Collision avoidance è realizzato tramite trame di controllo \textit{Request-To-Send} (RTS) e \textit{Clear-To-Send} (CTS)
+  \begin{itemize}
+	\item {\tt trame di controllo molto corte (rispettivamente 20B e 14B)}
+  \end{itemize}
+\item Se avviene una collisione mentre si invia una trama RTS, il trasmettitore non riceve il corrispondente CTS, capisce c'è stata una collisione e inizia una procedura di {\em backoff esponenziale}
+\item L'algoritmo MAC risultante è equo, ma non garantisce un limite superiore al ritardo di trasmissione
+\item Un campo della PDU indica il tempo in cui il canale sarà occupato (ACK compreso)
+  \item La priorità di accesso al carale dopo un periodo di occupato è controllato da un \textit{InterFrame Space} (IFS) variabile a seconda del tipo di trama.
+\end{itemize}
+
+\subsubsection{PCF}
+\begin{itemize}
+\item L'AP (in ogni BSS) periodicamente interroga le stazioni e le abilita alla trasmissione ({\it polling})
+\item PCF deve poter coesistere con DCF
+\item L'asse dei tempi è diviso in intervalli di accesso senza contesa ({\it Contention-Free Period}, CFP) alternati con intervalli co contesa ({\it Contention Period}, CP).
+\item All'istante di inizio nominale di un CFP l'AP acolta il mezzo e se libero, aspetta un certo tempo prima di iniziare il CFP con una trama di {\it beacon}
 \end{itemize}
 
 \chapter{Applicazione delle reti}
