@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.31)  1 APR 2022 10:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.18)  16 MAY 2022 22:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1350,32 +1350,32 @@ Writing index file reti.idx
 (./reti.aux)
 \openout1 = `reti.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 102.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 104.
 LaTeX Font Info:    Trying to load font information for T3+cmr on input line 10
-2.
+4.
  (/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 102.
-Package hyperref Info: Link coloring OFF on input line 102.
+LaTeX Font Info:    ... okay on input line 104.
+Package hyperref Info: Link coloring OFF on input line 104.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1388,9 +1388,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count446
 )
-LaTeX Info: Redefining \ref on input line 102.
-LaTeX Info: Redefining \pageref on input line 102.
-LaTeX Info: Redefining \nameref on input line 102.
+LaTeX Info: Redefining \ref on input line 104.
+LaTeX Info: Redefining \pageref on input line 104.
+LaTeX Info: Redefining \nameref on input line 104.
 
 (./reti.out) (./reti.out)
 \@outlinefile=\write5
@@ -1453,8 +1453,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \it@ocap on input line 102.
-LaTeX Info: Redefining \it@ccap on input line 102.
+LaTeX Info: Redefining \it@ocap on input line 104.
+LaTeX Info: Redefining \it@ccap on input line 104.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
@@ -1470,27 +1470,27 @@ Package exsheets Info: Loading custom configurations file
 File: exsheets_configurations.cfg 
 )
 Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 102.
+alian.trsl' found. on input line 104.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 102.
+ on input line 104.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 104
+LaTeX Font Info:    Trying to load font information for U+msa on input line 106
 .
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 104
+LaTeX Font Info:    Trying to load font information for U+msb on input line 106
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
-4.
+6.
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1620,83 +1620,83 @@ Overfull \hbox (10.35664pt too wide) in paragraph at lines 306--306
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) [13] [14]
-Overfull \hbox (4.96541pt too wide) in paragraph at lines 196--196
+Overfull \hbox (4.96541pt too wide) in paragraph at lines 198--198
 \T1/cmr/m/n/10 vei-co-li) ``Ov-via-men-te nei li-mi-ti pre-vi-sta dal-
  []
 
 
-Overfull \hbox (16.2348pt too wide) in paragraph at lines 219--219
+Overfull \hbox (16.2348pt too wide) in paragraph at lines 221--221
 []\T1/cmr/m/n/10 area per-so-na-le (\T1/cmr/m/it/10 cir-
  []
 
 
-Overfull \hbox (2.92693pt too wide) in paragraph at lines 219--219
+Overfull \hbox (2.92693pt too wide) in paragraph at lines 221--221
 []\T1/cmr/m/n/10 Area lo-ca-le (\T1/cmr/m/it/10 edi-
  []
 
 
-Overfull \hbox (1.27173pt too wide) in paragraph at lines 219--219
+Overfull \hbox (1.27173pt too wide) in paragraph at lines 221--221
 \T1/cmr/m/it/10 fi-ci nel rag-gio di
  []
 
 
-Overfull \hbox (2.36154pt too wide) in paragraph at lines 219--219
+Overfull \hbox (2.36154pt too wide) in paragraph at lines 221--221
 []\T1/cmr/m/n/10 Ethernet, Wi-Fi 
  []
 
 
-Overfull \hbox (10.44179pt too wide) in paragraph at lines 219--219
+Overfull \hbox (10.44179pt too wide) in paragraph at lines 221--221
 []\T1/cmr/m/n/10 Area re-la-ti-va-men-
  []
 
 
-Overfull \hbox (3.52681pt too wide) in paragraph at lines 219--219
+Overfull \hbox (3.52681pt too wide) in paragraph at lines 221--221
 []\T1/cmr/m/n/10 Area mol-to este-
  []
 
 
-Overfull \hbox (3.77786pt too wide) in paragraph at lines 219--219
+Overfull \hbox (3.77786pt too wide) in paragraph at lines 221--221
 \T1/cmr/m/n/10 sa (na-zio-ne, cen-
  []
 
 
-Overfull \hbox (3.77786pt too wide) in paragraph at lines 219--219
+Overfull \hbox (3.77786pt too wide) in paragraph at lines 221--221
 []\T1/cmr/m/n/10 Internet, re-te te-
  []
 
 [15]
-Overfull \hbox (2.52522pt too wide) in paragraph at lines 271--271
+Overfull \hbox (2.52522pt too wide) in paragraph at lines 273--273
 \T1/cmr/m/n/10 la piat-ta-for-ma di re-te per
  []
 
 
-Overfull \hbox (2.91402pt too wide) in paragraph at lines 271--271
+Overfull \hbox (2.91402pt too wide) in paragraph at lines 273--273
 \T1/cmr/m/n/10 as-si-cu-ra-re la frui-zio-ne dei
  []
 
 
-Overfull \hbox (4.21925pt too wide) in paragraph at lines 271--271
+Overfull \hbox (4.21925pt too wide) in paragraph at lines 273--273
 \T1/cmr/m/n/10 frui-bi-le il ser-vi-zio al clien-
  []
 
 
-Overfull \hbox (1.66432pt too wide) in paragraph at lines 271--271
+Overfull \hbox (1.66432pt too wide) in paragraph at lines 273--273
 \T1/cmr/m/n/10 te se-con-do mo-da-li-tà (e.g.
  []
 
 
-Overfull \hbox (2.1642pt too wide) in paragraph at lines 271--271
+Overfull \hbox (2.1642pt too wide) in paragraph at lines 273--273
 []\T1/cmr/m/n/10 Soggetto del-la co-mu-ni-ca-
  []
 
-[16]
+(./pag/Livelli architetturali bassi.tex [16]
 Capitolo 2.
 [17
 
-] [18]
+]) [18]
 Capitolo 3.
 
-Overfull \hbox (23.80367pt too wide) in paragraph at lines 357--370
+Overfull \hbox (23.80367pt too wide) in paragraph at lines 298--311
 [][] 
  []
 
@@ -1706,42 +1706,42 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [19
 
 ]
-Overfull \hbox (6.80196pt too wide) in paragraph at lines 424--424
+Overfull \hbox (6.80196pt too wide) in paragraph at lines 365--365
 []\T1/cmr/m/n/10 Trasmissione in ban-da ba-
  []
 
 
-Overfull \hbox (17.40843pt too wide) in paragraph at lines 424--424
+Overfull \hbox (17.40843pt too wide) in paragraph at lines 365--365
 |\T1/cmr/m/n/10 10Base2: ca-vo coas-sia-le fi-ne (thin-
  []
 
 
-Overfull \hbox (0.6368pt too wide) in paragraph at lines 445--445
+Overfull \hbox (0.6368pt too wide) in paragraph at lines 386--386
 []\T1/cmr/m/n/10 i due con-dut-to-ri tra-spor-
  []
 
 
-Overfull \hbox (3.35835pt too wide) in paragraph at lines 445--445
+Overfull \hbox (3.35835pt too wide) in paragraph at lines 386--386
 []\T1/cmr/m/n/10 richieste l'a-do-zio-ne di ap-
  []
 
 
-Overfull \hbox (1.58101pt too wide) in paragraph at lines 445--445
+Overfull \hbox (1.58101pt too wide) in paragraph at lines 386--386
 []\T1/cmr/m/n/10 Lunghezza mas-si-ma con-
  []
 
 
-Overfull \hbox (1.94203pt too wide) in paragraph at lines 445--445
+Overfull \hbox (1.94203pt too wide) in paragraph at lines 386--386
 \T1/cmr/m/n/10 si-glia-ta 100m (90m di ca-
  []
 
 
-Overfull \hbox (4.21925pt too wide) in paragraph at lines 445--445
+Overfull \hbox (4.21925pt too wide) in paragraph at lines 386--386
 \T1/cmr/m/n/10 blag-gio strut-tu-ra-to e 10m
  []
 
 
-Overfull \hbox (3.96931pt too wide) in paragraph at lines 445--445
+Overfull \hbox (3.96931pt too wide) in paragraph at lines 386--386
 []\T1/cmr/m/n/10 prestazioni in-fe-rio-ri al ca-
  []
 
@@ -1750,41 +1750,163 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
 [21]
-Overfull \hbox (2.99367pt too wide) in paragraph at lines 546--546
+Overfull \hbox (2.99367pt too wide) in paragraph at lines 487--487
 []\T1/cmr/m/n/10 individuale (ad esem-pio 01-00-5e-12-34-56) 
  []
 
 [22]
-Overfull \hbox (8.64125pt too wide) in paragraph at lines 595--595
+Overfull \hbox (8.64125pt too wide) in paragraph at lines 536--536
 []\T1/cmr/m/n/10 controllo del-la lun-ghez-za mi-ni-ma (\T1/cmr/m/it/10 riem-
  []
 
 
-Overfull \hbox (0.88307pt too wide) in paragraph at lines 595--595
+Overfull \hbox (0.88307pt too wide) in paragraph at lines 536--536
 []\T1/cmr/m/n/10 Ricevere un flus-so se-ria-le di da-ti dal-lo stra-
  []
 
-[23] [24
+
+Overfull \hbox (6.49648pt too wide) in paragraph at lines 573--573
+[]\T1/cmr/m/n/10 velocità mas-si-ma 54 Mb/s
+ []
+
+
+Overfull \hbox (3.10841pt too wide) in paragraph at lines 573--573
+\T1/cmr/m/n/10 lo-ci-tà rea-le cir-ca 20 Mb/s 
+ []
+
+
+Overfull \hbox (4.19148pt too wide) in paragraph at lines 573--573
+[]\T1/cmr/m/n/10 utilizza spa-zio di fre-quen-
+ []
+
+
+Overfull \hbox (3.71657pt too wide) in paragraph at lines 573--573
+\T1/cmr/m/n/10 ze in-tor-no ai 5 GHz ( \T1/cmr/m/it/10 ban-
+ []
+
+
+Overfull \hbox (2.80838pt too wide) in paragraph at lines 573--573
+\T1/cmr/m/it/10 da ri-ser-va-ta in mol-ti pae-
+ []
+
+
+Overfull \hbox (18.21474pt too wide) in paragraph at lines 573--573
+\T1/cmr/m/n/10 del-lo stan-dard IEEE 802.11b 
+ []
+
+
+Overfull \hbox (3.91377pt too wide) in paragraph at lines 573--573
+[]\T1/cmr/m/n/10 capacità teo-ri-ca 54 Mb/s,
+ []
+
+
+Overfull \hbox (12.16176pt too wide) in paragraph at lines 573--573
+[]\T1/cmr/m/n/10 totalmente com-pa-ti-bi-le con
+ []
+
+[23]
+Overfull \hbox (1.79951pt too wide) in paragraph at lines 584--584
+[]\T1/cmr/m/n/10 solo stan-zio-ni al-l'in-ter-no del ri-spet-ti-vo rag-
+ []
+
+
+Overfull \hbox (5.67334pt too wide) in paragraph at lines 624--624
+[]|\T1/cmr/m/n/10 Relazione da sta-bi-li-re tra due sta-zio-ni (esem-pio: ter-m
+i-na-le e AP) pri-ma che que-ste pos-sa-no comunicare| 
+ []
+
+[24]
+Overfull \hbox (2.13277pt too wide) in paragraph at lines 640--640
+[]\T1/cmr/m/n/10 è sem-pli-ce ri-ce-ve-re il se-gna-le di una WLAN 
+ []
+
+
+Overfull \hbox (2.68819pt too wide) in paragraph at lines 640--640
+\T1/cmr/m/n/10 W-PA2 che ri-sul-ta-no si-cu-ra-men-te mol-to più
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+[27]
+Overfull \hbox (15.93335pt too wide) in paragraph at lines 751--751
+[]\T1/cmr/bx/n/10 LAN ad al-ta ve-lo-ci-tà: []100Kb/s - 10Gb/s[] 
+ []
+
+
+Overfull \hbox (16.08609pt too wide) in paragraph at lines 751--751
+[]\T1/cmr/bx/n/10 MAN ad al-ta ve-lo-ci-tà: []10Mb/s - 10Gb/s[] 
+ []
+
+[28]
+
+./reti.tex:778: Package xkeyval Error: `weight' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.778 ...{img/Reti a commutazione di circuito.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<img/Reti a commutazione di circuito.jpg, id=598, 794.97pt x 614.295pt>
+File: img/Reti a commutazione di circuito.jpg Graphic file (type jpg)
+<use img/Reti a commutazione di circuito.jpg>
+Package pdftex.def Info: img/Reti a commutazione di circuito.jpg  used on input
+ line 778.
+(pdftex.def)             Requested size: 294.57098pt x 227.62204pt.
+[29 <./img/Reti a commutazione di circuito.jpg>]
+
+./reti.tex:789: Package xkeyval Error: `weight' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.789 ...img/Reti a commutazione di pacchetto.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<img/Reti a commutazione di pacchetto.jpg, id=605, 794.97pt x 614.295pt>
+File: img/Reti a commutazione di pacchetto.jpg Graphic file (type jpg)
+<use img/Reti a commutazione di pacchetto.jpg>
+Package pdftex.def Info: img/Reti a commutazione di pacchetto.jpg  used on inpu
+t line 789.
+(pdftex.def)             Requested size: 294.57098pt x 227.62204pt.
+[30 <./img/Reti a commutazione di pacchetto.jpg>] [31] [32
 
 ]
 Capitolo 4.
-[25] [26
+[33] [34
 
 ]
 runsystem(makeindex reti.idx)...executed safely (allowed).
 
  (./reti.ind) (./reti.aux)
-Package rerunfilecheck Info: File `reti.out' has not changed.
-(rerunfilecheck)             Checksum: 9595BF8633F2D7E47A29F7D1288B66B9;6956.
+
+Package rerunfilecheck Warning: File `reti.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `reti.out':
+(rerunfilecheck)             Before: BABE3A211565F5096440CF9F20418CB8;10157
+(rerunfilecheck)             After:  736E29F6BCD30FB494D4FFFEA8716C50;10355.
  ) 
 Here is how much of TeX's memory you used:
- 56036 strings out of 478276
- 1362569 string characters out of 5853013
- 2249959 words of memory out of 5000000
- 73213 multiletter control sequences out of 15000+600000
- 491037 words of font info for 88 fonts, out of 8000000 for 9000
+ 56272 strings out of 478276
+ 1366931 string characters out of 5853013
+ 2249950 words of memory out of 5000000
+ 73390 multiletter control sequences out of 15000+600000
+ 491736 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,89p,719b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,11n,89p,719b,818s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
 exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1793,19 +1915,20 @@ mmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
 share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
-sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></
-usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf
--dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
-per/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pf
-b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/t
-exmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts
-/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/c
-m-super/sftt1000.pfb>
-Output written on reti.pdf (26 pages, 331484 bytes).
+sfbi1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></
+usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf
+-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
+per/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pf
+b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts
+/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/public/c
+m-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt100
+0.pfb>
+Output written on reti.pdf (34 pages, 441698 bytes).
 PDF statistics:
- 594 PDF objects out of 1000 (max. 8388607)
- 523 compressed objects within 6 object streams
- 186 named destinations out of 1000 (max. 500000)
- 349 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 765 PDF objects out of 1000 (max. 8388607)
+ 681 compressed objects within 7 object streams
+ 237 named destinations out of 1000 (max. 500000)
+ 503 words of extra memory for PDF output out of 10000 (max. 10000000)
 

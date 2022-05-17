@@ -58,4 +58,25 @@
 \contentsline {subsection}{\numberline {3.2.9}Livello DL: Indirizzamento}{22}{subsection.3.2.9}%
 \contentsline {subsection}{\numberline {3.2.10}Livello DL: Pacchetti}{22}{subsection.3.2.10}%
 \contentsline {subsection}{\numberline {3.2.11}Procedura di emissione/ricezione}{23}{subsection.3.2.11}%
-\contentsline {chapter}{\numberline {4}Applicazione delle reti}{25}{chapter.4}%
+\contentsline {subsection}{\numberline {3.2.12}Tabella di switching}{23}{subsection.3.2.12}%
+\contentsline {subsection}{\numberline {3.2.13}Wireless LAN (WLAN)}{24}{subsection.3.2.13}%
+\contentsline {subsection}{\numberline {3.2.14}Modalità di funzionamento}{24}{subsection.3.2.14}%
+\contentsline {subsection}{\numberline {3.2.15}Caratteristiche del servizio}{24}{subsection.3.2.15}%
+\contentsline {subsection}{\numberline {3.2.16}Livello MAC}{24}{subsection.3.2.16}%
+\contentsline {subsection}{\numberline {3.2.17}Associazione dei terminali}{24}{subsection.3.2.17}%
+\contentsline {subsection}{\numberline {3.2.18}Sicurezza in WLAN}{26}{subsection.3.2.18}%
+\contentsline {subsection}{\numberline {3.2.19}Collisioni}{27}{subsection.3.2.19}%
+\contentsline {subsection}{\numberline {3.2.20}Esempio}{27}{subsection.3.2.20}%
+\contentsline {subsection}{\numberline {3.2.21}Protocollo CSMA/CD}{27}{subsection.3.2.21}%
+\contentsline {subsection}{\numberline {3.2.22}Algoritmo di \textit {backoff}}{27}{subsection.3.2.22}%
+\contentsline {subsection}{\numberline {3.2.23}Protocollo MAC 802.11}{28}{subsection.3.2.23}%
+\contentsline {subsubsection}{DCF}{28}{subsubsection*.27}%
+\contentsline {subsubsection}{PCF}{28}{subsubsection*.28}%
+\contentsline {section}{\numberline {3.3}Reti in area geografica}{28}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Velocità di trasferimento di una WAN}{29}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Caratteristiche e classificazione}{29}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Reti a commutazione di circuito}{29}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Reti a commutazione di pacchetto}{30}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Implementazioni}{30}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Canali telefonici digitali}{30}{subsection.3.3.6}%
+\contentsline {chapter}{\numberline {4}Applicazione delle reti}{33}{chapter.4}%

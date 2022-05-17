@@ -44,6 +44,8 @@
 \usepackage{exsheets}
 \usepackage{pgfplots}
 \usepackage{lipsum}
+\usepackage{array} 
+\usepackage{booktabs}
 
 \SetupExSheets[question]{type=exam}
 
@@ -272,69 +274,8 @@ una rete di trasmissione.
 \subsection{Teoria dei grafi}
 
 %%% fine capitolo uno
+\input{pag/Livelli architetturali bassi.tex}
 
-\chapter{Livelli architetturali bassi}
-
-\section{Gestione degli errori}
-Visto che i mezzi fisici possono generare degli errori di trasmissione o
-recezione, sono stati inventati dei metodi per riuscire a comprendere se
-l'informazione trasmessa sia arrivata a destinazione integra. I due metodi
-principali sono:
-\begin{enumerate}
-	\item Controllo e correzione d'errore;
-	\item Recupero d'errore.
-\end{enumerate}
-\subsection{Rivelazione di errore}
-\begin{itemize}
-	\item Normalmente si basa sull'aggiunta di ridondanza in trasmissione
-		\begin{itemize}
-			\item utilizzata in ricezione per rivelare ({\bf ma non correggere})
-				gli errori;
-			\item la ridondanza richiesta per la rivelazione è molto più
-				contenuta rispetto a quella che sarebbe richiesta per la
-				correzione (\textit{16-32bit})
-		\end{itemize}
-	\item Può essere alla base di un'eventuale correzione/recupero
-	\item Differenti meccanismi di gestione del codice di rivelazione di errore
-		\begin{itemize}
-			\item controllo di parità (a blocchi), somma completo a 1
-				(\textit{checksum}), etc.
-		\end{itemize}
-	\item un codice di rivelazione di errore deve rilevare solo modifiche
-		casuali.
-\end{itemize}
-\subsection{Controllo di parità}
-\begin{itemize}
-	\item Per ogni blocco di bit viene aggiunto un bit pari se il numero di 1
-		nel blocco è dispari, altrimenti viene aggiunto uno 0 (parità pari)
-		\begin{itemize}
-			\item il numero di bit di parità generato è pari al numero di
-				blocchi
-			\item tali bit possono essere singolarmente aggiunti di seguito a
-				ciascun blocco o tutti insieme in punto precisi delle UI (ad
-				esempio alla fine).
-		\end{itemize}
-	\item Il bit di parità permette di riconoscere errori in numero dispari.
-\end{itemize}
-Ovviamente questi sistemi hanno un margine di errore, infatti, rilevano bene
-tutti gli errori dispari, ma nel caso degli errori peri non li rilevano sempre,
-proprio per questo motivo si parla di tolleranza d'errore di un algoritmo di
-correzione.
-\subsubsection{Esempio}
-Possiamo usare il vecchio e classico metodo con il bit di parità a blocchi, in
-questo caso utilizziamo quello a blocchi di 8 bit.
-\begin{center}
-	\begin{tabular}{ll}
-		m=10010010&10100011\\
-		$m_1$=10010010&$m_2$=10100011\\
-		$x_1$=10010010{\bf\color{red}1}&$x_2$=10100011{\bf\color{red}0}\\
-		x=10010010{\bf\color{red}1}&10100011{\bf\color{red}0}
-	\end{tabular}
-\end{center}
-Quindi per convenzione quando il messaggio si presenterà in questo modo:
-($x=1001001010100011${\bf\color{red}10}). Per convenzione il valori di check
-sono collocati nel pacchetto o all'inizio o alla fine (\texttt{tipicamente alla
-fine})
 \chapter{Reti in area Locale e geografica}
 \section{Reti in area locale}
 \begin{tasks}(2)
@@ -593,6 +534,298 @@ tutti, tramite un apposito algoritmo.
 			locale.
 	\end{enumerate}
 \end{tasks}
+\subsection{Tabella di switching}
+\begin{itemize}
+\item I bridge/switch rilanciano le trame sulla base del loro indizzo di destinazione
+  \begin{itemize}
+  \item se è nota l'interfaccia attraverso la quale è raggiungibile la destinazione, la trama è rilanciata su questa interfaccia;
+  \item altrimenti, la trama è rilanciata su tutte le interfacce tranne quella di provenienza.
+  \end{itemize}
+\item I bridge/switch ``apprendono'' la struttura di rete osservando il campo ``Source Address'' delle trame ricevute
+  \begin{itemize}
+	\item le tabelle di instradamento vengono aggiorgate in accordo a tale inforamzione ({\it backword learning})
+  \end{itemize}
+ \item Tale approccio funziona solo su reti di tipologia ad albero 
+  \begin{itemize}
+	\item in caso di reti a maglia questa deve essere trasformata in albero con un algoritmo/protocollo di \textit{spanning tree} (\href{https://standards.ieee.org/ieee/802.1D/3387/}{IEEE 802.1D})
+  \end{itemize} 
+\end{itemize}
+\subsection{Wireless LAN (WLAN)}
+\begin{tasks}(3)
+  \task \textbf{IEEE 802.11a} (2001)
+  \begin{itemize}
+  \item velocità massima 54 Mb/s (può essere ridotta), velocità reale circa
+    20 Mb/s
+    \item utilizza spazio di frequenze intorno ai 5 GHz ({ \it banda riservata in
+        molti paesi})
+  \end{itemize}
+  \task \textbf{IEEE 802.11g} (2003)
+  \begin{itemize}
+  \item stessa banda (2.4 GHz) dello standard IEEE 802.11b
+  \item capacità teorica 54 Mb/s, velocità reale 24,7 Mb/s
+  \item totalmente compatibile con lo standard 802.11b
+  \end{itemize}
+  \task \textbf{IEEE 802.11n} (2009)
+  \begin{itemize}
+  \item velocità sino a 600 Mb/s (utilizzo di più antenne)
+  \item possibilità di operare sia intorno ai 2.4 GHz che 5 GHz
+  \end{itemize}
+\end{tasks}
+\subsection{Modalità di funzionamento}
+\begin{tasks} (2)
+  \task \textbf{Ad-hoc}
+  \begin{itemize}
+  \item solo stanzioni all'interno del rispettivo raggio di copertura possono comunicare tra loro
+  \end{itemize}
+  \task \textbf{Con infrastruttura}
+  \begin{itemize}
+	\item ogni stazione invia e riceve tutti i pacchetti tramite un'unica stazione centrale chiamata AP (\textit{Access Point})
+  \end{itemize}
+\end{tasks}
+\subsection{Caratteristiche del servizio}
+\begin{itemize}
+\item \textbf{Basic Service Set} (BSS)
+  \begin{itemize}
+  \item gruppo di stazioni sotto la stessa area di copertura
+  \item ogni stazione all'interno di una BSS potrebbe comunicare direttamente con un'altra
+  \end{itemize}
+\item \textbf{Extended Service Set} (ESS)
+  \begin{itemize}
+  \item due o più BSS sono collegate tra loro tramite un sistema di distribuzione
+    (Distribution System, DS)
+  \item gli Ap agiscono come bridge tra le BSS e il DS
+  \end{itemize}
+\end{itemize}
+\subsection{Livello MAC}
+\begin{tasks} (2)
+  \task \textbf{\underline{Trame di management}}
+  \begin{itemize}
+  \item assiciazione/disassociazione con un AP
+  \item sincronizzazione
+  \item autenticazione
+  \end{itemize}
+  \task \textbf{\underline{Trame di controllo}}
+  \begin{itemize}
+	\item gestruibe di contese ed accesso al mezzo
+  \end{itemize}
+  \task \textbf{\underline{Trame di dati}}      
+\end{tasks}
+\subsection{Associazione dei terminali}
+\begin{tasks}
+  \task Relazione da stabilire tra due stazioni (esempio: terminale e AP) prima che queste possano comunicare
+  \task Procedura
+  \begin{itemize}
+  \item tutti gli AP trasmettono periodicamente dei {\it beacon}
+  \item il terminale ascolta eventuali {\it beacon} per identificare un eventuale AP
+  \item il terminale sceglie il BSS in modi diversi, basati su preconfigurazione o su scelta dell'utente, ad sempio in base al nome della rete
+  \item un terminale può anche inviare una trama per sollecitare uno specifico SSID (Service Set ID), che possono essere anche occultati tramite un impostazione del AP ``semplicemente non apparirà nella lista dei wifi dei spositivi, se usiamo un programa che scansiona tutte le trasmissioni lo si becca comunque'' 
+  \item dopo aver identificato l'AP, il terminale inizia una procedura di mutua autenticazione utilizzando diverse trame di controllo
+  \end{itemize}
+\end{tasks}
+\subsection{Sicurezza in WLAN}
+\begin{tasks} (2)
+  \task Problematiche
+  \begin{itemize}
+    \item la trasmissione via radio può essere ricevuta da utenti non autorizzati
+    \item è semplice ricevere il segnale di una WLAN
+    \item gli AP danno accesso alle stazioni indipendentemente dalla loro posizione fisica e quindi risulta molto più agevole introdursi all'interno di una rete ``con la giusta antenna si può effettuare un accesso anche da Km di distanza''.
+  \end{itemize}
+  \task Meccanismi di protezione in 802.11
+  \begin{itemize}
+  \item MAC address filtering ``tramite le impostazione dell'access point è possibile impostare i MAC address dei dispositivi che possono accedere allo stesso, questo permette di bloccare l'attaccante dei primi 5 minuti, ovviamente con applicativi come Macchanger questa cosa può essere bypassata senza problemi, ovviamente cercando di capire quale mac address che sia autorizzato''
+  \item Wired Equivalent Privacy (WEP): protocollo di crittofrafia piuttosto debole ``era un prodocollo della prima era delle reti WiFi, è facile da brutare (attacco dizionario, con un po' di forza bruta lo si rompe facendo accesso alla rete) anche con password mediamente complesse, questo ha causato la sua sostituzione con il WPA/WPA2 che risultano sicuramente molto più sicuri rispetto a questo protocollo ancestrale''
+  \item WPA/WPA2: un algoritmo di crittografia basato su AES che ha soppiantato il vecchio WEP, oggi giorno è il sistema più diffuso per evitare accessi non autorizzati agli access point. ``\textit{Per una password mediamente complassa ci possono volere anche dei mesi se non anni, cosa che rende sicuramente più affidabile questo sistema, ovviuamente non ci deve essere attivo il WPS altrimenti la sicurezza non esiste, perché quelle poche cifre di cui è composta la chiave WPS li si copre appastanza ficilmente (anche qui vale il sempre valido metodo della forza bruta con un dizionario)}''
+  \item captive portal: autenticazione a livello applicativo tramite \textit{browser} con filtraggio a livello Ethernet
+    \end{itemize}
+\end{tasks}
+\subsection{Collisioni}
+\begin{tasks}(2)
+	\task Due stazioni collidono se accedono al canale in istanti che distano tra
+        loro un tempo inferiore a quello di propagazione tra le due stazioni.
+        \task Lo strato MAC Ethernet NON deve terminare l’emissione completa di una trama prima che sia
+        certo lo stato di NON collisione
+        \begin{itemize}
+        \item Lo strato MAC Ethernet NON deve terminare l’emissione completa di una trama prima che sia
+          certo lo stato di NON collisione.
+          \item in caso di collisione chi trasmette può aggiungere alla trama in invio informazione
+            che segnali l’evento.
+        \end{itemize}
+\end{tasks}
+\subsection{Esempio}
+\begin{itemize}
+\item Ethernet 100BeseT
+  \begin{itemize}
+  \item velocità di 100Mb/s
+  \item lunghezza minima del pacchetto di 64B
+  \item tempo necessario a trasmettere tale trama di 5.12 miscrosecondi
+  \item propagazione nel cavo a circa 200'000Km/s
+  \end{itemize}
+\end{itemize}
+\begin{equation}
+	d_{max}<v\frac{L_{min}}{2R} = 2*10^8\frac{512}{2*10^8}=512m
+\end{equation}
+\subsection{Protocollo CSMA/CD}
+\begin{center}
+  Carrier Sense Multiple Access with Collision Detection
+\end{center}
+\Tree[.vericia\ dello\ stato\ del\ mezzo [.occupato procedura\ di\ persistenza ] [.libero [.attesa\ si\ un\ tempo\ di\ deferring\ e\ tx [.collisione interruzione,\ jamming,\ algoritmo\ di\ subentro ] tx\ ok ] ] ]
+\subsection{Algoritmo di \textit{backoff}}
+\begin{itemize}
+\item Algoritmo che controlla le ritrasmissioni in caso di collisioni
+  attraverso un tempo casuale di attesa
+\item $n$ tentativi di trasmissione (\textbf{al più 16})
+  \item {\color{red} Idea: ad ogni collisione rilevata l’intervallo entro cui scegliere il
+tempo casuale di attesa cresce esponenzialmente per ridurre la
+probabilità di collisione al nuovo tentativo}
+\end{itemize}
+\begin{equation}
+	T=r*\tau
+\end{equation}
+\begin{itemize}
+\item $r\to$ intero casuale tra 0 e $2^k$
+  \begin{equation}
+	k=\min\{n,10\}
+  \end{equation}  
+\end{itemize}
+\subsection{Protocollo MAC 802.11}
+\textit{Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA)}
+\begin{itemize}
+\item CSMA/CD di Ethernet non può essere usato
+  \begin{itemize}
+  \item impossibile trasmettere e ascoltare in un canale radio nello stesso istante
+  \item problema dei nodi nascosti
+  \end{itemize}
+\item DCF sia in ad'hoc che con AP (deve essere sempre supportata)
+\item PCF solo in presenza di AP (opzionale)
+\end{itemize}
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c|c|cc}
+    \cline{2-2}
+    \multirow{2}{*}{\textit{MAC}}&\textit{Point Coordination Function (PCF)}&senza contesa\\
+    		\cline{2-3}
+    		&\multicolumn{2}{c|}{\textit{Distributed Coordination Function (DCF)}}&con contesa\\
+    		\cline{2-3}
+    		&\multicolumn{2}{c|}{livello fisico}&\\\cline{2-3}
+  \end{tabular}
+\end{table}
+\subsubsection{DCF}
+\begin{itemize}
+\item Collision avoidance è realizzato tramite trame di controllo \textit{Request-To-Send} (RTS) e \textit{Clear-To-Send} (CTS)
+  \begin{itemize}
+	\item {\tt trame di controllo molto corte (rispettivamente 20B e 14B)}
+  \end{itemize}
+\item Se avviene una collisione mentre si invia una trama RTS, il trasmettitore non riceve il corrispondente CTS, capisce c'è stata una collisione e inizia una procedura di {\em backoff esponenziale}
+\item L'algoritmo MAC risultante è equo, ma non garantisce un limite superiore al ritardo di trasmissione
+\item Un campo della PDU indica il tempo in cui il canale sarà occupato (ACK compreso)
+  \item La priorità di accesso al carale dopo un periodo di occupato è controllato da un \textit{InterFrame Space} (IFS) variabile a seconda del tipo di trama.
+\end{itemize}
+
+\subsubsection{PCF}
+\begin{itemize}
+\item L'AP (in ogni BSS) periodicamente interroga le stazioni e le abilita alla trasmissione ({\it polling})
+\item PCF deve poter coesistere con DCF
+\item L'asse dei tempi è diviso in intervalli di accesso senza contesa ({\it Contention-Free Period}, CFP) alternati con intervalli co contesa ({\it Contention Period}, CP).
+\item All'istante di inizio nominale di un CFP l'AP acolta il mezzo e se libero, aspetta un certo tempo prima di iniziare il CFP con una trama di {\it beacon}
+\end{itemize}
+\section{Reti in area geografica}
+\begin{itemize}
+\item {\it Wide Area Network} (WAN)
+\item Obiettivo: interconnessione senza limiti di distanza (almeno qualche km)
+\item Tecnologia tipicamente più costosa delle LAN
+\item Differenti velocità possibili
+\item Internet come interconnessione ``opportuna'' di LAN/MAN/WAN
+\end{itemize}
+\subsection{Velocità di trasferimento di una WAN}
+\begin{tasks}(2)
+  \task 100m - 1km
+  \begin{itemize}
+  \item {\bf LAN ad alta velocità: {\color{red} 100Kb/s - 10Gb/s}}
+  \item {\bf LAN a bassa velocità: {\color{red} 1-10Mb/s}}
+  \end{itemize}
+  \task 1km-1000km 
+  \begin{itemize}
+  \item {\bf MAN ad alta velocità: {\color{red} 10Mb/s - 10Gb/s}}
+    \item {\bf MAN a bassa velocità: {\color{red} 100Kb/s - 10Mb/s}}
+  \end{itemize}
+\end{tasks}
+\subsection{Caratteristiche e classificazione}
+\begin{itemize}
+\item Una LAN tipicamente interconnette sistemi terminali, mentre una
+  WAN interconnette anche {\it switch, router e modem}
+\item Una LAN è proprietà dell’organizzazione che la utilizza, mentre una
+  WAN è gestita da un operatore di telecomunicazioni ({\bf ISP})
+\item WAN punto-punto
+  \begin{itemize}
+	\item collega due dispositivi di comunicazione tramite un mezzo
+		trasmissivo ({\bf cablato o senza fili})
+  \end{itemize}
+\item WAN a commutazione (switched) $\to$ v. funzione di commutazione
+  \begin{itemize}
+  	\item due o più punti di terminazione
+  	\item tipocamente usata nelle dorsali Internet
+  \end{itemize}
+\item {\it Internetwork} tra LAN tramite WAN  
+\end{itemize}
+\subsection{Reti a commutazione di circuito}
+\begin{itemize}
+\item Tra due dispositivi è sempre possibile un collegamento dedicato (circuito)
+\item La \textit{switch} che collega i due dispositivi può solo attivarlo/disattivarlo
+\item Efficiente solo quando utilizzate alla massima capacità
+\end{itemize}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[weight=4cm,height=8cm]{img/Reti a commutazione di circuito.jpg}
+  \caption{Reti a commutazione di circuito}
+\end{figure}
+\subsection{Reti a commutazione di pacchetto}
+\begin{itemize}
+\item Due dispositivi si scambiano blocchi di dati ({\tt pacchetto})
+\item Lo {\it switch} può memorizzare i pacchetti per inviarli successivamente
+\item più tipicamente funzione svolta dal {\em router}
+\end{itemize}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[weight=4cm,height=8cm]{img/Reti a commutazione di pacchetto.jpg}
+  \caption{Reti a commutazione di pacchetto}
+\end{figure}
+\subsection{Implementazioni}
+\begin{itemize}
+\item Il sistema PDH non è univoco ovunque, me prevede tre standard differenti
+  \begin{itemize}
+  \item europeo (sistema analogo in india) con base a 32 canali
+  \item statunitense con base a 24 canali
+  \item giapponese con base a 24 canali
+  \end{itemize}
+\item Condividono lo stesso meccanismo di base ma differiscono per alcuni dettagli di funzionamento e per le gerarchie di multiplazione
+  \begin{itemize}
+  \item di fatto assenza di interoperabilità
+  \item di fatto poco usati oggigiorno
+    \begin{itemize}
+    \item sostituiti da sistemi SDH ({\bf che vedremo più avanti in questa lezione})
+    \item attivi solo nelle zone terminali delle reti per la multiplazione di traffico telefonico
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+\subsection{Canali telefonici digitali}
+\begin{itemize}
+\item Modulazione a impulsi codificati
+  \begin{itemize}
+  \item {\tt Pulse-Code Modulation (PCM)}
+  \item anche in altre applicazioni come CD e DVD
+  \end{itemize}
+\item Campionamento + quantizzazione + rappresentazione binaria (ADC/DAC)
+  \begin{itemize}
+  \item quantizzazione operazione rumorosa
+  \item 8, 16, 20 o 24 bit per campione
+  \end{itemize}
+\item PCM lineare: i livelli quantizzazione sono linearmente uniformi
+\item PCM non lineare
+  \begin{itemize}
+  \item i segnali maggiormente affetti dell'approssimazione sono quelli a bassa intensità (errore relativo maggiore)
+    \item quantizzazione non lineare: livelli più piccoli e ravvicinati nella regione di segnale debole e più distanziati nella regione in cui il segnale è più intenso
+  \end{itemize}
+\end{itemize}
 
 
 \chapter{Applicazione delle reti}
