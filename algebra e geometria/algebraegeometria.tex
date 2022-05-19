@@ -44,6 +44,10 @@
 \usepackage{exsheets}
 \usepackage{pgfplots}
 \usepackage{amsthm}
+\usepackage{lipsum}%% a garbage package you don't need except to create examples.
+\usepackage{fancyhdr}
+\newtheorem{teorema}{Teorema}
+\newtheorem{definizione}{Definizione}
 
 \SetupExSheets[question]{type=exam}
 
@@ -200,6 +204,114 @@
 	Valide per tutti i numeri complessi $z$ e $w$. La prima proprietà è una versione della disuguaglianza triangolare.
 
 \end{enumerate}
+\chapter{Il determinante \label{ildet}}
+In questo capitolo introdurremo uno strumento alternativo alla riduzione a gradini per determinare se le righe ({\it o le colonne}) di una matrice siano dipendenti. Per poterne dare la definizione rigorosa, dobbiamo prima fare alcuni richiami sulle permutazioni.
+\section {Richiami sulle permutazioni \label{ricsullperm}}
+Dato l'insieme $\{1,2,\dots,n\}$ dei numeri naturali compresi tra 1 e $n$, per un certo $n$, una funzaione da $\{1,2,\dots,n\}$ in se stesso associa a ogni elemento di $\{1,2,\dots,n\}$ un'immagine, scelta sempre all'interno di $\{1,2,\dots,n\}$. Se facciamo in modo che le immagini siano tutte diverse senza ripetizioni\footnote{\textit{Si dice la funzione è iniettiva:} una funzione iniettiva da un insieme finito in se stesso è automaticamente anche suriettiva, e quindi biiettiva. Richiameremo queste nozioni nel prossimo capitolo.}, queste ci daranno ancora tutti gli elementi $1,2,\dots,n$ semplicemente disposti in un altro ordine, ovvero permutati. Si parla di {\em permutazione di n elementi.} Ad esempio, le seguenti rappresentano permutazioni di 4 elementi:
+\begin{equation*}
+  \begin{matrix}
+    1 \to 1 & 1 \to 3\\
+    2 \to 3 & 2 \to 4\\
+    3 \to 2 & 3 \to 2\\
+    4 \to 4 & 4 \to 1
+  \end{matrix}
+\end{equation*}
+L'insieme delle permutazioni di $n$ elementi si denota $S_n$. Per ogni $n$, tale insieme contiene esattamente $n!:=n(n-1)(n-2)\dots 2*1$ (cioè {\it n fattoriale}) permutazioni: ad esempio, per $n = 2$ abbiamo $2!= 2 * 1 = 2$ permutazione possibili, ovvero
+\begin{equation*}
+  \begin{matrix}
+    1 \to 1 & 1 \to 2\\
+    2 \to 2 & 2 \to 1
+  \end{matrix}
+\end{equation*}
+(tra le permutazioni vi è sempre anche anche quella che associa a ogni elemento se stesso, detta permutazione identica\footnote{Come funzione, si tratta della cosiddetta identità o funzione identica}).\\
+Per $n=3$ abbiamo invece $3!=3*2*1=6$ permutazioni possibili, ovvero
+\begin{equation*}
+  \begin{matrix}
+    1 \to 1 & 1 \to 2 & 1 \to 1 & 1 \to 3 & 1 \to 2 & 1 \to 3 \\
+    2 \to 2 & 2 \to 1 & 2 \to 3 & 2 \to 2 & 2 \to 3 & 2 \to 1 \\
+    3 \to 3 & 3 \to 3 & 3 \to 2 & 3 \to 1 & 3 \to 1 & 3 \to 2 \\
+      p_1   &    p_2   &   p_3   &    p_4  &    p_5  &    p_6
+  \end{matrix}
+\end{equation*}
+Si noti che $p_2, \text{ } p_3$ e $p_4$ scambiano trra loro due elementi lasciando fisso il terzo ($p_2$ scambia tra loro 1 e 2, $p_3$ scambia 2 e 3): in generale, una permutazione di questo tipo, che scambia tra loro è una trasposizione anche la prima permutazione di 4 elementi presentata all'inizio del paragrafo ({\tt scambia tra loro 2 e 3 lasciando fissi 1 e 4}), mentre la seconda non lo è.\\
+Benché non tutte le permutazioni siano trasposizioni, si può dimostrare che qualunque permutazione può essere realizzata eseguendo una sequenza di trasposizioni. Ad esempio, la permutazione $p_5$ di sopra, che non è una trasposizione, può tuttavia essere ottenuta scambiando prima 1 e 2, e poi 1 e 3:
+\begin{equation*}
+  \begin{matrix}
+    1 \to 2 \to 2\\
+    2 \to 1 \to 3\\
+    3 \to 3 \to 1
+  \end{matrix}
+\end{equation*}
+ovvero può essere ottenuta componendo 2 trasposizioni.\\
+In generale, se il numero di trasposizioni che servono per ottenere una permutazione data $p$ è pari, si pari, si dice che $p$ è una {\em permutazione pari}; se invece il numero di trasposizioni che servono per ottenere $p$ è dispari, si dice che $p$ è una {\em permutazione dispari}. Ad esempio, $p_5$ è una permutazione pari, in quanto l'abbiamo ottenuta componendo 2 trasposizioni; è facile vedere che anche $p_6$ è una permutazione pari, in quanto può essere ottenuta componendo due trasposizioni:
+\begin{equation*}
+  \begin{matrix}
+    1 \to 3 \to 3\\
+    2 \to 3 \to 1\\
+    3 \to 1 \to 2
+  \end{matrix}
+\end{equation*}
+Chiaramente, se una permutazione è già essa una trasposizione, allora essa è dispori ({\tt 1 è un numero dispari}).\\
+Si noti che possono esserci più modi diversi di decomporre una permutazione come composizione di trasposizioni, ad esempio, la permutazione identica può essere vista o come risultato di 0 trasposizioni, oppure come risultato di 2 trasposizioni, ad esempio
+\begin{equation*}
+  \begin{matrix}
+    1 \to 2 \to 1\\
+    2 \to 1 \to 2\\
+    3 \to 3 \to 3
+  \end{matrix}
+\end{equation*}
+Tuttavia, si pu`o dimostrare che il numero di trasposizioni che servono per ottenere una permutazione data `e o sempre pari o sempre dispari ({\it nell’esempio, 0 o 2, comunque pari}).\\
+Si può allora definire il \textit{segno s(p) di una permutazione p} come $s(p)=+1$ se $p$ è una permutazione dispari.\\
+Siamo ora pronti a definire il determinante.
+\section{La definizione di determinante}
+Sia $A$ una matrice che ha $n$ righe e $n$ colonne, per qualche $n>0$: tali matrici si dicono {\it quadrate} e il numero $n$ comune a roghe e colonne si dice {\it l'ordine della matrice.} Il determinante associa a ogni matrice $A$ quadrata di ordine $n$ a entrate in un campo $\mathds{K}$ un elemento $\det(A) \in \mathds{K}$, funzione delle sue entrate, per il quale vedremo che vale l'importante proprietà che $\det(A)=0$ se e solo se la matrice ha rango minore di $n$, ovvero se e solo se le righe ({\it o le colonne}) della matrice sono dipendenti.
+\begin{definizione}
+  Sia A una matrice quadrata di ordine $n$ con entrate $a_{ij}$. Allora
+  \begin{equation}
+	\det(A)=\sum_{p\in S_n}s(p)a_{1p(1)}a_{2p(n)}
+  \end{equation}
+  In altrea parole, il determinante di una matrice quadrata di ordine $n$ è dato da una sommatoria che ha addendo per ogni permutazione $p\in S_n$: ognuno di questi addendi è un prodotto di entrata di $A$ del tipo $a_{1p(1)}\text{ } a_{2p(2)} \text{ \dots } a_{np(n)},$ con davanti un segno + o - a seconda che la permutazione $p$ sia pari o dispari. Si noti che l'espressione $a_{1p(1)},\text{ } a_{2p(2)}, \text{ \dots }, a_{np(n)}$ è il prodotto di $n$ entrate scelte nella matrice, una per ogni riga, con gli indici di colonna dati da $p(1),\text{ } p(2),\dots, \text{ } p(n)$: poiché una permutazione scambia gli indici $1,\text{ }2,\dots, \text{ } n$ senza ripetizioni, stiamo praticamente scegliendo un'entrata da ogni riga in modo però che le entrate scelte stiano anche su colonne diverse.
+\end{definizione}
+Per chiarire e illustrare la definizione precedente, consideriamo in particolare i casi $n = 2$ e $n = 3$.\\
+Sia $A=\begin{pmatrix}
+         a_{11} & a_{12}\\
+         a_{21} & a_{22}
+       \end{pmatrix}$ una matrice quadrata di ordine $n=2$. Come abbiamo visto sopra ci sono solo due permutazioni dell'insieme $\{1,2\}$ ({\tt l'identità e la trasposizione che scambia 1 con 2}) quindi nella sommatoria avremo solo due addendi, del tipo $s(p) a_{1p(1)}a_{2p(2)}$: se $p$ è l'identità, che come abbiamo osservato sopra è un permutazione pari e quindi $s(p)=+1$ e l'addendo corrispondente sarà $+a_{11}a_{22}$: se $p$ è la trasposizione che scambia 1 con 2, che è una permutazione dispari, si ha $s(p)=-1$ e l'addendo corrispondente sarà $-a_{12}a_{21}$. Il determinante di una matrice quadrata $A$ di ordine 2 risulta quindi essere
+       \begin{equation}
+		\det(A)=a_{11}a_{22}-a_{12}a_{21}
+       \end{equation}
+       Nel caso di una matrice $A= \begin{pmatrix}
+                                     a_{11} & a_{12} & a_{13}\\
+                                     a_{21} & a_{22} & a_{23}\\
+                                     a_{31} & a_{32} & a_{33}
+                                   \end{pmatrix}$ quadrata di ordine $n = 3$, la sommatoria avrà 6 addendi, tanti quante sono le permutazioni dell'insieme $\{1,2,3\}$, e per ognuna di queste permutazioni $p$ l'addendo corrispondente sarà del tipo $s(p)a_{1p(1)}a_{2p(2)}a_{3p(3)}$. Più precisamente, avremo
+\begin{itemize}
+\item l'addendo $+a_{11}a_{12}a_{33}$ corrispondente alla permutazione $p(1) = 1, p(2) =2, p(3) =3$ ({\tt cioè la permutazione identica, che è una permutazione pari})
+\item l'addendo $-a_{11}a_{23}a_{32}$ corrispondente alla permutazione $p(1) = 1, p(2) =3, p(3) =2$ ({\tt che è una trasposizione e quindi una permutazione dispari})
+\item l'addendo $+a_{12}a_{23}a_{31}$ corrispondente alla permutazione $p(1)=2,\text{ }p(2)=3,\text{ }p(3)=1$ ({\tt che è una trasposizione dispari})
+\item l'addendo $-a_{12}a_{21}a_{33}$ corrispondente alla permutazione $p(1)=2,\text{ }p(2)=1,\text{ } p(3)=3$ ({\tt che è una teasposizione e quindi una permutazione dispari})
+\item l'addento $+a_{13}a_{21}a_{32}$ corrispondente alla permutazione $p(1)=3,\text{ } p(2)=1,\text{ } p(3)=2$ ({\tt che si può scrivere come composizione di due trasposizioni ed è quindi una permutazione pari})
+\item l'addendo $-a_{13}a_{22}a_{31}$ corrispondente alla permutazione $p(1) = 3,\text{ }p(2) = 2,\text{ }p(3)=1$ ({\tt che è una trasposizione e quindi una permutazione dispari})
+\end{itemize}
+e quindi si avrà, per una matrice $A$ di ordine 3: 
+\begin{equation}
+	\det(A)=a_{11}a_{12}a_{33}-a_{11}a_{23}a_{32}+a_{12}a_{23}a_{31}-a_{12}a_{21}a_{33}+a_{13}a_{21}a_{32}-a_{13}a_{22}a_{31}
+\end{equation}
+Ora, vedremo nel Paragrafo la dimostrazione del fatto che il determinante di una matrice quadratea di ordine $n$ si annulla se e solo se la matrice ha $n=2$ e $n=3$, usando le farmule esplicite ({\tt 3.2}) e ({\tt 3.3}).\\
+Nel caso di una matrice $A = \begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{pmatrix}$ di ordine 2, essendoci solo proporzionali, ovvero diciamo che esiste un $c \in \mathds{K}$ tale che $(a_{11},a_{12})=c(a_{21}a_{22})$, cioè
+\begin{equation}
+	a_{11}=ca_{21},\text{ }a_{12}=ca_{22}
+\end{equation}
+Ma allora, moltiplicando ({\tt a entrambi i membri}) la prima uguaglianza per $a_{22}$ e la seconda per $21$ si ha $a_{11}a_{22}=ca_{21}a_{22}$ e $a_{12}a_{21}=ca_{21}a_{21}$, da cui vediamo che $a_{11}a_{22}=ca_{21}a_{22}$: quindi $a_{11}a_{22}-a_{12}a_{21}=0$, ovvero $\det(A)=0$. Quindi se una matrice di ordine 2 ha le righe proporzionali, il suo determinante è zero.\\
+Viceversa, supponiamo che il determinante $a_{11}a_{22}-a_{12}a_{21}$ sia zero, ovvero
+\begin{equation}
+	a_{11}a_{22}=a_{12}a_{21}
+\end{equation}
+Supponendo per il momento che le entrate $a_{21},a_{22}$ della seconda riga non siano nulle, dividendo entrambi i membri della (3.5) per $a_{21}$ e $a_{22}$  otteniamo
+\begin{equation}
+	\frac{a_{11}}{a_{21}}=\frac{a_{12}}{a_{22}}
+\end{equation}
+
 
 \printindex
 \end{document}
