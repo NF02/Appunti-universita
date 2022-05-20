@@ -46,8 +46,15 @@
 \usepackage{amsthm}
 \usepackage{lipsum}%% a garbage package you don't need except to create examples.
 \usepackage{fancyhdr}
+
 \newtheorem{teorema}{Teorema}
 \newtheorem{definizione}{Definizione}
+\newtheorem {proposizione}{Proposizione}
+\newtheorem{esempio}{Esempio}
+\newtheorem{osservazione}{Osservazione}
+% disegni geometici
+\usepackage{tikz-cd}
+
 
 \SetupExSheets[question]{type=exam}
 
@@ -311,7 +318,114 @@ Supponendo per il momento che le entrate $a_{21},a_{22}$ della seconda riga non 
 \begin{equation}
 	\frac{a_{11}}{a_{21}}=\frac{a_{12}}{a_{22}}
 \end{equation}
+cioè si ha $\frac{a_{11}}{a_{21}}=c$ e $\frac{a_{12}}{a_{22}}=c$ per qualche $c\to \mathds{K}$, da cui ritroviamo le uguaglianze ({\tt 3.4}), che $a_{21}$ e $a_{22}$ fossero entrambi diversi da zero: infatti, se ad esempio $a_{21}=0$ allora la (3.5) diventa $a_{11}a_{22}=0$, che equivale a dire che o $a_{11}=0$ oppure $a_{22}=0$: ma nel primo caso la matrice è della forma $A=\begin{pmatrix} 0 & a_{12} \\ 0 & a_{22}\end{pmatrix}$, nel secondo $A=\begin{pmatrix} a_{11} & a_{12} \\ 0 & 0\end{pmatrix}$, e in entrambi i casi otteniamo sempre che le righe sono proporzionali.\\
+Nel caso di matrici di ordine 3, dimostrare che il determinante si annulla {\em se e solo se} le righe sono dipendenti, non p difficile se ci aiutiamo con un'interpretazione geometrica: {\bf infatti, prendiamo l'espressione (3.3) del determinante di una tale matrice e riscriviamola nel modo seguente:}
+\begin{equation}
+	a_{11}(a_{22}a_{33}-a_{23}a_{32})+ a_{12}(a_{23}a_{31}-a_{21}a_{33})+a_{13}(a_{21}a_{32}-a_{22}a_{31})
+\end{equation}
+Ora, le tre quantità dentro le parentesi tonde non sono altro che le componenti del prodotto vettoriale dei due vettori di $\mathds{R}^3$ dati dalla seconda e dalla terza riga della matrice:
+\begin{equation*}
+	R_2\wedge R_3=(a_{21},a_{22},a_{23})\wedge(a_{31},a_{32},a_{33})=(a_{22}a_{33}-a_{23}a_{32},a_{23}a_{33}-a_{21}a_{33},_{21},a_{32}-a_{22}a_{31})
+\end{equation*}
+Quindi la (3.7), dal momento che moltiblica le componenti di $R_1=(a_{11},a_{12},a_{13})$ con le rispettive componenti di $R_2\wedge R_3$ ({\tt la prima con la prima, la seconda con la seconda e la terza con la terza}) e somma, non è nient'altro che quello che abbiamo chiamato prodotto scalare tra $R_1$ e $R_2 \wedge R_3$. Quindi, dire che il determinante di una matrice di ordine 3 si annulla quivale a dire che le sue tre righe $R_1,R_2,R_3$ verificano l'uguaglianza.
+\begin{equation}
+	R_1*(R_2\wedge R_3)=0
+\end{equation}
+Ora, se fissiamo nello spazio $V^{3}_O$ dei vettori applicati nello spazio tridimensionali, le terne $R_1, R_2, R_3$ rappresenterano le coordinate di tre vettori applicati $\vec{OP_1}, \vec{OP_2}, \vec{OP_3}$ rispettivamente, e la (3.8) ci sta allora dicendo che il vettore $\vec{OP_1}$ è perpendicolare al vettore $\vec{OP_2}\wedge \vec{OP_3}$ ({\it infatti, abbiamo dimostrato che due vettori dello spazio sono perperndicolari solo se il prodotto scalare tra le terne dele lorfo coordinate è zero}). Ma, essendo a sua volta $\vec{OP_2}\wedge \vec{OP_3}$, per le proprietà del prodotto vettoriale, perpendicolare $\vec{OP_2}\wedge \vec{OP_3}$ significa dire che anche $\vec{OP_1}$ deve stare sul piano $p$:
 
+\[\begin{tikzcd}
+	&&& {\vec{OP_2}\wedge\vec{OP_3}} \\
+	\\
+	& \bullet &&&&&&&&& \bullet \\
+	&&&&&& {P_3} &&&&& {\textit{p}} \\
+	&&& \bullet && {} &&& {P_2} \\
+	&&&&&&& {P_1} \\
+	\bullet &&&&&&&&& \bullet
+	\arrow[no head, from=7-1, to=3-2]
+	\arrow[no head, from=7-1, to=7-10]
+	\arrow[no head, from=7-10, to=3-11]
+	\arrow[from=5-4, to=1-4]
+	\arrow[from=5-4, to=6-8]
+	\arrow[from=5-4, to=5-9]
+	\arrow[from=5-4, to=4-7]
+	\arrow[no head, from=3-2, to=3-11]
+\end{tikzcd}\]
+Quindi i tre vettori, stando sullo stesso piano, sono tra loro dipendenti, e
+concludiamo che sono dipendenti anche le terne $R_1, R_2, R_3$ delle loro coordinate\footnote{Ricordiamo che dei vettori in uno spazio vettoriale sono dipendenti se e solo se lo sono, le \textit{n-uple} delle loro coordinate rispetto a una base scelta.}. Questo mostra come volevamo che il determinante di una matrice di ordine 3 si annulla se e solo se le sue riche $R_1, R_2,R_3$ sono dipendenti.\\
+Nel paragrafo sulle proprietà del determinante, dimostreremo in modo puramente algebrico che questo fatto è vero per matrici di qualunque ordine. Prima di fare ciò, vediamo nel prossimo paragrafo un modo di calcolkare il determinante alternativo alla definizione, il cui utilizzo diretto richiederebbe di scrivere una sommaria che per una matrice di ordine $n$ ha $n!$ addendi, tanti quanti le permutazioni di $n$ elementi (si pensi che già per $n=4$ abbiamo $4!=24$ addendi).
+\section{La formula di Laplace \label{Laplace}}
+Allo scopo di calcolare il determinanete, useremo la cosiddetta \textit{formula di Laplace}, per scrivere la quale abbiamo prime bisogno di dare la seguante
+\begin{definizione}
+Sia $A$ una matrice quadrata di ordine $n$: per ogni entrata $a_{ij}$ di $A$, definiamo il \textit{cofattore di $a_{ij}$}, denotato $C_{ij}$, come il determinante della matrice di ordine $n-1$ che si ottiene da $A$ cancellando la riga $i$ e la colonna $j$, moltiplicato per $(-1)^{i+j}$
+\end{definizione}
+Vediamo subito un esempio: consideriamo la matrice di ordine 3 seguente
+\begin{equation*}
+  \begin{pmatrix}
+    1 & 2 & 4 \\
+    4 & 5 & 6 \\
+    7 & 8 & 9
+  \end{pmatrix}
+\end{equation*}
+L'entrata $a_{11}$ è uguale a 1: il suo cofattore $C_{11}$ è, in base alla definizione <++>, il determinante della matrice di ordine 2 che si ottiene cancellando la prima riga e la prima colonna (ovviamente la riga e la colonna dell-entrata $a_{11}$ presa in considerazione) moltiplicato per $(-1)^{1+1}$:
+\begin{equation*}
+	C_{11}=(-1)^{1+1}\det\begin{pmatrix} 5 & 6\\ 8 & 9 \end{pmatrix} = (-1)^2(5*9-6*8)=+(45-48)=-3
+\end{equation*}
+Invece, se per esempio prendiamo l'entrata $a_{23}=6$, il suo cofattore $C_{23}$ è il determinante della matrice di ordine 2 che si ottiene cancellando la seconda riga e la terza colonna (ovvero la riga e la colonna dell'entrata $(-1)^{2+3}$):
+\begin{equation*}
+	C_{11}=(-1)^{1+1}\det\begin{pmatrix} 1 & 2 \\ 7 & 8 \end{pmatrix} = (-1)^5(1*8-2*7)=-(8-14)=+6
+\end{equation*}
+Siamo ora pronti a enunciare il seguante risultato, sche ci dà una formula per il calcolo del determinante di una matrice:
+\begin{proposizione}
+  Sia $A$ una matrice di ordine $n$. Data una sua qualunque riga $\begin{pmatrix} a_{i1} & a_{i2} & \dots & a_{in} \end{pmatrix}$ o una qualungue colonna $\begin{pmatrix} a_{1j} \\ a_{2j} \\ \vdots \\ a_{nj} \end{pmatrix}$, si ha
+  \begin{eqnarray}
+    \det(A)=a_{i1}C_{i1}+a_{i2}C_{i2}+\dots+a_{in}C_{in}\\
+    \det(A)=a_{1j}C_{1j}+a_{2j}C_{2j}+\dots+a_{nj}C_{nj}
+  \end{eqnarray}
+  La proposizione, che non dimostriamo, afferma quindi che il determinante di una matrice si può calcolare scegliendo una riga o una colonna, moltiplicando ogni elemento della riga o della colonna per il suo cofattore e sommando il tutto. La (3.9) e la (3.10) si dicono rispettivamente \textit{formula (o sviluppo) di Laplace secondo la i-esima riga e la la formula (o sviluppo) di Laplace secondo la j-esima colonna.}\\
+  L'osservazione importante da fare sulla formula di Laplace è che essa esprime il determinante di una matrice di ordine $n$ in funzione dei suoi cofattori, che sono, a parte il fattore $(-1)^{i+j}$, determinanti di matrici di ordine $n-1$: a loro volta, potremo poi calcolare ciascuno di questi cofattori riutilizzando la formula di Laplace, con la quale ci ridurremo a calcolare determinanti di matrici di oridne $n - 2$, e così viam fino a che non arriveremo a matrici di ordine 2 per le quali la formula del determinante è particolarmente semplice da ricordare. Vediamo un esempio.
+\end{proposizione}
+\begin{esempio}
+  Sia $A=\begin{pmatrix} 1 & 1 & 0 & 0 \\ 0 & 1 & -1 & 1 \\ 1 & 0 & 0 & 1 \\ 1 & 2 & 1 & 0\end{pmatrix}$. Scegliamo di sviluppare il determinante secondo Laplace rispetto alla terza riga, usando cioè la formula (3.9) nel caso $i = 3$:
+  \begin{equation*}
+    \det (A)=a_{31}C_{31}+a_{32}C_{32}+a_{33}C_{33}+a_{34}C_{34}.
+  \end{equation*}
+  Per definizione di cofattori e tenendo conto che $a_{32}=a_{33}=0$ (e quindi non abbiamo bisogno di calcolare i corrispondenti cofattori) si ha
+  \begin{equation}
+	\det(A)=1*(-1)^{3+1}\det\begin{pmatrix} 1 & 0 & 0 \\ 1 & -1 & 1 \\ 2 & 1 & 0\end{pmatrix} + 1*(-1)^{3+4}\det\begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & -1 \\ 1 & 2 & 1\end{pmatrix}
+  \end{equation}
+  Ora, cisascuno dei due determinanti di ordine 3 che compaiono in questa uguaglianza può essere calcolato usando di nuovo la formula data. Ad esempio, se per il primo determinante scegliamo la terza colonna (quindi dobbiamo usare $\det (A)=a_{11}C_{11}+a_{12}C_{12}+a_{13}C_{13}$) tenendo conto che $a_{13}=0$, si ha
+  \begin{equation*}
+	\det\begin{pmatrix} 1 & 0 & 0 \\ 1 & -1 & 1 \\ 2 & 1 & 0\end{pmatrix}=1*(-1)^{2+3}\det\begin{pmatrix} 1 & 0 \\ 2 & 1 \end{pmatrix}=-1.
+  \end{equation*}
+  dove il determinante di ordine 2 è stato calcolato usando la formula $\det(A)=a_{11}a_{22}-a_{12}a_{21}$.
+  Analohgalmente, se per l'altro determinante scegliamo la prima riga (quindi dobbiamo usare
+  $\det (A)=a_{11}C_{11}+a_{12}C_{12}+a_{13}C_{13}$) tenendo conto che $a_{13}=0$, si ha
+  \begin{equation*}
+    \det\begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & -1 \\ 1 & 2 & 1\end{pmatrix}=1*(-1)^{1+1}\det\begin{pmatrix} 1 & -1 \\ 2 & 1 \end{pmatrix} + 1 * (-1)^{3+1}\det\begin{pmatrix} 0 & -1 \\ 1 & 1\end{pmatrix} =3-1=2.
+  \end{equation*}
+  Sostituendo questi risultati nella (3.11), si trova allora
+  \begin{equation*}
+    \det(A)=1*(-1)^{3+1}(-1)+1*(-1)^{3+4}2=-3.
+  \end{equation*}
+  Nell'enunciato del Proposizione \ref{Laplace}, è sottointeso il fatto che il risultato dello sviluppo ci darà sempre il determinante di $A$ indipendentemente dalla riga o colonna scelta: questo è molto importante nella pratica in quanto ci consente, come visto anche nell-esempio, di scegliere se possibile righe o colonne in cui alcune in cui alcune entrate siano nulle, così da non dover calcolare i corrispondente cofattori. 
+\end{esempio}
+\begin{osservazione}
+  Notiamo che l'espressione (3.7), che abbiamo usato per mostrare geometricamente che il determinante di una matrice di ordine 3 si annulla se e solo se le sue righe sono dipendenti, non era altro che lo sviluppo di Laplace di tale determinante rispetto alla prima riga: infatti, ricordando la derinizione di determinante di una matrice di ordine 2, si trava
+  \begin{equation*}
+	\begin{matrix}
+          a_{11}(a_{22}a_{33}-a_{23}a_{32})-a_{12}(a_{21}a_{33}-a_{23}a_{31})+a_{12}(a_{21}a_{32}-a_{22}a_{31})=\\
+          a_{11}(-1)^{1+1}\det\begin{pmatrix} a_{22} & a_{23} \\ a_{32} & a_{33}\end{pmatrix}+a_{12}(-1)^{1+2}\det\begin{pmatrix} a_{21} & a_{23} \\ a_{31} & a_{33}\end{pmatrix}+a_{13}(-1)^{1+3}\det\begin{pmatrix} a_{21} & a_{22} \\ a_{32} & a_{32}\end{pmatrix}=\\a_{11}C_{11}+a_{12}C_{12}+a_{13}C_{13}
+        \end{matrix}
+  \end{equation*} 
+\end{osservazione}
+\section{Proprietà del determionante}
+In questo paragrafo dimostreremo finalmente che il determinante di una matrice $A$ si annulla \underline{se e solo se} le sue righe sono dipendenti. A questo scopo, iniziamo con l'enunciazione e dimostrazione tre importanti proprietà del determinante:
+\begin{enumerate}
+\item se $A^\prime$ si ottiene da $A$ moltipricando una riga di $A$ per $c\in \mathds{K}$, allora $\det(A^\prime)=c\det(A)$\\
+  Ad esempio, se $A=\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ e $A^\prime =\begin{pmatrix} 5 & 10 \\ 3 &4 \end{pmatrix}$ è la matrice ottenuta da $A$ moltiplicando la prima riga per $c=5$, ho $\det(A^\prime)=5*4-10*3=5\det (A)$.\\
+  In altre parole, se una riga di una matrice viene moltiplicata per una scala $c$, quando calcoliamo il determinante possiamo ``portare fuori'' questo scalare.\\
+  In base alle definizione ({\it <++>}) di determinantem, il determinante della matrice $A^\prime$ in cui abbiamo moltiplicato tutti gli elementi della riga \textit{i-esima} per $c$ è $\det (A^\prime)=\sigma s(p)a_{1p(1)}\dots(ca_{ip(1)})\dots a_{np(n)}$: essendo il fattore $c$ comune a tutti gli addendi della sommatoria, possiamo metterlo in evidenze in eveidenza alla somma e scivere 
+\end{enumerate}
 
 \printindex
 \end{document}
