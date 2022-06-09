@@ -424,7 +424,31 @@ In questo paragrafo dimostreremo finalmente che il determinante di una matrice $
 \item se $A^\prime$ si ottiene da $A$ moltipricando una riga di $A$ per $c\in \mathds{K}$, allora $\det(A^\prime)=c\det(A)$\\
   Ad esempio, se $A=\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ e $A^\prime =\begin{pmatrix} 5 & 10 \\ 3 &4 \end{pmatrix}$ è la matrice ottenuta da $A$ moltiplicando la prima riga per $c=5$, ho $\det(A^\prime)=5*4-10*3=5\det (A)$.\\
   In altre parole, se una riga di una matrice viene moltiplicata per una scala $c$, quando calcoliamo il determinante possiamo ``portare fuori'' questo scalare.\\
-  In base alle definizione ({\it <++>}) di determinantem, il determinante della matrice $A^\prime$ in cui abbiamo moltiplicato tutti gli elementi della riga \textit{i-esima} per $c$ è $\det (A^\prime)=\sigma s(p)a_{1p(1)}\dots(ca_{ip(1)})\dots a_{np(n)}$: essendo il fattore $c$ comune a tutti gli addendi della sommatoria, possiamo metterlo in evidenze in eveidenza alla somma e scivere 
+  In base alle definizione ({\it <++>}) di determinantem, il determinante della matrice $A^\prime$ in cui abbiamo moltiplicato tutti gli elementi della riga \textit{i-esima} per $c$ è $\det (A^\prime)=\sigma s(p)a_{1p(1)}\dots(ca_{ip(1)})\dots a_{np(n)}$: essendo il fattore $c$ comune a tutti gli addendi della sommatoria, possiamo metterlo in evidenze in eveidenza alla somma e scivere $\det(A^\prime) = c \sigma s(p)a_{ip(n)}a_{1np(n)}$, ovvero $\det(A^\prime)=c\det(A)$, come volevamo.
+\item supponiamo di sommare a una riga $R_i$ di una matrice $A$ una \textit{n-upla} $v=(v_{i1},v_{i2},\dots,v_{in})$. Allora, il determinante della nuova matrice $A^\prime$ così ottenuta vale
+  \begin{equation}
+    \det(A^{\prime})=\det(A)+\det\begin{pmatrix} R_1 \\ \dots \\ v\\ \dots \\ R_n \end{pmatrix}
+  \end{equation}
+  dove stiamo denotando con $\begin{pmatrix} R_1 \\ \dots \\ v\\ \dots \\ R_n \end{pmatrix}$ la matrice ottenuta da $A$ sostituendo $v$ al posto della riga $R_i$. Possiamo anche scrivere
+  \begin{equation}
+	\det\begin{pmatrix} R_1 \\ \dots \\ R_i+v\\ \dots \\ R_n \end{pmatrix}=\det\begin{pmatrix} R_1 \\ \dots \\ R_i\\ \dots \\ R_n \end{pmatrix}+\det \begin{pmatrix} R_1 \\ \dots \\ v\\ \dots \\ R_n \end{pmatrix}
+  \end{equation}
+  Ad esempio, consideriamo la matrice $A=\begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix}$ e sommiamo
+  alla sua seconda riga (2, 1) la coppia (1, 3), ottenendo  $A=\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$. Allora si ha proprio
+  \begin{equation*}
+	\det(A^\prime)=\det\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}=\det(A)+\begin{pmatrix} 1 & 2 \\ 1 & 3 \end{pmatrix}
+  \end{equation*}
+  ovvero $-2=-3+1$.\\
+  \fbox{
+ 	\addtolength{\linewidth}{-2\fboxsep}%
+ 	\addtolength{\linewidth}{-2\fboxrule}%
+	\begin{minipage}{\linewidth}
+          Se $R_i=\begin{pmatrix}a_{i1} & a_{i2} & \dots & a_{in}\end{pmatrix}$ allora la riga i-esima della
+          matrice\\ $A^\prime$ è $R_i+v+\begin{pmatrix}a_{i1}+v_{i1} & a_{i2}+v_{i2} & \dots & a_{in}+v_{in}\end{pmatrix}$
+
+        \end{minipage}
+  }
+
 \end{enumerate}
 
 \printindex
