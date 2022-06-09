@@ -212,9 +212,16 @@
 
 \end{enumerate}
 \chapter{Il determinante \label{ildet}}
-In questo capitolo introdurremo uno strumento alternativo alla riduzione a gradini per determinare se le righe ({\it o le colonne}) di una matrice siano dipendenti. Per poterne dare la definizione rigorosa, dobbiamo prima fare alcuni richiami sulle permutazioni.
+In questo capitolo introdurremo uno strumento alternativo alla riduzione a gradini per determinare se le righe ({\it o le colonne}) di una matrice
+siano dipendenti. Per poterne dare la definizione rigorosa, dobbiamo prima fare alcuni richiami sulle permutazioni.
 \section {Richiami sulle permutazioni \label{ricsullperm}}
-Dato l'insieme $\{1,2,\dots,n\}$ dei numeri naturali compresi tra 1 e $n$, per un certo $n$, una funzaione da $\{1,2,\dots,n\}$ in se stesso associa a ogni elemento di $\{1,2,\dots,n\}$ un'immagine, scelta sempre all'interno di $\{1,2,\dots,n\}$. Se facciamo in modo che le immagini siano tutte diverse senza ripetizioni\footnote{\textit{Si dice la funzione è iniettiva:} una funzione iniettiva da un insieme finito in se stesso è automaticamente anche suriettiva, e quindi biiettiva. Richiameremo queste nozioni nel prossimo capitolo.}, queste ci daranno ancora tutti gli elementi $1,2,\dots,n$ semplicemente disposti in un altro ordine, ovvero permutati. Si parla di {\em permutazione di n elementi.} Ad esempio, le seguenti rappresentano permutazioni di 4 elementi:
+Dato l'insieme $\{1,2,\dots,n\}$ dei numeri naturali compresi tra 1 e $n$, per un certo $n$, una funzaione
+da $\{1,2,\dots,n\}$ in se stesso associa a ogni elemento di $\{1,2,\dots,n\}$ un'immagine, scelta sempre
+all'interno di $\{1,2,\dots,n\}$. Se facciamo in modo che le immagini siano tutte diverse senza
+ripetizioni\footnote{\textit{Si dice la funzione è iniettiva:} una funzione iniettiva da un insieme finito in
+  se stesso è automaticamente anche suriettiva, e quindi biiettiva. Richiameremo queste nozioni nel prossimo capitolo.},
+queste ci daranno ancora tutti gli elementi $1,2,\dots,n$ semplicemente disposti in un altro ordine, ovvero permutati.
+Si parla di {\em permutazione di n elementi.} Ad esempio, le seguenti rappresentano permutazioni di 4 elementi:
 \begin{equation*}
   \begin{matrix}
     1 \to 1 & 1 \to 3\\
@@ -445,9 +452,12 @@ In questo paragrafo dimostreremo finalmente che il determinante di una matrice $
 	\begin{minipage}{\linewidth}
           Se $R_i=\begin{pmatrix}a_{i1} & a_{i2} & \dots & a_{in}\end{pmatrix}$ allora la riga i-esima della
           matrice\\ $A^\prime$ è $R_i+v+\begin{pmatrix}a_{i1}+v_{i1} & a_{i2}+v_{i2} & \dots & a_{in}+v_{in}\end{pmatrix}$
-
+        In base alla definizione (<++>) di determinante, si ha $\det(A^\prime)=\sum s(p)a_{ip(1)}\dots (a_{ip(i)}+v_{ip(i)})\dots a_{np(n)}=\sum s(p)a_{ip(1)}\dots a_{ip(i)}\dots a_{np(n)}+\sum s(p)a_{ip(1)}\dots v_{ip(i)}\dots a_{np(n)}$ ovvero $\det(A)+\det\begin{pmatrix}R_1\\ \dots\\ v\\ \dots\\ R_n\end{pmatrix}$, come volevamo.
         \end{minipage}
-  }
+      }
+    \item se $A^\prime$ si ottiene da $A$ scambiando tra loro due righe allora $\det(A^\prime)=-\det(A)$\\
+      Ad esempio, se $A=\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ e $A^{\prime}=\begin{pmatrix} 4 & 3 \\ 1 & 2 \end{pmatrix}$ è la matrice ottenuta da $A$ scambiando tra loro la prima e la seconda riga, ho $\det(A)=1*4-2*3=-2$ e $\det(A^\prime)=3*2-4*1=+2$.
+      
 
 \end{enumerate}
 
