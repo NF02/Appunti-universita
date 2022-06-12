@@ -99,7 +99,234 @@
 \begin{document}
 \maketitle
 	\chapter{Testi}
-
+	\begin{equation*}
+          \lim_{x\to 0}\frac{x^2+3\sin2x}{x-2\sin3x}
+    \end{equation*}
+	\begin{equation}
+		\lim_{x\to 0} \frac{1-e^{x^2}}{x^3+\sqrt{x}}
+	\end{equation}
 	\chapter{Soluzioni}
+	\begin{equation*}
+          \lim_{x\to 0}\frac{x^2+3\sin2x}{x-2\sin3x}=\frac{0^2+3\sin2(0)}{0-2\sin3(0)}
+	\end{equation*}
+	\begin{equation*}
+		\lim_{x\to 0}\frac{1-e^{x^2}}{x^3+\sqrt{x}}=\frac{1-e^0}{0^3+\sqrt{0}}=\frac{0}{0}
+	\end{equation*}
+	\section{studio di furnzione}
+	\begin{equation*}
+		f(x)=\frac{e^x}{e^x-1}
+	\end{equation*}
+	\subsubsection{Dominio}
+	\begin{equation*}
+		x\neq 0
+	\end{equation*}
+	Quindi da questa osservazione comprendiamo che la funzione non esiste
+	nell'origine.
+	\begin{equation*}
+		\forall x \in \left(-\infty, 0\right) \vee \left(0, +\infty\right)
+	\end {equation*}
+	\subsection{simmetria}
+		la funzione non è né pari né dispari
+	\subsection{intersezione con gli assi}
+	\begin{equation*}
+		asse x =\begin{cases}
+			y=\frac{e^x}{e^x-1}\\
+			y=0
+		\end{cases}\begin{cases}
+			\frac{e^x}{e^x-1}=0\\
+			y=0
+		\end{cases}
+	\end{equation*}
+	non interseca nessuno dei due assi
+	\subsection{Segno}
+		\begin{equation*}
+			\frac{e^x}{e^x-1}>0
+		\end{equation*}
+	$x>0$ perché al denominatore è presente un esponenziale.
+	\subsection{Comportamento all'estremo del dominio}
+		\begin{equation*}
+			\begin{matrix}
+				\lim_{x\to
+				-\infty}\frac{e^x}{e^x-1}=\frac{e^{-\infty}}{e^{-\infty}-1}=\frac{0}{-1}=0\\
+				\lim_{x\to 0^-} \frac{e^x}{e^x-1}=\frac{e^0}{e^0-1}=-\infty\\
+				\lim_{x\to 0^+} \frac{e^x}{e^x-1}=\frac{e^0}{e^0-1}=+\infty\\
+				\lim_{x\to
+				+\infty}\frac{e^x}{e^x-1}=\frac{e^{+\infty}}{e^{+\infty}-1}=\infty
+			\end{matrix}
+		\end{equation*}
+	\subsection{Derivata prima}
+		\begin{equation*}
+			F^\prime=\frac{e^x*(e^x-1)-e^x*(e^x)}{(e^x)^2}=\frac{-e^x}{(e^x-)^2}
+		\end{equation*}
+	\subsection{es.2}
+		\begin{equation*}
+			f(x)=\frac{\ln(2x)}{x}
+		\end{equation*}
+		\begin{enumerate}
+			\item Dominio
+				\begin{equation*}
+					\begin{matrix}
+						x>0\\
+						\forall x\in (0; +\infty)
+					\end{matrix}
+				\end{equation*}
+			\item Parità
+				\begin{equation*}
+					\begin{matrix}
+						\neq f(-x) \text{ pari}\\
+						\neq -f(x) \text{ dispari}
+					\end{matrix}
+				\end{equation*}
+			\item intersezioni con gli assi
+				\begin{equation*}
+					asse y\begin{cases}
+						f(x)=\frac{\ln(2x)}{x}\\
+						x=0
+					\end{cases}
+				\end{equation*}
+				Non interseca l'asse delle ordinate $f(0)=\nexists$
+			\item segno
+				\begin{equation}
+					f(x)=\frac{\ln(2x)}{x}\begin{cases}
+						N \leq 0 \to x&\to \frac{1}{2}\\
+						D > 0 &\to x>0
+					\end{cases}
+				\end{equation}
+				\begin{equation*}
+					f(x)
+				\end{equation*}
+			\item Comportamento 
+		\end{enumerate}
+	\subsection{es.4}
+	\begin{equation*}
+		f(x)=\frac{e^x-2}{x}
+	\end{equation*}
+	\begin{itemize}
+		\item Dominio
+		\begin{equation*}
+			x\neq 0
+		\end{equation*}
+		\begin{equation*}
+				\forall x \in (-\infty, 0) \vee (0,\infty)
+		\end{equation*}
+		\item simmetrie 
+			\begin{equation*}
+				f(x)\begin{cases}
+					\neq -f(x)\\
+					\neq f(-x)
+				\end{cases}
+			\end{equation*}
+		\item Int. con gli assi
+			\begin{equation*}
+				asse x\begin{cases}
+					y=\frac{e^x-2}{x}\\
+					y=0
+				\end{cases}\begin{cases}
+					\frac{e^2-2}{\not{x}}=0
+				\end{cases}\begin{cases}
+					e^x=2
+				\end{cases}\begin{cases}
+					x=\ln 2
+				\end{cases}
+			\end{equation*}
+			asse y\begin{equation*}
+				\begin{cases}
+					y=\frac{e^x-2}{x}\\
+					x=0
+				\end{cases}\begin{cases}
+					y=\frac{e^0-2}{0}\\
+					x=0
+				\end{cases}\begin{cases}
+					y=\ln2
+				\end{cases}
+			\end{equation*}
+		\item segno
+			\begin{equation*}
+				\begin{matrix}
+					\frac{e^x-2}{x}>0\\
+					x>\ln 2
+				\end{matrix}
+			\end{equation*}
+		\item 
+	\end{itemize}
+
+
+	\section{teorema di Roll}
+		\begin{equation*}
+			f(x)=x^2-4x+3
+		\end{equation*}
+	\begin{equation*}
+		y=[-1,5]
+	\end{equation*}
+		\begin{equation*}
+			(-1)^2-4(-1)+3=1+4+3=8
+		\end{equation*}
+		\begin{equation*}
+			(5)^2-4(5)+3=25-20+3=8
+		\end{equation*}
+		\begin{equation}
+	.		\begin{matrix}
+				f(c)=0\\
+				f^\prime(x)=2x-4\\
+				2c-4=0\\
+				\frac{\not{2}c}{\not{2}}=\frac{\not4}{\not2}\to c=2
+			\end{matrix}
+		\end{equation}
+		\subsection{es.2}
+		\begin{equation*}
+			f(x)=x^4+x^2+1
+		\end{equation*}
+		Intervallo compreso tra $[-2,2]$
+		\begin{equation*}
+			\begin{matrix}
+				f(-2)=(-2)^4+(-2)^2+1=16+4+1=21\\
+				f(2)=(2)^4+(2)^2+1=16+4+1=21
+			\end{matrix}
+		\end{equation*}
+		la funzione è continua
+		\begin{equation*}
+			\begin{matrix}
+				f^\prime(x)=4x^3+2x\\
+				f^\prime(c)=0\\
+				x=c\\
+				4c^3-2c=0 \to 2c(2c^2+1)=0\\
+				2c=0\to c=0\\
+				2x^2+1=0\to c=\pm\sqrt{-\frac{1}{2}} \text{ NO}
+			\end{matrix}
+		\end{equation*}
+	\section{Teorema di Lagrange}
+	\begin{equation*}
+		f(x)=2x^2+x+1, \text{ } [-2;3]
+	\end{equation*}
+	\begin{equation*}
+		\begin{matrix}
+			2(-2)^2-2+1=8-1=7\\
+			2(3)^2+3+1=23 \text{ NO}
+		\end{matrix}
+	\end{equation*}
+questa funzione non rispetta i punti del teorema di Lagrange.
+\subsection{es.2}
+\begin{equation*}
+	f(x)=\sqrt{x}-x,\text{ [0,4]}
+\end{equation*}
+\begin{equation*}
+	\begin{matrix}
+		\sqrt{0}-0=0\\
+		\sqrt{4}-4=2
+	\end{matrix}
+\end{equation*}
+la funzione è continua
+\begin{equation*}
+	f^\prime=\frac{1}{2\sqrt{x}}-1
+\end{equation*}
+la funzione è derivabile
+\begin{equation*}
+	f^\prime(c)=\frac{f(b)-f(a)}{b-a}=\frac{-2-0}{4-0}=-\frac{1}{2}
+\end{equation*}
+\begin{equation*}
+	\boxed{\frac{1}{2\sqrt{x}}=-\frac{1}{2}}
+\end{equation*}
+
+
 
 \end{document}
