@@ -247,8 +247,61 @@
 					x>\ln 2
 				\end{matrix}
 			\end{equation*}
-		\item 
+		\item comportamento agli estremi
+		\begin{eqnarray}
+			\lim_{x\to -\infty}\frac{e^x-2}{x}=\frac{0-2}{-\infty}=0\\
+			\lim_{x\to 0}\frac{e^x-2}{x}=\frac{e^0-2}{0}=\infty\\
+			\lim_{x\to \infty}\frac{e^x-2}{x}=\frac{\infty-2}{\infty}=\frac{e^x}{1}
+		\end{eqnarray}
 	\end{itemize}
+	\section{es.3}
+		\begin{equation*}
+			f(x)=\frac{x-1}{x^2-x-6}
+		\end{equation*}
+		\begin{enumerate}
+			\item dominio $\forall x\in \mathds{R}\textbackslash{}\left\{-2,3\right\}$
+			\item simmetrie $f(x)\begin{cases}
+				\neq -f(x)\\
+				\neq f(-x)
+			\end{cases}$
+			\item Int. con gli assi
+				\begin{equation*}
+					asse x\begin{cases}
+						y=\frac{x-1}{x^2-x-6}\\
+						y=0
+					\end{cases}\begin{cases}
+						\frac{x-1}{x^2-x-6}=0\\
+						y=0
+					\end{cases}\begin{cases}
+						x=1\\
+						y=0
+					\end{cases}
+				\end{equation*}
+				\begin{equation*}
+					asse y\begin{cases}
+						y=\frac{x-1}{x^2-x-6}\\
+						x=0
+					\end{cases}\begin{cases}
+						y=\frac{0-1}{0^2-0-6}\\
+						x=0
+					\end{cases}\begin{cases}
+						y=\frac{1}{6}\\
+						x=0
+					\end{cases}
+				\end{equation*}
+			\item segni $-2<x<1\vee x>3$
+			\item comportamento agli estremi
+				\begin{equation}
+					\begin{matrix}
+						\lim_{x\to
+						-\infty}\frac{x-1}{x^2-x-6}=\frac{-\infty-1}{+\infty}=\frac{\infty}{\infty}
+						\to \lim_{x\to\infty}\frac{1}{2x-1}=\frac{1}{\infty}=0 \text{ Assintoto orizzontale}
+						\lim_{x\to -2}\frac{x-1}{x^2-x-6}=\frac{-3}{0}=\infty \text{ Assintoto verticale}\\
+						\lim_{x\to 3}
+						\frac{x-1}{x^2-x-6}=\frac{2}{9-3-6}=\infty \text{ Assintoto verticale}
+					\end{matrix}
+				\end{equation}
+		\end{enumerate}
 
 
 	\section{teorema di Roll}
@@ -326,7 +379,100 @@ la funzione è derivabile
 \begin{equation*}
 	\boxed{\frac{1}{2\sqrt{x}}=-\frac{1}{2}}
 \end{equation*}
-
+\section{Equazione differenziali}
+\begin{equation*}
+	y^\prime+2xy=x\sin(x^2)
+\end{equation*}
+\begin{equation*}
+	x^\prime=-2xy+x\sin(x^2)
+\end{equation*}
+\begin{equation*}
+	y^\prime=a(x)b(x)
+\end{equation*}
+\begin{equation*}
+	y^\prime=-2x+x\sin(x^2)
+\end{equation*}
+\begin{equation*}
+	y(x)=e^{-A(x)}\left(c+\int e^{A(x)}f(x)dx\right)
+\end{equation*}
+\begin{equation*}
+	\begin{matrix}
+		a(x)=2x;&A(x)=\int a(x)dx=x^2
+	\end{matrix}
+\end{equation*}
+\begin{equation}
+	y=e^{-x^2}\left\{c+\int e^{x^2}x\sin x^2\right\}
+\end{equation}
+\begin{equation}
+	\int e^{x^2}x\sin x^2dx=\left[x^2=t;dx=\frac{dt}{2}\right]=\frac{1}{2}\int e^x\sin tdt
+\end{equation}
+(con integrazione per parti standard)
+\begin{equation}
+	=\frac{1}{2}e^t(\sin t-\cos t)=\frac{1}{4}e^{x^2}(\sin(x^2)-\cos(x^2))
+\end{equation}
+\begin{equation*}
+	y=e^{e^t}\left\{c+\frac{1}{4}e^{x^2}(\sin x^2-\cos x^2)\right\}=ce^{-x^2}+\frac{1}{4}(\sin x^2-\cos x^2)
+\end{equation*}
+\section{integrali di secondo tipo}
+\begin{equation*}
+	y^{\prime\prime}-y^\prime+2y=3xe^{-x}
+\end{equation*}
+\begin{equation*}
+	\begin{matrix}
+		t=y^\prime \\
+		t^2-3t+2=3xe^{-x} \\
+		\Delta=b^2-4(a)(c)=9-4(1)(2)=1 \\
+		t_{1,2}=\frac{-b\pm\sqrt{\Delta}}{2a}=\frac{3\pm{1}}{2}=\begin{cases}
+			\frac{3+{1}}{2}=2 \\
+			\frac{3-{1}}{2}=1
+		\end{cases}\\
+		z(x)=c_1e^x+c_2e^{2x}\\
+		f(x)=3xe^{-x}\\
+		y(x)=(ax+b)e^{-x}\\
+		y^\prime=e^{-x}(-ax-b+a)\\
+		y^{\prime\prime}=e^{-x}(ax+b-2a)\\
+		e^{-x}[6ax+(6b-5a)]=3xe^{-x}\\
+		\begin{cases}
+			6a=3\\
+			6b-5a=0
+		\end{cases}&a=\frac{1}{2};&b=\frac{5}{12};\\
+		y(x)=\left(\frac{1}{2}x+\frac{5}{12}\right)e^{-x}\\
+		c_1e^x+c_2e^{2x}+\left(\frac{1}{2}x+\frac{5}{12}\right)e^{-x}
+	\end{matrix}
+\end{equation*}
+\section{integrali}
+\begin{equation*}
+	\begin{matrix}
+		\int\frac{3x-4}{x^2-6x+8}dx\\
+		\Delta=b^2-4(a)(c)=36-32=4\\
+		\int\frac{R(x)}{D(x)}=\frac{A}{x-x^1}dx+\int\frac{B}{x-x_2}dx=A\ln(\abs{x-x_2})+B(\abs{x+1})\\
+		\int\frac{3x-4}{x^2-6x+8}dx=\frac{3x-4}{(x-4)(x-2)}=\frac{A}{x-4}+\frac{B}{x-2}=\frac{A(x-2)+B(x-4)}{(x-4)(x-2)}\\
+		A(x-2)+B(x-4)-2A-4B\Leftrightarrow\begin{cases}
+			(A+B)x=3 \\
+			-2A-4B=-4
+		\end{cases}\Rightarrow\begin{cases}
+			A=-B+3\\
+			-2(-B+3)-4B=-4
+		\end{cases}\\\Rightarrow\begin{cases}
+			A=-B+3\\
+			2B-6-4B=-4
+		\end{cases}\Rightarrow\begin{cases}
+			A=-B+3\\
+			-2B=2
+		\end{cases}\Rightarrow\begin{cases}
+			A=-B+3\\
+			\frac{-2B}{2}=\frac{2}{2}
+		\end{cases}\Rightarrow\begin{cases}
+			A=-B+3\\
+			B=-1
+		\end{cases}\\
+		\Rightarrow\begin{cases}
+			A=1+3\to 4\\
+			B=-1
+		\end{cases}\\
+		\frac{3x-4}{x^2-6x+8}dx=\frac{4}{x-4}-\frac{1}{x-2}=\int\left[\frac{4}{x-4}\right]dx=4\log\abs{x-4}-\log\abs{x-2}+c
+	\end{matrix}
+\end{equation*}
 
 
 \end{document}

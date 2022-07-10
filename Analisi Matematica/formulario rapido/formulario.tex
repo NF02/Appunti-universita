@@ -31,7 +31,7 @@
 \usepackage{amssymb}
 \usepackage{mathrsfs}
 \usepackage{textcomp}
-
+\usepackage{dsfont}
 \usepackage{listings}
 \usepackage{color}
 
@@ -221,7 +221,164 @@ Casi:
 \begin{equation}
 	f(x_0)
 \end{equation}
+\section{Taylor-Mc Laurin}
+\begin{enumerate}
+\item Esponenziali
+\begin{equation*}
+	e^x=1+x+\frac{x^2}{2}+\frac{x^3}{24}+\frac{x^4}{120}+\dots+\frac{x^n}{n!}+o(x^n) \forall x\in \mathds{R}
+\end{equation*}
+\item Logaritmi
+\begin{equation*}
+	\ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\frac{x^5}{5}+\dots+\frac{(-1)^{n+1}}{n}x^n+o(x^2)
+\end{equation*}
+\item Binomio 
+\begin{equation*}
+	(1+x)^\alpha=1+\alpha x+\frac{\alpha(\alpha-1)}{2}x^2+\frac{\alpha(\alpha-1)(\alpha-2)}{6}x^3+\dots+\begin{pmatrix}\alpha\\ n\end{pmatrix}x^n+o(x^n)
+\end{equation*}
+\item radicali pari
+\begin{equation*}
+	\sqrt{1+x}=\left(1+x\right)^\frac{1}{2}=1+\frac{x}{2}-\frac{x^2}{8}+\frac{x^3}{16}-\frac{5}{128}x^4+\frac{7}{256}x^5-\frac{21}{1024}x^6+o(x^6)
+\end{equation*}
+\item radicali dispari
+\begin{equation*}
+	\sqrt[3]{1+x}=(1+x)^\frac{1}{3}=1+\frac{x}{3}-\frac{x^2}{9}+\frac{5}{81}x^3+\frac{10}{243}x^4+\frac{22}{729}x^5-\frac{154}{6561}x^6+o(x^6)
+\end{equation*}
+\item funzioni goniometriche
+\begin{eqnarray*}
+	\sin(x)=x-\frac{x^3}{6}+\frac{x^5}{120}-\frac{x^7}{40320}-\dots+\frac{(-1)^nx^{2n}}{(2n)!}+o(x^{2n})\\
+	\cos(x)=1-\frac{x^{2}}{2}+\frac{x^4}{24}-\frac{x^4}{720}+\frac{x^8}{40320}-\dots+\frac{(-1)^nx^{2n}}{(2n)!}+o(x^{2n})\\
+	\tan x=x+\frac{x^3}{3}+\frac{x^3}{3}+\frac{2}{15}x^5+o(x^6)\\
+	\arcsin(x)=x+\frac{x^3}{6}+\frac{3}{40}x^5+\frac{5}{112}x^7+\frac{35}{1152}x^9+o(x^9)\\
+	\arctan(x)=x-\frac{x^3}{6}+\frac{x^5}{5}+\frac{x^7}{7}+\frac{x^9}{9}+o(x^9)
+\end{eqnarray*}
+\end{enumerate}
+\section{Integrali}
+\begin{enumerate}
+\item Situazione base
+\begin{equation*}
+	\int f^\prime (x)dx=f(x)+c
+\end{equation*}
+\begin{equation*}
+	\int f^\prime(g(x))*g^\prime(x)dx=f(g(x))+c
+\end{equation*}
+\item Integrale di dx 
+\begin{equation*}
+	\int a*dx=ax+c
+\end{equation*}
+\item Integrale di $x^n$ 
+\begin{equation*}
+	\int x^n dx=\frac{x^{n+1}}{n+1}+c
+\end{equation*}
+Integrale notevole in forma generale
+\begin{equation*}
+	\int [f(x)]^nf^\prime (x)dx=\frac{[f(x)]^{n+1}}{n+1}+c
+\end{equation*}
+\item Integrale di $\frac{1}{x}$
+\begin{equation*}
+	\int \frac{1}{x}dx=\ln (\abs x)+c
+\end{equation*}
+\begin{equation*}
+	\int \frac{f^\prime(x)}{f(x)}dx=\ln(\abs{f(x)})+c
+\end{equation*}
+\item Integrale di $\sin(x)$
+\begin{equation*}
+	\int \sin(x)dx=-\cos (x)+c
+\end{equation*}
+\begin{equation*}
+	\int \sin(f(x))*f^\prime(x)dx=-\cos(f(x))+c
+\end{equation*}
+\item Integrale di $\cos x$
+\begin{equation*}
+	\int \cos(x)dx=\sin(x)+c
+\end{equation*}
+\begin{equation*}
+	\int \cos (f(x))*f^\prime dx=\sin(f(x))+c
+\end{equation*}
+\item Integrale di $\frac{1}{\cos^2 x}$
+\begin{equation*}
+	\int \frac{1}{\cos^2 x}dx=\tan(x)+c
+\end{equation*}
+\begin{equation*}
+	\int \frac{1}{\cos^2 x}*f^\prime dx=\tan (f(x))+c
+\end{equation*}
+\item integrale di $e^x$
+\begin{equation*}
+	\int e^xdx=\frac{a^x}{\ln(x)}+c
+\end{equation*}
+\begin{equation*}
+	\int e^{f(x)}=e^{f(x)}+c
+\end{equation*}
 
+\item Integrale di $a^x$
+\begin{equation*}
+	\int a^x dx=\frac{a^x}{\ln(x)}+c
+\end{equation*}
+\begin{equation*}
+	\int a^{f(x)}*f^\prime (x) dx=\frac{a^{f(x)}}{\ln(a)}+c
+\end{equation*}
+\item Integrale di $\frac{1}{1+x^2}$
+\begin{equation*}
+	\int \frac{1}{1+x^2}dx=\arctan(x)+c
+\end{equation*}
+\begin{equation*}
+	\int \frac{1}{1+[f(x)]^2}*f^\prime(x)dx=\arcsin(f(x))+c
+\end{equation*}
+\item Integrale di $\frac{1}{\sqrt{1-x^2}}$
+\begin{equation*}
+	\int\frac{1}{\sqrt{1-x^2}}=\arcsin(x)+c
+\end{equation*}
+\begin{equation*}
+	\int\frac{1}{\sqrt{1-[f(x)]^2}}*f^\prime(x)dx=\arcsin(f(x))+c
+\end{equation*}
+\item Integrale di $\frac{-1}{\sqrt{1-x^2}}$
+\begin{equation*}
+	\int\frac{-1}{\sqrt{1-x^2}}=\arccos(x)+c
+\end{equation*}
+\begin{equation*}
+	\int\frac{-1}{\sqrt{1-[f(x)]^2}}*f^\prime(x)dx=\arccos(f(x))+c
+\end{equation*}
+\end{enumerate}
+\section{Integrazione delle funzioni razionali fratte}
+\subsection{Caso generico}
+Consideriamo l'integrale (indefinito o definito)
+\begin{equation*}
+	\int\frac{N(x)}{D(x)}dx
+\end{equation*}
+ove N(x), D(x) \underline{polinomi a coefficienti reali.}\\
+\underline{Supponiamo grado(N)$\geq$ grado(D).}\\
+Dividiamo $N(x)$ per $D(x)$, cioè scriviamo
+\begin{equation*}
+	\int\frac{N(x)}{D(x)}dx=Q(x)+\frac{R(x)}{D(x)}, \text{con $Q(x)$ polinomio quoziente,}
+\end{equation*}
+$R(x)$ polinomio resto, grado(R)<grado (D).\\
+Allora
+\begin{equation*}
+\int \frac{N(x)}{D(x)}dx=\int Q(x)dx+\int \frac{R(x)}{D(x)}dx
+\end{equation*}
+e grado (R)<grado (D)!
+\paragraph{Tre casi:}
+\begin{itemize}
+\item grado(D)=1
+\item grado(D)=2
+\item grado(D)>2
+\end{itemize}
+\subsection{Caso I: grado(D)=1}
+SI ha 
+\begin{eqnarray*}
+	grado(D)=1& \Rightarrow & D(x)=ax+b, a\neq 0\\
+	grado(R)<grado(D)&\Rightarrow & grado(R)=0\\
+	&\Rightarrow&R(x)=k.
+\end{eqnarray*}
+Quindi
+\begin{eqnarray*}
+	\int \frac{R(x)}{D(x)}dx&=\int \frac{k}{ax+b}dx\\
+					 &=\frac{k}{a}\int \frac{a}{ax+b}dx\\
+					 &=\frac{k}{a}\ln\abs{ax+b}+c
+\end{eqnarray*}
+\section{equazioni differenziali}
+\begin{equation*}
+	y(x)=e^{A(x)}\left(y_0+\int^x_{x_0}e^{-A(t)}b(t)dt\right)
+\end{equation*}
 
 
 \end{document}
