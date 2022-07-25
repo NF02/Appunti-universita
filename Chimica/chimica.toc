@@ -23,6 +23,7 @@
 \contentsline {subsubsection}{<<Death-spiral of the electron>>}{16}{subsubsection*.9}%
 \contentsline {subsection}{\numberline {3.3.2}Onda}{16}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Onde Elettromagnetiche}{17}{subsection.3.3.3}%
+\contentsline {subsubsection}{Velocità di una radiazione elettromagnetica}{17}{subsubsection*.11}%
 \contentsline {chapter}{\numberline {4}Proprietà periodiche}{19}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Soluzioni}{21}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Legame chimico}{23}{chapter.6}%
@@ -33,5 +34,5 @@
 \contentsline {subsection}{\numberline {6.1.4}Elettronegatività di Pauling}{24}{subsection.6.1.4}%
 \contentsline {subsection}{\numberline {6.1.5}Momento dipolare e polarità Molecole biatomiche}{24}{subsection.6.1.5}%
 \contentsline {section}{\numberline {6.2}Momento dipolare}{24}{section.6.2}%
-\contentsline {paragraph}{\underline {Momento dipolare e polarità} in molecole poliatomiche}{24}{paragraph*.12}%
+\contentsline {paragraph}{\underline {Momento dipolare e polarità} in molecole poliatomiche}{24}{paragraph*.13}%
 \contentsline {subsection}{\numberline {6.2.1}Momento dipolare e polarità in $CO_2$ e $H_2O$}{25}{subsection.6.2.1}%
