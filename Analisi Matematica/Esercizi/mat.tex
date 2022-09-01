@@ -475,6 +475,80 @@ la funzione è derivabile
 		\frac{3x-4}{x^2-6x+8}dx=\frac{4}{x-4}-\frac{1}{x-2}=\int\left[\frac{4}{x-4}\right]dx=4\log\abs{x-4}-\log\abs{x-2}+c
 	\end{matrix}
 \end{equation*}
+\subsubsection{es.2}
+\begin{equation*}
+	\begin{matrix}
+		\int\frac{dx}{9x^2-25}=\frac{dx}{(3x-5)(3x+5)}\\
+		\int\frac{R(x)}{D(x)}=\int \frac{A}{x-x_1}dx+\int\frac{B}{x-x_2}dx =
+		\frac{A(x-x_2)+B(x-x_1)}{(x-x_1)(x-x_2)}=
+		A\ln\abs{x-x_2}+B\ln\abs{x+x_1}\\
+		A(3x-5)+B(3x+5)\Rightarrow \begin{cases}
+			(3A+3B)x=0\\
+			-A5+5B=1
+		\end{cases}\Rightarrow \begin{cases}
+			3A+3B=0\\
+			-5A+5B=1
+		\end{cases}\Rightarrow \begin{cases}
+			\frac{\not{3}A}{\not{3}}=\frac{-\not{3}B}{\not{3}}\\
+			-5A+5B=1
+		\end{cases}\\
+		\begin{cases}
+			A=-B\\
+			+5B+5B=1
+		\end{cases}
+		\begin{cases}
+			A=-B\\
+			10B=1
+		\end{cases}\to \begin{cases}
+			A=-B\\
+			B=\frac{1}{10}
+		\end{cases}
+		\begin{cases}
+			A=-\frac{1}{10}\\
+			B=\frac{1}{10}
+		\end{cases}\\
+		\int
+		\frac{-\frac{1}{10}}{3x+5}+\int\frac{\frac{1}{10}}{3x-5}=-\frac{1}{10}\int\frac{1}{3x+5}+\frac{1}{10}\int\frac{1}{3x-5}=-\frac{1}{10}\ln(3x+5)
+		+\frac{1}{10}\ln(3x-5)
+	\end{matrix}
+\end{equation*}
+\subsubsection{es.3}
+\begin{equation*}
+	\begin{matrix}
+		\int\frac{dx}{x^2-x-6}\\
+		\int\frac{dx}{(x-3)(x+2)}\\
+		\int\frac{R(x)}{D(x)}=\frac{A}{x+x_1}dx+\int\frac{B}{x+x_2}dx=A\ln(\abs{x-x_2})+B(\abs{x+1})\\
+		\frac{A}{x+3}+\frac{B}{x-2}=\frac{A(x+2)+B(x-3)}{(x-3)(x+2)}\\
+		A(x+2)+B(x-3) \to 
+		\begin{cases}
+			(A+B)x=0\\
+			2A-3B=1
+		\end{cases}\to \begin{cases}
+			A=-B\\
+			2A-3B=1
+		\end{cases}\to \begin{cases}
+			A=-B\\
+			-2B-3B=1
+		\end{cases}\\
+		\begin{cases}
+			A=-B\\
+			-5B=1
+		\end{cases}\to
+		\begin{cases}
+			A=-B\\
+			-5B=1
+		\end{cases} \to
+		\begin{cases}
+			A=-B\\
+			\frac{-\not{5}B}{\not{5}}=-\frac{1}{5}
+		\end{cases} \to
+		\begin{cases}
+			A=\frac{1}{5}\\
+			B=-\frac{1}{5}
+		\end{cases}
+	\end{matrix}
+\end{equation*}
+
 \subsection{differenziali}
 \begin{equation*}
 	\begin{matrix}
@@ -541,5 +615,57 @@ la funzione è derivabile
 		y(x)=(8x+3)e^{-2x}
 	\end{matrix}
 \end{equation*}
+\subsection{es.3}
+\begin{equation*}
+	\begin{matrix}
+		y^{\prime\prime}-5y^\prime+6y=0\\
+		\lambda^2-5\lambda+6=0\\
+		\Delta=(-5)^2-4(1)(6)=1\\
+		\lambda_{1,2}=\frac{-b\pm\sqrt{1}}{2a}=\begin{cases}
+			\frac{5-1}{2}=2\\
+			\frac{5+1}{2}=3
+		\end{cases}\\
+		y(0)=c_1*e^{2x}+c_2*e^{3x}\\
+		c_1\text{ e } c_2 \text{ fanno parte dei reali}
+	\end{matrix}
+\end{equation*}
+\begin{equation*}
+	\begin{matrix}
+		\begin{cases}
+			y^{\prime\prime}-6y^{\prime}+9y=0\\
+			y(0)=1\\
+			y^\prime(0)=1
+		\end{cases}\\
+		\lambda^2-6\lambda+9=0\\
+		\Delta=(-6)^2-4(1)(9)=36-36=0\\
+		\lambda_{1,2}=\frac{6\pm\sqrt{0}}{2a}=\frac{6-0}{2}=3\\
+		y_0(x)=c_1e^{\lambda_1x}+c_2xe^{\lambda_2x} & c_1,c_2\in \mathds{R}\\
+		y_0^\prime(x)=3xc_1e^{3x}+c_2(e^{3x}+x3e^{3x})\\
+		=3xc_1e^{3x}+c_2e^{3x}+3xc_2e^{3x}\\
+		\text{sostituire con } \begin{cases}
+			y_0(0)=1\\
+			y_0^\prime(0)=1
+		\end{cases}
+	\end{matrix}
+\end{equation*}
+\subsection{es.3}
+\begin{equation*}
+	\begin{matrix}
+		\begin{cases}
+			y^{\prime\prime}+4y^\prime+4y=0\\
+			y(0)=3; y(0)=2
+		\end{cases}\\
+		\lambda^2+4\lambda+4=0\\
+		\Delta=4^2-4(1)(4)=0\\
+		\lambda_{1,2}=\frac{-4\pm\sqrt{0}}{2}=\frac{-4}{2}=-2\\
+		y_0(x)=c_1e^{\lambda_1x}+c_2xe^{\lambda_2x} =c_1e^{-2x}+c_2xe^{-2x}\\
+		y_0^\prime(x)=-2c_1e^{-2x}+c_2(e^{-2x}-2xe^{-2x})
+		c_1=3;c_2=2\\
+		y(x)=3e^{-2x}+2e^{-2x}-xe^{-2x}\\
+		y(x)=5e^{-2x}-xe^{-2x}
+	\end{matrix}
+\end{equation*}
+
+
 
 \end{document}
