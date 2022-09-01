@@ -445,20 +445,76 @@ In questo paragrafo dimostreremo finalmente che il determinante di una matrice $
   \begin{equation*}
 	\det(A^\prime)=\det\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}=\det(A)+\begin{pmatrix} 1 & 2 \\ 1 & 3 \end{pmatrix}
   \end{equation*}
-  ovvero $-2=-3+1$.\\
-  \fbox{
- 	\addtolength{\linewidth}{-2\fboxsep}%
- 	\addtolength{\linewidth}{-2\fboxrule}%
-	\begin{minipage}{\linewidth}
-          Se $R_i=\begin{pmatrix}a_{i1} & a_{i2} & \dots & a_{in}\end{pmatrix}$ allora la riga i-esima della
-          matrice\\ $A^\prime$ è $R_i+v+\begin{pmatrix}a_{i1}+v_{i1} & a_{i2}+v_{i2} & \dots & a_{in}+v_{in}\end{pmatrix}$
-        In base alla definizione (<++>) di determinante, si ha $\det(A^\prime)=\sum s(p)a_{ip(1)}\dots (a_{ip(i)}+v_{ip(i)})\dots a_{np(n)}=\sum s(p)a_{ip(1)}\dots a_{ip(i)}\dots a_{np(n)}+\sum s(p)a_{ip(1)}\dots v_{ip(i)}\dots a_{np(n)}$ ovvero $\det(A)+\det\begin{pmatrix}R_1\\ \dots\\ v\\ \dots\\ R_n\end{pmatrix}$, come volevamo.
-        \end{minipage}
-      }
+  ovvero $-2=-3+1$.
+		\begin{proof}
+			Se $R_i=\begin{pmatrix}a_{i1} & a_{i2} & \dots & a_{in}\end{pmatrix}$
+			allora la riga i-esima della matrice\\
+			$A^\prime$ è $R_i+v+\begin{pmatrix}a_{i1}+v_{i1} & a_{i2}+v_{i2} & 
+			\dots & a_{in}+v_{in}\end{pmatrix}$
+			In base alla definizione (<++>) di determinante, si ha
+			$\det(A^\prime)=\sum s(p)a_{ip(1)}\dots (a_{ip(i)}+v_{ip(i)})\dots a
+			_{np(n)}=\sum s(p)a_{ip(1)}\dots a_{ip(i)}\dots a_{np(n)}+\sum s(p)a
+			_{ip(1)}\dots v_{ip(i)}\dots a_{np(n)}$ ovvero 
+			$\det(A)+\det\begin{pmatrix}R_1\\ \dots\\ v\\ \dots\\ 
+			R_n\end{pmatrix}$, come volevamo.
+		\end{proof}
     \item se $A^\prime$ si ottiene da $A$ scambiando tra loro due righe allora $\det(A^\prime)=-\det(A)$\\
-      Ad esempio, se $A=\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ e $A^{\prime}=\begin{pmatrix} 4 & 3 \\ 1 & 2 \end{pmatrix}$ è la matrice ottenuta da $A$ scambiando tra loro la prima e la seconda riga, ho $\det(A)=1*4-2*3=-2$ e $\det(A^\prime)=3*2-4*1=+2$.
-      
-
+		Ad esempio, se $A=\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ e
+			  $A^{\prime}=\begin{pmatrix} 4 & 3 \\ 1 & 2 \end{pmatrix}$ è la
+			  matrice ottenuta da $A$ scambiando tra loro la prima e la seconda
+			  riga, ho $\det(A)=1*4-2*3=-2$ e $\det(A^\prime)=3*2-4*1=+2$.
+		\begin{proof}
+			Sia $A^\prime$ la matrice ottenuta da $A$ scambiando la riga $R_i$
+			con la $R_j$: quindi per ogni $k$ si ha $a^\prime_{ik}=a_{jk}$ e
+			$a^\prime_{jk}=a_{ik}$, mentre tutte le altre sono uguali a quelle
+			di $A$.\\
+			Quindi, in base alla (3.1), si ha
+			\begin{equation}
+				\det(A^\prime) = \sum_{p\in Sn} s(p) a^\prime_{1p(1)}\dots
+				a^\prime_{ip(i)}\dots a^\prime_{jp(j)}\dots a^\prime_{np(n)} =
+				\sum_{p\in Sn} s(p) a^\prime_{1p(1)}\dots
+				a^\prime_{jp(j)}\dots a^\prime_{ip(i)}\dots a^\prime_{np(n)}.
+			\end{equation}
+			(in pratica, l'unica differenza tra la (3.14) e l'espressione del
+			determinante di $A$ è che in ogni addendo le entrate ``centrali''
+			habbi gli indici di riga $i$ e $j$ scambiati tra logo).\\
+			Ora, allo scopo di dimostrare il risultato, riscriviamo la (3.14)
+			come segue: consideriamo la trasposizione $\mathcal{T}\in S_n$ che
+			scambia $i$ con $j$ e lascia invariati tutti gli altri elementi:
+			quindi $j=\mathcal{T}(i), \text{ } i=\mathcal{T}(j)$, e per tutti
+			gli altri indici $k =\mathcal{T}(k)$.\\
+			Allora possiamo scrivere
+			\begin{equation}
+				\det(A^\prime) = \sum_{p\in Sn} s(p) a_{1\mathcal{T}(1)}\dots
+				a^\prime_{jp\mathcal{T}(j)}\dots a^\prime_{ip\mathcal{T}(i)}
+				\dots a^\prime_{np\mathcal{T}(n)} 
+			\end{equation}
+			Ora, per un qualunque indice $k$, si ha che $p(\mathcal{T}(k))$ è
+			il valore associato a $k$ dalla permutazione $p \mathcal{T}$ che si
+			ottiene componendo $p$ con $\mathcal{T}$ (ovvero applicando, da
+			destra, prima $\mathcal{T}$ e poi $p$). Tale permutazione è tale
+			dispari, e di un numero pari di trasposizione (una in più di $p$),
+			e analogamente se dispari di trasposizione, e allora
+			$p\mathcal{T}$, sarà composta da un numero dispari di trasposizione
+			(una in più di $p$), e analogamente se $p$ è dispari vuol dire che
+			si scrive come composizione di un numero di strasposizioni.
+			Riassumendo, la (3.15), scambiando anche di ordine i due fattori
+			centrali $a_{j p\mathcal{T}(j)}$ e $a_{ip\mathcal{T}(i)}$ in ogni
+			addendo (il prodotto gode della proprietà commutativa) può essere
+			scritta nel modo seguente
+			\begin{equation}
+				\det(A^\prime) = -\sum_{p\in S_n} s(p\mathcal{T})
+				a_{1p\mathcal{T}(1)} \dots a_{i p\mathcal{T}(i)} \dots a_{j
+				p\mathcal{T}(j)} \dots a_{n p\mathcal{T}(n)}
+			\end{equation}
+			Ora, quest'ultima espressione, con il segno meno davanti, è uguale
+			a quella del determinante di $A$ a parte che in essa compare
+			$p\mathcal{T}$ invece che $p$. Ma in realtà questo non cambia
+			nulla, in quanto facciamo variare $p$ tra tutti le permutazioni
+			$p_1,p_2,\dots,p_{n!}$ di $n$ elementi, $p_1\mathcal{T},
+			p_2\mathcal{T},\dots,p_{n!}\mathcal{T}$ sono ancora {\em tutte} le
+			permutazioni: per non esserlo, dovrebbe infatti succedere che 
+		\end{proof}
 \end{enumerate}
 
 \printindex
