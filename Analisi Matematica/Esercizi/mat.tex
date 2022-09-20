@@ -548,6 +548,37 @@ la funzione è derivabile
 		\end{cases}
 	\end{matrix}
 \end{equation*}
+\subsubsection{es. 4}
+\begin{equation*}
+	\begin{matrix}
+		\int \frac{2x-1}{x^2-5x+6}dx\\
+		\frac{2x-1}{(x-2)(x-3)}\\
+		\int
+		\frac{R(x)}{D(x)}=\int\frac{A}{x+x_1}+\int\frac{B}{x+x_2}=\frac{A(x+x_2)+B(x+x_1)}{(x+x_1)(x+x_2)}=A\ln\abs{x+x_2}+B\ln\abs{x+x_1}\\
+		A(x-3)+B(x-2)\to \begin{cases}
+			(A+B)x=2 \\
+			-3A-2B=1
+		\end{cases}\to \begin{cases}
+			A=-B+2\\
+			-3(-B+2)-2B=1
+		\end{cases} \to \begin{cases}
+			A=-B+2\\
+			3B-6-2B=1
+		\end{cases}\\
+		\begin{cases}
+			A=-B+2 \\
+			B=7
+		\end{cases} \to \begin{cases}
+			A=-7+2\\
+			B=7
+		\end{cases} \to \begin{cases}
+			A=-5\\
+			B=7
+		\end{cases}\\
+		\int\frac{-5}{x-2}+\int \frac{7}{x-3}=-5\ln\abs{x-2}+7\ln\abs{x-3}
+	\end{matrix}
+\end{equation*}
+
 
 \subsection{differenziali}
 \begin{equation*}
@@ -648,7 +679,7 @@ la funzione è derivabile
 		\end{cases}
 	\end{matrix}
 \end{equation*}
-\subsection{es.3}
+\subsection{es.4}
 \begin{equation*}
 	\begin{matrix}
 		\begin{cases}
@@ -665,7 +696,77 @@ la funzione è derivabile
 		y(x)=5e^{-2x}-xe^{-2x}
 	\end{matrix}
 \end{equation*}
-
+\clearpage
+\subsection{es.5}
+\begin{equation*}
+	\begin{matrix}
+		\begin{cases}
+			y^{\prime\prime}-5y^\prime+6y=0\\
+			y(0)=0\\
+			y^\prime(0)=1
+		\end{cases}\\
+		\lambda^2-5\lambda+6=0\\
+		\Delta=-5^2-4(1)(6)=25-24=1\\
+		\lambda_{1,2}=\frac{5\pm\sqrt{1}}{2a}=\begin{cases}
+			\frac{6}{2}=3\\
+			\frac{4}{2}=2
+		\end{cases}\\
+		y_0(x)=c_1e^{\lambda_1x} +
+		c_2e^{\lambda_2x} =  c_1e^{3x} +
+		c_2e^{2x} \\
+		y_0^\prime(x)=3xc_1e^{3x}+c_2(e^{2x}+2e^{2x})\\
+		z_1(x)=e^{3x}; \text{ } z_2(x)=e^{2x}\\
+		\begin{cases}
+			y(0)=c_1(1)+c_2(1)\\
+			y^\prime(0)=3(0)c_1e^{3(0)}+c_2(e^{2(0)}+2e^{2(0)})
+		\end{cases} \to \begin{cases}
+			y(0)=c_1(1)+c_2(1)\\
+			y^\prime(0)=c_2(3)=1 \to c_2 = \frac{1}{3}
+		\end{cases}\\\to \begin{cases}
+			y(0)=c_1(1)+c_2(1) \to c_1=-c_2 \to c_1=-\frac{1}{3}\\
+			c_2 = \frac{1}{3}
+		\end{cases}\\
+		y(x)= -\frac{1}{3}e^{3x} + \frac{1}{3}e^{2x}
+	\end{matrix}
+\end{equation*}
+\subsubsection{es.6}
+\begin{equation*}
+	\begin{matrix}
+		\begin{cases}
+			y^{\prime\prime}-2y-8y=0\\
+			y(1)=1,\text{ } y^\prime(1)=0
+		\end{cases}\\
+		\lambda^2-2\lambda-8\\
+		\Delta=b^2-4(a)(c)=4+32=36\\
+		x_{1,2}=\frac{2\pm\sqrt{36}}{2}=\begin{cases}
+			\frac{2+6}{2}=4\\
+			\frac{2-6}{2}=-2
+		\end{cases}\\
+		y_0(x)=c_1e^{\lambda_1x} + c_2e^{\lambda_2x} = c_1e^{4x} + c_2e^{-2x}\\
+		y^\prime_{0}=4xc_1e^{4x}+c_2\left(e^{-2x}-2e^{-2x}\right)
+		z_1(x)=e^{4x}; z_2(x)=e^{-2x}\\
+		\begin{cases}
+			y(1)=c_1e^4+c_2e^{-2}=1\\
+			y^\prime(1)=4c_1e^4+c_2(e^{-2}-2e^{-2})=0
+		\end{cases}\\
+		\text{se }x=0 \text{ $e^x$ = 1}\\
+		\begin{cases}
+			y(1)=c_1=-c_2\\
+			y^\prime(1)=4(-c_2)+c_2(e^{-2}-2e^{-2})=0
+		\end{cases}\to
+		\begin{cases}
+			y(1)=c_1=-c_2\\
+			y^\prime(1)=4(-c_2)+c_2=0
+		\end{cases}\to \begin{cases}
+			y(1)=c_1=-c_2\\
+			y^\prime(1)=-3c_2=0
+		\end{cases}\to \begin{cases}
+			y(1)=c_1=3c_2\\
+			y^\prime(1)=-3c_2=0
+		\end{cases}\\
+		y(x)= 3c_2e^{3x}  - 3c_2 e^{2x}
+	\end{matrix}
+\end{equation*}
 
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  13 MAY 2022 12:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  20 SEP 2022 13:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1095,6 +1095,9 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip101
 \dth@everypar=\toks53
 )
+\c@defi=\count396
+\c@note=\count397
+
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryangles.code.tex
 File: tikzlibraryangles.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -1108,17 +1111,17 @@ Package: siunitx 2022-02-15 v3.0.49 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen377
 \l__siunitx_angle_marker_box=\box83
 \l__siunitx_angle_unit_box=\box84
-\l__siunitx_compound_count_int=\count396
+\l__siunitx_compound_count_int=\count398
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
  (CN)
 )
-\l__siunitx_number_exponent_fixed_int=\count397
-\l__siunitx_number_min_decimal_int=\count398
-\l__siunitx_number_min_integer_int=\count399
-\l__siunitx_number_round_precision_int=\count400
-\l__siunitx_number_group_minimum_int=\count401
+\l__siunitx_number_exponent_fixed_int=\count399
+\l__siunitx_number_min_decimal_int=\count400
+\l__siunitx_number_min_integer_int=\count401
+\l__siunitx_number_round_precision_int=\count402
+\l__siunitx_number_group_minimum_int=\count403
 \l__siunitx_table_tmp_box=\box85
 \l__siunitx_table_tmp_dim=\dimen378
 \l__siunitx_table_column_width_dim=\dimen379
@@ -1128,9 +1131,9 @@ Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
 \l__siunitx_table_after_box=\box89
 \l__siunitx_table_before_dim=\dimen380
 \l__siunitx_table_carry_dim=\dimen381
-\l__siunitx_unit_tmp_int=\count402
-\l__siunitx_unit_position_int=\count403
-\l__siunitx_unit_total_int=\count404
+\l__siunitx_unit_tmp_int=\count404
+\l__siunitx_unit_position_int=\count405
+\l__siunitx_unit_total_int=\count406
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
@@ -1139,16 +1142,16 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/floatflt/floatflt.sty
 Package: floatflt 1997/07/16 v. 1.31
-\c@OptionTest=\count405
+\c@OptionTest=\count407
 \figbox=\box90
 \tabbox=\box91
 \pagebox=\box92
-\ffigcount=\count406
-\ftabcount=\count407
-\fftest=\count408
-\hangcount=\count409
-\nosuccesstryfig=\count410
-\nosuccesstrytab=\count411
+\ffigcount=\count408
+\ftabcount=\count409
+\fftest=\count410
+\hangcount=\count411
+\nosuccesstryfig=\count412
+\nosuccesstrytab=\count413
 \figgutter=\dimen382
 \tabgutter=\dimen383
 \htdone=\dimen384
@@ -1166,14 +1169,14 @@ Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
-\c@tracingmulticols=\count412
+\c@tracingmulticols=\count414
 \mult@box=\box93
 \multicol@leftmargin=\dimen392
-\c@unbalance=\count413
-\c@collectmore=\count414
-\doublecol@number=\count415
-\multicoltolerance=\count416
-\multicolpretolerance=\count417
+\c@unbalance=\count415
+\c@collectmore=\count416
+\doublecol@number=\count417
+\multicoltolerance=\count418
+\multicolpretolerance=\count419
 \full@width=\dimen393
 \page@free=\dimen394
 \premulticols=\dimen395
@@ -1223,44 +1226,44 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \@tempa=\box133
 \@tempa=\box134
 \@tempa=\box135
-\c@minrows=\count418
-\c@columnbadness=\count419
-\c@finalcolumnbadness=\count420
+\c@minrows=\count420
+\c@columnbadness=\count421
+\c@finalcolumnbadness=\count422
 \last@try=\dimen398
 \multicolovershoot=\dimen399
 \multicolundershoot=\dimen400
 \mult@nat@firstbox=\box136
 \colbreak@box=\box137
-\mc@col@check@num=\count421
+\mc@col@check@num=\count423
 ) (./fisica.aux)
 \openout1 = `fisica.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 97.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 97
-.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 102.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 10
+2.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 97.
-Package hyperref Info: Link coloring OFF on input line 97.
+LaTeX Font Info:    ... okay on input line 102.
+Package hyperref Info: Link coloring OFF on input line 102.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1272,11 +1275,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count422
+\c@section@level=\count424
 )
-LaTeX Info: Redefining \ref on input line 97.
-LaTeX Info: Redefining \pageref on input line 97.
-LaTeX Info: Redefining \nameref on input line 97.
+LaTeX Info: Redefining \ref on input line 102.
+LaTeX Info: Redefining \pageref on input line 102.
+LaTeX Info: Redefining \nameref on input line 102.
  (./fisica.out) (./fisica.out)
 \@outlinefile=\write4
 \openout4 = `fisica.out'.
@@ -1318,16 +1321,16 @@ LaTeX Info: Redefining \nameref on input line 97.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count423
+\scratchcounter=\count425
 \scratchdimen=\dimen401
 \scratchbox=\box138
-\nofMPsegments=\count424
-\nofMParguments=\count425
+\nofMPsegments=\count426
+\nofMParguments=\count427
 \everyMPshowfont=\toks55
-\MPscratchCnt=\count426
+\MPscratchCnt=\count428
 \MPscratchDim=\dimen402
-\MPnumerator=\count427
-\makeMPintoPDFobject=\count428
+\MPnumerator=\count429
+\makeMPintoPDFobject=\count430
 \everyMPtoPDFconversion=\toks56
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1338,30 +1341,30 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \it@ocap on input line 97.
-LaTeX Info: Redefining \it@ccap on input line 97.
+LaTeX Info: Redefining \it@ocap on input line 102.
+LaTeX Info: Redefining \it@ccap on input line 102.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count429
+\c@lstlisting=\count431
 Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 97.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 99.
-
+alian.trsl' found. on input line 102.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 104
+.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 99.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 104
+.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 99
-.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
+4.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1411,7 +1414,7 @@ Underfull \vbox (badness 7722) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./img/esercizio 5 im1.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<img/esercizio 5 im1.pdf, id=532, 1521.685pt x 994.71625pt>
+<img/esercizio 5 im1.pdf, id=547, 1521.685pt x 994.71625pt>
 File: img/esercizio 5 im1.pdf Graphic file (type pdf)
 <use img/esercizio 5 im1.pdf>
 Package pdftex.def Info: img/esercizio 5 im1.pdf  used on input line 252.
@@ -1464,7 +1467,7 @@ Package tasks Warning: You've placed
 (tasks)                before the first \task  on line 49. I will throw it
 (tasks)                away and ignore it for the rest of the list.
 
-\c@pcariche=\count430
+\c@pcariche=\count432
 [32]
 
 LaTeX Warning: Reference `' on page 33 undefined on input line 103.
@@ -1492,7 +1495,7 @@ Package tasks Warning: You've placed
 [35
 
 ]
-<img/linee elettriche repulsione.png, id=657, 803.0pt x 571.13374pt>
+<img/linee elettriche repulsione.png, id=672, 803.0pt x 571.13374pt>
 File: img/linee elettriche repulsione.png Graphic file (type png)
 <use img/linee elettriche repulsione.png>
 Package pdftex.def Info: img/linee elettriche repulsione.png  used on input lin
@@ -1534,7 +1537,7 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 194.
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 194.
 
-<img/grafuci del dipolo elettrico.png, id=695, 1059.96pt x 819.06pt>
+<img/grafuci del dipolo elettrico.png, id=710, 1059.96pt x 819.06pt>
 File: img/grafuci del dipolo elettrico.png Graphic file (type png)
 <use img/grafuci del dipolo elettrico.png>
 Package pdftex.def Info: img/grafuci del dipolo elettrico.png  used on input li
@@ -1626,7 +1629,7 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 17.
 [41
 
 ]
-<img/cariche opposte.jpg, id=723, 167.62625pt x 303.1325pt>
+<img/cariche opposte.jpg, id=738, 167.62625pt x 303.1325pt>
 File: img/cariche opposte.jpg Graphic file (type jpg)
 <use img/cariche opposte.jpg>
 Package pdftex.def Info: img/cariche opposte.jpg  used on input line 55.
@@ -1638,30 +1641,24 @@ Capitolo 8.
 [47]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 141.
+(hyperref)                removing `math shift' on input line 146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 141.
+(hyperref)                removing `math shift' on input line 146.
 
 [48] [49] (./fisica.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-Package rerunfilecheck Warning: File `fisica.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `fisica.out':
-(rerunfilecheck)             Before: D13BB6FC65B50BA254634B99A23EE315;12564
-(rerunfilecheck)             After:  DB777D59C84A7D56819CA2A8CAAAD4C6;12666.
+Package rerunfilecheck Info: File `fisica.out' has not changed.
+(rerunfilecheck)             Checksum: 2CFA42C448C47104F924CE33837D0C73;13166.
  ) 
 Here is how much of TeX's memory you used:
- 47386 strings out of 478268
- 1071824 string characters out of 5846348
- 1740119 words of memory out of 5000000
- 64642 multiletter control sequences out of 15000+600000
+ 47403 strings out of 478268
+ 1071979 string characters out of 5846348
+ 1740204 words of memory out of 5000000
+ 64656 multiletter control sequences out of 15000+600000
  495992 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,89p,828b,977s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1692,10 +1689,10 @@ ist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dis
 t/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fo
 nts/type1/public/cm-super/sftt1000.pfb>
-Output written on fisica.pdf (49 pages, 602559 bytes).
+Output written on fisica.pdf (49 pages, 605674 bytes).
 PDF statistics:
- 945 PDF objects out of 1000 (max. 8388607)
- 827 compressed objects within 9 object streams
- 253 named destinations out of 1000 (max. 500000)
- 657 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 960 PDF objects out of 1000 (max. 8388607)
+ 842 compressed objects within 9 object streams
+ 256 named destinations out of 1000 (max. 500000)
+ 681 words of extra memory for PDF output out of 10000 (max. 10000000)
 

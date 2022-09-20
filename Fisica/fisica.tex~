@@ -170,7 +170,7 @@ Il \textit{principio di sovrapposizione} vale anche per $V$, Per $n$ cariche, il
 \begin{equation}
   V=\sum_{i=1}^{n}V_i=\frac{1}{4\pi \xi_0}\sum_{i=1}^{n}\frac{q_i}{r_i}
 \end{equation}
-$Nb$: somma scalare!
+$NB$: somma scalare!
 \subsection{problema}
 due protoni. Ordinare secondo i valori crescenti di $V$ nel punto $P$
 \begin{equation}
@@ -184,24 +184,12 @@ due protoni. Ordinare secondo i valori crescenti di $V$ nel punto $P$
 \end{equation}
 Qual'è il potenziale nel punto P?
 \begin{equation}
-  V=\frac{1}{4\pi \xi_0}\sum_{i=1}^{n}\frac{q_i}{r_i}=
-  \frac{1}{4\pi\xi_0}\left(\frac{q_1}{r_1}+\frac{q_2}{r_2}+\frac{q_3}{r_3}
-    +\frac{q_4}{r_4}\right)=\frac{1}{4\pi\xi_0}
-  \frac{(12-24+31+17)*10^{-9}}{\frac{1,3}{\sqrt{2}}}=352V
+	V=\frac{1}{4\pi \xi_0}\sum_{i=1}^{n}\frac{q_i}{r_i}=\frac{1}{4\pi \xi_0}\left(\frac{q_1}{r_1}+\frac{q_2}{r_2}+\frac{q_3}{r_3}+\frac{q_4}{r_4}\right)=\frac{1}{4\pi \xi_0}\frac{(12-24+31+17)*10^{-9}}{\frac{1,3}{\sqrt{2}}}=352V
 \end{equation}
 \section{Potenziale di un dipolo elettrico}
 Il potenziale in un in un punto arbitrario $P$ a distanza $r$, angolo $\Theta$:
 \begin{equation}
-  V=V_++V_- =\frac{1}{4\pi\xi_0}\left(\frac{q}{r_+} - \frac{q}{r_-}\right)=
-  \frac{q}{4\pi\xi_0}\frac{r_--r_+}{r_+r_-}
+	V=V_++V_-=\frac{\}{4\pi\xi_0}\frac{q_1}{r_1}\approx 
 \end{equation}
-Per $r>>d:r_--r_+\approx d \cos\Theta,\text{ } r_+r_-\approx r^2$
-\begin{equation*}
-  \to V = \frac{q}{4\pi\xi_0}\frac{d\cos \Theta}{r^2}=\frac{p\cos\Theta}{4\pi\xi_0}=
-  \frac{\overrightarrow{p}*\hat{r}}{4\pi\xi_0}
-\end{equation*}
-Ove $\overrightarrow{r}$ è il momento dipolare -- \textit{\color{blue}il verso va da -q a +q}
-\section{Potenziale di una distribuzione contitua}
-Per distribuzione continua dividiamo in infinitesimi $dq$. Ogni infinitesimo $dq$ contribuisce $dV=\frac{dq}{4\pi\xi_0r}$, così $v=\frac{1}{4\pi\xi_0}\sum^n\limits_{i=0}\frac{q_i}{r_i}$ diventa $V=\frac{1}{4\pi\xi_0}\int \frac{dq}{r}$
-
+Per $r>>d:r_--r_+$
 \end{document}

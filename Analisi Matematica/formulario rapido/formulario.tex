@@ -375,7 +375,42 @@ Quindi
 					 &=\frac{k}{a}\int \frac{a}{ax+b}dx\\
 					 &=\frac{k}{a}\ln\abs{ax+b}+c
 \end{eqnarray*}
+\section{metodo per sostituzione}
+\subsection{primo metodo}
+\begin{equation*}
+	\begin{matrix}
+		t={\color{blue} e^x}\\
+		dt=D(e^x);\text{ } dx=e^xdx\\
+		\int \frac{\color{red}e^x}{{\color{blue}e^{2x}} +1}=\int \frac{1}{t^2+1}dt\\
+		\int \frac{1}{t^2+1}=\arctan t +c=\arctan e^x+c
+	\end{matrix}
+\end{equation*}
+\subsection{secondo metodo}
+\begin{equation*}
+	\begin{matrix}
+		t=e^x\\
+		x=\ln t\\
+		dx=D[\ln t]dt=\frac{1}{t}dt\\
+		\int \frac{\color{blue}e^x}{{\color{blue}e^{2x}}+1}{\color{red}dx}=\int\frac{t}{t^2+1}\frac{1}{t}\\
+		\int\frac{\not{t}}{t^2+1}\frac{1}{\not{t}}dt=\int\frac{1}{t^2+1}dt\\
+		\int \frac{1}{t^2+1}=\arctan t +c=\arctan e^x+c
+	\end{matrix}
+\end{equation*}
 \section{equazioni differenziali}
+\begin{itemize}
+	\item $\Delta>0$
+		\begin{equation*}
+			\boxed{y(x)=c_1e^{\lambda_1x}+c_2e^{\lambda_2x}}
+		\end{equation*}
+	\item $\Delta=0$
+		\begin{equation*}
+			\boxed{y(x)=e^{\lambda_1x}\left(c_1+c_2x\right)}
+		\end{equation*}
+	\item $\Delta<0$
+		\begin{equation*}
+			\boxed{y(x)=e^{ax}\left[c_1\cos(\beta x)+c_2\sin(\beta x)\right]}
+		\end{equation*}
+\end{itemize}
 \begin{equation*}
 	y(x)=e^{A(x)}\left(y_0+\int^x_{x_0}e^{-A(t)}b(t)dt\right)
 \end{equation*}

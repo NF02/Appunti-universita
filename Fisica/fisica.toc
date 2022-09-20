@@ -100,3 +100,5 @@
 \contentsline {section}{\numberline {8.7}Potenziale di una carica puntiforma}{48}{section.8.7}%
 \contentsline {section}{\numberline {8.8}Insieme di cariche puntiformi}{48}{section.8.8}%
 \contentsline {subsection}{\numberline {8.8.1}problema}{49}{subsection.8.8.1}%
+\contentsline {section}{\numberline {8.9}Potenziale di un dipolo elettrico}{49}{section.8.9}%
+\contentsline {section}{\numberline {8.10}Potenziale di una distribuzione contitua}{49}{section.8.10}%
