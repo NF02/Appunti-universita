@@ -1,0 +1,121 @@
+\chapter{Introduzione}
+
+\section{limiti}
+\begin{defi}
+	il limite finito è il limite di f(x,y) per $(x,y)\to (x_0,y_0)$ $(\lim\limits_{(x,y)\to(x_0,y_0)} f(x,y)=L)$ se $\forall\xi >0: \forall (x,y)\in I(x_0,y_o)/\left\{x_0,y_0\right\}$
+	\begin{equation*}
+		\abs{\underbrace{f(x,y)-L}_{\text{\shortstack{Distanza}}}}<\xi
+	\end{equation*}
+	se $(x_0,y_0)\xi D(f)$ $(\exists f(x_0,y_0))$
+	\begin{equation*}
+		\boxed{\lim_{(x,y)\to (x_0,y_0)} f(x,y)\underbrace{f(x,y)-L}_{\text{\shortstack{Continua}}}}
+	\end{equation*}
+	
+\end{defi}
+\begin{esempio}
+	\begin{equation*}
+		\begin{matrix}
+			\lim_{(x,y)\to +\infty}(x^2+y^2)e^{x^2+y^2}
+		\end{matrix}
+	\end{equation*}
+\end{esempio}
+\subsection{Teoremi}
+\begin{enumerate}
+	\item Unicità del limite
+	\begin{equation*}
+		\abs{l_2-l_1}\leq \abs{}
+	\end{equation*}
+	\item Teorema del confronto
+	\item teorema della permanenza del segno
+	\item teorema della composizione delle funzioni continue\footnote{se si vanno a comporre delle funzioni utilizzando due o più funzioni continue si otterrà sempre una funzione continua}
+\end{enumerate}
+in generale i teoremi sulle operazioni
+\begin{esempio}
+	Dato $f(x,y)=\begin{cases} x^2+y^2\\ k&(x,y)=(0,0)\end{cases}$
+	\begin{equation*}
+		\begin{matrix}
+			\lim_{(x,y)\to(0,0)}\frac{x^3}{x^2+y^2}=\begin{cases}
+				x=\rho \cos y\\
+				y=\rho \sin y
+			\end{cases}\\
+			\lim_{}
+		\end{matrix}
+	\end{equation*}
+	
+	
+\end{esempio}
+\chapter{Esercizi svolti}
+\section{Teorema di Gauss e Stokes}
+\begin{esercizio}
+	Usando il teorema di Stokes, calcolare il flusso del rotore del campo vettoriale \textbf{F:}$\mathds{R}\to \mathds{R}^3$ definito da
+	\begin{equation*}
+		F(x,y,z)=\left(-x^2y, x^3+z^2,\arctan e^{x+y+s}\right)
+	\end{equation*}
+	attraverso la superficie
+	\begin{equation*}
+		\sum:\begin{cases}
+			x^2+y^2+z^2=4\\
+			z\geq 0
+		\end{cases}
+	\end{equation*}
+	orientata secondo i versori uscenti dall'origine.
+\end{esercizio}
+\begin{svol}
+	Il teorema di Stokes assicura che il flusso $\phi_\Sigma$ (rot $F$) del rotore di $F$ attraverso la calotta
+	orientata $\sum$ coincide con il lavoro del campo $F$ lungo il bordo $\Gamma(\sum)$ di $\sum$ orientato
+	coerentemente con $\sum$ (cioè secondo il verso di un osservatore che, disposto come il campo normale che
+	orienta $\sum$, percorre $\Gamma(\sum)$ vedendo $\sum$ alla sua sinistra)\\
+	La superfocoe $\Sigma$ è la semisfera di contro l'origine e raggio 2 contenuta nel semispazio $z\geq 0$ e
+	dunque il suo bordo $\Gamma =\Gamma (\Sigma)$ è la circonferenza del piano $xy$ di centro l'origine e raggio 2,
+	che ammette la rappresentazione parametrica
+	\begin{multicols}{2}
+		\begin{equation*}
+			\Gamma:
+			\begin{cases}
+				x=2\cos t\\
+				y=2\sin t, & t\in [0,2\pi],\\
+				z=0
+			\end{cases}
+		\end{equation*}
+	\end{multicols}
+	Tale rappresentazione risulta coerente con l'oriantamento di $\sigma$, in quanto, al crescere di $t$,
+	il punto $\gamma= (2\cos t, \sin t, 0)$ si muove lungo $\Gamma$ come in figura. Dunque, poiché
+	\begin{equation*}
+		F(\gamma(t))=F(2\cos t, 2\sin t,0)=(-8\cos^2t\sin t, 8\cos^3t, \arctan e^{2\cos t+2\sin t}),
+		\gamma^\prime (t)=(2\sin t, 2\cos t, 0), 
+	\end{equation*}
+	si ha
+	\begin{equation*}
+		\phi(rot F)= \int_\Sigma F*dP=\int^{2x}_0F(\gamma(t)) *\gamma(t)dt=\int (16\cos^2t+16\cos^4t)dt =
+		16\int^{2x}_{0}\cos^2tdt=16\left[\frac{t+\cos t \sin t}{2}\right]^{2x}_0=16x.
+	\end{equation*}
+\end{svol}
+\clearpage
+\begin{esercizio}
+	Calcolare il lavoro del campo vettoriale
+	\begin{equation*}
+		F(x,y,z)=(\sin(x^2+z)- 2yz, 2xy+\sin(y^2+z),\sin(x^2+y^2))
+	\end{equation*}
+	lungo la circonferenza
+	\begin{equation*}
+		\begin{cases}
+			x^2+y^2=1\\
+			z=3
+		\end{cases}
+	\end{equation*}
+	percorso in modo che la proiezione sul piano $xy$ giri in senso orario (rispetto ad un osservatore disposto come l'asse $z$).\\
+\end{esercizio}
+\begin{svol}
+	Vista l'espressione del campo, il calcolo dipende dal lavoro richiesto non pare agevole. D'altra parte, risulta
+	\begin{equation*}
+		\begin{matrix}
+			rot F= \begin{vmatrix}
+				i & j & k\\
+				\frac{\partial}{\partial x} & \frac{\partial}{\partial y} &  \frac{\partial}{\partial z}\\
+				\sin(x^2+z)-2yz & 2xz+\sin(y^2+z) & \sin (x^2+y^2)
+			\end{vmatrix}
+		\end{matrix}
+	\end{equation*}
+	
+\end{svol}
+

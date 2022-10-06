@@ -272,5 +272,7 @@
 \contentsline {subsection}{\numberline {4.5.1}Esercitazione 1}{91}{subsection.4.5.1}%
 \contentsline {part}{III\hspace {1em}Analisi 2}{93}{part.3}%
 \contentsline {chapter}{\numberline {5}Introduzione}{95}{chapter.5}%
+\contentsline {section}{\numberline {5.1}limiti}{95}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Teoremi}{95}{subsection.5.1.1}%
 \contentsline {chapter}{\numberline {6}Esercizi svolti}{97}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Teorema di Gauss e Stokes}{97}{section.6.1}%

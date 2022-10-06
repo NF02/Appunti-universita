@@ -1,49 +1,31 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  6 OCT 2022 15:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  6 OCT 2022 20:47
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**introduziona_Analisi2.tex
-(./introduziona_Analisi2.tex
+**intro.tex
+(./intro.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24>
-./introduziona_Analisi2.tex:1: Undefined control sequence.
-l.1 \part
-         {Analisi 2}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./introduziona_Analisi2.tex:1: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 \part{A
-           nalisi 2}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no A in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no 2 in font nullfont!
-./introduziona_Analisi2.tex:2: Undefined control sequence.
-l.2 \chapter
+! Undefined control sequence.
+l.1 \chapter
             {Introduzione}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter{I
+              ntroduzione}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -58,12 +40,12 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 1--3
-[]
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
+[] 
  []
 
-./introduziona_Analisi2.tex:4: Undefined control sequence.
-l.4 \section
+! Undefined control sequence.
+l.3 \section
             {limiti}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -72,13 +54,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./introduziona_Analisi2.tex:4: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4 \section{l
+l.3 \section{l
               imiti}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -89,6 +71,19 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Environment defi undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \begin{defi}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 Missing character: There is no i in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -103,19 +98,17 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no L in font nullfont!
 LaTeX Font Info:    Trying to load font information for +cmr on input line 5.
 LaTeX Font Info:    No file cmr.fd. on input line 5.
 
 LaTeX Font Warning: Font shape `/cmr/m/n' undefined
 (Font)              using `/cmr/m/n' instead on input line 5.
 
-./introduziona_Analisi2.tex:5: Corrupted NFSS tables.
+! Corrupted NFSS tables.
 wrong@fontshape ...message {Corrupted NFSS tables}
                                                   error@fontshape else let f...
-l.5 il limite finito - L è
-                            il limite di f(x,y) per $(x,y)\to (x_0,y_0)$ $(\...
+l.5 	il limite finito è
+                         il limite di f(x,y) per $(x,y)\to (x_0,y_0)$ $(\lim...
 This error message was generated by an \errmessage
 command, so I can't give any explicit help.
 Pretend that you're Hercule Poirot: Examine all clues,
@@ -150,9 +143,948 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 5.
 Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
-./introduziona_Analisi2.tex:6: Undefined control sequence.
-l.6 \chapter
-            {Esercizi svolti}
+
+! LaTeX Error: Environment equation* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 	\begin{equation*}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.7 		\abs
+          {\underbrace{f(x,y)-L}_{\text{\shortstack{Distanza}}}}<\xi
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.7 		\abs{\underbrace{f(x,y)-L}
+                                _{\text{\shortstack{Distanza}}}}<\xi
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.7 		\abs{\underbrace{f(x,y)-L}_{\text
+                                       {\shortstack{Distanza}}}}<\xi
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+! Extra }, or forgotten $.
+l.7 ...e{f(x,y)-L}_{\text{\shortstack{Distanza}}}}
+                                                  <\xi
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 	\end{equation*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.8 	\end{equation*}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.8 	\end{equation*}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+
+! LaTeX Error: Environment equation* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 	\begin{equation*}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.11 		\boxed
+             {\lim_{(x,y)\to (x_0,y_0)} f(x,y)\underbrace{f(x,y)-L}_{\text{\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.11 		\boxed{\lim
+                  _{(x,y)\to (x_0,y_0)} f(x,y)\underbrace{f(x,y)-L}_{\text{\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.11 ...0,y_0)} f(x,y)\underbrace{f(x,y)-L}_{\text
+                                                  {\shortstack{Continua}}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+! Extra }, or forgotten $.
+l.11 ...{f(x,y)-L}_{\text{\shortstack{Continua}}}}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 	\end{equation*}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.12 	\end{equation*}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.12 	\end{equation*}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--13
+[]
+ []
+
+
+Overfull \hbox (9.44446pt too wide) in paragraph at lines 3--13
+\/cmr/m/n/10 ^^Re
+ []
+
+
+Overfull \hbox (35.9768pt too wide) in paragraph at lines 3--13
+\/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (31.81256pt too wide) in paragraph at lines 3--13
+\/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (95.74214pt too wide) in paragraph at lines 3--13
+\/cmr/m/n/10 ([] \OML/cmm/m/it/10 f\/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\/cmr/m/n
+/10 ) =
+ []
+
+
+Overfull \hbox (10.69447pt too wide) in paragraph at lines 3--13
+\OML/cmm/m/it/10 L\/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (20.94617pt too wide) in paragraph at lines 3--13
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 ^^X >
+ []
+
+
+Overfull \hbox (10.55551pt too wide) in paragraph at lines 3--13
+\/cmr/m/n/10 0 :
+ []
+
+
+Overfull \hbox (38.19905pt too wide) in paragraph at lines 3--13
+\OMS/cmsy/m/n/10 8\/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\/cmr/m/n/10 ) \OMS/cmsy/m
+/n/10 2
+ []
+
+
+Overfull \hbox (77.65562pt too wide) in paragraph at lines 3--13
+\OML/cmm/m/it/10 I\/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\/cmr/m/n/10 )\OML/cmm
+/m/it/10 = []$
+ []
+
+
+Overfull \hbox (58.75456pt too wide) in paragraph at lines 3--13
+[] \OML/cmm/m/it/10 <
+ []
+
+
+Overfull \hbox (4.83508pt too wide) in paragraph at lines 3--13
+\OML/cmm/m/it/10 ^^X$
+ []
+
+
+Overfull \hbox (58.95465pt too wide) in paragraph at lines 3--13
+\/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\/cmr/m/n/10 )\OML/cmm/m/it/10 ^^XD\/cmr
+/m/n/10 (\OML/cmm/m/it/10 f\/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (51.1182pt too wide) in paragraph at lines 3--13
+\/cmr/m/n/10 (\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 f\/cmr/m/n/10 (\OML/cmm/m/it/1
+0 x[]; y[]\/cmr/m/n/10 ))$
+ []
+
+
+Overfull \hbox (145.55234pt too wide) in paragraph at lines 3--13
+[][] \OML/cmm/m/it/10 f\/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\/cmr/m/n/10 ) []$ 
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{defi}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \end{defi}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment esempio undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \begin{esempio}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment equation* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 	\begin{equation*}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 			\lim
+            _{(x,y)\to +\infty}(x^2+y^2)e^{x^2+y^2}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.18 			\lim
+            _{(x,y)\to +\infty}(x^2+y^2)e^{x^2+y^2}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.19 		\end{matrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 	\end{equation*}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{document} ended by \end{esempio}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \end{esempio}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.22 \subsection
+                {Teoremi}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+
+Overfull \hbox (97.47357pt too wide) in paragraph at lines 18--23
+[]$[] []\/cmr/m/n/10 (\OML/cmm/m/it/10 x[] \/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (41.57895pt too wide) in paragraph at lines 18--23
+\OML/cmm/m/it/10 y[]\/cmr/m/n/10 )\OML/cmm/m/it/10 e[]$
+ []
+
+Missing character: There is no U in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+
+! LaTeX Error: Environment equation* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 	\begin{equation*}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.26 		\abs
+           {l_2-l_1}\leq \abs{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no l in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.26 		\abs{l_
+              2-l_1}\leq \abs{}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.26 		\abs{l_2-l_1}
+                    \leq \abs{}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+l.26 		\abs{l_2-l_1}\leq \abs
+                             {}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{enumerate} on input line 23 ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 	\end{equation*}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.27 	\end{equation*}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.27 	\end{equation*}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 24--28
+\/cmr/m/n/10 ^^Ra
+ []
+
+
+Overfull \hbox (12.26393pt too wide) in paragraph at lines 24--28
+[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (18.02544pt too wide) in paragraph at lines 24--28
+\OML/cmm/m/it/10 l[] \OMS/cmsy/m/n/10 ^^T
+ []
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+\@footnotetext ...tins {\reset@font \footnotesize 
+                                                  \interlinepenalty \interfo...
+l.30 ... si otterrà sempre una funzione continua}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@footnotetext ...}\color@begingroup \@makefntext 
+                                                  {\rule \z@ \footnotesep \i...
+l.30 ... si otterrà sempre una funzione continua}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (8.38889pt too wide) in paragraph at lines 30--30
+[][]\/cmr/m/n/10 se
+ []
+
+
+Overfull \hbox (6.72223pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 si
+ []
+
+
+Overfull \hbox (25.83342pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 vanno
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 a
+ []
+
+
+Overfull \hbox (21.11115pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 com-
+ []
+
+
+Overfull \hbox (23.11116pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 porre
+ []
+
+
+Overfull \hbox (20.00003pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 delle
+ []
+
+
+Overfull \hbox (17.50005pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 fun-
+ []
+
+
+Overfull \hbox (20.5556pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 zioni
+ []
+
+
+Overfull \hbox (15.55559pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 uti-
+ []
+
+
+Overfull \hbox (13.33334pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 liz-
+ []
+
+
+Overfull \hbox (25.55562pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 zando
+ []
+
+
+Overfull \hbox (15.55559pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 due
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 o
+ []
+
+
+Overfull \hbox (13.88893pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 pi^^Ru
+ []
+
+
+Overfull \hbox (17.50005pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 fun-
+ []
+
+
+Overfull \hbox (20.5556pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 zioni
+ []
+
+
+Overfull \hbox (18.33336pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 con-
+ []
+
+
+Overfull \hbox (21.94449pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 tinue
+ []
+
+
+Overfull \hbox (6.72223pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 si
+ []
+
+
+Overfull \hbox (12.22224pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 ot-
+ []
+
+
+Overfull \hbox (21.1667pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 terr^^Ra
+ []
+
+
+Overfull \hbox (20.05557pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 sem-
+ []
+
+
+Overfull \hbox (13.91669pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 pre
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 una
+ []
+
+
+Overfull \hbox (17.50005pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 fun-
+ []
+
+
+Overfull \hbox (22.22226pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 zione
+ []
+
+
+Overfull \hbox (18.33336pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 con-
+ []
+
+
+Overfull \hbox (22.50006pt too wide) in paragraph at lines 30--30
+\/cmr/m/n/10 tinua| 
+ []
+
+
+Overfull \hbox (4.48613pt too wide) in paragraph at lines 30--31
+[] 
+ []
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Environment esempio undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \begin{esempio}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+! Misplaced alignment tab character &.
+l.34 	Dato $f(x,y)=\begin{cases} x^2+y^2\\ k&
+                                             (x,y)=(0,0)\end{cases}$
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: Environment equation* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 	\begin{equation*}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.37 			\lim
+            _{(x,y)\to(0,0)}\frac{x^3}{x^2+y^2}=\begin{cases}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.42 		\end{matrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 	\end{equation*}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (39.72685pt too wide) in paragraph at lines 32--44
+        $\OML/cmm/m/it/10 f\/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (25.84584pt too wide) in paragraph at lines 32--44
+[][] \/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (9.74773pt too wide) in paragraph at lines 32--44
+\OML/cmm/m/it/10 y[][] 
+ []
+
+
+Overfull \hbox (39.27544pt too wide) in paragraph at lines 32--44
+\OML/cmm/m/it/10 k\/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (22.22224pt too wide) in paragraph at lines 32--44
+\/cmr/m/n/10 (0\OML/cmm/m/it/10 ; \/cmr/m/n/10 0)$
+ []
+
+
+Overfull \hbox (93.83316pt too wide) in paragraph at lines 32--44
+[]$[] [][] \/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (24.13742pt too wide) in paragraph at lines 32--44
+[] \/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (27.1539pt too wide) in paragraph at lines 32--44
+\OML/cmm/m/it/10 ^^Z [] y[] 
+ []
+
+
+Overfull \hbox (15.81711pt too wide) in paragraph at lines 32--44
+\OML/cmm/m/it/10 y \/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (26.0428pt too wide) in paragraph at lines 32--44
+\OML/cmm/m/it/10 ^^Z [] y[] 
+ []
+
+
+Overfull \hbox (14.38893pt too wide) in paragraph at lines 32--44
+[][]$
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{esempio}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{esempio}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.47 \chapter
+             {Esercizi svolti}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -173,9 +1105,9 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
-./introduziona_Analisi2.tex:7: Undefined control sequence.
-l.7 \section
-            {Teorema di Gauss e Stokes}
+! Undefined control sequence.
+l.48 \section
+             {Teorema di Gauss e Stokes}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -204,14 +1136,14 @@ Missing character: There is no k in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 
-./introduziona_Analisi2.tex:8: LaTeX Error: Environment esercizio undefined.
+! LaTeX Error: Environment esercizio undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8 \begin{esercizio}
-                     
+l.49 \begin{esercizio}
+                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -284,10 +1216,10 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
-./introduziona_Analisi2.tex:9: Undefined control sequence.
+! Undefined control sequence.
 <recently read> \mathds 
                         
-l.9 ...re del campo vettoriale \textbf{F:}$\mathds
+l.50 ...e del campo vettoriale \textbf{F:}$\mathds
                                                   {R}\to \mathds{R}^3$ defin...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -295,8 +1227,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./introduziona_Analisi2.tex:9: Undefined control sequence.
-l.9 ...ettoriale \textbf{F:}$\mathds{R}\to \mathds
+! Undefined control sequence.
+l.50 ...ttoriale \textbf{F:}$\mathds{R}\to \mathds
                                                   {R}^3$ definito da
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -315,14 +1247,14 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 
-./introduziona_Analisi2.tex:10: LaTeX Error: Environment equation* undefined.
+! LaTeX Error: Environment equation* undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10   \begin{equation*}
-                        
+l.51 	\begin{equation*}
+                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -336,33 +1268,32 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no z in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no = in font nullfont!
-./introduziona_Analisi2.tex:11: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.11 	F(x,y,z)=\left
-                    (-x^2y, x^3+z^2,\arctan e^{x+y+s}\right)
+l.52 		F(x,y,z)=\left
+                     (-x^2y, x^3+z^2,\arctan e^{x+y+s}\right)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./introduziona_Analisi2.tex:12: LaTeX Error: \begin{document} ended by \end{equ
-ation*}.
+! LaTeX Error: \begin{document} ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12   \end{equation*}
-                      
+l.53 	\end{equation*}
+                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./introduziona_Analisi2.tex:12: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.12   \end{equation*}
-                      
+l.53 	\end{equation*}
+                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -392,45 +1323,44 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
 
-./introduziona_Analisi2.tex:14: LaTeX Error: Environment equation* undefined.
+! LaTeX Error: Environment equation* undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.14   \begin{equation*}
-                        
+l.55 	\begin{equation*}
+                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./introduziona_Analisi2.tex:15: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.15     \sum
-             :\begin{cases}
+l.56 		\sum
+           :\begin{cases}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./introduziona_Analisi2.tex:19: LaTeX Error: \begin{document} ended by \end{equ
-ation*}.
+! LaTeX Error: \begin{document} ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.19   \end{equation*}
-                      
+l.60 	\end{equation*}
+                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./introduziona_Analisi2.tex:19: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.19   \end{equation*}
-                      
+l.60 	\end{equation*}
+                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -482,27 +1412,26 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-./introduziona_Analisi2.tex:21: LaTeX Error: \begin{document} ended by \end{ese
-rcizio}.
+! LaTeX Error: \begin{document} ended by \end{esercizio}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.21 \end{esercizio}
+l.62 \end{esercizio}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./introduziona_Analisi2.tex:22: LaTeX Error: Environment svol undefined.
+! LaTeX Error: Environment svol undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.22 \begin{svol}
+l.63 \begin{svol}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -935,43 +1864,43 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no a in font nullfont!
 
-./introduziona_Analisi2.tex:30: LaTeX Error: Environment multicols undefined.
+! LaTeX Error: Environment multicols undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.30   \begin{multicols}
-                        {2}
+l.71 	\begin{multicols}
+                       {2}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 Missing character: There is no 2 in font nullfont!
 
-./introduziona_Analisi2.tex:31: LaTeX Error: Environment equation* undefined.
+! LaTeX Error: Environment equation* undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.31     \begin{equation*}
-                          
+l.72 		\begin{equation*}
+                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./introduziona_Analisi2.tex:32: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.32       \Gamma
-                 :
+l.73 			\Gamma
+              :
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./introduziona_Analisi2.tex:35: Misplaced alignment tab character &.
-l.35         y=2\sin t, &
-                          t\in [0,2\pi],\\
+! Misplaced alignment tab character &.
+l.76 				y=2\sin t, &
+                      t\in [0,2\pi],\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -980,24 +1909,23 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-./introduziona_Analisi2.tex:38: LaTeX Error: \begin{document} ended by \end{equ
-ation*}.
+! LaTeX Error: \begin{document} ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38     \end{equation*}
-                        
+l.79 		\end{equation*}
+                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./introduziona_Analisi2.tex:38: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.38     \end{equation*}
-                        
+l.79 		\end{equation*}
+                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1005,15 +1933,14 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-./introduziona_Analisi2.tex:39: LaTeX Error: \begin{document} ended by \end{mul
-ticols}.
+! LaTeX Error: \begin{document} ended by \end{multicols}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39   \end{multicols}
-                      
+l.80 	\end{multicols}
+                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1140,47 +2067,46 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no h in font nullfont!
 
-./introduziona_Analisi2.tex:42: LaTeX Error: Environment equation* undefined.
+! LaTeX Error: Environment equation* undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42   \begin{equation*}
-                        
+l.83 	\begin{equation*}
+                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 Missing character: There is no F in font nullfont!
 Missing character: There is no ( in font nullfont!
-./introduziona_Analisi2.tex:43: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.43     F(\gamma
-                 (t))=F(2\cos t, 2\sin t,0)=(-8\cos^2t\sin t, 8\cos^3t, \arc...
+l.84 		F(\gamma
+               (t))=F(2\cos t, 2\sin t,0)=(-8\cos^2t\sin t, 8\cos^3t, \arcta...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./introduziona_Analisi2.tex:45: LaTeX Error: \begin{document} ended by \end{equ
-ation*}.
+! LaTeX Error: \begin{document} ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45   \end{equation*}
-                      
+l.86 	\end{equation*}
+                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./introduziona_Analisi2.tex:45: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.45   \end{equation*}
-                      
+l.86 	\end{equation*}
+                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1192,45 +2118,44 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no a in font nullfont!
 
-./introduziona_Analisi2.tex:47: LaTeX Error: Environment equation* undefined.
+! LaTeX Error: Environment equation* undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.47   \begin{equation*}
-                        
+l.88 	\begin{equation*}
+                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./introduziona_Analisi2.tex:48: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.48     \phi
-             (rot F)= \int_\Sigma F*dP=\int^{2x}_0F(\gamma(t)) *\gamma(t)dt=...
+l.89 		\phi
+           (rot F)= \int_\Sigma F*dP=\int^{2x}_0F(\gamma(t)) *\gamma(t)dt=\i...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./introduziona_Analisi2.tex:50: LaTeX Error: \begin{document} ended by \end{equ
-ation*}.
+! LaTeX Error: \begin{document} ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.50   \end{equation*}
-                      
+l.91 	\end{equation*}
+                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./introduziona_Analisi2.tex:50: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.50   \end{equation*}
-                      
+l.91 	\end{equation*}
+                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1238,380 +2163,330 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-./introduziona_Analisi2.tex:51: LaTeX Error: \begin{document} ended by \end{svo
-l}.
+! LaTeX Error: \begin{document} ended by \end{svol}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.51 \end{svol}
+l.92 \end{svol}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 4--52
+Overfull \hbox (20.0pt too wide) in paragraph at lines 47--93
 []
  []
 
 
-Overfull \hbox (9.44446pt too wide) in paragraph at lines 4--52
-\/cmr/m/n/10 ^^Re
- []
-
-
-Overfull \hbox (35.9768pt too wide) in paragraph at lines 4--52
-\/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 !
- []
-
-
-Overfull \hbox (31.81256pt too wide) in paragraph at lines 4--52
-\/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\/cmr/m/n/10 )$
- []
-
-
-Overfull \hbox (88.18764pt too wide) in paragraph at lines 4--52
-\/cmr/m/n/10 ([] \OML/cmm/m/it/10 f\/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\/cmr/m/n
-/10 ) =
- []
-
-
-Overfull \hbox (10.69447pt too wide) in paragraph at lines 4--52
-\OML/cmm/m/it/10 L\/cmr/m/n/10 )$
- []
-
-
-Overfull \hbox (20.94617pt too wide) in paragraph at lines 4--52
-\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 ^^X >
- []
-
-
-Overfull \hbox (10.55551pt too wide) in paragraph at lines 4--52
-\/cmr/m/n/10 0 :
- []
-
-
-Overfull \hbox (38.19905pt too wide) in paragraph at lines 4--52
-\OMS/cmsy/m/n/10 8\/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\/cmr/m/n/10 ) \OMS/cmsy/m
-/n/10 2
- []
-
-
-Overfull \hbox (77.65562pt too wide) in paragraph at lines 4--52
-\OML/cmm/m/it/10 I\/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\/cmr/m/n/10 )\OML/cmm
-/m/it/10 = []$
- []
-
-
-Overfull \hbox (30.87837pt too wide) in paragraph at lines 4--52
+Overfull \hbox (30.87837pt too wide) in paragraph at lines 47--93
 \OT1/cmr/bx/n/10 F:$\OML/cmm/m/it/10 R \OMS/cmsy/m/n/10 !
  []
 
 
-Overfull \hbox (12.15628pt too wide) in paragraph at lines 4--52
+Overfull \hbox (12.15628pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 R[]$
  []
 
 
-Overfull \hbox (132.81845pt too wide) in paragraph at lines 4--52
+Overfull \hbox (132.81845pt too wide) in paragraph at lines 47--93
 []$
  []
 
 
-Overfull \hbox (16.11108pt too wide) in paragraph at lines 4--52
+Overfull \hbox (16.11108pt too wide) in paragraph at lines 47--93
 [] \/cmr/m/n/10 :
  []
 
 
-Overfull \hbox (25.84584pt too wide) in paragraph at lines 4--52
+Overfull \hbox (25.84584pt too wide) in paragraph at lines 47--93
 [][] \/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (17.52553pt too wide) in paragraph at lines 4--52
+Overfull \hbox (17.52553pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 y[] \/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (20.13194pt too wide) in paragraph at lines 4--52
+Overfull \hbox (20.13194pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 z[] \/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 4--52
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 4[] 
  []
 
 
-Overfull \hbox (15.64581pt too wide) in paragraph at lines 4--52
+Overfull \hbox (15.64581pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 z \OMS/cmsy/m/n/10 ^^U
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 4--52
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 0$
  []
 
 
-Overfull \hbox (12.1667pt too wide) in paragraph at lines 4--52
+Overfull \hbox (12.1667pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 ^^^[]$
  []
 
 
-Overfull \hbox (7.81946pt too wide) in paragraph at lines 4--52
+Overfull \hbox (7.81946pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 F$
  []
 
 
-Overfull \hbox (7.81946pt too wide) in paragraph at lines 4--52
+Overfull \hbox (7.81946pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 F$
  []
 
 
-Overfull \hbox (10.55559pt too wide) in paragraph at lines 4--52
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 47--93
 []$
  []
 
 
-Overfull \hbox (7.81946pt too wide) in paragraph at lines 4--52
+Overfull \hbox (7.81946pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 F$
  []
 
 
-Overfull \hbox (24.5834pt too wide) in paragraph at lines 4--52
+Overfull \hbox (24.5834pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 ^^@([])$
  []
 
 
-Overfull \hbox (10.55559pt too wide) in paragraph at lines 4--52
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 47--93
 []$
  []
 
 
-Overfull \hbox (10.55559pt too wide) in paragraph at lines 4--52
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 47--93
 []$
  []
 
 
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 4--52
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 ^^Re
  []
 
 
-Overfull \hbox (10.55559pt too wide) in paragraph at lines 4--52
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 47--93
 []$
  []
 
 
-Overfull \hbox (24.5834pt too wide) in paragraph at lines 4--52
+Overfull \hbox (24.5834pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 ^^@([])$
  []
 
 
-Overfull \hbox (10.55559pt too wide) in paragraph at lines 4--52
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 47--93
 []$
  []
 
 
-Overfull \hbox (7.22223pt too wide) in paragraph at lines 4--52
+Overfull \hbox (7.22223pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 ^^F$
  []
 
 
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 4--52
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 ^^Re
  []
 
 
-Overfull \hbox (15.64581pt too wide) in paragraph at lines 4--52
+Overfull \hbox (15.64581pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 z \OMS/cmsy/m/n/10 ^^U
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 4--52
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 0$
  []
 
 
-Overfull \hbox (16.80553pt too wide) in paragraph at lines 4--52
+Overfull \hbox (16.80553pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 ^^@ =
  []
 
 
-Overfull \hbox (21.25005pt too wide) in paragraph at lines 4--52
+Overfull \hbox (21.25005pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 ^^@(^^F)$
  []
 
 
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 4--52
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 ^^Re
  []
 
 
-Overfull \hbox (10.97687pt too wide) in paragraph at lines 4--52
+Overfull \hbox (10.97687pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 xy$
  []
 
 
-Overfull \hbox (11.80551pt too wide) in paragraph at lines 4--52
+Overfull \hbox (11.80551pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 ^^@ :
  []
 
 
-Overfull \hbox (24.13742pt too wide) in paragraph at lines 4--52
+Overfull \hbox (24.13742pt too wide) in paragraph at lines 47--93
 [] \/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (25.33328pt too wide) in paragraph at lines 4--52
+Overfull \hbox (25.33328pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 2 [] \OML/cmm/m/it/10 t[] 
  []
 
 
-Overfull \hbox (15.81711pt too wide) in paragraph at lines 4--52
+Overfull \hbox (15.81711pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 y \/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (41.7221pt too wide) in paragraph at lines 4--52
+Overfull \hbox (41.7221pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 2 [] \OML/cmm/m/it/10 t; t \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (30.50348pt too wide) in paragraph at lines 4--52
+Overfull \hbox (30.50348pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \/cmr/m/n/10 2\OML/cmm/m/it/10 ^^Y\/cmr/m/n/1
 0 ]\OML/cmm/m/it/10 ; [] 
  []
 
 
-Overfull \hbox (15.64581pt too wide) in paragraph at lines 4--52
+Overfull \hbox (15.64581pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 z \/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 4--52
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 0$
  []
 
 
-Overfull \hbox (6.0729pt too wide) in paragraph at lines 4--52
+Overfull \hbox (6.0729pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 ^^[$
  []
 
 
-Overfull \hbox (3.61111pt too wide) in paragraph at lines 4--52
+Overfull \hbox (3.61111pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 t$
  []
 
 
-Overfull \hbox (16.28836pt too wide) in paragraph at lines 4--52
+Overfull \hbox (16.28836pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 ^^M \/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (64.55547pt too wide) in paragraph at lines 4--52
+Overfull \hbox (64.55547pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 (2 [] \OML/cmm/m/it/10 t; [] t; \/cmr/m/n/10 0)$
  []
 
 
-Overfull \hbox (6.25002pt too wide) in paragraph at lines 4--52
+Overfull \hbox (6.25002pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 ^^@$
  []
 
 
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 4--52
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 ^^Se
  []
 
 
-Overfull \hbox (31.56618pt too wide) in paragraph at lines 4--52
+Overfull \hbox (31.56618pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 ^^M\/cmr/m/n/10 (\OML/cmm/m/it/10 t\/cmr/m/n/10 )) =
  []
 
 
-Overfull \hbox (89.59708pt too wide) in paragraph at lines 4--52
+Overfull \hbox (89.59708pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 F\/cmr/m/n/10 (2 [] \OML/cmm/m/it/10 t; \/cmr/m/n/10 2 [] \OML
 /cmm/m/it/10 t; \/cmr/m/n/10 0) =
  []
 
 
-Overfull \hbox (219.03543pt too wide) in paragraph at lines 4--52
+Overfull \hbox (219.03543pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\/cmr/m/n/10 8 [][] \OML/cmm/m/it/10 t [] t; 
 \/cmr/m/n/10 8 [][] \OML/cmm/m/it/10 t; [] e[]\/cmr/m/n/10 )\OML/cmm/m/it/10 ; 
 ^^M[]\/cmr/m/n/10 (\OML/cmm/m/it/10 t\/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (73.9999pt too wide) in paragraph at lines 4--52
+Overfull \hbox (73.9999pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 (2 [] \OML/cmm/m/it/10 t; \/cmr/m/n/10 2 [] \OML/cmm/m/it/10 t; \/
 cmr/m/n/10 0)\OML/cmm/m/it/10 ;$
  []
 
 
-Overfull \hbox (45.35883pt too wide) in paragraph at lines 4--52
+Overfull \hbox (45.35883pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 ^^^\/cmr/m/n/10 (\OML/cmm/m/it/10 rotF\/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (25.41669pt too wide) in paragraph at lines 4--52
+Overfull \hbox (25.41669pt too wide) in paragraph at lines 47--93
 [][] \OML/cmm/m/it/10 F \OMS/cmsy/m/n/10 ^^C
  []
 
 
-Overfull \hbox (23.56941pt too wide) in paragraph at lines 4--52
+Overfull \hbox (23.56941pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 dP \/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (55.0732pt too wide) in paragraph at lines 4--52
+Overfull \hbox (55.0732pt too wide) in paragraph at lines 47--93
 [][] \OML/cmm/m/it/10 F\/cmr/m/n/10 (\OML/cmm/m/it/10 ^^M\/cmr/m/n/10 (\OML/cmm
 /m/it/10 t\/cmr/m/n/10 )) \OMS/cmsy/m/n/10 ^^C
  []
 
 
-Overfull \hbox (36.49326pt too wide) in paragraph at lines 4--52
+Overfull \hbox (36.49326pt too wide) in paragraph at lines 47--93
 \OML/cmm/m/it/10 ^^M\/cmr/m/n/10 (\OML/cmm/m/it/10 t\/cmr/m/n/10 )\OML/cmm/m/it
 /10 dt \/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (53.1528pt too wide) in paragraph at lines 4--52
+Overfull \hbox (53.1528pt too wide) in paragraph at lines 47--93
 []\/cmr/m/n/10 (16 [][] \OML/cmm/m/it/10 t \/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (58.07982pt too wide) in paragraph at lines 4--52
+Overfull \hbox (58.07982pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 16 [][] \OML/cmm/m/it/10 t\/cmr/m/n/10 )\OML/cmm/m/it/10 dt \/cmr/
 m/n/10 =
  []
 
 
-Overfull \hbox (71.54507pt too wide) in paragraph at lines 4--52
+Overfull \hbox (71.54507pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 16 [][] [][] \OML/cmm/m/it/10 tdt \/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (81.8335pt too wide) in paragraph at lines 4--52
+Overfull \hbox (81.8335pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 16 [][] =
  []
 
 
-Overfull \hbox (18.49309pt too wide) in paragraph at lines 4--52
+Overfull \hbox (18.49309pt too wide) in paragraph at lines 47--93
 \/cmr/m/n/10 16\OML/cmm/m/it/10 x:$
  []
 
 
-./introduziona_Analisi2.tex:52: LaTeX Error: The font size command \normalsize 
-is not defined:
+! LaTeX Error: The font size command \normalsize is not defined:
                there is probably something wrong with the class file.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 \clearpage
+l.93 \clearpage
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1619,29 +2494,32 @@ or  <return>  to continue without it.
 
 [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-./introduziona_Analisi2.tex:53: LaTeX Error: Environment esercizio undefined.
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53 \begin{esercizio}
-                      
+l.93 \clearpage
+               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+[2]
 
-./introduziona_Analisi2.tex:54: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Environment esercizio undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.54   C
-        alcolare il lavoro del campo vettoriale
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+l.94 \begin{esercizio}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 Missing character: There is no C in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -1679,14 +2557,14 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 
-./introduziona_Analisi2.tex:55: LaTeX Error: Environment equation* undefined.
+! LaTeX Error: Environment equation* undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.55   \begin{equation*}
-                        
+l.96 	\begin{equation*}
+                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1701,33 +2579,32 @@ Missing character: There is no z in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no ( in font nullfont!
-./introduziona_Analisi2.tex:56: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.56     F(x,y,z)=(\sin
-                       (x^2+z)- 2yz, 2xy+\sin(y^2+z),\sin(x^2+y^2))
+l.97 		F(x,y,z)=(\sin
+                     (x^2+z)- 2yz, 2xy+\sin(y^2+z),\sin(x^2+y^2))
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./introduziona_Analisi2.tex:57: LaTeX Error: \begin{document} ended by \end{equ
-ation*}.
+! LaTeX Error: \begin{document} ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57   \end{equation*}
-                      
+l.98 	\end{equation*}
+                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./introduziona_Analisi2.tex:57: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.57   \end{equation*}
-                      
+l.98 	\end{equation*}
+                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1755,31 +2632,31 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no z in font nullfont!
 Missing character: There is no a in font nullfont!
 
-./introduziona_Analisi2.tex:59: LaTeX Error: Environment equation* undefined.
+! LaTeX Error: Environment equation* undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59   \begin{equation*}
+l.100 	\begin{equation*}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./introduziona_Analisi2.tex:61: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.61       x
-            ^2+y^2=1\\
+l.102 			x
+          ^2+y^2=1\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./introduziona_Analisi2.tex:63: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.63     \end{cases}
-                    
+l.104 		\end{cases}
+                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1787,14 +2664,13 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-./introduziona_Analisi2.tex:64: LaTeX Error: \begin{document} ended by \end{equ
-ation*}.
+! LaTeX Error: \begin{document} ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64   \end{equation*}
+l.105 	\end{equation*}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1899,28 +2775,27 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
 
-./introduziona_Analisi2.tex:66: LaTeX Error: \begin{document} ended by \end{ese
-rcizio}.
+! LaTeX Error: \begin{document} ended by \end{esercizio}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.66 \end{esercizio}
-                    
+l.107 \end{esercizio}
+                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./introduziona_Analisi2.tex:67: LaTeX Error: Environment svol undefined.
+! LaTeX Error: Environment svol undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.67 \begin{svol}
-                 
+l.108 \begin{svol}
+                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2022,42 +2897,42 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no a in font nullfont!
 
-./introduziona_Analisi2.tex:69: LaTeX Error: Environment equation* undefined.
+! LaTeX Error: Environment equation* undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.69   \begin{equation*}
+l.110 	\begin{equation*}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./introduziona_Analisi2.tex:71: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.71 	r
-       ot F= \begin{vmatrix}
+l.112 			r
+          ot F= \begin{vmatrix}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./introduziona_Analisi2.tex:71: LaTeX Error: Environment vmatrix undefined.
+! LaTeX Error: Environment vmatrix undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.71 	rot F= \begin{vmatrix}
-                            
+l.112 			rot F= \begin{vmatrix}
+                               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./introduziona_Analisi2.tex:72: Misplaced alignment tab character &.
-l.72             i &
-                     j & k\\
+! Misplaced alignment tab character &.
+l.113 				i &
+              j & k\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2065,9 +2940,9 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./introduziona_Analisi2.tex:72: Misplaced alignment tab character &.
-l.72             i & j &
-                         k\\
+! Misplaced alignment tab character &.
+l.113 				i & j &
+                  k\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2075,9 +2950,9 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./introduziona_Analisi2.tex:73: Misplaced alignment tab character &.
-l.73             \frac{\partial}{\partial x} &
-                                               \frac{\partial}{\partial y} &...
+! Misplaced alignment tab character &.
+l.114 				\frac{\partial}{\partial x} &
+                                        \frac{\partial}{\partial y} &  \frac...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2085,8 +2960,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./introduziona_Analisi2.tex:73: Misplaced alignment tab character &.
-l.73 ...partial x} & \frac{\partial}{\partial y} &
+! Misplaced alignment tab character &.
+l.114 ...artial x} & \frac{\partial}{\partial y} &
                                                     \frac{\partial}{\partial...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2095,9 +2970,9 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./introduziona_Analisi2.tex:74: Misplaced alignment tab character &.
-l.74             \sin(x^2+z)-2yz &
-                                   2xz+\sin(y^2+z) & \sin (x^2+y^2)
+! Misplaced alignment tab character &.
+l.115 				\sin(x^2+z)-2yz &
+                            2xz+\sin(y^2+z) & \sin (x^2+y^2)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2105,9 +2980,9 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./introduziona_Analisi2.tex:74: Misplaced alignment tab character &.
-l.74 ...       \sin(x^2+z)-2yz & 2xz+\sin(y^2+z) &
-                                                   \sin (x^2+y^2)
+! Misplaced alignment tab character &.
+l.115 				\sin(x^2+z)-2yz & 2xz+\sin(y^2+z) &
+                                              \sin (x^2+y^2)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2116,24 +2991,23 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-./introduziona_Analisi2.tex:75: LaTeX Error: \begin{matrix} on input line 70 en
-ded by \end{vmatrix}.
+! LaTeX Error: \begin{matrix} on input line 111 ended by \end{vmatrix}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.75         \end{vmatrix}
-                          
+l.116 			\end{vmatrix}
+                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./introduziona_Analisi2.tex:76: Missing $ inserted.
+! Missing $ inserted.
 <inserted text> 
                 $
-l.76     \end{matrix}
-                     
+l.117 		\end{matrix}
+                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -2141,164 +3015,162 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-./introduziona_Analisi2.tex:77: LaTeX Error: \begin{document} ended by \end{equ
-ation*}.
+! LaTeX Error: \begin{document} ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.77   \end{equation*}
+l.118 	\end{equation*}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 54--78
+Overfull \hbox (20.0pt too wide) in paragraph at lines 95--119
 []
  []
 
 
-Overfull \hbox (34.1459pt too wide) in paragraph at lines 54--78
+Overfull \hbox (34.1459pt too wide) in paragraph at lines 95--119
 []\/cmr/m/n/10 (\OML/cmm/m/it/10 x[] \/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (16.757pt too wide) in paragraph at lines 54--78
+Overfull \hbox (16.757pt too wide) in paragraph at lines 95--119
 \OML/cmm/m/it/10 z\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (43.55101pt too wide) in paragraph at lines 54--78
+Overfull \hbox (43.55101pt too wide) in paragraph at lines 95--119
 \/cmr/m/n/10 2\OML/cmm/m/it/10 yz; \/cmr/m/n/10 2\OML/cmm/m/it/10 xy \/cmr/m/n/
 10 +
  []
 
 
-Overfull \hbox (33.69223pt too wide) in paragraph at lines 54--78
+Overfull \hbox (33.69223pt too wide) in paragraph at lines 95--119
 []\/cmr/m/n/10 (\OML/cmm/m/it/10 y[] \/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (47.56952pt too wide) in paragraph at lines 54--78
+Overfull \hbox (47.56952pt too wide) in paragraph at lines 95--119
 \OML/cmm/m/it/10 z\/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\/cmr/m/n/10 (\OML/cmm/m/i
 t/10 x[] \/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (17.52553pt too wide) in paragraph at lines 54--78
+Overfull \hbox (17.52553pt too wide) in paragraph at lines 95--119
 \OML/cmm/m/it/10 y[]\/cmr/m/n/10 ))$
  []
 
 
-Overfull \hbox (25.84584pt too wide) in paragraph at lines 54--78
+Overfull \hbox (25.84584pt too wide) in paragraph at lines 95--119
 [][] \/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (20.30324pt too wide) in paragraph at lines 54--78
+Overfull \hbox (20.30324pt too wide) in paragraph at lines 95--119
 \OML/cmm/m/it/10 y[] \/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 54--78
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 95--119
 \/cmr/m/n/10 1[] 
  []
 
 
-Overfull \hbox (15.64581pt too wide) in paragraph at lines 54--78
+Overfull \hbox (15.64581pt too wide) in paragraph at lines 95--119
 \OML/cmm/m/it/10 z \/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 54--78
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 95--119
 \/cmr/m/n/10 3$
  []
 
 
-Overfull \hbox (10.97687pt too wide) in paragraph at lines 54--78
+Overfull \hbox (10.97687pt too wide) in paragraph at lines 95--119
 \OML/cmm/m/it/10 xy$
  []
 
 
-Overfull \hbox (5.0903pt too wide) in paragraph at lines 54--78
+Overfull \hbox (5.0903pt too wide) in paragraph at lines 95--119
 \OML/cmm/m/it/10 z$ 
  []
 
 
-Overfull \hbox (33.2893pt too wide) in paragraph at lines 54--78
+Overfull \hbox (33.2893pt too wide) in paragraph at lines 95--119
 []$[] \OML/cmm/m/it/10 otF \/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (13.65646pt too wide) in paragraph at lines 54--78
+Overfull \hbox (13.65646pt too wide) in paragraph at lines 95--119
 \OML/cmm/m/it/10 ijk[] 
  []
 
 
-Overfull \hbox (34.25224pt too wide) in paragraph at lines 54--78
+Overfull \hbox (34.25224pt too wide) in paragraph at lines 95--119
 [][][][] 
  []
 
 
-Overfull \hbox (34.1459pt too wide) in paragraph at lines 54--78
+Overfull \hbox (34.1459pt too wide) in paragraph at lines 95--119
 []\/cmr/m/n/10 (\OML/cmm/m/it/10 x[] \/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (16.757pt too wide) in paragraph at lines 54--78
+Overfull \hbox (16.757pt too wide) in paragraph at lines 95--119
 \OML/cmm/m/it/10 z\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (38.9353pt too wide) in paragraph at lines 54--78
+Overfull \hbox (38.9353pt too wide) in paragraph at lines 95--119
 \/cmr/m/n/10 2\OML/cmm/m/it/10 yz\/cmr/m/n/10 2\OML/cmm/m/it/10 xz \/cmr/m/n/10
  +
  []
 
 
-Overfull \hbox (33.69223pt too wide) in paragraph at lines 54--78
+Overfull \hbox (33.69223pt too wide) in paragraph at lines 95--119
 []\/cmr/m/n/10 (\OML/cmm/m/it/10 y[] \/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (44.79173pt too wide) in paragraph at lines 54--78
+Overfull \hbox (44.79173pt too wide) in paragraph at lines 95--119
 \OML/cmm/m/it/10 z\/cmr/m/n/10 ) [](\OML/cmm/m/it/10 x[] \/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (13.63663pt too wide) in paragraph at lines 54--78
+Overfull \hbox (13.63663pt too wide) in paragraph at lines 95--119
 \OML/cmm/m/it/10 y[]\/cmr/m/n/10 )$
  []
 
 
-./introduziona_Analisi2.tex:79: LaTeX Error: \begin{document} ended by \end{svo
-l}.
+! LaTeX Error: \begin{document} ended by \end{svol}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.79 \end{svol}
-               
+l.120 \end{svol}
+                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 )
 ! Emergency stop.
-<*> introduziona_Analisi2.tex
-                             
+<*> intro.tex
+             
 *** (job aborted, no legal \end found)
 
  
 Here is how much of TeX's memory you used:
- 43 strings out of 478268
- 713 string characters out of 5846348
- 296381 words of memory out of 5000000
- 18348 multiletter control sequences out of 15000+600000
+ 50 strings out of 478268
+ 686 string characters out of 5846348
+ 302628 words of memory out of 5000000
+ 18355 multiletter control sequences out of 15000+600000
  469567 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 24i,10n,32p,240b,105s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 28i,10n,32p,229b,153s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!
