@@ -56,6 +56,8 @@
 \usepackage{tasks}
 \usepackage{exsheets}
 \usepackage{pgfplots}
+\usepackage{amsthm}
+
 
 \usepackage{showframe}
 \renewcommand\ShowFrameLinethickness{0.15pt}
@@ -98,6 +100,14 @@
   title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
 
+% definizioni
+\newtheorem{esercizio}{Esercizio}
+\newtheorem{teorema}{Teorema}
+\newtheorem{nota}{Nota}
+\newtheorem{defi}{Definizione}
+\newtheorem{esempio}{Esempio}
+\newtheorem{svol}{Svolgimento}
+
 \linespread{1.2} % l'interlinea
 
 \frenchspacing
@@ -134,6 +144,6 @@
 \input{pag/Studio di funzione p3.tex}
 \input{pag/successioni nuneriche.tex}
 \input{pag/esercizi.tex}
-
+\input{pag/introduziona_Analisi2.tex}
 \printindex
 \end{document}
