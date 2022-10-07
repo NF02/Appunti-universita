@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  7 OCT 2022 12:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  7 OCT 2022 16:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**mat.tex
-(./mat.tex
+**"analisi di sistemi.tex"
+(./analisi di sistemi.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24>
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/book.cls
@@ -1444,13 +1444,13 @@ Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 \epsfxsize=\dimen415
 \epsfysize=\dimen416
 )
-\mat@idxfile=\write4
-\openout4 = `mat.idx'.
+\"analisi di sistemi"@idxfile=\write4
+\openout4 = `"analisi di sistemi.idx"'.
 
 
-Writing index file mat.idx
-(./mat.aux (./title/titlepage.aux))
-\openout1 = `mat.aux'.
+Writing index file "analisi di sistemi".idx
+(./analisi di sistemi.aux (./title/titlepage.aux))
+\openout1 = `"analisi di sistemi.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
 LaTeX Font Info:    ... okay on input line 130.
@@ -1531,9 +1531,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 130.
 LaTeX Info: Redefining \pageref on input line 130.
 LaTeX Info: Redefining \nameref on input line 130.
- (./mat.out) (./mat.out)
+ (./analisi di sistemi.out) (./analisi di sistemi.out)
 \@outlinefile=\write5
-\openout5 = `mat.out'.
+\openout5 = `"analisi di sistemi.out"'.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1593,7 +1593,7 @@ your preamble.
 \openout2 = `./title/titlepage.aux'.
 
 (./title/titlepage.tex
-<./title/logo_CA.jpg, id=47, 142.8537pt x 143.3355pt>
+<./title/logo_CA.jpg, id=39, 142.8537pt x 143.3355pt>
 File: ./title/logo_CA.jpg Graphic file (type jpg)
 <use ./title/logo_CA.jpg>
 Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
@@ -1605,25 +1605,25 @@ Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./title
 /logo_CA.jpg>] [2
 
-]) (./mat.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+]) (./analisi di sistemi.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ))
 \tf@toc=\write6
-\openout6 = `mat.toc'.
+\openout6 = `"analisi di sistemi.toc"'.
 
  [3
 
@@ -1632,116 +1632,77 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ] [4
 
 ]
-(./mat.lot)
+(./analisi di sistemi.lot)
 \tf@lot=\write7
-\openout7 = `mat.lot'.
+\openout7 = `"analisi di sistemi.lot"'.
 
  [5] [6
 
-] (./mat.lof)
+] (./analisi di sistemi.lof)
 \tf@lof=\write8
-\openout8 = `mat.lof'.
+\openout8 = `"analisi di sistemi.lof"'.
 
- (./pag/premesse.tex [7]) (./pag/simboli.tex)
-(./pag/intro.tex [8]
+ [7] [8
+
+]
 Capitolo 1.
-<img/sin_ex.png, id=109, 284.15465pt x 181.57483pt>
-File: img/sin_ex.png Graphic file (type png)
-<use img/sin_ex.png>
-Package pdftex.def Info: img/sin_ex.png  used on input line 6.
-(pdftex.def)             Requested size: 227.62204pt x 145.45677pt.
-<img/par.png, id=111, 1124.2pt x 843.15pt>
-File: img/par.png Graphic file (type png)
-<use img/par.png>
-Package pdftex.def Info: img/par.png  used on input line 15.
-(pdftex.def)             Requested size: 227.62204pt x 170.7112pt.
-
-Underfull \vbox (badness 1946) has occurred while \output is active []
-
- [9
-
- <./img/sin_ex.png> <./img/par.png (PNG copy)>] [10]
+[9] [10]
 Capitolo 2.
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 6
-8.
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 2
+26.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-)
-Overfull \hbox (57.35837pt too wide) detected at line 109
-\OML/cmm/m/it/10 ^^^\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 rotF\OT1/cmr/m/n/10 ) = [
-][] \OML/cmm/m/it/10 F \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 dP \OT1/cmr/m/n/10
- = [][] \OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^M\OT1/cmr/m/n/10 
-(\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )) \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 ^^M
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt \OT1/cm
-r/m/n/10 = [](16 [][] \OML/cmm/m/it/10 t \OT1/cmr/m/n/10 + 16 [][] \OML/cmm/m/i
-t/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt \OT1/cmr/m/n/10 = 16 [][] [][] \OML/
-cmm/m/it/10 tdt \OT1/cmr/m/n/10 = 16 [][] = 16\OML/cmm/m/it/10 x:
- []
-
-[11
+) [11
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 123--125
-
- []
-
-) [12
+[12
 
 ]
-Capitolo 3.
-[13
+runsystem(makeindex "analisi di sistemi".idx)...quotation error in system comma
+nd.
 
-] [14]
-runsystem(makeindex mat.idx)...executed safely (allowed).
 
- (./mat.ind) (./mat.aux (./title/titlepage.aux))
-Package rerunfilecheck Info: File `mat.out' has not changed.
-(rerunfilecheck)             Checksum: FAF33503FB0F6C8F472016756A008282;1369.
+No file "analisi di sistemi".ind.
+(./analisi di sistemi.aux (./title/titlepage.aux))
+Package rerunfilecheck Info: File `"analisi di sistemi".out' has not changed.
+(rerunfilecheck)             Checksum: 1ED84F5BB411A49DC4D7F3885FFB4810;1471.
  ) 
 Here is how much of TeX's memory you used:
- 55979 strings out of 478268
- 1376285 string characters out of 5846348
- 2159584 words of memory out of 5000000
- 73252 multiletter control sequences out of 15000+600000
- 495499 words of font info for 89 fonts, out of 8000000 for 9000
+ 55994 strings out of 478268
+ 1378225 string characters out of 5846348
+ 2154618 words of memory out of 5000000
+ 73307 multiletter control sequences out of 15000+600000
+ 489366 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,89p,718b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
-, replaced by a fixed one
-
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
-usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</u
-sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/
-texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
-live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
-e/2022/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texli
-ve/2022/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/local/texlive
-/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/2
-022/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/local/texlive/202
-2/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2022/
-texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2022/te
-xmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/texm
-f-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/texmf-
-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texmf-di
-st/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2022/texmf-dist
-/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2022/texmf-dist/f
-onts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2022/texmf-dist/fon
-ts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2022/texmf-dist/fonts
-/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
-ype1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
-e1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
-/public/cm-super/sfti0700.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/p
-ublic/cm-super/sfti1000.pfb>
-Output written on mat.pdf (14 pages, 1069320 bytes).
+ 84i,14n,89p,735b,809s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
+/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
+l/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2022/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/loca
+l/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/lo
+cal/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/loca
+l/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/
+texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/local/te
+xlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/
+2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/20
+22/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022
+/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2022/t
+exmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2022/tex
+mf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2022/texmf
+-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-d
+ist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dis
+t/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on "analisi di sistemi.pdf" (12 pages, 700382 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 222 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 238 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 82 words of extra memory for PDF output out of 10000 (max. 10000000)
 
