@@ -1,0 +1,79 @@
+\documentclass{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{easylist}
+\usepackage{hanging}
+\usepackage{hyperref}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=2.0cm]{geometry}
+\usepackage{blindtext}
+\usepackage{tipa}
+\usepackage{epigraph}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{pbox}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{qtree}
+\usepackage{tikz-qtree}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{textcomp}
+
+
+\linespread{1.5} % l'interlinea
+
+\frenchspacing
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+\usepackage{floatflt,epsfig}
+
+\usepackage{multicol}
+\newcommand\yellowbigsqcup[1][\displaystyle]{%
+  \fboxrule0pt
+  \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
+  \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
+
+\title{Appunti di Matematica Applicata}
+\author{Nicola Ferru}
+\begin{document}
+\maketitle
+\chapter{Introduzione}
+La Matematica Applicata serve per svolgere problemi complessi, utilizzando degli algoritmi e calcolatori elettronici,
+si utilizzano teoremi e strumenti.
+\begin{enumerate}
+	\item Introduzione;
+	\item Richiami e complementi di algebra lineare;
+	\item Trasformata di Fourier;
+	\item Metodi diretti per la soluzione dei sistemi lineari;
+	\item Matedi iterativi per la soluzione dei sistemi lineari;
+	\item Metodi numerici per le equazioni differenziali ordinarie.
+\end{enumerate}
+\section{tipi di funzioni trattate}
+\begin{enumerate}
+	\item ODE $\to\text{ } y(x),y^\prime(x), \dots, y^{\prime\prime\prime}(x)$;
+	\item PDE $\to w (x,y,z)$
+\end{enumerate}
+\section{Analisi di Reti complesse: algebra lineare numerica}
+\begin{itemize}
+	\item reti orientata -- ha un senso unico, e segue un verso, esempio Twitter.
+	\item rete non orientata -- i rapporti sono coovalenti e non c'è un verso preciso, esempio Facebook.
+\end{itemize}
+\section{Definizione di analisi numerica}
+La ``missione'' dell'analisi numerica è ottimizzare il software.
+
+\end{document}

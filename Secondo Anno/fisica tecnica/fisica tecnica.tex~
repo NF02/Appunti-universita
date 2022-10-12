@@ -1,0 +1,95 @@
+\documentclass{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{easylist}
+\usepackage{hanging}
+\usepackage{hyperref}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=2.0cm]{geometry}
+\usepackage{blindtext}
+\usepackage{tipa}
+\usepackage{epigraph}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{pbox}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{qtree}
+\usepackage{tikz-qtree}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{textcomp}
+
+\usepackage{amsthm}
+
+\newtheorem{defi}{Definizione}
+\linespread{1.5} % l'interlinea
+
+\frenchspacing
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+\usepackage{floatflt,epsfig}
+
+\usepackage{multicol}
+\newcommand\yellowbigsqcup[1][\displaystyle]{%
+  \fboxrule0pt
+  \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
+  \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
+
+\title{Appunti fisica tecnica}
+\author{Nicola Ferru}
+\begin{document}
+\maketitle
+\chapter{Introduzione \label{intro}}
+Lo scopo del corso è quello di introdurre e applicare i concetti necessari per arrivare a formulare
+correttanente l'inquadramento termodinamico di un problema fisico in cui sono coinvolti scambi di calore, di
+radiazione, di lavoro, di massa e materia. Tale formulazione deve avvenire in coerenza le approssimazioni e
+relative stime, legate alla eventuali semplificazioni del caso in studio, e il fine è quello di stabilire
+i rapporti quantitativi di causa ed effetto tra le entità di scambio, calore radiazione termica, lavoro
+({\it in tutte le sue forme}) massa e materia e le coordinate termodinamiche ({\it che esprimono lo statto del
+  sistema}). La conoscenza di tale legame, di causa ed effetto, permetterà di controllare o prevedere un
+determinato processo o sarà utile semplicemente per conoscere le azioni necessarie affinché un sistema si
+porti da uno stato iniziale (i) ad uno stato finale (f). 
+\section{Il problema dell'inquadramento termico}
+La formulazione corretta dell'inquadramento termodinamico di un problema fisico è fontamentalmente basato su 4
+concetti elementari e sul loro reciproco coordinamento. definiti come segue:
+\begin{enumerate}
+\item Sistema;
+\item Ambiente circostante;
+\item Entità di scambio;
+\item coordinate termiche.
+\end{enumerate}
+\begin{defi}
+  Il sistem è una porzione di materia su cui ricade il nostro interesse dal punto di vista termodinamico.
+  Il sistema si trova in una regione di spazio che limita una qualsivoglia porzione di materia e che noi possiamo
+  materialmente o concetualmente separare da tutto ciò che la circonda (un gas contenuto in un cilindro,
+  oppure una particolare fluida, nella sua stessa individualità, circondata dal restante fluido a cui appartiene
+  e in cui si trova immersa, un collettore solare che separa il fluido termovettore dell'ambiente esterno\dots)
+  insomma qualsiasi regione di spazio che confina una porzione di materiale, nel momenbto in cui è oggetto di un
+  interesse dal punto di vista termodinamico, individua SISTEMA termodinamico.
+\end{defi}
+\begin{defi}
+  L'Ambiente circostante è tutto ciò che non è sistema e che è esterno ad esso. Ma non è solo questo, orrorre
+  prencisare che tutto ciò che non è sistema, per poter avere il suolo di {\it Ambiente Circostante} nei
+  confronti del Sistema, deve avere anche un altro requisito. Deve essere in grado, in qualche modo e misura,
+  di influinzzare/modificare direttamente lo stato termodinamico e il comportamento dello stesso. Questo
+  significa che l'ambiente circostante è operativamente in grado di scambiare con il sistema deteminate grandezze
+  che in seno all'inquadramento termodinamico vengono denominate ``Entità di scambio''. Le entità di cambio sono
+  grandezze che possono essere colte e si manifestano all'atto dello scambio tra sistemi e ambiente circostante.
+\end{defi}
+
+\end{document}

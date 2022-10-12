@@ -1,0 +1,146 @@
+\documentclass{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{easylist}
+\usepackage{hanging}
+\usepackage{hyperref}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=2.0cm]{geometry}
+\usepackage{blindtext}
+\usepackage{tipa}
+\usepackage{epigraph}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{pbox}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{qtree}
+\usepackage{tikz-qtree}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{textcomp}
+\usepackage{amsthm}
+
+% definizioni e teoremi
+\newtheorem{defi}{Definizione}
+
+\linespread{1.5} % l'interlinea
+
+\frenchspacing
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+\usepackage{floatflt,epsfig}
+
+\usepackage{multicol}
+\newcommand\yellowbigsqcup[1][\displaystyle]{%
+  \fboxrule0pt
+  \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
+  \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
+
+\title{Appunti di Elettrotecnica}
+\author{Nicola Ferru}
+\begin{document}
+\maketitle
+\section{Argomenti}
+l'elettrotecnica è la tecnica dell'energia elettrica, cioè le possibili applicazioni degli effetti prodotti
+dalle cariche, ferme o in movimento.
+\chapter{Circuiti magnetici}
+\section{Introduzione}
+\begin{defi}
+  In elettromagnetismo si definisce la densità di corrente $J$ che misura la quantità di corrente
+  che fluisce attraverso l'unità di superficie normale alla direzione del flusso di corrente.
+  \begin{equation}
+    i=\frac{dq}{dt}\left[\frac{C}{s}\right] = \frac{dq}{dt}][A]
+  \end{equation}
+\end{defi}
+\subsection{Principi di conservazione delle cariche}
+\begin{defi}
+  Una carica non può essere creata né distrutta, è una legge neturale e la formula è
+   \begin{equation}
+	\nabla *j + \frac{\partial \rho}{\partial t}=0
+   \end{equation}
+   Densita di carica ({\it dipendono dalla coordinate spaziali})
+   \begin{itemize}
+   	\item Volumica: $\partial=\lim\limits_{\Delta v\to 0} \frac{\Delta q}{\Delta v}\left(\frac{C}{m^3}\right)$
+     	\item Superficiale: $\partial=\lim\limits_{\Delta x\to 0} \frac{\Delta q}{\Delta s}\left(\frac{C}{m^2}\right)$
+        \item Lineare: $\partial=\lim\limits_{\Delta l\to 0} \frac{\Delta q}{\Delta s}\left(\frac{C}{m}\right)$
+   \end{itemize}
+\end{defi}
+\subsection{COSTRUZIONE DI UNA TEORIA}
+\begin{itemize}
+\item Definire le quantitò base
+\item Postulare òe relazioni fondamentali
+\item Specificare le regole di operazione
+  ({\it cioè la Matematica})
+\end{itemize}
+\subsection{Teorema dei campi}
+\begin{itemize}
+\item Quantità basilari: Sorgenti, Campi (La sorgente di un
+  campo elettromagnetico è invariabilmente una carica elettrica, a riposo o in moto);
+\item Postulati Fondamentali: EQUAZIONI DI MAXWELL;
+\item Regole Operative: Calcolo vettoriale.
+\end{itemize}
+\subsection{Equazioni di Maxwell}
+\begin{table}[ht]
+  \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Forma Differenziale & forma Integrale &\\\hline
+        $\nabla * E = rot E = - \frac{\partial B}{\partial t}$ & $\oint E*dl=-\int_S\frac{\partial D}{\partial t}*dS$ & L. Faraday \\
+        $\nabla * H = \bar{J}+ \frac{\partial D}{\partial t}$
+        & $\oint H*dl=I+\int_S\frac{\partial D}{\partial t} * dS$
+                                                                                                                        & L. Ampére\\
+        $\nabla*D=\rho$ & $\oint H*dl=Q$ & L. Gauss\\
+        $\nabla*B=0$ & $\oint D*dS=Q$ & L. Gauss\\\hline
+    \end{tabular}
+\end{table}
+\begin{itemize}
+    \item Teorema di Stokes: $\int_S(\nabla* A)*dS = \oint A*\bar{Al}$
+    \item Teorema della divergenza: $\int_V\nabla*A*dV=\oint_SA*dS$
+\end{itemize}
+\subsection{Quantità basilari nello studio dei campi}
+\begin{table}[ht]
+  \centering
+    \begin{tabular}{|c|c|c|c|}
+      \hline
+      campo 	& 	    quantità 		& simbolo & unità \\\hline
+      Elettrico & intensità di flusso elettrico &    E    & $\frac{V}{m}$ \\
+                & densità di flusso elettrico 	&    D 	  & $\frac{C}{m^2}$\\
+      Magnetico & densità di flusso magnetico 	&    B 	  & $T=V*s/m^2$\\
+      		& intensità di campo magnetico  &    H	  & $A/m$\\hline
+    \end{tabular}
+\end{table}
+\begin{itemize}
+    \item \textit{E} è l'unico vettore necessario per lo studio del campo stazionario nel vuoto
+    \item \textit{D} è utile nello studio del campo elettrico in mezzi materiali
+    \item \textit{B} è l'unico vettore necessario per lo studio della magnetostatica nel vuoto
+    \item \textit{H} è utile nello studio dei campi magnetici nei mezzi materiali.
+\end{itemize}
+\section {Campo elettrico}
+\begin{itemize}
+    \item $F=k\frac{Q*q}{r^2}\overrightarrow{r}$ Legge di Coulomb
+    \item $E=\frac{F}{q}=k\frac{Q}{r^2}\overrightarrow{r}$ Campo Elettrico
+    \item $dL=E*dl$ Lavoro Elementare
+    \item $\int^B_A E*dl=V_B-V_A$ Differenza di potenziale
+\end{itemize}
+\begin{equation*}
+  Q=\oint D*dS
+\end{equation*}
+D= Densità di Flusso Elettrico
+\section{Campo Magnetico}
+
+\end{document}

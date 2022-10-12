@@ -1,0 +1,114 @@
+\documentclass{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{easylist}
+\usepackage{hanging}
+\usepackage{hyperref}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=2.0cm]{geometry}
+\usepackage{blindtext}
+\usepackage{tipa}
+\usepackage{epigraph}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{pbox}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{qtree}
+\usepackage{tikz-qtree}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{textcomp}
+\usepackage{dsfont}
+
+
+\linespread{1.5} % l'interlinea
+
+\frenchspacing
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+\usepackage{floatflt,epsfig}
+
+\usepackage{multicol}
+\newcommand\yellowbigsqcup[1][\displaystyle]{%
+  \fboxrule0pt
+  \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
+  \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
+
+\title{Appunti di Matematica Applicata}
+\author{Nicola Ferru}
+\begin{document}
+\maketitle
+\chapter{Introduzione}
+La Matematica Applicata serve per svolgere problemi complessi, utilizzando degli algoritmi e calcolatori elettronici,
+si utilizzano teoremi e strumenti.
+\begin{enumerate}
+	\item Introduzione;
+	\item Richiami e complementi di algebra lineare;
+	\item Trasformata di Fourier;
+	\item Metodi diretti per la soluzione dei sistemi lineari;
+	\item Matedi iterativi per la soluzione dei sistemi lineari;
+	\item Metodi numerici per le equazioni differenziali ordinarie.
+\end{enumerate}
+\section{tipi di funzioni trattate}
+\begin{enumerate}
+	\item ODE $\to\text{ } y(x),y^\prime(x), \dots, y^{\prime\prime\prime}(x)$;
+	\item PDE $\to w (x,y,z)$
+\end{enumerate}
+\section{Analisi di Reti complesse: algebra lineare numerica}
+\begin{itemize}
+	\item reti orientata -- ha un senso unico, e segue un verso, esempio Twitter.
+	\item rete non orientata -- i rapporti sono coovalenti e non c'è un verso preciso, esempio Facebook.
+\end{itemize}
+\section{Definizione di analisi numerica}
+La ``missione'' dell'analisi numerica è ottimizzare il software.
+\chapter{spazio vettoriale}
+uno spazio lineare o vettoriale reale è un insieme V su cui sono definite due operazioni con 10 proprietà
+($\forall \alpha \in R$), ($\forall x, y, z \in V$)
+\begin{equation*}
+  \begin{matrix}
+    +:V*V\to V & .=R*V\to V\\
+    (x,y) \to x + y & (\alpha,x) \to \alpha x
+  \end{matrix}
+\end{equation*}
+\begin{enumerate}
+    \item $x+y\in V$ (chiusura risp. somma)
+    \item $\alpha x \in V$ (chiuura risp. prodotto)
+    \item $x+y=y+x$ (pr. commutativa)
+    \item $(x+y)+z=x+(x+z)$ (pr. associativa)
+    \item esiste $0\in V$ tale che $x+0=0$ (eledmento neutro)
+    \item esiste $-x \in V$ tale che $x+(-x)=0$ (elemento addizionale)
+    \item $\alpha(\beta x)=(\alpha \beta) x$ (pr. associativa)
+    \item $\alpha(x+y)=\alpha x+\alpha y$ (pr. distributiva in $V$)
+    \item $(\alpha + \beta)x=\alpha x+\beta x$ (pr. distributiva in $\mathds{R}$)
+    \item $1x=x$ (elemento neutro)
+\end{enumerate}
+\section{Norme vettoriali}
+\begin{enumerate}
+    \item $||x||\geq 0$ (positività)
+    \item $||\alpha x||=|\alpha|*||x||$ (omogeneità)
+    \item $||x+y||\leq||x||+||y||$ (diseguaglianza triangolare)
+\end{enumerate}
+Da notare che, per la proprietà 2, $\abs{\abs{-x}}=\abs{\abs{x}}$, il che significa, com'è naturale aspettarsi,
+che un vettore e suo opposto hanno la stessa lunghezza. È immediato dimostrare che una norma verifica anche la
+disequalianza
+\begin{equation}
+  \abs{|x-y|}\geq \abs{||x||-||y||},\text{ }\forall x,y\in V.
+\end{equation}
+  
+
+\end{document}
