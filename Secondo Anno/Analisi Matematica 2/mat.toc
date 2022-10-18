@@ -13,3 +13,18 @@
 \contentsline {section}{\numberline {3.2}tipologia in R}{14}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Distanza}{14}{subsection.3.2.1}%
 \contentsline {section}{\numberline {3.3}Intorno}{14}{section.3.3}%
+\contentsline {paragraph}{Punto interno}{15}{paragraph*.4}%
+\contentsline {paragraph}{Punto esterno}{15}{paragraph*.5}%
+\contentsline {paragraph}{Punto di frontiera}{15}{paragraph*.6}%
+\contentsline {paragraph}{Punto di accumulazione}{15}{paragraph*.7}%
+\contentsline {paragraph}{Punto isolato}{15}{paragraph*.8}%
+\contentsline {paragraph}{Insieme Aperto}{15}{paragraph*.9}%
+\contentsline {subsection}{\numberline {3.3.1}Insieme chiuso}{15}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Insieme connesso}{15}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Insieme convesso}{16}{subsection.3.3.3}%
+\contentsline {paragraph}{Insiemi Limitati}{16}{paragraph*.10}%
+\contentsline {paragraph}{Insieme illimitato}{16}{paragraph*.11}%
+\contentsline {subsection}{\numberline {3.3.4}Coordinate Polari}{16}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Limiti e continuità}{16}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Continuità}{16}{subsection.3.3.6}%
+\contentsline {subsection}{\numberline {3.3.7}Esistenza del limite}{16}{subsection.3.3.7}%

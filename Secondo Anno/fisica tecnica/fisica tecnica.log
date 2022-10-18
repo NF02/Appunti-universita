@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  6 OCT 2022 12:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  13 OCT 2022 12:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1318,40 +1318,41 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ]
 Capitolo 1.
 [3] [4] (./fisica tecnica.aux)
-
-Package rerunfilecheck Warning: File `"fisica tecnica".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"fisica tecnica".out':
-(rerunfilecheck)             Before: 86A43469A5084164620047FA63649BD2;364
-(rerunfilecheck)             After:  716E36EEB0C53795CF318089DBADA870;519.
+Package rerunfilecheck Info: File `"fisica tecnica".out' has not changed.
+(rerunfilecheck)             Checksum: 716E36EEB0C53795CF318089DBADA870;519.
  ) 
 Here is how much of TeX's memory you used:
- 27562 strings out of 478268
- 504924 string characters out of 5846348
- 788186 words of memory out of 5000000
- 45225 multiletter control sequences out of 15000+600000
- 487483 words of font info for 77 fonts, out of 8000000 for 9000
+ 27575 strings out of 478268
+ 505051 string characters out of 5846348
+ 788189 words of memory out of 5000000
+ 45229 multiletter control sequences out of 15000+600000
+ 489781 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,6n,89p,415b,552s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
-r/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/
-local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/lo
-cal/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/loca
-l/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/
-texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texliv
-e/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/
-2022/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/20
-22/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on "fisica tecnica.pdf" (4 pages, 165048 bytes).
+ 84i,8n,89p,415b,552s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
+usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/lo
+cal/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/loca
+l/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/
+texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/te
+xlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/
+2022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/20
+22/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022
+/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/tex
+mf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf
+-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on "fisica tecnica.pdf" (4 pages, 213682 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 139 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 37 words of extra memory for PDF output out of 10000 (max. 10000000)
 

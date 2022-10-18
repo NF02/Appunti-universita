@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  8 OCT 2022 12:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  14 OCT 2022 10:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1658,21 +1658,11 @@ Underfull \vbox (badness 5681) has occurred while \output is active []
  [11
 
 ]
+[12] [13
 
-./analisi di sistemi.tex:296: LaTeX Error: \begin{nota} on input line 293 ended
- by \end{note}.
+] [14
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.296   \end{note}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[12]
+]
 runsystem(makeindex "analisi di sistemi".idx)...quotation error in system comma
 nd.
 
@@ -1683,10 +1673,10 @@ Package rerunfilecheck Info: File `"analisi di sistemi".out' has not changed.
 (rerunfilecheck)             Checksum: 8E2F68EAAA06175C65444F30F57E6B1C;2564.
  ) 
 Here is how much of TeX's memory you used:
- 56003 strings out of 478268
- 1378357 string characters out of 5846348
- 2163618 words of memory out of 5000000
- 73311 multiletter control sequences out of 15000+600000
+ 56137 strings out of 478268
+ 1382168 string characters out of 5846348
+ 2160618 words of memory out of 5000000
+ 73442 multiletter control sequences out of 15000+600000
  489366 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,89p,735b,809s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1700,26 +1690,27 @@ ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
 al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/
 texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
 live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/tex
-live/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/t
-exlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/local/tex
-live/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texli
-ve/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/local/texlive
-/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2
-022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/202
-2/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/
-texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/te
-xmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texm
-f-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2022/texmf-
-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2022/texmf-di
-st/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2022/texmf-dist
-/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/f
-onts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dist/fon
-ts/type1/public/cm-super/sfti1000.pfb>
-Output written on "analisi di sistemi.pdf" (12 pages, 727169 bytes).
+ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/tex
+live/2022/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive
+/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/local/texlive/2
+022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/202
+2/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2022/
+texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/te
+xmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/texm
+f-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texmf-
+dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2022/texmf-di
+st/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2022/texmf-dist
+/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2022/texmf-dist/f
+onts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fon
+ts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dist/fonts
+/type1/public/cm-super/sfti1000.pfb>
+Output written on "analisi di sistemi.pdf" (14 pages, 742200 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 206 compressed objects within 3 object streams
- 38 named destinations out of 1000 (max. 500000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
+ 41 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

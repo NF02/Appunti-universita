@@ -288,24 +288,12 @@ $P_0$ è un punto isolato se $\exists I_{P_0,\delta}$ in cui non cade nessun pun
   $f(x,y)$ una funzione definito in D e siano ($x_0,y_0$) punto di accumulazione per $D$
   \begin{equation}
     \begin{matrix}
-      \lim\limits_{(x,y)\to(x_0,y_0)} f(x,y) = l & \forall\xi>0\text{ } \exists \delta_{(E)}>0:\forall I_{(x_0,y_0),\delta}
-                                            /\{(x_0,y_0)\}, \forall(x,y)\in I | f(x,y)
+      \lim_{(x,y)\to(x_0,y_0)} f(x,y) = l & \forall\xi>0\text{ } \exists \delta_{(E)}>0:\forall I_{(x_0,y_0),\delta}
+                                            \{(x_0,y_0)\}
     \end{matrix}
   \end{equation}
-  Per qualunque $\xi > 0$ esiste un $\delta(\xi)>0$ per cui qualunque intorno di ($x_0,y_0$) al più $x_0,y_0$ e
-  per qualunque $(x_0,y_0)$ di quast'intorno la funzione dista da i meno di $\xi$.
 \end{defi}
-\subsection{Continuità}
-\begin{defi}
-  Sia $f(x,y)$ definita in $D$, $f(x,y)$ si definisce {\color{red} continuo} in $(x_0,y_0)\in D$
-  \begin{equation}
-    \lim\limits_{(x,y)\to(x_0,y_0)}=f(x_0,y_0)
-  \end{equation}
-\end{defi}
-\subsection{Esistenza del limite}
-\begin{defi}
-  Calcolando il limite con $f$ in forma polare esiste se non dipende da $\theta$. È possibile calcolare il limite di $f$ in forma cartesiano nel segmento nodo. 
-\end{defi}
+
 
 \printindex    
 \end{document}

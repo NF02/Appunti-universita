@@ -11,4 +11,4 @@
 \contentsline {subsection}{\numberline {2.2.1}Modello IU per un sistema MIMO (r ingressi e p uscite)}{12}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Modello VS per sistemi SISO}{12}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Modello VS per un sistema MIMO}{12}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Modello VS e sua rappresentazione schematica}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Modello VS e sua rappresentazione schematica}{13}{section.2.3}%

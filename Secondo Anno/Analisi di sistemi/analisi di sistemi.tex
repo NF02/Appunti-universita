@@ -57,7 +57,7 @@
 \usepackage{exsheets}
 \usepackage{pgfplots}
 \usepackage{amsthm}
-
+\usepackage{circuitikz}
 
 \usepackage{showframe}
 \renewcommand\ShowFrameLinethickness{0.15pt}
@@ -289,11 +289,15 @@ descrivono il comportamento di un sistema.
   \end{equation*}
   L'equazione di stato è un {\color{red}sistema di equazioni differenziali del primo ordine}, mentre la
   trasformazione di uscita è una {\color{blue}equazione algebrica}.
+  \clearpage
   \section{Modello VS e sua rappresentazione schematica}
   \begin{nota}
     in un modello VS l'equazione di stato ha n componenti (numero pari all'ordine del sistema)
     a prescindere dal fatto che il sistema sia SISO o MIMO
-  \end{note}
+  \end{nota}
+  \begin{circuitikz}
+    \draw (0,0) to[R, o-o] (2,0);
+  \end{circuitikz}
   \begin{equation*}
     \begin{matrix}
       SISO & \begin{cases}
@@ -308,15 +312,51 @@ descrivono il comportamento di un sistema.
   \end{equation*}
   \begin{esempio}
     Circuito RC che ha un ingresso $u(t)=v(t)$, uno stato $x(t)=v_c(t)$ e uscita $y(t)=i(t)$
-    \begin{table}
+    \begin{table}[ht]
       \centering
       \begin{tabular}{llr}
-        \hline
         Leggi dei componenti \\
         resistore (Ohm) & $v_R(t)=R i (t)$ & (1)\\
         condensatore	& $\dot{v}_C=\frac{1}{C}i(t)$ & (2)\\
         Leggi delle connessioni \\
-        
+        equazione dela maglia&$v(t)=v_c(t)+v_R(t)$ & (3)
+        \end{tabular}
+      \end{table}
+      Ricavo $v_R(t)=v(t)-v_C(t)$ dalla (3) e sostituisco nella (1)
+      \begin{equation*}
+        \begin{matrix}
+          v(t)-v_C(t)=R i(t) & (1^\prime)
+        \end{matrix}
+      \end{equation*}
+      Infatti ricavo i(t) dalla (1') e rimane
+      \begin{equation*}
+        \begin{matrix}
+          \dot{v}_C(t)=\frac{1}{C}i(t) & (2)\\
+          i(t)=-\frac{1}{R}v_C(t)+\frac{1}{R}v(t) & (1^{\prime\prime}) 
+        \end{matrix}
+      \end{equation*}
+      ovvero
+      \begin{equation*}
+        \begin{matrix}
+          \dot{x}(t)=\frac{1}{C}y(t) & (2)\\
+          i(t)=-\frac{1}{R}x(t)+\frac{1}{R}u(t) & (1^{\prime\prime}) 
+        \end{matrix}
+      \end{equation*}
+      Per determinare il modello IU devo eliminare lo stato: ricavo $x(t)=u(t)-R y(t)$ dalla (1''), derivo e sostituisco
+      in (2):
+      \begin{equation*}
+	\boxed{\dot{y}(t)+\frac{1}{RC}y(t)=\frac{1}{R}\dot{u}(t)}
+      \end{equation*}
+      Per determinare il modello VS devo eluminare l'uscita y(t) dalla equazione di stato, sostituisco la (1'') in (2)
+      \begin{equation*}
+        \boxed{
+        \begin{cases}
+          \dot{x}(t)= & -\frac{1}{RC}x(t)+\frac{1}{RC} u(t)\\
+          y(t)= & -\frac{1}{R} x(t)+\frac{1}{R}u(t)
+        \end{cases}
+        }
+      \end{equation*}
+      
   \end{esempio}
   
                         
