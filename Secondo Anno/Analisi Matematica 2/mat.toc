@@ -24,3 +24,18 @@
 \contentsline {subsection}{\numberline {1.2.8}Teorema di esistenza dei valori intermedi}{12}{subsection.1.2.8}%
 \contentsline {subsection}{\numberline {1.2.9}Teorema di Weierstrass}{12}{subsection.1.2.9}%
 \contentsline {chapter}{\numberline {2}Derivate Parziali}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Derivate parziali di primo grado}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Significato geometrico}{13}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}Derivata parziale seconde}{14}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Teorema di Schwarz (Dell'invertibilità dell'ordine di derivazione)}{14}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Massimi e minimi relativi}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Teorema di Fermat}{15}{subsection.2.3.1}%
+\contentsline {subsubsection}{Gradiente}{15}{subsubsection*.12}%
+\contentsline {subsubsection}{Massimi e minimi -- condizione necessaria}{15}{subsubsection*.13}%
+\contentsline {subsection}{\numberline {2.3.2}Differenziabilità}{15}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Tutte le funzioni differenziali sono continue}{16}{subsection.2.3.3}%
+\contentsline {paragraph}{Ip:}{16}{paragraph*.14}%
+\contentsline {paragraph}{Th:}{16}{paragraph*.15}%
+\contentsline {subsection}{\numberline {2.3.4}Tutte le funzioni differenziali sono derivabili}{16}{subsection.2.3.4}%
+\contentsline {paragraph}{Ip:}{16}{paragraph*.16}%
+\contentsline {paragraph}{Th:}{16}{paragraph*.17}%

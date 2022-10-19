@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  18 OCT 2022 16:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  19 OCT 2022 11:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1594,7 +1594,7 @@ your preamble.
 \openout2 = `./title/titlepage.aux'.
 
 (./title/titlepage.tex
-<./title/logo_CA.jpg, id=67, 142.8537pt x 143.3355pt>
+<./title/logo_CA.jpg, id=107, 142.8537pt x 143.3355pt>
 File: ./title/logo_CA.jpg Graphic file (type jpg)
 <use ./title/logo_CA.jpg>
 Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
@@ -1650,33 +1650,37 @@ Capitolo 1.
 
 ] [10] [11]) [12]
 Capitolo 2.
-[13
 
-] [14
+Underfull \vbox (badness 4832) has occurred while \output is active []
+
+ [13
+
+]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+13.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [14] [15]
+[16] [17] [18
 
 ]
 runsystem(makeindex mat.idx)...executed safely (allowed).
 
  (./mat.ind) (./mat.aux (./title/titlepage.aux))
-
-Package rerunfilecheck Warning: File `mat.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `mat.out':
-(rerunfilecheck)             Before: 224A9675A1861D5133A698129FF6BF15;2077
-(rerunfilecheck)             After:  DB2211B50D4139F22E44803A8ACC12DC;2209.
+Package rerunfilecheck Info: File `mat.out' has not changed.
+(rerunfilecheck)             Checksum: D96324795AD7F567A308E707B3F35518;4322.
  ) 
 Here is how much of TeX's memory you used:
- 55951 strings out of 478268
- 1375890 string characters out of 5846348
- 2159584 words of memory out of 5000000
- 73223 multiletter control sequences out of 15000+600000
- 490452 words of font info for 69 fonts, out of 8000000 for 9000
+ 56192 strings out of 478268
+ 1380432 string characters out of 5846348
+ 2167584 words of memory out of 5000000
+ 73429 multiletter control sequences out of 15000+600000
+ 490765 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,89p,718b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<
+ 84i,15n,89p,718b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
 /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
 usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
 sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
@@ -1698,11 +1702,13 @@ t/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2022/texmf-dist/fo
 nts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/font
 s/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/
-type1/public/cm-super/sfti1000.pfb>
-Output written on mat.pdf (14 pages, 726633 bytes).
+type1/public/cm-super/sfti0700.pfb></usr/local/texlive/2022/texmf-dist/fonts/ty
+pe1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type
+1/public/cm-super/sftt1000.pfb>
+Output written on mat.pdf (18 pages, 800833 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
- 249 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 415 PDF objects out of 1000 (max. 8388607)
+ 341 compressed objects within 4 object streams
+ 97 named destinations out of 1000 (max. 500000)
+ 218 words of extra memory for PDF output out of 10000 (max. 10000000)
 
