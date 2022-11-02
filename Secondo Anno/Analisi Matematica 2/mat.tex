@@ -388,6 +388,155 @@ $(x_0,y_0)$
   $fx(x_0,y_0)=A$\\
   Analogamente si demostra che $f_y(x_0,y_0)=B$. Qundi dato che esistono $f_x$ e $f_y$ in ($x_0,y_0$), $f(x,y)$ è derivabile in $(x_0,y_0)$ e in oltre $A=fx(x_0,y_0)$, $B=fy(x_0,y_0)$
 \end{proof}
+\begin{esercizio}
+  Dimostrare che $z=x^2=y^2$ è differenziabile in (1;1) -- Per definire
+  \begin{equation*}
+    f(x_0+h,y_0+k)-f(x_0,y_0)=Ah=Bk+o(\sqrt{h^2+k^2})
+  \end{equation*}
+  \begin{multicols}{2}
+    $f(x_0+h,y_0+k)=(1+h)^2=(1+k)^2$\\
+    $A=f(1,1)=\abs{2x}_{x=1}=2$\\
+    $f(x_0,y_0)=1+1=2$\\
+    $B=f_y(1,1)=\abs{2y}_{y=1}=2$
+  \end{multicols}
+  Così ho $(1+h)^2+(1+k)^2-2=2h+2k+o(\sqrt{h^2+k^2})$
+  \begin{equation*}
+    h^2+k^2=o(\sqrt{h^2+k^2})
+  \end{equation*}
+  devo dimostrare che $\lim\limits_{h\to 0\text{ } k\to0}\frac{h^2+k^2}{\sqrt{h^2+k^2}}=0$ pasando
+  a coordinate polari $\begin{matrix} h=e\cos \theta\\ k=e\sin \theta\\ e^2=h^2+k^2\\ k\to 0,h\to 0,
+                         p\to 0\end{matrix}$\\ 
+                       $\lim\limits_{e\to 0}\frac{e^2}{\abs e}=0 \to z=x^2+z^2$ è differeziabile in (1,1)
+\end{esercizio}
+\subsection{Le funzioni con derivate parziali continue sono diferenziabili}
+\begin{defi}
+  Sia $f(x,y)$ definita in $D_1$ e sia derivabile in $D$. Sono $f_x$ e $f_y$ continue in $D$, allora
+  $f(x,y)$ è differenziale in $D$.
+\end{defi}
+\subsubsection{Condizione sufficiente per la differenzialità}
+\begin{defi}
+  Affinché una funzione sia differenziabile in $(x_0,y_0)$ basta che in $(x_0,y_0)$ abbia derivate.
+  In questo modo per determinare se una funzione è differenziabile in un punto si calcola le
+  derivate parziali in quel punto, se esistono la funzione è differenziabile, in caso contrario
+  non è derivabile.
+\end{defi}
+\begin{esempio}
+  Dimostrare che $z=\sqrt{x^2+y^2}$ non è differenziabile in (0;0)
+  \begin{equation*}
+    \begin{matrix}
+      z_x=\frac{2x}{2\sqrt{x^2+y^2}} = \frac{x}{\sqrt{x^2+y^2}} & D: x^2+y^2>0 \\
+      z_y=\frac{2y}{2\sqrt{x^2+y^2}} = \frac{y}{\sqrt{x^2+y^2}} & D: x^2+y^2>0
+    \end{matrix}
+  \end{equation*}
+  Sia $z_x$ sia $z_y$ sono definite per $x^2+y^2>0$ cioè nei punti esterni al cerchio di centro (0,0)
+  e 1, frontiera eclusa. Il punto (0,0) è interno al cerchio, quindi in esso $f(x,y)$ non è derivabile. Per cui in punto (0,0) f(x,y) non è neanche differenziabile.
+\end{esempio}
+\section{Significato geometrico del differenziale e piano tengente}
+\subsection{Differenziale primo}
+È la parte lineare nella definizione di differenziale
+\begin{equation*}
+  \begin{matrix}
+    f(x,y) \text{ definita in } D & (x_0,y_0)\in D
+  \end{matrix}
+\end{equation*}
+$f(x,y)$ differenziale in $(x_0,y_0)$ se
+\begin{equation*}
+  f(x_0+h,y_0+_k)-f(x_0,y_0)=\underbrace{f_x(x_0,y_0)h+f_y(x_0,y_0)k}_{\text{parte lineare}}
+  +o(\sqrt{h^2+k^2})
+\end{equation*}
+\begin{equation*}
+  df(x_0,y_0)=f_x(x_0,y_0)h+f_y(x_0,y_0)k
+\end{equation*}
+\subsection{Piano Tangente}
+La $f(x,y)$ una funzione derivabile in $(x_0,y_0)$, il piano tangente alla funzione $(x_0,y_0,z_0)$
+ha equazione:
+\begin{equation*}
+  z-z_0=f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)
+\end{equation*}
+$\vec{n}$ direzione ortogonale al piano tangente, è unitario
+\begin{equation*}
+  \vec{n}=\frac{(-f_{x_i}-f_{y_i}1)}{\sqrt{1+f_x^2+f_y^2}}
+\end{equation*}
+poiché $\nabla f(f_x,f_y)$ $\abs{\nabla f}^2=f_x^2+f_y^2\to \vec{n}=\frac{(-f_{x_i}-f_{y_i}1)}{\sqrt{1+\abs{\nabla f}}}$
+\begin{esempio}
+  $z=x^2+y^2$ (1,1)
+  \begin{equation*}
+    z-z_0=f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)
+  \end{equation*}
+  \begin{equation*}
+    \begin{matrix}
+      z_0=f(1,1)=1+1=2 & z-2=2(x-1)+2(y-1) & f_x=2x|_{1_{ii}}=2\\
+                       & & f_y=2y|_{1_{ii}}=2
+    \end{matrix}
+  \end{equation*}
+\end{esempio}
+\subsection{Significato geometrico del differenziale primo}
+Passando da $P_0$ a $P$ $f(x)$ si incrementa da $f(x_0)$ a $f(x_0+h)$ -- Il differenziale primo $dy$
+indica la variazione che subisce la retta tangente passando da $P_0$ a $P$.\\
+L'incremento $f(x_0+h)-f(x_0)$ si approssima sempre più con $dy$ per incrementi $h\to 0$
+\begin{equation*}
+  f(x_0+h)-f(x_0)=f^\prime (x)(x-x_0)-f(x_0)+o\abs{x}
+\end{equation*}
+L'incremento $f(x_0+h)-f(x_0)$ differisce dal valore $f^\prime (x)(x-x_0)$ [retta tangente] per un
+$o\abs{x}$, $o\abs{x}$ ci da l'errore.
+\subsection{Funzioni composite}
+\begin{defi}
+  Sia $x(t)$ E $y(t)$ due funzioni reali definite al variare in un intervallo $I$ di $R$.
+  $t\in T \leq R$ corrisponde il punto $(x(t),y(t))$
+  \begin{equation*}
+    \begin{cases}
+      x=x(t) & \text{Rappresenta nel piano una currva in frontiera}\\
+      y=y(t) & \text{Parametrica}
+    \end{cases}
+  \end{equation*}
+  Al variare di $t\in I\leq R$\\
+  $x=x(t),y=y(t)$ descrive una curva $\gamma$ nel piano 
+\end{defi}
+\clearpage
+\begin{esempio}
+  \begin{equation*}
+    \begin{matrix}
+    \begin{cases}
+        x=t-1\\
+        y=t+1
+    \end{cases}& t\in [0,1] &
+    \begin{cases}
+        x=\Gamma \cos t\\
+        y=\Gamma \sin t
+    \end{cases}& t\in [0,2\pi]\\
+      y=(t-1)+2=x+2 && r^2\cos t+ r^2\sin^2t=r^2
+    \end{matrix}
+  \end{equation*}
+  \begin{multicols}{2}
+    \begin{tikzpicture}[scale=2]
+        \draw[step=.5cm, gray, very thin] (-1.2,-1.2) grid (1.2,1.2); 
+        \draw[->] (-1.25,0) -- (1.25,0) coordinate (x axis);
+        \draw[->] (0,-1.25) -- (0,1.25) coordinate (y axis);
+        \draw (0,0) circle (1cm);
+        \foreach \x/\xtext in {-1, -0.5/-\frac{1}{2}, 1} 
+        \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north,fill=white] {$\xtext$};
+        \foreach \y/\ytext in {-1, -0.5/-\frac{1}{2}, 0.5/\frac{1}{2}, 1} 
+        \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east,fill=white] {$\ytext$};
+      \end{tikzpicture}
+      \begin{equation*}
+      	[x(t)]^2+[y(t)]^2=r^2
+      \end{equation*}
+      circonferenza con certro nel origine e raggio r
+    \end{multicols}
+    Se si ha $\begin{cases} x=x(t) \\ y=y(t) \\ z=z(t)\end{cases}$ al variare di $t\in T \leq R$ si
+    ha una curva nello spazio.
+\end{esempio}
+\begin{esempio}
+  $\begin{cases} x = \Gamma \cos t \\ y = \Gamma \sin t \\ z=Kt \end{cases}$ elica circolare 
+\end{esempio}
+\subsection{Funzione composta}
+\begin{defi}
+  Sia $\gamma$ la curva $\begin{cases} x=x(t) \\ y=y(t)\end{cases}$ $t\in I < R$ di codominio B\\
+  $I\to B$\\
+  Sia f(x,y) definita in A \\
+  $t\in f(x(t),y(t))$ se il codominio di $\gamma$ coincide con il codomio di $f(x,y)$, cioè
+  $B \leq A$
+\end{defi}
 
 \printindex    
 \end{document}
