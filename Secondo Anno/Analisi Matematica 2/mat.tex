@@ -57,6 +57,7 @@
 \usepackage{exsheets}
 \usepackage{pgfplots}
 \usepackage{amsthm}
+\usepackage{wasysym}
 
 
 \usepackage{showframe}
@@ -273,7 +274,7 @@ Si definisce {\color{red} gradiente} di f(x,y) nel punto (x,y): i vettore $\nabl
   la funzione f. Pertanto un punto critico per una funzione derivabile e un punto in cui si
   annulla il gradiente della funzione.
 \end{defi}
-\subsection{Differenziabilità}
+\chapter{Differenziabilità}
 \begin{defi}
   Sia $f(x,y)$ definita in D e $P_0(x_0,y_0)\in D$. In $P_0, z=f(x_0,y_0)$, incremento la $x_0$
   di un h e la $y_0$ di un k.\\
@@ -531,12 +532,144 @@ $o\abs{x}$, $o\abs{x}$ ci da l'errore.
 \end{esempio}
 \subsection{Funzione composta}
 \begin{defi}
-  Sia $\gamma$ la curva $\begin{cases} x=x(t) \\ y=y(t)\end{cases}$ $t\in I < R$ di codominio B\\
+  Sia $\gamma$ la curva $\begin{cases} x=x(t) \\ y=y(t)\end{cases}$ $t\in I < R$
+	di codominio B\\
   $I\to B$\\
   Sia f(x,y) definita in A \\
-  $t\in f(x(t),y(t))$ se il codominio di $\gamma$ coincide con il codomio di $f(x,y)$, cioè
+  $t\in f(x(t),y(t))$ se il codominio di $\gamma$ coincide con il codomio di
+	$f(x,y)$, cioè
   $B \leq A$
 \end{defi}
-
+\subsection{Teorema della derivata della funzione composta}
+\begin{defi}
+	Sia $\gamma$ la curva di punti $(x(t),y(t))$ e sia derivabile in un
+	intervallo $I$ (\underline{cioè esistono })\\
+	Sia f(x,y) differenziabile in x(t)\\
+	Allora la funzione conposta da $F(t)=f(x(t),y(t))$ è derivabile in I e la
+	sua derivata prima vale:
+	\begin{equation}
+		F^\prime (t)=f_x(x(t),y(t))x^\prime(t)+f_y(x(t),y(t))y^\prime(t)
+	\end{equation}
+	\begin{equation*}
+		\begin{matrix}
+			(\nabla f *\Gamma^\prime (t)) & \nabla f \equiv (f_x;f_y) &
+			\Gamma^\prime \equiv(x^\prime (t); y^\prime (t))
+		\end{matrix}
+	\end{equation*}
+	\begin{multicols}{2}
+		\paragraph{Ipotesi}
+			$\gamma \equiv (x(t),y(t))$ derivabile in I\\
+			$f(x,y)$ differenziale in x(t)
+		\paragraph{Tesi}
+		$F(t)=f(x(t),y(t))$ derivabile in I\\
+		$F^\prime(t)=f_x(x(t),y(t))x^\prime(t)+f_y(x(t),y(t))y^\prime (t)$
+	\end{multicols}
+\end{defi}
+\begin{proof}
+	Devo dimostrare che $\lim\limits_{h\to 0} \frac{F(t+h)-F(t)}{h}=F^\prime
+	(t)=F_x(x(t),y(t))x^\prime (t)+f_y(x(t),y(t))y^\prime(t)$\\
+	Scrivo l'incremento di F(t) per un h
+	\begin{equation*}
+		F(t+h)-F(t)=f[x(t+h),y(t+h)]- f[x(t), y(t)] \text{ Per definizione di funzione composta F(t)}
+	\end{equation*}
+	Poiché f(x,y) è differenziabile si ha 
+	\begin{equation*}
+		\begin{matrix}
+			f[x(t+h),y(t+h)]-f[x(t),y(t)]=f_x\underbrace{[x(t),y(t)]}_{fx}
+			\underbrace{[x(t+h)-x(t)]}_h+
+			f_y\underbrace{[x(t+h)-y(t+h)]}_{fy}\underbrace{[y(t+h)-y(t)]}_k\\+o
+			\left(\sqrt{\underbrace{[x(t+h)-x(t)]^2}_{h^2}
+			+  \underbrace{[y(t+h)-y(t)]^2}_{k^2}}\right)
+		\end{matrix}
+	\end{equation*}
+	Divido entrambi i membri per h e calcolo il $\lim_{h\to 0}$
+	\paragraph{I membro}
+	\begin{equation*}
+		\lim_{h\to 0} \frac{f[x(t+h),y(t+h)]-f[x(t),y(t)]}{h}=F^\prime(t)
+	\end{equation*}
+	\paragraph{II membro}
+	\begin{equation*}
+		\begin{matrix}
+			\lim\limits_{h\to
+		0}fx[x(t),y(t)]\underbrace{\left[\frac{x(t+h)-x(t)}{h}\right]}_{x^\prime
+		(t)} + \lim\limits_{h\to 0} f_y
+		[x(t+h)-y(t+h)]\underbrace{\left[\frac{y(t+h)-y(t)}{h}\right]}_{y^\prime
+		(t)}\\ +\lim\limits_{h\to 0}o
+			\underbrace{\left(\sqrt{[x(t+h)-x(t)]^2 +
+			[y(t+h)-y(t)]^2}\right)}_0
+		\end{matrix}
+	\end{equation*}
+	\begin{equation*}
+		F^\prime =f_x[x(t),y(t)]x^\prime(t)+f_y[x(t),y(t)]y^\prime (t)
+	\end{equation*}
+\end{proof}
+\begin{esempio}
+	\begin{equation*}
+		\begin{matrix}
+			z=x^2y & \begin{cases}
+				x(t)=-t & F(t)=z(x(t),y(t))=-t^2*t=-t^3\\
+				y(t)=t & F^\prime(t)=z^\prime=-3t^2
+			\end{cases}
+		\end{matrix}
+	\end{equation*}
+	\begin{equation*}
+		F^\prime(t)=f_x(x(t), y(t))x^\prime(t)+f_x(x(t), y(t))y^\prime (t)=z_x
+		x^\prime(t)+z_y y^\prime(t) = -3t^2
+	\end{equation*}
+\end{esempio}
+\section{Teorema differenziabilità delle funzioni composite}
+\begin{teorema}
+	Siano $x=(x_1,x_2,\dots,x_n)$ n funzioni in k variabili
+	$t=(t_1,t_2,\dots,t_k)$
+	\begin{equation}
+		\begin{cases}
+			x_1=x_1(t_1,t_2,\dots,t_k)\\
+			x_2=x_2(t_1,t_2,\dots,t_k)\\
+			\dots\\
+			x_n=x_n(t_1,t_2,\dots,t_k)
+		\end{cases}
+	\end{equation}
+	Componiamo le funzioni ottenendo la funzione composita
+	\begin{equation*}
+		f[x_1(t_1,t_2,\dots,t_k), x_2(t_1,t_2,\dots,t_k), \dots,
+		x_n(t_1,t_2,\dots,t_k)]
+	\end{equation*}
+	Siano ($x_1(t_1,t_2,\dots,t_k), x_2(t_1,t_2,\dots,t_k), \dots,
+		x_n(t_1,t_2,\dots,t_k)$) n funzioni definite in un insieme aperto
+		$D\leq R^n$ e siano derivabili parzialmente rispetto a $t_i$
+		($i=1,2,\dots, k$).\\
+		Sia $f(x_1,\dots,x_n)$ una funzione definita in A contenente in
+		codominio $x(D)$ e sia f differenziabile in A\\
+	Allora la funzione composita $F(t)=x_1(t_1,t_2,\dots,t_k), x_2(t_1,t_2, 
+		\dots,t_k), \dots, x_n(t_1,t_2,\dots,t_k)$ è derivabile parzialmente
+		rispetto a $t_i(i=1,2,\dots,k)$ nel punto t.
+		\begin{equation*}
+			\frac{\partial F}{\partial t_i} (t)=\frac{\partial f}{\partial
+			x_j}(x(t))+\frac{\partial x_i}{\partial t_i}(t) \text{ (si somma
+			sugli inasci ripetuti)}
+		\end{equation*}
+		Inoltre, se f e ($x_1(t_1,t_2,\dots,t_k), x_2(t_1,t_2,\dots,t_k), \dots,
+		x_n(t_1,t_2,\dots,t_k)$) sono di classe $C^1$, anche $F=f(x(t))\in c^1$
+		ed è quindi differenziabile.
+		\begin{equation*}
+			\hbar=k=2 \text{ coordinate polari}
+		\end{equation*}
+		\begin{equation*}
+			\begin{matrix}
+				\begin{cases}
+					x_1=x\\
+					x_2=y
+				\end{cases}
+				\begin{cases}
+					t_1=\varphi\\
+					t_2=\varphi
+				\end{cases} & f(x,y) &
+				\begin{cases}
+					x=x(\varphi,\varphi)\\
+					y=y(\varphi,\varphi)
+				\end{cases}
+			\end{matrix}
+		\end{equation*}
+\end{teorema}
 \printindex    
 \end{document}
