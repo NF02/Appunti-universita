@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  4 NOV 2022 11:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  7 NOV 2022 01:12
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **mat.tex
 (./mat.tex
@@ -1599,7 +1600,7 @@ your preamble.
 \openout2 = `./title/titlepage.aux'.
 
 (./title/titlepage.tex
-<./title/logo_CA.jpg, id=143, 142.8537pt x 143.3355pt>
+<./title/logo_CA.jpg, id=147, 142.8537pt x 143.3355pt>
 File: ./title/logo_CA.jpg Graphic file (type jpg)
 <use ./title/logo_CA.jpg>
 Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
@@ -1696,13 +1697,13 @@ runsystem(makeindex mat.idx)...executed safely (allowed).
 
  (./mat.ind) (./mat.aux (./title/titlepage.aux))
 Package rerunfilecheck Info: File `mat.out' has not changed.
-(rerunfilecheck)             Checksum: 939597E443B0899EC48E9D49E03F571B;6594.
+(rerunfilecheck)             Checksum: 9153A98A98D19548B88D850AA2AF9721;6757.
  ) 
 Here is how much of TeX's memory you used:
- 56510 strings out of 478268
- 1384564 string characters out of 5846348
- 2169257 words of memory out of 5000000
- 73703 multiletter control sequences out of 15000+600000
+ 56513 strings out of 478268
+ 1384595 string characters out of 5846348
+ 2169256 words of memory out of 5000000
+ 73704 multiletter control sequences out of 15000+600000
  491423 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,89p,718b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1735,10 +1736,10 @@ s/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/
 type1/public/cm-super/sfti0700.pfb></usr/local/texlive/2022/texmf-dist/fonts/ty
 pe1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type
 1/public/cm-super/sftt1000.pfb>
-Output written on mat.pdf (24 pages, 857819 bytes).
+Output written on mat.pdf (24 pages, 859171 bytes).
 PDF statistics:
- 526 PDF objects out of 1000 (max. 8388607)
- 439 compressed objects within 5 object streams
- 131 named destinations out of 1000 (max. 500000)
- 290 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 533 PDF objects out of 1000 (max. 8388607)
+ 446 compressed objects within 5 object streams
+ 133 named destinations out of 1000 (max. 500000)
+ 298 words of extra memory for PDF output out of 10000 (max. 10000000)
 

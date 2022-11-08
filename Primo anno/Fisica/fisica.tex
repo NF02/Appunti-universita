@@ -43,7 +43,7 @@
 
 \newtheorem{defi}{Definizione}
 \newtheorem{note}{Note}
-
+\newtheorem{esempio}{Esempio}
 
 \usetikzlibrary{angles, arrows.meta, quotes}
 \usepackage{siunitx}
@@ -109,8 +109,107 @@
 \input{pag/simboli.tex}
 \part{fisica 1}
 \input{pag/unita di misura.tex}
+\chapter{L'Energia}
+\section{Lavoro}
+\begin{defi}
+	Il lavoro è definito come il prodotto della forza per lo spostamento del
+	suo punto di applicazione. Esso è quindi uno scalare
+	\begin{equation}
+		L=\vec{F}*\vec{s}=Fs\cos \theta
+	\end{equation}
+	In cui $\theta$ è l'angolo più piccolo formato tra la forza e lo
+	spostamento
+	\begin{equation*}
+		\begin{matrix}
+			\text{Dimensioni: } & [L]=[F][L]=[MLT^{-2}][l]=[ML^2T^{-2}]\\
+			\text{Unita in misura: } & Kg m^2 s^{-2} = \text{Joule simbolo (J)}
+		\end{matrix}
+	\end{equation*}
+	$L=\vec{F}*\vec{s}=Fs\cos\theta$
+	\begin{equation*}
+		\begin{matrix}
+			L>0 &\Rightarrow \cos \theta>0 &\Rightarrow \theta < \frac{\pi}{2}=90^o\\
+			L=0 &\Rightarrow \cos \theta=0 &\Rightarrow \theta =
+			\frac{\pi}{2}\\
+			L<0& \Rightarrow \cos \theta <0 & \Rightarrow \theta > \frac{\pi}{2}
+		\end{matrix}
+	\end{equation*}
+\end{defi}
+\subsection{Lavoro di più forza costanti sullo stesso corpo}
+Il lavoro totale è la somma di tutti i lavori fatti dalle forza (costanti) che
+agiscono sul sistema considerato.
+\begin{equation*}
+	\begin{matrix}
+	L_T=\vec{F}_1+\vec{s} +
+	\dots+\vec{F}_n*\vec{s}=\displaystyle\sum_{i=1}^{n}
+	\vec{F}_i*\vec{s}=\left(\displaystyle\sum_{i=1}^{n}
+	\vec{F}_i\right)*\vec{R}*\vec{s} &
+		\vec{R}=\left(\displaystyle\sum_{i=1}^{n}\right) \vec{F}_i
+	\end{matrix}
+\end{equation*}
+$\vec{R}$ = Risultante delle Forze
+\begin{esempio}
+	Calcolare il lavoro fatto dalla forza agenti su una cassa di massa m=50.0Kg
+	trascinata, per una distanza di 6,00 metri su un piano liscio, mediamente
+	una corda con tensione T pari a 200N che forma un angolo di 35,0° con
+	l'asse delle x.
+	\begin{equation*}
+		L_T=L_{\vec{N}}+L_{\vec{T}_y} + L_{\vec{T}_x} L_{\vec{p}}
+	\end{equation*}
+	\begin{equation*}
+		\begin{cases}
+			\vec{N}\\
+			\vec{T}_y\\
+			\vec{P}
+		\end{cases}
+		\text{sono tutte perpendicolare allo spostamento } \vec{s} \Rightarrow
+		L_N + L_{\vec{T}_y} + L_{\vec{p}} = 0
+	\end{equation*}
+	\begin{equation*}
+		L_T=L_{\vec{T}_x}=\vec{T}_x*\vec{s}=Ts\cos \theta = 200N*6m*0,82 \cong
+		\boxed{983 joule}
+	\end{equation*}
+\end{esempio}
+\begin{esempio}
+	Calcolare il lavoro fatto dalle forze agenti su una cassa massa $m=50Kg$
+	trascinata, per una distanza di 6 metri su un piano scabro (attrito
+	$\mu=0,15$), mediante una corda con tensione T pari a 200N che forma un
+	angolo di 35° con l'asse delle x.\\
+	\fbox
+	{
+	\begin{minipage}{0.75\textwidth}
+		Forza d'attrito
+		\begin{equation*}
+			f_d=\mu_d N^\prime=\mu_d(mg-T_y) \Rightarrow f_d=\mu_d[mg-T\sin
+			35^o]=56,4 Newton
+		\end{equation*}
+	\end{minipage}
+	}\\
+	Lavoro Totale
+	\begin{equation*}
+		L_T=L_{\vec{N}}+L_{\vec{T}_y} + L_{\vec{T}_x}+L_{\vec{p}} +
+		L_{\vec{f}_d}
+	\end{equation*}
+	\begin{equation*}
+		\begin{cases}
+			\vec{N}\\
+			\vec{T}_y\\
+			\vec{P}
+		\end{cases}
+		\text{sono tutte perpendicolare allo spostamento } \vec{s} \Rightarrow
+		L_N + L_{\vec{T}_y} + L_{\vec{p}} = 0
+	\end{equation*}
+	\begin{equation*}
+		L_T=L_{\vec{T}_x} + L_{\vec{f}_d}=\vec{T}_x*\vec{s} + \vec{f}_d
+		*\vec{s} =[T\cos \theta s \cos 0^o +f_ds\cos \pi]
+	\end{equation*}
+	\begin{equation*}
+		L_T=\{(200*0,82*6*1)+[56,4*6*(-1)]\} Joule \cong \boxed{646J}
+	\end{equation*}
+\end{esempio}
 \input{pag/moti.tex}
 \input{pag/modelli atomici.tex}
+
 \part {Fisica 2}
 \input{pag/programma 2.tex}
 \input{pag/legge di Couloumb.tex}

@@ -667,9 +667,40 @@ $o\abs{x}$, $o\abs{x}$ ci da l'errore.
 				\begin{cases}
 					x=x(\varphi,\varphi)\\
 					y=y(\varphi,\varphi)
+				\end{cases}\to \begin{cases}
+					x=\rho\cos \varphi\\
+					y=\rho \sin \varphi
 				\end{cases}
 			\end{matrix}
 		\end{equation*}
+		\begin{equation*}
+			f(x,y)=f(\rho\cos\varphi,\rho \sin \varphi)
+		\end{equation*}
+		\begin{equation*}
+			\begin{matrix}
+				\frac{\partial f}{\partial \rho}=\frac{\partial f}{\partial x}
+				x\rho+\frac{\partial f}{\partial y}y\rho=
+				\frac{\partial f}{\partial x} \cos \varphi+
+				\frac{\partial f}{\partial y} \sin \varphi\\
+				\frac{\partial f}{\partial \rho}=\frac{\partial f}{\partial x}
+				x\rho+\frac{\partial f}{\partial y}y\varphi=
+				\frac{\partial f}{\partial x} (-\rho\sin \varphi)+
+				\frac{\partial f}{\partial y} (\rho\sin \varphi)
+			\end{matrix}
+		\end{equation*}
 \end{teorema}
-\printindex    
+\section{Differenziale secondo}
+\begin{defi}
+	$d^2f$ è il differenziale del differenziale primo
+\end{defi}
+\begin{equation*}
+	\begin{matrix}
+		d^2f=d(df)= d(f_xh+f_yk)=\frac{\partial}{\partial x} (f_xh+f_yk)h+ 
+		\frac{\partial}{\partial x}(f_xh+f_yk)k=\\
+		=(f_{xx}h+f_{xy}k)h+ (f_{xy}h+f_{yy}k)k=f_{xx}h^2+f_{xy}k hx+ f_{xy}
+		hx+f_{yy} k^2
+	\end{matrix}
+\end{equation*}
+
+\printindex
 \end{document}

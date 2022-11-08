@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  20 SEP 2022 13:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  8 NOV 2022 13:12
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **fisica.tex
 (./fisica.tex
@@ -1097,6 +1096,7 @@ Package: amsthm 2020/05/29 v2.20.6
 )
 \c@defi=\count396
 \c@note=\count397
+\c@esempio=\count398
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryangles.code.tex
@@ -1111,17 +1111,17 @@ Package: siunitx 2022-02-15 v3.0.49 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen377
 \l__siunitx_angle_marker_box=\box83
 \l__siunitx_angle_unit_box=\box84
-\l__siunitx_compound_count_int=\count398
+\l__siunitx_compound_count_int=\count399
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
  (CN)
 )
-\l__siunitx_number_exponent_fixed_int=\count399
-\l__siunitx_number_min_decimal_int=\count400
-\l__siunitx_number_min_integer_int=\count401
-\l__siunitx_number_round_precision_int=\count402
-\l__siunitx_number_group_minimum_int=\count403
+\l__siunitx_number_exponent_fixed_int=\count400
+\l__siunitx_number_min_decimal_int=\count401
+\l__siunitx_number_min_integer_int=\count402
+\l__siunitx_number_round_precision_int=\count403
+\l__siunitx_number_group_minimum_int=\count404
 \l__siunitx_table_tmp_box=\box85
 \l__siunitx_table_tmp_dim=\dimen378
 \l__siunitx_table_column_width_dim=\dimen379
@@ -1131,9 +1131,9 @@ Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
 \l__siunitx_table_after_box=\box89
 \l__siunitx_table_before_dim=\dimen380
 \l__siunitx_table_carry_dim=\dimen381
-\l__siunitx_unit_tmp_int=\count404
-\l__siunitx_unit_position_int=\count405
-\l__siunitx_unit_total_int=\count406
+\l__siunitx_unit_tmp_int=\count405
+\l__siunitx_unit_position_int=\count406
+\l__siunitx_unit_total_int=\count407
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
@@ -1142,16 +1142,16 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/floatflt/floatflt.sty
 Package: floatflt 1997/07/16 v. 1.31
-\c@OptionTest=\count407
+\c@OptionTest=\count408
 \figbox=\box90
 \tabbox=\box91
 \pagebox=\box92
-\ffigcount=\count408
-\ftabcount=\count409
-\fftest=\count410
-\hangcount=\count411
-\nosuccesstryfig=\count412
-\nosuccesstrytab=\count413
+\ffigcount=\count409
+\ftabcount=\count410
+\fftest=\count411
+\hangcount=\count412
+\nosuccesstryfig=\count413
+\nosuccesstrytab=\count414
 \figgutter=\dimen382
 \tabgutter=\dimen383
 \htdone=\dimen384
@@ -1169,14 +1169,14 @@ Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
-\c@tracingmulticols=\count414
+\c@tracingmulticols=\count415
 \mult@box=\box93
 \multicol@leftmargin=\dimen392
-\c@unbalance=\count415
-\c@collectmore=\count416
-\doublecol@number=\count417
-\multicoltolerance=\count418
-\multicolpretolerance=\count419
+\c@unbalance=\count416
+\c@collectmore=\count417
+\doublecol@number=\count418
+\multicoltolerance=\count419
+\multicolpretolerance=\count420
 \full@width=\dimen393
 \page@free=\dimen394
 \premulticols=\dimen395
@@ -1226,15 +1226,15 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \@tempa=\box133
 \@tempa=\box134
 \@tempa=\box135
-\c@minrows=\count420
-\c@columnbadness=\count421
-\c@finalcolumnbadness=\count422
+\c@minrows=\count421
+\c@columnbadness=\count422
+\c@finalcolumnbadness=\count423
 \last@try=\dimen398
 \multicolovershoot=\dimen399
 \multicolundershoot=\dimen400
 \mult@nat@firstbox=\box136
 \colbreak@box=\box137
-\mc@col@check@num=\count423
+\mc@col@check@num=\count424
 ) (./fisica.aux)
 \openout1 = `fisica.aux'.
 
@@ -1275,7 +1275,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count424
+\c@section@level=\count425
 )
 LaTeX Info: Redefining \ref on input line 102.
 LaTeX Info: Redefining \pageref on input line 102.
@@ -1321,16 +1321,16 @@ LaTeX Info: Redefining \nameref on input line 102.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count425
+\scratchcounter=\count426
 \scratchdimen=\dimen401
 \scratchbox=\box138
-\nofMPsegments=\count426
-\nofMParguments=\count427
+\nofMPsegments=\count427
+\nofMParguments=\count428
 \everyMPshowfont=\toks55
-\MPscratchCnt=\count428
+\MPscratchCnt=\count429
 \MPscratchDim=\dimen402
-\MPnumerator=\count429
-\makeMPintoPDFobject=\count430
+\MPnumerator=\count430
+\makeMPintoPDFobject=\count431
 \everyMPtoPDFconversion=\toks56
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1348,7 +1348,7 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count431
+\c@lstlisting=\count432
 Package translations Info: no dictionary file `translations-basic-dictionary-it
 alian.trsl' found. on input line 102.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 104
@@ -1399,27 +1399,30 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
 .
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)) (./pag/moti.tex
-[13
+)) [13
 
 ] [14]
 Capitolo 2.
+[15
+
+] (./pag/moti.tex [16]
+Capitolo 3.
 
 Underfull \vbox (badness 7722) has occurred while \output is active []
 
- [15
+ [17
 
 ]
-[16] [17] [18] [19]
+[18] [19] [20] [21]
 
 pdfTeX warning: pdflatex (file ./img/esercizio 5 im1.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<img/esercizio 5 im1.pdf, id=547, 1521.685pt x 994.71625pt>
+<img/esercizio 5 im1.pdf, id=575, 1521.685pt x 994.71625pt>
 File: img/esercizio 5 im1.pdf Graphic file (type pdf)
 <use img/esercizio 5 im1.pdf>
 Package pdftex.def Info: img/esercizio 5 im1.pdf  used on input line 252.
 (pdftex.def)             Requested size: 174.09616pt x 113.81102pt.
-[20 <./img/esercizio 5 im1.pdf>]
+[22 <./img/esercizio 5 im1.pdf>]
 Overfull \hbox (3.9333pt too wide) detected at line 350
 [] \OT1/cmr/m/n/10 = [] = 602\OML/cmm/m/it/10 s \OT1/cmr/m/n/10 = 10\OML/cmm/m/
 it/10 min
@@ -1438,27 +1441,27 @@ m \OT1/cmr/m/n/10 = 22\OML/cmm/m/it/10 km
 
 Underfull \vbox (badness 3612) has occurred while \output is active []
 
- [21]
-[22] [23]
+ [23]
+[24] [25]
 Underfull \hbox (badness 10000) in paragraph at lines 519--520
 
  []
 
-) (./pag/modelli atomici.tex [24]
-Capitolo 3.
-) [25
-
-] [26
-
-] [27] [28] (./pag/programma 2.tex
+) (./pag/modelli atomici.tex [26]
 Capitolo 4.
-) (./pag/legge di Couloumb.tex [29
+) [27
 
-] [30
+] [28
+
+] [29] [30] (./pag/programma 2.tex
+Capitolo 5.
+) (./pag/legge di Couloumb.tex [31
+
+] [32
 
 ]
-Capitolo 5.
-[31]
+Capitolo 6.
+[33]
 
 Package tasks Warning: You've placed
 (tasks)                
@@ -1467,18 +1470,18 @@ Package tasks Warning: You've placed
 (tasks)                before the first \task  on line 49. I will throw it
 (tasks)                away and ignore it for the rest of the list.
 
-\c@pcariche=\count432
-[32]
+\c@pcariche=\count433
+[34]
 
-LaTeX Warning: Reference `' on page 33 undefined on input line 103.
+LaTeX Warning: Reference `' on page 35 undefined on input line 103.
 
 
 Overfull \hbox (0.5108pt too wide) in paragraph at lines 125--125
 \T1/cmr/m/it/10 Una su-per-fi-cie sfe-ri-ca uni-for-me-men-te ca-ri-ca at-
  []
 
-[33]) (./pag/campi_elettrici.tex [34]
-Capitolo 6.
+[35]) (./pag/campi_elettrici.tex [36]
+Capitolo 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--8
 
@@ -1492,10 +1495,10 @@ Package tasks Warning: You've placed
 (tasks)                before the first \task  on line 16. I will throw it
 (tasks)                away and ignore it for the rest of the list.
 
-[35
+[37
 
 ]
-<img/linee elettriche repulsione.png, id=672, 803.0pt x 571.13374pt>
+<img/linee elettriche repulsione.png, id=702, 803.0pt x 571.13374pt>
 File: img/linee elettriche repulsione.png Graphic file (type png)
 <use img/linee elettriche repulsione.png>
 Package pdftex.def Info: img/linee elettriche repulsione.png  used on input lin
@@ -1510,7 +1513,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 44.
 
-[36 <./img/linee elettriche repulsione.png>]
+[38 <./img/linee elettriche repulsione.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 107.
@@ -1519,12 +1522,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 107.
 
-[37]
+[39]
 Overfull \hbox (6.66504pt too wide) in paragraph at lines 145--146
 [] 
  []
 
-[38]
+[40]
 
 LaTeX Warning: Command \textturnv invalid in math mode on input line 171.
 
@@ -1537,7 +1540,7 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 194.
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 194.
 
-<img/grafuci del dipolo elettrico.png, id=710, 1059.96pt x 819.06pt>
+<img/grafuci del dipolo elettrico.png, id=737, 1059.96pt x 819.06pt>
 File: img/grafuci del dipolo elettrico.png Graphic file (type png)
 <use img/grafuci del dipolo elettrico.png>
 Package pdftex.def Info: img/grafuci del dipolo elettrico.png  used on input li
@@ -1555,7 +1558,7 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 201.
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 201.
 
-[39 <./img/grafuci del dipolo elettrico.png>]
+[41 <./img/grafuci del dipolo elettrico.png>]
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 208.
 
@@ -1616,8 +1619,8 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 227.
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 227.
 
-) (./pag/legge_di_gauss.tex [40]
-Capitolo 7.
+) (./pag/legge_di_gauss.tex [42]
+Capitolo 8.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 15.
 
@@ -1626,40 +1629,40 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 17.
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 17.
 
-[41
+[43
 
 ]
-<img/cariche opposte.jpg, id=738, 167.62625pt x 303.1325pt>
+<img/cariche opposte.jpg, id=766, 167.62625pt x 303.1325pt>
 File: img/cariche opposte.jpg Graphic file (type jpg)
 <use img/cariche opposte.jpg>
 Package pdftex.def Info: img/cariche opposte.jpg  used on input line 55.
 (pdftex.def)             Requested size: 78.66924pt x 142.26378pt.
- [42 <./img/cariche opposte.jpg>] [43] [44]) [45] [46
+ [44 <./img/cariche opposte.jpg>] [45] [46]) [47] [48
 
 ]
-Capitolo 8.
-[47]
+Capitolo 9.
+[49]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 146.
+(hyperref)                removing `math shift' on input line 245.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 146.
+(hyperref)                removing `math shift' on input line 245.
 
-[48] [49] (./fisica.aux)
+[50] [51] (./fisica.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `fisica.out' has not changed.
-(rerunfilecheck)             Checksum: 2CFA42C448C47104F924CE33837D0C73;13166.
+(rerunfilecheck)             Checksum: 47AE4F4BDAFDB5561A2058004E35FCA3;13667.
  ) 
 Here is how much of TeX's memory you used:
- 47403 strings out of 478268
- 1071979 string characters out of 5846348
- 1740204 words of memory out of 5000000
- 64656 multiletter control sequences out of 15000+600000
- 495992 words of font info for 100 fonts, out of 8000000 for 9000
+ 47426 strings out of 478268
+ 1072217 string characters out of 5846348
+ 1740260 words of memory out of 5000000
+ 64668 multiletter control sequences out of 15000+600000
+ 497366 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,89p,828b,977s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -1689,10 +1692,10 @@ ist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dis
 t/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fo
 nts/type1/public/cm-super/sftt1000.pfb>
-Output written on fisica.pdf (49 pages, 605674 bytes).
+Output written on fisica.pdf (51 pages, 617366 bytes).
 PDF statistics:
- 960 PDF objects out of 1000 (max. 8388607)
- 842 compressed objects within 9 object streams
- 256 named destinations out of 1000 (max. 500000)
- 681 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 989 PDF objects out of 1000 (max. 8388607)
+ 869 compressed objects within 9 object streams
+ 265 named destinations out of 1000 (max. 500000)
+ 705 words of extra memory for PDF output out of 10000 (max. 10000000)
 

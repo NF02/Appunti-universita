@@ -53,3 +53,4 @@
 \contentsline {paragraph}{I membro}{22}{paragraph*.21}%
 \contentsline {paragraph}{II membro}{22}{paragraph*.22}%
 \contentsline {section}{\numberline {3.2}Teorema differenziabilità delle funzioni composite}{22}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Differenziale secondo}{23}{section.3.3}%
