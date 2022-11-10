@@ -139,141 +139,7 @@
 \input{pag/premesse.tex}
 \input{pag/simboli.tex}
 \input{pag/intro.tex}
-\chapter{Derivate Parziali}
-\section{Derivate parziali di primo grado}
-\begin{defi}
-  Sia $f(x,y)$ una funzione di due variabili definita in un punto interno ad $A$\\
-  Consideriamo un interno circolare di $P(x_0,y_0),I(x_0,y_0), \delta$, in netto sulla retta $y=y_0$ e
-  incrementa la $x_0$ passante da $x_0$ a $x_0+h$. Ho così un punto $P(x_0+h,y_0)\in A$.\\
-  Definisco il rapporto di $f(x,y)$ nella sola $x$
-  \begin{equation}
-    \frac{f(x_0+h,y_0)-f(x_0,y_0)}{h}
-  \end{equation}
-  $f(x,y)$ si definisce {\color{red} derivabile parzialmente} se $\exists \lim\limits_{h\to 0}\frac{f(x_0+h,y_0)-f(x_0,y_0)}{h} = l\in R$ reale e finito.
-  \begin{equation}
-    \frac{\partial f}{\partial x} =fx=\lim\limits_{h\to 0}\frac{f(x_0+h,y_0)-f(x_0,y_0)}{h}
-  \end{equation}
-  Analogamente, considero un interno di $P(x_0,y_0), I(x_0,y_0),\delta$. Mi ruoto sulla retta $x=x_0$ e
-  incremento la $y_0$ passando da $y_0$ a $y_0+k$. Ho così un punto $P(x_0,y_0+h)\in A$.\\
-  Definisco il rapporto ingrementale di $f(x,y)$ nella sola $y$
-  \begin{equation*}
-    \frac{f(x_0+k,y_0)-f(x_0,y_0)}{k}
-  \end{equation*}
-  {\color{red} derivabile parzialmente} se $\exists \lim\limits_{h\to 0}\frac{f(x_0+h,y_0)-f(x_0,y_0)}{h} =
-  l\in R$ reale e finito.\\
-  Se in un punto ($x,y$) esistono entrambi le derivate parziale si dice che la funzione è {\color{red} derivabile}
-  in (x,y) inoltre se $f$ è derivabile in ogni punto $(x,y)\in A$, si dice che f è derivabile in $A$.
-\end{defi}
-\subsection{Significato geometrico}
-\begin{itemize}
-\item Lo derivata prima par parziale in $P$ è $fx(x_0,y_0)$, è la tangente alla curva che si crea intersecando
-  $f(x,y)$ con il piano $y=y_0$
-\item La derivata prima parziale in $P$, $fy(x_0,y_0)$ è la tangente alla curva che si
-  crea intersecando $f(x,y)$ con il piano $x=x_0$
-\end{itemize}
-Se esistono entrambe allora le due rette tangenti alle sezioni della funzione individuano il piano tangente al
-solido nel punto $P(x_0,y_0,z)$
-\section{Derivata parziale seconde}
-\begin{defi}
-  Sia $f(x,y)$ una derivabile e siano definite in un deminio le due derivate parziali
-  \begin{equation*}
-    \begin{matrix}
-      f_x(x,y) & f_y(x,y)
-    \end{matrix}
-  \end{equation*}
-  Tali funzioni passano a loro volta essere derivabili e si ottengono così le derivate seconde parziali di
-  $f(x,y)$
-  \begin{center}
-    \Tree[.$f(x,y)$ [.$f_x(x,y)$ $f_{xx}(x,y)$ $f_{xy}(x,y)$ ] [.$f_y(x,y)$ $f_{yx}(x,y)$ $f_{yy}(x,y)$ ] ]
-  \end{center} 
-\end{defi}
-\begin{multicols}{3}
-  \begin{equation*}
-    \begin{matrix}
-      f_{yx}(x,y)\\
-      \text{ derivata prima rispetto a}\\
-      \text{ y poi rispetto a rispetto a x}
-    \end{matrix}
-  \end{equation*}
-  \begin{equation*}
-    \begin{matrix}
-      f_{yx}(x,y)\\
-      f_{yx}(x,y)
-    \end{matrix}
-    \text{ derivata seconde pure}
-  \end{equation*}
-  \begin{equation*}
-    \begin{matrix}
-      f_{yx}\\
-      f_{yx}
-    \end{matrix}
-    \text{ derivata seconde resto}
-  \end{equation*}
-\end{multicols}
-con $n$ variabili si hanno $n^2$ derivate seconde parziali -- Spesso le derivate seconde sono disposte in
-una matrice quadrata, detta {\tt hessiana}, con il sinbolo $D^2$
-\begin{equation}
-  D^2f=\begin{bmatrix}
-         f_{xx} & f_{xy}\\
-         f_{yx} & f_{yy}
-       \end{bmatrix}
-       \text{n variabili} \to n*n
-\end{equation}
-Se esistono le quanto derivate di f, nel punto (x,y), si dice che $f$ è dirivabile due volte in $(x,y)$. Se
-ciò accade $\forall (x,y)\in A$, $f$ è derivabile due volte nell'insieme A.
-\subsection{Teorema di Schwarz (Dell'invertibilità dell'ordine di derivazione)}
-\begin{teorema}
-  Sia $f(x,y)$ definita in $D$ e derivabile due volte $\forall (x,y) \in D$.\\
-  Se le derivate seconde in $(x_0,y_0)$ $f_{xy}(x_0,y_0)$ e $f_{yx}(x_0,y_0)$ sono continue in ($x_0,y_0$) allora\\
-  risulta $f_{xy}(x_0,y_0)=f_{yx}(x_0,y_0)$.
-\end{teorema}
-In generale se vale il teorema di Schwarz, la matrice Hessiana può essere scritta come
-\begin{equation*}
-  H=D^2f=\begin{bmatrix}
-           f_{xx} & f_{xy}\\
-           f_{xy} & f_{yy}
-         \end{bmatrix}
-         = \begin{bmatrix}
-             f_{xx} & f_{yx}\\
-             f_{yx} & f_{yy}
-           \end{bmatrix}
-\end{equation*}
-$det H= f_{xx}*f_{yy}-(f_{xy})^2=f_{xx}*f_{yy}-(f_{yx})^2$
-\section{Massimi e minimi relativi}
-\begin{defi}
-  Sia $f(x,y)$ una funzione definita in un insieme D, un punto $p_0(x_0,y_0)\in D$, si dice di {\color{red}
-    massimo relativo} per la funzione se esiste intorno circolare di $P_0$ per cui il valore assunto della
-  funzione nei punti dell'interno è minore o uguale a quello assunto in $P_0$.\\
-  Analogamente un punto $P_0(x_0,y_0)$ si dice di {\color{red} minimo relativo} per la funzione se esiste un
-  interno circolare di $P_0$ per cui il valore assunto dalla funzione nei punti dell'intorno è maggiore o uguale.
-  \begin{equation*}
-    \begin{matrix}
-      \exists I_{(x,y),\delta}:\forall (x,y)\in I_{(x,y),\delta} & f(x_0,y_0)\geq f(x,y) & \text{Massimo relativo}\\
-      \exists I_{(x,y),\delta}:\forall (x,y)\in I_{(x,y),\delta} & f(x_0,y_0)\leq f(x,y) & \text{Minimo relativo}
-    \end{matrix}
-  \end{equation*} 
-\end{defi}
-\subsection{Teorema di Fermat}
-\begin{teorema}
-  Sia $f(x,y)$ derinita in D e derivabile in un punto $P_0 (x_0,y_0)$\\
-  Se in $P_0(x_0,y_0)$ $f(x,y)$ ha un massimo o un minimo relativo, allora le derivate prime
-  parziali si annullano ($\nabla f=0$ gradiente nullo). La pendenza della tangente è zaro un
-  massimo o minimo.
-\end{teorema}
-\subsubsection{Gradiente}
-Sia $f(x,y)$ una funzione derivabile in un punto (x,y), cioè esistano in (x,y) le due derivate
-parziali $f_x$ e $f_y$.\\
-Si definisce {\color{red} gradiente} di f(x,y) nel punto (x,y): i vettore $\nabla f$ le cui componenti sono le derivate parziali di f(x,y).
-\begin{equation}
-  \nabla f(x,y) \equiv (f_x(x,y); f_y(x,y))
-\end{equation}
-\subsubsection{Massimi e minimi -- condizione necessaria}
-\begin{defi}
-  Se $P_0(x_0,y_0)$ è un punto di massimo/minimo relativo il gradiente è nullo. Così di massimo
-  o minimo relativo interni al dominio della funzione f vanno ricercati tra i punti che annullano
-  la funzione f. Pertanto un punto critico per una funzione derivabile e un punto in cui si
-  annulla il gradiente della funzione.
-\end{defi}
+\input{pag/derivate_parziali.tex}
 \chapter{Differenziabilità}
 \begin{defi}
   Sia $f(x,y)$ definita in D e $P_0(x_0,y_0)\in D$. In $P_0, z=f(x_0,y_0)$, incremento la $x_0$
@@ -692,15 +558,83 @@ $o\abs{x}$, $o\abs{x}$ ci da l'errore.
 \section{Differenziale secondo}
 \begin{defi}
 	$d^2f$ è il differenziale del differenziale primo
+        \begin{equation*}
+                \begin{matrix}
+                        d^2f=d(df)= d(f_xh+f_yk)=\frac{\partial}{\partial x} (f_xh+f_yk)h+ 
+                        \frac{\partial}{\partial x}(f_xh+f_yk)k=\\
+                        =(f_{xx}h+f_{xy}k)h+ (f_{xy}h+f_{yy}k)k=f_{xx}h^2+f_{xy}k hx+ f_{xy}
+                        hx+f_{yy} k^2
+                \end{matrix}
+         \end{equation*}
+         Se $f(x,y)\in c^2$ (derivate parziali II continue) vale il teorema di Schwarz
+         (\ref{Schwarz}), cioè $fyx=fxy$ -- Il differenziale secondo allora diventa
+         \begin{equation*}
+           d^2f=fxxh2+3fxy hk + fyy k^2
+         \end{equation*}
+         Per ipotesi il gradiente è nulla $\Delta f(x_0,y_0)=0$ cioè $\nabla f(x_0,y_0)\equiv (f_x(x_0,y_0),fy(x_0,y_0))\equiv (0,0)$ ovvero le derivate parziali prime sono nulle
+         $fx(x_0,y_0)=0$, $fy(x_0,y_0)=0$ -- Ciò comporta l'annullarsi del differenziale primo
+         \begin{equation*}
+           df(x_0, y_0)=fx(x_0,y_0)h+fy(x_0,y_0)k=0*h+0*k=0
+         \end{equation*}
+         Per cui nella foruma di Taylor si ha:
+         \begin{equation*}
+           f(x,y)=f(x_0,y_0)+\frac{1}{2!}d^2f(x_0+\theta h, y_0+\theta k) \text{ Forme quadratiche}
+         \end{equation*}
+         Il segno di $f(x,y)-f(x_0,y_0)$ è lo stesso di $\frac{1}{2!}d^2f(x_0+\theta h,
+         y_0+\theta k)$, cioè è lo stesso differenziale secondo.\\
+         Per ipotesi $det Hp(x_0,y_0)>0$, ($f(x,y)\in C_A^2\Rightarrow$ vale il teorema di Schwarz)
+         \begin{equation*}
+           \begin{vmatrix}
+             fxx(x_0,y_0) & fxy(x_0,y_0) \\
+             fyx(x_0,y_0) & fyy(x_0,y_0) 
+           \end{vmatrix}= fxx*fyy-fxy^2>0
+         \end{equation*}
+         e $fxx(x_0,y_0)>0$\\
+         Ciò implica per definizione che la forma quadratica associata ad $Hp(x_0,y_0)$ è positiva
+         tutto ciò implica $d^2f(x_0+\theta h, y_0+\theta k)>0$\\
+         Per cui $f(x,y)-f(x_0,y_0)>0$ 
+         \begin{equation*}
+           \begin{matrix}
+              \text{cioè } f(x,y)>f(x_0,y_0) & \text{ difiniziondi di Minimo relativo (\ref{minmaxrel})}
+           \end{matrix}
+         \end{equation*}
+         quindi $(x_0,y_0)$ è un punto di muinimo relativo\\
+         Analogamente, se $f(x_0,y_0)<0$ si dimosta che $(x_0,y_0)$ è un punto di massimo
+         relatovo (\ref{minmaxrel})
 \end{defi}
+\clearpage
+\subsection{Condizioni sufficiente per l'esistenza di minimo e massimo relativo}
+Sia $f(x,y)$ definita in $A,\text{ } f(x,y)\in C^2_A, \text{ } (x_0,y_0)\in A$\\
+Se $\nabla f(x_0,y_0)=0$
 \begin{equation*}
-	\begin{matrix}
-		d^2f=d(df)= d(f_xh+f_yk)=\frac{\partial}{\partial x} (f_xh+f_yk)h+ 
-		\frac{\partial}{\partial x}(f_xh+f_yk)k=\\
-		=(f_{xx}h+f_{xy}k)h+ (f_{xy}h+f_{yy}k)k=f_{xx}h^2+f_{xy}k hx+ f_{xy}
-		hx+f_{yy} k^2
-	\end{matrix}
+  det H_F(x_0,y_0)\begin{cases}
+                    >0 \begin{cases}
+                         fxx(x_0,y_0)>0 \text{ \color{red} Minimo relativo}\\
+                         fxx(x_0,y_0)<0 \text{ \color{red} Massimo relativo}
+                       \end{cases}\\
+                    <0 \text{ Punto di sella (\underline{non sono presenti Max e min})}\\
+                    =0 \text{ Non si vsa se sono presenti Max o min}
+                  \end{cases}
 \end{equation*}
-
+\begin{esempio}
+  Massimi e minimi
+  \begin{enumerate}
+  \item $z=x^2+y^2$
+    \begin{equation*}
+      \nabla f=0 \begin{cases}
+                   zx=0\\
+                   zy=0
+                 \end{cases}\begin{cases}
+                   2x=0\\
+                   -2y=0
+                 \end{cases}\begin{cases}
+                   x=0\\
+                   y=0
+                 \end{cases} in (0,0)\text{ }\nabla f=0 \text{ può MAX o MIN}
+               \end{equation*}
+               \item 
+  \end{enumerate}
+\end{esempio}     
+    
 \printindex
 \end{document}

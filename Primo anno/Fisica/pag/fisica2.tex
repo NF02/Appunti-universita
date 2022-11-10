@@ -1,0 +1,92 @@
+\part {Fisica 2}
+\input{pag/programma 2.tex}
+\input{pag/legge di Couloumb.tex}
+\input{pag/campi_elettrici.tex}
+\input{pag/legge_di_gauss.tex}
+\chapter{Potenziale elettrico}
+\section{L'aspetto fisico}
+La forza elettrostatica è \textbf{conservativa}, per cui, si può associarvi un'\textbf{energia potenziale}. La \textbf{conservazione} dell'energia meccanica semplifica molti calcoli. $q_2$ senta la \textbf{forza} $\vec{F}$ di $q_1$. Alla posizione di $q_2$ c'è un \textbf{campo} $\vec{E}=\vec{F}/q_2$ - $q_2$ ha un \textbf{energia potenziale} \textit{U} dovuta a $q_1$. Alla posizione di $q_2$ c'è un \textbf{potenziale elettrico} $V=\frac{U}{q_2}$ (\textbf{Nota bene:} grandezza scalare!)
+\section{Il potenziale elettrico}
+L'energia potenziale \textit{U}: $U=0$ a un \textbf{livello di riferimento}. Spostando, la forza conservativa compie un \textbf{lavoro} $L$. L'energia potenziale è $E=-L$. Scegliamo $U=0$ a \textbf{carica esplorativa} $q_0$ viene trasportata da $\infty$ a $P$.\\
+$L_\infty$ è il lavoro svolto \textbf{dalla forza elettrica} per il trasporto. Il potenziale elettrico nel punto $P$: $V=\frac{-L_\infty}{q_0}$. Ad ogni posizione interno ad una carica è assegnato un potenziale elettrico.
+\section{Unità di misura}
+Il potenziale elettrico viene espresso in $\frac{J}{C}$ o V (\textbf{Volt}).\\
+Figura anche in altre unità:
+\begin{center}
+  Il campo elettrico $1\frac{N}{C}=1\frac{V}{m}$
+\end{center}
+L'energia per il \textbf{sistema microscopici}: $1eV=1,6*10^{-19}$
+\begin{center}
+  \textit{\color{blue} $1eV$ è la differenza in energia di un elettrone che attraverso una differenza di potenziale di 1V}
+\end{center}
+\section{Il potenziale elettrico}
+\paragraph{Inversamente:} una carica $q$ in un potenziale elettrico $V$ ha energia potenziale $U=qV$. Spostanedosi in un compo elettrico da $i$ e $f$ abbiamo differenza di potenziale $\Delta V=V_f-V_i$. Per una carica $q: \Delta U=q\Delta V=q(V_f-V_i)=-L$, $\Delta V \text{ } \Delta U$ \textbf{non dipendono dal cammino} da $i$ a $f$.\\
+Possibile applicare la \textbf{conservazione dell'energia meccanica: } $U_i+K_i=U_f+K_f$ per cui $\Delta K=K_f-K_i=-q\Delta V$ - Se agisce sulla particella anche un'altra forza che compie un lavoro $L_{app}$, abbiamo $\Delta K=-q\Delta V+L_{L_{app}}$.
+\section{Superfici equipotenziali}
+L'insieme dei punti con lo \textbf{stezzo potenziale} forma una superficie: La superficie equipotenziale. Spostando una carica tra due punti di una superficie equipotenziale, il campo elettrico \textbf{non compie lavoro}.\\
+Spostamenti \textbf{sulla} superficie hanno $L=0$, per cui $L=\vec{F}*\vec{d}=q \text{ } \vec{E}*\vec{d}=qEd\cos\theta=0\to \theta =90^o$\\
+La superficie equipotenziale è perpendicolare a $\vec{E}$
+\begin{itemize}
+\item \textit{Per un campo uniforme: piani perpendicolari a $\vec{E}$}
+\item \textit{Per un carica puntiforme: sfere concentriche}
+\end{itemize}
+\section {Calcolo del potenziale, dato $\vec{E}$}
+La Carica di prova $q_0$ si muove da $i$ e $f$. Lavoro svolto da $\vec{E}$ per spostamento $d\vec{s}$:
+\begin{equation}
+	dL=\vec{F}*d\vec{s}=q_0\vec{E}*d\vec{s}
+\end{equation}
+Per cui $V_f-V_i=-\frac{L}{q_0}=-\int^f_i \vec{E}*d\vec{s}$
+\begin{center}
+	Non dipende dal percorso?
+\end{center}
+Per campo uniforme:
+\begin{equation}
+  \Delta V=-\int_i^f \vec{E}*d\vec{s}=-E\Delta x
+\end{equation}
+\section{Potenziale di una carica puntiforma}
+Potenziale $V$ per punto $P$ a distanza $R$ da carica $q$. $V=0$ a distanza infinita. $V_f-V_i=-\int^f_i\vec{E}*d\vec{s}$.\\
+Libertà di scelta per il cammino. Lungo la direzione radiale: $\vec{E}*d\vec{s}=Edr0-V=-\int^\infty_REdr=-\int^\infty_R\frac{q}{4\pi \xi_0r}dr=-\frac{q}{4\pi \xi_0}\left[\frac{-1}{r}\right]^\infty_R=-\frac{q}{4\pi \xi_0 r}$\\
+per cui $V=\frac{q}{4\pi\xi_or}$
+\begin{itemize}
+\item Carica positiva $\leftrightarrow$ potenziale positivo
+\item Carica negativa $\leftrightarrow$ potenziale negativo
+\end{itemize}
+Valido anceh per distribuzione sferiche non-puntiforme
+\section{Insieme di cariche puntiformi}
+Il \textit{principio di sovrapposizione} vale anche per $V$, Per $n$ cariche, il potenziale netto sarà
+\begin{equation}
+  V=\sum_{i=1}^{n}V_i=\frac{1}{4\pi \xi_0}\sum_{i=1}^{n}\frac{q_i}{r_i}
+\end{equation}
+$Nb$: somma scalare!
+\subsection{problema}
+due protoni. Ordinare secondo i valori crescenti di $V$ nel punto $P$
+\begin{equation}
+  \begin{matrix}
+    q_1=+12nC\\
+    q_2=-24nC\\
+    q_3=+31nC\\
+    q_4=+17nC\\
+    d=1,3m
+  \end{matrix}
+\end{equation}
+Qual'è il potenziale nel punto P?
+\begin{equation}
+  V=\frac{1}{4\pi \xi_0}\sum_{i=1}^{n}\frac{q_i}{r_i}=
+  \frac{1}{4\pi\xi_0}\left(\frac{q_1}{r_1}+\frac{q_2}{r_2}+\frac{q_3}{r_3}
+    +\frac{q_4}{r_4}\right)=\frac{1}{4\pi\xi_0}
+  \frac{(12-24+31+17)*10^{-9}}{\frac{1,3}{\sqrt{2}}}=352V
+\end{equation}
+\section{Potenziale di un dipolo elettrico}
+Il potenziale in un in un punto arbitrario $P$ a distanza $r$, angolo $\Theta$:
+\begin{equation}
+  V=V_++V_- =\frac{1}{4\pi\xi_0}\left(\frac{q}{r_+} - \frac{q}{r_-}\right)=
+  \frac{q}{4\pi\xi_0}\frac{r_--r_+}{r_+r_-}
+\end{equation}
+Per $r>>d:r_--r_+\approx d \cos\Theta,\text{ } r_+r_-\approx r^2$
+\begin{equation*}
+  \to V = \frac{q}{4\pi\xi_0}\frac{d\cos \Theta}{r^2}=\frac{p\cos\Theta}{4\pi\xi_0}=
+  \frac{\overrightarrow{p}*\hat{r}}{4\pi\xi_0}
+\end{equation*}
+Ove $\overrightarrow{r}$ è il momento dipolare -- \textit{\color{blue}il verso va da -q a +q}
+\section{Potenziale di una distribuzione contitua}
+Per distribuzione continua dividiamo in infinitesimi $dq$. Ogni infinitesimo $dq$ contribuisce $dV=\frac{dq}{4\pi\xi_0r}$, così $v=\frac{1}{4\pi\xi_0}\sum^n\limits_{i=0}\frac{q_i}{r_i}$ diventa $V=\frac{1}{4\pi\xi_0}\int \frac{dq}{r}$

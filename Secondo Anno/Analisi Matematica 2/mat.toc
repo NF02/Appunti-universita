@@ -1,5 +1,5 @@
-\babel@toc {italian}{}\relax 
-\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}
+\babel@toc {italian}{}
 \contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Simboli}{8}{section.0.2}%
 \contentsline {chapter}{\numberline {1}Introduzione}{9}{chapter.1}%
@@ -28,7 +28,7 @@
 \contentsline {subsection}{\numberline {2.1.1}Significato geometrico}{13}{subsection.2.1.1}%
 \contentsline {section}{\numberline {2.2}Derivata parziale seconde}{14}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Teorema di Schwarz (Dell'invertibilità dell'ordine di derivazione)}{14}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Massimi e minimi relativi}{14}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Massimi e minimi relativi }{14}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Teorema di Fermat}{15}{subsection.2.3.1}%
 \contentsline {subsubsection}{Gradiente}{15}{subsubsection*.12}%
 \contentsline {subsubsection}{Massimi e minimi -- condizione necessaria}{15}{subsubsection*.13}%
@@ -54,3 +54,4 @@
 \contentsline {paragraph}{II membro}{22}{paragraph*.22}%
 \contentsline {section}{\numberline {3.2}Teorema differenziabilità delle funzioni composite}{22}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Differenziale secondo}{23}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Condizioni sufficiente per l'esistenza di minimo e massimo relativo}{24}{subsection.3.3.1}%
