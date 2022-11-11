@@ -631,10 +631,52 @@ Se $\nabla f(x_0,y_0)=0$
                    x=0\\
                    y=0
                  \end{cases} in (0,0)\text{ }\nabla f=0 \text{ può MAX o MIN}
-               \end{equation*}
-               \item 
+    \end{equation*}
+    \begin{equation*}
+		det H_f=\begin{vmatrix}
+			z_{xx} & z_{zy} \\
+			z_{xy} & z_{yy}
+		\end{vmatrix}=\begin{vmatrix}
+			2 & 0 \\
+			0 & -2
+		\end{vmatrix} =-4
+    \end{equation*}
+    \item Semisuperfici sferica $z=\sqrt{c^2-x^2-y^2}$
+		\begin{equation*}
+			\nabla f=0 \begin{cases}
+				z_x=\frac{-x}{\sqrt{\Gamma^2-x^2-y^2}}\\
+				z_y=\frac{-y}{\sqrt{\Gamma^2-x^2-y^2}}
+			\end{cases} \text{ dominio D } x^2-y^2<\Gamma^2 
+		\end{equation*}
+		\begin{equation*}
+			\begin{cases}
+				z_x=0\\
+				z_y=0
+			\end{cases}\begin{cases}
+					x=0\\
+					y=0
+			\end{cases} (0,0)\leftarrow D \text{ può esserci un Max e un Min}
+		\end{equation*}
+		  Verifico e trovo che $det H>0$ $f_{xx}<0: in(0,0)$ è presente il Max.
+	  \item Cono $z=\sqrt{x^2+y^2}$ 
+		\begin{figure}[ht]
+			\centering
+			\includegraphics[width=8cm]{img/finiti/cono.eps}
+			\caption{Rappresentazione grafica della conica}
+			\label{fig:conica}
+		\end{figure}
+		\begin{equation*}
+			\nabla f=0
+			\begin{cases}
+				z_x=\frac{x}{\sqrt{x^2+y^2}}\\
+				z_y=\frac{y}{\sqrt{x^2+y^2}}
+			\end{cases}\begin{cases}
+					x=0\\
+					y=0
+			\end{cases} 
+		\end{equation*}
   \end{enumerate}
-\end{esempio}     
+\end{esempio}
     
 \printindex
 \end{document}

@@ -1,5 +1,5 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
 \contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Simboli}{8}{section.0.2}%
 \contentsline {chapter}{\numberline {1}Introduzione}{9}{chapter.1}%
