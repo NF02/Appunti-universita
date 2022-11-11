@@ -675,8 +675,141 @@ Se $\nabla f(x_0,y_0)=0$
 					y=0
 			\end{cases} 
 		\end{equation*}
+		  \begin{nota}
+			  sarebbe (0,0) ma il dominio delle derivate $x^2+y^2>0$ cioè
+			  $\forall(x,y)\in R^2-\{0,0\}$ in (0,0) non è derivabile.
+		  \end{nota}
+		  Sappiamo\footnote{si vede geometricamente} che in (0,0) c'è un
+		  {\color{red}minimo assoluto}
+	  \item $z=x^4 +y^4$
+		  \begin{equation*}
+			\begin{cases}
+				z_x=4x^3=0\\
+				z_y=
+			\end{cases}\begin{cases}
+					x=0\\
+					y=0
+			\end{cases} \text{ in (0,0) può esserci Max/Min relativo}
+		  \end{equation*}
+		  \begin{equation*}
+			  \begin{matrix}
+				det H=\begin{vmatrix}
+					0 & 0\\
+					0 & 0
+				\end{vmatrix} = 0 & \begin{matrix}
+					f_{xx}(0,0)=12x^2|_{0,0}=0\\
+					f_{xx}(0,0)= 0\\
+					f_{yy}(0,0)=12y^2|_{0,0}=0
+				  \end{matrix}
+			  \end{matrix}
+		  \end{equation*}
+		  $det H=0 \to$ non so se in (0,0) c'è un massimo o un minimo
+		  relativo.\\
+		  Per definire se esiste un massimo o un minimo relativo uso:
+		  \begin{equation*}
+			  \begin{matrix}
+				  \min f(x_0,y_0)\leq f(x,y) & 0\leq x^4+y^4 & x^4+y^4\geq 0 &
+				  \text{ \underline{SI} $\forall(x,y)$ risulta da
+				  $x^4+y^4\geq 0 (0,0)\min$}\\
+				  \max f(x_0,y_0)\geq f(x,y) & 0\geq x^4+y^4 & x^4+y^4\leq 0 &
+				  \text{ \underline{NO}}
+			  \end{matrix}
+		  \end{equation*}
   \end{enumerate}
 \end{esempio}
-    
+\subsection{Ricerca del massimo e del minimo assoluti}
+Condizioni sufficienti per l'essistenza del Massimo e del minimo assoluto
+\subsubsection{Teorema di Weierstrass}
+\begin{teorema}
+	Sia f(x,y) definita in D, i continua in D chiuso e limitato, allora il
+	minimo e massimo assoluto in D.
+	\begin{multicols}{2}
+		\paragraph{Ipotesi:}
+		\begin{equation*}
+			f\in C^0_D
+		\end{equation*}
+		D chiuso e limitato
+		\paragraph{Tesi:}
+		$\exists\min$ con $m=f(x_1,y_1), M=f(x_2,y_2)$ tale che $m\leq
+		f(x,y)\leq M$
+	\end{multicols}
+	\paragraph{Ricerca dei punti di Massimo e minimo assoluti:}
+	\begin{itemize}
+		\item nei punti di massimo o minimo relativo;
+		\item nei punti di non derivabilità;
+		\item nei punti di frontiera.
+	\end{itemize}
+	Vanno ricercati quindi nei seguenti modi:
+	\begin{enumerate}
+		\item $\nabla f=0$ dove il gradiente si annulla;
+		\item $\exists \nabla f$ dove il gradiente non esite;
+		\item sulla FD sulla frontiera.
+	\end{enumerate}
+\end{teorema}
+\subsubsection{Studio sulla frontiera}
+Sia $\xi$ una superficie definita in un insieme D e sia FD la mia frontiera\\
+La frontiera FD è una curva\footnote{o insieme di curve} e suoi punti linitano
+l'iperbole $\xi$.\\
+Possiamo definire la frontiera in forma parametrica
+\begin{equation*}
+	FD:\begin{cases}
+		x=x(t)\\
+		y=y(t)
+	\end{cases} t\in [a,b] \mathds{R}\to \mathds{R}^2
+\end{equation*}
+Calcolo la funzione $f(x,y)$ sui punti della frontiera
+\begin{equation}
+	f(x,y)\to F(t)=f(x(t),y(t))\text{ funzione di 1 variabile}
+\end{equation}
+studio del massimo e minimo per $F(t)=0\begin{cases}
+	F^{\prime\prime}>0 \min\\
+	F^{\prime\prime}<0 \max
+\end{cases}$\\
+Calcolo i valori della funzione nei punti di Massimo/minimo e li confronto con
+i valori Massimo/minimo relativi nel dominio e i valori nei punti di non
+derivabilità. La frontiera può anche essere in forma cartesiana
+\begin{equation}
+	\begin{matrix}
+		y=y(x) & a\leq x\leq b
+	\end{matrix}
+\end{equation}
+Calcolo la funzione nei punti della frontiera e procedo come visto prima
+$f(x,y)\to F(t)=f(x(t),y(t))$
+\begin{esempio}
+	Determinare il massimo e il mino assoluto di $f(x,y)=
+	1+2x^2+\sqrt{x^2+y^2}$ in $D:\{x^2+y^2\leq \Delta\}$
+	\begin{enumerate}
+		\item $\nabla f=0$
+		\item $\nexists \nabla f$
+		\item $FD$
+	\end{enumerate}
+	\begin{enumerate}
+		\item $\nabla f(x,y)=0\begin{cases}
+				f_x=0\\
+				f_y=0
+		\end{cases}\begin{cases}
+			4x+\frac{x}{\sqrt{x^2+y^2}}\\
+			\frac{y}{\sqrt{x^2+y^2}}
+		\end{cases}\begin{cases}
+			4x+\frac{x}{\abs x}=0\\
+			y=0
+		\end{cases}$
+		\begin{equation*}
+			\begin{cases}
+				x=0\\
+				y=0
+			\end{cases}
+		\end{equation*}
+			$\nabla f=0$ in (0,0) che non è nel C.E. delle derivate parziali
+			per cui $\nabla f \neq 0$ $\forall (x,y)\in A$ A dominio $f_x$ e
+			$f_y$
+		\item $\nexists \nabla f$ le derivate parziali perime sono definite
+			$\forall (x,y)\in R^2:x^2+y^2\neq 0$ cioè in $R^2-\{0,0\}$
+			\begin{equation*}
+				(0,0) \text{ pnto di non derivabilità } f(0,0)=1
+			\end{equation*}
+		\item FD 
+	\end{enumerate}
+\end{esempio}
 \printindex
 \end{document}

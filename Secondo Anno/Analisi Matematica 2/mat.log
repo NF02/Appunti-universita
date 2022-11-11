@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  11 NOV 2022 12:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  11 NOV 2022 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1599,7 +1599,7 @@ your preamble.
 \openout2 = `./title/titlepage.aux'.
 
 (./title/titlepage.tex
-<./title/logo_CA.jpg, id=151, 142.8537pt x 143.3355pt>
+<./title/logo_CA.jpg, id=155, 142.8537pt x 143.3355pt>
 File: ./title/logo_CA.jpg Graphic file (type jpg)
 <use ./title/logo_CA.jpg>
 Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
@@ -1700,7 +1700,7 @@ Package epstopdf Info: Source file: <img/finiti/cono.eps>
 ted-to.pdf img/finiti/cono.eps>
 (epstopdf)             \includegraphics on input line 664.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/cono-eps-converted-to.pdf, id=395, 1686.3pt x 949.5475pt>
+<img/finiti/cono-eps-converted-to.pdf, id=400, 1686.3pt x 949.5475pt>
 File: img/finiti/cono-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/cono-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/cono-eps-converted-to.pdf  used on input li
@@ -1709,54 +1709,71 @@ ne 664.
  [24
 
  <./img/finiti/cono-eps-converted-to.pdf>]
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 7
+58.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+) [25]
+[26]
 runsystem(makeindex mat.idx)...executed safely (allowed).
 
- (./mat.ind)
-(./mat.aux (./title/titlepage.aux))
+ (./mat.ind) (./mat.aux (./title/titlepage.aux))
 Package rerunfilecheck Info: File `mat.out' has not changed.
-(rerunfilecheck)             Checksum: 6F24FF97EF6001F737AEB8A9EEAA4C5C;7186.
+(rerunfilecheck)             Checksum: 3224C877E5F9954DE0D4B373905725D8;7471.
  ) 
 Here is how much of TeX's memory you used:
- 56543 strings out of 478268
- 1385199 string characters out of 5846348
+ 56616 strings out of 478268
+ 1386081 string characters out of 5846348
  2169257 words of memory out of 5000000
- 73722 multiletter control sequences out of 15000+600000
- 491423 words of font info for 73 fonts, out of 8000000 for 9000
+ 73753 multiletter control sequences out of 15000+600000
+ 497674 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,89p,718b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
-/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/
-texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
-live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texliv
-e/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
-2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/local/texliv
-e/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/
-2022/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/local/texlive/20
-22/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2022
-/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2022/t
-exmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/tex
-mf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/texmf
--dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texmf-d
-ist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2022/texmf-dis
-t/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2022/texmf-dist/
-fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2022/texmf-dist/fo
-nts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/font
-s/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/
-type1/public/cm-super/sfti0700.pfb></usr/local/texlive/2022/texmf-dist/fonts/ty
-pe1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type
-1/public/cm-super/sftt1000.pfb>
-Output written on mat.pdf (24 pages, 2151307 bytes).
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
+usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
+/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/l
+ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
+xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/
+2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
+22/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2
+022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/local/texlive
+/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/2
+022/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/local/texlive/202
+2/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2022/
+texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2022/te
+xmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/texm
+f-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/texmf-
+dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texmf-di
+st/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2022/texmf-dist
+/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2022/texmf-dist/f
+onts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2022/texmf-dist/fon
+ts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2022/texmf-dist/fonts
+/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
+e1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
+/public/cm-super/sfti0700.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/p
+ublic/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pub
+lic/cm-super/sftt1000.pfb>
+Output written on mat.pdf (26 pages, 2204391 bytes).
 PDF statistics:
- 557 PDF objects out of 1000 (max. 8388607)
- 462 compressed objects within 5 object streams
- 139 named destinations out of 1000 (max. 500000)
- 311 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 616 PDF objects out of 1000 (max. 8388607)
+ 512 compressed objects within 6 object streams
+ 164 named destinations out of 1000 (max. 500000)
+ 319 words of extra memory for PDF output out of 10000 (max. 10000000)
 

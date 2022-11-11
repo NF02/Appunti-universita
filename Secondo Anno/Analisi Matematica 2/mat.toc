@@ -55,3 +55,9 @@
 \contentsline {section}{\numberline {3.2}Teorema differenziabilità delle funzioni composite}{22}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Differenziale secondo}{23}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Condizioni sufficiente per l'esistenza di minimo e massimo relativo}{24}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Ricerca del massimo e del minimo assoluti}{25}{subsection.3.3.2}%
+\contentsline {subsubsection}{Teorema di Weierstrass}{25}{subsubsection*.23}%
+\contentsline {paragraph}{Ipotesi:}{25}{paragraph*.24}%
+\contentsline {paragraph}{Tesi:}{25}{paragraph*.25}%
+\contentsline {paragraph}{Ricerca dei punti di Massimo e minimo assoluti:}{25}{paragraph*.26}%
+\contentsline {subsubsection}{Studio sulla frontiera}{25}{subsubsection*.27}%
