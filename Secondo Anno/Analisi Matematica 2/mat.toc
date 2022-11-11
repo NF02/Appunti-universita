@@ -61,3 +61,7 @@
 \contentsline {paragraph}{Tesi:}{25}{paragraph*.25}%
 \contentsline {paragraph}{Ricerca dei punti di Massimo e minimo assoluti:}{25}{paragraph*.26}%
 \contentsline {subsubsection}{Studio sulla frontiera}{25}{subsubsection*.27}%
+\contentsline {subsection}{\numberline {3.3.3}Metodo dei moltiplicatori di di Lagrange}{27}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Integrali Doppi e tripli}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Domini normali (semplici)}{29}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Dominio normale rispetto all'asse $x$}{29}{subsection.4.1.1}%
