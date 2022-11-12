@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  12 NOV 2022 00:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  12 NOV 2022 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1599,7 +1599,7 @@ your preamble.
 \openout2 = `./title/titlepage.aux'.
 
 (./title/titlepage.tex
-<./title/logo_CA.jpg, id=171, 142.8537pt x 143.3355pt>
+<./title/logo_CA.jpg, id=175, 142.8537pt x 143.3355pt>
 File: ./title/logo_CA.jpg Graphic file (type jpg)
 <use ./title/logo_CA.jpg>
 Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
@@ -1700,7 +1700,7 @@ Package epstopdf Info: Source file: <img/finiti/cono.eps>
 ted-to.pdf img/finiti/cono.eps>
 (epstopdf)             \includegraphics on input line 522.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/cono-eps-converted-to.pdf, id=421, 1686.3pt x 949.5475pt>
+<img/finiti/cono-eps-converted-to.pdf, id=426, 1686.3pt x 949.5475pt>
 File: img/finiti/cono-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/cono-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/cono-eps-converted-to.pdf  used on input li
@@ -1738,13 +1738,13 @@ runsystem(makeindex mat.idx)...executed safely (allowed).
 
  (./mat.ind) (./mat.aux (./title/titlepage.aux))
 Package rerunfilecheck Info: File `mat.out' has not changed.
-(rerunfilecheck)             Checksum: F7EFDBA518C2D8FC42C6883F666DFC21;8362.
+(rerunfilecheck)             Checksum: ABF31A2DEB8C687154B764F414BC3EDC;8555.
  ) 
 Here is how much of TeX's memory you used:
- 56653 strings out of 478268
- 1386579 string characters out of 5846348
- 2169256 words of memory out of 5000000
- 73771 multiletter control sequences out of 15000+600000
+ 56658 strings out of 478268
+ 1386651 string characters out of 5846348
+ 2169257 words of memory out of 5000000
+ 73772 multiletter control sequences out of 15000+600000
  500174 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,89p,718b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1789,10 +1789,10 @@ pe1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type
 public/cm-super/sfti0700.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pu
 blic/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/publ
 ic/cm-super/sftt1000.pfb>
-Output written on mat.pdf (30 pages, 2221457 bytes).
+Output written on mat.pdf (30 pages, 2222136 bytes).
 PDF statistics:
- 664 PDF objects out of 1000 (max. 8388607)
- 554 compressed objects within 6 object streams
- 177 named destinations out of 1000 (max. 500000)
- 351 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 674 PDF objects out of 1000 (max. 8388607)
+ 564 compressed objects within 6 object streams
+ 181 named destinations out of 1000 (max. 500000)
+ 359 words of extra memory for PDF output out of 10000 (max. 10000000)
 
