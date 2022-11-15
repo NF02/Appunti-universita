@@ -268,7 +268,7 @@ rettangolo (in generale dominio).\\
 Se esiste finito $\lim\limits_{n\to \infty\text{ } m\to \infty}\displaystyle\sum_{h=k=1}^{k=m\text{ }h=n}f(x_k.y_n)*misR_{kh}$ tale limite è definito \underline{\color{red} ingrale doppio} di f(x,y) nel
 dominio $R=[a,b]*[c,d]$
 \begin{equation}
-  \iint_R f(x,y)dxdy=\lim\limits_{n\to \infty\text{ } m\to \infty}\displaystyle\sum_{h=k=1}^{k=m\text{ }h=n}f(x_k.y_n)*misR_{kh}
+  \iint_R f(x,y)dx*dy=\lim\limits_{n\to \infty\text{ } m\to \infty}\displaystyle\sum_{h=k=1}^{k=m\text{ }h=n}f(x_k.y_n)*misR_{kh}
 \end{equation}
 \paragraph{Somme superiori e somme inferiori}
 \begin{defi}
@@ -289,7 +289,7 @@ dominio $R=[a,b]*[c,d]$
   uno stesso valore, detto {\color{red}integrale doppio}\footnote{è il valore sotto al grafico
     della funzione}
   \begin{equation*}
-    \lim s=\lim S=\iint_R f(x,y)dxdy
+    \lim s=\lim S=\iint_R f(x,y)dx*dy
   \end{equation*}
 \end{defi}
 \clearpage
@@ -297,70 +297,19 @@ dominio $R=[a,b]*[c,d]$
 \begin{equation*}
   \begin{matrix}
   \text{Linearità } \begin{cases}
-                      1) \iint_D [f_1(x,y)+f_2(x,y)]dxdy=\iint_Df_1(x,y)dx*dy+\iint_Df_2(x,y)dx*dy\\
-                      2) \iint_D \alpha f_1(x,y)dxdy=\alpha\iint_Df_2(x,y)dx*dy
+                      1) \iint_D [f_1(x,y)+f_2(x,y)]dx*dy=\iint_Df_1(x,y)dx*dy+\iint_Df_2(x,y)dx*dy\\
+                      2) \iint_D \alpha f_1(x,y)dx*dy=\alpha\iint_Df_2(x,y)dx*dy
                     \end{cases}\\
-    \text{Assitività } 3)\text{ Sia } D=D_1\cup D_2 \iint_Df(x,y)dxdy=\iint_{D_1}f(x,y)dx*dy +\iint_{D_2}f(x,y)dx*dy\\
+    \text{Assitività } 3)\text{ Sia } D=D_1\cup D_2 \iint_Df(x,y)dx*dy=\iint_{D_1}f(x,y)dx*dy +\iint_{D_2}f(x,y)dx*dy\\
     \text{Monotonia } \begin{cases}
                         4) \text{ Sia } f(x,y)\leq g(x,y)\text{ } \forall (x,y) \in D\\
-                        \text{ }\iint_Df(x,y)dxdy \leq \iint_Dg(x,y)dx*dy\\
+                        \text{ }\iint_Df(x,y)dx*dy \leq \iint_Dg(x,y)dx*dy\\
                         5) \text{ Sia } D_1 \subset D\\
-                        \text{ } \iint_{D_1}f(x,y)dxdy < \iint_Df(x,y)dx*dy \\
-                        6) \abs{\iint_Df(x,y)dxdy} \leq \iint_D\abs{f(x,y)}dx*dy
-                      \end{cases}
+                        \text{ } \iint_{D_1}f(x,y)dx*dy < \iint_Df(x,y)dx*dy \\
+                        6) \abs{\iint_Df(x,y)dx*dy} \leq \iint_D\abs{f(x,y)}dx*dy
   \end{matrix}
 \end{equation*} 
-
-\subsection{Formula di riduzione}
-\begin{itemize}
-\item Sia $A\subset R^2$ un dominio normale rispetto all'asse x
-  \begin{equation*}
-    A=\begin{cases}
-        a\leq x\leq b\\
-        g_1(x)\leq y\leq g_2(x)
-      \end{cases}
-  \end{equation*}
-    Allora $\iint_A f(x,y) dxdy=\int_a^bdx \left(\int_{g_1(x)}^{g_2(x)}f(x,y)dy\right)$\\
-    calcolo prima $\int_{g_1(x)}^{g_2(x)}f(x,y)dy$ che è una funzione della sola $x$ $\not{o}(x)$
-    \begin{equation*}
-      \text{per calcolo } \int^b_a \not{o} (x) dx
-    \end{equation*}
-  \item Dominio polarmente normale\\
-    Effettua un cambio di coordinate, passando dalle coordinate cartesiane a quelle polari
-    \begin{equation*}
-      \text{L'integrale doppio è } \iint_Df(x,y)dxdy
-    \end{equation*}
-    Passando alle coordinate polari
-    \begin{equation*}
-      \begin{matrix}
-        \text{del dominio } D(x,y) \text{ passerò al dominio } D^\prime (\varphi, \theta) \\
-        \text{della funzione } f(x,y) \text{ passerò al dominio } f (\varphi, \theta)
-      \end{matrix} \begin{cases}
-                       x=\varphi\cos\theta\\
-                     y=\varphi\sin\theta
-                   \end{cases}
-                   \varphi=\sqrt{x^2+y^2} 
-   \end{equation*}
-   e da differenziali $dxdy$ passerò ai differenziali $d\varphi d\theta$. \\
-   Si dimostra che nel passaggio ad altre coordinate il differenziale è $\abs{j} d\varphi d\theta$,
-   dove $\abs j$ è il determinante della {\color{red} matrice Jacobiana} che contiene le derivate
-   parziale prime
-   \begin{equation}
-     \abs{J}=\begin{vmatrix}
-               x_\varphi & x_\theta\\
-               y_\varphi & y_\theta
-             \end{vmatrix}
-             \to \abs{J}=\begin{vmatrix}
-                           \cos \theta & -\varphi \sin \theta\\
-                           \sin \theta & \varphi \cos \theta
-                         \end{vmatrix}
-                         =\varphi\cos^2\theta+\varphi \sin^2\theta =\varphi
-   \end{equation} 
-   Per cui passando da $dxdy$ alle coordinate polari avrò $\varphi d\varphi d\theta$ così
-   l'integrale doppio diventa:
-   \begin{equation*}
-     \iint_Df(x,y)dxdy=\iint_{D^\prime}f(\varphi,\theta)\varphi d\varphi d\theta
-   \end{equation*}
-\end{itemize} 
+               
+                      
 \printindex
 \end{document}
