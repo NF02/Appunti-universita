@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.10.23)  15 NOV 2022 20:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.10.23)  16 NOV 2022 00:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1582,7 +1582,7 @@ your preamble.
 \openout2 = `./title/titlepage.aux'.
 
 (./title/titlepage.tex
-<./title/logo_CA.jpg, id=191, 142.8537pt x 143.3355pt>
+<./title/logo_CA.jpg, id=195, 142.8537pt x 143.3355pt>
 File: ./title/logo_CA.jpg Graphic file (type jpg)
 <use ./title/logo_CA.jpg>
 Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
@@ -1681,7 +1681,7 @@ Package epstopdf Info: Source file: <img/finiti/cono.eps>
 ted-to.pdf img/finiti/cono.eps>
 (epstopdf)             \includegraphics on input line 522.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/cono-eps-converted-to.pdf, id=448, 1686.3pt x 949.5475pt>
+<img/finiti/cono-eps-converted-to.pdf, id=457, 1686.3pt x 949.5475pt>
 File: img/finiti/cono-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/cono-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/cono-eps-converted-to.pdf  used on input li
@@ -1714,42 +1714,91 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [29]
 Package epstopdf Info: Source file: <img/finiti/graficodecomposizioneR.eps>
-(epstopdf)                    date: 2022-11-13 12:27:01
-(epstopdf)                    size: 27525 bytes
+(epstopdf)                    date: 2022-11-16 00:26:25
+(epstopdf)                    size: 42458 bytes
 (epstopdf)             Output file: <img/finiti/graficodecomposizioneR-eps-conv
 erted-to.pdf>
-(epstopdf)                    date: 2022-11-13 12:27:07
-(epstopdf)                    size: 11512 bytes
+(epstopdf)                    date: 2022-11-15 23:09:33
+(epstopdf)                    size: 14491 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/graficodecompos
 izioneR-eps-converted-to.pdf img/finiti/graficodecomposizioneR.eps>
 (epstopdf)             \includegraphics on input line 236.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/graficodecomposizioneR-eps-converted-to.pdf, id=521, 543.02875pt x 
-418.56375pt>
+runsystem(repstopdf --outfile=img/finiti/graficodecomposizioneR-eps-converted-t
+o.pdf img/finiti/graficodecomposizioneR.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <img/finiti/graficodecomposizioneR-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2022-11-16 00:27:28
+(epstopdf)                    size: 8160 bytes.
+<img/finiti/graficodecomposizioneR-eps-converted-to.pdf, id=530, 354.32375pt x 
+243.91125pt>
 File: img/finiti/graficodecomposizioneR-eps-converted-to.pdf Graphic file (type
  pdf)
 <use img/finiti/graficodecomposizioneR-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/graficodecomposizioneR-eps-converted-to.pdf
   used on input line 236.
-(pdftex.def)             Requested size: 227.62204pt x 175.45068pt.
+(pdftex.def)             Requested size: 227.62204pt x 156.69441pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30 <./img/finiti/graficodecomposizioneR-eps-converted-to.pdf>] [31] [32
 
 ]
+Package epstopdf Info: Source file: <img/finiti/esdompolnorm.eps>
+(epstopdf)                    date: 2022-11-15 23:07:46
+(epstopdf)                    size: 120482 bytes
+(epstopdf)             Output file: <img/finiti/esdompolnorm-eps-converted-to.p
+df>
+(epstopdf)                    date: 2022-11-15 23:12:29
+(epstopdf)                    size: 14491 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/esdompolnorm-ep
+s-converted-to.pdf img/finiti/esdompolnorm.eps>
+(epstopdf)             \includegraphics on input line 369.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/esdompolnorm-eps-converted-to.pdf, id=561, 566.115pt x 256.96pt>
+File: img/finiti/esdompolnorm-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/esdompolnorm-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/esdompolnorm-eps-converted-to.pdf  used on 
+input line 369.
+(pdftex.def)             Requested size: 398.33858pt x 180.81178pt.
+Package epstopdf Info: Source file: <img/finiti/baricentrodiundominionormale.ep
+s>
+(epstopdf)                    date: 2022-11-15 23:49:23
+(epstopdf)                    size: 46398 bytes
+(epstopdf)             Output file: <img/finiti/baricentrodiundominionormale-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2022-11-16 00:00:54
+(epstopdf)                    size: 5877 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/baricentrodiund
+ominionormale-eps-converted-to.pdf img/finiti/baricentrodiundominionormale.eps>
+
+(epstopdf)             \includegraphics on input line 393.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/baricentrodiundominionormale-eps-converted-to.pdf, id=562, 310.1587
+5pt x 244.915pt>
+File: img/finiti/baricentrodiundominionormale-eps-converted-to.pdf Graphic file
+ (type pdf)
+<use img/finiti/baricentrodiundominionormale-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/baricentrodiundominionormale-eps-converted-
+to.pdf  used on input line 393.
+(pdftex.def)             Requested size: 170.71652pt x 134.80455pt.
+ [33
+
+ <./img/finiti/esdompolnorm-eps-converted-to.pdf> <./img/finiti/baricentrodiund
+ominionormale-eps-converted-to.pdf>] [34
+
+]
 runsystem(makeindex mat.idx)...executed safely (allowed).
 
- (./mat.ind)
-(./mat.aux (./title/titlepage.aux))
+ (./mat.ind) (./mat.aux (./title/titlepage.aux))
 Package rerunfilecheck Info: File `mat.out' has not changed.
-(rerunfilecheck)             Checksum: DFD5FEFDCD19E92EA324D022AED42234;3585.
+(rerunfilecheck)             Checksum: 6D37A4F836023B49E6B5E4B2C330B9C5;3671.
  ) 
 Here is how much of TeX's memory you used:
- 51392 strings out of 479304
- 1259265 string characters out of 5869778
- 2064103 words of memory out of 5000000
- 67476 multiletter control sequences out of 15000+600000
+ 51413 strings out of 479304
+ 1259987 string characters out of 5869778
+ 2064101 words of memory out of 5000000
+ 67487 multiletter control sequences out of 15000+600000
  434345 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,15n,89p,718b,886s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1790,10 +1839,10 @@ r/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfti0700.pfb></usr/share/texmf/fonts/type1/public/cm-supe
 r/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
-Output written on mat.pdf (32 pages, 2222396 bytes).
+Output written on mat.pdf (34 pages, 2234982 bytes).
 PDF statistics:
- 692 PDF objects out of 1000 (max. 8388607)
- 609 compressed objects within 7 object streams
- 197 named destinations out of 1000 (max. 500000)
- 396 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 757 PDF objects out of 1000 (max. 8388607)
+ 657 compressed objects within 7 object streams
+ 205 named destinations out of 1000 (max. 500000)
+ 414 words of extra memory for PDF output out of 10000 (max. 10000000)
 

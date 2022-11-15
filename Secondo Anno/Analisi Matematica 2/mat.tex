@@ -361,6 +361,45 @@ dominio $R=[a,b]*[c,d]$
    \begin{equation*}
      \iint_Df(x,y)dxdy=\iint_{D^\prime}f(\varphi,\theta)\varphi d\varphi d\theta
    \end{equation*}
-\end{itemize} 
+\end{itemize}
+\clearpage
+\subsubsection{Esempi di domini polarmente normali}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=14cm]{img/finiti/esdompolnorm.eps}
+  \caption{Esempi di domini polarmente normali}
+\end{figure}
+\subsection{Baricentro di un dominio normale}
+\begin{defi}
+  Sia D un demonio normale del piano. Si definisce {\color{red}baricentro del dominio} D il punto di
+  coordinate $(x_0,y_0)$ tale che:
+  \begin{equation*}
+    \begin{matrix}
+      x_0=\frac{1}{mis D} \iint_D xdxdy & y_0=\frac{1}{mis D} \iint_D ydxdy
+    \end{matrix}
+  \end{equation*}
+  $mis D:$ misura ({\tt area}) del dominio $D$.
+\end{defi}
+\begin{esempio}
+  calcolare il baricertro del dominio $D=\begin{cases}
+                                           0\leq x\leq 2\\
+                                           0\leq y\leq 1
+                                         \end{cases}$
+  \begin{equation*}
+    mis D=A_{rettangolo}=2*1=2
+  \end{equation*}
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=6cm]{img/finiti/baricentrodiundominionormale.eps}
+    \caption{Baricentro di un dominio normale}
+  \end{figure}
+  \begin{equation*}
+    \begin{matrix}
+      x_0=\frac{1}{mis D}\iint_D xdxdy=\frac{1}{2}\int_0^2dx\int_0^1xdy=\frac{1}{2}\int^2_0dx\abs{xy}_0^1= \frac{1}{2}\int_0^2xdx=\frac{1}{2}\abs{\frac{x^2}{2}}_0^2=\frac{1}{\not{2}}\not{2}=1\\
+      y_0=\frac{1}{mis D}\iint_D ydxdy=\frac{1}{2}\int_0^2dx\int_0^1ydy=\frac{1}{2}\int_0^2dx\left|\frac{y^2}{2}\right|^1_0=\frac{1}{2}\int^2_0\frac{1}{2}dx=\frac{1}{4}\left|x\right|=\frac{1}{2}
+    \end{matrix}
+  \end{equation*}
+  
+\end{esempio}
 \printindex
 \end{document}

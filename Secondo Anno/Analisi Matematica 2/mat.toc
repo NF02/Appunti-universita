@@ -71,3 +71,5 @@
 \contentsline {paragraph}{Somme superiori e somme inferiori}{31}{paragraph*.28}%
 \contentsline {subsection}{\numberline {4.2.1}Proprietà dell'integrale doppio}{32}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Formula di riduzione}{32}{subsection.4.2.2}%
+\contentsline {subsubsection}{Esempi di domini polarmente normali}{33}{subsubsection*.29}%
+\contentsline {subsection}{\numberline {4.2.3}Baricentro di un dominio normale}{33}{subsection.4.2.3}%
