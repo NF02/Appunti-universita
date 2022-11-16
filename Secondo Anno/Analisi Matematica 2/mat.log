@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.10.23)  16 NOV 2022 00:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.10.23)  16 NOV 2022 23:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1582,7 +1582,7 @@ your preamble.
 \openout2 = `./title/titlepage.aux'.
 
 (./title/titlepage.tex
-<./title/logo_CA.jpg, id=195, 142.8537pt x 143.3355pt>
+<./title/logo_CA.jpg, id=208, 142.8537pt x 143.3355pt>
 File: ./title/logo_CA.jpg Graphic file (type jpg)
 <use ./title/logo_CA.jpg>
 Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
@@ -1681,7 +1681,7 @@ Package epstopdf Info: Source file: <img/finiti/cono.eps>
 ted-to.pdf img/finiti/cono.eps>
 (epstopdf)             \includegraphics on input line 522.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/cono-eps-converted-to.pdf, id=457, 1686.3pt x 949.5475pt>
+<img/finiti/cono-eps-converted-to.pdf, id=472, 1686.3pt x 949.5475pt>
 File: img/finiti/cono-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/cono-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/cono-eps-converted-to.pdf  used on input li
@@ -1718,19 +1718,13 @@ Package epstopdf Info: Source file: <img/finiti/graficodecomposizioneR.eps>
 (epstopdf)                    size: 42458 bytes
 (epstopdf)             Output file: <img/finiti/graficodecomposizioneR-eps-conv
 erted-to.pdf>
-(epstopdf)                    date: 2022-11-15 23:09:33
-(epstopdf)                    size: 14491 bytes
+(epstopdf)                    date: 2022-11-16 00:27:28
+(epstopdf)                    size: 8160 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/graficodecompos
 izioneR-eps-converted-to.pdf img/finiti/graficodecomposizioneR.eps>
 (epstopdf)             \includegraphics on input line 236.
-runsystem(repstopdf --outfile=img/finiti/graficodecomposizioneR-eps-converted-t
-o.pdf img/finiti/graficodecomposizioneR.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <img/finiti/graficodecomposizioneR-eps-conv
-erted-to.pdf>
-(epstopdf)                    date: 2022-11-16 00:27:28
-(epstopdf)                    size: 8160 bytes.
-<img/finiti/graficodecomposizioneR-eps-converted-to.pdf, id=530, 354.32375pt x 
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/graficodecomposizioneR-eps-converted-to.pdf, id=545, 354.32375pt x 
 243.91125pt>
 File: img/finiti/graficodecomposizioneR-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1755,7 +1749,7 @@ df>
 s-converted-to.pdf img/finiti/esdompolnorm.eps>
 (epstopdf)             \includegraphics on input line 369.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/esdompolnorm-eps-converted-to.pdf, id=561, 566.115pt x 256.96pt>
+<img/finiti/esdompolnorm-eps-converted-to.pdf, id=576, 566.115pt x 256.96pt>
 File: img/finiti/esdompolnorm-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/esdompolnorm-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/esdompolnorm-eps-converted-to.pdf  used on 
@@ -1774,7 +1768,7 @@ ominionormale-eps-converted-to.pdf img/finiti/baricentrodiundominionormale.eps>
 
 (epstopdf)             \includegraphics on input line 393.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/baricentrodiundominionormale-eps-converted-to.pdf, id=562, 310.1587
+<img/finiti/baricentrodiundominionormale-eps-converted-to.pdf, id=577, 310.1587
 5pt x 244.915pt>
 File: img/finiti/baricentrodiundominionormale-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -1785,25 +1779,99 @@ to.pdf  used on input line 393.
  [33
 
  <./img/finiti/esdompolnorm-eps-converted-to.pdf> <./img/finiti/baricentrodiund
-ominionormale-eps-converted-to.pdf>] [34
+ominionormale-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/finiti/baricentrodiundominionormale2.e
+ps>
+(epstopdf)                    date: 2022-11-16 00:13:18
+(epstopdf)                    size: 30964 bytes
+(epstopdf)             Output file: <img/finiti/baricentrodiundominionormale2-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-16 17:28:20
+(epstopdf)                    size: 4345 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/baricentrodiund
+ominionormale2-eps-converted-to.pdf img/finiti/baricentrodiundominionormale2.ep
+s>
+(epstopdf)             \includegraphics on input line 439.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/baricentrodiundominionormale2-eps-converted-to.pdf, id=620, 274.023
+74pt x 209.78375pt>
+File: img/finiti/baricentrodiundominionormale2-eps-converted-to.pdf Graphic fil
+e (type pdf)
+<use img/finiti/baricentrodiundominionormale2-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/baricentrodiundominionormale2-eps-converted
+-to.pdf  used on input line 439.
+(pdftex.def)             Requested size: 170.71652pt x 130.69836pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 442.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 442.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 442.
+
+
+Overfull \hbox (0.19385pt too wide) detected at line 470
+\OML/cmm/m/it/10 l[] \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 y[] \OT1/cmr/m/n/10 = 
+\OML/cmm/m/it/10 c; [] ; y[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 d\OT1/cmr/m/n/1
+0 ]\OML/cmm/m/it/10 ; []l[] \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 z[] \OT1/cmr/m/
+n/10 = \OML/cmm/m/it/10 e; [] ; z[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f\OT1/cm
+r/m/n/10 ]
+ []
+
+Package epstopdf Info: Source file: <img/finiti/rettangolo.eps>
+(epstopdf)                    date: 2022-11-16 22:45:36
+(epstopdf)                    size: 18800 bytes
+(epstopdf)             Output file: <img/finiti/rettangolo-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2022-11-16 22:48:56
+(epstopdf)                    size: 4116 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/rettangolo-eps-
+converted-to.pdf img/finiti/rettangolo.eps>
+(epstopdf)             \includegraphics on input line 471.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/rettangolo-eps-converted-to.pdf, id=621, 95.35625pt x 130.4875pt>
+File: img/finiti/rettangolo-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/rettangolo-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/rettangolo-eps-converted-to.pdf  used on in
+put line 471.
+(pdftex.def)             Requested size: 113.81102pt x 155.74794pt.
+[34
+
+ <./img/finiti/baricentrodiundominionormale2-eps-converted-to.pdf> <./img/finit
+i/rettangolo-eps-converted-to.pdf>] [35
+
+] [36
 
 ]
 runsystem(makeindex mat.idx)...executed safely (allowed).
 
- (./mat.ind) (./mat.aux (./title/titlepage.aux))
+ (./mat.ind) (./mat.aux
+(./title/titlepage.aux))
 Package rerunfilecheck Info: File `mat.out' has not changed.
-(rerunfilecheck)             Checksum: 6D37A4F836023B49E6B5E4B2C330B9C5;3671.
+(rerunfilecheck)             Checksum: 11C1FFDCFD5FAAE3CD9438B55901DFB6;3907.
  ) 
 Here is how much of TeX's memory you used:
- 51413 strings out of 479304
- 1259987 string characters out of 5869778
- 2064101 words of memory out of 5000000
- 67487 multiletter control sequences out of 15000+600000
+ 51436 strings out of 479304
+ 1260732 string characters out of 5869778
+ 2064103 words of memory out of 5000000
+ 67500 multiletter control sequences out of 15000+600000
  434345 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,15n,89p,718b,886s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
+ 87i,16n,89p,718b,886s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 , replaced by a fixed one
@@ -1817,32 +1885,35 @@ pe1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/doublestroke/dsrom10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfbi0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1000.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></u
-sr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts
-/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-sup
-er/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></us
-r/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/
-type1/public/cm-super/sfti0700.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
-Output written on mat.pdf (34 pages, 2234982 bytes).
+mi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doubles
+troke/dsrom10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi0900.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfbi1000.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfti0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/wasy-type1/wasy10.pfb>
+Output written on mat.pdf (36 pages, 2271002 bytes).
 PDF statistics:
- 757 PDF objects out of 1000 (max. 8388607)
- 657 compressed objects within 7 object streams
- 205 named destinations out of 1000 (max. 500000)
- 414 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 810 PDF objects out of 1000 (max. 8388607)
+ 700 compressed objects within 7 object streams
+ 213 named destinations out of 1000 (max. 500000)
+ 448 words of extra memory for PDF output out of 10000 (max. 10000000)
 
