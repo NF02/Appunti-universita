@@ -12,5 +12,8 @@ Il Repo è strutturato in modo lineare e ovviamente è suddifiviso per materie e
 ### modelli utilizzati per realizzare questi documenti
 I template utilizzati sono disponibili nel mio repo ```LaTeX-Model```, per accedere a tale repo cliccare <a href="https://github.com/NF02/LaTeX-model">qui</a>
 
+### Video dedicati allo sviluppo
+ho realizzato una playlist in cui sono salvati tutti i video fatti a riguardo, per accedere alla suddetta cliccare <a href="https://www.youtube.com/playlist?list=PLtBZwe4uTbkHU9-yuJfc0IYTQWEvaagyV">qui</a>
+
 ### Se mi vuoi supportare offrendomi un Caffè
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A3CDMP9)
