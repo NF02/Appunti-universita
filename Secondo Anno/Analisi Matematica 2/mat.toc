@@ -1,5 +1,5 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
 \contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Simboli}{8}{section.0.2}%
 \contentsline {chapter}{\numberline {1}Introduzione}{9}{chapter.1}%
@@ -76,3 +76,17 @@
 \contentsline {subsection}{\numberline {4.2.4}Domini normali in $R^3$}{34}{subsection.4.2.4}%
 \contentsline {section}{\numberline {4.3}Integrali tripli}{34}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Formule di riduzione per gli integrali tripli}{35}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Significato geometrico degli integrali}{36}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Coordinate polari e coordinate cilindriche}{36}{subsection.4.3.3}%
+\contentsline {paragraph}{coordinate alindriche}{36}{paragraph*.30}%
+\contentsline {paragraph}{coordinate sferiche}{36}{paragraph*.31}%
+\contentsline {subsection}{\numberline {4.3.4}Interazione per fette}{36}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Integrali curvilinei}{36}{subsection.4.3.5}%
+\contentsline {subsubsection}{Curve in $R^2$ e in $R^3$}{36}{subsubsection*.32}%
+\contentsline {subsection}{\numberline {4.3.6}Lunghezza di una curva}{38}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.7}Lunghezza di una curva in forma cartesiana}{39}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.3.8}Lunghezza di una curva polare}{39}{subsection.4.3.8}%
+\contentsline {section}{\numberline {4.4}Ascissa Curvilinea}{39}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Integrale corvilineo}{40}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Definizione di integrale curvilineo}{40}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Baricentro di una curva}{40}{subsection.4.5.2}%
