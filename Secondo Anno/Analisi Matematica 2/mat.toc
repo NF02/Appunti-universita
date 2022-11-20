@@ -90,3 +90,6 @@
 \contentsline {section}{\numberline {4.5}Integrale corvilineo}{40}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Definizione di integrale curvilineo}{40}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.5.2}Baricentro di una curva}{40}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Superfici e integrali di superficie}{41}{subsection.4.5.3}%
+\contentsline {subsubsection}{Superfici}{41}{subsubsection*.33}%
+\contentsline {subsection}{\numberline {4.5.4}Piano tangente e versore normale}{41}{subsection.4.5.4}%

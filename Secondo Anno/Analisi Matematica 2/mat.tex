@@ -226,6 +226,119 @@ $(x_0,y_0)$ per cui
 			\frac{3\sin^2t}{2}\right|_{0}^{\frac{\pi}{2}}=\frac{3}{2}
 		\end{matrix}
 	\end{equation*}
+	\begin{equation*}
+		\begin{matrix}
+			x_0=\frac{1}{L_\gamma}\int_\gamma xds=\frac{2}{3}3\cos^4t\sin tdt=
+			-\frac{2}{4}\int_{0}^{\frac{\pi}{2}}-4\sin t*\cos^4tdt\\
+			y_0=\frac{1}{L_\gamma}\int_\gamma
+			yds=\frac{2}{3}\int_{0}^{\frac{\pi}{2}}3\sin^2t+\cos t
+			dt=\frac{2}{4}\int_{0}^{\frac{\pi}{2}}4\sin^4t\cos t
+			dt=\frac{1}{10} \left|\sin^5t\right|_0^{\frac{\pi}{2}}=\frac{1}{10}
+		\end{matrix}
+	\end{equation*}
 \end{esempio}
+\subsection{Superfici e integrali di superficie}
+\subsubsection{Superfici}
+\begin{defi}
+Sia definizsce {\color{red}superfice} in $R^3$ una coppia $(\Sigma, r)$ dove
+$\Sigma$ è il sostegno (grafico) $\in R^3$ ed $r$ è la parametrizzazione 
+$d\Sigma, r\in\mathds{C}^0_{\dot{A}}.$\\
+	$\dot{A}$ insieme aperto connesso di $R^2$ per cali $r(A)=\Sigma$, $r$
+	calcolata nei punti di $A$ e da la superficie. $r$ è un'applicazione
+	vettoriale
+	$r(u,v)=(x(u,v),y(u,v),z(u,v))=x(x,v)\vec{L}+y(u,v)\vec{J}+z(u,v)\vec{k}$
+	$(u,v)\in A$ $R^2\to R^3$ ad ogni punto di $A$ del piano, associo un punto
+	di $\Sigma$ nello spazio.\\
+	Una superficie si dice {\color{red}semplice} $\vec{r}(u,v)$ è 1-1, cioè se
+	$x(u,v),y(u,v),z(u,v)$ sono 1-1 (cioè biurivoche, invertite) -- Una
+	superficie si dice {\color{red}regolare a tratti} se è firmata dall'unione
+	di un numero finito di superfici di classe $C^1$ regolari.\\
+	Una superficie è di classe $C^k_A$ se $\vec{r}(u,v)\in C_A^k$ cioè
+	$\begin{cases}
+		x=x(u,v)\\
+		y=y(u,v)\\
+		z=z(u,v)
+	\end{cases} \in c_A^k$\\
+	Una superficie si dice {\color{red}vegolare} se $\vec{r}(u,v)\in C^\prime$
+	e la matrice delle derivate parziali prime ha rango 2\\
+	Una superficie si dice {\color{red}chiusa} se è limitata e il suo bordo è
+	l'insieme ruoto (non ha bordo).
+\end{defi}
+\begin{teorema}
+	Le superfici cartesiane di classe $c^1$ sono regolari:
+	\begin{esempio}
+		\begin{equation*}
+			\begin{matrix}
+				\text{Superficie sferica: } &z=\pm\sqrt{R^2+x^2-y^2}&
+				x^2+y^2+z^2=R^2 & \text{definita su } D:\{x^2+y^2\leq R^2\}\\
+				\text{Superficie corta: } & z=k\sqrt{x^2+y^2}
+			\end{matrix}
+		\end{equation*}
+	\end{esempio}
+\end{teorema}
+\subsection{Piano tangente e versore normale}
+Prendiamo un dominio $A<R^2$ e un suo punto $P(u_0,v_0)$. Prendo due linee in A
+passanti per P, sulla superficie $\Sigma$ ho due curve.\\
+Sia $\vec{r}(u,v)$ l'equazione della superficie $\Sigma$ e siano
+$\vec{r}(u_0,v)$  e $\vec{r}(u,v_0)$ le surve che si chiamano\\ \underline{linee
+coordinate superficie}\footnote{(u,v) si chiamano coordinate locali}, i vettori
+tangenti alle linee coordinate sono 
+\begin{multicols}{2}
+	\begin{equation*}
+	\begin{matrix}
+		\vec{r}_u=(x_u,y_u,z_u)\\
+		\vec{r}_v=(x_v,y_v,z_v)
+	\end{matrix}
+	\end{equation*}
+	Se il prodotto vettoriale non è nullo, i vettori sono linearmente ma
+	pendenti, quindi il rango di quella matrice è 2. Allora possiamo dire una
+	superficie $\sigma$ è regolare se e solo se $\vec{r}_u\wedge \vec{r}_v\neq
+	0$, cioè esiste il {\color{red}piano tangente}. $\vec{r}_u\wedge \vec{r}_v$
+	e un vettore ortogonale al piano ccontenente $\vec{r}_u$ e $\vec{r}_v$ che
+	è il {\color{red}piano tangente} alla superficie.
+\end{multicols}
+La sua equazione è:\begin{equation*}
+	\begin{vmatrix}
+		x-x_0 & y-y_0 & z-z_0\\
+		x_u & y_u & z_u\\
+		x_v & y_v & z_v
+	\end{vmatrix} =0\text{ in }P(x_0,y_0,z_0)
+\end{equation*}
+Per avere il {\color{red}versore normale} si divide il prodotto vettoriale per
+la sua lunghezza.
+\begin{equation*}
+	\vec{n}=\frac{\vec{r}_u \wedge \vec{r}_v}{||\vec{r}_u\wedge \vec{r}_v||}
+\end{equation*}
+In forma cartesiana
+\begin{equation*}
+	\begin{matrix}
+		\vec{r}(u, v) = \begin{cases}
+			x=u\\
+			y=v\\
+			z=f(u, v)=f(x,y) 
+		\end{cases}&r_u=r_x=\begin{cases}
+			1 \\
+			0\\
+			f_x
+		\end{cases} & r_v=r_y=\begin{cases}
+			0\\
+			1\\
+			f_y
+		\end{cases}
+	\end{matrix}
+\end{equation*}
+Il prodotto vettoriale 
+\begin{equation*}
+	\vec{r}_x\wedge \vec{r}_y=\begin{vmatrix}
+		\vec{i} & \vec{v} &\vec{k}\\
+		1 & 0 & f_x\\
+		0 & 1 &f_y
+	\end{vmatrix}=-f_x\vec{i}-f_y\vec{j}+k=(-f_x;-f_y;1)
+\end{equation*}
+il versore normale
+\begin{equation*}
+	\vec{n}=\frac{\vec{r}_x\wedge \vec{r}_y}{||r_x\wedge r_y||}
+\end{equation*}
+
 \printindex
 \end{document}
