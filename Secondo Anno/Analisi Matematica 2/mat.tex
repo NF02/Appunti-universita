@@ -339,6 +339,241 @@ il versore normale
 \begin{equation*}
 	\vec{n}=\frac{\vec{r}_x\wedge \vec{r}_y}{||r_x\wedge r_y||}
 \end{equation*}
-
+\subsection{Orientazione di una superficie}
+Sia $\Sigma$ una superficie regolare $(\vec{r}\in e^\prime, P(M)=2)$, si
+scegla il versore normale in modo che vanando con continuità lungo una curva
+chiusa $\gamma$ inclusa in $\Sigma_1$ possa ritornare alla posizione inziale in
+conseguenza della scelta del versore normale in conseguenza della scelta del
+versore normale. Una superficie cartesiana è orientabile.\\
+Orientamenti possibili sono: versore normale $\vec{n}$ rivolto verso l'alto o
+il verso basso. 
+\subsubsection{Area di una superficie}
+Sia $\Sigma$ una superficie regolare. Si definisce {\color{red}area della
+superficie} $\Sigma$ il numero reale non negativo definito da
+\begin{equation*}
+	S=\iint_\Sigma d o = \iint_A||\vec{r}_u\wedge
+	\vec{r}_vdudv=\iint_A\sqrt{A^2+B^2+C^2}dudv
+\end{equation*}
+$A,B,C$ componenti del prodotto vettoriale, $d_o$ elemento infinitesimo di
+area.\\
+Se la superficie $\Sigma$ è in forma cartesiana $z=f(x,y)$ $(x,y)\in D$\\
+L'area di $\Sigma$ è
+\begin{equation*}
+	S=\iint_D \sqrt{1+f_x^2+f_y^2} dxdy
+\end{equation*}
+Se la superficie $\Sigma$ è data in forma implicità $F(x,y)=0$\\
+Con $F_z=0$ per il teorema del Din è localmente esplicitabile in $z=f(x,y)$\\
+L'area di $\sigma$ è:
+\begin{equation*}
+	S=\iint_D\sqrt{1+\left(\frac{F_x}{F_z}\right)^2+\left(\frac{F_y}{F_z}\right)^2}dxdy
+\end{equation*}
+\subsection{Integrale Superficiale}
+Sia $h(x,y,z)$ una funzione definita e continua in un insieme $V \subset R^3$ e
+sia $\Sigma$ una superficie inclusa in $V$, che si prosetta in un dominio piano
+D. Si definisce {\color{red}integrale superficiale} della funzione $h(x,y,z)$\\
+esteso alla superficie $\Sigma$:
+\begin{equation*}
+	\iint_\Sigma h(x,y,z)do=\iint_A h(x(u, v), y(u, v), z(u, v))||\vec{r}_u\wedge
+	\vec{r}_v|| dudv
+\end{equation*}
+Se la superficie $\Sigma$ è in forma cartesiana
+\begin{equation*}
+	\iint_\Sigma h(x,y,z)do=\iint_A h(x, y, z(u, v))\sqrt{1+fx^2+f_y^2} dxdy
+\end{equation*}
+\clearpage
+\section{Trasformazione integrali}
+\subsection{Formule di Green-Gauss}
+\subsubsection{Prima formula - teorema}
+\begin{defi}
+	Sia $f(x,y)$ continua in un insieme D, sia $\frac{\partial f}{\partial x}$
+	(derivata parziale rispetto a $x$) continua in $D$, sia D normale rispetto all'asse
+	$y$ e sia la sua frontiera $F_0$ una curva regolare a tratti\\
+	Allora vale la seguente relazione 
+	\begin{equation*}
+		\iint_{D}\frac{\partial f}{\partial x} dxdy=\int_{FD} f(x,y)dy
+	\end{equation*}
+	\textbf{FD}: frontiera percorsa nel verso positivo 
+	\begin{multicols}{2}
+		\paragraph{Ipotesi:}
+		\begin{equation*}
+			\begin{matrix}
+				f(x,y)\in C^o_D\\
+				\frac{\partial f}{\partial x}\in C_D^o\\
+					\text{D normale rispetto all'asse }y & D: \begin{cases}
+						c\leq y\leq d\\
+						\alpha (y) \leq x \leq \beta (y)
+					\end{cases}\\
+					F_D \text{ regolare a tratti}
+			\end{matrix}
+		\end{equation*}
+		\paragraph{Tesi:}
+		\begin{equation*}
+			\displaystyle\iint_D \frac{\partial f}{\partial x} dxdy=\int_{+FD}
+			f(x,y)dy
+		\end{equation*}
+	\end{multicols}
+\end{defi}
+\begin{proof}
+	Poiché $f(x,y)\in C^o_D$ e $\frac{\partial f}{\partial x}\in C^o_D$, esse
+	sono integrabili in D\\
+	Il dominio $D_1$ che è normale ripsetto all'asse y, può essere descritto
+	come 
+	\begin{multicols}{2}
+		\includegraphics[width=6cm]{img/finiti/primaLeggeGreenGauss.eps}\\
+		\begin{equation*}
+			D:\begin{cases}
+				c\leq y\leq d\\
+				\alpha(y) \leq x \leq \beta (y)
+			\end{cases} 
+			\begin{matrix}
+				\text{ e la sua frontiera è }\\ FD=\gamma_1\cup\gamma_2
+			\cup \gamma_3 \cup \gamma_4
+			\end{matrix}
+		\end{equation*}
+	\end{multicols}
+	Sviluppiamo I e II membro della tesi
+	\begin{description}
+		\item[I membro] 
+			\begin{equation*}
+				\iint_{D} \frac{\partial f}{\partial x} dxdy=\int_{c}^{d}
+				dy\int_{\alpha(y)}^{\beta(y)}\frac{\partial f}{\partial x} dx=
+				\int_{c}^{d} f[\beta(y),y]-f[\alpha(y),y] dy
+			\end{equation*}
+			\begin{equation*}
+				N.B.\text{ } \int_{\alpha (y)}^{\beta (y)} \frac{\partial
+				f}{\partial x} dx=\left| f(x,y) \right|^{x=\beta(y)}_{x=\alpha
+				(y)}=f(\beta(y),y)-f(\alpha(y), y)
+			\end{equation*}
+		\item[II membro]
+			$F_D: \gamma_1 \cup \gamma_2 \cup \gamma_3 \cup\gamma_4$
+			\begin{equation}
+				\int_{+FD}f(x,y)dy=\int_{\gamma_1}f(x,y)dy+\int_{\gamma_2}f(x,y)
+				dy+\int_{\gamma_3}f(x,y)dy+\int_{\gamma_4}f(x,y)dy
+			\end{equation}
+			\begin{multicols}{2}
+				\begin{equation*}
+					\begin{matrix}
+						\begin{matrix}
+							\gamma_1: y=c & dy=0
+						\end{matrix}\\
+						\gamma_2=\begin{cases}
+							x=\beta(y)\\
+							y\in[c,d]
+						\end{cases}
+					\end{matrix}
+				\end{equation*}
+				\begin{equation*}
+					\begin{matrix}
+						\begin{matrix}
+							\gamma_3: y=d & dy=0
+						\end{matrix}\\
+						\gamma_4=\begin{cases}
+							x=\alpha(y)\\
+							y\in[d,c]
+						\end{cases}
+					\end{matrix}
+				\end{equation*}
+			\end{multicols}
+			\begin{equation*}
+				\int_{+FD}f(x,y)dy=\int_{\gamma_2}f(x,y)dy+\int_{\gamma_4}f(x,y)
+				dy
+			\end{equation*}
+			\begin{equation*}
+				\begin{matrix}
+					\int_{\gamma_2}f(x,y)dy=\int_c f[\beta,y]dy &
+					\int_{\gamma_4}f(x,y)dy=\int_{d}^{c}f[\alpha(y),y]dy=
+					-\int_{c}^{d}f[\alpha(y),y]dy
+				\end{matrix}
+			\end{equation*}
+			\begin{equation*}
+				\int_{+FD}f(x,y)dy=\int_{c}^{d}f[\alpha(y),y]dy-
+				\int_{c}^{d}f[\alpha(y),y]dy=\int_{c}^{d}f[\alpha(y),y]-
+				f[\alpha(y),y]dy
+			\end{equation*}
+	\end{description}
+	Si è così dimostrata la tesi\\
+	Per cui con questa {\color{red}formula di Green-Gauss} un integrale doppio
+	-- sotto opportune ipotesi -- si può trasformare in un integrale curvilineo
+	esteso alla frontiera del dominio di integrazione
+	\begin{equation*}
+		\iint_D \frac{\partial f}{\partial x}dxdy=\int_{+F_D}f(x,y)dy
+	\end{equation*}
+\end{proof}
+\begin{esempio}
+	Calcolare $\iint_D\frac{dxdy}{\sqrt{1-x^2}}$ con $D=\begin{cases}
+		xy\leq \frac{1}{4}\\
+		x\geq 4\\
+		0\leq x\leq \frac{\sqrt{3}}{2}
+	\end{cases}$
+	\begin{equation*}
+		\begin{matrix}
+			f(x,y)=\int\frac{1}{\sqrt{1-x^2}}dx=\arcsin x & \to \iint_D
+			\frac{dxdy}{\sqrt{1-x^2}}=\int_{+F_D}\arcsin x dy & F_D=
+			F_D=\gamma_1\cup \gamma_2 \cup \gamma_3
+		\end{matrix}
+	\end{equation*}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=6cm]{img/finiti/greenes.eps}
+		\caption{Esempio della prima formula di Green-Gauss}
+	\end{figure}
+	\begin{equation*}
+		\begin{matrix}
+			\gamma_1: x=\frac{\sqrt{3}}{2} &
+			y\in\left[\frac{\sqrt{3}}{6},\frac{1}{2}\right] & \int_{\gamma_1}\arcsin x dy=0
+			& \text{ poiché } dy=0 (y=\cos t)\\
+			\gamma_2: y=x & x\in \left[\frac{1}{2}, \frac{\sqrt{3}}{2}\right] &
+			\text{da percorrere "al contrario"} & dy=d(x)=1dx
+		\end{matrix}
+	\end{equation*}
+\begin{equation*}
+	\begin{matrix}
+		-\int_{\gamma_2} \arcsin x dy=-\int_{\frac{1}{2}}^{\frac{\sqrt{3}}{2}}
+		\arcsin x dx = -\left| x\arcsin x - \int
+		\frac{x}{\sqrt{1-x^2}}dx\right|_{\frac{1}{2}}^{\frac{\sqrt{3}}{2}}= 
+		-\left| x\arcsin x - \int
+		\sqrt{1-x^2}dx\right|_{\frac{1}{2}}^{\frac{\sqrt{3}}{2}}\\
+		= -
+		\left[\frac{\sqrt{3}}{2}\arcsin\frac{\sqrt{3}}{2}-\sqrt{1-\frac{3}{4}}
+		- \frac{1}{2}\arcsin \frac{1}{2}-\sqrt{1-\frac{1}{4}} \right] =
+		-\left[\frac{\sqrt{3}}{2}\frac{\pi}{6}+\frac{1}{2}-\frac{1}{2}
+		\frac{\pi}{3} - \frac{\sqrt{3}}{2}\right]\\
+	\end{matrix}
+\end{equation*}
+\begin{equation*}
+	\begin{matrix}
+		\gamma_3: &y=\frac{1}{4x}& x\in \left[\frac{1}{2},
+		\frac{\sqrt{3}}{2}\right] & dy=-\frac{1}{4x} & \int_{\gamma_3}\arcsin
+		xdy=\int_{\frac{1}{2}}^{\frac{\sqrt{3}}{2}}\arcsin x
+		\left(\frac{1}{4x}dx\right)
+	\end{matrix}
+\end{equation*}
+\clearpage
+\begin{equation*}
+	\begin{matrix}
+		\int_{\gamma_3}\arcsin x
+		dy=-\int_{\frac{\sqrt{3}}{6}}^{\frac{1}{2}}=y\arcsin \frac{1}{4y}dy=
+		y\arcsin \frac{1}{4y}-\int
+		y*\frac{1}{\sqrt{1-\frac{1}{16}}y^2}\left(-frac{1}{4y^2}\right)dy\\
+		=y\arcsin\left(\frac{1}{4y}\right)-\int-\frac{1}{4y}\frac{1}{\sqrt{\frac{16
+		y^2-1}{16y^2}}}dy
+	\end{matrix}
+\end{equation*}
+	Si risolve con la sostituzione $\int\frac{1}{\sqrt{x^2-a^2}}dx$ 
+\begin{align*}
+	x=\sqrt{x^2-a^2}=a\tan t\\
+	\sqrt{y^2-\frac{1}{16}}=\frac{1}{4}\tan t
+\end{align*}
+\end{esempio}
+\subsubsection{Seconda formula di Green-Gauss}
+\begin{teorema}
+	Sia $f(x,y)$ continua in un insieme D, sia $\frac{\partial f}{\partial y}$
+	continua in D, sia D un dominio normale rispetto all'asse x e sia la sua
+	frontiera $F_D$ una curva regolarea tratti. Allora vale la seguente
+	relazione 
+	\begin{equation}
+		\iint_D \frac{\partial f}{\partial y} dxdy=-\int_{+FD} f(x,y) dx
+	\end{equation}
+\end{teorema}
 \printindex
 \end{document}

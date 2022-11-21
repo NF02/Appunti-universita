@@ -93,3 +93,12 @@
 \contentsline {subsection}{\numberline {4.5.3}Superfici e integrali di superficie}{41}{subsection.4.5.3}%
 \contentsline {subsubsection}{Superfici}{41}{subsubsection*.33}%
 \contentsline {subsection}{\numberline {4.5.4}Piano tangente e versore normale}{41}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.5}Orientazione di una superficie}{42}{subsection.4.5.5}%
+\contentsline {subsubsection}{Area di una superficie}{42}{subsubsection*.34}%
+\contentsline {subsection}{\numberline {4.5.6}Integrale Superficiale}{42}{subsection.4.5.6}%
+\contentsline {section}{\numberline {4.6}Trasformazione integrali}{43}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Formule di Green-Gauss}{43}{subsection.4.6.1}%
+\contentsline {subsubsection}{Prima formula - teorema}{43}{subsubsection*.35}%
+\contentsline {paragraph}{Ipotesi:}{43}{paragraph*.36}%
+\contentsline {paragraph}{Tesi:}{43}{paragraph*.37}%
+\contentsline {subsubsection}{Seconda formula di Green-Gauss}{45}{subsubsection*.38}%
