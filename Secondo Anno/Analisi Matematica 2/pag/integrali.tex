@@ -642,4 +642,679 @@ La sua lunghezza vale:
 	=\int_{\theta_1}^{\theta_2}\sqrt{\varphi^2(\theta)+[\varphi^\prime(\theta)]^2}
 	d\theta
 \end{equation*}
+\section{Ascissa Curvilinea}
+È possibile effettuare combiamenti di parametri per descrivere una curva. Fra
+tutte le rappresentazioni parametriche di una curva regolare ha particolare
+\textbf{importanza} geometrica quella che {\color{red}l'ascissa curvilinea}.
+Prendiamo una curva $\gamma$ di $R^2$ e un suo punto $P_0$
+\begin{multicols}{2}
+	\includegraphics[width=7cm]{img/finiti/ascissa_curvilinea.eps}\\\\\\\\
+	Ad ogni punto $P$ della curva associamo un valore $S(P)$ che è uguale
+	alla lunguezza dell'arco di curva congiungente $P_0$ e $P$\\
+	Così definendo una corrispondenza biurivoca tra i punti della curva e i
+	punti di un certo intervallo $[a,b]$, cosiché se $S(p_1)=a$ $S(P_2)=b$ la
+	lunqhezza dell'arco congiungente $P_1$ con $P_2$ è $\abs{b-a}$
+\end{multicols}
+Sia $(\gamma,\vec{r}(t))$ una curva regolare; definiamo \underline{l'ascissa
+curvilinea}\footnote{o lunghezza d'arco} come:
+\begin{equation*}
+	S(t)= \int_{a}^{t}\sqrt{[x^\prime (\uptau)]+[y^\prime(\uptau)]} d\uptau
+\end{equation*}
+Per il teorema del calcolo integrale
+\begin{equation*}
+	\begin{matrix}
+		S^\prime(t)=\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2} & S(t) \text{ è
+		integrabile}\\
+		S^\prime(t)=\frac{ds}{dt} & S:[a,b]\to [0,L]
+	\end{matrix}
+\end{equation*}
+La lunghezza della curva così vale:
+\begin{equation}
+	L=\int_{a}^{b}\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2}=\int dS
+\end{equation}
+\section{Integrale corvilineo}
+Prendiamo una funzione f(x,y) definita in un insieme $D$ e una curva $\gamma$
+interno a $D$.
+\begin{multicols}{2}
+	\includegraphics[width=5cm]{img/finiti/integrale_curvilineo.eps}\\
+	Calcoliamo la funzione nella curva $\gamma$ e detterminiamo una curva
+	$\Gamma$ dello spazio.\\
+	L'area delimitata dal cilindro di basi $\gamma$ e $\Gamma$ se $f(x,y)>0$ è
+	il valore {\color{red}dell'integrale curvilineo} di $f(x,y)$ esteso a
+	$\gamma$.
+\end{multicols}
+\subsection{Definizione di integrale curvilineo}
+Data una curva regolare $(\gamma, \vec{r}(t))$
+\begin{equation}
+	\begin{cases}
+		x=x(t)\\
+		y=y(t)\\
+		z=z(t)
+	\end{cases} t\in [a,b]
+\end{equation} 
+e una funzione $f(x,y,z)\in \mathds{C}$ -- definita in $D_1$ con la curva
+inclusa $D$, si definisce {\color{red}integrale curvilineo} di $f(x,y,z)$
+esteso alla curva
+\begin{equation*}
+	\int_{\gamma} f(x,y,z) ds=
+	\int_{a}^{b}f[x(t),y(t),z(t)]*\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2+[z^\prime(t)]^2}
+	dt
+\end{equation*}
+\subsection{Baricentro di una curva}
+Si definisce {\color{red} baricentro di una curva} quel punto di coordinate
+$(x_0,y_0)$ per cui
+\begin{equation*}
+	\begin{matrix}
+		x_0=\frac{1}{L_\gamma}\int_\gamma x ds & y_0=\frac{1}{L_\gamma}
+		\int_\gamma yds & \text{con $L_\gamma$ lunghezza della curva $\gamma$}
+	\end{matrix}
+\end{equation*}
+\begin{esempio}
+	\begin{equation*}
+		\gamma=\begin{cases}
+			x=\cos^3t\\
+			y=\sin^3 t
+		\end{cases} t\in \left[0,\frac{\pi}{2}\right]
+	\end{equation*}
+	\begin{equation*}
+		\begin{matrix}
+				L_\gamma=\int_{\gamma}ds=\int_{0}^{\frac{\pi}{2}}\sqrt{(-3\cos^2t\sin
+			t)^2+(3\sin^2+\cos t)^2} dt\\
+			=\int_{0}^{\frac{\pi}{2}}\sqrt{9\cos^4t\sin^2t+9\sin^4t\cos^2t}dt= 
+			\int_{0}^{\frac{\pi}{2}}\sqrt{9\cos^2t\sin^2t}*\sqrt{\cos^2t\sin^2t}
+			dt = \int_{0}^{\frac{\pi}{2}}3\cos t\sin t dt\\=\left|
+			\frac{3\sin^2t}{2}\right|_{0}^{\frac{\pi}{2}}=\frac{3}{2}
+		\end{matrix}
+	\end{equation*}
+	\begin{equation*}
+		\begin{matrix}
+			x_0=\frac{1}{L_\gamma}\int_\gamma xds=\frac{2}{3}3\cos^4t\sin tdt=
+			-\frac{2}{4}\int_{0}^{\frac{\pi}{2}}-4\sin t*\cos^4tdt\\
+			y_0=\frac{1}{L_\gamma}\int_\gamma
+			yds=\frac{2}{3}\int_{0}^{\frac{\pi}{2}}3\sin^2t+\cos t
+			dt=\frac{2}{4}\int_{0}^{\frac{\pi}{2}}4\sin^4t\cos t
+			dt=\frac{1}{10} \left|\sin^5t\right|_0^{\frac{\pi}{2}}=\frac{1}{10}
+		\end{matrix}
+	\end{equation*}
+\end{esempio}
+\subsection{Superfici e integrali di superficie}
+\subsubsection{Superfici}
+\begin{defi}
+Sia definizsce {\color{red}superfice} in $R^3$ una coppia $(\Sigma, r)$ dove
+$\Sigma$ è il sostegno (grafico) $\in R^3$ ed $r$ è la parametrizzazione 
+$d\Sigma, r\in\mathds{C}^0_{\dot{A}}.$\\
+	$\dot{A}$ insieme aperto connesso di $R^2$ per cali $r(A)=\Sigma$, $r$
+	calcolata nei punti di $A$ e da la superficie. $r$ è un'applicazione
+	vettoriale
+	$r(u,v)=(x(u,v),y(u,v),z(u,v))=x(x,v)\vec{L}+y(u,v)\vec{J}+z(u,v)\vec{k}$
+	$(u,v)\in A$ $R^2\to R^3$ ad ogni punto di $A$ del piano, associo un punto
+	di $\Sigma$ nello spazio.\\
+	Una superficie si dice {\color{red}semplice} $\vec{r}(u,v)$ è 1-1, cioè se
+	$x(u,v),y(u,v),z(u,v)$ sono 1-1 (cioè biurivoche, invertite) -- Una
+	superficie si dice {\color{red}regolare a tratti} se è firmata dall'unione
+	di un numero finito di superfici di classe $C^1$ regolari.\\
+	Una superficie è di classe $C^k_A$ se $\vec{r}(u,v)\in C_A^k$ cioè
+	$\begin{cases}
+		x=x(u,v)\\
+		y=y(u,v)\\
+		z=z(u,v)
+	\end{cases} \in c_A^k$\\
+	Una superficie si dice {\color{red}vegolare} se $\vec{r}(u,v)\in C^\prime$
+	e la matrice delle derivate parziali prime ha rango 2\\
+	Una superficie si dice {\color{red}chiusa} se è limitata e il suo bordo è
+	l'insieme ruoto (non ha bordo).
+\end{defi}
+\begin{teorema}
+	Le superfici cartesiane di classe $c^1$ sono regolari:
+	\begin{esempio}
+		\begin{equation*}
+			\begin{matrix}
+				\text{Superficie sferica: } &z=\pm\sqrt{R^2+x^2-y^2}&
+				x^2+y^2+z^2=R^2 & \text{definita su } D:\{x^2+y^2\leq R^2\}\\
+				\text{Superficie corta: } & z=k\sqrt{x^2+y^2}
+			\end{matrix}
+		\end{equation*}
+	\end{esempio}
+\end{teorema}
+\subsection{Piano tangente e versore normale}
+Prendiamo un dominio $A<R^2$ e un suo punto $P(u_0,v_0)$. Prendo due linee in A
+passanti per P, sulla superficie $\Sigma$ ho due curve.\\
+Sia $\vec{r}(u,v)$ l'equazione della superficie $\Sigma$ e siano
+$\vec{r}(u_0,v)$  e $\vec{r}(u,v_0)$ le surve che si chiamano\\ \underline{linee
+coordinate superficie}\footnote{(u,v) si chiamano coordinate locali}, i vettori
+tangenti alle linee coordinate sono 
+\begin{multicols}{2}
+	\begin{equation*}
+	\begin{matrix}
+		\vec{r}_u=(x_u,y_u,z_u)\\
+		\vec{r}_v=(x_v,y_v,z_v)
+	\end{matrix}
+	\end{equation*}
+	Se il prodotto vettoriale non è nullo, i vettori sono linearmente ma
+	pendenti, quindi il rango di quella matrice è 2. Allora possiamo dire una
+	superficie $\sigma$ è regolare se e solo se $\vec{r}_u\wedge \vec{r}_v\neq
+	0$, cioè esiste il {\color{red}piano tangente}. $\vec{r}_u\wedge \vec{r}_v$
+	e un vettore ortogonale al piano ccontenente $\vec{r}_u$ e $\vec{r}_v$ che
+	è il {\color{red}piano tangente} alla superficie.
+\end{multicols}
+La sua equazione è:\begin{equation*}
+	\begin{vmatrix}
+		x-x_0 & y-y_0 & z-z_0\\
+		x_u & y_u & z_u\\
+		x_v & y_v & z_v
+	\end{vmatrix} =0\text{ in }P(x_0,y_0,z_0)
+\end{equation*}
+Per avere il {\color{red}versore normale} si divide il prodotto vettoriale per
+la sua lunghezza.
+\begin{equation*}
+	\vec{n}=\frac{\vec{r}_u \wedge \vec{r}_v}{||\vec{r}_u\wedge \vec{r}_v||}
+\end{equation*}
+In forma cartesiana
+\begin{equation*}
+	\begin{matrix}
+		\vec{r}(u, v) = \begin{cases}
+			x=u\\
+			y=v\\
+			z=f(u, v)=f(x,y) 
+		\end{cases}&r_u=r_x=\begin{cases}
+			1 \\
+			0\\
+			f_x
+		\end{cases} & r_v=r_y=\begin{cases}
+			0\\
+			1\\
+			f_y
+		\end{cases}
+	\end{matrix}
+\end{equation*}
+Il prodotto vettoriale 
+\begin{equation*}
+	\vec{r}_x\wedge \vec{r}_y=\begin{vmatrix}
+		\vec{i} & \vec{v} &\vec{k}\\
+		1 & 0 & f_x\\
+		0 & 1 &f_y
+	\end{vmatrix}=-f_x\vec{i}-f_y\vec{j}+k=(-f_x;-f_y;1)
+\end{equation*}
+il versore normale
+\begin{equation*}
+	\vec{n}=\frac{\vec{r}_x\wedge \vec{r}_y}{||r_x\wedge r_y||}
+\end{equation*}
+\subsection{Orientazione di una superficie}
+Sia $\Sigma$ una superficie regolare $(\vec{r}\in e^\prime, P(M)=2)$, si
+scegla il versore normale in modo che vanando con continuità lungo una curva
+chiusa $\gamma$ inclusa in $\Sigma_1$ possa ritornare alla posizione inziale in
+conseguenza della scelta del versore normale in conseguenza della scelta del
+versore normale. Una superficie cartesiana è orientabile.\\
+Orientamenti possibili sono: versore normale $\vec{n}$ rivolto verso l'alto o
+il verso basso. 
+\subsubsection{Area di una superficie}
+Sia $\Sigma$ una superficie regolare. Si definisce {\color{red}area della
+superficie} $\Sigma$ il numero reale non negativo definito da
+\begin{equation*}
+	S=\iint_\Sigma d o = \iint_A||\vec{r}_u\wedge
+	\vec{r}_vdudv=\iint_A\sqrt{A^2+B^2+C^2}dudv
+\end{equation*}
+$A,B,C$ componenti del prodotto vettoriale, $d_o$ elemento infinitesimo di
+area.\\
+Se la superficie $\Sigma$ è in forma cartesiana $z=f(x,y)$ $(x,y)\in D$\\
+L'area di $\Sigma$ è
+\begin{equation*}
+	S=\iint_D \sqrt{1+f_x^2+f_y^2} dxdy
+\end{equation*}
+Se la superficie $\Sigma$ è data in forma implicità $F(x,y)=0$\\
+Con $F_z=0$ per il teorema del Din è localmente esplicitabile in $z=f(x,y)$\\
+L'area di $\sigma$ è:
+\begin{equation*}
+	S=\iint_D\sqrt{1+\left(\frac{F_x}{F_z}\right)^2+\left(\frac{F_y}{F_z}\right)^2}dxdy
+\end{equation*}
+\subsection{Integrale Superficiale}
+Sia $h(x,y,z)$ una funzione definita e continua in un insieme $V \subset R^3$ e
+sia $\Sigma$ una superficie inclusa in $V$, che si prosetta in un dominio piano
+D. Si definisce {\color{red}integrale superficiale} della funzione $h(x,y,z)$\\
+esteso alla superficie $\Sigma$:
+\begin{equation*}
+	\iint_\Sigma h(x,y,z)do=\iint_A h(x(u, v), y(u, v), z(u, v))||\vec{r}_u\wedge
+	\vec{r}_v|| dudv
+\end{equation*}
+Se la superficie $\Sigma$ è in forma cartesiana
+\begin{equation*}
+	\iint_\Sigma h(x,y,z)do=\iint_A h(x, y, z(u, v))\sqrt{1+fx^2+f_y^2} dxdy
+\end{equation*}
+\clearpage
+\section{Trasformazione integrali}
+\subsection{Formule di Green-Gauss\label{fGreen-Gauss}}
+\subsubsection{Prima formula - teorema}
+\begin{defi}
+	Sia $f(x,y)$ continua in un insieme D, sia $\frac{\partial f}{\partial x}$
+	(derivata parziale rispetto a $x$) continua in $D$, sia D normale rispetto all'asse
+	$y$ e sia la sua frontiera $F_0$ una curva regolare a tratti\\
+	Allora vale la seguente relazione 
+	\begin{equation*}
+		\iint_{D}\frac{\partial f}{\partial x} dxdy=\int_{FD} f(x,y)dy
+	\end{equation*}
+	\textbf{FD}: frontiera percorsa nel verso positivo 
+	\begin{multicols}{2}
+		\paragraph{Ipotesi:}
+		\begin{equation*}
+			\begin{matrix}
+				f(x,y)\in C^o_D\\
+				\frac{\partial f}{\partial x}\in C_D^o\\
+					\text{D normale rispetto all'asse }y & D: \begin{cases}
+						c\leq y\leq d\\
+						\alpha (y) \leq x \leq \beta (y)
+					\end{cases}\\
+					F_D \text{ regolare a tratti}
+			\end{matrix}
+		\end{equation*}
+		\paragraph{Tesi:}
+		\begin{equation*}
+			\displaystyle\iint_D \frac{\partial f}{\partial x} dxdy=\int_{+FD}
+			f(x,y)dy
+		\end{equation*}
+	\end{multicols}
+\end{defi}
+\begin{proof}
+	Poiché $f(x,y)\in C^o_D$ e $\frac{\partial f}{\partial x}\in C^o_D$, esse
+	sono integrabili in D\\
+	Il dominio $D_1$ che è normale ripsetto all'asse y, può essere descritto
+	come 
+	\begin{multicols}{2}
+		\includegraphics[width=6cm]{img/finiti/primaLeggeGreenGauss.eps}\\
+		\begin{equation*}
+			D:\begin{cases}
+				c\leq y\leq d\\
+				\alpha(y) \leq x \leq \beta (y)
+			\end{cases} 
+			\begin{matrix}
+				\text{ e la sua frontiera è }\\ FD=\gamma_1\cup\gamma_2
+			\cup \gamma_3 \cup \gamma_4
+			\end{matrix}
+		\end{equation*}
+	\end{multicols}
+	Sviluppiamo I e II membro della tesi
+	\begin{description}
+		\item[I membro] 
+			\begin{equation*}
+				\iint_{D} \frac{\partial f}{\partial x} dxdy=\int_{c}^{d}
+				dy\int_{\alpha(y)}^{\beta(y)}\frac{\partial f}{\partial x} dx=
+				\int_{c}^{d} f[\beta(y),y]-f[\alpha(y),y] dy
+			\end{equation*}
+			\begin{equation*}
+				N.B.\text{ } \int_{\alpha (y)}^{\beta (y)} \frac{\partial
+				f}{\partial x} dx=\left| f(x,y) \right|^{x=\beta(y)}_{x=\alpha
+				(y)}=f(\beta(y),y)-f(\alpha(y), y)
+			\end{equation*}
+		\item[II membro]
+			$F_D: \gamma_1 \cup \gamma_2 \cup \gamma_3 \cup\gamma_4$
+			\begin{equation}
+				\int_{+FD}f(x,y)dy=\int_{\gamma_1}f(x,y)dy+\int_{\gamma_2}f(x,y)
+				dy+\int_{\gamma_3}f(x,y)dy+\int_{\gamma_4}f(x,y)dy
+			\end{equation}
+			\begin{multicols}{2}
+				\begin{equation*}
+					\begin{matrix}
+						\begin{matrix}
+							\gamma_1: y=c & dy=0
+						\end{matrix}\\
+						\gamma_2=\begin{cases}
+							x=\beta(y)\\
+							y\in[c,d]
+						\end{cases}
+					\end{matrix}
+				\end{equation*}
+				\begin{equation*}
+					\begin{matrix}
+						\begin{matrix}
+							\gamma_3: y=d & dy=0
+						\end{matrix}\\
+						\gamma_4=\begin{cases}
+							x=\alpha(y)\\
+							y\in[d,c]
+						\end{cases}
+					\end{matrix}
+				\end{equation*}
+			\end{multicols}
+			\begin{equation*}
+				\int_{+FD}f(x,y)dy=\int_{\gamma_2}f(x,y)dy+\int_{\gamma_4}f(x,y)
+				dy
+			\end{equation*}
+			\begin{equation*}
+				\begin{matrix}
+					\int_{\gamma_2}f(x,y)dy=\int_c f[\beta,y]dy &
+					\int_{\gamma_4}f(x,y)dy=\int_{d}^{c}f[\alpha(y),y]dy=
+					-\int_{c}^{d}f[\alpha(y),y]dy
+				\end{matrix}
+			\end{equation*}
+			\begin{equation*}
+				\int_{+FD}f(x,y)dy=\int_{c}^{d}f[\alpha(y),y]dy-
+				\int_{c}^{d}f[\alpha(y),y]dy=\int_{c}^{d}f[\alpha(y),y]-
+				f[\alpha(y),y]dy
+			\end{equation*}
+	\end{description}
+	Si è così dimostrata la tesi\\
+	Per cui con questa {\color{red}formula di Green-Gauss} un integrale doppio
+	-- sotto opportune ipotesi -- si può trasformare in un integrale curvilineo
+	esteso alla frontiera del dominio di integrazione
+	\begin{equation*}
+		\iint_D \frac{\partial f}{\partial x}dxdy=\int_{+F_D}f(x,y)dy
+	\end{equation*}
+\end{proof}
+\begin{esempio}
+	Calcolare $\iint_D\frac{dxdy}{\sqrt{1-x^2}}$ con $D=\begin{cases}
+		xy\leq \frac{1}{4}\\
+		x\geq 4\\
+		0\leq x\leq \frac{\sqrt{3}}{2}
+	\end{cases}$
+	\begin{equation*}
+		\begin{matrix}
+			f(x,y)=\int\frac{1}{\sqrt{1-x^2}}dx=\arcsin x & \to \iint_D
+			\frac{dxdy}{\sqrt{1-x^2}}=\int_{+F_D}\arcsin x dy & F_D=
+			F_D=\gamma_1\cup \gamma_2 \cup \gamma_3
+		\end{matrix}
+	\end{equation*}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=6cm]{img/finiti/greenes.eps}
+		\caption{Esempio della prima formula di Green-Gauss}
+	\end{figure}
+	\begin{equation*}
+		\begin{matrix}
+			\gamma_1: x=\frac{\sqrt{3}}{2} &
+			y\in\left[\frac{\sqrt{3}}{6},\frac{1}{2}\right] & \int_{\gamma_1}\arcsin x dy=0
+			& \text{ poiché } dy=0 (y=\cos t)\\
+			\gamma_2: y=x & x\in \left[\frac{1}{2}, \frac{\sqrt{3}}{2}\right] &
+			\text{da percorrere "al contrario"} & dy=d(x)=1dx
+		\end{matrix}
+	\end{equation*}
+\begin{equation*}
+	\begin{matrix}
+		-\int_{\gamma_2} \arcsin x dy=-\int_{\frac{1}{2}}^{\frac{\sqrt{3}}{2}}
+		\arcsin x dx = -\left| x\arcsin x - \int
+		\frac{x}{\sqrt{1-x^2}}dx\right|_{\frac{1}{2}}^{\frac{\sqrt{3}}{2}}= 
+		-\left| x\arcsin x - \int
+		\sqrt{1-x^2}dx\right|_{\frac{1}{2}}^{\frac{\sqrt{3}}{2}}\\
+		= -
+		\left[\frac{\sqrt{3}}{2}\arcsin\frac{\sqrt{3}}{2}-\sqrt{1-\frac{3}{4}}
+		- \frac{1}{2}\arcsin \frac{1}{2}-\sqrt{1-\frac{1}{4}} \right] =
+		-\left[\frac{\sqrt{3}}{2}\frac{\pi}{6}+\frac{1}{2}-\frac{1}{2}
+		\frac{\pi}{3} - \frac{\sqrt{3}}{2}\right]\\
+	\end{matrix}
+\end{equation*}
+\begin{equation*}
+	\begin{matrix}
+		\gamma_3: &y=\frac{1}{4x}& x\in \left[\frac{1}{2},
+		\frac{\sqrt{3}}{2}\right] & dy=-\frac{1}{4x} & \int_{\gamma_3}\arcsin
+		xdy=\int_{\frac{1}{2}}^{\frac{\sqrt{3}}{2}}\arcsin x
+		\left(\frac{1}{4x}dx\right)
+	\end{matrix}
+\end{equation*}
+\clearpage
+\begin{equation*}
+	\begin{matrix}
+		\int_{\gamma_3}\arcsin x
+		dy=-\int_{\frac{\sqrt{3}}{6}}^{\frac{1}{2}}=y\arcsin \frac{1}{4y}dy=
+		y\arcsin \frac{1}{4y}-\int
+		y*\frac{1}{\sqrt{1-\frac{1}{16}}y^2}\left(-frac{1}{4y^2}\right)dy\\
+		=y\arcsin\left(\frac{1}{4y}\right)-\int-\frac{1}{4y}\frac{1}{\sqrt{\frac{16
+		y^2-1}{16y^2}}}dy
+	\end{matrix}
+\end{equation*}
+	Si risolve con la sostituzione $\int\frac{1}{\sqrt{x^2-a^2}}dx$ 
+\begin{align*}
+	x=\sqrt{x^2-a^2}=a\tan t\\
+	\sqrt{y^2-\frac{1}{16}}=\frac{1}{4}\tan t
+\end{align*}
+\end{esempio}
+\subsubsection{Seconda formula di Green-Gauss}
+\begin{teorema}
+	Sia $f(x,y)$ continua in un insieme D, sia $\frac{\partial f}{\partial y}$
+	continua in D, sia D un dominio normale rispetto all'asse x e sia la sua
+	frontiera $F_D$ una curva regolarea tratti. Allora vale la seguente
+	relazione 
+	\begin{equation}
+		\iint_D \frac{\partial f}{\partial y} dxdy=-\int_{+FD} f(x,y) dx
+	\end{equation}
+	\begin{multicols}{2}
+		\subsubsection{Ipotesi}
+			\begin{equation*}
+				\begin{matrix}
+					f(x,y)\in C^o_D\\
+					\frac{\partial f}{\partial y}\in C^0_D
+				\end{matrix}
+			\end{equation*}
+			$D$ normale rispetto all'asse $x$
+			\begin{align*}
+			D:\begin{cases}
+				a\leq x\leq b\\
+				g(x)\leq y\leq h(x)
+			\end{cases}
+			\end{align*}
+			$F_D$ regolare a tratti
+		\subsubsection{Tesi}
+		\begin{equation*}
+			\iint_D \frac{\partial f}{\partial y} dxdy=-\int_{+FD} f(x,y)dx
+		\end{equation*}
+	\end{multicols}
+\end{teorema}
+\begin{proof}
+	Purché $f(x,y)\in C_D^o$ e $\frac{\partial f}{\partial y}\in C_D^o$, esse
+	sono integrali in $D$. Il dominio $D_1$ che è normale rospetto all'esse x
+	può essere descritto come
+	\begin{multicols}{2}
+		\includegraphics[width=6cm]{img/finiti/secondalegge.eps}\\
+		\begin{equation*}
+			D=\begin{cases}
+				a\leq x\leq b\\
+				g(x)\leq y\leq h(x)
+			\end{cases}\begin{matrix}
+				\text{ e la sua frontiera è}\\
+				F_D=\gamma_1\wedge \gamma_2 \wedge \gamma_3 \wedge \gamma_4
+			\end{matrix}
+		\end{equation*}
+	\end{multicols}
+	Svuluppiamo I e II membro della tesi $\int_{h(x)}^{g(x)}\frac{\partial
+	f}{\partial y} dy=|f(x,y)|^{y=h(x)}_{y=g(x)}=f[x,h(x)]-f[x,g(x)]$
+	\begin{description}
+		\item[I membro]
+			\begin{equation*}
+				\iint_D \frac{\partial f}{\partial y} dx dy=\int_{a}^{b} dx
+				\int_{g(x)}^{h(x)}\frac{\partial f}{\partial y} dy=
+				f[x,h(x)]-f[x,g(x)]dx
+			\end{equation*}
+		\item[II membro]
+			\begin{equation*}
+				\int_D f(x, y) dx = \int_{\gamma_1} f(x,y)dx+\int_{\gamma_2}
+				f(x,y)dx+\int_{\gamma_3} f(x,y)dx+\int_{\gamma_4} f(x,y)dx
+			\end{equation*}
+			\begin{equation*}
+				\begin{matrix}
+					\gamma_2: &x=b& y\in[g(b),h(b)]dx=0\\
+					\gamma_4: &x=a& y\in[g(a),b(a)]dx=0
+				\end{matrix}
+			\end{equation*}
+			\clearpage
+			\begin{equation*}
+				\begin{matrix}
+					\gamma_1: &y=g(x)&x\in[a,b]&\int_{\gamma_1}f(x,y) dx= 
+					\int_{a}^{b}f[x,g(x)]dx\\
+					\gamma_3: &y=h(x)& x\in[b, a] & \int_{\gamma_3}f(x,y)dx=-\int_{a}^{b}f[x,h(x)]dx
+				\end{matrix}
+			\end{equation*}
+			per cui
+			\begin{equation*}
+				\int_{+FD}
+				f(x,y)dx=\int_{a}^{b}f[x,g(x)]dx-\int_{a}^{b}f[x,h(x)]dx =
+				\int_{a}^{b}f[x,g(x)]-f[x,h(x)]dx
+			\end{equation*}
+	\end{description}
+	combiando di segno si dimostra la tesi\\
+	con questa formula di {\color{red}Green-Gaun} un integrale doppio -- sotto
+	opportune ipotesi -- si può trasformare in un integrale curvilineo hteso
+	alla frontiera del dominio di integrazione.
+	\begin{equation*}
+		\iint \frac{\partial f}{\partial y}dxdy=-\int_{FD} f(x,y) dx
+	\end{equation*}
+\end{proof}
+\subsection{Teorema della divergenza}
+\begin{defi}
+	Sia $\vec{F}\equiv (f(x,y),g(x,y))\in C^\prime_D$ funzione vetoriale, si
+	definisce {\color{red}divergenza} di $\vec{F}$
+	\begin{equation*}
+		\begin{matrix}
+			div \vec{F}=\frac{\partial f}{\partial x}+\frac{\partial
+			f}{\partial y} & \begin{matrix}
+				\text{derivata rispetto } \partial x \text{ della prima
+				componente più derivata}\\
+				\text{ rispetto a } \partial y \text{ della
+				seconda componente}
+			\end{matrix}
+		\end{matrix}
+	\end{equation*}
+\end{defi}
+\subsubsection{Teorema della divergenza \label{tdiv}}
+\begin{teorema}
+	Sia $\vec{F}\equiv (f(x,y), g(x,y))\in C_0^\prime$ e sia D un dominio
+	normale\footnote{rispetto ad entrambi gli assi}, con la sua frontiera $F_D$
+	regolare a tratti, vale la sequente relazione:
+	\begin{equation*}
+		\begin{matrix}
+			\iint_D div \vec{F}dxdy=\int_{+FD}\vec{F}*\vec{n}ds & \text{ con }
+			\vec{n} \text{ versore normale a } F_D
+		\end{matrix}
+	\end{equation*}
+	\begin{multicols}{2}
+		\subsubsection{Ipotesi:}
+		\begin{equation*}
+			\vec{F}\equiv (f(x,y), g(x,y))\in C_0^\prime
+		\end{equation*}
+		$D$ normale rispetto ad entrambi gli assi $F_D$ regolare a tratti.
+		\subsubsection{Tesi:}
+		\begin{equation*}
+			\iint_D div \vec{F}dxdy=\int_{+FD}\vec{F}*\vec{n}ds
+		\end{equation*}
+	\end{multicols}
+\end{teorema}
+\begin{proof}
+	\begin{equation*}
+		\begin{matrix}
+			\iint div \vec{F} dxdy=\iint_{D} \left(\frac{\partial f}{\partial
+			x}\right)dxdy & \text{per definizione divergenza}
+		\end{matrix}
+	\end{equation*}
+	Dalle ipotesi valgono le due formule di \textit{\color{red}Green-Gauss}
+	\begin{equation*}
+		\begin{matrix}
+			\iint \frac{\partial f}{\partial x}dxdy=\int_{+FD}f(x,y)dy &:&
+			\iint_D \frac{\partial f}{\partial y}dxdy=-\int_{+FD}g(x,y)dx
+		\end{matrix}
+	\end{equation*}
+	Devo così dimostrare che $f(x,y)dx-g(x,y)dy=\vec{F}*\vec{n}ds$\\
+	Ricavo il versore normale $\vec{n}$: $F_D$ regolare a tratti ed è quindi ed
+	è quindi esprimibile come unione di curve regolari di espressione
+	parametrica
+	\begin{equation*}
+		\begin{matrix}
+			\begin{cases}
+				x=x(t)\\
+				y=y(t)
+			\end{cases} t\in [a,b] & \exists x^\prime(t).y^\prime(t)\text{ perché la
+			curva è regolare.}
 
+		\end{matrix}
+	\end{equation*}
+	Il vettore tangente $\vec{t}=(x^\prime(t),y^\prime(t))$, scambiando le
+	componenti e cambiandone una di segno si ottine il vettore normale
+	$(y^\prime(t),-x^\prime (t))$; dividendo per la norma
+	$\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2}$ si ha il versore normale $\vec{n}$
+	\begin{equation*}
+		\vec{n}\equiv
+		\left(\frac{y^\prime(t)}{\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2}}:
+		\frac{x^\prime (t)}{\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2}}\right)
+	\end{equation*}
+	Svolgo ora il prodotto scalere $\vec{F}*\vec{n}ds$, ricordando che
+	$ds=\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2}$ 
+	\begin{align*}
+		\vec{F}\equiv (f(x,y), g(x,y))\\
+		\vec{F}*\vec{n}ds=\left(\frac{f(x,y)y^\prime(t)}{\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2}}-\frac{g(x,y)x^\prime(t)}{\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2}}\right)\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2}
+	\end{align*}
+	\begin{equation*}
+		\begin{matrix}
+			\begin{matrix}
+				x^\prime(t)=dx\\
+				y^\prime(t)=dy
+			\end{matrix}&\vec{F}*\vec{n}ds=f(x,y)dy-g(g,y)dx
+		\end{matrix}
+	\end{equation*}
+	Quindi 
+	\begin{eqnarray*}
+		\iint_D div \vec{F}dxdy=\int_{+FD}f(x,y)dy-g(x,y)dx & div
+		\vec{F}=\frac{\partial f}{\partial x}+ \frac{\partial g}{\partial y}
+	\end{eqnarray*}
+	Il teorema della divergenza (\ref{tdiv}) vale anche in $R^3$, in forma
+	vettoriale
+	\begin{eqnarray*}
+		\iiint_{V}div \vec{F} dxdydz = \iint_{+\Sigma}\vec{F}*\vec{n}ds &\vec{F}
+		=\frac{\partial f}{\partial x}+ \frac{\partial g}{\partial y} + 
+		\frac{\partial h}{\partial z}
+	\end{eqnarray*}
+\end{proof}
+\begin{esempio}
+	calcolare utilizzando il teorema della divergenza $\iint_D div\vec{F}dxdy$
+	con $\vec{F}\equiv (-2x^3y;\frac{1}{2}xy), D=\{x^2+y^2\leq 1\}$
+	\begin{equation*}
+		div \vec{F}=-\frac{2x^3y}{\partial x}+\frac{-\frac{1}{2}xy}{\partial
+		y}= -6x^2y-\frac{1}{2}x
+	\end{equation*}
+	\begin{equation*}
+		\iint_D(-6x^2y-\frac{1}{2}x)dxdy=\int_{+FD}f(x,y)dy+g(x,y)dx=\int_{+FD}
+		-2x^2ydy+\frac{1}{2}xydx
+	\end{equation*}
+	\begin{eqnarray*}
+		FD:x^2+y^2=1 & \begin{cases}
+			x=\cos t \\
+			y=\sin t
+		\end{cases} t\in [0,2\pi] & \begin{matrix}
+			dx=-\sin t dt\\
+			dy=\cos t dt
+		\end{matrix}
+	\end{eqnarray*}
+	\begin{eqnarray*}
+		\int_{0}^{2\pi} -2\cos^3 t \sin t\cos t dt + \frac{1}{2}\cos t \sin t
+		(-\sin t) dt= +\int_{0}^{2\pi} \left(-2\cos^4t\sin t +
+		\frac{1}{2}\sin^2t \cos t\right)\\=\begin{vmatrix}
+			-\frac{2}{5} \cos^5 t - \frac{7}{6}\sin^3 t
+		\end{vmatrix}^{2\pi}_0 =-\frac{2}{5}-0+\frac{2}{5} -0=0
+	\end{eqnarray*}
+\end{esempio}
+\subsubsection{Applicazioni della formula di Green-Gauss}
+Rimandi teorici a partire da (\ref{fGreen-Gauss}) -- Calcolo dell'area di
+dominio piani\\
+Ricordando le formule di \texttt{Green-Gauss} $\iint_D \frac{\partial
+f}{\partial x}dxdy=\int_{+FD} f(x,y)dy:\iint_D \frac{\partial f}{\partial
+y}dxdy =-\int_{+FD}f(x,y)dx$ nella formula dell'area $\frac{\partial
+f}{\partial x}=1$ o $\frac{\partial f}{\partial y}=1$ per cui $f(x,y)=x$ o
+$f(x,y)=y$\\
+Si ha così $A=\iint_D dxdy=\int_{+FD}xdy=-\int_{+FD}ydx\to
+\int_{+FD}xdy-\int_{+FD}ydx=2\iint_Ddxdy$ si ha:
+\begin{equation*}
+	\boxed{A=\frac{1}{2}\int_{+FD}xdy-ydx}
+\end{equation*}
+\clearpage
+\begin{esempio}
+	Calcolare l'area del dominio delimitato dall'ellisse con semiassi a e b
+	\begin{eqnarray*}
+		F_D:\begin{matrix}
+			x=a\cos t \\
+			y=b\sin t
+		\end{matrix}& t\in [0,2\pi]&\begin{matrix}
+			dx=a\sin t \\
+			dy=b\cos t
+		\end{matrix}
+	\end{eqnarray*}
+	\begin{eqnarray*}
+		\iint dxdy= \frac{1}{2}\int_{+FD}xdy-ydx=\frac{1}{2}\int_{0}^{2\pi}a
+		\cos t (b\cos t)- b\sin t (-a \sin
+		t)dt\\=\frac{1}{2}\int_{0}^{2\pi}ab\cos^2t+ab\cos^2 t +
+		ab\sin^2t=\frac{1}{2}ab\int_{0}^{2\pi}dt=ab\pi
+	\end{eqnarray*}
+\end{esempio}

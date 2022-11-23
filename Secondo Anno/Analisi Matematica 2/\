@@ -142,52 +142,58 @@
 \input{pag/derivate_parziali.tex}
 \input{pag/differenzialita.tex}
 \input{pag/integrali.tex}
-\section{Forma differenziali Lineari}
-Si definisce differenziale lineare $\omega$
-\begin{align*}
-	\mathds{R}^2\Rightarrow \omega=f(x,y)dx+g(x,y)dy\\
-	\mathds{R}^3\Rightarrow \omega= F_1(x,y,z)dx+F_2(x,y,z)dy+F_3(x,y,z)dz
-\end{align*}
-\subsection{Integrazione delle forme differenziali}
-\begin{defi}
-	Sia $\omega$ una forma differenziale continua in un insieme
-	$D$\footnote{ivi integrabile} e sia $\gamma$ una curva regolare a tratti
-	contenuta in D, di equazioni parametriche $\gamma \equiv (x(t),y(t), z(t)),
-	t\in [a,b]$. Si definisce {\color{red}integrale della forma differenziale
-	esteso alla curva $\gamma$}
-	\begin{eqnarray*}
-		\int_{\gamma} \omega ds=\int_{\gamma}
-		F_1(x,y,z)dx+F_2(x,y,z)dy+F_3(x,y,z)dz=\int_{a}^{b}
-		F_1(x(t),y(t),z(t))x^\prime (t)\\
-		+F_2(x(t),y(t),z(t))y^\prime (t) + F_3(x(t),y(t),z(t))z^\prime (t)dt
-	\end{eqnarray*}
-	L'integrale rettilineo che va tra gli estremi su cui è preso t\\
-	La funzione $F\equiv[F_1(x,y,z),F_2(x,y,z),F_3(x,y,z)]$ viene calcolata
-	sui punti della curva $\gamma$\footnote{funzione composita}
+\begin{proof}
 	\begin{equation*}
-		\text{I differenziali sono } \begin{cases}
-			dx=x^\prime(t)\\
-			dy=y^\prime(t)\\
-			dz=z^\prime(t)
-		\end{cases}
+		\begin{matrix}
+			\iint div \vec{F} dxdy=\iint_{D} \left(\frac{\partial f}{\partial
+			x}\right)dxdy & \text{per definizione divergenza}
+		\end{matrix}
 	\end{equation*}
-\end{defi}
-Le {\color{red} proprietà delle forme differenziali lineari} derivano dalle
-proprietà degli integrali curvilinei
-\begin{itemize}
-	\item Linearità:
-		\begin{eqnarray*}
-			\int_{\gamma}\omega_1 +\omega_2 ds=\int_\gamma \omega_1ds
-			+\int_\gamma \omega_2 ds\\
-			\alpha\int_\gamma \omega ds=\int_\gamma \alpha \omega ds 
-		\end{eqnarray*}
-	\item Additività:
-		\begin{eqnarray*}
-			\gamma=\gamma_1\wedge \gamma_2\wedge \dots \wedge \gamma_n &
-			\int_\gamma \omega ds =\int_{\gamma_1} \omega ds + \int_{\gamma_2}
-			\omega ds + \dots +\int_{\gamma_n} \omega ds
-\end{itemize}
-\subsection{Forme differenziali esatte}
+	Dalle ipotesi valgono le due formule di \textit{\color{red}Green-Gauss}
+	\begin{equation*}
+		\begin{matrix}
+			\iint \frac{\partial f}{\partial x}dxdy=\int_{+FD}f(x,y)dy &:&
+			\iint_D \frac{\partial f}{\partial y}dxdy=-\int_{+FD}g(x,y)dx
+		\end{matrix}
+	\end{equation*}
+	Devo così dimostrare che $f(x,y)dx-g(x,y)dy=\vec{F}*\vec{n}ds$\\
+	Ricavo il versore normale $\vec{n}$: $F_D$ regolare a tratti ed è quindi ed
+	è quindi esprimibile come unione di curve regolari di espressione
+	parametrica
+	\begin{equation*}
+		\begin{matrix}
+			\begin{cases}
+				x=x(t)\\
+				y=y(t)
+			\end{cases} t\in [a,b] & \exists x^\prime(t).y^\prime(t)\text{ perché la
+			curva è regolare.}
+
+		\end{matrix}
+	\end{equation*}
+	Il vettore tangente $\vec{t}=(x^\prime(t),y^\prime(t))$, scambiando le
+	componenti e cambiandone una di segno si ottine il vettore normale
+	$(y^\prime(t),-x^\prime (t))$; dividendo per la norma
+	$\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2}$ si ha il versore normale $\vec{n}$
+	\begin{equation*}
+		\vec{n}\equiv
+		\left(\frac{y^\prime(t)}{\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2}}:
+		\frac{x^\prime (t)}{\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2}}\right)
+	\end{equation*}
+	Svolgo ora il prodotto scalere $\vec{F}*\vec{n}ds$, ricordando che
+	$ds=\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2}$ 
+	\begin{align*}
+		\vec{F}\equiv (f(x,y), g(x,y))\\
+		\vec{F}*\vec{n}ds=\left(\frac{f(x,y)y^\prime(t)}{\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2}}-\frac{g(x,y)x^\prime(t)}{\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2}}\right)\sqrt{[x^\prime(t)]^2+[y^\prime(t)]^2}
+	\end{align*}
+	\begin{equation*}
+		\begin{matrix}
+			\begin{matrix}
+				x^\prime(t)=dx\\
+				y^\prime(t)=dy
+			\end{matrix}&\vec{F}*\vec{n}ds=f(x,y)dy-g(g,y)dx
+		\end{matrix}
+	\end{equation*}
+\end{proof}
 
 \printindex
 \end{document}
