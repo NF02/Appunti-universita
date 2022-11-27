@@ -189,6 +189,215 @@ proprietà degli integrali curvilinei
 		\end{eqnarray*}
 \end{itemize}
 \subsection{Forme differenziali esatte}
+\begin{defi}
+	Sia $\omega$ una forma differenziabile, essa si dice {\color{red}esatta},
+	se esiste una funzione $f(x,y,z)$\footnote{detta \color{red}funzione
+	potenziale} tale che il suo differenziale primo sia $\omega$
+	\begin{equation*}
+		\omega=F_1(x,y,z)dx+F_2(x,y,z)dy+F_3(x,y,z)dz\text{ è esatto
+		se }\exists f(x,y,z):df=\omega
+	\end{equation*}
+	poiché $df=fx(x-x_0)+fy(y-y_0)+fz(z-z_0)$
+	\begin{equation*}
+		\text{se $\omega$ è esatta }\begin{cases}
+			F_1(x,y,z)=\frac{\partial f}{\partial x}\\
+			F_2(x,y,z)=\frac{\partial f}{\partial y}\\
+			F_3(x,y,z)=\frac{\partial f}{\partial z}
+		\end{cases}
+	\end{equation*}
+\end{defi}
+\subsection{Forma differeniali chiusa}
+In $R^2$: consideriamo una forma differenziale $\omega$ in $R^2$ esatta
+\begin{equation*}
+	\omega=F_1(x,y)dx+F_2(x,y)dy
+\end{equation*}
+Per definizione di forma differenziale esatta
+\begin{eqnarray*}
+	\exists f(x,y):df=\omega& \text{cioè } F_1(x,y)=\frac{\partial f}{\partial
+	x} & F_2(x,y)=\frac{\partial f}{\partial y}
+\end{eqnarray*}
+Con $f(x,y)\in C^2$ derivo F, rispetto a $y$ e $F_2$ rispetto $\partial x$ -- 
+Così vale il teorema di Schwarz (\ref{Schwarz})
+\begin{eqnarray*}
+	\frac{\partial}{\partial y}F_1(x,y)=\frac{\partial}{\partial
+	y}\left(\frac{\partial f}{\partial x}\right) =f_{xy} &\frac{\partial
+	F_2}{\partial x}=\frac{\partial}{\partial x} \left(\frac{\partial
+	f}{\partial y}\right)=f_{yx}
+\end{eqnarray*}
+$f_{xy}=f_{yx}\to \frac{\partial F_1}{\partial y}=\frac{\partial F_2}{\partial
+x}$ \\
+Se è vera tale relazione, la forma differenziale si dice {\color{red}chiusa}.
+\begin{center}
+	\fbox
+	{
+		\begin{minipage}{0.85\textwidth}
+			In $R^3$: Definiamo primo il rotore di una funzione vettoriale di 
+			classe $C^\prime$ \\
+			Sia $F\equiv (F_1(x,y,z),F_2(x,y,z),F_3(x,y,z))$. Il rotore di F è 
+			il determinante:
+			\begin{equation*}
+				rot \vec{F}=\begin{vmatrix}
+					\vec{l} &\vec{j} &\vec{k} \\
+					\partial x & \partial y & \partial z\\
+					F_1 & F_2 & F_3
+				\end{vmatrix}=\left(\frac{\partial F_3}{\partial y}-
+			\frac{\partial F_2}{\partial z}\right)\vec{l} -
+				\left(\frac{\partial F_3}{\partial x}-
+			\frac{\partial F_1}{\partial z}\right)\vec{j} +
+				\left(\frac{\partial F_1}{\partial z}-
+				\frac{\partial F_2}{\partial x}\right)\vec{k}
+			\end{equation*}
+			Consideriamo ora una forma differenziale lineare $\omega$ in $R^3$
+			\begin{eqnarray*}
+				\omega =F_1(x,y,s)dx+F_2(x,y,z)dy+F_3(x,y,z)dz\\
+				\text{con } F\equiv(F_1(x,y,z),F_2(x,y,z), F_3(x,y,z))
+			\end{eqnarray*}
+			$\omega$ è chiusa se $rot F=0$
+			\begin{equation*}
+				rot\vec{F}=\left(\frac{\partial F_3}{\partial y}-
+			\frac{\partial F_2}{\partial z}\right)\vec{l} -
+				\left(\frac{\partial F_3}{\partial x}-
+			\frac{\partial F_1}{\partial z}\right)\vec{j} +
+				\left(\frac{\partial F_1}{\partial z}-
+				\frac{\partial F_2}{\partial x}\right)\vec{k}
+			\end{equation*}
+			$rot \vec{F}$ è un vettore, è nullo quando tutte le sue componenti
+			sono nulle.
+			\begin{equation*}
+				\begin{matrix}
+				\frac{\partial F_3}{\partial y}=\frac{\partial F_2}{\partial z}
+				& ; & \frac{\partial F_3}{\partial x}=\frac{\partial
+				F_1}{\partial z} & ; &\frac{\partial F_1}{\partial z}=
+				\frac{\partial F_2}{\partial x}
+				\end{matrix}
+			\end{equation*}
+		\end{minipage}
+	}
+\end{center}
+\clearpage
+\subsection{Condizioni necessarie affinché una forma differenziale sia esatta}
+Se $\omega$ è esatta allora è chiusa
+\paragraph{Condizione necessaria:} Affinché $\omega$ sia esatta è che deve
+essere chiusa\\
+cioè se $\omega$ non è chiusa \texttt{può} essere esatta,
+invece, se $\omega$ non è chiusa \underline{sicuramente \color{red} non} è esatta
+\begin{multicols}{2}
+	\begin{equation*}
+		R^2\text{ }\frac{\partial F_1}{\partial x}=\frac{\partial F_2}{\partial y}
+	\end{equation*}
+	\begin{equation*}
+		R^2\text{ } rot \vec{F}=0
+	\end{equation*}
+\end{multicols}
+\begin{proof}
+	Per definizione $rot F=\begin{vmatrix}
+		l & j & k \\
+		\alpha_x & \alpha_y & \alpha_z\\
+		F_1 & F_2 & F_3
+	\end{vmatrix}$\\
+	Se $\omega$ è esatta\\
+	esiste la funzione potenziale $f(x,y,z)$ tale che $df=\omega$, per cui
+	$F_1=\frac{\partial f}{\partial x};F_2=\frac{\partial f}{\partial y};
+	F_3=\frac{\partial f}{\partial z}$ da cui
+	\begin{equation*}
+		rot F=\begin{vmatrix}
+			l & j & k\\
+			\partial_x &\partial_y & \partial_z \\
+			\frac{\partial f}{\partial x} &\frac{\partial f}{\partial
+			y} & \frac{\partial f}{\partial z}
+		\end{vmatrix}=(f_{zy}-f_{yz})\vec{l} - (f_{zx}-f_{xz})\vec{j}+
+		(f_{yx}-f_{xy})\vec{k}
+	\end{equation*}
+	Se $f(x,y,z)\in C^2$ vale il teorema di Schwarz (\ref{Schwarz}), così tutte
+	le componenti di $rot F$ sono nulle $rot F = 0$
+\end{proof}
+\subsubsection{Proprietà delle forme differenziale lineari esatte}
+\begin{description}
+	\item[Teorema 1 -] L'integrale curvilineo di una forma differenziale
+		lineare esatta non dipende dalla curva (percorso) ma solo dagli
+		estremi\\
+		Sia $omega$ esatta in un insieme $V$ e sia $\gamma \subset V$ un arco di
+		curva regolare di estremi $P_0$ e $P_1$ allora $\displaystyle\int_\gamma
+		F_1(x,y,z)dx + F_2(x,y,z) dy+ F_3(x,y,z)dz=f(P_1)-f(P_0)$
+		\begin{multicols}{2}
+			\subsubsection{Ipotesi:}
+			$\omega$ esatta in $V$
+			\begin{eqnarray*}
+				\gamma=\begin{cases}
+					x=x(t) \\
+					y=y(t)\\
+					z=z(t)
+				\end{cases} & t\in[a,b] &\text{regolare}\\
+				\gamma \subset V
+			\end{eqnarray*}
+			\subsubsection{Tesi:}
+				$\displaystyle\int_\gamma
+				F_1dx + F_2 dy+ F_3=f(P_1)-f(P_0)$
+		\end{multicols}
+		\begin{proof}
+			Per definizione di integrale curvilineo
+			\begin{eqnarray*}
+				\int_\gamma F_1(x,y,z)dx + F_2(x,y,z) dy+ F_3(x,y,z)dz =
+				\int_{a}^{b} [F_1(x(t),y(t),z(t)) + F_2(x(t),y(t),z(t))\\ +
+				F_3(x(t),y(t),z(t))]dt
+			\end{eqnarray*}
+			per ipotesi $\omega$ è esatta, per cui esiste una funzione
+			potenziale tale che $df=\omega$ da cui si ha:
+			\begin{equation*}
+				\begin{matrix}
+					F_1(x(t),y(t),z(t))=\frac{\partial f}{\partial x}(x(t),y(t),z(t)) \\
+					F_2(x(t),y(t),z(t))=\frac{\partial f}{\partial y}(x(t),y(t),z(t)) \\
+					F_3(x(t),y(t),z(t))=\frac{\partial f}{\partial z}(x(t),y(t),z(t))
+				\end{matrix}
+			\end{equation*}
+			L'integrale diventa $\int_{a}^{b} [F_1(x(t),y(t),z(t)) + 
+			F_2(x(t),y(t),z(t)) + F_3(x(t),y(t),z(t))]dt$
+			\clearpage
+			Per il teorema della derivata della funzione composta,
+			l'espressione da integralre è
+			$\frac{\partial f}{\partial t}(x(t),y(t),z(t))$ per cui
+			$\int_{a}^{b}\frac{\partial f}{\partial t}(x(t),y(t),z(t))dt=
+			\begin{vmatrix}
+				f(x(t),y(t),z(t))
+			\end{vmatrix}^d_a=f(P_1)-f(P_0)$ con $\begin{matrix}
+				P_0(x(a),y(a),z(a))\\
+				P_1(x(b),y(b),z(b))
+			\end{matrix}$
+		\end{proof}
+	\item[Teorema 2 -] Sia $\omega$ una forma differenziale lineare continua in
+		un insieme $A$ aperto connsso.\\
+		Le sequanti affermazioni sono vere:
+		\begin{tasks}
+			\task $\omega$ è esatta in A
+			\task per $\forall \gamma \subset A$ chiusa $\int_\gamma \omega=0$
+			\task se $\gamma_1$ e $\gamma_2$ hanno gli stessi estremi e lo
+			stesso verso di percorrenta si ha
+			\begin{equation*}
+				\int_{\gamma_1} \omega=\int_{\gamma_2}\omega
+			\end{equation*}
+		\end{tasks}
+\end{description}
+\section{Funzione potenziale}
+\begin{defi}
+	Se $\omega$ è esatta, esiste una funzione $f(x,y)$, detta
+	{\color{red}funzione potenziale}, tale che il suo differenziale eguaglia
+	$\omega$
+	\begin{equation*}
+		df=\omega
+	\end{equation*}
+	f(x,y) è definita a meno di una costante, infatti $df(x,y)= d(f(x,y)+k)$
+	con $\omega$ esatta, la funzione potenziale si triva con 
+	\begin{equation*}
+		f(x,y)=\int_\gamma \omega=\int_\gamma F_1(x,y)dx+F_2(x,y)dy
+	\end{equation*}
+	Poiché $\omega$ è esatta, quest'integrale curvilineo non dipende dal
+	pecorso, ma sdamente dagli estremi. \\
+	Per cui considero un percorso semplice su cui integrare i segmenti
+	paralleli agli assi
+	\begin{multicols}{2}
+		\includegraphics[width=6cm]{img/finiti/es-fun-pot.eps}
+	\end{multicols}
 
+\end{defi}
 \printindex
 \end{document}

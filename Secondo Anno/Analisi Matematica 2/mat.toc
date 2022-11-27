@@ -111,4 +111,11 @@
 \contentsline {subsubsection}{Applicazioni della formula di Green-Gauss}{45}{subsubsection*.43}%
 \contentsline {section}{\numberline {4.7}Forma differenziali Lineari}{46}{section.4.7}%
 \contentsline {subsection}{\numberline {4.7.1}Integrazione delle forme differenziali}{46}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Forme differenziali esatte}{46}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.2}Forme differenziali esatte}{47}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}Forma differeniali chiusa}{47}{subsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.7.4}Condizioni necessarie affinché una forma differenziale sia esatta}{48}{subsection.4.7.4}%
+\contentsline {paragraph}{Condizione necessaria:}{48}{paragraph*.44}%
+\contentsline {subsubsection}{Proprietà delle forme differenziale lineari esatte}{48}{subsubsection*.45}%
+\contentsline {subsubsection}{Ipotesi:}{48}{subsubsection*.46}%
+\contentsline {subsubsection}{Tesi:}{48}{subsubsection*.47}%
+\contentsline {section}{\numberline {4.8}Funzione potenziale}{49}{section.4.8}%
