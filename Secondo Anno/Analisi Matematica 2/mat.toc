@@ -1,5 +1,5 @@
-\babel@toc {italian}{}\relax 
-\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}
+\babel@toc {italian}{}
 \contentsline {section}{\numberline {0.1}Premesse\dots }{5}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Simboli}{6}{section.0.2}%
 \contentsline {chapter}{\numberline {1}Introduzione}{7}{chapter.1}%
@@ -119,3 +119,17 @@
 \contentsline {subsubsection}{Ipotesi:}{48}{subsubsection*.46}%
 \contentsline {subsubsection}{Tesi:}{48}{subsubsection*.47}%
 \contentsline {section}{\numberline {4.8}Funzione potenziale}{49}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Condizioni sufficiente affinché una forma differenziale lineare sia Esatta}{50}{subsection.4.8.1}%
+\contentsline {subsubsection}{Ipotesi:}{50}{subsubsection*.48}%
+\contentsline {subsubsection}{Tesi:}{50}{subsubsection*.49}%
+\contentsline {subsection}{\numberline {4.8.2}Condizione necessaria e sufficiente}{50}{subsection.4.8.2}%
+\contentsline {subsection}{\numberline {4.8.3}Teorema di Stokes (o del rotore)}{50}{subsection.4.8.3}%
+\contentsline {paragraph}{In forma cartesiana}{51}{paragraph*.50}%
+\contentsline {paragraph}{I membro}{52}{paragraph*.51}%
+\contentsline {paragraph}{II membro}{52}{paragraph*.52}%
+\contentsline {chapter}{\numberline {5}Successioni e serie}{53}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Successioni di costanti}{53}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Limite di successioni}{53}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Limite finito di una successione}{53}{subsection.5.2.1}%
+\contentsline {subsubsection}{Limite infinito di una successione}{53}{subsubsection*.53}%
+\contentsline {section}{\numberline {5.3}Successioni Limitatre, illimitate, crescenti e decrescenti}{53}{section.5.3}%

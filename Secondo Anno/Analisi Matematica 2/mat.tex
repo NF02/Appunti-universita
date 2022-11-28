@@ -142,5 +142,46 @@
 \input{pag/derivate_parziali.tex}
 \input{pag/differenzialita.tex}
 \input{pag/integrali.tex}
+\chapter{Successioni e serie}
+\section{Successioni di costanti}
+\begin{defi}
+  Si definisce successione $a_n$ una funzione in N (numeri naturali) e codominio in R.\\
+  È possibile rappresentare una successione sul pieno cartesiano, con l'asse delle
+  ascisse N e quello delle ordinate R.
+\end{defi}
+
+\section{Limite di successioni}
+\subsection{Limite finito di una successione}
+\begin{defi}
+  Si definisce limite finito della succesione $a_n$ ($a_n$ converge) il numero reale
+  $\gamma$ tale che:
+  \begin{eqnarray*}
+    \lim_{n\to \infty} a_n=\gamma & \forall \xi >0, \exists P_\xi \in N:\forall n > P_\xi\\
+                                  & \abs{a_n-\gamma} < \xi
+  \end{eqnarray*}
+  Una successione che per $n\to \infty$ ha limite finito si dice {\color{red}convergente}
+\end{defi}
+\subsubsection{Limite infinito di una successione}
+$bn\to +\infty$ se
+\begin{eqnarray*}
+  \lim_{n\to\infty}bn=+\infty & \forall M>0, \exists P_M:\forall n > P_m & b_R>M
+\end{eqnarray*}
+Una successione che per $n\to \infty$ ha infinito si dice {\color{red}divergente} --
+Se una successione nè converge, nè diverge, diciamo che è {\color{red}irregolare} o
+{\color{red}indeterminata}, cioè non esiste $\lim\limits_{n\to\infty}$.
+\section{Successioni Limitatre, illimitate, crescenti e decrescenti}
+Limitata superiormente
+\begin{eqnarray*}
+  a_n \text{ è {\color{red} limitata superiormente} se } & \exists k:\forall n \in N
+  & a_n\leq k\\
+  a_n \text{ è {\color{red} limitata inferiormente} se} & \exists h: \forall n\in N
+  & a_n \geq h\\
+  a_n \text{ è {\color{red} limitata} se} & \text{è limita inferiormente e superiormente}
+  & h\leq a_n\leq k\\
+  a_n \text{ è {\color{red}monotona crescente} se} & \forall n: & a_n < a_{n+1}\\
+  a_n \text{ è {\color{red}monotona decrescente} se} & \forall n: & a_n > a_{n+1}
+\end{eqnarray*}
+
+
 \printindex
 \end{document}
