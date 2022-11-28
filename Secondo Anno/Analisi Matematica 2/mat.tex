@@ -181,7 +181,108 @@ Limitata superiormente
   a_n \text{ è {\color{red}monotona crescente} se} & \forall n: & a_n < a_{n+1}\\
   a_n \text{ è {\color{red}monotona decrescente} se} & \forall n: & a_n > a_{n+1}
 \end{eqnarray*}
+\clearpage
+\subsection{Operazioni algebriche e teoremi sui limiti di successioni}
+\begin{defi}
+	Poiché le successioni sono una particolare classe di funzioni si estendono
+	le gegole dell'algebra dei limiti e i teoremi studiati per le funzioni.
+	nel calcolo di un limite, si può sostituire la successione con la funzione
+	ad essa associata e calcolare il limite. Alle successioni {\color{red}NON}
+	si può applicare il teorema di De l'Hospital perché le successioni non
+	hanno derivate. Nel calcolo di un limite si può sostituire la successione
+	con la funzione ad essa associata e si può applicare il teorema di
+	del'hospital alla funzione (non alla successione)
+\end{defi}
+\subsection{Serie numeriche}
+Una {\color{red}aria} è una somma di infiniti numeri reali. Sia ($a_n$) una
+successione $a_n=(a_1,a_2, \dots,a_n)$. Definiamo {\color{red}serie
+$\displaystyle\sum_{\infty}^{n=1}a_n=a_1+a_2+\dots+a_n$}\\
+Sia ($S_n$) la successione delle somme parziali così definite
+\begin{equation*}
+	S_n=(S_1,S_2,S_3,\dots,S_n,S_{n+1},\dots)
+\end{equation*}
+\begin{eqnarray*}
+	\begin{matrix}
+		S_1=a_1\\
+		S_2=a_1+a_2\\
+		S_3=a_1+a_2+a_3
+	\end{matrix} &\text{ se }\lim\limits_{n\to\infty}S_n=\begin{cases}
+		S\in R\text{ (rinito)} & \text{\color{red}convergente}\\
+		\pm \infty & \text{\color{red}divergente}\\
+		\nexists &\text{\color{red}indeterminata}
+	\end{cases}
+\end{eqnarray*}
+\subsection{Cordizione necessaria affinché una serie converga}
+Sia $\displaystyle\sum_{n=1}^{\infty}a_n$ una serie convergente, allora
+$\lim\limits_{n\to\infty}a_n=0$
+\subsubsection{Condizione necessaria e sufficiente affinché esista il limite --
+criterio di Cauchy}
+\begin{eqnarray*}
+	\lim_{n\to \infty} a_n=a_0 &\Leftrightarrow & \forall \xi >0 \exists v_\xi
+	: \forall p_1q>v_\xi, p_1q\leftarrow N \\
+	&& \abs{a_p-a_q}<\xi
+\end{eqnarray*}
+Esiste il limite della successione $a_n$ se e solo se per ogni $\xi >0$ esiste
+un indice\footnote{che dipende da $\xi$} tale che, presi due qualunque numeri
+naturali $p$ e $q$ maggiori di quell'indice la distanza tra gli elementi $a_p$
+e $a_q$
+\section{Particolari tipi di serie}
+\subsubsection{Serie telescopica}
+$\displaystyle\sum_{n=1}^{\infty}a_n-a_{n+1}$ Differenza tra due termini
+successivi
+\subsubsection{Serie armonica}
+$\displaystyle\sum_{n=1}^{\infty}\frac{1}{n^\alpha}$ al variare di 
+$\alpha \in R$, la serie ha caratteri diversi $\begin{cases}
+	\text{Converge} & a\leq 2, \alpha=0\\
+	\text{Diverge} &\alpha \leq 1\\
+	\not{} &1\leq \alpha \leq 2
+\end{cases}$
+\subsubsection{Serie geometriche}
+$\displaystyle\sum_{n=1}^{\infty}q^n$ il rapporto tra un termine e il
+precedente è costante.
 
+\subsection{Assoluta e semplice convergenza}
+Serie a segno positivo
+\begin{equation*}
+	\begin{matrix}
+		\displaystyle\sum_{n=1}^{\infty} a_n& \begin{matrix}
+			\text{si definisce a termini di segno positivo se } \forall n>
+			\bar{n} &a_n>0\\
+			\text{finiti Termini negativi, infiniti termini positivi}
+		\end{matrix}
+	\end{matrix}
+\end{equation*}
+Serie a segno negativo
+\begin{equation*}
+	\begin{matrix}
+		\displaystyle\sum_{n=1}^{\infty} b_n& \begin{matrix}
+			\text{si definisce a termini di segno positivo se } \forall n>
+			\bar{n} &b_n<0\\
+			\text{finiti Termini positivi, infiniti termini negativi}
+		\end{matrix}
+	\end{matrix}
+\end{equation*}
+Sia a segno qualunque
+\begin{equation*}
+	\begin{matrix}
+		\displaystyle\sum_{n=1}^{\infty} c_n& \begin{matrix}
+			\text{si definisce a termini di segno qualunque se ha un termine
+			infinito di termini a segno}\\
+			\text{positivo e un numero infinito di termini a segno negativo}
+		\end{matrix}
+	\end{matrix}
+\end{equation*}
+\subsubsection{Assoluta corvegenza}
+\begin{equation*}
+	\begin{matrix}
+		\displaystyle\sum_{n=1}^{\infty} a_n& \begin{matrix}
+			\text{si dice {\color{red}assolutamente convergente} se converge} &
+			\displaystyle\sum_{n=1}^{\infty} \abs{a_n}\\
+			\text{associata convergenza $\Rightarrow$ semplice convergenza} 
+		\end{matrix}
+	\end{matrix}
+\end{equation*}
+Se una serie converge assolutamente, allora converge anche semplicemente.
 
 \printindex
 \end{document}
