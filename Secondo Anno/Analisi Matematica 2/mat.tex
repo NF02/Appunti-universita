@@ -283,6 +283,47 @@ Sia a segno qualunque
 	\end{matrix}
 \end{equation*}
 Se una serie converge assolutamente, allora converge anche semplicemente.
+\section{Criteri per determinare il carattere di una serie}
+\subsection{Criterio del confronto}
+Siano $\displaystyle\sum_{n=1}^\infty a_n$ e $\displaystyle\sum_{n=1}^\infty b_n$ due serie a termini positivi $(a_n\geq 0, b_n\geq 0)$
+\begin{multicols}{2}
+  Sia $a_n\leq b_n$\\\\
+  \begin{itemize}
+  \item se $\displaystyle\sum_{n=1}^\infty b_n$ converge, allora $\displaystyle\sum_{n=1}^\infty a_n$ congerge
+    \item se $\displaystyle\sum_{n=1}^\infty a_n$ diverge, allora $\displaystyle\sum_{n=1}^\infty b_n$ diverge 
+  \end{itemize} 
+\end{multicols}
+\subsection{Criterio del rapporto}
+Sia $\sum_{n=1}^\infty a_n$ una serie a termini positivi non nulli ($a_n>0$)
+\begin{equation*}
+  \text{ se } \lim_{n\to \infty} \frac{a_n+1}{a_n}\begin{cases}
+                                                    l<1 & \text{converge}\\
+                                                    l>1 & \text{diverge}
+                                                  \end{cases}
+\end{equation*}
+\clearpage
+\begin{esempio}
+  \begin{eqnarray*}
+    \displaystyle\sum_{n=1}^{\infty}\frac{2^n}{n!} & a_n=\frac{2^n}{n!} & a_{n+1}=\frac{2^{n+1}}{(n+1)!} 
+  \end{eqnarray*}
+  \begin{eqnarray*}
+    \frac{a_{n+1}}{a_n}=\frac{2^{n+1}}{(n+1)!}*\frac{n!}{2^n}
+    =\frac{2*\not{2^n}}{(n+1)\not{n!}}*\frac{\not{n!}}{\not{2^n}}=\frac{2}{n+1}
+    & \lim_{n\to \infty} \frac{2}{n+1} = 0 & \text{converge}
+  \end{eqnarray*} 
+\end{esempio}
+\subsection{Criterio della radice}
+Sia $\sum_{n=1}^\infty a_n$ una serie a termine positivi $(a_n\geq 0)$
+\begin{equation*}
+  \text{se }\lim_{n\to \infty} \sqrt{a_n}=\begin{cases}
+                                            l<1 & \text{converge}\\
+                                            l>1 & \text{diverge}\\
+                                            l=1 & \text{caso dubbio}
+                                          \end{cases}
+\end{equation*}
+\begin{esempio}
+  
+\end{esempio}
 
 \printindex
 \end{document}
