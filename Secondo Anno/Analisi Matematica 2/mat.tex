@@ -322,8 +322,25 @@ Sia $\sum_{n=1}^\infty a_n$ una serie a termine positivi $(a_n\geq 0)$
                                           \end{cases}
 \end{equation*}
 \begin{esempio}
-  
+	\begin{eqnarray*}
+		\displaystyle\sum_{n=1}^{\infty}\frac{n+1}{2^n} & \lim\limits_{n\to
+		\infty}
+		\sqrt[n]{\frac{n+1}{2^n}}=\lim\limits_{n\to\infty}
+		\frac{(n+1)^{\frac{1}{n}}}{\sqrt[n]{2^n}}=\frac{1}{2}\lim_{n\to \infty}
+		(n+1)^\frac{1}{n}=\frac{1}{2}<1 \text{ converge}\\
+		\lim\limits_{x\to \infty} (x+1)^\frac{1}{x}=1
+	\end{eqnarray*}
 \end{esempio}
-
+\subsection{Criterio del confronto asintotico}
+Siano $\displaystyle\sum_{n=1}^\infty a_n$ e $\displaystyle\sum_{n=1}^\infty b_n$ due serie se $a_n\sim
+b_n$ (asintotico) cioè $\lim\limits_{n\to \infty}\frac{a_n}{b_n}=l\neq 0$ $l\in
+R$ -- $\displaystyle\sum_{n=1}^{\infty}a_n$ ha lo stesso carattere di $\displaystyle\sum_{n=1}^\infty b_n$
+\subsection{Criterio di Leibniz -- Serie a termini alterni\label{leibniz}}
+Data la serie a termini alterni $\displaystyle\sum_{n=1}^\infty(-1)^na_n$, con 
+$\partial_n\geq 0$, Se $a_n$ è decrescente $(a_n> a_{n+1})$
+\begin{equation*}
+	\text{ se }\lim_{n\to\infty} a_n=0
+\end{equation*}
+Allora la serie converge 
 \printindex
 \end{document}

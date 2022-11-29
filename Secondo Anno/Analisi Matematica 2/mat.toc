@@ -1,145 +1,151 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {section}{\numberline {0.1}Premesse\dots }{5}{section.0.1}%
-\contentsline {section}{\numberline {0.2}Simboli}{6}{section.0.2}%
-\contentsline {chapter}{\numberline {1}Introduzione}{7}{chapter.1}%
-\contentsline {section}{\numberline {1.1}tipologia in R}{7}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Distanza}{7}{subsection.1.1.1}%
-\contentsline {section}{\numberline {1.2}Intorno}{7}{section.1.2}%
-\contentsline {paragraph}{Punto interno}{8}{paragraph*.3}%
-\contentsline {paragraph}{Punto esterno}{8}{paragraph*.4}%
-\contentsline {paragraph}{Punto di frontiera}{8}{paragraph*.5}%
-\contentsline {paragraph}{Punto di accumulazione}{8}{paragraph*.6}%
-\contentsline {paragraph}{Punto isolato}{8}{paragraph*.7}%
-\contentsline {paragraph}{Insieme Aperto}{8}{paragraph*.8}%
-\contentsline {subsection}{\numberline {1.2.1}Insieme chiuso}{8}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Insieme connesso}{9}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Insieme convesso}{9}{subsection.1.2.3}%
-\contentsline {paragraph}{Insiemi Limitati}{9}{paragraph*.9}%
-\contentsline {paragraph}{Insieme illimitato}{9}{paragraph*.10}%
-\contentsline {subsection}{\numberline {1.2.4}Coordinate Polari}{9}{subsection.1.2.4}%
-\contentsline {subsection}{\numberline {1.2.5}Limiti e continuità}{9}{subsection.1.2.5}%
-\contentsline {subsection}{\numberline {1.2.6}Continuità}{9}{subsection.1.2.6}%
-\contentsline {subsection}{\numberline {1.2.7}Esistenza del limite}{9}{subsection.1.2.7}%
-\contentsline {subsection}{\numberline {1.2.8}Teorema di esistenza dei valori intermedi}{10}{subsection.1.2.8}%
-\contentsline {subsection}{\numberline {1.2.9}Teorema di Weierstrass}{10}{subsection.1.2.9}%
-\contentsline {chapter}{\numberline {2}Derivate Parziali}{11}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Derivate parziali di primo grado}{11}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Significato geometrico}{11}{subsection.2.1.1}%
-\contentsline {section}{\numberline {2.2}Derivata parziale seconde}{12}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Teorema di Schwarz (Dell'invertibilità dell'ordine di derivazione)}{12}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Massimi e minimi relativi }{12}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Teorema di Fermat}{13}{subsection.2.3.1}%
-\contentsline {subsubsection}{Gradiente}{13}{subsubsection*.11}%
-\contentsline {subsubsection}{Massimi e minimi -- condizione necessaria}{13}{subsubsection*.12}%
-\contentsline {chapter}{\numberline {3}Differenziabilità}{15}{chapter.3}%
-\contentsline {subsection}{\numberline {3.0.1}Tutte le funzioni differenziali sono continue}{16}{subsection.3.0.1}%
-\contentsline {paragraph}{Ip:}{16}{paragraph*.13}%
-\contentsline {paragraph}{Th:}{16}{paragraph*.14}%
-\contentsline {subsection}{\numberline {3.0.2}Tutte le funzioni differenziali sono derivabili}{16}{subsection.3.0.2}%
-\contentsline {paragraph}{Ip:}{16}{paragraph*.15}%
-\contentsline {paragraph}{Th:}{16}{paragraph*.16}%
-\contentsline {subsection}{\numberline {3.0.3}Le funzioni con derivate parziali continue sono diferenziabili}{17}{subsection.3.0.3}%
-\contentsline {subsubsection}{Condizione sufficiente per la differenzialità}{17}{subsubsection*.17}%
-\contentsline {section}{\numberline {3.1}Significato geometrico del differenziale e piano tengente}{17}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Differenziale primo}{17}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Piano Tangente}{17}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Significato geometrico del differenziale primo}{18}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Funzioni composite}{18}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}Funzione composta}{19}{subsection.3.1.5}%
-\contentsline {subsection}{\numberline {3.1.6}Teorema della derivata della funzione composta}{19}{subsection.3.1.6}%
-\contentsline {paragraph}{Ipotesi}{19}{paragraph*.18}%
-\contentsline {paragraph}{Tesi}{19}{paragraph*.19}%
-\contentsline {paragraph}{I membro}{20}{paragraph*.20}%
-\contentsline {paragraph}{II membro}{20}{paragraph*.21}%
-\contentsline {section}{\numberline {3.2}Teorema differenziabilità delle funzioni composite}{20}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Differenziale secondo}{21}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Condizioni sufficiente per l'esistenza di minimo e massimo relativo}{22}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Ricerca del massimo e del minimo assoluti}{23}{subsection.3.3.2}%
-\contentsline {subsubsection}{Teorema di Weierstrass}{23}{subsubsection*.22}%
-\contentsline {paragraph}{Ipotesi:}{23}{paragraph*.23}%
-\contentsline {paragraph}{Tesi:}{23}{paragraph*.24}%
-\contentsline {paragraph}{Ricerca dei punti di Massimo e minimo assoluti:}{23}{paragraph*.25}%
-\contentsline {subsubsection}{Studio sulla frontiera}{23}{subsubsection*.26}%
-\contentsline {subsection}{\numberline {3.3.3}Metodo dei moltiplicatori di di Lagrange}{25}{subsection.3.3.3}%
-\contentsline {chapter}{\numberline {4}Integrali Doppi e tripli}{27}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Domini normali (semplici)}{27}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Dominio normale rispetto all'asse $x$}{27}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Domini Polarmente normale}{27}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Definizione di integrale doppio}{28}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Somme di Riemann}{29}{section.4.2}%
-\contentsline {paragraph}{Somme superiori e somme inferiori}{29}{paragraph*.27}%
-\contentsline {subsection}{\numberline {4.2.1}Proprietà dell'integrale doppio}{30}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Formula di riduzione}{30}{subsection.4.2.2}%
-\contentsline {subsubsection}{Esempi di domini polarmente normali}{31}{subsubsection*.28}%
-\contentsline {subsection}{\numberline {4.2.3}Baricentro di un dominio normale}{31}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Domini normali in $R^3$}{32}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Integrali tripli}{32}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Formule di riduzione per gli integrali tripli}{33}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Significato geometrico degli integrali}{34}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Coordinate polari e coordinate cilindriche}{34}{subsection.4.3.3}%
-\contentsline {paragraph}{coordinate alindriche}{34}{paragraph*.29}%
-\contentsline {paragraph}{coordinate sferiche}{34}{paragraph*.30}%
-\contentsline {subsection}{\numberline {4.3.4}Interazione per fette}{34}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Integrali curvilinei}{34}{subsection.4.3.5}%
-\contentsline {subsubsection}{Curve in $R^2$ e in $R^3$}{34}{subsubsection*.31}%
-\contentsline {subsection}{\numberline {4.3.6}Lunghezza di una curva}{36}{subsection.4.3.6}%
-\contentsline {subsection}{\numberline {4.3.7}Lunghezza di una curva in forma cartesiana}{37}{subsection.4.3.7}%
-\contentsline {subsection}{\numberline {4.3.8}Lunghezza di una curva polare}{37}{subsection.4.3.8}%
-\contentsline {section}{\numberline {4.4}Ascissa Curvilinea}{37}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Integrale corvilineo}{38}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Definizione di integrale curvilineo}{38}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Baricentro di una curva}{38}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Superfici e integrali di superficie}{39}{subsection.4.5.3}%
-\contentsline {subsubsection}{Superfici}{39}{subsubsection*.32}%
-\contentsline {subsection}{\numberline {4.5.4}Piano tangente e versore normale}{39}{subsection.4.5.4}%
-\contentsline {subsection}{\numberline {4.5.5}Orientazione di una superficie}{40}{subsection.4.5.5}%
-\contentsline {subsubsection}{Area di una superficie}{40}{subsubsection*.33}%
-\contentsline {subsection}{\numberline {4.5.6}Integrale Superficiale}{40}{subsection.4.5.6}%
-\contentsline {section}{\numberline {4.6}Trasformazione integrali}{41}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Formule di Green-Gauss}{41}{subsection.4.6.1}%
-\contentsline {subsubsection}{Prima formula - teorema}{41}{subsubsection*.34}%
-\contentsline {paragraph}{Ipotesi:}{41}{paragraph*.35}%
-\contentsline {paragraph}{Tesi:}{41}{paragraph*.36}%
-\contentsline {subsubsection}{Seconda formula di Green-Gauss}{43}{subsubsection*.37}%
-\contentsline {subsubsection}{Ipotesi}{43}{subsubsection*.38}%
-\contentsline {subsubsection}{Tesi}{43}{subsubsection*.39}%
-\contentsline {subsection}{\numberline {4.6.2}Teorema della divergenza}{44}{subsection.4.6.2}%
-\contentsline {subsubsection}{Teorema della divergenza }{44}{subsubsection*.40}%
-\contentsline {subsubsection}{Ipotesi:}{44}{subsubsection*.41}%
-\contentsline {subsubsection}{Tesi:}{44}{subsubsection*.42}%
-\contentsline {subsubsection}{Applicazioni della formula di Green-Gauss}{45}{subsubsection*.43}%
-\contentsline {section}{\numberline {4.7}Forma differenziali Lineari}{46}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Integrazione delle forme differenziali}{46}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Forme differenziali esatte}{47}{subsection.4.7.2}%
-\contentsline {subsection}{\numberline {4.7.3}Forma differeniali chiusa}{47}{subsection.4.7.3}%
-\contentsline {subsection}{\numberline {4.7.4}Condizioni necessarie affinché una forma differenziale sia esatta}{48}{subsection.4.7.4}%
-\contentsline {paragraph}{Condizione necessaria:}{48}{paragraph*.44}%
-\contentsline {subsubsection}{Proprietà delle forme differenziale lineari esatte}{48}{subsubsection*.45}%
-\contentsline {subsubsection}{Ipotesi:}{48}{subsubsection*.46}%
-\contentsline {subsubsection}{Tesi:}{48}{subsubsection*.47}%
-\contentsline {section}{\numberline {4.8}Funzione potenziale}{49}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Condizioni sufficiente affinché una forma differenziale lineare sia Esatta}{50}{subsection.4.8.1}%
-\contentsline {subsubsection}{Ipotesi:}{50}{subsubsection*.48}%
-\contentsline {subsubsection}{Tesi:}{50}{subsubsection*.49}%
-\contentsline {subsection}{\numberline {4.8.2}Condizione necessaria e sufficiente}{50}{subsection.4.8.2}%
-\contentsline {subsection}{\numberline {4.8.3}Teorema di Stokes (o del rotore)}{50}{subsection.4.8.3}%
-\contentsline {paragraph}{In forma cartesiana}{51}{paragraph*.50}%
-\contentsline {paragraph}{I membro}{52}{paragraph*.51}%
-\contentsline {paragraph}{II membro}{52}{paragraph*.52}%
-\contentsline {chapter}{\numberline {5}Successioni e serie}{53}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Successioni di costanti}{53}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Limite di successioni}{53}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Limite finito di una successione}{53}{subsection.5.2.1}%
-\contentsline {subsubsection}{Limite infinito di una successione}{53}{subsubsection*.53}%
-\contentsline {section}{\numberline {5.3}Successioni Limitatre, illimitate, crescenti e decrescenti}{53}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Operazioni algebriche e teoremi sui limiti di successioni}{54}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Serie numeriche}{54}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Cordizione necessaria affinché una serie converga}{54}{subsection.5.3.3}%
-\contentsline {subsubsection}{Condizione necessaria e sufficiente affinché esista il limite -- criterio di Cauchy}{54}{subsubsection*.54}%
-\contentsline {section}{\numberline {5.4}Particolari tipi di serie}{54}{section.5.4}%
-\contentsline {subsubsection}{Serie telescopica}{54}{subsubsection*.55}%
-\contentsline {subsubsection}{Serie armonica}{54}{subsubsection*.56}%
-\contentsline {subsubsection}{Serie geometriche}{55}{subsubsection*.57}%
-\contentsline {subsection}{\numberline {5.4.1}Assoluta e semplice convergenza}{55}{subsection.5.4.1}%
-\contentsline {subsubsection}{Assoluta corvegenza}{55}{subsubsection*.58}%
+\contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Simboli}{8}{section.0.2}%
+\contentsline {chapter}{\numberline {1}Introduzione}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}tipologia in R}{9}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Distanza}{9}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Intorno}{9}{section.1.2}%
+\contentsline {paragraph}{Punto interno}{10}{paragraph*.3}%
+\contentsline {paragraph}{Punto esterno}{10}{paragraph*.4}%
+\contentsline {paragraph}{Punto di frontiera}{10}{paragraph*.5}%
+\contentsline {paragraph}{Punto di accumulazione}{10}{paragraph*.6}%
+\contentsline {paragraph}{Punto isolato}{10}{paragraph*.7}%
+\contentsline {paragraph}{Insieme Aperto}{10}{paragraph*.8}%
+\contentsline {subsection}{\numberline {1.2.1}Insieme chiuso}{10}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Insieme connesso}{11}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Insieme convesso}{11}{subsection.1.2.3}%
+\contentsline {paragraph}{Insiemi Limitati}{11}{paragraph*.9}%
+\contentsline {paragraph}{Insieme illimitato}{11}{paragraph*.10}%
+\contentsline {subsection}{\numberline {1.2.4}Coordinate Polari}{11}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Limiti e continuità}{11}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Continuità}{11}{subsection.1.2.6}%
+\contentsline {subsection}{\numberline {1.2.7}Esistenza del limite}{11}{subsection.1.2.7}%
+\contentsline {subsection}{\numberline {1.2.8}Teorema di esistenza dei valori intermedi}{12}{subsection.1.2.8}%
+\contentsline {subsection}{\numberline {1.2.9}Teorema di Weierstrass}{12}{subsection.1.2.9}%
+\contentsline {chapter}{\numberline {2}Derivate Parziali}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Derivate parziali di primo grado}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Significato geometrico}{13}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}Derivata parziale seconde}{14}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Teorema di Schwarz (Dell'invertibilità dell'ordine di derivazione)}{14}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Massimi e minimi relativi }{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Teorema di Fermat}{15}{subsection.2.3.1}%
+\contentsline {subsubsection}{Gradiente}{15}{subsubsection*.11}%
+\contentsline {subsubsection}{Massimi e minimi -- condizione necessaria}{15}{subsubsection*.12}%
+\contentsline {chapter}{\numberline {3}Differenziabilità}{17}{chapter.3}%
+\contentsline {subsection}{\numberline {3.0.1}Tutte le funzioni differenziali sono continue}{18}{subsection.3.0.1}%
+\contentsline {paragraph}{Ip:}{18}{paragraph*.13}%
+\contentsline {paragraph}{Th:}{18}{paragraph*.14}%
+\contentsline {subsection}{\numberline {3.0.2}Tutte le funzioni differenziali sono derivabili}{18}{subsection.3.0.2}%
+\contentsline {paragraph}{Ip:}{18}{paragraph*.15}%
+\contentsline {paragraph}{Th:}{18}{paragraph*.16}%
+\contentsline {subsection}{\numberline {3.0.3}Le funzioni con derivate parziali continue sono diferenziabili}{19}{subsection.3.0.3}%
+\contentsline {subsubsection}{Condizione sufficiente per la differenzialità}{19}{subsubsection*.17}%
+\contentsline {section}{\numberline {3.1}Significato geometrico del differenziale e piano tengente}{19}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Differenziale primo}{19}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Piano Tangente}{19}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Significato geometrico del differenziale primo}{20}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Funzioni composite}{20}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Funzione composta}{21}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Teorema della derivata della funzione composta}{21}{subsection.3.1.6}%
+\contentsline {paragraph}{Ipotesi}{21}{paragraph*.18}%
+\contentsline {paragraph}{Tesi}{21}{paragraph*.19}%
+\contentsline {paragraph}{I membro}{22}{paragraph*.20}%
+\contentsline {paragraph}{II membro}{22}{paragraph*.21}%
+\contentsline {section}{\numberline {3.2}Teorema differenziabilità delle funzioni composite}{22}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Differenziale secondo}{23}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Condizioni sufficiente per l'esistenza di minimo e massimo relativo}{24}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Ricerca del massimo e del minimo assoluti}{25}{subsection.3.3.2}%
+\contentsline {subsubsection}{Teorema di Weierstrass}{25}{subsubsection*.22}%
+\contentsline {paragraph}{Ipotesi:}{25}{paragraph*.23}%
+\contentsline {paragraph}{Tesi:}{25}{paragraph*.24}%
+\contentsline {paragraph}{Ricerca dei punti di Massimo e minimo assoluti:}{25}{paragraph*.25}%
+\contentsline {subsubsection}{Studio sulla frontiera}{25}{subsubsection*.26}%
+\contentsline {subsection}{\numberline {3.3.3}Metodo dei moltiplicatori di di Lagrange}{27}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Integrali Doppi e tripli}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Domini normali (semplici)}{29}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Dominio normale rispetto all'asse $x$}{29}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Domini Polarmente normale}{29}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Definizione di integrale doppio}{30}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Somme di Riemann}{31}{section.4.2}%
+\contentsline {paragraph}{Somme superiori e somme inferiori}{31}{paragraph*.27}%
+\contentsline {subsection}{\numberline {4.2.1}Proprietà dell'integrale doppio}{32}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Formula di riduzione}{32}{subsection.4.2.2}%
+\contentsline {subsubsection}{Esempi di domini polarmente normali}{33}{subsubsection*.28}%
+\contentsline {subsection}{\numberline {4.2.3}Baricentro di un dominio normale}{33}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Domini normali in $R^3$}{34}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Integrali tripli}{34}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Formule di riduzione per gli integrali tripli}{35}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Significato geometrico degli integrali}{36}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Coordinate polari e coordinate cilindriche}{36}{subsection.4.3.3}%
+\contentsline {paragraph}{coordinate alindriche}{36}{paragraph*.29}%
+\contentsline {paragraph}{coordinate sferiche}{36}{paragraph*.30}%
+\contentsline {subsection}{\numberline {4.3.4}Interazione per fette}{36}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Integrali curvilinei}{36}{subsection.4.3.5}%
+\contentsline {subsubsection}{Curve in $R^2$ e in $R^3$}{36}{subsubsection*.31}%
+\contentsline {subsection}{\numberline {4.3.6}Lunghezza di una curva}{38}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.7}Lunghezza di una curva in forma cartesiana}{39}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.3.8}Lunghezza di una curva polare}{39}{subsection.4.3.8}%
+\contentsline {section}{\numberline {4.4}Ascissa Curvilinea}{39}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Integrale corvilineo}{40}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Definizione di integrale curvilineo}{40}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Baricentro di una curva}{40}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Superfici e integrali di superficie}{41}{subsection.4.5.3}%
+\contentsline {subsubsection}{Superfici}{41}{subsubsection*.32}%
+\contentsline {subsection}{\numberline {4.5.4}Piano tangente e versore normale}{41}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.5}Orientazione di una superficie}{42}{subsection.4.5.5}%
+\contentsline {subsubsection}{Area di una superficie}{42}{subsubsection*.33}%
+\contentsline {subsection}{\numberline {4.5.6}Integrale Superficiale}{42}{subsection.4.5.6}%
+\contentsline {section}{\numberline {4.6}Trasformazione integrali}{43}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Formule di Green-Gauss}{43}{subsection.4.6.1}%
+\contentsline {subsubsection}{Prima formula - teorema}{43}{subsubsection*.34}%
+\contentsline {paragraph}{Ipotesi:}{43}{paragraph*.35}%
+\contentsline {paragraph}{Tesi:}{43}{paragraph*.36}%
+\contentsline {subsubsection}{Seconda formula di Green-Gauss}{45}{subsubsection*.37}%
+\contentsline {subsubsection}{Ipotesi}{45}{subsubsection*.38}%
+\contentsline {subsubsection}{Tesi}{45}{subsubsection*.39}%
+\contentsline {subsection}{\numberline {4.6.2}Teorema della divergenza}{46}{subsection.4.6.2}%
+\contentsline {subsubsection}{Teorema della divergenza }{46}{subsubsection*.40}%
+\contentsline {subsubsection}{Ipotesi:}{46}{subsubsection*.41}%
+\contentsline {subsubsection}{Tesi:}{46}{subsubsection*.42}%
+\contentsline {subsubsection}{Applicazioni della formula di Green-Gauss}{47}{subsubsection*.43}%
+\contentsline {section}{\numberline {4.7}Forma differenziali Lineari}{48}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Integrazione delle forme differenziali}{48}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Forme differenziali esatte}{49}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}Forma differeniali chiusa}{49}{subsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.7.4}Condizioni necessarie affinché una forma differenziale sia esatta}{50}{subsection.4.7.4}%
+\contentsline {paragraph}{Condizione necessaria:}{50}{paragraph*.44}%
+\contentsline {subsubsection}{Proprietà delle forme differenziale lineari esatte}{50}{subsubsection*.45}%
+\contentsline {subsubsection}{Ipotesi:}{50}{subsubsection*.46}%
+\contentsline {subsubsection}{Tesi:}{50}{subsubsection*.47}%
+\contentsline {section}{\numberline {4.8}Funzione potenziale}{51}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Condizioni sufficiente affinché una forma differenziale lineare sia Esatta}{52}{subsection.4.8.1}%
+\contentsline {subsubsection}{Ipotesi:}{52}{subsubsection*.48}%
+\contentsline {subsubsection}{Tesi:}{52}{subsubsection*.49}%
+\contentsline {subsection}{\numberline {4.8.2}Condizione necessaria e sufficiente}{52}{subsection.4.8.2}%
+\contentsline {subsection}{\numberline {4.8.3}Teorema di Stokes (o del rotore)}{52}{subsection.4.8.3}%
+\contentsline {paragraph}{In forma cartesiana}{53}{paragraph*.50}%
+\contentsline {paragraph}{I membro}{54}{paragraph*.51}%
+\contentsline {paragraph}{II membro}{54}{paragraph*.52}%
+\contentsline {chapter}{\numberline {5}Successioni e serie}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Successioni di costanti}{55}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Limite di successioni}{55}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Limite finito di una successione}{55}{subsection.5.2.1}%
+\contentsline {subsubsection}{Limite infinito di una successione}{55}{subsubsection*.53}%
+\contentsline {section}{\numberline {5.3}Successioni Limitatre, illimitate, crescenti e decrescenti}{55}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Operazioni algebriche e teoremi sui limiti di successioni}{56}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Serie numeriche}{56}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Cordizione necessaria affinché una serie converga}{56}{subsection.5.3.3}%
+\contentsline {subsubsection}{Condizione necessaria e sufficiente affinché esista il limite -- criterio di Cauchy}{56}{subsubsection*.54}%
+\contentsline {section}{\numberline {5.4}Particolari tipi di serie}{56}{section.5.4}%
+\contentsline {subsubsection}{Serie telescopica}{56}{subsubsection*.55}%
+\contentsline {subsubsection}{Serie armonica}{56}{subsubsection*.56}%
+\contentsline {subsubsection}{Serie geometriche}{57}{subsubsection*.57}%
+\contentsline {subsection}{\numberline {5.4.1}Assoluta e semplice convergenza}{57}{subsection.5.4.1}%
+\contentsline {subsubsection}{Assoluta corvegenza}{57}{subsubsection*.58}%
+\contentsline {section}{\numberline {5.5}Criteri per determinare il carattere di una serie}{57}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Criterio del confronto}{57}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Criterio del rapporto}{57}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Criterio della radice}{58}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}Criterio del confronto asintotico}{58}{subsection.5.5.4}%
+\contentsline {subsection}{\numberline {5.5.5}Criterio di Leibniz -- Serie a termini alterni}{58}{subsection.5.5.5}%
