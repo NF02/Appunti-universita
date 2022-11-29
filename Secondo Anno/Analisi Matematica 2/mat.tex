@@ -341,6 +341,50 @@ $\partial_n\geq 0$, Se $a_n$ è decrescente $(a_n> a_{n+1})$
 \begin{equation*}
 	\text{ se }\lim_{n\to\infty} a_n=0
 \end{equation*}
-Allora la serie converge 
+Allora la serie converge
+\begin{esempio}
+  \begin{eqnarray*}
+    \displaystyle\sum_{n=1}^\infty (-1)^n\frac{1}{n} & a_n=\frac{1}{n}
+  \end{eqnarray*}
+  \begin{enumerate}
+  \item $a_n$ è decrescente?
+  \item $\lim\limits_{n\to\infty} a_n=0$?
+  \end{enumerate}
+  \begin{equation*}
+    \text{La serie converge } \begin{cases}
+                                \frac{1}{n}\geq \frac{1}{n+1} \Rightarrow n+1\geq n
+                                & \text{vero}\\
+                                \lim\limits_{n\to\infty} \frac{1}{n}=0 & \text{vero}
+                              \end{cases}
+  \end{equation*}                          
+\end{esempio}
+\clearpage
+\subsection{Successioni di funzioni}
+$f_n(x)=(f_1(x),f_2(x),\dots,f_n(x),f_{n+1}(x),\dots)$ {\color{red}successione di
+  funzioni}
+\begin{esempio}
+  \begin{equation*}
+    f_n(x)=x^n(x,x^2\dots x^n)
+  \end{equation*}
+\end{esempio}
+Si definsce \textit{\color{red}limite} $\lim\limits_{n\to\infty}f_n(x)$ quella $f(x)$ tale
+che $\forall \xi >0$ $\exists \nu_{\xi,x}\in N:\forall n >\nu_{(\xi,x)}$:
+\begin{equation*}
+  \abs{f_n(x)-f(tx)}<\xi
+\end{equation*}
+\begin{description}
+\item[$(f_n(x)),x\in I$] si definisce {\color{red}semplicemente convergente} se
+  \begin{eqnarray*}
+    \lim\limits_{n\to \infty}f_n(x)=f(x) & \text{cioè } \forall \xi > 0 \exists
+                                           \nu_{(\xi,x)} n\in N\\
+    & \abs{f_n(x)-f(x)}<\xi
+  \end{eqnarray*}
+\item[$(f_n(x)), x\in I$] si definisce {\color{red}assolutamente convergente} se
+  \begin{equation*}
+    \lim\limits_{n\to \infty}\abs{f_n(x)}=f(x)
+  \end{equation*}
+  \item[$(f_n(x)),x\in T$] si definisce {\color{red}uniformemente convergente} se
+\end{description}
+
 \printindex
 \end{document}
