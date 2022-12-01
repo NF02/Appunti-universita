@@ -1,0 +1,380 @@
+\chapter{Successioni e serie}
+\section{Successioni di costanti}
+\begin{defi}
+  Si definisce successione $a_n$ una funzione in N (numeri naturali) e codominio in R.\\
+  È possibile rappresentare una successione sul pieno cartesiano, con l'asse delle
+  ascisse N e quello delle ordinate R.
+\end{defi}
+
+\section{Limite di successioni}
+\subsection{Limite finito di una successione}
+\begin{defi}
+  Si definisce limite finito della succesione $a_n$ ($a_n$ converge) il numero reale
+  $\gamma$ tale che:
+  \begin{eqnarray*}
+    \lim_{n\to \infty} a_n=\gamma & \forall \xi >0, \exists P_\xi \in N:\forall n > P_\xi\\
+                                  & \abs{a_n-\gamma} < \xi
+  \end{eqnarray*}
+  Una successione che per $n\to \infty$ ha limite finito si dice {\color{red}convergente}
+\end{defi}
+\subsubsection{Limite infinito di una successione}
+$bn\to +\infty$ se
+\begin{eqnarray*}
+  \lim_{n\to\infty}bn=+\infty & \forall M>0, \exists P_M:\forall n > P_m & b_R>M
+\end{eqnarray*}
+Una successione che per $n\to \infty$ ha infinito si dice {\color{red}divergente} --
+Se una successione nè converge, nè diverge, diciamo che è {\color{red}irregolare} o
+{\color{red}indeterminata}, cioè non esiste $\lim\limits_{n\to\infty}$.
+\section{Successioni Limitatre, illimitate, crescenti e decrescenti}
+Limitata superiormente
+\begin{eqnarray*}
+  a_n \text{ è {\color{red} limitata superiormente} se } & \exists k:\forall n \in N
+  & a_n\leq k\\
+  a_n \text{ è {\color{red} limitata inferiormente} se} & \exists h: \forall n\in N
+  & a_n \geq h\\
+  a_n \text{ è {\color{red} limitata} se} & \text{è limita inferiormente e superiormente}
+  & h\leq a_n\leq k\\
+  a_n \text{ è {\color{red}monotona crescente} se} & \forall n: & a_n < a_{n+1}\\
+  a_n \text{ è {\color{red}monotona decrescente} se} & \forall n: & a_n > a_{n+1}
+\end{eqnarray*}
+\clearpage
+\subsection{Operazioni algebriche e teoremi sui limiti di successioni}
+\begin{defi}
+	Poiché le successioni sono una particolare classe di funzioni si estendono
+	le gegole dell'algebra dei limiti e i teoremi studiati per le funzioni.
+	nel calcolo di un limite, si può sostituire la successione con la funzione
+	ad essa associata e calcolare il limite. Alle successioni {\color{red}NON}
+	si può applicare il teorema di De l'Hospital perché le successioni non
+	hanno derivate. Nel calcolo di un limite si può sostituire la successione
+	con la funzione ad essa associata e si può applicare il teorema di
+	del'hospital alla funzione (non alla successione)
+\end{defi}
+\subsection{Serie numeriche}
+Una {\color{red}aria} è una somma di infiniti numeri reali. Sia ($a_n$) una
+successione $a_n=(a_1,a_2, \dots,a_n)$. Definiamo {\color{red}serie
+$\displaystyle\sum_{\infty}^{n=1}a_n=a_1+a_2+\dots+a_n$}\\
+Sia ($S_n$) la successione delle somme parziali così definite
+\begin{equation*}
+	S_n=(S_1,S_2,S_3,\dots,S_n,S_{n+1},\dots)
+\end{equation*}
+\begin{eqnarray*}
+	\begin{matrix}
+		S_1=a_1\\
+		S_2=a_1+a_2\\
+		S_3=a_1+a_2+a_3
+	\end{matrix} &\text{ se }\lim\limits_{n\to\infty}S_n=\begin{cases}
+		S\in R\text{ (rinito)} & \text{\color{red}convergente}\\
+		\pm \infty & \text{\color{red}divergente}\\
+		\nexists &\text{\color{red}indeterminata}
+	\end{cases}
+\end{eqnarray*}
+\subsection{Cordizione necessaria affinché una serie converga}
+Sia $\displaystyle\sum_{n=1}^{\infty}a_n$ una serie convergente, allora
+$\lim\limits_{n\to\infty}a_n=0$
+\subsubsection{Condizione necessaria e sufficiente affinché esista il limite --
+criterio di Cauchy}
+\begin{eqnarray*}
+	\lim_{n\to \infty} a_n=a_0 &\Leftrightarrow & \forall \xi >0 \exists v_\xi
+	: \forall p_1q>v_\xi, p_1q\leftarrow N \\
+	&& \abs{a_p-a_q}<\xi
+\end{eqnarray*}
+Esiste il limite della successione $a_n$ se e solo se per ogni $\xi >0$ esiste
+un indice\footnote{che dipende da $\xi$} tale che, presi due qualunque numeri
+naturali $p$ e $q$ maggiori di quell'indice la distanza tra gli elementi $a_p$
+e $a_q$
+\section{Particolari tipi di serie}
+\subsubsection{Serie telescopica}
+$\displaystyle\sum_{n=1}^{\infty}a_n-a_{n+1}$ Differenza tra due termini
+successivi
+\subsubsection{Serie armonica}
+$\displaystyle\sum_{n=1}^{\infty}\frac{1}{n^\alpha}$ al variare di 
+$\alpha \in R$, la serie ha caratteri diversi $\begin{cases}
+	\text{Converge} & a\leq 2, \alpha=0\\
+	\text{Diverge} &\alpha \leq 1\\
+	\not{} &1\leq \alpha \leq 2
+\end{cases}$
+\subsubsection{Serie geometriche}
+$\displaystyle\sum_{n=1}^{\infty}q^n$ il rapporto tra un termine e il
+precedente è costante.
+
+\subsection{Assoluta e semplice convergenza}
+Serie a segno positivo
+\begin{equation*}
+	\begin{matrix}
+		\displaystyle\sum_{n=1}^{\infty} a_n& \begin{matrix}
+			\text{si definisce a termini di segno positivo se } \forall n>
+			\bar{n} &a_n>0\\
+			\text{finiti Termini negativi, infiniti termini positivi}
+		\end{matrix}
+	\end{matrix}
+\end{equation*}
+Serie a segno negativo
+\begin{equation*}
+	\begin{matrix}
+		\displaystyle\sum_{n=1}^{\infty} b_n& \begin{matrix}
+			\text{si definisce a termini di segno positivo se } \forall n>
+			\bar{n} &b_n<0\\
+			\text{finiti Termini positivi, infiniti termini negativi}
+		\end{matrix}
+	\end{matrix}
+\end{equation*}
+Sia a segno qualunque
+\begin{equation*}
+	\begin{matrix}
+		\displaystyle\sum_{n=1}^{\infty} c_n& \begin{matrix}
+			\text{si definisce a termini di segno qualunque se ha un termine
+			infinito di termini a segno}\\
+			\text{positivo e un numero infinito di termini a segno negativo}
+		\end{matrix}
+	\end{matrix}
+\end{equation*}
+\subsubsection{Assoluta corvegenza}
+\begin{equation*}
+	\begin{matrix}
+		\displaystyle\sum_{n=1}^{\infty} a_n& \begin{matrix}
+			\text{si dice {\color{red}assolutamente convergente} se converge} &
+			\displaystyle\sum_{n=1}^{\infty} \abs{a_n}\\
+			\text{associata convergenza $\Rightarrow$ semplice convergenza} 
+		\end{matrix}
+	\end{matrix}
+\end{equation*}
+Se una serie converge assolutamente, allora converge anche semplicemente.
+\section{Criteri per determinare il carattere di una serie}
+\subsection{Criterio del confronto}
+Siano $\displaystyle\sum_{n=1}^\infty a_n$ e $\displaystyle\sum_{n=1}^\infty b_n$ due serie a termini positivi $(a_n\geq 0, b_n\geq 0)$
+\begin{multicols}{2}
+  Sia $a_n\leq b_n$\\\\
+  \begin{itemize}
+  \item se $\displaystyle\sum_{n=1}^\infty b_n$ converge, allora $\displaystyle\sum_{n=1}^\infty a_n$ congerge
+    \item se $\displaystyle\sum_{n=1}^\infty a_n$ diverge, allora $\displaystyle\sum_{n=1}^\infty b_n$ diverge 
+  \end{itemize} 
+\end{multicols}
+\subsection{Criterio del rapporto}
+Sia $\sum_{n=1}^\infty a_n$ una serie a termini positivi non nulli ($a_n>0$)
+\begin{equation*}
+  \text{ se } \lim_{n\to \infty} \frac{a_n+1}{a_n}\begin{cases}
+                                                    l<1 & \text{converge}\\
+                                                    l>1 & \text{diverge}
+                                                  \end{cases}
+\end{equation*}
+\clearpage
+\begin{esempio}
+  \begin{eqnarray*}
+    \displaystyle\sum_{n=1}^{\infty}\frac{2^n}{n!} & a_n=\frac{2^n}{n!} & a_{n+1}=\frac{2^{n+1}}{(n+1)!} 
+  \end{eqnarray*}
+  \begin{eqnarray*}
+    \frac{a_{n+1}}{a_n}=\frac{2^{n+1}}{(n+1)!}*\frac{n!}{2^n}
+    =\frac{2*\not{2^n}}{(n+1)\not{n!}}*\frac{\not{n!}}{\not{2^n}}=\frac{2}{n+1}
+    & \lim_{n\to \infty} \frac{2}{n+1} = 0 & \text{converge}
+  \end{eqnarray*} 
+\end{esempio}
+\subsection{Criterio della radice}
+Sia $\sum_{n=1}^\infty a_n$ una serie a termine positivi $(a_n\geq 0)$
+\begin{equation*}
+  \text{se }\lim_{n\to \infty} \sqrt{a_n}=\begin{cases}
+                                            l<1 & \text{converge}\\
+                                            l>1 & \text{diverge}\\
+                                            l=1 & \text{caso dubbio}
+                                          \end{cases}
+\end{equation*}
+\begin{esempio}
+	\begin{eqnarray*}
+		\displaystyle\sum_{n=1}^{\infty}\frac{n+1}{2^n} & \lim\limits_{n\to
+		\infty}
+		\sqrt[n]{\frac{n+1}{2^n}}=\lim\limits_{n\to\infty}
+		\frac{(n+1)^{\frac{1}{n}}}{\sqrt[n]{2^n}}=\frac{1}{2}\lim_{n\to \infty}
+		(n+1)^\frac{1}{n}=\frac{1}{2}<1 \text{ converge}\\
+		\lim\limits_{x\to \infty} (x+1)^\frac{1}{x}=1
+	\end{eqnarray*}
+\end{esempio}
+\subsection{Criterio del confronto asintotico}
+Siano $\displaystyle\sum_{n=1}^\infty a_n$ e $\displaystyle\sum_{n=1}^\infty b_n$ due serie se $a_n\sim
+b_n$ (asintotico) cioè $\lim\limits_{n\to \infty}\frac{a_n}{b_n}=l\neq 0$ $l\in
+R$ -- $\displaystyle\sum_{n=1}^{\infty}a_n$ ha lo stesso carattere di $\displaystyle\sum_{n=1}^\infty b_n$
+\subsection{Criterio di Leibniz -- Serie a termini alterni\label{leibniz}}
+Data la serie a termini alterni $\displaystyle\sum_{n=1}^\infty(-1)^na_n$, con 
+$\partial_n\geq 0$, Se $a_n$ è decrescente $(a_n> a_{n+1})$
+\begin{equation*}
+	\text{ se }\lim_{n\to\infty} a_n=0
+\end{equation*}
+Allora la serie converge
+\begin{esempio}
+  \begin{eqnarray*}
+    \displaystyle\sum_{n=1}^\infty (-1)^n\frac{1}{n} & a_n=\frac{1}{n}
+  \end{eqnarray*}
+  \begin{enumerate}
+  \item $a_n$ è decrescente?
+  \item $\lim\limits_{n\to\infty} a_n=0$?
+  \end{enumerate}
+  \begin{equation*}
+    \text{La serie converge } \begin{cases}
+                                \frac{1}{n}\geq \frac{1}{n+1} \Rightarrow n+1\geq n
+                                & \text{vero}\\
+                                \lim\limits_{n\to\infty} \frac{1}{n}=0 & \text{vero}
+                              \end{cases}
+  \end{equation*}                          
+\end{esempio}
+\clearpage
+\subsection{Successioni di funzioni}
+$f_n(x)=(f_1(x),f_2(x),\dots,f_n(x),f_{n+1}(x),\dots)$ {\color{red}successione di
+  funzioni}
+\begin{esempio}
+  \begin{equation*}
+    f_n(x)=x^n(x,x^2\dots x^n)
+  \end{equation*}
+\end{esempio}
+Si definsce \textit{\color{red}limite} $\lim\limits_{n\to\infty}f_n(x)$ quella $f(x)$ tale
+che $\forall \xi >0$ $\exists \nu_{\xi,x}\in N:\forall n >\nu_{(\xi,x)}$:
+\begin{equation*}
+  \abs{f_n(x)-f(tx)}<\xi
+\end{equation*}
+\begin{description}
+\item[$(f_n(x)),x\in I$] si definisce {\color{red}semplicemente convergente} se
+  \begin{eqnarray*}
+    \lim\limits_{n\to \infty}f_n(x)=f(x) & \text{cioè } \forall \xi > 0 \exists
+                                           \nu_{(\xi,x)} n\in N\\
+    & \abs{f_n(x)-f(x)}<\xi
+  \end{eqnarray*}
+\item[$(f_n(x)), x\in I$] si definisce {\color{red}assolutamente convergente} se
+  \begin{equation*}
+    \lim\limits_{n\to \infty}\abs{f_n(x)}=f(x)
+  \end{equation*}
+\item[$(f_n(x)),x\in T$] si definisce {\color{red}uniformemente convergente} se
+  \begin{equation*}
+    \lim\limits_{n\to \infty}f_n(x)=f(x) \text{ uniformemente}
+  \end{equation*}
+  cioè $\forall\xi >0$ $\exists \nu (\xi) \in N:$ $\forall n > \nu (\xi)$
+  $\abs{f_n(x)-f(x)}<\xi$
+\end{description}
+Ovvero per $n\to \infty$ c'è un indice $\nu$ che dipende solo da $\xi$ e poiché nella
+semplice convergenza l'indice $\nu$ dipende sia da $\xi$ sia da $x$, se $f_n(x)$ è
+uniformemente convergente, preso un $\forall x\in I,$ quindi sarà semplicemente
+convergente.
+\begin{description}
+\item[$(f_n(x)),x\in I$] si definisce {\color{red}totalmente convergente} se
+  \begin{equation*}
+    sup_I\abs{f_n(x)} \text{ converge}
+  \end{equation*}
+  cioè se gli estremi superiori della successione nell'intervallo I convergono.
+\end{description}
+\subsection{Criterio di Weiestrass -- condizione sufficiente per l'uniforme convergenza\label{Weiestrass}}
+\begin{defi}
+  Data la serie $\displaystyle\sum_{n=1}^{\infty}f_n(x), x\in I,$ se $\abs{f_n(x)}$ è più piccola
+  di una successione numerica $a_n$ a termini non negativi, e se la serie
+  $\displaystyle\sum_{n=1}^\infty a_n$ è convergente, allora
+  $\displaystyle\sum_{n=1}^\infty f_n(x)$ è uniformemente convergente.
+\end{defi}
+\clearpage
+\section{Teoremi di invertibilità del passaggio al limite}
+\subsection{Teorema -- ``Invertibilità del limite''}
+\begin{teorema}
+  Sia $\displaystyle\sum_{n=1}^\infty f_n(x)$ uniformemente convergente in I
+  $(\lim_{n\to\infty}S_n(x)=S(x))$, sia $x_0\in I$, allora
+  \begin{equation*}
+    \lim_{x\to x_0}\left(\displaystyle\sum_{n=1}^\infty f_n(x)\right)=
+    \displaystyle\sum_{n=1}^\infty\left(\lim_{n\to\infty}f_n(x)\right)
+  \end{equation*}
+\end{teorema}
+\subsection{Teorema -- ``Invertibilità della derivata''}
+\begin{teorema}
+  Sia $\displaystyle\sum_{n=1}^\infty f_n(x)$ semplicemente convergente in I; siano i
+  termini di $f_n(x)$ derivabili in I, sia $\displaystyle\sum_{n=1}^\infty f_n^\prime(x)$
+  la serie delle derivate prime; se tale serie converge uniformemente in I allora
+  \begin{equation*}
+    \frac{d}{dx}\left[\displaystyle\sum_{n=1}^\infty f_n(x)\right]=
+    \displaystyle\sum_{n=1}^\infty\left[\frac{d}{dx}f_n(x)\right]
+  \end{equation*}
+\end{teorema}
+\subsection{Teorema -- ``Invertibilità dell'integrale''}
+\begin{teorema}
+  Sia $\displaystyle\sum_{n=1}^\infty f_n(x)$ uniformemente convergente in $I=[a,b]$ a $S(x)$, siano $f_n(x)$ e $S(x)$ integrabili in $[a,b]$ allora:
+  \begin{equation*}
+    \int_a^b\left[\displaystyle\sum_{n=1}^\infty f_n(x)\right]dx=
+    \displaystyle\sum_{n=1}^\infty\left(\int_a^bf_n(x)dx\right)
+  \end{equation*}
+\end{teorema}
+\section{Serie di potenze}
+Una serie di potenze è del tipo $\displaystyle\sum_{n=1}^\infty a_n(x-x_0)^n=a_0+a_1(x-x_0)^2+\dots + a_n(x-x_0)^n$
+\begin{teorema}
+  Convergenza\\
+  Dota $\displaystyle\sum_{n=1}^\infty a_n x^n$ convergente in $x_0$, allora essa
+  converge in $[-\abs{x_0},\abs{x_0}](\forall x: \abs{x}<\abs{x_0})$    
+\end{teorema}
+\begin{teorema}
+  Divergenza\\
+  Dota $\displaystyle\sum_{n=1}^\infty a_n x^n$ convergente in $x_0$, allora essa diverge
+  $\forall x: \abs{x}>\abs{x_0}$
+\end{teorema}
+\subsection{Raggio di convergenza}
+Si definisce raggio di convergenza $r$ qual numero reale
+\begin{eqnarray*}
+  r=sup \left\{x:\displaystyle\sum_{n=1}^\infty a_n x^n \text{ convergente} \right\}
+  & \begin{matrix}
+      \text{estremo superiore dell'insieme delle $x$ per le}\\
+      \text{quali la serie converge}
+    \end{matrix}
+\end{eqnarray*}
+L'intervallo $\left]-r;r\right[$ è detto {\color{red}intervallo di convergenta}
+\clearpage
+\subsection{Criteri per determinare l'intervallo di convergenza}
+\subsubsection{Rapporto (D'Alembert)}
+Data $\displaystyle\sum_{n=1}^\infty a_n(x-x_0)^n$ se
+$\lim\limits_{n\to\infty}\left|\frac{a_n+1}{a_n}\right|=\rho$ allora il raggo di corvergenza è 
+\begin{eqnarray*}
+  r=\begin{cases}
+      +\infty &\text{se } \rho=0\\
+      \frac{1}{\rho} &\text{se } 0< \rho <+\infty\\
+      0 & \text{se } \rho=+\infty
+    \end{cases}
+\end{eqnarray*}
+\subsubsection{Radice}
+Data $\displaystyle\sum_{n=1}^\infty a_n(x-x_0)^n$ se $\lim\limits_{n\to\infty}\sqrt[n]{a_n}=\rho$ allora il raggio di convergenza è 
+\begin{eqnarray*}
+  r=\begin{cases}
+      +\infty & \rho=0\\
+      \frac{1}{\rho} &0< \rho <+\infty\\
+      0 & \rho=+\infty
+    \end{cases}
+\end{eqnarray*}
+\subsection{Serie derivata di una serie di potenze -- uniforme convergenza delle serie
+  di potenze}
+Data $\displaystyle\sum_{n=1}^\infty a_n(x-x_0)^n$ la serie delle derivate di qualunque
+ordine ha lo stesso raggio di convergente di $\displaystyle\sum_{n=1}^\infty a_n(x-x_0)^n$
+\\
+Una qualunque serie di potenze converge uniformemente in qualunque subintervallo dell'intervallo di convergente.
+\subsection{Serie di Taylor e Mac Laurin}
+\begin{tasks}
+  \task Sia $f(x)$ definita in un intervallo I e sia $x_0\in I$.
+  \task Sia $f(x)$ sviluppabile in polinomi di Taylor.
+  \task Si dimostra che
+  \begin{equation*}
+    f(x)=\displaystyle\sum_{n=0}^{\infty}\frac{f^{(n)}x_0}{n!}(x-x_0)^n
+    =f(x_0)+f^\prime(x_0)(x-x_0)+f^{\prime\prime}(x_0)(x-x_0)^2+\dots+\frac{f^{n}(x_0)}{n!}(x-x_0)^n
+  \end{equation*}
+  posto $x=0$ si hanno  le serie di Mac Laurin.
+\end{tasks}
+\subsection{Serie di Fourier}
+Consideriamo una funzione periodica $f(x),T=2\pi$ $f(x)=f(x+T)$
+\begin{defi}
+  Si definisce serie di Fourier associata alla funzione f(x)
+  \begin{eqnarray*}
+    \frac{a_0}{2}\displaystyle\sum_{n=0}^\infty (a_n\cos nx +b_n\sin nx)
+    &\begin{cases}
+      a_n=\frac{1}{\pi}\int_{-\pi}^\pi f(x)\cos(nx)dx\\
+      b_n=\frac{1}{\pi}\int_{-\pi}^\pi f(x)\sin(nx)dx
+    \end{cases}
+  \end{eqnarray*}
+\end{defi}
+\clearpage
+\begin{teorema}
+  Sia $f(x)$ una funzione periodica di periodo $2\pi$ e sia regolare a tratti, allora
+  la serie di Fourier converge a $f(x)$ nei punti di continuità e alla semisomma del
+  limite destro e sinistro nei punti di discontinuità.
+  \begin{eqnarray*}
+    f(x)=\frac{a_0}{2}+\displaystyle\sum_{n=0}^\infty a_n \cos(nx) + b_n \sin(nx)
+    & \begin{matrix}
+        \text{Nei punti di continuità $f(x)$ è}\\
+        \text{approssimabile con una serie di funzioni trigonometriche.}
+      \end{matrix}
+  \end{eqnarray*}
+\end{teorema}

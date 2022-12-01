@@ -1,5 +1,5 @@
-\babel@toc {italian}{}\relax 
-\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}
+\babel@toc {italian}{}
 \contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Simboli}{8}{section.0.2}%
 \contentsline {chapter}{\numberline {1}Introduzione}{9}{chapter.1}%
@@ -149,3 +149,21 @@
 \contentsline {subsection}{\numberline {5.5.3}Criterio della radice}{58}{subsection.5.5.3}%
 \contentsline {subsection}{\numberline {5.5.4}Criterio del confronto asintotico}{58}{subsection.5.5.4}%
 \contentsline {subsection}{\numberline {5.5.5}Criterio di Leibniz -- Serie a termini alterni}{58}{subsection.5.5.5}%
+\contentsline {subsection}{\numberline {5.5.6}Successioni di funzioni}{59}{subsection.5.5.6}%
+\contentsline {subsection}{\numberline {5.5.7}Criterio di Weiestrass -- condizione sufficiente per l'uniforme convergenza}{59}{subsection.5.5.7}%
+\contentsline {section}{\numberline {5.6}Teoremi di invertibilità del passaggio al limite}{60}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Teorema -- ``Invertibilità del limite''}{60}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Teorema -- ``Invertibilità della derivata''}{60}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Teorema -- ``Invertibilità dell'integrale''}{60}{subsection.5.6.3}%
+\contentsline {section}{\numberline {5.7}Serie di potenze}{60}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Raggio di convergenza}{60}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Criteri per determinare l'intervallo di convergenza}{61}{subsection.5.7.2}%
+\contentsline {subsubsection}{Rapporto (D'Alembert)}{61}{subsubsection*.59}%
+\contentsline {subsubsection}{Radice}{61}{subsubsection*.60}%
+\contentsline {subsection}{\numberline {5.7.3}Serie derivata di una serie di potenze -- uniforme convergenza delle serie di potenze}{61}{subsection.5.7.3}%
+\contentsline {subsection}{\numberline {5.7.4}Serie di Taylor e Mac Laurin}{61}{subsection.5.7.4}%
+\contentsline {subsection}{\numberline {5.7.5}Serie di Fourier}{61}{subsection.5.7.5}%
+\contentsline {chapter}{\numberline {6}Equazioni differenziali ordinarie}{63}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Equazioni differenziali a variabili separabili}{63}{section.6.1}%
+\contentsline {paragraph}{Infatti}{63}{paragraph*.61}%
+\contentsline {subsection}{\numberline {6.1.1}Proprietà generali delle equazioni differenziali lineari}{64}{subsection.6.1.1}%
