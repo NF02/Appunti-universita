@@ -215,6 +215,139 @@ Possiamo scrivere le equazioni differenziali come
                      \end{matrix}}
                    =b(x)
 \end{equation*}
+\subsection{Equazioni differenziali lineari del primo ordine}
+Integrale generale equazione differenziale del I ordine omogenea
+\begin{equation*}
+	y^\prime-a(x)y=0
+\end{equation*}
+\begin{eqnarray*}
+	y_0(x)=ce^{-A(x)}&c\in R & A(x)\text{ primitiva di } a(x)
+\end{eqnarray*}
+\begin{proof}
+	\begin{eqnarray*}
+		y^\prime a(x)y=0 &\text{ moltiplico tuto per } e^{A(x)}
+	\end{eqnarray*}
+	\begin{equation*}
+		\underbrace{e^{A(x)}y^\prime+a(x)e^{A(x)}y}_{\text{Derivata
+		prodotto}}=0
+	\end{equation*}
+\end{proof}
+\begin{eqnarray*}
+	(e^{A(x)}y)^\prime=0 && \text{derivata prima nulla } \Rightarrow \text{la
+	funzione da derivare è costante}\\
+	e^{A(x)}y=c & q=ce^{-A(x)}
+\end{eqnarray*}
+\begin{itemize}
+	\item Integrale equazioni differenziali lineari I ordine complete
+		\begin{eqnarray*}
+			&y^\prime+a(x)y=b(x)\\
+			y_0(x)+\bar{y}(x) & y_0(x) & \text{Integrale generale equazione
+			differenziale omogenea associata}\\
+			&\bar{y}(x) &\text{Integrale equazione completa}
+		\end{eqnarray*}
+		\begin{equation*}
+			\bar{y}(x)=e^{-A(x)}\int e^{-A(x)}b(x)dx
+		\end{equation*}
+\end{itemize}
+\clearpage
+\begin{proof}
+	L'integrale paticolare di $y^\prime+a(x)y=b(x)$ è del tipo
+	$\bar{y}=c(x)e^{-A(x)}$
+	\begin{equation*}
+		\bar{y}^\prime=c^\prime(x)e^{-A(x)}-c(x)*a(x)e^{-A(x)}
+	\end{equation*}
+	sostituisco $\bar{y}$ e $\bar{y}^\prime$ $c^\prime(x)e^{-A(x)}-
+	\not{c(x)a(x)e^{-A(x)}}+\not{a(x)c(x)e^{-A(x)}}=b(x)$
+	\begin{eqnarray*}
+		c^\prime(x)e^{-A(x)}=b(x) & c^\prime(x)=e^{-A(x)}b(x)\\
+		c(x)=\int e^{A(x)}b(x)dx & \bar{y}(x)=c(x)*e^{-A(x)}\int e^{A(x)}b(x)dx
+	\end{eqnarray*}
+	L'integrale generale di $y^\prime+a(x)y=b(x)$ è
+	\begin{equation*}
+		y_0(x)+\bar{y}(x)=ce^{-A(x)}+e^{-A(x)}\int
+		e^{-A(x)}b(x)dx=e^{-A(x)}\left(\int e^{A(x)}b(x)dx+c\right)
+	\end{equation*}
+	\begin{esempio}
+		\begin{eqnarray*}
+			y^\prime =y &y^\prime-y=0 & a(x)=-1\text{ }A(x)=-x\\
+			&y^{(x)}=ce^{-A(x)}=ce^x
+		\end{eqnarray*}
+	\end{esempio}
+\end{proof}
+\subsection{Equazioni differenziali di Bernoulli (non lineari, I ordine)}
+Sono equazioni nella forma
+\begin{eqnarray*}
+	y^\prime + a(x)y=b(x)y^\alpha &\alpha\in \mathds{R} & \alpha\neq 0,1
+\end{eqnarray*}
+Se $\alpha >0$ $y=0$ è integrale singolare\\
+Per $y\neq 0$ divido per $y^\alpha$
+\begin{eqnarray}
+	y^\prime y^{-\alpha}+a(x)y^{1-\alpha}=b(x)
+\end{eqnarray}
+Pongo $z(x)=y^{1-\alpha}(x)$ e risoluto l'equazione differenziale lineare in
+$z(x)$ e poi passo a $y(x)$
+\begin{esempio}
+	\begin{eqnarray*}
+		y^\prime-2y =e^{-x}y^2 & y=0 &\text{integrale singolare}
+	\end{eqnarray*}
+	per $y\neq 0$
+	\begin{eqnarray*}
+		\frac{y^\prime}{y^2}-\frac{2}{y}=-e^{-x} &
+		z(x)=\frac{1}{y(x)}:z^\prime(x)=-\frac{1}{y^2}*y^\prime
+	\end{eqnarray*}
+	per cui si ha: $z^\prime+2z=+e^{-x}$
+	\begin{eqnarray*}
+		a(x)=2 & A(x)=2x\\
+		b(x)=e^{-x}
+	\end{eqnarray*}
+	\begin{equation*}
+		z(x)=e^{-A(x)}\left[\int e^{A(x)}b(x)dx+c\right]=e^{-2x}\left[\int
+		e^{2x}e^{-x}dx+c\right]=e^{-2x}(e^x+c)
+	\end{equation*}
+	\begin{eqnarray*}
+		z(x)=\frac{1}{y(x)} &
+		y(x)=\frac{1}{z(x)}=\frac{1}{e^{-2x}}=\frac{1}{e^{-2x}(e^x+c)}
+	\end{eqnarray*}
+\end{esempio}
+\clearpage
+\subsection{Equazioni differenziali di Clairaut (Non lineare, I ordine)}
+Sono equazione del tipo
+\begin{eqnarray*}
+	y=xy+g(y^\prime) &y^\prime \text{ compare dentro una funzione}
+\end{eqnarray*}
+Si risolvono nel segno modo:
+\begin{enumerate}
+	\item pongo $y^\prime =t(x)$ 
+	\item derivo entrambi i termini 
+		\begin{eqnarray*}
+			y^\prime(x)=y^\prime(x)+xy^{\prime\prime}+g^\prime (y^\prime)
+			y^{\prime\prime}(x)\\
+			xy^{\prime\prime}(x)+g^\prime(y^\prime)y^{\prime\prime}(x)
+		\end{eqnarray*}
+		Con la sostituzione si ha:
+		\begin{eqnarray*}
+			xt^\prime(x)[x+g^\prime(t(x))] =0
+		\end{eqnarray*}
+		$t^\prime(x)=0\Rightarrow t(x)=c$ (costante)
+		$t(x)=y^\prime(x)=c\Rightarrow y(x)=xy^\prime(x)+g(y^\prime(x))$\\
+		L'integrale generale è famiglia di rette $y(x)=cx+g(c)$
+		\begin{eqnarray*}
+			x+g^{\prime}(t(x))=0 & \begin{cases}
+				x=-g^\prime(t(x))\\
+				y(x)=-g^\prime(t(x))t(x)+g(t(x))
+			\end{cases} & \text{Integrale singolare}
+		\end{eqnarray*}
+		È una curva
+		\begin{eqnarray*}
+			\begin{cases}
+				x=-g^\prime(t(x))\\
+				y(x)=-g^\prime(t(x))t(x)+g(t(x))
+			\end{cases} & \begin{matrix}
+				
+			\end{matrix}
+		\end{eqnarray*}
+\end{enumerate}
+
 
 \printindex
 \end{document}
