@@ -343,11 +343,124 @@ Si risolvono nel segno modo:
 				x=-g^\prime(t(x))\\
 				y(x)=-g^\prime(t(x))t(x)+g(t(x))
 			\end{cases} & \begin{matrix}
-				
+                                        \text{curva inviluppo della famiglia di rette}\\
+                                        \text{Ogni retta $y(x)=cx+g(c)$ al variare di $c\in R$,}\\
+                                        \text{è tangente alla curva inviluppo.}
 			\end{matrix}
 		\end{eqnarray*}
+                \begin{esempio}
+                  \begin{eqnarray*}
+                    y=xy^\prime-\frac{1}{4}(y^\prime)^2 & t(x)=y^\prime(x)
+                  \end{eqnarray*}
+                  derivo $y^\prime=y^\prime+xy^{\prime\prime}-\frac{2}{4}y^\prime
+                  y^{\prime\prime}$
+                  \begin{eqnarray*}
+                    xy^{\prime\prime}-\frac{y^\prime}{2}y^{\prime\prime}=0\\
+                    xt^\prime (x)-\frac{t}{2}(x)*t^\prime(x)=0
+                    &\Rightarrow&t^\prime(x)\left(x-\frac{t(x)}{2}\right)=0\Rightarrow
+                                  t(x)=0\Rightarrow t(x)=y^\prime(x)=c, c\in R
+                  \end{eqnarray*}
+                  da cui $y(x)=cx-\frac{1}{4}c^2$ Integrale generale\\
+                  \begin{eqnarray*}
+                    x-\frac{t(x)}{2} & \begin{cases}
+                                         x=\frac{t(x)}{2}\\
+                                         y=\frac{t^2(x)}{2}-\frac{1}{4}t^2(x)=\frac{1}{4}t^2(x)
+                                       \end{cases}
+                                       \text{ in forma cartesiana } \begin{cases}
+                                                                      t(x)=2x\\
+                                                                      y=\frac{1}{4}*4x^2
+                                                                    \end{cases}
+                    & y=x^2   \begin{matrix}
+                                \text{Integrale}\\
+                                \text{singolare}
+                              \end{matrix}
+                  \end{eqnarray*}
+                \end{esempio}
 \end{enumerate}
-
+\clearpage
+\section{Problema di Cauchy \label{pcauchy}}
+\begin{defi}
+  Sia $f(x,y):D\to R$, con $D \subseteq R^2$, D aperto\\
+  Problema di Cauchy
+  \begin{eqnarray*}
+    \begin{cases}
+      y^\prime=f(x,y)\\
+      y(x_0)=y_0
+      \end{cases} & y(x_0)=y_0 &\text{condizione iniziale}
+  \end{eqnarray*}
+  $y=y(x)$ è detta {\color{red}soluzione locale}: esiste in un intorno di $x_0$, in cui
+  $y(x)$ è derivabile e tale che
+  \begin{eqnarray*}
+    y^\prime=f(x,y(x))\\
+    y(y_0)=x_0
+  \end{eqnarray*}
+\end{defi}
+\begin{esempio}
+  $\begin{cases}
+     y-y\tan x=1\\
+     y(0)=1
+   \end{cases}$ l'integrale generale è $y(x)=\frac{1}{\cos x}(\sin x+c)$\\
+   Determino l'integrale partcolare che soddisfi $y(0)=1$ $(x=0,y(x)=1)$
+   \begin{eqnarray*}
+     1=\frac{1}{\cos 0} (\sin 0 +c) \Rightarrow &c=1 & y(x)=\frac{1}{\cos x}(\sin x+1)
+     \text{ } \begin{matrix}
+         \text{Soluzione del problema}\\
+         \text{di Cauchy}
+       \end{matrix}
+   \end{eqnarray*}
+\end{esempio}
+\subsection{Teorema di Peano (Esistenza di soluzioni)}
+\begin{teorema}
+  Dato il problema di Cauchy $\begin{cases} y^\prime=f(x,y)\\ y(x_0)=y_0\end{cases}$\\
+  Con $f(x,y):D \to R, D \subseteq R^2$ aperto e $(x_0,y_0)\in D$\\
+  Se $f(x,y)$ è continua in $(x_0,y_0)$ allora il problema di Cauchy ammette almeno una
+  soluzione definita in un intorno di $x_0$
+  \begin{eqnarray*}
+    \begin{cases}
+      y^\prime=x\sqrt{y}\\
+      y(x)=1
+    \end{cases}& f(x,y)=x\sqrt{y} \text{ è definita in } D=\{(x,y)\subset R^2:x\in R,
+    y\geq 0\}
+  \end{eqnarray*}
+  per cui è continua in (0,1). Per il teorema di Peano esiste almeno una soluzione
+  \begin{eqnarray*}
+    y^\prime=x\sqrt{y} & y=0 & \text{Integrale singolare}\\
+    \int \frac{dy}{\sqrt{y}} =\int xdx& \frac{1}{2} \sqrt{y}=\frac{x^2}{2}+c
+                             & \Rightarrow \sqrt{y}=\frac{x^2}{4}+k \Rightarrow y=\left(
+                               \frac{x^2}{4}+k\right)^2\\
+    y(0)=1 & 1=(k)^2\text{ } k=\pm 1 & k=-1 \text{ non accettabile perché } \sqrt{y}=-1\\
+    && k=1\\
+    && y=\left(\frac{x^2}{4}+k\right)^2 \text{ soluzione del problema di Cauchy}
+  \end{eqnarray*}
+\end{teorema}
+\subsection{Teorema di Cauchy (esistenza e unicità locale)\label{tcauchy}}
+\begin{defi}
+  Dato il problema di Cauchy $\begin{cases}y^\prime=f(x,y)\\ y(x_0)=y_0\end{cases}$\\
+  Se
+  \begin{description}
+  \item[I)] f(x,y) è continua in un intorno $I\times J \in R\times R$ di $(x_0,y_0)$
+    $(x_0\in I, y_0\in J)$\clearpage
+  \item[II)] $f(x,y)$ è Lipschitziana rispetto a $y$ uniformemente per $x \in I$
+    \begin{eqnarray*}
+      \text{cioè } & \exists L>0:\abs{f(x,y_1)-f(x,y_2)}\leq L\abs{y_1-y_2}
+      & \begin{matrix}
+          \exists x\in I\\
+          \exists y_1, y_2\in J
+        \end{matrix}
+    \end{eqnarray*}
+    Allora esiste un intorno A di $x_0$ in cui $y=y(x)$ è un'unica soluzione del problema
+    di Cauchy.
+    \begin{eqnarray*}
+      \exists \delta >0 & \underbrace{\exists !}_{\begin{matrix} \text{esite} \\
+                                                    \text{una e}\\
+                                                    \text{una sola} \end{matrix}}
+      & y=y(x_0)
+    \end{eqnarray*}
+    Con $y: A= [x_0-\delta,x_0+\delta]\in R$ e derivabile in
+    $A= [x_0-\delta,x_0+\delta]$\\
+    L'interno può essere solo sinisto o destro. 
+  \end{description}  
+\end{defi}
 
 \printindex
 \end{document}

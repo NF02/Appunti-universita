@@ -1,5 +1,5 @@
-\babel@toc {italian}{}\relax 
-\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}
+\babel@toc {italian}{}
 \contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Simboli}{8}{section.0.2}%
 \contentsline {chapter}{\numberline {1}Introduzione}{9}{chapter.1}%
@@ -170,3 +170,6 @@
 \contentsline {subsection}{\numberline {6.1.2}Equazioni differenziali lineari del primo ordine}{64}{subsection.6.1.2}%
 \contentsline {subsection}{\numberline {6.1.3}Equazioni differenziali di Bernoulli (non lineari, I ordine)}{65}{subsection.6.1.3}%
 \contentsline {subsection}{\numberline {6.1.4}Equazioni differenziali di Clairaut (Non lineare, I ordine)}{66}{subsection.6.1.4}%
+\contentsline {section}{\numberline {6.2}Problema di Cauchy }{67}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Teorema di Peano (Esistenza di soluzioni)}{67}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Teorema di Cauchy (esistenza e unicità locale)}{67}{subsection.6.2.2}%
