@@ -144,323 +144,64 @@
 \input{pag/differenzialita.tex}
 \input{pag/integrali.tex}
 \input{pag/serie.tex}
-\chapter{Equazioni differenziali ordinarie}
-\begin{defi}
-  Si definisce equazione differenziale ordinaria un'equazione di tipo $g(x,y,y^\prime,
-  y^{\prime\prime},\dots,y^{(n)})$ con $y$ funzione di $x$. {\color{red}Ordinaria:} Le
-  derivate che compaiono nell'equazione sono di $y(x)$. L'ordine di un'equazione
-  differenziale è l'ordine massimo delle derivate di $y(x)$ compaiono nell'equazione.
-  Risolvere un'equazione differenziale significa trovare la funzione $y=y(x)$ che
-  sostituta nell'equazione, con le sue derivate, rende l'uguaglianza un'identità.
-  L'insieme delle soluzioni di un'equazione differenziale è una famiglia di funzioni ed è
-  detto {\color{red}integrale generale}, che dipende da un parametro reale $(c)$.
-  Attribuendo un valore alla costante si ha un {\color{red}integrale particolare}. Non
-  sempre ogni soluzione dell'equazione differenziale è anche un integrale particolare.
-  Ci sono casi di equazioni differenziali che ammettono anceh integrali singolari\footnote{integrali non ottenibili per nessun valore della costante $c$}
-\end{defi}
-\section{Equazioni differenziali a variabili separabili}
-\begin{defi}
-  Un'equazione differenziale del primo ordine è detta a variabili separabili se può
-  essere scritta nella forma
-  \begin{equation*}
-    y^\prime =f(x)*g(x)
-  \end{equation*}
-\end{defi}
-\begin{esempio}
-  \begin{eqnarray*}
-    y=4xy^2 & f(x)=4x & g(y)=y^2
-  \end{eqnarray*}  
-\end{esempio}
-\begin{svol}
-  Se $\exists y_0:g(y_0)=0\Rightarrow y=y_0$ è soluzione \\
-  Se esiste una costante che annulla $g(y),y=y_0$ è soluzione
-  \paragraph{Infatti}
-  \begin{equation*}
-    (y_0)^\prime=f(x)*\underbrace{g(y)}_{0 \text{ per ipotesi}}
-  \end{equation*}
-  derivata di costante
-  \begin{eqnarray*}
-    o=f(x)*o&o=o
-  \end{eqnarray*}
-  Se $g(y)\neq 0$ divido entrambi i membri per $g(y)$
-  \begin{equation*}
-    \frac{y^\prime}{g(y)}=f(x)
-  \end{equation*}
-  Poiché la derivata di una funzione si può esprimere come rapporto di differenziali
-  \begin{eqnarray*}
-    y^\prime=\frac{dy}{dx}&\to& \frac{dy}{g(y)}\frac{1}{dx}=f(x) \text{ da cui } \frac{dy}{g(y)}=f(x)dx
-  \end{eqnarray*}
-  Integrando membro a membro
-  \begin{eqnarray*}
-    \int \frac{dy}{g(y)}=\int f(x)dx & \text{se }& G(y)=\left(\frac{1}{g(y)}\right)^\prime \text{ e } F(x)=f^\prime (x)
-  \end{eqnarray*}
-  $G(y)=F(x)+c$ $c\in R$ -- Se $G(y)$ è invertibile $(\exists G^{-1}(y))$ posso ricavare
-  $y$
-  \begin{equation*}
-    y=G^{-1}(F(x)=c)
-  \end{equation*}
-\end{svol}
-\subsection{Proprietà generali delle equazioni differenziali lineari}
-\begin{eqnarray*}
-  \underbrace{y^{(n)}+a_{n-1}(x)y^{(n-1)}+\dots+a_1(x)y^\prime+a_0(x)y}_{\text{coefficineti}}=
-  \underbrace{g(x)}_{\text{termine noto}} &\leftarrow&\text{ se } g(x)=0 \text{ si ha
-                                                       un'equazione}\\
-  &&\text{ differenziale omogenea}
-\end{eqnarray*}
-Possiamo scrivere le equazioni differenziali come
-\begin{equation*}
-  \underbrace{L(y)}_{\begin{matrix}
-                       \text{\color{red}operatore}\\
-                       \text{\color{red}lineare}
-                     \end{matrix}}
-                   =b(x)
-\end{equation*}
-\subsection{Equazioni differenziali lineari del primo ordine}
-Integrale generale equazione differenziale del I ordine omogenea
-\begin{equation*}
-	y^\prime-a(x)y=0
-\end{equation*}
-\begin{eqnarray*}
-	y_0(x)=ce^{-A(x)}&c\in R & A(x)\text{ primitiva di } a(x)
-\end{eqnarray*}
-\begin{proof}
-	\begin{eqnarray*}
-		y^\prime a(x)y=0 &\text{ moltiplico tuto per } e^{A(x)}
-	\end{eqnarray*}
-	\begin{equation*}
-		\underbrace{e^{A(x)}y^\prime+a(x)e^{A(x)}y}_{\text{Derivata
-		prodotto}}=0
-	\end{equation*}
-\end{proof}
-\begin{eqnarray*}
-	(e^{A(x)}y)^\prime=0 && \text{derivata prima nulla } \Rightarrow \text{la
-	funzione da derivare è costante}\\
-	e^{A(x)}y=c & q=ce^{-A(x)}
-\end{eqnarray*}
-\begin{itemize}
-	\item Integrale equazioni differenziali lineari I ordine complete
-		\begin{eqnarray*}
-			&y^\prime+a(x)y=b(x)\\
-			y_0(x)+\bar{y}(x) & y_0(x) & \text{Integrale generale equazione
-			differenziale omogenea associata}\\
-			&\bar{y}(x) &\text{Integrale equazione completa}
-		\end{eqnarray*}
-		\begin{equation*}
-			\bar{y}(x)=e^{-A(x)}\int e^{-A(x)}b(x)dx
-		\end{equation*}
-\end{itemize}
+\input{pag/differenziali_ordinarie.tex}
+\subsection{Equazioni differenziali lineari di ordine N}
+Sia
+\begin{align*}
+  L(y)=b(x) & \text{ un'equazione differenziale lineare (L'operatore lineare)} \\
+  L(y)=0 & \text{ equazione omogenea assocata}
+\end{align*}
+Se $y_0(x)$ è l'integrale generale dell'equazione omogenea associata e se $\bar{y}(x)$ è
+un integrale particolare dell'equazione non omogenea, allora $y(x)=y_0(x)+\bar{y}(x)$ è
+soluzione dell'equazone completa.
+\subsubsection{Equazione completa}
+\begin{equation}
+  y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}(x)y^{\prime}+a_ny=b(x)
+\end{equation}
 \clearpage
-\begin{proof}
-	L'integrale paticolare di $y^\prime+a(x)y=b(x)$ è del tipo
-	$\bar{y}=c(x)e^{-A(x)}$
-	\begin{equation*}
-		\bar{y}^\prime=c^\prime(x)e^{-A(x)}-c(x)*a(x)e^{-A(x)}
-	\end{equation*}
-	sostituisco $\bar{y}$ e $\bar{y}^\prime$ $c^\prime(x)e^{-A(x)}-
-	\not{c(x)a(x)e^{-A(x)}}+\not{a(x)c(x)e^{-A(x)}}=b(x)$
-	\begin{eqnarray*}
-		c^\prime(x)e^{-A(x)}=b(x) & c^\prime(x)=e^{-A(x)}b(x)\\
-		c(x)=\int e^{A(x)}b(x)dx & \bar{y}(x)=c(x)*e^{-A(x)}\int e^{A(x)}b(x)dx
-	\end{eqnarray*}
-	L'integrale generale di $y^\prime+a(x)y=b(x)$ è
-	\begin{equation*}
-		y_0(x)+\bar{y}(x)=ce^{-A(x)}+e^{-A(x)}\int
-		e^{-A(x)}b(x)dx=e^{-A(x)}\left(\int e^{A(x)}b(x)dx+c\right)
-	\end{equation*}
-	\begin{esempio}
-		\begin{eqnarray*}
-			y^\prime =y &y^\prime-y=0 & a(x)=-1\text{ }A(x)=-x\\
-			&y^{(x)}=ce^{-A(x)}=ce^x
-		\end{eqnarray*}
-	\end{esempio}
-\end{proof}
-\subsection{Equazioni differenziali di Bernoulli (non lineari, I ordine)}
-Sono equazioni nella forma
+\subsection{Equazioni differenziali lineari omogenee}
+\begin{equation}
+  y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}(x)y^{\prime}+a_ny=0
+\end{equation}
+L'integrale generale dell'equazione lineare omogenea è una combinazione lineare di $n$
+soluzioni linearmenete indipendenti.
+\begin{equation}
+  y_0 (x)=c_1y_1(x)+c_2y_2(x)+\dots+c_ny_n(x)
+\end{equation}
+Sono integrali particolari dell'equazione linearmente indipendenti.\\
+L'indipendenze delle soluzioni $y_1(x),y_2(x),\dots,y_n(x)$ è data dal non annullarsi per
+$\forall x\in I$ del determinante.\\
+{\color{red}Wronksiano} così fatto:
+\begin{multicols}{2}
+\begin{equation*}
+  det W(x)=\begin{vmatrix}
+             y_1(x) & y_2(x) & \dots & y_n(x) \\
+             y_1^{\prime} & y_2^{\prime} &\dots& y_n^{\prime}\\
+             y_1^{\prime\prime} & y_2^{\prime\prime} & \dots & y_n^{\prime\prime}\\
+             \vdots & \vdots && \vdots\\ 
+             y_1^{n-1} & y_2^{n-1} & \dots & y_n^{n-1}
+           \end{vmatrix}
+\end{equation*}
+\begin{description}
+    \item[Prima riga] Soluzioni
+    \item[Seconda riga] Derivate prime delle soluzioni
+    \item[Terza riga] Derivate seconde delle soluzioni
+    \item[ultima riga] Derivate alla $N-1$ delle soluzioni
+\end{description}
+\end{multicols}    
+Se $det W(x)\neq 0$ $\forall x\in I$, allora $y_1(x),y_2(x),\dots,y_n(x)$ sono linearmente
+indipendenti.\\
+Come si determminano le soluzioni? \emph{Si introduce il polinomio caratteristico ad }
+$y^2 \to \lambda^{n}$ 
 \begin{eqnarray*}
-	y^\prime + a(x)y=b(x)y^\alpha &\alpha\in \mathds{R} & \alpha\neq 0,1
+y(x)=e^{\lambda x} & \text{soluzione per $\lambda$ redice del polinomio}.
 \end{eqnarray*}
-Se $\alpha >0$ $y=0$ è integrale singolare\\
-Per $y\neq 0$ divido per $y^\alpha$
-\begin{eqnarray}
-	y^\prime y^{-\alpha}+a(x)y^{1-\alpha}=b(x)
-\end{eqnarray}
-Pongo $z(x)=y^{1-\alpha}(x)$ e risoluto l'equazione differenziale lineare in
-$z(x)$ e poi passo a $y(x)$
-\begin{esempio}
-	\begin{eqnarray*}
-		y^\prime-2y =e^{-x}y^2 & y=0 &\text{integrale singolare}
-	\end{eqnarray*}
-	per $y\neq 0$
-	\begin{eqnarray*}
-		\frac{y^\prime}{y^2}-\frac{2}{y}=-e^{-x} &
-		z(x)=\frac{1}{y(x)}:z^\prime(x)=-\frac{1}{y^2}*y^\prime
-	\end{eqnarray*}
-	per cui si ha: $z^\prime+2z=+e^{-x}$
-	\begin{eqnarray*}
-		a(x)=2 & A(x)=2x\\
-		b(x)=e^{-x}
-	\end{eqnarray*}
-	\begin{equation*}
-		z(x)=e^{-A(x)}\left[\int e^{A(x)}b(x)dx+c\right]=e^{-2x}\left[\int
-		e^{2x}e^{-x}dx+c\right]=e^{-2x}(e^x+c)
-	\end{equation*}
-	\begin{eqnarray*}
-		z(x)=\frac{1}{y(x)} &
-		y(x)=\frac{1}{z(x)}=\frac{1}{e^{-2x}}=\frac{1}{e^{-2x}(e^x+c)}
-	\end{eqnarray*}
-\end{esempio}
-\clearpage
-\subsection{Equazioni differenziali di Clairaut (Non lineare, I ordine)}
-Sono equazione del tipo
-\begin{eqnarray*}
-	y=xy+g(y^\prime) &y^\prime \text{ compare dentro una funzione}
-\end{eqnarray*}
-Si risolvono nel segno modo:
+\subsection{Equazioni lineari complete}
 \begin{enumerate}
-	\item pongo $y^\prime =t(x)$ 
-	\item derivo entrambi i termini 
-		\begin{eqnarray*}
-			y^\prime(x)=y^\prime(x)+xy^{\prime\prime}+g^\prime (y^\prime)
-			y^{\prime\prime}(x)\\
-			xy^{\prime\prime}(x)+g^\prime(y^\prime)y^{\prime\prime}(x)
-		\end{eqnarray*}
-		Con la sostituzione si ha:
-		\begin{eqnarray*}
-			xt^\prime(x)[x+g^\prime(t(x))] =0
-		\end{eqnarray*}
-		$t^\prime(x)=0\Rightarrow t(x)=c$ (costante)
-		$t(x)=y^\prime(x)=c\Rightarrow y(x)=xy^\prime(x)+g(y^\prime(x))$\\
-		L'integrale generale è famiglia di rette $y(x)=cx+g(c)$
-		\begin{eqnarray*}
-			x+g^{\prime}(t(x))=0 & \begin{cases}
-				x=-g^\prime(t(x))\\
-				y(x)=-g^\prime(t(x))t(x)+g(t(x))
-			\end{cases} & \text{Integrale singolare}
-		\end{eqnarray*}
-		È una curva
-		\begin{eqnarray*}
-			\begin{cases}
-				x=-g^\prime(t(x))\\
-				y(x)=-g^\prime(t(x))t(x)+g(t(x))
-			\end{cases} & \begin{matrix}
-                                        \text{curva inviluppo della famiglia di rette}\\
-                                        \text{Ogni retta $y(x)=cx+g(c)$ al variare di $c\in R$,}\\
-                                        \text{è tangente alla curva inviluppo.}
-			\end{matrix}
-		\end{eqnarray*}
-                \begin{esempio}
-                  \begin{eqnarray*}
-                    y=xy^\prime-\frac{1}{4}(y^\prime)^2 & t(x)=y^\prime(x)
-                  \end{eqnarray*}
-                  derivo $y^\prime=y^\prime+xy^{\prime\prime}-\frac{2}{4}y^\prime
-                  y^{\prime\prime}$
-                  \begin{eqnarray*}
-                    xy^{\prime\prime}-\frac{y^\prime}{2}y^{\prime\prime}=0\\
-                    xt^\prime (x)-\frac{t}{2}(x)*t^\prime(x)=0
-                    &\Rightarrow&t^\prime(x)\left(x-\frac{t(x)}{2}\right)=0\Rightarrow
-                                  t(x)=0\Rightarrow t(x)=y^\prime(x)=c, c\in R
-                  \end{eqnarray*}
-                  da cui $y(x)=cx-\frac{1}{4}c^2$ Integrale generale\\
-                  \begin{eqnarray*}
-                    x-\frac{t(x)}{2} & \begin{cases}
-                                         x=\frac{t(x)}{2}\\
-                                         y=\frac{t^2(x)}{2}-\frac{1}{4}t^2(x)=\frac{1}{4}t^2(x)
-                                       \end{cases}
-                                       \text{ in forma cartesiana } \begin{cases}
-                                                                      t(x)=2x\\
-                                                                      y=\frac{1}{4}*4x^2
-                                                                    \end{cases}
-                    & y=x^2   \begin{matrix}
-                                \text{Integrale}\\
-                                \text{singolare}
-                              \end{matrix}
-                  \end{eqnarray*}
-                \end{esempio}
+\item Si determina l'integrale generale $y_0(x)$ dell'equazione omogenea associata
+\item Si determina un integrale particolare $\bar{y}(x)$ dell'equazione non omogenea
+  \item L'integrale dell'equazione completa è $y(x)=y_0(x)+\bar{y}(x)$
 \end{enumerate}
-\clearpage
-\section{Problema di Cauchy \label{pcauchy}}
-\begin{defi}
-  Sia $f(x,y):D\to R$, con $D \subseteq R^2$, D aperto\\
-  Problema di Cauchy
-  \begin{eqnarray*}
-    \begin{cases}
-      y^\prime=f(x,y)\\
-      y(x_0)=y_0
-      \end{cases} & y(x_0)=y_0 &\text{condizione iniziale}
-  \end{eqnarray*}
-  $y=y(x)$ è detta {\color{red}soluzione locale}: esiste in un intorno di $x_0$, in cui
-  $y(x)$ è derivabile e tale che
-  \begin{eqnarray*}
-    y^\prime=f(x,y(x))\\
-    y(y_0)=x_0
-  \end{eqnarray*}
-\end{defi}
-\begin{esempio}
-  $\begin{cases}
-     y-y\tan x=1\\
-     y(0)=1
-   \end{cases}$ l'integrale generale è $y(x)=\frac{1}{\cos x}(\sin x+c)$\\
-   Determino l'integrale partcolare che soddisfi $y(0)=1$ $(x=0,y(x)=1)$
-   \begin{eqnarray*}
-     1=\frac{1}{\cos 0} (\sin 0 +c) \Rightarrow &c=1 & y(x)=\frac{1}{\cos x}(\sin x+1)
-     \text{ } \begin{matrix}
-         \text{Soluzione del problema}\\
-         \text{di Cauchy}
-       \end{matrix}
-   \end{eqnarray*}
-\end{esempio}
-\subsection{Teorema di Peano (Esistenza di soluzioni)}
-\begin{teorema}
-  Dato il problema di Cauchy $\begin{cases} y^\prime=f(x,y)\\ y(x_0)=y_0\end{cases}$\\
-  Con $f(x,y):D \to R, D \subseteq R^2$ aperto e $(x_0,y_0)\in D$\\
-  Se $f(x,y)$ è continua in $(x_0,y_0)$ allora il problema di Cauchy ammette almeno una
-  soluzione definita in un intorno di $x_0$
-  \begin{eqnarray*}
-    \begin{cases}
-      y^\prime=x\sqrt{y}\\
-      y(x)=1
-    \end{cases}& f(x,y)=x\sqrt{y} \text{ è definita in } D=\{(x,y)\subset R^2:x\in R,
-    y\geq 0\}
-  \end{eqnarray*}
-  per cui è continua in (0,1). Per il teorema di Peano esiste almeno una soluzione
-  \begin{eqnarray*}
-    y^\prime=x\sqrt{y} & y=0 & \text{Integrale singolare}\\
-    \int \frac{dy}{\sqrt{y}} =\int xdx& \frac{1}{2} \sqrt{y}=\frac{x^2}{2}+c
-                             & \Rightarrow \sqrt{y}=\frac{x^2}{4}+k \Rightarrow y=\left(
-                               \frac{x^2}{4}+k\right)^2\\
-    y(0)=1 & 1=(k)^2\text{ } k=\pm 1 & k=-1 \text{ non accettabile perché } \sqrt{y}=-1\\
-    && k=1\\
-    && y=\left(\frac{x^2}{4}+k\right)^2 \text{ soluzione del problema di Cauchy}
-  \end{eqnarray*}
-\end{teorema}
-\subsection{Teorema di Cauchy (esistenza e unicità locale)\label{tcauchy}}
-\begin{defi}
-  Dato il problema di Cauchy $\begin{cases}y^\prime=f(x,y)\\ y(x_0)=y_0\end{cases}$\\
-  Se
-  \begin{description}
-  \item[I)] f(x,y) è continua in un intorno $I\times J \in R\times R$ di $(x_0,y_0)$
-    $(x_0\in I, y_0\in J)$\clearpage
-  \item[II)] $f(x,y)$ è Lipschitziana rispetto a $y$ uniformemente per $x \in I$
-    \begin{eqnarray*}
-      \text{cioè } & \exists L>0:\abs{f(x,y_1)-f(x,y_2)}\leq L\abs{y_1-y_2}
-      & \begin{matrix}
-          \exists x\in I\\
-          \exists y_1, y_2\in J
-        \end{matrix}
-    \end{eqnarray*}
-    Allora esiste un intorno A di $x_0$ in cui $y=y(x)$ è un'unica soluzione del problema
-    di Cauchy.
-    \begin{eqnarray*}
-      \exists \delta >0 & \underbrace{\exists !}_{\begin{matrix} \text{esite} \\
-                                                    \text{una e}\\
-                                                    \text{una sola} \end{matrix}}
-      & y=y(x_0)
-    \end{eqnarray*}
-    Con $y: A= [x_0-\delta,x_0+\delta]\in R$ e derivabile in
-    $A= [x_0-\delta,x_0+\delta]$\\
-    L'interno può essere solo sinisto o destro. 
-  \end{description}  
-\end{defi}
 
 \printindex
 \end{document}

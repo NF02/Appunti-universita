@@ -173,3 +173,8 @@
 \contentsline {section}{\numberline {6.2}Problema di Cauchy }{67}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Teorema di Peano (Esistenza di soluzioni)}{67}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}Teorema di Cauchy (esistenza e unicità locale)}{67}{subsection.6.2.2}%
+\contentsline {subsubsection}{Corollario del teorema di Cauchy}{68}{subsubsection*.62}%
+\contentsline {subsection}{\numberline {6.2.3}Equazioni differenziali lineari di ordine N}{68}{subsection.6.2.3}%
+\contentsline {subsubsection}{Equazione completa}{68}{subsubsection*.63}%
+\contentsline {subsection}{\numberline {6.2.4}Equazioni differenziali lineari omogenee}{69}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Equazioni lineari complete}{69}{subsection.6.2.5}%
