@@ -5,22 +5,22 @@
 \contentsline {chapter}{\numberline {1}Introduzione}{9}{chapter.1}%
 \contentsline {section}{\numberline {1.1}tipologia in R}{9}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Distanza}{9}{subsection.1.1.1}%
-\contentsline {section}{\numberline {1.2}Intorno}{9}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Intorno}{10}{section.1.2}%
 \contentsline {paragraph}{Punto interno}{10}{paragraph*.3}%
 \contentsline {paragraph}{Punto esterno}{10}{paragraph*.4}%
 \contentsline {paragraph}{Punto di frontiera}{10}{paragraph*.5}%
-\contentsline {paragraph}{Punto di accumulazione}{10}{paragraph*.6}%
-\contentsline {paragraph}{Punto isolato}{10}{paragraph*.7}%
-\contentsline {paragraph}{Insieme Aperto}{10}{paragraph*.8}%
-\contentsline {subsection}{\numberline {1.2.1}Insieme chiuso}{10}{subsection.1.2.1}%
+\contentsline {paragraph}{Punto di accumulazione}{11}{paragraph*.6}%
+\contentsline {paragraph}{Punto isolato}{11}{paragraph*.7}%
+\contentsline {paragraph}{Insieme Aperto}{11}{paragraph*.8}%
+\contentsline {subsection}{\numberline {1.2.1}Insieme chiuso}{11}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Insieme connesso}{11}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Insieme convesso}{11}{subsection.1.2.3}%
 \contentsline {paragraph}{Insiemi Limitati}{11}{paragraph*.9}%
 \contentsline {paragraph}{Insieme illimitato}{11}{paragraph*.10}%
 \contentsline {subsection}{\numberline {1.2.4}Coordinate Polari}{11}{subsection.1.2.4}%
-\contentsline {subsection}{\numberline {1.2.5}Limiti e continuità}{11}{subsection.1.2.5}%
-\contentsline {subsection}{\numberline {1.2.6}Continuità}{11}{subsection.1.2.6}%
-\contentsline {subsection}{\numberline {1.2.7}Esistenza del limite}{11}{subsection.1.2.7}%
+\contentsline {subsection}{\numberline {1.2.5}Limiti e continuità}{12}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Continuità}{12}{subsection.1.2.6}%
+\contentsline {subsection}{\numberline {1.2.7}Esistenza del limite}{12}{subsection.1.2.7}%
 \contentsline {subsection}{\numberline {1.2.8}Teorema di esistenza dei valori intermedi}{12}{subsection.1.2.8}%
 \contentsline {subsection}{\numberline {1.2.9}Teorema di Weierstrass}{12}{subsection.1.2.9}%
 \contentsline {chapter}{\numberline {2}Derivate Parziali}{13}{chapter.2}%

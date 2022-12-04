@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  4 DEC 2022 23:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  5 DEC 2022 00:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1642,9 +1642,59 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
  (./pag/premesse.tex [7]) (./pag/simboli.tex)
 (./pag/intro.tex [8]
 Capitolo 1.
+Package epstopdf Info: Source file: <img/finiti/r.eps>
+(epstopdf)                    date: 2022-12-05 00:27:56
+(epstopdf)                    size: 31691 bytes
+(epstopdf)             Output file: <img/finiti/r-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-12-05 00:38:21
+(epstopdf)                    size: 4648 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/r-eps-converted
+-to.pdf img/finiti/r.eps>
+(epstopdf)             \includegraphics on input line 8.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/r-eps-converted-to.pdf, id=665, 256.96pt x 39.14626pt>
+File: img/finiti/r-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/r-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/r-eps-converted-to.pdf  used on input line 
+8.
+(pdftex.def)             Requested size: 170.71652pt x 26.00803pt.
+Package epstopdf Info: Source file: <img/finiti/r2.eps>
+(epstopdf)                    date: 2022-12-05 00:22:52
+(epstopdf)                    size: 32877 bytes
+(epstopdf)             Output file: <img/finiti/r2-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-12-05 00:39:40
+(epstopdf)                    size: 5089 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/r2-eps-converte
+d-to.pdf img/finiti/r2.eps>
+(epstopdf)             \includegraphics on input line 14.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/r2-eps-converted-to.pdf, id=666, 289.08pt x 225.84375pt>
+File: img/finiti/r2-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/r2-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/r2-eps-converted-to.pdf  used on input line
+ 14.
+(pdftex.def)             Requested size: 113.81102pt x 88.91266pt.
+Package epstopdf Info: Source file: <img/finiti/r3.eps>
+(epstopdf)                    date: 2022-12-05 00:35:48
+(epstopdf)                    size: 34224 bytes
+(epstopdf)             Output file: <img/finiti/r3-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-12-05 00:44:52
+(epstopdf)                    size: 5466 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/r3-eps-converte
+d-to.pdf img/finiti/r3.eps>
+(epstopdf)             \includegraphics on input line 20.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/r3-eps-converted-to.pdf, id=667, 327.2225pt x 343.2825pt>
+File: img/finiti/r3-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/r3-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/r3-eps-converted-to.pdf  used on input line
+ 20.
+(pdftex.def)             Requested size: 113.81102pt x 119.39638pt.
 [9
 
-] [10] [11]) (./pag/derivate_parziali.tex [12]
+ <./img/finiti/r-eps-converted-to.pdf> <./img/finiti/r2-eps-converted-to.pdf> <
+./img/finiti/r3-eps-converted-to.pdf>] [10] [11])
+(./pag/derivate_parziali.tex [12]
 Capitolo 2.
 
 Underfull \vbox (badness 4832) has occurred while \output is active []
@@ -1685,7 +1735,7 @@ Package epstopdf Info: Source file: <img/finiti/cono.eps>
 ted-to.pdf img/finiti/cono.eps>
 (epstopdf)             \includegraphics on input line 522.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/cono-eps-converted-to.pdf, id=812, 1686.3pt x 949.5475pt>
+<img/finiti/cono-eps-converted-to.pdf, id=842, 1686.3pt x 949.5475pt>
 File: img/finiti/cono-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/cono-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/cono-eps-converted-to.pdf  used on input li
@@ -1728,7 +1778,7 @@ erted-to.pdf>
 izioneR-eps-converted-to.pdf img/finiti/graficodecomposizioneR.eps>
 (epstopdf)             \includegraphics on input line 93.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/graficodecomposizioneR-eps-converted-to.pdf, id=886, 354.32375pt x 
+<img/finiti/graficodecomposizioneR-eps-converted-to.pdf, id=916, 354.32375pt x 
 243.91125pt>
 File: img/finiti/graficodecomposizioneR-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1753,7 +1803,7 @@ df>
 s-converted-to.pdf img/finiti/esdompolnorm.eps>
 (epstopdf)             \includegraphics on input line 226.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/esdompolnorm-eps-converted-to.pdf, id=916, 566.115pt x 256.96pt>
+<img/finiti/esdompolnorm-eps-converted-to.pdf, id=946, 566.115pt x 256.96pt>
 File: img/finiti/esdompolnorm-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/esdompolnorm-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/esdompolnorm-eps-converted-to.pdf  used on 
@@ -1772,7 +1822,7 @@ ominionormale-eps-converted-to.pdf img/finiti/baricentrodiundominionormale.eps>
 
 (epstopdf)             \includegraphics on input line 250.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/baricentrodiundominionormale-eps-converted-to.pdf, id=917, 310.1587
+<img/finiti/baricentrodiundominionormale-eps-converted-to.pdf, id=947, 310.1587
 5pt x 244.915pt>
 File: img/finiti/baricentrodiundominionormale-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -1797,7 +1847,7 @@ ominionormale2-eps-converted-to.pdf img/finiti/baricentrodiundominionormale2.ep
 s>
 (epstopdf)             \includegraphics on input line 296.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/baricentrodiundominionormale2-eps-converted-to.pdf, id=960, 274.023
+<img/finiti/baricentrodiundominionormale2-eps-converted-to.pdf, id=990, 274.023
 74pt x 209.78375pt>
 File: img/finiti/baricentrodiundominionormale2-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1842,7 +1892,7 @@ Package epstopdf Info: Source file: <img/finiti/rettangolo.eps>
 converted-to.pdf img/finiti/rettangolo.eps>
 (epstopdf)             \includegraphics on input line 328.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/rettangolo-eps-converted-to.pdf, id=961, 95.35625pt x 130.4875pt>
+<img/finiti/rettangolo-eps-converted-to.pdf, id=991, 95.35625pt x 130.4875pt>
 File: img/finiti/rettangolo-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/rettangolo-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/rettangolo-eps-converted-to.pdf  used on in
@@ -1867,8 +1917,8 @@ rted-to.pdf>
 aperta-eps-converted-to.pdf img/finiti/curva_chiusa_e_aperta.eps>
 (epstopdf)             \includegraphics on input line 509.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/curva_chiusa_e_aperta-eps-converted-to.pdf, id=997, 460.72125pt x 1
-29.48375pt>
+<img/finiti/curva_chiusa_e_aperta-eps-converted-to.pdf, id=1028, 460.72125pt x 
+129.48375pt>
 File: img/finiti/curva_chiusa_e_aperta-eps-converted-to.pdf Graphic file (type 
 pdf)
 <use img/finiti/curva_chiusa_e_aperta-eps-converted-to.pdf>
@@ -1885,7 +1935,7 @@ Package epstopdf Info: Source file: <img/finiti/dominio.eps>
 verted-to.pdf img/finiti/dominio.eps>
 (epstopdf)             \includegraphics on input line 514.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/dominio-eps-converted-to.pdf, id=998, 192.72pt x 177.66376pt>
+<img/finiti/dominio-eps-converted-to.pdf, id=1029, 192.72pt x 177.66376pt>
 File: img/finiti/dominio-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/dominio-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/dominio-eps-converted-to.pdf  used on input
@@ -1912,7 +1962,7 @@ Package epstopdf Info: Source file: <img/finiti/curva_regolare.eps>
 eps-converted-to.pdf img/finiti/curva_regolare.eps>
 (epstopdf)             \includegraphics on input line 569.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/curva_regolare-eps-converted-to.pdf, id=1035, 256.96pt x 257.96375p
+<img/finiti/curva_regolare-eps-converted-to.pdf, id=1065, 256.96pt x 257.96375p
 t>
 File: img/finiti/curva_regolare-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/curva_regolare-eps-converted-to.pdf>
@@ -1936,7 +1986,7 @@ d-to.pdf>
 nea-eps-converted-to.pdf img/finiti/ascissa_curvilinea.eps>
 (epstopdf)             \includegraphics on input line 651.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/ascissa_curvilinea-eps-converted-to.pdf, id=1046, 451.6875pt x 103.
+<img/finiti/ascissa_curvilinea-eps-converted-to.pdf, id=1076, 451.6875pt x 103.
 38625pt>
 File: img/finiti/ascissa_curvilinea-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1971,7 +2021,7 @@ ted-to.pdf>
 lineo-eps-converted-to.pdf img/finiti/integrale_curvilineo.eps>
 (epstopdf)             \includegraphics on input line 679.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/integrale_curvilineo-eps-converted-to.pdf, id=1062, 322.20375pt x 3
+<img/finiti/integrale_curvilineo-eps-converted-to.pdf, id=1092, 322.20375pt x 3
 22.20375pt>
 File: img/finiti/integrale_curvilineo-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1995,7 +2045,7 @@ ted-to.pdf>
 Gauss-eps-converted-to.pdf img/finiti/primaLeggeGreenGauss.eps>
 (epstopdf)             \includegraphics on input line 922.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/primaLeggeGreenGauss-eps-converted-to.pdf, id=1097, 208.78pt x 209.
+<img/finiti/primaLeggeGreenGauss-eps-converted-to.pdf, id=1127, 208.78pt x 209.
 78375pt>
 File: img/finiti/primaLeggeGreenGauss-eps-converted-to.pdf Graphic file (type p
 df)
@@ -2021,7 +2071,7 @@ Package epstopdf Info: Source file: <img/finiti/greenes.eps>
 verted-to.pdf img/finiti/greenes.eps>
 (epstopdf)             \includegraphics on input line 1017.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/greenes-eps-converted-to.pdf, id=1122, 353.32pt x 225.84375pt>
+<img/finiti/greenes-eps-converted-to.pdf, id=1153, 353.32pt x 225.84375pt>
 File: img/finiti/greenes-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/greenes-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/greenes-eps-converted-to.pdf  used on input
@@ -2039,7 +2089,7 @@ df>
 s-converted-to.pdf img/finiti/secondalegge.eps>
 (epstopdf)             \includegraphics on input line 1104.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/secondalegge-eps-converted-to.pdf, id=1141, 417.56pt x 290.08376pt>
+<img/finiti/secondalegge-eps-converted-to.pdf, id=1171, 417.56pt x 290.08376pt>
 
 File: img/finiti/secondalegge-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/secondalegge-eps-converted-to.pdf>
@@ -2075,7 +2125,7 @@ Package epstopdf Info: Source file: <img/finiti/es-fun-pot.eps>
 converted-to.pdf img/finiti/es-fun-pot.eps>
 (epstopdf)             \includegraphics on input line 1575.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/es-fun-pot-eps-converted-to.pdf, id=1210, 353.32pt x 290.08376pt>
+<img/finiti/es-fun-pot-eps-converted-to.pdf, id=1240, 353.32pt x 290.08376pt>
 File: img/finiti/es-fun-pot-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/es-fun-pot-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/es-fun-pot-eps-converted-to.pdf  used on in
@@ -2162,10 +2212,10 @@ Package rerunfilecheck Info: File `mat.out' has not changed.
 (rerunfilecheck)             Checksum: 94C086EA53740EF26030CEF6A99358F3;26826.
  ) 
 Here is how much of TeX's memory you used:
- 56973 strings out of 478268
- 1393189 string characters out of 5846348
- 2167446 words of memory out of 5000000
- 73814 multiletter control sequences out of 15000+600000
+ 56997 strings out of 478268
+ 1393905 string characters out of 5846348
+ 2167444 words of memory out of 5000000
+ 73832 multiletter control sequences out of 15000+600000
  500174 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,89p,718b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2270,10 +2320,10 @@ cm-super/sfti0700.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm
 -super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-s
 uper/sftt1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/wasy-t
 ype1/wasy10.pfb>
-Output written on mat.pdf (72 pages, 2511154 bytes).
+Output written on mat.pdf (72 pages, 2519023 bytes).
 PDF statistics:
- 1659 PDF objects out of 1728 (max. 8388607)
- 1426 compressed objects within 15 object streams
- 441 named destinations out of 1000 (max. 500000)
- 1029 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1689 PDF objects out of 1728 (max. 8388607)
+ 1447 compressed objects within 15 object streams
+ 444 named destinations out of 1000 (max. 500000)
+ 1044 words of extra memory for PDF output out of 10000 (max. 10000000)
 
