@@ -346,3 +346,219 @@ Si risolvono nel segno modo:
   Per il teorema di Cauchy in un intorno $I\times$ J di (0,1) $\exists! y=y(x)$ soluzione
   del problema di Cauchy.
 \end{esempio}
+\subsection{Equazioni differenziali lineari di ordine N}
+Sia
+\begin{align*}
+  L(y)=b(x) & \text{ un'equazione differenziale lineare (L'operatore lineare)} \\
+  L(y)=0 & \text{ equazione omogenea assocata}
+\end{align*}
+Se $y_0(x)$ è l'integrale generale dell'equazione omogenea associata e se $\bar{y}(x)$ è
+un integrale particolare dell'equazione non omogenea, allora $y(x)=y_0(x)+\bar{y}(x)$ è
+soluzione dell'equazone completa.
+\subsubsection{Equazione completa}
+\begin{equation}
+  y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}(x)y^{\prime}+a_ny=b(x)
+\end{equation}
+\clearpage
+\subsection{Equazioni differenziali lineari omogenee}
+\begin{equation}
+  y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}(x)y^{\prime}+a_ny=0
+\end{equation}
+L'integrale generale dell'equazione lineare omogenea è una combinazione lineare di $n$
+soluzioni linearmenete indipendenti.
+\begin{equation}
+  y_0 (x)=c_1y_1(x)+c_2y_2(x)+\dots+c_ny_n(x)
+\end{equation}
+Sono integrali particolari dell'equazione linearmente indipendenti.\\
+L'indipendenze delle soluzioni $y_1(x),y_2(x),\dots,y_n(x)$ è data dal non annullarsi per
+$\forall x\in I$ del determinante.\\
+{\color{red}Wronskiano}\footnote{è un determinante introdotto dal matematico 
+polacco Josef Hoene-Wronski diffusamente utilizzato nello studio di equazioni
+differenziali. Consente frequentemente di mostrare l'indipendenza lineare di 
+un insieme di soluzioni.} così fatto:
+\begin{multicols}{2}
+\begin{equation*}
+  det W(x)=\begin{vmatrix}
+             y_1(x) & y_2(x) & \dots & y_n(x) \\
+             y_1^{\prime} & y_2^{\prime} &\dots& y_n^{\prime}\\
+             y_1^{\prime\prime} & y_2^{\prime\prime} & \dots & y_n^{\prime\prime}\\
+             \vdots & \vdots && \vdots\\ 
+             y_1^{n-1} & y_2^{n-1} & \dots & y_n^{n-1}
+           \end{vmatrix}
+\end{equation*}
+\begin{description}
+    \item[Prima riga] Soluzioni
+    \item[Seconda riga] Derivate prime delle soluzioni
+    \item[Terza riga] Derivate seconde delle soluzioni
+    \item[ultima riga] Derivate alla $N-1$ delle soluzioni
+\end{description}
+\end{multicols}    
+Se $det W(x)\neq 0$ $\forall x\in I$, allora $y_1(x),y_2(x),\dots,y_n(x)$ sono linearmente
+indipendenti.\\
+Come si determminano le soluzioni? \emph{Si introduce il polinomio caratteristico ad }
+$y^2 \to \lambda^{n}$ 
+\begin{eqnarray*}
+y(x)=e^{\lambda x} & \text{soluzione per $\lambda$ redice del polinomio}.
+\end{eqnarray*}
+\subsection{Equazioni lineari complete}
+\begin{enumerate}
+\item Si determina l'integrale generale $y_0(x)$ dell'equazione omogenea associata
+\item Si determina un integrale particolare $\bar{y}(x)$ dell'equazione non omogenea
+  \item L'integrale dell'equazione completa è $y(x)=y_0(x)+\bar{y}(x)$
+\end{enumerate}
+Come determinare un integrale particolare dell'equazione non omogenea\\
+Metodo di somiglianza: osserva la forma del termine noto $b(x)$
+\begin{eqnarray*}
+	b(x)=e^{\gamma x} P_n(x) & P_n(x) &\text{polinomio di grado n}
+\end{eqnarray*}
+Se $\gamma$ non è radice dell'equazione caratteristica
+\begin{eqnarray*}
+	\bar{y} (x)=e^{\gamma x} q_n(x) & q_n(x)& \text{polinomio di grado n}
+\end{eqnarray*}
+se $\gamma$ radice dell'equazione complessa, ne tengo conto e tengo conto delle
+della sua molteplicità.
+\begin{eqnarray*}
+	\bar{y} (x)=e^{\gamma x} x^n q_n(x) & q_n(x) & \text{n molteplicità}
+\end{eqnarray*}
+\begin{esempio}
+	\begin{equation*}
+		y^{\prime\prime\prime}-4y^{\prime} =x
+	\end{equation*}
+	\begin{enumerate}
+		\item equazione omogenea associata
+			$y^{\prime\prime\prime}-4y^{\prime}=0 \Rightarrow \lambda^3
+			-4\lambda =0 \Rightarrow \lambda(\lambda^2-4)=0 \Rightarrow
+			\lambda_1=0,\lambda_2=2,\lambda_3=-2,y_1=e^{ox}=1,y^{-2x}$
+	\end{enumerate}
+	\begin{equation*}
+		y_0(x)=c_1+c_2e^{2x}+c_3e^{-2x}
+	\end{equation*}
+\end{esempio}
+\clearpage
+\begin{eqnarray*}
+	b(x)=x\to e^{\gamma x}=1 q_n(x) & e^{\gamma x}=1 \Rightarrow \gamma=0\\
+	&q_n(x)=x \text{ grado 1}
+\end{eqnarray*}
+\begin{eqnarray*}
+	\bar{y}(x)=x^ne^{\gamma x} q_n(x)=e^{0 x}(ax+b)=(ax+b)x\\
+	\bar{y}(x)=ax^2+bx
+\end{eqnarray*}
+Ricavo $a$ e $b$
+\begin{eqnarray*}
+	y^\prime(x)=2ax+b &\Rightarrow y^{\prime\prime}(x)=2a+b &
+	y^{\prime\prime\prime}(x)=0\\
+	y^{\prime\prime\prime}-4y^\prime=x & 0-4(2ax+b)=x & -8ax-4b=x\\
+	&\begin{cases}
+		-8a=1\\
+		-4b=0
+	\end{cases}\begin{cases}
+		a=-\frac{1}{8}\\
+		b=0
+	\end{cases} & \bar{y}(x)=-\frac{1}{8}x^3
+\end{eqnarray*}
+L'integrale generale è
+$y(x)=y_0(x)+\bar{y}(x)=c_1+c_2e^{2x}+c_3e^{-2x}+\frac{1}{8}x^2$
+\begin{center}
+	\fbox
+	{
+	\begin{minipage}{0.95\textwidth}
+		$b(x)=\sin \beta x$ $P_n(x)$ o $b(x)=e^{\alpha x}\cos \beta x$ 
+		$P_n(x)$\\
+		se $\alpha\pm i\beta$ non sono soluzione ell'equazione caratteristica
+		\begin{eqnarray*}
+			\bar{y}(x)=e^{\alpha x}[q_n(x)\sin \beta x +r_n(x)\cos\beta x]
+		\end{eqnarray*}
+		se $\alpha\pm i\beta$ sono soluzione dell'equazione caratteristica, ne
+		tegno conto e tengo conto della sua molteplicità
+		\begin{eqnarray*}
+			\bar{y}(x)=e^{\alpha x}x^n[q_n(x)\sin \beta x +r_n(x)\cos\beta x]
+		\end{eqnarray*}
+	\end{minipage}
+	}
+\end{center}
+\begin{esempio}
+	$y^{\prime\prime}-3y^\prime+2y=xe^{3x}$
+	\begin{enumerate}
+		\item equazione omogenea associata
+			$y^{\prime\prime}-3y^\prime+2y=0\Rightarrow \lambda^2-3\lambda
+			+2=0$ $\lambda=\frac{2\pm\sqrt{9-8}}{2}\begin{cases}
+				2\\
+				1
+			\end{cases}$
+			\begin{eqnarray*}
+				\lambda_1=1 & y_1=e^x\\
+				\lambda_2=2 & y_2=e^{2x}
+			\end{eqnarray*}
+			$y_0(x)=c_1e^x+c_2e^{2x}$
+			\begin{eqnarray*}
+				b(x)=xe^{3x} & \Rightarrow e^{\gamma x} P_n(x) \Rightarrow
+				\gamma =3 & P_n(x) \text{ grado 1}\\
+				& \bar{y}(x)=e^{3x}q_n(x)=e^{3x}(ax+b)
+			\end{eqnarray*}
+			Trovare a e b
+			\begin{eqnarray*}
+				\bar{y}^\prime(x)=3e^{3x}(ax+b)+e^{3x}(a)\\
+				y^{\prime\prime}=9e^{3x}(ax+b)+3e^{3x}a+3ae^{3x}
+			\end{eqnarray*}
+			\clearpage
+			\begin{eqnarray*}
+				y^{\prime\prime}-3y^\prime+2x=xe^{3x} & 9e^{3x}(ax+b)+6ae^{3x}-
+				2(3e^{3x}(ax+b)+e^{3x}a)+(e^{3x}(ax+b))=xe^{3a}\\
+				&9e^{3x}\not{(ax+b)}+6ae^{3x}-9e^{3x}\not{(ax+b)}-3e^{3x}a+2e^{3x}
+				(ax+b)=xe^{3x}\\
+				\begin{matrix}
+					\bar{y}(x)=e^{3x}\left(\frac{1}{2}x-\frac{3}{4}\right)\\
+					y(x)=c_1e^x+c_2e^{3x}\\+e^{3x}\left(\frac{1}{2}x-\frac{3}{4}
+					\right)
+				\end{matrix} & 3a+2(qx+b)=x \begin{cases}
+					2a=1\\
+					3a+2b=0
+				\end{cases}\begin{cases}
+					a=\frac{1}{2}\\
+					b=-\frac{3}{4}
+				\end{cases}
+			\end{eqnarray*}
+	\end{enumerate}
+\end{esempio}
+\subsubsection{Faccia un integrale particolare di $L(y)=b(x)$}
+\begin{equation*}
+	\bar{y}(x)=c_1(x)y_1(x)+\dots+c_n(x)y_n(x)
+\end{equation*}
+\begin{esempio}
+	\begin{eqnarray*}
+		y^{\prime\prime}+y=\frac{1}{\cos x} & \lambda^2+1=0 & \lambda =\pm 1\\
+		& y_1=e^{ix}=\cos x\\
+		& y_2=e^{-ix}=\sin x
+	\end{eqnarray*}
+	$y_0(x)=c_1\cos x +c_2 \sin x$
+	\begin{eqnarray*}
+		c_1 (x)\cos x +c_2(x) \sin x =0\\
+		c_1^\prime (x)(-\sin x)+c_2(x)\cos x= \frac{1}{\cos x}
+	\end{eqnarray*}
+	\begin{equation*}
+		W(x)=\begin{vmatrix}
+			\cos x & \sin x\\
+			-\sin x & \cos x
+		\end{vmatrix} =\cos^2x+\sin^2x=1\neq 0 \forall x \in \mathds{R}
+	\end{equation*}
+	\begin{eqnarray*}
+		c_1^\prime(x)=\frac{1}{W(x)}=\begin{vmatrix}
+			0 &\sin x\\
+			\frac{1}{\cos x} &\cos x
+		\end{vmatrix}= -\frac{\sin x}{\cos x} &
+		c_2^\prime=\frac{1}{W(x)}\begin{vmatrix}
+			\cos x & 0\\
+			-\sin x & \frac{1}{\cos x}
+		\end{vmatrix} =1
+	\end{eqnarray*}
+	\begin{eqnarray*}
+		c^\prime_i(x)=-\frac{\sin x}{\cos x} & c_1(x)=\int
+		-\frac{\sin x}{\cos x} dx=\ln\abs{\cos x}\\
+		&c_2(x)=\int dx=x
+	\end{eqnarray*}
+	\begin{eqnarray*}
+		\bar{y}(x)=\cos x \ln\abs{\cos x}+x \sin x\\
+		y(x)=c_1\cos x +c_2 \sin x +\cos \abs{\cos x}+x\sin x
+	\end{eqnarray*}
+\end{esempio}
+

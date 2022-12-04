@@ -60,8 +60,8 @@
 \usepackage{wasysym}
 
 
-\usepackage{showframe}
-\renewcommand\ShowFrameLinethickness{0.15pt}
+%\usepackage{showframe}
+%\renewcommand\ShowFrameLinethickness{0.15pt}
 %\renewcommand*\ShowFrameColor{\color{red}}
 
 %\usepackage{showkeys} %serve per mostrare le etichette "tag" o target, va tolta per la versione definitiva;
@@ -145,63 +145,5 @@
 \input{pag/integrali.tex}
 \input{pag/serie.tex}
 \input{pag/differenziali_ordinarie.tex}
-\subsection{Equazioni differenziali lineari di ordine N}
-Sia
-\begin{align*}
-  L(y)=b(x) & \text{ un'equazione differenziale lineare (L'operatore lineare)} \\
-  L(y)=0 & \text{ equazione omogenea assocata}
-\end{align*}
-Se $y_0(x)$ è l'integrale generale dell'equazione omogenea associata e se $\bar{y}(x)$ è
-un integrale particolare dell'equazione non omogenea, allora $y(x)=y_0(x)+\bar{y}(x)$ è
-soluzione dell'equazone completa.
-\subsubsection{Equazione completa}
-\begin{equation}
-  y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}(x)y^{\prime}+a_ny=b(x)
-\end{equation}
-\clearpage
-\subsection{Equazioni differenziali lineari omogenee}
-\begin{equation}
-  y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}(x)y^{\prime}+a_ny=0
-\end{equation}
-L'integrale generale dell'equazione lineare omogenea è una combinazione lineare di $n$
-soluzioni linearmenete indipendenti.
-\begin{equation}
-  y_0 (x)=c_1y_1(x)+c_2y_2(x)+\dots+c_ny_n(x)
-\end{equation}
-Sono integrali particolari dell'equazione linearmente indipendenti.\\
-L'indipendenze delle soluzioni $y_1(x),y_2(x),\dots,y_n(x)$ è data dal non annullarsi per
-$\forall x\in I$ del determinante.\\
-{\color{red}Wronksiano} così fatto:
-\begin{multicols}{2}
-\begin{equation*}
-  det W(x)=\begin{vmatrix}
-             y_1(x) & y_2(x) & \dots & y_n(x) \\
-             y_1^{\prime} & y_2^{\prime} &\dots& y_n^{\prime}\\
-             y_1^{\prime\prime} & y_2^{\prime\prime} & \dots & y_n^{\prime\prime}\\
-             \vdots & \vdots && \vdots\\ 
-             y_1^{n-1} & y_2^{n-1} & \dots & y_n^{n-1}
-           \end{vmatrix}
-\end{equation*}
-\begin{description}
-    \item[Prima riga] Soluzioni
-    \item[Seconda riga] Derivate prime delle soluzioni
-    \item[Terza riga] Derivate seconde delle soluzioni
-    \item[ultima riga] Derivate alla $N-1$ delle soluzioni
-\end{description}
-\end{multicols}    
-Se $det W(x)\neq 0$ $\forall x\in I$, allora $y_1(x),y_2(x),\dots,y_n(x)$ sono linearmente
-indipendenti.\\
-Come si determminano le soluzioni? \emph{Si introduce il polinomio caratteristico ad }
-$y^2 \to \lambda^{n}$ 
-\begin{eqnarray*}
-y(x)=e^{\lambda x} & \text{soluzione per $\lambda$ redice del polinomio}.
-\end{eqnarray*}
-\subsection{Equazioni lineari complete}
-\begin{enumerate}
-\item Si determina l'integrale generale $y_0(x)$ dell'equazione omogenea associata
-\item Si determina un integrale particolare $\bar{y}(x)$ dell'equazione non omogenea
-  \item L'integrale dell'equazione completa è $y(x)=y_0(x)+\bar{y}(x)$
-\end{enumerate}
-
 \printindex
 \end{document}
