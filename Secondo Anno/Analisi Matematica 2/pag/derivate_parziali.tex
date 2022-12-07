@@ -14,7 +14,7 @@
   \end{equation}
   Analogamente, considero un interno di $P(x_0,y_0), I(x_0,y_0),\delta$. Mi ruoto sulla retta $x=x_0$ e
   incremento la $y_0$ passando da $y_0$ a $y_0+k$. Ho così un punto $P(x_0,y_0+h)\in A$.\\
-  Definisco il rapporto ingrementale di $f(x,y)$ nella sola $y$
+  Definisco il rapporto incrementale di $f(x,y)$ nella sola $y$
   \begin{equation*}
     \frac{f(x_0+k,y_0)-f(x_0,y_0)}{k}
   \end{equation*}
@@ -34,13 +34,13 @@ Se esistono entrambe allora le due rette tangenti alle sezioni della funzione in
 solido nel punto $P(x_0,y_0,z)$
 \section{Derivata parziale seconde}
 \begin{defi}
-  Sia $f(x,y)$ una derivabile e siano definite in un deminio le due derivate parziali
+  Sia $f(x,y)$ una derivabile e siano definite in un dominio le due derivate parziali
   \begin{equation*}
     \begin{matrix}
       f_x(x,y) & f_y(x,y)
     \end{matrix}
   \end{equation*}
-  Tali funzioni passano a loro volta essere derivabili e si ottengono così le derivate seconde parziali di
+  Tali funzioni possono a loro volta essere derivabili e si ottengono così le derivate seconde parziali di
   $f(x,y)$
   \begin{center}
     \Tree[.$f(x,y)$ [.$f_x(x,y)$ $f_{xx}(x,y)$ $f_{xy}(x,y)$ ] [.$f_y(x,y)$ $f_{yx}(x,y)$ $f_{yy}(x,y)$ ] ]
@@ -70,7 +70,7 @@ solido nel punto $P(x_0,y_0,z)$
   \end{equation*}
 \end{multicols}
 con $n$ variabili si hanno $n^2$ derivate seconde parziali -- Spesso le derivate seconde sono disposte in
-una matrice quadrata, detta {\tt hessiana}, con il sinbolo $D^2$
+una matrice quadrata, detta {\tt hessiana}, con il simbolo $D^2$
 \begin{equation}
   D^2f=\begin{bmatrix}
          f_{xx} & f_{xy}\\
@@ -78,7 +78,7 @@ una matrice quadrata, detta {\tt hessiana}, con il sinbolo $D^2$
        \end{bmatrix}
        \text{n variabili} \to n*n
 \end{equation}
-Se esistono le quanto derivate di f, nel punto (x,y), si dice che $f$ è dirivabile due volte in $(x,y)$. Se
+Se esistono le quattro derivate di f, nel punto (x,y), si dice che $f$ è dirivabile due volte in $(x,y)$. Se
 ciò accade $\forall (x,y)\in A$, $f$ è derivabile due volte nell'insieme A.
 \subsection{Teorema di Schwarz (Dell'invertibilità dell'ordine di derivazione)\label{Schwarz}}
 \begin{teorema}
@@ -90,11 +90,11 @@ In generale se vale il teorema di Schwarz, la matrice Hessiana può essere scrit
 \begin{equation*}
   H=D^2f=\begin{bmatrix}
            f_{xx} & f_{xy}\\
-           f_{xy} & f_{yy}
+           f_{yx} & f_{yy}
          \end{bmatrix}
          = \begin{bmatrix}
-             f_{xx} & f_{yx}\\
-             f_{yx} & f_{yy}
+             f_{xx} & f_{xy}\\
+             f_{xy} & f_{yy}
            \end{bmatrix}
 \end{equation*}
 $det H= f_{xx}*f_{yy}-(f_{xy})^2=f_{xx}*f_{yy}-(f_{yx})^2$
@@ -114,9 +114,9 @@ $det H= f_{xx}*f_{yy}-(f_{xy})^2=f_{xx}*f_{yy}-(f_{yx})^2$
 \end{defi}
 \subsection{Teorema di Fermat}
 \begin{teorema}
-  Sia $f(x,y)$ derinita in D e derivabile in un punto $P_0 (x_0,y_0)$\\
+  Sia $f(x,y)$ definita in D e derivabile in un punto $P_0 (x_0,y_0)$\\
   Se in $P_0(x_0,y_0)$ $f(x,y)$ ha un massimo o un minimo relativo, allora le derivate prime
-  parziali si annullano ($\nabla f=0$ gradiente nullo). La pendenza della tangente è zaro un
+  parziali si annullano ($\nabla f=0$ gradiente nullo). La pendenza della tangente è zero un
   massimo o minimo.
 \end{teorema}
 \subsubsection{Gradiente}

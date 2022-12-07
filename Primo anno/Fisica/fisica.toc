@@ -1,5 +1,5 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
 \contentsline {section}{\numberline {0.1}Premesse\dots }{9}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Simboli}{9}{section.0.2}%
 \contentsline {part}{I\hspace {1em}fisica 1}{11}{part.1}%
@@ -82,30 +82,30 @@
 \contentsline {section}{\numberline {7.12}Dipolo in un campo elettrico}{43}{section.7.12}%
 \contentsline {section}{\numberline {7.13}Energia potenziale di un dipolo elettrico}{44}{section.7.13}%
 \contentsline {section}{\numberline {7.14}Problema}{44}{section.7.14}%
-\contentsline {chapter}{\numberline {8}La legge di Gauss}{47}{chapter.8}%
-\contentsline {section}{\numberline {8.1}L'aspetto fisico}{47}{section.8.1}%
-\contentsline {section}{\numberline {8.2}La superficie Gaussiana}{47}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Il flusso elettrico}{47}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Cilindro in campo uniforme}{48}{section.8.4}%
-\contentsline {section}{\numberline {8.5}La legge di Gauss}{48}{section.8.5}%
-\contentsline {section}{\numberline {8.6}La legge di Gauss e di Coulomb}{49}{section.8.6}%
-\contentsline {subsection}{\numberline {8.6.1}Problema svolto}{49}{subsection.8.6.1}%
-\contentsline {section}{\numberline {8.7}Un conduttore carico isolato}{49}{section.8.7}%
-\contentsline {subsection}{\numberline {8.7.1}Problema svolto}{50}{subsection.8.7.1}%
-\contentsline {section}{\numberline {8.8}Gauss per simmetria cilidrica}{50}{section.8.8}%
-\contentsline {section}{\numberline {8.9}Gauss per simmetria piana}{50}{section.8.9}%
-\contentsline {paragraph}{Superficie gaussiana:}{50}{paragraph*.34}%
-\contentsline {section}{\numberline {8.10}Gauss per simmetria sferica}{50}{section.8.10}%
-\contentsline {chapter}{\numberline {9}Potenziale elettrico}{53}{chapter.9}%
-\contentsline {section}{\numberline {9.1}L'aspetto fisico}{53}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Il potenziale elettrico}{53}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Unità di misura}{53}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Il potenziale elettrico}{53}{section.9.4}%
-\contentsline {paragraph}{Inversamente:}{53}{paragraph*.35}%
-\contentsline {section}{\numberline {9.5}Superfici equipotenziali}{54}{section.9.5}%
-\contentsline {section}{\numberline {9.6}Calcolo del potenziale, dato $\vec {E}$}{54}{section.9.6}%
-\contentsline {section}{\numberline {9.7}Potenziale di una carica puntiforma}{54}{section.9.7}%
-\contentsline {section}{\numberline {9.8}Insieme di cariche puntiformi}{54}{section.9.8}%
-\contentsline {subsection}{\numberline {9.8.1}problema}{55}{subsection.9.8.1}%
-\contentsline {section}{\numberline {9.9}Potenziale di un dipolo elettrico}{55}{section.9.9}%
-\contentsline {section}{\numberline {9.10}Potenziale di una distribuzione contitua}{55}{section.9.10}%
+\contentsline {chapter}{\numberline {8}La legge di Gauss}{45}{chapter.8}%
+\contentsline {section}{\numberline {8.1}L'aspetto fisico}{45}{section.8.1}%
+\contentsline {section}{\numberline {8.2}La superficie Gaussiana}{45}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Il flusso elettrico}{45}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Cilindro in campo uniforme}{46}{section.8.4}%
+\contentsline {section}{\numberline {8.5}La legge di Gauss}{46}{section.8.5}%
+\contentsline {section}{\numberline {8.6}La legge di Gauss e di Coulomb}{47}{section.8.6}%
+\contentsline {subsection}{\numberline {8.6.1}Problema svolto}{47}{subsection.8.6.1}%
+\contentsline {section}{\numberline {8.7}Un conduttore carico isolato}{47}{section.8.7}%
+\contentsline {subsection}{\numberline {8.7.1}Problema svolto}{48}{subsection.8.7.1}%
+\contentsline {section}{\numberline {8.8}Gauss per simmetria cilidrica}{48}{section.8.8}%
+\contentsline {section}{\numberline {8.9}Gauss per simmetria piana}{48}{section.8.9}%
+\contentsline {paragraph}{Superficie gaussiana:}{48}{paragraph*.34}%
+\contentsline {section}{\numberline {8.10}Gauss per simmetria sferica}{48}{section.8.10}%
+\contentsline {chapter}{\numberline {9}Potenziale elettrico}{51}{chapter.9}%
+\contentsline {section}{\numberline {9.1}L'aspetto fisico}{51}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Il potenziale elettrico}{51}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Unità di misura}{51}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Il potenziale elettrico}{51}{section.9.4}%
+\contentsline {paragraph}{Inversamente:}{51}{paragraph*.35}%
+\contentsline {section}{\numberline {9.5}Superfici equipotenziali}{52}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Calcolo del potenziale, dato $\vec {E}$}{52}{section.9.6}%
+\contentsline {section}{\numberline {9.7}Potenziale di una carica puntiforma}{52}{section.9.7}%
+\contentsline {section}{\numberline {9.8}Insieme di cariche puntiformi}{52}{section.9.8}%
+\contentsline {subsection}{\numberline {9.8.1}problema}{53}{subsection.9.8.1}%
+\contentsline {section}{\numberline {9.9}Potenziale di un dipolo elettrico}{53}{section.9.9}%
+\contentsline {section}{\numberline {9.10}Potenziale di una distribuzione contitua}{53}{section.9.10}%

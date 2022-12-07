@@ -51,12 +51,13 @@
       hk=o(\sqrt{h^2+k^2})
     \end{matrix}
   \end{equation*}
-  detto quindi dimostrare che $\lim\limits_{h\to 0 k\to 0}\frac{hk}{\sqrt{h^2+k^2}}=0$
+  si può quindi dimostrare che $\lim\limits_{h\to 0 k\to 0}\frac{hk}{\sqrt{h^2+k^2}}=0$
   e poi passo alle coordinate polari:
   \begin{equation*}
     \begin{matrix}
       h=\rho \cos \theta\\
-      k=\rho \sin \theta & \lim\limits_{\rho\to 0} \frac{\not{e} \cos\theta* \not{e} sin\theta}{\not{e}^2}& z=xy \text{ defferenziale } \forall (x_0,y_0)\in R^2\\
+      k=\rho \sin \theta & \lim\limits_{\rho\to 0} \frac{\not{e} \cos\theta*
+		\not{e} sin\theta}{\not{e}^2}& z=xy \text{ differenziale } \forall (x_0,y_0)\in R^2\\
       e^2=h^2+k^2\\
       h\to0,k\to 0,\rho \to 0\\
     \end{matrix}
@@ -111,7 +112,7 @@ $(x_0,y_0)$
     \lim\limits_{h \to 0}\underbrace{\frac{f(x_0+h,y_0) - f(x_0,y_0)}{h}}_{\frac{\partial f}{\partial x}(x_0,y_0)=fx}=\underbrace{\frac{Ah+o(\sqrt{h^2})}{h}}_A
   \end{equation*}
   $fx(x_0,y_0)=A$\\
-  Analogamente si demostra che $f_y(x_0,y_0)=B$. Qundi dato che esistono $f_x$ e $f_y$ in ($x_0,y_0$), $f(x,y)$ è derivabile in $(x_0,y_0)$ e in oltre $A=fx(x_0,y_0)$, $B=fy(x_0,y_0)$
+  Analogamente si dimostra che $f_y(x_0,y_0)=B$. Qundi dato che esistono $f_x$ e $f_y$ in ($x_0,y_0$), $f(x,y)$ è derivabile in $(x_0,y_0)$ e in oltre $A=fx(x_0,y_0)$, $B=fy(x_0,y_0)$
 \end{proof}
 \begin{esercizio}
   Dimostrare che $z=x^2=y^2$ è differenziabile in (1;1) -- Per definire
@@ -128,15 +129,15 @@ $(x_0,y_0)$
   \begin{equation*}
     h^2+k^2=o(\sqrt{h^2+k^2})
   \end{equation*}
-  devo dimostrare che $\lim\limits_{h\to 0\text{ } k\to0}\frac{h^2+k^2}{\sqrt{h^2+k^2}}=0$ pasando
+  devo dimostrare che $\lim\limits_{h\to 0\text{ } k\to0}\frac{h^2+k^2}{\sqrt{h^2+k^2}}=0$ passando
   a coordinate polari $\begin{matrix} h=e\cos \theta\\ k=e\sin \theta\\ e^2=h^2+k^2\\ k\to 0,h\to 0,
                          p\to 0\end{matrix}$\\ 
                        $\lim\limits_{e\to 0}\frac{e^2}{\abs e}=0 \to z=x^2+z^2$ è differeziabile in (1,1)
 \end{esercizio}
-\subsection{Le funzioni con derivate parziali continue sono diferenziabili}
+\subsection{Le funzioni con derivate parziali continue sono differenziabili}
 \begin{defi}
   Sia $f(x,y)$ definita in $D_1$ e sia derivabile in $D$. Sono $f_x$ e $f_y$ continue in $D$, allora
-  $f(x,y)$ è differenziale in $D$.
+  $f(x,y)$ è differenziabile in $D$.
 \end{defi}
 \subsubsection{Condizione sufficiente per la differenzialità}
 \begin{defi}
@@ -204,13 +205,13 @@ L'incremento $f(x_0+h)-f(x_0)$ si approssima sempre più con $dy$ per incrementi
 \end{equation*}
 L'incremento $f(x_0+h)-f(x_0)$ differisce dal valore $f^\prime (x)(x-x_0)$ [retta tangente] per un
 $o\abs{x}$, $o\abs{x}$ ci da l'errore.
-\subsection{Funzioni composite}
+\subsection{Funzioni composte}
 \begin{defi}
   Sia $x(t)$ E $y(t)$ due funzioni reali definite al variare in un intervallo $I$ di $R$.
   $t\in T \leq R$ corrisponde il punto $(x(t),y(t))$
   \begin{equation*}
     \begin{cases}
-      x=x(t) & \text{Rappresenta nel piano una currva in frontiera}\\
+      x=x(t) & \text{Rappresenta nel piano una curva in frontiera}\\
       y=y(t) & \text{Parametrica}
     \end{cases}
   \end{equation*}
@@ -246,7 +247,7 @@ $o\abs{x}$, $o\abs{x}$ ci da l'errore.
       \begin{equation*}
       	[x(t)]^2+[y(t)]^2=r^2
       \end{equation*}
-      circonferenza con certro nel origine e raggio r
+      circonferenza con centro nel origine e raggio r
     \end{multicols}
     Se si ha $\begin{cases} x=x(t) \\ y=y(t) \\ z=z(t)\end{cases}$ al variare di $t\in T \leq R$ si
     ha una curva nello spazio.
@@ -269,7 +270,7 @@ $o\abs{x}$, $o\abs{x}$ ci da l'errore.
 	Sia $\gamma$ la curva di punti $(x(t),y(t))$ e sia derivabile in un
 	intervallo $I$ (\underline{cioè esistono })\\
 	Sia f(x,y) differenziabile in x(t)\\
-	Allora la funzione conposta da $F(t)=f(x(t),y(t))$ è derivabile in I e la
+	Allora la funzione composta da $F(t)=f(x(t),y(t))$ è derivabile in I e la
 	sua derivata prima vale:
 	\begin{equation}
 		F^\prime (t)=f_x(x(t),y(t))x^\prime(t)+f_y(x(t),y(t))y^\prime(t)
@@ -341,7 +342,7 @@ $o\abs{x}$, $o\abs{x}$ ci da l'errore.
 		x^\prime(t)+z_y y^\prime(t) = -3t^2
 	\end{equation*}
 \end{esempio}
-\section{Teorema differenziabilità delle funzioni composite}
+\section{Teorema differenziabilità delle funzioni composte}
 \begin{teorema}
 	Siano $x=(x_1,x_2,\dots,x_n)$ n funzioni in k variabili
 	$t=(t_1,t_2,\dots,t_k)$
@@ -353,7 +354,7 @@ $o\abs{x}$, $o\abs{x}$ ci da l'errore.
 			x_n=x_n(t_1,t_2,\dots,t_k)
 		\end{cases}
 	\end{equation}
-	Componiamo le funzioni ottenendo la funzione composita
+	Componiamo le funzioni ottenendo la funzione composta
 	\begin{equation*}
 		f[x_1(t_1,t_2,\dots,t_k), x_2(t_1,t_2,\dots,t_k), \dots,
 		x_n(t_1,t_2,\dots,t_k)]
@@ -364,13 +365,12 @@ $o\abs{x}$, $o\abs{x}$ ci da l'errore.
 		($i=1,2,\dots, k$).\\
 		Sia $f(x_1,\dots,x_n)$ una funzione definita in A contenente in
 		codominio $x(D)$ e sia f differenziabile in A\\
-	Allora la funzione composita $F(t)=x_1(t_1,t_2,\dots,t_k), x_2(t_1,t_2, 
+	Allora la funzione composta $F(t)=x_1(t_1,t_2,\dots,t_k), x_2(t_1,t_2, 
 		\dots,t_k), \dots, x_n(t_1,t_2,\dots,t_k)$ è derivabile parzialmente
 		rispetto a $t_i(i=1,2,\dots,k)$ nel punto t.
 		\begin{equation*}
 			\frac{\partial F}{\partial t_i} (t)=\frac{\partial f}{\partial
-			x_j}(x(t))+\frac{\partial x_i}{\partial t_i}(t) \text{ (si somma
-			sugli inasci ripetuti)}
+			x_j}(x(t))+\frac{\partial x_i}{\partial t_i}(t) 
 		\end{equation*}
 		Inoltre, se f e ($x_1(t_1,t_2,\dots,t_k), x_2(t_1,t_2,\dots,t_k), \dots,
 		x_n(t_1,t_2,\dots,t_k)$) sono di classe $C^1$, anche $F=f(x(t))\in c^1$
@@ -434,7 +434,7 @@ $o\abs{x}$, $o\abs{x}$ ci da l'errore.
          \begin{equation*}
            df(x_0, y_0)=fx(x_0,y_0)h+fy(x_0,y_0)k=0*h+0*k=0
          \end{equation*}
-         Per cui nella foruma di Taylor si ha:
+         Per cui nella formula di Taylor si ha:
          \begin{equation*}
            f(x,y)=f(x_0,y_0)+\frac{1}{2!}d^2f(x_0+\theta h, y_0+\theta k) \text{ Forme quadratiche}
          \end{equation*}
@@ -453,12 +453,12 @@ $o\abs{x}$, $o\abs{x}$ ci da l'errore.
          Per cui $f(x,y)-f(x_0,y_0)>0$ 
          \begin{equation*}
            \begin{matrix}
-              \text{cioè } f(x,y)>f(x_0,y_0) & \text{ difiniziondi di Minimo relativo (\ref{minmaxrel})}
+              \text{cioè } f(x,y)>f(x_0,y_0) & \text{ defomozopmo di Minimo relativo (\ref{minmaxrel})}
            \end{matrix}
          \end{equation*}
-         quindi $(x_0,y_0)$ è un punto di muinimo relativo\\
-         Analogamente, se $f(x_0,y_0)<0$ si dimosta che $(x_0,y_0)$ è un punto di massimo
-         relatovo (\ref{minmaxrel})
+         quindi $(x_0,y_0)$ è un punto di minimo relativo\\
+         Analogamente, se $f(x_0,y_0)<0$ si dimostra che $(x_0,y_0)$ è un punto
+		 di massimo relativo (\ref{minmaxrel})
 \end{defi}
 \clearpage
 \subsection{Condizioni sufficiente per l'esistenza di minimo e massimo relativo}
