@@ -286,8 +286,82 @@ Abbiamo quindi che $v_2^2+2a(x_2-x_1)$ \footnote{Dove ($x_2-x_1$) è il modulo d
     L=\frac{1}{2} m v_2^2-\frac{1}{2} m v_1^2=K_2-K_1=K_f-K_i=\Delta K
   \end{equation}
 \end{teo}
-
-\input{pag/moti.tex}
+\subsection{Lavoro di una forza variabile in 3 dimensioni}
+\begin{figure}[th]
+    \centering
+    \includegraphics[width=6cm]{img/finiti/forza_vet_3d.eps}
+    \caption{Forza vettoriale in 3 dimensioni}
+\end{figure}
+\begin{eqnarray*}
+	\vec{S}=\displaystyle\sum_{i=1}^{N}\vec{S}_i & \begin{matrix}
+		\text{Spostamento totale}\\
+		\text{come limite della spezzata per}\\
+		N\to \infty
+	\end{matrix}\\
+	& \vec{F}=F_x\vec{i}+\vec{F}_y\vec{j}+\vec{F}_z\vec{k}\\
+	& d\vec{s}=dx\vec{i}+dy\vec{j}+dz\vec{k}
+\end{eqnarray*}
+Quindi si può dire che $L_T=\displaystyle\sum_{i=1}^{N}\vec{F}_i*\vec{s}_i\to
+L_T=\int_{A}^{B}\vec{F}*d\vec{S}$, se e solo se $\abs{\vec{s}_i}\to 0$
+\subsubsection{Teorema dell'energia cinematica tridimensionali}
+\begin{eqnarray*}
+	\vec{F}=F_x\vec{i}+\vec{F}_y\vec{j}+\vec{F}_z\vec{k}
+	& d\vec{s}=dx\vec{i}+dy\vec{j}+dz\vec{k}
+\end{eqnarray*}
+\begin{eqnarray*}
+	L=\int \vec{F}*d\vec{s}=\int
+	\left(F_xd_x+F_yd_y+F_zdz\right)=\int_{x_1}^{x_2}ma_xdx+\int_{y_1}^{y_2}
+	ma_ydy+\int_{x_1}^{z_2}ma_zdz\\ = \int_{x_1}^{x_2}m\frac{dv_x}{dt}dx+
+	\int_{y_1}^{y_2}m\frac{dv_y}{dt}dy+\int_{z_1}^{z_2}m\frac{dy_z}{dt}dz=
+	\int_{v_{x_1}}^{v_{x_2}}mv_xdv_x+\int_{v_{y_1}}^{v_{y_2}} mv_ydv_y
+	+\int_{v_{x_1}}^{v_{z_2}}mv_zdv_z\\
+	=\frac{1}{2}m\left[v_x^2\right]_{v_{x_1}}^{v_{x_2}}+ 
+	\frac{1}{2}m\left[v_y^2\right]_{v_{y_1}}^{v_{y_2}}+\frac{1}{2}m
+	\left[v_z^2\right]_{v_{z_1}}^{v_{z_2}}=
+	\frac{1}{2}m\left[v_{x_2}^2-v_{x_1}^2\right]+
+	\frac{1}{2}m\left[v_{y_2}^2-v_{y_1}^2\right]+
+	\frac{1}{2}m\left[v_{z_2}^2-v_{z_1}^2\right]\\
+	=\frac{1}{2}m\left[v_{x_2}^2+v_{y_2}^2+v_{z_2}^2\right]
+	-\frac{1}{2}m\left[v_{x_1}^2+v_{y_1}^2+v_{z_1}^2\right]=\frac{1}{2}mv_2^2
+	-\frac{1}{2}mv_1^2
+\end{eqnarray*}
+Quindi alla fine il risultato è 
+\begin{equation*}
+	\boxed{L=\frac{1}{2}mv_2^2
+	-\frac{1}{2}mv_1^2}
+\end{equation*}
+Il lavoro fatto dalla forza ({\it risultante}) applicata al sistema è quindi
+legato alla variazione della velocità del sistema durante l’applicazione della
+forza stessa.
+\section{Teorema dell'energia cinetica}
+\begin{defi}
+	L'energia cinetica è l'energia che possiede un corpo per il movimento che ha
+	o che acquista: equivale al lavoro necessario per portare un corpo da una 
+	velocità nulla a una velocità nota. Quando un corpo di massa m varia la sua 
+	velocità, con questa varia anche la sua energia cinetica. Il lavoro equivale
+	a questa variazione di energia cinetica. L'energia cinetica quindi è
+	associata alla massa e alla velocità di un corpo in movimento. L'energia
+	cinetica che possiede un corpo di massa m nel suo moto di caduta è uguale al
+	lavoro compiuto per fermarsi.
+\end{defi}
+Matematicamente, l'energia cinetica è $K=\frac{1}{2}mv^2$ -- Il lavoro totale
+fatto dalle forza che agiscono sul sistema considerato, è uguale alla
+variazione della sua energia cinematica:
+\begin{equation*}
+	\boxed{L_T=L=\frac{1}{2}mv_2^2-\frac{1}{2}mv_1^2=K_2-K_1=K_f-K_i=\Delta K}
+\end{equation*}
+L'energia cinetica è uno scalare che ha le stesse dimensioni del Lavoro. Si
+misura quindi in Joule ({\tt J})
+\begin{equation*}
+	[K]=[ML^2T^{-2}] \text{ Unità di misura: Joule (J)}
+\end{equation*}
+Lavoro ed Energia cinetica
+\begin{eqnarray*}
+	L_T>0\Rightarrow \Delta K>0 &v_f>v_i & \text{Il sistema accelera}\\
+	L_T=0\Rightarrow \Delta K=0 &v_f=v_i & \text{La velocità del sistema rimane
+	invariata}\\
+	L_T<0\Rightarrow \Delta K<0 &v_f<v_i & \text{Il sistema decelera}
+\end{eqnarray*}
 \input{pag/modelli atomici.tex}
 \input{pag/fisica2.tex}
 \end{document}

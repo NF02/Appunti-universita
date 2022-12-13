@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  7 DEC 2022 10:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  12 DEC 2022 02:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1413,20 +1413,13 @@ Package epstopdf Info: Source file: <img/finiti/forze_costanti_e_elastiche.eps>
 (epstopdf)                    size: 47833 bytes
 (epstopdf)             Output file: <img/finiti/forze_costanti_e_elastiche-eps-
 converted-to.pdf>
-(epstopdf)                    date: 2022-11-10 23:05:41
-(epstopdf)                    size: 4592 bytes
+(epstopdf)                    date: 2022-12-07 10:22:54
+(epstopdf)                    size: 6406 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/forze_costanti_
 e_elastiche-eps-converted-to.pdf img/finiti/forze_costanti_e_elastiche.eps>
 (epstopdf)             \includegraphics on input line 234.
-runsystem(repstopdf --outfile=img/finiti/forze_costanti_e_elastiche-eps-convert
-ed-to.pdf img/finiti/forze_costanti_e_elastiche.eps)...executed safely (allowed
-).
-
-Package epstopdf Info: Result file: <img/finiti/forze_costanti_e_elastiche-eps-
-converted-to.pdf>
-(epstopdf)                    date: 2022-12-07 10:22:54
-(epstopdf)                    size: 6406 bytes.
-<img/finiti/forze_costanti_e_elastiche-eps-converted-to.pdf, id=560, 425.59pt x
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/forze_costanti_e_elastiche-eps-converted-to.pdf, id=489, 425.59pt x
  193.72375pt>
 File: img/finiti/forze_costanti_e_elastiche-eps-converted-to.pdf Graphic file (
 type pdf)
@@ -1435,104 +1428,82 @@ Package pdftex.def Info: img/finiti/forze_costanti_e_elastiche-eps-converted-to
 .pdf  used on input line 234.
 (pdftex.def)             Requested size: 227.62204pt x 103.61308pt.
 Package epstopdf Info: Source file: <img/finiti/forza_elastica.eps>
-(epstopdf)                    date: 2022-11-10 23:05:41
-(epstopdf)                    size: 41789 bytes
+(epstopdf)                    date: 2022-12-12 00:07:59
+(epstopdf)                    size: 42020 bytes
 (epstopdf)             Output file: <img/finiti/forza_elastica-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2022-11-10 23:05:41
-(epstopdf)                    size: 16224 bytes
+(epstopdf)                    date: 2022-12-12 00:08:06
+(epstopdf)                    size: 7663 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/forza_elastica-
 eps-converted-to.pdf img/finiti/forza_elastica.eps>
 (epstopdf)             \includegraphics on input line 247.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/forza_elastica-eps-converted-to.pdf, id=561, 512.91624pt x 134.5025
-pt>
+<img/finiti/forza_elastica-eps-converted-to.pdf, id=490, 375.4025pt x 128.48pt>
+
 File: img/finiti/forza_elastica-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/forza_elastica-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/forza_elastica-eps-converted-to.pdf  used o
 n input line 247.
-(pdftex.def)             Requested size: 284.52756pt x 74.61281pt.
+(pdftex.def)             Requested size: 284.52756pt x 97.38506pt.
  [17
 
  <./img/finiti/forze_costanti_e_elastiche-eps-converted-to.pdf> <./img/finiti/f
 orza_elastica-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/finiti/forza_costante.eps>
-(epstopdf)                    date: 2022-11-10 23:05:41
-(epstopdf)                    size: 7872 bytes
+(epstopdf)                    date: 2022-12-12 00:23:58
+(epstopdf)                    size: 32707 bytes
 (epstopdf)             Output file: <img/finiti/forza_costante-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2022-11-10 23:05:41
-(epstopdf)                    size: 4429 bytes
+(epstopdf)                    date: 2022-12-12 00:24:04
+(epstopdf)                    size: 5179 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/forza_costante-
 eps-converted-to.pdf img/finiti/forza_costante.eps>
 (epstopdf)             \includegraphics on input line 267.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/forza_costante-eps-converted-to.pdf, id=583, 566.115pt x 341.275pt>
+<img/finiti/forza_costante-eps-converted-to.pdf, id=519, 256.96pt x 166.6225pt>
 
 File: img/finiti/forza_costante-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/forza_costante-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/forza_costante-eps-converted-to.pdf  used o
 n input line 267.
-(pdftex.def)             Requested size: 284.52756pt x 171.52754pt.
- (./pag/moti.tex [18
+(pdftex.def)             Requested size: 284.52756pt x 184.5133pt.
+Package epstopdf Info: Source file: <img/finiti/forza_vet_3d.eps>
+(epstopdf)                    date: 2022-12-12 01:08:47
+(epstopdf)                    size: 64346 bytes
+(epstopdf)             Output file: <img/finiti/forza_vet_3d-eps-converted-to.p
+df>
+(epstopdf)                    date: 2022-12-12 01:09:22
+(epstopdf)                    size: 7571 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/forza_vet_3d-ep
+s-converted-to.pdf img/finiti/forza_vet_3d.eps>
+(epstopdf)             \includegraphics on input line 292.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/forza_vet_3d-eps-converted-to.pdf, id=521, 498.86375pt x 302.12875p
+t>
+File: img/finiti/forza_vet_3d-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/forza_vet_3d-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/forza_vet_3d-eps-converted-to.pdf  used on 
+input line 292.
+(pdftex.def)             Requested size: 170.71652pt x 103.39087pt.
+ [18
 
- <./img/finiti/forza_costante-eps-converted-to.pdf>]
+ <./img/finiti/forza_costante-eps-converted-to.pdf> <./img/finiti/forza_vet_3d-
+eps-converted-to.pdf>]
+[19] (./pag/modelli atomici.tex [20]
 Capitolo 3.
+) (./pag/fisica2.tex [21
 
-Underfull \vbox (badness 7722) has occurred while \output is active []
+] [22
 
- [19
-
-]
-[20] [21] [22] [23]
-
-pdfTeX warning: pdflatex (file ./img/esercizio 5 im1.pdf): PDF inclusion: found
- PDF version <1.7>, but at most version <1.5> allowed
-<img/esercizio 5 im1.pdf, id=639, 1521.685pt x 994.71625pt>
-File: img/esercizio 5 im1.pdf Graphic file (type pdf)
-<use img/esercizio 5 im1.pdf>
-Package pdftex.def Info: img/esercizio 5 im1.pdf  used on input line 252.
-(pdftex.def)             Requested size: 174.09616pt x 113.81102pt.
-[24 <./img/esercizio 5 im1.pdf>]
-Overfull \hbox (3.9333pt too wide) detected at line 350
-[] \OT1/cmr/m/n/10 = [] = 602\OML/cmm/m/it/10 s \OT1/cmr/m/n/10 = 10\OML/cmm/m/
-it/10 min
- []
-
-
-Overfull \hbox (51.59584pt too wide) detected at line 353
-\OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 ) = \O
-ML/cmm/m/it/10 s[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 v[]t[] \OT1/cmr/m/n/10 = 
-5 \OMS/cmsy/m/n/10 ^^C \OT1/cmr/m/n/10 10[]\OML/cmm/m/it/10 m \OT1/cmr/m/n/10 +
- 27\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 8\OML/cmm/m/it/10 m=s \OMS/cmsy/m/n/10 ^^C
- \OT1/cmr/m/n/10 602\OML/cmm/m/it/10 s \OT1/cmr/m/n/10 = 21735\OML/cmm/m/it/10 
-m \OT1/cmr/m/n/10 = 22\OML/cmm/m/it/10 km
- []
-
-
-Underfull \vbox (badness 3612) has occurred while \output is active []
-
- [25]
-[26] [27]
-Underfull \hbox (badness 10000) in paragraph at lines 519--520
-
- []
-
-) (./pag/modelli atomici.tex [28]
+] [23] [24] (./pag/programma 2.tex
 Capitolo 4.
-) (./pag/fisica2.tex [29
+) (./pag/legge di Couloumb.tex [25
 
-] [30
-
-] [31] [32] (./pag/programma 2.tex
-Capitolo 5.
-) (./pag/legge di Couloumb.tex [33
-
-] [34
+] [26
 
 ]
-Capitolo 6.
-[35]
+Capitolo 5.
+[27]
 
 Package tasks Warning: You've placed
 (tasks)                
@@ -1542,17 +1513,17 @@ Package tasks Warning: You've placed
 (tasks)                away and ignore it for the rest of the list.
 
 \c@pcariche=\count434
-[36]
+[28]
 
-LaTeX Warning: Reference `' on page 37 undefined on input line 103.
+LaTeX Warning: Reference `' on page 29 undefined on input line 103.
 
 
 Overfull \hbox (0.5108pt too wide) in paragraph at lines 125--125
 \T1/cmr/m/it/10 Una su-per-fi-cie sfe-ri-ca uni-for-me-men-te ca-ri-ca at-
  []
 
-[37]) (./pag/campi_elettrici.tex [38]
-Capitolo 7.
+[29]) (./pag/campi_elettrici.tex [30]
+Capitolo 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--8
 
@@ -1566,10 +1537,10 @@ Package tasks Warning: You've placed
 (tasks)                before the first \task  on line 16. I will throw it
 (tasks)                away and ignore it for the rest of the list.
 
-[39
+[31
 
 ]
-<img/linee elettriche repulsione.png, id=765, 803.0pt x 571.13374pt>
+<img/linee elettriche repulsione.png, id=662, 803.0pt x 571.13374pt>
 File: img/linee elettriche repulsione.png Graphic file (type png)
 <use img/linee elettriche repulsione.png>
 Package pdftex.def Info: img/linee elettriche repulsione.png  used on input lin
@@ -1584,7 +1555,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 44.
 
-[40 <./img/linee elettriche repulsione.png>]
+[32 <./img/linee elettriche repulsione.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 107.
@@ -1593,12 +1564,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 107.
 
-[41]
+[33]
 Overfull \hbox (6.66504pt too wide) in paragraph at lines 145--146
 [] 
  []
 
-[42]
+[34]
 
 LaTeX Warning: Command \textturnv invalid in math mode on input line 171.
 
@@ -1611,7 +1582,7 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 194.
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 194.
 
-<img/grafuci del dipolo elettrico.png, id=800, 1059.96pt x 819.06pt>
+<img/grafuci del dipolo elettrico.png, id=697, 1059.96pt x 819.06pt>
 File: img/grafuci del dipolo elettrico.png Graphic file (type png)
 <use img/grafuci del dipolo elettrico.png>
 Package pdftex.def Info: img/grafuci del dipolo elettrico.png  used on input li
@@ -1629,7 +1600,7 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 201.
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 201.
 
-[43 <./img/grafuci del dipolo elettrico.png>]
+[35 <./img/grafuci del dipolo elettrico.png>]
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 208.
 
@@ -1690,8 +1661,8 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 227.
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 227.
 
-) (./pag/legge_di_gauss.tex [44]
-Capitolo 8.
+) (./pag/legge_di_gauss.tex [36]
+Capitolo 7.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 15.
 
@@ -1700,19 +1671,19 @@ LaTeX Warning: Command \texttheta invalid in math mode on input line 17.
 
 LaTeX Warning: Command \texttheta invalid in math mode on input line 17.
 
-[45
+[37
 
 ]
-<img/cariche opposte.jpg, id=830, 167.62625pt x 303.1325pt>
+<img/cariche opposte.jpg, id=727, 167.62625pt x 303.1325pt>
 File: img/cariche opposte.jpg Graphic file (type jpg)
 <use img/cariche opposte.jpg>
 Package pdftex.def Info: img/cariche opposte.jpg  used on input line 55.
 (pdftex.def)             Requested size: 78.66924pt x 142.26378pt.
- [46 <./img/cariche opposte.jpg>] [47] [48]) [49] [50
+ [38 <./img/cariche opposte.jpg>] [39] [40]) [41] [42
 
 ]
-Capitolo 9.
-[51]
+Capitolo 8.
+[43]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 33.
@@ -1721,21 +1692,21 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 33.
 
-[52]) [53] (./fisica.aux)
+[44]) [45] (./fisica.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `fisica.out' has not changed.
-(rerunfilecheck)             Checksum: 3177FBC9A24BB22A23F39889133B9CD3;14393.
+(rerunfilecheck)             Checksum: FAE1099773E3D9B1E4F32D6ECB095493;12642.
  ) 
 Here is how much of TeX's memory you used:
- 47491 strings out of 478268
- 1073729 string characters out of 5846348
- 1740301 words of memory out of 5000000
- 64702 multiletter control sequences out of 15000+600000
+ 47273 strings out of 478268
+ 1069676 string characters out of 5846348
+ 1740300 words of memory out of 5000000
+ 64534 multiletter control sequences out of 15000+600000
  498896 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,18n,89p,828b,977s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,14n,89p,767b,977s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
 , replaced by a fixed one
@@ -1781,10 +1752,10 @@ e1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
 ublic/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pub
 lic/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/publi
 c/cm-super/sftt1000.pfb>
-Output written on fisica.pdf (53 pages, 729511 bytes).
+Output written on fisica.pdf (45 pages, 692929 bytes).
 PDF statistics:
- 1080 PDF objects out of 1200 (max. 8388607)
- 939 compressed objects within 10 object streams
- 286 named destinations out of 1000 (max. 500000)
- 736 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 968 PDF objects out of 1000 (max. 8388607)
+ 828 compressed objects within 9 object streams
+ 239 named destinations out of 1000 (max. 500000)
+ 624 words of extra memory for PDF output out of 10000 (max. 10000000)
 
