@@ -1,90 +1,96 @@
-\babel@toc {italian}{}\relax 
-\babel@toc {italian}{}\relax 
-\contentsline {section}{\numberline {0.1}Premesse\dots }{9}{section.0.1}%
-\contentsline {section}{\numberline {0.2}Simboli}{9}{section.0.2}%
-\contentsline {part}{I\hspace {1em}fisica 1}{11}{part.1}%
-\contentsline {chapter}{\numberline {1}Grandezze fisiche e unità di misura}{13}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Sistema internazionale delle unità di misura}{13}{section.1.1}%
-\contentsline {chapter}{\numberline {2}L'Energia}{15}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Lavoro}{15}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Lavoro di più forza costanti sullo stesso corpo}{15}{subsection.2.1.1}%
-\contentsline {paragraph}{Lavoro Totale}{16}{paragraph*.6}%
-\contentsline {subsection}{\numberline {2.1.2}Lavoro di una forza variabile unidimensionale}{16}{subsection.2.1.2}%
-\contentsline {subsubsection}{Lavoro della forza variabile prodotta dalle molle (Forza elastica)}{17}{subsubsection*.8}%
-\contentsline {subsection}{\numberline {2.1.3}Teorema dell’Energia Cinetica (caso unidimensionale forza costante)}{18}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Lavoro di una forza variabile in 3 dimensioni}{18}{subsection.2.1.4}%
-\contentsline {subsubsection}{Teorema dell'energia cinematica tridimensionali}{19}{subsubsection*.12}%
-\contentsline {section}{\numberline {2.2}Teorema dell'energia cinetica}{19}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Modelli atomici}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Modello atomico di Bohr-Sommerfeld}{21}{section.3.1}%
-\contentsline {part}{II\hspace {1em}Fisica 2}{23}{part.2}%
-\contentsline {chapter}{\numberline {4}programma}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Base}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Argomenti aggiuntivi}{25}{section.4.2}%
-\contentsline {chapter}{\numberline {5}La legge di Couloumb}{27}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduzione}{27}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}La carica elettrica}{27}{subsection.5.1.1}%
-\contentsline {subsubsection}{Le proprietà delle cariche}{27}{subsubsection*.13}%
-\contentsline {subsubsection}{Conduttori e isolanti}{28}{subsubsection*.14}%
-\contentsline {subsection}{\numberline {5.1.2}Carica indotta}{28}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Legge di Coulomb}{28}{section.5.2}%
-\contentsline {subsubsection}{Riassunto sui vettori}{28}{subsubsection*.15}%
-\contentsline {paragraph}{Componenti:}{28}{paragraph*.16}%
-\contentsline {paragraph}{Modulo e angolo:}{28}{paragraph*.17}%
-\contentsline {paragraph}{Versore:}{28}{paragraph*.18}%
-\contentsline {paragraph}{Sommare:}{29}{paragraph*.19}%
-\contentsline {subsection}{\numberline {5.2.1}Unità do misura}{29}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}La costante dielettrica del vuoto}{29}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Forze multiple}{29}{subsection.5.2.3}%
-\contentsline {paragraph}{Attenzione:}{29}{paragraph*.20}%
-\contentsline {section}{\numberline {5.3}Teorema del guscio}{29}{section.5.3}%
-\contentsline {section}{\numberline {5.4}La quantizzazione della carica}{29}{section.5.4}%
-\contentsline {section}{\numberline {5.5}La conservazione della carica}{30}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Verifica}{30}{section.5.6}%
-\contentsline {paragraph}{Soluzione primo problema}{30}{paragraph*.21}%
-\contentsline {paragraph}{Soluzione secondo problema}{30}{paragraph*.22}%
-\contentsline {chapter}{\numberline {6}Campi elettrici}{31}{chapter.6}%
-\contentsline {section}{\numberline {6.1}L'aspetto fisico}{31}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Il campo elettrico}{31}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Linee di campo elettrico}{31}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Altro esempio delle linee di campo}{32}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Campo $\vec {E}$ di una carica puntiforme}{32}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Il principio di sovrapposizione}{32}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Verifica}{33}{section.6.7}%
-\contentsline {subsection}{\numberline {6.7.1}Soluzione}{33}{subsection.6.7.1}%
-\contentsline {section}{\numberline {6.8}Campo $\vec {E}$ di un dipolo elettrico}{33}{section.6.8}%
-\contentsline {section}{\numberline {6.9}Misura della carica elementare}{34}{section.6.9}%
-\contentsline {subsection}{\numberline {6.9.1}Millikan 1910}{34}{subsection.6.9.1}%
-\contentsline {subsubsection}{Problema svolto}{34}{subsubsection*.24}%
-\contentsline {section}{\numberline {6.10}Prodotto scalare}{34}{section.6.10}%
-\contentsline {section}{\numberline {6.11}Prodotto vettoriale}{35}{section.6.11}%
-\contentsline {section}{\numberline {6.12}Dipolo in un campo elettrico}{35}{section.6.12}%
-\contentsline {section}{\numberline {6.13}Energia potenziale di un dipolo elettrico}{36}{section.6.13}%
-\contentsline {section}{\numberline {6.14}Problema}{36}{section.6.14}%
-\contentsline {chapter}{\numberline {7}La legge di Gauss}{37}{chapter.7}%
-\contentsline {section}{\numberline {7.1}L'aspetto fisico}{37}{section.7.1}%
-\contentsline {section}{\numberline {7.2}La superficie Gaussiana}{37}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Il flusso elettrico}{37}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Cilindro in campo uniforme}{38}{section.7.4}%
-\contentsline {section}{\numberline {7.5}La legge di Gauss}{38}{section.7.5}%
-\contentsline {section}{\numberline {7.6}La legge di Gauss e di Coulomb}{39}{section.7.6}%
-\contentsline {subsection}{\numberline {7.6.1}Problema svolto}{39}{subsection.7.6.1}%
-\contentsline {section}{\numberline {7.7}Un conduttore carico isolato}{39}{section.7.7}%
-\contentsline {subsection}{\numberline {7.7.1}Problema svolto}{40}{subsection.7.7.1}%
-\contentsline {section}{\numberline {7.8}Gauss per simmetria cilidrica}{40}{section.7.8}%
-\contentsline {section}{\numberline {7.9}Gauss per simmetria piana}{40}{section.7.9}%
-\contentsline {paragraph}{Superficie gaussiana:}{40}{paragraph*.27}%
-\contentsline {section}{\numberline {7.10}Gauss per simmetria sferica}{40}{section.7.10}%
-\contentsline {chapter}{\numberline {8}Potenziale elettrico}{43}{chapter.8}%
-\contentsline {section}{\numberline {8.1}L'aspetto fisico}{43}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Il potenziale elettrico}{43}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Unità di misura}{43}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Il potenziale elettrico}{43}{section.8.4}%
-\contentsline {paragraph}{Inversamente:}{43}{paragraph*.28}%
-\contentsline {section}{\numberline {8.5}Superfici equipotenziali}{44}{section.8.5}%
-\contentsline {section}{\numberline {8.6}Calcolo del potenziale, dato $\vec {E}$}{44}{section.8.6}%
-\contentsline {section}{\numberline {8.7}Potenziale di una carica puntiforma}{44}{section.8.7}%
-\contentsline {section}{\numberline {8.8}Insieme di cariche puntiformi}{44}{section.8.8}%
-\contentsline {subsection}{\numberline {8.8.1}problema}{45}{subsection.8.8.1}%
-\contentsline {section}{\numberline {8.9}Potenziale di un dipolo elettrico}{45}{section.8.9}%
-\contentsline {section}{\numberline {8.10}Potenziale di una distribuzione contitua}{45}{section.8.10}%
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Simboli}{7}{section.0.2}%
+\contentsline {part}{I\hspace {1em}fisica 1}{9}{part.1}%
+\contentsline {chapter}{\numberline {1}Grandezze fisiche e unità di misura}{11}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Sistema internazionale delle unità di misura}{11}{section.1.1}%
+\contentsline {chapter}{\numberline {2}L'Energia}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lavoro}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Lavoro di più forza costanti sullo stesso corpo}{13}{subsection.2.1.1}%
+\contentsline {paragraph}{Lavoro Totale}{14}{paragraph*.4}%
+\contentsline {subsection}{\numberline {2.1.2}Lavoro di una forza variabile unidimensionale}{14}{subsection.2.1.2}%
+\contentsline {subsubsection}{Lavoro della forza variabile prodotta dalle molle (Forza elastica)}{15}{subsubsection*.5}%
+\contentsline {subsection}{\numberline {2.1.3}Teorema dell’Energia Cinetica (caso unidimensionale forza costante)}{16}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Lavoro di una forza variabile in 3 dimensioni}{16}{subsection.2.1.4}%
+\contentsline {subsubsection}{Teorema dell'energia cinematica tridimensionali}{17}{subsubsection*.6}%
+\contentsline {section}{\numberline {2.2}Teorema dell'energia cinetica}{17}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Lavoro ed energia}{18}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Forze conservative}{18}{section.2.4}%
+\contentsline {paragraph}{Analogamente:}{19}{paragraph*.7}%
+\contentsline {paragraph}{Conclusioni:}{19}{paragraph*.8}%
+\contentsline {chapter}{\numberline {3}I moti}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Moto di Roto-Traslario}{21}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Modelli atomici}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Modello atomico di Bohr-Sommerfeld}{23}{section.4.1}%
+\contentsline {part}{II\hspace {1em}Fisica 2}{25}{part.2}%
+\contentsline {chapter}{\numberline {5}programma}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Base}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Argomenti aggiuntivi}{27}{section.5.2}%
+\contentsline {chapter}{\numberline {6}La legge di Couloumb}{29}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduzione}{29}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}La carica elettrica}{29}{subsection.6.1.1}%
+\contentsline {subsubsection}{Le proprietà delle cariche}{29}{subsubsection*.9}%
+\contentsline {subsubsection}{Conduttori e isolanti}{30}{subsubsection*.10}%
+\contentsline {subsection}{\numberline {6.1.2}Carica indotta}{30}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Legge di Coulomb}{30}{section.6.2}%
+\contentsline {subsubsection}{Riassunto sui vettori}{30}{subsubsection*.11}%
+\contentsline {paragraph}{Componenti:}{30}{paragraph*.12}%
+\contentsline {paragraph}{Modulo e angolo:}{30}{paragraph*.13}%
+\contentsline {paragraph}{Versore:}{30}{paragraph*.14}%
+\contentsline {paragraph}{Sommare:}{30}{paragraph*.15}%
+\contentsline {subsection}{\numberline {6.2.1}Unità do misura}{31}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}La costante dielettrica del vuoto}{31}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Forze multiple}{31}{subsection.6.2.3}%
+\contentsline {paragraph}{Attenzione:}{31}{paragraph*.16}%
+\contentsline {section}{\numberline {6.3}Teorema del guscio}{31}{section.6.3}%
+\contentsline {section}{\numberline {6.4}La quantizzazione della carica}{31}{section.6.4}%
+\contentsline {section}{\numberline {6.5}La conservazione della carica}{31}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Verifica}{31}{section.6.6}%
+\contentsline {paragraph}{Soluzione primo problema}{32}{paragraph*.17}%
+\contentsline {paragraph}{Soluzione secondo problema}{32}{paragraph*.18}%
+\contentsline {chapter}{\numberline {7}Campi elettrici}{33}{chapter.7}%
+\contentsline {section}{\numberline {7.1}L'aspetto fisico}{33}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Il campo elettrico}{33}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Linee di campo elettrico}{33}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Altro esempio delle linee di campo}{34}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Campo $\vec {E}$ di una carica puntiforme}{34}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Il principio di sovrapposizione}{34}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Verifica}{34}{section.7.7}%
+\contentsline {subsection}{\numberline {7.7.1}Soluzione}{35}{subsection.7.7.1}%
+\contentsline {section}{\numberline {7.8}Campo $\vec {E}$ di un dipolo elettrico}{35}{section.7.8}%
+\contentsline {section}{\numberline {7.9}Misura della carica elementare}{36}{section.7.9}%
+\contentsline {subsection}{\numberline {7.9.1}Millikan 1910}{36}{subsection.7.9.1}%
+\contentsline {subsubsection}{Problema svolto}{36}{subsubsection*.19}%
+\contentsline {section}{\numberline {7.10}Prodotto scalare}{36}{section.7.10}%
+\contentsline {section}{\numberline {7.11}Prodotto vettoriale}{36}{section.7.11}%
+\contentsline {section}{\numberline {7.12}Dipolo in un campo elettrico}{36}{section.7.12}%
+\contentsline {section}{\numberline {7.13}Energia potenziale di un dipolo elettrico}{37}{section.7.13}%
+\contentsline {section}{\numberline {7.14}Problema}{38}{section.7.14}%
+\contentsline {chapter}{\numberline {8}La legge di Gauss}{39}{chapter.8}%
+\contentsline {section}{\numberline {8.1}L'aspetto fisico}{39}{section.8.1}%
+\contentsline {section}{\numberline {8.2}La superficie Gaussiana}{39}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Il flusso elettrico}{39}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Cilindro in campo uniforme}{40}{section.8.4}%
+\contentsline {section}{\numberline {8.5}La legge di Gauss}{40}{section.8.5}%
+\contentsline {section}{\numberline {8.6}La legge di Gauss e di Coulomb}{40}{section.8.6}%
+\contentsline {subsection}{\numberline {8.6.1}Problema svolto}{41}{subsection.8.6.1}%
+\contentsline {section}{\numberline {8.7}Un conduttore carico isolato}{41}{section.8.7}%
+\contentsline {subsection}{\numberline {8.7.1}Problema svolto}{41}{subsection.8.7.1}%
+\contentsline {section}{\numberline {8.8}Gauss per simmetria cilidrica}{42}{section.8.8}%
+\contentsline {section}{\numberline {8.9}Gauss per simmetria piana}{42}{section.8.9}%
+\contentsline {paragraph}{Superficie gaussiana:}{42}{paragraph*.20}%
+\contentsline {section}{\numberline {8.10}Gauss per simmetria sferica}{42}{section.8.10}%
+\contentsline {chapter}{\numberline {9}Potenziale elettrico}{43}{chapter.9}%
+\contentsline {section}{\numberline {9.1}L'aspetto fisico}{43}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Il potenziale elettrico}{43}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Unità di misura}{43}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Il potenziale elettrico}{43}{section.9.4}%
+\contentsline {paragraph}{Inversamente:}{43}{paragraph*.21}%
+\contentsline {section}{\numberline {9.5}Superfici equipotenziali}{43}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Calcolo del potenziale, dato $\vec {E}$}{44}{section.9.6}%
+\contentsline {section}{\numberline {9.7}Potenziale di una carica puntiforma}{44}{section.9.7}%
+\contentsline {section}{\numberline {9.8}Insieme di cariche puntiformi}{44}{section.9.8}%
+\contentsline {subsection}{\numberline {9.8.1}problema}{44}{subsection.9.8.1}%
+\contentsline {section}{\numberline {9.9}Potenziale di un dipolo elettrico}{45}{section.9.9}%
+\contentsline {section}{\numberline {9.10}Potenziale di una distribuzione contitua}{45}{section.9.10}%

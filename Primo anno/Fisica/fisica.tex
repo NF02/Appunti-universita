@@ -1,11 +1,26 @@
 \documentclass{book}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=3.0cm]{geometry}
 
+%\documentclass[pdftex,10pt,a4paper]{book}
+%\usepackage[paperwidth=19cm,
+%paperheight=26cm, outer=2cm, 
+%top=1.5cm, bottom=1.5cm]{ geometry}
+
+\usepackage[english,italian]{babel} %l'ultima lingua è quella che legge per i titoli
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc,url}
 \usepackage{titlesec}
 \usepackage{easylist}
 \usepackage{hanging}
-\usepackage{hyperref}
-\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=3.0cm]{geometry}
+
+\usepackage[pdftex,colorlinks]{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,
+	urlcolor=cyan,
+}
+\usepackage{hypcap}
 \usepackage{blindtext}
 \usepackage{tipa}
 \usepackage{epigraph}
@@ -13,9 +28,7 @@
 \usepackage{longtable}
 \usepackage{setspace}
 \usepackage{verbatim}
-\usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage[italian]{babel}
 \usepackage{amsmath}
 \usepackage{pbox}
 \usepackage{fancyhdr}
@@ -24,30 +37,36 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{longtable}
-\usepackage{upgreek}
 \usepackage{tikz}
 \usepackage{tikz-qtree}
 \usepackage{subfig}
 \usepackage{xcolor}
 \usepackage{amssymb}
+\usepackage{amsmath}
 \usepackage{mathrsfs}
 \usepackage{textcomp}
 \usepackage{circuitikz}
 \usepackage{pifont}
-\usepackage{mathtools}
-\usepackage{amsmath}
+\usepackage{imakeidx}
+\usepackage{verbatim}
+\usepackage{dsfont}
 \usepackage{listings}
 \usepackage{color}
+\usepackage{upgreek}
 \usepackage{tasks}
+\usepackage{exsheets}
+\usepackage{pgfplots}
 \usepackage{amsthm}
-%\usepackage{epstopdf} %converting to PDF
+\usepackage{wasysym}
 
-\newtheorem{defi}{Definizione}
-\newtheorem{nota}{Nota}
-\newtheorem{esempio}{Esempio}
-\newtheorem{teo}{Teorema}
-\usetikzlibrary{angles, arrows.meta, quotes}
-\usepackage{siunitx}
+
+\usepackage{showframe}
+\renewcommand\ShowFrameLinethickness{0.15pt}
+%\renewcommand*\ShowFrameColor{\color{red}}
+
+%\usepackage{showkeys} %serve per mostrare le etichette "tag" o target, va tolta per la versione definitiva;
+
+\SetupExSheets[question]{type=exam}
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
@@ -82,7 +101,16 @@
   title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
 
-\linespread{1.5} % l'interlinea
+% definizioni
+\newtheorem{esercizio}{Esercizio}
+\newtheorem{teo}{Teorema}
+\newtheorem{nota}{Nota}
+\newtheorem{defi}{Definizione}
+\newtheorem{esempio}{Esempio}
+\newtheorem{svol}{Svolgimento}
+\newtheorem{pro}{Proprietà}
+\newtheorem{sol}{soluzione}
+\linespread{1.2} % l'interlinea
 
 \frenchspacing
 
@@ -96,12 +124,14 @@
   \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
   \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
 
-\title{Appunti Fisica}
+
+\title{Appunti Fisica 1 \& 2}
 \author{Nicola Ferru}
 \date{}
 
 \begin{document}
-\maketitle
+%\maketitle
+\include{./title/titlepage.tex}
 \tableofcontents
 \listoftables
 \listoffigures
@@ -110,258 +140,46 @@
 \input{pag/simboli.tex}
 \part{fisica 1}
 \input{pag/unita di misura.tex}
-\chapter{L'Energia}
-\section{Lavoro}
-\begin{defi}
-	Il lavoro è definito come il prodotto della forza per lo spostamento del
-	suo punto di applicazione. Esso è quindi uno scalare
-	\begin{equation}
-		L=\vec{F}*\vec{s}=Fs\cos \theta
-	\end{equation}
-	In cui $\theta$ è l'angolo più piccolo formato tra la forza e lo
-	spostamento
-	\begin{equation*}
-		\begin{matrix}
-			\text{Dimensioni: } & [L]=[F][L]=[MLT^{-2}][l]=[ML^2T^{-2}]\\
-			\text{Unita in misura: } & Kg m^2 s^{-2} = \text{Joule simbolo (J)}
-		\end{matrix}
-	\end{equation*}
-	$L=\vec{F}*\vec{s}=Fs\cos\theta$
-	\begin{equation*}
-		\begin{matrix}
-			L>0 &\Rightarrow \cos \theta>0 &\Rightarrow \theta < \frac{\pi}{2}=90^o\\
-			L=0 &\Rightarrow \cos \theta=0 &\Rightarrow \theta =
-			\frac{\pi}{2}\\
-			L<0& \Rightarrow \cos \theta <0 & \Rightarrow \theta > \frac{\pi}{2}
-		\end{matrix}
-	\end{equation*}
-\end{defi}
-\subsection{Lavoro di più forza costanti sullo stesso corpo}
-Il lavoro totale è la somma di tutti i lavori fatti dalle forza (costanti) che
-agiscono sul sistema considerato.
-\begin{equation*}
-	\begin{matrix}
-	L_T=\vec{F}_1+\vec{s} +
-	\dots+\vec{F}_n*\vec{s}=\displaystyle\sum_{i=1}^{n}
-	\vec{F}_i*\vec{s}=\left(\displaystyle\sum_{i=1}^{n}
-	\vec{F}_i\right)*\vec{R}*\vec{s} &
-		\vec{R}=\left(\displaystyle\sum_{i=1}^{n}\right) \vec{F}_i
-	\end{matrix}
-\end{equation*}
-$\vec{R}$ = Risultante delle Forze
-\begin{esempio}
-	Calcolare il lavoro fatto dalla forza agenti su una cassa di massa m=50.0Kg
-	trascinata, per una distanza di 6,00 metri su un piano liscio, mediamente
-	una corda con tensione T pari a 200N che forma un angolo di 35,0° con
-	l'asse delle x.
-	\begin{equation*}
-		L_T=L_{\vec{N}}+L_{\vec{T}_y} + L_{\vec{T}_x} L_{\vec{p}}
-	\end{equation*}
-	\begin{equation*}
-		\begin{cases}
-			\vec{N}\\
-			\vec{T}_y\\
-			\vec{P}
-		\end{cases}
-		\text{sono tutte perpendicolare allo spostamento } \vec{s} \Rightarrow
-		L_N + L_{\vec{T}_y} + L_{\vec{p}} = 0
-	\end{equation*}
-	\begin{equation*}
-		L_T=L_{\vec{T}_x}=\vec{T}_x*\vec{s}=Ts\cos \theta = 200N*6m*0,82 \cong
-		\boxed{983 joule}
-	\end{equation*}
-\end{esempio}
-\begin{esempio}
-	Calcolare il lavoro fatto dalle forze agenti su una cassa massa $m=50Kg$
-	trascinata, per una distanza di 6 metri su un piano scabro (attrito
-	$\mu=0,15$), mediante una corda con tensione T pari a 200N che forma un
-	angolo di 35° con l'asse delle x.
-        \begin{center}
-            \fbox
-            {
-            \begin{minipage}{0.75\textwidth}
-                    Forza d'attrito
-                    \begin{equation*}
-                            f_d=\mu_d N^\prime=\mu_d(mg-T_y) \Rightarrow f_d=\mu_d[mg-T\sin
-                            35^o]=56,4 Newton
-                    \end{equation*}
-            \end{minipage}
-            }
-      	\end{center}
-	\paragraph{Lavoro Totale}
-	\begin{equation*}
-		L_T=L_{\vec{N}}+L_{\vec{T}_y} + L_{\vec{T}_x}+L_{\vec{p}} +
-		L_{\vec{f}_d}
-	\end{equation*}
-	\begin{equation*}
-		\begin{cases}
-			\vec{N}\\
-			\vec{T}_y\\
-			\vec{P}
-		\end{cases}
-		\text{sono tutte perpendicolare allo spostamento } \vec{s} \Rightarrow
-		L_N + L_{\vec{T}_y} + L_{\vec{p}} = 0
-	\end{equation*}
-	\begin{equation*}
-		L_T=L_{\vec{T}_x} + L_{\vec{f}_d}=\vec{T}_x*\vec{s} + \vec{f}_d
-		*\vec{s} =[T\cos \theta s \cos 0^o +f_ds\cos \pi]
-	\end{equation*}
-	\begin{equation*}
-		L_T=\{(200*0,82*6*1)+[56,4*6*(-1)]\} Joule \cong \boxed{646J}
-	\end{equation*}
-\end{esempio}
-\subsection{Lavoro di una forza variabile unidimensionale}
-\begin{defi}
-  La forza varia della posizione\footnote{Come ad esempio in una molla stirata in una direzione}.
-  Ogni volta che pasiamo da una posizione $x_i$ a quella $x_j$ la forza varia e compie il lavoro.
-  Se $x_i$ è molto prossimo a $x_j$ la forza varierà poco e quindi possiamo definire il lavoro
-  elementare come:
-  \begin{equation*}
-    dL=\vec{F}*\Delta\vec{x}=F\Delta x \text{ La forza è compresa tra i valori che
-      essa assume in $x_i$ e $x_j$.}
-  \end{equation*}
-  Il lavoro si ottiene sommando i lavori infinitesimi fatti dalla forza durante lo spostamento del
-  suo punto di applicazione $x_1$ e $x_2$ e quindi coincide con l'area L.
-  \begin{equation*}
-    L_T=\sum_{i=1}^N dL=F_idx \text{ Se $\Delta x \to 0$, invece } L_T=\int_{x_1}^{x_2} F_x dx
-  \end{equation*}
-  Il lavoro di una forza rappresenta quindi l'area\footnote{attenzione L ha le dimensioni di una
-    forza per una lunghezza} della regione al disotto della curva che pappresenta la variazione
-  della forza in funzione dello spostamento, regione celeste nella figura sotto.
-  \clearpage
-  \begin{figure}[th]
-    \centering
-    \includegraphics[width=8cm]{img/finiti/forze_costanti_e_elastiche.eps}
-    \caption{Forze costanti e elastiche}
-  \end{figure}
-\end{defi}
-\begin{nota}
-  Nel caso della figura a sinistra si tratta di una forza costante, mentre, quella di destra è una
-  forza elastica, come si vede nel caso della prima si presenta come un rettangolo che per
-  l'appunto mantiene un intensità costante, mentre nel caso del secondo, ha un andamento che segue
-  la funzione $F= -kx$
-\end{nota}
-\subsubsection{Lavoro della forza variabile prodotta dalle molle (Forza elastica)}
-\begin{figure}[th]
-    \centering
-    \includegraphics[width=10cm]{img/finiti/forza_elastica.eps}
-    \caption{Forza elastica}
+\input{pag/energia.tex}
+\chapter{I moti}
+\section{Moto di Roto-Traslario}
+Analizziamo il moto più generale di un sistema meccanico isolato, cioè privo di forze
+esterne.
+\begin{eqnarray*}
+  M\vec{a}_{CM}=\displaystyle\sum \vec{F}_{ext}=0 & \begin{matrix}
+                                                      \text{In assenza di forze esterne
+                                                      il centro di massa si muove di
+                                                      moto retilineo}\\
+                                                      \text{univorme oppure sta
+                                                      fermo (in un sistema di
+                                                      riferimento inerziale)}
+                                                    \end{matrix}
+\end{eqnarray*}
+Posiamo studiare quuesto moto rispetto ad un sistema inerziale fermo dal quale
+osservare il moto del corpo rigido:
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=8cm]{img/finiti/roto-trasl.eps}
+  \caption{Sistema di riferimento per il moto Roto-Traslario}
+  \label{fig:roto-traslario}
 \end{figure}
+Nel sistema $o^\prime x^\prime y^\prime$ nell'energia cinetica sarà completamente
+rotazionale e quindi data da:
+\begin{eqnarray*}
+  I_{cm}=\int r^{\prime2} dm & \begin{matrix}
+                                 \text{dove $I_{cm}$ il momento d'inezia del corpo}\\
+                                 \text{per la rotazione attorno al \it cm.}
+                               \end{matrix}
+\end{eqnarray*}
+Nel sistema $oxy$, $\vec{r}^\prime$ può essere espresso come:
+\begin{eqnarray*}
+  \vec{r}=\vec{r}^\prime+\vec{r}_{cm} & \to & \vec{v}=\vec{v}^\prime+\vec{v}_{cm}
+\end{eqnarray*}
+Scriviamo quindi l'energia cinetica del corpo rigido nel sistema di riferimento $oxy$:
 \begin{equation}
-  L_T=\int^{x}_0 \vec{F}_x*d\vec{x}=\int^x_0(-kx)dx=-1/2kx^2
+  K=\frac{1}{2}\displaystyle\sum \underbrace{m_iv^2\to K}_{\text{corpo continuo}}=
+  \frac{1}{2}\int v^2 dm
 \end{equation}
-
-\begin{esempio}
-  Calcolare il lavoro fatto dalla forza elastica di una molla avente $k=450\frac{N}{m}$ quando
-  essa è stirata di 15 cm rispetto alla  sua posizione di riposo.
-  \begin{equation}
-    L_{F_e}= -1/2 kx^2=-0,5 * 450 \frac{N}{m}*(0,15m)^2=-5,06Nm=-5,06J
-  \end{equation}
-\end{esempio}
-\clearpage
-\subsection{Teorema dell’Energia Cinetica (caso unidimensionale forza costante)}
-Consideriamo una forza $\vec{F}$ costante che agisce un corpo di massa m che sposta il suo punto di
-applicazione di una quantità $\vec{s}$
-\begin{figure}[th]
-    \centering
-    \includegraphics[width=10cm]{img/finiti/forza_costante.eps}
-    \caption{Forza costante}
-\end{figure}
-\begin{equation}
-  \begin{matrix}
-    F=ma & a=\frac{F}{m}=costante \Rightarrow \text{ Moto naturalmente accelerato}
-  \end{matrix}
-\end{equation}
-Abbiamo quindi che $v_2^2+2a(x_2-x_1)$ \footnote{Dove ($x_2-x_1$) è il modulo dello spostamento}
-\begin{equation}
-  L=\vec{F} * Fs \cos 0 = ma (x_2-x_1)=m\frac{v_2^2-v_1^2}{2(x_2-x_1)}(x_2-x_1)
-\end{equation}
-\begin{teo}
-  In fisica, il teorema dell'energia cinetica (o teorema lavoro-energia, o
-  teorema delle forze vive) afferma che se un corpo possiede un'energia cinetica iniziale e
-  una forza agisce su di esso effettuando un lavoro, l'energia cinetica finale del corpo è
-  uguale alla somma dell'energia cinetica iniziale e del lavoro compiuto dalla forza lungo
-  la traiettoria del moto.
-  \begin{equation}
-    L=\frac{1}{2} m v_2^2-\frac{1}{2} m v_1^2=K_2-K_1=K_f-K_i=\Delta K
-  \end{equation}
-\end{teo}
-\subsection{Lavoro di una forza variabile in 3 dimensioni}
-\begin{figure}[th]
-    \centering
-    \includegraphics[width=6cm]{img/finiti/forza_vet_3d.eps}
-    \caption{Forza vettoriale in 3 dimensioni}
-\end{figure}
-\begin{eqnarray*}
-	\vec{S}=\displaystyle\sum_{i=1}^{N}\vec{S}_i & \begin{matrix}
-		\text{Spostamento totale}\\
-		\text{come limite della spezzata per}\\
-		N\to \infty
-	\end{matrix}\\
-	& \vec{F}=F_x\vec{i}+\vec{F}_y\vec{j}+\vec{F}_z\vec{k}\\
-	& d\vec{s}=dx\vec{i}+dy\vec{j}+dz\vec{k}
-\end{eqnarray*}
-Quindi si può dire che $L_T=\displaystyle\sum_{i=1}^{N}\vec{F}_i*\vec{s}_i\to
-L_T=\int_{A}^{B}\vec{F}*d\vec{S}$, se e solo se $\abs{\vec{s}_i}\to 0$
-\subsubsection{Teorema dell'energia cinematica tridimensionali}
-\begin{eqnarray*}
-	\vec{F}=F_x\vec{i}+\vec{F}_y\vec{j}+\vec{F}_z\vec{k}
-	& d\vec{s}=dx\vec{i}+dy\vec{j}+dz\vec{k}
-\end{eqnarray*}
-\begin{eqnarray*}
-	L=\int \vec{F}*d\vec{s}=\int
-	\left(F_xd_x+F_yd_y+F_zdz\right)=\int_{x_1}^{x_2}ma_xdx+\int_{y_1}^{y_2}
-	ma_ydy+\int_{x_1}^{z_2}ma_zdz\\ = \int_{x_1}^{x_2}m\frac{dv_x}{dt}dx+
-	\int_{y_1}^{y_2}m\frac{dv_y}{dt}dy+\int_{z_1}^{z_2}m\frac{dy_z}{dt}dz=
-	\int_{v_{x_1}}^{v_{x_2}}mv_xdv_x+\int_{v_{y_1}}^{v_{y_2}} mv_ydv_y
-	+\int_{v_{x_1}}^{v_{z_2}}mv_zdv_z\\
-	=\frac{1}{2}m\left[v_x^2\right]_{v_{x_1}}^{v_{x_2}}+ 
-	\frac{1}{2}m\left[v_y^2\right]_{v_{y_1}}^{v_{y_2}}+\frac{1}{2}m
-	\left[v_z^2\right]_{v_{z_1}}^{v_{z_2}}=
-	\frac{1}{2}m\left[v_{x_2}^2-v_{x_1}^2\right]+
-	\frac{1}{2}m\left[v_{y_2}^2-v_{y_1}^2\right]+
-	\frac{1}{2}m\left[v_{z_2}^2-v_{z_1}^2\right]\\
-	=\frac{1}{2}m\left[v_{x_2}^2+v_{y_2}^2+v_{z_2}^2\right]
-	-\frac{1}{2}m\left[v_{x_1}^2+v_{y_1}^2+v_{z_1}^2\right]=\frac{1}{2}mv_2^2
-	-\frac{1}{2}mv_1^2
-\end{eqnarray*}
-Quindi alla fine il risultato è 
-\begin{equation*}
-	\boxed{L=\frac{1}{2}mv_2^2
-	-\frac{1}{2}mv_1^2}
-\end{equation*}
-Il lavoro fatto dalla forza ({\it risultante}) applicata al sistema è quindi
-legato alla variazione della velocità del sistema durante l’applicazione della
-forza stessa.
-\section{Teorema dell'energia cinetica}
-\begin{defi}
-	L'energia cinetica è l'energia che possiede un corpo per il movimento che ha
-	o che acquista: equivale al lavoro necessario per portare un corpo da una 
-	velocità nulla a una velocità nota. Quando un corpo di massa m varia la sua 
-	velocità, con questa varia anche la sua energia cinetica. Il lavoro equivale
-	a questa variazione di energia cinetica. L'energia cinetica quindi è
-	associata alla massa e alla velocità di un corpo in movimento. L'energia
-	cinetica che possiede un corpo di massa m nel suo moto di caduta è uguale al
-	lavoro compiuto per fermarsi.
-\end{defi}
-Matematicamente, l'energia cinetica è $K=\frac{1}{2}mv^2$ -- Il lavoro totale
-fatto dalle forza che agiscono sul sistema considerato, è uguale alla
-variazione della sua energia cinematica:
-\begin{equation*}
-	\boxed{L_T=L=\frac{1}{2}mv_2^2-\frac{1}{2}mv_1^2=K_2-K_1=K_f-K_i=\Delta K}
-\end{equation*}
-L'energia cinetica è uno scalare che ha le stesse dimensioni del Lavoro. Si
-misura quindi in Joule ({\tt J})
-\begin{equation*}
-	[K]=[ML^2T^{-2}] \text{ Unità di misura: Joule (J)}
-\end{equation*}
-Lavoro ed Energia cinetica
-\begin{eqnarray*}
-	L_T>0\Rightarrow \Delta K>0 &v_f>v_i & \text{Il sistema accelera}\\
-	L_T=0\Rightarrow \Delta K=0 &v_f=v_i & \text{La velocità del sistema rimane
-	invariata}\\
-	L_T<0\Rightarrow \Delta K<0 &v_f<v_i & \text{Il sistema decelera}
-\end{eqnarray*}
 \input{pag/modelli atomici.tex}
 \input{pag/fisica2.tex}
 \end{document}
