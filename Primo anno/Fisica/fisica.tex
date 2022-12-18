@@ -105,6 +105,7 @@
 \newtheorem{esercizio}{Esercizio}
 \newtheorem{teo}{Teorema}
 \newtheorem{nota}{Nota}
+\newtheorem{notab}{Nota bene}
 \newtheorem{defi}{Definizione}
 \newtheorem{esempio}{Esempio}
 \newtheorem{svol}{Svolgimento}
@@ -180,6 +181,112 @@ Scriviamo quindi l'energia cinetica del corpo rigido nel sistema di riferimento 
   K=\frac{1}{2}\displaystyle\sum \underbrace{m_iv^2\to K}_{\text{corpo continuo}}=
   \frac{1}{2}\int v^2 dm
 \end{equation}
+\clearpage
+\begin{eqnarray*}
+  K=\frac{1}{2}\int(\vec{v})*(\vec{v})dm=\frac{1}{2}\int(\vec{v}^\prime+\vec{v}_{cm})*
+  (\vec{v}^\prime+\vec{v}_{cm})dm\\
+  =\frac{1}{2}\int \underbrace{v^{\prime 2}}_{v^\prime=\omega r^\prime}dm+
+  \frac{1}{2}\int\vec{v}^\prime+\vec{v}_{cm}dm+\frac{1}{2}
+  \int\vec{v}^\prime+\vec{v}_{cm} dm + \frac{1}{2}\int v^2_{cm}dm\\
+  \frac{1}{2}\omega^\prime r^{\prime2}dm+\vec{v}_{cm}dm*
+  \underbrace{\int\vec{v}^\prime dm}_{\begin{matrix}
+                                        \text{vale 0}\\
+                                        \text{vedi nodo 1}
+                                      \end{matrix}}
+  +\frac{1}{2} v_{cm}^2\underbrace{\int dm}_{\text{Massa totale M}}\\
+  =\frac{1}{2}\underbrace{\omega^2\int r^{\prime 2}dm}_{
+  \begin{matrix} \text{Momento d'inerzia}\\
+    \text{rispetto al centro di}\\
+    \text{massa}
+  \end{matrix}} = \frac{1}{2}Mv_{cm}^2=\frac{1}{2}I_{cm}\omega^2+\frac{1}{2}Mv^2_{cm}
+\end{eqnarray*}
+Quendi la formula finale è:
+\begin{equation}
+  \boxed{K=\frac{1}{2}Mv^2_{cm}+\frac{1}{2}I_{cm}\omega^2}
+\end{equation}
+\begin{nota}
+  $\displaystyle\int \vec{v}^\prime dm$ rappresenta la velocità del $cm$ nel sistema
+  di riferimento. Essa è quindi nulla in tale riferimento.
+\end{nota}
+L'energia cinetica di un corpo rigido\footnote{o sistema di particelle} che ruota e trasla
+e data dalla:\\
+\begin{center}
+  \texttt{Energia cinetica = $\begin{matrix}\text{Energia di} \\ \text{traslazione del}\\
+                                \text{centro di massa}\end{matrix}$ + $\begin{matrix}
+                                                                         \text{Energia di
+    rotazione} \\ \text{attorno al centro di}\\ \text{massa}\end{matrix}$}
+\end{center}
+\begin{equation}
+  \boxed{K=K_t+K_r}
+\end{equation}
+\begin{eqnarray*}
+  \boxed{K=K_t+K_r=\frac{1}{2}Mv^2_{cm}+\frac{1}{2}I_{cm}\omega^2} & I_{cm}=
+                                                                    \int r^{\prime2}dm
+\end{eqnarray*}
+\begin{esempio}
+  Un disco privo d'attrito è poggiato su un piano. Sulla periferia del disco è avvolto un
+  sottile file ideale che applica una forza costante di $10,0N$. La massa del disco è di
+  $3,75kg$ ed il suo raggio e di $0,440m$.
+  \begin{enumerate}
+  \item L'accelerazione angolare del disco;
+  \item L'accelerazione lineare del disco
+  \end{enumerate}
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=9cm]{img/finiti/roto-trasl-es.eps}
+    \caption{Esempio del disco appoggiato su un piano}
+    \label{fig:roto-traslario-es}
+  \end{figure}
+  Applicando le leggi di Newton per la dinamica lineare e per quella rotazionale, abbiamo
+  che:
+  \begin{eqnarray}
+    \displaystyle\sum \vec{F}_x=M\vec{a}_{cm,x} &&\to \boxed{F=Ma_{cm}}\\
+    \displaystyle\sum\vec{F}_x=M\vec{a}_{cm,y}=0 && \to \boxed{\vec{a}_P{cm,y}=0}\\
+    \displaystyle\sum \tau=I_{cm}\alpha &\to rF=\frac{1}{2}Mr^2\alpha
+                                                 & \to\boxed{\alpha = \frac{2F}{Mr}}
+  \end{eqnarray}
+  Passando ai numeri abbiamo:
+  \begin{equation*}
+    \boxed{\begin{matrix}
+             a_{cm}=\frac{F}{M}=\left[\frac{10}{3,75}\right]m/s^2=2,66m/s^2\\
+             \alpha=\frac{2F}{Mr}=\left[\frac{2\times 10}{3,75\times 0,44}\right]rad/s^2
+             =12,1rad/s^2
+           \end{matrix}}
+  \end{equation*} 
+\end{esempio}
+\begin{notab}
+  l'accelerazione del centro di massa è orientata come la risultante delle forze.
+\end{notab}
+\begin{notab}
+  Con questa scelta del riferimento, non vi sono forza lungo $y$
+\end{notab}
+\begin{notab}
+  Polo per il calcolo dei momenti è nel $cm$. La rotazione è istante per istante attorno
+  ad un asse passante per il centro di massa e perpendicolare al piano del disco.
+\end{notab}
+\subsection{Rotolamento Puro}
+Moto di rotolamento puro: avviene, per esempio quando abbiano rotalamento senza
+strisciamento su una superficie con attrito\footnote{L'esempio più classico di questo
+moto può essere fatto prendendo una ruota di bucicletta o di automobile.}: 
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=9cm]{img/finiti/roto-puro.eps}
+  \caption{Rotolamento puro}
+  \label{fig:roto-puro}
+\end{figure}
+In assenza di strisciamento lo spostamento $\Delta s$ del centro di massa deve eguagliare
+lo spostamento $\Delta s^\prime$ della circonferenza $C$ di raggio $r$:
+\begin{equation*}
+  \Delta s=\Delta s^\prime=r\Delta \vartheta
+\end{equation*}
+Poiché $s$ è anche lo spostamento che subisce il centro di massa nel $\Delta t$ abbiamo
+che
+\begin{equation*}
+  \frac{\Delta s}{\Delta t}=r\frac{\Delta \vartheta}{t}\to \lim_{\Delta t\to0}
+  \frac{\Delta s}{\Delta t}=r\lim_{\Delta t\to 0}\frac{\Delta s}{\Delta t}\to v_{cm}
+  =r\omega
+\end{equation*}
+
 \input{pag/modelli atomici.tex}
 \input{pag/fisica2.tex}
 \end{document}

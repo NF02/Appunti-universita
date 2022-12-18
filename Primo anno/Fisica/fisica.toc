@@ -21,76 +21,77 @@
 \contentsline {paragraph}{Conclusioni:}{19}{paragraph*.8}%
 \contentsline {chapter}{\numberline {3}I moti}{21}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Moto di Roto-Traslario}{21}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Modelli atomici}{23}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Modello atomico di Bohr-Sommerfeld}{23}{section.4.1}%
-\contentsline {part}{II\hspace {1em}Fisica 2}{25}{part.2}%
-\contentsline {chapter}{\numberline {5}programma}{27}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Base}{27}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Argomenti aggiuntivi}{27}{section.5.2}%
-\contentsline {chapter}{\numberline {6}La legge di Couloumb}{29}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introduzione}{29}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}La carica elettrica}{29}{subsection.6.1.1}%
-\contentsline {subsubsection}{Le proprietà delle cariche}{29}{subsubsection*.9}%
-\contentsline {subsubsection}{Conduttori e isolanti}{30}{subsubsection*.10}%
-\contentsline {subsection}{\numberline {6.1.2}Carica indotta}{30}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Legge di Coulomb}{30}{section.6.2}%
-\contentsline {subsubsection}{Riassunto sui vettori}{30}{subsubsection*.11}%
-\contentsline {paragraph}{Componenti:}{30}{paragraph*.12}%
-\contentsline {paragraph}{Modulo e angolo:}{30}{paragraph*.13}%
-\contentsline {paragraph}{Versore:}{30}{paragraph*.14}%
-\contentsline {paragraph}{Sommare:}{30}{paragraph*.15}%
-\contentsline {subsection}{\numberline {6.2.1}Unità do misura}{31}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}La costante dielettrica del vuoto}{31}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Forze multiple}{31}{subsection.6.2.3}%
-\contentsline {paragraph}{Attenzione:}{31}{paragraph*.16}%
-\contentsline {section}{\numberline {6.3}Teorema del guscio}{31}{section.6.3}%
-\contentsline {section}{\numberline {6.4}La quantizzazione della carica}{31}{section.6.4}%
-\contentsline {section}{\numberline {6.5}La conservazione della carica}{31}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Verifica}{31}{section.6.6}%
-\contentsline {paragraph}{Soluzione primo problema}{32}{paragraph*.17}%
-\contentsline {paragraph}{Soluzione secondo problema}{32}{paragraph*.18}%
-\contentsline {chapter}{\numberline {7}Campi elettrici}{33}{chapter.7}%
-\contentsline {section}{\numberline {7.1}L'aspetto fisico}{33}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Il campo elettrico}{33}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Linee di campo elettrico}{33}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Altro esempio delle linee di campo}{34}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Campo $\vec {E}$ di una carica puntiforme}{34}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Il principio di sovrapposizione}{34}{section.7.6}%
-\contentsline {section}{\numberline {7.7}Verifica}{34}{section.7.7}%
-\contentsline {subsection}{\numberline {7.7.1}Soluzione}{35}{subsection.7.7.1}%
-\contentsline {section}{\numberline {7.8}Campo $\vec {E}$ di un dipolo elettrico}{35}{section.7.8}%
-\contentsline {section}{\numberline {7.9}Misura della carica elementare}{36}{section.7.9}%
-\contentsline {subsection}{\numberline {7.9.1}Millikan 1910}{36}{subsection.7.9.1}%
-\contentsline {subsubsection}{Problema svolto}{36}{subsubsection*.19}%
-\contentsline {section}{\numberline {7.10}Prodotto scalare}{36}{section.7.10}%
-\contentsline {section}{\numberline {7.11}Prodotto vettoriale}{36}{section.7.11}%
-\contentsline {section}{\numberline {7.12}Dipolo in un campo elettrico}{36}{section.7.12}%
-\contentsline {section}{\numberline {7.13}Energia potenziale di un dipolo elettrico}{37}{section.7.13}%
-\contentsline {section}{\numberline {7.14}Problema}{38}{section.7.14}%
-\contentsline {chapter}{\numberline {8}La legge di Gauss}{39}{chapter.8}%
-\contentsline {section}{\numberline {8.1}L'aspetto fisico}{39}{section.8.1}%
-\contentsline {section}{\numberline {8.2}La superficie Gaussiana}{39}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Il flusso elettrico}{39}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Cilindro in campo uniforme}{40}{section.8.4}%
-\contentsline {section}{\numberline {8.5}La legge di Gauss}{40}{section.8.5}%
-\contentsline {section}{\numberline {8.6}La legge di Gauss e di Coulomb}{40}{section.8.6}%
-\contentsline {subsection}{\numberline {8.6.1}Problema svolto}{41}{subsection.8.6.1}%
-\contentsline {section}{\numberline {8.7}Un conduttore carico isolato}{41}{section.8.7}%
-\contentsline {subsection}{\numberline {8.7.1}Problema svolto}{41}{subsection.8.7.1}%
-\contentsline {section}{\numberline {8.8}Gauss per simmetria cilidrica}{42}{section.8.8}%
-\contentsline {section}{\numberline {8.9}Gauss per simmetria piana}{42}{section.8.9}%
-\contentsline {paragraph}{Superficie gaussiana:}{42}{paragraph*.20}%
-\contentsline {section}{\numberline {8.10}Gauss per simmetria sferica}{42}{section.8.10}%
-\contentsline {chapter}{\numberline {9}Potenziale elettrico}{43}{chapter.9}%
-\contentsline {section}{\numberline {9.1}L'aspetto fisico}{43}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Il potenziale elettrico}{43}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Unità di misura}{43}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Il potenziale elettrico}{43}{section.9.4}%
-\contentsline {paragraph}{Inversamente:}{43}{paragraph*.21}%
-\contentsline {section}{\numberline {9.5}Superfici equipotenziali}{43}{section.9.5}%
-\contentsline {section}{\numberline {9.6}Calcolo del potenziale, dato $\vec {E}$}{44}{section.9.6}%
-\contentsline {section}{\numberline {9.7}Potenziale di una carica puntiforma}{44}{section.9.7}%
-\contentsline {section}{\numberline {9.8}Insieme di cariche puntiformi}{44}{section.9.8}%
-\contentsline {subsection}{\numberline {9.8.1}problema}{44}{subsection.9.8.1}%
-\contentsline {section}{\numberline {9.9}Potenziale di un dipolo elettrico}{45}{section.9.9}%
-\contentsline {section}{\numberline {9.10}Potenziale di una distribuzione contitua}{45}{section.9.10}%
+\contentsline {subsection}{\numberline {3.1.1}Rotolamento Puro}{23}{subsection.3.1.1}%
+\contentsline {chapter}{\numberline {4}Modelli atomici}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Modello atomico di Bohr-Sommerfeld}{25}{section.4.1}%
+\contentsline {part}{II\hspace {1em}Fisica 2}{27}{part.2}%
+\contentsline {chapter}{\numberline {5}programma}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Base}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Argomenti aggiuntivi}{29}{section.5.2}%
+\contentsline {chapter}{\numberline {6}La legge di Couloumb}{31}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduzione}{31}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}La carica elettrica}{31}{subsection.6.1.1}%
+\contentsline {subsubsection}{Le proprietà delle cariche}{31}{subsubsection*.9}%
+\contentsline {subsubsection}{Conduttori e isolanti}{32}{subsubsection*.10}%
+\contentsline {subsection}{\numberline {6.1.2}Carica indotta}{32}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Legge di Coulomb}{32}{section.6.2}%
+\contentsline {subsubsection}{Riassunto sui vettori}{32}{subsubsection*.11}%
+\contentsline {paragraph}{Componenti:}{32}{paragraph*.12}%
+\contentsline {paragraph}{Modulo e angolo:}{32}{paragraph*.13}%
+\contentsline {paragraph}{Versore:}{32}{paragraph*.14}%
+\contentsline {paragraph}{Sommare:}{32}{paragraph*.15}%
+\contentsline {subsection}{\numberline {6.2.1}Unità do misura}{33}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}La costante dielettrica del vuoto}{33}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Forze multiple}{33}{subsection.6.2.3}%
+\contentsline {paragraph}{Attenzione:}{33}{paragraph*.16}%
+\contentsline {section}{\numberline {6.3}Teorema del guscio}{33}{section.6.3}%
+\contentsline {section}{\numberline {6.4}La quantizzazione della carica}{33}{section.6.4}%
+\contentsline {section}{\numberline {6.5}La conservazione della carica}{33}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Verifica}{33}{section.6.6}%
+\contentsline {paragraph}{Soluzione primo problema}{34}{paragraph*.17}%
+\contentsline {paragraph}{Soluzione secondo problema}{34}{paragraph*.18}%
+\contentsline {chapter}{\numberline {7}Campi elettrici}{35}{chapter.7}%
+\contentsline {section}{\numberline {7.1}L'aspetto fisico}{35}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Il campo elettrico}{35}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Linee di campo elettrico}{35}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Altro esempio delle linee di campo}{36}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Campo $\vec {E}$ di una carica puntiforme}{36}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Il principio di sovrapposizione}{36}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Verifica}{36}{section.7.7}%
+\contentsline {subsection}{\numberline {7.7.1}Soluzione}{37}{subsection.7.7.1}%
+\contentsline {section}{\numberline {7.8}Campo $\vec {E}$ di un dipolo elettrico}{37}{section.7.8}%
+\contentsline {section}{\numberline {7.9}Misura della carica elementare}{38}{section.7.9}%
+\contentsline {subsection}{\numberline {7.9.1}Millikan 1910}{38}{subsection.7.9.1}%
+\contentsline {subsubsection}{Problema svolto}{38}{subsubsection*.19}%
+\contentsline {section}{\numberline {7.10}Prodotto scalare}{38}{section.7.10}%
+\contentsline {section}{\numberline {7.11}Prodotto vettoriale}{38}{section.7.11}%
+\contentsline {section}{\numberline {7.12}Dipolo in un campo elettrico}{38}{section.7.12}%
+\contentsline {section}{\numberline {7.13}Energia potenziale di un dipolo elettrico}{39}{section.7.13}%
+\contentsline {section}{\numberline {7.14}Problema}{40}{section.7.14}%
+\contentsline {chapter}{\numberline {8}La legge di Gauss}{41}{chapter.8}%
+\contentsline {section}{\numberline {8.1}L'aspetto fisico}{41}{section.8.1}%
+\contentsline {section}{\numberline {8.2}La superficie Gaussiana}{41}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Il flusso elettrico}{41}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Cilindro in campo uniforme}{42}{section.8.4}%
+\contentsline {section}{\numberline {8.5}La legge di Gauss}{42}{section.8.5}%
+\contentsline {section}{\numberline {8.6}La legge di Gauss e di Coulomb}{42}{section.8.6}%
+\contentsline {subsection}{\numberline {8.6.1}Problema svolto}{43}{subsection.8.6.1}%
+\contentsline {section}{\numberline {8.7}Un conduttore carico isolato}{43}{section.8.7}%
+\contentsline {subsection}{\numberline {8.7.1}Problema svolto}{43}{subsection.8.7.1}%
+\contentsline {section}{\numberline {8.8}Gauss per simmetria cilidrica}{44}{section.8.8}%
+\contentsline {section}{\numberline {8.9}Gauss per simmetria piana}{44}{section.8.9}%
+\contentsline {paragraph}{Superficie gaussiana:}{44}{paragraph*.20}%
+\contentsline {section}{\numberline {8.10}Gauss per simmetria sferica}{44}{section.8.10}%
+\contentsline {chapter}{\numberline {9}Potenziale elettrico}{45}{chapter.9}%
+\contentsline {section}{\numberline {9.1}L'aspetto fisico}{45}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Il potenziale elettrico}{45}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Unità di misura}{45}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Il potenziale elettrico}{45}{section.9.4}%
+\contentsline {paragraph}{Inversamente:}{45}{paragraph*.21}%
+\contentsline {section}{\numberline {9.5}Superfici equipotenziali}{45}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Calcolo del potenziale, dato $\vec {E}$}{46}{section.9.6}%
+\contentsline {section}{\numberline {9.7}Potenziale di una carica puntiforma}{46}{section.9.7}%
+\contentsline {section}{\numberline {9.8}Insieme di cariche puntiformi}{46}{section.9.8}%
+\contentsline {subsection}{\numberline {9.8.1}problema}{46}{subsection.9.8.1}%
+\contentsline {section}{\numberline {9.9}Potenziale di un dipolo elettrico}{47}{section.9.9}%
+\contentsline {section}{\numberline {9.10}Potenziale di una distribuzione contitua}{47}{section.9.10}%
