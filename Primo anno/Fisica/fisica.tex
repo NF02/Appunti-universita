@@ -286,6 +286,79 @@ che
   \frac{\Delta s}{\Delta t}=r\lim_{\Delta t\to 0}\frac{\Delta s}{\Delta t}\to v_{cm}
   =r\omega
 \end{equation*}
+\begin{eqnarray*}
+  \boxed{v_{cm}=r\omega} & \begin{matrix}
+                             \text{Nel moto di rotolamento puro la velocità}\\
+                             \text{periferica è uguale a quella del centro di}\\
+                             \text{mazza.}
+                           \end{matrix}
+\end{eqnarray*}
+Essendo la velocità del centro di massa correlata con correlata con quella periferica
+possiamo scrivere:
+\begin{equation}
+  K=\frac{1}{2} Mv_{cm}^2+\frac{1}{2}I_{cm}\omega^2=\frac{1}{2}[MR^2\omega^2]=\frac{1}{2}
+  [MR^2+I_{cm}]\omega^2
+\end{equation}
+Oppure:
+\begin{equation}
+  K=\frac{1}{2} Mv_{cm}^2+\frac{1}{2}I_{cm}\omega^2=\frac{1}{2}\left[Mv_{cm}^2+I_{cm}
+    \frac{v^2_{cm}}{R^2}\right]=\frac{1}{2}\left[M+\frac{I_{cm}}{R^2}\right]v_{cm}^2
+\end{equation}
+\begin{esempio}
+  Scrivere l'energia cinet4ica di un cilindro di raggio pari a $20.0cm$ e massa $15.5Kg$
+  che rotola senza strisciare su un piano orizzontale con velocità angolare pari a
+  $2.85\frac{rad}{s}$.\\
+  Utilizzando la $({\bf 3.7})$ otteniamo:
+  \begin{equation*}
+    I_{cm}=\frac{1}{2}MR^2
+  \end{equation*}
+  \begin{eqnarray*}
+    K=\frac{1}{2}[MR^2+I_{cm}]\omega^2=\frac{1}{2}\left[MR^2+\frac{1}{2}MR^2\right]
+    \omega^2=\frac{1}{2}MR^2\left[1+\frac{1}{2}\right]\omega^2=\frac{3}{4}MR^2\omega^2\\
+    K=[0,75\times15.5\times(0.2)^2\times(2,85)^2]J=3.78J
+  \end{eqnarray*}
+\end{esempio}
+\subsection{Attrito Volvente}
+\begin{defi}
+  L'attrito volvente è differente dall'attrito. Nel moto roto-traslatorio l'attrito
+  volvente si manifesta nel punto di contatto e nel caso del moto di rotolamento puro
+  calcolato della risoluzione delle equazioni del moto.
+\end{defi}
+\begin{esempio}
+  un disco ({\bf massa $m=10kg$, raggio $R=0.25m$}) è sottoposto ad una frza di 22.5N
+  come in figura. Il piano presenta dell'attrito ed il moto rtisultante e di rotolamento
+  puro. Calcvolare:
+  \begin{enumerate}
+  \item L'accelerazione angolare del disco;
+  \item L'accelerazione lineare del disco;
+  \item Il modulo $f_a$ della forza d'attrito volente.
+  \end{enumerate}
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=12cm]{img/finiti/attrito-volvente.eps}
+    \caption{Esempio del disco appoggiato su un piano}
+    \label{fig:roto-traslario-es}
+  \end{figure}
+  \begin{notab}
+    il disco ruota di rotolamento puro quindi la forza $\vec{F}$ trascina il disco senza
+    solleverlo dal piano 
+  \end{notab}
+  \begin{eqnarray*}
+    \displaystyle\sum \vec{F}_x=M\vec{a}_{cm,x} && \to\boxed{F-f_a=Ma_{cm}}\\
+    \displaystyle\sum \vec{F}_y=M\vec{a}_{cm,y} &\to F+N-P=0& \to \boxed{N=P-F}\\
+    \displaystyle\sum \uptau = I_{cm}\alpha& \to rf_a=\frac{1}{2}Mr^2\alpha
+                                                &\to \boxed{f_a=\frac{Mr}{2}\alpha}\\
+    v_{cm}=\omega r&\to a_{cm}=\frac{d}{dt}(\omega r)=r\frac{d\omega}{dt}=r\alpha
+                                                &\to \boxed{a_{cm}=r\alpha}
+  \end{eqnarray*}
+  \begin{notab}
+    Polo per il calcolo dei momenti è nel $cm$
+  \end{notab}
+  Combinando la prima con la tenza otteniamo
+  \begin{equation*}
+    F-f_a=Ma_{cm}\to 
+  \end{equation*}
+\end{esempio}
 
 \input{pag/modelli atomici.tex}
 \input{pag/fisica2.tex}
