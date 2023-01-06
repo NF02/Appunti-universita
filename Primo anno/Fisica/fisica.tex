@@ -356,9 +356,130 @@ Oppure:
   \end{notab}
   Combinando la prima con la tenza otteniamo
   \begin{equation*}
-    F-f_a=Ma_{cm}\to 
+    F-f_a=Ma_{cm}\to F-\frac{Mr}{2}\alpha = Ma_{cm}\to
+    F-\frac{Mr}{2}\frac{a_{cm}}{r}=Ma_{cm} \to F-\frac{M}{2}a_{cm}=Ma_{cm}
   \end{equation*}
+  \clearpage
+  \begin{eqnarray*}
+    \boxed{a_{cm}=\frac{2}{3}\frac{F}{M}} &\to & \boxed{a_{cm}\left[0.666 \times
+                                                 \frac{25.5}{10}\right]m/s^2=1.70m/s^2}
+  \end{eqnarray*}
+  Quindi dalla quarta otteniamo
+  \begin{eqnarray*}
+    \boxed{\alpha =\frac{a_{cm}}{r}} &\to & \boxed{\alpha
+                                            =\left[\frac{1.70}{0.25}\right]rad/s^2=6.80
+                                            rad/s^2}
+  \end{eqnarray*}
+  E quindi dalla terza otteniamo
+  \begin{eqnarray*}
+    \boxed{f_a=\frac{Mr}{2}\frac{a_m}{r}=\frac{m}{2}a_{cm}} &\to
+    & f_a=\left[\frac{10}{2}\times 1.70\right]N=8.50N
+  \end{eqnarray*}
 \end{esempio}
+\subsubsection{Roto-traslario puro sul piano inclinato}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=16cm]{img/finiti/roto-trasl-3.eps}
+  \caption{Rotolamento puro}
+  \label{fig:roto-puro}
+\end{figure}
+Scegliendo il polo nel centro di massa, il sistema ruota per un asse passante per il
+polo e parallelo al piano inclinato, quindi la (\textbf{3}) porta a:
+\begin{eqnarray*}
+  \uptau = Rf_a\sin\left(\frac{\pi}{2}\right)=I_{cm}\alpha & \to & f_a=\frac{I_{cm}}{R}
+                                                                   \alpha
+\end{eqnarray*}
+Che sostituita nella (\textbf{1}) e cosiderata la seconmda delle (\textbf{3}) porta a:
+\begin{equation*}
+  Mg\sin(\upvartheta)-\frac{I_{cm}}{R}\alpha=Ma_{cm} \to Mg\sin(\upvartheta)-\frac{I_{cm}}{R}
+  \frac{a_{cm}}{R}=Ma_{cm} \to Mg\sin(\upvartheta)-\frac{I_{cm}a_{cm}}{R^2}=Ma_{cm}
+\end{equation*}
+Risolvendo otteniamo:
+\begin{equation*}
+  a_{cm}=\frac{1}{\left[1+\frac{I_{cm}}{MR^2}\right]}g\sin(\upvartheta)
+\end{equation*}
+\begin{notab}
+  In assenza d'assenza d'attrito volvente il corpo trasla senza ruotare ($I_{cm}=0$) ed il
+  risultato coincide con quello a suo tempo trovato per il moto sul piano inclinato.
+\end{notab}
+In funzione della diversa diversa distribuzione della massa attorno al'asse di rotazione
+avremo che
+\begin{enumerate}
+\item $I_{cm,anello}=MR^2$
+\item $I_{cm,disco}=\frac{1}{2}MR^2$ Momento d'inerzia del disco
+\item $I_{cm,sfera}=\frac{2}{5}MR^2$ Momento d'inerzia della sfera
+\end{enumerate}
+\clearpage
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{|ll|c|}
+    \hline
+    && Classifica d'arrivo a fine corsa \\\hline
+    $a_{cm}=\frac{1}{\left[1+\frac{I_{cm}}{MR^2}\right]}g\sin(\vartheta)=
+    \frac{1}{\left[1+\frac{MR^2}{MR^2}\right]}g\sin(\vartheta)=\frac{1}{2}g\sin
+    (\vartheta)$ & Anello & Bronze modal\\\hline
+    $a_{cm}=\frac{1}{\left[1+\frac{I_{cm}}{MR^2}\right]}g\sin(\vartheta)=
+    \frac{1}{\left[1+\frac{1/2MR^2}{MR^2}\right]}g\sin(\vartheta)=\frac{2}{3}g\sin
+    (\vartheta)$ & Disco & Silver Medal\\\hline
+     $a_{cm}=\frac{1}{\left[1+\frac{I_{cm}}{MR^2}\right]}g\sin(\vartheta)=
+    \frac{1}{\left[1+\frac{2/5MR^2}{MR^2}\right]}g\sin(\vartheta)=\frac{5}{7}g\sin
+    (\vartheta)$ & Disco & Winner\\\hline
+  \end{tabular}
+\end{table}
+\subsubsection{Moto Rotazionale e conservazione dell’Energia Meccanica}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=5cm]{img/finiti/yoyo.eps}
+  \caption{Esempio dello yo-yo}
+  \label{fig:rota-meccanica}
+\end{figure}
+\begin{enumerate}
+\item Durante il moto di caduta dello Yo-Yo la sua energia meccanica si conserva.
+  L'energia potenziale sarà trasformata in energia cinetica del centro di massa ed in
+  energia di rotazione attorno al centro di massa. L'energia totale $E_T$ sarà:
+  \begin{align*}
+    E_{T,2}=K_2+U_2=mgy_2+\frac{1}{2}mv_{cm,2}+\frac{1}{2}I_{cm}\omega_2^2=mgy_2\\
+    E_{T,1}=K_1+U_1=mgy_1+\frac{1}{2}mv_{cm,1}+\frac{1}{2}I_{cm}\omega_1^2
+  \end{align*}
+  L'energia totale $E_T$ si conserva e quindi avremo che:
+  \begin{equation*}
+    E_{T,1}=E_{T,2}=\text{costante} \to mgy_2=mgy_1+\frac{1}{2}mv_{cm,1}+\frac{1}{2}I_{cm}
+    \omega_1^2
+  \end{equation*}
+  La corda si svolge sulla periferia dello Yo-Yo con velocità correlata con quella del centro
+  di massa della $v_{cm}=\omega r$ quidni possiamo scrivere che
+  \begin{align*}
+    \frac{1}{2}mv_{cm,1}^2+\frac{1}{2}I_{cm}\omega_2^2=mg(y_2-y_1)\\
+    \frac{1}{2}mv_{cm,1}^2+\frac{1}{2}\frac{1}{2}mr^2\omega^2_1=\frac{1}{2}\left[1+\frac{1}{2}
+    \right] mv^2_{cm,1}=mg(y_2-y_1)\to \frac{3}{4}v_{cm,1}^2=gh
+  \end{align*}
+  Quindi otteniamo in definitiva
+  \begin{equation*}
+    v_{cm,1}^2=\sqrt{\frac{4}{3}gh}
+  \end{equation*}
+  \begin{notab}
+    La velocità del centro di massa è inferiore a quella di caduta libera. Non tutta l'energia
+    è quindi traspororio del centr di massa.\\
+    Una frazione dell'energia totale si è accumulata sotto forma di energia rotazionale
+    attorno al centro di massa.
+  \end{notab}\clearpage
+\item Calcolo dell'energia di rotazione dello Yo-Yo all'altezza $y_1$
+  \begin{align*}
+    E_{R,1}=\frac{1}{2}I_{cm}\omega_1^2\\
+    \boxed{E_{R,1}=\frac{1}{2}I_{cm}\frac{v^2_{cm,1}}{r^2}=\frac{1}{2}\frac{1}{2}mr^2
+    \frac{1}{r^2}\frac{4}{3}gh=\frac{1}{3}mgh}
+  \end{align*}
+\item Calcolo dell'energia di traslazione del $cm$dello Yo-Yo all'altezza $y_2$
+  \begin{equation*}
+    \boxed{E_{cm,1}=\frac{1}{2}mv^2_{cm,1}=\frac{1}{2}m\frac{4}{3}gh=\frac{2}{3}mgh}
+  \end{equation*}
+\item La somma delle due energie deve essere uguale alla variazione di energia
+  potenziale e quindi
+  \begin{equation*}
+    \boxed{E_{cm,1}+E_{R,1}=\frac{2}{3}mgh+\frac{1}{3}mgh=mgh=E_T}
+  \end{equation*}
+\end{enumerate}
+\section{Momento angolare}
 
 \input{pag/modelli atomici.tex}
 \input{pag/fisica2.tex}
