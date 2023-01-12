@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  12 JAN 2023 23:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  11 JAN 2023 21:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**algebraegeometria.tex
-(./algebraegeometria.tex
+**_region_.tex
+(./_region_.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24>
+L3 programming layer <2022-02-24>  !name(algebraegeometria.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/bk10.clo
@@ -1465,8 +1465,8 @@ Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 \c@esercizio=\count450
 \c@osservazione=\count451
 
-(./algebraegeometria.aux)
-\openout1 = `algebraegeometria.aux'.
+(./_region_.aux)
+\openout1 = `_region_.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
 LaTeX Font Info:    ... okay on input line 129.
@@ -1489,8 +1489,7 @@ LaTeX Font Info:    ... okay on input line 129.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 129.
 LaTeX Font Info:    Trying to load font information for T3+cmr on input line 12
 9.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/tipa/t3cmr.fd
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 129.
@@ -1547,9 +1546,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 129.
 LaTeX Info: Redefining \pageref on input line 129.
 LaTeX Info: Redefining \nameref on input line 129.
- (./algebraegeometria.out) (./algebraegeometria.out)
+ (./_region_.out) (./_region_.out)
 \@outlinefile=\write4
-\openout4 = `algebraegeometria.out'.
+\openout4 = `_region_.out'.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1606,25 +1605,27 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 129.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 131
+ !name(algebraegeometria.tex) !offset(-3) 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 134
 .
+
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 131
+LaTeX Font Info:    Trying to load font information for U+msb on input line 134
 .
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 13
-1.
+4.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 13
-1.
+4.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
@@ -1633,34 +1634,33 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-]
-(./algebraegeometria.toc)
+] (./_region_.toc)
 \tf@toc=\write5
-\openout5 = `algebraegeometria.toc'.
+\openout5 = `_region_.toc'.
 
- [3] [4
+[3] [4
 
-] (./algebraegeometria.lot)
+] (./_region_.lot)
 \tf@lot=\write6
-\openout6 = `algebraegeometria.lot'.
+\openout6 = `_region_.lot'.
 
  [5] [6
 
-]
-(./algebraegeometria.lof)
+] (./_region_.lof)
 \tf@lof=\write7
-\openout7 = `algebraegeometria.lof'.
+\openout7 = `_region_.lof'.
 
- (./pag/premesse.tex [7]) (./pag/simboli.tex) [8]
+ (./pag/premesse.tex [7])
+(./pag/simboli.tex) [8]
 Capitolo 1.
 \c@SpaVet=\count460
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-41.
+44.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 1
-64.
+67.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
@@ -1677,7 +1677,7 @@ Capitolo 2.
 ]
 Capitolo 3.
 [13] [14] [15]
-Overfull \hbox (1.34412pt too wide) detected at line 375
+Overfull \hbox (1.34412pt too wide) detected at line 378
 []
  []
 
@@ -1685,27 +1685,25 @@ Overfull \hbox (1.34412pt too wide) detected at line 375
 
 ]
 
-LaTeX Warning: Reference `eqpar' on page 21 undefined on input line 690.
+LaTeX Warning: Reference `eqpar' on page 21 undefined on input line 693.
 
 [21
 
-] [22
-
-] (./algebraegeometria.aux)
+] (./_region_.aux)
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `algebraegeometria.out' has not changed.
+Package rerunfilecheck Info: File `_region_.out' has not changed.
 (rerunfilecheck)             Checksum: 7B4DE9D1415947AAC34C2C9D162AF4D2;1658.
  ) 
 Here is how much of TeX's memory you used:
- 57063 strings out of 478268
- 1405721 string characters out of 5846348
- 2192043 words of memory out of 5000000
+ 57053 strings out of 478268
+ 1405367 string characters out of 5846348
+ 2193025 words of memory out of 5000000
  74285 multiletter control sequences out of 15000+600000
  496944 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,17n,89p,845b,980s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,17n,89p,836b,980s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
 , replaced by a fixed one
@@ -1745,10 +1743,10 @@ ts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dist/fonts
 ype1/public/cm-super/sfti0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
 e1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
 /public/cm-super/sftt1000.pfb>
-Output written on algebraegeometria.pdf (22 pages, 453480 bytes).
+Output written on _region_.pdf (21 pages, 448598 bytes).
 PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
- 291 compressed objects within 3 object streams
- 89 named destinations out of 1000 (max. 500000)
+ 355 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
+ 79 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

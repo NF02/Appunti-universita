@@ -1,11 +1,26 @@
 \documentclass{book}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=3.0cm]{geometry}
 
+%\documentclass[pdftex,10pt,a4paper]{book}
+%\usepackage[paperwidth=19cm,
+%paperheight=26cm, outer=2cm, 
+%top=1.5cm, bottom=1.5cm]{ geometry}
+
+\usepackage[english,italian]{babel} %l'ultima lingua è quella che legge per i titoli
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc,url}
 \usepackage{titlesec}
 \usepackage{easylist}
 \usepackage{hanging}
-\usepackage{hyperref}
-\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=3.0cm]{geometry}
+
+\usepackage[pdftex,colorlinks]{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,
+	urlcolor=cyan,
+}
+\usepackage{hypcap}
 \usepackage{blindtext}
 \usepackage{tipa}
 \usepackage{epigraph}
@@ -13,9 +28,7 @@
 \usepackage{longtable}
 \usepackage{setspace}
 \usepackage{verbatim}
-\usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage[italian]{babel}
 \usepackage{amsmath}
 \usepackage{pbox}
 \usepackage{fancyhdr}
@@ -44,17 +57,14 @@
 \usepackage{exsheets}
 \usepackage{pgfplots}
 \usepackage{amsthm}
-\usepackage{lipsum}%% a garbage package you don't need except to create examples.
-\usepackage{fancyhdr}
+\usepackage{wasysym}
 
-\newtheorem{teorema}{Teorema}
-\newtheorem{definizione}{Definizione}
-\newtheorem {proposizione}{Proposizione}
-\newtheorem{esempio}{Esempio}
-\newtheorem{osservazione}{Osservazione}
-% disegni geometici
 \usepackage{tikz-cd}
+\usepackage{showframe}
+\renewcommand\ShowFrameLinethickness{0.15pt}
+%\renewcommand*\ShowFrameColor{\color{red}}
 
+%\usepackage{showkeys} %serve per mostrare le etichette "tag" o target, va tolta per la versione definitiva;
 
 \SetupExSheets[question]{type=exam}
 
@@ -63,7 +73,7 @@
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 
 \lstset{ 
-  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepa:wckage{xcolor}; should come as last argument
   basicstyle=\footnotesize,        % the size of the fonts that are used for the code
   breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
   breaklines=true,                 % sets automatic line breaking
@@ -91,8 +101,6 @@
   title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
 
-\linespread{1.2} % l'interlinea
-
 \frenchspacing
 
 \newcommand{\abs}[1]{\lvert#1\rvert}
@@ -105,10 +113,18 @@
   \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
   \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
 
-\title{Appunti di Algebra e geometria}
+% definizioni
+\newtheorem{teorema}{Teorema}
+\newtheorem{nota}{Nota}
+\newtheorem{notab}{Nota bene}
+\newtheorem{attenzione}{Attenzione}
+\newtheorem{definizione}{Definizione}
+\newtheorem{proposizione}{Proposizione}
+\newtheorem{esempio}{Esempio}
+\newtheorem{esercizio}{Esercizio}
+\newtheorem{osservazione}{Osservazione}
+\title{Appunti geometria}
 \author{Nicola Ferru}
-\date{}
-\makeindex[columns=3, title=Alphabetical Index, intoc]
 
 \begin{document}
 \maketitle
@@ -513,9 +529,357 @@ In questo paragrafo dimostreremo finalmente che il determinante di una matrice $
 			nulla, in quanto facciamo variare $p$ tra tutti le permutazioni
 			$p_1,p_2,\dots,p_{n!}$ di $n$ elementi, $p_1\mathcal{T},
 			p_2\mathcal{T},\dots,p_{n!}\mathcal{T}$ sono ancora {\em tutte} le
-			permutazioni: per non esserlo, dovrebbe infatti succedere che 
+			permutazioni: per non esserlo, dovrebbe infatti succedere che
+                        $p_i\mathcal{T}=p_j\mathcal{T}$ allora
+                        $p_i\mathcal{T}\mathcal{T}=p_j\mathcal{T}\mathcal{T}$, ovvero, essendo
+                        $\mathcal{T}\mathcal{T}=id,p_i=p_j$.\\
+                        Quindi, a parte il segno, la ({\bf 3.16}) contiene esattamente un
+                        addendo per ogni permutazione, e otteniamo il risultato voluto.
 		\end{proof}
 \end{enumerate}
+\clearpage              
+La proprietà (3) ha l'importante conseguenza che se una matrice ha due {\it righe uguali allora
+  il suo determinante è nullo.}\\
+Infatti, in base alla (3) se $A^\prime$ è ottenuta da $A$ scambiando tra loro due righe allora
+$det(A^\prime)=-det(A)$, ma se le righe scambiate sono proprio le due righe uguali allora
+$A^\prime=A$, da cui concludiamo $det(A)=-det(A)$, ovvero $det(A)=0$. Combinando questo fatto
+con le proprietà (2) e (1) possiamo capire come si comporta il determinante quando eseguiamo
+operazioni elementari del terzo tipo: infatti, supponiamo che $A^\prime$ sia ottenuta da $A$
+sommanda alla sua {\it i-esima} riga $R$, la {\it j-esima} riga $R_j$ moltiplicata per $c$,
+ovvero $A^\prime =\begin{pmatrix}
+R_1\\
+\dots\\
+R_i +cR_j\\
+\dots\\
+R_j\\
+\dots\\
+R_n
+\end{pmatrix}
+$.\\
+Ma allora, per la proprietà (2) e la proprietà (1) ho
+\begin{equation}
+  \det(A^\prime)=\det\begin{pmatrix}
+                     R_1\\
+                     \dots\\
+                     R_i +cR_j\\
+                     \dots\\
+                     R_j\\
+                     \dots\\
+                     R_n
+                   \end{pmatrix}=\det
+                   \begin{pmatrix}
+                     R_1\\
+                     \dots\\
+                     R_i\\
+                     \dots\\
+                     R_j\\
+                     \dots\\
+                     R_n
+                   \end{pmatrix}+\det
+                   \begin{pmatrix}
+                     R_1\\
+                     \dots\\
+                     cR_j\\
+                     \dots\\
+                     R_j\\
+                     \dots\\
+                     R_n
+                   \end{pmatrix}=\det
+                   \begin{pmatrix}
+                     R_1\\
+                     \dots\\
+                     R_i\\
+                     \dots\\
+                     R_j\\
+                     \dots\\
+                     R_n
+                   \end{pmatrix}+c\det
+                   \begin{pmatrix}
+                     R_1\\
+                     \dots\\
+                     R_j\\
+                     \dots\\
+                     R_j\\
+                     \dots\\
+                     R_n
+                   \end{pmatrix}
+\end{equation}
+Ma mentre i primo addendo dopo l'ultima uguaglianza è il determinante della matrice $A$, il
+secondo addendo è nullo, in quanto determinante di una matrice con le righe uguali (compare
+due volte $R_j$). Quindi la (3.17) si legge come
+\begin{equation*}
+  \det(A^\prime)=\det(A)+0=\det(A).
+\end{equation*}
+Ora siamo finalmente pronti a dimostrare il
+\begin{teorema}
+  Una matrice $A$ quadrata di ordine $n$ ha rango $n$ (ovvero ha le righe indipendenti) se e
+  solo se $det (A)\neq 0$.
+  \begin{osservazione}
+    per sapere se $n$ vettori di $\mathds{R}^\prime$ sono linearmente indipendenti oppure
+    dipendenti, si dispongono le loro coordinate in una matrice e si calcola il determinante.
+    \begin{itemize}
+    \item Se $\det \neq 0$, allora i vettori sono lineari indipendenti.
+    \item Se $\det = 0$, allora i vettori sono lineari dipendenti.
+    \end{itemize}
+  \end{osservazione}
+  \begin{proof}
+    Supponiamo che $A$ abbia rango massimo $n$. Allora, come sappiamo, nella matrice $A^\prime$ si
+    ottiene da A mediante operazioni elementari, e come abbiamo visto sopra le operazioni
+    elementari o non modificano il determinante ({\it terzo tipo}) o lo cambiano di segno (prima
+    tipo) o lo moltiplicano per un coefficiente non nullo (secondo tipo), si avrà
+    $\det(A^\prime)=\pm c_1\dots c_m\det (A)$, con $c_1,\dots,c_m\neq 0$, e per dimostrare che
+    $\det(A^\prime)\neq 0$.\\
+    Poiché stiamo dicendo che matrice quadrata a gradini senza righe nulle, $A^\prime$ è della
+    forma
+    \begin{eqnarray*}
+      A^\prime=\begin{pmatrix}
+                 a^\prime_{11} & a^\prime_{12} & \dots &a^\prime_{1n-1}& a^\prime_{1n}\\
+                 0           & a^\prime_{22} & \dots &a^\prime_{2n-1}& a^\prime_{2n}\\
+                               && \vdots\\
+                 0 & 0 & \dots &a^\prime_{n-1n-1}& a^\prime_{n-1n}\\
+                 0 & 0 & \dots & 0 & a^\prime_{nn}
+               \end{pmatrix} & \begin{matrix}
+                                 \text{Triangolare superiore con}\\
+                                 \text{elementi sulla diagonale tutti}\\
+                                 \text{diversi da zero}
+                                 \end{matrix}
+    \end{eqnarray*}
+    con $a^\prime_{11},a^\prime_{12},\dots,a^\prime_{n-1n-1}, a^\prime_{nn}$ tutti divensi da zero.
+    Calcoliamo il determinante di $A^\prime$ sviluppando secondo Laplace rispetto alla prima
+    colonna: essendo $a^\prime_{11}$ l'unico elemento non nullo, si avrà
+    \begin{equation*}
+      \det(A^\prime)=a^\prime_{11}(-1)^{1+1}\det\begin{pmatrix}
+                                                  a^\prime_{22} & \dots &a^\prime_{2n-1}
+                                                  & a^\prime_{2n}\\
+                               		          && \vdots\\
+                  0 & \dots &a^\prime_{n-1n-1}& a^\prime_{n-1n}\\
+                                                  0 & \dots & 0 & a^\prime_{nn}
+                                                \end{pmatrix}
+    \end{equation*}
+    \clearpage
+    Se sviluppiamo ora il cofattore di nuovo secondo Laplace rispetto alla sua prima colonna,
+    che ha come unico elemento non nullo $a_{22}^\prime$, otteniamo
+    \begin{equation*}
+      \det(A^\prime)=a^\prime_{11}(-1)^{1+1}\det\begin{pmatrix}
+                                                  a^\prime_{33} & \dots &a^\prime_{3n-1}
+                                                  & a^\prime_{2n}\\
+                               		          && \vdots\\
+                  0 & \dots &a^\prime_{n-1n-1}& a^\prime_{n-1n}\\
+                                                  0 & \dots & 0 & a^\prime_{nn}
+                                                \end{pmatrix}
+    \end{equation*}
+    e continuando a sviluppare sempre rispetto alla prima colonna otteniamo $\det (A^\prime)=
+    a^\prime_{11}a_{12}^\prime\dots a_{nn}^\prime$. Essendo come abbiamo detto qgli elementi
+    $a^\prime_{11},a_{12}^\prime,\dots, a_{nn}^\prime$ tutti non nulli, si ha, come volevamo,
+    $\det(A^\prime)\neq 0$: la prima implicazione è dimostrata.
+    \begin{osservazione}
+      il $\det$ diuna matrice triangolare è il prodotto degli elementi sulla diagonale
+    \end{osservazione}
+    Per quello che riguarda l'implicazione inversa se $\det (A)\neq 0$ allora $A$ ha rango $n$,
+    essa si dimostra facilmente per assurdo osservando che se $A$ non avesse rango $n$, allora
+    la matrice ridotta $A^\prime$ avrebbe una riga nulla, e sviluppando il suo determinante
+    secondo Laplace proprio rispetto a quella riga otterremmo $\det(A^\prime) = 0$ (in quanto ogni
+    sviluppo andrebbe moltiplicato per zero). ma poiché come abbiamo osservato nel dimostrare la
+    prima implicazione il determinante della matrice ridotta è nullo se e solo se lo è quello
+    della matrice di partenza, allora avremmo anche $\det(A)=0$, contro l'ipotesi.
+  \end{proof}
+  \begin{osservazione}
+    Nell'osservazione <++> abbiamo visto un modo per passare da equazioni parametriche di un
+    piano alla sua equazione cartesiana mediante eliminazione dei parametri $t$ e $s$ per
+    sostituzione. Vediamo ora che grazie al determinante esiste un procedimento più elegante:
+    le equazioni parametriche (\ref{eqpar}) possono essere riscritte nel seguente modo:
+    \begin{equation*}
+      \begin{pmatrix}
+        x\\
+        y\\
+        z
+      \end{pmatrix}
+      =\begin{pmatrix}
+         x_0\\
+         y_0\\
+         z_0
+       \end{pmatrix}
+       +t\begin{pmatrix}
+           l\\
+           m\\
+           n
+         \end{pmatrix}
+         +s\begin{pmatrix}
+            l^\prime\\
+            m^\prime\\
+            n^\prime
+          \end{pmatrix}
+    \end{equation*}
+    ovvero
+    \begin{equation*}
+      \begin{pmatrix}
+        x-x_0\\
+        y-y_0\\
+        z-z_0
+      \end{pmatrix}=t\begin{pmatrix}
+                       l\\
+                       m\\
+                       n
+                     \end{pmatrix} +s
+                     \begin{pmatrix}
+                       l^\prime\\
+                       m^\prime\\
+                       n^\prime
+                     \end{pmatrix}.
+    \end{equation*}
+    Quest'ultima ugualianza ci dice che il vettore $(x-x_0,y-y_0,z-z_0)$ si scrive come
+    combinazione lineare di $(l,m,n)$ e $(l^\prime,m^\prime,n^\prime)$, e quindi che la matrice
+    \begin{equation*}
+      \begin{pmatrix}
+        x-x_0 & l &l^\prime\\
+        y-y_0 & m &m^\prime\\
+        z-z_0 & n & n^\prime
+      \end{pmatrix}
+    \end{equation*}
+    che ha tale vettore come colonne ha rango 2. Questo, per la proprietà appena dimostrata che
+    afferma che una matrice quadrata di ordine n ha rango minore di n se e solo se il suo
+    determinate è zero, equivale a dire che
+    \begin{equation*}
+      \det\begin{pmatrix}
+        x-x_0 & l &l^\prime\\
+        y-y_0 & m &m^\prime\\
+        z-z_0 & n & n^\prime
+      \end{pmatrix}=0
+    \end{equation*}
+    Sviluppando questo determinante, si ottiene quindi un'equazione in $x,y,z$ che è appunto
+    l'equazione cartesiana del piano.
+    \begin{esempio}
+      supponiamo che il piano abbia equazioni parametriche $
+      \begin{cases}
+        x=1+t+s\\
+        y=2-t+2s\\
+        z=3+t-s
+      \end{cases}
+      $.
+    \end{esempio}
+    Allora, la sua equazione cartesiana è data da
+    \begin{equation*}
+      \det
+      \begin{pmatrix}
+        x-1 & 1 &1\\
+        y-2 &-1 & 2\\
+        z-3 &1 & -1
+      \end{pmatrix}
+    \end{equation*}
+    ovvero, sviuppando per sempio secondo Laplace rispetto alla prima colonna,
+    \begin{equation*}
+      (x-1)\det
+      \begin{pmatrix}
+        -1 & 2\\
+        1 & -1
+      \end{pmatrix} -(y-2) \det
+      \begin{pmatrix}
+        1 & 1 \\
+        1 & -1
+      \end{pmatrix}+(z-3)\det
+      \begin{pmatrix}
+        1 &1 \\
+        1 &-1
+      \end{pmatrix}=0
+    \end{equation*}
+    \clearpage
+    cioè, svolgendo i calcoli,
+    \begin{equation*}
+      -(x-1)+2(y-2)+3(z-3)=-x+2y+3z-12=0
+    \end{equation*}
+    Nel caso in cui il piano sia quello passante per tre punti non allineati di coordinate
+    $(x_0,y_0,z_0),(x_1,y_1,z_1),$\\$(x_2,y_2,z_2)$, abbiamo visto nella (<++>) che in tal caso basta
+    prendere $(l,m,n)=(x_1-x_0,y_1-y_0,z_1-z_0)$ e $(l^\prime,m^\prime,n^\prime)=
+    (x_2-x_0,y_2-y_0,z_2-z_0)$, e quindi la (<++>) diventa
+    \begin{equation}
+      \det
+      \begin{pmatrix}
+        x-x_0 &x_1-x_0 & x_2-x_0\\
+        y-y_0 & y_1-y_0 & y_2-y_0\\
+        z-z_0 & z_1-z_0 & z_2-z_0
+      \end{pmatrix}=0
+    \end{equation}
+    che ci da un modo per scrivere subito l'equazione cartesiana del piano che passa per i tre
+    punti.
+  \end{osservazione}
+  \begin{osservazione}
+    Tutti le proprietà del determinante che abbiamo visto valide per operazioni sulle righe sono
+    vere anche se effettuiamo le stesse operazione sulle colonne, ovvero:
+    \begin{enumerate}
+    \item se $A^\prime$ si ottiene da $A$ moltiplicando una colonna di $A$ per $c\in \mathds{K}$,
+      allora $\det(A^\prime)=c\det(A)$
+      \begin{esempio}
+        se $A=
+        \begin{pmatrix}
+          1 & 2\\
+          3 & 4
+        \end{pmatrix}
+        $ e $A^\prime=
+        \begin{pmatrix}
+          5 & 2\\
+          15 & 4
+        \end{pmatrix}
+        $ è la matrice ottenuta da $A$ moltiplicando la prima colonna per $c = 5$, ho $\det(A)=-2$
+        e $\det(A^\prime)=5\times4-10\times3=-10=5\det(A)$.
+      \end{esempio}
+    \item se a una colonna $C_i$ di una matrice $A$ sommiamo una $n$-upla data $v$ (scritta in
+      colonna) si ha
+      \begin{equation*}
+        \det(A^\prime)=\det(A)+\det
+        \begin{pmatrix}
+          C_i & \dots & v & \dots & C_n
+        \end{pmatrix}
+      \end{equation*}
+      \begin{esempio}
+        se alla seconda colonna $C_2$ della matrice $
+        A=\begin{pmatrix}
+            1 & 2 \\
+            3 & 1 
+        \end{pmatrix}
+        $ sommiamo la coppia $v=
+        \begin{pmatrix}
+          0 \\
+          3
+        \end{pmatrix}
+        $, ottenendo così $C^\prime_2=C_2+v=
+        \begin{pmatrix}
+          2 \\
+          1
+        \end{pmatrix} +
+        \begin{pmatrix}
+          0 \\
+          3
+        \end{pmatrix} =
+        \begin{pmatrix}
+          2\\
+          4
+        \end{pmatrix}
+        $, si ha
+        \begin{equation*}
+          \det
+          \begin{pmatrix}
+            1 & 2\\
+            3 & 4
+          \end{pmatrix} =
+          \det\begin{pmatrix}
+                1 & 2 \\
+                3 & 4
+          \end{pmatrix} + \det
+          \begin{pmatrix}
+            1 &0\\
+            3 &3
+          \end{pmatrix}
+        \end{equation*}
+        come può verificato calcolando i determinanti (si ottiene $-2=-5+3$).
+      \end{esempio}
+    \item se $A^\prime$ si ottiene da $A$ scambiando tra loro due colonne, allora $\det(A^\prime)
+      =-\det(A)$
+      \begin{esempio}
+        è la matrice ottenuta da $A$ scambiando tra loro la prima e la seconda colonna,
+        ho $\det(A)=1*4-2*3=-2$ e $\det(A^\prime)=2*3 -1* 4=+2$.       
+      \end{esempio}
+    \end{enumerate}
+  \end{osservazione}
+\end{teorema}
 
-\printindex
 \end{document}
