@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  12 JAN 2023 23:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  13 JAN 2023 00:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1701,7 +1701,7 @@ Package rerunfilecheck Info: File `algebraegeometria.out' has not changed.
 Here is how much of TeX's memory you used:
  57063 strings out of 478268
  1405721 string characters out of 5846348
- 2192043 words of memory out of 5000000
+ 2192042 words of memory out of 5000000
  74285 multiletter control sequences out of 15000+600000
  496944 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1745,7 +1745,7 @@ ts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dist/fonts
 ype1/public/cm-super/sfti0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
 e1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
 /public/cm-super/sftt1000.pfb>
-Output written on algebraegeometria.pdf (22 pages, 453480 bytes).
+Output written on algebraegeometria.pdf (22 pages, 453922 bytes).
 PDF statistics:
  369 PDF objects out of 1000 (max. 8388607)
  291 compressed objects within 3 object streams
