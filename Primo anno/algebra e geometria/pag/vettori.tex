@@ -1,0 +1,73 @@
+\chapter{Vettori}
+\section{Spazio Vettoriale}
+\newtheorem{SpaVet}{Spazio Vettoriale}
+\begin{SpaVet}
+	Uno spazio vettoriale reale (R-spazio vettoriale) è un insieme \textit{V} in
+	cui sono definite un'operazione di \texttt{SOMMA} tra elementi di
+	\textit{V} e un'operazione di \texttt{Prodotto tra un reale} e un elemento
+	di V che soddisfano 8 proprietà:
+\end{SpaVet}
+\begin{enumerate}
+	\item La somma è associativa quando $\forall v_1, \text{ } v_2, \text{ } v_3 
+		\in V$ $\left(v_1+v_2\right)+v_3=v_1+\left(v_2+v_3\right)$;
+	\item La somma è commutativa quando $\forall v_1, v_2 \in V\text{ }
+		v_1+v_2=v_2+v_1$
+	\item Esistenza elemento neutro 0 se e solo se $\forall v\in V \text{ }
+		v+0=0+v=v$
+	\item Esistenza opposto $-v$ se e solo se $\forall v \in V \text{ }
+		v+(-v)=(-v)+v=0$
+	\item Il prodotto per uno scalare è assoluto quando $\forall c_1,c_2 \in
+		R, \forall v\in V \text{ } c_1(c_2v)=(c_1c_2)v$
+	\item Il prodotto per uno scalare è distributiva quando $\forall c_1,c_2 \in
+		R, \forall v\in V \text{ } (c_1+c_2)v=c_1v+c_2v$
+	\item Il prodotto per uno scalare è distributiva quando $\forall c \in
+		R, \forall v_1, v_2\in V \text{ }c(v_1+v_2)=cv_1+cv_2$
+	\item Esistenza elemento neutro 1 quando $\forall v\in V \text{ } 1v=v$
+\end{enumerate}
+\begin{description}
+	\item[ES:] $V_0^2\text{ } V_0^3$
+	\item[ES:] $f:\mathds{R}\to \mathds{R}\text{ } x^2, \text{ } g(x)=e^x, \text{ } f(x)+g(x)=x^2+e^x\text{ } 3f(x)=3x^2$
+	\item[ES:] $\mathds{R}^n$ n-uple di numeri reali
+	\[
+	\begin{matrix}
+		\begin{bmatrix}
+			x_1\\
+			x_2\\
+			\vdots\\
+			x_n
+		\end{bmatrix}+\begin{bmatrix}
+			y_1\\
+			y_2\\
+			\vdots\\
+			y_n
+		\end{bmatrix}=\begin{bmatrix}
+			x_1+y_1\\
+			x_2+y_2\\
+			\vdots\\
+			x_n+y_n
+		\end{bmatrix}&C\in\mathds{R} \text{ } c\begin{bmatrix}
+			x_1\\
+			x_2\\
+			\vdots\\
+			x_n
+		\end{bmatrix}=\begin{bmatrix}
+			cx_1\\
+			cx_2\\
+			\vdots\\
+			cx_n
+		\end{bmatrix}
+	\end{matrix}
+	\]
+	\item[ES:] $\mathds{R}_n[x]$ polinomi di grado $\leq n$ nella variabile $x$ a coefficiente reale
+		\begin{itemize}
+			\item $p(x)=a_0+a_1x+a_2x^2+\dots+a_nx^n$
+			\item $q(x)=b_0+b_1x+b_2x^2+\dots+b_nx^n$
+		\end{itemize}
+	\item[ES:] $\mathds{R}[x]$ polinomio di grado qualsiasi
+		\begin{equation*}
+			\begin{matrix}
+				p(x)+q(x)=a_0+b_0+(a_1+b_1)x+\dots+(a_n+b_n)x^n\\
+				c\in\mathds{R},\text{ } cp(x)=ca_0+ca_1x+ca_2x^2+\dots+ca_nx^n
+			\end{matrix}
+		\end{equation*}
+\end{description}
