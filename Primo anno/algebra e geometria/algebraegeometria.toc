@@ -1,5 +1,5 @@
-\babel@toc {italian}{}\relax 
-\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}
+\babel@toc {italian}{}
 \contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Simboli}{8}{section.0.2}%
 \contentsline {chapter}{\numberline {1}Vettori}{9}{chapter.1}%
@@ -11,3 +11,5 @@
 \contentsline {section}{\numberline {3.2}La definizione di determinante}{14}{section.3.2}%
 \contentsline {section}{\numberline {3.3}La formula di Laplace }{16}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Proprietà del determionante}{18}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Applicazione lineari e prodotto di matrici}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Applicazioni lineari: definizione e esempi}{25}{section.4.1}%

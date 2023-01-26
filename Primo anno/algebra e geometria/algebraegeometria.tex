@@ -136,4 +136,27 @@
 \input{pag/vettori.tex}
 \input{pag/numeri_complessi.tex}
 \input{pag/determinante.tex}
+\chapter{Applicazione lineari e prodotto di matrici}
+\section{Applicazioni lineari: definizione e esempi}
+Inizieremo ora a parlare di funzioni tra spazi vettoriali. Ricordiamo che una funzione $f:X\to Y$ tra due insiemi
+$X$ (detto \textit{dominio}) e $Y$ (detto \textit{codominio}) è una legge che associa a ogni $x\in X$ un ben
+preciso elemento di $Y$, detto \textit{immagine di $x$} e denotato $f(x)$.\\
+Noi studiaeremo le funzioni $f:V\to W$ in cui dominio e codominio $V$ e $W$ sono spazi vettoriali su un certo
+campo $\mathds{K}$, e in particolare studieremo quelle che soddisfano la seguente
+\begin{definizione}
+  Una funzione $f:V\to W$ tra spazi vettoriali si dice \texttt{funzione lineare} (o \textit{applicazione
+    lineare}) se verifica le due seguenti proprietà:
+  \begin{eqnarray}
+    \label{4.1-4.2}
+    f(v+v^{\prime})=f(v)=f(v^\prime) \text{ per ogni } v,v^\prime \in V\\
+    f(cv)=cf(v) \text{ per ogni } v\in V\text{ e ogni scalare }c \in \mathds{K}
+  \end{eqnarray}
+  Limitarsi alla funzione lineare può sembrare molto restritivo:
+  \begin{esempio}
+    si può vedere che se\footnote{Sappiamo che $\mathds{R}^n$ è una spazio vettoriale di dimensione $n$, in
+      particolare per $n=1$ si ottiene $\mathds{R}^1=\mathds{R}$ (che risulta quindi spazio vettoriale come da
+      dimostrazione 1).} 
+  \end{esempio}
+\end{definizione}
 \end{document}
+
