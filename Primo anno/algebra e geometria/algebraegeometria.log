@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021 Gentoo Linux) (preloaded format=pdflatex 2023.1.11)  26 JAN 2023 22:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021 Gentoo Linux) (preloaded format=pdflatex 2023.1.11)  27 JAN 2023 23:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1643,7 +1643,160 @@ LaTeX Warning: Reference `eqpar' on page 21 undefined on input line 461.
 
 ]
 Capitolo 4.
-[25] (./algebraegeometria.aux)
+Package epstopdf Info: Source file: <img/finiti/imgex4-2-1.eps>
+(epstopdf)                    date: 2023-01-27 14:20:59
+(epstopdf)                    size: 48131 bytes
+(epstopdf)             Output file: <img/finiti/imgex4-2-1-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2023-01-27 16:18:44
+(epstopdf)                    size: 6798 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-1-eps-
+converted-to.pdf img/finiti/imgex4-2-1.eps>
+(epstopdf)             \includegraphics on input line 169.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/imgex4-2-1-eps-converted-to.pdf, id=279, 191.71625pt x 211.79124pt>
+
+File: img/finiti/imgex4-2-1-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/imgex4-2-1-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/imgex4-2-1-eps-converted-to.pdf  used on in
+put line 169.
+(pdftex.def)             Requested size: 142.26378pt x 157.16904pt.
+[25 <./img/finiti/imgex4-2-1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/finiti/imgex4-2-2.eps>
+(epstopdf)                    date: 2023-01-27 16:50:04
+(epstopdf)                    size: 63350 bytes
+(epstopdf)             Output file: <img/finiti/imgex4-2-2-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2023-01-27 16:58:38
+(epstopdf)                    size: 7849 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-2-eps-
+converted-to.pdf img/finiti/imgex4-2-2.eps>
+(epstopdf)             \includegraphics on input line 177.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/imgex4-2-2-eps-converted-to.pdf, id=306, 275.0275pt x 157.58875pt>
+File: img/finiti/imgex4-2-2-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/imgex4-2-2-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/imgex4-2-2-eps-converted-to.pdf  used on in
+put line 177.
+(pdftex.def)             Requested size: 170.71652pt x 97.82182pt.
+Package epstopdf Info: Source file: <img/finiti/imgex4-2-3.eps>
+(epstopdf)                    date: 2023-01-27 17:15:09
+(epstopdf)                    size: 48045 bytes
+(epstopdf)             Output file: <img/finiti/imgex4-2-3-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2023-01-27 17:16:31
+(epstopdf)                    size: 6367 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-3-eps-
+converted-to.pdf img/finiti/imgex4-2-3.eps>
+(epstopdf)             \includegraphics on input line 189.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/imgex4-2-3-eps-converted-to.pdf, id=309, 240.9pt x 203.76125pt>
+File: img/finiti/imgex4-2-3-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/imgex4-2-3-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/imgex4-2-3-eps-converted-to.pdf  used on in
+put line 189.
+(pdftex.def)             Requested size: 170.71652pt x 144.40099pt.
+
+
+LaTeX Warning: Reference `matasapplin' on page 26 undefined on input line 196.
+
+Package epstopdf Info: Source file: <img/finiti/imgex4-2-4.eps>
+(epstopdf)                    date: 2023-01-27 18:20:03
+(epstopdf)                    size: 47601 bytes
+(epstopdf)             Output file: <img/finiti/imgex4-2-4-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2023-01-27 18:20:36
+(epstopdf)                    size: 6339 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-4-eps-
+converted-to.pdf img/finiti/imgex4-2-4.eps>
+(epstopdf)             \includegraphics on input line 204.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/imgex4-2-4-eps-converted-to.pdf, id=311, 311.1625pt x 310.15875pt>
+File: img/finiti/imgex4-2-4-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/imgex4-2-4-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/imgex4-2-4-eps-converted-to.pdf  used on in
+put line 204.
+(pdftex.def)             Requested size: 170.71652pt x 170.16663pt.
+[26
+
+ <./img/finiti/imgex4-2-2-eps-converted-to.pdf> <./img/finiti/imgex4-2-3-eps-co
+nverted-to.pdf> <./img/finiti/imgex4-2-4-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/finiti/imgex4-2-5.eps>
+(epstopdf)                    date: 2023-01-27 21:39:23
+(epstopdf)                    size: 63459 bytes
+(epstopdf)             Output file: <img/finiti/imgex4-2-5-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2023-01-27 21:44:47
+(epstopdf)                    size: 7960 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-5-eps-
+converted-to.pdf img/finiti/imgex4-2-5.eps>
+(epstopdf)             \includegraphics on input line 212.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/imgex4-2-5-eps-converted-to.pdf, id=356, 480.79625pt x 413.545pt>
+File: img/finiti/imgex4-2-5-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/imgex4-2-5-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/imgex4-2-5-eps-converted-to.pdf  used on in
+put line 212.
+(pdftex.def)             Requested size: 170.71652pt x 146.83789pt.
+Package epstopdf Info: Source file: <img/finiti/imgex4-2-6.eps>
+(epstopdf)                    date: 2023-01-27 22:06:25
+(epstopdf)                    size: 48371 bytes
+(epstopdf)             Output file: <img/finiti/imgex4-2-6-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2023-01-27 22:06:36
+(epstopdf)                    size: 6561 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-6-eps-
+converted-to.pdf img/finiti/imgex4-2-6.eps>
+(epstopdf)             \includegraphics on input line 220.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/imgex4-2-6-eps-converted-to.pdf, id=357, 240.9pt x 229.85875pt>
+File: img/finiti/imgex4-2-6-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/imgex4-2-6-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/imgex4-2-6-eps-converted-to.pdf  used on in
+put line 220.
+(pdftex.def)             Requested size: 170.71652pt x 162.89569pt.
+Package epstopdf Info: Source file: <img/finiti/imgex4-2-7.eps>
+(epstopdf)                    date: 2023-01-27 22:29:29
+(epstopdf)                    size: 49272 bytes
+(epstopdf)             Output file: <img/finiti/imgex4-2-7-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2023-01-27 22:30:17
+(epstopdf)                    size: 6729 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-7-eps-
+converted-to.pdf img/finiti/imgex4-2-7.eps>
+(epstopdf)             \includegraphics on input line 230.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/imgex4-2-7-eps-converted-to.pdf, id=360, 334.24875pt x 119.44624pt>
+
+File: img/finiti/imgex4-2-7-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/imgex4-2-7-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/imgex4-2-7-eps-converted-to.pdf  used on in
+put line 230.
+(pdftex.def)             Requested size: 227.62204pt x 81.34447pt.
+ [27
+
+ <./img/finiti/imgex4-2-5-eps-converted-to.pdf> <./img/finiti/imgex4-2-6-eps-co
+nverted-to.pdf> <./img/finiti/imgex4-2-7-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/finiti/imgex4-2-8.eps>
+(epstopdf)                    date: 2023-01-27 22:59:38
+(epstopdf)                    size: 47870 bytes
+(epstopdf)             Output file: <img/finiti/imgex4-2-8-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2023-01-27 23:33:53
+(epstopdf)                    size: 6777 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-8-eps-
+converted-to.pdf img/finiti/imgex4-2-8.eps>
+(epstopdf)             \includegraphics on input line 241.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/imgex4-2-8-eps-converted-to.pdf, id=406, 124.465pt x 245.91875pt>
+File: img/finiti/imgex4-2-8-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/imgex4-2-8-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/imgex4-2-8-eps-converted-to.pdf  used on in
+put line 241.
+(pdftex.def)             Requested size: 85.35826pt x 168.65594pt.
+ [28
+
+ <./img/finiti/imgex4-2-8-eps-converted-to.pdf>] (./algebraegeometria.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1651,10 +1804,10 @@ Package rerunfilecheck Info: File `algebraegeometria.out' has not changed.
 (rerunfilecheck)             Checksum: 2B93F5374A94C4077F565B46934D4E13;2204.
  ) 
 Here is how much of TeX's memory you used:
- 54475 strings out of 480943
- 1311741 string characters out of 5907814
+ 54542 strings out of 480943
+ 1313976 string characters out of 5907814
  2120618 words of memory out of 5000000
- 70689 multiletter control sequences out of 15000+600000
+ 70737 multiletter control sequences out of 15000+600000
  431816 words of font info for 103 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,17n,108p,872b,972s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1703,10 +1856,10 @@ st/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/
 public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
 /sfti0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><
 /usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on algebraegeometria.pdf (25 pages, 493901 bytes).
+Output written on algebraegeometria.pdf (28 pages, 530475 bytes).
 PDF statistics:
- 410 PDF objects out of 1000 (max. 8388607)
- 348 compressed objects within 4 object streams
- 106 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 551 PDF objects out of 1000 (max. 8388607)
+ 447 compressed objects within 5 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

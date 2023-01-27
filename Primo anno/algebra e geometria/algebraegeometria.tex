@@ -137,7 +137,7 @@
 \input{pag/numeri_complessi.tex}
 \input{pag/determinante.tex}
 \chapter{Applicazione lineari e prodotto di matrici}
-\section{Applicazioni lineari: definizione e esempi}
+\section{Applicazioni lineari: definizione e esempi\label{applin}}
 Inizieremo ora a parlare di funzioni tra spazi vettoriali. Ricordiamo che una funzione $f:X\to Y$ tra due insiemi
 $X$ (detto \textit{dominio}) e $Y$ (detto \textit{codominio}) è una legge che associa a ogni $x\in X$ un ben
 preciso elemento di $Y$, detto \textit{immagine di $x$} e denotato $f(x)$.\\
@@ -155,7 +155,92 @@ campo $\mathds{K}$, e in particolare studieremo quelle che soddisfano la seguent
   \begin{esempio}
     si può vedere che se\footnote{Sappiamo che $\mathds{R}^n$ è una spazio vettoriale di dimensione $n$, in
       particolare per $n=1$ si ottiene $\mathds{R}^1=\mathds{R}$ (che risulta quindi spazio vettoriale come da
-      dimostrazione 1).} 
+      dimostrazione 1).}  $V=W=\mathds{R}$, le uniche funzioni lineari $f:\mathds{R}\to\mathds{R}$ sono quelle
+    del tipo $f(x)=ax$, con $a\in \mathds{R}$ fissato.
+  \end{esempio}
+  Tuttavia, vediamo subito che tra le applicazioni lineari vi sono funzioni di grante impotanza e utilità in
+  geometria e nello sue applicazioni:
+  \begin{esempio}
+    Dato lo spazio $V_O^2$ dei vettori geometrici applicati nel piano, consideriamo la funzione
+    $f:V_O^2\to V_O^2$ che associa a ogni vettore $\vec{OP}$ il vettore che si ottiene ruotando $\vec{OP}$ di
+    un angolo $\theta$ fissato in senso antiorario attorno all'origine $O$,come nel disegno sequente 
+    \begin{figure}[th]
+      \centering
+        \includegraphics[width=5cm]{img/finiti/imgex4-2-1.eps}
+      \caption{$f:V_O^2\to V_O^2$}
+    \end{figure}
+    Ora, come si vede nel disegno sequente, dati due vettori $\vec{OP}$ e $\vec{OP}^\prime$, sommarli e poi
+    ruotare il vettore risultante oppure prima ruotarli e poi sommare i vettori ruotati è equivalente, ovvero
+    \clearpage
+    \begin{figure}[th]
+      \centering
+        \includegraphics[width=6cm]{img/finiti/imgex4-2-2.eps}
+      \caption{$f(\vec{OP})+f(\vec{OP}^\prime)=f(\vec{OP}+\vec{OP})$}
+    \end{figure}
+    Quindi vale la
+    \begin{equation}
+      f(\vec{OP})+f(\vec{OP}^\prime)=f(\vec{OP}+\vec{OP})
+    \end{equation}
+    che ci dice che questa funzione soddisfala proprietà (\ref{applin}) della Definizione \ref{4.1-4.2}\\
+    Analogamente, dato un vettore $\vec{OP}$ e un numero reale $c$, moltiplicare il vettore per $c$ e poi
+    ruotarlo e poi moltiplicarlo per $c$ è equivalente:
+    \begin{figure}[th]
+      \centering
+        \includegraphics[width=6cm]{img/finiti/imgex4-2-3.eps}
+      \caption{$f(c\vec{OP})=cf(\vec{OP})$}
+    \end{figure}
+    Quindi si ha
+    \begin{equation}
+      f(c\vec{OP})=cf(\vec{OP})
+    \end{equation}
+    che ci dice che questa funzione soddisfa anche la proprietà (\ref{matasapplin}), della definizione
+    \ref{4.1-4.2} -- Concludiamo quindi che le rotazioni attorno a $O$ sono applicazioni lineari dallo
+    spazio vettoriale $V_O^2$ in se stessso.\\
+    Possiamo arrivare alla stessa conclusione anche per altre importanti trasformazioni geometriche: ad
+    esempio, si consideri la riflessione rispetto a una retta $r$ passante per $O$, che manda ogni vettore
+    $\vec{OP}\in V_O^2$ nel vettore simmetrico rispetto alla retta, come nel seguente disegno
+    \begin{figure}[th]
+      \centering
+        \includegraphics[width=6cm]{img/finiti/imgex4-2-4.eps}
+    \end{figure}   
+    Allora, come già fatto per le rotazioni, notiamo che, dati due vettori $\vec{OP}$ e $\vec{OP}^\prime$,
+    sommarli e poi riflettere il vettore risultante oppure prima rifletterli e poi sommare i vettori riflessi
+    è equivalente
+    \clearpage
+    \begin{figure}[th]
+      \centering
+        \includegraphics[width=6cm]{img/finiti/imgex4-2-5.eps}
+    \end{figure}
+    $f\left(\vec{OP}+\vec{OP}^\prime\right)=f\left(\vec{OP}\right)+f\left(\vec{OP}^\prime\right)$ e
+    dato uin vettore $\vec{OP}$ e un numero
+    reale $c$, moltiplicatore il vettore per $c$ e poi rifletterlo oppure prima rifletterlo e poi moltiplicarlo
+    per $c$ è equivalente
+    \begin{figure}[th]
+      \centering
+        \includegraphics[width=6cm]{img/finiti/imgex4-2-6.eps}
+    \end{figure}
+      
+    $f(c\vec{OP})=cf(\vec{OP})$: quindi concludiamo che anche la riflessione rispetto a una retta ce passa per
+    $O$, avendo le proprietà entrambe le proprietà (\ref{4.1-4.2}) richieste nella Definizione (\ref{applin}),
+    è un'applicazione lineare $f:V_O^2\to        V_O^2$.\\
+    Come terzo esempio esempio di applicazione lineare $V_O^2\to V_O^2$ citiamo la propiezione ortogonale,
+    che proieta ortogonalmente i vettori su una retta fissata passante per $O$.
+    \begin{figure}[th]
+      \centering
+        \includegraphics[width=8cm]{img/finiti/imgex4-2-7.eps}
+    \end{figure}
+      
+    per la quale è difficile vedere che valgono ancora le proprieta citate in (\ref{4.1-4.2}).\\
+    Analogamente a quanto visto per rotazioni, riflessioni e proiezioni nel piano, anche le corrispondenti
+    trasformazioni $V_O^3\to V_O^3$ dello spazio tridimensionale come da proprietà (\ref{4.1-4.2}) della
+    Definizione \ref{applin} la rotazione di un angolo fissato $\Theta$ attorno a una retta data passante per $O$
+    (detta ase della rotazione)
+    \clearpage
+    \begin{figure}[th]
+      \centering
+        \includegraphics[width=3cm]{img/finiti/imgex4-2-8.eps}
+    \end{figure}
+    la riflessione rispetto a un piano passante per $O$
   \end{esempio}
 \end{definizione}
 \end{document}
