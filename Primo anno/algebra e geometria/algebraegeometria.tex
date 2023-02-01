@@ -241,7 +241,104 @@ campo $\mathds{K}$, e in particolare studieremo quelle che soddisfano la seguent
         \includegraphics[width=3cm]{img/finiti/imgex4-2-8.eps}
     \end{figure}
     la riflessione rispetto a un piano passante per $O$
+    \begin{figure}[th]
+      \centering
+        \includegraphics[width=6cm]{img/finiti/imgex4-2-9.eps}
+    \end{figure}
+      
+    e la proiezione ortogonale su un piano passante per l'origine $O$:
+    \begin{figure}[th]
+      \centering
+        \includegraphics[width=6cm]{img/finiti/imgex4-2-10.eps}
+    \end{figure}
+    (Quest'ultima può anche essere vista come applicazione $f:V_O^3\to V_O^2$ se vediamo il piano su cui
+    proiettiamo come spazio vettoriale a se stante).
   \end{esempio}
 \end{definizione}
+
+\section{Matrice associata a un'applicazione lineare}
+Una delle caratteristiche fondamentali di un'applicazione lineare $f:V\to W$ è che, se gli spazi $V$ e $W$ hanno
+dimensione finita, allora $f$ può essere rappresentata da una matrice.\\ Vediamo i dettagli: sia $f:V\to W$
+un'applicazione lineare, e siamo $B_V=\left\{v_1,v_2,\dots,v_n\right\}$ e $B_W=\left\{w_1,w_2,\dots,w_n\right\}$
+basi di $V$ e $W$ rispettivamente. Allora, come sappiamo ogni vettore $v\in V$ può essere identificato con una
+$n-$upla $\left(x_1,x_2,\dots,x_n\right)$, quella delle sua coordinate rispetto alla base $B_V$ (ovvero
+$v=x_1v_1+x_2v_2+\dots+x_nv_n$), e analogamente ogni vettore $w\in W$ può rispetto alla base $B_W$ (ovvero
+$w=y_1w_1+y_2w_2+\dots+y_mw_m$). Con questo identificazioni, la $f$ può essere pensata come una funzione
+$\mathds{K}^n\to\mathds{K}^m$ che associa a ogni $n$-upla. Ci proponiamo di trovare l'espressione esplicita di
+tale funzione. A questo scopo, sia $(x_1,\dots,x_n)$ la $n$-upla delle coordinate di un vettore $v\in V$, ovvero
+come abbiamo ricevuto sopra $v=x_1v_1+\dots+x_nv_n$. Allora la sua immagine $f(v)$ sarà
+\begin{equation*}
+  f(v)=f(x_1v_1+\dots+x_nv_n) =
+\end{equation*}
+(usando le proprietà un'applicazione lineare)
+\begin{equation}
+  =f(x_1v_1)+\dots+f(x_nv_n)=x_1f(v_1)+\dots+x_nf(v_n).
+\end{equation}
+Ora, ciascuno dei vettori $f(v_1),f(v_2),\dots,f(v_n)$ che compare nella ({\bf 4.5}) appartiene al codominio $W$
+della funzione, e quindi potrà essere espresso come combinazione lineare dei vettori $w_1,w_2,\dots,w_m$ della
+base $B_W$ fissata per $W$:
+\clearpage
+\begin{equation}
+  f(v_1)=a_{11} w_1+a_{21}w_2+\dots+a_{m1}w_m
+\end{equation}
+\begin{equation*}
+  \vdots
+\end{equation*}
+\begin{equation}
+  f(v_1)=a_{1n} w_1+a_{2n}w_2+\dots+a_{mn}w_m
+\end{equation}
+Ora, sostituendo queste espressioni nella ({\bf 4.5}) si ottiene
+\begin{equation*}
+  f(v)=x_1(a_{11} w_1+a_{21}w_2+\dots+a_{m1}w_m) +\dots+ x_n(a_{1n} w_1+a_{2n}w_2+\dots+a_{mn}w_m)=
+\end{equation*}
+(svolgendo i conti e mettendo in evidenza i vettori)
+\begin{equation}
+  =(a_{11}x_1+\dots+a_{1n}x_n)w_1+\dots+(a_{m1}x_1+\dots+a_{mn}x_n)w_m
+\end{equation}
+Questa uguaglianza ci sta dicendo che le coordinate del vettore $f(v)$ rispetto alla base $B_W=\left\{w_1,w_2,
+  \dots,w_m\right\}$ sono date da $a_{11}x_1+\dots+a_{1n}x_n,\dots,a_{m1}x_1+\dots+a_{mn} x_n$ e quindi che,
+tradotta in coordinate, la nostra applicazione lineare può essere identificata con la funzione $\mathds{K}^n\to
+\mathds{K}^m$ che associa a ogni $n$-upla $(x_1,\dots,x_n)$ la $m$-upla formata dai coefficienti che appiono nella
+({\bf 4.8}), ovvero
+\begin{equation}
+  \begin{pmatrix}
+    x_1\\
+    x_2\\
+    \vdots\\
+    x_n
+  \end{pmatrix} \to
+  \begin{pmatrix}
+    a_{11}x_1+a_{12}x_2+\dots+a_{1n}x_n\\
+    a_{21}x_1+a_{22}x_2+\dots+a_{2n}x_n\\
+    \vdots\\
+    a_{m1}x_1+a_{m2}x_2+\dots+a_{mn}x_n
+  \end{pmatrix}
+\end{equation}
+I coefficienti che compaiono nella ({\bf 4.9}) formano una matrice con $m$ righe e $n$ colonne
+\begin{equation*}
+  A=
+  \begin{pmatrix}
+    a_{11} &a_{12}&\dots&a_{1n}\\
+    a_{21} & a_{22}&\dots& a_{2n}\\
+    \dots\\
+    a_{m1} & a_{m2} &\dots&a_{mn}
+  \end{pmatrix}
+\end{equation*}
+che chiamaremo la \textit{matrice associata all'applicazione lineare rispetto alle basi $B_V$ e $B_W$}. In base
+alle (\textbf{4.6}), \dots{}, (\textbf{4.7}) tale matrice può essere definita come \textit{la matrice che ha sulle
+  colonne le coordinate dei vettori $f(v_1),\dots,f(v_n)$ (ovvero le immagini dei vettori della base $B_V$
+  fissata nel dominio) rispetto alla base $B_W$ fissata nel codominio}.\\
+Denoteremo $M_{B_wB_V}(f)$ la matrice associata a un'applicazione lineare $f:V\to W$ rispetto alle basi $B_V$ e
+$B_W$.\\
+Se dominio e codomio dell'applicazione coincidono, ovvero si ha una funzione linerare $f:V\to V$ (tale
+applicazione si dicono \textit{endomorfismi}), allora è possibile fissare la stessa base $B_V$ sia nel dominio
+che nel codominio, e calcolare la matrice associata $M_{B_wB_V}(f)$. Come vedremo, la matrice associata a
+un'applicazione lineare ci dà tutte le informazioni di cui abbiamo bisogno sull'applicazione, e usando gli
+strumenti imparati nei capitoli precedenti (\textit{rango, determinante}) saremo in grado di capire molte
+proprietà della funzione data. Prima di fare ciò, vediamo subito alcuni esempi di calcolo della matrice
+associata.
+\begin{esempio}
+  
+\end{esempio}
 \end{document}
 

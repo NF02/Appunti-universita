@@ -13,3 +13,4 @@
 \contentsline {section}{\numberline {3.4}Proprietà del determionante}{18}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Applicazione lineari e prodotto di matrici}{25}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Applicazioni lineari: definizione e esempi}{25}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Matrice associata a un'applicazione lineare}{28}{section.4.2}%
