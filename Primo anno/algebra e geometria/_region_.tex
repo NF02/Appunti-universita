@@ -1,4 +1,4 @@
-\documentclass{book}
+\message{ !name(algebraegeometria.tex)}\documentclass{book}
 \usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=3.0cm]{geometry}
 
 %\documentclass[pdftex,10pt,a4paper]{book}
@@ -127,6 +127,9 @@
 \author{Nicola Ferru}
 
 \begin{document}
+
+\message{ !name(algebraegeometria.tex) !offset(-3) }
+
 \maketitle
 \tableofcontents
 \listoftables
@@ -487,35 +490,10 @@ associata.
     \end{equation}
     ci dà una rappresentazione in coordinarte della proiezione.\\
     Ad esempio, il vettore $v=-v_1+v_2$, che ha coordinate $(-1,1)$ rispetto a $B$, viene mandata in base alla
-    \textbf{(4.15)} nel vettore di coordinate
-    \begin{equation*}
-      \begin{bmatrix}
-        \frac{1}{2}(-1)+\frac{1}{2}1, \frac{1}{2}(-1)+\frac{1}{2}1
-      \end{bmatrix}=(0,0)
-    \end{equation*}
-    ovvero nel vettore nullo $\vec{OO}$. Infatti, come si vede dal seguente disegno, tale vettore appartiene
-    alla retta passante per $O$ e ortogonale a $r$, e i vettori che giacciono su questa retta vengono chiaramnte
-    proiettati sul vettore nullo $\vec{OO}$.
-    \begin{figure}[th]
-      \centering
-        \includegraphics[width=6cm]{img/finiti/imgex4-3-7.eps}
-    \end{figure}   
-  \item Come ultimo esempio, prendiamo come funzione $f:V_O^2\to V_O^2$ la riflessione rispetto a una retta
-    fissata $r$ passante per $O$, ovvero l'endomorfismo che associa a ogni vettore $\vec{OP}$ il suo simmetrico
-    rispetto a $r$\footnote{Sappiamo dal primo paragrafo che si tratta di un'applicazione lineare}. Per calcolane
-    la matrice associata $M_B(f)$, consideriamo la stessa base $B=\left\{v_1,v_2\right\}$ usata nell'esempio
-    precedente.
-    \clearpage
-    \begin{figure}[th]
-      \centering
-        \includegraphics[width=4cm]{img/finiti/imgex4-3-8.eps}
-    \end{figure}
-    e notiamo che quando riflettiamo $v_1$ rispetto a $r$ otteniamo $v_2$, ovvero $f(v_1)=v_2$, analogamente
-    quando riflettiamo $v_2$ rispetto a $r$, otteniamo $v_1$ ovvero $f(v_2)=v_1$.\\
-    Quindi, riscrivendo $f(v_1)=v_2$ come $f(v_1)=0v_1+1v_2$ vediamo che le coordinate di $f(v_1)$ rispetto a $B$
-    sono $(0,1)$, e analogamente riscrivendo $f(v_2)=v_1$ 
     
   \end{enumerate}
 \end{esempio}
 \end{document}
 
+
+\message{ !name(algebraegeometria.tex) !offset(-499) }
