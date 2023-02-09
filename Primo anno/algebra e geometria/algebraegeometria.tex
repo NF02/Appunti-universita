@@ -513,9 +513,121 @@ associata.
     e notiamo che quando riflettiamo $v_1$ rispetto a $r$ otteniamo $v_2$, ovvero $f(v_1)=v_2$, analogamente
     quando riflettiamo $v_2$ rispetto a $r$, otteniamo $v_1$ ovvero $f(v_2)=v_1$.\\
     Quindi, riscrivendo $f(v_1)=v_2$ come $f(v_1)=0v_1+1v_2$ vediamo che le coordinate di $f(v_1)$ rispetto a $B$
-    sono $(0,1)$, e analogamente riscrivendo $f(v_2)=v_1$ 
-    
+    sono $(0,1)$, e analogamente riscrivendo $f(v_2)=v_1$ come $f(v_1)=1v_1+0v_2$ vediamo che le
+    coordinate di $f(v_2)$ rispetto a $B$ sono $(1,0)$: disponendo tale coordinate in colonna,
+    come previsto dalla definizione della matrice associata, si ottiene
+    \begin{equation*}
+      M_B(f)=
+      \begin{pmatrix}
+        0 & 1\\
+        1 & 0
+      \end{pmatrix}
+    \end{equation*}
+    Se dato sempre lo stesso endomorfismo, consideriamo invece la base $B^\prime= \{v_1^\prime,
+    v^\prime_2$ come nel disegno seguente
+    \begin{figure}[th]
+      \centering
+        \includegraphics[width=4cm]{img/finiti/imgex4-3-9.eps}
+    \end{figure}
+    allora si ha che $f(v_1^\prime)=v_1^\prime$ (il vettore $v_1^\prime$ sta sulla retta e quindi
+    la riflessione rispetto alla retta lo lascia invariato) e $f(v^\prime_2)=-v^\prime_2$ (il
+    vettore $v_2^\prime$ è perpen dicolare alla fetta quindi riflettendolo esso cambia verso),
+    cioè $f(v_1^\prime)=1v^\prime_1+0v^\prime_2$ e $f(v_2)=0v_1^\prime+(-1)v_2^\prime$ e quindi
+     \begin{equation*}
+      M_{B^\prime}(f)=
+      \begin{pmatrix}
+        1 & 0\\
+        0 & -1
+      \end{pmatrix}
+    \end{equation*}
+    Questo esempio illustra il fatto, ovvio che la matrice associata dipenda dalla scelta delle
+    basi.
   \end{enumerate}
 \end{esempio}
+
+\section{Iniettività e suriettività delle applicazioni lineari}
+\label{sec:inie_surie_app_lin}
+Il primo problema che affronteremo sulla applicazioni lineari è determinare quando una tale
+funzione è iniettiva, suriettiva o biiettiva.
+
+\subsection{Richiami generali}
+\label{sec:inie_surie_app_lin_ric_gen}
+Ricordiamo che una funzione $f:A\to B$ tra due insiemi $A$ e $B$ si dice \textit{suriettiva} se
+ogni elemento del codominio $B$ risulta essere immagine di qualche elemento di $A$ (ovvero, se
+per ogni $b\in B$ esiste un $a\in A$ tale che $f(a)=b$).\\
+Ad esempio, delle funzioni rappresentate nel seguente disegno, la prima non è
+suriettiva\footnote{L'elemento $c\in B$ non è immagine di nessun elemento di $A$},
+mentre, la seconda si.
+\begin{figure}[th]
+  \centering
+  \includegraphics[width=8cm]{img/finiti/imgex4-4-1.eps}
+  \caption{differenza tra iniettivo e suriettivo}
+\end{figure}
+Un modo alternativo di dire che una funzione èsuriettiva è fare riferimento alla cosidetta 
+\textit{immagine} $I_m(f)$ di f: per definizione, l'immagine di una funzione $f:A\to B$ è il
+sottoinsieme di $B$ costituito da futti gli elementi che sono immagine di qualche elemento di $A$
+(in riferimento ai disegni, quegli elementi ``raggiunti da una freccia che provviene da A''),
+ovvero
+\begin{equation*}
+  I_m(f)=\{b\in B | b=f(a) \text{ per qualche } a \in A\}
+\end{equation*}
+Ad esempio, la funzione sopra nel disegno precedente ha $I_m(f)=\{a,b\}$, mentre la funzione
+sotto ha $I_m(f)=\{a,b,c\}$ç una funzione è suriettiva esattamente quando $I_m(f)=B$, ovvero
+l'immagine coincide con tutto il codominio\footnote{Dire $I_m(f)=B$ significa in effetti dire
+  che ogni elemento di $B$ è immagine di quelche elemento di $A$}.
+\begin{figure}[th]
+  \centering
+  \includegraphics[width=8cm]{img/finiti/imgex4-4-2.eps}
+\end{figure}
+
+La nozione di iniettività può essere riformata tramite il concetto di \textit{controimmagine}:
+dato un elemento $b$ del codomiono $B$, la sua controimmagine, denotata $f^{-1}(b)$, è l'insieme
+di tutti gli elementi di $A$ che hanno $b$ come immagine, ovvero
+\begin{equation*}
+  f^{-1}(b)=\{a\in A|f(a)=b\}
+\end{equation*}
+Dal momento che una funzione è iniettiva quando non esistono dhe elementi diversi che hanno la
+stessa immagine, dire che una funzione è iniettiva quivale a dire che tutte le controimmagini
+che non siano vuote\footnote{se la funzione non è suriettiva, ci saranno elementi $b\in B$ tali
+  che non esiste nessun $a\in A$ con $f(a)=b$ e quindi la cui controimmagine $f^{-1}(b)$ non ha
+  elementi.} hanno un solo elemento.\\
+Ad esempio, per la funzione sofra nel disegno precedente si ha $f^{-1}(a)=\{1,2\},f^{-1}(b)=
+\not{0},f^{-1}(c)=\{3\}$: essa non è iniettiva in quanto la controimmagine di a ha due elementi.\\
+Per la funzione sotto, invece, si ha $f^{-1}(a)=\{1\}, f^{-1}(b)=\{2\},f^{-1}(c)=\{3\},
+f^{-1}(d)=\not{0}$: essa è iniettiva in quanto le controimmagini non vuote hanno tutte un solo
+elemento.\\
+Infine, una funzione si dice \textit{biiettiva} se è sia inittiva che suriettiva. Ad esempio,
+la funzione rappresentata nel sequente disegno è biiettiva.
+\begin{figure}[th]
+  \centering
+  \includegraphics[width=8cm]{img/finiti/imgex4-4-3.eps}
+\end{figure}
+
+\subsection{Suriettività delle applicazione lineari}
+Abbiamo detto che una funzione $f: A\to B$ è suriettiva se e solo se per ogni elemento di
+$b\in B$ esiste un $a\in A$ tale che $f(a)=b$, ovvero equivalentemente se e solo se la sua
+immagine $I_m(f)$ coincide con tutto il codominio.\\
+Nel caso di un'applicazione lineare $f:V\to W$, vale la seguente importante
+\begin{proposizione}
+  Sia $f: V\to W$ un'applicazione lineare. Allora $I_m(f)$ è un sottospazio vettoriale di W.
+\end{proposizione}
+\begin{proof}
+  Dobbiamo verificare che $I_m(f)$ è chiuso rispetto alla somma e al prodotto per scalari. Per la
+  prima proprietà dobbiamo prendere $w,w^\prime\in I_m(f)$ e vedere se $w+w^\prime\in I_m(f)$. Ora,
+  se $w,w^\prime\in I_m(f)$, per definizione di $I_m(f)$ significa che esistono un vettore
+  $v\in V$ tale che $w=f(v)$ e un vettore $v^\prime\in V$ tale che $w^\prime=f(v^\prime)$ e un
+  vettore $v^\prime\in V$ tale che $w=f(v)$ e un vettore $v^\prime \in V$ tale che
+  $w^\prime\in f(v^\prime)$. Ma allora, sfruttando il fatto che $f$ è lineare, si ha
+  \begin{equation*}
+    w+w^\prime=f(v)+f(v^\prime)=f(v*v^\prime)
+  \end{equation*}
+  che ci dice che anche $w+w^\prime$ è immagine di un elemento del dominio (cioè $v+v^\prime$) e
+  quindi $w+w^\prime\in m(f)$.\\
+  Per la chiusura rispetto al prodotto per scalari, dobbiamo verificare che se $w\in I_m(f)$ e
+  $c\in\mathds{K}$, allora $cw\in I_m(f)$. Ma, come prima, se $w\in I_m(f)$ allora per
+  definizione di $I_m(f)$ esiste un vettore $v\in V$ tale che $w=f(v)$, e quindi, usando sempre
+  il fatto che $f$ è linerare,
+  
+\end{proof}
 \end{document}
 

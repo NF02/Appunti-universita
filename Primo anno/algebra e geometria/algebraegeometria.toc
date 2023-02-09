@@ -1,5 +1,5 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
 \contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Simboli}{8}{section.0.2}%
 \contentsline {chapter}{\numberline {1}Vettori}{9}{chapter.1}%
@@ -14,3 +14,6 @@
 \contentsline {chapter}{\numberline {4}Applicazione lineari e prodotto di matrici}{25}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Applicazioni lineari: definizione e esempi}{25}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Matrice associata a un'applicazione lineare}{28}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Iniettività e suriettività delle applicazioni lineari}{33}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Richiami generali}{33}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Suriettività delle applicazione lineari}{35}{subsection.4.3.2}%
