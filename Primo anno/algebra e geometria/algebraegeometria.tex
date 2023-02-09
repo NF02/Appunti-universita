@@ -627,7 +627,123 @@ Nel caso di un'applicazione lineare $f:V\to W$, vale la seguente importante
   $c\in\mathds{K}$, allora $cw\in I_m(f)$. Ma, come prima, se $w\in I_m(f)$ allora per
   definizione di $I_m(f)$ esiste un vettore $v\in V$ tale che $w=f(v)$, e quindi, usando sempre
   il fatto che $f$ è linerare,
-  
+  \begin{equation*}
+    cw=cf(v)=f(cv)
+  \end{equation*}
+  che ci dice che anche $cw$ è immagine di un elemento del dominio (cioè $cv$) e quindi $cw\in I_m(f)$.
+\end{proof}
+Il fatto che $I_m(f)$ sia un sottospazio vettoriale ci dice che per determinarla possiamo trovarne un sistema di
+generatori o una base. Questo si fa facilmente grazie alla seguente
+\begin{proposizione}
+  Sia $f:V\to W$ un'applicazione lineare e siamo $v_1,\dots,v_n$ generatori $V$.
+  Allora le immagini $f(v_1),\dots,f(v_n)$ generano $I_m(f)$ (in simboli, $I_m(f)=[f(v_1),\dots,f(v_n)]$)
+\end{proposizione}
+\begin{proof}
+  Per definizione di generatori, dobbiamo verificare che ogni vettori $w\in I_m(f)$ si può scrivere come
+  combinazione lineare dei vettori $f(v_1),\dots,f(v_n)$. Ora, sappiamo che un vettore $w\in I_m(f)$ è tale che
+  $w\in f(v)$ per qualche $v\in V$. Ma essendo per ipotesi $v_1,\dots,v_n$ generatori di $V$, il vettore
+  $v$ potrà essere scrittocome loro combinazione lineare $v=x_1v_1+\dots+x_nv_n$. Quindi, sfruttando la
+  linearità di $f$ si ha
+  \begin{equation*}
+    w=f(v)=f(x_1v_1+\dots+x_nv_n)=x_1f(v_1)+\dots+x_nf(v_n)
+  \end{equation*}
+  che dimostra prprio che $w$ si scrive come combinazione lineare di $f(v_1),\dots,f(v_n)$, come volevamo.
+\end{proof}
+A questo punto, per determinare se un'applicazione lineare $f:V\to W$ è suriettiva, basta scegliere dei
+generatori $v_1,\dots,v_n$ di $V$, prendere le loro immagini $f(v_1),\dots,f(v_n)$ che, come abbiamo appena
+visto, formano un insieme di generatori di $I_m(f)$, e poi estrarre da quest'ultimo insieme una base eliminando
+gli eventuali vettori che sono dipendenti dai rimanenti: contando i vettori della base ottenuta, sapremo la
+dimensione di $I_m(f)$ e quindi $f$ sarà suriettiva se e solo se\footnote{Questa affermazione è giustificato
+  dal fatto, che non abbiamo dimostrato, che se $S$ è un sottospazio vettoriale di una spazio vettoriale $V$,
+  allora $dim (S)\leq dim (V)$ e le dimensioni coincidono se e solo se $S=V$.} $dim(I_m(f))=dim(W)$.\\
+Vediamo come tale criterio di suriettività si rivela particolarmente utile e di semplice applicazione nel caso
+dell'applicazioni lineare $L_A:\mathds{K}^n\to \mathds{K}^m$ determinata da una matrice $A$, ovvero della forma
+data dalla (4.9)\footnote{Come sappiamo, ogni applicazione lineare puo`essere identificata con una tale
+  funzione grazie alla matrice associata}.\\
+Ora, se come generatori del dominio $V=\mathds{K}^n$ scegliamo i vettori della base canonica
+$v_1=(1.0.\dots,0),v_2=(0,1,\dots,0),v_n=(0,0,\dots,1)$, dalla (4.9) si ha
+\begin{equation*}
+  f(v_1)=L_A
+  \begin{pmatrix}
+    1 \\
+    0 \\
+    \vdots\\
+    0
+  \end{pmatrix}=
+  \begin{pmatrix}
+    a_{11}\\
+    a_{12}\\
+    \vdots\\
+    a_{m1}
+  \end{pmatrix},
+  f(v_2)= L_A
+   \begin{pmatrix}
+    0 \\
+    1 \\
+    \vdots\\
+    0
+   \end{pmatrix}=
+   \begin{pmatrix}
+    a_{12}\\
+    a_{22}\\
+    \vdots\\
+    a_{m2}
+   \end{pmatrix}, \dots, f(v_n)=
+   L_A
+   \begin{pmatrix}
+    0\\
+    0\\
+    \vdots\\
+    1
+   \end{pmatrix}=
+   \begin{pmatrix}
+    a_{1n}\\
+    a_{2n}\\
+    \vdots\\
+    a_{mn}    
+   \end{pmatrix}
+\end{equation*}
+cioè $f(v_1),f(v_2),\dots,f(v_n)$ sono le colonne $C_1,C_2,\dots,C_n$ della matrice $A$ che determina
+l'applicazione. Quindi, in base alla Proposizione \textbf{2}, si ha $I_m(f)=\{C_1,c_2,\dots,C_n\}$ e la funzione
+è suriettiva se e solo se $dim\{C_1,C_2,\dots,C_n\}=dim(\mathds{K}^m)=m$. Ma poiché la dimensione del sottospazio
+generato dalle colonne di una metrice è per definizione il suo rango, concludiamo che \textit{un'applicazione
+  del tipo (4.9) è suriettiva se e solo se il rango di $A$ è uguale a $m$}.
+
+\subsection{Iniettività di applicazioni lineari}
+Mentre nel caso della suriettività abbiamo visto che per verificare se una funzione $f$ è suriettiva basta
+controllare un solo sottoinsieme del codomonio (l'immagine $I_m(f)$), in generale per verificare se $f$ è
+iniettiva dobbiamo a priori controllare tutte le controimmagini degli elementi del codominio e verificare che
+queste, quando non sono vuote, hanno un solo elemento.\\
+Ora, per una generica funzione $f:A\to B$ le controimmagini degli elementi di $B$ sono sottoinsiemi del tutto
+indipendenti tra loro: come nel seguente disegno
+\begin{figure}[th]
+  \centering
+  \includegraphics[width=8cm]{img/finiti/imgex4-4-4.eps}
+\end{figure}
+
+può accadere che un elemento abbia controimmagine costituine costituita da un solo elemento ma altri abbiamo
+controimmagine costituita da più elementi. Vedremo ora invece che le applicazioni lineari hanno il particolare
+comportamento per cui le controimmagini degli elementi di $B$, se non sono vuote, o sono \textit{tutte}
+costituite da un solo elemento (nel quel caso la funzione non è iniettiva): quindi basta controllare una sola
+controimmagine non vuota per capire come sono fatte tutte le altre. Più precisamente abbiamo la seguente
+\begin{proposizione}
+  Sia $f: V\to W$ un'applicazione lineare. Allora valgono i seguenti fatti:
+  \begin{description}
+  \item[(i)] la controimmagine $f^{-1}(\bar{0})=\{v\in V | f(v)=\bar{0}\}$ del vettore nullo di $W$ è un
+    sottomatrice vettoriale di $V$ (detto \textit{nucleo di} $f$ denotato $N(f)$)
+  \item[(ii)] per ogni $w_0\in W$, la controimmagine $f^{-1}(w_0)$ di $w_0$,  non è vuota, è un sottospazio
+    affine di $V$, e più precisamente
+    \begin{equation*}
+      f^{-1}(w_0)=v_0+N(f)=\{v_0+n|n\in N(f)\}
+    \end{equation*}
+    dove $v_0$ è un qualunque elemento fissato d $f^{-1}(w_0)$.
+  \end{description}
+\end{proposizione}
+\begin{proof}
+  Per dimostrare $(i)$, iniziamo con l'osservare che il nucleo di $f$ non è mai vuoto, in quanto il vettore
+  nullo di $V$ (che, con un abuso di notazione, denotiamo ancora $\bar{0}$) è sicuramente tale che
+  $f(\bar{0})=\bar{0}$: infatti, possiamo il vettore nullo $\bar{0}$ di $V$ come $0v$ (dove $v$ è un qualunque
+  vettore di $V$) e quindi, sfruttando la linearità di $f$, si ha $f(\bar{0})=f(0v)=0f(v)=\bar{0}$.
 \end{proof}
 \end{document}
 

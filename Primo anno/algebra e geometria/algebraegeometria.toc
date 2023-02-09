@@ -1,5 +1,5 @@
-\babel@toc {italian}{}\relax 
-\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}
+\babel@toc {italian}{}
 \contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Simboli}{8}{section.0.2}%
 \contentsline {chapter}{\numberline {1}Vettori}{9}{chapter.1}%
@@ -17,3 +17,4 @@
 \contentsline {section}{\numberline {4.3}Iniettività e suriettività delle applicazioni lineari}{33}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Richiami generali}{33}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Suriettività delle applicazione lineari}{35}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Iniettività di applicazioni lineari}{36}{subsection.4.3.3}%
