@@ -758,7 +758,22 @@ controimmagine non vuota per capire come sono fatte tutte le altre. Più precisa
   \textit{(i)} è dimostrata.\\
   Per dimostrare la \textit{(ii)}, ovvero l'ugualianza $v=N(f)=f^{-1}(w_0)$, dobbiamo dimostrare
   che ogni elemento di $v_0+N(f)$ sta nella controimmagine $f^{-1}(w_0)$ appartiene a $v_0+N(f)$
-  (ovvero l'inclusione opposta $f^{-1}(w_0)$)
+  (ovvero l'inclusione opposta $f^{-1}(w_0)$). Per dimostrare la prima inclusione, consideriamo il
+  generico elemento di $v_0=N(f)$, cioè, per definizione di sottospazio affine, un vettore $v$ del
+  tipo $v=v_0+n$, con $n\in N(f)$. Allora
+  \begin{equation*}
+    f(v)=f(v_0+n)=f(v_0)+f(n)=f(v_0)=\bar{0}=f(v_0)=w_0
+  \end{equation*}
+  (nella seconda uguaglianza abbiamo usato il fatto che $f$ è lineare, nella terza il fatto che $n$ appartiene
+  al nucleo di $f$ e quindi $f(n)=\bar{0}$). Abbiamo dimostrato che $f(v)=w_0$, cioè $v$ appartiene alla
+  controimmagine $f^{-1}(w_0)$ di $w_0$, come volevamo.\\
+  Per dimostrare la seconda inclusione, consideriamo un qualunque elemento $v$ della controimmagine di $w_0$,
+  cioè $f(v)=w_0$. Essendo $w_0=f(v_0)$, si ha quindi $f(v)=f(v_0)$, da cui, portando a primo membro,
+  $f(v)-f(v_0)=\bar{0}$. Essendo $f$ lineare, quest'ultima uguaglianza può essere riscritta $f(v-v_0)=\bar{0}$,
+  il che ci dice che il vettore $v-v_0$ appartiene al nucleo $N(f)$ di $f$. Ma allora, osservando che chiaramente
+  $v=v_0+(v-v_0)$, vediamo che $v$ si decompone proprio come somma di $v_0$ e di un elemento del nucleo $N(f)$,
+  $v\in v_0+N(f)$, come volevamo.
 \end{proof}
+
 \end{document}
 
