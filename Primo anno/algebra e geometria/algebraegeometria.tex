@@ -743,7 +743,22 @@ controimmagine non vuota per capire come sono fatte tutte le altre. Più precisa
   Per dimostrare $(i)$, iniziamo con l'osservare che il nucleo di $f$ non è mai vuoto, in quanto il vettore
   nullo di $V$ (che, con un abuso di notazione, denotiamo ancora $\bar{0}$) è sicuramente tale che
   $f(\bar{0})=\bar{0}$: infatti, possiamo il vettore nullo $\bar{0}$ di $V$ come $0v$ (dove $v$ è un qualunque
-  vettore di $V$) e quindi, sfruttando la linearità di $f$, si ha $f(\bar{0})=f(0v)=0f(v)=\bar{0}$.
+  vettore di $V$) e quindi, sfruttando la linearità di $f$, si ha $f(\bar{0})=f(0v)=0f(v)=\bar{0}$.\\
+  Siano $v,v^\prime$ due vettori di $N(f)$, cioè $f(v)=\bar{0}$. Allora, essendo $f$ lineare,
+  \begin{eqnarray*}
+    f(v+v^\prime)=f(v)+f(v^\prime)=\bar{0}+\bar{0}=\bar{0}
+  \end{eqnarray*}
+  e quindi anche $v+v^\prime\in N(f)$: questo ci dice che $N(f)$ è chiuso rispetto alla somma.
+  Dati invece un vettore $v$ del nucleo\footnote{quindi $f(v)=\bar{0}$} e uno scalare $c\in
+  \mathds{K}$, allora, sempre per la linearità di $f$,
+  \begin{eqnarray*}
+    f(cv)=cf(v)=c\bar{0}=\bar{0}
+  \end{eqnarray*}
+  ovvero $cv\in N(f)$: questo ci dice che $N(f)$ chiuso rispetto al prodotto per scalari -- La
+  \textit{(i)} è dimostrata.\\
+  Per dimostrare la \textit{(ii)}, ovvero l'ugualianza $v=N(f)=f^{-1}(w_0)$, dobbiamo dimostrare
+  che ogni elemento di $v_0+N(f)$ sta nella controimmagine $f^{-1}(w_0)$ appartiene a $v_0+N(f)$
+  (ovvero l'inclusione opposta $f^{-1}(w_0)$)
 \end{proof}
 \end{document}
 
