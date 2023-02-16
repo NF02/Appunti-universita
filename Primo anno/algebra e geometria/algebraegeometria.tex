@@ -774,6 +774,37 @@ controimmagine non vuota per capire come sono fatte tutte le altre. Più precisa
   $v=v_0+(v-v_0)$, vediamo che $v$ si decompone proprio come somma di $v_0$ e di un elemento del nucleo $N(f)$,
   $v\in v_0+N(f)$, come volevamo.
 \end{proof}
+La proposizione appena dimostrata afferma in pratica che tutte le controimmagini non vuote
+di un'applicazione lineari $f$ sono ``copie'' o traslati del nucleo $N(f)$: per illustrare ciò,
+consideriamo ad esempio lo spazio $V_0^2$ dei vettori nel piano applicati in = e l'applicazione
+lineare $f:V^2_O \to V^2_O$ data dalla proiezione ortogonale su una retta $r$ fissata.\\
+Come si vede, un vettore viene proiettato sul vettore nullo $\vec{OO}$ (cioè appartiene al
+nucleo $N(f)$ della funzione) se e solo se appartiene alla retta passante per $O$ e ortogonale
+a $r$, come i vettori $\vec{OP}. \vec{OQ}$ del disegno sequente
+\begin{figure}[th]
+  \centering
+  \includegraphics[width=8cm]{img/finiti/imgex4-4-5.eps}
+\end{figure}
+
+Ma, come sappiamo, i vettori che stanno su una retta per $O$ formano un sottospazio vettoriale:
+questo conferma che il nucleo N(f) è un sottospazio vettoriale.
+Per verificare ora che le contro immagini non vuote sono copie traslati del nucleo, consideriamo
+come nel disegno seguente
+\begin{figure}[th]
+  \centering
+  \includegraphics[width=5cm]{img/finiti/imgex4-4-6.eps}
+\end{figure}
+
+Un qualunque vettore $\vec{OP}$ che stia nell'immagine di $f$, diciamo $\vec{OQ}=f(\vec{OP}_0)$:
+la sua controimmagine, oltre che da $\vec{OP}_0$, è data da tutti i vettori $\vec{OP}$ che
+vengono proiettati su $\vec{OQ}$, cioè, come si vede nel disegno, tutti i vettori che hanno
+secondo estremo sulla retta ortogonale a $r$ e passante per $Q$.
+\clearpage
+Ognuno di tali vettori $\vec{OP}$ si decompone copme somma di $\vec{OP}_0$ più un vettore
+$\vec{OR}$ appartenente al nucleo $N(f)$: quindi, come previsto dalla Proposizione <++>, la
+controimmagine $f^{-1}(\vec{OQ})$ è dato dal sottospazio affine $\vec{OP}_0+N(f)$, traslato
+della ortogonale a $r$ e passante per $O$ che rappresenta il nucleo.
+
 
 \end{document}
 
