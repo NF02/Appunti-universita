@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021 Gentoo Linux) (preloaded format=pdflatex 2023.1.29)  21 FEB 2023 23:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021 Gentoo Linux) (preloaded format=pdflatex 2023.1.29)  23 FEB 2023 22:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2122,7 +2122,8 @@ put line 657.
  [37 <./img/finiti/imgex4-4-5-eps-converted-to.pdf> <./img/finiti/imgex4-4-6-ep
 s-converted-to.pdf>]) [38
 
-] (./algebraegeometria.aux)
+] [39]
+(./algebraegeometria.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2130,10 +2131,10 @@ Package rerunfilecheck Info: File `algebraegeometria.out' has not changed.
 (rerunfilecheck)             Checksum: C414875B8FBC6E938EF4C07532B64685;3495.
  ) 
 Here is how much of TeX's memory you used:
- 54717 strings out of 480943
- 1319154 string characters out of 5907814
+ 54724 strings out of 480943
+ 1319261 string characters out of 5907814
  2121618 words of memory out of 5000000
- 70841 multiletter control sequences out of 15000+600000
+ 70844 multiletter control sequences out of 15000+600000
  432592 words of font info for 104 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,17n,108p,872b,972s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2213,25 +2214,25 @@ m/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></u
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type
 1/public/doublestroke/dsrom10.pfb></usr/share/texmf-dist/fonts/type1/public/dou
-blestroke/dsrom8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi100
-0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/f
-onts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfb
-x2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr
-/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-di
-st/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/
-public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
-/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><
-/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texm
-f-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/cm-super/sfti0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
-uper/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.p
-fb>
-Output written on algebraegeometria.pdf (38 pages, 695665 bytes).
+blestroke/dsrom8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols
+/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></u
+sr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-
+dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type
+1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
+er/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb
+></usr/share/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/share/te
+xmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/
+type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm
+-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000
+.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fo
+nts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/cm-super/sfti0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti
+1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on algebraegeometria.pdf (39 pages, 705255 bytes).
 PDF statistics:
- 914 PDF objects out of 1000 (max. 8388607)
- 716 compressed objects within 8 object streams
- 165 named destinations out of 1000 (max. 500000)
+ 926 PDF objects out of 1000 (max. 8388607)
+ 726 compressed objects within 8 object streams
+ 169 named destinations out of 1000 (max. 500000)
  282 words of extra memory for PDF output out of 10000 (max. 10000000)
 

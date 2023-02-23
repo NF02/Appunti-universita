@@ -177,7 +177,104 @@ detto anche \textit{teorema della dimensione} o \textit{teorema nullità più ra
   base di $V$.\\
   Ora, dimostreremo che che le imagini $f(v_{s+1}),\dots,f(v_n)$ di questi ultimi $n-s$ vettori formano una base
   di $I_m(f)$: questo implicherà che $\dim(I_m)=n-s$, che assieme a $\dim(N(f))=s$ e $\dim{V}=n$ ci dà
-  $\dim(N(f))+\dim(I_m(f))=s+(n-s)=n=\dim(V)$, cioè la formula.
+  $\dim(N(f))+\dim(I_m(f))=s+(n-s)=n=\dim(V)$, cioè la formula. \\
+  Per dimostrare che $\{f(v_s+1),\dots,f(v_n)\}$ è una base di $I_m(f)$, dobbiamo dimostrare che i vettori
+  generano $I_m(f)$ e sono linearmente indipendenti. In effeti, noi sappiamo che $v_1,\dots,v_s,v_{s+1},\dots,v_n$
+  una base ee quind un insieme di generatori di $V$, le immagini $f(v_1),\dots,f(v_s),f(v_{s+1}),\dots,f(v_n)$
+  generano $I_m(f)$; ma in questi generatori i primi $f(v_1),\dots,f(v_s)$ sono uguali al vettore nullo $\bar{0}$,
+  in quanto $v_1,\dots,v_s$ sono vettori della base del nucleo fissata inizialmente. Quindi possiamo eliminarli
+  dalla lista $f(v_1),\dots,f(v_s),f(v_{s+1}),\dots,f(v_n)$ dei generatori, concludendo che per generare $I_m(f)$
+  bastano $f(v_{s+1}),\dots,f(v_n)$, che è quello che volevamo.\\
+  Ora dimostriamo che $f(v_{s+1}),\dots,f(v_n)$ sono linearmente indipendenti. Bobbiamo dimostrare che se
+  $c_{s+1}f(v_{s+1})+\dots+c_nf(v_n)=\bar{0}$ allora $c_{s+1}=0,\dots,c_n=0$.\\
+  In effetti, sfruttando il fatto che $f$ è lineare possiamo riscrivere l'uguaglianza
+  $c_{s+1}f(v_{s+1})+\dots+c_nf(v_n)=\bar{0}$ come $f(c_{s+1}v_{s+1}+\dots+c_nv_n)=\bar{0}$: ma questa uguaglianza ci
+  dice che il vettore $c_{s+1}v_{s+1}+\dots+c_nv_n$ appartiene al nucleo $N(f)$, e quindi esso può essere scritto
+  come combinazione lineare di $v_1,\dots,v_s$ (che del nucleo costituiscono una base):
+  \begin{equation*}
+    c_{s+1}v_{s+1}+\dots+c_nv_n=c_1v_1+\dots+c_sv_s.
+  \end{equation*}
+  Portando tutto a primo membro in questa uguaglianza si ottiene
+  \begin{equation*}
+    c_{s+1}v_{s+1}+\dots+c_nv_n-c_1v_1-\dots-c_sv_s=\bar(0)
+  \end{equation*}
+  ovvero una combinazione lineare uguale al vettore nullo dei vettori $v_1,\dots,v_s,v_{s+1},\dots,v_n$:
+  essendo questi vettori indipendenti (sono i vettori che formano la base completata di $V$) necessariamente tutti
+  i coefficiente $c_1,\dots,c_s,c_{s+1},\dots,c_n$ sono uguale a \underline{zero}, e in particolare $c_{s+1}=0,
+  \dots,c_n=0$, che è quello che si restava da dimostrare.
+
+\end{proof}
+\subsubsection{Teorema di completamento a base}
+\label{sssec:teodicomabase}
+\begin{teorema}
+  Sia $V$ uno spazio vettoriale di dimensione $n$ definito su un campo $\mathbb{K}$ e siano $v_1,v_2,\dots,v_p$,
+  vettori linearmente indipendenti $V$m con $p<n$.\\
+  Esistono allora $n-p$ vettori $w_1,w_2,\dots,w_{n-p}$ tali che l'insieme
+  \begin{equation*}
+    \begin{pmatrix}
+      v_1,v_2,\dots,v_p,w_1,w_2,\dots,w_{n-p}
+    \end{pmatrix}
+  \end{equation*}
+  sia una base di $V$.
+\end{teorema}
+\begin{proof}
+  Sia $E$ il sottospazio vettoriale di $V$ generato dai linearmente indipendenti $v_1,v_2,\dots,v_p$, cioè
+  $E:=Span(v_1,v_2,\dots,v_p)$ -- Osserviamo che i vettori $v_1,v_2,\dots,v_p$ non possono generare tutto lo
+  spazio $V$.\\
+  Se così fosse, $v_1,v_2,\dots,v_p$ costituirebbero un sistema di generatori linearmnte indipenti di $V$, e
+  quindi ne formerebbero una base. Di conseguenza sarebbe $p=n$, ma ciò contraddirebbe l'ipotesi $p<n$.\\
+  La precedente osservazione assicura l'esistenza di un vettore $w_1\in V$ tale che $w_1\notin E$. Dal momento
+  che
+  \begin{equation*}
+    w_1\notin E:=Span(v_1,v_2,\dots,v_p)
+  \end{equation*}
+  I vettori $v_1,v_2,\dots,v_p$, $w_1$ sono linearmente indipendenti. E
+  \begin{equation*}
+    E:=Span(v_1,v_2,\dots,v_p) \subset Span(v_1,v_2,\dots,v_p)
+  \end{equation*}
+  Ora:
+  \begin{itemize}
+  \item se $p+1=n=\dim (V)$ allora i vettori
+    \begin{equation*}
+      v_1,v_2,\dots,v_p,w_1
+    \end{equation*}
+    costituiscono una base di $V$. Essi infatti formano un insieme di generatori $V$ linearmnte indipententi, e
+    ciò conclude la dimostrazione.
+  \item Se, invece, $p+1<m$ possiam,o ripetere quanto fatto poc'anzi e trovare un altro vettore $w_2\in V$
+    tale che $w_2\notin E$ e tale che i $p+2$ vettori
+    \begin{equation*}
+      v_1,v_2,\dots,v_p,w_1,w_2
+    \end{equation*}
+    siano linearmente indipendenti.
+  \end{itemize}
+  Continuando in questo modo, dopo $n-p$ passi si compone una base di $V$ che contiene i vettori
+  $v_1,v_2,\dots,v_p$, ed è proprio quanto volevamo dimostrare.
+\end{proof}
+Vediamo ora alcune notevoli conseguenze della formula (\textbf{4.16}):
+\begin{corollario}
+  Sia $f:V\to W$ un'applicazione lineare, con $\dim(V)$ finita.
+  Allora valgono le tre seguenti:
+  \begin{description}
+  \item[(1)] se $\dim(V)>\dim(W)$ allora $f$ non è iniettiva
+  \item[(2)] se $\dim(V)<\dim(W)$ allora $f$ non è suriettiva
+  \item[(3)] se $\dim(V)=\dim(W)$ allora $f$ è iniettiva se e solo se è suriettiva
+  \end{description}
+\end{corollario}
+\begin{proof}
+  Dimostriamo la (1). Per assurdo, se la funzione $f$ fosse iniettiva, il suo nucleo, come abbiamo visto nel
+  corollario 2, sarebbe nullo, ovvero $\dim(N(f))=0$. Sostituendo questo nella formula (4.16), avremmo
+  $\dim(V)=\dim(I_m(f))$. Ma essendo $I_m(f)$ un sottospazio di $W$, la sua dimensione è sicuramente minore o
+  uguale a $\dim(W)$, e quindi concluderemmo $\dim(V)\leq \dim(W)$, contro l'ipotesi che $\dim(V)>\dim(W)$. Quindi
+  $f$ non può essere iniettiva.\\
+  Per dimostrare la (2), supponiamo per assurdo che la funzione $f$ sia suriettiva: allora, essendo $I_m(f)=W$,
+  avremmo $\dim(I_m(f))=\dim(N(f))$ che, sostituita nella formula (4.16), ci dà $\dim(V)=\dim(W)+\dim(N(f))$.
+  Poiché $\dim(N(f))$ è un numero reale positivo o nullo, questa ugualianza implica $\dim(V)\geq\dim(W)$, contro
+  l'ipotesi che $\dim(V)<\dim(W)$. Quindi $f$ non può essere suriettiva.\\
+  Infine, dimostriamo la (3). Se $f$ è iniettiva, $dim(N(f))=0$ e quindi la formula (4.16) si riduce a
+  $\dim(I_m(f))=\dim(V)$. Essendo per ipotesi la dimensione di $V$ uguale a quella di $W$, questo significa che
+  $\dim(I_m(f))=\dim(W)$, che implica che $f$ è iniettiva.\\
+  Vicersa, se $f$ è suriettiva, $\dim(I_m(f))=\dim(W)$ e quindi la formula (4.16) si riduce a
+  $\dim(V)=\dim(N(f))+\dim(W).$ 
 \end{proof}
 \end{document}
 
