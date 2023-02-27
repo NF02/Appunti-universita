@@ -1,6 +1,6 @@
 # Appunti Università
 in questo repo pubblico tutti gli Appunti che realizzo con il Markdown e con il LaTeX, ovviamente saranno disponibili le versioni in pdf comodamente scaricabili dalla pagina, tutto quando è sotto licenza mit quindi si può tranquillamente condividere, detto questo buon lavoro e per eventuali collaborazioni contattatemi.
-## Travate degli errori?
+## Trovate degli errori?
 Scrivetemi in privato e vedrò come risolve il problema. Grazie...
 
 ## Ritardi nelle pubblicazioni
