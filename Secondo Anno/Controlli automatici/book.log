@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  27 FEB 2023 17:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  27 FEB 2023 10:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**algebraegeometria.tex
-(./algebraegeometria.tex
+**book.tex
+(./book.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24>
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/book.cls
@@ -1403,18 +1403,6 @@ Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
 )
-(/usr/local/texlive/2022/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
-Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
-
-(/usr/local/texlive/2022/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
-(/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrarymatrix.code.tex
-File: tikzlibrarymatrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibraryquotes.code.tex
-File: tikzlibraryquotes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/eso-pic/showframe.sty
 Package: showframe 2020/10/14 v0.1j showframe (new impl., RN)
 
@@ -1454,47 +1442,36 @@ Package: floatflt 1997/07/16 v. 1.31
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 \epsfxsize=\dimen415
 \epsfysize=\dimen416
-)
-\c@teorema=\count443
-\c@nota=\count444
-\c@notab=\count445
-\c@attenzione=\count446
-\c@definizione=\count447
-\c@proposizione=\count448
-\c@esempio=\count449
-\c@esercizio=\count450
-\c@osservazione=\count451
-\c@corollario=\count452
+) (./book.aux
+(./title/titlepage.aux))
+\openout1 = `book.aux'.
 
-(./algebraegeometria.aux)
-\openout1 = `algebraegeometria.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 130.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 13
-0.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 118.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 11
+8.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    ... okay on input line 118.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1530,9 +1507,9 @@ LaTeX Font Info:    ... okay on input line 130.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \it@ocap on input line 130.
-LaTeX Info: Redefining \it@ccap on input line 130.
-Package hyperref Info: Link coloring ON on input line 130.
+LaTeX Info: Redefining \it@ocap on input line 118.
+LaTeX Info: Redefining \it@ccap on input line 118.
+Package hyperref Info: Link coloring ON on input line 118.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1543,28 +1520,28 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count453
+\c@section@level=\count443
 )
-LaTeX Info: Redefining \ref on input line 130.
-LaTeX Info: Redefining \pageref on input line 130.
-LaTeX Info: Redefining \nameref on input line 130.
- (./algebraegeometria.out) (./algebraegeometria.out)
+LaTeX Info: Redefining \ref on input line 118.
+LaTeX Info: Redefining \pageref on input line 118.
+LaTeX Info: Redefining \nameref on input line 118.
+ (./book.out) (./book.out)
 \@outlinefile=\write4
-\openout4 = `algebraegeometria.out'.
+\openout4 = `book.out'.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count454
+\scratchcounter=\count444
 \scratchdimen=\dimen417
 \scratchbox=\box142
-\nofMPsegments=\count455
-\nofMParguments=\count456
+\nofMPsegments=\count445
+\nofMParguments=\count446
 \everyMPshowfont=\toks64
-\MPscratchCnt=\count457
+\MPscratchCnt=\count447
 \MPscratchDim=\dimen418
-\MPnumerator=\count458
-\makeMPintoPDFobject=\count459
+\MPnumerator=\count448
+\makeMPintoPDFobject=\count449
 \everyMPtoPDFconversion=\toks65
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1580,7 +1557,7 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count460
+\c@lstlisting=\count450
 
 Package exsheets Info: Loading custom configurations file
 (exsheets)             `exsheets_configurations.cfg'.
@@ -1591,7 +1568,7 @@ cfg
 File: exsheets_configurations.cfg 
 )
 Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 130.
+alian.trsl' found. on input line 118.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-d
 ictionary-english.trsl
@@ -1599,719 +1576,62 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 130.
+or `english'. on input line 118.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 130.
+ on input line 118.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 132
-.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 132
-.
+\openout2 = `./title/titlepage.aux'.
 
-(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 13
-2.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 13
-2.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/wasysym/uwasy.fd
-File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-) [1
+(./title/titlepage.tex
+<./title/logo_CA.jpg, id=7, 142.8537pt x 143.3355pt>
+File: ./title/logo_CA.jpg Graphic file (type jpg)
+<use ./title/logo_CA.jpg>
+Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
+(pdftex.def)             Requested size: 64.28355pt x 64.50037pt.
+ [1
 
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-]
-(./algebraegeometria.toc)
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./title
+/logo_CA.jpg>] [2
+
+])
+No file book.toc.
 \tf@toc=\write5
-\openout5 = `algebraegeometria.toc'.
+\openout5 = `book.toc'.
 
- [3] [4
-
-] (./algebraegeometria.lot)
-\tf@lot=\write6
-\openout6 = `algebraegeometria.lot'.
-
- [5] [6
-
-]
-(./algebraegeometria.lof)
-\tf@lof=\write7
-\openout7 = `algebraegeometria.lof'.
-
- (./pag/premesse.tex [7]) (./pag/simboli.tex)
-(./pag/vettori.tex [8]
-Capitolo 1.
-\c@SpaVet=\count461
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
-.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 2
-9.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/doublestroke/Udsrom.fd
-File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-))
-(./pag/numeri_complessi.tex [9
-
-] [10
-
-]
-Capitolo 2.
-\c@NumComp=\count462
-) (./pag/determinante.tex [11] [12
-
-]
-Capitolo 3.
-[13] [14] [15]
-Overfull \hbox (1.34412pt too wide) detected at line 146
-[]
- []
-
-[16] [17] [18] [19] [20
-
-]
-
-LaTeX Warning: Reference `eqpar' on page 21 undefined on input line 461.
-
-[21
-
-] [22
-
-]) (./pag/applin.tex [23] [24
-
-]
-Capitolo 4.
-Package epstopdf Info: Source file: <img/finiti/imgex4-2-1.eps>
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 48131 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-2-1-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 6798 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-1-eps-
-converted-to.pdf img/finiti/imgex4-2-1.eps>
-(epstopdf)             \includegraphics on input line 31.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-1-eps-converted-to.pdf, id=307, 191.71625pt x 211.79124pt>
-
-File: img/finiti/imgex4-2-1-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-2-1-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-2-1-eps-converted-to.pdf  used on in
-put line 31.
-(pdftex.def)             Requested size: 142.26378pt x 157.16904pt.
-[25 <./img/finiti/imgex4-2-1-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <img/finiti/imgex4-2-2.eps>
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 63350 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-2-2-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 7849 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-2-eps-
-converted-to.pdf img/finiti/imgex4-2-2.eps>
-(epstopdf)             \includegraphics on input line 39.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-2-eps-converted-to.pdf, id=333, 275.0275pt x 157.58875pt>
-File: img/finiti/imgex4-2-2-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-2-2-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-2-2-eps-converted-to.pdf  used on in
-put line 39.
-(pdftex.def)             Requested size: 170.71652pt x 97.82182pt.
-Package epstopdf Info: Source file: <img/finiti/imgex4-2-3.eps>
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 48045 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-2-3-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 6367 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-3-eps-
-converted-to.pdf img/finiti/imgex4-2-3.eps>
-(epstopdf)             \includegraphics on input line 51.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-3-eps-converted-to.pdf, id=336, 240.9pt x 203.76125pt>
-File: img/finiti/imgex4-2-3-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-2-3-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-2-3-eps-converted-to.pdf  used on in
-put line 51.
-(pdftex.def)             Requested size: 170.71652pt x 144.40099pt.
+[3
 
 
-LaTeX Warning: Reference `matasapplin' on page 26 undefined on input line 58.
 
-Package epstopdf Info: Source file: <img/finiti/imgex4-2-4.eps>
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 47601 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-2-4-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 6339 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-4-eps-
-converted-to.pdf img/finiti/imgex4-2-4.eps>
-(epstopdf)             \includegraphics on input line 66.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-4-eps-converted-to.pdf, id=338, 311.1625pt x 310.15875pt>
-File: img/finiti/imgex4-2-4-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-2-4-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-2-4-eps-converted-to.pdf  used on in
-put line 66.
-(pdftex.def)             Requested size: 170.71652pt x 170.16663pt.
-[26
-
- <./img/finiti/imgex4-2-2-eps-converted-to.pdf> <./img/finiti/imgex4-2-3-eps-co
-nverted-to.pdf> <./img/finiti/imgex4-2-4-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <img/finiti/imgex4-2-5.eps>
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 63459 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-2-5-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 7960 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-5-eps-
-converted-to.pdf img/finiti/imgex4-2-5.eps>
-(epstopdf)             \includegraphics on input line 74.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-5-eps-converted-to.pdf, id=383, 480.79625pt x 413.545pt>
-File: img/finiti/imgex4-2-5-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-2-5-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-2-5-eps-converted-to.pdf  used on in
-put line 74.
-(pdftex.def)             Requested size: 170.71652pt x 146.83789pt.
-Package epstopdf Info: Source file: <img/finiti/imgex4-2-6.eps>
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 48371 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-2-6-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 6561 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-6-eps-
-converted-to.pdf img/finiti/imgex4-2-6.eps>
-(epstopdf)             \includegraphics on input line 82.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-6-eps-converted-to.pdf, id=384, 240.9pt x 229.85875pt>
-File: img/finiti/imgex4-2-6-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-2-6-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-2-6-eps-converted-to.pdf  used on in
-put line 82.
-(pdftex.def)             Requested size: 170.71652pt x 162.89569pt.
-Package epstopdf Info: Source file: <img/finiti/imgex4-2-7.eps>
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 49272 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-2-7-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 6729 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-7-eps-
-converted-to.pdf img/finiti/imgex4-2-7.eps>
-(epstopdf)             \includegraphics on input line 92.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-7-eps-converted-to.pdf, id=387, 334.24875pt x 119.44624pt>
-
-File: img/finiti/imgex4-2-7-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-2-7-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-2-7-eps-converted-to.pdf  used on in
-put line 92.
-(pdftex.def)             Requested size: 227.62204pt x 81.34447pt.
- [27
-
- <./img/finiti/imgex4-2-5-eps-converted-to.pdf> <./img/finiti/imgex4-2-6-eps-co
-nverted-to.pdf> <./img/finiti/imgex4-2-7-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <img/finiti/imgex4-2-8.eps>
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 47870 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-2-8-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 6777 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-8-eps-
-converted-to.pdf img/finiti/imgex4-2-8.eps>
-(epstopdf)             \includegraphics on input line 103.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-8-eps-converted-to.pdf, id=433, 124.465pt x 245.91875pt>
-File: img/finiti/imgex4-2-8-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-2-8-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-2-8-eps-converted-to.pdf  used on in
-put line 103.
-(pdftex.def)             Requested size: 85.35826pt x 168.65594pt.
-Package epstopdf Info: Source file: <img/finiti/imgex4-2-9.eps>
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 47225 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-2-9-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 6412 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-9-eps-
-converted-to.pdf img/finiti/imgex4-2-9.eps>
-(epstopdf)             \includegraphics on input line 108.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-9-eps-converted-to.pdf, id=434, 328.22626pt x 170.6375pt>
-File: img/finiti/imgex4-2-9-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-2-9-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-2-9-eps-converted-to.pdf  used on in
-put line 108.
-(pdftex.def)             Requested size: 170.71652pt x 88.75282pt.
-Package epstopdf Info: Source file: <img/finiti/imgex4-2-10.eps>
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 47337 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-2-10-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2023-02-04 18:19:19
-(epstopdf)                    size: 6509 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-10-eps
--converted-to.pdf img/finiti/imgex4-2-10.eps>
-(epstopdf)             \includegraphics on input line 114.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-10-eps-converted-to.pdf, id=435, 328.22626pt x 120.45pt>
-File: img/finiti/imgex4-2-10-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-2-10-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-2-10-eps-converted-to.pdf  used on i
-nput line 114.
-(pdftex.def)             Requested size: 170.71652pt x 62.64905pt.
- [28
-
- <./img/finiti/imgex4-2-8-eps-converted-to.pdf> <./img/finiti/imgex4-2-9-eps-co
-nverted-to.pdf> <./img/finiti/imgex4-2-10-eps-converted-to.pdf>]
-Overfull \hbox (13.93884pt too wide) in paragraph at lines 159--165
-\T1/cmr/m/n/10 Questa ugua-glian-za ci sta di-cen-do che le coor-di-na-te del v
-et-to-re $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 
-)$ \T1/cmr/m/n/10 ri-spet-to al-la ba-se $\OML/cmm/m/it/10 B[] \OT1/cmr/m/n/10 
-= []$
- []
-
-Package epstopdf Info: Source file: <img/finiti/imgex4-3-1.eps>
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 62192 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-3-1-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 7569 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-1-eps-
-converted-to.pdf img/finiti/imgex4-3-1.eps>
-(epstopdf)             \includegraphics on input line 210.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-1-eps-converted-to.pdf, id=479, 185.69376pt x 95.35625pt>
-File: img/finiti/imgex4-3-1-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-3-1-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-3-1-eps-converted-to.pdf  used on in
-put line 210.
-(pdftex.def)             Requested size: 170.71652pt x 87.66768pt.
-[29
-
- <./img/finiti/imgex4-3-1-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <img/finiti/imgex4-3-2.eps>
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 47697 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-3-2-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 6219 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-2-eps-
-converted-to.pdf img/finiti/imgex4-3-2.eps>
-(epstopdf)             \includegraphics on input line 221.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-2-eps-converted-to.pdf, id=505, 102.3825pt x 95.35625pt>
-File: img/finiti/imgex4-3-2-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-3-2-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-3-2-eps-converted-to.pdf  used on in
-put line 221.
-(pdftex.def)             Requested size: 170.71652pt x 159.01154pt.
-Package epstopdf Info: Source file: <img/finiti/imgex4-3-3.eps>
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 48671 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-3-3-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 6454 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-3-eps-
-converted-to.pdf img/finiti/imgex4-3-3.eps>
-(epstopdf)             \includegraphics on input line 247.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-3-eps-converted-to.pdf, id=508, 331.2375pt x 185.69376pt>
-File: img/finiti/imgex4-3-3-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-3-3-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-3-3-eps-converted-to.pdf  used on in
-put line 247.
-(pdftex.def)             Requested size: 170.71652pt x 95.70276pt.
- [30
-
- <./img/finiti/imgex4-3-2-eps-converted-to.pdf> <./img/finiti/imgex4-3-3-eps-co
-nverted-to.pdf>]
-Package epstopdf Info: Source file: <img/finiti/imgex4-3-4.eps>
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 46193 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-3-4-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 5572 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-4-eps-
-converted-to.pdf img/finiti/imgex4-3-4.eps>
-(epstopdf)             \includegraphics on input line 302.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-4-eps-converted-to.pdf, id=540, 180.675pt x 144.54pt>
-File: img/finiti/imgex4-3-4-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-3-4-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-3-4-eps-converted-to.pdf  used on in
-put line 302.
-(pdftex.def)             Requested size: 113.81102pt x 91.04964pt.
-Package epstopdf Info: Source file: <img/finiti/imgex4-3-5.eps>
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 47777 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-3-5-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 6208 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-5-eps-
-converted-to.pdf img/finiti/imgex4-3-5.eps>
-(epstopdf)             \includegraphics on input line 317.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-5-eps-converted-to.pdf, id=541, 214.8025pt x 197.73875pt>
-File: img/finiti/imgex4-3-5-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-3-5-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-3-5-eps-converted-to.pdf  used on in
-put line 317.
-(pdftex.def)             Requested size: 113.81102pt x 104.77086pt.
-Package epstopdf Info: Source file: <img/finiti/imgex4-3-6.eps>
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 46766 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-3-6-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 5892 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-6-eps-
-converted-to.pdf img/finiti/imgex4-3-6.eps>
-(epstopdf)             \includegraphics on input line 330.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-6-eps-converted-to.pdf, id=543, 386.44376pt x 386.44376pt>
-
-File: img/finiti/imgex4-3-6-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-3-6-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-3-6-eps-converted-to.pdf  used on in
-put line 330.
-(pdftex.def)             Requested size: 113.81102pt x 113.81122pt.
-
-[31
-
- <./img/finiti/imgex4-3-4-eps-converted-to.pdf> <./img/finiti/imgex4-3-5-eps-co
-nverted-to.pdf>]
-Missing character: There is no 2 in font dsrom8!
-Package epstopdf Info: Source file: <img/finiti/imgex4-3-7.eps>
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 61528 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-3-7-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 6942 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-7-eps-
-converted-to.pdf img/finiti/imgex4-3-7.eps>
-(epstopdf)             \includegraphics on input line 363.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-7-eps-converted-to.pdf, id=575, 386.44376pt x 386.44376pt>
-
-File: img/finiti/imgex4-3-7-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-3-7-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-3-7-eps-converted-to.pdf  used on in
-put line 363.
-(pdftex.def)             Requested size: 170.71652pt x 170.71388pt.
-[32 <./img/finiti/imgex4-3-6-eps-converted-to.pdf> <./img/finiti/imgex4-3-7-eps
--converted-to.pdf>]
-Package epstopdf Info: Source file: <img/finiti/imgex4-3-8.eps>
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 32322 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-3-8-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-08 14:20:31
-(epstopdf)                    size: 4874 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-8-eps-
-converted-to.pdf img/finiti/imgex4-3-8.eps>
-(epstopdf)             \includegraphics on input line 373.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-8-eps-converted-to.pdf, id=609, 311.1625pt x 306.14375pt>
-File: img/finiti/imgex4-3-8-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-3-8-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-3-8-eps-converted-to.pdf  used on in
-put line 373.
-(pdftex.def)             Requested size: 113.81102pt x 111.97276pt.
-Package epstopdf Info: Source file: <img/finiti/imgex4-3-9.eps>
-(epstopdf)                    date: 2023-02-08 14:58:25
-(epstopdf)                    size: 76238 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-3-9-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-08 14:58:50
-(epstopdf)                    size: 8525 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-9-eps-
-converted-to.pdf img/finiti/imgex4-3-9.eps>
-(epstopdf)             \includegraphics on input line 392.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-9-eps-converted-to.pdf, id=610, 258.9675pt x 338.26375pt>
-File: img/finiti/imgex4-3-9-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-3-9-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-3-9-eps-converted-to.pdf  used on in
-put line 392.
-(pdftex.def)             Requested size: 113.81102pt x 148.66101pt.
-Package epstopdf Info: Source file: <img/finiti/imgex4-4-1.eps>
-(epstopdf)                    date: 2023-02-08 16:03:54
-(epstopdf)                    size: 55517 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-4-1-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-08 16:23:28
-(epstopdf)                    size: 12398 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-4-1-eps-
-converted-to.pdf img/finiti/imgex4-4-1.eps>
-(epstopdf)             \includegraphics on input line 425.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-4-1-eps-converted-to.pdf, id=612, 497.86pt x 469.755pt>
-File: img/finiti/imgex4-4-1-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-4-1-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-4-1-eps-converted-to.pdf  used on in
-put line 425.
-(pdftex.def)             Requested size: 227.62204pt x 214.7782pt.
-Package epstopdf Info: Source file: <img/finiti/imgex4-4-2.eps>
-(epstopdf)                    date: 2023-02-08 16:30:22
-(epstopdf)                    size: 39115 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-4-2-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-08 16:30:36
-(epstopdf)                    size: 6530 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-4-2-eps-
-converted-to.pdf img/finiti/imgex4-4-2.eps>
-(epstopdf)             \includegraphics on input line 442.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-4-2-eps-converted-to.pdf, id=614, 497.86pt x 470.75874pt>
-File: img/finiti/imgex4-4-2-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-4-2-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-4-2-eps-converted-to.pdf  used on in
-put line 442.
-(pdftex.def)             Requested size: 227.62204pt x 215.23712pt.
- [33
-
- <./img/finiti/imgex4-3-8-eps-converted-to.pdf> <./img/finiti/imgex4-3-9-eps-co
-nverted-to.pdf>]
-Package epstopdf Info: Source file: <img/finiti/imgex4-4-3.eps>
-(epstopdf)                    date: 2023-02-08 16:55:39
-(epstopdf)                    size: 36172 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-4-3-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-08 16:56:04
-(epstopdf)                    size: 5949 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-4-3-eps-
-converted-to.pdf img/finiti/imgex4-4-3.eps>
-(epstopdf)             \includegraphics on input line 465.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-4-3-eps-converted-to.pdf, id=650, 497.86pt x 470.75874pt>
-File: img/finiti/imgex4-4-3-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-4-3-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-4-3-eps-converted-to.pdf  used on in
-put line 465.
-(pdftex.def)             Requested size: 227.62204pt x 215.23712pt.
- [34 <./img/finiti/imgex4-4-1-eps-converted-to.pdf> <./img/finiti/imgex4-4-2-ep
-s-converted-to.pdf>] [35 <./img/finiti/imgex4-4-3-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <img/finiti/imgex4-4-4.eps>
-(epstopdf)                    date: 2023-02-10 12:19:50
-(epstopdf)                    size: 64897 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-4-4-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-10 12:19:50
-(epstopdf)                    size: 8028 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-4-4-eps-
-converted-to.pdf img/finiti/imgex4-4-4.eps>
-(epstopdf)             \includegraphics on input line 583.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-4-4-eps-converted-to.pdf, id=691, 342.27875pt x 138.5175pt>
-File: img/finiti/imgex4-4-4-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-4-4-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-4-4-eps-converted-to.pdf  used on in
-put line 583.
-(pdftex.def)             Requested size: 227.62204pt x 92.11931pt.
- [36 <./img/finiti/imgex4-4-4-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <img/finiti/imgex4-4-5.eps>
-(epstopdf)                    date: 2023-02-13 16:51:03
-(epstopdf)                    size: 64942 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-4-5-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-13 16:51:28
-(epstopdf)                    size: 8260 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-4-5-eps-
-converted-to.pdf img/finiti/imgex4-4-5.eps>
-(epstopdf)             \includegraphics on input line 648.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-4-5-eps-converted-to.pdf, id=714, 390.45876pt x 186.6975pt>
-File: img/finiti/imgex4-4-5-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-4-5-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-4-5-eps-converted-to.pdf  used on in
-put line 648.
-(pdftex.def)             Requested size: 227.62204pt x 108.83728pt.
-Package epstopdf Info: Source file: <img/finiti/imgex4-4-6.eps>
-(epstopdf)                    date: 2023-02-13 17:59:54
-(epstopdf)                    size: 63464 bytes
-(epstopdf)             Output file: <img/finiti/imgex4-4-6-eps-converted-to.pdf
->
-(epstopdf)                    date: 2023-02-13 18:00:03
-(epstopdf)                    size: 7782 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-4-6-eps-
-converted-to.pdf img/finiti/imgex4-4-6.eps>
-(epstopdf)             \includegraphics on input line 657.
-Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-4-6-eps-converted-to.pdf, id=715, 232.87pt x 271.0125pt>
-File: img/finiti/imgex4-4-6-eps-converted-to.pdf Graphic file (type pdf)
-<use img/finiti/imgex4-4-6-eps-converted-to.pdf>
-Package pdftex.def Info: img/finiti/imgex4-4-6-eps-converted-to.pdf  used on in
-put line 657.
-(pdftex.def)             Requested size: 142.26378pt x 165.56963pt.
- [37 <./img/finiti/imgex4-4-5-eps-converted-to.pdf> <./img/finiti/imgex4-4-6-ep
-s-converted-to.pdf>]) [38
-
-] [39] (./algebraegeometria.aux)
-
-LaTeX Warning: There were undefined references.
-
-Package rerunfilecheck Info: File `algebraegeometria.out' has not changed.
-(rerunfilecheck)             Checksum: C414875B8FBC6E938EF4C07532B64685;3495.
+] (./book.aux (./title/titlepage.aux))
+Package rerunfilecheck Info: File `book.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 57376 strings out of 478268
- 1414732 string characters out of 5846348
- 2194043 words of memory out of 5000000
- 74477 multiletter control sequences out of 15000+600000
- 498421 words of font info for 105 fonts, out of 8000000 for 9000
+ 55906 strings out of 478268
+ 1375084 string characters out of 5846348
+ 2151259 words of memory out of 5000000
+ 73291 multiletter control sequences out of 15000+600000
+ 479533 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,17n,89p,874b,980s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{Hfootnote.20} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.19} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.18} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.17} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
-, replaced by a fixed one
-
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
-usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</u
-sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/loc
-al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local
-/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/t
-exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
-live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texliv
-e/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
-022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/
-fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2022/texmf-dist
-/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2022/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-
-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/2022/texmf-di
-st/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2022/texmf-dist
-/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2022/texmf-dist/f
-onts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/texmf-dist/fon
-ts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/texmf-dist/fonts
-/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
-ype1/public/cm-super/sfit1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
-/public/cm-super/sfrm0700.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/publi
-c/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/
-cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm
--super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-s
-uper/sfti0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-sup
-er/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super
-/sftt1000.pfb>
-Output written on algebraegeometria.pdf (39 pages, 739461 bytes).
+ 84i,14n,89p,719b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></
+usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></us
+r/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/
+local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/lo
+cal/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/loca
+l/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/
+texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on book.pdf (3 pages, 493568 bytes).
 PDF statistics:
- 963 PDF objects out of 1000 (max. 8388607)
- 726 compressed objects within 8 object streams
- 169 named destinations out of 1000 (max. 500000)
- 282 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 62 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
