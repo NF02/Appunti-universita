@@ -3,6 +3,7 @@
 | ------- | ----- |
 | Matematica analisi 1 | ☑️ |
 | Fisica 1 & 2 | ⚠️ |
+| Algebra e geometria | ⚠️ |
 | Reti di telecomunicazioni | ~ |
 | Calcolatori elettronici | ~ |
 | Informatica elementi | ☑️ |
@@ -11,6 +12,7 @@
 | Matematica applicata | ~ |
 | Elettrotecnica | ~ |
 | Analisi di Sistemi | ~ |
+| Misure elettriche ed elettroniche | ⚠️|
 
 - ☑️ - Terminato
 - ⚠️ - in lavorazione
