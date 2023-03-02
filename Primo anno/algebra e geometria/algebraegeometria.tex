@@ -33,6 +33,7 @@
 \usepackage{pbox}
 \usepackage{fancyhdr}
 \usepackage{cancel}
+\usepackage{gensymb}
 \usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage{multirow}
@@ -285,6 +286,147 @@ oppure nessuno dei due casi previsti: basta mostrare che vale una delle due prop
 anche l'altra.\\
 Ora, supponiamo di aver determinato grazie ai risultati precedenti che un'applicazione lineare $f$ data è
 biiettiva\footnote{Biettiva = sia iniettiva che suriettiva}: nel prossimo paragrafo ci porremo (e risolveremo) il
- problema di determinazione 
+problema di determinazione la sua \textit{inversa}.
+
+\section{Composizione di applicazioni, inversa e prodotto di matrici}
+Ricordiamo che, data una funzione $f:X\to Y$ tra due insiemi, questa si dice \textit{invertibile} se esiste una
+funzione $g:Y\to X$ (detta appunto l'inversa di $f$) tale che
+\begin{eqnarray}
+  f\circ g=id_y, & g\circ f = id_x
+\end{eqnarray}
+dove stiamo denotando con $id$ la funzione che manda ogni elemento in sestessa\footnote{Più precisamente, $id_X$
+  è la funzione $X\to X$ che manda ogni elemento di di $x$ in se stesso e $id_Y$ denota la funzione $Y\to Y$ che
+  manda ogni elemento di $Y$ in se stesso.} e con il simbolo $\circ$ la composizione di funzioni, ovvero
+l'operazione che consiste nell'applicazione prima una funzione e poi l'altra: $f:X\to Y$ e $g: Y\to Z$, tale che
+che \textit{il codominio della prima coincida con il dominio della seconda}, allora, per ogni elemento $x\in X$,
+possiamo applicare prima $f$ ottenendo $f(x)\in Y$, e poi del momento che $Y$ è anche il dominio della $g$
+possiamo applicare la $g$ a $f(x)$, ottenendo $g(f(x))$. In questo modo otteniamo una nuova funzione che associa
+a ogni elemento di $X$ un elemento di $Z$:
+\begin{equation*}
+  \underset{x\to g(f(x))}{f:x\to Z}
+\end{equation*}
+(si nota che a causa dell'ordine in cui appaiono le funzioni in $g(f(x)$), la nuova funzione ottenuta si denota
+$f\circ f$ e si legge ``g composto f'', benché si intenda che stiamo applicando prima la $f$ e poi la $g$).\\
+Quindi le (4.17) significano cheuna funzione $f:X\to Y$ è invertibile se esiste una funzione $g:Y\to X$ tale
+$g(f(x))=x$ per ogni $x\in X$ e $f(g(y))=y$ per ogni $y\in Y$.\\
+Ora, si può vedere che le uniche funzioni $f$ invertibili sono quelle biiettive. Ad esempio, consideriamo
+$X=\{1,2,3\}$, $Y=\{a,b,c\}$ e le funzione $f:X\to Y$ tale che $f(1)=a$, $f(2)=b$ e $f(3)=c$: si tratta
+chiaramente di una funzione biiettiva, che ha come inversa la funzione $g:Y\to X$ rappresentata nel disegno
+seguente:
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=9cm]{img/finiti/imgex4-5-1.eps}
+\end{figure}
+
+Infatti, come si vede subito, si ha
+\begin{eqnarray*}
+  (g\circ f)(1)=g(f(1))=g(a)=1\\
+  (g\circ f)(2)=g(f(2))=g(b)=2\\ 
+  (g\circ f)(3)=g(f(3))=g(c)=3
+\end{eqnarray*}
+Ovvero $g\circ f: \{1,2,3\}\to \{1,2,3\}$ è la funzione che manda ogni elemento dell'insieme $X=\{1,2,3\}$ in se
+stesso (ovvero la funzione identica $id_x$ di $X$) e analogamente
+\begin{eqnarray*}
+  (f\circ g)(a)=f(g(a))=f(1)=a\\
+  (f\circ g)(b)=f(g(b))=f(2)=b\\ 
+  (f\circ g)(c)=f(g(c))=f(3)=c
+\end{eqnarray*}
+ovvero $f \circ g: \{a,b,c\}\to \{a,b,c\}$ è la funzione che manda ogni elemento dell'insieme $Y=\{a,b,c\}$ in se
+stesso (cioè è la funzione identica $id_Y$).\\
+Per giustificare l'affermazione che le funzioni biiettive sono le sole a essere invertibili, consideriamo ad
+esempio la funzione $f$ rappresentata nel seguente disegno, che è iniettiva non suriettiva (quindi non è
+biiettiva)
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=9cm]{img/finiti/imgex4-5-2.eps}
+\end{figure}
+
+Si vede subito che $g\circ f$ è la funzione identica di $\{1,2,3\}$, ma $f\circ g$ non è la funzione identica di
+$\{a,b,c,d\}$ in quanto pur essendo $f(g(a))=f(1)=a$, $f (g(b)) = f (2) = b$ e $f(g(c)) = f (3) = c$, si ha
+$f(g(d))=f(1)=a$, ovvero $f\circ g$ non manda $d$ in se stesso.\\
+SI osserva che non c'è alcun modo di modificare $g$ in modo che $f\circ g$ mandi ogni elemento di $\{a,b,c,d\}$
+in se stesso: qualunque valore assegniato a $d$ non sarà mai $f(g(d))=d$, perché $g(d)$ dovrebbe essere un
+elemento di $\{1,2,3\}$ che viene mandato da $f$ in $d$.\\
+In altre parole, il motivo per cui l'ugualianza $f\circ g =id$ non può mai essere verificata è la non suriettività
+è la non suriettività di $f$. Si dice che $f$ ha un'\textbf{inversa sinistra} ($g\circ f=id$ è verificato) ma non
+ammette un'\textbf{inversa destra} (cioè la $f\circ g= id$ non può valere per nessuna $g$).\\
+Analogamente, si prendano $f:\{1,2,3\}\to \{a,b\}$ e $g:\{a,b\}\to \{1,2,3\}$ definite come nel seguente disegno
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=9cm]{img/finiti/imgex4-5-3.eps}
+\end{figure}
+
+Allora, si vede subito che $f\circ g$ è la funzione identica di $\{a,b\}$, ma $g\circ f$ non è la funzione
+identica di $\{1,2,3\}$ in quanto pur essendo $g(f(1))=g(a)=1$ e $g(f(2))=g(b)=2$, ovvero $g\circ f$ non manda 3
+in se stesso.\\
+Si osservi che anche qui non c'è alcun modo di modificare $g:$ se avessimo posto $g(b)=3$
+avremmo sì ottenuto $g(f(3))=g(b)=3$ ma stavolta sarebbe stato $g(f(2))=g(b)=3$, ovvero
+$g \circ f$ non avrebbe mandato 2 in se stesso: come si vede, il problema stavolta è che $f$
+manda i due elementi 2 e 3 entrambi in $b$, quindi necessariamente $g(f(2))$ e $g(f(3))$ saranno
+uguali e non potranno mai essere il primo 2 e il secondo 3. In altre parole, il motivo per cui
+non iniettività di $f:$ la $f$ ha cioè un'inversa destra ma non un'inversa sinistra.
+\begin{esempio}
+  La funzione $f:\mathbb{R} \to \mathbb{R}$ data da $f(x)=x^2$, non essendo né
+  iniettiva\footnote{Due numeri uno l'opposto dell'altro hanno lo stesso quadrato} né
+  suriettiva\footnote{I numeri non sono quadrati di nessuno numero reale} non ha né inversa
+  sinistra né inversa destra. In effetti, la condidata ad essere inversa di $f$, la radice
+  quadrata $g(x)=\sqrt{x}$, da una parte non soddisfa $g(f(x))=x$ se $x$ è negativo perché in
+  tal caso $g(f(x))=g(x^2)=\sqrt{x^2}=|x|$, e $|x|\neq x$ se $x$ è negativo ($|-2|=+2\neq -2$);
+  dall'altra parte $f(g(y))=y$ non ha senso se $y$ è negativo in quanto in tal caso
+  $g(y)=\sqrt{y}$ non è neanche un numero reale. Per eliminare i due problemi (e rendere $g$
+  l'inversa di $f$) bisogna togliere i numeri negativi sia dal dominio che del codominio di $f$,
+  ovvero restringerla a una funzione $f:\mathbb{R}_{\leq 0} \to \mathbb{R}_{\leq 0}$, dove
+  $\mathbb{R}_{\leq 0}$ denota l'insieme dei numeri non negativi: ma così facendo in effetti
+  facciamo proprio in modo che diventi una funzione biiettiva (ora non ci sono due elementi del
+  dominio con lo stesso quadrato, e ogni elemento del codominio è quadrato di qualcosa).
+\end{esempio}
+Ora, come abbiamo detto sopra ci poniamo il problema di calcolare, se esiste, l'inversa di
+un'applicazione lineare data. Prima di fare ciò, dal momento che l'inversa è definita tramite la
+composizione, dobbiamo vedere cosa succede quando si compongono due applicazioni lineari.
+In particolare, poiché ogni applicazione lineare può essere sempre tradotto (lavorando in
+coordinate) in una funzione del tipo (4.9), vedremo cosa succede quando si compongono due
+applicazioni di questo tipo.\\
+Più precisamente, consideriamo $f=L_A:\mathbb{K}^n\to \mathbb{K}^m$,
+\begin{eqnarray}
+  \begin{matrix}
+    V\to W\\
+    \dim (V)=n\\
+    \dim (W)=m\\
+    L_A:\mathbb{K}^n\to \mathbb{K}^m
+  \end{matrix} & f
+                 \begin{pmatrix}
+                   x_1\\
+                   x_2\\
+                   \vdots\\
+                   x_n
+                 \end{pmatrix} =
+                 \begin{pmatrix}
+                   a_{11}x_1+a_{12}x_2+\dots+a_{1n}x_n\\
+                   a_{21}x_1+a_{22}x_2+\dots+a_{2n}x_n\\
+                   \vdots\\
+                   a_{m1}x_1+a_{m2}x_2+\dots+a_{mn}x_n
+                 \end{pmatrix}
+\end{eqnarray}
+e $g=L_B:\mathbb{K}^p\to \mathbb{K}^n$
+\begin{eqnarray}
+  \begin{matrix}
+    Z\to V\\
+    \dim (Z)=p\\
+    L_B:\mathbb{K}^n\to \mathbb{K}^m
+  \end{matrix} & g
+                 \begin{pmatrix}
+                   y_1\\
+                   y_2\\
+                   \vdots\\
+                   y_p
+                 \end{pmatrix} =
+                 \begin{pmatrix}
+                   b_{11}y_1+a_{12}y_2+\dots+a_{1p}y_p\\
+                   b_{21}y_1+a_{22}y_2+\dots+a_{2p}y_p\\
+                   \vdots\\
+                   b_{n1}y_1+a_{n2}y_2+\dots+a_{np}y_p
+                 \end{pmatrix}
+\end{eqnarray}
+
 \end{document}
 

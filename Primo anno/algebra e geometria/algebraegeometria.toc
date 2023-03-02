@@ -19,3 +19,4 @@
 \contentsline {subsection}{\numberline {4.3.2}Suriettività delle applicazione lineari}{35}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Iniettività di applicazioni lineari}{36}{subsection.4.3.3}%
 \contentsline {subsubsection}{Teorema di completamento a base}{39}{subsubsection*.4}%
+\contentsline {section}{\numberline {4.4}Composizione di applicazioni, inversa e prodotto di matrici}{40}{section.4.4}%
