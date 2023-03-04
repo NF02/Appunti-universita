@@ -12,6 +12,10 @@ Il Repo è strutturato in modo lineare e ovviamente è suddifiviso per materie e
 ### modelli utilizzati per realizzare questi documenti
 I template utilizzati sono disponibili nel mio repo ```LaTeX-Model```, per accedere a tale repo cliccare <a href="https://github.com/NF02/LaTeX-model">qui</a>
 
+### Vuoi maggiori in sul LaTeX o vuoi discutere
+Ci sono attive due discussioni su reddit:
+- [In quali casi è comodo l'utilizzo del LaTeX, ecco alcuni suggerimenti per migliorare il proprio workflow e non impazzire dietro ad inutili rogne](https://www.reddit.com/r/Universitaly/comments/11gz44w/in_quali_casi_%C3%A8_comodo_lutilizzo_del_latex_ecco/)
+- [Possono interessarvi gli strumenti che utilizzo a lezione per prendere appunti?](https://www.reddit.com/r/Universitaly/comments/11dod3l/possono_interessarvi_gli_strumenti_che_utilizzo_a/)
 ### Video dedicati allo sviluppo
 ho realizzato una playlist in cui sono salvati tutti i video fatti a riguardo, per accedere alla suddetta cliccare <a href="https://www.youtube.com/playlist?list=PLtBZwe4uTbkHU9-yuJfc0IYTQWEvaagyV">qui</a>
 
