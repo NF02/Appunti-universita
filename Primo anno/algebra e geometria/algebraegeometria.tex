@@ -59,8 +59,9 @@
 \usepackage{pgfplots}
 \usepackage{amsthm}
 \usepackage{wasysym}
-
+\usepackage{extarrows}
 \usepackage{tikz-cd}
+
 \usepackage{showframe}
 \renewcommand\ShowFrameLinethickness{0.15pt}
 %\renewcommand*\ShowFrameColor{\color{red}}
@@ -421,16 +422,153 @@ e $g=L_B:\mathbb{K}^p\to \mathbb{K}^n$
                    y_p
                  \end{pmatrix} =
                  \begin{pmatrix}
-                   b_{11}y_1+a_{12}y_2+\dots+a_{1p}y_p\\
-                   b_{21}y_1+a_{22}y_2+\dots+a_{2p}y_p\\
+                   b_{11}y_1+b_{12}y_2+\dots+b_{1p}y_p\\
+                   b_{21}y_1+b_{22}y_2+\dots+b_{2p}y_p\\
                    \vdots\\
-                   b_{n1}y_1+a_{n2}y_2+\dots+a_{np}y_p
+                   b_{n1}y_1+b_{n2}y_2+\dots+b_{np}y_p
                  \end{pmatrix}
 \end{eqnarray}
 \begin{eqnarray*}
   \begin{matrix}
-    f\circ g: & 
+    f\circ g: & \mathbb{K}^p\stackrel{\mathrm{\color{red}g}}{\to}\mathbb{K}^n
+                \stackrel{\mathrm{\color{red}f}}{\to}\mathbb{K}^m\\
+    & y \mapsto g(y)\mapsto f(g(y))
   \end{matrix}
+  &
+    \begin{array}{cccccc}
+      A & matrice & m\times m & \textit{associata ad} & f\\
+      B& // & m\times p & // & g\\
+      AB& // & m\times p& // &f\circ g
+    \end{array}
 \end{eqnarray*}
+In base a quello appena visto, la composizione $f\circ g$ può essere può essere calcolata in
+quento il codominio di $g$, ovvero $\mathbb{K}^n$, è anche il dominio di $f$. Si ha:
+\begin{eqnarray}
+  \label{eq:4.20}
+  \begin{matrix}
+   (f\circ g)
+  \begin{pmatrix}
+    y_1\\
+    y_2\\
+    \vdots\\
+    y_p
+  \end{pmatrix}=f
+  \begin{pmatrix}
+    g
+    \begin{pmatrix}
+      y_1\\
+      y_2\\
+      \vdots\\
+      y_p
+    \end{pmatrix}
+  \end{pmatrix}=f
+  \begin{pmatrix}
+    b_{11}y_1+b_{12}y_2+\dots+b_{1p}y_p\\
+    b_{21}y_1+b_{22}y_2+\dots+b_{2p}y_p\\
+    \vdots\\
+    b_{n1}y_1+b_{n2}y_2+\dots+b_{np}y_p
+  \end{pmatrix}\\=
+  \begin{pmatrix}
+    a_{11}(b_{11}y_1+b_{12}y_2+\dots+b_{1p}y_p) +\dots+a_{1n}(b_{n1}y_1+b_{n2}y_2+\dots+b_{np}y_p)\\ 
+    a_{21}(b_{11}y_1+b_{12}y_2+\dots+b_{1p}y_p) +\dots+a_{2n}(b_{n1}y_1+b_{n2}y_2+\dots+b_{np}y_p)\\
+    \vdots\\
+    a_{m1}(b_{11}y_1+b_{12}y_2+\dots+b_{1p}y_p) +\dots+a_{mn}(b_{n1}y_1+b_{n2}y_2+\dots+b_{np}y_p)
+  \end{pmatrix}
+  \end{matrix}
+\end{eqnarray}
+(raccogliendo $y_1,y_2,\dots,y_p$)
+\begin{equation}
+  \label{eq:4.21}
+  =
+  \begin{pmatrix}
+    (a_{11}b_{11}+\dots+a_{1n}b_{n1})y_1+(a_{11}b_{12}+\dots+a_{1n}b_{n2})y_2+\dots+(a_{11}b_{1p}+\dots+a_{1n}b_{np})y_p\\
+    (a_{21}b_{11}+\dots+a_{2n}b_{n1})y_1+(a_{21}b_{12}+\dots+a_{2n}b_{n2})y_2+\dots+(a_{21}b_{1p}+\dots+a_{2n}b_{np})y_p\\
+    \vdots\\
+    (a_{m1}b_{11}+\dots+a_{mn}b_{n1})y_1+(a_{m1}b_{12}+\dots+a_{mn}b_{n2})y_2+\dots+(a_{m1}b_{1p}+\dots+a_{mn}b_{np})y_p
+  \end{pmatrix}
+\end{equation}
+Da quest'ultima espressione vediamo che la composizione $f\circ g$ è ancora una funzione del tipo
+(4.9), cioè è determinata da una matrice $C$, e più precisamente
+\begin{equation}
+  \label{eq:4.22}
+  C=
+  \begin{pmatrix}
+    a_{11}b_{11}+\dots+a_{1n}b_{n1}&a_{11}b_{12}+\dots+a_{1n}b_{n2}&\dots & a_{11}b_{1p}+\dots+a_{1n}b_{np}\\
+    a_{21}b_{11}+\dots+a_{2n}b_{n1}&a_{21}b_{12}+\dots+a_{2n}b_{n2}&\dots & a_{21}b_{1p}+\dots+a_{2n}b_{np}\\
+    &\vdots\\
+    a_{m1}b_{11}+\dots+a_{mn}b_{n1}&a_{m1}b_{12}+\dots+a_{mn}b_{n2}&\dots & a_{m1}b_{1p}+\dots+a_{mn}b_{np}
+  \end{pmatrix}
+\end{equation}
+Ora, notiamo che le entrate $c_{i1}$ di tale matrice sono tutte espressioni del tipo
+\begin{equation}
+  \label{eq:4.23}
+  c_{ij}=a_{i1}b_{1j}+\dots+a_{in}b_{nj}
+\end{equation}
+in cui il primo indice dell'entrata di $A$ è fisso e sempre uguale a $i$, il secondo indice
+dell'entrata di $B$ è fisso e sempre uguale a $j$ mentre gli indici ``interni''\footnote{il
+  secondo dell'ntrata di $A$ e il primo dell'entrata di $B$} variano da 1 a $n$\footnote{usando
+  la notazione di sommatoria, potremmo quindi scrivere $c_{ij}=\displaystyle\sum^n_{k=1}a_{ik}
+  b_{kj}$}. Vedere il prodotto tra matrici (<++>).
+\begin{definizione}
+  La matrice $C$ le cui entrate sono date dalla (4.23) si chiama \textit{prodotto di} $A$ per
+  $B$, e si scrive $C=AB$.
+\end{definizione}
+In pratica, abbiamo definito il prodotto di due matrici $A$ e $B$ in modo che la matriece $C=AB$
+ottenuta sia la matrice che determina la composizione $L_A\circ L_B$ della funzione determinate
+da $A$ e $B$.\\
+Ricordando che la composizione $L_A\circ L_B$ delle due funzione $L_A$ e $L_B$ può essere fatta
+solo sotto opportune condizioni\footnote{il codominio di $L_B:\mathbb{K}^p\to\mathbb{K}^n$ deve
+  essere uguale al dominio di $L_A:\mathbb{K}^n\to\mathbb{K}^m$} si osserva di conseguenza che
+anche il prodotto di due metrici può essere fatto solo sotto opportune condizioni: più
+precisamente, del momento che la matrice di $L_A$ ha $m$ righe e $n$ colonne, mentre la matrice
+$B$ di $L_B$ ha $n$ righe e $p$ colonne, vediamo che si possono moltiplicare tra loro due
+matrici $A$ e $B$ (in quest'ordine) se e solo se \textit{il numero di colonne di A è uguale al
+  numero di righe di B}: in tal caso, il risultato $AB$ è una matrice con $m$ righe e $n$
+colonne. Se denotiamo $M_{m,n}(\mathbb{K})$ l'insieme delle matrici con $m$ righe e $n$ colonne
+\footnote{Entrate appartenenti al campo $\mathbb{K}$}, possiamo allora scrivere che
+\begin{equation*}
+  A\in M_{m,n}(\mathbb{K}),\text{ }B\in M_{n,p}(\mathbb{K})\Rightarrow AB\in M_{m,p}(\mathbb{K})
+\end{equation*}
+il prodotto di matrici dato dalla Dimostrazione 4 si chiama anche \textbf{prodotto righe per
+  colonna}: il motivo è che nell'espressione (4.23) della generica entrata di posto $i$ $j$
+appaiono tute e sole le entrate con primo indice $i$ di $A$ e tutte e sole le entrate con
+secondo indice con primo indice $i$ di $A$ e tutte e sole le entrate con secondo indice $j$ di
+$B$: dal momento che il primo indice ci dice in che riga siamo, e il secondo in che colonna,
+questo significa che per calcolare l'entrata di posto $i$ $j$ di $AB$ dobbiamo prendere la riga
+$i$-esima di A, la $j$-esima colonna di $B$, moltiplicare tra di loro le entrate corrispondenti e
+sommare il tutto
+\begin{equation*}
+  \begin{pmatrix}
+    a_{i1} & a_{i2} &\dots & a_{in}
+  \end{pmatrix}
+  \begin{pmatrix}
+    b_{1j}\\
+    b_{2j}\\
+    \dots\\
+    b_{nj}
+  \end{pmatrix}=
+  \begin{pmatrix}
+    &\dots\\
+    \dots & a_{i1}b_{1j}+a_{i2}b_{2j}+\dots+a_{in}b_{nj} &\dots\\
+    &\dots
+  \end{pmatrix}
+\end{equation*}
+\begin{esempio}
+  Consideriamo le due matrici
+  \begin{equation*}
+    A=
+    \begin{pmatrix}
+      1 &2\\
+      4 & 5\\
+      3 & 6
+    \end{pmatrix} \in M_{3,2}(\mathbb{R}), \text{ } B=
+    \begin{pmatrix}
+      5 & 2 & 0& 1\\
+      3 & 1 &-1 &2
+    \end{pmatrix} M_{2,4}(\mathbb{R})
+  \end{equation*}
+  In base a quello che abbiamo detto, le due matrici possono essere moltiplicate e il risultato
+  $AB$ sarà una matrice 3 per 4.
+\end{esempio}
 \end{document}
 
