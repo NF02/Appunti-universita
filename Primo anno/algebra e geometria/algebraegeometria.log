@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  6 MAR 2023 23:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  8 MAR 2023 01:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2245,8 +2245,31 @@ Package pdftex.def Info: img/finiti/imgex4-5-3-eps-converted-to.pdf  used on in
 put line 357.
 (pdftex.def)             Requested size: 256.0748pt x 72.57701pt.
  [40 <./img/finiti/imgex4-5-1-eps-converted-to.pdf>] [41 <./img/finiti/imgex4-5
--2-eps-converted-to.pdf> <./img/finiti/imgex4-5-3-eps-converted-to.pdf>] [42] [
-43] (./algebraegeometria.aux)
+-2-eps-converted-to.pdf> <./img/finiti/imgex4-5-3-eps-converted-to.pdf>] [42]
+
+LaTeX Font Warning: Font shape `U/wasy/m/it' in size <10> not available
+(Font)              Font shape `U/wasy/m/sl' tried instead on input line 604.
+
+[43]
+Package epstopdf Info: Source file: <img/finiti/imgex4-5-4.eps>
+(epstopdf)                    date: 2023-03-07 23:41:40
+(epstopdf)                    size: 49625 bytes
+(epstopdf)             Output file: <img/finiti/imgex4-5-4-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2023-03-07 23:43:22
+(epstopdf)                    size: 6862 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-5-4-eps-
+converted-to.pdf img/finiti/imgex4-5-4.eps>
+(epstopdf)             \includegraphics on input line 709.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/imgex4-5-4-eps-converted-to.pdf, id=846, 517.935pt x 157.58875pt>
+File: img/finiti/imgex4-5-4-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/imgex4-5-4-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/imgex4-5-4-eps-converted-to.pdf  used on in
+put line 709.
+(pdftex.def)             Requested size: 256.0748pt x 77.91649pt.
+ [44 <./img/finiti/imgex4-5-4-eps-converted-to.pdf>] [45]
+(./algebraegeometria.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2254,13 +2277,21 @@ Package rerunfilecheck Info: File `algebraegeometria.out' has not changed.
 (rerunfilecheck)             Checksum: 01EAC1CCB092BED26555606CC2BA5358;3866.
  ) 
 Here is how much of TeX's memory you used:
- 57551 strings out of 478268
- 1418355 string characters out of 5846348
- 2199654 words of memory out of 5000000
- 74614 multiletter control sequences out of 15000+600000
- 500113 words of font info for 110 fonts, out of 8000000 for 9000
+ 57572 strings out of 478268
+ 1418812 string characters out of 5846348
+ 2199653 words of memory out of 5000000
+ 74622 multiletter control sequences out of 15000+600000
+ 500363 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,24n,89p,874b,980s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.30} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.29} has been referenced but does not exis
+t, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.28} has been referenced but does not exis
 t, replaced by a fixed one
@@ -2395,27 +2426,28 @@ dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-di
 st/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2022/texmf-d
 ist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2022/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/tex
-mf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/2022/texmf
--dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2022/texmf-d
-ist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2022/texmf-dis
-t/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/texmf-dist/
-fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/texmf-dist/fo
-nts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texmf-dist/font
-s/type1/public/cm-super/sfit1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/
-type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2022/texmf-dist/fonts/ty
-pe1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2022/texmf-dist/fonts/type
-1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
-public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pu
-blic/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/publ
-ic/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public
-/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/c
-m-super/sfti0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-
-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-su
-per/sftt1000.pfb>
-Output written on algebraegeometria.pdf (43 pages, 783899 bytes).
+mf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2022/
+texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/2022/te
+xmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2022/texm
+f-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2022/texmf-
+dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/texmf-di
+st/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/texmf-dist
+/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texmf-dist/f
+onts/type1/public/cm-super/sfit1000.pfb></usr/local/texlive/2022/texmf-dist/fon
+ts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2022/texmf-dist/fonts
+/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
+/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/p
+ublic/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pub
+lic/cm-super/sfsl1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/publi
+c/cm-super/sfti0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/
+cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm
+-super/sftt1000.pfb>
+Output written on algebraegeometria.pdf (45 pages, 807332 bytes).
 PDF statistics:
- 1044 PDF objects out of 1200 (max. 8388607)
- 792 compressed objects within 8 object streams
- 192 named destinations out of 1000 (max. 500000)
- 305 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1083 PDF objects out of 1200 (max. 8388607)
+ 822 compressed objects within 9 object streams
+ 203 named destinations out of 1000 (max. 500000)
+ 310 words of extra memory for PDF output out of 10000 (max. 10000000)
 

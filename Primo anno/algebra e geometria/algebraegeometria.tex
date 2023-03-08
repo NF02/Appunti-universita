@@ -568,7 +568,330 @@ sommare il tutto
     \end{pmatrix} M_{2,4}(\mathbb{R})
   \end{equation*}
   In base a quello che abbiamo detto, le due matrici possono essere moltiplicate e il risultato
-  $AB$ sarà una matrice 3 per 4.
+  $AB$ sarà una matrice 3 per 4.\\
+  Per trovare l'entrata di $AB$ che sta \textit{nella prima riga} e \textit{prima colonna} si
+  prendono \emph{la prima riga di} $A
+  \begin{pmatrix}
+    1 & 2
+  \end{pmatrix}
+  $, \emph{la prima colonna di} $B
+  \begin{pmatrix}
+    5\\
+    3
+  \end{pmatrix}
+  $, se ne moltiplicano gli elementi corrispondenti e si somma il risultato:
+  $1\cdot 2 + 2\cdot 1=2+2=4$. Quindi nella prima riga, seconda colonna di $AB$ c'è
+  4 -- Facendo questo calcolo su tutte le entrate, si vede che
+  \begin{eqnarray*}
+    AB=
+    \begin{pmatrix}
+      11 &4 & -2 &4\\
+      35 & 13 & -5 & 14\\
+      33 & 12 & -6 & 15
+    \end{pmatrix}
+  \end{eqnarray*}
+  per maggiori chiarimento riferirsi a (<++>)
 \end{esempio}
+\begin{esempio}
+  Come abbiamo visto nel (4.12), la matrice associata alla rotazione $f$ di angolo $\Theta$ in
+   senso antiorario attorno a $O$ rispetto a una base ortogonale di $V_O^2$ è $A =
+   \begin{pmatrix}
+     \cos\theta & -\sin \theta\\
+     \sin\theta & \cos \theta
+   \end{pmatrix}
+   $: la funzione $L_A:\mathbb{R}^2\to \mathbb{R}^2$ determinata da $A$, che manda $(x_1,x_2)$ in
+   $(\cos \theta x_1-\sin\theta x_2,\sin\theta x_1,\cos\theta x_2)$, è la traduzione in coordinate
+   di $f$. Analogamente, se $g$ denota la rotazione di angolo $\clock$, la traduzione in
+   coordinate $j$ sarà data dalla funzione $L_B$ determinata dalla matrice $B=
+   \begin{pmatrix}
+     \cos\clock & -\sin\clock \\
+     \sin \clock & \cos\clock
+   \end{pmatrix}
+   $. Dal momento che il prodotto di matrici ci dà la composizione della applicazioni
+   corrispondenti, se moltiplichiamo $A$ e $B$ otteniamo la matrice in coordinate la
+   composizione delle due rotazioni: infatti
+   \begin{eqnarray*}
+     AB=
+     \begin{pmatrix}
+       \cos\theta &-\sin\theta\\
+       \sin\theta& \cos\theta
+     \end{pmatrix}
+     \begin{pmatrix}
+       \cos\clock&-\sin\clock\\
+       \sin\clock & \cos \clock
+     \end{pmatrix}\\
+     =
+     \begin{pmatrix}
+       \cos\theta\cos\clock-\sin\theta\sin\clock &-\cos\theta\sin\clock-\sin\theta\cos\clock\\
+       \cos\theta \cos\clock+\cos\sin\clock & -\sin\theta\sin\clock+\cos\theta\cos\clock
+     \end{pmatrix}=
+   \end{eqnarray*}
+   (in base alle note formule di trigonometria per il coseno e il seno della somma e della
+   differenza tra due angoli)
+   \begin{equation*}
+     =
+     \begin{pmatrix}
+       \cos(\theta+\clock) &-\sin(\theta+\clock)\\
+       \sin(\theta+\clock) & \cos(\theta+\clock)
+     \end{pmatrix}
+   \end{equation*}
+   che è ancora una matrice di rotazione ma relativa all'angolo $\theta+\clock$: questo era
+   prevedibile in quanto la composizione non fa altro che applicare una rotazione di angolo
+   $\clock$ seguita da una rotazione di angolo $\theta$.\\
+   In un capitolo successivo faremo lo stesso per calcolare la composizione di due rotazioni
+   nello spazio, dove il risultato è molto meno prevedibile e intuitivo che nel caso del piano.
+\end{esempio}
+Vediamo ora le proprietà fondamentali del prodotto di matrici.
+
+In primo luogo, è importatnte osservare che tale prodotto \textit{non goode della proprietà
+  commutativa}, ovvero, date due matrici $A$ e $B$, e ammesso che si possano\footnote{Ad esempio,
+  se $A\in M_{3,2}(\mathbb{R})$ e $B\in M_{2,4}(\mathbb{R})$, il prodotto $AB$ che $BA$ ma si
+  tratta di due matrici di tipo diverso. Ad esempio, se $A\in M_{3,2}(\mathbb{R})$ e
+  $B\in M_{2,3}(\mathbb{R})$ si possono eseguire entrambi i prodotti, ma $AB\in M_{3,3}
+  (\mathbb{R})$ mentre $BA\in M_{2,2}(\mathbb{R})$.} eseguire entrambi i prodotti $AB$ e $BA$,
+quindi non saranno in generale uquali. Ad esempio, siamo $A=
+\begin{pmatrix}
+  1 &2\\
+  3 &4
+\end{pmatrix}
+$ e $B=
+\begin{pmatrix}
+  -1 & 0\\
+  5 & 2
+\end{pmatrix}
+$. Allora, per definizione di prodotto righe per colonne vediamo che
+\begin{eqnarray*}
+  AB=
+  \begin{pmatrix}
+    1 &2\\
+    3 &4
+  \end{pmatrix}
+  \begin{pmatrix}
+    -1 &0\\
+    5 & 2
+  \end{pmatrix}=
+  \begin{pmatrix}
+    9& 4 \\
+    17 & 8
+  \end{pmatrix}\\
+  BA=\begin{pmatrix}
+    -1 &0\\
+    5 & 2
+  \end{pmatrix}
+  \begin{pmatrix}
+    1 &2\\
+    3 &4
+  \end{pmatrix}=
+  \begin{pmatrix}
+    -1 & -2\\
+    11 & 18
+  \end{pmatrix}
+\end{eqnarray*}
+ovvero $AB\neq BA$ --
+per il prodotto tra matrici vedere (<++>).
+\begin{osservazione}
+  Il motivo della non commutatività in generale del prodotto di due matrici $A$ e $B$ è che,
+  come sappiamo, tale prodotto rappresentala composizione delle applicazioni $L_A$ e $L_B$
+  corrispondenti, e la composizione di funzioni non gode in generale della proprietà commutativa:
+  ad esempio, date le due funzioni
+  \begin{eqnarray*}
+    f:\mathbb{R}\to \mathbb{R},\text{ } f(x)=x+1, & g:\mathbb{R}\to \mathbb{R},\text{ }g(x)=x^2
+  \end{eqnarray*}
+  si ha $f(g(x))=f(x^2)=x^2+1$ mentre $g(f(x))=g(x+1)=(x+1)^2$, e quindi $f\circ g\neq g\neq f$.
+\end{osservazione}
+Per un esempio geometrico, si considerino la funzione $f:V_O^2\to V_O^2$ che ruota ogni vettore
+del piano applicato in $O$ di $90^o$ in senso antiorario, e la funzione $g:V_O^2\to V_O^2$ che
+riflette ogni vettore attorno a una retta $r$ passante per $O$: allora, come si vede nel seguente
+disegno, applicare prima la rotazione $f$ poi la riflessione $g$ oppure viceversa porta in
+generale a risultati diversi (ovvero $f\circ g \neq g\circ f$).
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=9cm]{img/finiti/imgex4-5-4.eps}
+\end{figure}
+
+Per quello che riguarda invece la proprietà associativa, si può dimostrare che questa vale,
+ovvero $(AB)C=A(BC)$. Ad esempio, siamo $A=
+\begin{pmatrix}
+  1 &2 \\
+  3 &4
+\end{pmatrix}
+$,
+$\begin{pmatrix}
+   2 & 1\\
+   -1 & 1
+\end{pmatrix}$ e
+$\begin{pmatrix}
+   1 &5 \\
+   2 &0
+\end{pmatrix}$. Allora
+\begin{eqnarray*}
+  (AB)C=
+  \begin{pmatrix}
+    \begin{pmatrix}
+      1 &2\\
+      3 &4
+    \end{pmatrix}
+    \begin{pmatrix}
+      2 & 1\\
+      -1 & 1
+    \end{pmatrix}
+  \end{pmatrix}
+  \begin{pmatrix}
+    1 &5\\
+    2 &0
+  \end{pmatrix}=
+  \begin{pmatrix}
+    0& 3\\
+    2 &7 
+  \end{pmatrix}
+  \begin{pmatrix}
+    1 & 5\\
+    2 &0
+  \end{pmatrix}=
+  \begin{pmatrix}
+    6 &0\\
+    16 & 10
+  \end{pmatrix}\\
+  A(BC)=
+  \begin{pmatrix}
+    1 &2 \\
+    3 &4
+  \end{pmatrix}
+  \begin{pmatrix}
+     \begin{pmatrix}
+      2 & 1\\
+      -1 & 1
+    \end{pmatrix}
+    \begin{pmatrix}
+      1 &5\\
+      2 &0
+    \end{pmatrix}  
+  \end{pmatrix}=
+  \begin{pmatrix}
+    1 &2 \\
+    3 &4
+  \end{pmatrix}
+  \begin{pmatrix}
+    4 &10\\
+    1 & -5
+  \end{pmatrix}=
+  \begin{pmatrix}
+    6 &0\\
+    16 & 10
+  \end{pmatrix}
+\end{eqnarray*}
+\begin{osservazione}
+  l’associatività del prodotto di matrici si spiega facilmente ricordando che tale
+  prodotto rappresenta la composizione delle funzioni corrispondenti, ovvero $(AB)C$ rappresenta
+  $(L_A\circ L_B)\circ L_C$ mentre $A(BC)$ rappresenta $L_A\circ (L_B\circ L_C)$. Ma è facile
+  vedere che la composizione di funzioni gode della propriet`a associativa: infatti, applicando
+  $(f\circ g)\circ h$ a $x$ otteniamo $(f\circ g)(h(x))=f(g(h(x)))$, e analogamente applicando
+  $f\circ(g\circ h)$ a $x$ otteniamo sempre $f((g\circ h)(x))=f(g(h(x)))$, ovvero $(f\circ g)
+  \circ h= f\circ (g\circ h)$.
+\end{osservazione}
+Ci chiediamo ora se il porodotto di matrice ammetta un elemento neutro che svolga lo stesso
+ruolo che svolge il numero 1 per il prodotto tra numeri, per cui si ha $a \cdot 1 =1 \cdot a=a$
+per ogni numero $a$. La risposta è affermativa: più precisamente, per ogni $n$ consideriamo la
+matrice con $n$ righe e $n$ colonne seguente
+\begin{equation}
+  \begin{pmatrix}
+    1 & 0 &\dots &0\\
+    0 &1 &\dots& 0\\
+      && \vdots\\
+    0& 0&\dots&1
+  \end{pmatrix}
+\end{equation}
+ovvero la matrice che ha 1 nelle entrate con stesso indice di riga e di colonna $(a_{11},a_{22},etc.)$ e 0 in tutte le altre entrate. Tale matrice si chiama \emph{matrice identica di ordine n e
+  e si denota $I_n$.} Ad esempio,
+\begin{equation*}
+  I_2=
+  \begin{pmatrix}
+    1 &0\\
+    0 &1
+  \end{pmatrix}, \text{ }
+  I_3=
+  \begin{pmatrix}
+    1 &0&0\\
+    0&1&0\\
+    0&0&1
+  \end{pmatrix}
+\end{equation*}
+\begin{osservazione}
+  In generale, data una matrice quadrata di ordine $n$, le entrate $a_{11}, a_{22}, a_{nn}$ che
+  hanno lo stesso indice di riga e di colonna formano la cosiddetta \textit{diagonale della
+    matrice}. la matrice identica $I_n$ può essere quindi descritta come la matrice che ha 1
+  sulla diagonale e 0 nelle altre entrate. Le entrate di $I_n$ si denotano solitamente con il
+  simbolo $\delta_{ij}$, detto \textit{delta di Kroneeker}\footnote{Il delta di Kronecker è una
+    funzione di due variabili, di solito solo numeri interi non negativi. La funzione è 1 se le
+    variabili sono uguali e 0 atrimenti: $\delta_{ij}=
+    \begin{cases}
+      0 & \text{se } i\neq j,\\
+      1 & \text{se } i = j.
+    \end{cases}$ o con l'uso di staffe Iverson: $\delta_{ij}=[i=j]$ dove il delta di Kronecker
+    $\delta_{ij}$ è una funzione a tratti delle variabili $i$ e $j$.}.
+  Ora, si puà verificare che, per ogni $A\in M_{m,n}(\mathbb{K})$ si ha
+  \begin{equation*}
+    AI_n=A, \text{ } I_mA=A.
+  \end{equation*}
+  e quindi la matrice identica svolge esattametne il ruolo di elemento neutro per il prodotto
+  righe per colonne. Ad esempio,
+  \begin{eqnarray*}
+    \begin{pmatrix}
+      1 &2&3\\
+      4 &5 & 6
+    \end{pmatrix}  \begin{pmatrix}
+      1 &0&0\\
+      0&1&0\\
+      0&0&1
+                   \end{pmatrix}
+    =
+    \begin{pmatrix}
+      1 & 2& 3\\
+      4 & 5 & 6
+    \end{pmatrix}\\
+    \begin{pmatrix}
+      1 &0\\
+      0 &1
+    \end{pmatrix} 
+    \begin{pmatrix}
+      1 & 2& 3\\
+      4 & 5 & 6
+    \end{pmatrix}=
+    \begin{pmatrix}
+      1 & 2& 3\\
+      4 & 5 & 6
+    \end{pmatrix}
+  \end{eqnarray*}
+\end{osservazione}
+\begin{osservazione}
+  Si noti che la matrice indetica $I_n$ non è nient'altro che la matrice che determina la
+  funzione identica $id_{\mathbb{K}^n}:\mathbb{K}^n\to \mathbb{K}?n$ che manda ongi elemento in se
+  stesso: infatti,
+  \begin{equation}
+    id_{\mathbb{K}^n}
+    \begin{pmatrix}
+      x_1\\
+      x_2\\
+      \vdots\\
+      x_n
+    \end{pmatrix}=
+    \begin{pmatrix}
+      x_1\\
+      x_2\\
+      \vdots\\
+      x_n
+    \end{pmatrix}=
+    \begin{pmatrix}
+      1x_1+0x_2+\dots+0x_n\\
+      0x_1+1x_2+\dots+0x_n\\
+      \vdots\\
+      0x_1+0x_2+\dots+1x_n
+    \end{pmatrix}
+  \end{equation}
+  Questo spiega perché tale matrice sia l'elemento neutro per il prodotto, in quanto il
+  prodotto tra matrici rappresenta la composizione delle applicazioni corrispondenti e la funzione identica è esattamente l'elemento neutro per la composizione.
+\end{osservazione}
+Continuando con l'analogo con il prodotot tra numeri, vogliamo ora esaminare la questione
+dell'esistenza la questione 
 \end{document}
 
