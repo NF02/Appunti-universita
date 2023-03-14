@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021 Gentoo Linux) (preloaded format=pdflatex 2023.1.29)  10 MAR 2023 21:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021 Gentoo Linux) (preloaded format=pdflatex 2023.1.29)  12 MAR 2023 13:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2217,7 +2217,7 @@ put line 1232.
 (pdftex.def)             Requested size: 256.0748pt x 77.91649pt.
  [44 <./img/finiti/imgex4-5-4-eps-converted-to.pdf>] [45]) [46
 
-]
+] [47]
 (./algebraegeometria.aux)
 
 LaTeX Warning: There were undefined references.
@@ -2226,15 +2226,18 @@ Package rerunfilecheck Info: File `algebraegeometria.out' has not changed.
 (rerunfilecheck)             Checksum: 01EAC1CCB092BED26555606CC2BA5358;3866.
  ) 
 Here is how much of TeX's memory you used:
- 54900 strings out of 480943
- 1322437 string characters out of 5907814
+ 54907 strings out of 480943
+ 1322525 string characters out of 5907814
  2127213 words of memory out of 5000000
- 70962 multiletter control sequences out of 15000+600000
+ 70963 multiletter control sequences out of 15000+600000
  434534 words of font info for 110 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,24n,108p,872b,972s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.33} has been referenced but does not ex
+pdfTeX warning (dest): name{Hfootnote.34} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.33} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.32} has been referenced but does not exis
 t, replaced by a fixed one
@@ -2365,10 +2368,10 @@ ype1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
 super/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0800.
 pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share
 /texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on algebraegeometria.pdf (46 pages, 780714 bytes).
+Output written on algebraegeometria.pdf (47 pages, 785909 bytes).
 PDF statistics:
- 1060 PDF objects out of 1200 (max. 8388607)
- 837 compressed objects within 9 object streams
- 210 named destinations out of 1000 (max. 500000)
+ 1071 PDF objects out of 1200 (max. 8388607)
+ 847 compressed objects within 9 object streams
+ 216 named destinations out of 1000 (max. 500000)
  310 words of extra memory for PDF output out of 10000 (max. 10000000)
 

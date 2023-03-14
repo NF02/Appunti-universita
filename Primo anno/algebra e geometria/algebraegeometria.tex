@@ -143,5 +143,121 @@
 Vediamo ora come si calcola l'inversione di una matrice $A$, suponendo che questa esita (cioè che $A$ sia
 invertibile).\\
 Quindi siamo pronti a trattare il primo metodo d'inversione di una matrice: sappiamo che trovare l'inversa
-di $A$ equivale a trovare una matrice $B$ tale che $AB_I_n$ ()
+di $A$ equivale a trovare una matrice $B$ tale che $AB=I_n$ (senza dever verificare anche $BA=I_n$), ovvero
+\begin{equation*}
+  \begin{pmatrix}
+    a_{11} &a_{12} &\dots & a_{1n}\\
+    a_{21} & a_{22} & \dots & a_{2n} \\
+           && \dots\\
+    a_{n1} & a_{n2} & \dots&a_{nn}
+  \end{pmatrix}
+  \begin{pmatrix}
+    b_{11} &b_{12} &\dots & b_{1n}\\
+    b_{21} & b_{22} & \dots & b_{2n} \\
+           && \dots\\
+    b_{n1} & b_{n2} & \dots&b_{nn}
+  \end{pmatrix}=
+  \begin{pmatrix}
+    1 &0 &\dots&0\\
+    0 & 1 &\dots & 0\\
+      &&\dots\\
+    0 & 0&\dots & 1
+  \end{pmatrix}
+\end{equation*}
+Tenuto conto della dimostrazione di prodotto righe per colonne, vediamo che moltplicando le riche di $A$ per la
+prima colonna di $B$ deve essere
+\begin{equation*}
+  \begin{cases}
+    a_{11}b_{11} + a_{12}b_{21}+\dots +a_{1n}b_{n1} =1\\
+    a_{21}b_{11} + a_{22}b_{21}+\dots +a_{2n}b_{n1} =0\\
+    \dots\\
+    a_{n1}b_{11} + a_{n2}b_{21}+\dots +a_{nn}b_{n1} =0
+  \end{cases}
+\end{equation*}
+ovvero la prima colonna di $B$ soddisfa il sistema
+\begin{equation}
+   \begin{cases}
+    a_{11}x_1 + a_{12}x_2+\dots +a_{1n}x_n =1\\
+    a_{21}x_1 + a_{22}x_2+\dots +a_{2n}x_n =0\\
+    \dots\\
+    a_{n1}x_1 + a_{n2}x_2+\dots +a_{nn}x_n =0
+  \end{cases}
+\end{equation}
+con matrice dei coefficienti uguale a $A$ e termini noti uguali alla prima colonna della matrice identica.\\
+Analogamente, moltiplicando le righe di $A$ per la seconda colonna di $B$ si vede che devono essere soddisfatte
+le sequenti
+\begin{equation*}
+  \begin{cases}
+    a_{11}b_{12} + a_{12}b_{22}+\dots +a_{1n}b_{n2} =0\\
+    a_{21}b_{12} + a_{22}b_{22}+\dots +a_{2n}b_{n2} =1\\
+    \dots\\
+    a_{n1}b_{12} + a_{n2}b_{22}+\dots +a_{nn}b_{n2} =0
+  \end{cases}
+\end{equation*}
+ovvero la seconda colonna di $B$ deve soddisfare il sistema
+\begin{equation}
+   \begin{cases}
+    a_{11}x_1 + a_{12}x_2+\dots +a_{1n}x_n =0\\
+    a_{21}x_1 + a_{22}x_2+\dots +a_{2n}x_n =1\\
+    \dots\\
+    a_{n1}x_1 + a_{n2}x_2+\dots +a_{nn}x_n =0
+  \end{cases}
+\end{equation}
+sempre con matrice dei coefficienti uguale a $A$ ma stavolta con temini noti uguali alla matrice identica, e
+così via possiamo ragionare allo stasso fino all'ultima colonna di $B$ che dovrà soddisfare
+\begin{equation*}
+  \begin{cases}
+    a_{11}b_{1n} + a_{12}b_{2n}+\dots +a_{1n}b_{nn} =0\\
+    a_{21}b_{1n} + a_{22}b_{2n}+\dots +a_{2n}b_{nn} =1\\
+    \dots\\
+    a_{n1}b_{1n} + a_{n2}b_{2n}+\dots +a_{nn}b_{nn} =0
+  \end{cases}
+\end{equation*}
+ovvero il sistema
+\begin{equation}
+   \begin{cases}
+    a_{11}x_1 + a_{12}x_2+\dots +a_{1n}x_n =0\\
+    a_{21}x_1 + a_{22}x_2+\dots +a_{2n}x_n =0\\
+    \dots\\
+    a_{n1}x_1 + a_{n2}x_2+\dots +a_{nn}x_n =1
+  \end{cases}
+\end{equation}
+Riassumendo, si ha $AB=I_n$ se e solo se le colonne $
+\begin{pmatrix}
+  b_{11}\\
+  b_{21}\\
+  \dots\\
+  b_{n1}
+\end{pmatrix},
+\begin{pmatrix}
+  b_{12}\\
+  b_{22}\\
+  \dots\\
+  b_{n2}
+\end{pmatrix},
+\begin{pmatrix}
+  b_{1n}\\
+  b_{2n}\\
+  \dots\\
+  b_{nn}
+\end{pmatrix}
+$ sono soluzione rispettivamente degli $n$ sistemi (4.27), (4.28), \dots, (4.29).\\
+Come sappiamo, per risolvere un sistema basta scriverne la matrice completa, composta da matrice dei
+coefficienti delle incognite e colonne dei termini noti, e ridurla a gradini mediamente operazioni elementari
+sulle righe. Poiché i sistemi (4.27), (4.28), \dots, (4.29) hanno tutti la stessa matrice dei coefficienti, cioè
+$A$, e differiscono solo per i termini noti, possiamo risolverli tutti contemporaneamente eseguendo le stesse
+operazioni elementari: a questo scopo, basta scriver la matrice
+\begin{equation}
+  \label{eq:4.30}
+  (A|I_n)=\left(
+    \begin{array}[center]{cccc|cccc}
+      a_{11} & a_{12} & \dots & a_{1n} & 1 & 0 & \dots &0\\
+      a_{21} & a_{22} & \dots & a_{2n} & 0 & 1 & \dots &0\\
+      a_{n1} & a_{n2} & \dots & a_{nn} & 0 & 0 & \dots &1 
+    \end{array}
+    \right)
+\end{equation}
+ottenuta affiacando tutti i termini noti dei sistemi (4.27), (4.28), \dots, (4.29) e risolverli
+contemporaneamente con una sola riduzione\footnote{chiaramente, in base al Teorema <++> la matrice A è
+  invertibile se e solo se in seguito a tale riduzione non si annullarà nessuna delle sue righe}.
 \end{document}
