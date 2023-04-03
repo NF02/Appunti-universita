@@ -259,5 +259,280 @@ operazioni elementari: a questo scopo, basta scriver la matrice
 \end{equation}
 ottenuta affiacando tutti i termini noti dei sistemi (4.27), (4.28), \dots, (4.29) e risolverli
 contemporaneamente con una sola riduzione\footnote{chiaramente, in base al Teorema <++> la matrice A è
-  invertibile se e solo se in seguito a tale riduzione non si annullarà nessuna delle sue righe}.
+  invertibile se e solo se in seguito a tale riduzione non si annullarà nessuna delle sue righe}.\\
+Vediamo subito un esempio: dato la matrice $A=
+\begin{pmatrix}
+  1 & -1\\
+  1 & 2
+\end{pmatrix}
+$, verifichiamo se essa è invertibile e, in caso affermativo, calcoliamo l'inversa. Come detto sopra,
+affianchiamo a tale matrice la matrice identica dello stesso ordine
+\begin{equation*}
+  (A|I_n)=\left(
+  \begin{array}{cc|cc}
+    1&-1&1&0\\
+    1&2&0&1
+  \end{array}\right)
+\end{equation*}
+che rappresenta i due sistemi le cui soluzioni sono le colonne della matrice inversa, e iniziamo con
+l'applicare il procedimeto di riduzione a gradini: a questo scopo basta il singolo passaggio
+\begin{equation}
+  \label{eq:4.31}
+  (A|I_n)=\left(
+  \begin{array}{cc|cc}
+    1&-1&1&0\\
+    1&2&0&1
+  \end{array}\right) \underset{R_2\to R_2-R_1}{\to} \left(
+  \begin{array}[center]{cc|cc}
+    1 &-1 & 1 &0\\
+    0 & 3 & -1 &1
+  \end{array}\right)
+\end{equation}
+da cui vediamo che, dopo la riduzione a gradini, ad $A$ non si annulla nessuna riga e quindi, come abbiamo detto
+sopra, $A$ è invertibile.\\
+La prima colonna dell'inversa $B$ di $A$ è data dalla soluzione del sistema ridotto
+\begin{equation}
+  \label{eq:4.32}
+  \begin{cases}
+    x_1-x_2=1\\
+    3x_2=1
+  \end{cases}
+\end{equation}
+ovvero, come si vede risolvendo dal basso, la coppia $\left(\frac{2}{3},\frac{1}{3}\right)$, che è quindi
+la prima colonna della matrice inversa. Analogamente, la seconda colonna dell'inversa $B$ di $A$ è data della
+soluzione del sistema ridotto
+\begin{equation}
+  \label{eq:4.33}
+  \begin{cases}
+    x_1-x_2=0\\
+    3x_2=1
+  \end{cases}
+\end{equation}
+ovvero, come si vede risolvendo dal basso, la coppia $\left(\frac{1}{3},\frac{1}{3}\right)$, che è quindi la
+seconda colonna della matrice inversa. In conclusione, l'inversa dell matrice $A$ è
+\begin{equation*}
+  A^{-1}=
+  \begin{pmatrix}
+    \frac{2}{3} &\frac{1}{3}\\
+    -\frac{1}{3} & \frac{1}{3}
+  \end{pmatrix}
+\end{equation*}
+Infatti, si verifica subito con un calcolo che 
+\begin{equation*}
+  \begin{pmatrix}
+    1 & -1\\
+    1 & 2
+  \end{pmatrix}
+  \begin{pmatrix}
+     \frac{2}{3} &\frac{1}{3}\\
+    -\frac{1}{3} & \frac{1}{3}
+  \end{pmatrix}=
+   \begin{pmatrix}
+     \frac{2}{3} &\frac{1}{3}\\
+    -\frac{1}{3} & \frac{1}{3}
+   \end{pmatrix}
+   \begin{pmatrix}
+    1 & -1\\
+    1 & 2
+   \end{pmatrix}=
+   \begin{pmatrix}
+     1 &0\\
+     0 &1
+   \end{pmatrix} 
+\end{equation*}
+concordemente con la definizione di inversa.\\
+Per evitare di scrivere e risolvere separatamente i sistemi (\ref{eq:4.32}) e (\ref{eq:4.33}), e trovare invece in
+modo più diretto la matrice inversa, si può procedere come segue. Dopo per effettuato la riduzione a gradini in
+(\ref{eq:4.31}), si applicano ulteriori operazioni elementari fino a trasformare la matrice $A$ del blocco di
+sinistra nella matrice identica: a questo punto nel blocco di destra si legge direttamente l'inversa. Per vederlo,
+riprendiamo da (\ref{eq:4.31}) e facciamo comparire prima uno zero in posizione 1 2 eseguendo
+\begin{equation*}
+  \left(
+  \begin{array}{cc|cc}
+    1&-1&1&0\\
+    0&3&-1&1
+  \end{array}\right) \underset{R_2\to R_2-R_1}{\to} \left(
+  \begin{array}[center]{cc|cc}
+    3 & 0 & 2 &1\\
+    0 & 3 & -1 &1
+  \end{array}\right)
+\end{equation*}
+e applichiamo poi a ogni riga l'operazione elementare del secondo tipo che consiste nel dividerla per l'elemento
+che si trova sulla diagonale:
+\begin{equation}
+  \label{eq:4.34}
+  \left(
+  \begin{array}[center]{cc|cc}
+    3 & 0 & 2 &1\\
+    0 & 3 & -1 &1
+  \end{array}\right)
+\underset{
+  \begin{matrix}
+    R_1\to (1/3) R_1\\ R_2\to(1/3) R_2
+  \end{matrix}}{\to}
+  \left(
+  \begin{array}[center]{cc|cc}
+    1 & 0 & 2/3 &1/3\\
+    0 & 1 & -1/3 &1/3
+  \end{array}\right) 
+\end{equation}
+Come si vede la matrice identica che avevamo affiancato ad $A$ si è trasformata nella matrice inversa di
+$A$ già trovata sopra.\\
+Per capire perché, ricordiamo che le operazioni elementari che stiamo eseguendo servono a risolvere
+contemporaneamente  poi ci danno come soluzione le colonne della matrice inversa: ma allora, riducendo la matrice
+$A$\footnote{cioè la matrice dei coefficienti di tali sistemi} alla matrice identica come in (\ref{eq:4.34}) non
+non stiamo facendo altro che ridurre i due sistemi alla forma
+\begin{eqnarray*}
+  \begin{cases}
+    x_1=\frac{2}{3}\\
+    x_2=-\frac{1}{3}
+  \end{cases}
+  &,&
+      \begin{cases}
+        x_1=\frac{1}{3}\\
+        x_2=\frac{1}{3}
+      \end{cases}
+\end{eqnarray*}
+e cioè far comparire direttamente le soluzioni cercate (che sono proprio le colonne della matrice inversa).\\
+Vediamo un altro esempio:
+\begin{eqnarray*}
+  A=\begin{pmatrix}
+      1 &1 &2\\
+      -1 & 1 &0\\
+      2 & 1 &1
+  \end{pmatrix}.
+\end{eqnarray*}
+Iniziamo con il trasformare la matrice $(A|I_n)$ in una matrice a gradini
+\begin{equation*}
+  (A|I_n)=
+  \left(
+  \begin{array}[center]{ccc|ccc}
+    1 & 1 & 2 &1 &0&0\\
+    -1 & 1 &0 & 0&1&0\\
+    2 &1 &1&0&0&1
+  \end{array}\right)
+  \underset{
+  \begin{matrix}
+    R_1\to R_2+R_1\\ R_3\to  R_3-2R_1
+  \end{matrix}}{\to}
+  \left(
+  \begin{array}{ccc|ccc}
+     1 & 1 & 2 &1 &0&0\\
+    0 & 2 &2 & 1&1&0\\
+     0 & -1 &-3&-2&0&1
+  \end{array}\right)
+\end{equation*}
+\begin{equation*}
+  \left(
+  \begin{array}{ccc|ccc}
+     1 & 1 & 2 &1 &0&0\\
+    0 & 2 &2 & 1&1&0\\
+     0 & -1 &-3&-2&0&1
+  \end{array}\right)
+  \underset{
+  \begin{matrix}
+    R_3\to 2R_3+R_2
+  \end{matrix}}{\rightarrow} 
+  \left(
+  \begin{array}{ccc|ccc}
+     1 & 1 & 2 &1 &0&0\\
+    0 & 2 &2 & 1&1&0\\
+     0 & 0 &-4&-3&1&2
+  \end{array}\right)
+\end{equation*}
+Il fatto che non si sia annullata nessuna riga nel blocco di sinistra ci dice che la matrice $A$ è invertibile.\\
+Ora, come spiegato sopra, faciamo comparire zeri sopra la diagonale, effettuando una sorta di riduzione a gradini
+``all'incontrario'', dal basso verso l'altro e da destra verso sinistra\footnote{in ogni passaggio, mettiamo in
+  evidenza in grasseto i nuivi zeri che facciamo comparire}
+\begin{equation*}
+   \left(
+  \begin{array}{ccc|ccc}
+     1 & 1 & 2 &1 &0&0\\
+     0 & 2 &2 & 1&1&0\\
+     0 & 0 &-4&-3&1&2
+  \end{array}\right)
+   \underset{
+  \begin{matrix}
+    R_2\to 2R_2+R_3\\ R_1\to  2R_1-R_3
+  \end{matrix}}{\to}
+   \left(
+  \begin{array}{ccc|ccc}
+     2 & 2 & \mathbf{0} &-1 &1&2\\
+     0 & 4 &\mathbf{0} & 1&3&2\\
+     0 & 0 &-4&-3&1&2
+  \end{array}\right)
+\end{equation*}
+\begin{equation*}
+    \left(
+  \begin{array}{ccc|ccc}
+     2 & 2 & \mathbf{0} &-1 &1&2\\
+     0 & 4 &\mathbf{0} & 1&3&2\\
+     0 & 0 &-4&-3&1&2
+  \end{array}\right)
+   \underset{
+  \begin{matrix}
+    R_1\to  2R_1-R_3
+  \end{matrix}}{\to}
+    \left(
+  \begin{array}{ccc|ccc}
+     4 & \mathbf{0} & 0 &-1 &-1&2\\
+     0 & 4 &0 & -1&3&2\\
+     0 & 0 &-4&-3&1&2
+  \end{array}\right)
+\end{equation*}
+Infatti, dividiamo ogni riga per l'elemento sulla diagonale applicando operazioni elementari del secondo tipo
+\begin{equation*}
+     \left(
+  \begin{array}{ccc|ccc}
+     4 & 0 & 0 &-1 &-1&2\\
+     0 & 4 &0 & -1&3&2\\
+     0 & 0 &-4&-3&1&2
+  \end{array}\right)
+   \underset{
+  \begin{matrix}
+    R_1\to (1/4)R_1\\
+    R_1\to (1/4)R_2\\
+    R_3\to (1/4)R_3
+  \end{matrix}}{\to}
+\left(
+  \begin{array}{ccc|ccc}
+    1&0&0&-\frac{1}{4}&-\frac{1}{4}&\frac{1}{2}\\
+    0&1&0&-\frac{1}{4}&-\frac{3}{4}&\frac{1}{2}\\
+    0 & 0 &1 &\frac{3}{4}&-\frac{1}{4}&-\frac{1}{2}
+  \end{array}\right)
+\end{equation*}
+Quindi
+\begin{equation*}
+  A^{-1}=
+  \begin{pmatrix}
+    -\frac{1}{4}&-\frac{1}{4}&\frac{1}{2}\\
+    -\frac{1}{4}&-\frac{3}{4}&\frac{1}{2}\\
+    \frac{3}{4}&-\frac{1}{4}&-\frac{1}{2}
+  \end{pmatrix}
+\end{equation*}
+Vediamo ora un modo alternativo per calcolare l'inversa di una matrice invertibile, basato sul determinante e
+sulla nozione di cofattore, vista nel precedente capitolo.\\
+Abbiamo visto nel Teorema <++> che una matrice $A$ di ordine $n$ è invertibile se e solo se il suo rango è $n$.
+Ma come sappiamo dal Teorema <++>, questo equivale ad avere $\det(A)\neq 0$. Dimostriamo ora la seguente
+\begin{proposizione}
+  Sia $A\in M_n(\mathds{K})$ una matrice invertibile\footnote{ovvero con $\det(A)\neq 0$}. Allora la sua inversa
+  $A^{-1}$ è data da
+  \begin{equation}
+    \label{eq:4.35}
+    A^{-1}=\frac{1}{\det (A)}
+    \begin{pmatrix}
+      C_{11} &C_{21}&\dots & C_{n1}\\
+      C_{12} &C_{22}&\dots & C_{n2}\\
+      & \dots\\
+      C_{1n} & C_{2n} &\dots & C_{nn}
+    \end{pmatrix}
+  \end{equation}
+  dove $C_{ij}$ indica il cofattore di $a_{ij}$, e $\frac{1}{\det(A)}$ davanti alla matrice dei cofattori
+  significa che ogni entrata di tale matrice deve essere moltiplicato per $\frac{1}{\det (A)}$.
+\end{proposizione}
+\begin{osservazione}
+  A proposito della disposizione dei cofattori nella (\ref{eq:4.35}), si noti che i cofattori delle entrate della
+  prima \textit{riga} di $A$ sono nella prima \textit{colonna} della (\ref{eq:4.35}), i cofattori delle entrate
+  della della seconda $riga$ di $A$ sono nella seconda \textit{colonna} della (\ref{eq:4.35}), e così via.
+\end{osservazione}
 \end{document}
