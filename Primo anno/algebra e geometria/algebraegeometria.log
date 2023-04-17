@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021 Gentoo Linux) (preloaded format=pdflatex 2023.3.15)  3 APR 2023 23:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021 Gentoo Linux) (preloaded format=pdflatex 2023.3.15)  18 APR 2023 00:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1672,7 +1672,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-2-1.eps>
 converted-to.pdf img/finiti/imgex4-2-1.eps>
 (epstopdf)             \includegraphics on input line 31.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-1-eps-converted-to.pdf, id=312, 191.71625pt x 211.79124pt>
+<img/finiti/imgex4-2-1-eps-converted-to.pdf, id=327, 191.71625pt x 211.79124pt>
 
 File: img/finiti/imgex4-2-1-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-2-1-eps-converted-to.pdf>
@@ -1691,7 +1691,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-2-2.eps>
 converted-to.pdf img/finiti/imgex4-2-2.eps>
 (epstopdf)             \includegraphics on input line 39.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-2-eps-converted-to.pdf, id=338, 275.0275pt x 157.58875pt>
+<img/finiti/imgex4-2-2-eps-converted-to.pdf, id=353, 275.0275pt x 157.58875pt>
 File: img/finiti/imgex4-2-2-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-2-2-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-2-2-eps-converted-to.pdf  used on in
@@ -1708,7 +1708,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-2-3.eps>
 converted-to.pdf img/finiti/imgex4-2-3.eps>
 (epstopdf)             \includegraphics on input line 51.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-3-eps-converted-to.pdf, id=341, 240.9pt x 203.76125pt>
+<img/finiti/imgex4-2-3-eps-converted-to.pdf, id=356, 240.9pt x 203.76125pt>
 File: img/finiti/imgex4-2-3-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-2-3-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-2-3-eps-converted-to.pdf  used on in
@@ -1729,7 +1729,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-2-4.eps>
 converted-to.pdf img/finiti/imgex4-2-4.eps>
 (epstopdf)             \includegraphics on input line 66.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-4-eps-converted-to.pdf, id=343, 311.1625pt x 310.15875pt>
+<img/finiti/imgex4-2-4-eps-converted-to.pdf, id=358, 311.1625pt x 310.15875pt>
 File: img/finiti/imgex4-2-4-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-2-4-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-2-4-eps-converted-to.pdf  used on in
@@ -1750,7 +1750,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-2-5.eps>
 converted-to.pdf img/finiti/imgex4-2-5.eps>
 (epstopdf)             \includegraphics on input line 74.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-5-eps-converted-to.pdf, id=388, 480.79625pt x 413.545pt>
+<img/finiti/imgex4-2-5-eps-converted-to.pdf, id=403, 480.79625pt x 413.545pt>
 File: img/finiti/imgex4-2-5-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-2-5-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-2-5-eps-converted-to.pdf  used on in
@@ -1767,7 +1767,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-2-6.eps>
 converted-to.pdf img/finiti/imgex4-2-6.eps>
 (epstopdf)             \includegraphics on input line 82.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-6-eps-converted-to.pdf, id=389, 240.9pt x 229.85875pt>
+<img/finiti/imgex4-2-6-eps-converted-to.pdf, id=404, 240.9pt x 229.85875pt>
 File: img/finiti/imgex4-2-6-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-2-6-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-2-6-eps-converted-to.pdf  used on in
@@ -1784,7 +1784,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-2-7.eps>
 converted-to.pdf img/finiti/imgex4-2-7.eps>
 (epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-7-eps-converted-to.pdf, id=392, 334.24875pt x 119.44624pt>
+<img/finiti/imgex4-2-7-eps-converted-to.pdf, id=407, 334.24875pt x 119.44624pt>
 
 File: img/finiti/imgex4-2-7-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-2-7-eps-converted-to.pdf>
@@ -1806,7 +1806,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-2-8.eps>
 converted-to.pdf img/finiti/imgex4-2-8.eps>
 (epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-8-eps-converted-to.pdf, id=439, 124.465pt x 245.91875pt>
+<img/finiti/imgex4-2-8-eps-converted-to.pdf, id=454, 124.465pt x 245.91875pt>
 File: img/finiti/imgex4-2-8-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-2-8-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-2-8-eps-converted-to.pdf  used on in
@@ -1823,7 +1823,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-2-9.eps>
 converted-to.pdf img/finiti/imgex4-2-9.eps>
 (epstopdf)             \includegraphics on input line 108.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-9-eps-converted-to.pdf, id=440, 328.22626pt x 170.6375pt>
+<img/finiti/imgex4-2-9-eps-converted-to.pdf, id=455, 328.22626pt x 170.6375pt>
 File: img/finiti/imgex4-2-9-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-2-9-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-2-9-eps-converted-to.pdf  used on in
@@ -1840,7 +1840,7 @@ f>
 -converted-to.pdf img/finiti/imgex4-2-10.eps>
 (epstopdf)             \includegraphics on input line 114.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-2-10-eps-converted-to.pdf, id=441, 328.22626pt x 120.45pt>
+<img/finiti/imgex4-2-10-eps-converted-to.pdf, id=456, 328.22626pt x 120.45pt>
 File: img/finiti/imgex4-2-10-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-2-10-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-2-10-eps-converted-to.pdf  used on i
@@ -1868,7 +1868,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-3-1.eps>
 converted-to.pdf img/finiti/imgex4-3-1.eps>
 (epstopdf)             \includegraphics on input line 210.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-1-eps-converted-to.pdf, id=484, 185.69376pt x 95.35625pt>
+<img/finiti/imgex4-3-1-eps-converted-to.pdf, id=499, 185.69376pt x 95.35625pt>
 File: img/finiti/imgex4-3-1-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-3-1-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-3-1-eps-converted-to.pdf  used on in
@@ -1888,7 +1888,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-3-2.eps>
 converted-to.pdf img/finiti/imgex4-3-2.eps>
 (epstopdf)             \includegraphics on input line 221.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-2-eps-converted-to.pdf, id=510, 102.3825pt x 95.35625pt>
+<img/finiti/imgex4-3-2-eps-converted-to.pdf, id=525, 102.3825pt x 95.35625pt>
 File: img/finiti/imgex4-3-2-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-3-2-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-3-2-eps-converted-to.pdf  used on in
@@ -1905,7 +1905,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-3-3.eps>
 converted-to.pdf img/finiti/imgex4-3-3.eps>
 (epstopdf)             \includegraphics on input line 247.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-3-eps-converted-to.pdf, id=513, 331.2375pt x 185.69376pt>
+<img/finiti/imgex4-3-3-eps-converted-to.pdf, id=528, 331.2375pt x 185.69376pt>
 File: img/finiti/imgex4-3-3-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-3-3-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-3-3-eps-converted-to.pdf  used on in
@@ -1926,7 +1926,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-3-4.eps>
 converted-to.pdf img/finiti/imgex4-3-4.eps>
 (epstopdf)             \includegraphics on input line 302.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-4-eps-converted-to.pdf, id=545, 180.675pt x 144.54pt>
+<img/finiti/imgex4-3-4-eps-converted-to.pdf, id=560, 180.675pt x 144.54pt>
 File: img/finiti/imgex4-3-4-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-3-4-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-3-4-eps-converted-to.pdf  used on in
@@ -1943,7 +1943,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-3-5.eps>
 converted-to.pdf img/finiti/imgex4-3-5.eps>
 (epstopdf)             \includegraphics on input line 317.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-5-eps-converted-to.pdf, id=546, 214.8025pt x 197.73875pt>
+<img/finiti/imgex4-3-5-eps-converted-to.pdf, id=561, 214.8025pt x 197.73875pt>
 File: img/finiti/imgex4-3-5-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-3-5-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-3-5-eps-converted-to.pdf  used on in
@@ -1960,7 +1960,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-3-6.eps>
 converted-to.pdf img/finiti/imgex4-3-6.eps>
 (epstopdf)             \includegraphics on input line 330.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-6-eps-converted-to.pdf, id=548, 386.44376pt x 386.44376pt>
+<img/finiti/imgex4-3-6-eps-converted-to.pdf, id=563, 386.44376pt x 386.44376pt>
 
 File: img/finiti/imgex4-3-6-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-3-6-eps-converted-to.pdf>
@@ -1984,7 +1984,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-3-7.eps>
 converted-to.pdf img/finiti/imgex4-3-7.eps>
 (epstopdf)             \includegraphics on input line 363.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-7-eps-converted-to.pdf, id=580, 386.44376pt x 386.44376pt>
+<img/finiti/imgex4-3-7-eps-converted-to.pdf, id=596, 386.44376pt x 386.44376pt>
 
 File: img/finiti/imgex4-3-7-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-3-7-eps-converted-to.pdf>
@@ -2004,7 +2004,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-3-8.eps>
 converted-to.pdf img/finiti/imgex4-3-8.eps>
 (epstopdf)             \includegraphics on input line 373.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-8-eps-converted-to.pdf, id=614, 311.1625pt x 306.14375pt>
+<img/finiti/imgex4-3-8-eps-converted-to.pdf, id=629, 311.1625pt x 306.14375pt>
 File: img/finiti/imgex4-3-8-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-3-8-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-3-8-eps-converted-to.pdf  used on in
@@ -2021,7 +2021,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-3-9.eps>
 converted-to.pdf img/finiti/imgex4-3-9.eps>
 (epstopdf)             \includegraphics on input line 392.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-3-9-eps-converted-to.pdf, id=615, 258.9675pt x 338.26375pt>
+<img/finiti/imgex4-3-9-eps-converted-to.pdf, id=630, 258.9675pt x 338.26375pt>
 File: img/finiti/imgex4-3-9-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-3-9-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-3-9-eps-converted-to.pdf  used on in
@@ -2038,7 +2038,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-4-1.eps>
 converted-to.pdf img/finiti/imgex4-4-1.eps>
 (epstopdf)             \includegraphics on input line 425.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-4-1-eps-converted-to.pdf, id=617, 497.86pt x 469.755pt>
+<img/finiti/imgex4-4-1-eps-converted-to.pdf, id=632, 497.86pt x 469.755pt>
 File: img/finiti/imgex4-4-1-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-4-1-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-4-1-eps-converted-to.pdf  used on in
@@ -2055,7 +2055,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-4-2.eps>
 converted-to.pdf img/finiti/imgex4-4-2.eps>
 (epstopdf)             \includegraphics on input line 442.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-4-2-eps-converted-to.pdf, id=619, 497.86pt x 470.75874pt>
+<img/finiti/imgex4-4-2-eps-converted-to.pdf, id=634, 497.86pt x 470.75874pt>
 File: img/finiti/imgex4-4-2-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-4-2-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-4-2-eps-converted-to.pdf  used on in
@@ -2076,7 +2076,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-4-3.eps>
 converted-to.pdf img/finiti/imgex4-4-3.eps>
 (epstopdf)             \includegraphics on input line 465.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-4-3-eps-converted-to.pdf, id=655, 497.86pt x 470.75874pt>
+<img/finiti/imgex4-4-3-eps-converted-to.pdf, id=670, 497.86pt x 470.75874pt>
 File: img/finiti/imgex4-4-3-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-4-3-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-4-3-eps-converted-to.pdf  used on in
@@ -2095,7 +2095,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-4-4.eps>
 converted-to.pdf img/finiti/imgex4-4-4.eps>
 (epstopdf)             \includegraphics on input line 583.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-4-4-eps-converted-to.pdf, id=696, 342.27875pt x 138.5175pt>
+<img/finiti/imgex4-4-4-eps-converted-to.pdf, id=711, 342.27875pt x 138.5175pt>
 File: img/finiti/imgex4-4-4-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-4-4-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-4-4-eps-converted-to.pdf  used on in
@@ -2113,7 +2113,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-4-5.eps>
 converted-to.pdf img/finiti/imgex4-4-5.eps>
 (epstopdf)             \includegraphics on input line 648.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-4-5-eps-converted-to.pdf, id=719, 390.45876pt x 186.6975pt>
+<img/finiti/imgex4-4-5-eps-converted-to.pdf, id=734, 390.45876pt x 186.6975pt>
 File: img/finiti/imgex4-4-5-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-4-5-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-4-5-eps-converted-to.pdf  used on in
@@ -2130,14 +2130,22 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-4-6.eps>
 converted-to.pdf img/finiti/imgex4-4-6.eps>
 (epstopdf)             \includegraphics on input line 657.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-4-6-eps-converted-to.pdf, id=720, 232.87pt x 271.0125pt>
+<img/finiti/imgex4-4-6-eps-converted-to.pdf, id=735, 232.87pt x 271.0125pt>
 File: img/finiti/imgex4-4-6-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-4-6-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-4-6-eps-converted-to.pdf  used on in
 put line 657.
 (pdftex.def)             Requested size: 142.26378pt x 165.56963pt.
  [37 <./img/finiti/imgex4-4-5-eps-converted-to.pdf> <./img/finiti/imgex4-4-6-ep
-s-converted-to.pdf>] [38
+s-converted-to.pdf>]
+Overfull \hbox (0.6399pt too wide) in paragraph at lines 734--737
+[][]\T1/cmr/bx/n/10 Teorema 4.3.2. []\T1/cmr/m/it/10 Sia $\OML/cmm/m/it/10 V$ \
+T1/cmr/m/it/10 uno spa-zio vet-to-ria-le di di-men-sio-ne $\OML/cmm/m/it/10 n$ 
+\T1/cmr/m/it/10 de-fi-ni-to su un cam-po $\U/msb/m/n/10 K$ \T1/cmr/m/it/10 e si
+a-no $\OML/cmm/m/it/10 v[]; v[]; [] ; v[]$\T1/cmr/m/it/10 ,
+ []
+
+[38
 
 ] [39]
 Package epstopdf Info: Source file: <img/finiti/imgex4-5-1.eps>
@@ -2151,7 +2159,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-5-1.eps>
 converted-to.pdf img/finiti/imgex4-5-1.eps>
 (epstopdf)             \includegraphics on input line 842.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-5-1-eps-converted-to.pdf, id=778, 237.88875pt x 72.27pt>
+<img/finiti/imgex4-5-1-eps-converted-to.pdf, id=793, 237.88875pt x 72.27pt>
 File: img/finiti/imgex4-5-1-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-5-1-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-5-1-eps-converted-to.pdf  used on in
@@ -2168,7 +2176,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-5-2.eps>
 converted-to.pdf img/finiti/imgex4-5-2.eps>
 (epstopdf)             \includegraphics on input line 865.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-5-2-eps-converted-to.pdf, id=779, 334.24875pt x 73.27374pt>
+<img/finiti/imgex4-5-2-eps-converted-to.pdf, id=794, 334.24875pt x 73.27374pt>
 File: img/finiti/imgex4-5-2-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-5-2-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-5-2-eps-converted-to.pdf  used on in
@@ -2185,7 +2193,7 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-5-3.eps>
 converted-to.pdf img/finiti/imgex4-5-3.eps>
 (epstopdf)             \includegraphics on input line 880.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-5-3-eps-converted-to.pdf, id=780, 247.92625pt x 70.2625pt>
+<img/finiti/imgex4-5-3-eps-converted-to.pdf, id=795, 247.92625pt x 70.2625pt>
 File: img/finiti/imgex4-5-3-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-5-3-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-5-3-eps-converted-to.pdf  used on in
@@ -2209,32 +2217,109 @@ Package epstopdf Info: Source file: <img/finiti/imgex4-5-4.eps>
 converted-to.pdf img/finiti/imgex4-5-4.eps>
 (epstopdf)             \includegraphics on input line 1232.
 Package epstopdf Info: Output file is already uptodate.
-<img/finiti/imgex4-5-4-eps-converted-to.pdf, id=846, 517.935pt x 157.58875pt>
+<img/finiti/imgex4-5-4-eps-converted-to.pdf, id=861, 517.935pt x 157.58875pt>
 File: img/finiti/imgex4-5-4-eps-converted-to.pdf Graphic file (type pdf)
 <use img/finiti/imgex4-5-4-eps-converted-to.pdf>
 Package pdftex.def Info: img/finiti/imgex4-5-4-eps-converted-to.pdf  used on in
 put line 1232.
 (pdftex.def)             Requested size: 256.0748pt x 77.91649pt.
- [44 <./img/finiti/imgex4-5-4-eps-converted-to.pdf>] [45]) [46
+ [44 <./img/finiti/imgex4-5-4-eps-converted-to.pdf>] [45] [46
 
 ] [47]
-[48] [49] (./algebraegeometria.aux)
+[48] [49] [50] [51]
+
+LaTeX Warning: Reference `4.42' on page 52 undefined on input line 2223.
+
+[52]) [53] [54
+
+]
+Capitolo 5.
+Package epstopdf Info: Source file: <img/finiti/imgex5-1-1.eps>
+(epstopdf)                    date: 2023-04-15 21:45:43
+(epstopdf)                    size: 46671 bytes
+(epstopdf)             Output file: <img/finiti/imgex5-1-1-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2023-04-15 21:50:06
+(epstopdf)                    size: 6079 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex5-1-1-eps-
+converted-to.pdf img/finiti/imgex5-1-1.eps>
+(epstopdf)             \includegraphics on input line 178.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/imgex5-1-1-eps-converted-to.pdf, id=1002, 198.7425pt x 132.495pt>
+File: img/finiti/imgex5-1-1-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/imgex5-1-1-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/imgex5-1-1-eps-converted-to.pdf  used on in
+put line 178.
+(pdftex.def)             Requested size: 142.26378pt x 94.84438pt.
+[55 <./img/finiti/imgex5-1-1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/finiti/imgex5-1-2.eps>
+(epstopdf)                    date: 2023-04-15 21:57:47
+(epstopdf)                    size: 34801 bytes
+(epstopdf)             Output file: <img/finiti/imgex5-1-2-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2023-04-17 23:33:46
+(epstopdf)                    size: 5385 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex5-1-2-eps-
+converted-to.pdf img/finiti/imgex5-1-2.eps>
+(epstopdf)             \includegraphics on input line 301.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/imgex5-1-2-eps-converted-to.pdf, id=1026, 305.14pt x 27.10126pt>
+File: img/finiti/imgex5-1-2-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/imgex5-1-2-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/imgex5-1-2-eps-converted-to.pdf  used on in
+put line 301.
+(pdftex.def)             Requested size: 227.62204pt x 20.21712pt.
+ [56 <./img/finiti/imgex5-1-2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/finiti/imgex5-1-3.eps>
+(epstopdf)                    date: 2023-04-18 00:16:08
+(epstopdf)                    size: 5525 bytes
+(epstopdf)             Output file: <img/finiti/imgex5-1-3-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2023-04-18 00:19:04
+(epstopdf)                    size: 3517 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex5-1-3-eps-
+converted-to.pdf img/finiti/imgex5-1-3.eps>
+(epstopdf)             \includegraphics on input line 332.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/imgex5-1-3-eps-converted-to.pdf, id=1045, 322.20375pt x 230.8625pt>
+
+File: img/finiti/imgex5-1-3-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/imgex5-1-3-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/imgex5-1-3-eps-converted-to.pdf  used on in
+put line 332.
+(pdftex.def)             Requested size: 227.62204pt x 163.09978pt.
+ [57
+
+ <./img/finiti/imgex5-1-3-eps-converted-to.pdf>]
+(./algebraegeometria.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `algebraegeometria.out' has not changed.
-(rerunfilecheck)             Checksum: 01EAC1CCB092BED26555606CC2BA5358;3866.
+(rerunfilecheck)             Checksum: 8E10912441AD21ED2C32B32CAE84F461;4537.
  ) 
 Here is how much of TeX's memory you used:
- 54934 strings out of 480943
- 1322821 string characters out of 5907814
- 2136213 words of memory out of 5000000
- 70973 multiletter control sequences out of 15000+600000
+ 55017 strings out of 480943
+ 1324539 string characters out of 5907814
+ 2136211 words of memory out of 5000000
+ 71012 multiletter control sequences out of 15000+600000
  436082 words of font info for 115 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,24n,108p,872b,972s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.37} has been referenced but does not ex
+pdfTeX warning (dest): name{Hfootnote.41} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.40} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.39} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.38} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.37} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.36} has been referenced but does not exis
 t, replaced by a fixed one
@@ -2378,10 +2463,10 @@ type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm
 .pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/shar
 e/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fo
 nts/type1/public/cm-super/sftt1000.pfb>
-Output written on algebraegeometria.pdf (49 pages, 804499 bytes).
+Output written on algebraegeometria.pdf (57 pages, 839771 bytes).
 PDF statistics:
- 1110 PDF objects out of 1200 (max. 8388607)
- 883 compressed objects within 9 object streams
- 228 named destinations out of 1000 (max. 500000)
- 310 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1237 PDF objects out of 1440 (max. 8388607)
+ 993 compressed objects within 10 object streams
+ 269 named destinations out of 1000 (max. 500000)
+ 349 words of extra memory for PDF output out of 10000 (max. 10000000)
 

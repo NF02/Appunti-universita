@@ -116,34 +116,27 @@
   \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
 
 % definizioni
-\newtheorem{teorema}{Teorema}
-\newtheorem{nota}{Nota}
-\newtheorem{notab}{Nota bene}
-\newtheorem{attenzione}{Attenzione}
-\newtheorem{definizione}{Definizione}
-\newtheorem{proposizione}{Proposizione}
-\newtheorem{esempio}{Esempio}
-\newtheorem{esercizio}{Esercizio}
-\newtheorem{osservazione}{Osservazione}
-\newtheorem{corollario}{Corollario}
+\newtheorem{teorema}{Teorema}[section]
+\newtheorem{nota}{Nota}[section]
+\newtheorem{notab}{Nota bene}[section]
+\newtheorem{attenzione}{Attenzione}[section]
+\newtheorem{definizione}{Definizione}[section]
+\newtheorem{proposizione}{Proposizione}[section]
+\newtheorem{esempio}{Esempio}[section]
+\newtheorem{esercizio}{Esercizio}[section]
+\newtheorem{osservazione}{Osservazione}[section]
+\newtheorem{corollario}{Corollario}[section]
 \title{Appunti geometria}
 \author{Nicola Ferru}
 
 \begin{document}
 
-\message{ !name(algebraegeometria.tex) !offset(375) }
-
-    \frac{3}{4}&-\frac{1}{4}&-\frac{1}{2}
-  \end{pmatrix}
-\end{equation*}
-Vediamo ora un modo alternativo per calcolare l'inversa di una matrice invertibile, basato sul determinante e
-sulla nozione di cofattore, vista nel precedente capitolo.\\
-Abbiamo visto nel Teorema <++> che una matrice $A$ di ordine $n$ è invertibile se e solo se il suo rango è $n$.
-Ma come sappiamo dal Teorema <++>, questo equivale ad avere $\det(A)\neq 0$. Dimostriamo ora la seguente
-\begin{proposizione}
-  Sia $A\in M_n(\mathds{K})$ una matrice invertibile\footnote{ovvero con $\det(A)\neq 0$}. Allora la sua inversa
-  $A^{-1}$ è data da
-  
-\message{ !name(algebraegeometria.tex) !offset(374) }
+\message{ !name(algebraegeometria.tex) !offset(738) }
+\mathds{K})$ due matrici quadrate. Allora
+  \begin{equation*}
+    \det(AB)=\det(A)\det(B)
+  \end{equation*}
+  Non dimostriamo il teorema di Binet, ma illustriamolo con un esempio: se $A=
+\message{ !name(algebraegeometria.tex) !offset(737) }
 
 \end{document}

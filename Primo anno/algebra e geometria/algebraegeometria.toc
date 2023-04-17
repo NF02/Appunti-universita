@@ -20,3 +20,6 @@
 \contentsline {subsection}{\numberline {4.3.3}Iniettività di applicazioni lineari}{36}{subsection.4.3.3}%
 \contentsline {subsubsection}{Teorema di completamento a base}{39}{subsubsection*.4}%
 \contentsline {section}{\numberline {4.4}Composizione di applicazioni, inversa e prodotto di matrici}{40}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Ultime proprietà della matrice inversa}{53}{subsection.4.4.1}%
+\contentsline {chapter}{\numberline {5}Autovalori e autovettori}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Definizione, esempi e applicazioni}{55}{section.5.1}%
