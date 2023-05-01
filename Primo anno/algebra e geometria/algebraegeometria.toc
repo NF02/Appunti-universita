@@ -23,3 +23,4 @@
 \contentsline {subsection}{\numberline {4.4.1}Ultime proprietà della matrice inversa}{53}{subsection.4.4.1}%
 \contentsline {chapter}{\numberline {5}Autovalori e autovettori}{55}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Definizione, esempi e applicazioni}{55}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Calcolo di autovalori e autovettori}{57}{section.5.2}%
