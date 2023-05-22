@@ -1,0 +1,2424 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021 Gentoo Linux) (preloaded format=pdflatex 2023.3.15)  22 MAY 2023 19:44
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**esercizio.tex
+(./esercizio.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+./esercizio.tex:2: Undefined control sequence.
+l.2 \chapter
+            {Esercizi}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./esercizio.tex:2: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \chapter{E
+              sercizi}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no i in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--4
+[]
+ []
+
+./esercizio.tex:5: Undefined control sequence.
+l.5 \section
+            {Esercizio 1}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./esercizio.tex:5: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \section{E
+              sercizio 1}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no 1 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 5--7
+[]
+ []
+
+
+./esercizio.tex:8: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \begin{eqnarray*}
+                     
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 8--8
+[] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 8.
+./esercizio.tex:11: Extra }, or forgotten \endgroup.
+<template> }
+            $\@eqnsel \endtemplate 
+l.11     2
+          x-y-z=0
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./esercizio.tex:11: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.11     2
+          x-y-z=0
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:11: Missing } inserted.
+<inserted text> 
+                }
+l.11     2
+          x-y-z=0
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./esercizio.tex:12: LaTeX Error: \begin{eqnarray*} on input line 8 ended by \en
+d{cases}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12   \end{cases}
+                   & A/b=
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./esercizio.tex:12: Missing } inserted.
+<inserted text> 
+                }
+l.12   \end{cases}
+                   & A/b=
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:12: Missing $ inserted.
+<inserted text> 
+                $
+l.12   \end{cases}
+                   & A/b=
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:12: Missing } inserted.
+<inserted text> 
+                }
+l.12   \end{cases}
+                   & A/b=
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:12: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.12   \end{cases}
+                   & A/b=
+I'm guessing that you meant to end an alignment here.
+
+./esercizio.tex:12: Missing { inserted.
+<inserted text> 
+                {
+l.12   \end{cases}
+                   & A/b=
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./esercizio.tex:12: Missing $ inserted.
+<inserted text> 
+                $
+l.12   \end{cases}
+                   & A/b=
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (66.71132pt too wide) in alignment at lines 8--12
+ [][][] []
+ []
+
+./esercizio.tex:12: Missing $$ inserted.
+<to be read again> 
+                   \endgroup 
+l.12   \end{cases}
+                   & A/b=
+Displays can use special alignments (like \eqalignno)
+only if nothing but the alignment itself is between $$'s.
+
+./esercizio.tex:12: Misplaced alignment tab character &.
+l.12   \end{cases} &
+                     A/b=
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no = in font nullfont!
+./esercizio.tex:13: Missing $ inserted.
+<inserted text> 
+                $
+l.13                 \left
+                          (\begin{array}{ccc|l}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./esercizio.tex:17: Misplaced alignment tab character &.
+\reserved@a ->&
+                & &
+l.17 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:17: Misplaced alignment tab character &.
+\reserved@a ->& &
+                  &
+l.17 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:17: Misplaced alignment tab character &.
+\reserved@a ->& & &
+                   
+l.17 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:17: Misplaced \cr.
+\@@eqncr ...l \@eqnswtrue \global \@eqcnt \z@ \cr 
+                                                  
+l.17 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:17: Extra }, or forgotten $.
+\endeqnarray ->\@@eqncr \egroup 
+                                \global \advance \c@equation \m@ne $$\@ignor...
+l.17 \end{eqnarray*}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./esercizio.tex:17: LaTeX Error: \begin{document} ended by \end{eqnarray*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \end{eqnarray*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./esercizio.tex:17: Missing $ inserted.
+<inserted text> 
+                $
+l.17 \end{eqnarray*}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:17: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.17 \end{eqnarray*}
+                    
+Things are pretty mixed up, but I think the worst is over.
+
+
+Overfull \hbox (47.50012pt too wide) in paragraph at lines 12--18
+   $[]$$$ 
+ []
+
+./esercizio.tex:19: Undefined control sequence.
+l.19 \subsection
+                {Riduzione a gradini:}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./esercizio.tex:19: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \subsection{R
+                  iduzione a gradini:}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 19--21
+[]
+ []
+
+./esercizio.tex:22: Undefined control sequence.
+l.22 \subsubsection
+                   {$1^o$ soluzione}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./esercizio.tex:22: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \subsubsection{$
+                     1^o$ soluzione}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (29.44724pt too wide) in paragraph at lines 22--24
+[]$\OT1/cmr/m/n/10 1[]$
+ []
+
+
+./esercizio.tex:25: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \begin{eqnarray*}
+                      
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 25--25
+[] 
+ []
+
+
+Overfull \hbox (181.7926pt too wide) in alignment at lines 25--35
+ [][][] []
+ []
+
+./esercizio.tex:44: Extra }, or forgotten \endgroup.
+<template> }
+            $\hfil \endtemplate 
+l.44                           \infty
+                                     ^{n-2g(A)} \to \infty^{3-2} = \infty^1
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./esercizio.tex:44: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.44                           \infty
+                                     ^{n-2g(A)} \to \infty^{3-2} = \infty^1
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:44: Missing } inserted.
+<inserted text> 
+                }
+l.44                           \infty
+                                     ^{n-2g(A)} \to \infty^{3-2} = \infty^1
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./esercizio.tex:45: LaTeX Error: \begin{eqnarray*} on input line 36 ended by \e
+nd{matrix}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45                         \end{matrix}
+                                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./esercizio.tex:45: Missing } inserted.
+<inserted text> 
+                }
+l.45                         \end{matrix}
+                                         
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:45: Missing $ inserted.
+<inserted text> 
+                $
+l.45                         \end{matrix}
+                                         
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:45: Missing } inserted.
+<inserted text> 
+                }
+l.45                         \end{matrix}
+                                         
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:45: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.45                         \end{matrix}
+                                         
+I'm guessing that you meant to end an alignment here.
+
+./esercizio.tex:45: Missing { inserted.
+<inserted text> 
+                {
+l.45                         \end{matrix}
+                                         
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./esercizio.tex:45: Missing $ inserted.
+<inserted text> 
+                $
+l.45                         \end{matrix}
+                                         
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (166.34679pt too wide) in alignment at lines 36--45
+ [][][] []
+ []
+
+./esercizio.tex:45: Missing $$ inserted.
+<to be read again> 
+                   \endgroup 
+l.45                         \end{matrix}
+                                         
+Displays can use special alignments (like \eqalignno)
+only if nothing but the alignment itself is between $$'s.
+
+./esercizio.tex:46: Misplaced alignment tab character &.
+\reserved@a ->&
+                & &
+l.46 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:46: Misplaced alignment tab character &.
+\reserved@a ->& &
+                  &
+l.46 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:46: Misplaced alignment tab character &.
+\reserved@a ->& & &
+                   
+l.46 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:46: Misplaced \cr.
+\@@eqncr ...l \@eqnswtrue \global \@eqcnt \z@ \cr 
+                                                  
+l.46 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:46: Too many }'s.
+\endeqnarray ->\@@eqncr \egroup 
+                                \global \advance \c@equation \m@ne $$\@ignor...
+l.46 \end{eqnarray*}
+                    
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+./esercizio.tex:46: LaTeX Error: \begin{document} ended by \end{eqnarray*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{eqnarray*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./esercizio.tex:46: Missing $ inserted.
+<inserted text> 
+                $
+l.46 \end{eqnarray*}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:46: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.46 \end{eqnarray*}
+                    
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+./esercizio.tex:46: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.46 \end{eqnarray*}
+                    
+Things are pretty mixed up, but I think the worst is over.
+
+./esercizio.tex:48: Undefined control sequence.
+l.48 \subsubsection
+                   {$2^o$ soluzione}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./esercizio.tex:48: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 \subsubsection{$
+                     2^o$ soluzione}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (29.44724pt too wide) in paragraph at lines 48--50
+[]$\OT1/cmr/m/n/10 2[]$
+ []
+
+
+./esercizio.tex:51: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \begin{eqnarray*}
+                      
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 51--51
+[] 
+ []
+
+./esercizio.tex:59: Extra }, or forgotten \endgroup.
+<template> }
+            $\hfil \endtemplate 
+l.59                              -
+                                   3y-3z=-2
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./esercizio.tex:59: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.59                              -
+                                   3y-3z=-2
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:59: Missing } inserted.
+<inserted text> 
+                }
+l.59                              -
+                                   3y-3z=-2
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./esercizio.tex:60: LaTeX Error: \begin{eqnarray*} on input line 51 ended by \e
+nd{cases}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60                            \end{cases}
+                                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./esercizio.tex:60: Missing } inserted.
+<inserted text> 
+                }
+l.60                            \end{cases}
+                                           
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:60: Missing $ inserted.
+<inserted text> 
+                $
+l.60                            \end{cases}
+                                           
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:60: Missing } inserted.
+<inserted text> 
+                }
+l.60                            \end{cases}
+                                           
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:60: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.60                            \end{cases}
+                                           
+I'm guessing that you meant to end an alignment here.
+
+./esercizio.tex:60: Missing { inserted.
+<inserted text> 
+                {
+l.60                            \end{cases}
+                                           
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./esercizio.tex:60: Missing $ inserted.
+<inserted text> 
+                $
+l.60                            \end{cases}
+                                           
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (143.17424pt too wide) in alignment at lines 51--60
+ [][][] []
+ []
+
+./esercizio.tex:60: Missing $$ inserted.
+<to be read again> 
+                   \endgroup 
+l.60                            \end{cases}
+                                           
+Displays can use special alignments (like \eqalignno)
+only if nothing but the alignment itself is between $$'s.
+
+./esercizio.tex:61: Misplaced alignment tab character &.
+\reserved@a ->&
+                & &
+l.61 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:61: Misplaced alignment tab character &.
+\reserved@a ->& &
+                  &
+l.61 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:61: Misplaced alignment tab character &.
+\reserved@a ->& & &
+                   
+l.61 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:61: Misplaced \cr.
+\@@eqncr ...l \@eqnswtrue \global \@eqcnt \z@ \cr 
+                                                  
+l.61 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:61: Too many }'s.
+\endeqnarray ->\@@eqncr \egroup 
+                                \global \advance \c@equation \m@ne $$\@ignor...
+l.61 \end{eqnarray*}
+                    
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+./esercizio.tex:61: LaTeX Error: \begin{document} ended by \end{eqnarray*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 \end{eqnarray*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./esercizio.tex:61: Missing $ inserted.
+<inserted text> 
+                $
+l.61 \end{eqnarray*}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:61: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.61 \end{eqnarray*}
+                    
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+./esercizio.tex:61: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.61 \end{eqnarray*}
+                    
+Things are pretty mixed up, but I think the worst is over.
+
+./esercizio.tex:66: Extra }, or forgotten \endgroup.
+<template> }
+            $\@eqnsel \endtemplate 
+l.66     y
+          =\frac{2}{3}-z
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./esercizio.tex:66: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.66     y
+          =\frac{2}{3}-z
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:66: Missing } inserted.
+<inserted text> 
+                }
+l.66     y
+          =\frac{2}{3}-z
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./esercizio.tex:67: LaTeX Error: \begin{eqnarray*} on input line 62 ended by \e
+nd{cases}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67   \end{cases}
+                  &\to&
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./esercizio.tex:67: Missing } inserted.
+<inserted text> 
+                }
+l.67   \end{cases}
+                  &\to&
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:67: Missing $ inserted.
+<inserted text> 
+                $
+l.67   \end{cases}
+                  &\to&
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:67: Missing } inserted.
+<inserted text> 
+                }
+l.67   \end{cases}
+                  &\to&
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:67: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.67   \end{cases}
+                  &\to&
+I'm guessing that you meant to end an alignment here.
+
+./esercizio.tex:67: Missing { inserted.
+<inserted text> 
+                {
+l.67   \end{cases}
+                  &\to&
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./esercizio.tex:67: Missing $ inserted.
+<inserted text> 
+                $
+l.67   \end{cases}
+                  &\to&
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (77.26683pt too wide) in alignment at lines 62--67
+ [][][] []
+ []
+
+./esercizio.tex:67: Missing $$ inserted.
+<to be read again> 
+                   \endgroup 
+l.67   \end{cases}
+                  &\to&
+Displays can use special alignments (like \eqalignno)
+only if nothing but the alignment itself is between $$'s.
+
+./esercizio.tex:67: Misplaced alignment tab character &.
+l.67   \end{cases}&
+                   \to&
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:67: Missing $ inserted.
+<inserted text> 
+                $
+l.67   \end{cases}&\to
+                      &
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./esercizio.tex:67: Misplaced alignment tab character &.
+l.67   \end{cases}&\to&
+                       
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:76: Misplaced alignment tab character &.
+\reserved@a ->&
+                & &
+l.76 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:76: Misplaced alignment tab character &.
+\reserved@a ->& &
+                  &
+l.76 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:76: Misplaced alignment tab character &.
+\reserved@a ->& & &
+                   
+l.76 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:76: Misplaced \cr.
+\@@eqncr ...l \@eqnswtrue \global \@eqcnt \z@ \cr 
+                                                  
+l.76 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:76: Extra }, or forgotten $.
+\endeqnarray ->\@@eqncr \egroup 
+                                \global \advance \c@equation \m@ne $$\@ignor...
+l.76 \end{eqnarray*}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./esercizio.tex:76: LaTeX Error: \begin{document} ended by \end{eqnarray*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \end{eqnarray*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./esercizio.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{eqnarray*}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:76: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.76 \end{eqnarray*}
+                    
+Things are pretty mixed up, but I think the worst is over.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 67--78
+$\OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (24.13742pt too wide) in paragraph at lines 67--78
+[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (47.30972pt too wide) in paragraph at lines 67--78
+\OT1/cmr/m/n/10 1 [] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (5.0903pt too wide) in paragraph at lines 67--78
+\OML/cmm/m/it/10 z[] 
+ []
+
+
+Overfull \hbox (15.81711pt too wide) in paragraph at lines 67--78
+\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (14.16393pt too wide) in paragraph at lines 67--78
+[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (15.64581pt too wide) in paragraph at lines 67--78
+\OML/cmm/m/it/10 z \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (24.13742pt too wide) in paragraph at lines 67--78
+[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (6.38612pt too wide) in paragraph at lines 67--78
+[][] 
+ []
+
+
+Overfull \hbox (15.81711pt too wide) in paragraph at lines 67--78
+\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (14.16393pt too wide) in paragraph at lines 67--78
+[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (17.86803pt too wide) in paragraph at lines 67--78
+\OML/cmm/m/it/10 z \OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (15.64581pt too wide) in paragraph at lines 67--78
+\OML/cmm/m/it/10 z \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (3.61111pt too wide) in paragraph at lines 67--78
+\OML/cmm/m/it/10 t$$$
+ []
+
+
+Overfull \hbox (8.05556pt too wide) in paragraph at lines 67--78
+\OML/cmm/m/it/10 V$ 
+ []
+
+./esercizio.tex:79: Undefined control sequence.
+l.79 ...c{2}{3}-t,t\right) & \forall t \in \mathds
+                                                  {K}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (109.8414pt too wide) in alignment at lines 78--80
+ [][][] []
+ []
+
+./esercizio.tex:84: Extra }, or forgotten \endgroup.
+<template> }
+            $\@eqnsel \endtemplate 
+l.84     y
+          =\frac{2}{3}-t\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./esercizio.tex:84: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.84     y
+          =\frac{2}{3}-t\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:84: Missing } inserted.
+<inserted text> 
+                }
+l.84     y
+          =\frac{2}{3}-t\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./esercizio.tex:86: LaTeX Error: \begin{eqnarray*} on input line 81 ended by \e
+nd{cases}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86   \end{cases}
+                   & \to &
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./esercizio.tex:86: Missing } inserted.
+<inserted text> 
+                }
+l.86   \end{cases}
+                   & \to &
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:86: Missing $ inserted.
+<inserted text> 
+                $
+l.86   \end{cases}
+                   & \to &
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:86: Missing } inserted.
+<inserted text> 
+                }
+l.86   \end{cases}
+                   & \to &
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:86: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.86   \end{cases}
+                   & \to &
+I'm guessing that you meant to end an alignment here.
+
+./esercizio.tex:86: Missing { inserted.
+<inserted text> 
+                {
+l.86   \end{cases}
+                   & \to &
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./esercizio.tex:86: Missing $ inserted.
+<inserted text> 
+                $
+l.86   \end{cases}
+                   & \to &
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (41.82808pt too wide) in alignment at lines 81--86
+ [][][] []
+ []
+
+./esercizio.tex:86: Missing $$ inserted.
+<to be read again> 
+                   \endgroup 
+l.86   \end{cases}
+                   & \to &
+Displays can use special alignments (like \eqalignno)
+only if nothing but the alignment itself is between $$'s.
+
+./esercizio.tex:86: Misplaced alignment tab character &.
+l.86   \end{cases} &
+                     \to &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:86: Missing $ inserted.
+<inserted text> 
+                $
+l.86   \end{cases} & \to
+                         &
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./esercizio.tex:86: Misplaced alignment tab character &.
+l.86   \end{cases} & \to &
+                          
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:88: Undefined control sequence.
+<argument> \text 
+                 
+l.88                         \text
+                                  {parametriche della retta}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./esercizio.tex:90: Misplaced alignment tab character &.
+\reserved@a ->&
+                & &
+l.90 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:90: Misplaced alignment tab character &.
+\reserved@a ->& &
+                  &
+l.90 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:90: Misplaced alignment tab character &.
+\reserved@a ->& & &
+                   
+l.90 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:90: Misplaced \cr.
+\@@eqncr ...l \@eqnswtrue \global \@eqcnt \z@ \cr 
+                                                  
+l.90 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:90: Extra }, or forgotten $.
+\endeqnarray ->\@@eqncr \egroup 
+                                \global \advance \c@equation \m@ne $$\@ignor...
+l.90 \end{eqnarray*}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./esercizio.tex:90: LaTeX Error: \begin{document} ended by \end{eqnarray*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 \end{eqnarray*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./esercizio.tex:90: Missing $ inserted.
+<inserted text> 
+                $
+l.90 \end{eqnarray*}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:90: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.90 \end{eqnarray*}
+                    
+Things are pretty mixed up, but I think the worst is over.
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 86--91
+  $\OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (107.21498pt too wide) in paragraph at lines 86--91
+[] [] []$$$ 
+ []
+
+./esercizio.tex:94: Extra }, or forgotten \endgroup.
+<template> }
+            $\@eqnsel \endtemplate 
+l.94     n
+          _2(2,-3,-3)
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./esercizio.tex:94: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.94     n
+          _2(2,-3,-3)
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:94: Missing } inserted.
+<inserted text> 
+                }
+l.94     n
+          _2(2,-3,-3)
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./esercizio.tex:95: LaTeX Error: \begin{eqnarray*} on input line 91 ended by \e
+nd{matrix}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95   \end{matrix}
+                   & n_1\wedge n_2=(0,3,-3)
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./esercizio.tex:95: Missing } inserted.
+<inserted text> 
+                }
+l.95   \end{matrix}
+                   & n_1\wedge n_2=(0,3,-3)
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95   \end{matrix}
+                   & n_1\wedge n_2=(0,3,-3)
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:95: Missing } inserted.
+<inserted text> 
+                }
+l.95   \end{matrix}
+                   & n_1\wedge n_2=(0,3,-3)
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:95: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95   \end{matrix}
+                   & n_1\wedge n_2=(0,3,-3)
+I'm guessing that you meant to end an alignment here.
+
+./esercizio.tex:95: Missing { inserted.
+<inserted text> 
+                {
+l.95   \end{matrix}
+                   & n_1\wedge n_2=(0,3,-3)
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./esercizio.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95   \end{matrix}
+                   & n_1\wedge n_2=(0,3,-3)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (57.71075pt too wide) in alignment at lines 91--95
+ [][][] []
+ []
+
+./esercizio.tex:95: Missing $$ inserted.
+<to be read again> 
+                   \endgroup 
+l.95   \end{matrix}
+                   & n_1\wedge n_2=(0,3,-3)
+Displays can use special alignments (like \eqalignno)
+only if nothing but the alignment itself is between $$'s.
+
+./esercizio.tex:95: Misplaced alignment tab character &.
+l.95   \end{matrix}&
+                     n_1\wedge n_2=(0,3,-3)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no n in font nullfont!
+./esercizio.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95   \end{matrix}& n_
+                       1\wedge n_2=(0,3,-3)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./esercizio.tex:96: Misplaced alignment tab character &.
+\reserved@a ->&
+                & &
+l.96 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:96: Misplaced alignment tab character &.
+\reserved@a ->& &
+                  &
+l.96 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:96: Misplaced alignment tab character &.
+\reserved@a ->& & &
+                   
+l.96 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:96: Misplaced \cr.
+\@@eqncr ...l \@eqnswtrue \global \@eqcnt \z@ \cr 
+                                                  
+l.96 \end{eqnarray*}
+                    
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./esercizio.tex:96: Extra }, or forgotten $.
+\endeqnarray ->\@@eqncr \egroup 
+                                \global \advance \c@equation \m@ne $$\@ignor...
+l.96 \end{eqnarray*}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./esercizio.tex:96: LaTeX Error: \begin{document} ended by \end{eqnarray*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 \end{eqnarray*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./esercizio.tex:96: Missing $ inserted.
+<inserted text> 
+                $
+l.96 \end{eqnarray*}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./esercizio.tex:96: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.96 \end{eqnarray*}
+                    
+Things are pretty mixed up, but I think the worst is over.
+
+
+Overfull \hbox (11.15282pt too wide) in paragraph at lines 95--97
+ $[] \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (21.04399pt too wide) in paragraph at lines 95--97
+\OML/cmm/m/it/10 n[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (39.44447pt too wide) in paragraph at lines 95--97
+\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ; \OMS/c
+msy/m/n/10 ^^@\OT1/cmr/m/n/10 3)$$$ 
+ []
+
+
+./esercizio.tex:97: LaTeX Error: The font size command \normalsize is not defin
+ed:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 \clearpage
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1
+./esercizio.tex:97: Undefined control sequence.
+<write> \newlabel{chap:esercizi}{{}{\thepage 
+                                             }}
+l.97 \clearpage
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{chap:esercizi}{{}{}}
+./esercizio.tex:97: Undefined control sequence.
+<write> \newlabel{sec:esercizio1}{{}{\thepage 
+                                              }}
+l.97 \clearpage
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{sec:esercizio1}{{}{}}
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+./esercizio.tex:97: Undefined control sequence.
+<write> ...bel{sec:riduzioneagradini}{{}{\thepage 
+                                                  }}
+l.97 \clearpage
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{sec:riduzioneagradini}{{}{}}
+./esercizio.tex:97: Undefined control sequence.
+<write> \newlabel{sec:soluzione1}{{}{\thepage 
+                                              }}
+l.97 \clearpage
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{sec:soluzione1}{{}{}}
+./esercizio.tex:97: Undefined control sequence.
+<write> \newlabel{sec:soluzione2}{{}{\thepage 
+                                              }}
+l.97 \clearpage
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{sec:soluzione2}{{}{}}
+]
+./esercizio.tex:98: Undefined control sequence.
+l.98 \section
+             {Esercizio 2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./esercizio.tex:98: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 \section{E
+               sercizio 2}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no 2 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 98--100
+[]
+ []
+
+
+./esercizio.tex:101: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \begin{eqnarray*}
+                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 101--101
+[] 
+ []
+
+
+Overfull \hbox (71.71133pt too wide) in alignment at lines 101--105
+ [][][] []
+ []
+
+Missing character: There is no L in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+LaTeX Font Info:    Trying to load font information for +cmr on input line 106.
+
+LaTeX Font Info:    No file cmr.fd. on input line 106.
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 106.
+
+./esercizio.tex:106: Corrupted NFSS tables.
+wrong@fontshape ...message {Corrupted NFSS tables}
+                                                  error@fontshape else let f...
+l.106 La matrice risulta essere già
+                                     ridotta a gradini, quindi la matrice co...
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 106.
+
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+
+./esercizio.tex:107: LaTeX Error: Environment equation* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 \begin{equation*}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ( in font nullfont!
+./esercizio.tex:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108   (\begin{array}{ccc|c}
+                             
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./esercizio.tex:110: Missing $ inserted.
+<inserted text> 
+                $
+l.110   \end{array}
+                   )
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no ) in font nullfont!
+
+./esercizio.tex:111: LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \end{equation*}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 105--112
+    \/cmr/m/n/10 ^^Ra
+ []
+
+
+Overfull \hbox (20.00006pt too wide) in paragraph at lines 105--112
+[]$
+ []
+
+
+Overfull \hbox (112.66394pt too wide) in alignment at lines 112--114
+ [][][] []
+ []
+
+
+./esercizio.tex:115: LaTeX Error: Environment equation* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 \begin{equation*}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./esercizio.tex:117: Missing $ inserted.
+<inserted text> 
+                $
+l.117     x
+           =5-t-2s\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./esercizio.tex:120: Missing $ inserted.
+<inserted text> 
+                $
+l.120   \end{cases}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./esercizio.tex:121: LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 \end{equation*}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (24.13742pt too wide) in paragraph at lines 114--122
+ $[] \/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 114--122
+\/cmr/m/n/10 5 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 114--122
+\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (9.68752pt too wide) in paragraph at lines 114--122
+\/cmr/m/n/10 2\OML/cmm/m/it/10 s[] 
+ []
+
+
+Overfull \hbox (15.81711pt too wide) in paragraph at lines 114--122
+\OML/cmm/m/it/10 y \/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (3.61111pt too wide) in paragraph at lines 114--122
+\OML/cmm/m/it/10 t[] 
+ []
+
+
+Overfull \hbox (15.64581pt too wide) in paragraph at lines 114--122
+\OML/cmm/m/it/10 z \/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (4.6875pt too wide) in paragraph at lines 114--122
+\OML/cmm/m/it/10 s$
+ []
+
+./esercizio.tex:123: Undefined control sequence.
+l.123 \section
+              {Esercizio 3}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./esercizio.tex:123: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 \section{E
+                sercizio 3}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no 3 in font nullfont!
+
+./esercizio.tex:125: LaTeX Error: Environment equation* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 \begin{equation*}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./esercizio.tex:126: Missing $ inserted.
+<inserted text> 
+                $
+l.126   \vec
+            {OP}_1,\vec{OP}_2,\vec{OP}_3
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./esercizio.tex:127: LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 \end{equation*}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./esercizio.tex:127: Missing $ inserted.
+<inserted text> 
+                $
+l.127 \end{equation*}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 123--129
+[]
+ []
+
+
+Overfull \hbox (69.49097pt too wide) in paragraph at lines 123--129
+[][]\OML/cmm/m/it/10 ; [][]; [][]$
+ []
+
+
+Overfull \hbox (107.713pt too wide) in alignment at lines 129--133
+ [][][] []
+ []
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no , in font nullfont!
+
+./esercizio.tex:135: LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135   \begin{figure}
+                      [ht]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ] in font nullfont!
+./esercizio.tex:137: Undefined control sequence.
+l.137     \includegraphics
+                          [width=5cm]{img/finiti/es/es1.eps}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no s in font nullfont!
+
+./esercizio.tex:138: LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138   \end{figure}
+                    \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ? in font nullfont!
+
+Overfull \hbox (36.8889pt too wide) in paragraph at lines 133--140
+\OML/cmm/m/it/10 v[]; v[]; v[]$
+ []
+
+./esercizio.tex:147: Undefined control sequence.
+l.147     \text
+               {Linearmente}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./esercizio.tex:148: Undefined control sequence.
+<recently read> \text 
+                      
+l.148     \text
+               {indipendenti}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (196.51482pt too wide) in alignment at lines 140--150
+ [][][] []
+ []
+
+)
+! Emergency stop.
+<*> esercizio.tex
+                 
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 34 strings out of 480943
+ 561 string characters out of 5907814
+ 294194 words of memory out of 5000000
+ 17367 multiletter control sequences out of 15000+600000
+ 403430 words of font info for 27 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 36i,14n,42p,141b,119s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

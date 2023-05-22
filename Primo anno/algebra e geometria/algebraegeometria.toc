@@ -24,3 +24,13 @@
 \contentsline {chapter}{\numberline {5}Autovalori e autovettori}{55}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Definizione, esempi e applicazioni}{55}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Calcolo di autovalori e autovettori}{57}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Esercizi}{67}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Esercizio 1}{67}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Riduzione a gradini:}{67}{subsection.6.1.1}%
+\contentsline {subsubsection}{$1^o$ soluzione}{67}{subsubsection*.5}%
+\contentsline {subsubsection}{$2^o$ soluzione}{67}{subsubsection*.6}%
+\contentsline {section}{\numberline {6.2}Esercizio 2}{68}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Esercizio 3}{68}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Sistema omogeneo}{69}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Sistema disomogeneo}{69}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}Il Determinante}{70}{section.6.4}%
