@@ -1,4 +1,3 @@
-
 \chapter{Esercizi}
 \label{chap:esercizi}
 
@@ -355,4 +354,92 @@ $\footnote{matrice quadrata $n\cdot n$}
     \text{matrice}\\
     \text{quadrata}
   \end{array}
+\end{equation*}
+\begin{equation*}
+  \det(A)= \sum_{P\in S_n}\xi(P) a_1(P_1) a_2(P_2)\dots a_n (P_n)
+\end{equation*}
+\begin{equation*}
+  \begin{pmatrix}
+    a_{11} & a_{12}\\
+    a_{21} & a_{22}
+  \end{pmatrix}=A
+\end{equation*}
+\begin{equation*}
+  \det(A)=(a_{11}\cdot a_{22})-(a_{12}\cdot a_{21})
+\end{equation*}
+Quindi prendendo andando a sostituire le variabili con i numeri esce questo
+risultato
+\begin{equation*}
+  \begin{pmatrix}
+    1 & 2 \\
+    3 & 4
+  \end{pmatrix}=(1 \cdot 4)- (2 \cdot 3)= 4 - 6= -2
+\end{equation*}
+Altro esempio,
+\begin{equation*}
+  \det
+  \begin{pmatrix}
+    1 & 2\\
+    4 & 10
+  \end{pmatrix}= (1* 10)-(2 * 4)= 10 - 10= 0
+\end{equation*}
+In questo caso vale il teorema di Laplace.
+\begin{equation*}
+  \det
+  \begin{pmatrix}
+    a_{11} & a_{12} & a_{13}\\ 
+    a_{21} & a_{22} & a_{23}\\
+    a_{31} & a_{32} & a_{33}
+  \end{pmatrix}
+  \begin{pmatrix}
+    a_{11} & a_{12} & a_{13}\\ 
+    a_{21} & a_{22} & a_{23}\\
+    a_{31} & a_{32} & a_{33}
+  \end{pmatrix}
+\end{equation*}
+\begin{equation*}
+  a_{11}a_{22}a_{33}+a_{12}a_{23}a_{31}+a_{13}a_{21}a_{32}-\underbrace{(a_{11}a_{22}a_{33}+a_{12}a_{23}a_{31}+a_{13}a_{21}a_{32})}_{\text{Sarrus}}
+\end{equation*}
+\begin{equation*}
+  A\in M_n(\mathds{K})\to
+  \begin{array}{c}
+    \text{Il determinante ha}\\
+    \underbrace{n!}_{Fattoriale} \text{ addendi}
+  \end{array}
+\end{equation*}
+
+\section{Formula di laplace}
+\label{sec:esflaplace}
+
+\begin{equation*}
+  \begin{pmatrix}
+    a_{11} & a_{12} & a_{13}\\
+    a_{21} & a_{22} & a_{23}\\
+    a_{31} & a_{32} & a_{33}
+  \end{pmatrix}
+  \begin{array}{c}
+    \text{Il cofattore di } a_{23}\\
+    C_{23} = \det
+    \begin{pmatrix}
+      a_{11} & a_{12}\\
+      a_{31} & a_{32}
+    \end{pmatrix}
+  \end{array}
+\end{equation*}
+\begin{equation*}
+  \begin{pmatrix}
+    {\color{blue}+} & {\color{red}-} &  {\color{blue}+}\\
+    {\color{red}-} &{\color{blue}+}& {\color{red}-}\\
+    {\color{blue}+} & {\color{red}-} &  {\color{blue}+}
+  \end{pmatrix}
+\end{equation*}
+Segno dei cofattori
+
+\section{Esercizio 4}
+\label{sec:esercizio4}
+Prendiamo una matrice
+\begin{equation*}
+  \begin{pmatrix}
+    
+  \end{pmatrix}
 \end{equation*}

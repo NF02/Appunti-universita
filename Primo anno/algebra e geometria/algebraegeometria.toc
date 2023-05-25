@@ -1,5 +1,5 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
 \contentsline {section}{\numberline {0.1}Premesse\dots }{7}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Simboli}{8}{section.0.2}%
 \contentsline {chapter}{\numberline {1}Vettori}{9}{chapter.1}%
@@ -34,3 +34,4 @@
 \contentsline {subsection}{\numberline {6.3.1}Sistema omogeneo}{69}{subsection.6.3.1}%
 \contentsline {subsection}{\numberline {6.3.2}Sistema disomogeneo}{69}{subsection.6.3.2}%
 \contentsline {section}{\numberline {6.4}Il Determinante}{70}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Formula di laplace}{71}{section.6.5}%
