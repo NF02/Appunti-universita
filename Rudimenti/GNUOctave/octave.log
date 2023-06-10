@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.6.9)  10 JUN 2023 14:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.6.9)  10 JUN 2023 23:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -871,6 +871,9 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
+(/usr/share/texmf-dist/tex/latex/doublestroke/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
 (/usr/share/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count371
 \lst@gtempboxa=\box75
@@ -1012,7 +1015,11 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count400
 \l__pdf_internal_box=\box125
-) (./octave.aux)
+) (./octave.aux
+
+LaTeX Warning: Label `solmtx2x2' multiply defined.
+
+)
 \openout1 = `octave.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
@@ -1036,7 +1043,7 @@ LaTeX Font Info:    ... okay on input line 92.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 92.
 LaTeX Font Info:    Trying to load font information for T3+cmr on input line 92
 .
-(/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
+ (/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 92.
@@ -1044,7 +1051,6 @@ Package hyperref Info: Link coloring OFF on input line 92.
  (./octave.out) (./octave.out)
 \@outlinefile=\write4
 \openout4 = `octave.out'.
-
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1144,6 +1150,11 @@ Overfull \hbox (2.60693pt too wide) in paragraph at lines 112--124
 
 ]
 Capitolo 2.
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 1
+56.
+(/usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+)
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
@@ -1154,40 +1165,46 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
 
 (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-) (./source/moltM2x3.m
+) (./source/moltM2x2.m
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1.
 ) [5]
-(./octave.aux)
+(./source/detMtx2x2.m) [6] [7] (./octave.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `octave.out' has not changed.
-(rerunfilecheck)             Checksum: 3E8197BF3539056349659907E249595C;1169.
+(rerunfilecheck)             Checksum: 6CE1D0785E1E0021B0846EEE22D59449;1723.
  ) 
 Here is how much of TeX's memory you used:
- 28650 strings out of 476025
- 508801 string characters out of 5796533
+ 29276 strings out of 476025
+ 516491 string characters out of 5796533
  1933388 words of memory out of 5000000
- 48541 multiletter control sequences out of 15000+600000
- 532977 words of font info for 86 fonts, out of 8000000 for 9000
+ 49133 multiletter control sequences out of 15000+600000
+ 534186 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,89p,478b,1514s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dis
-t/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
-sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></
-usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf
--dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
-per/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pf
-b></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on octave.pdf (5 pages, 240130 bytes).
+ 84i,12n,89p,478b,1652s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf-dist/fonts/type1
+/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
+r/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb>
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/tex
+mf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
+super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.
+pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share
+/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fon
+ts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public
+/cm-super/sftt1000.pfb>
+Output written on octave.pdf (7 pages, 290405 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 69 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 230 PDF objects out of 1000 (max. 8388607)
+ 179 compressed objects within 2 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
