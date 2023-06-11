@@ -15,3 +15,8 @@
 \contentsline {section}{\numberline {2.4}Diagonale di una matrice}{9}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Esempio in Matlab o Octave}{10}{subsection.2.4.1}%
 \contentsline {subsubsection}{Stampa a schermo}{11}{subsubsection*.4}%
+\contentsline {section}{\numberline {2.5}Operazioni tra vettori e mattrici}{11}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Addizioni e sottrazioni tra matrici}{12}{subsection.2.5.1}%
+\contentsline {subsubsection}{Addizioni}{12}{subsubsection*.5}%
+\contentsline {subsubsection}{Sottrazioni}{12}{subsubsection*.6}%
+\contentsline {subsection}{\numberline {2.5.2}Moltiplicazioni e divisioni}{12}{subsection.2.5.2}%

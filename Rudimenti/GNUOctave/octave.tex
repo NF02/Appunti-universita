@@ -403,5 +403,84 @@ diagMU =
    37
 \end{verbatim}
 
+\section{Operazioni tra vettori e mattrici}
+\label{sec:vettmat}
+
+Un'altra operazione tipica è la somma tra un vettore ``matrice unidimensionale''
+e una matrice NxM, quindi anche qui ci sono dei matodi grafici di svolgimento,
+ma partiamo dalle basi, prendiamo un vettore A e una matrici v
+\begin{eqnarray}
+  \label{eq:vetmatex}
+  A =
+  \begin{pmatrix}
+    2 & 3 & 4\\
+    1 & 5 & 7\\
+    9 & 8 & 6        
+  \end{pmatrix}, & \vec{v}=
+                  \begin{pmatrix}
+                    3 & 4 & 5
+                  \end{pmatrix}
+\end{eqnarray}
+\clearpage
+\subsection{Addizioni e sottrazioni tra matrici}
+\label{sec:addesottvandmtx}
+
+\subsubsection{Addizioni}
+\label{sec:addvectmtx}
+non modo non molto dissimile a quello che avveniva con la somma tra mattrici,
+anche nella somma tra un vettore e una Matrice si va assomare i membri dell'uno
+per quelli dell'altra, in questo caso nello specifico la prima colonna della
+matrice è stata moltiplicata per il primo elemento del vettore, la seconda
+colonna per il secondo elemento e così via.
+\begin{eqnarray*}
+   A+\vec{v} =
+  \begin{pmatrix}
+    {\color{red}3+}2 & {\color{red}4+}3 & {\color{red}5+}4\\
+    {\color{red}3+}1 & {\color{red}4+}5 & {\color{red}5+}7\\
+    {\color{red}3+}9 & {\color{red}4+}8 & {\color{red}5+}6        
+  \end{pmatrix}=
+  \begin{pmatrix}
+    5 & 7 & 9\\
+    4 & 9 & 12\\
+    12 & 12 & 11
+  \end{pmatrix}
+\end{eqnarray*}
+
+\subsubsection{Sottrazioni}
+\label{sec:sottvectmtx}
+\begin{eqnarray*}
+   A-\vec{v} =
+  \begin{pmatrix}
+    {\color{red}3-}2 & {\color{red}4-}3 & {\color{red}5-}4\\
+    {\color{red}3-}1 & {\color{red}4-}5 & {\color{red}5-}7\\
+    {\color{red}3-}9 & {\color{red}4-}8 & {\color{red}5-}6        
+  \end{pmatrix}=
+  \begin{pmatrix}
+    -1 & -1 & -1\\
+    -2 & 1 & 2 \\
+    6 & 4 & 1
+  \end{pmatrix}
+\end{eqnarray*}
+
+\subsection{Moltiplicazioni e divisioni}
+\label{sec:moltedivvetmtx}
+\begin{eqnarray*}
+   A\cdot\vec{v} =
+  \begin{pmatrix}
+    {\color{red}3\cdot}2 & {\color{red}4\cdot}3 & {\color{red}5\cdot}4\\
+    {\color{red}3\cdot}1 & {\color{red}4\cdot}5 & {\color{red}5\cdot}7\\
+    {\color{red}3\cdot}9 & {\color{red}4\cdot}8 & {\color{red}5\cdot}6        
+  \end{pmatrix}=
+  \begin{pmatrix}
+    6 & 12 & 20\\
+    3 & 20 & 35\\
+    27 & 32 & 30
+  \end{pmatrix}
+\end{eqnarray*}
+In questo caso l'ambiguità non sta
+nell'operazione in se e per se ma nella sintassi di matlab e Octave che presentano due diverse funzioni per la moltiplicazione e la divisione, la prima è \lstinline|A*M| che serve a fare una moltiplicazioni tra matrici della stessa dimensione e poi c'è quella per che forza la
+condizione \lstinline|A.*M| che funziona con
+matrici di dimensione anche differente.
+
 
 \end{document}    
