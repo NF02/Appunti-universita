@@ -374,7 +374,6 @@ parametro negativo, in questo caso il -1, \lstinline|diag(A,-1)| il risultato sa
 
 \subsubsection{Stampa a schermo}
 \label{sec:stampScr}
-
 \begin{verbatim}
 A =
 
@@ -404,5 +403,5 @@ diagMU =
    37
 \end{verbatim}
 
-\end{document}
-    
+
+\end{document}    

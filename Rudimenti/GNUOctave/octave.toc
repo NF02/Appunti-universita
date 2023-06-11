@@ -1,0 +1,17 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduzione}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Pacchetti e impostazioni base}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Pacchetti}{5}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Impostazioni e formati}{5}{subsection.1.1.2}%
+\contentsline {chapter}{\numberline {2}Funzioni base}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Addizioni e sottrazioni tra matrici}{7}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Soluzione per Octave o Mathlab}{7}{subsection.2.1.1}%
+\contentsline {paragraph}{Stampa a schermo}{8}{paragraph*.2}%
+\contentsline {section}{\numberline {2.2}Determinante di una matrice}{8}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Soluzione per Octave o Mathlab}{8}{subsection.2.2.1}%
+\contentsline {paragraph}{Stampa a schermo}{9}{paragraph*.3}%
+\contentsline {section}{\numberline {2.3}Matrice inversa}{9}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Diagonale di una matrice}{9}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Esempio in Matlab o Octave}{10}{subsection.2.4.1}%
+\contentsline {subsubsection}{Stampa a schermo}{11}{subsubsection*.4}%
