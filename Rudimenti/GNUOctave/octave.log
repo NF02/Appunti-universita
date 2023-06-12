@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.6.9)  11 JUN 2023 23:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.6.9)  12 JUN 2023 21:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1621,20 +1621,29 @@ LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line
 File: ts1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )) [10{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [11
 
-] [12
+]
+Underfull \hbox (badness 10000) in paragraph at lines 495--498
 
-] (./octave.aux)
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12
+
+]
+[13] (./octave.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `octave.out' has not changed.
-(rerunfilecheck)             Checksum: 146DEEE7788A9D0077452C38DA8AC28C;2795.
+(rerunfilecheck)             Checksum: 744DD848C66BEAA077E72F1E18499A7B;3013.
  ) 
 Here is how much of TeX's memory you used:
- 59546 strings out of 476025
- 1454229 string characters out of 5796533
- 2381739 words of memory out of 5000000
- 79030 multiletter control sequences out of 15000+600000
+ 59553 strings out of 476025
+ 1454304 string characters out of 5796533
+ 2381816 words of memory out of 5000000
+ 79034 multiletter control sequences out of 15000+600000
  537175 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,120p,721b,2027s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1655,10 +1664,10 @@ pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share
 /texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fon
 ts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public
 /cm-super/sftt1000.pfb>
-Output written on octave.pdf (12 pages, 328409 bytes).
+Output written on octave.pdf (13 pages, 332774 bytes).
 PDF statistics:
- 319 PDF objects out of 1000 (max. 8388607)
- 260 compressed objects within 3 object streams
- 78 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 275 compressed objects within 3 object streams
+ 81 named destinations out of 1000 (max. 500000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

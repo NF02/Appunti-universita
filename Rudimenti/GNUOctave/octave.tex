@@ -477,10 +477,60 @@ colonna per il secondo elemento e così via.
     27 & 32 & 30
   \end{pmatrix}
 \end{eqnarray*}
-In questo caso l'ambiguità non sta
-nell'operazione in se e per se ma nella sintassi di matlab e Octave che presentano due diverse funzioni per la moltiplicazione e la divisione, la prima è \lstinline|A*M| che serve a fare una moltiplicazioni tra matrici della stessa dimensione e poi c'è quella per che forza la
-condizione \lstinline|A.*M| che funziona con
-matrici di dimensione anche differente.
+In questo caso l'ambiguità non sta nell'operazione in se e per se ma nella sintassi di
+matlab e Octave che presentano due diverse funzioni per la moltiplicazione e la
+divisione, la prima è \lstinline|A*M| che serve a fare una moltiplicazioni tra matrici
+della stessa dimensione e poi c'è quella per che forza la condizione \lstinline|A.*M|
+che funziona con matrici di dimensione anche differente.
 
+\section{Rank}
+\label{sec:rank}
 
-\end{document}    
+\begin{equation*}
+  A=\begin{pmatrix}
+      1 & 3 & 9\\
+      9 & 4 & 12\\
+      5 & 90 & 3
+  \end{pmatrix}
+\end{equation*}
+In questo caso il rango è 3, su octave o matlab, basta utilizzare il comando
+\lstinline|rank(A)|.\\
+
+\section{Matrici Trasposte}
+\label{sec:matt}
+\begin{equation*}
+  A = \begin{pmatrix}
+    2 & 3 & 4\\
+    1 & 5 & 7\\
+    9 & 8 & 6        
+  \end{pmatrix}
+\end{equation*}
+Per fare la matrice trasposta, basta scambiare i valore di N e M quindi il risultato è
+\begin{equation*}
+  A^\prime=
+  \begin{pmatrix}
+    2  & 1 &  9\\
+    3  & 5 &  8\\
+    4  & 7 &  6
+  \end{pmatrix}
+\end{equation*}
+Praticamente i valori sono stati scambiati tagliando per la diagonale,
+infatti, 2, 1 e 6 restano nelle stesse posizioni. In matlab e Octave esiste una
+funzione dedicata \lstinline|A.'|, che fa automaticamente l'operazione,
+ovviamente per sfruttare al massimo la matrice va salvata in una variabile.
+\begin{verbatim}
+octave:1> A = [2, 3, 4; 1, 5, 7; 9, 8,6]
+A =
+
+   2   3   4
+   1   5   7
+   9   8   6
+
+octave:2> A'
+ans =
+
+   2   1   9
+   3   5   8
+   4   7   6
+\end{verbatim}
+\end{document}

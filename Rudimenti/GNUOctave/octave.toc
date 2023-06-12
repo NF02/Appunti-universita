@@ -20,3 +20,5 @@
 \contentsline {subsubsection}{Addizioni}{12}{subsubsection*.5}%
 \contentsline {subsubsection}{Sottrazioni}{12}{subsubsection*.6}%
 \contentsline {subsection}{\numberline {2.5.2}Moltiplicazioni e divisioni}{12}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}Rank}{12}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Matrici Trasposte}{13}{section.2.7}%
