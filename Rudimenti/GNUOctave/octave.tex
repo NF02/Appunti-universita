@@ -159,13 +159,33 @@
 
 \begin{table}[ht]
   \centering
-  \begin{tabular}{ll}
-    {\bf Nome} & {\bf Descrizione}\\\hline
-    rat & aspetto rateo (invece dei numeri reali rende numeri frazionari)\\\hline
+  \begin{tabular}{lll}
+    {\bf Nome} & {\bf Descrizione} & {\bf Visuale}\\\hline
+    \lstinline|rat| & Aspetto rateo (invece dei numeri reali rende numeri frazionari) & 1/2\\\hline
+    \lstinline|short| & Formato breve a decimale fisso con 4 cifre dopo la virgola. (\textit{default}) & 0.5000\\\hline
+    \lstinline|long| & Formato lungo a decimale fisso con 15 cifre dopo la virgola per & 0.500000000000000\\
+                     &  i valori doppi e 7 cifre dopo la virgola per i valori singoli. \\\hline
+    \lstinline|shortE| & Formato breve in annotazione scientiica con 4 cifre dopo la virgola & 5.0000e-01\\\hline
+    \lstinline|longE| & Formato lungo a decimale fisso con 15 cifre dopo la virgola per & 5.000000000000000e-01\\
+               & i valori doppi e 7 cifre dopo la virgola per i valori singoli.\\\hline
+    \lstinline|shortG| & Formato breve, decimale fisso o notazione scientifica, a seconda & 0.5000\\ & di quale sia più compatto, con un totale di 5 cifre.\\\hline
+    \lstinline|longG| & Formato lungo a decimali fissi o notazione scientifica, qualunque & 0.500000000000000\\
+               & sia il più compatto, con un totale di 15 cifre per i valori doppi e\\ & 7 cifre per i valori singoli.\\\hline
+    \lstinline|shortEng| & Breve notazione ingegneristica (l'esponente è un
+                           multiplo & 500.0000e-003\\
+    
+               &di 3) con 4 cifre dopo la virgola.\\\hline
+    \lstinline|longEng| & Notazione ingegneristica lunga (l'esponente è un multiplo di 3) & 500.000000000000000e-003\\ & con 15 cifre significative.\\\hline
+    \lstinline|+|&Formato positivo/negativo con caratteri +, - e vuoti visualizzati & +\\
+               & per elementi positivi, negativi e zero.\\\hline
+    bank & Formato valuta con 2 cifre dopo la virgola. & 0.50 \\\hline
+    hex & Rappresentazione esadecimale di un numero binario & 3fe0000000000000 \\
+               & a doppia precisione.\\\hline 
   \end{tabular}
   \caption{Impostazioni e formati}
   \label{tab:form}
 \end{table}
+
 \chapter{Funzioni base}
 \label{chap:funbase}
 
@@ -532,5 +552,139 @@ ans =
    2   1   9
    3   5   8
    4   7   6
+\end{verbatim}
+
+\section{Autovettori e autovalori}
+\label{sec:autovettorieautovalori}
+
+Autovalori e autovettori costituiscono un aspetto fondamentale dello studio della
+diagonalizzabilità e della triangolarizzabilità di una matrice e sono alla base
+della costruzione della forma coninica di Jordan.
+\begin{defi}
+  Si dice forma canonica di Jordan di una matrice quadrata A una particolare matrice a
+  blocchi triangolari superiore e simile ad $A$. Viene solitamente indicata con $J_A$ ed
+  è caratterizzata dall'avere gli autovalori di A sulla diagonale principale
+  (\lstinline|diag(A)| in Octave), degli 0 o degli 1 sulla diagonale soprastante e tutti
+  0 altrove. 
+\end{defi}
+
+\section{Rouché-Capelli}
+\label{sec:rouche-capelli}
+La teoria dei sistemi (teorema di \textit{Rouché-Capelli}) ci ha insegnato che ammette
+soluzioni non nulle se e solo se
+\begin{equation}
+  \label{eq:rc}
+  \abs{A-\lambda I}=0
+\end{equation}
+Posto $P(A-\lambda I)$, si può osservare che $P(\lambda)$ è un polinomio di grado $n$ nella variabile $\lambda \in \mathds{R}$; $P(\lambda)$ 
+è detto polinomio caratteristico A. Le soluzioni in $\mathds{R}$ dell'equazione (\ref{eq:rc}), cioè $P(\lambda)=0$, sono dette \textit{autovalore}
+di $A$,se $\lambda$ è un autovalore di $A$, si può definire
+\begin{equation*}
+  V_\lambda =\{X\in\mathds{R}^n:[A-\lambda I]\cdot X=\vec{0}\}
+\end{equation*}
+Sappiamo che $\lambda$ è un autovalore di $\mathds{R}^n$: scriveremo
+\begin{equation*}
+  m_g(\lambda)=\dim V_\lambda
+\end{equation*}
+Il numero naturale $M_g(\lambda)$ è chiamato molteplicità geometrica dell'autovalore $\lambda$.
+\begin{equation*}
+  m_g(\lambda)=n-p(A-\lambda I)
+\end{equation*}
+In sostanza, $m_g(\lambda)$ coincide col numero di incognite libere del sistema omogeneo, come prescritto dal teorema di Rouché-Capelli. Il sottospazio
+$V_\lambda$ è detto \textit{autospazio} associato all'autovalore $\lambda$; i suoi elementi non nulli che ogni autovalore $\lambda$, essendo una radice
+di $P(\lambda)$, cioè di un polinomio di grado $n$, ha una sua moltiplicità algebrica, denotata $m_a(\lambda)$. Questo è il momento di eseguire alcuni
+esercizi per prendere confidenza con questi concetti.
+
+\subsection{Esercizio}
+\label{sec:esAutovettori}
+
+\begin{equation}
+  \label{eq:esAuto}
+  A=
+  \begin{pmatrix}
+    1 & 1\\
+    0 & 1 
+  \end{pmatrix} \in M_2 (\mathds{R})
+\end{equation}
+\begin{enumerate}
+\item Determinare gli autovalori di A;
+\item Per ogni $\lambda$, indicare $m_a(\lambda)$ e $m_g(\lambda)$;
+\item Determinare una base degli eventuali autospazi.
+\end{enumerate}
+
+\paragraph{Soluzione}
+\begin{enumerate}
+\item Il polinomio caratteristico è
+  \begin{equation*}
+    P(\lambda)= [A-\lambda I] =
+    \begin{vmatrix}
+      \begin{pmatrix}
+        1 & 1\\
+        0 & 1
+      \end{pmatrix}-
+      \begin{pmatrix}
+        \lambda & 0\\
+        0 & \lambda
+      \end{pmatrix}
+    \end{vmatrix}=
+    \begin{vmatrix}
+      (1-\lambda) & 1 \\
+      1 & (1-\lambda)
+    \end{vmatrix}= (1-\lambda)^2
+  \end{equation*}
+Per risolvere il problema tocca trovare $\lambda$ svolgendo il quadrato di binomio, $\lambda^2-2\lambda+1$, poi dobbiamo dobbiamo ricavare il $\Delta$ e poi in fine calcolare $\lambda_{1,2}$.
+\begin{eqnarray*}
+  \Delta = b^2-4ac = 4 - 4 = 0\\
+  \lambda_{1,2} = \frac{2\pm\sqrt{0}}{2}=1
+\end{eqnarray*}
+Ne segue che $A$ possiede un unico autovalore $\lambda_1=1$
+\item Abbiamo
+  \begin{eqnarray*}
+    m_a(\lambda_1)=2, & m_g(\lambda_1)=n-p(A-\lambda_1I)=\\
+    & = 2-p
+      \begin{vmatrix}
+        \begin{pmatrix}
+          0 & 1 \\
+          0 & 0
+        \end{pmatrix}
+      \end{vmatrix}= 2 - 1 = 1 
+  \end{eqnarray*}
+\item $V_{\lambda_1}$ è definito come l'insieme delle soluzioni di
+  \begin{equation*}
+    [A-\lambda_1I]\cdot\begin{vmatrix}
+                         x_1\\
+                         x_2
+    \end{vmatrix}=
+    \begin{vmatrix}
+      0\\0
+    \end{vmatrix}
+  \end{equation*}
+  cioè
+  \begin{equation*}
+    \begin{cases}
+      x_2=0\\
+      0=0
+    \end{cases}
+  \end{equation*}
+  Ora, $\dim V_{\lambda_1}=1$, e una sua base è $\{^t[1,0]\}$.
+\end{enumerate}
+\lstset{language=matlab,caption={Svolgimento dell'autovalore},label=autovalore}
+\lstinputlisting[language=matlab, style=Matlab-editor]{source/autoveteautoval.m}
+
+\subsubsection{Stampa a schermo}
+\label{sec:stauto}
+
+\begin{verbatim}
+A =
+
+   1   1
+   0   1
+
+ris =
+
+   1
+   1
+
+ris2 = 1
 \end{verbatim}
 \end{document}
