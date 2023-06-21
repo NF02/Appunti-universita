@@ -102,6 +102,8 @@
 
 \newtheorem{defi}{Definizione}
 \newtheorem{notab}{Nota Bene}
+\newtheorem{oss}{Osservazione}
+
 \frenchspacing
 
 \newcommand{\abs}[1]{\lvert#1\rvert}
@@ -126,8 +128,8 @@
 \begin{defi}
   GNU/Octave è un applicativo per il calcolo matriciale che consente di svilgere
   tutte le operazioni base e non solo a riguardo, dallo somma, divisione,
-  moltiplicazioni e sottrazioni tra matrici, calcolo del determinante, del grado e
-  tanto altro.
+  moltiplicazioni e sottrazioni tra matrici, calcolo del determinante, del
+  grado e tanto altro.
 \end{defi}
 
 \section{Pacchetti e impostazioni base}
@@ -154,9 +156,86 @@
   \label{tab:pachutil}
 \end{table}
 
+\subsection{Funzione di identificazione di una variabile}
+\label{sec:funiden}
+\begin{table}[ht]
+  \centering
+  \begin{tabular}[tab:funzionediid]{ll}
+    {\bf Nome} & {\bf Descrizione} \\\hline
+    \lstinline|whos M| & stampa i dati completi sulla variabile
+  \end{tabular}
+  \caption{Funzione di identificazione}
+  \label{tab:funzionediid}
+\end{table}
+\subsubsection{Stampa a video}
+\label{sec:stampiden}
+\begin{small}
+\begin{verbatim}
+Variables visible from the current scope:
+variables in scope: top scope
+  Attr   Name        Size                     Bytes  Class
+  ====   ====        ====                     =====  =====
+         M           3x3                         72  double
+Total is 9 elements using 72 bytes
+\end{verbatim}
+\end{small}
+\clearpage
+
+\subsubsection{Come funziona}
+All'interno di Octave e Matlab sono presenti le classi di variabili
+esattamente come accade in altri linguaggi più di programmazione più blasonati,
+esso ovviamente è relegato alle funzioni matematiche e grafiche per cui è
+pensato il programma.
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=15cm]{img/finiti/whos.eps}
+  \caption{descrizione dell'interfaccia di funzione}
+  \label{fig:interffun}
+\end{figure}
+\begin{notab}
+  Anche la variabile singola viene vista come una matrice 1x1, da questo si
+  denota che come il suo cugino Matlab è un software pensato per elaborare
+  prodotti matriciali, infatti, il nome Matlab non sta per \texttt{Mathematic
+    lab} ma per \texttt{Matrix Lab}. 
+\end{notab}
+\subsection{Tipi variabile}
+\label{sec:tipivariabile}
+
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{llll}
+    {\bf Nome} & {\bf Descrizione} & {\bf Dimensione} & {\bf Cifre rappresentabili}\\\hline
+    \lstinline|double| ({\bf default}) & double-precision array & 8byte & $\pm1.79769x10^{308}$ a $\pm2.22507x10^{-308}$\\\hline
+    \lstinline|single| & single-precision array & 4byte & $-2.1475x10^9$ a $2.1475x10^9$\\\hline 
+    \lstinline|int8| & Array di interi con segno & 8bit & $-128$ a $127$\\\hline
+    \lstinline|int16| & Array di interi con segno & 16bit & $-32768$ a $32767$ \\\hline
+    \lstinline|int32| & Array di interi con segno & 32bit & $-2.1475x10^9$ a $2.1475x10^9$\\\hline 
+    \lstinline|int64| & Array di interi con segno & 64bit & $-9.2234x10^{18}$ a $9.2234x10^{18}$\\\hline
+    \lstinline|uint8| & Array di interi senza segno & 8bit & $255$\\\hline
+    \lstinline|uint16| & Array di interi senza segno & 16bit & $65535$ \\\hline
+    \lstinline|uint32| & Array di interi senza segno & 32bit & $4.2950x10^9$\\\hline 
+    \lstinline|uint64| & Array di interi senza segno & 64bit & $1.8447x10^{19}$\\\hline
+  \end{tabular}
+  \caption{Tipi variabile}
+  \label{tab:tipivariabile}
+\end{table}
+\begin{oss}
+  Questa rapresentazione in memoria vale per la singola cella, quindi bisogna
+  moltiplicare il paso per il numero di celle dello stesso tipo. Il programma
+  peserà quanto il numero complessivo delle variabili presenti.
+\end{oss}
+
+\paragraph{Le stringhe --}
+Un altro tipo di variabile però implicita sono le stringhe che il programma può
+gestire, nel sequente modo \lstinline|str = "string x"| e la stampa di stringa
+viene fatta con un semplice \lstinline|printf(str)|.
+\clearpage
+\subsubsection{Cosa stampa e cosa no}
+Nel linguaggio di Matlab e Octave vengono stampate tutte le associazioni,
+funzioni e inizializzazioni che non terminano con il ``{\color{red};}''.
+
 \subsection{Impostazioni e formati}
 \label{sec:formImp}
-
 \begin{table}[ht]
   \centering
   \begin{tabular}{lll}

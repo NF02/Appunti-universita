@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.6.17)  21 JUN 2023 22:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.6.17)  22 JUN 2023 01:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1397,19 +1397,20 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 \c@defi=\count440
 \c@notab=\count441
+\c@oss=\count442
 
 (/usr/share/texmf-dist/tex/latex/floatflt/floatflt.sty
 Package: floatflt 1997/07/16 v. 1.31
-\c@OptionTest=\count442
+\c@OptionTest=\count443
 \figbox=\box140
 \tabbox=\box141
 \pagebox=\box142
-\ffigcount=\count443
-\ftabcount=\count444
-\fftest=\count445
-\hangcount=\count446
-\nosuccesstryfig=\count447
-\nosuccesstrytab=\count448
+\ffigcount=\count444
+\ftabcount=\count445
+\fftest=\count446
+\hangcount=\count447
+\nosuccesstryfig=\count448
+\nosuccesstrytab=\count449
 \figgutter=\dimen409
 \tabgutter=\dimen410
 \htdone=\dimen411
@@ -1434,31 +1435,31 @@ LaTeX Warning: Label `solmtx2x2' multiply defined.
 )
 \openout1 = `octave.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 121.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 123.
 LaTeX Font Info:    Trying to load font information for T3+cmr on input line 12
-1.
+3.
  (/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    ... okay on input line 123.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1494,9 +1495,9 @@ LaTeX Font Info:    ... okay on input line 121.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \it@ocap on input line 121.
-LaTeX Info: Redefining \it@ccap on input line 121.
-Package hyperref Info: Link coloring ON on input line 121.
+LaTeX Info: Redefining \it@ocap on input line 123.
+LaTeX Info: Redefining \it@ccap on input line 123.
+Package hyperref Info: Link coloring ON on input line 123.
 (./octave.out) (./octave.out)
 \@outlinefile=\write4
 \openout4 = `octave.out'.
@@ -1504,16 +1505,16 @@ Package hyperref Info: Link coloring ON on input line 121.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count449
+\scratchcounter=\count450
 \scratchdimen=\dimen419
 \scratchbox=\box143
-\nofMPsegments=\count450
-\nofMParguments=\count451
+\nofMPsegments=\count451
+\nofMParguments=\count452
 \everyMPshowfont=\toks68
-\MPscratchCnt=\count452
+\MPscratchCnt=\count453
 \MPscratchDim=\dimen420
-\MPnumerator=\count453
-\makeMPintoPDFobject=\count454
+\MPnumerator=\count454
+\makeMPintoPDFobject=\count455
 \everyMPtoPDFconversion=\toks69
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1529,7 +1530,7 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count455
+\c@lstlisting=\count456
 
 Package exsheets Info: Loading custom configurations file
 (exsheets)             `exsheets_configurations.cfg'.
@@ -1539,7 +1540,7 @@ Package exsheets Info: Loading custom configurations file
 File: exsheets_configurations.cfg 
 )
 Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 121.
+alian.trsl' found. on input line 123.
 
 (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-eng
 lish.trsl
@@ -1547,27 +1548,27 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 121.
+or `english'. on input line 123.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 121.
+ on input line 123.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 123
+LaTeX Font Info:    Trying to load font information for U+msa on input line 125
 .
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 123
+LaTeX Font Info:    Trying to load font information for U+msb on input line 125
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 12
-3.
+5.
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1586,14 +1587,41 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ]
 Capitolo 1.
 
-Overfull \hbox (2.60693pt too wide) in paragraph at lines 141--153
+Overfull \hbox (2.60693pt too wide) in paragraph at lines 143--155
  [][] 
  []
 
-[5] [6]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+73.
+(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+) [5]
+Package epstopdf Info: Source file: <img/finiti/whos.eps>
+(epstopdf)                    date: 2023-06-22 01:34:14
+(epstopdf)                    size: 51128 bytes
+(epstopdf)             Output file: <img/finiti/whos-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-06-22 01:37:14
+(epstopdf)                    size: 10123 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/finiti/whos-eps-conver
+ted-to.pdf img/finiti/whos.eps>
+(epstopdf)             \includegraphics on input line 191.
+Package epstopdf Info: Output file is already uptodate.
+<img/finiti/whos-eps-converted-to.pdf, id=161, 527.9725pt x 198.7425pt>
+File: img/finiti/whos-eps-converted-to.pdf Graphic file (type pdf)
+<use img/finiti/whos-eps-converted-to.pdf>
+Package pdftex.def Info: img/finiti/whos-eps-converted-to.pdf  used on input li
+ne 191.
+(pdftex.def)             Requested size: 426.79134pt x 160.65302pt.
+ [6
+
+ <./img/finiti/whos-eps-converted-to.pdf>] [7
+
+] [8
+
+]
 Capitolo 2.
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 2
-05.
+84.
 (/usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
@@ -1601,50 +1629,43 @@ File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 251.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-51.
-
-(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-) (./source/moltM2x2.m
+nput line 330.
+ (./source/moltM2x2.m
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1.
-) [7
-
-]
-(./source/detMtx2x2.m) [8] [9] (./source/diagMtx.m
+)
+[9] (./source/detMtx2x2.m) [10] [11] (./source/diagMtx.m
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
 4.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)) [10{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [11
+)) [12{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [13
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 515--518
+Underfull \hbox (badness 10000) in paragraph at lines 594--597
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12
+ [14
 
 ]
-[13] [14] (./source/autoveteautoval.m) [15] (./octave.aux)
+[15] [16] (./source/autoveteautoval.m) [17] (./octave.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `octave.out' has not changed.
-(rerunfilecheck)             Checksum: EE2C96560707A22248F0B3010CF65485;3429.
+(rerunfilecheck)             Checksum: 398845FFF1C107397B66527C4DDDA778;3861.
  ) 
 Here is how much of TeX's memory you used:
- 59622 strings out of 476025
- 1455200 string characters out of 5796532
- 2382179 words of memory out of 5000000
- 79073 multiletter control sequences out of 15000+600000
- 538554 words of font info for 99 fonts, out of 8000000 for 9000
+ 59679 strings out of 476025
+ 1456003 string characters out of 5796532
+ 2382517 words of memory out of 5000000
+ 79111 multiletter control sequences out of 15000+600000
+ 539947 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,17n,120p,721b,2027s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
@@ -1660,17 +1681,19 @@ lic/doublestroke/dsrom10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
 f-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
 uper/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.p
-fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/
-texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/font
-s/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/
-cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl10
-00.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/
-fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on octave.pdf (15 pages, 391492 bytes).
+fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/share/
+texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/font
+s/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/
+cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm17
+28.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf-dist/
+fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
+tt1000.pfb>
+Output written on octave.pdf (17 pages, 466147 bytes).
 PDF statistics:
- 404 PDF objects out of 1000 (max. 8388607)
- 333 compressed objects within 4 object streams
- 106 named destinations out of 1000 (max. 500000)
- 173 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 453 PDF objects out of 1000 (max. 8388607)
+ 373 compressed objects within 4 object streams
+ 119 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 

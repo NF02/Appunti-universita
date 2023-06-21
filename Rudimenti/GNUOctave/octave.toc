@@ -3,27 +3,33 @@
 \contentsline {chapter}{\numberline {1}Introduzione}{5}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Pacchetti e impostazioni base}{5}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Pacchetti}{5}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Impostazioni e formati}{5}{subsection.1.1.2}%
-\contentsline {chapter}{\numberline {2}Funzioni base}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Addizioni e sottrazioni tra matrici}{7}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Soluzione per Octave o Mathlab}{7}{subsection.2.1.1}%
-\contentsline {paragraph}{Stampa a schermo}{8}{paragraph*.2}%
-\contentsline {section}{\numberline {2.2}Determinante di una matrice}{8}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Soluzione per Octave o Mathlab}{8}{subsection.2.2.1}%
-\contentsline {paragraph}{Stampa a schermo}{9}{paragraph*.3}%
-\contentsline {section}{\numberline {2.3}Matrice inversa}{9}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Diagonale di una matrice}{9}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Esempio in Matlab o Octave}{10}{subsection.2.4.1}%
-\contentsline {subsubsection}{Stampa a schermo}{11}{subsubsection*.4}%
-\contentsline {section}{\numberline {2.5}Operazioni tra vettori e mattrici}{11}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Addizioni e sottrazioni tra matrici}{12}{subsection.2.5.1}%
-\contentsline {subsubsection}{Addizioni}{12}{subsubsection*.5}%
-\contentsline {subsubsection}{Sottrazioni}{12}{subsubsection*.6}%
-\contentsline {subsection}{\numberline {2.5.2}Moltiplicazioni e divisioni}{12}{subsection.2.5.2}%
-\contentsline {section}{\numberline {2.6}Rank}{12}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Matrici Trasposte}{13}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Autovettori e autovalori}{13}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Rouché-Capelli}{13}{section.2.9}%
-\contentsline {subsection}{\numberline {2.9.1}Esercizio}{14}{subsection.2.9.1}%
-\contentsline {paragraph}{Soluzione}{14}{paragraph*.7}%
-\contentsline {subsubsection}{Stampa a schermo}{15}{subsubsection*.8}%
+\contentsline {subsection}{\numberline {1.1.2}Funzione di identificazione di una variabile}{5}{subsection.1.1.2}%
+\contentsline {subsubsection}{Stampa a video}{5}{subsubsection*.2}%
+\contentsline {subsubsection}{Come funziona}{6}{subsubsection*.3}%
+\contentsline {subsection}{\numberline {1.1.3}Tipi variabile}{6}{subsection.1.1.3}%
+\contentsline {paragraph}{Le stringhe --}{6}{paragraph*.4}%
+\contentsline {subsubsection}{Cosa stampa e cosa no}{7}{subsubsection*.5}%
+\contentsline {subsection}{\numberline {1.1.4}Impostazioni e formati}{7}{subsection.1.1.4}%
+\contentsline {chapter}{\numberline {2}Funzioni base}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Addizioni e sottrazioni tra matrici}{9}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Soluzione per Octave o Mathlab}{9}{subsection.2.1.1}%
+\contentsline {paragraph}{Stampa a schermo}{10}{paragraph*.6}%
+\contentsline {section}{\numberline {2.2}Determinante di una matrice}{10}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Soluzione per Octave o Mathlab}{10}{subsection.2.2.1}%
+\contentsline {paragraph}{Stampa a schermo}{11}{paragraph*.7}%
+\contentsline {section}{\numberline {2.3}Matrice inversa}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Diagonale di una matrice}{11}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Esempio in Matlab o Octave}{12}{subsection.2.4.1}%
+\contentsline {subsubsection}{Stampa a schermo}{13}{subsubsection*.8}%
+\contentsline {section}{\numberline {2.5}Operazioni tra vettori e mattrici}{13}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Addizioni e sottrazioni tra matrici}{14}{subsection.2.5.1}%
+\contentsline {subsubsection}{Addizioni}{14}{subsubsection*.9}%
+\contentsline {subsubsection}{Sottrazioni}{14}{subsubsection*.10}%
+\contentsline {subsection}{\numberline {2.5.2}Moltiplicazioni e divisioni}{14}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}Rank}{14}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Matrici Trasposte}{15}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Autovettori e autovalori}{15}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Rouché-Capelli}{15}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Esercizio}{16}{subsection.2.9.1}%
+\contentsline {paragraph}{Soluzione}{16}{paragraph*.11}%
+\contentsline {subsubsection}{Stampa a schermo}{17}{subsubsection*.12}%
