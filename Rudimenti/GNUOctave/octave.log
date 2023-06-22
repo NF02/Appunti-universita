@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.6.17)  22 JUN 2023 01:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.6.17)  22 JUN 2023 02:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1621,7 +1621,7 @@ ne 191.
 ]
 Capitolo 2.
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 2
-84.
+88.
 (/usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
@@ -1629,7 +1629,7 @@ File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 330.
+nput line 334.
  (./source/moltM2x2.m
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1.
@@ -1643,7 +1643,7 @@ File: ts1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )) [12{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [13
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 594--597
+Underfull \hbox (badness 10000) in paragraph at lines 598--601
 
  []
 
@@ -1653,7 +1653,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [14
 
 ]
-[15] [16] (./source/autoveteautoval.m) [17] (./octave.aux)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+Underfull \vbox (badness 2096) has occurred while \output is active []
+
+ [16]
+(./source/autoveteautoval.m) [17] [18] (./octave.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1661,10 +1667,10 @@ Package rerunfilecheck Info: File `octave.out' has not changed.
 (rerunfilecheck)             Checksum: 398845FFF1C107397B66527C4DDDA778;3861.
  ) 
 Here is how much of TeX's memory you used:
- 59679 strings out of 476025
- 1456003 string characters out of 5796532
- 2382517 words of memory out of 5000000
- 79111 multiletter control sequences out of 15000+600000
+ 59682 strings out of 476025
+ 1456049 string characters out of 5796532
+ 2382659 words of memory out of 5000000
+ 79112 multiletter control sequences out of 15000+600000
  539947 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,17n,120p,721b,2027s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1690,10 +1696,10 @@ are/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
 tt1000.pfb>
-Output written on octave.pdf (17 pages, 466147 bytes).
+Output written on octave.pdf (18 pages, 490468 bytes).
 PDF statistics:
- 453 PDF objects out of 1000 (max. 8388607)
- 373 compressed objects within 4 object streams
- 119 named destinations out of 1000 (max. 500000)
+ 459 PDF objects out of 1000 (max. 8388607)
+ 378 compressed objects within 4 object streams
+ 121 named destinations out of 1000 (max. 500000)
  194 words of extra memory for PDF output out of 10000 (max. 10000000)
 

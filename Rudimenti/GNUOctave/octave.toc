@@ -29,7 +29,7 @@
 \contentsline {section}{\numberline {2.6}Rank}{14}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Matrici Trasposte}{15}{section.2.7}%
 \contentsline {section}{\numberline {2.8}Autovettori e autovalori}{15}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Rouché-Capelli}{15}{section.2.9}%
+\contentsline {section}{\numberline {2.9}Rouché-Capelli}{16}{section.2.9}%
 \contentsline {subsection}{\numberline {2.9.1}Esercizio}{16}{subsection.2.9.1}%
 \contentsline {paragraph}{Soluzione}{16}{paragraph*.11}%
 \contentsline {subsubsection}{Stampa a schermo}{17}{subsubsection*.12}%

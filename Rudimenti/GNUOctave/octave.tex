@@ -100,9 +100,9 @@
 
 \linespread{1.5} % l'interlinea
 
-\newtheorem{defi}{Definizione}
-\newtheorem{notab}{Nota Bene}
-\newtheorem{oss}{Osservazione}
+\newtheorem{defi}{Definizione}[section]
+\newtheorem{notab}{Nota Bene}[section]
+\newtheorem{oss}{Osservazione}[section]
 
 \frenchspacing
 
@@ -264,7 +264,11 @@ funzioni e inizializzazioni che non terminano con il ``{\color{red};}''.
   \caption{Impostazioni e formati}
   \label{tab:form}
 \end{table}
-
+\begin{notab}
+  È possibile salvare il formato in una variabile con il comando \lstinline|fmt = format("nomeFormato")|
+  per poi riutilizzarlo in seguito richiamando \lstinline|format(fmt)|. Altro aspetto esso può cambiare durante lo script quindi è possibile ripotare un dato
+  in un formato di stampa e uno in un altro.
+\end{notab}
 \chapter{Funzioni base}
 \label{chap:funbase}
 
