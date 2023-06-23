@@ -710,4 +710,51 @@ Per stabilire se $A$ è diagonalizzabile, bisogna calcolare $m_g(\lambda_1)$\foo
 \end{equation}
 Quindi soddisfa il punto (b) e concludiamo che a è diagonalizzabile.
 \end{esempio}
+\begin{esempio}
+  Sia
+  \begin{equation}
+    \label{eq:critDiag7}
+    A=
+    \begin{bmatrix}
+      2 & 0 & 0 \\
+      0 & 1 & 2 \\
+      0 & 2 & 1
+    \end{bmatrix} \in M_3(\mathds{R})
+  \end{equation}
+  Stabire se A è duaginalizzabile.
+  
+\paragraph{Soluzione}
+
+Il polinomio ccaratteristico è
+\begin{eqnarray*}
+  P(\lambda)-\abs{A-\lambda I}=
+  \begin{vmatrix}
+    (2-\lambda) & 0 & 0\\
+    0 & (1-\lambda) & 2\\
+    0 & 2 & (1-\lambda)
+  \end{vmatrix} = (2-\lambda)[(1-\lambda)-4]
+\end{eqnarray*}
+per ottenere il valore riportato qui sopra abbiamo preso il primo elemento
+a sinitra della matrice ``$(2-\lambda)$'' e poi abbiamo moltiplicato a croce
+con la sotto matrice $
+\begin{vmatrix}
+   (1-\lambda) & 2\\
+   2 & (1-\lambda)
+\end{vmatrix}
+$ ed ecco spiegato il $[(1-\lambda)-4]$, tutto questo è possibile per il semplice fatto che la prima riga e la prima colonna sono composte da zeri tranne il primo elemento.\\
+Calcolando i discriminante $\lambda$ ricaviamo:
+\begin{eqnarray*}
+  \lambda_1=2, & \lambda_2=3 \text{ e } \lambda_3=-1
+\end{eqnarray*}
+Ora, $A$ è diagonalizzabile per l'osservazione 1 sopra.
+\end{esempio}
+
+\section{Prodotto scalare, vettoriale e misto}
+\label{sec:prodscalmisto}
+
+\begin{defi}
+  Siano $\vec{u}=[u_1,u_2,u_3]$ e $\vec{v}=[v_1,v_2,v_3]$ due vettori. il loro
+  prodotto scalare, denotato $\vec{u}\cdot \vec{v}$, è definito da
+  
+\end{defi}
 \end{document}

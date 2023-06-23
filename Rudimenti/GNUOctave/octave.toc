@@ -1,5 +1,5 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduzione}{5}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Pacchetti e impostazioni base}{5}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Pacchetti}{5}{subsection.1.1.1}%
@@ -35,3 +35,5 @@
 \contentsline {subsubsection}{Stampa a schermo}{17}{subsubsection*.12}%
 \contentsline {section}{\numberline {2.10}Criterio di diagonalizzabilità}{18}{section.2.10}%
 \contentsline {paragraph}{Soluzione}{18}{paragraph*.13}%
+\contentsline {paragraph}{Soluzione}{19}{paragraph*.14}%
+\contentsline {section}{\numberline {2.11}Prodotto scalare, vettoriale e misto}{19}{section.2.11}%
