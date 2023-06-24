@@ -26,7 +26,7 @@
 \contentsline {subsubsection}{Addizioni}{14}{subsubsection*.9}%
 \contentsline {subsubsection}{Sottrazioni}{14}{subsubsection*.10}%
 \contentsline {subsection}{\numberline {2.5.2}Moltiplicazioni e divisioni}{14}{subsection.2.5.2}%
-\contentsline {section}{\numberline {2.6}Rank}{14}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Rank}{15}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Matrici Trasposte}{15}{section.2.7}%
 \contentsline {section}{\numberline {2.8}Autovettori e autovalori}{15}{section.2.8}%
 \contentsline {section}{\numberline {2.9}Rouché-Capelli}{16}{section.2.9}%
@@ -35,5 +35,5 @@
 \contentsline {subsubsection}{Stampa a schermo}{17}{subsubsection*.12}%
 \contentsline {section}{\numberline {2.10}Criterio di diagonalizzabilità}{18}{section.2.10}%
 \contentsline {paragraph}{Soluzione}{18}{paragraph*.13}%
-\contentsline {paragraph}{Soluzione}{19}{paragraph*.14}%
-\contentsline {section}{\numberline {2.11}Prodotto scalare, vettoriale e misto}{19}{section.2.11}%
+\contentsline {paragraph}{Soluzione}{20}{paragraph*.14}%
+\contentsline {section}{\numberline {2.11}Prodotto scalare, vettoriale e misto}{20}{section.2.11}%

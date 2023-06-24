@@ -1,0 +1,647 @@
+\chapter{Funzioni base}
+\label{chap:funbase}
+
+\section{Addizioni e sottrazioni tra matrici}
+\label{sec:addesottmtx}
+
+\begin{equation}
+  \label{eq:es1}
+  A=
+  \begin{vmatrix}
+    2 & 0 \\
+    3 & -1
+  \end{vmatrix}, \text{ } B=
+  \begin{vmatrix}
+    4 & -1\\
+    1 & 2
+  \end{vmatrix} \in M_2(\mathds{R})
+\end{equation}
+Calcolare $2A-3B$ e $3A-2B$, per svolgerlo non è complesso, infatti, il primo
+step è moltiplicare le matrici per il valore presente esternamente e poi fare
+la sottrazione tra matrici, il risultato è il seguente:
+\begin{eqnarray*}
+  \label{eq:es1_sv}
+  2A-3B = 2 \begin{vmatrix}
+    2 & 0 \\
+    3 & -1
+  \end{vmatrix} - 3\begin{vmatrix}
+    4 & -1\\
+    1 & 2
+  \end{vmatrix}=\begin{vmatrix}
+    {\color{red}2}\cdot2 & {\color{red}2}\cdot0 \\
+    {\color{red}2}\cdot3 & {\color{red}2}\cdot-1
+  \end{vmatrix} +\begin{vmatrix}
+    {\color{red}-3}\cdot4 & {\color{red}-3}\cdot1\\
+    {\color{red}-3}\cdot1 & {\color{red}-3}\cdot2
+                 \end{vmatrix}\\
+  =
+  \begin{vmatrix}
+    4 &0\\
+    6 &-1
+  \end{vmatrix} +
+  \begin{vmatrix}
+    -12 & 3\\
+    -3 &-6
+  \end{vmatrix}=
+  \begin{vmatrix}
+    -8 & 3\\
+    3 & -8
+  \end{vmatrix}
+\end{eqnarray*}
+stessa cosa ma con valori inversi 
+\begin{eqnarray*}
+  3A-2B=
+  \begin{vmatrix}
+    -2 & 2 \\
+    7 & -7
+  \end{vmatrix}
+\end{eqnarray*}
+
+\subsection{Soluzione per Octave o Mathlab}
+\label{sec:solmatoctes1}
+\lstset{language=matlab,caption={svolgimento di una sottrazione tra matrici 2x2},label=solmtx2x2}
+\lstinputlisting[language=matlab, style=Matlab-editor]{source/moltM2x2.m}
+\paragraph{Stampa a schermo}
+\begin{verbatim}
+ris =
+
+  -8   3
+   3  -8
+
+ris =
+
+  -2   2
+   7  -7
+\end{verbatim}
+
+
+\section{Determinante di una matrice}
+\label{sec:mtxdet}
+Un operazione molto utile è il determinante della matrice, fondamentale per
+lavorare su questa categoria di strutture, per calcolarlo non è difficile, in
+programmi come GNU/Octave e anche Matlab este la funzione \lstinline|det(M)|,
+che fa il classico svolgimento, prendendo un esempio concreto:
+\begin{equation}
+  \label{eq:es2}
+  \begin{vmatrix}
+    3 & 5\\
+    8 & 4
+  \end{vmatrix}
+\end{equation}
+Partendo da questa base dobbiamo fare la sequente operazione
+\begin{equation}
+  \label{eq:es2_sv}
+  \det(A) =\det \begin{vmatrix}
+    3 & 5\\
+    8 & 4
+  \end{vmatrix}= 3\cdot 4 -5\cdot 8 = 12 - 40 = -28
+\end{equation}
+Quindi il determinante della matrice 2x2 $A$ è -28, questo è anche il metodo che
+potete utilizzare su octave per fare la verifica del valore ottenuto con la
+funzione già pronta.
+\subsection{Soluzione per Octave o Mathlab}
+\label{sec:solmatoctes2}
+
+
+\lstset{language=matlab,caption={svolgimento del determinante di una matrice 2x2},label=solmtx2x2}
+\lstinputlisting[language=matlab, style=Matlab-editor]{source/detMtx2x2.m}
+\paragraph{Stampa a schermo}
+
+\begin{verbatim}
+A =
+
+   3   5
+   8   4
+
+ris = -28
+ver = -28
+\end{verbatim}
+
+\section{Matrice inversa}
+\label{sec:mtxInv}
+Un operazione fondamentale è proprio la matrice inversa che serve per diverse
+formule presenti nel percorso di Ingegneria. quindi per calcolare l'inversa basta utilizzare il comando \lstinline|inv(M)|, uno dei problemi che si può
+riscontrare in questo caso è il fatto che il risultato possa essere espresso in
+numeri reali, cosa non molto pratica, quindi per sistemare questo problema
+basta applicare il formato rateo, come speficicato sopra, infatti, esiste
+una funziona di formato chiamata rat che può essere attivata con il semplice
+comando \lstinline|format rat| e il problema verra risolto.
+Ma il metodo migliore è quello di fare un esempio. Prendiamo una matrice 3x3
+\begin{equation}
+  \label{eq:es3}
+  A=\begin{vmatrix}
+    2  & 4 & 5\\
+    3  & 6 & 10\\
+    9  & 1 & 7
+  \end{vmatrix}
+\end{equation}
+La sua inversa sarà $A^{-1}$ che sarà composta dei seguenti valori
+
+\section{Diagonale di una matrice}
+\label{sec:diag}
+Un altra funzione che in Matlab e octave viene fatta in modo pratico e veloce
+è la stampa della diagonale. Infatti, dentro l'ambiente viene utilizzato il
+comando \lstinline{diag(M)}.
+\begin{equation*}
+  A=\begin{pmatrix}
+      2 & 20 & 1 & 3\\
+      4 & 9 & 12 & 0\\
+      6 & 4 & 13 & 7\\
+      10 & 39 & 37 & 5
+  \end{pmatrix}
+\end{equation*}
+Questo comando va a creare un vettore composto da i numeri presenti nella
+diagonale della matrice, in questo caso l'istruzione \lstinline{diag(A)},
+selezionera i numeri scritti in rosso:
+\begin{equation*}
+  A=\begin{pmatrix}
+      {\color{red}2} & 20 & 1 & 3\\
+      4 & {\color{red}9} & 12 & 0\\
+      6 & 4 & {\color{red}13} & 7\\
+      10 & 39 & 37 & {\color{red}5}
+  \end{pmatrix}
+\end{equation*}
+e quindi $ans =
+\begin{pmatrix}
+  2 & 9 & 13 & 5
+\end{pmatrix}
+$, ovviamente questo accade nel caso base, perché il comando \lstinline|diag|
+accetta al suo interno più di un parametri, infatti, se noi andiamo ad accodare
+al nominativo della matrice un numero possiamo ottenere le altre diagonali.
+Ed esempio se facciamo \lstinline|diag(A,1)|, il risultato sarà il seguente:
+\begin{equation*}
+  A=\begin{pmatrix}
+      2 & {\color{red}20} & 1 & 3\\
+      4 & 9 & {\color{red}12} & 0\\
+      6 & 4 & 13 & {\color{red}7}\\
+      10 & 39 & 37 & 5
+  \end{pmatrix}
+\end{equation*}
+Quindi il vettore risultante sarà composto nel seguente modo $ans =
+\begin{pmatrix}
+  20 & 12 & 7
+\end{pmatrix}
+$ da questo si denota che il parametro che andiamo a passare serve semplicemente a distanziarsi positivamente o negativamente dalla diagonale 0, quella che
+divide la matrice in due perfettamente. Nel caso in cui venga passato un
+parametro negativo, in questo caso il -1, \lstinline|diag(A,-1)| il risultato sarà il seguente:
+\begin{equation*}
+  A=\begin{pmatrix}
+      2 & 20 & 1 & 3\\
+      {\color{red}4} & 9 & 12 & 0\\
+      6 & {\color{red}4} & 13 & 7\\
+      10 & 39 & {\color{red}37} & 5
+  \end{pmatrix}
+\end{equation*}
+\begin{notab}
+  Il termine ans sta per Answer ed è il valore che viene salvato automaticamente
+  dal calcolatore per rendelo, esso ha una funzione temporanea visto che verrà
+  sovrascritto alla prossima operazione. 
+\end{notab}
+
+\subsection{Esempio in Matlab o Octave}
+\label{sec:diag_ex}
+\lstset{language=matlab,caption={Esempio di utilizzo della funzione \lstinline|diag()|},label=solmtx2x2}
+\lstinputlisting[language=matlab, style=Matlab-editor]{source/diagMtx.m}
+\clearpage
+
+\subsubsection{Stampa a schermo}
+\label{sec:stampScr}
+\begin{verbatim}
+A =
+
+    2   20    1    3
+    4    9   12    0
+    6    4   13    7
+   10   39   37    5
+
+________________________
+diagZ =
+
+    2
+    9
+   13
+    5
+
+diagU =
+
+   20
+   12
+    7
+
+diagMU =
+
+    4
+    4
+   37
+\end{verbatim}
+
+\section{Operazioni tra vettori e mattrici}
+\label{sec:vettmat}
+
+Un'altra operazione tipica è la somma tra un vettore ``matrice unidimensionale''
+e una matrice NxM, quindi anche qui ci sono dei matodi grafici di svolgimento,
+ma partiamo dalle basi, prendiamo un vettore A e una matrici v
+\begin{eqnarray}
+  \label{eq:vetmatex}
+  A =
+  \begin{pmatrix}
+    2 & 3 & 4\\
+    1 & 5 & 7\\
+    9 & 8 & 6        
+  \end{pmatrix}, & \vec{v}=
+                  \begin{pmatrix}
+                    3 & 4 & 5
+                  \end{pmatrix}
+\end{eqnarray}
+\clearpage
+\subsection{Addizioni e sottrazioni tra matrici}
+\label{sec:addesottvandmtx}
+
+\subsubsection{Addizioni}
+\label{sec:addvectmtx}
+non modo non molto dissimile a quello che avveniva con la somma tra mattrici,
+anche nella somma tra un vettore e una Matrice si va assomare i membri dell'uno
+per quelli dell'altra, in questo caso nello specifico la prima colonna della
+matrice è stata moltiplicata per il primo elemento del vettore, la seconda
+colonna per il secondo elemento e così via.
+\begin{eqnarray*}
+   A+\vec{v} =
+  \begin{pmatrix}
+    {\color{red}3+}2 & {\color{red}4+}3 & {\color{red}5+}4\\
+    {\color{red}3+}1 & {\color{red}4+}5 & {\color{red}5+}7\\
+    {\color{red}3+}9 & {\color{red}4+}8 & {\color{red}5+}6        
+  \end{pmatrix}=
+  \begin{pmatrix}
+    5 & 7 & 9\\
+    4 & 9 & 12\\
+    12 & 12 & 11
+  \end{pmatrix}
+\end{eqnarray*}
+
+\subsubsection{Sottrazioni}
+\label{sec:sottvectmtx}
+\begin{eqnarray*}
+   A-\vec{v} =
+  \begin{pmatrix}
+    {\color{red}3-}2 & {\color{red}4-}3 & {\color{red}5-}4\\
+    {\color{red}3-}1 & {\color{red}4-}5 & {\color{red}5-}7\\
+    {\color{red}3-}9 & {\color{red}4-}8 & {\color{red}5-}6        
+  \end{pmatrix}=
+  \begin{pmatrix}
+    -1 & -1 & -1\\
+    -2 & 1 & 2 \\
+    6 & 4 & 1
+  \end{pmatrix}
+\end{eqnarray*}
+
+\subsection{Moltiplicazioni e divisioni}
+\label{sec:moltedivvetmtx}
+\begin{eqnarray*}
+   A\cdot\vec{v} =
+  \begin{pmatrix}
+    {\color{red}3\cdot}2 & {\color{red}4\cdot}3 & {\color{red}5\cdot}4\\
+    {\color{red}3\cdot}1 & {\color{red}4\cdot}5 & {\color{red}5\cdot}7\\
+    {\color{red}3\cdot}9 & {\color{red}4\cdot}8 & {\color{red}5\cdot}6        
+  \end{pmatrix}=
+  \begin{pmatrix}
+    6 & 12 & 20\\
+    3 & 20 & 35\\
+    27 & 32 & 30
+  \end{pmatrix}
+\end{eqnarray*}
+In questo caso l'ambiguità non sta nell'operazione in se e per se ma nella sintassi di
+matlab e Octave che presentano due diverse funzioni per la moltiplicazione e la
+divisione, la prima è \lstinline|A*M| che serve a fare una moltiplicazioni tra matrici
+della stessa dimensione e poi c'è quella per che forza la condizione \lstinline|A.*M|
+che funziona con matrici di dimensione anche differente.
+\begin{oss}
+  Per evitare che avvenga una moltiplicazione con i valori in verticale come
+  visto qui sopra si può adottare questa soluzione, invece di settare il vettore
+  orizzontalmente $\vec{v}=
+                  \begin{pmatrix}
+                    3 & 4 & 5
+                  \end{pmatrix}$ lo si può impostare il vettore verticalente
+                  $\vec{v}=
+                  \begin{pmatrix}
+                    3 \\ 4 \\ 5
+                  \end{pmatrix}$, in modo che la situazione sia la seguente:
+  \begin{equation*}
+    A-\vec{v} =
+    \begin{pmatrix}
+        {\color{red}3-}2 & {\color{red}3-}3 & {\color{red}3-}4\\
+        {\color{red}4-}1 & {\color{red}4-}5 & {\color{red}4-}7\\
+        {\color{red}5-}9 & {\color{red}5-}8 & {\color{red}5-}6        
+    \end{pmatrix}=
+    \begin{pmatrix}
+      -1 &  0 &  1\\
+      -3 &  1 &  3\\
+       4 &  3 &  1
+    \end{pmatrix}
+  \end{equation*}
+\end{oss}
+\section{Rank}
+\label{sec:rank}
+
+\begin{equation*}
+  A=\begin{pmatrix}
+      1 & 3 & 9\\
+      9 & 4 & 12\\
+      5 & 90 & 3
+  \end{pmatrix}
+\end{equation*}
+In questo caso il rango è 3, su octave o matlab, basta utilizzare il comando
+\lstinline|rank(A)|.\\
+
+\section{Matrici Trasposte}
+\label{sec:matt}
+\begin{equation*}
+  A = \begin{pmatrix}
+    2 & 3 & 4\\
+    1 & 5 & 7\\
+    9 & 8 & 6        
+  \end{pmatrix}
+\end{equation*}
+Per fare la matrice trasposta, basta scambiare i valore di N e M quindi il risultato è
+\begin{equation*}
+  A^\prime=
+  \begin{pmatrix}
+    2  & 1 &  9\\
+    3  & 5 &  8\\
+    4  & 7 &  6
+  \end{pmatrix}
+\end{equation*}
+Praticamente i valori sono stati scambiati tagliando per la diagonale,
+infatti, 2, 1 e 6 restano nelle stesse posizioni. In matlab e Octave esiste una
+funzione dedicata \lstinline|A.'|, che fa automaticamente l'operazione,
+ovviamente per sfruttare al massimo la matrice va salvata in una variabile.
+\begin{verbatim}
+octave:1> A = [2, 3, 4; 1, 5, 7; 9, 8,6]
+A =
+
+   2   3   4
+   1   5   7
+   9   8   6
+
+octave:2> A'
+ans =
+
+   2   1   9
+   3   5   8
+   4   7   6
+\end{verbatim}
+
+\section{Autovettori e autovalori}
+\label{sec:autovettorieautovalori}
+
+Autovalori e autovettori costituiscono un aspetto fondamentale dello studio della
+diagonalizzabilità e della triangolarizzabilità di una matrice e sono alla base
+della costruzione della forma coninica di Jordan.
+\begin{defi}
+  Si dice forma canonica di Jordan di una matrice quadrata A una particolare matrice a
+  blocchi triangolari superiore e simile ad $A$. Viene solitamente indicata con $J_A$ ed
+  è caratterizzata dall'avere gli autovalori di A sulla diagonale principale
+  (\lstinline|diag(A)| in Octave), degli 0 o degli 1 sulla diagonale soprastante e tutti
+  0 altrove. 
+\end{defi}
+
+\section{Rouché-Capelli}
+\label{sec:rouche-capelli}
+La teoria dei sistemi (teorema di \textit{Rouché-Capelli}) ci ha insegnato che ammette
+soluzioni non nulle se e solo se
+\begin{equation}
+  \label{eq:rc}
+  \abs{A-\lambda I}=0
+\end{equation}
+Posto $P(A-\lambda I)$, si può osservare che $P(\lambda)$ è un polinomio di grado $n$ nella variabile $\lambda \in \mathds{R}$; $P(\lambda)$ 
+è detto polinomio caratteristico A. Le soluzioni in $\mathds{R}$ dell'equazione (\ref{eq:rc}), cioè $P(\lambda)=0$, sono dette \textit{autovalore}
+di $A$,se $\lambda$ è un autovalore di $A$, si può definire
+\begin{equation*}
+  V_\lambda =\{X\in\mathds{R}^n:[A-\lambda I]\cdot X=\vec{0}\}
+\end{equation*}
+Sappiamo che $\lambda$ è un autovalore di $\mathds{R}^n$: scriveremo
+\begin{equation*}
+  m_g(\lambda)=\dim V_\lambda
+\end{equation*}
+Il numero naturale $M_g(\lambda)$ è chiamato molteplicità geometrica dell'autovalore $\lambda$.
+\begin{equation*}
+  m_g(\lambda)=n-p(A-\lambda I)
+\end{equation*}
+In sostanza, $m_g(\lambda)$ coincide col numero di incognite libere del sistema omogeneo, come prescritto dal teorema di Rouché-Capelli. Il sottospazio
+$V_\lambda$ è detto \textit{autospazio} associato all'autovalore $\lambda$; i suoi elementi non nulli che ogni autovalore $\lambda$, essendo una radice
+di $P(\lambda)$, cioè di un polinomio di grado $n$, ha una sua moltiplicità algebrica, denotata $m_a(\lambda)$. Questo è il momento di eseguire alcuni
+esercizi per prendere confidenza con questi concetti.
+
+\subsection{Esercizio}
+\label{sec:esAutovettori}
+
+\begin{equation}
+  \label{eq:esAuto}
+  A=
+  \begin{pmatrix}
+    1 & 1\\
+    0 & 1 
+  \end{pmatrix} \in M_2 (\mathds{R})
+\end{equation}
+\begin{enumerate}
+\item Determinare gli autovalori di A;
+\item Per ogni $\lambda$, indicare $m_a(\lambda)$ e $m_g(\lambda)$;
+\item Determinare una base degli eventuali autospazi.
+\end{enumerate}
+
+\paragraph{Soluzione}
+\begin{enumerate}
+\item Il polinomio caratteristico è
+  \begin{equation*}
+    P(\lambda)= [A-\lambda I] =
+    \begin{vmatrix}
+      \begin{pmatrix}
+        1 & 1\\
+        0 & 1
+      \end{pmatrix}-
+      \begin{pmatrix}
+        \lambda & 0\\
+        0 & \lambda
+      \end{pmatrix}
+    \end{vmatrix}=
+    \begin{vmatrix}
+      (1-\lambda) & 1 \\
+      1 & (1-\lambda)
+    \end{vmatrix}= (1-\lambda)^2
+  \end{equation*}
+Per risolvere il problema tocca trovare $\lambda$ svolgendo il quadrato di binomio, $\lambda^2-2\lambda+1$, poi dobbiamo dobbiamo ricavare il $\Delta$ e poi in fine calcolare $\lambda_{1,2}$.
+\begin{eqnarray*}
+  \Delta = b^2-4ac = 4 - 4 = 0\\
+  \lambda_{1,2} = \frac{2\pm\sqrt{0}}{2}=1
+\end{eqnarray*}
+Ne segue che $A$ possiede un unico autovalore $\lambda_1=1$
+\item Abbiamo
+  \begin{eqnarray*}
+    m_a(\lambda_1)=2, & m_g(\lambda_1)=n-p(A-\lambda_1I)=\\
+    & = 2-p
+      \begin{vmatrix}
+        \begin{pmatrix}
+          0 & 1 \\
+          0 & 0
+        \end{pmatrix}
+      \end{vmatrix}= 2 - 1 = 1 
+  \end{eqnarray*}
+\item $V_{\lambda_1}$ è definito come l'insieme delle soluzioni di
+  \begin{equation*}
+    [A-\lambda_1I]\cdot\begin{vmatrix}
+                         x_1\\
+                         x_2
+    \end{vmatrix}=
+    \begin{vmatrix}
+      0\\0
+    \end{vmatrix}
+  \end{equation*}
+  cioè
+  \begin{equation*}
+    \begin{cases}
+      x_2=0\\
+      0=0
+    \end{cases}
+  \end{equation*}
+  Ora, $\dim V_{\lambda_1}=1$, e una sua base è $\{^t[1,0]\}$.
+\end{enumerate}
+\lstset{language=matlab,caption={Svolgimento dell'autovalore},label=autovalore}
+\lstinputlisting[language=matlab, style=Matlab-editor]{source/autoveteautoval.m}
+
+\subsubsection{Stampa a schermo}
+\label{sec:stauto}
+
+\begin{verbatim}
+A =
+
+   1   1
+   0   1
+
+ris =
+
+   1
+   1
+
+ris2 = 1
+\end{verbatim}
+
+\section{Criterio di diagonalizzabilità}
+\label{sec:diagonalizzabilità}
+\begin{equation}
+  \label{eq:critDiag1}
+  P^{-1}\cdot A \cdot P=
+  \begin{bmatrix}
+    \lambda_1 & 0 & \dots & 0\\
+    0 & \lambda_2 && \vdots\\
+    \vdots && \ddots & 0\\
+    0 & \dots & 0 & \lambda_n
+  \end{bmatrix}
+\end{equation}
+Attraverso la (\ref{eq:critDiag1}) abbiamo definito il concetto di matrice diagonalizzabile. Il seguente criterio
+consente di stabilire sotto quali condizioni una matrice è diagonalizzabile se e solo se soddisfatte le due
+proprietà seguenti:
+\begin{enumerate}
+\item \textit{Criterio di diagonalizzabilità:} Sia $A=[a_{ij}]\in M_n(\mathds{R})$. Allora $A$ è diagonalizzabile
+  se e solo se sono soddisfatte le due proprietà seguenti:
+  \begin{enumerate}
+  \item Tutte le radici di $P(\lambda)$ sono reali;
+  \item per ognuna di esse (autovalore), si ha $m_g(\lambda)=m_g(\lambda)$.
+  \end{enumerate}
+\end{enumerate}
+\begin{oss}
+  Se $P(\lambda)$ ammette $n$ radici reali distinte fra loro, allora $A$ è diagonalizzabile. Infatti, in questo
+  caso è ovvio che ogni autovalore abbia molteplicità algebrica 1, e quindi anche la sua molteplicità geometrica
+  deve valere 1, per la (\ref{eq:critDiag2})
+\end{oss}
+\begin{equation}
+  \label{eq:critDiag2}
+  1\leq m_g(\lambda)\leq m_a(\lambda)
+\end{equation}
+\begin{oss}
+  Se $A$ è diagonalizzabile, in numeri reali $\lambda_1,\dots,\lambda_n$ che compaiono nella matrice a destra in
+  (\ref{eq:critDiag1}) sono precisamente gli autovalori di $A$, ognuno contato un numero di volte pari alla
+  propria moltiplicità. Della costruzione della matrice diagonalizzante $P$.  
+\end{oss}
+\begin{esempio}
+  Sia
+  \begin{equation}
+    \label{eq:critDiag3}
+    A=
+    \begin{bmatrix}
+      2 & 0 & 0\\
+      6 & 1 & 6\\
+      0 & 0 & 2
+    \end{bmatrix} \in M_3(\mathds{R})
+  \end{equation}
+\paragraph{Soluzione}
+Il polinomio caratteristico è
+\begin{equation}
+  \label{eq:critDiag4}
+  P(\lambda)=\abs{A-\lambda I}=
+  \begin{vmatrix}
+    (2 - \lambda) & 0 & 0\\
+    6 & (1-\lambda) & 6\\
+    0 & 0 & (2-\lambda)
+  \end{vmatrix}=(2-\lambda)^2(1-\lambda)
+\end{equation}
+Quindi il punto (a) è soddisfatta, con 2 autovlori:
+\begin{equation}
+  \label{eq:critDiag5}
+  \begin{matrix}
+    \lambda_{1}=2, & m_a(\lambda_1)=2 \text{ e } \lambda_2=1, & m_a(\lambda_2)=1 
+  \end{matrix}
+\end{equation} 
+\clearpage
+Per stabilire se $A$ è diagonalizzabile, bisogna calcolare $m_g(\lambda_1)$\footnote{Il calcolo di $m_g(\lambda_2)$ non
+è necessario, per la (\ref{eq:critDiag2})}
+\begin{equation}
+  \label{eq:critDiag6}
+  m_g (\lambda_1)=n-p(A-\lambda_1I)=3-\rho
+  \begin{pmatrix}
+    \begin{bmatrix}
+      0 & 0 & 0\\
+      6 & -1 & 6\\
+      0 & 0 & 0
+    \end{bmatrix}
+  \end{pmatrix}
+  =3-1=2
+\end{equation}
+Quindi soddisfa il punto (b) e concludiamo che a è diagonalizzabile.
+\end{esempio}
+\begin{esempio}
+  Sia
+  \begin{equation}
+    \label{eq:critDiag7}
+    A=
+    \begin{bmatrix}
+      2 & 0 & 0 \\
+      0 & 1 & 2 \\
+      0 & 2 & 1
+    \end{bmatrix} \in M_3(\mathds{R})
+  \end{equation}
+  Stabire se A è duaginalizzabile.
+  
+\paragraph{Soluzione}
+
+Il polinomio ccaratteristico è
+\begin{eqnarray*}
+  P(\lambda)-\abs{A-\lambda I}=
+  \begin{vmatrix}
+    (2-\lambda) & 0 & 0\\
+    0 & (1-\lambda) & 2\\
+    0 & 2 & (1-\lambda)
+  \end{vmatrix} = (2-\lambda)[(1-\lambda)-4]
+\end{eqnarray*}
+per ottenere il valore riportato qui sopra abbiamo preso il primo elemento
+a sinitra della matrice ``$(2-\lambda)$'' e poi abbiamo moltiplicato a croce
+con la sotto matrice $
+\begin{vmatrix}
+   (1-\lambda) & 2\\
+   2 & (1-\lambda)
+\end{vmatrix}
+$ ed ecco spiegato il $[(1-\lambda)-4]$, tutto questo è possibile per il semplice fatto che la prima riga e la prima colonna sono composte da zeri tranne il primo elemento.\\
+Calcolando i discriminante $\lambda$ ricaviamo:
+\begin{eqnarray*}
+  \lambda_1=2, & \lambda_2=3 \text{ e } \lambda_3=-1
+\end{eqnarray*}
+Ora, $A$ è diagonalizzabile per l'osservazione 1 sopra.
+\end{esempio}
