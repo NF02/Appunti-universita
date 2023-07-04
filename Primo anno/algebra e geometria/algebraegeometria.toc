@@ -35,3 +35,4 @@
 \contentsline {subsection}{\numberline {6.3.2}Sistema disomogeneo}{69}{subsection.6.3.2}%
 \contentsline {section}{\numberline {6.4}Il Determinante}{70}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Formula di laplace}{71}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Esercizio 4}{71}{section.6.6}%
