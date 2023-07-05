@@ -106,13 +106,13 @@
   prodotto scalare, denotato $\vec{u}\cdot \vec{v}$, è definito da
   \begin{eqnarray}
     \label{eq:prodottoscalare}
-    \vec{u}\cdot \vec{v}=u_1v_1+u_2v_2+u_3v_3 & \left(\dislaystyle\sum\limits_{i=1}^3 u_i v_3\right)
+    \vec{u}\cdot \vec{v}=u_1v_1+u_2v_2+u_3v_3 & \left(\sum\limits_{i=1}^3 u_i v_3\right)
   \end{eqnarray}
 \end{defi}
 La proprietà fondamentale del prodotto scalare è
 \begin{eqnarray}
   \label{eq:prodottoscalare1}
-  \vec{u}\cdot \vec{v}=\ads{\vec{u}}\cdot\ads{\vec{v}}\cos\theta
+  \vec{u}\cdot \vec{v}=\abs{\vec{u}}\cdot\abs{\vec{v}}\cos\theta
 \end{eqnarray}
 \begin{esempio}
   \begin{eqnarray*}
@@ -155,12 +155,6 @@ La proprietà fondamentale del prodotto scalare è
     \sqrt{u_1^2+u_2^2+\dots+u_n^2}
   \end{eqnarray*}
 \end{defi}
-\begin{esempio}
-  Siano $\vec{u}=[1,2,1],$ $\vec{v}=[6,-4,1]$.
-  \begin{eqnarray*}
-    \vec{u}\wedge \vec{v}=[2\cdot 1 -1 \cdot (-4), 1 \cdot 6-1\cdot 1,1\cdot (-4) -2\cdot 6]= [6,5,-16]
-  \end{eqnarray*}
-\end{esempio}
 \subsection{Prodotto Vettoriale}
 \label{sec:prodVett}
 
@@ -172,9 +166,58 @@ La proprietà fondamentale del prodotto scalare è
     \vec{u}\wedge \vec{v}=[u_2v_3-u_3v_2,u_3v_1-u_1v_3,u_1v_2-u_2v_1]
   \end{eqnarray*}
 \end{defi}
+\begin{esempio}
+  Siano $\vec{u}=[1,2,1],$ $\vec{v}=[6,-4,1]$.
+  \begin{eqnarray*}
+    \vec{u}\wedge \vec{v}=[2\cdot 1 -1 \cdot (-4), 1 \cdot 6-1\cdot 1,1\cdot (-4) -2\cdot 6]= [6,5,-16]
+  \end{eqnarray*}
+\end{esempio}
+
 \section{Metodo di Cramer per sistemi lineari}
 \label{sec:Metododicramer}
-
+\begin{defi}
+  Il \textbf{metodo di Cramer per sistemi lineari} è un procedimento per la
+  risoluzione dei sistemi di equazioni lineari, e prevede di determinare le
+  soluzioni dei sistemi lineari quadrati mediante il calcolo del determinante
+  assoluto. Nel caso delle matrici 2x2:
+  \begin{equation}
+    \label{eq:MotododiCrmer}
+    \det(A)=
+    \begin{vmatrix}
+      a_1 & b_1\\
+      a_2 & b_2
+    \end{vmatrix} = (a_1\cdot b_2) - (a_2 \cdot b_1)
+  \end{equation}
+  mentre, nel caso di una matrice 3x3:
+  \begin{align}&\det(A) = \det\begin{bmatrix}a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 &
+c_3\end{bmatrix}={+a_1\cdot b_2\cdot c_3+ b_1 \cdot c_2 \cdot a_3 + c_1 \cdot a_2
+                  \cdot b_3 - b_1 \cdot a_2 \cdot c_3 - a_1 \cdot c_2 \cdot b_3 - c_1\cdot b_2 \cdot a_3}
+  \end{align}
+  Con un caso di matrice estesa che viene fatto nel seguente modo $
+  \det(A)=\begin{array}{|ccc|cc} 
+    a_1&b_1&c_1&a_1&b_1\\ 
+    a_2&b_2&c_2&a_2&b_2\\
+    a_3&b_3&c_3&a_3&b_3\\
+  \end{array}
+  $
+\end{defi}
+\begin{enumerate}
+\item Prendendo una matrice $
+\det(A)=\begin{vmatrix}
+    3 & 2 \\
+    5 & 1
+\end{vmatrix}= (3\cdot 1)-(5\cdot 2)= 3-10=-7
+$.
+\item Questo era un esempio di matrici 3x3
+  \begin{eqnarray*}
+    \det(A)=\det\begin{bmatrix}
+      2 & 4 & 1\\
+      3 & 9 & 2\\
+      5 & 8 & 6        
+            \end{bmatrix}= +2\cdot 9\cdot 6+3\cdot 2 \cdot 1 + 5\cdot 4\cdot 2-
+    4\cdot2\cdot 8-1\cdot9\cdot 5=23
+  \end{eqnarray*}
+\end{enumerate}
 \section{Algoritmo di Gauss Jordan}
 \label{sec:algoritmodigauss}
 
