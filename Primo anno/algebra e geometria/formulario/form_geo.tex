@@ -217,15 +217,93 @@ c_3\end{bmatrix}={+a_1\cdot b_2\cdot c_3+ b_1 \cdot c_2 \cdot a_3 + c_1 \cdot a_
 %            \end{bmatrix}= +2\cdot 9\cdot 6+3\cdot 2 \cdot 1 + 5\cdot 4\cdot 2-
 %    4\cdot2\cdot 8-1\cdot9\cdot 5=23
  % \end{eqnarray*}
-%\end{enumerate}
+     %      \end{enumerate}
+
 \section{Algoritmo di Gauss Jordan}
 \label{sec:algoritmodigauss}
 
 \section{Sviluppo di Laplace per determinanti}
 \label{sec:laplace}
-
+\begin{defi}
+  Si supponga di avere una matrice quadrata $M$ di ordine $n$ e di elementi
+  $m_{ij}$. Si definiscono:
+  \begin{itemize}
+  \item La matrice $M_{ij}$, la sottomatrice (\underline{di dimensione}) che si
+    ottiene da $M$ cancellando la $i$-esima riga e la $j$-esima colonna.
+  \item Il valore $\det (M_{ij})$, detto minore complemento dell'elemento
+    $(i,j)$.
+  \item Il valore $(-1)^{i+j}\det(M_{ij})$, detto cofattore o complemento
+    algebrico dell'elemento $(i,j)$.
+  \end{itemize}
+  Il primo teorema di Laplace afferma che il determinante di una matrice $M$
+  di ordine $n$ è pari alla somma dei prodotti degli elementi di una riga
+  qualsiasi (\underline{o una colonna qualsiasi}) per i rispettivi complementi
+  algebrici. In formula:
+  \begin{equation}
+    \label{eq:primaform}
+    \det M = \sum\limits_{j=1}^{n}(-1)^{i+j}m_{ij}\det M_{ij}
+  \end{equation}
+  indicando con $i$ la riga, con $j$ la colonna e considerando
+  $i,j=1,\dots,n$.\\
+  Il secodno teorema di Laplace afferma che è sempre nulla la somma dei
+  prodotti di una riga (o colonna) per i complementi algebrici di un'altra riga
+  (o colonna) della matrice stessa. In formula:
+  \begin{equation}
+    \label{eq:secondformula}
+    0=\sum_{j=1}^n(-1)^{i+j} m_{ij} \text{ con } i\neq k
+  \end{equation}
+  (se $i = k$ è primo teorema e il risultato è diverso da zero).
+\end{defi}
 \section{Polinomio caratteristico di un'applicazione lineare}
 \label{sec:polinomicaratteristici}
 
+\subsection{Polinomio caratteristico di una matrice}
+\label{sec:polinomiocar}
+
+\begin{defi}
+  Il polinomio caratteristico di una matrice quadrata è il determinante della
+  differenza tra la matrice $M$ di ordine $n$ e una matrice identità dello
+  stesso ordine $Id_n$ moltiplicata per una variabile $\lambda$. 
+  \begin{equation}
+    \label{eq:policar}
+     p_M (\lambda) = det(M-\lambda \cdot Id_n)
+  \end{equation}
+\end{defi}
+\subsection{Spazi vettoriali, sottospazi e basi}
+\label{sec:spazivettorialisottospazziebasi}
+\begin{defi}
+  Un'applicazione lineare è associata a una matrice rappresentativa $A_{f,B,B}$
+  rispetto alla base B. Essendo un operatore lineare $f:V\to V$, la matrice
+  $A_{f,B,B}$ è una matrice quadrata con un ordine uguale alla dimensione n di
+  V.
+\end{defi}
+
+\subsection{Autovalore e autovettore}
+\label{sec:autovaloreeautovettore}
+\begin{defi}
+  Un vettore $v$ dello spazio vettoriale $V$ diverso dal vettore nullo è detto
+  autovettore di un operatore lineare ($f:V\to V$) se esiste uno scalare $\lambda
+  \in K=R$, detto autovalore, tale che l'applicazione lineare $f(v)$ sia uguale
+  a $\lambda v$. $ f(v) = \lambda v $
+\end{defi}
+\begin{eqnarray*}
+  V_\lambda = \{X\in \mathds{R}:[A-\lambda I]\cdot X =\vec{0}\}
+\end{eqnarray*}
+Sapendo che $V_\lambda$ è un sottospazio vettoriale di $\mathds{R}^n$: sriveremo
+\begin{eqnarray*}
+  m_g(\lambda)=\dim V_\lambda
+\end{eqnarray*}
+Il nomero naturale $m_g(\lambda)$ è coincide con il numero di incognite libere del
+sistema geometrica dell'autovavlori $\lambda$. sappiamo che
+\begin{eqnarray*}
+  m_g(\lambda) = n-p(A-\lambda I)
+\end{eqnarray*}
+\begin{osservazione}
+  Il sottospazio $V_\lambda$ è detto autospazio associalto all'autovalore $\lambda$:
+  i suoi elementi non nulli sono invece chiamato autovettori associati all'autovalore
+  $\lambda$. Notiamo che ogni autovatore $\lambda$, essendo una radice di $P(\lambda)$
+  cioè di un polinomio di grado $n$, ha una sua molteplicità algebrica, denotata
+  $m_a(\lambda)$.
+\end{osservazione}
 
 \end{document}
