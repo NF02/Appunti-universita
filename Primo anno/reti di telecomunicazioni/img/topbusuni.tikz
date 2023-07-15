@@ -1,0 +1,21 @@
+﻿\def\a{.3}
+
+\begin{tikzpicture}
+% unicast bus
+\draw (0,0) circle [radius=\a];
+\draw(1.5,0) circle [radius=\a];
+\draw(3,0) circle [radius=\a];
+\draw(4.5,0) circle [radius=\a];
+\draw (0,0) -- (4.5,0);
+\node at (2.2,-0.6) {Bus unicast $R=N-1$};
+
+% brodcast bus
+\draw (6,0) circle [radius=\a];
+\draw (7.5,0) circle [radius=\a];
+\draw (9,0) circle [radius=\a];
+\draw (10.5,0) circle [radius=\a];
+\draw (6,0) -- (6,1) -- (10.5,1) -- (10.5,0);
+\draw (7.5,0) -- (7.5,1);
+\draw (9,0) -- (9,1); 
+\node at (8.2,-0.6) {Bus broadcast $R=1$};
+\end{tikzpicture}

@@ -1,0 +1,50 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduzione}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Sommario}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Informazione e segnali}{5}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Informazioni analogiche e digitali}{5}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Alcune osservazioni}{6}{subsection.1.1.3}%
+\contentsline {subsubsection}{I risultati di Shannon}{6}{subsubsection*.2}%
+\contentsline {section}{\numberline {1.2}I segnali}{6}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Rappresentazione dell'informazione}{6}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Classificazione di segnali}{6}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Spiegazione sui segnali}{7}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Segnali analogici}{7}{subsection.1.3.1}%
+\contentsline {subsubsection}{Esempi}{7}{subsubsection*.3}%
+\contentsline {subsection}{\numberline {1.3.2}Segnali digitali}{7}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Pregi e difetti}{7}{subsection.1.3.3}%
+\contentsline {subsubsection}{Analogico}{7}{subsubsection*.4}%
+\contentsline {paragraph}{Pregi}{7}{paragraph*.5}%
+\contentsline {paragraph}{Difetti}{7}{paragraph*.6}%
+\contentsline {section}{\numberline {1.4}Il sistema numerico binario}{8}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}La rappresentazione}{8}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Rappresentazione del modulo e del segno}{8}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Rappresentazione di complemento a 1}{8}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Rappresentazione di complemento a 2}{9}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Confronto}{9}{subsection.1.4.5}%
+\contentsline {section}{\numberline {1.5}Sistemi di comunicazione}{9}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Trasmissione e recezione}{10}{subsection.1.5.1}%
+\contentsline {subsubsection}{La trasmissione}{10}{subsubsection*.7}%
+\contentsline {subsubsection}{La recezione}{10}{subsubsection*.8}%
+\contentsline {subsection}{\numberline {1.5.2}Classificazione di sistemi}{10}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Rete di telecomunicazione}{10}{subsection.1.5.3}%
+\contentsline {subsubsection}{Obbiettivi}{10}{subsubsection*.9}%
+\contentsline {paragraph}{Criteri di classificazione di reti}{11}{paragraph*.10}%
+\contentsline {subsection}{\numberline {1.5.4}Classificazione per servizi}{11}{subsection.1.5.4}%
+\contentsline {subsection}{\numberline {1.5.5}Classificazione per mobilità}{11}{subsection.1.5.5}%
+\contentsline {subsection}{\numberline {1.5.6}Classificazione per estensione}{11}{subsection.1.5.6}%
+\contentsline {subsection}{\numberline {1.5.7}Interconnessione di reti}{12}{subsection.1.5.7}%
+\contentsline {subsection}{\numberline {1.5.8}Classificazione per posizione}{12}{subsection.1.5.8}%
+\contentsline {subsection}{\numberline {1.5.9}Soggetti implicati}{12}{subsection.1.5.9}%
+\contentsline {section}{\numberline {1.6}Rami e nodi}{12}{section.1.6}%
+\contentsline {subsubsection}{I significato}{13}{subsubsection*.11}%
+\contentsline {subsubsection}{Nodi intermedi e terminali}{13}{subsubsection*.12}%
+\contentsline {subsection}{\numberline {1.6.1}Definizione di grafo}{13}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Topologie}{14}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Topologia Elementari}{14}{subsection.1.6.3}%
+\contentsline {subsubsection}{Topologia a maglia completa}{14}{subsubsection*.13}%
+\contentsline {subsubsection}{Topologia a stella}{15}{subsubsection*.14}%
+\contentsline {subsubsection}{Topologia a maglia non completa}{15}{subsubsection*.15}%
+\contentsline {subsubsection}{Topologia ad anello}{16}{subsubsection*.16}%
+\contentsline {subsubsection}{Topologia a bus: unicast vs broadcast}{16}{subsubsection*.17}%

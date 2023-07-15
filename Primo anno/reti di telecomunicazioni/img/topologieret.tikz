@@ -1,0 +1,74 @@
+﻿\def\a{.4}
+\def\b{.3}
+\def\cr{.53}
+
+\begin{tikzpicture}
+% bus topograpy
+\draw (2,-1) circle (\a cm);
+\draw (2,-1) -- (2,0);
+\draw (4,-1) circle (\a cm);
+\draw (4,-1) -- (4,0);
+\draw (1,1) circle (\a cm);
+\draw (1,1) -- (1,0);
+\draw (3,1) circle (\a cm);
+\draw (3,1) -- (3,0);
+\draw (5,1) circle (\a cm);
+\draw (5,1) -- (5,0);
+\draw (0,0) -- (6,0);
+
+% star topograpy
+\draw (10,0) -- (8.5,-1);
+\draw (8.5,-1) circle(\b cm);
+
+\draw (10,0) -- (11.5,-1);
+\draw (11.5,-1) circle(\b cm);
+
+% centro
+\draw (10,0) circle(\cr cm);
+
+\draw (10,0) -- (10,-1.7);
+\draw (10,-1.7) circle(\b cm);
+
+\draw (10,0) -- (9,1);
+\draw (9,1) circle(\b cm);
+
+\draw (10,0) -- (11,1);
+\draw (11,1) circle(\b cm);
+
+% Rete ad anallo
+
+\draw (13.5,-1) circle(\b cm);
+\draw (13.5,-1) -- (14.5,-1.7);
+\draw (13.5,-1) -- (14,0.4);
+
+\draw (15.5,-1) circle(\b cm);
+\draw (14.5,-1.7) -- (15.5,-1);
+
+\draw (14.5,-1.7) circle(\b cm);
+\draw (15.5,-1) -- (15,0.4); 
+
+\draw (14,0.4) circle(\b cm);
+
+\draw (15,0.4) circle(\b cm);
+\draw (14,0.4) --  (15,0.4);
+
+% modello a maglia
+\draw (17,-1) circle(\b cm);
+\draw (19,-1) circle(\b cm);
+\draw (17,-1) -- (19,-1);
+
+\draw (17,-1) -- (18,-1.7);
+\draw (18,-1.7) circle(\b cm);
+\draw (18,-1.7) -- (19,-1);
+
+\draw (18,-1.7) -- (17.4,0.4); 
+\draw (17.4,0.4) circle(\b cm);
+\draw (17,-1) -- (17.4,0.4);
+\draw (17.4,0.4) -- (19,-1);
+
+\draw (18.7,0.4) circle(\b cm);
+\draw (18,-1.7) -- (18.7,0.4);
+\draw (17,-1) -- (18.7,0.4);
+\draw (17.4,0.4) -- (18.7,0.4);
+\draw (19,-1) -- (18.7,0.4);
+\end{tikzpicture}

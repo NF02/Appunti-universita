@@ -1,0 +1,16 @@
+﻿\def\b{.3}
+\def\cr{.53}
+\begin{tikzpicture} 
+\draw (1.5,1.5) circle [radius=\cr];
+\draw (1.5,1.5) -- (0,0);
+\draw (0,0) circle [radius=\b];
+\draw (3,0) -- (1.5,1.5);
+\draw (3,0) circle [radius=\b];
+\draw (1.5,1.5) -- (0,3);
+\draw (0,3) circle [radius=\b];
+\draw (1.5,1.5) -- (3,3);
+\draw (3,3) circle [radius=\b];
+
+\draw (1.5,1.5) -- (1.5,3.7);
+\draw (1.5,3.7) circle [radius=\b];
+\end{tikzpicture}
