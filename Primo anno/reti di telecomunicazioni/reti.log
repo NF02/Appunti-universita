@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.7.3)  15 JUL 2023 21:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.7.16)  25 JUL 2023 00:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1555,7 +1555,14 @@ Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 \c@svol=\count454
 \c@oss=\count455
  (./reti.aux
-(./title/titlepage.aux))
+(./title/titlepage.aux)
+
+LaTeX Warning: Label `fig:topologiaadanello' multiply defined.
+
+
+LaTeX Warning: Label `fig:traffic' multiply defined.
+
+)
 \openout1 = `reti.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
@@ -1682,7 +1689,7 @@ your preamble.
 \openout2 = `./title/titlepage.aux'.
 
 (./title/titlepage.tex
-<./title/logo_CA.jpg, id=135, 142.8537pt x 143.3355pt>
+<./title/logo_CA.jpg, id=179, 142.8537pt x 143.3355pt>
 File: ./title/logo_CA.jpg Graphic file (type jpg)
 <use ./title/logo_CA.jpg>
 Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
@@ -1747,30 +1754,49 @@ Overfull \hbox (3.31941pt too wide) in paragraph at lines 527--533
  []
 
 (./img/topologieret.tikz) [12] (./img/grafo.tikz) [13]
-(./img/topologiaamaglia.tikz)) [14] (./img/topastella.tikz)
+(./img/topologiaamaglia.tikz) [14] (./img/topastella.tikz)
 (./img/topologiaamagliainc.tikz) [15
 
 ] (./img/topadanello.tikz)
 (./img/topbusuni.tikz) [16
+
+] (./img/sezioneinterna.tikz) [17]
+(./img/trasmtraf.tikz) [18] (./img/ritardo.tikz) [19])
+(./img/ritardoditrasmissione.tikz) (./img/ritardodipropagazione.tikz)
+(./img/es1.tikz) [20] [21
 
 ] (./reti.aux (./title/titlepage.aux))
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `reti.out' has not changed.
-(rerunfilecheck)             Checksum: BD2A9DDC087956F5BD638D6440C38ADA;5659.
+
+Package rerunfilecheck Warning: File `reti.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `reti.out':
+(rerunfilecheck)             Before: 4C8FAA6930D93F1AA94920DCC0B22FE8;7612
+(rerunfilecheck)             After:  096976046BE289645B4AB1B1249428D9;7805.
  ) 
 Here is how much of TeX's memory you used:
- 59313 strings out of 476025
- 1452987 string characters out of 5796533
- 2318554 words of memory out of 5000000
- 78706 multiletter control sequences out of 15000+600000
+ 59472 strings out of 476025
+ 1455826 string characters out of 5796532
+ 2318552 words of memory out of 5000000
+ 78800 multiletter control sequences out of 15000+600000
  539040 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,14n,89p,719b,830s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
+, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
 , replaced by a fixed one
@@ -1797,28 +1823,29 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
-.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/f
-onts/type1/public/cm-super/sfbi0900.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/cm-super/sfbi1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfb
-i1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr
-/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-di
-st/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/
-public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
-/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><
-/usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texm
-f-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
-uper/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.p
-fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/
-texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/font
-s/type1/public/cm-super/sftt1000.pfb>
-Output written on reti.pdf (16 pages, 839292 bytes).
+/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/cm-super/sfbi0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfb
+i1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr
+/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-di
+st/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/
+public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
+/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><
+/usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texm
+f-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
+uper/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.p
+fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/
+texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/font
+s/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/
+cm-super/sftt1000.pfb>
+Output written on reti.pdf (21 pages, 881960 bytes).
 PDF statistics:
- 493 PDF objects out of 1000 (max. 8388607)
- 420 compressed objects within 5 object streams
- 131 named destinations out of 1000 (max. 500000)
- 274 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 617 PDF objects out of 1000 (max. 8388607)
+ 536 compressed objects within 6 object streams
+ 178 named destinations out of 1000 (max. 500000)
+ 362 words of extra memory for PDF output out of 10000 (max. 10000000)
 

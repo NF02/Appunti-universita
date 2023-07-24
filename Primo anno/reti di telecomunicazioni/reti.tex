@@ -127,89 +127,113 @@
 \include{./title/titlepage.tex}
 \tableofcontents
 \input{pag/intro.tex}
-\clearpage
-\subsubsection{Topologia a stella}
-\label{sec:topastellaegrafo}
-La topologia a stella è una versione semplicifata di una topologia ad albero,
-infatti, è una topologia a albero composto da un solo livello oltre alla radice.
-Come tutte le topoligie ad albero soffre di un problema devastante, una bassissima
-tolleranza ai guasti, se il centro del della rete si guasta o smette di funzionare
-la rete non è più operativa, creando un disservizio ma questo modello ha anche pregi,
-infatti, ha dei costi decisamente inferiori per l'allestimento e la manutenzione,
-è facile da instradare e i nodi sono pochi.
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \centering
-  \input{img/topastella.tikz}
-  \caption{Esempio di topologia a stella}
-  \label{fig:stellaesempio}
+  \input{./img/ritardoditrasmissione.tikz}
+  \caption{Formula per il calcolo di $t_{TX}$}
+  \label{fig:tTXfm}
 \end{figure}
 
+\subsubsection{Ritardo di propagazione}
+\label{sec:Ritardodipropagazione}
+\begin{defi}
+  Tempo di propacazione in un mezzo fisico {\tt (rame, etere, fibra ottica, semi conduttori e conduttori di
+    altra natura)}
+\end{defi}
+\begin{itemize}
+\item Dipende dal mezzo di trasmissione;
+\item È proporzionale alla lunghezza dello stesso mezzo ``{\it Un doppino di rame più è lungo più la sua
+  resistenza andrà ad attenuare il segnale}''
+\end{itemize}
+\begin{figure}[!ht]
+  \centering
+  \input{./img/ritardodipropagazione.tikz}
+  \caption{Formula per il calcolo di $t_{p}$}
+  \label{fig:tpfm}
+\end{figure}
+\begin{esempio}
+  Prendendo una rete a bus composta da 3 nodi, con un $L_{UI}$, $R=100Mb/s$, $L_m=100m$, $v=200000km/s$, $T_B=3\mu s$, bisogna trovare il $T_{AC}=?$.
+  \begin{figure}[!ht]
+    \centering
+    \input{img/es1.tikz}
+    \caption{Esempio di rete a bus per il calcolo del $t_{AC}$}
+    \label{fig:tac}
+  \end{figure}
+  \paragraph{Soluzione}
+  Partemdo dalla formula per ricavare $t_{AC}$ in cui AC sta per il tempo necessario per far percorrere
+  all'informazione l'intera rete fino al nodo C partendo da A
+  \begin{equation*}
+    t_{AC}=2t_{TX}+2t_p+T_B
+  \end{equation*}
+  Come si denota dalla formula per svolgere l'esercizio è necessario in primo luogo trovare $t_{TX}$ visto che
+  il valore di $t_B$ è già noto e risulta pari a $2\mu s$, quindi procediamo con il calcolo di $t_{TX}$.
+  \begin{equation*}
+    t_{TX}=\frac{L_{UI}}{R}=\frac{8\cdot 400}{100\cdot 10^6} = 32\mu s
+  \end{equation*}
+  Quindi adesso bisogna calcolare $t_p$ per completare la formula per ottenere $t_{AC}$
+  \begin{equation*}
+    t_p=\frac{L_m}{v} = \frac{100}{2\cdot 10^8}=0.5 \mu s
+  \end{equation*}
+  \clearpage
+  A questo punto è possibile svolgere l'operazione e quindi concludere l'esercizio, nel seguente modo:
+  \begin{equation*}
+    t_{AC}=2t_{TX}+2t_p+T_B= 2\left(32\right) + 2\left(0.5\right)+3= 67\mu s
+  \end{equation*}
+  quindi l'informazione impiega $67\mu s$ a raggiungere la destinazione.
+\end{esempio}
+
+\section{Errori e perdite}
+\label{sec:erreper}
+Durante il trasferimento di una UI questa può subire delle perdite o arrivare errata per $x$ motivi
+
+\subsubsection{Le cause?}
+
+\begin{itemize}
+\item Errori trasmissivi;
+\item Congestione della rete ``sovraccarico di informazioni che rende impossibile o molto rallentata la
+  comunicazione da un capo all'altro di un determinato nodo''
+\item Errori di protocollo, ad esempio errori nei protocolli, bachi nei programmi utilizzati per trasmettere
+  e ricevere l'informazione, etc.
+\end{itemize}
+
+\subsubsection{Come risolvere?}
+\label{sec:riserrtr}
+Tipicamente un errore o una perdita di informazione viene gestita tramite algoritmi di correzione e metodi di
+ritrasmissione, modito per cui l'informazione nelle trasmissioni odierne viene suddivisa in più pacchetti per
+permettere una ritrasmissione più contenuta e rapida in caso di problemi, alle volte invece, dentro l'header
+del pacchetto sono presenti delle informazioni per andare a correggere eventuali errori tramite un meccanismo
+automatico.
 \begin{oss}
-  Questa topologia di rete è forse uno dei più diffusi, infatti, le reti domestiche sia
-  ethernet sia Wi-fi funzionano proprio con un centro stella, il modem/router domestico
-  svolge tante funzioni tra cui anche quello di switch e access point.
+  Non tutti i metodi di trasmissione e  servizi prevedono questo meccanismo, infatti, in sistemi che devono essere
+  ad alta prestazioni, in cui non è incluente la mancanza di un frame ad esempio, infatti, i sistemi
+  di video streaming utilizzano sistemi senza controllo d'errore, perché al massimo ci sarebbe un istante
+  di schermo nero o deformato nei casi peggiori, comunque un qualcosa di arginabile e insignificante per
+  l'utente che adopera il servizio.
 \end{oss}
-In questo caso per calcolare $R$ basta calcolare il numero totale dei nodi-1, come
-esposto dalla seguente formula
-\begin{equation}
-  \label{eq:stella}
-  R=N-1
-\end{equation}
 
-\subsubsection{Topologia a maglia non completa}
-\label{sec:topologiaamaglianoncompleta}
-Questo risulta già un caso più generale e risulta un compromesso
-tra una rete ad albero e una a maglia completa, i pregi sono una maggior
-tolleranza ai guasti rispetto al modello ad albero, un numero a piacere di
-rami. I difetti sono legati proprio alla topologia che risulta non regolare.
-\begin{figure}[ht]
-  \centering
-  \input{img/topologiaamagliainc.tikz}
-  \caption{Esempio di topologia a maglia non completa}
-  \label{fig:topologiaamagliacompletanoncomp}
-\end{figure}
-\begin{oss}
-  Questo è il modello più utilizzato dagli ISP perché risulta semplice sia in fase
-  di manutenzione e anche il più vesatile avendo la possibilità di scegliere il numero
-  di rami, quindi si può optare per mettere più nodi in percorsi in cui la banda
-  passante è maggiore e meno dove non è necessario una tale tolleranza.
-\end{oss}
-In questo caso il valore $R$ risulta compreso tra la condizione dei sistemi ad albero e
-quelli a maglia
-\begin{equation}
-  \label{eq:maglianoncompleta}
-  N-1 < R < \frac{N(N-1)}{2}
-\end{equation}
-\clearpage
-\subsubsection{Topologia ad anello}
-\label{sec:topadan}
-La rete ad anello non è molto diffusa, infatti, tipicamente viene utilizzata per
-le reti locali e metropolitane, essa può essere unidirezionele ({\it quindi il giro che
-  fa l'informazione è sempre lo stesso sia se il nodo è in prossimita o se più
-  distante}) che bidirezionale e quindi prende il percorso più efficiente per instradare
-l'informazione.
-\begin{figure}[ht]
-  \centering
-  \input{img/topadanello.tikz}
-  \caption{Esempio di topologia ad anello}
-  \label{fig:topologiaadanello}
-\end{figure}
-Questa topologia non è particolarmente tollerante ai quasti e basta la rottura di un
-ramo per causare non poche rogne, soprattutto se il sistema è unidirezionale. In questo caso
-la formula che tutela $R$ dipende esclusivamente dal numero di nodi.
-\begin{equation}
-  \label{eq:adanallo}
-  R=N
-\end{equation}
+\subsection{Indicatori di prestazione}
+\label{sec:indprest}
 
-\subsubsection{Topologia a bus: unicast vs broadcast}
-\label{sec:unicvsbroadcast}
-\begin{figure}[ht]
-  \centering
-  \input{img/topbusuni.tikz}
-  \caption{Topologia a bus unicast e broadcast}
-  \label{fig:topologiaadanello}
-\end{figure}
+\subsubsection{Integrità informativa}
+\label{sec:intinfo}
+\begin{itemize}
+\item Corrispondenza tra informazione emessa e ricevuta (sequenze binarie)
+\item Minimizzazione degli errori trasmissivi e delle perdite per congestione
+\item Può essere valutato attraverso un tasso di errore residuo sul bit o sulle UI (numero medio di errori)
+\end{itemize}
+Per BER (Bit Error Rate) si intende il rapporto tra i non ricevuti correttamente e quelli trasmessi, essendo
+in bit il numero è compreso tra 0 e 1, fornisce una misura della qualità dell'intero sistema di comunicazione
+\begin{itemize}
+\item BER = 0.5 significa che in media 1 bit ogni 2 è errato
+\end{itemize}
+Concetti analoghi: Frame Error rate (FER) o Packet Error Rate (PER)
 
+\subsubsection{Trasparenza temporale}
+\label{sec:trtemp}
+\begin{itemize}
+\item riguarda i ritardi di transito;
+\item minimizzazione ad equalizzazione del ritardo trasmissivo ed elaborativo
+\item valutato attraverso le statistiche dei ritardi (ritardo medio più variazione o \textit{jitter})
+\end{itemize}
 
 \end{document}

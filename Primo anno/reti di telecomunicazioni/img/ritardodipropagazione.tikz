@@ -1,0 +1,7 @@
+﻿\begin{tikzpicture}
+\node  at (0,0) {$t_{p}=\frac{L_m}{v}$};
+\draw[<-]        (1,0.2)   -- (2,0.2);
+\node  at (4.5,0.2) {lunghezza del mezzo (in $m$)};
+\draw[<-]        (1,-.2)   -- (2,-0.2);
+\node  at (5.1,-0.3) {velocità di propagazione (in $m/s$)};
+\end{tikzpicture}

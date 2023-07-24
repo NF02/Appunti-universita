@@ -688,3 +688,299 @@ anche i conosti di mantenimento e di realizzazione.
   R=\sum\limits_{i=1}^N (N-i)=\sum\limits_{i=1}^N N - \sum\limits_{i=1}^N i = N^2-
   \frac{N(N+1)}{2} = \frac{N(N-1)}{2}
 \end{equation}
+\clearpage
+\subsubsection{Topologia a stella}
+\label{sec:topastellaegrafo}
+La topologia a stella è una versione semplicifata di una topologia ad albero,
+infatti, è una topologia a albero composto da un solo livello oltre alla radice.
+Come tutte le topoligie ad albero soffre di un problema devastante, una bassissima
+tolleranza ai guasti, se il centro del della rete si guasta o smette di funzionare
+la rete non è più operativa, creando un disservizio ma questo modello ha anche pregi,
+infatti, ha dei costi decisamente inferiori per l'allestimento e la manutenzione,
+è facile da instradare e i nodi sono pochi.
+\begin{figure}[ht]
+  \centering
+  \input{img/topastella.tikz}
+  \caption{Esempio di topologia a stella}
+  \label{fig:stellaesempio}
+\end{figure}
+
+\begin{oss}
+  Questa topologia di rete è forse uno dei più diffusi, infatti, le reti domestiche sia
+  ethernet sia Wi-fi funzionano proprio con un centro stella, il modem/router domestico
+  svolge tante funzioni tra cui anche quello di switch e access point.
+\end{oss}
+In questo caso per calcolare $R$ basta calcolare il numero totale dei nodi-1, come
+esposto dalla seguente formula
+\begin{equation}
+  \label{eq:stella}
+  R=N-1
+\end{equation}
+
+\subsubsection{Topologia a maglia non completa}
+\label{sec:topologiaamaglianoncompleta}
+Questo risulta già un caso più generale e risulta un compromesso
+tra una rete ad albero e una a maglia completa, i pregi sono una maggior
+tolleranza ai guasti rispetto al modello ad albero, un numero a piacere di
+rami. I difetti sono legati proprio alla topologia che risulta non regolare.
+\begin{figure}[ht]
+  \centering
+  \input{img/topologiaamagliainc.tikz}
+  \caption{Esempio di topologia a maglia non completa}
+  \label{fig:topologiaamagliacompletanoncomp}
+\end{figure}
+\begin{oss}
+  Questo è il modello più utilizzato dagli ISP perché risulta semplice sia in fase
+  di manutenzione e anche il più vesatile avendo la possibilità di scegliere il numero
+  di rami, quindi si può optare per mettere più nodi in percorsi in cui la banda
+  passante è maggiore e meno dove non è necessario una tale tolleranza.
+\end{oss}
+In questo caso il valore $R$ risulta compreso tra la condizione dei sistemi ad albero e
+quelli a maglia
+\begin{equation}
+  \label{eq:maglianoncompleta}
+  N-1 < R < \frac{N(N-1)}{2}
+\end{equation}
+\clearpage
+\subsubsection{Topologia ad anello}
+\label{sec:topadan}
+La rete ad anello non è molto diffusa, infatti, tipicamente viene utilizzata per
+le reti locali e metropolitane, essa può essere unidirezionele ({\it quindi il giro che
+  fa l'informazione è sempre lo stesso sia se il nodo è in prossimita o se più
+  distante}) che bidirezionale e quindi prende il percorso più efficiente per instradare
+l'informazione.
+\begin{figure}[ht]
+  \centering
+  \input{img/topadanello.tikz}
+  \caption{Esempio di topologia ad anello}
+  \label{fig:topologiaadanello}
+\end{figure}
+Questa topologia non è particolarmente tollerante ai quasti e basta la rottura di un
+ramo per causare non poche rogne, soprattutto se il sistema è unidirezionale. In questo caso
+la formula che tutela $R$ dipende esclusivamente dal numero di nodi.
+\begin{equation}
+  \label{eq:adanallo}
+  R=N
+\end{equation}
+
+\subsection{Topologia a bus: unicast vs broadcast}
+\label{sec:unicvsbroadcast}
+\begin{figure}[ht]
+  \centering
+  \input{img/topbusuni.tikz}
+  \caption{Topologia a bus unicast e broadcast}
+  \label{fig:topologiaadanello}
+\end{figure}
+
+\subsubsection{Unicast}
+\label{sec:unicast}
+
+\begin{itemize}
+\item Connessione a bus attivo punto-punto;
+\item I nodo connessi in modo ``lineare'';
+\item Ogni nodo partecipa alla comunicazione tra le altre coppie di nodi;
+\item Usata soprattutto in reti con cavo
+\end{itemize}
+
+\subsubsection{Broadcast}
+\label{sec:broadcast}
+\begin{itemize}
+\item Il collegamento pra i nodi avviene tramite un unico mezzo di diffusivo (fisico o virtuale) tipo broadcast
+\item Bus pasivo
+\item La comununicazione avviene contemporaneamente da una a tutti
+\item Usata pricipalmente in LAN e MAN (con e senza fili)
+\end{itemize}
+
+\subsection{Topologia generale di una rete}
+\label{sec:topgenret}
+
+In generale la topologia di una rete di telecomunicazione può essere una combinazione delle topologie precedenti
+({\it tipologia mista})
+\begin{itemize}
+\item In alcuni casi una rete può essere anche rappresentata con una nuvola che interconnette i vari
+  nodi terminali
+\end{itemize}
+
+\subsection{Sezione d'accesso}
+\label{sec:sezioned'accesso}
+La sezione d'accesso ha il ruolo di consentire l'accesso alla rete ai suoi utenti, viene realizzata attraverso
+differenti mezzi e tecnologie
+\begin{itemize}
+\item Cablate (\textit{rame, fibra}) o senza fili
+\item punto-punto o \textit{broadcast}
+\end{itemize}
+È la sede di risorse in alcuni casi dedicate ai singoli utenti/terminali -- Conprende l'interfaccia utente-rete.
+\begin{itemize}
+\item Tecnologie e processi utilizzati nel segmento terminale di un sistema di collegamento;
+\item Ciò che permette il collegamento dell'utente con la rete;
+\item Tratta di cavo che connette le centrali telefoniche agli utenti finali
+\item \texttt{Essential farility:} elevati costi tecnologici
+\item liberalizzazione e nuovi concerrenti
+\end{itemize}
+
+\subsection{Sezione interna}
+\label{sec:sezint}
+\begin{figure}[ht]
+  \centering
+  \input{img/sezioneinterna.tikz}
+  \caption{Sezione interna}
+  \label{fig:sezint}
+\end{figure}
+
+\begin{itemize}
+\item Ha il ruolo di trasferire l'informazione tra nodi di accesso, se necessario, anche nodi di transito;
+\item È sede di risorse condivise\footnote{di trasferimento e di elaborazione} con elevate prestazioni, in
+  termini di velocità\footnote{trasmissiova ed elaborativa} e affidabile.
+\end{itemize}
+\subsection{Principali organismi}
+\label{sec:princorg}
+
+\begin{description}
+\item[International Telecommunication Union (ITU):] Agenzia delle Nazioni Unite con il compito di armonizzare
+  tutte le iniziative mondiali e regionali nel settore delle telecomunicazioni. Produce \texttt{raccomandazioni}
+  con carattere volontario, ma di fatto linee guida fondamentali.
+\item[International Standard Organization (ISO):] Ente delle Nazioni Unite creato con l'obiettivo di promuovere lo
+  sviluppo della normativa internazionale per facilitare il commercio di beni e servizi nel mondo.
+\item[Institute of Electrical and Electronics Engineers (IEEE):] Associazionee internazionale di scienziati
+  professionisti con l'obbiettivo della promozione delle scienze tecnologiche, particolarmente attivo nella
+  standardizzazione delle tecnologie per LAN e MAN.
+\item[Internet Engineering Task Force (IETF):] È il gruppo preposto alla definizione degli standard nel mondo
+  Internet. Chiunque può partecipare sottomettendo degli \textit{Internel-draft}. Vengono prodotte le cosiddetto
+  \textit{Request For Comments} (RFC).
+\item[Third Generation Parnership Project (3GPP):] 3GPP riunisce differenti organizzazioni e associazioni con
+  l'obiettivo di produrre specifiche tecniche per la reti mobili di terza generazione.
+\item[European Telecommunication Standards Institute (ETSI):] La preparazione degli standard è effettano
+  da trattano argomenti specifici e che riferiscono ad una assemblea tecnica.
+\end{description}
+\section{Unità informative (UI)}
+\label{sec:unitinfo}
+
+Il mezzo attraverso il quale viene trasferita l'informazione, le UI possono essere:
+\begin{itemize}
+\item i singoli bit o byte (\textbf{1B=8b});
+\item i blocchi/sequenze di bit o byte (di dimensione fissa o variabile);
+\end{itemize}
+\begin{nota}
+  L'unità informativa può avere anche nomi alternativi: unità dati, pacchetti, messaggi, segmenti, trame, etc.
+\end{nota}
+
+\subsection{Tipi di informazione/traffico}
+\label{sec:tipidiinformazione}
+\begin{figure}[ht]
+  \centering
+  \resizebox{5in}{!}{\input{img/trasmtraf.tikz}}
+  \caption{Tipi di informazione/traffico}
+  \label{fig:traffic}
+\end{figure}
+\begin{oss}
+  I diversi tipi di informazione possono in alternativa condividere la medesima infrastruttura di
+  rete.
+\end{oss}
+
+\subsubsection{Informazione di utente}
+\label{sec:infoutente}
+
+\begin{itemize}
+\item Obiettivo della comunicazione;
+\item Differenti media (\textit{voce, dati, video});
+\item Può essere inviata insieme a dell'extra-informazione aggiunta per scopi di controllo del trasferimento
+  (\texttt{overhead});
+\begin{esempio}
+  Indirizzi, campi di controllo di errore, etc.
+\end{esempio}
+\item Coinvolge le funzionalità di trasporto della rete.
+\end{itemize}
+
+\subsection{Informazione di controllo}
+\label{sec:infocont}
+l'Informazione di controllo è di supporto affinché possa avvenire la comunicazione, permette di
+\begin{itemize}
+\item Inizializzare una comunicazione;
+\item negoziarne le caratteristiche;
+\item controllare il trasferimento dei dati di utente
+\end{itemize}
+Coinvolge le funzionalità di controllo.
+
+\subsection{Informazione di gestione}
+\label{sec:infodigest}
+
+L'informazione di gestione in genere scambiata tra nodi di rete, ha lo scopo di consentire operazioni di
+gestione delle risorse/apparati di rete -- \textbf{Operation Administration Management} (OAM)
+\begin{itemize}
+\item informazione per operazioni di esercizio;
+\item informazioni per operazioni di amministrazione;
+\item informazione per operazioni di manutenzione.
+\end{itemize}
+
+\subsubsection{Qualità del servizio}
+\label{sec:qualserv}
+Il \textit{Quality of Service} (QoS) sono un insieme di parametri usati per caratterizzare la qualità
+del servizio offerto dalla rete ed esempio: perdita di pacchetti e ritardo. Strumenti o tecniche per ottenere una
+qualità del servizo desiderata. Normalmente correlata:
+\begin{itemize}
+\item \texttt{negativamente} con il traffico offerto alla rete;
+\item \texttt{positivamente} con le risorse impegnate. 
+\end{itemize}
+
+\subsubsection{Parametri di QoS}
+\label{sec:prQoS}
+
+\begin{itemize}
+\item Consegna fuori ordine dei pacchetti;
+\item Errore di trasmissione;
+\item Ritardo subito;
+\item Perdita di pacchetti;
+\item \textit{Throughput}.
+\end{itemize}
+
+\subsection{Ritardo}
+\label{sec:ridardo}
+
+\begin{figure}[ht]
+  \centering
+  \resizebox{5in}{!}{\input{img/ritardo.tikz}}
+  \caption{Tipi di informazione/traffico}
+  \label{fig:traffic}
+\end{figure}
+Il ritardo complessivo \textit{end-to-end} è la somma dei ritardi introdotti dai singoli nodi e rami.
+
+\subsubsection{Ritardo di elaborazione}
+\label{sec:ritelabo}
+\begin{defi}
+  Il tempo richiesto dal nodo di rete per esaminare la UI ({\it normalmente l'intestazione del pacchetto})
+  e per determinare dove instradarla. 
+\end{defi}
+\begin{itemize}
+\item Può includere eventualmente il termpo per elaborare la UI stessa
+  \begin{itemize}
+  \item controllare se sono presenti errori;
+  \item modificare le informazioni di instradamento.
+  \end{itemize}
+\item Può essere dell'ordine dei microsecondi (\textbf{o inferiore});
+\item Tipicamente noto per specifica. 
+\end{itemize}
+
+\subsubsection{Ritardo di attraversamento}
+\label{sec:ritattra}
+
+\begin{defi}
+  Il tempo che la UI trascorre in un nodo di rete prima di iniziare ad essere trasmesso sul collegamento di
+  uscita.
+\end{defi}
+\begin{itemize}
+\item Diperde dal tipo di attraversamento realizzato all'interno nel nodo
+\item Può dipendere dal grado di congestione del nodo (\textit{traffico totale in ingresso e/o uscita}).
+\end{itemize}
+
+\subsubsection{Ritardo di trasmissione}
+\label{sec:rittrasm}
+
+\begin{defi}
+  Il tempo necessario per trasmettere completamente la UI
+\end{defi}
+Questo ritardo va ad influenzare i sequenti fattori:
+\begin{itemize}
+\item il tempo di trasfermimento della UI corrente;
+\item il ritardo di coda subito dalle UI seguenti; 
+\end{itemize}
+Viene introdotto da ogni nodo che opera in modalità \textit{store\&forward}

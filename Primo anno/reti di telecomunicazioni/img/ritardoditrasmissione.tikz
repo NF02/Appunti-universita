@@ -1,0 +1,7 @@
+﻿\begin{tikzpicture}
+\node  at (0,0) {$t_{TX}=\frac{L_{UI}}{R}$};
+\draw[<-]        (1,0.2)   -- (2,0.2);
+\node  at (4.5,0.2) {lunghezza in bit della UI};
+\draw[<-]        (1,-.2)   -- (2,-0.2);
+\node  at (4.5,-0.3) {bit rate in bit/s in uscita};
+\end{tikzpicture}

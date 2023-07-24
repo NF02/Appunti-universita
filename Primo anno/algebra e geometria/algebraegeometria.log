@@ -1,12 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.7.3)  5 JUL 2023 19:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.7.16)  24 JUL 2023 20:22
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/algebraeg
-eometria"
-
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/algebraegeo
-metria.tex
+**algebraegeometria.tex
+(./algebraegeometria.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 (/usr/share/texmf-dist/tex/latex/base/book.cls
@@ -1452,11 +1450,8 @@ Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 \c@esercizio=\count453
 \c@osservazione=\count454
 \c@corollario=\count455
-
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/algebraegeo
-metria.aux
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/./title/tit
-lepage.aux))
+ (./algebraegeometria.aux
+(./title/titlepage.aux))
 \openout1 = `algebraegeometria.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 179.
@@ -1522,15 +1517,12 @@ LaTeX Font Info:    ... okay on input line 179.
 LaTeX Info: Redefining \it@ocap on input line 179.
 LaTeX Info: Redefining \it@ccap on input line 179.
 Package hyperref Info: Link coloring ON on input line 179.
-
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/algebraegeo
-metria.out)
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/algebraegeo
-metria.out)
+(./algebraegeometria.out) (./algebraegeometria.out)
 \@outlinefile=\write4
 \openout4 = `algebraegeometria.out'.
 
- (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count456
 \scratchdimen=\dimen419
@@ -1596,9 +1588,7 @@ your preamble.
 
 \openout2 = `./title/titlepage.aux'.
 
-
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/./title/tit
-lepage.tex
+(./title/titlepage.tex
 <./title/logo_CA.jpg, id=139, 142.8537pt x 143.3355pt>
 File: ./title/logo_CA.jpg Graphic file (type jpg)
 <use ./title/logo_CA.jpg>
@@ -1609,14 +1599,12 @@ Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
-/enc/dvips/cm-super/cm-super-t1.enc} </home/nico/repos/Appunti-universita/Primo
- anno/algebra e geometria/./title/logo_CA.jpg>] [2
+/enc/dvips/cm-super/cm-super-t1.enc} <./title/logo_CA.jpg>] [2
 
-])
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/algebraegeo
-metria.toc
+]) (./algebraegeometria.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
@@ -1646,26 +1634,17 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 ] [4
 
 ]
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/algebraegeo
-metria.lot)
+(./algebraegeometria.lot)
 \tf@lot=\write6
 \openout6 = `algebraegeometria.lot'.
 
  [5] [6
 
-]
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/algebraegeo
-metria.lof)
+] (./algebraegeometria.lof)
 \tf@lof=\write7
 \openout7 = `algebraegeometria.lof'.
 
-
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/pag/premess
-e.tex [7])
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/pag/simboli
-.tex)
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/pag/vettori
-.tex [8]
+ (./pag/premesse.tex [7]) (./pag/simboli.tex) (./pag/vettori.tex [8]
 Capitolo 1.
 \c@SpaVet=\count463
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
@@ -1679,17 +1658,14 @@ LaTeX Font Info:    Trying to load font information for U+dsrom on input line 2
 (/usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ))
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/pag/numeri_
-complessi.tex [9
+(./pag/numeri_complessi.tex [9
 
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [10
 
 ]
 Capitolo 2.
 \c@NumComp=\count464
-)
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/pag/determi
-nante.tex [11] [12
+) (./pag/determinante.tex [11] [12
 
 ]
 Capitolo 3.
@@ -1708,18 +1684,16 @@ LaTeX Warning: Reference `eqpar' on page 21 undefined on input line 461.
 
 ] [22
 
-])
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/pag/applin.
-tex [23] [24
+]) (./pag/applin.tex [23] [24
 
 ]
 Capitolo 4.
 Package epstopdf Info: Source file: <img/finiti/imgex4-2-1.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 48131 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-2-1-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6798 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-1-eps-
 converted-to.pdf img/finiti/imgex4-2-1.eps>
@@ -1732,14 +1706,13 @@ File: img/finiti/imgex4-2-1-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/finiti/imgex4-2-1-eps-converted-to.pdf  used on in
 put line 31.
 (pdftex.def)             Requested size: 142.26378pt x 157.16904pt.
-[25 </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/fin
-iti/imgex4-2-1-eps-converted-to.pdf>]
+[25 <./img/finiti/imgex4-2-1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/finiti/imgex4-2-2.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 63350 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-2-2-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 7849 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-2-eps-
 converted-to.pdf img/finiti/imgex4-2-2.eps>
@@ -1752,11 +1725,11 @@ Package pdftex.def Info: img/finiti/imgex4-2-2-eps-converted-to.pdf  used on in
 put line 39.
 (pdftex.def)             Requested size: 170.71652pt x 97.82182pt.
 Package epstopdf Info: Source file: <img/finiti/imgex4-2-3.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 48045 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-2-3-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6367 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-3-eps-
 converted-to.pdf img/finiti/imgex4-2-3.eps>
@@ -1773,11 +1746,11 @@ put line 51.
 LaTeX Warning: Reference `matasapplin' on page 26 undefined on input line 58.
 
 Package epstopdf Info: Source file: <img/finiti/imgex4-2-4.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 47601 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-2-4-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6339 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-4-eps-
 converted-to.pdf img/finiti/imgex4-2-4.eps>
@@ -1791,17 +1764,14 @@ put line 66.
 (pdftex.def)             Requested size: 170.71652pt x 170.16663pt.
 [26
 
- </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti
-/imgex4-2-2-eps-converted-to.pdf> </home/nico/repos/Appunti-universita/Primo an
-no/algebra e geometria/img/finiti/imgex4-2-3-eps-converted-to.pdf> </home/nico/
-repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti/imgex4-2-4-e
-ps-converted-to.pdf>]
+ <./img/finiti/imgex4-2-2-eps-converted-to.pdf> <./img/finiti/imgex4-2-3-eps-co
+nverted-to.pdf> <./img/finiti/imgex4-2-4-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/finiti/imgex4-2-5.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 63459 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-2-5-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 7960 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-5-eps-
 converted-to.pdf img/finiti/imgex4-2-5.eps>
@@ -1814,11 +1784,11 @@ Package pdftex.def Info: img/finiti/imgex4-2-5-eps-converted-to.pdf  used on in
 put line 74.
 (pdftex.def)             Requested size: 170.71652pt x 146.83789pt.
 Package epstopdf Info: Source file: <img/finiti/imgex4-2-6.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 48371 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-2-6-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6561 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-6-eps-
 converted-to.pdf img/finiti/imgex4-2-6.eps>
@@ -1831,11 +1801,11 @@ Package pdftex.def Info: img/finiti/imgex4-2-6-eps-converted-to.pdf  used on in
 put line 82.
 (pdftex.def)             Requested size: 170.71652pt x 162.89569pt.
 Package epstopdf Info: Source file: <img/finiti/imgex4-2-7.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 49272 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-2-7-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6729 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-7-eps-
 converted-to.pdf img/finiti/imgex4-2-7.eps>
@@ -1850,17 +1820,14 @@ put line 92.
 (pdftex.def)             Requested size: 227.62204pt x 81.34447pt.
  [27
 
- </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti
-/imgex4-2-5-eps-converted-to.pdf> </home/nico/repos/Appunti-universita/Primo an
-no/algebra e geometria/img/finiti/imgex4-2-6-eps-converted-to.pdf> </home/nico/
-repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti/imgex4-2-7-e
-ps-converted-to.pdf>]
+ <./img/finiti/imgex4-2-5-eps-converted-to.pdf> <./img/finiti/imgex4-2-6-eps-co
+nverted-to.pdf> <./img/finiti/imgex4-2-7-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/finiti/imgex4-2-8.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 47870 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-2-8-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6777 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-8-eps-
 converted-to.pdf img/finiti/imgex4-2-8.eps>
@@ -1873,11 +1840,11 @@ Package pdftex.def Info: img/finiti/imgex4-2-8-eps-converted-to.pdf  used on in
 put line 103.
 (pdftex.def)             Requested size: 85.35826pt x 168.65594pt.
 Package epstopdf Info: Source file: <img/finiti/imgex4-2-9.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 47225 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-2-9-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6412 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-9-eps-
 converted-to.pdf img/finiti/imgex4-2-9.eps>
@@ -1890,11 +1857,11 @@ Package pdftex.def Info: img/finiti/imgex4-2-9-eps-converted-to.pdf  used on in
 put line 108.
 (pdftex.def)             Requested size: 170.71652pt x 88.75282pt.
 Package epstopdf Info: Source file: <img/finiti/imgex4-2-10.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 47337 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-2-10-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6509 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-2-10-eps
 -converted-to.pdf img/finiti/imgex4-2-10.eps>
@@ -1908,11 +1875,8 @@ nput line 114.
 (pdftex.def)             Requested size: 170.71652pt x 62.64905pt.
  [28
 
- </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti
-/imgex4-2-8-eps-converted-to.pdf> </home/nico/repos/Appunti-universita/Primo an
-no/algebra e geometria/img/finiti/imgex4-2-9-eps-converted-to.pdf> </home/nico/
-repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti/imgex4-2-10-
-eps-converted-to.pdf>]
+ <./img/finiti/imgex4-2-8-eps-converted-to.pdf> <./img/finiti/imgex4-2-9-eps-co
+nverted-to.pdf> <./img/finiti/imgex4-2-10-eps-converted-to.pdf>]
 Overfull \hbox (13.93884pt too wide) in paragraph at lines 160--166
 \T1/cmr/m/n/10 Questa ugua-glian-za ci sta di-cen-do che le coor-di-na-te del v
 et-to-re $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 
@@ -1921,11 +1885,11 @@ et-to-re $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 v\OT1/cmr/m/n/10
  []
 
 Package epstopdf Info: Source file: <img/finiti/imgex4-3-1.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 62192 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-3-1-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 7569 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-1-eps-
 converted-to.pdf img/finiti/imgex4-3-1.eps>
@@ -1939,14 +1903,13 @@ put line 212.
 (pdftex.def)             Requested size: 170.71652pt x 87.66768pt.
 [29
 
- </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti
-/imgex4-3-1-eps-converted-to.pdf>]
+ <./img/finiti/imgex4-3-1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/finiti/imgex4-3-2.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 47697 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-3-2-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6219 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-2-eps-
 converted-to.pdf img/finiti/imgex4-3-2.eps>
@@ -1959,11 +1922,11 @@ Package pdftex.def Info: img/finiti/imgex4-3-2-eps-converted-to.pdf  used on in
 put line 223.
 (pdftex.def)             Requested size: 170.71652pt x 159.01154pt.
 Package epstopdf Info: Source file: <img/finiti/imgex4-3-3.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 48671 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-3-3-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6454 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-3-eps-
 converted-to.pdf img/finiti/imgex4-3-3.eps>
@@ -1977,15 +1940,14 @@ put line 249.
 (pdftex.def)             Requested size: 170.71652pt x 95.70276pt.
  [30
 
- </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti
-/imgex4-3-2-eps-converted-to.pdf> </home/nico/repos/Appunti-universita/Primo an
-no/algebra e geometria/img/finiti/imgex4-3-3-eps-converted-to.pdf>]
+ <./img/finiti/imgex4-3-2-eps-converted-to.pdf> <./img/finiti/imgex4-3-3-eps-co
+nverted-to.pdf>]
 Package epstopdf Info: Source file: <img/finiti/imgex4-3-4.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 46193 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-3-4-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 5572 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-4-eps-
 converted-to.pdf img/finiti/imgex4-3-4.eps>
@@ -1998,11 +1960,11 @@ Package pdftex.def Info: img/finiti/imgex4-3-4-eps-converted-to.pdf  used on in
 put line 304.
 (pdftex.def)             Requested size: 113.81102pt x 91.04964pt.
 Package epstopdf Info: Source file: <img/finiti/imgex4-3-5.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 47777 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-3-5-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6208 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-5-eps-
 converted-to.pdf img/finiti/imgex4-3-5.eps>
@@ -2015,11 +1977,11 @@ Package pdftex.def Info: img/finiti/imgex4-3-5-eps-converted-to.pdf  used on in
 put line 319.
 (pdftex.def)             Requested size: 113.81102pt x 104.77086pt.
 Package epstopdf Info: Source file: <img/finiti/imgex4-3-6.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 46766 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-3-6-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 5892 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-6-eps-
 converted-to.pdf img/finiti/imgex4-3-6.eps>
@@ -2032,18 +1994,18 @@ File: img/finiti/imgex4-3-6-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/finiti/imgex4-3-6-eps-converted-to.pdf  used on in
 put line 332.
 (pdftex.def)             Requested size: 113.81102pt x 113.81122pt.
- [31
 
- </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti
-/imgex4-3-4-eps-converted-to.pdf> </home/nico/repos/Appunti-universita/Primo an
-no/algebra e geometria/img/finiti/imgex4-3-5-eps-converted-to.pdf>]
+[31
+
+ <./img/finiti/imgex4-3-4-eps-converted-to.pdf> <./img/finiti/imgex4-3-5-eps-co
+nverted-to.pdf>]
 Missing character: There is no 2 in font dsrom8!
 Package epstopdf Info: Source file: <img/finiti/imgex4-3-7.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 61528 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-3-7-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6942 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-7-eps-
 converted-to.pdf img/finiti/imgex4-3-7.eps>
@@ -2056,15 +2018,14 @@ File: img/finiti/imgex4-3-7-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/finiti/imgex4-3-7-eps-converted-to.pdf  used on in
 put line 365.
 (pdftex.def)             Requested size: 170.71652pt x 170.71388pt.
-[32 </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/fin
-iti/imgex4-3-6-eps-converted-to.pdf> </home/nico/repos/Appunti-universita/Primo
- anno/algebra e geometria/img/finiti/imgex4-3-7-eps-converted-to.pdf>]
+[32 <./img/finiti/imgex4-3-6-eps-converted-to.pdf> <./img/finiti/imgex4-3-7-eps
+-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/finiti/imgex4-3-8.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 32322 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-3-8-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 4874 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-8-eps-
 converted-to.pdf img/finiti/imgex4-3-8.eps>
@@ -2077,11 +2038,11 @@ Package pdftex.def Info: img/finiti/imgex4-3-8-eps-converted-to.pdf  used on in
 put line 375.
 (pdftex.def)             Requested size: 113.81102pt x 111.97276pt.
 Package epstopdf Info: Source file: <img/finiti/imgex4-3-9.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 76238 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-3-9-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 8525 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-3-9-eps-
 converted-to.pdf img/finiti/imgex4-3-9.eps>
@@ -2094,11 +2055,11 @@ Package pdftex.def Info: img/finiti/imgex4-3-9-eps-converted-to.pdf  used on in
 put line 394.
 (pdftex.def)             Requested size: 113.81102pt x 148.66101pt.
 Package epstopdf Info: Source file: <img/finiti/imgex4-4-1.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 55517 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-4-1-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 12398 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-4-1-eps-
 converted-to.pdf img/finiti/imgex4-4-1.eps>
@@ -2111,11 +2072,11 @@ Package pdftex.def Info: img/finiti/imgex4-4-1-eps-converted-to.pdf  used on in
 put line 427.
 (pdftex.def)             Requested size: 227.62204pt x 214.7782pt.
 Package epstopdf Info: Source file: <img/finiti/imgex4-4-2.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 39115 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-4-2-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6530 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-4-2-eps-
 converted-to.pdf img/finiti/imgex4-4-2.eps>
@@ -2129,15 +2090,14 @@ put line 444.
 (pdftex.def)             Requested size: 227.62204pt x 215.23712pt.
  [33
 
- </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti
-/imgex4-3-8-eps-converted-to.pdf> </home/nico/repos/Appunti-universita/Primo an
-no/algebra e geometria/img/finiti/imgex4-3-9-eps-converted-to.pdf>]
+ <./img/finiti/imgex4-3-8-eps-converted-to.pdf> <./img/finiti/imgex4-3-9-eps-co
+nverted-to.pdf>]
 Package epstopdf Info: Source file: <img/finiti/imgex4-4-3.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 36172 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-4-3-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 5949 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-4-3-eps-
 converted-to.pdf img/finiti/imgex4-4-3.eps>
@@ -2149,17 +2109,14 @@ File: img/finiti/imgex4-4-3-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/finiti/imgex4-4-3-eps-converted-to.pdf  used on in
 put line 467.
 (pdftex.def)             Requested size: 227.62204pt x 215.23712pt.
- [34 </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/fi
-niti/imgex4-4-1-eps-converted-to.pdf> </home/nico/repos/Appunti-universita/Prim
-o anno/algebra e geometria/img/finiti/imgex4-4-2-eps-converted-to.pdf>] [35 </h
-ome/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti/img
-ex4-4-3-eps-converted-to.pdf>]
+ [34 <./img/finiti/imgex4-4-1-eps-converted-to.pdf> <./img/finiti/imgex4-4-2-ep
+s-converted-to.pdf>] [35 <./img/finiti/imgex4-4-3-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/finiti/imgex4-4-4.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 64897 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-4-4-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 8028 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-4-4-eps-
 converted-to.pdf img/finiti/imgex4-4-4.eps>
@@ -2171,14 +2128,13 @@ File: img/finiti/imgex4-4-4-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/finiti/imgex4-4-4-eps-converted-to.pdf  used on in
 put line 585.
 (pdftex.def)             Requested size: 227.62204pt x 92.11931pt.
- [36 </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/fi
-niti/imgex4-4-4-eps-converted-to.pdf>]
+ [36 <./img/finiti/imgex4-4-4-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/finiti/imgex4-4-5.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 64942 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-4-5-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 8260 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-4-5-eps-
 converted-to.pdf img/finiti/imgex4-4-5.eps>
@@ -2191,11 +2147,11 @@ Package pdftex.def Info: img/finiti/imgex4-4-5-eps-converted-to.pdf  used on in
 put line 650.
 (pdftex.def)             Requested size: 227.62204pt x 108.83728pt.
 Package epstopdf Info: Source file: <img/finiti/imgex4-4-6.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 63464 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-4-6-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 7782 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-4-6-eps-
 converted-to.pdf img/finiti/imgex4-4-6.eps>
@@ -2207,9 +2163,8 @@ File: img/finiti/imgex4-4-6-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/finiti/imgex4-4-6-eps-converted-to.pdf  used on in
 put line 659.
 (pdftex.def)             Requested size: 142.26378pt x 165.56963pt.
- [37 </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/fi
-niti/imgex4-4-5-eps-converted-to.pdf> </home/nico/repos/Appunti-universita/Prim
-o anno/algebra e geometria/img/finiti/imgex4-4-6-eps-converted-to.pdf>]
+ [37 <./img/finiti/imgex4-4-5-eps-converted-to.pdf> <./img/finiti/imgex4-4-6-ep
+s-converted-to.pdf>]
 Overfull \hbox (0.6399pt too wide) in paragraph at lines 736--739
 [][]\T1/cmr/bx/n/10 Teorema 4.3.2. []\T1/cmr/m/it/10 Sia $\OML/cmm/m/it/10 V$ \
 T1/cmr/m/it/10 uno spa-zio vet-to-ria-le di di-men-sio-ne $\OML/cmm/m/it/10 n$ 
@@ -2221,11 +2176,11 @@ a-no $\OML/cmm/m/it/10 v[]; v[]; [] ; v[]$\T1/cmr/m/it/10 ,
 
 ] [39]
 Package epstopdf Info: Source file: <img/finiti/imgex4-5-1.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 37647 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-5-1-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6363 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-5-1-eps-
 converted-to.pdf img/finiti/imgex4-5-1.eps>
@@ -2238,11 +2193,11 @@ Package pdftex.def Info: img/finiti/imgex4-5-1-eps-converted-to.pdf  used on in
 put line 844.
 (pdftex.def)             Requested size: 256.0748pt x 77.79898pt.
 Package epstopdf Info: Source file: <img/finiti/imgex4-5-2.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 37739 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-5-2-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6268 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-5-2-eps-
 converted-to.pdf img/finiti/imgex4-5-2.eps>
@@ -2255,11 +2210,11 @@ Package pdftex.def Info: img/finiti/imgex4-5-2-eps-converted-to.pdf  used on in
 put line 867.
 (pdftex.def)             Requested size: 256.0748pt x 56.1403pt.
 Package epstopdf Info: Source file: <img/finiti/imgex4-5-3.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 36173 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-5-3-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 5961 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-5-3-eps-
 converted-to.pdf img/finiti/imgex4-5-3.eps>
@@ -2271,22 +2226,19 @@ File: img/finiti/imgex4-5-3-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/finiti/imgex4-5-3-eps-converted-to.pdf  used on in
 put line 882.
 (pdftex.def)             Requested size: 256.0748pt x 72.57701pt.
- [40 </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/fi
-niti/imgex4-5-1-eps-converted-to.pdf>] [41 </home/nico/repos/Appunti-universita
-/Primo anno/algebra e geometria/img/finiti/imgex4-5-2-eps-converted-to.pdf> </h
-ome/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti/img
-ex4-5-3-eps-converted-to.pdf>] [42]
+ [40 <./img/finiti/imgex4-5-1-eps-converted-to.pdf>] [41 <./img/finiti/imgex4-5
+-2-eps-converted-to.pdf> <./img/finiti/imgex4-5-3-eps-converted-to.pdf>] [42]
 
 LaTeX Font Warning: Font shape `U/wasy/m/it' in size <10> not available
 (Font)              Font shape `U/wasy/m/sl' tried instead on input line 1129.
 
 [43]
 Package epstopdf Info: Source file: <img/finiti/imgex4-5-4.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 49625 bytes
 (epstopdf)             Output file: <img/finiti/imgex4-5-4-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6862 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex4-5-4-eps-
 converted-to.pdf img/finiti/imgex4-5-4.eps>
@@ -2298,11 +2250,10 @@ File: img/finiti/imgex4-5-4-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/finiti/imgex4-5-4-eps-converted-to.pdf  used on in
 put line 1234.
 (pdftex.def)             Requested size: 256.0748pt x 77.91649pt.
- [44 </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/fi
-niti/imgex4-5-4-eps-converted-to.pdf>] [45] [46
+ [44 <./img/finiti/imgex4-5-4-eps-converted-to.pdf>] [45] [46
 
-] [47] [48] [49] [50]
-[51]
+] [47]
+[48] [49] [50] [51]
 
 LaTeX Warning: Reference `4.42' on page 52 undefined on input line 2225.
 
@@ -2311,11 +2262,11 @@ LaTeX Warning: Reference `4.42' on page 52 undefined on input line 2225.
 ]
 Capitolo 5.
 Package epstopdf Info: Source file: <img/finiti/imgex5-1-1.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 46671 bytes
 (epstopdf)             Output file: <img/finiti/imgex5-1-1-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 6079 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex5-1-1-eps-
 converted-to.pdf img/finiti/imgex5-1-1.eps>
@@ -2327,14 +2278,13 @@ File: img/finiti/imgex5-1-1-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/finiti/imgex5-1-1-eps-converted-to.pdf  used on in
 put line 226.
 (pdftex.def)             Requested size: 142.26378pt x 94.84438pt.
-[55 </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/fin
-iti/imgex5-1-1-eps-converted-to.pdf>]
+[55 <./img/finiti/imgex5-1-1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/finiti/imgex5-1-2.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 34801 bytes
 (epstopdf)             Output file: <img/finiti/imgex5-1-2-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 5385 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex5-1-2-eps-
 converted-to.pdf img/finiti/imgex5-1-2.eps>
@@ -2346,14 +2296,13 @@ File: img/finiti/imgex5-1-2-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/finiti/imgex5-1-2-eps-converted-to.pdf  used on in
 put line 349.
 (pdftex.def)             Requested size: 227.62204pt x 20.21712pt.
- [56 </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/fi
-niti/imgex5-1-2-eps-converted-to.pdf>]
+ [56 <./img/finiti/imgex5-1-2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/finiti/imgex5-1-3.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 5525 bytes
 (epstopdf)             Output file: <img/finiti/imgex5-1-3-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 3517 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex5-1-3-eps-
 converted-to.pdf img/finiti/imgex5-1-3.eps>
@@ -2366,17 +2315,15 @@ File: img/finiti/imgex5-1-3-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/finiti/imgex5-1-3-eps-converted-to.pdf  used on in
 put line 380.
 (pdftex.def)             Requested size: 227.62204pt x 163.09978pt.
+ [57
 
-[57
-
- </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti
-/imgex5-1-3-eps-converted-to.pdf>]
+ <./img/finiti/imgex5-1-3-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/finiti/imgex5-2-1.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 46036 bytes
 (epstopdf)             Output file: <img/finiti/imgex5-2-1-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 5720 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex5-2-1-eps-
 converted-to.pdf img/finiti/imgex5-2-1.eps>
@@ -2389,16 +2336,16 @@ File: img/finiti/imgex5-2-1-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/finiti/imgex5-2-1-eps-converted-to.pdf  used on in
 put line 516.
 (pdftex.def)             Requested size: 142.26378pt x 142.26256pt.
- [58
 
- </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti
-/imgex5-2-1-eps-converted-to.pdf>]
+[58
+
+ <./img/finiti/imgex5-2-1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/finiti/imgex5-2-2.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 61684 bytes
 (epstopdf)             Output file: <img/finiti/imgex5-2-2-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 7168 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/imgex5-2-2-eps-
 converted-to.pdf img/finiti/imgex5-2-2.eps>
@@ -2410,11 +2357,9 @@ File: img/finiti/imgex5-2-2-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/finiti/imgex5-2-2-eps-converted-to.pdf  used on in
 put line 549.
 (pdftex.def)             Requested size: 142.26378pt x 120.92487pt.
+ [59
 
-[59
-
- </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti
-/imgex5-2-2-eps-converted-to.pdf>] [60] [61]
+ <./img/finiti/imgex5-2-2-eps-converted-to.pdf>] [60] [61]
 Overfull \hbox (17.65497pt too wide) in paragraph at lines 847--856
 \T1/cmr/m/it/10 Dividendo an-che l'ul-ti-ma ri-ga per 3, ve-dia-mo che il si-st
 e-ma $\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 
@@ -2448,18 +2393,16 @@ ma $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^
 i ri-du-ce a $[]$
  []
 
-
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/pag/eserciz
-io.tex [65] [66
+(./pag/esercizio.tex [65] [66
 
 ]
 Capitolo 6.
 [67]
 Package epstopdf Info: Source file: <img/finiti/es/es1.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 2958 bytes
 (epstopdf)             Output file: <img/finiti/es/es1-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 2652 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/es/es1-eps-conv
 erted-to.pdf img/finiti/es/es1.eps>
@@ -2473,13 +2416,12 @@ line 136.
 (pdftex.def)             Requested size: 85.35826pt x 85.3599pt.
  [68
 
- </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/finiti
-/es/es1-eps-converted-to.pdf>]
+ <./img/finiti/es/es1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/finiti/es/es2.eps>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 35385 bytes
 (epstopdf)             Output file: <img/finiti/es/es2-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-06-06 09:10:48
+(epstopdf)                    date: 2023-07-16 21:19:40
 (epstopdf)                    size: 5974 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/finiti/es/es2-eps-conv
 erted-to.pdf img/finiti/es/es2.eps>
@@ -2493,13 +2435,9 @@ line 313.
 (pdftex.def)             Requested size: 199.16928pt x 107.96817pt.
  [69
 
-] [70 </home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/img/f
-initi/es/es2-eps-converted-to.pdf>])
-[71]
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/algebraegeo
-metria.aux
-(/home/nico/repos/Appunti-universita/Primo anno/algebra e geometria/./title/tit
-lepage.aux))
+] [70 <./img/finiti/es/es2-eps-converted-to.pdf>]) [71] (./algebraegeometria.au
+x
+(./title/titlepage.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -2507,13 +2445,13 @@ Package rerunfilecheck Info: File `algebraegeometria.out' has not changed.
 (rerunfilecheck)             Checksum: A7BEE704ADC9F5EEE53F8E72B4BEE006;6072.
  ) 
 Here is how much of TeX's memory you used:
- 60720 strings out of 476025
- 1495935 string characters out of 5796533
+ 60717 strings out of 476025
+ 1493200 string characters out of 5796532
  2359816 words of memory out of 5000000
  79851 multiletter control sequences out of 15000+600000
  545048 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,24n,89p,939b,980s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,24n,89p,874b,980s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.49} has been referenced but does not exis
 t, replaced by a fixed one
@@ -2748,8 +2686,7 @@ super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1000.
 pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/share
 /texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fon
 ts/type1/public/cm-super/sftt1000.pfb>
-Output written on "/home/nico/repos/Appunti-universita/Primo anno/algebra e geo
-metria/algebraegeometria.pdf" (71 pages, 1376704 bytes).
+Output written on algebraegeometria.pdf (71 pages, 1374033 bytes).
 PDF statistics:
  1503 PDF objects out of 1728 (max. 8388607)
  1185 compressed objects within 12 object streams

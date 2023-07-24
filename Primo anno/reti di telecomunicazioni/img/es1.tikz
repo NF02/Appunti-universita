@@ -1,0 +1,10 @@
+﻿\def\a{.5}
+\begin{tikzpicture}
+\draw (0,0) -- (6,0);
+\draw[blue,fill] (0,0) circle [radius=\a];
+\node[color=white] at (0,0) {A};
+\draw[blue,fill] (3,0) circle [radius=\a];
+\node[color=white] at (3,0) {B};
+\draw[blue,fill] (6,0) circle [radius=\a];
+\node[color=white] at (6,0) {C};
+\end{tikzpicture}

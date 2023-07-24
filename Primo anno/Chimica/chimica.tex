@@ -1,11 +1,26 @@
 \documentclass{book}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=3.0cm]{geometry}
 
+%\documentclass[pdftex,10pt,a4paper]{book}
+%\usepackage[paperwidth=19cm,
+%paperheight=26cm, outer=2cm, 
+%top=1.5cm, bottom=1.5cm]{ geometry}
+
+\usepackage[english,italian]{babel} %l'ultima lingua è quella che legge per i titoli
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc,url}
 \usepackage{titlesec}
 \usepackage{easylist}
 \usepackage{hanging}
-\usepackage{hyperref}
-\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=3.0cm]{geometry}
+
+\usepackage[pdftex,colorlinks]{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,
+	urlcolor=cyan,
+}
+\usepackage{hypcap}
 \usepackage{blindtext}
 \usepackage{tipa}
 \usepackage{epigraph}
@@ -13,9 +28,7 @@
 \usepackage{longtable}
 \usepackage{setspace}
 \usepackage{verbatim}
-\usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage[italian]{babel}
 \usepackage{amsmath}
 \usepackage{pbox}
 \usepackage{fancyhdr}
@@ -44,8 +57,14 @@
 \usepackage{exsheets}
 \usepackage{pgfplots}
 \usepackage{amsthm}
+\usepackage{wasysym}
 \usepackage{chemfig}
-\usepackage{verbatim}
+
+\usepackage{showframe}
+\renewcommand\ShowFrameLinethickness{0.15pt}
+%\renewcommand*\ShowFrameColor{\color{red}}
+
+%\usepackage{showkeys} %serve per mostrare le etichette "tag" o target, va tolta per la versione definitiva;
 
 \newtheorem{definizione}{Definizione}
 \newtheorem{Teoria}{Teoria}
@@ -348,6 +367,7 @@ Rappresenta il simbolo di elemento circondato da un numero di punti pari al
 numero degli elettroni di valenza.
 \subsection{Struttura di Lewis}
 \begin{table}[h!]
+  \centering
 	\begin{tabular}{lcl}
 		&Elettroni del core&Elettroni di valenza\\\hline
 		Boro&\charge{0=\.,90=\.,180=\.}{B}&$1s^22s^22p^1$\\
