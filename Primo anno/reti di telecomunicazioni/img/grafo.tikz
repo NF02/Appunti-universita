@@ -3,28 +3,29 @@
 \begin{tikzpicture} 
 %\draw (1.5,1.5) circle [radius=\cr];
 \node at (1.5,4.5) {$N= ?$ $R=?$};
-% centro a maglia
-\draw (1.5,1) circle [radius=\b];
-\draw (1,1.9) circle [radius=\b];
-\draw (2,1.9) circle [radius=\b];
+
 \draw (2,1.9) -- (1,1.9) -- (1.5,1) -- (2,1.9);
 % end centro 
 
 \draw (1.5,1) -- (0,0);
-\draw (0,0) circle [radius=\b];
+\draw[blue,fill] (0,0) circle [radius=\b];
 
 \draw (1.5,1) -- (1.5,0);
-\draw (1.5,0) circle [radius=\b];
+\draw[blue,fill] (1.5,0) circle [radius=\b];
 
 \draw (3,0) -- (1.5,1);
-\draw (3,0) circle [radius=\b];
+\draw[blue,fill] (3,0) circle [radius=\b];
 
 \draw (1,1.9) -- (0,3);
-\draw (0,3) circle [radius=\b];
+\draw[blue,fill] (0,3) circle [radius=\b];
 
 \draw (2,1.9) -- (3,3);
-\draw (3,3) circle [radius=\b];
+\draw[blue,fill] (3,3) circle [radius=\b];
 
 \draw (2,1.9) -- (2.5,3.7);
-\draw (2.5,3.7) circle [radius=\b];
+\draw[blue,fill] (2.5,3.7) circle [radius=\b];
+% centro a maglia
+\draw[blue,fill] (1.5,1) circle [radius=\b];
+\draw[blue,fill] (1,1.9) circle [radius=\b];
+\draw[blue,fill] (2,1.9) circle [radius=\b];
 \end{tikzpicture}

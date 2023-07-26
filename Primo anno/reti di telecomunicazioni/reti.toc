@@ -73,3 +73,9 @@
 \contentsline {subsection}{\numberline {1.8.1}Indicatori di prestazione}{21}{subsection.1.8.1}%
 \contentsline {subsubsection}{Integrità informativa}{21}{subsubsection*.29}%
 \contentsline {subsubsection}{Trasparenza temporale}{21}{subsubsection*.30}%
+\contentsline {subsubsection}{Flessibilità di accesso}{21}{subsubsection*.31}%
+\contentsline {subsection}{\numberline {1.8.2}Esempio di perdita di integrità dell'informazione}{22}{subsection.1.8.2}%
+\contentsline {subsection}{\numberline {1.8.3}Trasparenza temporale}{22}{subsection.1.8.3}%
+\contentsline {section}{\numberline {1.9}Sicurezza}{22}{section.1.9}%
+\contentsline {subsection}{\numberline {1.9.1}Servizi di sicurezza}{23}{subsection.1.9.1}%
+\contentsline {subsection}{\numberline {1.9.2}Meccanmismi di sicurezza}{23}{subsection.1.9.2}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.7.16)  25 JUL 2023 00:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.7.16)  26 JUL 2023 23:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1689,7 +1689,7 @@ your preamble.
 \openout2 = `./title/titlepage.aux'.
 
 (./title/titlepage.tex
-<./title/logo_CA.jpg, id=179, 142.8537pt x 143.3355pt>
+<./title/logo_CA.jpg, id=199, 142.8537pt x 143.3355pt>
 File: ./title/logo_CA.jpg Graphic file (type jpg)
 <use ./title/logo_CA.jpg>
 Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
@@ -1765,6 +1765,98 @@ Overfull \hbox (3.31941pt too wide) in paragraph at lines 527--533
 (./img/ritardoditrasmissione.tikz) (./img/ritardodipropagazione.tikz)
 (./img/es1.tikz) [20] [21
 
+] (./img/perditainfo.tikz
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbol
+s.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+arrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen429
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+chains.code.tex
+File: tikzlibrarychains.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+positioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (./img/ritardodiUI.tikz
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geomet
+ric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.c
+ode.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows
+.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shapes.callouts.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callou
+ts.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbol
+s.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multip
+art.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box167
+\pgfnodeparttwobox=\box168
+\pgfnodepartthreebox=\box169
+\pgfnodepartfourbox=\box170
+\pgfnodeparttwentybox=\box171
+\pgfnodepartnineteenbox=\box172
+\pgfnodeparteighteenbox=\box173
+\pgfnodepartseventeenbox=\box174
+\pgfnodepartsixteenbox=\box175
+\pgfnodepartfifteenbox=\box176
+\pgfnodepartfourteenbox=\box177
+\pgfnodepartthirteenbox=\box178
+\pgfnodeparttwelvebox=\box179
+\pgfnodepartelevenbox=\box180
+\pgfnodeparttenbox=\box181
+\pgfnodepartninebox=\box182
+\pgfnodeparteightbox=\box183
+\pgfnodepartsevenbox=\box184
+\pgfnodepartsixbox=\box185
+\pgfnodepartfivebox=\box186
+)))) [22
+
+] [23
+
 ] (./reti.aux (./title/titlepage.aux))
 
 LaTeX Warning: There were undefined references.
@@ -1778,17 +1870,17 @@ Package rerunfilecheck Warning: File `reti.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `reti.out':
-(rerunfilecheck)             Before: 4C8FAA6930D93F1AA94920DCC0B22FE8;7612
-(rerunfilecheck)             After:  096976046BE289645B4AB1B1249428D9;7805.
+(rerunfilecheck)             Before: D9581EF2E50D85EEB0F22CE0A5D77374;8568
+(rerunfilecheck)             After:  4182B1F7DAB351902569CBF8C7A0BBB9;8756.
  ) 
 Here is how much of TeX's memory you used:
- 59472 strings out of 476025
- 1455826 string characters out of 5796532
- 2318552 words of memory out of 5000000
- 78800 multiletter control sequences out of 15000+600000
+ 62051 strings out of 476025
+ 1529117 string characters out of 5796532
+ 2319554 words of memory out of 5000000
+ 81306 multiletter control sequences out of 15000+600000
  539040 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,14n,89p,719b,830s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,14n,89p,719b,1636s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
 , replaced by a fixed one
@@ -1842,10 +1934,10 @@ fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/
 texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/font
 s/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/
 cm-super/sftt1000.pfb>
-Output written on reti.pdf (21 pages, 881960 bytes).
+Output written on reti.pdf (23 pages, 892204 bytes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
- 536 compressed objects within 6 object streams
- 178 named destinations out of 1000 (max. 500000)
- 362 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 660 PDF objects out of 1000 (max. 8388607)
+ 577 compressed objects within 6 object streams
+ 191 named destinations out of 1000 (max. 500000)
+ 402 words of extra memory for PDF output out of 10000 (max. 10000000)
 

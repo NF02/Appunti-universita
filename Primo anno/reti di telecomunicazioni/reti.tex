@@ -236,4 +236,109 @@ Concetti analoghi: Frame Error rate (FER) o Packet Error Rate (PER)
 \item valutato attraverso le statistiche dei ritardi (ritardo medio più variazione o \textit{jitter})
 \end{itemize}
 
+\subsubsection{Flessibilità di accesso}
+\label{sec:fldiacc}
+
+\begin{itemize}
+\item riguarda l'efficienza di utilizzo delle risorse condivise
+\item indipendenza dalle caratteristiche di emissione dei flussi
+\item adattabilità del modo di trasferimento nel trattamento nel trattare flussi informativi
+  aventi origine da sorgenti con capacità di emissione e con caratteristiche di attività tra loro anche molti
+  diverse (grado di flessibilità)
+\end{itemize}
+\clearpage
+\subsection{Esempio di perdita di integrità dell'informazione}
+\label{sec:esPerInfo}
+Un esempio semplicistico di potenziale perdita di informazione può esser fatto prendendo un contesto quotidiano
+come una semplice chiamata telefonica, in questo caso prevende come sempre un mittente e un destinatario o anche
+più di uno a seconda dei casi -- Il fatto è come sempre di mezzo c'è il mezzo di comunicazione che non è perfetto
+e potenzialmente può avere dei problemi nella far arrivare l'informazione integralmente al destinatorio, 
+\begin{figure}[ht!]
+  \centering
+  \input{img/perditainfo.tikz}
+  \caption{Perdita di informazione in una comunicazione telefonica}
+  \label{fig:perddiinfoinretetel}
+\end{figure}
+\begin{oss}
+  Questo tipo di problema evviene in tutti i sistemi che si occupano di comunicazioni in tempo reale, con un certo
+  margine di latenza dovuta all'architettura stessa. Questo tipo di comunicazione viene definica anche
+  comunicazione sincrona, mentre, la messaggistica e il concetto stesso di Chat testuale risulta essere invece
+  una comunicazione asincrona.
+\end{oss}
+
+\subsection{Trasparenza temporale}
+\label{sec:trasptemp}
+\begin{figure}[ht!]
+  \centering
+  \resizebox{6in}{!}{\input{img/ritardodiUI.tikz}}
+  \caption{Trasparente: i ritardi $t_i$ sono all'incirca costante}
+  \label{fig:trasptemp}
+\end{figure}
+\begin{nota}
+  come si vede dal grafico con il lieve ritardo del primo UI gtutti gli altri faranno un ritardo regolare e
+  costante, infatti, basta il ritardo diun un pacchetto all'interno della coda per creare un ritardo generale
+  nella trasmissione che oltre ad una certa soglia diventa intollerabile per l'utente e anche alle volte per
+  il dispositivo in ascolto che si secondi i casi ha uno specchio limitato e quindi dopo un certo tot annulla
+  il download del messaggio o del file.
+\end{nota}
+\section{Sicurezza}
+\label{sec:sicurezza}
+Il discorso sicurezza non è semplice, anzi, risulta addiritura un discorso ombrello in cui ci sono diversi
+aspetti pensati per garantire che le informazioni vadano solo a chi di dovere.
+\begin{itemize}
+\item Un indicatore di prestazione che merita un discorso più ampio e lo si trova in (<++>)
+\item Rispetto
+  \begin{itemize}
+  \item Agli utenti coinvolti nella comunicazione
+  \item Ai dati scambiati
+  \end{itemize}
+\item Possono essere forniti differenti servizi di sicurezza
+\end{itemize}
+\clearpage
+\begin{oss}
+  Con il diffondersi delle comunicazione uno dei parametri sempre più importante è proprio il fattore sicurezza,
+  infatti, già dagli albori l'uomo ha sempre cercato di garantire il fatto che la comunicazione arrivasse solo
+  ai diretti interessati, forse una delle prove più antiche sono i cifrari romani che consentivano di mandare
+  un messaggio illeggibile al nemico sfruttando un semplice spostamento di N-caratteri all'interno del testo,
+  i caratteri utilizzati sono quelli dell'alfabeto latino dell'epoca ma questo metodo fu utilizzato anche in epoca
+  più moderna e funziona per ogni sistema alfabetico. 
+\end{oss}
+\subsection{Servizi di sicurezza}
+\label{sec:servdisic}
+Autenticazione delle parti
+\begin{itemize}
+\item Garanzia/verifica che le parti interessate alla comunicazione siano esattamente chi sostengono di essere
+  (ip addr/chiave ssh/chiave gpg o cirtificato SSL)
+\end{itemize}
+Riservatezza/confidenzialità
+\begin{itemize}
+\item Garantire che i dati siano stati emessi da una specifica sorgente e che non siano stati indebitamente
+  alterati o manipolati (md5sum/SHA e altri HASH che generano una firma univoca del file).
+\end{itemize}
+Disponibilità
+\begin{itemize}
+\item Garantisce che i dati siano elaborati e trasmessi in tempo ragionevole, o che non siano stati resi
+  inacessibili
+\end{itemize}
+Non ripudio
+\begin{itemize}
+\item Possibilità di idmostrare di aver ricevuto o inviato dei dati in modo autentico (PEC e meccanismi di
+  verifica dell'inoltro e recezione di un messaggio)
+\item Impossibiltà dell'altra parte di confutare dati precedentemente emessi o ricevuti.
+\end{itemize}
+
+\subsection{Meccanmismi di sicurezza}
+\label{sec:mcsicurezza}
+
+Come accennato in \ref{sec:servdisic} sono presenti diversi servizi di sicurezza. Essi per funzionare utilizzano
+dei meccanismi pensati proprio per garantire i punti base prima citati, i seguenti sonoalcuni dei meccanismi
+che vengono sfruttati dai servizi di sicurezza più utilizzati:
+\begin{itemize}
+\item Crittogrtafica (AES);
+\item Firma digitale (chiave GPG o SPID/CIE e l'ormai inattivo TS-CNS dal 2023);
+\item Protocolli di autenticazione;
+\item filtraggio;
+\item monitoring.
+\end{itemize}
+
 \end{document}

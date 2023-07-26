@@ -1,0 +1,35 @@
+﻿\usetikzlibrary{shapes,arrows,chains}
+
+\tikzstyle{block} = [rectangle, draw, text width=6em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+
+\begin{tikzpicture}
+	\node (init) {};
+	\node at (-4,-1) {Seguenza trasmessa};
+	\node(0,0) [block] (UI1) {UI 1};
+	\node at (3,0) [block] (UI2) {UI 2};
+	\node at (8,0) [block] (UI3) {UI 3};
+	\node at (13,0) [block] (UI4) {UI 4};
+	\node at (16,0) [block] (UI5) {UI 5};
+	\draw[->,ultra thick] (-1.5,-1) -- (22,-1);
+
+	\node at (-4,-5.6) {Seguenza ricevuta};
+	\node at (1,-4) [block] (UI1) {UI 1};
+	\node at (4,-4) [block] (UI2) {UI 2};
+	\node at (9,-4) [block] (UI3) {UI 3};
+	\node at (14,-4) [block] (UI4) {UI 4};
+	\node at (17,-4) [block] (UI5) {UI 5};
+
+	\draw[->,ultra thick] (-1.5,-5.6) -- (22,-5.6);
+	\draw[<->, ultra thick] (-1.5,-6) -- (-0.5,-6);
+	\node at (-0.9,-6.6) {$t_1$};
+	\draw[<->, ultra thick] (1.4,-6) -- (2.6,-6);
+	\node at (2,-6.6) {$t_2$};
+	\draw[<->, ultra thick] (6.6,-6) -- (7.6,-6);
+	\node at (7,-6.6) {$t_3$};
+	\draw[<->, ultra thick] (11.5,-6) -- (12.5,-6);
+	\node at (12,-6.6) {$t_4$};
+	\draw[<->, ultra thick] (14.5,-6) -- (15.5,-6);
+	\node at (15,-6.6) {$t_5$};
+	
+\end{tikzpicture}
