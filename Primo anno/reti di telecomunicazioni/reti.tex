@@ -116,6 +116,7 @@
 \newtheorem{esercizio}{Esercizio}[section]
 \newtheorem{teorema}{Teorema}[section]
 \newtheorem{nota}{Nota}[section]
+\theoremstyle{definition}
 \newtheorem{defi}{Definizione}[section]
 \newtheorem{esempio}{Esempio}[section]
 \newtheorem{svol}{Svolgimento}[section]
@@ -127,218 +128,92 @@
 \include{./title/titlepage.tex}
 \tableofcontents
 \input{pag/intro.tex}
-\begin{figure}[!ht]
-  \centering
-  \input{./img/ritardoditrasmissione.tikz}
-  \caption{Formula per il calcolo di $t_{TX}$}
-  \label{fig:tTXfm}
-\end{figure}
-
-\subsubsection{Ritardo di propagazione}
-\label{sec:Ritardodipropagazione}
-\begin{defi}
-  Tempo di propacazione in un mezzo fisico {\tt (rame, etere, fibra ottica, semi conduttori e conduttori di
-    altra natura)}
-\end{defi}
-\begin{itemize}
-\item Dipende dal mezzo di trasmissione;
-\item È proporzionale alla lunghezza dello stesso mezzo ``{\it Un doppino di rame più è lungo più la sua
-  resistenza andrà ad attenuare il segnale}''
-\end{itemize}
-\begin{figure}[!ht]
-  \centering
-  \input{./img/ritardodipropagazione.tikz}
-  \caption{Formula per il calcolo di $t_{p}$}
-  \label{fig:tpfm}
-\end{figure}
-\begin{esempio}
-  Prendendo una rete a bus composta da 3 nodi, con un $L_{UI}$, $R=100Mb/s$, $L_m=100m$, $v=200000km/s$, $T_B=3\mu s$, bisogna trovare il $T_{AC}=?$.
-  \begin{figure}[!ht]
-    \centering
-    \input{img/es1.tikz}
-    \caption{Esempio di rete a bus per il calcolo del $t_{AC}$}
-    \label{fig:tac}
-  \end{figure}
-  \paragraph{Soluzione}
-  Partemdo dalla formula per ricavare $t_{AC}$ in cui AC sta per il tempo necessario per far percorrere
-  all'informazione l'intera rete fino al nodo C partendo da A
-  \begin{equation*}
-    t_{AC}=2t_{TX}+2t_p+T_B
-  \end{equation*}
-  Come si denota dalla formula per svolgere l'esercizio è necessario in primo luogo trovare $t_{TX}$ visto che
-  il valore di $t_B$ è già noto e risulta pari a $2\mu s$, quindi procediamo con il calcolo di $t_{TX}$.
-  \begin{equation*}
-    t_{TX}=\frac{L_{UI}}{R}=\frac{8\cdot 400}{100\cdot 10^6} = 32\mu s
-  \end{equation*}
-  Quindi adesso bisogna calcolare $t_p$ per completare la formula per ottenere $t_{AC}$
-  \begin{equation*}
-    t_p=\frac{L_m}{v} = \frac{100}{2\cdot 10^8}=0.5 \mu s
-  \end{equation*}
-  \clearpage
-  A questo punto è possibile svolgere l'operazione e quindi concludere l'esercizio, nel seguente modo:
-  \begin{equation*}
-    t_{AC}=2t_{TX}+2t_p+T_B= 2\left(32\right) + 2\left(0.5\right)+3= 67\mu s
-  \end{equation*}
-  quindi l'informazione impiega $67\mu s$ a raggiungere la destinazione.
-\end{esempio}
-
-\section{Errori e perdite}
-\label{sec:erreper}
-Durante il trasferimento di una UI questa può subire delle perdite o arrivare errata per $x$ motivi
-
-\subsubsection{Le cause?}
-
-\begin{itemize}
-\item Errori trasmissivi;
-\item Congestione della rete ``sovraccarico di informazioni che rende impossibile o molto rallentata la
-  comunicazione da un capo all'altro di un determinato nodo''
-\item Errori di protocollo, ad esempio errori nei protocolli, bachi nei programmi utilizzati per trasmettere
-  e ricevere l'informazione, etc.
-\end{itemize}
-
-\subsubsection{Come risolvere?}
-\label{sec:riserrtr}
-Tipicamente un errore o una perdita di informazione viene gestita tramite algoritmi di correzione e metodi di
-ritrasmissione, modito per cui l'informazione nelle trasmissioni odierne viene suddivisa in più pacchetti per
-permettere una ritrasmissione più contenuta e rapida in caso di problemi, alle volte invece, dentro l'header
-del pacchetto sono presenti delle informazioni per andare a correggere eventuali errori tramite un meccanismo
-automatico.
-\begin{oss}
-  Non tutti i metodi di trasmissione e  servizi prevedono questo meccanismo, infatti, in sistemi che devono essere
-  ad alta prestazioni, in cui non è incluente la mancanza di un frame ad esempio, infatti, i sistemi
-  di video streaming utilizzano sistemi senza controllo d'errore, perché al massimo ci sarebbe un istante
-  di schermo nero o deformato nei casi peggiori, comunque un qualcosa di arginabile e insignificante per
-  l'utente che adopera il servizio.
-\end{oss}
-
-\subsection{Indicatori di prestazione}
-\label{sec:indprest}
-
-\subsubsection{Integrità informativa}
-\label{sec:intinfo}
-\begin{itemize}
-\item Corrispondenza tra informazione emessa e ricevuta (sequenze binarie)
-\item Minimizzazione degli errori trasmissivi e delle perdite per congestione
-\item Può essere valutato attraverso un tasso di errore residuo sul bit o sulle UI (numero medio di errori)
-\end{itemize}
-Per BER (Bit Error Rate) si intende il rapporto tra i non ricevuti correttamente e quelli trasmessi, essendo
-in bit il numero è compreso tra 0 e 1, fornisce una misura della qualità dell'intero sistema di comunicazione
-\begin{itemize}
-\item BER = 0.5 significa che in media 1 bit ogni 2 è errato
-\end{itemize}
-Concetti analoghi: Frame Error rate (FER) o Packet Error Rate (PER)
-
-\subsubsection{Trasparenza temporale}
-\label{sec:trtemp}
-\begin{itemize}
-\item riguarda i ritardi di transito;
-\item minimizzazione ad equalizzazione del ritardo trasmissivo ed elaborativo
-\item valutato attraverso le statistiche dei ritardi (ritardo medio più variazione o \textit{jitter})
-\end{itemize}
-
-\subsubsection{Flessibilità di accesso}
-\label{sec:fldiacc}
-
-\begin{itemize}
-\item riguarda l'efficienza di utilizzo delle risorse condivise
-\item indipendenza dalle caratteristiche di emissione dei flussi
-\item adattabilità del modo di trasferimento nel trattamento nel trattare flussi informativi
-  aventi origine da sorgenti con capacità di emissione e con caratteristiche di attività tra loro anche molti
-  diverse (grado di flessibilità)
-\end{itemize}
 \clearpage
-\subsection{Esempio di perdita di integrità dell'informazione}
-\label{sec:esPerInfo}
-Un esempio semplicistico di potenziale perdita di informazione può esser fatto prendendo un contesto quotidiano
-come una semplice chiamata telefonica, in questo caso prevende come sempre un mittente e un destinatario o anche
-più di uno a seconda dei casi -- Il fatto è come sempre di mezzo c'è il mezzo di comunicazione che non è perfetto
-e potenzialmente può avere dei problemi nella far arrivare l'informazione integralmente al destinatorio, 
-\begin{figure}[ht!]
-  \centering
-  \input{img/perditainfo.tikz}
-  \caption{Perdita di informazione in una comunicazione telefonica}
-  \label{fig:perddiinfoinretetel}
-\end{figure}
-\begin{oss}
-  Questo tipo di problema evviene in tutti i sistemi che si occupano di comunicazioni in tempo reale, con un certo
-  margine di latenza dovuta all'architettura stessa. Questo tipo di comunicazione viene definica anche
-  comunicazione sincrona, mentre, la messaggistica e il concetto stesso di Chat testuale risulta essere invece
-  una comunicazione asincrona.
-\end{oss}
+\subsection{Flussi informativi}
+\label{sec:flusinfo}
 
-\subsection{Trasparenza temporale}
-\label{sec:trasptemp}
-\begin{figure}[ht!]
-  \centering
-  \resizebox{6in}{!}{\input{img/ritardodiUI.tikz}}
-  \caption{Trasparente: i ritardi $t_i$ sono all'incirca costante}
-  \label{fig:trasptemp}
-\end{figure}
-\begin{nota}
-  come si vede dal grafico con il lieve ritardo del primo UI gtutti gli altri faranno un ritardo regolare e
-  costante, infatti, basta il ritardo diun un pacchetto all'interno della coda per creare un ritardo generale
-  nella trasmissione che oltre ad una certa soglia diventa intollerabile per l'utente e anche alle volte per
-  il dispositivo in ascolto che si secondi i casi ha uno specchio limitato e quindi dopo un certo tot annulla
-  il download del messaggio o del file.
-\end{nota}
-\section{Sicurezza}
-\label{sec:sicurezza}
-Il discorso sicurezza non è semplice, anzi, risulta addiritura un discorso ombrello in cui ci sono diversi
-aspetti pensati per garantire che le informazioni vadano solo a chi di dovere.
 \begin{itemize}
-\item Un indicatore di prestazione che merita un discorso più ampio e lo si trova in (<++>)
-\item Rispetto
+\item Una entità è impegnata nella gestione di due flussi
+\item Flusso con entità appartenenti agli strati adiacenti:
   \begin{itemize}
-  \item Agli utenti coinvolti nella comunicazione
-  \item Ai dati scambiati
+  \item Trasferimento diretto;
+  \item Le \texttt{UI} vengono fisicamente passate da uno strato all'altro attravero i \texttt{SAP}.
   \end{itemize}
-\item Possono essere forniti differenti servizi di sicurezza
+\item Flusso con entità alla pari:
+  \begin{itemize}
+  \item Trasferimento indiretto usando il servizio offerto dallo strato inferiore;
+  \item Le \texttt{UI} vengono scambiate tra sistemi diversi tra entità alla pari nel rispetto del protocollo
+    di strato.
+  \end{itemize}
+\end{itemize}
+
+\subsection{Relazione tra UI in strati adiacenti}
+\label{sec:reltrauiinstratiadia}
+\begin{itemize}
+\item Ogni strato ``tranne quello più basso'' invia le proprie \texttt{PDU} come \texttt{SDU} dello strato inferiore
+\item Ci possono essere differenti relazioni di corrispondenza tra \texttt{SDU} e \texttt{PDU}
+  \begin{itemize}
+  \item Corrispondenza uno a uno
+    \begin{center}
+      \input{img/corunoauno.tikz}
+    \end{center}
+  \item Corrispondenza uno-a-più
+    \begin{center}
+      \input{img/corunoapiu.tikz}
+    \end{center}
+    \begin{itemize}
+    \item Frammentazione e riassemblaggio
+    \end{itemize}
+  \item Corrispondenza da più ad uno
+    \begin{center}
+      \input{img/corpiuauno.tikz}
+    \end{center}   
+    \begin{itemize}
+    \item Aggregazione e separazione
+    \end{itemize}
+  \end{itemize}
 \end{itemize}
 \clearpage
-\begin{oss}
-  Con il diffondersi delle comunicazione uno dei parametri sempre più importante è proprio il fattore sicurezza,
-  infatti, già dagli albori l'uomo ha sempre cercato di garantire il fatto che la comunicazione arrivasse solo
-  ai diretti interessati, forse una delle prove più antiche sono i cifrari romani che consentivano di mandare
-  un messaggio illeggibile al nemico sfruttando un semplice spostamento di N-caratteri all'interno del testo,
-  i caratteri utilizzati sono quelli dell'alfabeto latino dell'epoca ma questo metodo fu utilizzato anche in epoca
-  più moderna e funziona per ogni sistema alfabetico. 
-\end{oss}
-\subsection{Servizi di sicurezza}
-\label{sec:servdisic}
-Autenticazione delle parti
-\begin{itemize}
-\item Garanzia/verifica che le parti interessate alla comunicazione siano esattamente chi sostengono di essere
-  (ip addr/chiave ssh/chiave gpg o cirtificato SSL)
-\end{itemize}
-Riservatezza/confidenzialità
-\begin{itemize}
-\item Garantire che i dati siano stati emessi da una specifica sorgente e che non siano stati indebitamente
-  alterati o manipolati (md5sum/SHA e altri HASH che generano una firma univoca del file).
-\end{itemize}
-Disponibilità
-\begin{itemize}
-\item Garantisce che i dati siano elaborati e trasmessi in tempo ragionevole, o che non siano stati resi
-  inacessibili
-\end{itemize}
-Non ripudio
-\begin{itemize}
-\item Possibilità di idmostrare di aver ricevuto o inviato dei dati in modo autentico (PEC e meccanismi di
-  verifica dell'inoltro e recezione di un messaggio)
-\item Impossibiltà dell'altra parte di confutare dati precedentemente emessi o ricevuti.
-\end{itemize}
 
-\subsection{Meccanmismi di sicurezza}
-\label{sec:mcsicurezza}
+\subsection{Esempio di relazione tra UI e stack protocollare}
+\label{sec:esstackprotpac}
 
-Come accennato in \ref{sec:servdisic} sono presenti diversi servizi di sicurezza. Essi per funzionare utilizzano
-dei meccanismi pensati proprio per garantire i punti base prima citati, i seguenti sonoalcuni dei meccanismi
-che vengono sfruttati dai servizi di sicurezza più utilizzati:
+\begin{figure}[ht!]
+  \centering
+   \resizebox{14cm}{!} {\input{./img/esincap.tikz}}
+  \caption{Esempio UI in relazione allo stack protocollare}
+  \label{fig:esrelUIstackprot}
+\end{figure}
+
+\subsection{Formato di PDU}
+\label{sec:formatodipdu}
+
 \begin{itemize}
-\item Crittogrtafica (AES);
-\item Firma digitale (chiave GPG o SPID/CIE e l'ormai inattivo TS-CNS dal 2023);
-\item Protocolli di autenticazione;
-\item filtraggio;
-\item monitoring.
+\item Le \texttt{PDU} sono divise in campi, ognuno dei quali con uno significato nell'ambieto del protocollo;
+\item Il formato varia da protocollo a protocollo sia pr la sintassi che per la semantica dei campi.
+\item Non sempre il \texttt{PCI} in testa e \texttt{SDU} che lo segue.
+\item I vari campi della \texttt{PDU} posso essere rappresentati all'interno della successione di
+  \texttt{byte/bit} in vario modo.
 \end{itemize}
+\begin{figure}[ht!]
+  \centering
+   \resizebox{10cm}{!} {\input{./img/formPDU.tikz}}
+  \caption{Esempio formato di PDU}
+  \label{fig:espdu}
+\end{figure}
 
+\subsection{Classificazione di protocolli}
+\label{sec:classprot}
+
+\begin{description}
+\item[Protocolli binari:] 
+  i campi sono codificati direttamente come successione di bit e spesso hanno una posizione, dimensione e
+  valore specificato dal protocollo.
+\item[Protocolli testuali:] i vari campi sono codificati come stringhe di caratteri riportanti il valore letterale
+  o numerico del campo stesso.
+\end{description}
+\begin{itemize}
+\item In entrambi i casi la \texttt{PDU} risultante è che una successione di bit/byte
+\item Non esiste uno standard unico né per i protocolli binari né per quelli testuali.
+\end{itemize}
 \end{document}

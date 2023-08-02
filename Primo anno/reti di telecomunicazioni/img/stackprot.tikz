@@ -1,0 +1,29 @@
+﻿\begin{tikzpicture}
+% stacjk applicazione invio
+\draw (0,0) -- (0,1) -- (14,1) -- (14,0) -- cycle;
+\draw (0,1) -- (0,2) -- (4,2) -- (4,1) -- cycle;
+\draw (0,2) -- (0,3) -- (4,3) -- (4,2) -- cycle;
+\draw (0,3) -- (0,4) -- (4,4) -- (4,3) -- cycle;
+\draw (0,4) -- (0,5) -- (4,5) -- (4,4) -- cycle;
+\draw (0,5) -- (0,6) -- (4,6) -- (4,5) -- cycle;
+\draw (0,6) -- (0,7) -- (4,7) -- (4,6) -- cycle;
+
+
+
+\draw (10,1) -- (10,2) -- (14,2) -- (14,1) -- cycle;
+\draw (10,2) -- (10,3) -- (14,3) -- (14,2) -- cycle;
+\draw (10,3) -- (10,4) -- (14,4) -- (14,3) -- cycle;
+\draw (10,4) -- (10,5) -- (14,5) -- (14,4) -- cycle;
+\draw (10,5) -- (10,6) -- (14,6) -- (14,5) -- cycle;
+\draw (10,6) -- (10,7) -- (14,7) -- (14,6) -- cycle;
+
+\node at (7,.5) {Connessione sul mezzo fisico};
+\node at (-1,4) {HOST 1};
+\node at (9,4) {HOST 2};
+\node at (2,7.4) {Invio applicazione};
+\node at (12,7.4) {Ricezione applicazione};
+
+\node at (7,8) {Architettura di rete};
+\draw[<->]  (5,5) -- (7,7.5) -- (9,5);
+
+\end{tikzpicture}

@@ -1,0 +1,12 @@
+﻿\begin{tikzpicture}
+\draw[blue,fill] (-3.2,1) -- (-1.8,1)-- (-1.8,.4) -- (-3.2,.4)  -- cycle;
+\node[white] at (-2.5,.65) {$N$-PCI};
+\draw[->,ultra thick] (-1.8,.7) -- (-.5,0);
+\draw (1.6,2) -- (4.4,2)-- (4.4,1.2) -- (1.6,1.2)  -- cycle;
+\node at (3,1.6) {$N$-SDU};
+\draw (0.6,0) -- (3.4,0)-- (3.4,-0.8) -- (0.6,-0.8)  -- cycle;
+\draw[->,ultra thick] (2,1.2) -- (1.4,0);
+\draw[blue,fill] (-.6,0) -- (0.6,0)-- (0.6,-0.8) -- (-.6,-0.8)  -- cycle;
+\node at (-2,-0.4) {$N$-PDU};
+
+\end{tikzpicture}

@@ -1,0 +1,41 @@
+﻿\begin{tikzpicture}
+\node at (-2.4,1.4) {Protocollo di sottorete};
+\node at (-2.4,2.4) {Protocollo di rete};
+\node at (-2.4,3.4) {Protocollo di trasporto};
+\node at (-2.4,4.4) {Protocollo applicativo};
+
+
+
+\draw (0,1) -- (0,2) -- (4,2) -- (4,1) -- cycle;
+\node at (2,1.4) {livello di sottorete};
+\draw (0,2) -- (0,3) -- (4,3) -- (4,2) -- cycle;
+\node at (2,2.4) {livello di rete};
+\draw (0,3) -- (0,4) -- (4,4) -- (4,3) -- cycle;
+\node at (2,3.4) {livello di trasporto};
+\draw (0,4) -- (0,5) -- (4,5) -- (4,4) -- cycle;
+\node at (2,4.4) {livello applicativo};
+
+
+\draw (5,1) -- (5,2) -- (7,2) -- (7,1) -- cycle;
+\node at (6,1.4) {liv. di srt};
+\draw (7,1) -- (7,2) -- (9,2) -- (9,1) -- cycle;
+\node at (7,2.5) {livello di rete};
+
+\draw (5,2) -- (5,3) -- (9,3) -- (9,2) -- cycle;
+\node at (8,1.4) {liv. di srt};
+
+
+\draw (2,1) -- (2,0) -- (6,0) -- (6,1);
+\node at (4,-0.5) {Mezzo fisico};
+\draw (8,1) -- (8,0) -- (12,0) -- (12,1);
+\node at (10,-0.5) {Mezzo fisico};
+
+\draw (10,1) -- (10,2) -- (14,2) -- (14,1) -- cycle;
+\node at (12,1.4) {livello di sottorete};
+\draw (10,2) -- (10,3) -- (14,3) -- (14,2) -- cycle;
+\node at (12,2.4) {livello di rete};
+\draw (10,3) -- (10,4) -- (14,4) -- (14,3) -- cycle;
+\node at (12,3.4) {livello di trasporto};
+\draw (10,4) -- (10,5) -- (14,5) -- (14,4) -- cycle;
+\node at (12,4.4) {livello applicativo};
+\end{tikzpicture}

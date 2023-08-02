@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.7.16)  26 JUL 2023 23:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.7.27)  2 AUG 2023 15:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1565,31 +1565,31 @@ LaTeX Warning: Label `fig:traffic' multiply defined.
 )
 \openout1 = `reti.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 126.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 127.
 LaTeX Font Info:    Trying to load font information for T3+cmr on input line 12
-6.
+7.
  (/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    ... okay on input line 127.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1625,9 +1625,9 @@ LaTeX Font Info:    ... okay on input line 126.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \it@ocap on input line 126.
-LaTeX Info: Redefining \it@ccap on input line 126.
-Package hyperref Info: Link coloring ON on input line 126.
+LaTeX Info: Redefining \it@ocap on input line 127.
+LaTeX Info: Redefining \it@ccap on input line 127.
+Package hyperref Info: Link coloring ON on input line 127.
 (./reti.out) (./reti.out)
 \@outlinefile=\write4
 \openout4 = `reti.out'.
@@ -1670,7 +1670,7 @@ Package exsheets Info: Loading custom configurations file
 File: exsheets_configurations.cfg 
 )
 Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 126.
+alian.trsl' found. on input line 127.
 
 (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-eng
 lish.trsl
@@ -1678,18 +1678,18 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 126.
+or `english'. on input line 127.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 126.
+ on input line 127.
 
 \openout2 = `./title/titlepage.aux'.
 
 (./title/titlepage.tex
-<./title/logo_CA.jpg, id=199, 142.8537pt x 143.3355pt>
+<./title/logo_CA.jpg, id=252, 142.8537pt x 143.3355pt>
 File: ./title/logo_CA.jpg Graphic file (type jpg)
 <use ./title/logo_CA.jpg>
 Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
@@ -1722,20 +1722,20 @@ LaTeX Font Info:    Trying to load font information for U+wasy on input line 4.
 
 (/usr/share/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-))
+) [3
+
+
+
+])
 \tf@toc=\write5
 \openout5 = `reti.toc'.
 
- (./pag/intro.tex [3
-
-
-
-]
-[4
-
-]
+ (./pag/intro.tex
+[4]
 Capitolo 1.
-[5]
+[5
+
+]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
 2.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1761,7 +1761,7 @@ Overfull \hbox (3.31941pt too wide) in paragraph at lines 527--533
 (./img/topbusuni.tikz) [16
 
 ] (./img/sezioneinterna.tikz) [17]
-(./img/trasmtraf.tikz) [18] (./img/ritardo.tikz) [19])
+(./img/trasmtraf.tikz) [18] (./img/ritardo.tikz) [19]
 (./img/ritardoditrasmissione.tikz) (./img/ritardodipropagazione.tikz)
 (./img/es1.tikz) [20] [21
 
@@ -1857,30 +1857,44 @@ File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
 ] [23
 
-] (./reti.aux (./title/titlepage.aux))
+] (./img/stackprot.tikz) [24
+
+]
+(./img/rapprgrafstack.tikz) [25] (./img/modfun.tikz) [26
+
+]
+(./img/modfungraf.tikz)) [27] (./img/corunoauno.tikz) (./img/corunoapiu.tikz)
+(./img/corpiuauno.tikz) [28
+
+] (./img/esincap.tikz) (./img/formPDU.tikz) [29
+
+]
+(./reti.aux (./title/titlepage.aux))
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `reti.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `reti.out':
-(rerunfilecheck)             Before: D9581EF2E50D85EEB0F22CE0A5D77374;8568
-(rerunfilecheck)             After:  4182B1F7DAB351902569CBF8C7A0BBB9;8756.
+Package rerunfilecheck Info: File `reti.out' has not changed.
+(rerunfilecheck)             Checksum: 43232D06C53F7A65C2A3E78E5C88B712;11096.
  ) 
 Here is how much of TeX's memory you used:
- 62051 strings out of 476025
- 1529117 string characters out of 5796532
+ 62190 strings out of 476025
+ 1531521 string characters out of 5796532
  2319554 words of memory out of 5000000
- 81306 multiletter control sequences out of 15000+600000
+ 81382 multiletter control sequences out of 15000+600000
  539040 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,14n,89p,719b,1636s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,15n,89p,719b,1636s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist
+, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
 , replaced by a fixed one
@@ -1934,10 +1948,10 @@ fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/
 texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/font
 s/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/
 cm-super/sftt1000.pfb>
-Output written on reti.pdf (23 pages, 892204 bytes).
+Output written on reti.pdf (29 pages, 924502 bytes).
 PDF statistics:
- 660 PDF objects out of 1000 (max. 8388607)
- 577 compressed objects within 6 object streams
- 191 named destinations out of 1000 (max. 500000)
- 402 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 783 PDF objects out of 1000 (max. 8388607)
+ 693 compressed objects within 7 object streams
+ 227 named destinations out of 1000 (max. 500000)
+ 506 words of extra memory for PDF output out of 10000 (max. 10000000)
 

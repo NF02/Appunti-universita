@@ -1,0 +1,80 @@
+﻿\begin{tikzpicture}
+\draw (0,1) -- (0,2) -- (4,2) -- (4,1) -- cycle;
+\node at (2,1.5) {fisico};
+\draw (0,2) -- (0,3) -- (4,3) -- (4,2) -- cycle;
+\node at (2,2.5) {collegamento};
+\draw (0,3) -- (0,4) -- (4,4) -- (4,3) -- cycle;
+\node at (2,3.5) {rete};
+\draw (0,4) -- (0,5) -- (4,5) -- (4,4) -- cycle;
+\node at (2,4.5) {trasporto};
+\draw (0,5) -- (0,6) -- (4,6) -- (4,5) -- cycle;
+\node at (2,5.5) {sessione};
+\draw (0,6) -- (0,7) -- (4,7) -- (4,6) -- cycle;
+\node at (2,6.5) {presentazione};
+\draw (0,7) -- (0,8) -- (4,8) -- (4,7) -- cycle;
+\node at (2,7.5) {applicazione};
+\node at (2,8.5) {Trasmittitore};
+
+
+% level 1
+\draw (4.5,1) -- (4.5,2) -- (11.6,2) -- (11.6,1) -- cycle;
+\node at (8,1.5) {bit o simboli};
+
+%level 2
+\draw (5.5,2) -- (5.5,3) -- (11.6,3) -- (11.6,2) -- cycle;
+\draw (4.5,2) -- (4.5,3) -- (11.6,3) -- (11.6,2) -- cycle;
+\node at (8.7,2.5) {dati (collegamento)};
+\node at (5,2.5) {DH};
+
+% level 3
+\draw (5.5,3) -- (5.5,4) -- (11.6,4) -- (11.6,3) -- cycle;
+\draw (6.5,3) -- (6.5,4) -- (11.6,4) -- (11.6,3) -- cycle;
+\node at (8,3.5) {dati (rete)};
+\node at (6,3.5) {NH};
+
+% level 4
+\draw (7.5,4) -- (7.5,5) -- (11.6,5) -- (11.6,4) -- cycle;
+\draw (6.5,4) -- (6.5,5) -- (11.6,5) -- (11.6,4) -- cycle;
+\node at (8.6,4.5) {dati (tr)};
+\node at (7,4.5) {TH};
+
+% level 4
+\draw (8.5,5) -- (8.5,6) -- (11.6,6) -- (11.6,5) -- cycle;
+\draw (7.5,5) -- (7.5,6) -- (11.6,6) -- (11.6,5) -- cycle;
+\node at (10,5.5) {dati (sessione)};
+\node at (8,5.5) {SH};
+
+% level 5
+\draw (9.5,6) -- (9.5,7) -- (11.6,7) -- (11.6,6) -- cycle;
+\draw (8.5,6) -- (8.5,7) -- (11.6,7) -- (11.6,6) -- cycle;
+\node at (10.5,6.5) {dati (pr)};
+\node at (9,6.5) {PH};
+
+% level 6
+\draw (10.5,7) -- (10.5,8) -- (11.6,8) -- (11.6,7) -- cycle;
+\draw (9.5,7) -- (9.5,8) -- (11.6,8) -- (11.6,7) -- cycle;
+\node at (11,7.5) {dati};
+\node at (10,7.5) {AH};
+\draw (9.5,8) -- (9.5,9) -- (11.6,9) -- (11.6,8) -- cycle;
+\node at (10.5,8.5) {dati};
+
+\draw (2,1) -- (2,0) -- (14,0) -- (14,1);
+\node at (8,-0.5) {Mezzo fisico};
+
+
+\draw (12,1) -- (12,2) -- (16,2) -- (16,1) -- cycle;
+\node at (14,1.5) {fisico};
+\draw (12,2) -- (12,3) -- (16,3) -- (16,2) -- cycle;
+\node at (14,2.5) {collegamento};
+\draw (12,3) -- (12,4) -- (16,4) -- (16,3) -- cycle;
+\node at (14,3.5) {rete};
+\draw (12,4) -- (12,5) -- (16,5) -- (16,4) -- cycle;
+\node at (14,4.5) {trasporto};
+\draw (12,5) -- (12,6) -- (16,6) -- (16,5) -- cycle;
+\node at (14,5.5) {sessione};
+\draw (12,6) -- (12,7) -- (16,7) -- (16,6) -- cycle;
+\node at (14,6.5) {presentazione};
+\draw (12,7) -- (12,8) -- (16,8) -- (16,7) -- cycle;
+\node at (14,7.5) {applicazione};
+\node at (14,8.5) {Ricevitore};
+\end{tikzpicture}

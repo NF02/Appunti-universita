@@ -116,6 +116,7 @@
 \newtheorem{esercizio}{Esercizio}[section]
 \newtheorem{teorema}{Teorema}[section]
 \newtheorem{nota}{Nota}[section]
+\theoremstyle{definition}
 \newtheorem{defi}{Definizione}[section]
 \newtheorem{esempio}{Esempio}[section]
 \newtheorem{svol}{Svolgimento}[section]
@@ -125,10 +126,10 @@
 \author{Nicola Ferru}
 \begin{document}
 
-\message{ !name(reti.tex) !offset(98) }
-\begin{itemize}
-\item Può includere eventualmente il termpo per elaborare la UI stessa
+\message{ !name(reti.tex) !offset(23) }
+\item Ogni strato ``tranne quello più basso'' invia le proprie \texttt{PDU} come \texttt{SDU} dello strato inferiore
+\item Ci possono essere differenti relazioni di corrispondenza tra \texttt{SDU} e \texttt{PDU}
   
-\message{ !name(reti.tex) !offset(97) }
+\message{ !name(reti.tex) !offset(23) }
 
 \end{document}

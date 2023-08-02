@@ -1,0 +1,9 @@
+﻿\begin{tikzpicture}
+\node at (0,0.5) {$N$-PDU};
+\draw[fill=blue] (1,0) -- (1,1) -- (3,1) -- (3,0) -- cycle;
+\node[white] at (2,0.5) {\it header};
+\draw(3,0)-- (3,1) -- (7,1) -- (7,0)-- cycle;
+\node at (5,0.5) {data};
+\draw[fill=blue](7,1) -- (7,0) -- (9,0) -- (9,1)-- cycle;
+\node[white] at (8,0.5) {\it trailer};
+\end{tikzpicture}

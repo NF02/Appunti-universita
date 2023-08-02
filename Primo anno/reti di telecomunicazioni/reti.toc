@@ -79,3 +79,19 @@
 \contentsline {section}{\numberline {1.9}Sicurezza}{22}{section.1.9}%
 \contentsline {subsection}{\numberline {1.9.1}Servizi di sicurezza}{23}{subsection.1.9.1}%
 \contentsline {subsection}{\numberline {1.9.2}Meccanmismi di sicurezza}{23}{subsection.1.9.2}%
+\contentsline {section}{\numberline {1.10}Architeture protocollari}{24}{section.1.10}%
+\contentsline {subsection}{\numberline {1.10.1}Definizioni e caratteristiche}{25}{subsection.1.10.1}%
+\contentsline {subsection}{\numberline {1.10.2}Strati e servizi}{25}{subsection.1.10.2}%
+\contentsline {subsubsection}{Architetture a strati: vantaggi}{25}{subsubsection*.32}%
+\contentsline {subsection}{\numberline {1.10.3}Modello funzionle}{26}{subsection.1.10.3}%
+\contentsline {section}{\numberline {1.11}Unità informative}{26}{section.1.11}%
+\contentsline {subsection}{\numberline {1.11.1}Unità derivate}{26}{subsection.1.11.1}%
+\contentsline {subsubsection}{Byte}{26}{subsubsection*.33}%
+\contentsline {subsubsection}{Nibble}{26}{subsubsection*.34}%
+\contentsline {subsubsection}{Word, blocchi e pagine}{27}{subsubsection*.35}%
+\contentsline {subsection}{\numberline {1.11.2}Unità informative nelle comunicazioni}{27}{subsection.1.11.2}%
+\contentsline {subsection}{\numberline {1.11.3}Flussi informativi}{28}{subsection.1.11.3}%
+\contentsline {subsection}{\numberline {1.11.4}Relazione tra UI in strati adiacenti}{28}{subsection.1.11.4}%
+\contentsline {subsection}{\numberline {1.11.5}Esempio di relazione tra UI e stack protocollare}{29}{subsection.1.11.5}%
+\contentsline {subsection}{\numberline {1.11.6}Formato di PDU}{29}{subsection.1.11.6}%
+\contentsline {subsection}{\numberline {1.11.7}Classificazione di protocolli}{29}{subsection.1.11.7}%
