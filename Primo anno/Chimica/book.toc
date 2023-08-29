@@ -1,0 +1,34 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduzione}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Programma del corso di Chimica}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}La chimica}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Gli stati della materia}{6}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Proprietà fisiche}{6}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Trasformazioni fisiche}{6}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Trasformazioni chimiche}{6}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Miscela}{6}{subsection.1.2.5}%
+\contentsline {section}{\numberline {1.3}La tavola periodica}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Composti chimici}{7}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Formula}{8}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Legge di conservazione della Massa o legge di Lavoisier}{8}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}Teorie sull'atomo}{8}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Teoria atomica di di Dalton}{8}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Modello atomico di Thomson}{9}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Modello atomico di Rutherford}{9}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.4}Modello atomico di Bohr}{9}{subsection.1.5.4}%
+\contentsline {section}{\numberline {1.6}L'atomo}{9}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Composizione atomica}{10}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Numero atomico, Z}{10}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Numero di Massa, A}{10}{subsection.1.6.3}%
+\contentsline {section}{\numberline {1.7}Isotopi}{10}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Isotopi dell'idrogeno}{11}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}Isotopi del carbonio}{11}{subsection.1.7.2}%
+\contentsline {section}{\numberline {1.8}Massa atomica}{11}{section.1.8}%
+\contentsline {section}{\numberline {1.9}Come contare gli atomi?}{12}{section.1.9}%
+\contentsline {section}{\numberline {1.10}Macroscopico e Microscopico}{12}{section.1.10}%
+\contentsline {subsection}{\numberline {1.10.1}La mole}{12}{subsection.1.10.1}%
+\contentsline {section}{\numberline {1.11}Esercizi sul calcolo della massa molare e numero di moli}{13}{section.1.11}%
+\contentsline {subsection}{\numberline {1.11.1}Esercizio 1}{13}{subsection.1.11.1}%
+\contentsline {subsubsection}{Risultato}{14}{subsubsection*.2}%
+\contentsline {subsection}{\numberline {1.11.2}Esercizio 2}{14}{subsection.1.11.2}%

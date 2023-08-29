@@ -1,3 +1,4 @@
+﻿\usetikzlibrary{shapes,calc}
 \newcommand{\CommonElementTextFormat}[4]
 {
   \begin{minipage}{2.2cm}
@@ -46,7 +47,7 @@
 \fi
 }
 
-\begin{preview}
+
 \begin{tikzpicture}[font=\sffamily, scale=0.45, transform shape]
 
 %% Fill Color Styles
@@ -150,7 +151,7 @@
   \node[name=Zn, right of=Cu, Metal] {\NaturalElementTextFormat{30}{65.39}{Zn}{Zinc}};
   \node[name=Cd, below of=Zn, Metal] {\NaturalElementTextFormat{48}{112.41}{Cd}{Cadmium}};
   \node[name=Hg, below of=Cd, Metal] {\NaturalElementTextFormat{80}{200.59}{Hg}{Mercury}};
-  \node[name=Cn, below of=Hg, Metal] {\SyntheticElementTextFormat{112}{285}{Cn}{Copernicium}};
+  \node[name=Uub, below of=Hg, Metal] {\SyntheticElementTextFormat{112}{285}{Uub}{Ununbium}};
 
 %% Group 13 - IIIA
   \node[name=Ga, right of=Zn, Metal] {\NaturalElementTextFormat{31}{69.723}{Ga}{Gallium}};
@@ -158,7 +159,7 @@
   \node[name=B, above of=Al, Metalloid] {\NaturalElementTextFormat{5}{10.811}{B}{Boron}};
   \node[name=In, below of=Ga, Metal] {\NaturalElementTextFormat{49}{114.82}{In}{Indium}};
   \node[name=Tl, below of=In, Metal] {\NaturalElementTextFormat{81}{204.38}{Tl}{Thallium}};
-  \node[name=Nh, below of=Tl, Metal] {\SyntheticElementTextFormat{113}{284}{Nh}{Nihonium}};
+  \node[name=Uut, below of=Tl, Metal] {\SyntheticElementTextFormat{113}{284}{Uut}{Ununtrium}};
 
 %% Group 14 - IVA
   \node[name=C, right of=B, Nonmetal] {\NaturalElementTextFormat{6}{12.011}{C}{Carbon}};
@@ -166,7 +167,7 @@
   \node[name=Ge, below of=Si, Metalloid] {\NaturalElementTextFormat{32}{72.64}{Ge}{Germanium}};
   \node[name=Sn, below of=Ge, Metal] {\NaturalElementTextFormat{50}{118.71}{Sn}{Tin}};
   \node[name=Pb, below of=Sn, Metal] {\NaturalElementTextFormat{82}{207.2}{Pb}{Lead}};
-  \node[name=Fl, below of=Pb, Metal] {\SyntheticElementTextFormat{114}{289}{Fl}{Flerovium}};
+  \node[name=Uuq, below of=Pb, Metal] {\SyntheticElementTextFormat{114}{289}{Uuq}{Ununquadium}};
 
 %% Group 15 - VA
   \node[name=N, right of=C, Nonmetal] {\NaturalElementTextFormat{7}{14.007}{N}{Nitrogen}};
@@ -174,7 +175,7 @@
   \node[name=As, below of=P, Metalloid] {\NaturalElementTextFormat{33}{74.922}{As}{Arsenic}};
   \node[name=Sb, below of=As, Metalloid] {\NaturalElementTextFormat{51}{121.76}{Sb}{Antimony}};
   \node[name=Bi, below of=Sb, Metal] {\NaturalElementTextFormat{83}{208.98}{Bi}{Bismuth}};
-  \node[name=Mc, below of=Bi, Metal] {\SyntheticElementTextFormat{115}{288}{Mc}{Moscovium}};
+  \node[name=Uup, below of=Bi, Metal] {\SyntheticElementTextFormat{115}{288}{Uup}{Ununpentium}};
 
 %% Group 16 - VIA
   \node[name=O, right of=N, Nonmetal] {\NaturalElementTextFormat{8}{15.999}{O}{Oxygen}};
@@ -182,7 +183,7 @@
   \node[name=Se, below of=S, Nonmetal] {\NaturalElementTextFormat{34}{78.96}{Se}{Selenium}};
   \node[name=Te, below of=Se, Metalloid] {\NaturalElementTextFormat{52}{127.6}{Te}{Tellurium}};
   \node[name=Po, below of=Te, Metalloid] {\NaturalElementTextFormat{84}{209}{Po}{Polonium}};
-  \node[name=Lv, below of=Po, Metal] {\SyntheticElementTextFormat{116}{293}{Lv}{Livermorium}};
+  \node[name=Uuh, below of=Po, Metal] {\SyntheticElementTextFormat{116}{293}{Uuh}{Ununhexium}};
 
 %% Group 17 - VIIA
   \node[name=F, right of=O, Halogen] {\NaturalElementTextFormat{9}{18.998}{F}{Flourine}};
@@ -190,7 +191,7 @@
   \node[name=Br, below of=Cl, Halogen] {\NaturalElementTextFormat{35}{79.904}{Br}{Bromine}};
   \node[name=I, below of=Br, Halogen] {\NaturalElementTextFormat{53}{126.9}{I}{Iodine}};
   \node[name=At, below of=I, Halogen] {\NaturalElementTextFormat{85}{210}{At}{Astatine}};
-  \node[name=Ts, below of=At, Element] {\SyntheticElementTextFormat{117}{292}{Ts}{Tennessine}}; 
+  \node[name=Uus, below of=At, Element] {\SyntheticElementTextFormat{117}{292}{Uus}{Ununseptium}}; 
 
 %% Group 18 - VIIIA
   \node[name=Ne, right of=F, NobleGas] {\NaturalElementTextFormat{10}{20.180}{Ne}{Neon}};
@@ -199,7 +200,7 @@
   \node[name=Kr, below of=Ar, NobleGas] {\NaturalElementTextFormat{36}{83.8}{Kr}{Krypton}};
   \node[name=Xe, below of=Kr, NobleGas] {\NaturalElementTextFormat{54}{131.29}{Xe}{Xenon}};
   \node[name=Rn, below of=Xe, NobleGas] {\NaturalElementTextFormat{86}{222}{Rn}{Radon}};
-  \node[name=Og, below of=Rn, Nonmetal] {\SyntheticElementTextFormat{118}{294}{Og}{Oganesson}}; 
+  \node[name=Uuo, below of=Rn, Nonmetal] {\SyntheticElementTextFormat{118}{294}{Uuo}{Ununoctium}}; 
 
 %% Period
   \node[name=Period1, left of=H, PeriodLabel] {1};
@@ -303,4 +304,3 @@
     {(Mendeleev's) Periodic Table of Chemical Elements via Ti\emph{k}Z};
 
 \end{tikzpicture}
-\end{preview}

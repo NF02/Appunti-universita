@@ -1,0 +1,21 @@
+﻿\begin{tikzpicture}
+\draw[red,ultra thick] (-.2,0.3) -- (-.2,2.7) -- (8,2.7) -- (8,0.3) -- cycle;
+\draw[double] (0,.5) -- (0,2.5) -- (2,2.5) -- (2,.5) -- cycle; 
+\node[font=\Huge] at (1.0,1.5) {\textsf{$H_2O$}};
+ \matrix [nodes={font=\tiny,minimum size=1mm}] at (5,1.4)
+  {
+    \node {$2\cdot$massa molare H=$2\cdot1.01g\cdot mol^{-1}=2.02g+$};   \\
+    \node {$1\cdot$massa molare O=$1\cdot16.00g\cdot mol^{-1}=16.00g$};  \\
+	\node {$\color{green}Tot=18.02g\cdot mol^{-1}$};  \\
+  };
+
+\draw[red,ultra thick] (-.2,3) -- (-.2,5.4) -- (8,5.4) -- (8,3) -- cycle;
+\draw[double] (0,3.2) -- (0,5.2) -- (2,5.2) -- (2,3.2) -- cycle; 
+\node[font=\Huge] at (1.0,4.2) {\textsf{$NH_3$}};
+ \matrix [nodes={font=\tiny,minimum size=1mm}] at (5,4.2)
+  {
+    \node {$1\cdot$massa molare N=$1\cdot14.00g\cdot mol^{-1}=14.00g+$};   \\
+    \node {$3\cdot$massa molare H=$3\cdot1.00g\cdot mol^{-1}=3.03g$};  \\
+	\node {$\color{green}Tot=17.03g\cdot mol^{-1}$};  \\
+  };
+\end{tikzpicture}

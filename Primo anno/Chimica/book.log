@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.7.16)  24 JUL 2023 20:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.8.27)  29 AUG 2023 21:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**chimica.tex
-(./chimica.tex
+**book.tex
+(./book.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 (/usr/share/texmf-dist/tex/latex/base/book.cls
@@ -1399,82 +1399,107 @@ Package: simplekv 2022/10/01 v0.2a Simple keyval package (CT)
 )
 Package: chemfig 2023/02/18 v1.6d Draw molecule with an easy syntax (CT)
 )
+(/usr/share/texmf-dist/tex/latex/mhchem/mhchem.sty
+Package: mhchem 2021/12/31 v4.09 for typesetting chemical formulae
+
+(/usr/share/texmf-dist/tex/latex/chemgreek/chemgreek.sty
+Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use
+ in chemistry (CN)
+\l__chemgreek_tmpa_int=\count443
+\g__chemgreek_tmpa_int=\count444
+)
+\l__mhchem_ce_distanceFromLastComma_int=\count445
+\__mhchem_arrow_extPgfLength_skip=\skip108
+\mhchem@minispace@tmp=\skip109
+\mhchem@minibackspace@tmp=\skip110
+\mhchem@bondwidth=\skip111
+\mhchem@bondheight=\skip112
+\mhchem@smallbondwidth@tmpA=\skip113
+\mhchem@smallbondwidth@tmpB=\skip114
+\mhchem@smallbondwidth=\skip115
+\mhchem@bondtmp@minussidebearingleft=\skip116
+\mhchem@bondtmp@minussidebearingright=\skip117
+\l__mhchem_option_version_int=\count446
+\mhchem@option@minusmathsidebearingleft=\dimen409
+\mhchem@option@minusmathsidebearingright=\dimen410
+\mhchem@option@minustextsidebearingleft=\dimen411
+\mhchem@option@minustextsidebearingright=\dimen412
+)
 (/usr/share/texmf-dist/tex/latex/eso-pic/showframe.sty
 Package: showframe 2020/10/14 v0.1j showframe (new impl., RN)
 
 (/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen409
-\ESO@tempdimb=\dimen410
+\ESO@tempdima=\dimen413
+\ESO@tempdimb=\dimen414
 )
-\SF@tempdima=\dimen411
+\SF@tempdima=\dimen415
 )
-\c@definizione=\count443
-\c@Teoria=\count444
+\c@defi=\count447
+\c@nota=\count448
+\c@notab=\count449
+\c@teo=\count450
+\c@oss=\count451
+\c@att=\count452
 
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 (/usr/share/texmf-dist/tex/latex/floatflt/floatflt.sty
 Package: floatflt 1997/07/16 v. 1.31
-\c@OptionTest=\count445
+\c@OptionTest=\count453
 \figbox=\box144
 \tabbox=\box145
 \pagebox=\box146
-\ffigcount=\count446
-\ftabcount=\count447
-\fftest=\count448
-\hangcount=\count449
-\nosuccesstryfig=\count450
-\nosuccesstrytab=\count451
-\figgutter=\dimen412
-\tabgutter=\dimen413
-\htdone=\dimen414
-\pageht=\dimen415
-\startpageht=\dimen416
-\tabbredd=\dimen417
-\floatfltwidth=\dimen418
-\fltitemwidth=\dimen419
+\ffigcount=\count454
+\ftabcount=\count455
+\fftest=\count456
+\hangcount=\count457
+\nosuccesstryfig=\count458
+\nosuccesstrytab=\count459
+\figgutter=\dimen416
+\tabgutter=\dimen417
+\htdone=\dimen418
+\pageht=\dimen419
+\startpageht=\dimen420
+\tabbredd=\dimen421
+\floatfltwidth=\dimen422
+\fltitemwidth=\dimen423
 \outputpretest=\toks67
 )
 (/usr/share/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen420
-\epsfysize=\dimen421
-)
-\chimica@idxfile=\write4
-\openout4 = `chimica.idx'.
+\epsfxsize=\dimen424
+\epsfysize=\dimen425
+) (./book.aux
+(./title/titlepage.aux))
+\openout1 = `book.aux'.
 
-
-Writing index file chimica.idx
-(./chimica.aux)
-\openout1 = `chimica.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 125.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 126.
 LaTeX Font Info:    Trying to load font information for T3+cmr on input line 12
-5.
+6.
  (/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    ... okay on input line 126.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1510,26 +1535,26 @@ LaTeX Font Info:    ... okay on input line 125.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \it@ocap on input line 125.
-LaTeX Info: Redefining \it@ccap on input line 125.
-Package hyperref Info: Link coloring ON on input line 125.
-(./chimica.out) (./chimica.out)
-\@outlinefile=\write5
-\openout5 = `chimica.out'.
+LaTeX Info: Redefining \it@ocap on input line 126.
+LaTeX Info: Redefining \it@ccap on input line 126.
+Package hyperref Info: Link coloring ON on input line 126.
+(./book.out) (./book.out)
+\@outlinefile=\write4
+\openout4 = `book.out'.
 
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count452
-\scratchdimen=\dimen422
+\scratchcounter=\count460
+\scratchdimen=\dimen426
 \scratchbox=\box147
-\nofMPsegments=\count453
-\nofMParguments=\count454
+\nofMPsegments=\count461
+\nofMParguments=\count462
 \everyMPshowfont=\toks68
-\MPscratchCnt=\count455
-\MPscratchDim=\dimen423
-\MPnumerator=\count456
-\makeMPintoPDFobject=\count457
+\MPscratchCnt=\count463
+\MPscratchDim=\dimen427
+\MPnumerator=\count464
+\makeMPintoPDFobject=\count465
 \everyMPtoPDFconversion=\toks69
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1545,7 +1570,7 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count458
+\c@lstlisting=\count466
 
 Package exsheets Info: Loading custom configurations file
 (exsheets)             `exsheets_configurations.cfg'.
@@ -1555,7 +1580,7 @@ Package exsheets Info: Loading custom configurations file
 File: exsheets_configurations.cfg 
 )
 Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 125.
+alian.trsl' found. on input line 126.
 
 (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-eng
 lish.trsl
@@ -1563,179 +1588,205 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 125.
+or `english'. on input line 126.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 125.
+ on input line 126.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 127
-.
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+Package chemgreek Info: Activating mapping `upgreek' on line 126.
+
+\openout2 = `title/titlepage.aux'.
+
+(./title/titlepage.tex
+<./title/logo_CA.jpg, id=131, 142.8537pt x 143.3355pt>
+File: ./title/logo_CA.jpg Graphic file (type jpg)
+<use ./title/logo_CA.jpg>
+Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
+(pdftex.def)             Requested size: 64.28355pt x 64.50037pt.
+ [1
+
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
+/enc/dvips/cm-super/cm-super-t1.enc} <./title/logo_CA.jpg>] [2
+
+]) (./book.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 127
-.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 12
-7.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
+
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 12
-7.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 4.
+
 
 (/usr/share/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-) [1
+))
+\tf@toc=\write5
+\openout5 = `book.toc'.
+
+ [3
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
-/enc/dvips/cm-super/cm-super-t1.enc}] [2
 
-] (./chimica.toc)
-\tf@toc=\write6
-\openout6 = `chimica.toc'.
-
- [3] [4
-
-] (./chimica.lot)
-\tf@lot=\write7
-\openout7 = `chimica.lot'.
-
- [5] [6
-
-] (./chimica.lof)
-\tf@lof=\write8
-\openout8 = `chimica.lof'.
-
-[7] [8
+] [4
 
 ]
 Capitolo 1.
-[9]
-
-Package tasks Warning: You've placed
-(tasks)                
-(tasks)                2
-(tasks)                
-(tasks)                before the first \task  on line 178. I will throw it
-(tasks)                away and ignore it for the rest of the list.
-
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-81.
+55.
 (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-) [10] [11] [12
+) [5{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./img/m
+iscela.tikz) [6
 
 ]
-Capitolo 2.
-[13{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [14]
-Capitolo 3.
-<img/Esperimento di Rutherfor.jpg, id=284, 803.0pt x 512.91624pt>
-File: img/Esperimento di Rutherfor.jpg Graphic file (type jpg)
-<use img/Esperimento di Rutherfor.jpg>
-Package pdftex.def Info: img/Esperimento di Rutherfor.jpg  used on input line 2
-96.
-(pdftex.def)             Requested size: 267.26984pt x 170.71652pt.
-[15
+(./img/tavPer.tikz
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-]
-<img/onda.png, id=295, 277.035pt x 187.902pt>
-File: img/onda.png Graphic file (type png)
-<use img/onda.png>
-Package pdftex.def Info: img/onda.png  used on input line 310.
-(pdftex.def)             Requested size: 251.7091pt x 170.71652pt.
- [16 <./img/Esperimento di Rutherfor.jpg> <./img/onda.png>] [17] [18
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-]
-Capitolo 4.
-[19] [20
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geomet
+ric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-]
-Capitolo 5.
-[21] [22
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.c
+ode.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-]
-Capitolo 6.
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbol
+s.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows
+.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shapes.callouts.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callou
+ts.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-[23]
-Overfull \hbox (3.76433pt too wide) in paragraph at lines 420--420
-[]|\T1/cmr/bx/n/10 Le mo-le-co-le bia-to-mi-che \T1/cmr/m/n/10 ([], [],
- []
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multip
+art.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box148
+\pgfnodeparttwobox=\box149
+\pgfnodepartthreebox=\box150
+\pgfnodepartfourbox=\box151
+\pgfnodeparttwentybox=\box152
+\pgfnodepartnineteenbox=\box153
+\pgfnodeparteighteenbox=\box154
+\pgfnodepartseventeenbox=\box155
+\pgfnodepartsixteenbox=\box156
+\pgfnodepartfifteenbox=\box157
+\pgfnodepartfourteenbox=\box158
+\pgfnodepartthirteenbox=\box159
+\pgfnodeparttwelvebox=\box160
+\pgfnodepartelevenbox=\box161
+\pgfnodeparttenbox=\box162
+\pgfnodepartninebox=\box163
+\pgfnodeparteightbox=\box164
+\pgfnodepartsevenbox=\box165
+\pgfnodepartsixbox=\box166
+\pgfnodepartfivebox=\box167
+)))) [7] [8
 
-[24]
+] [9] (./img/esmas.tikz) [10] [11
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 443.
+] [12]
+(./img/esmastavp.tikz) [13
 
+] [14
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 443.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 443.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 443.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 443.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 443.
-
-[25] [26
-
-]
-runsystem(makeindex chimica.idx)...executed safely (allowed).
-
- (./chimica.ind) (./chimica.aux)
-Package rerunfilecheck Info: File `chimica.out' has not changed.
-(rerunfilecheck)             Checksum: 7E0E659B89DF7EB9B9BDE77C44353AA2;5284.
+] (./book.aux (./title/titlepage.aux))
+Package rerunfilecheck Info: File `book.out' has not changed.
+(rerunfilecheck)             Checksum: 5B40A11237F1947361E55BDDF896A17B;5123.
  ) 
 Here is how much of TeX's memory you used:
- 59841 strings out of 476025
- 1462556 string characters out of 5796532
- 2350697 words of memory out of 5000000
- 79271 multiletter control sequences out of 15000+600000
- 540311 words of font info for 103 fonts, out of 8000000 for 9000
+ 64024 strings out of 476025
+ 1560232 string characters out of 5796532
+ 2463483 words of memory out of 5000000
+ 83408 multiletter control sequences out of 15000+600000
+ 554733 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,89p,722b,1768s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/cm-super/sfbi1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
-bx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></us
-r/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-d
-ist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1
-/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
-r/sfit1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-</usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
+ 84i,25n,89p,719b,1613s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-di
+st/fonts/type1/public/cm-super/sfbi0900.pfb></usr/share/texmf-dist/fonts/type1/
+public/cm-super/sfbi1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
+/sfbi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><
+/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texm
+f-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
+uper/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1200.p
+fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/
+texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/share/texmf-dist/font
+s/type1/public/cm-super/sfrm0500.pfb></usr/share/texmf-dist/fonts/type1/public/
+cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm07
+00.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/
+fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
+sl1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfso2488.pfb></us
+r/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-d
+ist/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf-dist/fonts/type1
+/public/cm-super/sfss1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
+r/sfss2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb>
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/tex
+mf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/cm-super/sfti0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
 super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.
 pfb>
-Output written on chimica.pdf (26 pages, 534055 bytes).
+Output written on book.pdf (14 pages, 1080328 bytes).
 PDF statistics:
- 488 PDF objects out of 1000 (max. 8388607)
- 409 compressed objects within 5 object streams
- 118 named destinations out of 1000 (max. 500000)
- 279 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 518 PDF objects out of 1000 (max. 8388607)
+ 410 compressed objects within 5 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 266 words of extra memory for PDF output out of 10000 (max. 10000000)
 

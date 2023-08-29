@@ -1,0 +1,11 @@
+﻿\usetikzlibrary{backgrounds,calc,shadings,shapes.arrows,shapes.symbols,shadows}
+\definecolor{switch}{HTML}{006996}
+
+\begin{tikzpicture}
+\node at (5,5.5) {Topologia di livello 3};
+\draw (0,0) -- (10,0) -- (10,6) -- (0,6) -- cycle;
+\draw (1,3.2) -- (1.6,3.2) -- (1.6,2.6) -- (1,2.6) -- cycle;
+\draw (1,1) -- (1.6,1) -- (1.6,1.6) -- (1,1.6) -- cycle;
+\draw (1,4) -- (1.6,4) -- (1.6,4.6) -- (1,4.6) -- cycle;
+
+\end{tikzpicture}

@@ -1,0 +1,21 @@
+﻿\begin{tikzpicture}
+\draw[red,ultra thick] (-.2,-.2) -- (-.2,3.2) -- (6,3.2) -- (6,-.2) -- cycle;
+\draw[double] (0,.5) -- (0,2.5) -- (2,2.5) -- (2,.5) -- cycle; 
+\node[font=\Huge] at (1.3,1.5) {\textsf{B}};
+\node[font=\Large,blue] at (.7,2) {\textsf{10}};
+\node[font=\Large,red] at (.7,1) {\textsf{5}};
+\node[font=\Large,blue] at (-.7,2) {\textsf{A}};
+\node[font=\Large,red] at (-.7,1) {\textsf{Z}};
+\draw[->,red] (-.6,1) -- (.5,1);
+\draw[->,blue] (-.6,2) -- (.5,2);
+ \matrix [nodes={font=\tiny,minimum size=1mm}] at (4,1.4)
+  {
+    \node {Nome}; & \node{BORO};  \\
+    \node {Simbolo}; & \node{B};  \\
+    \node {Protoni}; & \node{5};  \\
+    \node {Neutroni}; & \node{5};  \\
+    \node {Elettroni}; & \node{5};  \\
+    \node {Numero Atomico}; & \node{5};  \\
+	\node {Numero di massa}; & \node{10};  \\
+  };
+\end{tikzpicture}

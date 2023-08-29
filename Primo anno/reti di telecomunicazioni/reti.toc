@@ -95,3 +95,7 @@
 \contentsline {subsection}{\numberline {1.11.5}Esempio di relazione tra UI e stack protocollare}{29}{subsection.1.11.5}%
 \contentsline {subsection}{\numberline {1.11.6}Formato di PDU}{29}{subsection.1.11.6}%
 \contentsline {subsection}{\numberline {1.11.7}Classificazione di protocolli}{29}{subsection.1.11.7}%
+\contentsline {section}{\numberline {1.12}Topologie fisiche e logiche}{30}{section.1.12}%
+\contentsline {subsection}{\numberline {1.12.1}Reti eterogenee}{30}{subsection.1.12.1}%
+\contentsline {subsubsection}{Strato di internetworking}{30}{subsubsection*.36}%
+\contentsline {subsubsection}{Traduzione di protocollo}{30}{subsubsection*.37}%

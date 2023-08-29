@@ -1,4 +1,4 @@
-\documentclass{book}
+\message{ !name(book.tex)}\documentclass{book}
 \usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=3.0cm]{geometry}
 
 %\documentclass[pdftex,10pt,a4paper]{book}
@@ -58,13 +58,21 @@
 \usepackage{pgfplots}
 \usepackage{amsthm}
 \usepackage{wasysym}
-\usepackage{qtree}
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
 
 \usepackage{showframe}
 \renewcommand\ShowFrameLinethickness{0.15pt}
 %\renewcommand*\ShowFrameColor{\color{red}}
 
-%\usepackage{showkeys} %serve per mostrare le etichette "tag" o target, va tolta per la versione definitiva;
+\newtheorem{defi}{Definizione}[section]
+\newtheorem{nota}{Nota}[section]
+\newtheorem{notab}{Nota bene}[section]
+\newtheorem{teo}{Teorema}[section]
+\newtheorem{oss}{Osservazione}[section]
+\newtheorem{att}{Attenzione}[section]
+
+% \usepackage{showkeys} %serve per mostrare le etichette "tag" o target, va tolta per la versione definitiva;
 
 \SetupExSheets[question]{type=exam}
 
@@ -112,60 +120,14 @@
   \fboxrule0pt
   \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
   \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
-% definizioni
-\newtheorem{esercizio}{Esercizio}[section]
-\newtheorem{teorema}{Teorema}[section]
-    \newtheorem{nota}{Nota}[section]
-\theoremstyle{definition}
-\newtheorem{defi}{Definizione}[section]
-\newtheorem{esempio}{Esempio}[section]
-\newtheorem{svol}{Svolgimento}[section]
-\newtheorem{oss}{Osservazione}[section]
 
-\title{reti di telecominicazione}
+\title{appunti di chimica}
 \author{Nicola Ferru}
 \begin{document}
-\include{./title/titlepage.tex}
-\tableofcontents
-\input{pag/intro.tex}
 
-\clearpage
-\section{Topologie fisiche e logiche}
-\label{sec:fiselogic}
+\message{ !name(book.tex) !offset(519) }
 
-\subsection{Reti eterogenee}
-\label{sec:retiEterogenee}
-\begin{description}
-\item[Architettura omogenea:] è presente un solo stack protocollare
-\item[Architettura eterogenea:] composizione di sottoreti con stack differenti
-\end{description}
-\begin{itemize}
-\item Comunicazione tra due terminali connessi a due sottoreti differenti
-  \begin{itemize}
-  \item i due terminali implementano la stessa pila di protocolli al di sopra di quelli specifici per le
-    due sottoreti
-  \item È presente un nodo intermedio che implementa i protocoli di entrambe le sottoreti
-  \end{itemize}
-\item Due possibili approcci: strato di internetworking e traduzione di protocollo
-  \begin{description}
-    \end{description}
-\end{itemize}
-\subsubsection{Strato di internetworking}
-\label{sec:stratodiinter}
-\begin{itemize}
-\item Il nodo intermedio implementa come strato di \textit{relay} un protocollo comune ai due terminali
-\item Architettura protocollare omogenea a partire da questo strato
-\item funziona se è possibile incapsulare correttamente il protocollo scelto per la funzione di rilegamento
-    nei protocolli utilizzati delle due differenti sottoreti
-\end{itemize}
 
-\subsubsection{Traduzione di protocollo}
-\label{sec:tradiprot}
-
-\begin{itemize}
-\item Il nodo intermedio nello strato di \texttt{relay} traduce tra di loro (e in entrambi i versi) i due
-  differenti protocolli presenti come livello più alto nelle due sottoreti
-\item Viola il principio di stratificazione e può funzionare corretamente solo quando le due reti sono ``simili''
-\end{itemize}
+\message{ !name(book.tex) !offset(534) }
 
 \end{document}

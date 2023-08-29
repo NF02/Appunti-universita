@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.7.27)  2 AUG 2023 15:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.7.27)  2 AUG 2023 21:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1689,7 +1689,7 @@ your preamble.
 \openout2 = `./title/titlepage.aux'.
 
 (./title/titlepage.tex
-<./title/logo_CA.jpg, id=252, 142.8537pt x 143.3355pt>
+<./title/logo_CA.jpg, id=260, 142.8537pt x 143.3355pt>
 File: ./title/logo_CA.jpg Graphic file (type jpg)
 <use ./title/logo_CA.jpg>
 Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
@@ -1869,6 +1869,21 @@ File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ] (./img/esincap.tikz) (./img/formPDU.tikz))
 [29
 
+]
+
+./reti.tex:151: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151     \end{description}
+                           
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[30
+
 ] (./reti.aux (./title/titlepage.aux))
 
 LaTeX Warning: There were undefined references.
@@ -1877,13 +1892,13 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `reti.out' has not changed.
-(rerunfilecheck)             Checksum: 43232D06C53F7A65C2A3E78E5C88B712;11096.
+(rerunfilecheck)             Checksum: B8BF0D1ED02C5F4C72B47B63738F1D50;11438.
  ) 
 Here is how much of TeX's memory you used:
- 62190 strings out of 476025
- 1531521 string characters out of 5796532
+ 62201 strings out of 476025
+ 1531693 string characters out of 5796532
  2319554 words of memory out of 5000000
- 81382 multiletter control sequences out of 15000+600000
+ 81388 multiletter control sequences out of 15000+600000
  539040 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,89p,719b,1636s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1948,10 +1963,10 @@ fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/
 texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/font
 s/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/
 cm-super/sftt1000.pfb>
-Output written on reti.pdf (29 pages, 924502 bytes).
+Output written on reti.pdf (30 pages, 927150 bytes).
 PDF statistics:
- 783 PDF objects out of 1000 (max. 8388607)
- 693 compressed objects within 7 object streams
- 227 named destinations out of 1000 (max. 500000)
- 506 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 801 PDF objects out of 1000 (max. 8388607)
+ 709 compressed objects within 8 object streams
+ 232 named destinations out of 1000 (max. 500000)
+ 522 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,14 @@
+﻿\begin{tikzpicture}
+\node at (0,2) {\Large Miscela};
+\draw[->,ultra thick] (1.5,2) -- (4,2) -- (4,4) -- (6,4);
+\draw[fill=blue] (6.3,3.5) -- (6.3,4.5) -- (11,4.5) -- (11,3.5)  -- cycle;
+\node[white] at (8.7,4) {\Large OMOGENZA};
+\node[blue] at (14.5,4) {\Large Si distingue una sola fase};
+\node[blue] at (8.7,3) {\large Aria Soluzione};
+
+\draw[fill=red] (6.3,-.5) -- (6.3,.5) -- (11,.5) -- (11,-.5)  -- cycle;
+\node[white] at (8.7,0) {\Large ETEROGENZA};
+\draw[->,ultra thick]  (4,2) -- (4,0) -- (6,0);
+\node[red] at (14.8,0) {\Large Si distinguono due o più fasi};
+\node[red] at (8.7,-1) {\large Fango Rerro/Zolfo};
+\end{tikzpicture}
