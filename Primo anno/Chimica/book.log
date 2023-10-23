@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.8.27)  29 AUG 2023 21:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.8.27)  24 OCT 2023 00:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1425,237 +1425,16 @@ Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use
 \mhchem@option@minustextsidebearingleft=\dimen411
 \mhchem@option@minustextsidebearingright=\dimen412
 )
-(/usr/share/texmf-dist/tex/latex/eso-pic/showframe.sty
-Package: showframe 2020/10/14 v0.1j showframe (new impl., RN)
-
-(/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen413
-\ESO@tempdimb=\dimen414
+(/usr/share/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip118
+\L@UnitsRaiseTextstyle=\skip119
+\L@UnitsRaiseScriptstyle=\skip120
 )
-\SF@tempdima=\dimen415
-)
-\c@defi=\count447
-\c@nota=\count448
-\c@notab=\count449
-\c@teo=\count450
-\c@oss=\count451
-\c@att=\count452
+(/usr/share/texmf-dist/tex/latex/tikzorbital/tikzorbital.sty
+Package: tikzorbital 2012/12/05 draw atomic orbitals and molecular diagrams wit
+h tikz
 
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)
-(/usr/share/texmf-dist/tex/latex/floatflt/floatflt.sty
-Package: floatflt 1997/07/16 v. 1.31
-\c@OptionTest=\count453
-\figbox=\box144
-\tabbox=\box145
-\pagebox=\box146
-\ffigcount=\count454
-\ftabcount=\count455
-\fftest=\count456
-\hangcount=\count457
-\nosuccesstryfig=\count458
-\nosuccesstrytab=\count459
-\figgutter=\dimen416
-\tabgutter=\dimen417
-\htdone=\dimen418
-\pageht=\dimen419
-\startpageht=\dimen420
-\tabbredd=\dimen421
-\floatfltwidth=\dimen422
-\fltitemwidth=\dimen423
-\outputpretest=\toks67
-)
-(/usr/share/texmf-dist/tex/latex/graphics/epsfig.sty
-Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen424
-\epsfysize=\dimen425
-) (./book.aux
-(./title/titlepage.aux))
-\openout1 = `book.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 126.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 12
-6.
- (/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
-File: t3cmr.fd 2001/12/31 TIPA font definitions
-)
-LaTeX Font Info:    ... okay on input line 126.
-
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(56.9055pt, 455.24411pt, 85.35826pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=455.24411pt
-* \textheight=731.23584pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=13.08827pt
-* \topmargin=-45.43198pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-LaTeX Info: Redefining \it@ocap on input line 126.
-LaTeX Info: Redefining \it@ccap on input line 126.
-Package hyperref Info: Link coloring ON on input line 126.
-(./book.out) (./book.out)
-\@outlinefile=\write4
-\openout4 = `book.out'.
-
-
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count460
-\scratchdimen=\dimen426
-\scratchbox=\box147
-\nofMPsegments=\count461
-\nofMParguments=\count462
-\everyMPshowfont=\toks68
-\MPscratchCnt=\count463
-\MPscratchDim=\dimen427
-\MPnumerator=\count464
-\makeMPintoPDFobject=\count465
-\everyMPtoPDFconversion=\toks69
-) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: floatflt package is loaded.
-Package caption Info: listings package is loaded.
-Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count466
-
-Package exsheets Info: Loading custom configurations file
-(exsheets)             `exsheets_configurations.cfg'.
-
-
-(/usr/share/texmf-dist/tex/latex/exsheets/exsheets_configurations.cfg
-File: exsheets_configurations.cfg 
-)
-Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 126.
-
-(/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-eng
-lish.trsl
-File: translations-basic-dictionary-english.trsl (english translation file `tra
-nslations-basic-dictionary')
-)
-Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 126.
-
-
-Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
-ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
-your preamble.
- on input line 126.
-
-
-Package chemgreek Info: Activating mapping `upgreek' on line 126.
-
-\openout2 = `title/titlepage.aux'.
-
-(./title/titlepage.tex
-<./title/logo_CA.jpg, id=131, 142.8537pt x 143.3355pt>
-File: ./title/logo_CA.jpg Graphic file (type jpg)
-<use ./title/logo_CA.jpg>
-Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
-(pdftex.def)             Requested size: 64.28355pt x 64.50037pt.
- [1
-
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
-/enc/dvips/cm-super/cm-super-t1.enc} <./title/logo_CA.jpg>] [2
-
-]) (./book.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
-
-
-(/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 4.
-
-
-(/usr/share/texmf-dist/tex/latex/wasysym/uwasy.fd
-File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-))
-\tf@toc=\write5
-\openout5 = `book.toc'.
-
- [3
-
-
-
-] [4
-
-]
-Capitolo 1.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-55.
-(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-) [5{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./img/m
-iscela.tikz) [6
-
-]
-(./img/tavPer.tikz
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 shapes.code.tex
 File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -1703,47 +1482,427 @@ File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multip
 art.code.tex
 File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodepartlowerbox=\box148
-\pgfnodeparttwobox=\box149
-\pgfnodepartthreebox=\box150
-\pgfnodepartfourbox=\box151
-\pgfnodeparttwentybox=\box152
-\pgfnodepartnineteenbox=\box153
-\pgfnodeparteighteenbox=\box154
-\pgfnodepartseventeenbox=\box155
-\pgfnodepartsixteenbox=\box156
-\pgfnodepartfifteenbox=\box157
-\pgfnodepartfourteenbox=\box158
-\pgfnodepartthirteenbox=\box159
-\pgfnodeparttwelvebox=\box160
-\pgfnodepartelevenbox=\box161
-\pgfnodeparttenbox=\box162
-\pgfnodepartninebox=\box163
-\pgfnodeparteightbox=\box164
-\pgfnodepartsevenbox=\box165
-\pgfnodepartsixbox=\box166
-\pgfnodepartfivebox=\box167
-)))) [7] [8
+\pgfnodepartlowerbox=\box144
+\pgfnodeparttwobox=\box145
+\pgfnodepartthreebox=\box146
+\pgfnodepartfourbox=\box147
+\pgfnodeparttwentybox=\box148
+\pgfnodepartnineteenbox=\box149
+\pgfnodeparteighteenbox=\box150
+\pgfnodepartseventeenbox=\box151
+\pgfnodepartsixteenbox=\box152
+\pgfnodepartfifteenbox=\box153
+\pgfnodepartfourteenbox=\box154
+\pgfnodepartthirteenbox=\box155
+\pgfnodeparttwelvebox=\box156
+\pgfnodepartelevenbox=\box157
+\pgfnodeparttenbox=\box158
+\pgfnodepartninebox=\box159
+\pgfnodeparteightbox=\box160
+\pgfnodepartsevenbox=\box161
+\pgfnodepartsixbox=\box162
+\pgfnodepartfivebox=\box163
+)))
+\pgf@layerbox@background=\box164
+\pgf@layerboxsaved@background=\box165
+\pgf@layerbox@foreground=\box166
+\pgf@layerboxsaved@foreground=\box167
+) (/usr/share/texmf-dist/tex/latex/bohr/bohr.sty
+Package: bohr 2015/06/24 v1.0 simple atom representation according to the Bohr 
+model
 
-] [9] (./img/esmas.tikz) [10] [11
+(/usr/share/texmf-dist/tex/latex/elements/elements.sty
+Package: elements 2022/01/29 v0.4 properties of chemical elements
+\c@@elements@orbital@type=\count447
+\c@@elements@shell@number=\count448
+)
+\c@@bohr@shell@number=\count449
+)
+(/usr/share/texmf-dist/tex/latex/eso-pic/showframe.sty
+Package: showframe 2020/10/14 v0.1j showframe (new impl., RN)
 
-] [12]
-(./img/esmastavp.tikz) [13
+(/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen413
+\ESO@tempdimb=\dimen414
+)
+\SF@tempdima=\dimen415
+)
+\c@defi=\count450
+\c@nota=\count451
+\c@notab=\count452
+\c@tteo=\count453
+\c@tteor=\count454
+\c@oss=\count455
+\c@att=\count456
+\c@ess=\count457
+\c@prin=\count458
 
-] [14
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+(/usr/share/texmf-dist/tex/latex/floatflt/floatflt.sty
+Package: floatflt 1997/07/16 v. 1.31
+\c@OptionTest=\count459
+\figbox=\box168
+\tabbox=\box169
+\pagebox=\box170
+\ffigcount=\count460
+\ftabcount=\count461
+\fftest=\count462
+\hangcount=\count463
+\nosuccesstryfig=\count464
+\nosuccesstrytab=\count465
+\figgutter=\dimen416
+\tabgutter=\dimen417
+\htdone=\dimen418
+\pageht=\dimen419
+\startpageht=\dimen420
+\tabbredd=\dimen421
+\floatfltwidth=\dimen422
+\fltitemwidth=\dimen423
+\outputpretest=\toks67
+)
+(/usr/share/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+\epsfxsize=\dimen424
+\epsfysize=\dimen425
+) (./book.aux
+(./title/titlepage.aux))
+\openout1 = `book.aux'.
 
-] (./book.aux (./title/titlepage.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 134.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 13
+4.
+ (/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 134.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(56.9055pt, 455.24411pt, 85.35826pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=13.08827pt
+* \topmargin=-45.43198pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \it@ocap on input line 134.
+LaTeX Info: Redefining \it@ccap on input line 134.
+Package hyperref Info: Link coloring ON on input line 134.
+(./book.out) (./book.out)
+\@outlinefile=\write4
+\openout4 = `book.out'.
+
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count466
+\scratchdimen=\dimen426
+\scratchbox=\box171
+\nofMPsegments=\count467
+\nofMParguments=\count468
+\everyMPshowfont=\toks68
+\MPscratchCnt=\count469
+\MPscratchDim=\dimen427
+\MPnumerator=\count470
+\makeMPintoPDFobject=\count471
+\everyMPtoPDFconversion=\toks69
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: floatflt package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count472
+
+Package exsheets Info: Loading custom configurations file
+(exsheets)             `exsheets_configurations.cfg'.
+
+
+(/usr/share/texmf-dist/tex/latex/exsheets/exsheets_configurations.cfg
+File: exsheets_configurations.cfg 
+)
+Package translations Info: no dictionary file `translations-basic-dictionary-it
+alian.trsl' found. on input line 134.
+
+(/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-eng
+lish.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 134.
+
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
+your preamble.
+ on input line 134.
+
+
+Package chemgreek Info: Activating mapping `upgreek' on line 134.
+
+(/usr/share/texmf-dist/tex/latex/elements/elements_names_english.def)
+\openout2 = `title/titlepage.aux'.
+
+
+(./title/titlepage.tex
+<./title/logo_CA.jpg, id=208, 142.8537pt x 143.3355pt>
+File: ./title/logo_CA.jpg Graphic file (type jpg)
+<use ./title/logo_CA.jpg>
+Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
+(pdftex.def)             Requested size: 64.28355pt x 64.50037pt.
+ [1
+
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
+/enc/dvips/cm-super/cm-super-t1.enc} <./title/logo_CA.jpg>] [2
+
+]) (./book.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
+
+
+(/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 4.
+
+
+(/usr/share/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+) [3
+
+
+
+])
+\tf@toc=\write5
+\openout5 = `book.toc'.
+
+ (./pag/intro.tex
+[4]
+Capitolo 1.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+5.
+(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+) [5
+
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./img/misce
+la.tikz) [6
+
+]
+(./img/tavPer.tikz) [7] [8] [9
+
+] [10] (./img/esmas.tikz) [11] [12
+
+] [13]
+(./img/esmastavp.tikz) [14
+
+]) (./pag/stechiometria.tex [15
+
+] [16
+
+]
+Capitolo 2.
+[17]
+Overfull \hbox (2.36554pt too wide) in paragraph at lines 97--100
+\T1/cmr/m/it/10 Anche le mo-li non rea-gi-te del rea-gen-te in ec-ces-so van-no
+ cal-co-la-te con-si-de-ran-do quel-le del $[]$. 
+ []
+
+[18] [19] [20]) [21] [22
+
+]
+Capitolo 3.
+(./img/dalton.tikz) (./img/Rutherford.tikz)
+Package epstopdf Info: Source file: <./img/espRuth.eps>
+(epstopdf)                    date: 2023-10-18 13:20:09
+(epstopdf)                    size: 68958 bytes
+(epstopdf)             Output file: <./img/espRuth-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-10-18 15:50:58
+(epstopdf)                    size: 11614 bytes
+(epstopdf)             Command: <repstopdf --outfile=./img/espRuth-eps-converte
+d-to.pdf ./img/espRuth.eps>
+(epstopdf)             \includegraphics on input line 180.
+Package epstopdf Info: Output file is already uptodate.
+<./img/espRuth-eps-converted-to.pdf, id=478, 326.21875pt x 149.55875pt>
+File: ./img/espRuth-eps-converted-to.pdf Graphic file (type pdf)
+<use ./img/espRuth-eps-converted-to.pdf>
+Package pdftex.def Info: ./img/espRuth-eps-converted-to.pdf  used on input line
+ 180.
+(pdftex.def)             Requested size: 326.21794pt x 149.55838pt.
+ [23]
+Package epstopdf Info: Source file: <img/instmodRuth.eps>
+(epstopdf)                    date: 2023-10-18 15:50:15
+(epstopdf)                    size: 24014 bytes
+(epstopdf)             Output file: <img/instmodRuth-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-10-18 22:42:26
+(epstopdf)                    size: 5600 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/instmodRuth-eps-conver
+ted-to.pdf img/instmodRuth.eps>
+(epstopdf)             \includegraphics on input line 206.
+Package epstopdf Info: Output file is already uptodate.
+<img/instmodRuth-eps-converted-to.pdf, id=487, 438.63875pt x 274.02374pt>
+File: img/instmodRuth-eps-converted-to.pdf Graphic file (type pdf)
+<use img/instmodRuth-eps-converted-to.pdf>
+Package pdftex.def Info: img/instmodRuth-eps-converted-to.pdf  used on input li
+ne 206.
+(pdftex.def)             Requested size: 142.26378pt x 88.87268pt.
+ [24 <./img/espRuth-eps-converted-to.pdf> <./img/instmodRuth-eps-converted-to.p
+df>]
+Package epstopdf Info: Source file: <img/segnali.eps>
+(epstopdf)                    date: 2023-10-16 21:30:17
+(epstopdf)                    size: 78430 bytes
+(epstopdf)             Output file: <img/segnali-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-10-19 01:26:07
+(epstopdf)                    size: 9108 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/segnali-eps-converted-
+to.pdf img/segnali.eps>
+(epstopdf)             \includegraphics on input line 218.
+Package epstopdf Info: Output file is already uptodate.
+<img/segnali-eps-converted-to.pdf, id=511, 449.68pt x 292.09125pt>
+File: img/segnali-eps-converted-to.pdf Graphic file (type pdf)
+<use img/segnali-eps-converted-to.pdf>
+Package pdftex.def Info: img/segnali-eps-converted-to.pdf  used on input line 2
+18.
+(pdftex.def)             Requested size: 170.71652pt x 110.88885pt.
+ (./img/ondaelect.tikz)
+[25
+
+ <./img/segnali-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/spettriColatom.eps>
+(epstopdf)                    date: 2023-10-20 22:47:59
+(epstopdf)                    size: 124062 bytes
+(epstopdf)             Output file: <img/spettriColatom-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-10-20 22:50:07
+(epstopdf)                    size: 47795 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/spettriColatom-eps-con
+verted-to.pdf img/spettriColatom.eps>
+(epstopdf)             \includegraphics on input line 334.
+Package epstopdf Info: Output file is already uptodate.
+<img/spettriColatom-eps-converted-to.pdf, id=552, 468.75125pt x 150.5625pt>
+File: img/spettriColatom-eps-converted-to.pdf Graphic file (type pdf)
+<use img/spettriColatom-eps-converted-to.pdf>
+Package pdftex.def Info: img/spettriColatom-eps-converted-to.pdf  used on input
+ line 334.
+(pdftex.def)             Requested size: 398.33858pt x 127.94424pt.
+ [26
+
+ <./img/spettriColatom-eps-converted-to.pdf>] [27] [28] [29] (./img/rapprgrafor
+batom.tikz) [30
+
+] (./book.aux
+(./title/titlepage.aux))
 Package rerunfilecheck Info: File `book.out' has not changed.
-(rerunfilecheck)             Checksum: 5B40A11237F1947361E55BDDF896A17B;5123.
+(rerunfilecheck)             Checksum: 3A1384045683AF169E15C7BC55B21AE8;8904.
  ) 
 Here is how much of TeX's memory you used:
- 64024 strings out of 476025
- 1560232 string characters out of 5796532
- 2463483 words of memory out of 5000000
- 83408 multiletter control sequences out of 15000+600000
- 554733 words of font info for 135 fonts, out of 8000000 for 9000
+ 65789 strings out of 476025
+ 1603330 string characters out of 5796532
+ 2564221 words of memory out of 5000000
+ 85013 multiletter control sequences out of 15000+600000
+ 556136 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,25n,89p,719b,1613s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,25n,89p,719b,1003s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
@@ -1758,35 +1917,38 @@ fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-di
-st/fonts/type1/public/cm-super/sfbi0900.pfb></usr/share/texmf-dist/fonts/type1/
-public/cm-super/sfbi1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
-/sfbi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><
-/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texm
-f-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
-uper/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1200.p
-fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/
-texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/share/texmf-dist/font
-s/type1/public/cm-super/sfrm0500.pfb></usr/share/texmf-dist/fonts/type1/public/
-cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm07
-00.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/
-fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
-sl1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfso2488.pfb></us
-r/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-d
-ist/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf-dist/fonts/type1
-/public/cm-super/sfss1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
-r/sfss2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb>
-</usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/tex
-mf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/cm-super/sfti0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.
-pfb>
-Output written on book.pdf (14 pages, 1080328 bytes).
+st/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/cm-super/sfbi0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi
+0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/
+share/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf-dis
+t/fonts/type1/public/cm-super/sfbx0700.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
+sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></
+usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf
+-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/cm-super/sfcc1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
+per/sfcc1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfit1000.pf
+b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/t
+exmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts
+/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/c
+m-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm100
+0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/f
+onts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/cm-super/sfso2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfs
+s1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr
+/share/texmf-dist/fonts/type1/public/cm-super/sfss1728.pfb></usr/share/texmf-di
+st/fonts/type1/public/cm-super/sfss2488.pfb></usr/share/texmf-dist/fonts/type1/
+public/cm-super/sfsx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
+/sfsx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb><
+/usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb></usr/share/texm
+f-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/cm-super/sftt1000.pfb>
+Output written on book.pdf (30 pages, 1287481 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
- 410 compressed objects within 5 object streams
- 94 named destinations out of 1000 (max. 500000)
- 266 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 895 PDF objects out of 1000 (max. 8388607)
+ 719 compressed objects within 8 object streams
+ 206 named destinations out of 1000 (max. 500000)
+ 450 words of extra memory for PDF output out of 10000 (max. 10000000)
 

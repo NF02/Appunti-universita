@@ -1,0 +1,352 @@
+\chapter{Stechiometria}
+\label{chap:stechiometria}
+\begin{defi}
+  La stechiometria è una branca della chimica che studia i rapporti quantitativi delle sostanze chimiche nelle
+  reazioni chimiche. La stechiometria di reazione indica in che rapporto due o più sostanze reagiscono tra di loro.
+  Essa viene rappresentata attraverso coefficienti, detti coefficienti stechiometrici.
+\end{defi}
+Per avere una rappresentazione quantitativa è fondamentale \underline{BILANCIALRE} correttamente l'equazione usando
+gli opportuni \texttt{coefficienti stechiometrici}.
+\begin{center}
+ \ce{{\color{red}2}NH_3 \to N2 + {\color{red}3}H2}
+\end{center}
+I \textit{\color{red} coefficienti stechiometrici} sono numuri interi che indicano quante moli (o molecole, atomi
+oppure ioni) reagiscono (se si tratta di un reagente) o si formano (se si tratta di un prodotto) durante la reazione
+chimica.
+
+\section{Bilanciamento di un'equazione chimica}
+\label{sec:bildiuneqchimica}
+
+\begin{defi}
+  Le trasformazioni chimiche rispettano la \texttt{legge di conservazione della massa} o
+  \texttt{legge di Lavoisier} (\ref{sec:legdiconse}). Per bilanciare un'equazione chimica si deve
+  avere che:
+  \begin{itemize}
+  \item per ciascun elemento, gli atomi presenti tra i reagenti devono essere in numero
+    \texttt{UGUALE} a quelli presenti tra i prodotti;
+  \item se la reazione coinvolge specie ioniche, la somma delle cariche elettriche dei reagenti,
+    deve essere uguale a quella dei prodotti
+  \end{itemize}
+\end{defi}
+
+\subsection{Metodo per tentativi successivi}
+\label{sec:metpertentsucc}
+
+Si basa su una attenta osservazione dell'equazione non bilanciata:
+\begin{center}
+  \ce{Ca(OH)2 + H3PO4 \to Ca3(PO4)2 + H2O}
+\end{center}
+Si attribuiscono i coefficienti stechiometrici facendo in modo che il numero e il tipo degli atomi
+presenti tra i reagenti, siano uguali a quelli presenti a destra della freccia:
+\begin{center}
+  \ce{{\color{red}3}Ca(OH)2 + {\color{red}2} H3PO4 \to Ca3(PO4)2 + {\color{red}6}H2O}
+\end{center}
+\begin{ess}
+  Calcolare le moli e i grammi di \ce{NH3} che si formano quando si fanno reagire 42.00 grammi \ce{N2}
+  con 9.09g di \ce{H2}.
+  \begin{center}
+    \ce{N2 + H2 \to NH3} Equazione da bilanciare\\
+    \ce{N2 + {\color{red}3}H2 \to {\color{red}2}NH3} Equazione bilanciata
+  \end{center}
+  \begin{itemize}
+  \item Massa molare di \ce{N2}: $2\cdot 14.00g\cdot mol^{-1}=28.00g\cdot mol^{-1}$ e quindi la mole di \ce{N2}: $\frac{42.00g}{28.00g}\cdot mol^{-1}=1.50 \text{ mol di \ce{N2}}$
+  \item Massa molare \ce{H2}:  $2\cdot 1.01g\cdot mol^{-1}=2.02g\cdot mol^{-1}$ e quindi la mole di \ce{H2}: $\frac{9.09g}{2.02g}\cdot mol^{-1}=4.50$ mol di \ce{H2}
+  \item Massa molare \ce{NH3}: $3\cdot 1.01g\cdot mol^{-1}=3.03g\cdot mol^{-1}+ 1\cdot 14.00g\cdot mol^{-1}= 14.00g\cdot mol^{-1} = MM_{\ce{NH3}}=3.03+14.00=17.03g\cdot mol^{-1}$
+  \end{itemize}
+  \begin{center}
+    \begin{tabular}[th!]{lllllll}
+      & \ce{N2} & + & \ce{{\color{red}3}H2} & \textrightarrow & \ce{{\color{red}2}NM3} & Equazione bilanciata\\
+      moli iniziali & 1.50 && 4.50 && 0\\
+      moli reagite & 1.50 && 4.50\\
+      moli finali & 0.00 && 0.00 && 3.00
+    \end{tabular}
+  \end{center}
+  Calcoliamo le moli di \ce{NH3} ottenute:
+  \begin{equation*}
+    n^0 \text{mole prodotto} = \frac{\text{coefficiente stechiometrico prodotto}}{\text{coefficiente stechiometrico reagente}} \times \text{moli effettivi di reagente}
+  \end{equation*}
+  Rispetto a \ce{N_2}: \ce{n^0} moli \ce{NH3}=$\frac{2}{1}\times 1.50=3.00$
+  \begin{equation*}
+    \text{grammi } \ce{NH3}= \frac{17.03g}{1mol}\times 3.00 \text{mol (moli ottenute)}=51.09g \text{di } \ce{NH3}
+  \end{equation*}
+\end{ess}
+\begin{ess}
+  Calcolare le moli di \ce{NH3} che si formano quando si fanno reagire 21.00 grammi \ce{N2} con 3.03g
+  di \ce{H2}.
+  \begin{center}
+    moli \ce{N2}: $\frac{21.00g}{28.00g\cdot mol^{-1}}=0.75\text{mol di \ce{N2}}$\\
+    moli \ce{H2}: $\frac{3.03g}{2.02g\cdot mol^{-1}}=1.50\text{mol di \ce{H2}}$\\
+    \begin{tabular}[th!]{lllllll}
+      &\ce{N2} & + & {\color{red}3}\ce{H2} &\textrightarrow & {\color{red}2}\ce{NH3}\\
+      Moli iniziali & 0.75 && 1.50 && 0
+    \end{tabular}
+  \end{center}
+  Per stabilire qual è il reagente limitante, calcoliamo quante moli di \ce{H2} servono per poter
+  consumare 0.75 moli di \ce{N2}:
+  \begin{eqnarray*}
+    1\cdot (mol \ce{N2}):3\cdot (mol \ce{H2})= 0.75:X \text{ da cui } X = \frac{3\cdot 0.75}{1}= 2.25
+  \end{eqnarray*}
+  Quindi per far reagire completamente \ce{N2} è necessaria una mole di \ce{H2} pari a 2.25, dal
+  momento che le moli di \ce{H2} disponibili sono solo 1.50, si deduce che:
+  \begin{center}
+    \ce{H2} è il \underline{reagente limitante}, \ce{N2} quello in \underline{eccesso}\footnote{Coefficiente stechiometrico}
+  \end{center}
+  Le moli di prodotti vanno calcolate considerando le moli del \underline{reagente limitante}.
+  \begin{eqnarray*}
+    3(mol \ce{H2}):2(mol \ce{NH3})=1.50:X \text{ da cui } X=\frac{2\cdot 1.50}{3}=1.00\text{mol di \ce{NH3}}
+  \end{eqnarray*}
+  Anche le moli non reagite del reagente in eccesso vanno calcolate considerando quelle del
+  \underline{reagente limitante}.
+  \begin{eqnarray*}
+    3(mol \ce{H2}):1(mol \ce{NH3})=1.50:X \text{ da cui } X=\frac{1\cdot 1.50}{3}=0.50\text{mol di \ce{N2}}
+  \end{eqnarray*}
+  che hanno reagito con 1.50 moli di \ce{H2} -- Dopo aver calcolato ed analizzato la situazione possiamo dire e definire con una semplice sottrazione
+  che la mole in eccesso è:
+  \begin{eqnarray*}
+    \text{moli in eccesso} = \text{moli effettive} - \text{moli reagente}= 0.75-0.50 = 0.25 mol
+  \end{eqnarray*}
+\end{ess}
+\begin{ess}
+  Calcolare le moli e i grammi di \ce{Al2S3} che si formano quando si fanno reagire 6.0 moli di
+  \ce{Al} con 10.0 moli di \ce{S}.
+  \begin{center}
+    \begin{tabular}[th!]{llllllll}
+      &\ce{Al} &+ & \ce{S} & \textrightarrow& \ce{Al2S3} & Equazione da bilanciare\\
+      &2\ce{Al} & + & 3\ce{S} & \textrightarrow & \ce{Al2S3} & Equazione bilanciare\\
+      moli iniziali&6.0 & 10.0 & & 0
+    \end{tabular}
+  \end{center}
+  Per stabilire se c'è un reagente limitante, calcoliamo quante moli di \ce{S} servono per poter consumare 6.0 moli di \ce{Al}:
+  \begin{eqnarray*}
+    2\cdot (mol \ce{Al}):3\cdot (mol \ce{S}) = 6.0:X \text{ da cui } X= \frac{3\cdot 6.0}{2}=9.0
+  \end{eqnarray*}
+  Quindi bastano 9.0 moli di \ce{S} per far reagire completamente 6.0 moli di \ce{Al}. Dal momento che
+  le moli di \ce{S} disponibili sono 10.0, l'alluminio è il reagente limitante. Ora, partendo dall'equazione bilanciata, possiamo ricavare i seguenti rapporti molari:
+  \begin{equation*}
+    \begin{matrix}
+      \text{Moli iniziali} & 6.0 & 10.0 & 0.0\\
+      \text{Moli reagente} & 6.0 & \nicefrac{1}{2}\cdot 6.0 = 3.0\\
+      \text{Moli finali} & 0.0 & 10.0-9.0=1.0 & \nicefrac{1}{2}=3.0
+    \end{matrix}
+\end{equation*}
+  Si formano 3.0 moli di \ce{Al2S3}. La massa molare di questo composto è di $150\nicefrac{g}{mol}$.
+  Sono stati ottenuti:
+  \begin{eqnarray*}
+    (3.0\text{ mol di } \ce{Al2S3}) \cdot (150\nicefrac{g}{mol}) = 450g\text{ di \ce{Al2S3}}
+  \end{eqnarray*}
+\end{ess}
+
+\section{Resa o rendimento di una reazione}
+\label{sec:resaorendimentodiunarea}
+
+Non sempre le reazioni procedono fino a \textit{completamento}, fino a quando i reagenti (almeno quello
+limitente\footnote{Il reagente limitante è quello presente in minor quantità quindi limita la massima
+  reazione effettuabile in un composto}) sono completamente convertiti nei prodotti. Inoltre, s possono
+avere delle reazioni secondarie che portano i reagenti a trasformarsi in prodotti diversi da quelli
+riportati nell'equazione.
+\begin{center}
+  \it In questi casi la quantità di prodotti ottenute, risultano inferiori alle quantità teoriche (stechiometriche).
+\end{center}
+\begin{defi}
+  \label{defi:resarendimento}
+  Si definisce \texttt{reso} o \texttt{rendimento percentuale} $(r)$ di una reazione chimica il rapporto
+  (moltiplicato per cento) il rapporto tra la quantità di prodotto effettivo ottenuto \ce{Q_e} e quella
+  che si sarebbe avuta se la reazione fosse andata a completamento (resa teorica \ce{Q_t}):
+  \begin{equation}
+    \label{eq:resa}
+    r=\frac{Q_e}{Q_t}\cdot 100
+  \end{equation}
+\end{defi}
+\begin{ess}
+  Facendo gorgogliare un eccesso di \ce{Cl2} in una soluzione contenente 176.6g di \ce{MgBr2}, si
+  ottiene 135.0g di \ce{Br2}. Qual'è la resa percentuale in \ce{Br2}?
+  \begin{center}
+    \ce{MgBr2 + Cl2 \to MgCl2 + Br2} L'equazione è bilanciata
+  \end{center}
+  \begin{description}
+  \item[Peso molecolare \ce{MgBr2}:] $Mg: 1mol\cdot 24.3g\cdot mol^{-1}=24.3g$;\\
+    $Br:2mol\cdot 79.9g\cdot mol^{-1}=159.8g$;\\
+    $Totale: 24.3g+159.8g=184.1g$\\
+    Massa molare = $184.1g\cdot mol^{-1}$
+  \item[mole \ce{MgBr2}:] $\nicefrac{176.6g}{184,1g\cdot mol^{-1}}=0.9593\text{ mol di \ce{MgBr2}}$
+  \item[grammi di \ce{Br2} corrispondenti a una resa del 100\%] $0.9593 mol \cdot 159.8g\cdot mol^{-1}=153.3g\text{ di \ce{Br2}}$ 
+  \end{description}
+  Ma visto che la resa del 100\% non esiste andiamo a calcolarci la resa reale del composto, andando ad
+  utilizzare la formula vista in (\ref{eq:resa}), Nella reazione si ottengono 135.0g di \ce{Br2}, di
+  conseguenza la resa percentuale è:
+  \begin{equation*}
+    \frac{135.0g}{153.3g}\cdot 100=88.1\%
+  \end{equation*}
+  Quindi abbiamo ottenuto una resa del 88.1\%
+\end{ess}
+\begin{ess}
+  Si ricercano attivamente composti in grado di immagazzinare idrogeno da impiegare come combustibile
+  per veicoli. Una delle reazioni studiate è:
+  \begin{center}
+    \ce{Li3N_{(s)} + H_{2(g)} \to LiNH_{2(s)} + LiH_{(s)}}
+  \end{center}
+  \begin{tasks}
+    \task Quante moli di idrogeno sono presenti necessarie per reagire con 1.5mg di \ce{Li3N}?
+    \task Calcolare la massa di \ce{Li3N} che produrrebbe 0.65 mol di \ce{LiH}
+  \end{tasks}
+  \begin{description}
+  \item[Bilanciamo l'equazione:] \ce{Li3N_{(s)} + 2H_{2(g)} \to LiNH_{2(s)} + 2LiH_{(s)}}
+  \item[Massa molare \ce{Li3N}:]
+    \begin{eqnarray*}
+      Li: 3 mol \cdot 6.94g\cdot mol^{-1}= 20.82g;\\
+      N: 1mol \cdot 14.01g\cdot mol^{-1}=14.01g;\\
+      Totale: 20.82g+14.01g=34.83g
+    \end{eqnarray*}
+    Massa molare= $34.83g\cdot mol^{-1}$
+  \item[Massa Molare:]
+    \begin{eqnarray*}
+      H_2: 2.02g\cdot mol^{-1};\\
+      LiNH_2: 22.97g\cdot mol^{-1};\\
+      LiH: 7.95g\cdot mol^{-1}
+    \end{eqnarray*}
+  \item[Trasformiamo i grammi in moli:]
+    \begin{eqnarray*}
+      \text{$n^0$moli } \ce{Li3N}=\frac{\text{quantità di sostanza (g)}}{\text{massa molare } (g\cdot mol^{-1})}=
+      \frac{1.5\cdot 10^{-3}g}{34.83g\cdot mol^{-1}}=4.3\cdot 10^{-5}mol
+    \end{eqnarray*}
+  \end{description}
+  \begin{center}
+    \begin{tabular}[ht!]{llllllllll}
+      & \ce{Li3N_{(s)}} & + & 2\ce{H_{2(s)}} & \textrightarrow & \ce{LiNH_{2(s)}} & + & 2\ce{LiH_{(s)}}\\
+      Moli iniziali & $4.3\cdot 10^{-5}$ && ? && 0 &&0\\
+      Moli reagite & $4.3\cdot 10^{-5}$ && $2\cdot 4.3 \cdot 10^{-5}= 8.6\cdot 10^{-5}$\\
+      Moli finali & 0.0 && 0.0 && $4.3\cdot 10^{-5}$ && $8.6\cdot 10^{-5}$ 
+    \end{tabular}
+  \end{center}
+  Il rapporto stechiometrico tra \ce{Li3N} e \ce{LiH} è di 1 a 2, perciò per ottenere 0.65 mol di
+  \ce{LiH} sono necessarie $\frac{0.65}{2}=0.32mol$ di \ce{Li3N}, che corrispondono a $0.32mol \cdot 34.83g\cdot mol^{-1}=11.15g$.
+\end{ess}
+\begin{ess}
+  Il carburo di calcio, \ce{CaC2}, reagisce con acqua formando idrossido di calcio e il gas infiammabile
+  etino.
+  \begin{itemize}
+  \item Qual'è il reagente limitante se 100.00g di acqua reagiscono con 100.00g di carburo di calco?
+  \item Quale massa di etino è possibile produrre?
+  \item Quale massa del reagente eccedente residuerebbe una volta completamenta la reazione?
+  \item Quale sarebbe la resa percentuale della reazione se si ottenessero 23.20g di etino?
+  \end{itemize}
+  Come al solito il primo passo è proprio bilanciare l'equazione stechiometrica:
+  \begin{center}
+    \ce{CaC2 + 2H20_{(l)} \to Ca(OH)_{2(aq)} + C2H2_{(g)}}
+  \end{center}
+  \begin{description}
+  \item[Massa molare \ce{CaC2}:]
+    \begin{eqnarray*}
+      Ca: 1mol \cdot 40.08g\cdot mol^{-1}= 40.08g;\\
+      C: 2mol \cdot 12.01g\cdot mol^{-1}=24.02g;\\
+      Totale: 40.08g+24.02g=64.10g
+    \end{eqnarray*}
+    Massa Molare = $64.10g\cdot mol^{-1}$
+  \item[Massa molare:]
+    \begin{eqnarray*}
+      \ce{H2O}: 18.02g\cdot mol^{-1};\\
+      \ce{Ca(OH)2}: 74.10g\cdot mol^{-1};\\
+      \ce{C2H2}: 26.04g\cdot mol^{-1}
+    \end{eqnarray*}
+  \item[Trasformiamo i grammi in moli:]
+    \begin{eqnarray*}
+      n^omoli\text{ \ce{CaC2}}= \frac{\text{quantità di sostanza (g)}}{\text{massa molare }(g\cdot mol^{-1})} = \frac{100.00g}{64.10g\cdot mol^{-15}}=1.56mol\\
+      n^omoli\text{ \ce{H2O}}=5.55mol
+    \end{eqnarray*}
+  \end{description}
+  \begin{tabular}[ht!]{llllllllll}
+    & \ce{CaC2_{(s)}} & + & 2\ce{H2O_{(l)}} & \textrightarrow & \ce{Ca(OH)2_{(aq)}} & + & \ce{C2H2_{(g)}}\\
+    moli iniziali & 1.56 && 5.55 && 0 && 0\\
+    moli reagite & 1.56 && $2\cdot 1.56 = 3.12$\\
+    moli finali & 0.00 && 5.55-3.12= 2.43 && 1.56 && 1.56
+  \end{tabular}
+  \begin{center}
+    \ce{CaC2} è il \underline{reagente limitante}, \ce{H2O} quallo in \underline{eccesso}
+  \end{center}
+  \begin{description}
+  \item[Grammi di \ce{C2H2} corrispondenti a una resa del 100\%:]
+    \begin{equation*}
+      1.56mol\cdot 26.04g\cdot mol^{-1}=40.62g \text{ di \ce{C2H2}}
+    \end{equation*}
+    
+  \item[Grammi di \ce{H2O} in eccesso:]
+    \begin{equation*}
+      2.43mol\cdot 18.02g\cdot mol^{-1}=43.79g \text{ di H2O}
+    \end{equation*}
+  \end{description}
+  Se nel corso della reazione si ottenessero {\tt 23.20g di etino}, la resa percentuale sarebbe:
+  \begin{equation*}
+    \frac{23.20g}{40.62g}\cdot 100 = 57.11\%
+  \end{equation*}
+\end{ess}
+\newpage
+\begin{ess}
+  Sulla base della seguente reazione (da bilanciare), stabilire qual'è il reagente limitante e calcolare
+  quanti grammi di \ce{AgBr} e di \ce{Ca(No3)2} si formano per reazione di 8.60g di \ce{AgNo3} con 9.30g
+  di \ce{CaBr2}.
+  \begin{center}
+    \ce{AgNO3 + CaBr2 \to Ca(NO3)2 + AgBr}
+  \end{center}
+  \begin{enumerate}
+  \item Bilanciamo l'equazione:
+    \ce{2AgNO3 + CaBr2 \to Ca(NO3)2 + 2AgBr}
+  \item Calcoliamo la masse molari dei reagenti:
+    \begin{eqnarray*}
+      M.M._{\ce{AgNO3}}=107.87+14.01+3\cdot 16.00=169.88 \nicefrac{g}{mol}\\
+      M.M._{\ce{CaBr2}}=199.81 \nicefrac{g}{mol}
+    \end{eqnarray*}
+  \item Calcoliamo le moli di reagenti:
+    \begin{eqnarray*}
+      \text{moli di \ce{AgNO3}} = \frac{8.60g}{169.88\nicefrac{g}{mol}}=0.051mol\\
+      \text{moli di \ce{CaBr2}} = \frac{9.30g}{199.81\nicefrac{g}{mol}}=0.046mol
+    \end{eqnarray*}
+  \item Individuiamo il reagente limitante:
+    \begin{description}
+    \item[metodo a:] per ciascun reagente calcoliamo il rapporto tra le moli effettivamente presenti
+      nell'ambiente della reazione e il coefficente stechiometrico
+      \begin{eqnarray*}
+        R_{\ce{AgNO3}}=\frac{moli_{\ce{AgNO3}}}{coefficente_{\ce{AgNO3}}}=\frac{0.051}{2}=0.026\\
+        R_{\ce{CaBr2}} = \frac{moli_{\ce{CaBr2}}}{coefficente_{\ce{CaBr2}}}=\frac{0.046}{1}=0.046
+      \end{eqnarray*}
+      Confrontando i due rapporti risulta $R_{\ce{CaBr2}}>R_{\ce{AgNO3}}$; quasto significa che, rispetto
+      ai rapporti stechiometrici, le moli di \ce{CaBr2} \underline{effettivamente presenti} sono in
+      ECCESSO rispetto a quelle che sarebbero necessarie per far reagire completamente l'\ce{AgNO3},
+      che pertanto risultano risulta essere il \underline{reagente limitante}.
+    \item[metodo b:] dalla proporzione
+      \begin{eqnarray*}
+        2:1=0.051\text{mol di \ce{AgNO3}}:\text{x mol di \ce{CaBr2}}
+      \end{eqnarray*}
+      calcoliamo quante moli di \ce{CaBr2} sono necessarie per consumare $0.051mol$ di \ce{AgNO3}; si
+      ottiene $x=\frac{0.051}{2}=0.026mol$. Dal momento che moli di \ce{CaBr2} disponibili sono 0.046,
+      si deduce che il \ce{CaBr2} è presente in ECCESSO e che \ce{AgNO3} risulta essere il
+      \underline{reagente limitante}.
+    \end{description}
+  \item Come in ogni caso andiamo a calcolare le moli finali
+    \begin{center}
+      \begin{tabular}[ht!]{llllllllll}
+        & \ce{AgNO3} & + & 2\ce{CaBr2} & \textrightarrow & \ce{Ca(NO3)2} & + & 2\ce{2AgBr}\\
+        moli iniziali & 0.051 && 0.046 && 0 && 0\\
+        variazione & -0.051 && -0.026 && +0.026 && +0.051\\
+        moli finali & 0.00 && 0.020 && 0.026 && 0.051 
+      \end{tabular}
+    \end{center}
+    Le moli dei prodotti sono state calcolate partendo da quelle del reagente limitante e considerando i
+    rapporti stechiometrici tra questo e ciascuno dei prodotti. Nel caso del \ce{Ca(NO3)2} abbiamo:
+    \begin{eqnarray*}
+        2:1=0.051\text{mol di \ce{AgNO3}}:\text{x mol di \ce{CaBr2}}
+    \end{eqnarray*}
+    da cui possimo calcolare moli di \ce{CaBr2} possiamo ottenere da 0.051 moli di \ce{AgNO3}:
+    $x=\frac{0.051}{2}=0.026$ mol di \ce{CaBr2}. Analogamente, impostando la proporzione opportuna, può
+    essere calcolato il numero di moli dell'altro reagente.
+  \item Calcoliamo le masse molari dei prodotti:
+    \begin{eqnarray*}
+      M.M._{\ce{Ca(NO3)2}}=164.10 \nicefrac{g}{mol}\\
+      M.M._{\ce{agbr}}=187.77 \nicefrac{g}{mol}
+    \end{eqnarray*}
+  \item Calcoliamo le masse in grammi dei prodotti:
+    \begin{eqnarray*}
+      \text{g di } \ce{Ca(NO3)2} = 0.026mol\cdot 164.10 \nicefrac{g}{mol}=4.3g\\
+      \text{g di } \ce{AgNO3} = 0.051mol\cdot 187.77\nicefrac{g}{mol}=9.6g
+    \end{eqnarray*}
+  \end{enumerate}
+\end{ess}

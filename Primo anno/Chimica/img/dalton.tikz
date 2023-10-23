@@ -1,0 +1,26 @@
+﻿% colors
+\definecolor{mylightred}{RGB}{255,210,210}
+\definecolor{myred}{RGB}{200,100,100}
+\definecolor{mydarkred}{RGB}{140,40,40}
+\definecolor{mylightblue}{RGB}{220,228,255}
+\definecolor{myblue}{RGB}{183,191,229}
+\definecolor{mydarkblue}{RGB}{50,70,190}
+
+\begin{tikzpicture}[scale=1]
+    \coordinate (O)  at (0,0);
+  \draw[mylightblue,fill] (O) circle (50pt);
+  \draw[mydarkblue,thick] (O) circle (50pt) node[above right=34pt] {$+Ze$};
+  \fill[radius=0.8pt,mydarkred]
+    ( 0.20, 1.20)  circle node[above right=-1pt,scale=0.75] {$-e$}
+    ( 0.10, 0.30)  circle node[above right=-1pt,scale=0.75] {$-e$}
+    ( 0.68, 0.67)  circle node[above right=-1pt,scale=0.75] {$-e$}
+    ( 1.05,-1.10)  circle node[above left =-1pt,scale=0.75] {$-e$}
+    ( 0.75,-0.12)  circle node[      right= 2pt,scale=0.75] {$-e$}
+    ( 0.21,-1.30)  circle node[above left =-1pt,scale=0.75] {$-e$}
+    ( 0.18,-0.55)  circle node[above left =-1pt,scale=0.75] {$-e$}
+    (-0.80, 0.60)  circle node[above left =-1pt,scale=0.75] {$-e$}
+    (-0.50, 1.21)  circle node[above right=-1pt,scale=0.75] {$-e$}
+    (-0.40, 0.05)  circle node[above left =-1pt,scale=0.75] {$-e$}
+    (-0.58,-0.95)  circle node[above left =-1pt,scale=0.75] {$-e$}
+    (-1.10,-0.20)  circle node[above left =-1pt,scale=0.75] {$-e$};
+\end{tikzpicture}

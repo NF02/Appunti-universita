@@ -60,6 +60,11 @@
 \usepackage{wasysym}
 \usepackage{chemfig}
 \usepackage[version=4]{mhchem}
+\usepackage{nicefrac}
+\usepackage{tikzorbital}
+
+% modello atomico di bohr
+\usepackage{bohr}
 
 \usepackage{showframe}
 \renewcommand\ShowFrameLinethickness{0.15pt}
@@ -68,9 +73,12 @@
 \newtheorem{defi}{Definizione}[section]
 \newtheorem{nota}{Nota}[section]
 \newtheorem{notab}{Nota bene}[section]
-\newtheorem{teo}{Teorema}[section]
+\newtheorem{tteo}{Teorema}[section]
+\newtheorem{tteor}{Teoria}[section]
 \newtheorem{oss}{Osservazione}[section]
 \newtheorem{att}{Attenzione}[section]
+\newtheorem{ess}{Esercizio}[section]
+\newtheorem{prin}{Principio}[section]
 
 % \usepackage{showkeys} %serve per mostrare le etichette "tag" o target, va tolta per la versione definitiva;
 
@@ -127,574 +135,424 @@
 %\maketitle
 \include{title/titlepage.tex}
 \tableofcontents
+\input{pag/intro.tex}
+\input{pag/stechiometria.tex}
 
-\chapter{Introduzione}
-\label{chap:introduzione}
+\chapter{Modelli atomici}
+\label{chap:modAtom}
 
-\section{Programma del corso di Chimica}
-\label{sec:chimica}
-
-\begin{itemize}
-\item Definizioni e calcoli stechiometrici
-\item La struttura dell'atomo
-\item La tavola periodica degli elementi e le proprietà periodiche
-\item Il legame cimico: teorie e tipologie. interazioni deboli. VSEPR e geometrie molecolari
-\item Leggi dei gas
-\item Termodinamica chimica
-\item Equilibri chimici: acido-base e solubilità
-\item Elettrochimica
-\item Proprietà colligative
-\end{itemize}
-
-\section{La chimica}
-\label{sec:chimdef}
-\begin{defi}
-  La chimica è la scienza che studia la composizione, la struttura e le trasformazioni della \underline{Materia}:\\
-  La \underline{Materia}
-  \begin{enumerate}
-  \item Composizione (\texttt{analisi qualitativa e quantitativa})
-  \item Struttura-proprietà, ad esempio, diamante-grafite
-  \item Modellizzazione e progettazione
-  \end{enumerate}
-  Le trasformazioni della \underline{Materia}
-  \begin{enumerate}
-  \item Corrosione, ad esempio ferro e ruggine
-  \item Combustione, ad esempio le sorgenti di energia
-  \item Sintesi, ad esempio farmaci, pigmenti, nanomateriali, polimeri, \dots
-  \end{enumerate}
-\end{defi}
-\begin{center}
-  \Tree [.Universo [.Materia Ciò\ che\ occupa\ \underline{spazio}\ e\ ha\ \underline{massa} ]
-  [.Energia Capacità\ di\ \underline{eseguire un lavoro} ] ]
-\end{center}
-Un \underline{sistema} è una porzione delimitata di spazio che rappresenta l'oggetto dello studio, mentre,
-l'\underline{ambiente} è tutto ciò che sta attorno al sistema: l'insieme di {\color{red}sistema} e
-{\color{blue}ambiente} costituisce {\color{blue}l'Universo}
-\clearpage
-
-\subsection{Gli stati della materia}
-\label{sec:statidellamateria}
-
-\begin{table}[ht!]
-  \centering
-  \begin{tabular}{lll}
-    {\color{red}Solido}&{\color{blue}Liguido}&{\color{green}Gas}\\\hline
-    Ha forma definta e volume & ha volume ma non forma & Non ha nè forma,\\
-    proprio &  propria & nè volume proprio,\\
-                       &&si espande in modo da\\
-                       && riempire il contenitore\\
-                       &&che lo contiene.\\\hline
-  \end{tabular}
-  \caption{Stati della materia}
-  \label{tab:glistatidellamateria}
-\end{table}
-
-\begin{multicols}{2}[
-  \subsection{Proprietà fisiche}
-  \label{sec:propfisiche}
-  La prioprietà che possono essere osservate e misurate {\color{red} SENZA} alterare la composizione della sostanza.
-  Ad esempio:
-  ]
-  \begin{itemize}
-\item colore;
-\item punto di fusione e di ebollizione;
-\item indice di rifrazione;
-\item densità.
-\end{itemize}
-\end{multicols}
-\subsection{Trasformazioni fisiche}
-\label{sec:trasfisiche}
-Trasformazioni che avvengono {\color{red} SENZA} alterare la composizione della sostanza, ad esempio:
-\begin{itemize}
-\item \textbf{ebollizione} di un liquido;
-\item \textbf{fusione} di un solido;
-\item \textbf{sciogliere} im solido in un liquido per ottenere una miscela omogenea (ovvero una
-  {\color{blue}soluzione})
-\end{itemize}
-
-\subsection{Trasformazioni chimiche}
-\label{sec:trasformazionichimiche}
-
-Trasformazioni che avvengono ALTERANDO la natura della sostanze coivolte e portando alla formazione di nuovi compoti,
-ad esempio: La combustione del metano.
-\begin{center}
-  Si parte da {\color{blue}metano} e {\color{blue}ossigeno} e si arriva a {\color{red}biossido di carbonio} e
-  {\color{red}acqua}:
-\end{center}
-\begin{equation}
-  \label{eq:esreagprod}
-  \underbrace{{\color{blue}CH_4}+2{\color{blue}O_2}}_{\color{blue}reagente} \to \underbrace{{\color{red}CO_2}+2
-  {\color{red}H_2O}}_{\color{red}prodotto}
-\end{equation}
-Al termine della trasformazione abbamo sostanze \textbf{diverse} da quelle di partenza.
-
-\subsection{Miscela}
-\label{sec:misc}
-
-Combinazione di due o più sostanze pure
+\section{Teoria atomica di Dalton}
+\label{sec:teoriaatomdidalton}
+\begin{tteor}
+  Atomi costituiti da una nuola di carica positiva neutralizzata da elettroni in un modello a panettone
+\end{tteor}
 \begin{figure}[ht!]
   \centering
-  \resizebox{5.5in}{!}{\input{img/miscela.tikz}}
-  \caption{Miscele}
-  \label{fig:miscela}
+  \input{img/dalton.tikz}
+  \caption{Modello atomico di Dalton}
+  \label{fig:modatomDalton}
 \end{figure}
-\section{La tavola periodica}
-\label{sec:tavper}
-\begin{defi}
-  La tavola periodica degli elementi (o semplicemente tavola periodica) è uno schema che copnsente di ordinare
-  gli elementi chimici sulla base loro numero atomico Z e del numero di elettroni presenti negli orbitali
-  atomici s, p, d, f. Essa fu creata dal chimico e docente russo Dmitrij Ivanovič Mendeleev che pensò a questa
-  soluzione per far studiare più comodamente i propri studenti, in un primo momento essa non fu ben vista
-  dalla comunità scientifica ma poi una volta che si vide la comodità del suddetto sistema di rappresentazione
-  vedendo pure il fatto che si potevano prevedere teorici elementi che andranno a ricoprire degli spazzi vuoti
-  fu molto utile, ovviamente nel tempo fu modificata e stabilizzata rispetto all'originale previsto da
-  Mendeleev, non fu l'unico a pensare a questa soluzione all'epoca, infatti, in modo indipendente il chimico
-  tedesco Julius Lothar Meyer fece un qualcosa di simile.
-\end{defi}
+Sostanzialmente Dalton suppose che l'atomo fosse un modello sferico in cui la carica positiva circondava
+le carriche necative che erano presenti al suo interno esattamente come le uvette o i canditi
+all'interno di un panettno o di un Plum pudding, ovviamente questo modello agli occhi dei dati odierni
+fa un po' sorridere ma è già un punto di inizio. Non si parla ancora di orbite, di neutroni o di della
+composizione del nucleo.
+
+\section{Esperimento e modello atomico di Rutherford}
+\label{sec:rutherford}
+
+\begin{tteor}
+  Atomo nucleare costituito da un nucleo formato da protoni e neutroni circondando da un numero di
+  elettroni pari ai protoni.
+\end{tteor}
 \begin{figure}[ht!]
   \centering
-  \resizebox{5.5in}{!}{\input{img/tavPer.tikz}} 
-  \caption{Tavola periodica degli elementi}
-  \label{fig:tavper}
+  \input{img/Rutherford.tikz}
+  \caption{Modello atomico di Rutherford}
+  \label{fig:modatomRutherford}
 \end{figure}
-\begin{itemize}
-\item \underline{Elementi chimici}: sostenze pure che \underline{NON} possono essere decomposte ``separate'' in altre
-  sostenze chimiche più semplici e sono costituite da atomi tutti ``uguali''
-\item \underline{Simbolo atomico}: notazione sintetica costituita da uno o due lettere che rappresenta un determinato
-  elemento. Spesso derivano dal nome latino dell'elemento.
-\end{itemize}
-\begin{table}[ht!]
+
+\subsection{Esperimento di Rutherford}
+\label{sec:esperimentodiruth}
+L'esperimento di Rutherford sulla deviazione di particelle $\alpha$ (\ce{He2+}) da parte di sottili lamine d'oro (600nm). Lampi di luce segnalano dove le particelle alfa hanno colpito lo schermo.
+\begin{figure}[ht!]
   \centering
-  \begin{tabular}{lll}
-    \textbf{Simbolo}& \textbf{Nome} & \textbf{Etimologia nome}\\\hline
-    Na & Sodio & Lat., \textit{natrium}, soda\\\hline
-    Au & Oro & Lat., \textit{aurum}\\\hline
-    S  & Zolfo & Lat., \textit{sulphur}\\\hline
-    K  & Potassio & Ar., \textit{al-kali}\\\hline
-    Sb & Antimonio & Lat., \textit{stibium}\\\hline
-  \end{tabular}
-  \caption{Simboli atomici}
-  \label{tab:simatom}
-\end{table}
-
-\section{Composti chimici}
-\label{sec:compchim}
-
-\begin{defi}
-  I composti chimici sono delle sostanze costituite da due o più elementi\\ $(H_2O,CaCO_3,H_2SO_4)$. Può essere di
-  tipo \textbf{MOLECOLARE} (formato da molecole) o \textbf{IONICO} (costituito da ioni)
-\end{defi}
-\begin{center}
-  \Tree[.Composti [.Molecola ] [.Ioni ] ]
-\end{center}
-\begin{itemize}
-\item \underline{Molecola}: aggregato di atomi legati \texttt{covalentemente} ($H_2O,H_2,Cl_2,C_2H_5OH,\dots$)
-\item \underline{Ioni}: Elementi che hanno perso elettroni e sono quindi carichi positivamente, \textit{\color{red}cationi}\\
-  ($Li^+, Na^{2+},Al^{3+},\dots$) o acquistato elettroni e sono quindi carichi negativamente,
-  \textit{\color{blue}anioni} \\
- eglinfo -B ($Cl^{-},Br^-,O^{2-},\dots$).
-\end{itemize}
-\clearpage
-
-\subsection{Formula}
-\label{sec:form}
-
-\begin{defi}
-  La formula è un rappresentazione di una sostanza mediante gli elementi presenti, indicante il numero atomico
-  presente.
-\end{defi}
-\begin{table}[ht!]
-  \centering
-  \begin{tabular}{lll}
-    \textbf{Formula Minima}&\textbf{Formula molecolare}&\textbf{Formula di struttura} \\\hline
-    Indica gli elementi presenti & Indica gli elementi presenti & Indica anch come sono\\
-    in un composto e i rapporti tra& in un composto e il loro & legati tra loro gli atomi\\
-    questi, in termini dei più piccoli& numeri effettivi & di una molecola\\
-    numeri interi\\
-    $CH$ & $\begin{matrix}C_6H_6\\ C_2H_2\end{matrix}$& \chemfig{C(-[:0]H)(-[:90]H)(-[:180]H)(-[:270]H)}
-                                                        \chemfig{*5(=-=-=-)} \chemfig{**4(------)}\\\\\hline
-  \end{tabular}
-  \caption[formminmolstruct]{Formula minima, molecolare e di struttura}
-  \label{tab:formminmolstruct}
-\end{table}
-
-\subsection{Legge di conservazione della Massa o legge di Lavoisier}
-\label{sec:legdiconse}
-\colorbox{pink}
-{
-\begin{minipage}{.97\textwidth}
-    <<IN UNA REAZIONE CHIMICA LA MASSA NON È NÉ CREATA NÉ DISTRUTTA, ESSA SI \underline{CONSERVA}>>
-\end{minipage}
-}
+  \includegraphics{./img/espRuth.eps}
+  \caption{Illustrazione dell'esperimento di Rutherford}
+  \label{fig:espruther}
+\end{figure}\\
+Una particella in movimento ed un elettricamente carica perde incessantemente energia, questo vale
+anche per l'elettrone (${\color{red}-}$), perdendo via via energia avrebbe finito per muoversi lungo
+orbite più piccole fino a cadere sul nucleo ({\tt collassando miseramente}).
 \begin{nota}
-  Nel corso di vari esperimenti, Lavoisier dimostrò che la somma delle masse dei prodotti di una reazione chimica è
-  uguale a quella dei reagienti.
-  \begin{center}
-    \ce{2HgO} \textrightarrow \ce{2Hg}+\ce{O2}\\
-    \ce{AgNo3} + \ce{HCl} \textrightarrow \ce{HNO3}+\ce{AgCl}
-  \end{center}
+  Quello che diede l'idea a Rutherford dell'esistenza di un nucleo atomico fu proprio il fatto che
+  al alcuni raggi andavano a spattere in altri punti dello schermo fosforescente addirirettura alcuni
+  facevano un quasi angolo retto rispetto alla direzione del verso imposto da cannone ad impulsi che
+  emetteva le particelle alpha, da questo possiamo dedurre che la particella emessa sabattesse
+  fisicamente contro qualcosa e da li le prime idee di nucleo atomico. Ancora non parliamo di Neutroni,
+  quello arriverà solo qualche anno dopo con gli attuali modelli atomici.
 \end{nota}
-\begin{defi}
-  In un dato composto chimico i rapporti di massa degli elementi di cui esso è costituito sono
-  \underline{costituiti}, indipendentemente dell'origine del composto o dal modo di preparazione
-\end{defi}
-\begin{description}
-\item[\ce{NaCl} (cloruro di sodio)]
-  \begin{itemize}
-  \item Cloro 60.7\%
-  \item Sodio 39.3\%
-  \end{itemize}
-\item[100g di \ce{NaCl} contengono]
-  \begin{itemize}
-  \item $60.7g$ di Cloro
-  \item $39.3g$ di Sodio
-  \end{itemize}
-\end{description}
+\subsection{Punti critici}
+\label{sec:punticriticirutherford}
 
-\section{Teorie sull'atomo}
-\label{sec:atomo}
-\textit{Dalla fine dell'otocento si sono succedute diverse teorie sulla struttura dell'atomo inteso come
-  la parte più piccola di un elemento, il punto di non divisibilità, in cui non si può andare oltre nel separare il
-  suddetto.}
-
-\subsection{Teoria atomica di di Dalton}
-\label{sec:dalton}
-\begin{enumerate}
-\item La matieria è costituita da atomi, particelle di materia indistruttibili e indivisibili.
-\item Un elemento chimico è costituito da atomi tutti uguali tra loro. Cioè, un oggetto di rame, ad esempio,
-  è costituito da soli atomi di rame. 
-\item Elementi diversi sono costituiti da atomi diversi per volume, massa e proprietà. Ad esempio, l'idrogeno è un
-  elemento molto piccolo ed è poco elettronegativo (l’elettronegatività è la tendenza di un atomo ad acquistare
-  elettroni e quindi a caricarsi negativamente); invece l’ossigeno è molto più grande rispetto all’idrogeno ed è
-  molto elettronegativo ({\it infatti l’ossigeno è l’elemento più elettronegativo dopo il fluoro che però è molto
-    raro}).
-\item Atomi uguali o diversi possono unirsi tra loro per formare composti chimici.
-\end{enumerate}
-\newpage
-\subsection{Modello atomico di Thomson}
-\label{sec:thomson}
-\begin{defi}
-  Nel 1897 Thomson identificò gli elettroni, particelle subatomiche con carica elettrica negativa e con massa 2000
-volte più piccola della massa dell’atomo di idrogeno. La teoria atomica di Dalton, perciò, fu messa in discussione.
-Thomson propose inoltre il primo modello di atomo in cui si facesse riferimento a particelle subatomiche, ovvero più
-piccole dell’atomo.\\
-Thomson ipotizzò che l'atomo fosse una sfera carica positivamente all'interno della quale erano disposti elettroni
-che neutralizzassero la carica positiva.\\
-Il modello di Thomson rappresentò un importante passo avanti, ma non convinceva del tutto: se c’erano delle
-particelle subatomiche negative dovevano esserci anche delle subparticelle positive.
-\end{defi}
-
-\subsection{Modello atomico di Rutherford}
-\label{sec:Rutherford}
-\begin{defi}
-  Gli studi di Rutherford sull'atomo si concentravano sulle radiazioni $\alpha$ (cioè atomi di elio caricati positivamente).
-  Rutherford “bombardò” una sottilissima lamina d’oro (dello spessore di circa 200 atomi quindi 200u) con un
-  fascio di radiazioni $\alpha$, mettendo un evidenziatore dietro la lamina.\\
-  Alla prima osservazione sembrò che quasi tutte le particelle $\alpha$ attraversassero la lamina, ma osservazioni più
-  accurate dimostrarono che un numero molto piccolo veniva deviato e che un numero ancora più piccolo veniva persino
-  riflesso. Il fatto che quasi tutte le particelle attraversassero gli atomi di oro significava che non incontravano
-  ostacoli. Le uniche due possibilità erano che incontrassero o spazi vuoti o elettroni. Di contro, le particelle
-  che venivano deviate sfioravano i nuclei degli atomi e le particelle che venivano riflesse si scontravano con i
-  nuclei degli atomi.\\
-  Rutherford immaginò che l’atomo fosse come un piccolo sistema solare, un atomo planetario con un nucleo come sole
-  ed elettroni come pianeti, dove ogni elettrone si muoveva lungo una precisa orbita.\\
-  Ma De Broglie avanzò l’ipotesi che se l’elettrone si muoveva lungo una precisa orbita si poteva calcolare sia la
-  velocità che lo spazio percorso.\\
-  L’elettrone poteva quindi essere considerato come un’onda elettromagnetica. L’idea di elettrone onda fu accettata,
-  ma a questo punto non si riusciva più a localizzarlo. Con il famoso Principio di Indeterminazione di Heisenberg,
-  con cui dichiarava l’impossibilità di conoscere in pratica le caratteristiche del movimento dell’elettrone, si
-  risolse il problema.
-\end{defi}
-
-\subsection{Modello atomico di Bohr}
-\label{sec:bohr}
-\begin{defi}
-  I fisici del tempo di Eistein contrastavano molto Rutherford perché l’elettrone girando velocemente perde energia e quindi alla fine la sua carica elettrica doveva annullarsi. Inoltre sostenevano che la struttura dell’atomo non era planetaria. Ma Bohr (contemporaneo di Einstein), grazie l’uso degli spettri), ipotizzò un’altra struttura atomica in contrasto con quella di Rutherford.\\
-Se si prende la luce bianca del sole e la si fa passare attraverso un prisma di vetro, si scompone e si può notare su una lastra fotografica: a questo punto si vede la scomposizione della luce bianca nei suoi colori. Ma Bohr studiò in particolare lo spettro dell’H2. Fu portato all’incandescenza e la luce fatta passare attraverso un prisma. Si notarono cinque bande di colori diversi con lo sfondo nero.\\
-Bohr accettò l’ipotesi di Rutherford che l’atomo fosse formato da un nucleo (con all’interno i nucleoni) e da elettroni che si trovavano su livelli energetici. Questi poi furono chiamati orbite ma dato che l’elettrone (che è sia onda che particella) si muove intorno al nucleo con un moto impossibile da definire si deve parlare di possibilità, cioè di orbitale.\\
-Secondo Bohr i livelli energetici sono quantizzati, cioè ogni livello energetico ha una quantità di energia diversa, per esempio la quantità di energia n=1 è maggiore di n=2. A mano a mano che ci si allontana dal nucleo, quindi, la quantita di energia diminuisce. Questa quantità di energia è detta Quanto. Precisamente il quanto di energia è definito come l’energia necessaria all’elettrone per far passare l’elettrone stesso da un livello energetico ad un altro. Se invece vogliamo far passare un elettrone da n=3 a n=1 bisogna togliere energia.\\
-Bohr calcolò anche il raggio dell’orbità: r=53n(al quadrato) pm
-\end{defi}
-
-\section{L'atomo}
-\label{sec:l'atomo}
-\textit{L'atomo è la particella più piccola di un elemento che possiade tutte le caratteristiche chimiche
-  dell'elemento. l'atomo è prevalentemente spazio vuoto (99.999\dots\%)}
-\begin{tasks}
-  \task protoni e neutroni sono nel nucleo (99.99\dots\% della massa totale dell'atomo)
-  \task il numero di elettroni è uguale al numero di protoni
-  \task gli elementi occupano lo spazio attorno al nucleo.
-  \task è estremamemnte piccolo\dots Il numero di atomi presenti in un cucchiaino di acqua è 3 volte il numero di
-  cucchiaini di acqua nell'Oceano Atlantico.
-\end{tasks}
-
-\subsection{Composizione atomica}
-\label{sec:compatom}
-\begin{table}[!ht]
-  \centering
-  \begin{tabular}{lclll}
-    &Carica relativa&Carica assoluta&Massa assoluta & Massa relatva\\\hline
-    \textbf{Protoni} & +1 & $+1.602\cdot 10^{-19}C$ & $1.673\cdot 10^{-27}Kg$ & 1.007 u.m.a\\\hline
-    \textbf{Elettroni} & -1  & $-1.602\cdot 10^{-19}C$ & $9.109\cdot 10^{-31}Kg$ & 0.0005 u.m.a*\\\hline
-    \textbf{Neutroni} & \multicolumn{2}{c}{\color{red}nessuna carica elettrica} & $1.675\cdots10^{-27} Kg$
-                                    & 1.009 u.m.a.\\
-    \hline
-  \end{tabular}
-  \caption{Composizione atomica}
-  \label{tab:compatom}
-\end{table}
-*u.m.a. = unità di massa atomica; 1 u.m.a. = $1.6605665\cdot 10^{-24}g$
-
-\subsection{Numero atomico, Z}
-\label{sec:numatom}
-
-Tutti gli \underline{\color{red} atomi} dello stesso \underline{\color{blue}elemento} hanno lo stesso numero di
-{\color{green} protoni} nel \underline{nucleo}.
-\begin{center}
-  Il numero di protoni è chiamato: \underline{\color{green}NUMERO ATOMICO}\\
-  Si indica con la lettera {\color{green}Z} maiuscola
-\end{center}
-Poichè un \textbf{atomo} è \underline{elettricamente neutrale}, il numero di {\color{green}protoni} è uguale
-al numero di {\color{red}elettroni} che circondano il \textit{nucleo}.
-\begin{center}
-  \colorbox{green}{$N^o$ PROTONI} = \colorbox{red}{$N^o$ ELETTRONI}
-\end{center}
-
-\subsection{Numero di Massa, A}
-\label{sec:num.massa,a}
-
-Il \textbf{numero di massa} è la somma dei protoni e dei neutroni presenti nel nucleo dell'atomo.
-\begin{center}
-  {\color{blue}Numero di Massa (A)} = \textit{\color{red}$n^o$ protoni} + \textit{\color{green}$n^o$ neutroni} 
-\end{center}
-Un atomo di boro può avere: ${\color{blue}A} = 5{\color{red}p} +5{\color{green}n}=10uma$.
+Se gli elettroni sono stazionari l'attrazione elettrostatica dovrebbe portarli sul nucleo, se si
+muovono in un'orbitga attorno al nucleo dsi instaura un dipolo oscillante che dissipa energia sotto
+forma di onda elettromagnetica con conseguente coduta dell'elettrone sul nucleo. In somma un modello
+che se fosse stato reale l'atomo non sarebbe stabile, infatti, questa teoria non è stata ritenuta valida
+allungo, ma il modello inizia ad avvicinarsi all'idea dellatomo odierno con un nucleo e gli elettroni
+che gira attorno. Questo fenomeno veniva anche definito <<Death-spiral of the electron>>
 \begin{figure}[ht!]
   \centering
-  \resizebox{3.5in}{!}{\input{img/esmas.tikz}} 
-  \caption{Esempio di numero di massa e di numero atomico}
-  \label{fig:es}
+  \includegraphics[width=5cm]{img/instmodRuth.eps}
+  \caption[limModAtom]{Limiti del modello atomico di Rutherford}
+  \label{fig:limModAtom}
 \end{figure}
-
-\section{Isotopi}
-\label{sec:isotopi}
-Atomi delo stesso elemento (stessa {\color{red}Z}) ma aventi diverso numero di massa ({\color{blue}A})
 \clearpage
-\begin{table}[th!]
-  \centering
-  \begin{tabular}{ccc}
-    \ce{^{6}_3 Li}&&\ce{^{7}_3Li}\\\hline
-    Litio & Nome & litio \\\hline
-    Li & Simbolo & Li\\\hline
-    3 & Protoni & 3\\\hline
-    3 & Neutroni & 4\\\hline
-    3 & Elettroni & 3\\\hline
-    3 & Numero Atomico & 3\\\hline
-    6 & Numero di massa & 7\\\hline
-  \end{tabular}
-  \caption{Esempio della differenza di Isotopi tra il liteo \ce{^{6}_3 Li} e il \ce{^{7}_3Li}}
-  \label{tab:esIso}
-\end{table}
+\section{Onda}
+\label{sec:onde}
+\begin{defi}
+  Un’onda è una perturbazione che nasce da una sorgente e si propaga nel TEMPO e nello SPAZIO,
+  trasportando ENERGIA.
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics[width=6cm]{img/segnali.eps}
+    \caption{Esempio onde}
+    \label{fig:esonde}
+  \end{figure}\\
+  Il $\lambda$ è la distanza tra due massimi o due minimi successivi. 
+\end{defi}
+
+\subsection{Onde elettromagnetiche}
+\label{sec:ondeElettro}
+
+\begin{defi}
+  Una radiazione elettromagnetica può essere considerata com un campo elettromagnetico oscillante che
+  si propaga nello spazio. {\color{red}La luce è una radiazione elettromagnetica, e ha quindi una natura
+    ondulatoria.}
+\begin{figure}[th!]
+    \centering
+    \input{img/ondaelect.tikz}
+    \caption{Onde elettromagnetiche}
+    \label{fig:ondelect}
+\end{figure}
+\begin{center}
+  \begin{minipage}{.5\linewidth}
+    \[
+      c = \frac{E}{B}
+    \]
+    \begin{tabular}{r@{${}={}$}p{.8\linewidth}}
+      $E$ & ampiezza del campo elettrico \\
+      $B$ & ampiezza del campo magnetico (\texttt{valori istantanei}) \\
+      $c$ & velocità della luce ($3\times10^8\mathrm{m/s}$) \\
+    \end{tabular}
+  \end{minipage}%
+  \begin{minipage}{.5\linewidth}
+    \[
+      c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}}
+    \]
+    \begin{tabular}{r@{${}={}$}p{.8\linewidth}}
+      $\mu_0$ & permeabilità magnetica nel vuoto, $\mu_0 = 1.3\times10^{-6}\,\mathrm{N/A^2}$ \\
+      $\varepsilon_0$ & permeabilità elettrica nel vuoto, $\varepsilon_0 = 8.9\times10^{-12}\,\mathrm{C^2/N m^2}$ \\
+    \end{tabular}
+  \end{minipage}
+\end{center}
+\end{defi}
+\begin{nota}
+  La luce consiste in un campo elettrico, un campo magnetico oscillanti e orientati perpendicolarmente
+  tra loro, ma anche perpendicolarmente alla alla direzionedi propagazione del raggio.
+\end{nota}
+
+\subsection{Velocità di una radiazione elettromagnetica}
+\label{sec:veldiunaradelect}
+
+Nel vuoto una radiazione elettromagnetica si propaga alla velocità della luce\footnote{Essendo la luce
+  stessa facente parte della suddetta catagoria}. La formula che va a definire tale aspetto è la seguente:
+\begin{equation}
+  \label{eq:veldiunaradelect}
+  \lambda\cdot v=C
+\end{equation}
+Di cui:
+\begin{description}
+\item[$\lambda$ =] La lunghezza d'onda (km, m, cm, \ce{\mu m}, nm, Å)\footnote{\ce{\mu=10^{-6}m}; \ce{nm=10^{-9}m}, Å=\ce{10^{-10}m}}
+\item[v =] La frequenza (cicli per sec = Hertz o Hz)
+\item[C =] Una costante che nel vuoto è pari a $3.00\times 10^8 m/sec$
+\end{description}
+\clearpage
 \begin{oss}
-  Gli {\color{orange}isotopi} di un elemento, sebbene abbiamo \underline{masse differenti}, non differiscono nel
-  \textbf{comportamento chimico} perché hanno lo stesso numero di {\color{green}protoni} (numero atomico) e quindi
-  lo stesso numero di {\color{red}elettroni}.
+  Da questo possiamo dedurre che \ce{\lambda} e v risultano essere inversamente proporzionali, infatti,
+  più aumenta una l'altra tende a diminuire.
+\end{oss}
+\begin{nota}
+  Sul sito di Nikon è disponibile una dimostrazione per mostrare le proporzioni partendo da elettrone
+  ad una galassia, il suo nome è Nikon universcale, è un sito ben fatto e richiede JS (JavaScrit)
+  attivo nel proprio browser, per accedere alla dimostrazione clicca
+  \href{https://www.nikon.com/company/corporate/sp/universcale/}{qui}\footnote{https://www.nikon.com/company/corporate/sp/universcale/}.
+\end{nota}
+
+\subsection{Effetto fotoelettrico}
+\label{sec:effettofotoelettrico}
+
+\begin{defi}
+  L'effetto fotoelettrico è quel fenomeno che consiste nell'emissione, da parte di un metallo, di
+  elettroni quando viene investito da radiazioni elettromagnetica avente una determinata energia.
+  Chi scoprì questo particolare fenomeno fu il fisico tedesco Heinrich Rudolf Hertz.\\
+  Gli elettroni espulsi nel fenomeno dell'effetto fotoelettrico sono normalmente trattenuti all'interno
+  del metallo da una certa energia e per espellerla all'esterno, occorre, naturalmente, invstire il
+  metallo con una radiazione elettromagnetica avente energia \ce{E=h.v} (in cui \ce{h} sta è la costante di Plank  almeno uguale ell'energina che vale $6.6262\cdot 10^{-34}J\cdot s$)
+  li trattiene ``\ce{v=v0}''\footnote{In cui \ce{v0} è la frequenza critica, ed è caratteristica di
+    ogni metallo}.
+  \begin{description}
+  \item[$v<v_0$] Una luce con una frequenza inferiore a \ce{v0}, anche se molto intensa non
+    produrrà il suddetto fenomeno, perché la frequenza non è sufficientemente alta, quindi l'elettricità
+    resterà intrappolata nel metallo.
+  \item[$v>v_0$] Una luce di frequanza superiore a \ce{v0} avrà il seguente effetto, gli elettroni
+    che vengono emessi mostreranno un energia cinetica tanto la differenza di frequenza tra \ce{v0} e
+    v, più sarà grande maggiore sarà l'energia cinetica.
+  \end{description}
+  Per accedere al simulatore basta andare nel sito del \href{https://phet.colorado.edu/sims/cheerpj/photoelectric/latest/photoelectric.html?simulation=photoelectric&locale=it}{PhET}\footnote{https://phet.colorado.edu/sims/cheerpj/photoelectric/latest/photoelectric.html?simulation=photoelectric\&locale=it}, in
+  cui potrete fare dei test cambiando il tipo di metallo, la frequenza e l'intensità della luce.
+\end{defi}
+\begin{nota}
+  La scoperta dell'effetto fotoelettrico, influì nello sviluppo delle Teorie di Einstein a conferma
+  delle sue ipotesi che la luce potesse manifestare oltre che una natura ondulatoria, anche una natura
+  corpuscolare. Infatti, solo particelle cariche di sufficiente energia sarebbero in grado di spostare
+  alre particelle (\texttt{elettroni del metallo}) e di cui impartire loro una accelerazione tanto
+  maggiore quanto era la frequenza che delle luce impegnata.
+\end{nota}
+Ma cosa succede davvero quando $v<v_0$ e si aumenta l'intensità luminosa? La risposta è semplice,
+in quel caso con l'aumento della intensità luminosa si va ad aumentare il numero dei fotoni incidenti
+ma cianscuno di essi non ha l'energia sufficenter per estrarre gli elettroni.
+
+\subsection{Spettri di emissione di atomi}
+\label{sec:spemdiatom}
+
+\begin{defi}
+  Gli atomi \texttt{eccitati} emettono radiazioni solo di solo di certe lunghezze d'onda. La lunghezza d'onda
+  della luce emessa varia al variare dall'elemento.
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics[width=14cm]{img/spettriColatom.eps}
+    \caption{Spettri colori emessi dal \ce{H2}}
+    \label{fig:h2spttricolor}
+  \end{figure}
+\end{defi}
+
+\section{Spettri Atomici e Teoria di Bohr}
+\label{sec:atomodiBohr}
+\begin{defi}
+  Gli spettri atomici a righe suggeriscono l'esistenza di livelli energetici definiti. Bohr (1885-1962) propose un modello atomico capace di interpretare con semplicità gli spettri atomici dell'idrogeno.
+  \begin{figure*}[ht!]
+    \centering  
+    \bohr[2]{1}{He}
+    \caption{Modello atomico di Bohr}
+    \label{fig:Modatombohr}
+  \end{figure*}
+
+  L'atomo è costituito da un nucleo centrale e l'elettrone gli ruota attorno come un pianeta attorno
+  al sole. L'\ce{e-} può occupare solo certe ORBITE chiamate STATI STAZIONARI, dove l'\ce{e-} si trova in STATI
+  QUANTIZZATI DI ENERGIA.
+  \begin{equation}
+    \label{eq:energiastato}
+    \text{Energia dello stato } = -\frac{R_H}{n^2}
+  \end{equation}
+  In cui:
+  \begin{description}
+  \item[\ce{R_H} =] $109677.581cm^{-1}$ (costante di Rydberg)
+  \item[n =] 1,2,3,4,5,\dots NUMERO QUANTICO PRINCIPALE
+  \end{description}
+  Se gli \underline{elettroni} si trovano in stati energetici quantizzati, la transizione tra uno stato stazionario
+  iniziale e quallo finale coinvolge quantità di energia. L'elettrone può passare dallo stato iniziale a quello
+  finale {\color{blue}acquistando l'energia necessaria tramite l'assorbimento di un fotone o rilascandone per
+    tornare ad un orbitale inferiore}\footnote{Sostanzialmente l'elettrone più energia avrà più sarà lontano al
+    nucleo, meno energia avrà più starà vicino}.
+  Per calcolare l'energia del fotone assorbito bisogna utilizzare la seguente formula:
+  \begin{equation}
+    \label{eq:energiafotoneassorbito}
+    E_f-E_i=hv
+  \end{equation}
+  Di cui h è la Costante di Plank. 
+\end{defi}
+\begin{nota}
+  La teoria, per la quale Bohr ricevette il Premio Nobel nel 1922, rappresenta la rottura con la fisica classica,
+  introduce i concetti di numero quantico e stato stazionario ed è in grado di spiegare gli spettri dell’H.
+\end{nota}
+\begin{oss}
+  La quantizzazione vene introdotta arbitrariamente; gli spettri degli atomi \textbf{non-idrogenoidi} non sono
+  bene interpretati; posizione ed energia dell'elettrone vengono assegnati contemporaneamente; l'origine del legame
+  chimico non viene spiegata. Da questo si può dedurre che il modello ipotizzato da Bohr è incompleto e non
+  funzionale visto che butta in mezzo alcuni concetti che non sono validi per tutti gli elementi e quindi
+  irrealistico.
 \end{oss}
 
-\subsection{Isotopi dell'idrogeno}
-\label{sec:IsoIdrogen}
-
-L'idrogeno (\ce{H}) è formato da tre isotopi che possiedono ciascuno un {\color{red}protone} ma differisono per il
-numero di \textbf{\color{gray}neutroni}
-\begin{table}[th!]
-  \centering
-  \begin{tabular}{ccc}
-    \ce{^1_1H}&\ce{^2_1H}&\ce{^3_1H}\\\hline
-    Idrogeno & deuterio & trizio\\\hline
-    Protio & Idrogeno pesante &\\\hline
-  \end{tabular}
-  \caption{Isotopi dell'idrogeno}
-  \label{tab:isotopidro}
-\end{table}
-\begin{oss}
-  Nel caso del trizio è radioattivo
-\end{oss}
-
-\subsection{Isotopi del carbonio}
-\label{sec:isocarbon}
-
-Il carbonio è formato da tre isotopi che possiedono ciascuno sei {\color{red}protoni} ma differiscono per il numero
-di {\color{gray}neutroni}.
-\begin{table}[th!]
-  \centering
-  \begin{tabular}{ccc}
-    \ce{^{12}_6C}&\ce{^{13}_6C}&\ce{^{14}_6C}\\\hline
-    carbonio-12 & carbonio-13 & carbonio-14\\\hline
-    6 protoni & 6 protoni & 6 protoni\\
-    6 neutroni & 7 neutroni & 8 neutroni\\\hline
-    (98.98\%) & (1.01\%) & ($1/{10^{12}}$ atomi di C)\\
-    && Radiattivo\\\hline
-  \end{tabular}
-  \caption{isotipi del carbonio}
-  \label{tab:isocarbon}
-\end{table}
-
-Il \ce{^{14}_6C} è radeattivo (instabile) con un tempo di dimezzamento di 5700 anni.Lo si usa per datare i reperti
-archeologici.\\
-Come conseguenza dell'esistenza degli isotopi, la massa di un insieme di atomi ha un valore medio.
-\begin{center}
-  \colorbox{green}{Massa Media} = \colorbox{red}{Massa Atomica}
-\end{center}
-Ad esempio, Il Boro è 20\% \ce{^10B} e 80\% \ce{^11B} ha una abbondanza terrestre pari all'80\%.
-\section{Massa atomica}
-\label{sec:massatom}
-
-\begin{itemize}
-\item Determinata sperimentalmente risulta inferiore rispetto alla somma dei costituenti. Il ``difetto di massa''
-  è dovuto all'energia che si sviluppa quanto si formano i nuclei.
-\item La massa degli atomi (\ce{10^{-24}-10^{-22} g}) è troppo piccola per essere espressa in kg o g. Si ricorre
-  a una massa relativa.
-\item Definisce la massa di un elemento rispetto a unatomo di un altro elemento.
-\item Ad esempio, un atomo di \ce{O} è circa 16 volte più pesante di una atomo di \ce{H}.
-\end{itemize}
-\begin{itemize}
-\item Occorre definire un elemento come standard rispotto al quale vengono misurati tutti gli altri.
-\item Per convenzione la massa del \ce{^12C} è stata posta esattamente uguale a 12 u.m.a.
-\item Perciò un u.m.a. è uguale a $\frac{1}{12}$ della massa del \ce{^12C}
-\end{itemize}
-
-\section{Come contare gli atomi?}
-\label{sec:contatomi}
-
-Il carbonio brucia all'aria \ce{C_{(s)} + O_{(g)}\to CO_{2(g)}}
-\begin{center}
-  {\color{red}1} atomo \ce{C} + {\color{red}1} molecala \ce{O2} producono {\color{red}1} molecola \ce{CO2}\\ 
-  {\color{red}100} atomo \ce{C} + {\color{red}100} molecala \ce{O2} \textrightarrow{} {\color{red}100} molecola
-  \ce{CO2}\\ 
-  {\color{red}2000} atomo \ce{C} + {\color{red}2000} molecala \ce{O2} \textrightarrow{} {\color{red}2000} molecola
-  \ce{CO2}\\
-  \dots
-\end{center}
-\begin{att}
-  Questi numeri corrispondono alle quantità in peso estremamaente ridotte, non utilizzabili in laboratorio.
-\end{att}
-{\color{red} Si introduce una ``unità di misura'' conveniente che permette di utilizzare pesi convenienti nella
-  pratica di laboratorio:}
-\begin{center}
-  \ce{N atomi C + N molecole O2 \to N molecole CO2}
-\end{center}
-
-\section{Macroscopico e Microscopico}
-\label{sec:macroemicro}
-
-\begin{description}
-\item[Macroscopico] tutto ciò che si può conoscere da una diretta osservazione delle proprietà fisiche delle materie
-  e dele sue trasformazioni.
-\item[Microscopico] Il livello atomico, costituito da atomi e molecole, così piccole da non essere visibile ad
-  occhio nudo o da strumenti di ingrandimento non elettronici.
-\end{description}
-\colorbox{pink}
-{
-\begin{minipage}{.97\textwidth}
-  La \textbf{MOLE} ci permette di collegarfe il livello microscopico con il livello macroscopico, in cui abbiamo a
-  che fare con la quantità di sostanza che possono essere pesata e maneggiate.
-\end{minipage}
-}
-
-\subsection{La mole}
-\label{sec:lamole}
-Unità per la quantità di materia
-\begin{itemize}
-\item 1 mole (mol) di qualsiasi sostanza contiene un numero di particelle (atomi, molecole, ioni, elettroni,\dots)
-  pari al numero di Avogadro (\ce{N_A=6.022 x 10^{23}})\footnote{Una mole è quella quantità di ``qualcosa'' che
-    corrisponde a 602.214.179.000.000.000.000.000 unità}.
-\item 1 mole è la quantità di sostanza che contiene tante particelle (atomi, molecole) quante sono contenute in 12.0g
-  di \ce{^12C}.
-\end{itemize}
-\begin{notab}
-  se si prendesse un numero di palline da ping-pong pari al numero di Avogadro, e le si disponesse in modo omogeneo
-  sulla superficie terrestre, si raggiungerebbe un altezza di 50 chilometri, ovvero più di 6 volte l'altezza
-  dell'Everest.
-\end{notab}
-\clearpage
-\begin{figure}[ht!]
-  \centering
-  \resizebox{3.5in}{!}{\input{img/esmastavp.tikz}} 
-  \caption{Esempio di massa Molare}
-  \label{fig:esmol}
-\end{figure}
-
-Le {\color{red}formule chimiche} sono scritture simboliche che contengono tutta l'informazione
-{\color{blue}qualitativa} (quali tipi di atomo) e {\color{purple}quantitativo} (quanti atomi) necessaria a
-descrivere la composizione atomca della sostanza.
-\begin{center}
-  \Tree[.\ce{CO2} [.Visione\ molecolare ] [.Visione\ molare ] ]
-\end{center}
-\begin{description}
-\item[Visione Molecolare] Una molecola (44.01 uma) contiene:\\
-  1 atomo \ce{C} (12.01 uma)\\
-  2 atomo \ce{O} ($2\times 16.00=32.00uma$)
-\item[Visione Molare] 1 mol di molecola (44.01g) contiene:\\
-  1 mol di atomi \ce{C} (12.01g)\\
-  2 mol di atomi \ce{O} ($2\times 16.00g=32.00g$)
-\end{description}
-
-\section{Esercizi sul calcolo della massa molare e numero di moli}
-\label{sec:esMolEnumDiMol}
-
-\subsection{Esercizio 1}
-\label{sec:esMolEnumDiMol1}
-
-Calcolare la massa molare dell'acido acetico sapendo che ha formula minima \ce{CH2O} e che il numero di atomi di
-ossigeno presenti per molecole è uguale a 2.
-\begin{center}
-  \textit{masse molari atomiche: $H=1.01g\cdot mol^{-1};C=12.01g\cdot mol^{-1};O=16.00g\cdot mol^{-1}$}
-\end{center}
-\begin{tasks}
-  \task Calcolare la formula molecolare, considerando che ci sono 2 atomi di ossigeno (\ce{O}) per molecola, la
-  formula molecolare si ricava moltiplicando per 2 i coefficienti di quella minima.
-  \begin{center}
-    \ce{(CH2O) \cdot 2 \to C2H4O2}
-  \end{center}
-  \task Calcoliamo il contributo di ciascun elemento:
+\section{Relazione di De Broglie}
+\label{sec:deBroglie}
+Nel 1924 De Broglie (1892-1987) avanzò l'ipotesi secondo la quale a ogni oggetto in movimento può essere associata
+una lunghezza d'onda, secondo l'equazione:
+\begin{eqnarray}
+  \label{eq:deBroglie}
+  \lambda = \frac{h}{mv} & v=\text{Velocità dell'oggetto}
+\end{eqnarray}
+Per qun oggetto macroscopitco la lunghezza  d'onda associata è talmente piccola da non permettere di mettere in
+evidenzia le proprietà ondulatorie dell'oggetto.\\
+Ora, affronteremo due esercizi per comprendere meglio questo concetto che altrimenti potrebbe non essere molto
+chiaro.
+\begin{ess}
+  Prendiamo un pallona da calcio che a una massa (m) di 0.5kg e una velocità (v) di $30\nicefrac{m}{s}$ se andiamo a
+  calcolare la lunghezza d'onda otterremo il seguente risultato:
   \begin{eqnarray*}
-    Carbonio=2mol\cdot 12.01\frac{g}{mol}=24.02g;\\
-    Idrogeno=4mol\cdot 16.00\frac{g}{mol}=4.04g;\\
-    Ossigeno=2mol\cdot 16.00\frac{g}{mol}=32.00g
+    \lambda=\frac{h}{mv} = \frac{6.62\times 10^{-34}Js}{0.5kg\times 30m s^{-1}}=\frac{6.62\times 10^{-34}kgm^2s^2s}{0.5kg\times 30m s^{-1}}=4.4\times 10^{-35}m
   \end{eqnarray*}
-  \task Calcoliamo il contributo di ciascun elemento:
-  \begin{center}
-    $MM_{Acido acetico}=(24.02g+4.04g+32.00g)\cdot mol^{-1}=60.06g\cdot mol^{-1}$
-  \end{center}
-\end{tasks}
-\clearpage
-\subsubsection{Risultato}
-\label{sec:esMolEnumDiMolris1}
+  quindi il risultato finale è che la lunghezza d'onda è pari a $4.4\times 10^{-35}$m
+\end{ess}
+Mentre, se andiamo a prendere un esempio microscopico il risultato è il seguente:
+\begin{ess}
+  Prendiamo un elettrone di massa (m) di $9\times 10^{-31}kg$ e una velocità di $2\times 10^{6}m/s$ se andiamo a
+  calcolare la lunghezza d'onda otterremo il seguente risultato:
+  \begin{eqnarray*}
+    \lambda = \frac{h}{mv} = \frac{6.62\times 10^{-34}Js}{9\times 10^{-31}kg\times 2\times 10^{6}m/s}=\frac{6.62\times 10^{-34}kgm^2s^2s}{9\times 10^{-31}kg\times 2\times 10^{6}m/s}=3.68\times 10^{-10}m
+  \end{eqnarray*}
+  quindi il risultato finale è che la lunghezza d'onda è pari a $3.68\times 10^{-10}m$
+\end{ess}
+
+\subsection{Dualismo Onda-particella}
+\label{sec:dualismoOnda-part}
+\begin{defi}
+  In fisica, per dualismo onda-particella si definisce la duplice natura, sia corpuscolare sia ondulatoria, del
+  comportamento della materia e delle radiazione elettromagnetica. Quest'idea nella fisica dei quanti inizia nel
+  1900 con lo studio dello spettro della radiazione di compo nero di Plank da cui si ricaverà la costante omonima
+  $h=6.62\times 10^{-34}$, per poi essere succeduto degli studi di Einstein (1905-1909) da cui si otterrà la formula
+  per ricavare l'energia $E=hv$ e nello studio sul dualismo onda-particella anche la variazione $\sigma^2(\bar{n})$
+  che mostrava due termini, una lineare e uno quadratico\footnote{Quadratico = un numero elevato 2} un $\bar{n}$,
+  numero medio di quanti d'energia a frequanza $v$ da attribuire a ciascun risonatore responsabile dell'emissione
+  o assorbimento dei radiazione.
+  \begin{equation}
+    \label{eq:numeromediodiquanti}
+    \sigma^2(\bar{n})=\bar{n}+\bar{n}^2
+  \end{equation}
+  Questa caratteristica apparve subito sconcertante perch era noto che i sistemi di particelle hanno una dipendeza
+  lineare in $\bar{n}$ della varianza:
+  \begin{equation}
+    \label{eq:rapportodipendenteadn}
+    \sigma^2(\bar{n})=\bar{n}
+  \end{equation}
+  mentre quelli formati da onde mostrano una dipendenza quadratica:
+  \begin{equation}
+    \label{eq:ondedipendenzaquadratica}
+    \sigma^2(\bar{n})=\bar{n}^2
+  \end{equation}
+  Poi nel 1924 troviamo la Relazione di De Broglie (\ref{sec:deBroglie}).
+\end{defi}
+
+\section{Principio di Indeterminazone di Heisenberg}
+\label{sec:heisenberg}
+\begin{defi}
+  Il dualismo onda-materia si manifesta a livello microscopico:
+  \begin{equation}
+    \label{eq:dualismoondamateria}
+    \Delta x \cdot \Delta (m\cdot v)\geq \frac{h}{4\pi}
+  \end{equation}
+  Di cui $\Delta$ indica l'errore (l'incertezza) della misura.
+\end{defi}
+\begin{prin}
+  ``La posizione ed il momento \ce{(m.v)} di un elettrone non possono essere misurati {\color{red}simultaneamente}
+  con assoluta accuratezza''
+  \begin{enumerate}
+  \item È una conseguenza della natura ondulatoria delle particelle microscopiche.
+  \item Non è possibile descrivere un'orbita dell'elettrone intorno al nucleo.
+  \end{enumerate}
+\end{prin}
+Anche in questo caso situazione sarà più chiara se andiamo a svolgere due esercizi prendendo un oggetto macroscopitco
+e uno microscopico.
+\begin{ess}
+  Prendiamo un a sferetta di pari a $m=10^{-3}$ e di $g=10^{-6}kg$:
+  \begin{equation*}
+    \Delta x \Delta v_x \cong \frac{6.62\times 10^{-34}J\cdot s}{10^{-6}kg}\cong 6.62\times 10^{-28}m^2/s
+  \end{equation*}
+  si prenda $\Delta x = 10^{-12}m$, risulta $\Delta v_x= 6.62\times 10^{-16}m/s$
+\end{ess}
+\begin{ess}
+  Prendiamo un elettrone con un $m=10^{-27}$ e un g di $10^{-30}kg$
+  \begin{equation*}
+    \Delta x \Delta v_x\cong \frac{6.62\times 10^{-34}J\cdot s}{10^{-30}kg}\cong 6.62\times 10^{-4}m^2/s
+  \end{equation*}
+  si prende $\Delta x = 10^{-12}m$, risulta $\Delta v_x= 6.62\times 10^8m/s$
+\end{ess}
+
+\section{Equazione d'onda (1926)}
+\label{sec:equazionedonda}
+\begin{defi}
+  L'equazione d'onda:
+  \begin{equation*}
+    \frac{\hbar^2}{2m}\nabla^2\psi_n+(E-V) \psi_n=0
+  \end{equation*}
+  proposta da Schroedinger per descrivere il comportamento di un elettrone sottoposto all'azione del nucleo si basa
+  sul:
+  \begin{description}
+  \item[1)] carattere ondulatorio dell'elettrone
+  \item[2)] carattere probabilistico della conoscenza
+  \item[\ce{\psi} =] funziona d'onda deve essere \textbf{continua}, da un \textbf{solo valore, finita}.
+  \end{description}
+  Funzione soluzione dell'equazione d'onda, che permette di calcolare l'Energia
+  \begin{itemize}
+  \item È funzione della distanza e di due angoli.
+  \item Ad ogni orbitale, caratterizzato da tre \textbf{numeri quantici n, l, m,} corrisponde un valore di energia
+  \item come ogni funzione d'onda l'orbitale presenta nodi subisce conseguente combiamento di fase
+  \item \textbf{NON} descrive la posizione esatta dell'elettrone
+  \item \textbf{Il significato fisico è legato a \ce{\Psi2}} che è \textbf{proporzionale alla probabilità} di trovare
+    un elettrone in un determinato punbto.
+  \end{itemize}
+\end{defi}
+
+\section{I numeri quantici}
+\label{sec:numQuant}
 
 \begin{table}[ht!]
   \centering
-  \begin{tabular}{lc}
-    Massa molare & $60.06g\cdot mol^{-1}$\\\hline
-    Massa di una molecola & $60.60 u.m.a.$\\\hline
+  \begin{tabular}{lll}
+    Simbolo&Valore&Descrizione\\\hline
+    n (principale) & 1,2,3,\dots & Dimensione orbitale ed energia \ce{E=-C/n^2} (Guscio)\\\hline
+    l (angolare)   & 0,1,2,\dots,n-1 & Forma orbitale o tipo (Sottoguscio)\\\hline
+    \ce{m_l} (magnetico)& -l,0,+l & Orientazione orbitale\\\hline
   \end{tabular}
-  \caption{risultato}
-  \label{tab:risesmol1}
+  \caption{Numeri quantici}
+  \label{tab:numquant}
 \end{table}
+Nel caso di $l$ corrisponde al numero di orbitali nel sottoguscio = 2l+1
 
-\subsection{Esercizio 2}
-\label{sec:esMolEnumDiMol2}
-Calcolare quante moli sono contenute in 30.03g di acido acetico (\ce{C2H4O2}).
-\begin{tasks}
-  \task Calcolare la massa molare dell'acido acetico:
-  \begin{eqnarray*}
-    Carbonio=2mol\cdot 12.01\frac{g}{mol}=24.02g\\
-    Idrogeno=4mol\cdot 1.01\frac{g}{mol}=4.04g\\
-    Ossigeno=2mol\cdot 16.00\frac{g}{mol}=32.00g\\
-    MM_{Acido acetico}=24.02g+4.04g+32.00g=60.06g
-  \end{eqnarray*}
-  \task Calcoliamo il numero di moli contenute nella quantità data:
-  \begin{eqnarray*}
-    mol_{Acido acetico} = \frac{\text{massa acido acetico (g)}}{\text{Massa Molare Acido acetoco } \left(\frac{g}{mol}
-    \right)} =\frac{30.03g}{60.06\frac{g}{mol}}=0.50mol
-  \end{eqnarray*}
-\end{tasks}
+\subsection{Ralazioni tra numeri quantici}
+\label{sec:relnumquant}
+
+\begin{table}[ht!]
+  \centering
+  \begin{tabular}{cccccc}
+    \multicolumn{2}{c}{Numeri quantici} & &Nome comune dell'orbitale & \multicolumn{2}{c}{Numero totale di orbitali}\\\hline 
+    \ce{n}&\ce{l}& \ce{m_l} & \\\hline
+    1 & 0 & 0 & 1s & 1 & 1\\\hline
+    \multirow{2}{*}{2} &0&0&2s&1&\multirow{2}{*}{4} \\
+                                        &1&-1,0,+1&2p&3& \\\hline
+                                        \multirow{3}{*}{3}&0&0&3s&1 &\multirow{3}{*}{9} \\
+                                        &1&-1,0,+1&3p&3& \\
+                                        &2&-2,-1,0,+1,+2&3d&5& \\\hline
+                                        \multirow{4}{*}{4}&0&0&4s&1&\multirow{4}{*}{16} \\
+                                        &1&-1,0,+1&4p&3& \\
+                                        &2&-2,-1,0,+1,+2,+3&4d&5& \\
+                                        &3&-3,-2,-1,0,+1,+2,+3&4f&7&\\\hline
+  \end{tabular}
+  \caption{Relazione tra numeri quantici}
+  \label{tab:relnumquant}
+\end{table}
+\clearpage
+\subsection{Rappresentazione grafica degli orbitali atomici}
+\label{sec:orbatom}
+Facendo una descrizione approssimativa a palloncini: si racchiude con una superficie limite uno spazio
+contenente il $90\%$ di probabilità di trovarvi l'elettrone e si indica il segno della funzione
+originaria. Prendono il nome dal valore di l.
+\begin{figure}[ht!]
+  \centering
+  \input{img/rapprgraforbatom.tikz}
+  \caption{Rappresentazione grafica degli orbitali atomici}
+  \label{fig:rapgrorat}
+\end{figure}
+
 \end{document}
+
