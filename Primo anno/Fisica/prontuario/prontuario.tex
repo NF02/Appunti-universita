@@ -109,7 +109,7 @@
   c^2=b^2+a^2-2ba\cdot \cos \gamma
 \end{eqnarray}
 
-\su{teorema dei seni}
+\subsection{teorema dei seni}
 \label{teorseni}
 
 \begin{eqnarray}
@@ -125,7 +125,7 @@
   \text{Somma di vettori: } a+b=c
 \end{eqnarray}
 
-\subsubsection{Scomposizione di vettore }
+\subsubsection{Scomposizione di vettore}
 \label{sec:scomposizione}
 
 \begin{eqnarray}
@@ -178,6 +178,9 @@
   x=vt+\frac{1}{2} at^2
 \end{eqnarray}
 
+
+\section{Moti}
+\label{sec:moti}
 \subsection{Moto in caduta libera}
 \label{sec:motocadutalibera}
 
@@ -186,4 +189,50 @@
   y=v_0t-\frac{1}{2}gt^2
 \end{eqnarray}
 
+\subsection{Moto orizzontale}
+\label{sec:motooriz}
+
+\begin{eqnarray}
+  \label{eq:motooriz}
+  x-x_0=v_{0x}t=v_0\cos\Theta_0t
+\end{eqnarray}
+
+\subsection{Moto verticale}
+\label{sec:motovert}
+
+\begin{eqnarray}
+  \label{eq:motovert}
+  y-y_0=v_{0y}t-\frac{1}{2}gt^2=v_0\sin \Theta_0t-\frac{1}{2}gt^2
+\end{eqnarray}
+
+\subsection{Equazione delle traiettoria}
+\label{sec:eqtrai}
+
+\begin{eqnarray}
+  \label{eq:eqtrai}
+  t=\frac{x-x_0}{v_0\cos\Theta_0}\\
+  y-y_0=v_0\sin\Theta_0\left(\frac{x-x_0}{v_0\cos\Theta_0}\right)-\frac{1}{2}g\left(\frac{x-x_0}{v_0\cos\Theta_0}\right)^2& \text{se }
+                                                                                                                            \begin{matrix}
+                                                                                                                              x_0=0\\
+                     y_0=0
+                                                                                                                            \end{matrix}\\
+  y=\not{v_0}\sin\Theta_0\frac{x}{\not{v_0}\cos\Theta_0}-\frac{1}{2}g\frac{x^2}{v^2_0\cos^2\Theta_0}\to y=\underbrace{\tan\Theta_0}_Ax-\underbrace{\frac{gx^2}{2v_0^2\cos^2\Theta{}_0}}_B\\
+  y=Ax-Bx^2
+\end{eqnarray}
+
+\subsection{La Gittata}
+\label{sec:gittata}
+
+\begin{eqnarray}
+  \label{eq:gittata}
+  \begin{cases}
+    x-x_0=R\\
+    y_0=0;\text{ }y=0
+  \end{cases}\\
+  \begin{cases}
+    R=(v_0\cos\Theta_0)t\to t =\frac{R}{v_0\cos\Theta{}_0}\\
+    O=(v_0\sin\Theta{}_0)-\frac{1}{2}t^2\to \not{v_0}\sin\Theta_0\frac{R}{\not{v_0}\cos\Theta_0}-\frac{1}{2}g\frac{R^2}{(v_0\cos\Theta_0)^2}
+  \end{cases}\\
+  v_0^2\sin\Theta{}\cos\Theta{}_0R-\frac{1}{2}R^2=0 & R(v_0^2\sin\Theta{}_0\cot\Theta{}_0-\frac{1}{2}gR)/=0
+\end{eqnarray}
 \end{document}
