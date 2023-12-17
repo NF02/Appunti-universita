@@ -84,6 +84,8 @@
 
 \title{Prontuario Fisica 1}
 \author{Nicola Ferru}
+
+\newtheorem{teo}{Teorema}
 \begin{document}
 \maketitle
 
@@ -233,6 +235,232 @@
     R=(v_0\cos\Theta_0)t\to t =\frac{R}{v_0\cos\Theta{}_0}\\
     O=(v_0\sin\Theta{}_0)-\frac{1}{2}t^2\to \not{v_0}\sin\Theta_0\frac{R}{\not{v_0}\cos\Theta_0}-\frac{1}{2}g\frac{R^2}{(v_0\cos\Theta_0)^2}
   \end{cases}\\
-  v_0^2\sin\Theta{}\cos\Theta{}_0R-\frac{1}{2}R^2=0 & R(v_0^2\sin\Theta{}_0\cot\Theta{}_0-\frac{1}{2}gR)/=0
+  v_0^2\sin\Theta{}\cos\Theta{}_0R-\frac{1}{2}R^2=0 & R\left(v_0^2\sin\Theta{}_0\cot\Theta{}_0-\frac{1}{2}gR\right)=0
 \end{eqnarray}
+Nel caso in cui $R_1$ dovesse essere nullo $R_2$ si calcola nel seguente modo:
+\begin{eqnarray}
+  \label{eq:R1=0}
+  R_1=0\\
+  R_2=\frac{2v_0}{g} \sin\Theta{}_0\cos\Theta{}_0=\underbrace{\frac{v_0^2}{g}\sin(2\Theta{}_0)}_{
+  \begin{matrix}
+    MAX\to \sin()=1\\
+    2\Theta{}=90^o\to \Theta{}_0=45^o
+  \end{matrix}
+  }
+\end{eqnarray}
+\subsection{Il moto dei proiettili}
+\label{sec:proiettili}
+
+\begin{eqnarray}
+  \label{eq:proiettili}
+  v_0=x_{0x}i+v_{0y}j=v_0\cos\Theta_0 +v_0\cos\Theta_0
+\end{eqnarray}
+
+\subsection{Moto circolare Uniforme}
+\label{sec:circUnifo}
+
+\begin{eqnarray}
+  \label{eq:motocircolareunifo}
+  \vec{a}=\frac{\vec{v}^2}{r}\\
+  T=\frac{2\pi r}{v}\\
+  x-x_0=v_{0x}t+t\frac{1}{2}a_xt^2\\
+  y-y_0=v_{0y}t+\frac{1}{2}a_yt^2\\
+  \begin{cases}
+    x_p=v\cos\Theta{}\\
+    y_p=v\sin\Theta{}
+  \end{cases}\\
+  x(t)=v\cos\Theta{}(t)\vec{v}=v\sin\Theta{}
+\end{eqnarray}
+
+\subsection{Moto relativo unidimensionale}
+\label{sec:motorelunid}
+\begin{figure}[ht!]
+  \centering
+  \includegraphics{img/motorelun.eps}
+  \caption{Moto relativo Uniforme}
+  \label{fig:motorel}
+\end{figure}
+\begin{eqnarray}
+  \label{eq:morelauni}
+  x_{BA}=\text{coord }B\text{ nel sistema di } A\\
+  x_{PB}=\text{coord }P\text{ nel sistema di } B\\
+  x_{PA}=x_{PB}+x_{BA} \text{coord }P\text{ nel sistema di } A
+\end{eqnarray}
+
+\section{Dinamica}
+\label{sec:din}
+
+\subsection{$2^a$ legge della dinamica}
+\label{sec:2leggedin}
+\begin{equation}
+  \label{eq:2leggedin}
+  \vec{F}=m\vec{a}
+\end{equation}
+
+\subsection{$3^a$ legge della dinamica}
+\label{sec:3leggedin}
+\begin{equation}
+  \label{eq:3leggedin}
+  F_{ab}=F_{ba}
+\end{equation}
+
+\subsection{Forza peso}
+\label{sec:forzapeso}
+
+\begin{equation}
+  \label{eq:fp}
+  P=m\cdot g
+\end{equation}
+
+\subsection{Forza di attrito}
+\label{sec:forzad}
+
+\begin{eqnarray}
+  \label{eq:fds}
+  F_{s}=\mu_sF_N\\
+  F_k=\mu_kF_N
+\end{eqnarray}
+
+\section{Lavoro ed energia cinetica}
+\label{sec:lavoroenecin}
+
+\subsection{Energia cinetica}
+\label{sec:enecin}
+
+\begin{eqnarray}
+  \label{eq:energiacinetica}
+  K=\frac{1}{2}mv^2\\
+  1J= 1kg \frac{m^2}{s^2}
+\end{eqnarray}
+\begin{teo}
+  \begin{equation}
+    \label{eq:teoen}
+    \Delta{}K= K_j-K_i=L
+  \end{equation}
+  \begin{equation}
+    \label{eq:lavoro}
+    L=F*S
+  \end{equation}
+  \begin{itemize}
+  \item \texttt{F} = forza;
+  \item \texttt{S} = Spostamento.
+  \end{itemize}
+\end{teo}
+
+\subsection{Energia elastica}
+\label{sec:enelastica}
+
+\begin{equation}
+  \label{eq:enelast}
+  U=\frac{1}{2}kS^2
+\end{equation}
+
+\subsection{Potenza}
+\label{sec:potenza}
+
+\begin{eqnarray*}
+  \bar{P}=\frac{L}{\Delta{}t} \text{ Potenza media}\\
+  P=\frac{dL}{dt} \text{ Potenza istantanea}
+\end{eqnarray*}
+\begin{center}
+  1watt = 1J/s
+\end{center}
+
+\subsection{Energia potenziale gravitazionale}
+\label{sec:enpotgrav}
+\begin{equation}
+  \label{eq:enpotgrav}
+  U_g=m*g*h
+\end{equation}
+
+\subsection{Conservazione dell'energia meccanica}
+\label{sec:condelmecc}
+
+\begin{equation}
+  \label{eq:emec}
+  E_{mec}=K+U
+\end{equation}
+Conservazione dell'energia meccanica
+\begin{equation}
+  \label{eq:consenmec}
+  K_2+U_2=K_1+U_1
+\end{equation}
+
+\subsection{Conservazione dell'energia}
+\label{sec:consen}
+
+\begin{equation}
+  \label{eq:entot}
+  L=\Delta{}E= \Delta{} E_{mecc} + \Delta{} E_{int} + \Delta{} E_{est}
+\end{equation}
+
+\section{Corpi rigidi e quantità di moto}
+\label{sec:centrigequadimot}
+
+\begin{equation}
+  \label{eq:cdm}
+  x_{cdm}=\frac{m_1 x_1+m_2x_2}{M}
+\end{equation}
+
+\subsection{Seconda legge di Newton}
+\label{sec:seclegdiNew}
+\begin{equation}
+  \label{eq:seclegNew}
+  \vec{F}=m*a
+\end{equation}
+
+\subsection{Quantità di moto o Momento lineare}
+\label{sec:mv}
+
+\begin{equation}
+  \vec{P}=m\vec{v}
+\end{equation}
+
+\subsection{Urto e impulso}
+\label{sec:urim}
+
+\begin{equation}
+  \label{eq:urtoeimp}
+  \vec{F}=\frac{\Delta{}\vec{p}}{\Delta{}t}
+\end{equation}
+
+\subsection{Urti anelastici in una dimensione}
+\label{sec:urtianelasticiinundim}
+
+\begin{equation}
+  \label{eq:urtianelundim}
+  m_!\vec{v}_{1i}=\underbrace{\left(m_1+m_2\right)}_{\vec{v}_f=\frac{m_1}{m_1+m_2}\vec{v}_{1i}} v_f
+\end{equation}
+
+\subsection{Urti elastici in una dimensione}
+\label{sec:urtelastinunadim}
+
+\begin{eqnarray}
+  \label{eq:urtelastinunadim}
+  \begin{matrix}
+    \vec{P}_f=\vec{P}_i; & K_f = K_i
+  \end{matrix}\\
+  \begin{cases}
+    m_1\vec{v}_{1i}+m_2\vec{v}_{2i}=m_1\vec{v}_f+m_2\vec{v}_{2f}\\
+    \frac{1}{2}m_1v_i^2+\frac{1}{2}m_2v_{2i}^2=\frac{1}{2}m_2v_{2f}^2
+  \end{cases}
+\end{eqnarray}
+
+\subsection{Urti in due dimensioni}
+\label{sec:urtiind2}
+
+\begin{eqnarray}
+  \label{eq:urtiind2}
+  \vec{P}_{1i}+\vec{P}_{2i} = \vec{P}_{2f} + \vec{P}_{2f}\\
+  K_{1i}+K_{2i} = K_{2f} + K_{2f}\\
+  \begin{matrix}
+    \text{comp }x & m_1\vec{v}_{1i}= m_1v_{1f}\cos{\Theta{}}+m_2v_{2f}\cos{\Theta{}}_2\\
+    \text{comp }y & O =  -m_1v_{1f}\sin{\Theta{}}+m_2v_{2f}\sin{\Theta{}}_2
+  \end{matrix}
+\end{eqnarray}
+
+\subsection{Sistemi a massa variabile}
+\label{sec:sistemiamasvar}
+
+
 \end{document}

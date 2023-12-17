@@ -1,0 +1,138 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{easylist}
+\usepackage{hanging}
+\usepackage{hyperref}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=2.0cm]{geometry}
+\usepackage{blindtext}
+\usepackage{tipa}
+\usepackage{epigraph}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{pbox}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{textcomp}
+\usepackage{tasks}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  firstnumber=1000,                % start line enumeration with line 1000
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\linespread{1.5} % l'interlinea
+
+\frenchspacing
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+\usepackage{floatflt,epsfig}
+
+\usepackage{multicol}
+\newcommand\yellowbigsqcup[1][\displaystyle]{%
+  \fboxrule0pt
+  \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
+  \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
+
+\newtheorem{es}{Esercizio}
+\newtheorem{sol}{Soluzione}
+
+\title{Esercizi di fisica}
+\author{Nicola Ferru}
+\begin{document}
+\maketitle
+
+\section{Cinematica}
+\label{sec:cinematica}
+
+\subsection{Moto retilineo uniforme}
+\label{sec:motoretuni}
+
+\begin{es}
+  Alla guida di un'automobile, dopo aver percorso una strada rettilinea per 8.4km a 70km/h, siate rimasti senza benzina. Avete quindi percorso a piedi, sempre nella stezza direzione, 2.9km fino al più vicino distributore, dove siete arrivati dopo 30 minuti di cammino.
+  \begin{tasks}
+    \task Qual'è stato il vestro spostamento complessivo dalla partenza in auto all'arrivo a piedi alla stazione di servizio?
+    \task Qual'è l'intervallo di tempo $\Delta{}t$ relativo all'intero spostamento?
+    \task Qual'è stata dunque la velocità vettoriale media della partenza in auto all'arrivo a piedi? Lo si trova sia numericamente sia graficamente.
+    \task Supponiamo che, dopo le operazioni alla stazione di rifornimento, abbiate poi riportato il carburante fino alla macchina, impiegando nella sosta e nel viaggio di ritorno in totale 45 minuti. Qual'è stata la velocità scalare media per tutto il percorso, dalla partenza in auto fino all'arrivo a piedi alla macchina con il carburante?
+  \end{tasks}
+\end{es}
+\begin{sol}
+  Ora, il metodo migliore per svolgere questo esercizio è proprio quello di svolgerlo per punti, infatti, questo è uno dei casi in cui il testo ci da già la soluzione, per questo motivo anche essa sarà divisa in punti.
+  \begin{tasks}
+    \task In primo luogo andiamo a calcolare la distanza percorsa nel suo complessivo, cosa che è facilmente deducibele facendo una somma tra la prima distanza percorsa 8.4km e la seconda 2.9km quindi si può dedurre che il complessivo sia 11.3. Questo può essere anche espresso come il discriminante di $\Delta{}$.
+    \begin{equation*}
+      \Delta{}x=x_2-x_1=11.3km
+    \end{equation*}
+    \task Ora, bisogna calcolare l'intervallo di tempo $\Delta{}t$ relativo all'intero spostamento bisogna utilizzare la formula della velocità $\left(\frac{\Delta{}x}{\Delta{}t}\right)$ sia sul percorso fatto in auto, il percorso fatto a piedi e poi sul totale:
+    \begin{eqnarray*}
+      \vec{v}_{auto}=\frac{\Delta{}x_{auto}}{\Delta{}t_{auto}}\to \Delta{}t_{auto}=\frac{8.4km}{70km/h}=0.12h\\
+      \Delta{}t_{tot}=\Delta{}t_{auto}+\Delta{}t_{piedi}=0.12h+0.5h=0.62h
+    \end{eqnarray*}
+    visto che a noi serve $\Delta{}t$ del percorso fatto in auto dobbiamo adoperare la formula inversa, mentre, nel caso del percorso fatto a piedi bisogna semplicemente convertire 30min in 0.5h per poter poi fare il calcolo di $\Delta{}t_{tot}$. 
+    \task Per calcolare la velocità media dalla partenza in auto all'arrivo a piedi bisogna utlizzare la formula della velocità:
+    \begin{equation*}
+      \vec{v}=\frac{\Delta{}x}{\Delta{}t} = \frac{11.3km}{0.62h}=18.23km/h
+    \end{equation*}
+    \task Adesso per calcolare la velocità totale di tutto il percorso incluso il ritorno alla macchina con il carburante dobbiamo effetture il calcolo di $\Delta{}t_{total}$ e $\Delta{}x_{total}$ e poi si può calcolare la velocità.
+    \begin{eqnarray*}
+      \Delta{}t_{total} = 0.12h + 0.5h + 0.75h = 1.37h\\
+      \Delta{}x_{total} = 8.4km + 2.9km + 2.9km =14.2km 
+    \end{eqnarray*}
+    Ora dopo aver ottenuto il valore delle variabili necessari a calcolare il $\vec{v}_{total}$ possiamo calcolarlo facilmente con la consueta formula:
+    \begin{equation*}
+      \vec{v}=\frac{\Delta{}x_{total}}{\Delta{}t_{total}} = \frac{14.2km}{1.37h}=10.36km/h \to 10.4km/h
+    \end{equation*}
+    visto che comunque il risultato lo riportiamo con una sola cifra decimale ho arrotondato per eccesso 10.36m/h a 10.4km/h.
+  \end{tasks}
+\end{sol}
+\end{document}
