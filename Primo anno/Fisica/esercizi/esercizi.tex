@@ -32,7 +32,7 @@
 \usepackage{mathrsfs}
 \usepackage{textcomp}
 \usepackage{tasks}
-
+\usepackage{upgreek}
 \usepackage{listings}
 \usepackage{color}
 
@@ -83,8 +83,8 @@
   \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
   \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
 
-\newtheorem{es}{Esercizio}
-\newtheorem{sol}{Soluzione}
+\newtheorem{es}{Esercizio}[section]
+\newtheorem{sol}{Soluzione}[section]
 
 \title{Esercizi di fisica}
 \author{Nicola Ferru}
@@ -135,4 +135,117 @@
     visto che comunque il risultato lo riportiamo con una sola cifra decimale ho arrotondato per eccesso 10.36m/h a 10.4km/h.
   \end{tasks}
 \end{sol}
+
+\subsection{La gittata}
+\label{sec:gittata}
+\begin{es}
+  Un aereo vola a 198km/h (circa 55m/s) alla quota costante di 500m verso un punto posto sulla verticale di una persona che si dibatte in mare. Il pilota vuole sganciare la capsula salvagente in modo che cada in acqua molto vicino al naufrago.
+  \begin{tasks}
+    \task Sotto quale angolo visuale $\varnothing$ il pilota dovrebbe sganciare la capsula salvagente?
+    \task Stabilire la velocità \textbf{v} della capsula al momento dell'impatto nella notazione con i versori, specificandone poi modulo e direzione.
+  \end{tasks}
+\end{es}
+\begin{sol}
+  In questo caso i punti da svolgere sono 2, quindi anche per questo esercizio è il caso di andare per passi e strutturare le due risposte esattamente come sono poste le domande.
+  \begin{tasks}
+    \task In primo luogo dobbiamo calcolare l'angolo visuale $\varnothing$ per fare ciò dobbiamo in primo luogo partire dalla formula della tangente per poi ricavare il valore.
+    \begin{eqnarray*}
+      \tan\varnothing{}=\frac{x-x_0}{500m} \to \varnothing{}=\arctan\left(\frac{x-x_0}{500m}\right)
+    \end{eqnarray*}
+    adesso dobiamo ricavare le singole variabili, estrapolando $x-x_0$ e il tempo necessario a parcorrere i 500m, tutto questo lo possiamo fare tramnite un pratico sistema.
+    \begin{equation*}
+      \begin{cases}
+        x-x_0=v_0t & \to x-x_0=55\frac{m}{\not{s}}\cdot10.09\not{s}=555.5m\\
+        500m=\frac{1}{2}gt^2&\to t=\sqrt{\frac{2\cdot 500}{9.81}}=10.09s
+      \end{cases}
+    \end{equation*}
+    Ora, che abbiamo tutti i valori richiesti dalla formula dell'angolo visuale $\varnothing$ possiamo procedere con il calcolo.
+    \begin{equation*}
+      \varnothing{}=\arctan\left(\frac{x-x_0}{500m}\right) = \arctan{}\underbrace{\left(\frac{555.5m}{500m}\right)}_{1.1110}=48^o
+    \end{equation*}
+    \task Per stabilire la velocità della capsula salvagente bisogna calcolarfe prima di tutto andare a calcolare $v_x$ e $v_y$
+    \begin{equation*}
+      \begin{matrix}
+        v_x=v_{0x}=v_0\cos0^o=55m/s\\
+        v_y=\underbrace{v_0\sin\theta_0}_0=gt & \to & v_y=-9.81\cdot 10.09=-99\frac{m}{s}
+      \end{matrix}
+    \end{equation*}
+    ora avendo anche $v_y$ possiamo calcolare $\vec{v}$
+    \begin{equation*}
+      \vec{v}=\left(55\frac{m}{s}\right)\vec{i}\left(-99\frac{m}{s}\right)\vec{j}
+    \end{equation*}
+    quindi adesso possiamo concludere l'esercizio calcolando il $v_{fy}$ e il $\abs{v}$:
+    \begin{eqnarray*}
+      v_{fy}=v_{0y}-gt\\
+      \abs{v}=\sqrt{v_x^2+v_y^2}=\sqrt{55^2+(-99)^2}=113\frac{m}{s}\\
+      \upvartheta=\arctan\left(\frac{v_y}{v_x}\right)=\arctan\left(\frac{-99}{55}\right)=-60.9^o
+    \end{eqnarray*}
+    e con questo l'esercizio è concluso\dots
+  \end{tasks}
+\end{sol}
+
+\section{Dinamica}
+\label{sec:din}
+
+\subsection{Leggi di Newton}
+\label{sec:leggidiNew}
+
+\begin{es}
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics{img/disco.eps}
+    \caption{Disco da hockey e vettori}
+    \label{fig:hockeyevett}
+  \end{figure}
+  un disco da hockey si muove su una superficie ghiacciata priva di attrito lungo l'asse x in un moto unidirezzionale. La sua massa è $m=0.20kg$. Le forze $F_1$ ed $F_2$ di modulo rispettivamente 4.0N e 2.0N, agiscono lungo l'asse. Una terza forza $F_3$ di modulo 1.0N forma un angolo di $30^o$ rispetto all'asse x. In ciascuno dei tre casi qual è l'accelerazione del disco?
+\end{es}
+\begin{sol}
+  In questo caso usuamo la seconda legge di Newton usando la formula della forza netta agente su un corpo, qui di forza c'è ne più di una quindi bisogna valutare le singole forze per poi calcolare l'accelerazione totale.
+  \begin{eqnarray*}
+    \vec{F}_{net}=m\vec{a} & \to{} & F_{net_x}=ma_x 
+  \end{eqnarray*}
+  Quindi se vogliamo trovare la forza di x dobbiamo fare una sommatoria:
+  \begin{equation*}
+    \sum F_x=ma_x
+  \end{equation*}
+  Da questo punto in poi dobbiamo calcolare $a_1x$ e $a_{2_1}$, visto che comunque il metodo migliore è procedere per punti con questo tipo di calcoli possiamo procedere nel seguente modo, creare un elenco ordinato e procedere in questo modo per evitare inutili disordini.
+  \begin{enumerate}
+  \item In primo luogo, conviene fare un veloce riepilogo delle variabili, quindi abbiamo 3 vettori/forze in gioco su questo corpo:
+    \begin{equation*}
+      \begin{cases}
+        F_1=4.0N\\
+        F_2=2.0N\\
+        F_3=1.0N
+      \end{cases}
+    \end{equation*}
+    con questo possiamo iniziare a lavorare sulle su $F_{1x}=ma_1x$ e $a_1x$.
+    \begin{equation*}
+      a_1x=\frac{F_{1x}}{m}=\frac{4N}{0.2kg}=20\frac{m}{s^2}
+    \end{equation*}
+  \item Visto che comunque $F_2$ ha vettorialmente un verso opposto a $F_1$ e quindi presenterà pure un segno algebrico opposto. Detto questo possiamo impostare la sommatoria $\sum F= F_{1x}-F_{2x}=ma_{2,1x}$
+    \begin{equation*}
+      a_{2_1}= \frac{F_{1x}-F_{2x}}{m}= \frac{4-2}{0.2}=\frac{2}{0.2}=10\frac{m}{s^2}
+    \end{equation*}
+  \item In extremis facciamo la somma vettoriale tra $F_2$ e $F_3$, quindi con la stessa formula usata prima possiamo calcolare anche questo caso\dots{}
+    \begin{equation*}
+      \sum F= -F_2x+F_2x=-2+1\cos30^o
+    \end{equation*}
+    $F_3$ ha un angolo di $30^o$ ed è contrassegnato con il simbolo $\uptheta$ e con questo abbiamo soddisfatto i requisiti posti dal testo.
+  \end{enumerate}
+\end{sol}
+\clearpage
+\begin{es}
+  Un auto che slitta su una strada ghiacciata. Confrontiamo qui i tipici spazi di arresto necessari per fermarsi da una velocità iniziale di 10.0m/s su asfalto asciutto, fondo orizzontale ghiacciato e una strada gelata in discesa.
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics[scale=0.9]{img/auto.eps}
+    \caption{Automobile su strada}
+    \label{fig:autosust}
+  \end{figure}
+  \begin{tasks}
+    \task Qual'è lo spazio d'arresto per un'auto su un piano orizzontale (\ref{fig:autosust}a) se il coefficiente di attrito è $\mu_k=0.60$, un valore tipico per pneumatici ordinari su asfalto asciutto? Trascuriamo gli effetti dell'aria, supponiamo che le ruote siano bloccate e che striscino sull'asfalto. Tracciamo l'asse $x$ nella direzione del moto.
+    \task Quanto diventa lo spazio di frenata in condizioni di strada ghiacciata con $\mu_k=0,10$?
+    \task Ora supponiamo che la macchina in frenata slitti su una discesa ghiacciata con inclinazione $\theta=6.00^o$ (una pendenza comune in montagna e in zonae collinose, pari a circa il 10.5\%). Quale sarebbe in tal caso lo spazio di arresto?
+  \end{tasks}
+\end{es}
 \end{document}
