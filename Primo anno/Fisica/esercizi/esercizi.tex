@@ -243,9 +243,202 @@
     \label{fig:autosust}
   \end{figure}
   \begin{tasks}
-    \task Qual'è lo spazio d'arresto per un'auto su un piano orizzontale (\ref{fig:autosust}a) se il coefficiente di attrito è $\mu_k=0.60$, un valore tipico per pneumatici ordinari su asfalto asciutto? Trascuriamo gli effetti dell'aria, supponiamo che le ruote siano bloccate e che striscino sull'asfalto. Tracciamo l'asse $x$ nella direzione del moto.
+    \task Qual'è lo spazio d'arresto per un'auto su un piano orizzontale (come in figura \ref{fig:autosust}a) se il coefficiente di attrito è $\mu_k=0.60$, un valore tipico per pneumatici ordinari su asfalto asciutto? Trascuriamo gli effetti dell'aria, supponiamo che le ruote siano bloccate e che striscino sull'asfalto. Tracciamo l'asse $x$ nella direzione del moto.
     \task Quanto diventa lo spazio di frenata in condizioni di strada ghiacciata con $\mu_k=0,10$?
-    \task Ora supponiamo che la macchina in frenata slitti su una discesa ghiacciata con inclinazione $\theta=6.00^o$ (una pendenza comune in montagna e in zonae collinose, pari a circa il 10.5\%). Quale sarebbe in tal caso lo spazio di arresto?
   \end{tasks}
 \end{es}
+\begin{sol}
+  Questo tipo di esercizio è già partizionato in punti quindi è il caso di procedere nello stesso modo, con un altro elenco ordinato.
+  \begin{tasks}
+    \task Per svolgere il primo punto sarà necessaria la formula della forza netta agente su un corpo
+    \begin{equation*}
+      \begin{matrix}
+        -f_k=ma_x &\to& -\mu_kF_N=ma_x\\
+        -\mu_k\not{m}g=\not{m}a_x&\to& a_x=-\mu_kg
+      \end{matrix}
+    \end{equation*}
+    adesso andiamo a ricavare $x-x_0$, sapendo che $v_f=0$ e $v_0=10\frac{m}{s}$
+    \begin{equation*}
+      x-x_0=\frac{v_f^2-v_0^2}{2a_x}=8.5m
+    \end{equation*}
+    Quindi dopo questo sappiamo che la risposta corretta alla domanda è che $x-x_0=8.5m$, con questo si può passare al secondo punto posto.
+    \task per calcolare lo psazio di frenata su una strada ghiacciata basterà semplicemente utilizzare la stessa formula vista prima per il calcolo di $x-x_0$, con la differenza che al denominatore al posto di $a_x$ ci sarà $2\mu_kg$ e anche il fatto che unico vettore interessato è $v_0$.
+    \begin{equation*}
+      x-x_0=\frac{v_0^2}{2\mu_kg}=\frac{\left(10\frac{m}{s}\right)}{20.1\cdot 9.81}=51m
+    \end{equation*}
+    Dopo questo possiamo dire che lo spazio di frenata che avrà l'automobile su una strada ghiacciata è di 51m sicuramente molto superiore a quella precedentemente osservata (la frenata è circa 6 volte più lenta rispetto a quella che si ottiene in una strada asciutta).
+  \end{tasks}
+\end{sol}
+\subsection{Moto circolare univorme}
+\label{sec:motciruni}
+\begin{es}
+  I tratti curvilinei delle autostrade sono spesso inclinati per limitare l'effetto di sbandamento verso l'esterno. Con pavimentazione asciutta la forza d'attrito tra strada e pneumatico è di norma largamente sufficiente
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics{img/perc.eps}
+    \caption{Curvilineo del autostrada}
+    \label{fig:curvl}
+  \end{figure}
+  a prevenire slittamenti. Ad asfalto bagnato, invece, l'attrito si riduce e l'inclinazione del pianostradale diventa importante. Nella figura \ref{fig:curvl}a è disegnata un'automobile di massa $m$ che percorre alla velocità di 20m/s un tratto curvo inclinato di raggio R=190m. Si tratta di una macchina ordinaria, non di formula 1, e quindi la portanza negativa esaminata nel proglema svolto precedentemente è trascurabile. Ignorando la forza d'attrito, quale angolo d'inclinazione $\theta$ del piano stradale eviterebbe la fuoriuscita dalla carreggiata?
+\end{es}
+\begin{sol}
+  In questo caso bisogna comunque analizzare le forze in gioco in questo caso infatti come si vede nel \ref{fig:curvl}b, le forze in atto sono sostanzialmente $F_N$ che agisce vettorialmente sulla superficie della strade inclinata di un angolo $\theta$ quindi viene suddiviso nei vettori $F_{N_y}$ e $F_{N_r}$ che corrispondono a:
+  \begin{equation*}
+    \begin{matrix}
+      F_{N_x}=F_N\cos\theta\\
+      F_{N_y}=F_N\sin\theta
+    \end{matrix}
+  \end{equation*}
+  La forza di Graviota $F_g$. Detto questo possiamo usare le consuete formule precedentemente utilizzate aggiungento quelle inerenti al moto circolare uniforme.
+  \begin{equation*}
+    \begin{matrix}
+      y & F_N\cos\theta-mg=0 & \to & \vec{F}_N\cos\theta=m\vec{g}\\
+      x & -F_N\sin\theta=m\left(-\frac{v^2}{R}\right) && \frac{\not{F}_N\sin\theta}{\not{F}_N\cos\theta}=\frac{\not{m}v^2}{\not{m}Rg}\\
+      & F_N\sin\theta=\frac{v^2}{R}
+    \end{matrix}
+  \end{equation*}
+  fatto questo possiamo ricavarci l'angolo di curvatura $\theta$ con la seguente formula:
+  \begin{equation*}
+    \frac{\sin\theta}{\cos\theta}=\frac{v^2}{Rg}\to \tan\theta=\frac{v^2}{Rg} \to \theta=\arctan\left(\frac{v^2}{Rg}\right)
+  \end{equation*}
+  In questo caso si tratta di andare a trasformare il $\frac{\sin\theta}{\cos\theta}$ in $tan\theta$ che poi con poi messo sotto frazione più esser trasformato in $\arctan$.
+\end{sol}
+
+\section{Oscillazioni}
+\label{sec:oscill}
+
+\subsection{Oscillatore armonico smorzato}
+\label{sec:osciarmsmo}
+
+\begin{es}
+  Per l'oscillatore smorzato riportato nello schema, ipotizziamo una massa del blocco pari a $m=250g$, una costante elestica della molla $k=85 N/m$ e costante di smorzamento pari a $b=70\frac{g}{s}$.
+  \begin{itemize}
+  \item Qual è il periodo del moto?
+  \item In quanto tempo l'ampiezza dell'oscillazione smorzata si riduce a metà del valore iniziale?
+  \item Quanto tempo impiega l'energia meccanica per ridursi di metà del valore iniziale?
+  \end{itemize}
+\end{es}
+\begin{sol}
+  Ora l'esercizio è suddiviso in punti quindi l'approccio più spontaneo come visto negli esercizi precedenti:
+  \begin{itemize}
+  \item Verifichiamo il livello di smorzamento:
+    \begin{equation*}
+      \begin{matrix}
+        b= 0.07\frac{kg}{s} << \sqrt{\frac{k}{m}}=4.6\frac{kg}{s}\\
+        T=2\pi \sqrt{\frac{m}{k}}=0.34s
+      \end{matrix}
+    \end{equation*}
+  \item Partendo dalla relazione
+    \begin{equation*}
+      x(t)=x_me^{-\frac{bt}{2m}}\cos\left(\omega_{sm}t+\phi\right)
+    \end{equation*}
+    l'ampiezza dell'oscillazione sarà $x_me^{-\frac{bt}{2m}}$. Imponiamo
+    \begin{equation*}
+      \begin{matrix}
+        x_me^{-\frac{bt}{2m}}=\frac{x_m}{2=-\frac{bt}{2}}\Rightarrow{}-\frac{bt}{2m}=\ln\left(\frac{1}{2}\right)\Rightarrow{} t=\frac{2m\ln(0.5)}{b}=5s\\
+        \frac{1}{2}kx_m^2e^{\frac{-bt}{m}}=\frac{1}{2}\left(\frac{1}{2}kx_m^2\right)\Rightarrow{}-\frac{bt}{m}=\ln(0.5)\Rightarrow{}2.5s
+      \end{matrix}
+    \end{equation*}
+  \end{itemize}
+  e con questo l'esercizio è stato svolto.
+\end{sol}
+
+\subsection{Moti elastici}
+\label{sec:motielastici}
+
+\begin{es}
+  Un sistema oscillante blocco-molla ha energia meccanica di 1.00J, ampiezza 10.0cm e velocità massima $11.00\frac{m}{s}$. Trovate:
+  \begin{tasks}
+    \task la costante elastica;
+    \task la massa del blocco;
+    \task la frequenza di oscillazione.
+  \end{tasks}
+\end{es}
+\begin{sol}
+  L'energia meccanica è dato da $K+U=1J$. Nel punto di massima compressione c'è solo un'energia elastica
+  \begin{equation*}
+    \begin{matrix}
+      \frac{1}{2}kx^2=1J\\
+      k=\frac{2J}{x^2}=\frac{2J}{(0.1m)^2}=\boxed{200\frac{N}{m}}
+    \end{matrix}
+  \end{equation*}
+  La massa del blocco si può trovare studiando il sistema nel punto in cui la sua velocità è massima: qua, infatti, non c'è energia potenziale elastica:
+  \begin{equation*}
+    \frac{1}{2}mv^2_{max}=1J \to m=\frac{2J}{v^2_{max}}=\frac{2J}{(11.2m/s)^2}=\boxed{0.016}Kg
+    \end{equation*}
+    La frequenza $f$ è data da:
+    \begin{equation*}
+      f=\frac{1}{2\pi}\sqrt{\frac{k}{m}}=\boxed{17.79Hz}
+    \end{equation*}
+    e con questo l'esercizio è concluso\dots
+\end{sol}
+\begin{es}
+  Trovate l'energia meccanica di un sistema blocco-molla con costante elastica di 1.3 N/cm e ampiezza di oscillazione di 2.4cm.
+\end{es}
+\begin{sol}
+  In questo caso dobbiamo solo calcolare l'energia E, in modo abbastanza semplice, tramite la formula $E=\frac{1}{2}kx^2$, nel seguente modo:
+  \begin{equation*}
+    E=\frac{1}{2}kx^2=\frac{1}{2}\cdot(130N/m)\cdot(0.024m)^2=0.037J
+  \end{equation*}
+  e questo l'esercizio è concluso.
+\end{sol}
+\begin{es}
+  Un blocco di massa $M=5.4kg$, a riposo su un piano orizzontale privo di attrito, è ancorato a un punto fisso tramite una molla di costanza $k=6000N/m$. Un proiettile di massa m=9.5g e velocità $v$ di modulo $630m/s$ colpisce il blocco Mm restando incastrato nel blocco. Determinare
+  \begin{tasks}
+    \task la velocità del blocco immediatamente dopo l'urto;
+    \task l'ampiezza del moto armonico semplice risulta, assumendo che la compressione della molla sia trascurabile finché il proiettile non sia cmpletamente incastrato.
+  \end{tasks}
+\end{es}
+\begin{sol}
+  L'urto è anelastico, $\vec{p}$ si conserva e troviamo $v_f$
+  \begin{equation*}
+    \begin{matrix}
+      m_pv_p=(M+m_p)v_f\\
+      v_f=\frac{m_pv_p}{M+m_p}=\frac{0.0095kg\cdot 630m/s}{5.4kg+0.0095kg}=\boxed{1.1m/s}
+    \end{matrix}
+  \end{equation*}
+  L'energia si conserva:
+  \begin{equation*}
+    \begin{matrix}
+      \frac{1}{2}(M+m_p)v_f^2=\frac{1}{2}kx^2\\
+      x=\sqrt{\frac{(M+m_p)v_f^2}{k}}=\boxed{0.033m}
+    \end{matrix}
+  \end{equation*}
+  e con questo l'esercizio è terminato.
+\end{sol}
+\begin{es}
+  Due blocchi (m = 1.0kg e M = 10kg) e una molla (k = 200N/m) sono sistemati una sopra l'altra, con m sopra M su una superficie orizzontale priva di attrito. Il coefficiente di attrito statico fra i due blocchi è di 0.40. Quel'è la massima ampiezza del moto armonico semplice ammissibile per evitare lo slitamento tra i due blocchi?
+\end{es}
+\begin{sol}
+  Il blocco sta fermo fintanto che la forza ``laterale'' subito non supera lo forza d'attrito statico. L'accelerazione massima durante il moto armanico è data da:
+  \begin{equation*}
+    a_{max}=\omega^2x
+  \end{equation*}
+  con $\omega = \sqrt{\frac{k}{M_{tot}}}=\sqrt{\frac{200N/m}{11kg}}=4.26Hz$, Vogliamo che $m\cdot a_{max}$ non superi la forza d'attrito:
+  \begin{equation*}
+    \begin{matrix}
+      m\cdot a_{max}=mg\cdot \mu\\
+      m\cdot \omega^2x=mg\cdot \mu\\
+      x = \frac{\mu g}{\omega^2}=\frac{0.4\cdot 9.81m/s^2}{(4.26Hz)^2}=\boxed{0.21m}
+    \end{matrix}
+  \end{equation*}
+  E con questo l'esercizio è terminato con tutti i punti soddisfatti.
+\end{sol}
+\begin{es}
+  Un pendolo di lunghezza 1.2m che oscilla muovendosi di moto armonico, è portato su un altro pianeta. Quando viene messo in funzione si osserva che il pendolo compie 100 oscilazioni complete in 280s. Quel'è dunque l'accelerazione di graviotà su quel pianeta?
+\end{es}
+\begin{sol}
+  In primo luogo è giusto evidenziare quelli che sono i nostri dati:
+  \begin{equation*}
+    \begin{matrix}
+      L=1.2m & \Delta t=280s\\
+      T=2\pi \sqrt{\frac{L}{a}}& N_0=100
+    \end{matrix}
+  \end{equation*}
+  dopo aver fatto questo possiamo andare a ricavarci T, con il seguente sviluppo
+  \begin{equation*}
+    T=\frac{\Delta t}{N_0}=\frac{280s}{100}=2.8s
+  \end{equation*}
+  
+\end{sol}
 \end{document}
