@@ -439,6 +439,97 @@
   \begin{equation*}
     T=\frac{\Delta t}{N_0}=\frac{280s}{100}=2.8s
   \end{equation*}
-  
+  Una volta aver fatto questo possiamo ricavare $a$ nel sequente modo:
+  \begin{equation*}
+    \frac{T^2}{4\pi^2}\Rightarrow{} a=\frac{4\pi^2L}{T^2}=\frac{4\pi^2\cdot1.2m}{(2.8s)^2}=6.04\frac{m}{s^2}
+  \end{equation*}
+\end{sol}
+\begin{es}
+  Un pendolo semplice lungo 2m è posto all'interno di un ascensore. Calcolare la frequenza di oscillazione nei seguenti casi:
+  \begin{enumerate}
+  \item l'ascensore è fermo;
+  \item l'ascensore sta salendo con un'accelerazione pari a $2m/s^2$
+  \item l'ascensore è in caduta libera
+  \end{enumerate}
+\end{es}
+\begin{sol}
+  In primo luogo andiamo a riportare i dati, come ad esempio la lunghezza:
+  \begin{equation*}
+    L=2m
+  \end{equation*}
+  adesso dopo aver segnato i dati, possiamo procedere a svolgere i tre casi presentati:
+  \begin{enumerate}
+  \item Se l'ascensore è fermo avremmo un $T=2\pi \sqrt{\frac{g}{L}}$ e per calcolare frequenza $f=\frac{1}{T}$, per avere l'idea chiara in Hz dobbiamo procedere nel seguente modo:
+    \begin{equation*}
+      f=\frac{1}{2\pi}\sqrt{\frac{g}{2}}=\frac{1}{2\pi}\sqrt{\frac{9.81\frac{\not{m}}{s^2}}{2\not{m}}}=0.35\frac{1}{s}=0.35Hz
+    \end{equation*}
+    
+  \item Adesso valutiamo il caso in cui l'ascensore sia in movimento, salendo ad una velocità di $2m/s^2$, in questo caso, infatti, una forza a che avrà un effetto verticale sul pendolo, oltre alla forza peso, infatti $a_{tot}$ sarà composto dalla forza peso e da questa ulteriore forza $a$.
+    \begin{equation*}
+      a_{tot}=g+{\color{red}a}
+    \end{equation*}
+    quindi andando ad adattare la formula vista nel primo caso alla nuova situazione avremmo:
+    \begin{equation*}
+      f=\frac{1}{2\pi}\sqrt{\frac{g+a}{L}}=\frac{1}{2\pi}\sqrt{\frac{9.81\frac{\not{m}}{s^2}+2\frac{\not{m}}{s^2}}{2\not{m}}}=0.39Hz
+    \end{equation*}
+  \item Per ultimo punto troviamo l'ascensore in caduta libera, in questo caso avremmo un $a_{tot}= 0$ e per forza di cose $T\to +\infty$, nel esempio in questione è presente solo una forza $\vec{g}$ e quindi:
+    \begin{equation*}
+      f=0
+    \end{equation*}
+    In questa perticolare condizione non avviene un moto oscillatorio.
+  \end{enumerate}
+\end{sol}
+\begin{es}
+  Un oscillatore armonico smorzato con una massa di 235g è soggetto a una forza di attrito caratterizzata da una costante $\gamma=2.2s^{-1}$.
+  \begin{itemize}
+  \item qual'è la forza di attrito che agisce sull'oscillatore quando la sua velocità è 2.8cm/s?
+  \end{itemize}
+\end{es}
+\begin{sol}
+  In primo luogo riportiamo sotto forma di fariabili i valori necessari a svolgere gli esercizi e convertiamole in un formato adeguato allo svolgimento delle formule:
+  \begin{eqnarray*}
+    m=235g=0.235kg & \gamma=2.2s^{-1}\\
+    v=2.8\frac{cm}{s}=2.8\times 10^{-2}\frac{m}{s}
+  \end{eqnarray*}
+  quindi andando a definire la forza totale possiamo anche dire che:
+  \begin{equation*}
+    -k\vec{x}-\beta \vec{v}=m\vec{a}=\vec{F}_{tot}
+  \end{equation*}
+  ora, possiamo andare a calcolare $\vec{F}_a$
+  \begin{eqnarray*}
+    \vec{F}_a=-\beta\vec{v}=-\gamma\cdot m\cdot \vec{v}\\
+    \abs{\vec{F}_a}=\gamma\cdot m\cdot v= 2.2 s^{-1}\cdot 0.235kg\cdot2.8\times 10^{-2}\frac{m}{s}=1.4\cdot 10^{-2}N
+  \end{eqnarray*}
+\end{sol}
+\begin{es}
+  Un corpo di massa 230g si muove sotto l'azione di una molla con costante elastica $0.45N/m$. La forza di attrito che agisce sul corpo ha modulo direttamente proporzionale a quello della velocità con costante di proporzionalità $\beta=0.017N\cdot s/m$. Il corpo è inizialmente fermo lontano della posizione di equilibrio.
+  \begin{itemize}
+  \item Verifica che si ha uno smorzamento sottocritico.
+  \end{itemize}
+\end{es}
+\begin{sol}
+  Come sempre il primo passo è quello di andare ad esplicitare i dati necessari allo svolgimento del problema:
+  \begin{eqnarray*}
+    m=230g=0.23kg & k=0.45\frac{N}{m}\\
+    \beta=0.017\frac{N\cdot s}{m}
+  \end{eqnarray*}
+  Per comprendere meglio l'esercizio è giusto fare una precesazione, i moti elastici smorzati si dividono in:
+  \begin{center}
+    \Tree[.Smorzamento [.sottoscritico $\gamma<2W$ ] [.sovrascritico $\gamma>2W$ ] ]
+  \end{center}
+  Quindi prendendo questo preconcetto possiamo proseguire, a noi servono i valori di $W$ e di $\gamma$, le formule per il calcolo sono:
+  \begin{equation*}
+    \begin{matrix}
+      W=\sqrt{frac{k}{m}} & \gamma =\frac{\beta}{m}
+    \end{matrix} 
+  \end{equation*}
+  Detto questo andiamo a calcolare i due valori sostituendo le variabili in valori nomerici:
+  \begin{equation*}
+    \begin{matrix}
+      W=\sqrt{frac{0.45\frac{N}{m}}{0.23kg}}=1.40s^{-1}\\
+      \gamma=\frac{0.017\frac{N\cdot s}{m}}{0.23kg}=0.07s^{-1}
+    \end{matrix}
+  \end{equation*}
+  considerando i risultati possiamo dedurre che lo smorzamento è di tipo sottoscritico, visto che $\gamma<2W$.
 \end{sol}
 \end{document}
