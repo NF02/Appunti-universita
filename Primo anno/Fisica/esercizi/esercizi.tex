@@ -184,6 +184,48 @@
   \end{tasks}
 \end{sol}
 
+\subsection{Piano inclinato}
+\label{sec:pianoinc}
+
+\begin{es}
+  Una molla può essere compressa di 2cm da una forza di 270N. Un blocco di massa m=12kg, inizialmente fermo in cima ad un piano inclinato privo di attrito che forma un angolo di $30^o$ con il piano orizzontale, viene lasciato andare. Il blocco si ferma dopo aver compresso la molla di 5.5 cm.
+  \begin{enumerate}
+  \item in questo momento di quanto si è spostato lungo il piano indinato?
+  \item Qual è la velocità del blocco quando arriva a toccare la molla?
+  \end{enumerate}
+\end{es}
+\begin{sol}
+  in questa caso in primo luogo definiamo il k (coefficiente di forza elastica):
+  \begin{eqnarray*}
+    k=\frac{F}{x}=\frac{270N}{0.02m}=1.35\cdot 10^4\frac{N}{m}
+  \end{eqnarray*}
+  ora, possiamo proseguire nello svolgimento dei due punti:
+  \begin{enumerate}
+  \item Per capire di quento si è spostato sul piano inclinato bisogna prima di tutto andare a definire:
+    \begin{eqnarray*}
+      \frac{h}{l+\abs{x}} & k_A+U_A=k_c+U_c
+    \end{eqnarray*}
+    poi andiamo a ricavare l'altezza:
+    \begin{eqnarray*}
+      0+mgh=0+\frac{1}{2}kx^2 &\Rightarrow & h=\frac{kx^2}{2mg}=0.174m\\
+    \end{eqnarray*}
+    poi possiamo calcolare la distanxza percorsa nel seguente modo:
+    \begin{eqnarray*}
+      l+x=\frac{h}{\sin 30^o}=\frac{0.175m}{\sin 30^o}=0.35m
+    \end{eqnarray*}
+    da cui: $l=(0.35-0.055)m=0.29m$
+  \item Per calcolare la $v_B$ dobbiamo in primo luogo calcorare il discriminante di y, per fare ciò prenderemo il seno di $\theta$ (angolazione del piano) e la lunghezza ricavata nel primo punto:
+    \begin{eqnarray*}
+      \Delta y=-l\sin\theta=-0.15m
+    \end{eqnarray*}
+    a questo punto possiamo anche definire $v_B$:
+    \begin{eqnarray*}
+      \Delta k + \Delta U = 0\\
+      \frac{1}{2}mv_B^2+mg\Delta y=0\\
+      v_B=\sqrt{-2g\Delta y}=\sqrt{-9.81\cdot 2\cdot (-0.15)}=1.71\frac{m}{s}
+    \end{eqnarray*}
+  \end{enumerate}
+\end{sol}
 \section{Dinamica}
 \label{sec:din}
 
@@ -268,6 +310,37 @@
     \end{equation*}
     Dopo questo possiamo dire che lo spazio di frenata che avrà l'automobile su una strada ghiacciata è di 51m sicuramente molto superiore a quella precedentemente osservata (la frenata è circa 6 volte più lenta rispetto a quella che si ottiene in una strada asciutta).
   \end{tasks}
+\end{sol}
+\begin{es}
+  Un cannone posizionato su un monte alto 1 km spara un proiettile con un angolo di $35^o$ rispetto all’orizzontale. Il proiettile cade sulla vicina valle ad una distanza orizzontale $d= 3 km$. A quale velocità iniziale è stato sparato il proiettile? Qual è il tempo di volo?
+\end{es}
+\begin{sol}
+  Vista la situazione il primo punto da svolgere è proprio quello di andare a definire delle variabili:
+  \begin{eqnarray*}
+    \theta= 35^0\\
+    h=1km\\
+    d=3km
+  \end{eqnarray*}
+  adesso dobbiamo andare a definire la distanza, andando a stilare un sistema con due funzione:
+  \begin{eqnarray*}
+    \begin{cases}
+      x-x_0=d=(v_0\cos\theta_0)t\\
+      y-y_0=-h=(v_0\sin\theta_0)t-\frac{1}{2}gt^2
+    \end{cases}
+  \end{eqnarray*}
+  ora, dopo aver ricavato la distanza possiamo andare a definire il tempo:
+  \begin{eqnarray*}
+    \begin{cases}
+      t=\frac{d}{v_0\cos\theta_0}\\
+      -h=(v_0\sin\theta_0)\frac{d}{v_0\cos\theta_0}-\frac{g}{2}\cdot \frac{d^2}{v_0^2\cos\theta_0}
+    \end{cases}
+  \end{eqnarray*}
+  ora a questo punto possiamo andare a definire $v_0$:
+  \begin{eqnarray*}
+    v_0^2\sin\theta_0\cos\theta_0d=\frac{gd^2}{2}+hv_0^2\cos^2\theta_0=0\\
+    v_0^2=\frac{gd^2}{2(\sin\theta\cos\theta_0d+h\cos\theta_0)}\\
+    v_0=\sqrt{\frac{gd^2}{2(\sin\theta\cos\theta_0d+h\cos\theta_0)}}
+  \end{eqnarray*}
 \end{sol}
 \subsection{Moto circolare univorme}
 \label{sec:motciruni}
@@ -520,13 +593,13 @@
   Quindi prendendo questo preconcetto possiamo proseguire, a noi servono i valori di $W$ e di $\gamma$, le formule per il calcolo sono:
   \begin{equation*}
     \begin{matrix}
-      W=\sqrt{frac{k}{m}} & \gamma =\frac{\beta}{m}
+      W=\sqrt{\frac{k}{m}} & \gamma =\frac{\beta}{m}
     \end{matrix} 
   \end{equation*}
   Detto questo andiamo a calcolare i due valori sostituendo le variabili in valori nomerici:
   \begin{equation*}
     \begin{matrix}
-      W=\sqrt{frac{0.45\frac{N}{m}}{0.23kg}}=1.40s^{-1}\\
+      W=\sqrt{\frac{0.45\frac{N}{m}}{0.23kg}}=1.40s^{-1}\\
       \gamma=\frac{0.017\frac{N\cdot s}{m}}{0.23kg}=0.07s^{-1}
     \end{matrix}
   \end{equation*}
