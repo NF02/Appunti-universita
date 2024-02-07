@@ -1,0 +1,28 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Cinematica}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Moto uniformemente accelerato}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Segmento percorso $s$ dopo il tempo $t$}{5}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Corpo che cade}{5}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Caduta da $h_0$ con velocità iniziale nulla}{6}{subsection.1.1.3}%
+\contentsline {subsubsection}{Tempo di caduta}{6}{subsubsection*.2}%
+\contentsline {subsubsection}{Velocità finale}{6}{subsubsection*.3}%
+\contentsline {subsection}{\numberline {1.1.4}Lancio verso l'alto}{6}{subsection.1.1.4}%
+\contentsline {subsubsection}{Altezza finale}{6}{subsubsection*.4}%
+\contentsline {subsubsection}{Tempo finale}{6}{subsubsection*.5}%
+\contentsline {section}{\numberline {1.2}Moto circolare unicorme}{6}{section.1.2}%
+\contentsline {subsubsection}{Accelerazione centripeta}{6}{subsubsection*.6}%
+\contentsline {subsubsection}{Velocità angolare}{6}{subsubsection*.7}%
+\contentsline {subsection}{\numberline {1.2.1}Energia cinetica totale}{7}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Forza centripeta e centrifuga}{7}{subsection.1.2.2}%
+\contentsline {subsubsection}{Forza centripeta}{7}{subsubsection*.8}%
+\contentsline {subsubsection}{Forza centrifuga}{7}{subsubsection*.9}%
+\contentsline {section}{\numberline {1.3}Somma dei vettori}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Prodotto tra vettori}{7}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Scalare}{7}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Vettoriale}{8}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}Moto con accelerazione variabile}{8}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Velocità dopo un tempo $t$}{8}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Forza di attrito}{8}{subsection.1.5.2}%
+\contentsline {subsubsection}{Attrito statico}{8}{subsubsection*.11}%
+\contentsline {subsubsection}{Attrito dinamico}{8}{subsubsection*.12}%

@@ -86,8 +86,11 @@
 \title{Formulario Fisica 1}
 \author{Nicola Ferru}
 \newtheorem{defi}{Definizione}[section]
+\newtheorem{nota}{Nota}[section]
 \begin{document}
 \maketitle
+\tableofcontents
+
 \chapter{Cinematica}
 \label{sec:cin}
 
@@ -284,4 +287,49 @@ Di cui $\abs{b_p}$ è il componente di $b//ad\text{ }a$
 \end{equation}
 di cui, $a_n$ è componente di $a \bot a b$.
 
+\section{Moto con accelerazione variabile}
+\label{sec:motoconaccevar}
+
+\subsection{Velocità dopo un tempo $t$}
+\label{sec:veldopotempt}
+\begin{equation}
+  \label{eq:veldopuntemptacvar}
+  v=v_0+\inf^t_{t_0}a(t)dt
+\end{equation}
+In questo caso ci le variabili in gioco sono:
+\begin{itemize}
+\item $t_0\to$ interno iniziale;
+\item $v_0\to$ velocità iniziale.
+\end{itemize}
+Questa formula è anche chiamata ``integrale dell'accelerazione rispetto al tempo'' -- equivale sempre all'area sotto al grafico $a(t)-t$.
+\begin{center}
+  accelerazione = derivata rispetto al tempo $\Leftrightarrow$ Velocità = integrale di $a(x)$ in $dt$
+\end{center}
+
+\subsection{Forza di attrito}
+\label{sec:forzadiattr}
+\begin{multicols}{2}
+  \subsubsection{Attrito statico}
+  \label{sec:attrstatico}
+  \begin{equation}
+    \label{eq:attrstatico}
+    fs=\mu_sN
+  \end{equation}
+  
+  \subsubsection{Attrito dinamico}
+  \label{sec:attrdinamico}
+  \begin{equation}
+    \label{eq:attrdinamico}
+    f_k=\mu_kN
+  \end{equation}
+\end{multicols}
+Forza che si origina quando due campi a contatto diretto sono fatti souegare uno con l'altro.
+\begin{itemize}
+\item $N=$ forza normale esercitata dal piano (\textit{appena alla forza peso})
+\item $\mu_s=$ Coefficiente di attrito statico;
+\item $\mu_s=$ Coefficiente di attrito dimamico.
+\end{itemize}
+\begin{nota}
+  L'attrito statico ha un valore massimo generalmente più alto rispetto a quello dinamico. Quando un corpo è meno da una forza $F$, se $F=f_k$ il corpo \textsc{si muove a velocità Costante}. 
+\end{nota}
 \end{document}

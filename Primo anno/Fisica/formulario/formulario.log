@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.31)  7 FEB 2024 18:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.31)  7 FEB 2024 22:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1033,36 +1033,37 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \mc@col@check@num=\count397
 )
 \c@defi=\count398
+\c@nota=\count399
  (./formulario.aux)
 \openout1 = `formulario.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 89.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 89
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 90.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 90
 .
 
 (/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 89.
-Package hyperref Info: Link coloring OFF on input line 89.
+LaTeX Font Info:    ... okay on input line 90.
+Package hyperref Info: Link coloring OFF on input line 90.
  (./formulario.out)
 (./formulario.out)
 \@outlinefile=\write4
@@ -1105,16 +1106,16 @@ Package hyperref Info: Link coloring OFF on input line 89.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count399
+\scratchcounter=\count400
 \scratchdimen=\dimen362
 \scratchbox=\box128
-\nofMPsegments=\count400
-\nofMParguments=\count401
+\nofMPsegments=\count401
+\nofMParguments=\count402
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count402
+\MPscratchCnt=\count403
 \MPscratchDim=\dimen363
-\MPnumerator=\count403
-\makeMPintoPDFobject=\count404
+\MPnumerator=\count404
+\makeMPintoPDFobject=\count405
 \everyMPtoPDFconversion=\toks50
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1125,27 +1126,27 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \it@ocap on input line 89.
-LaTeX Info: Redefining \it@ccap on input line 89.
+LaTeX Info: Redefining \it@ocap on input line 90.
+LaTeX Info: Redefining \it@ccap on input line 90.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count405
-LaTeX Font Info:    Trying to load font information for U+msa on input line 91.
+\c@lstlisting=\count406
+LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 91.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 91
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 92
 .
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -1156,38 +1157,44 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
 /enc/dvips/cm-super/cm-super-t1.enc}] [2
 
+] (./formulario.toc)
+\tf@toc=\write5
+\openout5 = `formulario.toc'.
+
+ [3] [4
+
 ]
 Capitolo 1.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 109.
+(hyperref)                removing `math shift' on input line 112.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 109.
+(hyperref)                removing `math shift' on input line 112.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 109.
+(hyperref)                removing `math shift' on input line 112.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 109.
+(hyperref)                removing `math shift' on input line 112.
 
-[3{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 138.
-
+[5{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 138.
+(hyperref)                removing `math shift' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 138.
+(hyperref)                removing `subscript' on input line 141.
 
-[4]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 141.
+
+[6]
 Package epstopdf Info: Source file: <img/scalare.eps>
 (epstopdf)                    date: 2024-02-07 17:50:31
 (epstopdf)                    size: 46127 bytes
@@ -1196,28 +1203,41 @@ Package epstopdf Info: Source file: <img/scalare.eps>
 (epstopdf)                    size: 5889 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/scalare-eps-converted-
 to.pdf img/scalare.eps>
-(epstopdf)             \includegraphics on input line 268.
+(epstopdf)             \includegraphics on input line 271.
 Package epstopdf Info: Output file is already uptodate.
-<img/scalare-eps-converted-to.pdf, id=113, 90.3375pt x 80.3pt>
+<img/scalare-eps-converted-to.pdf, id=150, 90.3375pt x 80.3pt>
 File: img/scalare-eps-converted-to.pdf Graphic file (type pdf)
 <use img/scalare-eps-converted-to.pdf>
 Package pdftex.def Info: img/scalare-eps-converted-to.pdf  used on input line 2
-68.
+71.
 (pdftex.def)             Requested size: 90.33727pt x 80.29979pt.
- [5] [6 <./img/scalare-eps-converted-to.pdf>] (./formulario.aux)
+ [7]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 293.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 293.
+
+
+LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
+(Font)              using `T1/cmr/m/scsl' instead on input line 333.
+
+[8 <./img/scalare-eps-converted-to.pdf>] (./formulario.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25pt have occurred.
 
 Package rerunfilecheck Info: File `formulario.out' has not changed.
-(rerunfilecheck)             Checksum: 862992DC2A64648F06F172E7F52A4E90;2221.
+(rerunfilecheck)             Checksum: 776B496B72672A14B1B19F864F22402A;2790.
  ) 
 Here is how much of TeX's memory you used:
- 28782 strings out of 476025
- 520226 string characters out of 5796532
+ 28822 strings out of 476025
+ 520749 string characters out of 5796532
  1864388 words of memory out of 5000000
- 48643 multiletter control sequences out of 15000+600000
- 537624 words of font info for 104 fonts, out of 8000000 for 9000
+ 48666 multiletter control sequences out of 15000+600000
+ 539118 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,11n,89p,455b,571s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
@@ -1225,21 +1245,23 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
-fbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></u
-sr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-
-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type
-1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
-er/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
-></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/te
-xmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts/
-type1/public/cm-super/sfti1000.pfb>
-Output written on formulario.pdf (6 pages, 257549 bytes).
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></us
+r/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-d
+ist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1
+/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
+r/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/cm-super/sfsc1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
+super/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.
+pfb>
+Output written on formulario.pdf (8 pages, 290176 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
- 122 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 301 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
