@@ -294,7 +294,7 @@ di cui, $a_n$ è componente di $a \bot a b$.
 \label{sec:veldopotempt}
 \begin{equation}
   \label{eq:veldopuntemptacvar}
-  v=v_0+\inf^t_{t_0}a(t)dt
+  v=v_0+\int^t_{t_0}a(t)dt
 \end{equation}
 In questo caso ci le variabili in gioco sono:
 \begin{itemize}
@@ -332,4 +332,273 @@ Forza che si origina quando due campi a contatto diretto sono fatti souegare uno
 \begin{nota}
   L'attrito statico ha un valore massimo generalmente più alto rispetto a quello dinamico. Quando un corpo è meno da una forza $F$, se $F=f_k$ il corpo \textsc{si muove a velocità Costante}. 
 \end{nota}
+
+\chapter{Dinamica}
+\label{chap:Dinamica}
+
+\section{Lavora}
+\label{sec:lavoro}
+
+\subsection{Forza costante}
+\label{sec:forcostlav}
+
+\begin{defi}
+  Il lavoro è il prodotto scalare tra la forza applicata ad un corpo e l spostamento compiuto da essa.
+  \begin{equation}
+    \label{eq:lavoro}
+    L=(F\cdot \cos \alpha) \Delta s
+  \end{equation}
+  \begin{itemize}
+  \item $F=$ modulo del vettore forza;
+  \item $\Delta s=$ spostamento lungo un asse;
+  \item $\alpha=$ angolo tra forza e spostamento.
+  \end{itemize}
+  quello che mai moltiplicano allo spostamento è {\color{red}la componente del vettore forza \textsc{parallela allo spostamento}}, dunque:
+  \begin{eqnarray*}
+    \text{>se } \alpha = 0, \Rightarrow L = F\cdot \Delta s & \text{\color{red}Forza parallela a spostameto}\\
+    \text{>se } \alpha = 90^o, \Rightarrow L = 0 & \text{\color{red}Forza perpendicolare a spostamento} 
+  \end{eqnarray*}
+\end{defi}
+
+\subsection{Forza variabile}
+\label{sec:forzavarlav}
+\begin{equation}
+  \label{eq:forzavarlav}
+  L_{1,2}=\int_{x_1}^{x_2}F(x)dx
+\end{equation}
+\begin{description}
+\item[$x_{1,2}$ =] delimitano lo spazio entro cui vogliamo conoscere il lavoro compiuto da $F(x)$. 
+\end{description}
+Il lavoro compiuto da una forza è uguale all'asse sotto al grafico $F(x)-x$
+
+\subsubsection{Unità di misura}
+\label{sec:joule}
+
+\begin{equation}
+  \label{eq:joule}
+  1N\cdot 1m=1J \textbf{ (Joule)}
+\end{equation}
+
+\subsection{Lavoro istantaneo}
+\label{sec:lavoroistantaneo}
+
+\begin{equation}
+  \label{eq:lavista}
+  dL=(F\cdot \cos \alpha)ds
+\end{equation}
+\begin{description}
+\item[$ds=$] spostamento infinitesimo
+\end{description}
+\begin{nota}
+  Se la forza cambia esclusivamente la direzione della velocità (\textit{e non il modulo}) \textsc{non compie lavoro}.
+\end{nota}
+
+\section{Potenza}
+\label{sec:potenza}
+
+\begin{defi}
+  la potenza è il rapporto tra il lavoro compiuto da una forza e il tempo da essa compiendo per compierlo
+\end{defi}
+\begin{multicols}{2}
+  \subsubsection{Potenza media}
+  \label{sec:potmedia}
+  \begin{equation}
+    \label{eq:potmedia}
+    <P>=\frac{\Delta L}{\Delta t}
+  \end{equation}
+  
+  \subsubsection{Potenza istantanea}
+  \label{sec:potistant}
+  \begin{equation}
+    \label{eq:potistant}
+    P=\frac{dL}{dt}
+  \end{equation}
+\end{multicols}
+\begin{itemize}
+\item Se la pontenza è costante:
+  \begin{equation}
+    \label{eq:potconst}
+    L=P\Delta t
+  \end{equation}
+\item Unità di misura:
+  \begin{equation}
+    \label{eq:unitadimisura}
+    \frac{1 Joule}{1s}=1W
+  \end{equation}
+\end{itemize}
+
+\section{Energia cinetica}
+\label{sec:energiacin}
+
+\begin{defi}
+  L'energia cinetica è uguale al lavoro necessario per portare $m$ alla velocità $v$ (o al lavoro che la massa necessita per fermarsi)
+  \begin{equation}
+    \label{eq:energiacin}
+    k=\frac{1}{2} mv^2
+  \end{equation}
+  \begin{itemize}
+  \item $m=$ massa;
+  \item $v=$ velocità.
+  \end{itemize}
+\end{defi}
+
+\subsection{Teorema Lavoro-Energia}
+\label{sec:teoLavEn}
+
+\begin{equation}
+  \label{eq:teoLavEn}
+  L=k-k_0
+\end{equation}
+\begin{description}
+\item[$L=$] lavoro totale della forza \textsc{Risultante}
+\item[$k=$] Energia cinetica finale
+\item[$k_0=$] Energia cinetica iniziale
+\end{description}
+Il lavoro svolto da una forza in una particella è uguale alla sua variazione di energia cinetica.
+\begin{itemize}
+\item Questo teorema permette di traciare il lavoro anche quando la forza non varia solo in modulo, \textsc{senza nessun integrale}. 
+\end{itemize}
+
+\subsection{Forze conservative e non conservative}
+\label{sec:forconsenon}
+\begin{itemize}
+\item Conservative
+  \begin{itemize}
+  \item Durante il moto si conserva l'energia meccanica
+  \item Il lavoro dipende solo dalla spostamento totale
+  \item Il lavoro nello spostare un corpo lungo oercirsi kuberi è 0
+  \end{itemize}
+\item Non conservative
+  \begin{itemize}
+  \item Durante il moto \textsc{Non} si conserva l'energia meccanica;
+  \item Il lavoro dipende dal percorso;
+  \item Il lavoro dipende anche dal percorso effettuato. 
+  \end{itemize}
+\end{itemize}
+I sostanza, una forza è conservativa se:
+\begin{itemize}
+\item Il lavoro da essa eseguito nello spostare un corpo dipede solo dallo spostamento totale, \textsc{Non} dal percorso.
+\item Il lavoro da esso compiuto nello spostare un corpo lungo una linea chiusa è nullo (l'energia cinetica tarna la stessa di prima)
+  \begin{equation*}
+    L=\Delta k=0
+  \end{equation*}
+\end{itemize}
+
+\subsubsection{Ricora}
+\label{sec:ricLavposandNeg}
+\begin{center}
+  Lavoro Positivo $\Longleftrightarrow$ Aumenta energia cinetica\\
+  Lavoro Negativa $\Longleftrightarrow$ Diminuisce energia cinetica
+\end{center}
+
+\section{Energia Potenziale}
+\label{sec:enpot}
+
+\begin{defi}
+  L'energia potenziale si può definire soltanto quando abbiamo a che fare con una forza conservativa, che nel moto unidirezionale dipedono solo dalla posizione
+  \begin{equation}
+    \label{eq:enpot}
+    \Delta k=-\Delta U
+  \end{equation}
+  \begin{description}
+  \item[$\Delta k=$] variazione energia cinetica
+  \end{description}
+  a una variazione di $k$, ne corrisponderà una in senso apposto di $U$
+  \begin{equation}
+    \label{eq:differenzak}
+    k_x-k_{x_0}=-(U_x-U_{x_0})
+  \end{equation}
+\end{defi}
+
+\section{Energia meccanica}
+\label{sec:enmecc}
+
+\begin{equation}
+  \label{eq:enmecc}
+  E=k+U
+\end{equation}
+\begin{itemize}
+\item $k=$ energia cinetica
+\item $U=$ energia potenziale
+\end{itemize}
+
+\subsection{Legge di conservazione dell'energia meccanica}
+\label{sec:leggconsenmec}
+
+\begin{defi}
+  Quando il moto cousato da una forza conservativa, l'energia meccanica si \textsc{Conserva} sempre
+  \begin{itemize}
+  \item al decrescere dell'energia cinetica, aumento l'energia potenziale e viceversa, {\color{red}dunque la somma rimane costante}.
+    \begin{equation}
+      \label{eq:leggconsenmec}
+      k_0+U_0=k_F+U_F
+    \end{equation}
+  \end{itemize}
+\end{defi}
+\begin{multicols}{2}
+  \begin{equation*}
+    \Delta U=-\int_{x_0}^xF(x)dx
+  \end{equation*}
+  l'energia potenziale è una funzione di posizione la cui derivata (\textsc{conbiata di segno}) da la forza.\\
+  \begin{equation*}
+    F(x)=-\frac{dU(x)}{dx}
+  \end{equation*}
+  la forza (\textsc{cambiata di segno}) rappresenta la rapidità con cui l'energia potenziale varie lungo $x$.
+\end{multicols}
+
+\subsection{Energia potenziale gravitazionale}
+\label{sec:enpotgrav}
+\begin{equation}
+  \label{eq:enpotgrav}
+  U_y-U_0=mgy\\
+  U(y)=mgy
+\end{equation}
+\begin{description}
+\item[$y=$] posizione sull'asse verticale;
+\item[$g=$] $9.8\sfrac{m}{s^2}$ oppure $9.81\sfrac{m}{s^2}$ dipende da diversi fattori
+\item[$m=$] massa
+\end{description}
+\begin{equation*}
+  U_y-U_0=\int_y^0F(y)dy=\int_y^0(-mg\cdot y)=mgy
+\end{equation*}
+
+\subsection{Energia potenziale elastica}
+\label{sec:enerpotela}
+
+\begin{equation*}
+  U(x)=\int_x^0(-kx)dx=\frac{1}{2}kx^2
+\end{equation*}
+
+\subsection{Forza non conservative}
+\label{sec:forzanoncon}
+
+\begin{equation*}
+  L_{non-cons.}=\Delta{}(k+U)=\Delta{}E
+\end{equation*}
+la presenza di forza non conservative comporta una variazione dell'energia meccanica totale del sistema
+\begin{itemize}
+\item Il teorema lavoro energia può essere scirtto come:
+  \begin{equation*}
+    L_{non-cons.}=\Delta{}k+\sum\Delta{}U
+  \end{equation*}
+\end{itemize}
+\begin{description}
+\item[$\sum\Delta U$] contributo di tutte le forze conservative presenti
+\end{description}
+
+\subsection{Legge di conservazione dell'energia}
+\label{sec:leggconsen}
+\begin{defi}
+  L'energia totale di un sistema isolato, che risulta dalla somma di tute le forme di energia in esso presenti (Cinetica, potenziale, etc\dots) non cambia mai.
+  \begin{itemize}
+  \item questo ``teorema'' in realtà non ho una dimostrazione matematica, ma è verificato dalla semplice esperienza (non si è mai riscontrato un caso in cui questo principio non sia valido)
+  \item matematicamente, il principio è valido fintanto che teniamo conto di ogni frma di energia presente nel sistema.
+  \item Se l'energia meccanica non si conserva, essa è stata in altre forme (l'attrito la dissipa in calore).
+  \end{itemize}
+\end{defi}
+
+\subsection{Centro di massa}
+\label{sec:centdimassa}
+
+Coordinata su un solo 
 \end{document}

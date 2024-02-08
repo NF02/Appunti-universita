@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.31)  7 FEB 2024 22:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.31)  8 FEB 2024 22:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1205,7 +1205,7 @@ Package epstopdf Info: Source file: <img/scalare.eps>
 to.pdf img/scalare.eps>
 (epstopdf)             \includegraphics on input line 271.
 Package epstopdf Info: Output file is already uptodate.
-<img/scalare-eps-converted-to.pdf, id=150, 90.3375pt x 80.3pt>
+<img/scalare-eps-converted-to.pdf, id=226, 90.3375pt x 80.3pt>
 File: img/scalare-eps-converted-to.pdf Graphic file (type pdf)
 <use img/scalare-eps-converted-to.pdf>
 Package pdftex.def Info: img/scalare-eps-converted-to.pdf  used on input line 2
@@ -1224,22 +1224,54 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/scsl' instead on input line 333.
 
-[8 <./img/scalare-eps-converted-to.pdf>] (./formulario.aux)
+[8 <./img/scalare-eps-converted-to.pdf>]
+Capitolo 2.
+
+LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
+(Font)              using `T1/cmr/m/scsl' instead on input line 356.
+
+[9
+
+]
+
+LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
+(Font)              using `T1/cmr/m/scsl' instead on input line 393.
+
+[10]
+
+LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
+(Font)              using `T1/cmr/m/scsl' instead on input line 529.
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 541--543
+
+ []
+
+[12] (./formulario.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25pt have occurred.
 
-Package rerunfilecheck Info: File `formulario.out' has not changed.
-(rerunfilecheck)             Checksum: 776B496B72672A14B1B19F864F22402A;2790.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `formulario.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `formulario.out':
+(rerunfilecheck)             Before: 1646A8B8E2DFE6B6AF9F16EF41DC891E;5250
+(rerunfilecheck)             After:  E001DF369FB77C1D98FBBC6E47F1ACAE;5496.
  ) 
 Here is how much of TeX's memory you used:
- 28822 strings out of 476025
- 520749 string characters out of 5796532
+ 28929 strings out of 476025
+ 522233 string characters out of 5796532
  1864388 words of memory out of 5000000
- 48666 multiletter control sequences out of 15000+600000
- 539118 words of font info for 106 fonts, out of 8000000 for 9000
+ 48724 multiletter control sequences out of 15000+600000
+ 541351 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,89p,455b,571s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,89p,455b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -1248,20 +1280,21 @@ mmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
 share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></us
-r/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-d
-ist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1
-/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
-r/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-</usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/cm-super/sfsc1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
-super/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.
-pfb>
-Output written on formulario.pdf (8 pages, 290176 bytes).
+cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
+r/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-d
+ist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1
+/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
+r/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb>
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
+super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsc1000.
+pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share
+/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on formulario.pdf (12 pages, 333021 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 241 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 438 PDF objects out of 1000 (max. 8388607)
+ 369 compressed objects within 4 object streams
+ 107 named destinations out of 1000 (max. 500000)
+ 266 words of extra memory for PDF output out of 10000 (max. 10000000)
 
