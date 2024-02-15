@@ -600,5 +600,623 @@ la presenza di forza non conservative comporta una variazione dell'energia mecca
 \subsection{Centro di massa}
 \label{sec:centdimassa}
 
-Coordinata su un solo 
+Coordinata su un solo asse (del centro di massa di un sistem di n particelle)
+\begin{equation}
+  \label{eq:centdimassa}
+  x_{cm}=\frac{\sum m_ix_i}{\sum m_i}
+\end{equation}
+\begin{itemize}
+\item $\sum m_ix_i=$ sommatoria delle masse di ogni particella moltiplicate per la loro porzione in un asse;
+\item $\sum m_i=$ massa totale del sistema.
+\end{itemize}
+Il centro di massa è del tutto indipendnete dal sistema di coordinate usato, ma dipende solo dalle distanze relative tra le particelle e dalle toro mane.
+\begin{itemize}
+\item È adattabile solo quando si ha $\alpha$ che fare con il moto \textsc{traslatorio};
+\item È una sorta di media pounderata.
+\end{itemize}
+Nel caso di 2 o 3 dimensioni, si calcolano separatamente le coordinate del centro di massa in ogni asse con la stessa formula.
+
+\subsubsection{coordinate centro di massa (carpo esteso e di materia uniforme)}
+\label{sec:coordcentdimassa}
+
+\begin{equation}
+  \label{eq:coordcentdimassa}
+  x_{cm}=\lim\limits_{\Delta m_i\to 0}= \frac{\sum m_ix_i}{\sum m_i}
+\end{equation}
+\begin{description}
+\item[$m=$] massa totale del corpo
+\end{description}
+\begin{equation*}
+  x_{cm}=\frac{\int x dm}{\int dm}=\frac{1}{M}\cdot \int x dm
+\end{equation*}
+\textsc{Fai lo stesso calcolo su tutti gli assi presenti}
+\begin{center}
+  Centro di massa = Baricentro
+\end{center}
+
+\subsubsection{Equazione vettoriale del centro di massa}
+\label{sec:eqvettdelcentrodimassa}
+
+\begin{equation}
+  \label{eq:eqvettdelcentrodimassa}
+  \vec{s}_{cm}=\frac{\int \vec{s}dm}{\int dm}
+\end{equation}
+\begin{description}
+\item[$\vec{s}=$] vettore posizione 
+\end{description}
+Tieni a mente che molti dei carpi che potresti deve trattare sono dettati di assi, punti o piani di {\color{red}simmetria}, uniti per individuare il centro di massa (in quel punto, lungo quella linea, \dots).
+
+\subsubsection{Accelerazione del centro di massa (di un sistema di particelle)}
+\label{sec:accdelcentrodimass}
+\begin{equation}
+  \label{eq:accdelcentrodimass}
+  M_{cm_x}=\sum F_i = \sum m_i\frac{dV_{i_x}}{dt}
+\end{equation}
+Il prodotto della massa complessivo del gruppo di particelle per l'accelerazione del centro di massa è uguale alla somma vettariale di tutte le forze che agiscono sul sistema di sistema di porticella (\textsc{incluse quelle interne}).
+
+\subsubsection{Legge del moto traslatorio del centro di massa}
+\label{sec:leggedelmottrasldelcndimassa}
+\begin{equation}
+  \label{eq:leggedelmottrasldelcndimassa}
+  F_{est}=Ma_{cm}
+\end{equation}
+\begin{description}
+\item[$f_{est}=$] risultante forza esterne;
+\item[$M=$] massa totale sistema;
+\item[$a=$] accelerazione centro di massa.
+\end{description}
+\begin{nota}
+  Qualsiasi sia il sistema di particelle e qualsiasi configurazione esso abbia, esso si muoverà sempre secondo questa legge.
+\end{nota}
+
+\subsection{Quantità di moto}
+\label{sec:quantmoto}
+
+\begin{equation}
+  \label{eq:quantmoto}
+  \vec{P}=mv
+\end{equation}
+Parte a una nuova difinizione per la forza:
+\begin{equation*}
+  \vec{F}=\frac{d\vec{P}}{dt}
+\end{equation*}
+$F=ma$ infatti, è utilizzabile solo se la massa è costante.
+\begin{itemize}
+\item La quantità di moto totale di un sistema equivale alla somma \textsc{Vettoriale} di tutte le quantità di moto;
+\item Quantità di moto totale di un sistemaç massa totale $\cdot$ velocità centro di massa:
+  \begin{equation*}
+    P_{Tot}=M\cdot V_{cm}
+  \end{equation*}
+\end{itemize}
+La quantità di moto di un sistem isolato \textsc{si conseva}, in quanto non subisce forze esterne. (viceversa, la quantità di moto può essere variata solo da forze esterne al sistema).
+\begin{itemize}
+\item le quantità di massa della singole particelle possono variare, ma non in totale
+\end{itemize}
+\begin{equation*}
+  \frac{d\vec{P}}{dt}=F_{ext}
+\end{equation*}
+Il tempo di variazione della quantità di moto totale di un sistema di particelle è dato dalla rosiltante di tutte le forze esterne applicate al sistema.
+\begin{eqnarray*}
+  \vec{F}=\frac{d\vec{P}}{dt} & \text{Forza (istantanea)} = \frac{\text{variazione di quantità di moto (infinitesimo)}}{\text{Variare del tempo (infinitesimo)}}
+\end{eqnarray*}
+\paragraph{Enuncia questo se chiede la seconda legge di Newton}
+Condizioni per il moto di un sistema:
+\begin{center}
+  Conservazione energetica \textrightarrow{} 1 (scalabile)\\
+  Conservazione quantità di moto \textrightarrow{} 3 (vettoriale, un equazione per ogni coordinata)
+\end{center}
+
+\paragraph{Forza impulsiva:}
+
+Agisce in tempo brevissimi con un intensità molto elevata, di solito riscontrata negli urti (\textsc{Internità varia nel tempo})
+
+\subsection{Teorema dell'impulso -- quantità di moto}
+\label{sec:teodelimpquantmoto}
+\begin{eqnarray}
+  \label{eq:teoremadelimp}
+  \vec{J}=\int_{t_1}^{t_2}F(t) dt=\Delta P
+\end{eqnarray}
+\begin{description}
+\item[$J=$] ``impulso'';
+\item[$\Delta P=$] Variazione quantità di moto.
+\end{description}
+La variazionem di quantità di moto cui è sottoposto un corpo in cui agisce una forza impulsiva è uguale all'inpulso.
+\begin{itemize}
+\item L'impulso è un vettore il cui modulo equivale all'asse sotto al grafico $F(t)-t$
+\item La direzione dov'essere costante.
+\end{itemize}
+
+\subsubsection{Urti}
+\label{sec:urti}
+\begin{description}
+\item[Elastici] L'energia cinetica (totale) si conserva e la quantità di moto si conserva;
+\item[Anaelastici] L'energia cinetica non si conserva e la quantità di moto si conserva;
+\item[Completamente anelastici] corpi rimangorno attaccati
+\end{description}
+
+\subsection{Urto elastico a 2 dimensioni}
+\label{sec:urtela2dim}
+\begin{equation}
+  \label{eq:urtela2dim}
+  V_1+V_1=V_2+V_2
+\end{equation}
+\begin{nota}
+  la velocità della massa1 resta uguale prima e dopo l'urto esattamente come succede nel caso della massa2.
+\end{nota}
+\begin{equation}
+  \label{eq:differenzatravel}
+  V_1-V_2=V_2-V_1
+\end{equation}
+Le differenze di velocità di ognuno delle masse prima e dopo l'urto sono uguali e contrarie
+\begin{equation*}
+  \frac{1}{2}m_1V_1^2+\frac{1}{2}m_2V_2^2=\frac{1}{2}m_1V_1^2+\frac{1}{2}m_2V_2^2
+\end{equation*}
+Per ottenere le velocità, metti a sistema questa equazione con quella in cima.
+
+\subsubsection{Velocità urto completamente anelastico}
+\label{sec:velurtocompan}
+\begin{equation}
+  \label{eq:velurtcompan}
+  m_1V_1+m_2V_2=(m_1+m_2)V
+\end{equation}
+
+\section{Moto rotatorio}
+\label{sec:motorot}
+
+\subsection{Misura angolo in radianti}
+\label{sec:angrad}
+\begin{equation}
+  \label{eq:angrad}
+  \theta = \frac{s}{R}
+\end{equation}
+\begin{description}
+\item[$s=$] arco su cui insiste l'angolo $\theta$
+\item[$R=$] raggio della circonferenza
+\end{description}
+
+\subsection{Velocità angolare media}
+\label{sec:velangmedia}
+\begin{equation}
+  \label{eq:velangmedia}
+  <\omega>=\frac{\Delta \theta}{\Delta t}
+\end{equation}
+\begin{description}
+\item[$\Delta \theta$] variazione angolare
+\item[$\Delta t=$] intervallo di tempo
+\end{description}
+
+\subsection{Velocità angolare istantanea}
+\label{sec:velangist}
+
+\begin{equation}
+  \label{eq:velangist}
+  \omega(t)=\lim\limits_{\Delta t\to 0}\frac{\Delta \theta}{\Delta t}=\frac{d\theta}{dt}
+\end{equation}
+
+\subsection{Accelerazione angolare media}
+\label{sec:accangmedia}
+
+\begin{equation}
+  \label{eq:accangmedia}
+  \alpha=\frac{\Delta \omega}{\Delta t}
+\end{equation}
+Di cui istantaneo: $\alpha=\lim\limits_{\Delta t\to 0}\frac{\Delta \omega}{\Delta t}=\frac{d\omega}{dt}$
+
+\subsection{Moto con accelerazione angolare costante}
+\label{sec:motconaccelangcost}
+\begin{equation}
+  \label{eq:motconaccelangcost}
+  \begin{cases}
+    \omega=\omega_0+\alpha t\\
+    \theta= \frac{1}{2} (\omega_0+\omega)t\\
+    \theta= \theta_0+\omega_0t+\frac{1}{2}\alpha t^2 & \text{equazioni orarie}
+  \end{cases}
+\end{equation}
+
+\subsection{Velocità lineare di particella parte di un corpo rigido}
+\label{sec:vellindipartcorprigid}
+\begin{equation}
+  \label{eq:vellindipartcorprigid}
+  V=r\omega
+\end{equation}
+\begin{description}
+\item[$r=$] distanza da asse di rotazione
+\end{description}
+
+\subsection{Accelerazione lineare di particella parte di un corpo rigido}
+\label{sec:acclindipartcorprigid}
+\begin{equation}
+  \label{eq:acclindipartcorprigid}
+  a_T=r \alpha
+\end{equation}
+\begin{description}
+\item[$a_T=$] Accelerazione tangente alla traslatoria
+\item[$\alpha=$] accelerazione angolare
+\end{description}
+
+\subsection{Momento di inerzia del corpo rigido}
+\label{sec:mominidelcorporigid}
+\begin{equation}
+  \label{eq:mominidelcorporigid}
+  \begin{matrix}
+    I=\sum(m_ir^2_i)\\
+    \textdownarrow\\
+    I=\int r^2dm
+  \end{matrix}
+\end{equation}
+\begin{itemize}
+\item È la sommatoria del prodotto della massa e della porzione rispetto all'asse al quadrato di tutto le particelle del corpo preso in condensazione. {\color{red}Equazione alla massa nel moto rotatorio}
+\item La formula diventa un'integrale per i corpi di materiale informe\footnote{È come dividere il corpo in unità di massa minuscole, duncque è un'integrale di volume}
+\end{itemize}
+
+\subsection{Energia cinetica di un corpo in rotazione}
+\label{sec:encindiuncorinrot}
+
+\begin{equation}
+  \label{eq:encindiuncorinrot}
+  K_{tot}=\frac{1}{2}I\omega^2
+\end{equation}
+Somma di tutte le energie cinetiche di tutte le parti di cui è composto il corpo.
+
+\subsection{Momento della forza}
+\label{sec:momdellaforz}
+
+\begin{equation}
+  \label{eq:momdellaforz}
+  \begin{matrix}
+    \vec{r}=\vec{r}\times{}\vec{F}\\
+    r=r F\sin \theta
+  \end{matrix}
+\end{equation}
+Prodotto vettoriale tra le forze applicata a un corpo per farlo muovere ($F$) e la distanza dal riferimento $O$, ovvero dall'asse di rotazione del corpo ($r$).
+\begin{equation*}
+  \boxed{r=I\alpha}
+\end{equation*}
+Questa forma è data dalla onaloga con $F=ma$.
+
+\subsection{Momento di un particella}
+\label{sec:momdiunpart}
+
+\begin{equation}
+  \label{eq:momdiunpart}
+  \begin{matrix}
+    \vec{L}=\vec{r}\times{}\vec{P}\\
+    L=rP\sin \theta
+  \end{matrix}
+\end{equation}
+\begin{itemize}
+\item $P$ è la quantità di moto della particella, $r$ la sua distanza dell'origine del sistema di assi;
+\item Moto anche come \underline{momento della quantità di moto};
+\item Equilibrante rotatorio della quantità di moto, da assi dava: $L=I\omega$
+  \begin{equation*}
+    \tau=\frac{dL}{dt}=\frac{d(I\omega)}{dt}
+  \end{equation*}
+  e per via del teorama del impulso (\ref{sec:teodelimpquantmoto}) -- variazione della quantità di moto:
+  \begin{equation*}
+    dL=\tau dt\Rightarrow \Delta L=\int \tau (t)dt
+  \end{equation*}
+\end{itemize}
+
+\subsubsection{Principio di conservazione del momento ongolare}
+\label{sec:princdiconsdelmomang}
+
+Se la risultante dei momenti applicati al sistema di particelle è nulla, ad esempio, in un sistema isolato\dots{}
+\begin{equation*}
+  I\omega=\text{costante}
+\end{equation*}
+
+\subsection{Momenti di inerzia da ricordare}
+\label{sec:momdiinerziadaric}
+\begin{multicols}{2}
+  \subsubsection{Cilindro pieno}
+  \label{sec:cilpiandove}
+  \begin{description}
+  \item[$l=$] lunghezza
+  \item[$R=$] raggio variazione
+  \item[$m=$] massa
+  \end{description}
+  
+  \subsubsection{Sbarra sottile}
+  \label{sec:sbarrasottile}
+  \begin{description}
+  \item[$l=$] lunghezza
+  \item[$m=$] massa
+  \end{description}
+  
+  \subsubsection{Rotazione rispetto all'asse del cilindro}
+  \label{sec:rotrispalassdelcil}
+  \begin{equation}
+    \label{eq:rotrispalassdelcil}
+    I=\frac{mR^2}{2}
+  \end{equation}
+  
+  \subsubsection{Rotazione rispetto ad un diametro centrale}
+  \label{sec:rotrispadundiamcent}
+  \begin{equation}
+    \label{eq:rotrispadundiamcent}
+    I=\frac{mR^2}{4}+\frac{ml^2}{12}
+  \end{equation}
+  
+  \subsubsection{Rispetto ad un asse perpendicolare al centro della lunghezza}
+  \label{sec:risadunasperalcentrodellung}
+  \begin{equation}
+    \label{eq:risadunasperalcentrodellung}
+    I=\frac{nl^2}{12}
+  \end{equation}
+  
+  \subsubsection{Rotazione rispetto a un asse perpendicolare a un esterno}
+  \label{sec:rotrispaunasperpaunestern}
+  \begin{equation}
+    \label{eq:rotrispaunasperpaunestern}
+    I=\frac{ml}{2}
+  \end{equation}
+  
+  \subsubsection{Sfera piena (rispetto a diametro qualunque)}
+  \label{sec:sferapiena}
+  \begin{equation}
+    \label{eq:sperapiena}
+    I=\frac{2nR^2}{5}
+  \end{equation}
+  dove:
+  \begin{description}
+  \item[$R=$] raggio
+  \item[$m=$] massa
+  \end{description}
+  
+  \subsubsection{Superficie sferica (rispetto a diametro qualunque)}
+  \label{sec:supersferica}
+  \begin{equation}
+    \label{eq:supersferica}
+    I=\frac{2mR^2}{3}
+  \end{equation}
+\end{multicols}
+
+\section{Equazione del moto di un oscillazione armonico}
+\label{sec:eqdelmotodiunoscarm}
+
+\begin{equation}
+  \label{eq:eqdelmotodiunscarm}
+  m\frac{d^{\prime\prime}x}{dt^2}+kx=0
+\end{equation}
+
+\paragraph{Oscillazione armonica}
+
+sistema isolato con una massa e una molla in movimento.
+\begin{itemize}
+\item Trattandosi di una \underline{equazione differenziale}, è risalto da una funzione.
+\item Per ogni fenomeno governato da questa equazione, il eriodo di oscillazione dipejnde solo dalla massa m e dalla costante elastica k
+  \begin{equation*}
+    T=2\pi\sqrt{\frac{m}{k}}
+  \end{equation*}
+\end{itemize}
+
+\subsection{Legge di Hook}
+\label{sec:leggedihook}
+
+\begin{equation}
+  \label{eq:leggedihook}
+  F=-kx
+\end{equation}
+\begin{description}
+\item[$x=$] ollungamento (in moti) o deformazione;
+\item[$k=$] costante elastica, dipende dalle caratteristiche della molla.
+\end{description}
+La forza elastica è sempre opposta alla deformazione
+
+\subsection{Energia potenziale}
+\label{sec:enpotenz}
+\begin{equation}
+  \label{eq:enpotenz}
+  U=\frac{1}{2}kx^2
+\end{equation}
+\begin{itemize}
+\item L'oscillatore ormonico è un sistema consecutivo, dunque \underline{l'energia meccanica si consecutivo}
+\item L'energia potenziale è minima nella posizione di equilibrio stabile
+  \begin{equation}
+    \label{eq:enpotenz2}
+    x=0
+  \end{equation}
+\end{itemize}
+
+\subsection{Legge del moto armonico}
+\label{sec:leggdelmotarmo}
+
+\begin{equation}
+  \label{eq:leggdelmotarmo}
+  x(t)=A\cdot \cos(\omega t+\delta)
+\end{equation}
+\begin{description}
+ \item[$A=$] ampiezza massima, dipende dall'oscillazione impieno all'inizio del moto;
+\item[$\delta=$] costante di forza, dipende dalla velocità iniziale della massa;
+\item[$\omega=$] pulsazione/frequenza angolare, ha le dimensioni di una velocità angolare.
+\end{description}
+Questa è la funzione che riserve l'equazione differenziale di prima
+\begin{equation}
+  \label{eq:leggedelmotarmo2}
+  (\omega t+\delta)=\text{fase del moto}
+\end{equation}
+Siccome la funzione coseno è limitata tra -1 e 1 (compressi), la posizione $x(t)$ sarà limitata tra $-A$ e $A$
+\begin{equation*}
+  -1<\cos x \leq 1 \Longrightarrow -A\leq x(t)\leq A
+\end{equation*}
+\begin{multicols}{2}
+  \subsubsection{Periodo}
+  \label{sec:periodoarm}
+  \begin{equation*}
+    T=\frac{2\pi}{\omega} = 2\pi\sqrt{\frac{m}{k}}
+  \end{equation*}
+  Dipende solo da $k$ e $m$
+  \subsubsection{Frequenza}
+  \label{sec:freqarm}
+  \begin{equation*}
+    f=\frac{1}{T}=\frac{\omega}{2\pi}=\frac{1}{2\pi}\sqrt{\frac{k}{m}}
+  \end{equation*}
+  È misurato in Hz
+\end{multicols}
+Queste definizioni vengono dallàequazione differenziale.
+
+\subsection{Velocità nel moto armonico}
+\label{sec:velnelmotarmon}
+\begin{equation}
+  \label{eq:velnelmotarmon}
+  V(t)=\frac{dx}{dt}=-\omega A\sin (\omega t +\delta)
+\end{equation}
+
+\subsection{Accelerazione nel moto armonico}
+\label{sec:accnelmotarm}
+
+\begin{equation}
+  \label{eq:accnelmotarm}
+  a(t)=\frac{d^{\prime\prime}x}{dt}=-\omega^2 A\cos (\omega t +\delta)
+\end{equation}
+
+\subsection{Energia cinetica}
+\label{sec:encin}
+
+\begin{equation}
+  \label{eq:encin}
+  \begin{matrix}
+    k=\frac{1}{2}mv^2=\underbrace{\frac{1}{2}k}_{\omega^2\cdot m}A^2\sin^2(\omega t*\delta) & \omega=\frac{k}{m}
+  \end{matrix}
+\end{equation}
+Valore massimo $k$: $\frac{1}{2}kA^2$
+\begin{multicols}{2}
+  \subsubsection{Energia potenziale}
+  \label{sec:enpotmotoarm}
+  \begin{equation*}
+    U=\frac{1}{2}kA^2\cos^2(\omega t +\delta)
+  \end{equation*}
+  Valore massimo $U$: $\frac{1}{2}kA^2$
+  
+  \subsubsection{energia meccanica}
+  \label{sec:enmecmotoarm}
+  \begin{equation*}
+    E=U+k=\frac{1}{2}kA^2
+  \end{equation*}
+\end{multicols}
+
+\subsection{Moto armonico smorzato}
+\label{sec:motarmsmorz}
+
+\begin{multicols}{2}
+  \begin{equation}
+    \label{eq:motarmsmorz}
+    m\frac{d^{\prime\prime}x}{dt^2}+b\frac{dx}{dt}+kx=0
+  \end{equation}
+  
+  \subsubsection{Modulo forza d'attrito}
+  \label{sec:modforzattr}
+  \begin{equation}
+    \label{eq:modforzattr}
+    F_a=-b\frac{dx}{dt}
+  \end{equation}
+\end{multicols}
+\begin{nota}
+  $b$ è una costante ricavata soerimentalmente nel caso preso in esame e dipende da numerosi fattori. ha dimensione tali da far attenere una forza se moltiplicata con una velocità.
+\end{nota}
+
+\subsubsection{legge del moto armonico smorzato}
+\label{sec:leggdelmotarmsmorz}
+
+\begin{equation}
+  \label{eq:leggdelmotarmsmorz}
+  x(t)=Ae^{-\frac{bt}{2m}}\cos(\omega^\prime t+\omega)
+\end{equation}
+dove
+\begin{equation*}
+  \omega^\prime = \sqrt{\frac{k}{m} - \left(\frac{b}{2m}\right)^2}
+\end{equation*}
+\begin{nota}
+  risolve l'equazione (\ref{eq:modforzattr}) se b è sufficientemente piccolo
+\end{nota}
+
+\subsection{Oscilazioni forzate}
+\label{sec:oscillaforz}
+\begin{equation}
+  \label{eq:oscillaforz}
+  m\frac{d^{\prime\prime}x}{dt^2}+b\frac{dx}{dt}+kx=\underbrace{F_m\cos(\omega^{\prime\prime}t)}_{\textsc{Forza esterna al sistema}}
+\end{equation}
+\begin{nota}
+  la risposta del del sistema oscillante dipende dal rapporto tra la frequenza della forza esterna e la frequanza di oscillazione del sistema (\textsc{tanto più questo rapporto si ovvicina a 1, tanto maggiore è l'ampiezza del oscillazione}).
+\end{nota}
+
+\subsection{Legge del moto armonico forzato}
+\label{sec:leggedelmotoarmforz}
+
+\begin{equation}
+  \label{eq:leggedelmotoarmforz}
+  x(t)=\left(\frac{F_m}{G}\right)\cdot \sin(\omega^{\prime\prime}-\alpha)
+\end{equation}
+dove:
+\begin{eqnarray}
+  \label{eq:leggedelmotoarmforz2}
+  G=\sqrt{m^2(\omega^{\prime\prime}-\omega^2)^2+b^2\omega^{\prime\prime2}} &e& \alpha=\arccos\left(\frac{b\omega^{\prime\prime}}{G}\right)
+\end{eqnarray}
+\begin{description}
+\item[$\omega^{\prime\prime}=$] frequenza imposta dalla forza;
+\item[$\omega=$] frequenza propria del sistema, dipende da $k$ e $m$
+\item[$b=$] coefficiente d'attrito del sistema
+\item[$\alpha=$] forza iniziale
+\end{description}
+
+\chapter{Pendoli}
+\label{chap:pendoli}
+
+\section{Pendolo semplice}
+\label{sec:pensem}
+
+\begin{defi}
+  il suo è un moto armonico solo più oscillazioni molto piccole (per $theta\to 0$ $\theta\approx\theta$)
+  \subsubsection{Periodo}
+  \label{sec:perpensem}
+  \begin{equation}
+    \label{eq:pensem}
+    T=2\pi\sqrt{\frac{l}{g}}
+  \end{equation}
+  \begin{description}
+  \item[$l=$] Lunghezza fune;
+  \item[$g=$] gravità.
+  \end{description}
+  Il periodo è totalmente indipendente dalla massa.
+\end{defi}
+
+\section{Pendolo di torsione}
+\label{sec:penditors}
+
+In questo caso il usiamo granzezze rotazionali -- Forza di richiamo diventa \textsc{momento di richiamo}
+\begin{equation}
+  \label{eq:momedirich}
+  \tau=-x\theta
+\end{equation}
+
+\subsection{Legge del moto}
+\label{sec:leggedelmotopenditors}
+
+\begin{equation}
+  \label{eq:leggedelmotopenditors}
+  \theta=\theta_m\cos(\omega t+\delta)
+\end{equation}
+È la soluzione all'equazione differenziale:
+
+\begin{multicols}{2}
+  \subsubsection{Soluzione integrale}
+  \label{sec:leggedelmotopendditorsintegral}
+  \begin{equation}
+    \label{eq:leggedelmotopendditorsintegral}
+    \frac{d^{\prime\prime}\theta}{dt^2}=-\frac{x}{I}\theta
+  \end{equation}
+  \subsubsection{Periodo}
+  \label{sec:periodoleggedelmotopendditorsione}
+  \begin{equation}
+    \label{eq:periodoleggedelmotopendditorsione}
+    T=2\pi\sqrt{\frac{I}{x}}
+  \end{equation}
+\end{multicols}
+\begin{itemize}
+\item \textsc{Analoga al caso lineare!}
+\item $I=$ momento di inerzia
+\item $x=$ costante di torsione {\color{red}(dipende dalle proprietà del filo)}
+\end{itemize}
+
+
 \end{document}
