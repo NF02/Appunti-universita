@@ -103,4 +103,18 @@
 \contentsline {section}{\numberline {3.2}Pendolo di torsione}{23}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Legge del moto}{23}{subsection.3.2.1}%
 \contentsline {subsubsection}{Soluzione integrale}{23}{subsubsection*.42}%
-\contentsline {subsubsection}{periodo}{23}{subsubsection*.43}%
+\contentsline {subsubsection}{Periodo}{23}{subsubsection*.43}%
+\contentsline {subsection}{\numberline {3.2.2}Onde}{24}{subsection.3.2.2}%
+\contentsline {paragraph}{Propagazione:}{24}{paragraph*.45}%
+\contentsline {subsubsection}{Dimensioni}{24}{subsubsection*.46}%
+\contentsline {subsection}{\numberline {3.2.3}Equazione di onda sinusoidale}{24}{subsection.3.2.3}%
+\contentsline {subsubsection}{Numero d'onda}{24}{subsubsection*.47}%
+\contentsline {subsubsection}{Frequenza ongolare}{24}{subsubsection*.48}%
+\contentsline {subsubsection}{Equazione per la teoria}{25}{subsubsection*.49}%
+\contentsline {subsubsection}{Velocità di fase}{25}{subsubsection*.50}%
+\contentsline {subsection}{\numberline {3.2.4}Potenza}{25}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Serie di Fourer}{25}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Onda stazionaria}{25}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Frequenze notivoli}{26}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Onde sommarie}{26}{subsection.3.2.8}%
+\contentsline {subsubsection}{Velocità di propagazione}{26}{subsubsection*.51}%

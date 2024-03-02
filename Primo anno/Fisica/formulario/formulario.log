@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  16 FEB 2024 00:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  19 FEB 2024 12:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1069,6 +1069,10 @@ Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
 (xtemplate)             line 80.
 
 )
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/latex/doublestrok
+e/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
 (/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/latex/listings/li
 stings.sty
 \lst@mode=\count373
@@ -1202,37 +1206,130 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 )
 \c@defi=\count398
 \c@nota=\count399
- (./formulario.aux)
+ (./tikzit.sty
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@layerbox@background=\box128
+\pgf@layerboxsaved@background=\box129
+)
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/libra
+ries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen362
+))
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/libra
+ries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/libra
+ries/shapes/pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/libra
+ries/shapes/pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/libra
+ries/shapes/pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/libra
+ries/shapes/pgflibraryshapes.callouts.code.tex))
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/generic/pgf/libra
+ries/shapes/pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box130
+\pgfnodeparttwobox=\box131
+\pgfnodepartthreebox=\box132
+\pgfnodepartfourbox=\box133
+\pgfnodeparttwentybox=\box134
+\pgfnodepartnineteenbox=\box135
+\pgfnodeparteighteenbox=\box136
+\pgfnodepartseventeenbox=\box137
+\pgfnodepartsixteenbox=\box138
+\pgfnodepartfifteenbox=\box139
+\pgfnodepartfourteenbox=\box140
+\pgfnodepartthirteenbox=\box141
+\pgfnodeparttwelvebox=\box142
+\pgfnodepartelevenbox=\box143
+\pgfnodeparttenbox=\box144
+\pgfnodepartninebox=\box145
+\pgfnodeparteightbox=\box146
+\pgfnodepartsevenbox=\box147
+\pgfnodepartsixbox=\box148
+\pgfnodepartfivebox=\box149
+)))
+\pgf@layerbox@edgelayer=\box150
+\pgf@layerboxsaved@edgelayer=\box151
+\pgf@layerbox@nodelayer=\box152
+\pgf@layerboxsaved@nodelayer=\box153
+) (./img/sstyle.tikzstyles)
+(./formulario.aux
+
+LaTeX Warning: Label `sec:potenza' multiply defined.
+
+)
 \openout1 = `formulario.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 90.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 90
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 98.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 98
 .
 
 (/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/latex/tipa/t3cmr.
 fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 90.
-Package hyperref Info: Link coloring OFF on input line 90.
+LaTeX Font Info:    ... okay on input line 98.
+Package hyperref Info: Link coloring OFF on input line 98.
  (./formulario.out) (./formulario.out)
 \@outlinefile=\write4
 \openout4 = `formulario.out'.
@@ -1277,13 +1374,13 @@ Package hyperref Info: Link coloring OFF on input line 90.
 /supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count400
-\scratchdimen=\dimen362
-\scratchbox=\box128
+\scratchdimen=\dimen363
+\scratchbox=\box154
 \nofMPsegments=\count401
 \nofMParguments=\count402
 \everyMPshowfont=\toks49
 \MPscratchCnt=\count403
-\MPscratchDim=\dimen363
+\MPscratchDim=\dimen364
 \MPnumerator=\count404
 \makeMPintoPDFobject=\count405
 \everyMPtoPDFconversion=\toks50
@@ -1299,30 +1396,30 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \it@ocap on input line 90.
-LaTeX Info: Redefining \it@ccap on input line 90.
+LaTeX Info: Redefining \it@ocap on input line 98.
+LaTeX Info: Redefining \it@ccap on input line 98.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count406
-LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 100
+.
 
 (/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/latex/amsfonts/um
 sa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 100
+.
 
 (/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/latex/amsfonts/um
 sb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 92
-.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
+0.
 
 (/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/latex/jknapltx/ur
 sfs.fd
@@ -1343,19 +1440,19 @@ nc/dvips/cm-super/cm-super-t1.enc}] [2
 Capitolo 1.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 112.
+(hyperref)                removing `math shift' on input line 120.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 112.
+(hyperref)                removing `math shift' on input line 120.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 112.
+(hyperref)                removing `math shift' on input line 120.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 112.
+(hyperref)                removing `math shift' on input line 120.
 
 [5
 
@@ -1363,15 +1460,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 per/cm-super-ts1.enc}]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 141.
+(hyperref)                removing `math shift' on input line 149.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 141.
+(hyperref)                removing `subscript' on input line 149.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 141.
+(hyperref)                removing `math shift' on input line 149.
 
 [6]
 Package epstopdf Info: Source file: <img/scalare.eps>
@@ -1382,82 +1479,117 @@ Package epstopdf Info: Source file: <img/scalare.eps>
 (epstopdf)                    size: 5889 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/scalare-eps-converted-
 to.pdf img/scalare.eps>
-(epstopdf)             \includegraphics on input line 271.
+(epstopdf)             \includegraphics on input line 279.
 Package epstopdf Info: Output file is already uptodate.
-<img/scalare-eps-converted-to.pdf, id=387, 90.3375pt x 80.3pt>
+<img/scalare-eps-converted-to.pdf, id=417, 90.3375pt x 80.3pt>
 File: img/scalare-eps-converted-to.pdf Graphic file (type pdf)
 <use img/scalare-eps-converted-to.pdf>
 Package pdftex.def Info: img/scalare-eps-converted-to.pdf  used on input line 2
-71.
+79.
 (pdftex.def)             Requested size: 90.33727pt x 80.29979pt.
  [7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 293.
+(hyperref)                removing `math shift' on input line 301.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 293.
+(hyperref)                removing `math shift' on input line 301.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 333.
+(Font)              using `T1/cmr/m/scsl' instead on input line 341.
 
 [8 <./img/scalare-eps-converted-to.pdf>]
 Capitolo 2.
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 356.
+(Font)              using `T1/cmr/m/scsl' instead on input line 364.
 
 [9
 
 ]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 393.
+(Font)              using `T1/cmr/m/scsl' instead on input line 401.
 
 [10]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 529.
+(Font)              using `T1/cmr/m/scsl' instead on input line 537.
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 541--543
+Underfull \hbox (badness 10000) in paragraph at lines 549--551
 
  []
 
 [12] [13] [14] [15]
 
-LaTeX Warning: Command \textdownarrow invalid in math mode on input line 843.
+LaTeX Warning: Command \textdownarrow invalid in math mode on input line 851.
 
 [16] [17] [18] [19]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 1140.
+(Font)              using `T1/cmr/m/scsl' instead on input line 1148.
 
 [20] [21] [22
 
 ]
 Capitolo 3.
-[23] (./formulario.aux)
+(./img/onde.tikz) [23] [24]
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 1
+289.
+
+(/opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/tex/latex/doublestrok
+e/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+) [25]
+./formulario.tex:1390: You can't use `\eqno' in math mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.1390 \end{equation}
+                     
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./formulario.tex:1390: Missing } inserted.
+<inserted text> 
+                }
+l.1390 \end{equation}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[26] (./formulario.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25pt have occurred.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `formulario.out' has not changed.
-(rerunfilecheck)             Checksum: E6E7B26D80D3A8C3E3721FC205A0E692;11788.
+
+Package rerunfilecheck Warning: File `formulario.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `formulario.out':
+(rerunfilecheck)             Before: 24EC5B508E20FCCA7F7C7CFBA52661EE;12626
+(rerunfilecheck)             After:  7F132852A7351F5D1E226E63813D1FD5;12756.
  ) 
 Here is how much of TeX's memory you used:
- 29203 strings out of 476025
- 541502 string characters out of 5779036
- 1864388 words of memory out of 5000000
- 48869 multiletter control sequences out of 15000+600000
- 544911 words of font info for 115 fonts, out of 8000000 for 9000
+ 32039 strings out of 476025
+ 620728 string characters out of 5779036
+ 1867388 words of memory out of 5000000
+ 51604 multiletter control sequences out of 15000+600000
+ 545775 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,13n,89p,455b,605s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,16n,89p,455b,741s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
@@ -1476,30 +1608,32 @@ fb></opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr8.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/202303
 13_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/homebrew/C
-ellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.
-pfb></opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/publi
-c/cm-super/sfbx1200.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/texmf-di
-st/fonts/type1/public/cm-super/sfbx1440.pfb></opt/homebrew/Cellar/texlive/20230
-313_2/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></opt/homebrew/
-Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488
-.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/publ
-ic/cm-super/sfcc0700.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/texmf-d
-ist/fonts/type1/public/cm-super/sfcc1000.pfb></opt/homebrew/Cellar/texlive/2023
-0313_2/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></opt/homebrew
-/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/cm-super/sfrm070
-0.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm0800.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/texmf-
-dist/fonts/type1/public/cm-super/sfrm1000.pfb></opt/homebrew/Cellar/texlive/202
-30313_2/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></opt/homebre
-w/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/cm-super/sfrm17
-28.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/pu
-blic/cm-super/sfsc1000.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/texmf
--dist/fonts/type1/public/cm-super/sfsl1000.pfb></opt/homebrew/Cellar/texlive/20
-230313_2/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on formulario.pdf (23 pages, 467176 bytes).
+ellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/doublestroke/dsrom
+10.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/pu
+blic/cm-super/sfbx1000.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/texmf
+-dist/fonts/type1/public/cm-super/sfbx1200.pfb></opt/homebrew/Cellar/texlive/20
+230313_2/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></opt/homebr
+ew/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/cm-super/sfbx2
+074.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/p
+ublic/cm-super/sfbx2488.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/texm
+f-dist/fonts/type1/public/cm-super/sfcc0700.pfb></opt/homebrew/Cellar/texlive/2
+0230313_2/share/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></opt/homeb
+rew/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/cm-super/sfrm
+0600.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/
+public/cm-super/sfrm0700.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/tex
+mf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></opt/homebrew/Cellar/texlive/
+20230313_2/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></opt/home
+brew/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/cm-super/sfr
+m1200.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1
+/public/cm-super/sfrm1728.pfb></opt/homebrew/Cellar/texlive/20230313_2/share/te
+xmf-dist/fonts/type1/public/cm-super/sfsc1000.pfb></opt/homebrew/Cellar/texlive
+/20230313_2/share/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></opt/hom
+ebrew/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/cm-super/sf
+ti1000.pfb>
+Output written on formulario.pdf (26 pages, 482422 bytes).
 PDF statistics:
- 777 PDF objects out of 1000 (max. 8388607)
- 686 compressed objects within 7 object streams
- 230 named destinations out of 1000 (max. 500000)
- 522 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 854 PDF objects out of 1000 (max. 8388607)
+ 757 compressed objects within 8 object streams
+ 261 named destinations out of 1000 (max. 500000)
+ 570 words of extra memory for PDF output out of 10000 (max. 10000000)
 
