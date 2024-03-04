@@ -32,6 +32,7 @@
 \usepackage{mathrsfs}
 \usepackage{textcomp}
 \usepackage{xfrac}
+\usepackage{dsfont}
 
 \usepackage{listings}
 \usepackage{color}
@@ -85,8 +86,15 @@
 
 \title{Formulario Fisica 1}
 \author{Nicola Ferru}
+
+% definizioni
 \newtheorem{defi}{Definizione}[section]
 \newtheorem{nota}{Nota}[section]
+
+% stili grafici
+\usepackage{tikzit}
+\input{img/sstyle.tikzstyles}
+
 \begin{document}
 \maketitle
 \tableofcontents
@@ -1218,5 +1226,175 @@ In questo caso il usiamo granzezze rotazionali -- Forza di richiamo diventa \tex
 \item $x=$ costante di torsione {\color{red}(dipende dalle proprietà del filo)}
 \end{itemize}
 
+\subsection{Onde}
+\label{sec:onde}
+\begin{figure}[ht!]
+  \centering
+  \input{img/onde.tikz}
+  \caption{tipologie di onde}
+  \label{fig:tiponde}
+\end{figure}
+
+\paragraph{Propagazione:}
+Le onde si dividono anche in piane (si propagano in una direzione) e sferiche (si propagano in tutte le dimensioni) -- lontano della sorgente passano essere considerate piene.
+
+\subsubsection{Dimensioni}
+\label{sec:ondim}
+\begin{itemize}
+\item Unidimensionali;
+\item Bidimensionali;
+\item Tridimensionali.
+\end{itemize}
+Dipende dalla dimensione del mezzo.
+
+\subsection{Equazione di onda sinusoidale}
+\label{sec:eqsin}
+\begin{eqnarray}
+  \label{eq:eqsin}
+  y(x,t)=y_m\sin(kx-\omega t -\psi) & y_m=\text{ampiezza massima oscilazione}
+\end{eqnarray}
+Dove:
+\begin{multicols}{2}
+  \subsubsection{Numero d'onda}
+  \label{sec:nonda}
+  
+  \begin{equation}
+    \label{eq:nonda}
+    k=\frac{2\pi}{\lambda}
+  \end{equation}
+  
+  \subsubsection{Frequenza ongolare}
+  \label{sec:fdonda}
+  \begin{equation}
+    \label{eq:fdonda}
+    k=\frac{2\pi}{T}
+  \end{equation}  
+\end{multicols}
+\begin{description}
+\item[$T=$] periodo, tempo necessario a una fase qualsiasi per percorrere $1\lambda$
+\item[$\lambda=$] distanza tra due punti con una stessa \underline{fase};
+\item[$\psi=$] ``angolo di fase'', dipende dalla posizione in $y$ per $x=0$ e $t=0$.
+\end{description}
+
+\subsubsection{Equazione per la teoria}
+\label{sec:teoonde}
+
+\begin{equation}
+  \label{eq:teoonde}
+  y(x,t)=y_m\sin2\pi\left(\frac{x}{\lambda}-\frac{t}{T}\right)
+\end{equation}
+\begin{itemize}
+\item finito $
+  \begin{matrix}
+    t, & y(x)=y(x+k\lambda) & \forall k\in \mathds{Z}
+  \end{matrix}
+  $ (numeri interi)
+\item finito $
+  \begin{matrix}
+    x, & y(t)=y(t+kT) & \forall k \in \mathds{Z} 
+  \end{matrix}
+  $
+\end{itemize}
+\begin{multicols}{2}
+  \subsubsection{Velocità di fase}
+  \label{sec:velfase}
+  \begin{equation}
+    \label{eq:velfase}
+    V=\frac{\lambda}{T}
+  \end{equation}
+  \begin{nota}
+    La velocità di fase è la velocità di una qualsiasi fase dell'onda ({\color{red}ovvero la sua velocità di propagazione})
+  \end{nota}
+\end{multicols}
+di cui:
+\begin{equation*}
+  \lambda=VT=\frac{V}{f}
+\end{equation*}
+In ogni punto $x_0$, l'equazione $y(t)$ diventa l'equazione di un moto armonico di periodo $T=\frac{2\pi}{\omega}$
+\begin{multicols}{2}
+  \begin{equation*}
+    V=\sqrt{\frac{F}{\mu}}
+  \end{equation*}
+  \begin{nota}
+    Nell'esempio di una corda:
+    \begin{description}
+    \item[$F=$] forza con cui la tendono $\left[n<T^{-2}\right]$
+    \item[$\mu=$] massa dell'unità di lunquezza della corda $\left[LT^{-1}\right]$
+    \end{description}
+  \end{nota}
+\end{multicols}
+La velocità di propagazione di un'onda dipende dalle proprietà fisiche del mezo
+
+\subsection{Potenza}
+\label{sec:potenza}
+
+In questo caso {\color{red}non è costante}, dato che varia la potenza della sorgente del moto ondulatorio.
+\begin{equation}
+  \label{eq:potenza}
+  <P>= 2\pi^2y_m^2f^2\mu V
+\end{equation}
+La potenza trasmessa attraversa una superficie unitaria ortogonale alla direzione di proporzione dell'onda è detta {\color{red}intensità dell'onde (I)}
+
+\subsection{Serie di Fourer}
+\label{sec:fourer}
+
+Qualsiasi onda periodico, per il principio disovrapposizione, può esserescomposta come una somma di ``componenti ormoniche'', ovvero componenti sinusoidali
+\begin{equation}
+  \label{eq:fourer}
+  \begin{matrix}
+    y(t)=A_0+A_1\sin(\omega t)+A_2\sin(\omega t)+\dots+A_N\sin(\omega t) +\\
+    B_1\cos(\omega t)+B_2 \cos(\omega t) +\dots + B_N\cos (\omega t)
+  \end{matrix}
+\end{equation}
+dove $\omega=\frac{2\pi}{T}$
+
+\subsection{Onda stazionaria}
+\label{sec:ondaStazionaria}
+
+\begin{equation}
+  \label{eq:ondaStazionaria}
+  y=2y_m\sin kx \cos \omega t
+\end{equation}
+data dalla massa di onda incidente e onda rilessa.
+
+\subsection{Frequenze notivoli}
+\label{sec:freqnot}
+
+\begin{equation}
+  \label{eq:freqnot}
+  f=\underbrace{\frac{n}{2l}}_\lambda\underbrace{\sqrt{\frac{F}{\mu}}}_{v}
+\end{equation}
+Questa formula proviene da $f=\frac{v}{\lambda}$.
+\begin{description}
+\item[$n \in \mathds{N}$] numero intero di $\frac{\lambda}{2}$ presenti in una conda di lunghezza $l$
+\end{description}
+\begin{equation}
+  \label{eq:freqnot2}
+  \begin{matrix}
+    \lambda = \frac{2l}{n} \Leftrightarrow \sfrac{l}{\frac{\lambda}{2}}=n\\
+    V=\sqrt{\frac{F}{\mu}}
+  \end{matrix}
+\end{equation}
+
+\subsection{Onde sommarie}
+\label{sec:ondesom}
+
+Frequenza udibile dall'uomo: $20Hz\to 20.000Hz$
+
+\subsubsection{Velocità di propagazione}
+\label{sec:veldiprop}
+
+\begin{equation}
+  \label{eq:veldiprop}
+  V=\sqrt{\frac{B}{\sigma_0}
+\end{equation}
+\begin{description}
+\item[$\omega=$] sigma
+  \begin{equation*}
+    B=-\frac{V\Delta P}{\Delta V}
+  \end{equation*}
+\item[$\sigma_0=$] è la densità del fluido indisturbato
+\item[$B=$] 
+\end{description}
 
 \end{document}
