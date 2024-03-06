@@ -1,0 +1,6 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {subsubsection}{Prefazione}{3}{subsubsection*.2}%
+\contentsline {chapter}{\numberline {1}Vettori, coordinate e geometria}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Vettori Geometrici}{5}{section.1.1}%
+\contentsline {paragraph}{Denotare che}{5}{paragraph*.3}%

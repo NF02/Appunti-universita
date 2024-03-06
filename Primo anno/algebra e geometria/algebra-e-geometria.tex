@@ -1,0 +1,190 @@
+\documentclass{book}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=3.0cm,right=3.0cm]{geometry}
+
+%\documentclass[pdftex,10pt,a4paper]{book}
+%\usepackage[paperwidth=19cm,
+%paperheight=26cm, outer=2cm, 
+%top=1.5cm, bottom=1.5cm]{ geometry}
+
+\usepackage[english,italian]{babel} %l'ultima lingua è quella che legge per i titoli
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc,url}
+\usepackage{titlesec}
+\usepackage{easylist}
+\usepackage{hanging}
+
+\usepackage[pdftex,colorlinks]{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,
+	urlcolor=cyan,
+}
+\usepackage{hypcap}
+\usepackage{blindtext}
+\usepackage{tipa}
+\usepackage{epigraph}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pbox}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{textcomp}
+\usepackage{circuitikz}
+\usepackage{pifont}
+\usepackage{imakeidx}
+\usepackage{verbatim}
+\usepackage{dsfont}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{upgreek}
+\usepackage{tasks}
+\usepackage{exsheets}
+\usepackage{pgfplots}
+\usepackage{amsthm}
+\usepackage{wasysym}
+\usepackage{dsfont}
+
+% impostazioni grafici
+\usepackage{tikzit}
+\input{img/stile.tikzstyles}
+
+\usepackage{showframe}
+\renewcommand\ShowFrameLinethickness{0.15pt}
+%\renewcommand*\ShowFrameColor{\color{red}}
+
+%\usepackage{showkeys} %serve per mostrare le etichette "tag" o target, va tolta per la versione definitiva;
+
+\SetupExSheets[question]{type=exam}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  firstnumber=1000,                % start line enumeration with line 1000
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\frenchspacing
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+\usepackage{floatflt,epsfig}
+
+\usepackage{multicol}
+\newcommand\yellowbigsqcup[1][\displaystyle]{%
+  \fboxrule0pt
+  \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
+  \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
+
+\theoremstyle{definition}
+\newtheorem{defi}{Definizione}[section]
+\newtheorem{es}{Esempio}[section]
+\theoremstyle{plain}
+\newtheorem{nota}{Nota}[section]
+
+\title{Algebra e geometria}
+\author{Nicola Ferru}
+\begin{document}
+\maketitle
+\tableofcontents
+
+\subsubsection{Prefazione}
+\label{sec:pref}
+
+Questo documento è soggetto alla proprietà di Nicola Ferru Aka NFVblog, il materiale è stato preso dalle lezioni di Geometria e algebra, le modalità di utilizzo e distribuzione sono scritte nel file \href{https://github.com/NF02/Appunti-universita/blob/main/LICENSE}{LICENSE}.
+
+\chapter{Vettori, coordinate e geometria}
+\label{chap:vettcoordegeo}
+Uno degli argomenti su cui il corso si basa sono proprio i \textit{vettori}. All'interno di questo capitolo saranno presenti nozioni e definizioni legate alla natura stessa di queste entità matematiche dai rudimenti ad alcuni spetti più avanzati.
+
+\section{Vettori Geometrici}
+\label{sec:vettorigeo}
+\begin{defi}
+  \label{def:vettorigeo}
+  Un vettore geometrico applicato nel piano è un segmento orientato che va da un punto fisso O ``Origine'' verso un secondo punto $P$ del piano, come mostrato nella figira \ref{fig:vettorigeo}: 
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{3cm}{!}{
+      \input{img/vettGeo.tikz}
+    }
+    \caption{Esempio vettori geometrici}
+    \label{fig:vettorigeo}
+  \end{figure}\\
+  Analogamente, se il punto $P$ (\textit{e quindi il segmento}) è libero di variare in tutto lo spazio tridimensionale. In ambo i casi il vettore sarà denotato $\vec{OP}$ (\textit{si denota che il punto finale $P$ può anche uguale a $O$, ovvero il vettore può essere molto ravvicinato al punto $O$}).
+\end{defi}
+\begin{nota}
+  \label{nota:vettorigeo}
+  La direzione è indicata dalla simbolo freccia, graficamente la lunghezza e direzione del vettore implicano il modo in cui agisce nello spazio, ad esempio, se due vettori hanno direzioni opposte uno si sottrarrà potenzialmente al altro.
+\end{nota}
+
+\paragraph{Denotare che}
+con $V_O^2$ l'unsieme dei vettori geometrici applicati in $O$ nel piano, e con $V_O^3$ l'insieme dei vettori geometrici applicati in $O$ liberi di variare in tutto lo spazio tridimensionale. I vettori orientati sono utilizzati infisica, dove vengono usati per rappresentare le forze applicate sul punto $O$.
+\begin{es}
+  Si può immaginare che in $O$ si trovi un oggetto sul quale viene esercitata una forza che lo ``trascina'' nella direzione e nel verso dati dalla freccia come evidenziato nella nota (\ref{nota:vettorigeo}), mentre l'intensità della forza esercitata è rappresentata dlla lunghezza del segmento.
+\begin{figure}[ht!]
+  \centering
+  \resizebox{7.5cm}{!}{
+      \input{img/vettGeo2.tikz}
+    }
+  \caption{Somma vettoriale}
+  \label{fig:sommavect}
+\end{figure}
+Dal momento che $\vec{OP}_3$ rappresenta la forza totale esercitata la forza totale esercitata su $O$ quando si applicano contemporaneamente $\vec{OP_1}$ e $\vec{OP}_2$, il meccanismo più immediato è associare l'operazione ad una addizione, infatti, essa viene scritta come:
+\begin{equation}
+  \label{eq:sommavect}
+  \vec{OP}_3=\vec{OP}_1+\vec{OP}_2
+\end{equation}
+La rappresentazione grafica è presente in figura \ref{fig:sommavect} definisce in modo in cui un'operazione di somma sull'insieme di vettori geometrici (del piono o dello spazio) viene rappresentata.
+\end{es}
+Per i vettori che non hanno la stessa direzione, si denota che $OP_3$ è la direzionale del parallelogramma che ha $OP_1$ e $OP_2$ come lati (infatti, viene definita anche come \textit{regola del parallelogramma}). Il motodo descrittivo funziona comunque anche per sommare due o più vettori che hanno la stessa direzione:
+\begin{figure}[ht!]
+  \centering
+  \resizebox{9cm}{!}{
+      \input{img/vettGeo3.tikz}
+    }
+  \caption{Regola del parallelogramma}
+  \label{fig:metparallelogramma}
+\end{figure}\\
+Anche in questo caso vale la formula \ref{eq:sommavect}, infatti, graficamente la $OP_3$ è chiaramente frutto di una somma tra il segmento $OP_1$ e $OP_2$.
+\end{document}
