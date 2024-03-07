@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 1) {};
+		\node [style=none] (1) at (2, 3) {};
+		\node [style=none] (2) at (4, 5) {};
+		\node [style=none] (3) at (-1, 0) {};
+		\node [style=none] (4) at (-0.25, 1.25) {O};
+		\node [style=none] (5) at (1.75, 3.25) {P};
+		\node [style=none] (6) at (-1.25, -0.5) {$\frac{1}{2}\vec{OP}$};
+		\node [style=none] (7) at (4.25, 5.5) {$2\vec{OP}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=Rightarrow] (0.center) to (1.center);
+		\draw [style=Rightarrow] (1.center) to (2.center);
+		\draw [style=Dashedrightarrow] (0.center) to (3.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -4,3 +4,4 @@
 \contentsline {chapter}{\numberline {1}Vettori, coordinate e geometria}{5}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Vettori Geometrici}{5}{section.1.1}%
 \contentsline {paragraph}{Denotare che}{5}{paragraph*.3}%
+\contentsline {section}{\numberline {1.2}Coordinate}{7}{section.1.2}%
