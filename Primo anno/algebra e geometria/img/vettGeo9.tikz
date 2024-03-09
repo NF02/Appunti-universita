@@ -1,0 +1,43 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-3, 3) {};
+		\node [style=none] (1) at (-3, 0) {};
+		\node [style=none] (2) at (0, 0) {};
+		\node [style=none] (3) at (-3, 6) {};
+		\node [style=none] (4) at (-3, 9) {};
+		\node [style=none] (5) at (0, 9) {};
+		\node [style=none] (6) at (0, 6) {};
+		\node [style=none] (7) at (0, 3) {};
+		\node [style=none] (8) at (3, 9) {};
+		\node [style=none] (9) at (3, 6) {};
+		\node [style=none] (10) at (3, 3) {};
+		\node [style=none] (11) at (3, 0) {};
+		\node [style=none] (12) at (6, 9) {};
+		\node [style=none] (13) at (6, 6) {};
+		\node [style=none] (14) at (6, 3) {};
+		\node [style=none] (15) at (6, 0) {};
+		\node [style=none] (16) at (-0.75, 5.75) {$Q_2$};
+		\node [style=none] (17) at (3.5, 2.5) {$Q_1$};
+		\node [style=none] (18) at (6, 9.75) {$\vec{OQ}_1+\vec{OQ}_2$};
+		\node [style=none] (19) at (-3.75, 3) {$P_2$};
+		\node [style=none] (20) at (0, -0.5) {$P_1$};
+		\node [style=none] (21) at (-3.25, -0.25) {O};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=DashedCampitura] (4.center) to (12.center);
+		\draw [style=DashedCampitura] (12.center) to (15.center);
+		\draw [style=DashedCampitura] (4.center) to (0.center);
+		\draw [style=DashedCampitura] (2.center) to (15.center);
+		\draw [style=DashedCampitura] (8.center) to (11.center);
+		\draw [style=DashedCampitura] (5.center) to (2.center);
+		\draw [style=DashedCampitura] (3.center) to (13.center);
+		\draw [style=DashedCampitura] (14.center) to (0.center);
+		\draw [style=Rightarrow] (1.center) to (0.center);
+		\draw [style=Rightarrow] (1.center) to (2.center);
+		\draw [style=Rightarrow] (1.center) to (12.center);
+		\draw [style=Rightarrow] (1.center) to (6.center);
+		\draw [style=Rightarrow] (1.center) to (10.center);
+		\draw [style=Rightarrow] (6.center) to (12.center);
+		\draw [style=Rightarrow] (10.center) to (12.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

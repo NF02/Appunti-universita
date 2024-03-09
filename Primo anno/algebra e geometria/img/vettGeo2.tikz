@@ -33,7 +33,7 @@
 		\draw [style=Rightarrow] (15.center) to (14.center);
 		\draw [style=Rightarrow] (15.center) to (16.center);
 		\draw [style=Rightarrow] (15.center) to (17.center);
-		\draw [style=new edge style 0] (17.center) to (16.center);
-		\draw [style=new edge style 0] (14.center) to (17.center);
+		\draw [style=campitura] (17.center) to (16.center);
+		\draw [style=campitura] (14.center) to (17.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

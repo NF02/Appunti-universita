@@ -1,0 +1,47 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1, 6) {};
+		\node [style=none] (1) at (-1.5, 5) {};
+		\node [style=none] (2) at (-2.25, 3.5) {};
+		\node [style=none] (3) at (-4.5, -1) {};
+		\node [style=none] (4) at (-1, -1) {};
+		\node [style=none] (5) at (1.5, -1) {};
+		\node [style=none] (6) at (3, 1) {};
+		\node [style=none] (7) at (-2.5, 1) {};
+		\node [style=none] (8) at (3.75, 4) {};
+		\node [style=none] (10) at (4, 4.5) {$P$};
+		\node [style=none] (11) at (-1.5, 6) {$r_3$};
+		\node [style=none] (12) at (-7, 3) {};
+		\node [style=none] (13) at (-10, -4) {};
+		\node [style=none] (14) at (7, 3) {};
+		\node [style=none] (15) at (4, -4) {};
+		\node [style=none] (16) at (-2.5, 4) {$P_3$};
+		\node [style=none] (17) at (-4.5, 2) {$c_3\vec{OP}_3$};
+		\node [style=none] (18) at (-3.25, 0.25) {};
+		\node [style=none] (19) at (-2.25, 1.5) {$c_2\vec{OP}_2$};
+		\node [style=none] (20) at (3.5, 1.25) {$Q$};
+		\node [style=none] (21) at (-5, -1.25) {O};
+		\node [style=none] (22) at (-1, -1.5) {$P_1$};
+		\node [style=none] (23) at (1.5, -1.5) {$c_1\vec{OP}_1$};
+		\node [style=none] (24) at (-3.25, 0.5) {$P_2$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=Rightarrow] (3.center) to (2.center);
+		\draw [style=Rightarrow] (2.center) to (1.center);
+		\draw [style=campitura] (1.center) to (0.center);
+		\draw [style=Rightarrow] (3.center) to (4.center);
+		\draw [style=Rightarrow] (4.center) to (5.center);
+		\draw [style=Rightarrow] (3.center) to (6.center);
+		\draw [style=campitura] (5.center) to (6.center);
+		\draw [style=campitura] (7.center) to (6.center);
+		\draw [style=campitura] (6.center) to (8.center);
+		\draw [style=Rightarrow] (3.center) to (8.center);
+		\draw [style=campitura] (2.center) to (8.center);
+		\draw (13.center) to (12.center);
+		\draw (12.center) to (14.center);
+		\draw (14.center) to (15.center);
+		\draw (15.center) to (13.center);
+		\draw [style=Rightarrow] (3.center) to (18.center);
+		\draw [style=Rightarrow] (18.center) to (7.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

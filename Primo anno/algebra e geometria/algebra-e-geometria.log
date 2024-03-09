@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.17)  7 MAR 2024 21:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.17)  10 MAR 2024 00:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1508,35 +1508,36 @@ Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 \c@es=\count445
 \c@oss=\count446
 \c@nota=\count447
+\c@prop=\count448
 
 (./algebra-e-geometria.aux)
 \openout1 = `algebra-e-geometria.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 129.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 12
-9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 130.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 13
+0.
  (/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    ... okay on input line 130.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1572,9 +1573,9 @@ LaTeX Font Info:    ... okay on input line 129.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \it@ocap on input line 129.
-LaTeX Info: Redefining \it@ccap on input line 129.
-Package hyperref Info: Link coloring ON on input line 129.
+LaTeX Info: Redefining \it@ocap on input line 130.
+LaTeX Info: Redefining \it@ccap on input line 130.
+Package hyperref Info: Link coloring ON on input line 130.
 (./algebra-e-geometria.out) (./algebra-e-geometria.out)
 \@outlinefile=\write4
 \openout4 = `algebra-e-geometria.out'.
@@ -1582,16 +1583,16 @@ Package hyperref Info: Link coloring ON on input line 129.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count448
+\scratchcounter=\count449
 \scratchdimen=\dimen420
 \scratchbox=\box169
-\nofMPsegments=\count449
-\nofMParguments=\count450
+\nofMPsegments=\count450
+\nofMParguments=\count451
 \everyMPshowfont=\toks67
-\MPscratchCnt=\count451
+\MPscratchCnt=\count452
 \MPscratchDim=\dimen421
-\MPnumerator=\count452
-\makeMPintoPDFobject=\count453
+\MPnumerator=\count453
+\makeMPintoPDFobject=\count454
 \everyMPtoPDFconversion=\toks68
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1607,7 +1608,7 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count454
+\c@lstlisting=\count455
 
 Package exsheets Info: Loading custom configurations file
 (exsheets)             `exsheets_configurations.cfg'.
@@ -1617,7 +1618,7 @@ Package exsheets Info: Loading custom configurations file
 File: exsheets_configurations.cfg 
 )
 Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 129.
+alian.trsl' found. on input line 130.
 
 (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-eng
 lish.trsl
@@ -1625,33 +1626,33 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 129.
+or `english'. on input line 130.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 129.
+ on input line 130.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 131
+LaTeX Font Info:    Trying to load font information for U+msa on input line 132
 .
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 131
+LaTeX Font Info:    Trying to load font information for U+msb on input line 132
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 13
-1.
+2.
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 13
-1.
+2.
 
 (/usr/share/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
@@ -1671,18 +1672,19 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 Capitolo 1.
 (./img/vettGeo.tikz) (./img/vettGeo2.tikz) [5] (./img/vettGeo3.tikz)
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 1
-91.
+92.
 
 (/usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) (./img/vettGeo4.tikz)
 [6] [7] (./img/vettGeo5.tikz) (./img/vettGeo6.tikz)
 
-LaTeX Warning: Reference `' on page 8 undefined on input line 313.
+LaTeX Warning: Reference `' on page 8 undefined on input line 315.
 
-[8
+(./img/vettGeo7.tikz) [8
 
-] [9] (./algebra-e-geometria.aux)
+] [9] (./img/vettGeo8.tikz) (./img/vettGeo9.tikz)
+[10] [11] (./algebra-e-geometria.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1690,11 +1692,11 @@ Package rerunfilecheck Info: File `algebra-e-geometria.out' has not changed.
 (rerunfilecheck)             Checksum: F6EF84D71C63C25A4C596F60DF3B40C0;458.
  ) 
 Here is how much of TeX's memory you used:
- 61457 strings out of 476025
- 1520117 string characters out of 5796532
- 2414123 words of memory out of 5000000
- 80911 multiletter control sequences out of 15000+600000
- 536183 words of font info for 100 fonts, out of 8000000 for 9000
+ 61510 strings out of 476025
+ 1520844 string characters out of 5796532
+ 2422335 words of memory out of 5000000
+ 80941 multiletter control sequences out of 15000+600000
+ 536949 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,89p,928b,917s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -1720,10 +1722,10 @@ ype1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
 super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.
 pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share
 /texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on algebra-e-geometria.pdf (9 pages, 297028 bytes).
+Output written on algebra-e-geometria.pdf (11 pages, 312089 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 180 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
+ 271 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
  37 words of extra memory for PDF output out of 10000 (max. 10000000)
 
