@@ -1,3 +1,4 @@
 * materiale assente da integrare
 - formule generali dell'accelerazione del accelerazione media (*moto uniforme*);
 - Legge oraria (*moto retilineo uniforme*)
+- periodo e frequenza (*moto circolare uniforme*)

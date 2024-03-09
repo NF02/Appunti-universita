@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {1.1.4}Lancio verso l'alto}{6}{subsection.1.1.4}%
 \contentsline {subsubsection}{Altezza finale}{6}{subsubsection*.4}%
 \contentsline {subsubsection}{Tempo finale}{6}{subsubsection*.5}%
-\contentsline {section}{\numberline {1.2}Moto circolare unicorme}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Moto circolare uniforme}{6}{section.1.2}%
 \contentsline {subsubsection}{Accelerazione centripeta}{6}{subsubsection*.6}%
 \contentsline {subsubsection}{Velocità angolare}{6}{subsubsection*.7}%
 \contentsline {subsection}{\numberline {1.2.1}Energia cinetica totale}{7}{subsection.1.2.1}%
