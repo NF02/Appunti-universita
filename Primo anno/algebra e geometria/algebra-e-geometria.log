@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.17)  10 MAR 2024 00:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.17)  10 MAR 2024 21:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1666,39 +1666,41 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 \tf@toc=\write5
 \openout5 = `algebra-e-geometria.toc'.
 
- [3] [4
+ (./pag/vettcoordegeo.tex [3]
+[4
 
 ]
 Capitolo 1.
 (./img/vettGeo.tikz) (./img/vettGeo2.tikz) [5] (./img/vettGeo3.tikz)
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 1
-92.
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 5
+5.
 
 (/usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) (./img/vettGeo4.tikz)
 [6] [7] (./img/vettGeo5.tikz) (./img/vettGeo6.tikz)
 
-LaTeX Warning: Reference `' on page 8 undefined on input line 315.
+LaTeX Warning: Reference `' on page 8 undefined on input line 178.
 
 (./img/vettGeo7.tikz) [8
 
 ] [9] (./img/vettGeo8.tikz) (./img/vettGeo9.tikz)
-[10] [11] (./algebra-e-geometria.aux)
+[10]) (./img/vettGeo10.tikz) (./img/vettGeo11.tikz) [11] (./img/vettGeo12.tikz)
+(./img/vettGeo13.tikz) [12] (./algebra-e-geometria.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `algebra-e-geometria.out' has not changed.
-(rerunfilecheck)             Checksum: F6EF84D71C63C25A4C596F60DF3B40C0;458.
+(rerunfilecheck)             Checksum: BAC832BFDF0CD782F368FBBFE15BBBE4;608.
  ) 
 Here is how much of TeX's memory you used:
- 61510 strings out of 476025
- 1520844 string characters out of 5796532
- 2422335 words of memory out of 5000000
- 80941 multiletter control sequences out of 15000+600000
+ 61622 strings out of 476025
+ 1522613 string characters out of 5796532
+ 2422337 words of memory out of 5000000
+ 81030 multiletter control sequences out of 15000+600000
  536949 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,89p,928b,917s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,15n,89p,958b,917s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
@@ -1722,10 +1724,10 @@ ype1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
 super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.
 pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share
 /texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on algebra-e-geometria.pdf (11 pages, 312089 bytes).
+Output written on algebra-e-geometria.pdf (12 pages, 327658 bytes).
 PDF statistics:
- 271 PDF objects out of 1000 (max. 8388607)
- 209 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 225 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

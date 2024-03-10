@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 4) {};
+		\node [style=none] (1) at (0, 0) {};
+		\node [style=none] (2) at (4, 0) {};
+		\node [style=none] (3) at (0, 0.5) {};
+		\node [style=none] (4) at (0.5, 0) {};
+		\node [style=none] (5) at (-0.25, -0.5) {O};
+		\node [style=none] (6) at (-0.75, 4) {$P_2$};
+		\node [style=none] (7) at (4, -0.5) {$P_1$};
+		\node [style=none] (8) at (0, 6) {};
+		\node [style=none] (9) at (6, 0) {};
+		\node [style=none] (10) at (0, 10) {};
+		\node [style=none] (11) at (10, 0) {};
+		\node [style=none] (12) at (6, 6) {};
+		\node [style=none] (13) at (6, 0.5) {};
+		\node [style=none] (14) at (5.5, 0) {};
+		\node [style=none] (15) at (-1.25, 6) {$x_2\vec{OP}_2$};
+		\node [style=none] (16) at (6, -0.5) {$x_1\vec{OP}_1$};
+		\node [style=none] (17) at (10, -0.5) {$r_1$};
+		\node [style=none] (18) at (6.25, 6.5) {$P$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=campitura, bend left=45, looseness=1.50] (3.center) to (4.center);
+		\draw [style=Rightarrow] (1.center) to (0.center);
+		\draw [style=Rightarrow] (1.center) to (2.center);
+		\draw [style=Rightarrow] (0.center) to (8.center);
+		\draw [style=Rightarrow] (2.center) to (9.center);
+		\draw [style=campitura] (8.center) to (10.center);
+		\draw [style=campitura] (9.center) to (11.center);
+		\draw [style=Rightarrow] (1.center) to (12.center);
+		\draw [style=DashedCampitura] (8.center) to (12.center);
+		\draw [style=DashedCampitura] (12.center) to (9.center);
+		\draw [style=campitura, bend left=45, looseness=1.25] (14.center) to (13.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 4) {};
+		\node [style=none] (1) at (0, 0) {};
+		\node [style=none] (2) at (4, 0) {};
+		\node [style=none] (3) at (0, 0.5) {};
+		\node [style=none] (4) at (0.5, 0) {};
+		\node [style=none] (5) at (-0.25, -0.5) {O};
+		\node [style=none] (6) at (-0.75, 4) {$P_2$};
+		\node [style=none] (7) at (4, -0.5) {$P_1$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=campitura, bend left=45, looseness=1.50] (3.center) to (4.center);
+		\draw [style=Rightarrow] (1.center) to (0.center);
+		\draw [style=Rightarrow] (1.center) to (2.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

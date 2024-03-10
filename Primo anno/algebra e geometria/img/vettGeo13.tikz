@@ -1,0 +1,59 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 2) {};
+		\node [style=none] (1) at (0, 0) {};
+		\node [style=none] (2) at (2, 0) {};
+		\node [style=none] (3) at (-2, -2) {};
+		\node [style=none] (6) at (1.75, 7) {};
+		\node [style=none] (8) at (-0.5, 0.25) {O};
+		\node [style=none] (9) at (-0.5, 2) {$P_3$};
+		\node [style=none] (10) at (2.25, 0.5) {$P_2$};
+		\node [style=none] (11) at (-2.75, -1.75) {$P_1$};
+		\node [style=none] (12) at (1.75, -3) {};
+		\node [style=none] (13) at (0, 9) {};
+		\node [style=none] (14) at (4, 0) {};
+		\node [style=none] (15) at (-3, -3) {};
+		\node [style=none] (16) at (2, -3.5) {$Q$};
+		\node [style=none] (17) at (4.75, 0) {$x_2\vec{OP}_2$};
+		\node [style=none] (18) at (-4, -3) {$x_1\vec{OP}_1$};
+		\node [style=none] (19) at (2, 7.5) {P};
+		\node [style=none] (20) at (-1.25, 9) {$x_3\vec{OP}_3$};
+		\node [style=none] (21) at (0, 8) {};
+		\node [style=none] (22) at (1.75, 6) {};
+		\node [style=none] (23) at (0, 7) {};
+		\node [style=none] (24) at (1.75, 5) {};
+		\node [style=none] (25) at (0, 6) {};
+		\node [style=none] (26) at (1.75, 4) {};
+		\node [style=none] (27) at (0, 5) {};
+		\node [style=none] (28) at (1.75, 3) {};
+		\node [style=none] (29) at (0, 4) {};
+		\node [style=none] (30) at (0, 3) {};
+		\node [style=none] (31) at (1.75, 2) {};
+		\node [style=none] (32) at (1.75, 0) {};
+		\node [style=none] (33) at (0, 1) {};
+		\node [style=none] (34) at (1.75, -1.25) {};
+		\node [style=none] (35) at (1.75, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=Rightarrow] (1.center) to (0.center);
+		\draw [style=Rightarrow] (1.center) to (2.center);
+		\draw [style=Rightarrow] (1.center) to (3.center);
+		\draw [style=Rightarrow] (1.center) to (12.center);
+		\draw [style=Rightarrow] (0.center) to (13.center);
+		\draw [style=Rightarrow] (1.center) to (6.center);
+		\draw [style=DashedCampitura] (13.center) to (6.center);
+		\draw [style=DashedCampitura] (6.center) to (12.center);
+		\draw [style=Rightarrow] (2.center) to (14.center);
+		\draw [style=DashedCampitura] (14.center) to (12.center);
+		\draw [style=Rightarrow] (3.center) to (15.center);
+		\draw [style=DashedCampitura] (15.center) to (12.center);
+		\draw [style=campitura] (21.center) to (22.center);
+		\draw [style=campitura] (23.center) to (24.center);
+		\draw [style=campitura] (33.center) to (34.center);
+		\draw [style=campitura] (0.center) to (32.center);
+		\draw [style=campitura] (25.center) to (26.center);
+		\draw [style=campitura] (27.center) to (28.center);
+		\draw [style=campitura] (29.center) to (31.center);
+		\draw [style=campitura] (30.center) to (35.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

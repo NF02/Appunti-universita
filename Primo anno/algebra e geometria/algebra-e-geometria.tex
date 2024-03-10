@@ -135,286 +135,56 @@
 \label{sec:pref}
 
 Questo documento è soggetto alla proprietà di Nicola Ferru Aka NFVblog, il materiale è stato preso dalle lezioni di Geometria e algebra, le modalità di utilizzo e distribuzione sono scritte nel file \href{https://github.com/NF02/Appunti-universita/blob/main/LICENSE}{LICENSE}.
+\input{pag/vettcoordegeo.tex}
 
-\chapter{Vettori, coordinate e geometria}
-\label{chap:vettcoordegeo}
-Uno degli argomenti su cui il corso si basa sono proprio i \textit{vettori}. All'interno di questo capitolo saranno presenti nozioni e definizioni legate alla natura stessa di queste entità matematiche dai rudimenti ad alcuni spetti più avanzati.
+\section{Lunghezze e angoli}
+\label{sec:lungeang}
 
-\section{Vettori Geometrici}
-\label{sec:vettorigeo}
-\begin{defi}
-  \label{def:vettorigeo}
-  Un vettore geometrico applicato nel piano è un segmento orientato che va da un punto fisso O ``Origine'' verso un secondo punto $P$ del piano, come mostrato nella figira \ref{fig:vettorigeo}: 
-  \begin{figure}[ht!]
-    \centering
-    \resizebox{3cm}{!}{
-      \input{img/vettGeo.tikz}
-    }
-    \caption{Esempio vettori geometrici}
-    \label{fig:vettorigeo}
-  \end{figure}\\
-  Analogamente, se il punto $P$ (\textit{e quindi il segmento}) è libero di variare in tutto lo spazio tridimensionale. In ambo i casi il vettore sarà denotato $\vec{OP}$ (\textit{si denota che il punto finale $P$ può anche uguale a $O$, ovvero il vettore può essere molto ravvicinato al punto $O$}).
-\end{defi}
-\begin{nota}
-  \label{nota:vettorigeo}
-  La direzione è indicata dalla simbolo freccia, graficamente la lunghezza e direzione del vettore implicano il modo in cui agisce nello spazio, ad esempio, se due vettori hanno direzioni opposte uno si sottrarrà potenzialmente al altro.
-\end{nota}
-
-\paragraph{Denotare che}
-con $V_O^2$ l'unsieme dei vettori geometrici applicati in $O$ nel piano, e con $V_O^3$ l'insieme dei vettori geometrici applicati in $O$ liberi di variare in tutto lo spazio tridimensionale. I vettori orientati sono utilizzati infisica, dove vengono usati per rappresentare le forze applicate sul punto $O$.
-\begin{es}
-  Si può immaginare che in $O$ si trovi un oggetto sul quale viene esercitata una forza che lo ``trascina'' nella direzione e nel verso dati dalla freccia come evidenziato nella nota (\ref{nota:vettorigeo}), mentre l'intensità della forza esercitata è rappresentata dlla lunghezza del segmento.
+Lavorare in coordiante rispetto a una base ci permette di tradurre numericamente costruzioni geometriche con i vettori e risolvere in modo più semplice problimi relativi ai vettori. Questo è quero qualunque sia la base scelta, tuttavia a seconda del problema specifico da risolvere, alcune basi possono essere più convenienti di altre, e in particolare quando si vuole rispondere, lavorando in coordinate, alle domande seguenti: ``Quel'è la lunghezza di un vettore dato? quel'è l'angolo tra due vettori dati?\\
+In tal caso, le basi più convenienti da usare, come visto, sono quelle formate da (due nel caso del piano, tre nel caso dello spazio) vettori ctra loro ortogonali e di lunghezza 1 (\textit{rispetto a un'unità di misura scelta}). Tali basi si chiamano \textit{ortonormale}.\\
+Infatti, considerando una tale base nel piano
 \begin{figure}[ht!]
   \centering
-  \resizebox{7.5cm}{!}{
-      \input{img/vettGeo2.tikz}
+  \resizebox{3cm}{!}{
+      \input{img/vettGeo10.tikz}
     }
-  \caption{Somma vettoriale}
-  \label{fig:sommavect}
-\end{figure}
-Dal momento che $\vec{OP}_3$ rappresenta la forza totale esercitata la forza totale esercitata su $O$ quando si applicano contemporaneamente $\vec{OP_1}$ e $\vec{OP}_2$, il meccanismo più immediato è associare l'operazione ad una addizione, infatti, essa viene scritta come:
-\begin{equation}
-  \label{eq:sommavect}
-  \vec{OP}_3=\vec{OP}_1+\vec{OP}_2
-\end{equation}
-La rappresentazione grafica è presente in figura \ref{fig:sommavect} definisce in modo in cui un'operazione di somma sull'insieme di vettori geometrici (del piono o dello spazio) viene rappresentata.
-\end{es}
-Per i vettori che non hanno la stessa direzione, si denota che $OP_3$ è la direzionale del parallelogramma che ha $OP_1$ e $OP_2$ come lati (infatti, viene definita anche come \textit{regola del parallelogramma}). Il motodo descrittivo funziona comunque anche per sommare due o più vettori che hanno la stessa direzione:
-\begin{figure}[ht!]
-  \centering
-  \resizebox{9cm}{!}{
-      \input{img/vettGeo3.tikz}
-    }
-  \caption{Regola del parallelogramma}
-  \label{fig:metparallelogramma}
+  \caption{Base del piano}
+  \label{fig:basedelpiano}
 \end{figure}\\
-Anche in questo caso vale la formula \ref{eq:sommavect}, infatti, graficamente la $OP_3$ è chiaramente frutto di una somma tra il segmento $OP_1$ e $OP_2$. Un'altra operazione è il prodotto del vettore per un numero reale: nel contesto delle forze, il concetto è quella di rappresentare una variazione dell'intensità e eventualmente del verso della forza rappresentata dal vettore.\\
-Più precisamente, dati un vettore geometrico $\vec{OP}$ e un numero releale $c\in\mathds{R}$, si può definire $c\vec{OP}$ come il vettore che sta sulla stessa retta a cui appartiene $\vec{OP}$, ma avente:
-\begin{enumerate}
-\item Stesso verso e lunghezza $c$ volte la lunghezza di $\vec{OP}$, se $c$ è positivo;
-\item Verso opposto e lunghezza $-c$ volte quella di $\vec{OP}$, se $c$ è negativo;
-\item Lunghezza ulla se c=0, cioè $0\vec{OP}=\vec{OO}$.
-\end{enumerate}
+Ora, considerando un vettore $\vec{OP}$, di quale sono note le coordinate rispetto a tale base sono date da $(x_1,x_2)$ (ovvero, per definizione di coordinate, $\vec{OP}=x_1\vec{OP}_1+x_2\vec{OP}_2$): è possibile calcolare la lunghezza del vettore $\vec{OP}$ a partire dalle coordinate? Per rispondere a tale domanda, bisogna considerare le seguenti figure, nel quale è rappresentata la decomposizione $\vec{OP}=x_1\vec{OP}_1+x_2\vec{OP}_2$
 \begin{figure}[ht!]
-  \centering
-  \resizebox{6cm}{!}{
-      \input{img/vettGeo4.tikz}
-    }
-  \caption{Prodotto vettoriale}
-  \label{fig:prodottovect}
-\end{figure}
-Nel contesto dei vettori, i numeri reali si chiamano anche \textit{scalari}.\\
-Come si vedra nel ultima parte del capitolo, la nozione di vettore geometrico e le operazioni di somma tra vettori e prodotto di un vettore per un numero che appena definito saranno fornamentali per impostare e risolvere problemi geometrici nel piano e nello spazio. Per questo motivo, è necessario conoscere e mettere in evidenza le proprietà di cui godono tali operazionim che permettono di manipolare le espressioni e formule che coinvolgono i vettori. Si può verificare che valgono le seguenti:
-\begin{enumerate}
-\item La somma è \textit{associativa}
-  \begin{equation}
-    \label{eq:sommaassociativa}
-    (\vec{OP}_1+\vec{OP}_2)+\vec{OP}_3=\vec{OP}_1+(\vec{OP}_2+\vec{OP}_3)
-  \end{equation}
-\item La somma è \textit{commutativa}
-  \begin{equation}
-    \label{eq:commutativa}
-    \vec{OP}_1+\vec{OP}_2=\vec{OP}_2+\vec{OP}_1
-  \end{equation}
-\item Il vettore $\vec{OO}$ funge da elemento neutro per la somma:
-  \begin{equation}
-    \label{eq:sommaelementoneutro}
-    \vec{OP}+\vec{OO}=\vec{OO}+\vec{OP}=\vec{OP}
-  \end{equation}
-\item Per ogni vettore $\vec{OP}$, il vettore $(-1)\vec{OP}$ (ovvero il vettore che si ottiene da $\vec{OP}$ basterà invertire il verso, senza modificare direzione e lunghezza) è il suo inverso additivo o opposto rispetto alla somma:
-  \begin{equation}
-    \label{eq:sommainversa}
-    \vec{OP}+(-1)\vec{OP}=(-1)\vec{OP}+\vec{OP}=\vec{OO}
-  \end{equation}
-\item Dati due numeri reali $c_1$, $c_2$ e un vettore $\vec{OP}$, si ha
-  \begin{equation}
-    \label{eq:prodottoconduenumerireali}
-    c_1(c_2\vec{OP})=(c_1c_2)\vec{OP}
-  \end{equation}
-  (\textit{Una situazione molto similare alla proprietà associativa del prodotto}).
-\item Per ogni vettore $\vec{OP}$, si ha
-  \begin{equation}
-    \label{eq:perognivecOP}
-    1\vec{OP}=\vec{OP}
-  \end{equation}
-  (\textit{ovvero il numero 1 funge da elemento neutro rispetto al prodotto per scalari}).
-\item Dati due numeri reali $c_1$, $c_2$ ed un vettore $\vec{OP}$, si ha
-  \begin{equation}
-    \label{eq:numrealeVectOP}
-    (c_1+c_2)\vec{OP}=c_1\vec{OP}+c_2\vec{OP}
-  \end{equation}
-\item Dati un numero reale $c$ e due vettori $\vec{OP}$, $\vec{OP}$ si ha
-  \begin{equation}
-    \label{eq:prodottoconduenumerirealiperunnumeroreale}
-    c(\vec{OP}_1+\vec{OP}_2)=c\vec{OP}_1+c\vec{OP}_2
-  \end{equation}
-\end{enumerate}
-Lo sviluppo suggerisce che valga la proprietà distributiva rispetto alla somma di numeri reale o rispetto alla somma di vettori.
-\begin{oss}
-  \label{oss:vettgeo1}
-  Come esempio di applicazione delle proprietà appena elencate, è il caso di motrare che in un'uguaglianza tra vettori, esattamente come si fa in un'uguagliana tra numeri, si possono ``spostare i vettori'' da un membro all'altro cambiandoli di segno:
-  \begin{equation*}
-    \vec{OP}_1+\vec{OP}_2=\vec{OP}_3 \to \vec{OP}_1=\vec{OP}_3-\vec{OP}_2
-  \end{equation*}
-  Dove, come nel caso dei numeri lo spostamento dall'altra parte dell'uguaglianza comporta il cambiamento di segno scritto come $\vec{OP}_3-\vec{OP}_2$ che risulta essere la forma semplificata di $\vec{OP}_3+(-1)\vec{OP}_2$.\\
-  Per vederlo, basterà sommare ad antrambi i membri di $\vec{OP}_1+\vec{OP}_2=\vec{OP}_3$ il vettore $(-1)\vec{OP}_2$:
-  \begin{equation*}
-    (\vec{OP}_1+\vec{OP}_2)+(-1)\vec{OP}_2=\vec{OP}_3+(-1)\vec{OP}_2
-  \end{equation*}
-  Applicando la propriatà associativa (\ref{eq:sommaassociativa}) a primo membro:
-  \begin{equation*}
-    \vec{OP}_!+\left[\vec{OP}_2+(-1)\vec{OP}_2\right]=\vec{OP}_3+(-1)\vec{OP}_2
-  \end{equation*}
-  Dopo aver fatto questo passaggio, sarà necessario applicare la proprietà (\ref{eq:sommainversa}) che afferma che $(-1)\vec{OP}_2$ è l'opposto di $\vec{OP}_2$:
-  \begin{equation*}
-    \vec{OP}_2+\vec{OO}=\vec{OP}_3+(-1)\vec{OP}_2
-  \end{equation*}
-  e infine va applicato la proprietà (\ref{eq:sommaelementoneutro}) che afferma che il vettore nullo funge da elemento neutro:
-  \begin{equation*}
-    \vec{OP}_1=\vec{OP}_3+(-1)\vec{OP}_2
-  \end{equation*}
-  e con questo è stata confermata l'affermazione iniziale.
-\end{oss}
-
-\section{Coordinate}
-\label{sec:coordinate}
-
-Considerando due vettori geometrici $\vec{OP}_1$ e $\vec{OP}_2$ nel piano, e si può supporre che $\vec{OP}_1$ e $\vec{OP}_2$ non abbiano la stessa dimensione. \\
-Affermando che ogni vettore $\vec{OP}\in V_O^2$ può essere ottenuto sommando multipli opportuni di $\vec{OP}_1$ e $\vec{OP}_2$, ovvero:
-\begin{equation*}
-  \vec{OP}=c_1\vec{OP}_1+c_2\vec{OP}_2
-\end{equation*}
-dove $c_1$, $c_2$ sono opportuni numeri reali.
-\clearpage
-Infatti, questo può essere facilmente visto graficamente: come nel disegno seguente, prolungando i vettori $\vec{OP}_1$ e $\vec{OP}_2$ disegnando le due rette $r_1$ e $r_2$; proiettando quindi i punti $P$ su $r_1$ seguendo la direzione parallela a $\vec{OP}_2$, e chiamando il punto proiettato $Q_1$: e chiamandolo punto proiettato $Q_2$.
-\begin{figure}[ht!]
-  \centering
-  \resizebox{6cm}{!}{
-      \input{img/vettGeo5.tikz}
-    }
-  \caption{Costruzione grafica $\vec{OP}=c_1\vec{OP}_1+c_2\vec{OP}_2$}
-  \label{fig:costruvectgraph}
-\end{figure}\\
-Avendo costruito le due proiezioni parallelamente a $\vec{OP}_1$ e $\vec{OP}_2$ come lati e $\vec{OP}$ come diagonale, quindi per definizione di somma tra vettori geometrici si ha $\vec{OP}=\vec{OQ}_1+\vec{OQ}_2$.\\ Ma dal momento che $\vec{OQ}_1$ si trova sulla stessa retta di $\vec{OP}_1$ per come è definito il prodotto dei vettori per i numeri realim esisterà un numero reale $c_1$ tale che $\vec{OQ}_1=c_1\vec{OP}_1$ (dove $c_1$ dipende semplicemente dal rappotro tra la lunghezza di $\vec{OQ}_1$ e quella di $\vec{OP}_1$).\\
-Si conclude che $\vec{OP}=c_1\vec{OP}_1+c_2\vec{OP}_2$.
-Si noti che nella situazione considerata nel disegno, $c_1,c_2 > 0$ in quanto $\vec{OQ}_1$ e $\vec{OQ}_2$ hanno lo stesso verso di $\vec{OP}_1$ e $\vec{OP}_2$ rispettivamente. In generale, la stessa costruzione può essere effettuata per qualunque vettore $\vec{OP}$ del piano e i coefficienti $c_1$ e $c_2$ potranno anche essere negativi\footnote{Può essrere anche $c_1=0$ o $c_2=0$: nel primo caso, si ha $\vec{OP}=c_2\vec{OP}_2$, nel secondo $\vec{OP}=c_1\vec{OP}_1$, cioè $\vec{OP}$ non sta all'interno di uno dei quadranti in cui le rette $r_1,r_2$ dividono il piano, ma sta sulla retta $r_2$ (se $\vec{OP}=c_2\vec{OP}_2$) o sulla retta $r_1$ (se $\vec{OP}=c_1\vec{OP}_1$).} a seconda del quadrante nel quale si trova $\vec{OP}$, ovvero a seconda che la proiezione di $P$ sulle rette $r_1$, $r_2$ cada dalla stessa parte o dalla parte opposta dei punti $P_1$ e $P_2$.
-\begin{figure}[ht!]
-  \centering
-  \resizebox{6cm}{!}{
-      \input{img/vettGeo6.tikz}
-    }
-  \caption{Condizione della formula $\vec{OP}=c_1\vec{OP}_1+c_2\vec{OP}_2$ in base ai reali $c_1,c_2$}
-  \label{fig:condizionic1c2}
-\end{figure}
-\begin{defi}
-  \label{defi:coppiaC1eC2talcheOp1}
-  La coppia ($c_1,c_2$) di numeri reali tale che $\vec{OP}=c_1\vec{OP}_1+c_2\vec{OP}_2$ si dice la \textit{coppia delle coordinate} del vettore $\vec{OP}$ rispetto ai vettori base $\vec{OP}_1, \vec{OP}_2$.\\
-  Le coordinate $c_1$ e $c_2$ di un vettore dipendono chiaramente dalla scelta dei vettori base $\vec{OP}_1$, $\vec{OP}_2$, ma una volta che essi sono stati fissati seriveremo $\vec{OP}\equiv (c_1,c_2)$, identificando di fatto il vettore con la coppia delle sua coordinate, e quindi l'insieme $\vec{V}_O^2$ con l'insieme $\mathds{R}^2$ delle coppie di numeri reali.
-\end{defi}
-\begin{oss}
-  Bisognerebbe porsi il problema dell'\textit{unicità} di $c_1$ e $c_2$: se esistessero due modi diversi, diciamo $\vec{OP}=c_1\vec{OP}_1+c_2\vec{OP}_2$ e $\vec{OP}=c_1^\prime\vec{OP}_1+c_2^\prime\vec{OP}_2$, di decomporre $\vec{OP}$, non avremmo una e una spola coppia di numeri con cui identificarlo: in realtà, la costruzione grafica già suggerisce che l'unicità è garantita, ma si tornerà su tel questione nel paragrafo \ref{}.
-\end{oss}
-Un risultato analogo a quello visto per i vettori nel piano può essere ottenuto anche nell'insieme $V_O^3$ dei vettori geometri nello spazio tridimensionale. In questo non si deve però partire da una coppia di vettori non allineati ma da una terna di vettori $\vec{OP}_1$, $\vec{OP}_2$ e $\vec{OP}_3$ \textit{che non siano tutti e tre sullo stesso piano}: alloram, è semplice vedere graficamente, utilizzando proiezioni come fatto nel caso di due vettori nel piano, che ogni vettore $\vec{OP}\in V_O^3$ può essere scritto come combinazione $c_1\vec{OP}_1+c_2\vec{OP}_2+c_3\vec{OP}_3$.
-\begin{figure}[ht!]
-  \centering
-  \resizebox{6cm}{!}{
-      \input{img/vettGeo7.tikz}
-    }
-  \caption{Vettori su spazio tridimensionale}
-  \label{fig:vectspaztridim}
-\end{figure}\\
-Come rappresentato in figura \ref{fig:vectspaztridim}, si proietta il punto su cui stanno $\vec{OP}_1$ e $\vec{OP}_2$ seguendo la direzione $\vec{OP}_3$ e si individua così un punto $Q$; proiettando poi $P$ sulla retta $r_3$ parallelamente al vettore $\vec{OQ}$, risulta individuato un parallelogramma, che ci dice che $\vec{OP}$ si scrive come somma $\vec{OP}=\vec{OQ}+c_3\vec{OP}_3$ di $\vec{OQ}$ e di un opportuno multiplo $c_3\vec{OP}_3$ di $\vec{OP}_3$. A questo punto si osserva che $\vec{OQ}$, stando sul piano di $\vec{OP}_1$ e $\vec{OP}_2$ si scriverà come loro combinazione lineare $\vec{OQ}= c_1\vec{OP}_1+c_2\vec{OP}_2+c_3\vec{OP}_3$. In modo analogo a quato già fatto per i vettori geometrico del piano, si può dire che:
-\begin{defi}
-  Ka terna ($c_1,c_2,c_3$) di numeri reali tale che $\vec{OQ}= c_1\vec{OP}_1+c_2\vec{OP}_2+c_3\vec{OP}_3$ si dice la \textit{terna delle coordinate} del vettore $\vec{OP}$ rispetto ai vettori di base $\vec{OP}_1,\vec{OP}_2, \vec{OP}_3$.
-\end{defi}
-Come osservato per i vettori del piano, le coordinate $c_1, \text{ } c_2, \text{ } c_3$ di un vettore dipendono chiaramente dalla scelta dei vettori base $\vec{OP}_1,\vec{OP}_2, \vec{OP}_3$, ma una volta che essi sono stati fissati si potrà scrivere $\vec{OP}\equiv (c_1,c_2,c_3)$, identificando di fatto il vettore con la terna delle sue coordinate, e quindi l'insieme $\vec{V}_O^2$ con l'insieme $\mathds{R}^3$ della terna di numeri reali.\\
-L'importanza delle coordinate consiste nel fatto che esse, permattendoci di rappresentare i vettori mediamente coppie o terne di numeri, permettano di tradurre in calcolo tra vettori: questa è un'importante semplificazione, in quanto è più semplice lavorare con numeri che con costruzioni o dimostrazioni di geometria eoclidea che sarebbero altrimenti necessarie per lavorare con i vettori, che sono oggetti (entità) geometrici. Per dare un idea più chiara delle affermazioni esposte precedentemente è necessario stimare questo importante risultato:
-\begin{prop}
-  \label{prop:coordinate1}
-  Sia $\vec{OP}_1$, $\vec{OP}_2$ una coppia di vettori base non allineati nell'insieme $V_O^2$. Le coordinate rispetto a $\vec{OP}_1$, $\vec{OP}_2$ hanno le seguenti proprietà:
-  \begin{enumerate}
-  \item Se $\vec{OP}$ e $\vec{OP}^\prime$ hanno coordinate rispettivamente $(x_1,x_2)$ e $(x^\prime_1,x^\prime_2)$, le coordinate di $\vec{OP}+\vec{OP}^\prime$ sono date dalla coppia $(x_1+x^\prime_1,x_2+x^\prime_2)$ ottenuta sommando componete per componente le coppie delle coordinate dei due vettori.
-  \item Se $\vec{OP}$ ha coordinate $(x_1,x_2)$ e $c\in \mathds{R}$ è un numero reale, allora le coordinate di $c\vec{OP}$ sono date dalla coppia $(cx_1,cx_2)$ ottenuta moltiplicando per $c$ le coordinate di $\vec{OP}$.
-  \end{enumerate}
-\end{prop}
-\begin{proof}
-  Il fatto che $\vec{OP}$ abbia coordinate $(x_1,x_2)$ rispetto a $\vec{OP}_1$, $\vec{OP}_2$ significa per definizione che $\vec{OP}^\prime= x_1\vec{OP}_1+x_2\vec{OP}_2$, e analogamente il fatto che $\vec{OP}^\prime$ abbia coordinate $(x^\prime_1,x^\prime_2)$ significa che $\vec{OP}^\prime= x^\prime_1\vec{OP}_1+x^\prime_2\vec{OP}_2$. Ma allora
-  \begin{equation*}
-    \vec{OP}+\vec{OP}^\prime=(x_1\vec{OP}_1+x_2\vec{OP}_2)+(x^\prime_1\vec{OP}_1+x^\prime_2\vec{OP}_2)=
-  \end{equation*}
-  Riordinando gli addendi e raccogliendoli diversamente sfruttando le proprietà associativa e commutativa della somma tra vettori
-  \begin{equation*}
-    =(x_1\vec{OP}_1+x^\prime_1\vec{OP}_1)+(x_2\vec{OP}_2+x^\prime_2\vec{OP}_2)=
-  \end{equation*}
-  Sfruttando la proprietà \ref{eq:numrealeVectOP} sia nella prima parentesi che nella saconda, effettuato il raggruppamento mettendo in evvidenza nel caso della prima parentesi $\vec{OP}_1$, mentre, nel caso del secondo mettendo in evvidenza $\vec{OP}_2$, il risultato sarà
-  \begin{equation*}
-    =(x_1+x^\prime_1)\vec{OP}_1+(x_2+x^\prime_2)\vec{OP}_2
-  \end{equation*}
-  Ma questo, per definizione di coordinate, significa proprio che le coordinate di $\vec{OP}+\vec{OP}^\prime$ sono date dalla coppia $(x_1+x^\prime_1,x_2+x^\prime_2)$, come affermato nel punto 1 della Proposizione \ref{prop:coordinate1}.\\
-  Per dimostrare la (2), bisogna partire sempre dal fatto che $\vec{OP}$ abbia coordinate $(x_1,x_2)$ significa per definizione che $\vec{OP}= x_1\vec{OP}_1+x_2\vec{OP}_2$. Allora
-  \begin{equation*}
-    c\vec{OP}=c(x_1\vec{OP}_1+x_2\vec{OP}_1)=
-  \end{equation*}
-  Applicando la proprietà (\ref{eq:prodottoconduenumerirealiperunnumeroreale}) otterremo la divisione in due gruppi di parentesi, con c messo in evidenza messi tra di loro in forma di addizione.
-  \begin{equation*}
-    =c(x_1\vec{OP}_1)+c(x_2\vec{OP}_2)=
-  \end{equation*}
-  Applicando la proprietà (\ref{eq:prodottoconduenumerireali}) a entrambi gli addendi si otterrà:
-  \begin{equation*}
-    =(cx_!)\vec{OP}_1+(cx_2)\vec{OP}_2
-  \end{equation*}
-  Ma questo, per definizione di coordinate, ci dice proprio che le coordinate di $c\vec{OP}$ sono date dalla coppia ($cx_1,cx_2$), come affermato nella (2) della  Proposizione \ref{prop:coordinate1}.
-\end{proof}
-\begin{es}
-  \label{es:coordinate1}
-  Per un esempio di quanto appena dimostrato, si prendano i vettori base $\vec{OP}_1$ e $\vec{OP}_2$ come nel disegno seguente, e si considerino i due $\vec{OQ}_1$ e $\vec{OQ}_2$
-  \begin{figure}[ht!]
   \centering
   \resizebox{4cm}{!}{
-      \input{img/vettGeo8.tikz}
+      \input{img/vettGeo11.tikz}
     }
-  \caption{Rappresentazione grafica $OQ_1$ e $OQ_2$}
-  \label{fig:coordinate1-1}
+  \caption{Base del piano con il vettore $\vec{OP}$}
+  \label{fig:basedelpianoConVettOP}
 \end{figure}\\
-Come si vede dalla figura (\ref{fig:coordinate1-1}), si ha $\vec{OQ}_1=2\vec{OP}_1+\vec{OP}_2$ e $\vec{OQ}_1=\vec{OP}_1+2\vec{OP}_2$, ovvero le coordinate $\vec{OP}_1$ sono date dalla coppia (2, 1).\\
-Allora, in base alla (1) della Proposizione \ref{prop:coordinate1}, la somma $\vec{OQ}_1+\vec{OQ}_2$ ha coordinate (\textit{sempre rispetto a $\vec{OP}_1$ e $\vec{OP}_2$}) date da 
-\begin{eqnarray*}
-  \vec{OQ}_1=
-  \begin{vmatrix}
-    2\\
-    1
-  \end{vmatrix},\text{ } \vec{OQ}_2=
-  \begin{vmatrix}
-    1\\
-    2
-  \end{vmatrix} &\to& \vec{OQ}_1+\vec{OQ}_2=
-                  \begin{vmatrix}
-                    2{\color{red}+1}\\
-                    1{\color{red}+2}
-                  \end{vmatrix}=
-                  \begin{vmatrix}
-                    3\\
-                    3
-                  \end{vmatrix}= (3,3).
-\end{eqnarray*}
-ovvero si ha $\vec{OQ}_1+\vec{OQ}_2=3\vec{OP}_1+3\vec{OP}_2$. In effetti, questo può essere verificato graficamente costruendo con la regola del parallelogramma la somma $\vec{OQ}_1+\vec{OQ}_2$, come nella figura seguente
-  \begin{figure}[ht!]
+Dal momento che si è selto i vettori di base perpendicolari, quando si proietta $P$ sulla retta $r_1$ che contiene $\vec{OP}_1$ sequendo la direzione $\vec{OP}_2$, tale proiezione incontra $r_1$ con un angolo di $90^o$, e si viene quindi a formare un triangolo rettangolo (evidenziato nel figura \ref{fig:basedelpianoConVettOP}) avente come ipotenusa proprio $\vec{OP}$ e al quele possiamo quindi applicare il teorema di Pitagora per calcolare la lunghezza di $\vec{OP}$, che denoterà $\abs{\vec{OP}}$. \\
+A quasto scopo, c'e da notare che il cateto orizzontale di tale triangolo è dato dal vettore $x_1\vec{OP}_1$, e quindi la sua lunghezza è data dal prodotto di $x_!$ per la lunghezza di $\vec{OP}_1$: ma avendo scelto i vettori di base di lunghezza unitaria, questo implica che la lunghezza di tale cateto sia semplicemente $x_1$; per quello che riguarda il cateto verticale, esso per costruzione ha la stessa lunghezza del vettore $x_2\vec{OP}_2$, ovvero $x_2$ (in quanto $\vec{OP}_2$ ha lunqhezza 1). Quindi il teorema di Pitagora dice che $\abs{\vec{OP}}^2=\sqrt{x_1^2+x_2^2}$,
+\begin{equation}
+  \label{eq:teoremadiPitapplicatoaAbsOP}
+  \abs{\vec{OP}}=\abs{x}=\sqrt{x_1^2+x_2^2}
+\end{equation}
+che rappresenta la formula cercata, che ci dà la lunghezza di $\vec{OP}$ in funzione delle sue coordinate.\\
+Si nota che nei ragionamenti svolti sono fontamentali per la scelta di una base fatta di vettori ortogonali (questo ha fatto comparire un triangolo rettangolo a cui viene applicato il teorema di Pitagora) e di lunghezza 1 (che ha permesso di esprimere le lunghezze dei cateti in funzione delle sole coordinate). \\
+Dopo aver trattato del piano, adesso è necessario trattare lo spazio nella sua costruzione, infatti lo spazio trigonometrico è composto da una terna di vettori: $\vec{OP}_1,\vec{OP}_2,\vec{OP}_3$ appartenenti all'insieme $V_O^3$ dei vettori applicati nello spazio tridimensionale:
+\begin{figure}[ht!]
   \centering
-  \resizebox{3.4cm}{!}{
-      \input{img/vettGeo9.tikz}
+    \resizebox{4cm}{!}{
+      \input{img/vettGeo12.tikz}
     }
-  \caption{Rappresentazione grafica $\vec{OQ}_1+\vec{OQ}_2$}
-  \label{fig:coordinate1-2}
+  \caption{Costruzione grafica base spazio}
+  \label{fig:costbasespazio}
 \end{figure}\\
-L'aspetto notevole è che si può dimostrare chi era il vettore $\vec{OQ}_1+\vec{OQ}_2$ (in coordinate) con un semplice conto aritmetico, anche prima di disegnarlo con la costruzione geometrica del parallelogramma.
-\end{es}
-\begin{oss}
-  \label{oss:coordinate2}
-  Affermazioni del tutto analoghe a quelle della Proposizione \ref{prop:coordinate1} valgono anche nel caso dei vettori nello spazio. Più precisamente, si ha che fissata una terna $\vec{OP}_1, \vec{OP}_2,\vec{OP}_3$ di vettori non complanari nell'insieme $V_O^3$ dei vettori dello spazio tridimensionale, allora le coordiante rispetto a tale terna di base hanno le seguenti proprietà:
-  \begin{enumerate}
-  \item Se $\vec{OP}$ e $\vec{OP}^\prime$ hanno coordinate rispettivamete $(x_1,x_2,x_3)$ e $(x_1^\prime,x_2^\prime,x_3^\prime)$, le coordinate di $\vec{OP}_1+\vec{OP}_1^\prime$ sono date dalla terna $(x_1+x_1^\prime,x_2+x_2^\prime,x_3+x_3^\prime)$ ottenuta sommando componente per componente le terne delle coordiante dei due vettori.
-  \item Se $\vec{OP}$ ha coordinate $(x_1,x_2,x_3)$ e $c\in \mathds{R}$ è un numero reale, allora le coordinate, di $c\vec{OP}$ sono date dalla terna $(cx_1,cx_2,cx_3)$ ottenuta moltiplicando per $c$ le coordinate di $\vec{OP}$.
-  \end{enumerate}
-  La dimostrazione è perfettamente analoga a quella della Proposizione \ref{prop:coordinate1}.
-\end{oss}
+Supponendo ora di avere un vettore $\vec{OP}$ e di volerne calcolare la lunghezza, si denota $\abs{\vec{OP}}$, in fuzione delle sue coordinate $x_1,x_2,x_3$ rispetto alla base $B$ scelta. Per definizione di coordintate, $\vec{OP}$ si decompone come somma $\vec{OP}=x_1\vec{OP}_1+x_2\vec{OP}_2+x_3\vec{OP}_3$, come in figura \ref{fig:basedelspazioConVettOP}.
+\begin{figure}[ht!]
+  \centering
+  \resizebox{4cm}{!}{
+      \input{img/vettGeo13.tikz}
+    }
+  \caption{Base dello spazio con il vettore $\vec{OP}$}
+  \label{fig:basedelspazioConVettOP}
+\end{figure}\\
+La decomposizione è stata ottenuta graficamente come segue: prima si proietta $P$ perpendicolarmente sul piano su cui stanno $P_1$ e $P_2$ ottenendo il punto $Q$ (l'angolo in $Q$ quindi è retto, come messo in evidenza nella figura) e si ottiene un rettangolo, come campitura in grigio nella figura, che dice che $\vec{OP}=\vec{OQ}+x_3\vec{OP}_3$; poi dal momento che $\vec{OQ}$ giace sul piano di $P_!$ e $P_2$ lo si può decomporre come $\vec{OQ}=x_1\vec{OP}_1+x_2\vec{OP}_2$ (sempre sul piano retti in quanto $\vec{OP}_1$ e $\vec{OP}_2$ sono perpendicolari), e quindi $\vec{OP}=\vec{OQ}+x_3\vec{OP}_3=x_1\vec{OP}_1+x_2\vec{OP}_2+x_3\vec{OP}_3$ come visto sopra.
 \end{document}
