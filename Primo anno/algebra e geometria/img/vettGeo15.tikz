@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 3) {};
+		\node [style=none] (1) at (0, 0) {};
+		\node [style=none] (2) at (-1.5, -1.5) {};
+		\node [style=none] (3) at (3.75, 0) {};
+		\node [style=none] (4) at (2, 5.75) {};
+		\node [style=none] (5) at (4, 4) {};
+		\node [style=none] (6) at (1.75, 6) {$P$};
+		\node [style=none] (7) at (4.25, 4.25) {$Q$};
+		\node [style=none] (8) at (0.25, 0.75) {};
+		\node [style=none] (9) at (0.5, 0.5) {};
+		\node [style=none] (10) at (0.75, 1.25) {$\theta$};
+		\node [style=none] (11) at (4.25, 0) {$P_2$};
+		\node [style=none] (12) at (-0.5, 0) {$O$};
+		\node [style=none] (13) at (-1.75, -1.75) {$P_1$};
+		\node [style=none] (14) at (0, 3.5) {$P_3$};
+		\node [style=none] (15) at (2, -2) {};
+		\node [style=none] (16) at (2.5, -2.5) {$R$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=Rightarrow] (1.center) to (2.center);
+		\draw [style=Rightarrow] (1.center) to (3.center);
+		\draw [style=Rightarrow] (1.center) to (0.center);
+		\draw [style=Rightarrow] (1.center) to (5.center);
+		\draw [style=Rightarrow] (1.center) to (4.center);
+		\draw [style=DashedCampitura] (4.center) to (5.center);
+		\draw [style=DashedLine] (8.center) to (9.center);
+		\draw [style=Rightarrow] (1.center) to (15.center);
+		\draw [style=DashedCampitura] (5.center) to (15.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -210,6 +210,18 @@ Ora, bisogna porsi il problema di calcolare l'angolo tra due vettori non nulli $
 Per un risultato di trigonometria, l'angolo $\theta$ tra $\vec{OP}$ e $\vec{OQ}$ è collegato alla lunghezza dei segmenti $OP,OQ,PQ$ dalla formuala\footnote{Si tratta di una sorta di ``teorema di Pitagora per triangoli qualunque'': infatti, se il trangolo è rettangolo in $O$, ovvero $\theta=\frac{\pi}{2}$, allora $\cos\theta=0$ e la formula si riduce a $\abs{\vec{PQ}}^2=\abs{OQ}+\abs{OQ}^2$, il classico teorema di Pitagora.}
 \begin{equation}
   \label{eq:teopitapplicatinellospazio3}
-  
+  \abs{\vec{PQ}}^2+\abs{OP}^2+\abs{OQ}^2-2\cos\theta\abs{OP}\cdot\abs{OQ}
 \end{equation}
+Ora, per la (\ref{eq:teopitapplicatinellospazio2}), si ha $\abs{OP}=\sqrt{x_1^2+x_2^2+x_3^2}$ e $\abs{OQ}=\sqrt{y_1^2+y_2^2+y_3^2}$: per ricavare l'angolo $\theta$ tramte la formuala (\ref{eq:teopitapplicatinellospazio3}) resta da calcolare la lunghezza $\abs{PQ}$. Dal momento che la formuala (\ref{eq:teopitapplicatinellospazio2}) consente di calcolare la lunghezza solo dei vettori applicati in $O$, sarà possibile tracciare il seguente disegno
+\begin{figure}[ht!]
+  \centering
+  \resizebox{4cm}{!}{
+      \input{img/vettGeo15.tikz}
+    }
+  \caption{Triangolo OPQ e OQR}
+  \label{fig:triangoloOPQeOQR}
+\end{figure}\\
+Il vettore $\vec{OR}$ parallelo al segmento $PQ$ e avente la sua stessa lunghezza, ovvero $\abs{PQ}=\abs{\vec{OR}}$.\\
+Ora, essendo $\vec{OR}$ parallelo a $PQ$ e della stessa lunghezza, il quadrilattero di vertici $O,R,P,Q$ è un parallelogramma che ha $\vec{OR}$ e $\vec{OP}$ come lati e $\vec{OQ}$ come diagonale: quindi, dalla definizione di somma tra vettori applicati, si ha $\vec{OQ}=\vec{OR}+\vec{OP}$, ovvero $\vec{OR}=\vec{OQ}-\vec{OP}$.\\
+Per le proprietà telle coordinate viste nell'Osservazione \ref{oss:coordinate2}, le coordinate di $\vec{OR}=\vec{OQ}-\vec{OP}$ sono date dalle coordinate di $\vec{OQ}$ meno le coordinate di $\vec{OP}$, ovvero $(y_1-x_1,y_2-x_2,y_3-x_3)$, e quindi, dalla (\ref{eq:teoremadiPitapplicatoaAbsOP}) si ha finalmente 
 \end{document}
