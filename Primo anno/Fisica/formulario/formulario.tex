@@ -341,6 +341,41 @@ Forza che si origina quando due campi a contatto diretto sono fatti souegare uno
   L'attrito statico ha un valore massimo generalmente più alto rispetto a quello dinamico. Quando un corpo è meno da una forza $F$, se $F=f_k$ il corpo \textsc{si muove a velocità Costante}. 
 \end{nota}
 
+\section{Piano inclinato}
+\label{sec:pianoinclinato}
+
+\begin{multicols}{2}
+  \subsubsection{Accelerazione perpendicolare al piano}
+  \label{sec:accperpalpiano}
+  \begin{equation*}
+    a_y=0
+  \end{equation*}
+  
+  \subsubsection{Accelerazione parallela al piano}
+  \label{sec:accparalpiano}
+  \begin{equation*}
+    a_x=g\cdot \sin(\alpha)
+  \end{equation*}
+  in cui $g$ è la forza di gravità, mentre, $\alpha$ è l'angolo del piano.
+  
+  \subsubsection{Angolo d'altezza e lunghezza}
+  \label{sec:angolodaltelung}
+  \begin{equation*}
+    \sin(\alpha)=\frac{h}{l}
+  \end{equation*}
+  
+  \subsubsection{Angolo da base e lunghezza}
+  \label{sec:angdabaseelungh}
+  \begin{equation*}
+    \cos(\alpha)=\frac{d}{l}
+  \end{equation*}
+  
+  \subsubsection{Angolo d'altezza e base}
+  \label{sec:angdaltebase}
+  \begin{equation*}
+    \tan(\alpha)=\frac{h}{d}
+  \end{equation*}
+\end{multicols}
 \chapter{Dinamica}
 \label{chap:Dinamica}
 
@@ -1386,15 +1421,48 @@ Frequenza udibile dall'uomo: $20Hz\to 20.000Hz$
 
 \begin{equation}
   \label{eq:veldiprop}
-  V=\sqrt{\frac{B}{\sigma_0}
+  V=\sqrt{\frac{B}{\sigma_0}}
 \end{equation}
 \begin{description}
 \item[$\omega=$] sigma
   \begin{equation*}
     B=-\frac{V\Delta P}{\Delta V}
   \end{equation*}
-\item[$\sigma_0=$] è la densità del fluido indisturbato
-\item[$B=$] 
+\item[$\sigma_0=$] è la densità del fluido indisturbato;
+\item[$B=$] Modulo di compressione del corpo;
+\item[$\Delta P$=] variazione di pressione sul corpo.
 \end{description}
+
+\subsection{Equazione di un'onda sonora}
+\label{sec:ondson}
+
+\begin{equation}
+  \label{eq:ondson}
+  y=y_m\cos(kx-\omega t)
+\end{equation}
+\textit{$y$ è uno spostamento} \textsc{Longitudinale!} -- dove:
+\begin{eqnarray}
+  \label{eq:ondson2}
+  k=\frac{2\pi}{\lambda} & \omega = \frac{2\pi}{T}
+\end{eqnarray}
+\begin{nota}
+  l'onda di spostamento è sfasato di $90^o$ rispetto all'onda di pressione\\
+  dati un $t$ e una $x$:
+  \begin{center}
+    Spostamento massimo $\Leftrightarrow$ Pressione nulla
+  \end{center}
+\end{nota}
+
+\subsubsection{Variazione di pressione del mezzo (rispetto a un punto $P_0$)}
+\label{sec:vardipresdelmezzo}
+\begin{equation}
+  \label{eq:vardipresdelmezzo}
+  p=P\sin(kx-\omega t)
+\end{equation}
+dove $P$ è l'ampiezza di pressione:
+\begin{equation}
+  \label{eq:vardipresdelmezzo2}
+  P=k\sigma_0V^2y_m
+\end{equation}
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.17)  10 MAR 2024 21:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.17)  15 MAR 2024 13:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1686,7 +1686,8 @@ LaTeX Warning: Reference `' on page 8 undefined on input line 178.
 
 ] [9] (./img/vettGeo8.tikz) (./img/vettGeo9.tikz)
 [10]) (./img/vettGeo10.tikz) (./img/vettGeo11.tikz) [11] (./img/vettGeo12.tikz)
-(./img/vettGeo13.tikz) [12] (./algebra-e-geometria.aux)
+(./img/vettGeo13.tikz) [12] (./img/vettGeo14.tikz) [13]
+(./algebra-e-geometria.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1694,40 +1695,46 @@ Package rerunfilecheck Info: File `algebra-e-geometria.out' has not changed.
 (rerunfilecheck)             Checksum: BAC832BFDF0CD782F368FBBFE15BBBE4;608.
  ) 
 Here is how much of TeX's memory you used:
- 61622 strings out of 476025
- 1522613 string characters out of 5796532
+ 61636 strings out of 476025
+ 1522870 string characters out of 5796532
  2422337 words of memory out of 5000000
- 81030 multiletter control sequences out of 15000+600000
+ 81036 multiletter control sequences out of 15000+600000
  536949 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,89p,958b,917s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy7.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></us
-r/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-d
-ist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1
-/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
-r/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb>
-</usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/tex
-mf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.
-pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share
-/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on algebra-e-geometria.pdf (12 pages, 327658 bytes).
+/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist
+/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-dist/fonts/type1
+/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
+r/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb>
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/tex
+mf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
+super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.
+pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share
+/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fon
+ts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/public
+/cm-super/sfti1000.pfb>
+Output written on algebra-e-geometria.pdf (13 pages, 351485 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 311 PDF objects out of 1000 (max. 8388607)
+ 243 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
  45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

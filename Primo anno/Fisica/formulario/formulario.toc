@@ -1,120 +1,128 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {chapter}{\numberline {1}Cinematica}{5}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Moto uniformemente accelerato}{5}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Segmento percorso $s$ dopo il tempo $t$}{5}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Corpo che cade}{5}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Caduta da $h_0$ con velocità iniziale nulla}{6}{subsection.1.1.3}%
-\contentsline {subsubsection}{Tempo di caduta}{6}{subsubsection*.2}%
-\contentsline {subsubsection}{Velocità finale}{6}{subsubsection*.3}%
-\contentsline {subsection}{\numberline {1.1.4}Lancio verso l'alto}{6}{subsection.1.1.4}%
-\contentsline {subsubsection}{Altezza finale}{6}{subsubsection*.4}%
-\contentsline {subsubsection}{Tempo finale}{6}{subsubsection*.5}%
-\contentsline {section}{\numberline {1.2}Moto circolare uniforme}{6}{section.1.2}%
-\contentsline {subsubsection}{Accelerazione centripeta}{6}{subsubsection*.6}%
-\contentsline {subsubsection}{Velocità angolare}{6}{subsubsection*.7}%
-\contentsline {subsection}{\numberline {1.2.1}Energia cinetica totale}{7}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Forza centripeta e centrifuga}{7}{subsection.1.2.2}%
-\contentsline {subsubsection}{Forza centripeta}{7}{subsubsection*.8}%
-\contentsline {subsubsection}{Forza centrifuga}{7}{subsubsection*.9}%
-\contentsline {section}{\numberline {1.3}Somma dei vettori}{7}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Prodotto tra vettori}{7}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Scalare}{7}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Vettoriale}{8}{subsection.1.4.2}%
-\contentsline {section}{\numberline {1.5}Moto con accelerazione variabile}{8}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Velocità dopo un tempo $t$}{8}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Forza di attrito}{8}{subsection.1.5.2}%
-\contentsline {subsubsection}{Attrito statico}{8}{subsubsection*.11}%
-\contentsline {subsubsection}{Attrito dinamico}{8}{subsubsection*.12}%
-\contentsline {chapter}{\numberline {2}Dinamica}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Lavora}{9}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Forza costante}{9}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Forza variabile}{9}{subsection.2.1.2}%
-\contentsline {subsubsection}{Unità di misura}{9}{subsubsection*.13}%
-\contentsline {subsection}{\numberline {2.1.3}Lavoro istantaneo}{9}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Potenza}{10}{section.2.2}%
-\contentsline {subsubsection}{Potenza media}{10}{subsubsection*.14}%
-\contentsline {subsubsection}{Potenza istantanea}{10}{subsubsection*.15}%
-\contentsline {section}{\numberline {2.3}Energia cinetica}{10}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Teorema Lavoro-Energia}{10}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Forze conservative e non conservative}{11}{subsection.2.3.2}%
-\contentsline {subsubsection}{Ricora}{11}{subsubsection*.16}%
-\contentsline {section}{\numberline {2.4}Energia Potenziale}{11}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Energia meccanica}{11}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Legge di conservazione dell'energia meccanica}{12}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Energia potenziale gravitazionale}{12}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Energia potenziale elastica}{12}{subsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.5.4}Forza non conservative}{12}{subsection.2.5.4}%
-\contentsline {subsection}{\numberline {2.5.5}Legge di conservazione dell'energia}{12}{subsection.2.5.5}%
-\contentsline {subsection}{\numberline {2.5.6}Centro di massa}{13}{subsection.2.5.6}%
-\contentsline {subsubsection}{coordinate centro di massa (carpo esteso e di materia uniforme)}{13}{subsubsection*.17}%
-\contentsline {subsubsection}{Equazione vettoriale del centro di massa}{13}{subsubsection*.18}%
-\contentsline {subsubsection}{Accelerazione del centro di massa (di un sistema di particelle)}{13}{subsubsection*.19}%
-\contentsline {subsubsection}{Legge del moto traslatorio del centro di massa}{14}{subsubsection*.20}%
-\contentsline {subsection}{\numberline {2.5.7}Quantità di moto}{14}{subsection.2.5.7}%
-\contentsline {paragraph}{Enuncia questo se chiede la seconda legge di Newton}{14}{paragraph*.21}%
-\contentsline {paragraph}{Forza impulsiva:}{14}{paragraph*.22}%
-\contentsline {subsection}{\numberline {2.5.8}Teorema dell'impulso -- quantità di moto}{15}{subsection.2.5.8}%
-\contentsline {subsubsection}{Urti}{15}{subsubsection*.23}%
-\contentsline {subsection}{\numberline {2.5.9}Urto elastico a 2 dimensioni}{15}{subsection.2.5.9}%
-\contentsline {subsubsection}{Velocità urto completamente anelastico}{15}{subsubsection*.24}%
-\contentsline {section}{\numberline {2.6}Moto rotatorio}{15}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Misura angolo in radianti}{15}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Velocità angolare media}{16}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}Velocità angolare istantanea}{16}{subsection.2.6.3}%
-\contentsline {subsection}{\numberline {2.6.4}Accelerazione angolare media}{16}{subsection.2.6.4}%
-\contentsline {subsection}{\numberline {2.6.5}Moto con accelerazione angolare costante}{16}{subsection.2.6.5}%
-\contentsline {subsection}{\numberline {2.6.6}Velocità lineare di particella parte di un corpo rigido}{16}{subsection.2.6.6}%
-\contentsline {subsection}{\numberline {2.6.7}Accelerazione lineare di particella parte di un corpo rigido}{16}{subsection.2.6.7}%
-\contentsline {subsection}{\numberline {2.6.8}Momento di inerzia del corpo rigido}{16}{subsection.2.6.8}%
-\contentsline {subsection}{\numberline {2.6.9}Energia cinetica di un corpo in rotazione}{17}{subsection.2.6.9}%
-\contentsline {subsection}{\numberline {2.6.10}Momento della forza}{17}{subsection.2.6.10}%
-\contentsline {subsection}{\numberline {2.6.11}Momento di un particella}{17}{subsection.2.6.11}%
-\contentsline {subsubsection}{Principio di conservazione del momento ongolare}{17}{subsubsection*.25}%
-\contentsline {subsection}{\numberline {2.6.12}Momenti di inerzia da ricordare}{17}{subsection.2.6.12}%
-\contentsline {subsubsection}{Cilindro pieno}{18}{subsubsection*.26}%
-\contentsline {subsubsection}{Sbarra sottile}{18}{subsubsection*.27}%
-\contentsline {subsubsection}{Rotazione rispetto all'asse del cilindro}{18}{subsubsection*.28}%
-\contentsline {subsubsection}{Rotazione rispetto ad un diametro centrale}{18}{subsubsection*.29}%
-\contentsline {subsubsection}{Rispetto ad un asse perpendicolare al centro della lunghezza}{18}{subsubsection*.30}%
-\contentsline {subsubsection}{Rotazione rispetto a un asse perpendicolare a un esterno}{18}{subsubsection*.31}%
-\contentsline {subsubsection}{Sfera piena (rispetto a diametro qualunque)}{18}{subsubsection*.32}%
-\contentsline {subsubsection}{Superficie sferica (rispetto a diametro qualunque)}{18}{subsubsection*.33}%
-\contentsline {section}{\numberline {2.7}Equazione del moto di un oscillazione armonico}{18}{section.2.7}%
-\contentsline {paragraph}{Oscillazione armonica}{18}{paragraph*.34}%
-\contentsline {subsection}{\numberline {2.7.1}Legge di Hook}{18}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Energia potenziale}{19}{subsection.2.7.2}%
-\contentsline {subsection}{\numberline {2.7.3}Legge del moto armonico}{19}{subsection.2.7.3}%
-\contentsline {subsubsection}{Periodo}{19}{subsubsection*.35}%
-\contentsline {subsubsection}{Frequenza}{19}{subsubsection*.36}%
-\contentsline {subsection}{\numberline {2.7.4}Velocità nel moto armonico}{19}{subsection.2.7.4}%
-\contentsline {subsection}{\numberline {2.7.5}Accelerazione nel moto armonico}{19}{subsection.2.7.5}%
-\contentsline {subsection}{\numberline {2.7.6}Energia cinetica}{19}{subsection.2.7.6}%
-\contentsline {subsubsection}{Energia potenziale}{20}{subsubsection*.37}%
-\contentsline {subsubsection}{energia meccanica}{20}{subsubsection*.38}%
-\contentsline {subsection}{\numberline {2.7.7}Moto armonico smorzato}{20}{subsection.2.7.7}%
-\contentsline {subsubsection}{Modulo forza d'attrito}{20}{subsubsection*.39}%
-\contentsline {subsubsection}{legge del moto armonico smorzato}{20}{subsubsection*.40}%
-\contentsline {subsection}{\numberline {2.7.8}Oscilazioni forzate}{20}{subsection.2.7.8}%
-\contentsline {subsection}{\numberline {2.7.9}Legge del moto armonico forzato}{20}{subsection.2.7.9}%
-\contentsline {chapter}{\numberline {3}Pendoli}{23}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Pendolo semplice}{23}{section.3.1}%
-\contentsline {subsubsection}{Periodo}{23}{subsubsection*.41}%
-\contentsline {section}{\numberline {3.2}Pendolo di torsione}{23}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Legge del moto}{23}{subsection.3.2.1}%
-\contentsline {subsubsection}{Soluzione integrale}{23}{subsubsection*.42}%
-\contentsline {subsubsection}{Periodo}{23}{subsubsection*.43}%
-\contentsline {subsection}{\numberline {3.2.2}Onde}{24}{subsection.3.2.2}%
-\contentsline {paragraph}{Propagazione:}{24}{paragraph*.45}%
-\contentsline {subsubsection}{Dimensioni}{24}{subsubsection*.46}%
-\contentsline {subsection}{\numberline {3.2.3}Equazione di onda sinusoidale}{24}{subsection.3.2.3}%
-\contentsline {subsubsection}{Numero d'onda}{24}{subsubsection*.47}%
-\contentsline {subsubsection}{Frequenza ongolare}{24}{subsubsection*.48}%
-\contentsline {subsubsection}{Equazione per la teoria}{25}{subsubsection*.49}%
-\contentsline {subsubsection}{Velocità di fase}{25}{subsubsection*.50}%
-\contentsline {subsection}{\numberline {3.2.4}Potenza}{25}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Serie di Fourer}{25}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Onda stazionaria}{25}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Frequenze notivoli}{26}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}Onde sommarie}{26}{subsection.3.2.8}%
-\contentsline {subsubsection}{Velocità di propagazione}{26}{subsubsection*.51}%
+\contentsline {chapter}{\numberline {1}Cinematica}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Moto uniformemente accelerato}{7}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Segmento percorso $s$ dopo il tempo $t$}{7}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Corpo che cade}{7}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Caduta da $h_0$ con velocità iniziale nulla}{8}{subsection.1.1.3}%
+\contentsline {subsubsection}{Tempo di caduta}{8}{subsubsection*.2}%
+\contentsline {subsubsection}{Velocità finale}{8}{subsubsection*.3}%
+\contentsline {subsection}{\numberline {1.1.4}Lancio verso l'alto}{8}{subsection.1.1.4}%
+\contentsline {subsubsection}{Altezza finale}{8}{subsubsection*.4}%
+\contentsline {subsubsection}{Tempo finale}{8}{subsubsection*.5}%
+\contentsline {section}{\numberline {1.2}Moto circolare uniforme}{8}{section.1.2}%
+\contentsline {subsubsection}{Accelerazione centripeta}{8}{subsubsection*.6}%
+\contentsline {subsubsection}{Velocità angolare}{8}{subsubsection*.7}%
+\contentsline {subsection}{\numberline {1.2.1}Energia cinetica totale}{9}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Forza centripeta e centrifuga}{9}{subsection.1.2.2}%
+\contentsline {subsubsection}{Forza centripeta}{9}{subsubsection*.8}%
+\contentsline {subsubsection}{Forza centrifuga}{9}{subsubsection*.9}%
+\contentsline {section}{\numberline {1.3}Somma dei vettori}{9}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Prodotto tra vettori}{9}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Scalare}{9}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Vettoriale}{10}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}Moto con accelerazione variabile}{10}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Velocità dopo un tempo $t$}{10}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Forza di attrito}{10}{subsection.1.5.2}%
+\contentsline {subsubsection}{Attrito statico}{10}{subsubsection*.11}%
+\contentsline {subsubsection}{Attrito dinamico}{10}{subsubsection*.12}%
+\contentsline {section}{\numberline {1.6}Piano inclinato}{10}{section.1.6}%
+\contentsline {subsubsection}{Accelerazione perpendicolare al piano}{11}{subsubsection*.13}%
+\contentsline {subsubsection}{Accelerazione parallela al piano}{11}{subsubsection*.14}%
+\contentsline {subsubsection}{Angolo d'altezza e lunghezza}{11}{subsubsection*.15}%
+\contentsline {subsubsection}{Angolo da base e lunghezza}{11}{subsubsection*.16}%
+\contentsline {subsubsection}{Angolo d'altezza e base}{11}{subsubsection*.17}%
+\contentsline {chapter}{\numberline {2}Dinamica}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lavora}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Forza costante}{13}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Forza variabile}{13}{subsection.2.1.2}%
+\contentsline {subsubsection}{Unità di misura}{13}{subsubsection*.18}%
+\contentsline {subsection}{\numberline {2.1.3}Lavoro istantaneo}{13}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Potenza}{14}{section.2.2}%
+\contentsline {subsubsection}{Potenza media}{14}{subsubsection*.19}%
+\contentsline {subsubsection}{Potenza istantanea}{14}{subsubsection*.20}%
+\contentsline {section}{\numberline {2.3}Energia cinetica}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Teorema Lavoro-Energia}{14}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Forze conservative e non conservative}{15}{subsection.2.3.2}%
+\contentsline {subsubsection}{Ricora}{15}{subsubsection*.21}%
+\contentsline {section}{\numberline {2.4}Energia Potenziale}{15}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Energia meccanica}{15}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Legge di conservazione dell'energia meccanica}{16}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Energia potenziale gravitazionale}{16}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Energia potenziale elastica}{16}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Forza non conservative}{16}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Legge di conservazione dell'energia}{16}{subsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.5.6}Centro di massa}{17}{subsection.2.5.6}%
+\contentsline {subsubsection}{coordinate centro di massa (carpo esteso e di materia uniforme)}{17}{subsubsection*.22}%
+\contentsline {subsubsection}{Equazione vettoriale del centro di massa}{17}{subsubsection*.23}%
+\contentsline {subsubsection}{Accelerazione del centro di massa (di un sistema di particelle)}{17}{subsubsection*.24}%
+\contentsline {subsubsection}{Legge del moto traslatorio del centro di massa}{18}{subsubsection*.25}%
+\contentsline {subsection}{\numberline {2.5.7}Quantità di moto}{18}{subsection.2.5.7}%
+\contentsline {paragraph}{Enuncia questo se chiede la seconda legge di Newton}{18}{paragraph*.26}%
+\contentsline {paragraph}{Forza impulsiva:}{18}{paragraph*.27}%
+\contentsline {subsection}{\numberline {2.5.8}Teorema dell'impulso -- quantità di moto}{19}{subsection.2.5.8}%
+\contentsline {subsubsection}{Urti}{19}{subsubsection*.28}%
+\contentsline {subsection}{\numberline {2.5.9}Urto elastico a 2 dimensioni}{19}{subsection.2.5.9}%
+\contentsline {subsubsection}{Velocità urto completamente anelastico}{19}{subsubsection*.29}%
+\contentsline {section}{\numberline {2.6}Moto rotatorio}{19}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Misura angolo in radianti}{19}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Velocità angolare media}{20}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Velocità angolare istantanea}{20}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Accelerazione angolare media}{20}{subsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.6.5}Moto con accelerazione angolare costante}{20}{subsection.2.6.5}%
+\contentsline {subsection}{\numberline {2.6.6}Velocità lineare di particella parte di un corpo rigido}{20}{subsection.2.6.6}%
+\contentsline {subsection}{\numberline {2.6.7}Accelerazione lineare di particella parte di un corpo rigido}{20}{subsection.2.6.7}%
+\contentsline {subsection}{\numberline {2.6.8}Momento di inerzia del corpo rigido}{20}{subsection.2.6.8}%
+\contentsline {subsection}{\numberline {2.6.9}Energia cinetica di un corpo in rotazione}{21}{subsection.2.6.9}%
+\contentsline {subsection}{\numberline {2.6.10}Momento della forza}{21}{subsection.2.6.10}%
+\contentsline {subsection}{\numberline {2.6.11}Momento di un particella}{21}{subsection.2.6.11}%
+\contentsline {subsubsection}{Principio di conservazione del momento ongolare}{21}{subsubsection*.30}%
+\contentsline {subsection}{\numberline {2.6.12}Momenti di inerzia da ricordare}{21}{subsection.2.6.12}%
+\contentsline {subsubsection}{Cilindro pieno}{22}{subsubsection*.31}%
+\contentsline {subsubsection}{Sbarra sottile}{22}{subsubsection*.32}%
+\contentsline {subsubsection}{Rotazione rispetto all'asse del cilindro}{22}{subsubsection*.33}%
+\contentsline {subsubsection}{Rotazione rispetto ad un diametro centrale}{22}{subsubsection*.34}%
+\contentsline {subsubsection}{Rispetto ad un asse perpendicolare al centro della lunghezza}{22}{subsubsection*.35}%
+\contentsline {subsubsection}{Rotazione rispetto a un asse perpendicolare a un esterno}{22}{subsubsection*.36}%
+\contentsline {subsubsection}{Sfera piena (rispetto a diametro qualunque)}{22}{subsubsection*.37}%
+\contentsline {subsubsection}{Superficie sferica (rispetto a diametro qualunque)}{22}{subsubsection*.38}%
+\contentsline {section}{\numberline {2.7}Equazione del moto di un oscillazione armonico}{22}{section.2.7}%
+\contentsline {paragraph}{Oscillazione armonica}{22}{paragraph*.39}%
+\contentsline {subsection}{\numberline {2.7.1}Legge di Hook}{22}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Energia potenziale}{23}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}Legge del moto armonico}{23}{subsection.2.7.3}%
+\contentsline {subsubsection}{Periodo}{23}{subsubsection*.40}%
+\contentsline {subsubsection}{Frequenza}{23}{subsubsection*.41}%
+\contentsline {subsection}{\numberline {2.7.4}Velocità nel moto armonico}{23}{subsection.2.7.4}%
+\contentsline {subsection}{\numberline {2.7.5}Accelerazione nel moto armonico}{23}{subsection.2.7.5}%
+\contentsline {subsection}{\numberline {2.7.6}Energia cinetica}{23}{subsection.2.7.6}%
+\contentsline {subsubsection}{Energia potenziale}{24}{subsubsection*.42}%
+\contentsline {subsubsection}{energia meccanica}{24}{subsubsection*.43}%
+\contentsline {subsection}{\numberline {2.7.7}Moto armonico smorzato}{24}{subsection.2.7.7}%
+\contentsline {subsubsection}{Modulo forza d'attrito}{24}{subsubsection*.44}%
+\contentsline {subsubsection}{legge del moto armonico smorzato}{24}{subsubsection*.45}%
+\contentsline {subsection}{\numberline {2.7.8}Oscilazioni forzate}{24}{subsection.2.7.8}%
+\contentsline {subsection}{\numberline {2.7.9}Legge del moto armonico forzato}{24}{subsection.2.7.9}%
+\contentsline {chapter}{\numberline {3}Pendoli}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Pendolo semplice}{27}{section.3.1}%
+\contentsline {subsubsection}{Periodo}{27}{subsubsection*.46}%
+\contentsline {section}{\numberline {3.2}Pendolo di torsione}{27}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Legge del moto}{27}{subsection.3.2.1}%
+\contentsline {subsubsection}{Soluzione integrale}{27}{subsubsection*.47}%
+\contentsline {subsubsection}{Periodo}{27}{subsubsection*.48}%
+\contentsline {subsection}{\numberline {3.2.2}Onde}{28}{subsection.3.2.2}%
+\contentsline {paragraph}{Propagazione:}{28}{paragraph*.50}%
+\contentsline {subsubsection}{Dimensioni}{28}{subsubsection*.51}%
+\contentsline {subsection}{\numberline {3.2.3}Equazione di onda sinusoidale}{28}{subsection.3.2.3}%
+\contentsline {subsubsection}{Numero d'onda}{28}{subsubsection*.52}%
+\contentsline {subsubsection}{Frequenza ongolare}{28}{subsubsection*.53}%
+\contentsline {subsubsection}{Equazione per la teoria}{29}{subsubsection*.54}%
+\contentsline {subsubsection}{Velocità di fase}{29}{subsubsection*.55}%
+\contentsline {subsection}{\numberline {3.2.4}Potenza}{29}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Serie di Fourer}{29}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Onda stazionaria}{29}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Frequenze notivoli}{30}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Onde sommarie}{30}{subsection.3.2.8}%
+\contentsline {subsubsection}{Velocità di propagazione}{30}{subsubsection*.56}%
+\contentsline {subsection}{\numberline {3.2.9}Equazione di un'onda sonora}{30}{subsection.3.2.9}%
+\contentsline {subsubsection}{Variazione di pressione del mezzo (rispetto a un punto $P_0$)}{30}{subsubsection*.57}%

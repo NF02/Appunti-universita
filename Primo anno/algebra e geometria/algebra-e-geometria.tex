@@ -186,5 +186,30 @@ Supponendo ora di avere un vettore $\vec{OP}$ e di volerne calcolare la lunghezz
   \caption{Base dello spazio con il vettore $\vec{OP}$}
   \label{fig:basedelspazioConVettOP}
 \end{figure}\\
-La decomposizione è stata ottenuta graficamente come segue: prima si proietta $P$ perpendicolarmente sul piano su cui stanno $P_1$ e $P_2$ ottenendo il punto $Q$ (l'angolo in $Q$ quindi è retto, come messo in evidenza nella figura) e si ottiene un rettangolo, come campitura in grigio nella figura, che dice che $\vec{OP}=\vec{OQ}+x_3\vec{OP}_3$; poi dal momento che $\vec{OQ}$ giace sul piano di $P_!$ e $P_2$ lo si può decomporre come $\vec{OQ}=x_1\vec{OP}_1+x_2\vec{OP}_2$ (sempre sul piano retti in quanto $\vec{OP}_1$ e $\vec{OP}_2$ sono perpendicolari), e quindi $\vec{OP}=\vec{OQ}+x_3\vec{OP}_3=x_1\vec{OP}_1+x_2\vec{OP}_2+x_3\vec{OP}_3$ come visto sopra.
+La decomposizione è stata ottenuta graficamente come segue: prima si proietta $P$ perpendicolarmente sul piano su cui stanno $P_1$ e $P_2$ ottenendo il punto $Q$ (l'angolo in $Q$ quindi è retto, come messo in evidenza nella figura) e si ottiene un rettangolo, come campitura in grigio nella figura, che dice che $\vec{OP}=\vec{OQ}+x_3\vec{OP}_3$; poi dal momento che $\vec{OQ}$ giace sul piano di $P_!$ e $P_2$ lo si può decomporre come $\vec{OQ}=x_1\vec{OP}_1+x_2\vec{OP}_2$ (sempre sul piano retti in quanto $\vec{OP}_1$ e $\vec{OP}_2$ sono perpendicolari), e quindi $\vec{OP}=\vec{OQ}+x_3\vec{OP}_3=x_1\vec{OP}_1+x_2\vec{OP}_2+x_3\vec{OP}_3$ come visto sopra.\\
+Ora, essendo $\vec{OP}$ l'ipotenusa del triangolo $OPQ$ rettangolo in $Q$, per il teorema di Pitagora si avrà
+\begin{equation}
+  \label{eq:teopitapplicatinellospazio}
+  \abs{OP}^2=\abs{OQ}^2+\abs{PQ}^2
+\end{equation}
+Ma da una parte, il segmento $PQ$, essendo un lato del rettangolo ombreggiato in figura, è lungo esattamente quanto il vettore $x_3\vec{OP_3}$, ovvere $x_3$ (in quanto $\vec{OP}$ ha lunghezza 1); dall'altra, $OQ$ è la diagonale del rettangolo che ha come lati i vettori $x_1\vec{OP}_1$ e $x_2\vec{OP}_2$ di lunghezza rispettivamente $x_1$ e $x_2$ (in quanto $\vec{OP}_1$ e $\vec{OP}_2$ hanno lunghezza 1), quindi sempre per il teorema di Pitagora si ha $\abs{OP}^2=x_1^2+x_2^2+x_3^2$, ovvero, se per la terna $x=(x_1,x_2,x_3)$ si utilizza la notazione $\abs{x}=\sqrt{x_1^2+x_2^2+x_3^2}$,
+\begin{equation}
+  \label{eq:teopitapplicatinellospazio2}
+  \abs{\vec{OP}}=\abs{x}=\sqrt{x_1^2+x_2^2+x_3^2}
+\end{equation}
+che è la formula cercata, angolora della (\ref{eq:teoremadiPitapplicatoaAbsOP}), per la lunghezza di un vettore geometrico $\vec{OP}$ dello spazio in funzione delle sue coordinate rispetto alla base scelta.\\
+Ora, bisogna porsi il problema di calcolare l'angolo tra due vettori non nulli $\vec{OP}, \vec{OQ}\in V_O^3$ una volta note le loro coordinate rispetto a una base ortonormale. Supponendo che tali coordinate siano rispettivamente ($x_1,x_2,x_3$) e ($y_1,y_2,y_3$).
+\begin{figure}[ht!]
+  \centering
+  \resizebox{4cm}{!}{
+      \input{img/vettGeo14.tikz}
+    }
+  \caption{Triangolo OPQ}
+  \label{fig:triangoloOPQ1}
+\end{figure}\\
+Per un risultato di trigonometria, l'angolo $\theta$ tra $\vec{OP}$ e $\vec{OQ}$ è collegato alla lunghezza dei segmenti $OP,OQ,PQ$ dalla formuala\footnote{Si tratta di una sorta di ``teorema di Pitagora per triangoli qualunque'': infatti, se il trangolo è rettangolo in $O$, ovvero $\theta=\frac{\pi}{2}$, allora $\cos\theta=0$ e la formula si riduce a $\abs{\vec{PQ}}^2=\abs{OQ}+\abs{OQ}^2$, il classico teorema di Pitagora.}
+\begin{equation}
+  \label{eq:teopitapplicatinellospazio3}
+  
+\end{equation}
 \end{document}
