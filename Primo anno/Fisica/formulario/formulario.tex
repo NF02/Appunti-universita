@@ -116,7 +116,22 @@ di cui le singole variabili hanno il seguente significato:
 \item $a$ è l'accelerazione;
 \item $t$ è il periodo di tempo.
 \end{itemize}
-
+Mentre il sistem base del moto uniformemente accelerato è:
+\begin{equation}
+  \label{eq:motouniaccformbase}
+  \begin{cases}
+    v=v_i+a\Delta t\\
+    s=\frac{1}{2}a(\Delta t)^2+v_i\Delta t+s_i
+  \end{cases}
+\end{equation}
+o, in forma splicita
+\begin{equation}
+  \label{eq:motouniaccformbase2}
+  \begin{cases}
+    v=v_i+a(t-t_i)\\
+    s=\frac{1}{2}a(t-t_i)^2+v_i(t-t_i)+s_i
+  \end{cases}
+\end{equation}
 \subsection{Segmento percorso $s$ dopo il tempo $t$}
 \label{sec:segPDTempt}
 Per il parloco del segmento percorso $s$, se prendiamo come riferimento la perte dopo il tepo $t$, dobbiamo utilizzare:
@@ -132,6 +147,26 @@ Il segno dipende dal sistema di riferimento -- Le veriabili in gioco sono le seg
 \item $t$ il periodo di tempo.
 \end{itemize}
 
+\subsection{Velocità}
+\label{sec:velmotouniformacc}
+\begin{eqnarray}
+  \label{eq:velmotouniformacc}
+  v=v_i+a(t-t_i)
+\end{eqnarray}
+
+\begin{description}
+\item[$v_i=$] velocità iniziale;
+\item[$t_i=$] Tempo iniziale;
+\item[$a=$] Accelerazione.
+\end{description}
+
+\subsection{Equazione senza il tempo}
+\label{sec:eqsenzailtempo}
+
+\begin{equation}
+  \label{eq:eqsenzailtempo}
+  v^2=v_0^2+2a(s-s_0)
+\end{equation}
 \subsection{Corpo che cade}
 \label{sec:corpochecade}
 \begin{equation}
@@ -1086,7 +1121,7 @@ Siccome la funzione coseno è limitata tra -1 e 1 (compressi), la posizione $x(t
   \subsubsection{Periodo}
   \label{sec:periodoarm}
   \begin{equation*}
-    T=\frac{2\pi}{\omega} = 2\pi\sqrt{\frac{m}{k}}
+    T=\frac{2\pi}{\omega} = 2\pi\sqrt{\frac{m}{k}} \text{ Oppure } T=\frac{1}{f}
   \end{equation*}
   Dipende solo da $k$ e $m$
   \subsubsection{Frequenza}
@@ -1096,8 +1131,18 @@ Siccome la funzione coseno è limitata tra -1 e 1 (compressi), la posizione $x(t
   \end{equation*}
   È misurato in Hz
 \end{multicols}
-Queste definizioni vengono dallàequazione differenziale.
+Queste definizioni vengono dall'equazione differenziale.
 
+\subsubsection{Pulsazione}
+\label{sec:pulsazione}
+
+\begin{defi}
+  La pulsazione in Fisica è una grandezza che misura la velocità con cui viene effettuata l'oscillazione completa.
+\end{defi}
+\begin{eqnarray}
+  \label{eq:pulsazione}
+  \omega=\frac{2\pi}{T}; \omega=2\pi f
+\end{eqnarray}
 \subsection{Velocità nel moto armonico}
 \label{sec:velnelmotarmon}
 \begin{equation}
@@ -1113,6 +1158,13 @@ Queste definizioni vengono dallàequazione differenziale.
   a(t)=\frac{d^{\prime\prime}x}{dt}=-\omega^2 A\cos (\omega t +\delta)
 \end{equation}
 
+\subsection{Velocità e Accelerazione massima}
+\label{sec:velAccmass}
+
+\begin{eqnarray}
+  \label{eq:velAccmassArm}
+  v_{max}=\omega A & a_{max}=A\omega^2
+\end{eqnarray}
 \subsection{Ricavare pulsazione e tempo con formule inverse o da legge oraria, velocità o accelerazione}
 \label{sec:ricpulslegore}
 
