@@ -95,14 +95,15 @@
 \contentsline {subsubsection}{Frequenza}{23}{subsubsection*.41}%
 \contentsline {subsection}{\numberline {2.7.4}Velocità nel moto armonico}{23}{subsection.2.7.4}%
 \contentsline {subsection}{\numberline {2.7.5}Accelerazione nel moto armonico}{23}{subsection.2.7.5}%
-\contentsline {subsection}{\numberline {2.7.6}Energia cinetica}{23}{subsection.2.7.6}%
+\contentsline {subsection}{\numberline {2.7.6}Ricavare pulsazione e tempo con formule inverse o da legge oraria, velocità o accelerazione}{23}{subsection.2.7.6}%
+\contentsline {subsection}{\numberline {2.7.7}Energia cinetica}{24}{subsection.2.7.7}%
 \contentsline {subsubsection}{Energia potenziale}{24}{subsubsection*.42}%
 \contentsline {subsubsection}{energia meccanica}{24}{subsubsection*.43}%
-\contentsline {subsection}{\numberline {2.7.7}Moto armonico smorzato}{24}{subsection.2.7.7}%
+\contentsline {subsection}{\numberline {2.7.8}Moto armonico smorzato}{24}{subsection.2.7.8}%
 \contentsline {subsubsection}{Modulo forza d'attrito}{24}{subsubsection*.44}%
 \contentsline {subsubsection}{legge del moto armonico smorzato}{24}{subsubsection*.45}%
-\contentsline {subsection}{\numberline {2.7.8}Oscilazioni forzate}{24}{subsection.2.7.8}%
-\contentsline {subsection}{\numberline {2.7.9}Legge del moto armonico forzato}{24}{subsection.2.7.9}%
+\contentsline {subsection}{\numberline {2.7.9}Oscilazioni forzate}{24}{subsection.2.7.9}%
+\contentsline {subsection}{\numberline {2.7.10}Legge del moto armonico forzato}{25}{subsection.2.7.10}%
 \contentsline {chapter}{\numberline {3}Pendoli}{27}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Pendolo semplice}{27}{section.3.1}%
 \contentsline {subsubsection}{Periodo}{27}{subsubsection*.46}%
@@ -125,4 +126,4 @@
 \contentsline {subsection}{\numberline {3.2.8}Onde sommarie}{30}{subsection.3.2.8}%
 \contentsline {subsubsection}{Velocità di propagazione}{30}{subsubsection*.56}%
 \contentsline {subsection}{\numberline {3.2.9}Equazione di un'onda sonora}{30}{subsection.3.2.9}%
-\contentsline {subsubsection}{Variazione di pressione del mezzo (rispetto a un punto $P_0$)}{30}{subsubsection*.57}%
+\contentsline {subsubsection}{Variazione di pressione del mezzo (rispetto a un punto $P_0$)}{31}{subsubsection*.57}%

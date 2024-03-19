@@ -1113,6 +1113,15 @@ Queste definizioni vengono dallàequazione differenziale.
   a(t)=\frac{d^{\prime\prime}x}{dt}=-\omega^2 A\cos (\omega t +\delta)
 \end{equation}
 
+\subsection{Ricavare pulsazione e tempo con formule inverse o da legge oraria, velocità o accelerazione}
+\label{sec:ricpulslegore}
+
+Conoscendo la posizione, è possibile esplicitare la sua funzione dopo di che ricavo il valore di $\omega \cdot \theta$ dividendo per l'ampiezza il modulo della posizione ($x$), quindi ottenuto $\omega\cdot t$ si svolge la funzione $\arccos$ o $\cos^{-1}$ del valore ottenuto precedentemente da qui si può ottenere l'angolo e da questo punto sarà possibile ricavare la pulsazione o il tempo.
+\begin{eqnarray}
+  \label{eq:ricpulslegore}
+  A\cos(\omega t)=\frac{x}{A} & \to \omega t=\arccos(\cos(\omega t))\\
+  \ t = \frac{\arccos(\cos(\omega t))}{\omega} & \omega=\frac{\arccos(\cos(\omega t))}{t} 
+\end{eqnarray}
 \subsection{Energia cinetica}
 \label{sec:encin}
 
@@ -1122,7 +1131,7 @@ Queste definizioni vengono dallàequazione differenziale.
     k=\frac{1}{2}mv^2=\underbrace{\frac{1}{2}k}_{\omega^2\cdot m}A^2\sin^2(\omega t*\delta) & \omega=\frac{k}{m}
   \end{matrix}
 \end{equation}
-Valore massimo $k$: $\frac{1}{2}kA^2$
+Valore massimo $k$: $\frac{1}{2}kA^2$ -- ma $\omega=2\pi f$ può dipendere anche dalla frequenza quindi è calcolabile anche con la formula ripotata ad inizio riga.
 \begin{multicols}{2}
   \subsubsection{Energia potenziale}
   \label{sec:enpotmotoarm}
