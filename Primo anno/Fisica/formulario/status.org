@@ -2,8 +2,8 @@
 #+title: Status del formulario
 
 Il formulario è composto da:
-- [-] Cinematica
-- [-] Dinamica
+- [X] Cinematica
+- [X] Dinamica
 - [-] Enegia e lavoro
 - [-] Corpi rigidi e quantità di moto
 - [-] Dinamica rotazionale
