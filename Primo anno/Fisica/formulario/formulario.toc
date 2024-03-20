@@ -111,21 +111,22 @@
 \contentsline {chapter}{\numberline {3}Pendoli}{27}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Pendolo semplice}{27}{section.3.1}%
 \contentsline {subsubsection}{Periodo}{27}{subsubsection*.47}%
+\contentsline {subsection}{\numberline {3.1.1}Componente attiva della forza peso}{27}{subsection.3.1.1}%
 \contentsline {section}{\numberline {3.2}Pendolo di torsione}{27}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Legge del moto}{27}{subsection.3.2.1}%
 \contentsline {subsubsection}{Soluzione integrale}{27}{subsubsection*.48}%
-\contentsline {subsubsection}{Periodo}{27}{subsubsection*.49}%
+\contentsline {subsubsection}{Periodo}{28}{subsubsection*.49}%
 \contentsline {subsection}{\numberline {3.2.2}Onde}{28}{subsection.3.2.2}%
 \contentsline {paragraph}{Propagazione:}{28}{paragraph*.51}%
 \contentsline {subsubsection}{Dimensioni}{28}{subsubsection*.52}%
 \contentsline {subsection}{\numberline {3.2.3}Equazione di onda sinusoidale}{28}{subsection.3.2.3}%
-\contentsline {subsubsection}{Numero d'onda}{28}{subsubsection*.53}%
-\contentsline {subsubsection}{Frequenza ongolare}{28}{subsubsection*.54}%
+\contentsline {subsubsection}{Numero d'onda}{29}{subsubsection*.53}%
+\contentsline {subsubsection}{Frequenza ongolare}{29}{subsubsection*.54}%
 \contentsline {subsubsection}{Equazione per la teoria}{29}{subsubsection*.55}%
 \contentsline {subsubsection}{Velocità di fase}{29}{subsubsection*.56}%
 \contentsline {subsection}{\numberline {3.2.4}Potenza}{29}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Serie di Fourer}{29}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Onda stazionaria}{29}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.5}Serie di Fourer}{30}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Onda stazionaria}{30}{subsection.3.2.6}%
 \contentsline {subsection}{\numberline {3.2.7}Frequenze notivoli}{30}{subsection.3.2.7}%
 \contentsline {subsection}{\numberline {3.2.8}Onde sommarie}{30}{subsection.3.2.8}%
 \contentsline {subsubsection}{Velocità di propagazione}{30}{subsubsection*.57}%
