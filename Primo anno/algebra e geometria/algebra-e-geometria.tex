@@ -1,3 +1,4 @@
+
 \documentclass{book}
 \usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=3.0cm,right=3.0cm]{geometry}
 
@@ -223,5 +224,56 @@ Ora, per la (\ref{eq:teopitapplicatinellospazio2}), si ha $\abs{OP}=\sqrt{x_1^2+
 \end{figure}\\
 Il vettore $\vec{OR}$ parallelo al segmento $PQ$ e avente la sua stessa lunghezza, ovvero $\abs{PQ}=\abs{\vec{OR}}$.\\
 Ora, essendo $\vec{OR}$ parallelo a $PQ$ e della stessa lunghezza, il quadrilattero di vertici $O,R,P,Q$ è un parallelogramma che ha $\vec{OR}$ e $\vec{OP}$ come lati e $\vec{OQ}$ come diagonale: quindi, dalla definizione di somma tra vettori applicati, si ha $\vec{OQ}=\vec{OR}+\vec{OP}$, ovvero $\vec{OR}=\vec{OQ}-\vec{OP}$.\\
-Per le proprietà telle coordinate viste nell'Osservazione \ref{oss:coordinate2}, le coordinate di $\vec{OR}=\vec{OQ}-\vec{OP}$ sono date dalle coordinate di $\vec{OQ}$ meno le coordinate di $\vec{OP}$, ovvero $(y_1-x_1,y_2-x_2,y_3-x_3)$, e quindi, dalla (\ref{eq:teoremadiPitapplicatoaAbsOP}) si ha finalmente 
+Per le proprietà telle coordinate viste nell'Osservazione \ref{oss:coordinate2}, le coordinate di $\vec{OR}=\vec{OQ}-\vec{OP}$ sono date dalle coordinate di $\vec{OQ}$ meno le coordinate di $\vec{OP}$, ovvero $(y_1-x_1,y_2-x_2,y_3-x_3)$, e quindi, dalla (\ref{eq:teoremadiPitapplicatoaAbsOP}) si ha finalmente
+\begin{equation}
+  \label{eq:teopitapplicatinellospazio3}
+  \abs{PQ}=\abs{\vec{OR}}=\sqrt{(y_1-x_1)^2+(y_2-x_2)^2+(y_3-x_3)^2}
+\end{equation}
+La formula (\ref{eq:teopitapplicatinellospazio2}) diventa allora
+\begin{equation}
+  \label{eq:teopitapplicatinellospazio4}
+  \begin{matrix}
+    (y_1-x_1)^2+(y_2-x_2)^2+(y_3-x_3)^2=y^2_1-x^2_1+y^2_2-x^2_2+y^2_3-x^2_3\\
+    -2\cos\theta\sqrt{x^2_1+x^2_2+x^2_3}\cdot\sqrt{y^2_1+y^2_2+y^2_3}
+  \end{matrix}  
+\end{equation}
+Poiché il primo membro, per la formula del quadrato di binomio\footnote{Lo sviluppo del quadrato di binomio è $(a\pm{}b)^2=a^2+b^2\pm2ab$}, è uguale a
+\begin{equation*}
+  x^2_1+y^2_1-2x_1y_1+x^2_2+y^2_2-2x_2y_2+x^2_3+y^2_3-2x_3y_3
+\end{equation*}
+semplificando con i quadrati a secondo membro rimane:
+\begin{equation}
+  \label{eq:teopitapplicatinellospazio5}
+  -2x_1y_1+-2x_2y_2-2x_3y_3=-2\cos\theta\sqrt{x^2_1+x^2_2+x^2_3}\cdot\sqrt{y^2_1+y^2_2+y^2_3}
+\end{equation}
+ovvero, ricavando $\cos\theta$,
+\begin{equation}
+  \label{eq:teopitapplicatinellospazio6}
+  \cos\theta = \frac{x_1y_1+x_2y_2+x_3y_3}{\sqrt{x^2_1+x^2_2+x^2_3}\cdot\sqrt{y^2_1+y^2_2+y^2_3}}
+\end{equation} 
+che è finalmente la formula cercata che esprime l'angolo tra due vettori in funzione delle loro coordinate rispetto alla base data.\\
+Con un calcolo analogo nel piano (dove non cambia nulla delle costruzioni fatte e dei passaggi svolti, salvo il fatto che abbiamo due coordinate anziché tre) si ottiene la formula analoga
+\begin{equation}
+  \label{eq:teopitapplicatinellospazio7}
+  \cos\theta = \frac{x_1y_1+x_2y_2}{\sqrt{x^2_1+x^2_2}\cdot\sqrt{y^2_1+y^2_2}}
+\end{equation}
+\begin{oss}
+  \label{oss:teopitapplicatinellospazio}
+  Una volta ricavato il valore del coseno dell'angolo mediante la formula (\ref{eq:teopitapplicatinellospazio5}) [la (\ref{eq:teopitapplicatinellospazio7}) nel caso del piano], all'interno dell'intervallo $\left[0,2\pi\right]$ avremo in generale \textit{due} possibili valori di $\theta$ corrispondenti: ad esempio, se $\cos\theta=\frac{1}{2}$ allora $\theta=\frac{\pi}{3}$ oppure $\theta=2\pi -\frac{\pi}{3}=\frac{5}{3}\pi$. Questo riflette il fatto geometroco ovvio, illutrato dall'immagine
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{3cm}{!}{
+      \input{img/vettGeo16.tikz}
+    }
+    \caption{Angolo $\theta$ in base al suo valore}
+    \label{fig:angolotheta}
+  \end{figure}\\
+  che due vettori individuano due angoli, uno minore o uguale a $\pi$ e un altro maggiore o uguale a $\pi$. Per risolvere questa ambiguità, quando si parla di angolo tracciare due vettori d'ora in poi verrà inteso quello minore o uguale di $\pi$ (il cosiddetto \textit{angolo convesso}).
+\end{oss}
+\begin{es}
+  Considerando ad esempio i vettori $\vec{OP}$ e $\vec{OQ}$ che rispetto a una terna ortonormale $\vec{OP}_1,\vec{OP}_2,\vec{OP}_3$ hanno coordintate rispettivamente (1,0,1) e (1,-1,0) (in base alla definizione di coordinate, sono quindi $\vec{OP}=1\vec{OP}_1+0\vec{OP}_2+1\vec{OP}_3=\vec{OP}_1+\vec{OP}_3$ e $\vec{OQ}=1\vec{OP}_1+(-1)\vec{OP}_2+0\vec{OP}_3=\vec{OP}_1-\vec{OP}_2$). Allora l'angolo tra $\vec{OP}$ e $\vec{OQ}$, in base alla formula (\ref{eq:teopitapplicatinellospazio5}), è dato da
+  \begin{equation*}
+   \cos \theta=\frac{1\cdot1+0\cdot(-1)+1\cdot 0}{\sqrt{1^2+0^2+1^2}\cdot\sqrt{1^2+(-1)^2+0^2}}
+  \end{equation*}
+ \end{es}
 \end{document}
