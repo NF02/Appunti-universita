@@ -259,7 +259,7 @@ Con un calcolo analogo nel piano (dove non cambia nulla delle costruzioni fatte 
 \end{equation}
 \begin{oss}
   \label{oss:teopitapplicatinellospazio}
-  Una volta ricavato il valore del coseno dell'angolo mediante la formula (\ref{eq:teopitapplicatinellospazio5}) [la (\ref{eq:teopitapplicatinellospazio7}) nel caso del piano], all'interno dell'intervallo $\left[0,2\pi\right]$ avremo in generale \textit{due} possibili valori di $\theta$ corrispondenti: ad esempio, se $\cos\theta=\frac{1}{2}$ allora $\theta=\frac{\pi}{3}$ oppure $\theta=2\pi -\frac{\pi}{3}=\frac{5}{3}\pi$. Questo riflette il fatto geometroco ovvio, illutrato dall'immagine
+  Una volta ricavato il valore del coseno dell'angolo mediante la formula (\ref{eq:teopitapplicatinellospazio6}) [la (\ref{eq:teopitapplicatinellospazio7}) nel caso del piano], all'interno dell'intervallo $\left[0,2\pi\right]$ avremo in generale \textit{due} possibili valori di $\theta$ corrispondenti: ad esempio, se $\cos\theta=\frac{1}{2}$ allora $\theta=\frac{\pi}{3}$ oppure $\theta=2\pi -\frac{\pi}{3}=\frac{5}{3}\pi$. Questo riflette il fatto geometroco ovvio, illutrato dall'immagine
   \begin{figure}[ht!]
     \centering
     \resizebox{3cm}{!}{
@@ -273,7 +273,114 @@ Con un calcolo analogo nel piano (dove non cambia nulla delle costruzioni fatte 
 \begin{es}
   Considerando ad esempio i vettori $\vec{OP}$ e $\vec{OQ}$ che rispetto a una terna ortonormale $\vec{OP}_1,\vec{OP}_2,\vec{OP}_3$ hanno coordintate rispettivamente (1,0,1) e (1,-1,0) (in base alla definizione di coordinate, sono quindi $\vec{OP}=1\vec{OP}_1+0\vec{OP}_2+1\vec{OP}_3=\vec{OP}_1+\vec{OP}_3$ e $\vec{OQ}=1\vec{OP}_1+(-1)\vec{OP}_2+0\vec{OP}_3=\vec{OP}_1-\vec{OP}_2$). Allora l'angolo tra $\vec{OP}$ e $\vec{OQ}$, in base alla formula (\ref{eq:teopitapplicatinellospazio5}), è dato da
   \begin{equation*}
-   \cos \theta=\frac{1\cdot1+0\cdot(-1)+1\cdot 0}{\sqrt{1^2+0^2+1^2}\cdot\sqrt{1^2+(-1)^2+0^2}}
+   \cos \theta=\frac{1\cdot1+0\cdot(-1)+1\cdot 0}{\sqrt{1^2+0^2+1^2}\cdot\sqrt{1^2+(-1)^2+0^2}}=\frac{1}{\sqrt{2}\sqrt{2}}=\frac{1}{2}
   \end{equation*}
- \end{es}
+  ovvero, dalla trigonometria, $\theta=\frac{\pi}{3}$ (in gradi, $60^o$)\\
+  Le formule (\ref{eq:teopitapplicatinellospazio6}) e (\ref{eq:teopitapplicatinellospazio7}) ci forniscono anche un criterioper verificare in coordinate se due vettori sono perpendicolari: infati, l'angolo $\theta$ è $\frac{\pi}{2}$ (ovvero 90 gradi) se e solo se $\cos\theta =0$, il che può essere vero solo se i numeratori della  (\ref{eq:teopitapplicatinellospazio6}) e della (\ref{eq:teopitapplicatinellospazio7}) sono nulli.\\
+  Ad esempio, nello spazio, abbiamo che due vettori $\vec{OP}\equiv(x_1,x_2,x_3)$ e $\vec{OQ}\equiv(y_1,y_2,y_3)$ sono perpendicolari se e solo se si verifica
+  \begin{equation}
+    \label{eq:teopitapplicatinellospazio8}
+    x_1y_1+x_2y_2+x_3y_3=0
+  \end{equation}
+  Ad esempio, i due vettori di coordinate (1,2,1) e (3,1,-5) sono perpendicolari in quanto
+  \begin{equation*}
+    1\cdot 2+2\cdot 1+1\cdot (-5)=3+2-5=0
+  \end{equation*}
+\end{es}
+\begin{oss}
+  \label{oss:teopitapplicatinellospazio2}
+  In base al criterio (\ref{eq:teopitapplicatinellospazio8}), il vettore nullo $\vec{OO}$ risulta essere perpendicolare a qualunque altro vettore $\vec{OP}$, in quanto le sue coordinate sono $(0,0,0)$ e, qualunque siano le cordinate $(x_1,x_2,x_3)$ di $\vec{OP}$ si ottiene $x_1\cdot0+x_2\cdot 0+ x_3\cdot 0=0$.\\
+  Tuttavia, si noti che le formule (\ref{eq:teopitapplicatinellospazio6}) e (\ref{eq:teopitapplicatinellospazio7}) sono applicabili per calcolrare un angolo solo se nessuno dei vettori è nulla, altrimenti una delle due radici a denominatore verrebbe $\sqrt{0^2+0^2+0^2}=0$, e come è noto non è possibile dividere per zero.\\
+  Il numeratore che compare nella (\ref{eq:teopitapplicatinellospazio6}), o nella (\ref{eq:teopitapplicatinellospazio7}) nel caso del piano, può essere interpretato come una nuova operazione, una sorta di prodotto che date due terne (due coppie nel caso del piano) di numero reali, dà come risultato un numero reale: si denota $x=(x_1,x_2,x_3)$ e $y=(y_1,y_2,y_3)$\footnote{nel caso del piano, $x=(x_1,x_2)$ e $y=(y_1,y_2)$}, è possibile porre:
+  \begin{equation}
+    \label{eq:teopitapplicatinellospazio9}
+    x\cdot y:=x_1y_1+x_2y_2+x_3y_3
+  \end{equation}
+  mentre, nel caso del piano sarà:
+  \begin{equation*}
+    x\cdot y:=x_1y_1+x_2y_2
+  \end{equation*}
+  La (\ref{eq:teopitapplicatinellospazio9}) è un esempio di \textit{prodotto scalare}, una nozione che vedremo più in generale in una dei prossimi capitoli (il nome viene dal fatto che si tratta di un'operazione il cui risultato è un numero reale, e come detto sopra nel contesto dei vettori i numeri reali si chiamano anche scalari).\\
+  Si noti che anche le formule (\ref{eq:teoremadiPitapplicatoaAbsOP}) e (\ref{eq:teopitapplicatinellospazio}) per calcolare in coordinate della lunghezza di un vettore (rispettivamente nel piano e nello spazio) possono essere espresse in termini del prodotto scalare: infatti, ad esempio per la (\ref{eq:teopitapplicatinellospazio2}) si ha, facendo riferimento alla (\ref{eq:teopitapplicatinellospazio9}),
+  \begin{equation*}
+    \sqrt{x_1^2+x_2^2+x_3^2}=\sqrt{x_1\cdot x_1+x_2\cdot x_2+x_3\cdot x_3}=\sqrt{x\cdot x}
+  \end{equation*}
+\end{oss}
+Il prodotto scalre rappresenta qundi una sorta di ``strumento di misura'' tramite il quale si esprimono le misure della lunghezza e degli angoli tra vettori quando si lavora in coordinate: quindi, per manipolare espressioni che riquardano lunquezza e angolo e, come verrà fatto in capitoli successivi, ricavare le formule che coinvolgono in qualche modo queste nozioni (ad esempio, riflessioni, proiezioni ortogonali, etc.) è necessario conoscerne le proprietà algebriche.\\
+Le proprietà più importanti, limitando al cso di $\mathds{R}^3$ (tali proprietà saranno valide anche nel caso di $\mathds{R}^2$, dove si ricavano nello stesso modo e l'unica differenza è che nelle formule non compare la terza componente)
+\begin{enumerate}
+\item Il prodotto scalare gode della proprietà commutativa: infatti, si verifica immediatamente che
+  \begin{equation*}
+    x\cdot y:=x_1y_1+x_2y_2+x_3y_3=y_1x_1+y_2x_2+y_3x_3=y\cdot x
+  \end{equation*}
+\item Come visto nel pagrafo precedente che se due vettori geometrici $\vec{OP}$ e $\vec{OQ}$ nello spazio hanno coordinate date rispettivamente da due terne $x=(x_1,x_2,x_3)$ e $y=(y_1,y_2,y_3)$, allora la loro somma $\vec{OP}+\vec{OQ}$ ha coordinate dalla terna $(x_1+y_1,x_2+y_2,x_3+y_3)$ che si ottiene sommando le rispettive componenti delle due terne: questo definisce un'operazione di somma tra le $x$ e $y$, che prodotto scalare gode delle proprietà distributiva rispetto rispetto a tale somma, ovvero date tre terne $x=(x_1,x_2,x_3),y=(y_1,y_2,y_3),z=(z_1,z_2,z_3)$ valgono le
+  \begin{eqnarray}
+    \label{eq:teopitapplicatinellospazio10}
+    x\cdot (y+z)=x\cdot y+x\cdot z, & (x+y)\cdot z=x\cdot z+y\cdot z
+  \end{eqnarray}
+  rispettivamente proprietà distributiva a destra e a sinistra.\\
+  Infatti, essendo $y+z=(y_1+z_1,y_2+z_2, y_3+z_3)$, dalla (\ref{eq:teopitapplicatinellospazio9}) si ha
+  \begin{equation*}
+    x\cdot (y+z)=x_1(y_1+z_1)+x_2(y_2+z_2)+x_3(y_3+z_3)=
+  \end{equation*}
+  usando per ciascuno dei tre addendi la proprietà distributiva del prodotto di numeri reali rispetto alla somma
+  \begin{equation*}
+    \begin{matrix}
+      =x_1y_1+x_1z_1+x_2y_2+x_2z_2+x_3y_3+x_3z_3=x_1y_1+x_2y_2+x_3y_3+x_1z_1+x_2z_2+x_3z_3=\\
+      x\cdot y+x\cdot z
+    \end{matrix}
+  \end{equation*}
+  come si voleva.\\
+  Allo stesso modo (omettiamo quindi i dettagli) si verifica che vale anche la proprietà distributiva a sinistra, ovvero la seconda delle (\ref{eq:teopitapplicatinellospazio10}).
+\item Visto nel paragrafo precedente che se un vettore geometrico $\vec{OP}$ nello spazio ha coordinate date dalla terna $x=(x_1,x_2,x_3)$, allora il prodotto $c\vec{OP}$ del vettore per un numero $c\in \mathds{R}$ ha coordinate date della terna $x$ per $c$: posto $cx=(cx_1,cx_2,cx_3)$, ci chiediamo come si comporta il prodotto scalare rispetto a questa operazione (che quindi non è nient'altro per un vettore), ovvero cosa se date due terne $x=(x_1,x_2,x_3)$ e $y=(y_1,y_2,y_3)$ e un numero $c\in \mathds{R}$ eseguiamo i prodotti scalare $(cx)\cdot y$ oppure $x\cdot (cx)$. Si verifica facilmente che si ha
+  \begin{eqnarray}
+    \label{eq:teopitapplicatinellospazio11}
+    (cx)\cdot y=c(x\cdot y), & x\cdot (cy)=c(x\cdot y)
+  \end{eqnarray}
+  Infatti, essendo $cx=(cx_1,cx_2,cx_3)$, per la (\ref{eq:teopitapplicatinellospazio9}) si ha
+  \begin{equation*}
+    (cx)\cdot y=cx_1y_1+cx_2y_2+cx_3y_3=
+  \end{equation*}
+  mettendo in evidenza $c$ che compare in tutti e tre gli addendi
+  \begin{equation*}
+    =c(x_1y_1+x_2y_2+x_3y_3)=c(x\cdot y)
+  \end{equation*}
+  come volevamo. Allo stesso modo (omettiamo quindi i dettagli) si verifica la seconda delle (\ref{eq:teopitapplicatinellospazio11}).
+\end{enumerate}
+Vediamo ora che in $\mathds{R}^3$ è possibile introdurre anche un'altra operazione molto utile in geometria ma anche in altre ma anche in altre applicazioni (soprattutto in fisica), il \textit{prodotto vettoriale}, che date due terne di numeri reali dà come risultato non uno scalare (come nel caso del prodotto scalare) ma una nuova terna (che rappresenta in cordinate un nuovo vettore, da cui il nome). La definizione è la seguente: se $x=(x_1,x_2,x_3)$ e $y=(y_1,y_2,y_3)$ allora si pone
+\begin{equation}
+  \label{eq:teopitapplicatinellospazio12}
+  x\wedge y := (x_2y_3-x_3y_2,x_2y_1-x_1y_3,x_1y_2-x_2y_1)
+\end{equation}
+Ad esempio, se $x=(1,2,3)$ e $y=(2,5,-1)$ si ha
+\begin{equation*}
+  x\wedge y := (2\cdot (-1)-3\cdot 5, 3\cdot 2-1,1\cdot 5-2\cdot 2) = (-17,7,1)
+\end{equation*}
+Il motivo di questa particolare definizione è che si vuole che la terna $x \wedge y$ rappresenti (in coordinate rispetto a una base ortonormale) un vettore che è perpendicolare sia al vettore rappresentato da $x$ che a quello rappresentato da $y$.\\
+Per verificare che effevamente è così, basta usare il criterio di perpendicolarità visto nella (\ref{eq:teopitapplicatinellospazio8}), cioè moltiplicare le rispettive componenti di $x$ e $x\wedge y$ (la prima con la prima, la seconda con la seconda, la terza con la terza) e sommare:
+\begin{eqnarray*}
+  x_1(x_2y_3-x_3y_2)+x_2(x_3y_1-x_1y_3)+x_3(x_1y_2-x_2y_1)=\\
+  x_1x_2y_3-x_1x_3y_2-x_2x_1y_3+x_3x_1y_2-x_3x_2y_1=0
+\end{eqnarray*}
+in quanto come si vede facilmente tutti i termini si semplificano.\\
+Analogamente, per verificare che anche il vettore di coordiante $y$ è perpendicolare al vettore rappresentato dal prodotto vettoriale $x\wedge y$:
+\begin{eqnarray*}
+  y_1(x_2y_3-x_3y_2)+y_2(x_3y_1-x_1y_3)+y_3(x_1y_2-x_2y_1)=\\
+  y_1x_2y_3-y_1x_3y_2-y_2x_1y_3+y_3x_1y_2-y_3x_2y_1=0
+\end{eqnarray*}
+come si voleva.\\
+Come abbiamo già fatto per il prodotto scalare, vediamo le più importanti proprietà algebriche dell'operazione di prodotto vettoriale: iniziamo con il segnalare subito che esso \textit{non} è commutativo, ma si ha
+\begin{equation*}
+  x\wedge y=-y\wedge x
+\end{equation*}
+ovvero quando combiamo l'ordine dei fattori il risultato cambia di segno (ovvero otteniamo una terna con le componenti di segno opposto). Ad esempio, per i due vettori $x=(1,2,3)$ e $y=(2,5,-1)$ per cui sopra abbiamo già calcolato $x\wedge y=(-17,7,1)$, si ha
+\begin{equation*}
+  y\wedge x=(5\cdot 3+(-1)\cdot 2, -1\cdot 3, 2\cdot 3-5\cdot 1)=(17, -7, -1).
+\end{equation*}
+Ancora, nella manipolazione di espressioni e formule che coinvolgono il prodotto vettoriale è necessario fare attenzione al fatto che esso \textit{non} è neanche associativo, cioè in generale si ha
+\begin{equation*}
+  x\wedge (y\wedge z)\neq (x\wedge y) \wedge z
+\end{equation*}
+Ad esempio, se prendiamo $x=(1,0,0)$ e $y=z=(0,1,0)$, si vede facilmente che $x\wedge y = (0,0,1)$ e $(x\wedge y) \wedge z=(-1,0,0)$, mentre dall'altra si ha $y\wedge z=(0,0,0)$ e $x\wedge (y\wedge z)=(0,0,0)$.\\
+Ancora, esattamente come abbiamo fatto nella (\ref{eq:teopitapplicatinellospazio10}) per il prodotto scalare, 
 \end{document}
