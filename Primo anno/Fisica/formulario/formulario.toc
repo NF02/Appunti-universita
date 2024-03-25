@@ -90,24 +90,25 @@
 \contentsline {subsubsection}{Superficie sferica (rispetto a diametro qualunque)}{22}{subsubsection*.38}%
 \contentsline {section}{\numberline {2.7}Equazione del moto di un oscillazione armonico}{22}{section.2.7}%
 \contentsline {paragraph}{Oscillazione armonica}{22}{paragraph*.39}%
-\contentsline {subsection}{\numberline {2.7.1}Legge di Hook}{22}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Energia potenziale}{23}{subsection.2.7.2}%
-\contentsline {subsection}{\numberline {2.7.3}Legge del moto armonico}{23}{subsection.2.7.3}%
+\contentsline {subsection}{\numberline {2.7.1}Oscillatore armonico}{22}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Legge di Hook}{22}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}Energia potenziale}{23}{subsection.2.7.3}%
+\contentsline {subsection}{\numberline {2.7.4}Legge del moto armonico}{23}{subsection.2.7.4}%
 \contentsline {subsubsection}{Periodo}{23}{subsubsection*.40}%
 \contentsline {subsubsection}{Frequenza}{23}{subsubsection*.41}%
 \contentsline {subsubsection}{Pulsazione}{23}{subsubsection*.42}%
-\contentsline {subsection}{\numberline {2.7.4}Velocità nel moto armonico}{23}{subsection.2.7.4}%
-\contentsline {subsection}{\numberline {2.7.5}Accelerazione nel moto armonico}{24}{subsection.2.7.5}%
-\contentsline {subsection}{\numberline {2.7.6}Velocità e Accelerazione massima}{24}{subsection.2.7.6}%
-\contentsline {subsection}{\numberline {2.7.7}Ricavare pulsazione e tempo con formule inverse o da legge oraria, velocità o accelerazione}{24}{subsection.2.7.7}%
-\contentsline {subsection}{\numberline {2.7.8}Energia cinetica}{24}{subsection.2.7.8}%
+\contentsline {subsection}{\numberline {2.7.5}Velocità nel moto armonico}{23}{subsection.2.7.5}%
+\contentsline {subsection}{\numberline {2.7.6}Accelerazione nel moto armonico}{24}{subsection.2.7.6}%
+\contentsline {subsection}{\numberline {2.7.7}Velocità e Accelerazione massima}{24}{subsection.2.7.7}%
+\contentsline {subsection}{\numberline {2.7.8}Ricavare pulsazione e tempo con formule inverse o da legge oraria, velocità o accelerazione}{24}{subsection.2.7.8}%
+\contentsline {subsection}{\numberline {2.7.9}Energia cinetica}{24}{subsection.2.7.9}%
 \contentsline {subsubsection}{Energia potenziale}{24}{subsubsection*.43}%
 \contentsline {subsubsection}{energia meccanica}{24}{subsubsection*.44}%
-\contentsline {subsection}{\numberline {2.7.9}Moto armonico smorzato}{24}{subsection.2.7.9}%
+\contentsline {subsection}{\numberline {2.7.10}Moto armonico smorzato}{24}{subsection.2.7.10}%
 \contentsline {subsubsection}{Modulo forza d'attrito}{24}{subsubsection*.45}%
 \contentsline {subsubsection}{legge del moto armonico smorzato}{24}{subsubsection*.46}%
-\contentsline {subsection}{\numberline {2.7.10}Oscilazioni forzate}{25}{subsection.2.7.10}%
-\contentsline {subsection}{\numberline {2.7.11}Legge del moto armonico forzato}{25}{subsection.2.7.11}%
+\contentsline {subsection}{\numberline {2.7.11}Oscilazioni forzate}{25}{subsection.2.7.11}%
+\contentsline {subsection}{\numberline {2.7.12}Legge del moto armonico forzato}{25}{subsection.2.7.12}%
 \contentsline {chapter}{\numberline {3}Pendoli}{27}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Pendolo semplice}{27}{section.3.1}%
 \contentsline {subsubsection}{Periodo}{27}{subsubsection*.47}%
@@ -132,3 +133,7 @@
 \contentsline {subsubsection}{Velocità di propagazione}{30}{subsubsection*.57}%
 \contentsline {subsection}{\numberline {3.2.9}Equazione di un'onda sonora}{30}{subsection.3.2.9}%
 \contentsline {subsubsection}{Variazione di pressione del mezzo (rispetto a un punto $P_0$)}{31}{subsubsection*.58}%
+\contentsline {section}{\numberline {3.3}Grandezze acustiche Fondamentali}{31}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Livello di intensità sonore}{31}{subsection.3.3.1}%
+\contentsline {subsubsection}{Ricavare intensità dal livello di intensità}{31}{subsubsection*.59}%
+\contentsline {subsection}{\numberline {3.3.2}Potenza acustica}{31}{subsection.3.3.2}%
