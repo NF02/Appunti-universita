@@ -6,3 +6,4 @@
 \contentsline {paragraph}{Denotare che}{5}{paragraph*.3}%
 \contentsline {section}{\numberline {1.2}Coordinate}{7}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Lunghezze e angoli}{11}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Spazi vettoriali}{19}{section.1.4}%

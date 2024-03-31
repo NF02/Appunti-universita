@@ -1,0 +1,40 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dot] (0) at (0, 0) {};
+		\node [style=none] (1) at (0, 2) {};
+		\node [style=none] (2) at (0, 3) {};
+		\node [style=none] (3) at (0, 4) {};
+		\node [style=none] (4) at (0, 5) {};
+		\node [style=none] (5) at (0, -1) {};
+		\node [style=none] (6) at (0, -4) {};
+		\node [style=none] (7) at (0, -5) {};
+		\node [style=none] (8) at (0, -7) {};
+		\node [style=none] (9) at (0, -8) {};
+		\node [style=none] (10) at (-2, 1) {};
+		\node [style=none] (11) at (1, -4) {};
+		\node [style=none] (12) at (9, -4) {};
+		\node [style=none] (13) at (6, 1) {};
+		\node [style=none] (14) at (4, 0) {};
+		\node [style=none] (15) at (1, -2) {};
+		\node [style=none] (16) at (-0.75, 4.5) {$r$};
+		\node [style=none] (17) at (5.25, 0) {$\vec{OQ}\equiv y$};
+		\node [style=none] (18) at (1.5, -2.25) {$\vec{OP}\equiv x$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=Rightarrow] (6.center) to (7.center);
+		\draw [style=Rightarrow] (7.center) to (8.center);
+		\draw [style=Rightarrow] (8.center) to (9.center);
+		\draw [style=Rightarrow] (5.center) to (6.center);
+		\draw [style=Rightarrow] (0) to (5.center);
+		\draw [style=Rightarrow] (0) to (1.center);
+		\draw [style=Rightarrow] (1.center) to (2.center);
+		\draw [style=Rightarrow] (2.center) to (3.center);
+		\draw [style=Rightarrow] (3.center) to (4.center);
+		\draw (10.center) to (11.center);
+		\draw (13.center) to (12.center);
+		\draw (11.center) to (12.center);
+		\draw (10.center) to (13.center);
+		\draw [style=Rightarrow] (0) to (14.center);
+		\draw [style=Rightarrow] (0) to (15.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

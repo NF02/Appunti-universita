@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.17)  25 MAR 2024 17:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.17)  27 MAR 2024 17:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1298,7 +1298,7 @@ Package epstopdf Info: Source file: <img/scalare.eps>
 to.pdf img/scalare.eps>
 (epstopdf)             \includegraphics on input line 314.
 Package epstopdf Info: Output file is already uptodate.
-<img/scalare-eps-converted-to.pdf, id=481, 90.3375pt x 80.3pt>
+<img/scalare-eps-converted-to.pdf, id=507, 90.3375pt x 80.3pt>
 File: img/scalare-eps-converted-to.pdf Graphic file (type pdf)
 <use img/scalare-eps-converted-to.pdf>
 Package pdftex.def Info: img/scalare-eps-converted-to.pdf  used on input line 3
@@ -1376,20 +1376,14 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `formulario.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `formulario.out':
-(rerunfilecheck)             Before: DD527AF62B61234D39CC039035A3599D;14430
-(rerunfilecheck)             After:  CF634F8B7DE01743E0C96AECC133EF49;15171.
+Package rerunfilecheck Info: File `formulario.out' has not changed.
+(rerunfilecheck)             Checksum: 4AAB8E854189086334F3851D87DE885D;15443.
  ) 
 Here is how much of TeX's memory you used:
- 32122 strings out of 476025
- 606101 string characters out of 5796532
+ 32139 strings out of 476025
+ 606406 string characters out of 5796532
  1867388 words of memory out of 5000000
- 51646 multiletter control sequences out of 15000+600000
+ 51657 multiletter control sequences out of 15000+600000
  545775 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,89p,611b,741s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1420,10 +1414,10 @@ nts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsc
 1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/
 share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on formulario.pdf (31 pages, 495298 bytes).
+Output written on formulario.pdf (31 pages, 497230 bytes).
 PDF statistics:
- 952 PDF objects out of 1000 (max. 8388607)
- 849 compressed objects within 9 object streams
- 302 named destinations out of 1000 (max. 500000)
- 634 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 979 PDF objects out of 1000 (max. 8388607)
+ 876 compressed objects within 9 object streams
+ 308 named destinations out of 1000 (max. 500000)
+ 674 words of extra memory for PDF output out of 10000 (max. 10000000)
 

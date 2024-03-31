@@ -137,3 +137,6 @@
 \contentsline {subsection}{\numberline {3.3.1}Livello di intensità sonore}{31}{subsection.3.3.1}%
 \contentsline {subsubsection}{Ricavare intensità dal livello di intensità}{31}{subsubsection*.59}%
 \contentsline {subsection}{\numberline {3.3.2}Potenza acustica}{31}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Dipendenza dalla velocità del erogatore}{31}{subsection.3.3.3}%
+\contentsline {subsubsection}{Avvicinamento punto di riferimento}{31}{subsubsection*.60}%
+\contentsline {subsubsection}{Allontanamento punto di riferimento}{31}{subsubsection*.61}%

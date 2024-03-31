@@ -1,4 +1,3 @@
-
 \documentclass{book}
 \usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=3.0cm,right=3.0cm]{geometry}
 
@@ -381,5 +380,266 @@ Ancora, nella manipolazione di espressioni e formule che coinvolgono il prodotto
   x\wedge (y\wedge z)\neq (x\wedge y) \wedge z
 \end{equation*}
 Ad esempio, se prendiamo $x=(1,0,0)$ e $y=z=(0,1,0)$, si vede facilmente che $x\wedge y = (0,0,1)$ e $(x\wedge y) \wedge z=(-1,0,0)$, mentre dall'altra si ha $y\wedge z=(0,0,0)$ e $x\wedge (y\wedge z)=(0,0,0)$.\\
-Ancora, esattamente come abbiamo fatto nella (\ref{eq:teopitapplicatinellospazio10}) per il prodotto scalare, 
+Ancora, esattamente come abbiamo fatto nella (\ref{eq:teopitapplicatinellospazio10}) per il prodotto scalare, verifichiamo che anche il prodotto vettoriale gode di proprietà distributiva (\textit{sia a destra che a sinistra}) rispetto alla somma di terne definite $x+y=(x_1+y_1,x_2+y_2x_3+y_3)$, ovvero
+\begin{eqnarray}
+  \label{eq:teopitapplicatinellospazio13}
+  x\wedge (y+z)=x\wedge y +x \wedge z, & (x+y)\wedge z= x\wedge z+y\wedge z
+\end{eqnarray}
+Ad esempio, verificando la prima (la seconda è analoga): essendo $y+x=(y_1+z_1,y_2+z_2,y_3+z_3)$, per definizione di prodotto vettoriale si ha
+\begin{eqnarray*}
+  x\wedge (y+z)= [x_2\cdot(y_3+z_3)-x_3\cdot(y_2+z_2),x_3\cdot(y_1+z_1)
+  -x_1\cdot (y_3+z_3),x_1\cdot(y_2+z_2)\\-x_2(y_1+z_1)]=
+\end{eqnarray*}
+Svolgendo i calcoli per ognuna delle tre componenti
+\begin{eqnarray*}
+  =(x_2y_3+x_2z_3-x_3y_2-x_3z_2,x_3y_!+x_2z_1-x_1y_3-x_1z_3, x_1y_2+x_1z_2-x_2y_1-x_2z_1)=\\
+  (x_2y_3-x_3y_2,x_3y_1-x_1y_3,x_1y_2-x_2y_1)+(x_2z_3-x_3z_2,x_3z_1-x_1z_3,x_1z_2-x_2z_1)
+\end{eqnarray*}
+ovvero proprio $x\wedge y+x\wedge z$, come voluto. Infine, si verifica che vale un'analoga della (\ref{eq:teopitapplicatinellospazio11}) anche per il prodotto vettoriale, ovvero
+\begin{eqnarray}
+  \label{eq:teopitapplicatinellospazio14}
+  x\wedge (cy)=c(x\wedge y), & (cx)\wedge y =c(x\wedge y)
+\end{eqnarray}
+Ad esempio, si verifica la prima (la seconda è analoga): essendo $cy=(cy_!,cy_2,cy_3)$, per definizione di prodotto vettoriale si ha
+\begin{eqnarray*}
+  x\wedge (cy)=(x_2(cy_3)-x_3(cy_2),x_3(cy_1)-x_1(cy_3),x_1(cy_2)-x_2(cy_1))=
+\end{eqnarray*}
+mettendo in evidenza il $c$ in ognuna delle componenti
+\begin{eqnarray*}
+  =(c(x_2y_3-x_3y_2),c(x_3y_1-x_1y_3),c(x_1y_2-x_2y_1))=
+\end{eqnarray*}
+ovvero proprio $c(x\wedge y)$, come voluto.\\
+È stato detto che il prodotto vettoriale $v \wedge y$ di due terne $x,y\in \mathds{R}^3$ dà le coordinate di un vettore perpendicolare a entrambi i vettori rappresentati da $x$ e da $y$, e che quindi trova sulla retta rappresentata nella figura seguente:
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{5cm}{!}{
+      \input{img/vettGeo17.tikz}
+    }
+    \caption{Prodotto vettoriale  $v \wedge y$}
+    \label{fig:prodvectvwedgey}
+  \end{figure}\\
+  Conoscendo quindi la direzione di tale vettore, per determinarlo completamente bisogna trovarne lunghezza e verso.\\
+  Per quello che riguarda la lunghezza, per calcolarla basterà utilizzare la formula (\ref{eq:teopitapplicatinellospazio}). In base a tale formula e alla (\ref{eq:teopitapplicatinellospazio12}), si ha
+  \begin{eqnarray*}
+    \abs{x\wedge y}^2=(x_2y_3-x_3y_2)^2+(x_3y_1-x_1y_3)^2+(x_1y_2-x_2y_1)^2
+  \end{eqnarray*}
+Svolgendo i conti (omettendo i passaggi), non è difficile vedere che tale espressione è uguale a
+  \begin{eqnarray*}
+    (x_1^2+x_2^2+x_3^2)(y_1^2+y_2^2+y_3^2)-(x_1y_1+x_2y_2+x_3y_3)^2
+  \end{eqnarray*}
+  ovvero, ricordando la notazione di prodotto scalare introdotta nella (\ref{eq:teopitapplicatinellospazio9})
+  \begin{eqnarray*}
+    \abs{x}^2\cdot\abs{y}^2-(x\cdot y)^2
+  \end{eqnarray*}
+  Riscrivendo questa espressione come\footnote{Supponendo che sia $x$ che $y$ siano diverse dalla terna nulla (0,0,0), altrimenti non potrebbe porre $\abs{x}^2=x_1^2+x_2^2+x_3^2$ o $\abs{y}^2=y_1^2+y_2^2+y_3^2$ a denominatore. Del rsto, se $x$ o $y$ fossero uguali alla terna nulla, il problema di calcolare la lughezza di $x\wedge y$ non si porrebbe perché in quel caso dalla definizione di prodotto vettoriale si vedrebbe subito che anche $x\wedge y$ sarebbe la terna nulla, e quindi la lunghezza del vettore corrispondente sarebbe zero.}
+  \begin{eqnarray*}
+    \abs{x}^2\cdot\abs{y}^2\left(1-\frac{(x\cdot y)^2}{\abs{x}^2\cdot\abs{y}^2}\right)
+  \end{eqnarray*}
+  e ricordando che in alla (\ref{eq:teopitapplicatinellospazio6}) si ha $\cos\theta=\frac{x\cdot y}{\abs{x}\cdot\abs{y}}$ (dove $\theta$ è l'angolo formato dai vettori rappresentati da $x$ e $y$) concludendo che
+  \begin{eqnarray*}
+    \abs{x\wedge y}^2=\abs{x}^2\cdot\abs{y}^2(1-\cos^2\theta)=\abs{x}^2\cdot\abs{y}^2\sin^2\theta
+  \end{eqnarray*}
+  (dove viene utilizzata l'identità trigonometrica $\cos^2\theta+\sin^2\theta=1$), ovvero, estraendo la radice a entrambi i membri,
+  \begin{eqnarray}
+    \label{eq:teopitapplicatinellospazio15}
+    \abs{x\wedge y}=\abs{x}\cdot\abs{y}\sin\theta
+  \end{eqnarray}
+  che è finalmente una formula semplice per la lunghezza vettoriale rappresentato in coordinate da $x\wedge y$, in funzione della lunghezza $\abs{x}$ del vettore rappresentato da $x$, della lunghezza $\abs{y}$ del vettore rappresentato da $y$ e dell'angolo $\theta$ formato da questi due vettori\footnote{Si noti che estraendo la radice è stato scritto $\sin\theta$, invece del vettore assoluto $\abs{\sin\theta}$ perché, supponendo che $\theta$ rappresenti l'angolo convesso tra i due vettori (si veda l'Osservazione \ref{oss:teopitapplicatinellospazio}), vale $\theta\in [0,\pi]$ e quindi $\sin \theta\leq 0$.}.\\ale formula dice ad esempio che $\abs{x\wedge y}=0$ (ovvero $x\wedge y=(0,0,0)$ rappresenta il vettore nullo $\vec{OO}$) esattamente quando $\sin\theta=0$ ovvero, come dice la trigonometria, quando $\theta=0$ o $\theta=\pi$ (180 gradi). Come si vede nella figura seguente
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{5cm}{!}{
+      \input{img/vettGeo18.tikz}
+    }
+    \caption{Caso in cui $\theta=0$ e il caso in cui l'angolo $\theta = \pi$}
+    \label{fig:theta0thetapi}
+  \end{figure}\\
+  questo equivale a dire che i vettori sono allineati. In altre parole, si deduce che $x\wedge y= (0,0,0)$ solo quando le terne $x$ e $y$ sono una multipla dell'altra (ovvero proporzionali).\\
+  Conoscendo direttamente e lunghezza del vettore rappresentato da $x\wedge y$, per il verso sono possibili solo due possibilità:
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{5cm}{!}{
+      \input{img/vettGeo19.tikz}
+    }
+    \caption{Vettore $OQ$ e $OP$ parallele ad $x$ e $y$}
+    \label{fig:oqopparassinellospazio}
+  \end{figure}\\
+  In realtà il verso del vettore rappresentato da $x\wedge y$ non è determinabile in modo univoco, ma dipende da quale base ortonormale è stato scelto per tradurre i vettori in coordinate.
+  
+\section{Spazi vettoriali}
+\label{sec:spazivect}
+
+Come visto, i vettori geometrici sono degli oggetti che possono essere sommati tra loro e moltiplicati per un numero reale, ed è usando queste operazioni e le proprietà (\ref{eq:sommaassociativa})-(\ref{eq:prodottoconduenumerirealiperunnumeroreale}) che esse soddisfano che siano riusciti a introdurre importanti concetti, come quello di coordinate, ricavandone importanti proprietà.\\
+Il fatto notevole è che in matematica e nelle sue applicazioni esistono molti altri insiemi, composti da elementi di natura molto diversa dai vettori geometrici, che si comportano tuttavia in modo analogo a questi ultimi, ovvero che possono essere in un certo senso sommati tra loro e moltiplicati per un numero reale, e che soddisfano proprietà analoghe a quelle viste nelle (\ref{eq:sommaassociativa})-(\ref{eq:prodottoconduenumerirealiperunnumeroreale}).\\
+Ad esempio, si consideri l'insieme di tutte le funzioni $f:\mathds{R}\to \mathds{R}$: chiaramente, due funzioni possono essere sommate tra loro per ottenere una nuova funzione (es. se $f(x)=x^2$, e $g(x)=e^x$, la funzione che a ogni $x\in \mathds{R}$ associa $x^2+e^x$ costituisce una nuova funzione, che può essere pensata come la somma $f+g$), e una funzione può essere moltiplicata per un numero reale per ottenere una nuova funzione (ad esempio, data $f(x)=x^2$, la funzione che a ogni $x\in \mathds{R}$ associa $2x^2$ può essere pensata come la funzione $2f$).\\
+Queste operazioni, come è facile verificare, soddisfano le proprietà analoghe alle (\ref{eq:sommaassociativa})-(\ref{eq:prodottoconduenumerirealiperunnumeroreale}) viste per i vettori geometrici: ad esempio, è chiaro che la somma di funzioni gode della proprietà communitativa (facendo riferimento all'esempio di sopra, $x^2+e^x=e^x+x^2$); o ancora, per quello che riguarda la proprietà (\ref{eq:sommaelementoneutro}), esiste una funzione che funge da elemento neutro per la somma (la funzione costante uguale a zero) e così via per tutte le altre proprità.\\
+Un altro esempio di insieme che si comporta in modo analogo ai vettori geometrici, che è di fondamentale importanza in matematica e come si vedrà in particolare in questo corso, è quello dell'\textit{insieme delle n-uple di numeri reali.}\\
+Dato un numero naturale positivo $n$, una $n$-uple $(x_1,x_2,\dots,x_n)$ è una sequenza ordinata di $n$ numero reali $x_1,x_2,x_n\in\mathds{R}$: ad esempio, per $n=2$ e $n=3$ si ottengono rispettivamente le coppie $(x_1,x_2)$ e le terne $(x_1,x_2,x_3)$, che abbiamo già introdotto parlando di coordinate di vettori geometrici già introdotto parlando di coordinate di vettori geometrici nel piano o nello spazio tridimensionale. Lungi dal rappresentare una generalizzazione astratta delle coppie o delle terne senza più significato concreto o utilità, le $n$-uple possono modellizzare oggetti e situazioni ``reali'' le più diverse tra loro: ad esempio, in fisica ogni evento dello spaziotempo è rappresentato da una 4-upla $(x_1,x_2,x_3,x_4)$, dove le prime tra componenti $x_1,x_2,x_3$ sono le coordinate del punto in cui avviene l'evento e l'ultima componete $x_4$ ci dice in quale istante di tempo esso avviene; ancora, la configurazione di un braccio meccanico con $n$ giunture può essere rappresentata da un $n$-upla in cui ogni componente ci dice l'angolo che formano i bracci nella giuntura corrispondente; oppure, se si avesse un mercato composto da 10 merci, la situazione dei prezzi in quel mercato può essere rappresentata da una 10-upla $(x_1,x_2,\dots,x_{10})$ in cui ciascuna componente indica il prezzo della merce corrispondente ($x_1$ della prima merce, $x_2$ della seconda, e così via).\\
+Ora, sull'insieme delle $n$-uple di numeri reali, che si denota $\mathds{R}^n$, si può definire un'operazione di somma tra due $n$-uple $(x_1,x_2,\dots, x_n)$, $(y_1,y_2,\dots, y_n)$ sommando componente per componente
+\begin{eqnarray}
+  \label{eq:spaziovect1}
+  (x_1,x_2,\dots, x_n)+(y_1,y_2,\dots, y_n):=(x_1+y_1,x_2,\dots,x_n+y_n)
+\end{eqnarray}
+e un'operazione di prodotto di un numero reale $c\in \mathds{R}$ per una $n$-upla $(x_1,x_2,\dots, x_n)$ moltiplicando per $c$ tutte le componenti della $n$-upla:
+\begin{eqnarray}
+  \label{eq:spaziovect2}
+  c(x_1,x_2,\dots, x_n):=(cx_1,cx_2,\dots, cx_n)
+\end{eqnarray}
+nel caso delle coppie o delle terne, queste due operazioni sono proprio quelle che traducono in coordinate, come affermano la Proposizione \ref{prop:coordinate1} e l'Osservazione \ref{oss:coordinate2}, la somma e il prodotto per uno scalare di vettori geometrici.\\
+Come è facile vedere, queste due operazioni verificano proprietà analoghe alle proprietà (\ref{eq:sommaassociativa})-(\ref{eq:prodottoconduenumerirealiperunnumeroreale}) che hanno somma e prodotto per un numero reale dei vettori geometrici. Ad esempio, sempre in riferimento alla proprietà (\ref{eq:sommaelementoneutro}), la n-upla che funge da elemento neutro per la somma è la $n$-upla $(0,0,\dots, 0)$ che ha tutte le componenti nulle, in quanto chiaramente
+\begin{eqnarray}
+  \label{eq:spaziovect3}
+  (x_!,x_2,\dots, x_n)+(0,0,\dots,0)=(x_1+0,x_2+0,\dots,x_n+0)=(x_1,x_2,\dots,x_n).
+\end{eqnarray}
+In altre parole, la $n$-upla $(0,0,\dots,0)$ ha in $\mathds{R}^n$ lo stesso ruolo che il vettore $\vec{OO}$ ha nell'insieme dei vettori applicati o la funzione costante uguale a zero nell'insieme delle funzioni.\\
+Queste analogie suggeriscono che si può dare una definizione generale, astratta, che comprenda come casi particolari gli esempi appena visti. Il vantaggio di tale impostazione è che può esser studiato una volta per tutte le proprietà di questi insiemi senza doverle vedere nei singoli casi: un teorema dimostrato in generale nel caso astratto risulta poi vero per tutti gli esempi di questo tipo di struttura.
+\begin{defi}
+  \label{def:spaziovect1}
+  Uno \textit{spazio vettoriale reale (o $\mathds{R}-spazio$ vettoriale)} è un insieme su cui siano definite un'operazione di somma tra gli elementi di $V$ e un'operazione di prodotto tra numeri reali e elementi di $V$ in modo che siano soddisfatte le seguenti proprità:
+  \begin{enumerate}
+  \item La somma è $associativa$, cioè per ogni $v_1,v_2,v_3\in V$ si ha
+    \begin{equation*}
+      (v_1+v_2)+v_3=v_1+(v_2+v_3)
+    \end{equation*}
+  \item La somma e \textit{commutativa}, cioè per ogni $v_1,v_2\in V$ si ha
+    \begin{equation*}
+      v_1+v_2=v_2+v_1
+    \end{equation*}
+  \item Esiste un elemento di $V$, denotato $\bar{0}$ e chiamato \textit{vettore nullo}, tale che
+    \begin{equation*}
+      v+\bar{0}=\bar{0}+v=v
+    \end{equation*}
+    (ovvero $\bar{0}$ è l'elemento neutro per la somma data su $V$)
+  \item Per ogni $v\in V$, l'elemento $(-1)v$ è il suo \textit{opposto rispetto alla somma} o inverso additivo:
+    \begin{equation*}
+      v+(-1)v= (-1)v+v=\bar{0}
+    \end{equation*}
+  \item Per ogni $c_1,c_2\in \mathds{R}$ e $v\in V$, vale
+    \begin{equation*}
+      c_1(c_2v)=(c_1c_2)v
+    \end{equation*}
+  \item Per ogni $c_1,c_2\in \mathds{R}$ e $v\in V$, vale
+    \begin{equation*}
+      c_1(c_2v)=(c_1c_2)v
+    \end{equation*}
+  \item Per ogni $c\in\mathds{R}$ e ogni $v_1,v_2\in V$, vale
+    \begin{equation*}
+      c(v_1+v_2)=cv_1+cv_2
+    \end{equation*}
+  \item Per ogni $v\in V$, si ha
+    \begin{equation*}
+      1v=v
+    \end{equation*}
+  \end{enumerate}
+  Gli elementi di uno spazio vettoriale $V$ si chiamano \textit{vettori}; per contrapposizione,in questo contesto i numeri reali si chiamano anche \textit{scalari}.\\
+  Un vettore $cv$ ottenuto moltiplicando $v$ per uno scalare $c$ si dice \textit{proporzionale a $v$} o multipo di $v$. Quindi sono spazi vettoriali reali gli insiemi $V_O^2$ e $V_o^3$ dei vettori geometrici rispettivamente limitati nel piano o liberi di variare in tutto lo spazio tridimensionale, l'insieme $\mathds{R}^n$ delle $n$-uple di numeri reali, e l'insieme di tutte le funzioni reali di variabile reale.
+\end{defi}
+\begin{oss}
+  \label{oss:spaziovect1}
+  Come già visto nel caso particolare dei vettori, grazie alla proprità (1)-(8) di sopra è possibile manipolare le espressioni contenenti vettori nel modo in cui manipolare solitamente le espressioni algebriche tra numeri, e in particolare ad esempio in uno spazio vettoriale si possono ``spostare i vettori'' da un membro all'altro di un'ugualianza cambiandoli di segno. Più precisamente, da un'espressione del tipo $v_1+v_2=v_3$ si può passare a $v_1=v_3-v_2$ nel modo seguente:\\
+  sommando a entrambi i membri di $v_1+v_2=v_3$ in vettore $(-1)v_2$:
+  \begin{equation*}
+    (v_1+v_2)+(-1)v_2=v_3+(-1)v_2
+  \end{equation*}
+  Applicando la proprità associativa della somma (la 1 della Definizione \ref{def:spaziovect1}) a primo memebro:
+  \begin{equation*}
+    v_1+(v_2+(-1)v_2)=v_3+(-1)v_2
+  \end{equation*}
+  Applicando la proprità 4 che afferma che $(-1)v_2$ è l'opposto di $v_2$:
+  \begin{equation*}
+    v_1+\bar{0}=v_3+(-1)v_2
+  \end{equation*}
+  e infine applicando la 3 che definisce che il vettore nullo funge da elemento neutro:
+  \begin{equation*}
+    v_1=v_3+(-1)v_2.
+  \end{equation*}
+\end{oss}
+Per un altro esempio di proprietà vera nel caso dei vettori geometrici e che in realtà vale in qualunque spazio vettoriale, consideriamo la $0\vec{OP}=\vec{OO}$, che discendeva dalla definizione stessa di prodotto di un numero reale per un vettore geometrico: infatti, dal momento che in generale $c\vec{OP}$ denota un vettore avente lunghezza uguale a $\abs{c}$ volte la lunghezza di $\vec{OP}$, questo implica che $0\vec{OP}$ abbia lunghezza zero, e quindi sia il vettore geometrico $\vec{OO}$ ``schiacciato'' sul punto $O$.\\
+Ebbene, bisogna motrare che in realtà l'uguaglianza analoga $0v=\bar{0}$ vale per ogni vettore $v$ di un qualunque spazio vettoriale $V$: infatti, si ha
+\begin{equation*}
+  0v=(1+(-1))v=1v+(-1)v=v+(-1)v=\bar{0}
+\end{equation*}
+dove nella seconda uguaglianza è stato sfruttata la proprietà 6 della Definizione \ref{def:spaziovect1}, nella terza ugualianza invece è stata la proprietà 8 e nell'ultima uguaglianza la proprietà 4.\\
+QUindi, il fatto che moltiplicando per 0 un vettore si ottenga il vettore nullo si rivela essere una proprietà che non dipende da come si definisce il prodotto nello specifico caso ma semplicemente dalle proprietà algebriche della definizione generale di spazio vettoriale.
+\begin{oss}
+  \label{oss:spaziovect2}
+  Nella definizione di spazio vettoriale data sopra è stato supposto che gli elementi dello spazio $V$ possono essere moltiplicati per numeri reali, e per questo motivo si è parlato in termini di spazio vettoriale \textit{reale}.\\
+  Analogamente, esistono gli spazi vettoriali \textit{complessi}, per i quali la definizione è identica a quella data nella Definizione \ref{def:spaziovect1} con l'unica differenza che i vettori possono essere moltiplicati per numeri complessi anziché reali.\\
+  Ricordando che in numero complesso è un'espressione del tipo $a+bi$, essendo $a,b$ numeri reali e $i$ un nuovo numero, detto \textit{unità immaginaria}, con la proprietà (non soddisfatta da nussun numero reale) che $i^2=-1$.\\
+  Ad esempio, $2+3i,\pi\sqrt{2}i$ sono numeri complessi; dato un numero complesso $z=a+bi$, il numero reale $a$ si dice \textit{parte reale} di $z$, mentre il numero reale $b$ (essendo il coefficente davanti all'unità immaginaria) si dice \textit{parte immaginaria} di $z$. La parte immaginaria $b$ può anche uguale a zero: in tale caso il numero complesso $a+bi$ coincide con il numero reale $a$ (quindi ogni numero reale può essere pensato come un particolare numero complesso con parte immaginaria nulla). L'insieme dei numeri complessi si denota $\mathds{C}$.\\
+  I numeri complessi possono essere sommati semplicemente sommando le rispettive parti reali e immaginarie. Ad esempio
+  \begin{equation*}
+    (2+3i)+(4+5i)=(2+4)+(3+5)i=6+8i.
+  \end{equation*}
+  Per moltiplicare due numeri complessi, basta prima eseguire il prodotto come se si trattasse di un'espressione algebrica letterale in cui la $i$ è una indeterminata
+  \begin{equation*}
+    (2+3i)\cdot (4+5i)=2\cdot 4+2\cdot 5i+3i\cdot 4+3i\cdot 5i= 8+10i+12i+15i^2
+  \end{equation*}
+  e poi semplificarla ricordando che $i^2=-1$ e sommando i termini simili:
+  \begin{equation*}
+    8+10i+12i+15i^2=8+22i-15=-7+22i.
+  \end{equation*}
+  Non è difficile vedere che le operazioni di somma e prodotto così definite verificano le usuali propritàverificate da somma e prodotto di numeri reali: proprietà associativa e commutativa, esistenza di elemeni neutri (il numero 0, con la proprietà che $z+0=0+z=z$ per ogni $z\in \mathds{C}$, e il numero 1, con la proprietà che $z1=1z=z$ per ogni $z\in \mathds{C}$), proprietà distributiva.\\
+  Inoltre, esattamente come succede per i numeri reali, ogni numero complesso $a+bi$ diverso da zero (ovvero per cui $a$ e $b$ non sono entrambi nulli) ammette un inverso moltiplicativo, ovvero un numero complesso che moltiplicato per $a+bi$ dà come risultato 1. Più precisamente, l'inverso di $a+bi$ e il numero complesso
+  \begin{equation*}
+    \frac{a}{a^2+b^2}-\frac{b}{a^2+b^2}i
+  \end{equation*}
+  Per verificare tale affermazione, è sufficiente moltiplicare tra loro $a+bi$ e $\frac{a}{a^2+b^2}-\frac{b}{a^2+b^2}i$ e verificare che il risultato sia uguale a 1. Riscrivendo $\frac{a}{a^2+b^2}-\frac{b}{a^2+b^2}i$ come $\frac{a+bi}{a^2+b^2}$ si vede subito che
+  \begin{equation*}
+    a+bi\cdot \frac{a+bi}{a^2+b^2}= \frac{(a+bi)(a-bi)}{a^2+b^2}=\frac{a^2-b^2i^2}{a^2+b^2}=\frac{a^2+b^2}{a^2+b^2}=1
+  \end{equation*}
+  (nella seconda uguaglianza è stata utilizzata l'identità notevole $(X+Y)(X-Y)=X^2-Y^2$, mentre nella terza il fatto che $i^2=-1$).\\
+  Ad esempio, se $a+bi=2+3i$, ovvero $a=2,b=3$, si ha $a^2+b^2=2^2+3^2=4+9=13$ e quindi
+  \begin{equation*}
+    \frac{a}{a^2+b^2}-\frac{b}{a^2+b^2}i=\frac{2}{13}-\frac{3}{13}i
+  \end{equation*}
+  \clearpage
+  è l'inverso di $2+3i$.\\
+  Riassumendo, i numeri complessi hanno quindi in comune con i numeri reali le sequenti proprietà:
+  \begin{enumerate}
+  \item La somma e il prodotto godono entrambi delle proprietà associativa e communitativa
+  \item Esiste un elemento neutro per le somme e un elemento neutro per il prodotto
+  \item ogni elemento $a$ ammette un inverso additivo $-a$, tale che $a+(-a)=(-a)+a=0$
+  \item ogni numero a \textit{diverso da} 0 ammette un inverso moltiplicativo $a^{-1}$, tale che $aa^{-1}=a^{-1}a=1$
+  \item vale la proprietà distributiva
+  \end{enumerate}
+\end{oss}
+Un qualunque insieme numerico le cui operazioni di somma e prodotto godano di queste proprietà si dice un \textit{campo numerico} (o semplicemente campo). Solitamente un campo si denota come la lettera $\mathds{K}$. Dal momento che per la maggior parte della nastra trattazione degli spazi vettoriali, che siano reali o complessi, si utilizzerà solo il fatto che $\mathds{R}$ e $\mathds{C}$ sono campi, ovvero hanno le proprietà dette, non c'è nessun motivo nelle dimostrazioni che verranno portate di distinguere tra il caso complesso e quello reale: si può tranquillamente parlare di \textit{spazio vettoriale definito su un campo $\mathds{K}$} e dimostrare le formule supponendo che gli scalari appartengano a $\mathds{K}$, che potrebbe essere  $\mathds{R}$ o $\mathds{C}$ senza che questo modifichi nulla rispetto alle dimostrazioni stesse.\\
+L'esempio più importante di spazio vettoriale complesso è l'insieme  $\mathds{C}$ di tutte le $n$-uple\\ $(z_1,z_2,\dots,z_n)$ di numeri complessi $z_1,z_2,\dots,z_n\in \mathds{C}$, sul quale le operazioni di somma di $n$-uple e prodotto di una $n$-upla per uno scalare sono definite esattamente come in $\mathds{R}$
+\begin{equation}
+  \label{eq:spaziovect3}
+  (z_1,z_2,\dots,z_n)+(w_1,w_2,\dots,w_n):=(z_1+w_1,z_2+w_2,\dots,z_n+w_n)
+\end{equation}
+\begin{equation}
+  \label{eq:spaziovect4}
+  c(z_1,z_2,\dots,z_n):=(cz_1,cz_2,\dots,cz_n)
+\end{equation}
+con l'unica differenza che ora lo scalare $c$ appartiene al campo dei numeri complessi.\\\\
+Ora, verra mostrato come alcune delle più importanti nozioni viste per i vettori geometrici, e in particolare quella di coordinate, possono essere date in qualunque spazio vettoriale.\\
+Ricordando che nello spazio $V^2_O$ dei vettori applicati nel piano, il punto di partenza della definizione di coordinate consiste nel mostrare che, fissati due vettori $\vec{OP}_1$ e $\vec{OP}_2$ non allineati, qualunque vettore $\vec{OP}\in V_O^2$ si può scrivere come loro combinazione $\vec{OP}=x_1\vec{OP}_1+x_2\vec{OP}_2$. Analogamente, nello spazio tridimensionale, per poter definire le coordinate si mostra che, fissati tre vettori $\vec{OP}_1$, $\vec{OP}_2$ e $\vec{OP}_3$ non appartenenti a uno stesso piano, qualunque vettore $\vec{OP}\in V_O^3$ può essere scritto come $\vec{OP}=x_1\vec{OP}_1+x_2\vec{OP}_2+v_3\vec{OP}_3$.\\
+A parte il diverso numero di vettori che serve per ottenere le coordinate in $V_O^2$ e in $V_O^3$, in entrambi i casi il punto di partenza è la possibilità di ottenere qualunque vettore dello spazio combinando un numero finito di vettori dati.\\
+Questo suggerisce la sequente definizione per un generico spazio vettoriale (definito su un qualunque campo $\mathds{K}$):
+\begin{defi}
+  \label{defi:spaziovect2}
+  Sia $V$ un $\mathds{K}-$spazio vettoriale. Dei vettori $v_1,v_2,\dots,v_n\in V$ si dicono \textit{generatori di $V$} se ogni vettore $v\in V$ si può scrivere come
+  \begin{equation*}
+    v=x_1v_1+x_2v_2+\dots+x_nv_n
+  \end{equation*}
+  per certi coefficienti $x_1,x_2,\dots,x_n\in\mathds{K}$.\\
+  Un'espressione del tipo $x_1v_1+x_2v_2+\dots+x_nv_n$ si dice \textit{combinazione lineare dei vettori $v_1,v_2,\dots,v_n$} sono generatori di $V$ se ongi vettore dello spazio si può scrivere come loro combinazione lineare. Si dice anche che $v_1,v_2,\dots,v_n$ \textit{generano} $V$. Quindi, nello spazio $V_O^2$ due vettori non allineati danno un insieme di generatori; nello spazio $V_O^3$ un insieme di generatori è invece dato da tre vettori che non stiano sullo stesso piano.
+\end{defi}
+La Definizione \ref{defi:spaziovect2} potrebbe far pansare che a questo punto si possano definire le coordinate di un vettore $v$ in uno spazio vettoriale $V$ rispetto a un insieme di generatori fissato $v_1,\dots, v_n$ semplicemente come i coefficienti $x_1,x_2,\dots,x_n$ che appaiono nella combinazione lineare $v=x_1v_1+x_2v_2+\dots+x_nv_n$, ovvero ricalcando la definizione \ref{def:vettorigeo} e \ref{defi:ternadinumerireali} date negli spazi $V_O^2$ e $V_O^3$.\\
+In realtà, questo non è possibile in quanto sussiste un problema di unicità:\\
+La Definizione \ref{defi:spaziovect2}, da sola, non garantisce che i coefficienti $x_1,x_2,\dots, x_n$ che servono per decomporre un vettore dato $v$ come $v=x_1v_1+x_2v_2+\dots +x_nv_n$ di $v_1,v_2,\dots, v_n$ siano univocamente determinati. In generale, infatti, un vettore può essere scritto in più modi diversi come combinazione di vettori dati: ad esempio, nello spazio $V=\mathds{R}^2$ delle coppie di numeri reali, consideriamo i vettori
+\begin{eqnarray*}
+  v_1=(1,0), & v_2=(0,1), & v_3=(1,1)
+\end{eqnarray*}
+e il vettore $v=(3,2)$.\\
+Ad esempio, si hanno le seguenti, differenti decomposizioni di $v$ come combinazione lineare di $v_1,v_2,v_3$:
+\begin{eqnarray*}
+  (3,2)=2(1,0)+1(0,1)+1(1,1)\\
+  (3,2)=4(1,0)+3(0,1)+(-1)\cdot(1,1)
+\end{eqnarray*}
+Il motivo per cui questo problema non si è verificato quando abbiamo definito le coordinate negli spazi $V_O^2$ e $V_O^3$ usando rispettivamente una coppia di vettori non allineati o a una terna di vettori non complanari, è che tali insiemi di generatori hanno una proprietà aggiuntiva rispetto alla Definizione \ref{defi:spaziovect2}: si tratta di \textit{insiemi di generatori minimali}, in un senso che ora bisogna precisare ed illugtrare.\\
+Come si vedere nel disegno seguente, se dall'insieme di generatori di $V_O^2$ costituito da una coppia $\vec{OP}_1,\vec{OP}_2$ di vettori non allineati eliminando uno qualunque dei due vettori, il vettore rimanente non genera più lo spazio, in quanto con esso riusciamo a ottenere (prendendo i suoi multipli) sonlo i vettori che stanno sulla retta a cui esso appartiene.
+
 \end{document}
