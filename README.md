@@ -15,7 +15,6 @@ I template utilizzati sono disponibili nel mio repo ```LaTeX-Model```, per acced
 ### Vuoi maggiori in sul LaTeX o vuoi discutere
 Ci sono attive due discussioni su reddit:
 - [In quali casi è comodo l'utilizzo del LaTeX, ecco alcuni suggerimenti per migliorare il proprio workflow e non impazzire dietro ad inutili rogne](https://www.reddit.com/r/Universitaly/comments/11gz44w/in_quali_casi_%C3%A8_comodo_lutilizzo_del_latex_ecco/)
-- [Possono interessarvi gli strumenti che utilizzo a lezione per prendere appunti?](https://www.reddit.com/r/Universitaly/comments/11dod3l/possono_interessarvi_gli_strumenti_che_utilizzo_a/)
 
 ### Se mi vuoi supportare offrendomi un Caffè
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A3CDMP9)
