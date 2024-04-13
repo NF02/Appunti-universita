@@ -640,6 +640,71 @@ Ad esempio, si hanno le seguenti, differenti decomposizioni di $v$ come combinaz
   (3,2)=4(1,0)+3(0,1)+(-1)\cdot(1,1)
 \end{eqnarray*}
 Il motivo per cui questo problema non si è verificato quando abbiamo definito le coordinate negli spazi $V_O^2$ e $V_O^3$ usando rispettivamente una coppia di vettori non allineati o a una terna di vettori non complanari, è che tali insiemi di generatori hanno una proprietà aggiuntiva rispetto alla Definizione \ref{defi:spaziovect2}: si tratta di \textit{insiemi di generatori minimali}, in un senso che ora bisogna precisare ed illugtrare.\\
-Come si vedere nel disegno seguente, se dall'insieme di generatori di $V_O^2$ costituito da una coppia $\vec{OP}_1,\vec{OP}_2$ di vettori non allineati eliminando uno qualunque dei due vettori, il vettore rimanente non genera più lo spazio, in quanto con esso riusciamo a ottenere (prendendo i suoi multipli) sonlo i vettori che stanno sulla retta a cui esso appartiene.
-
+Come si vedere nel disegno seguente, se dall'insieme di generatori di $V_O^2$ costituito da una coppia $\vec{OP}_1,\vec{OP}_2$ di vettori non allineati eliminando uno qualunque dei due vettori, il vettore rimanente non genera più lo spazio, in quanto con esso riusciamo a ottenere (prendendo i suoi multipli) sonlo i vettori che stanno sulla retta a cui esso appartiene. 
+\begin{figure}[ht!]
+  \centering
+  \resizebox{5cm}{!}{
+    \input{img/vettGeo20.tikz}
+  }
+  \caption{Esempi di generatori di $V_O^2$}
+  \label{fig:generatoriInVO2}
+\end{figure}\\
+Analogamente, nello spazio $V_O^3$ dei vettori geometrici liberi di variare in tutto lo spazio tridimensionale, se dall'insieme di generatori costituito da una terna $\vec{OP}_1,\vec{OP}_2,\vec{OP}_3$ di vettori non complanari eliminiamo anche un solo vettore, i due vettori rimanenti non generano più lo spazio: ad esempio, eliminando $\vec{OP}_3$, le combinazioni lineari dei due vettori restanti $\vec{OP}_1$ e $\vec{OP}_2$ ci danno solo i vettori $\vec{OP}$ che stanno sul piano $p$ del disegno
+\begin{figure}[ht!]
+  \centering
+  \resizebox{5cm}{!}{
+    \input{img/vettGeo21.tikz}
+  }
+  \caption{Esempi di generatori di $V_O^2$ e in $V_O^3$}
+  \label{fig:generatoriInVO2VO3}
+\end{figure}\\
+È in questo senso che tali sistemi di generatori sono minimali: in essi, nessun vettore è superfluo, nessuno può esser eliminato senza perdere la proprietà generale tra poco che è esattamente questa proprietà che garantisce l'unicità dei coefficienti della combinazione lineare in cui si decompone un vettore dato (e che ci consente quindi di definire in modo univoco le coordinate), ma prima è necessario chiarere meglio il concetto di minimalità di un insieme generatori non minimale possono essere eliominati e quali no. Per questo è d'aiuto un esempio considerando nello spazio $V_O^3$ quattro vettori come nella figura seguente
+\clearpage
+\begin{figure}[ht!]
+  \centering
+  \resizebox{5cm}{!}{
+    \input{img/vettGeo22.tikz}
+  }
+  \caption{Esempio di generatori non minimale in $V_O^3$}
+  \label{fig:generatoriNonMinInVO3}
+\end{figure}
+in cui $OP_1,OP_2,OP_3$ appartengono a uno stesso piano, e $OP_4$ si trova invece fuori da questo piano.\\
+Da una parte, si può vedere che un qualunque vettore di $V_O^3$ può essere scritto come combinazione di questi quattro vettori, che costituiscono quindi un insieme di generatori in $V_O^3$, dall'altra, non si trata di un insieme di generatori minimali nel senso spiegato sopra, in quanto alcuni vettori possono essere eliminati e i restanti continuano a generare lo spazio: ad esempio, è possibile eliminare $OP_1$ e gli altri tre continueranno ad esistere e a generare spazio; lo stesso accade con $OP_2$ e $OP_3$ mentre, se viene eliminato $OP_4$ i vettori restanti $OP_1,OP_2,OP_3$ non saranno più un insieme di generatori (trovandosi tutti su uno stesso piano, le kiri combinazioni darebbero solamente vettori che appartengono ancola a questo piano e non tutti quelli dello spazio).\\
+Quindi, se un insieme di generatori non è minimale, è importante capire quali vettori possono essere effettivamente eliminati da esso. Il seguente risultato risponde proprio a questa domanda.
+\begin{prop}
+  \label{prop:spaziovect1}
+  Siano $v_1,\dots,v_n\in V$ generatori dello spazio vettoriale V.\\
+  L'insieme $\{v_1,\dots,v_{n-1}, v_{i+1},\dots,v_n$ è ancora un insieme di generatori se e solo se $v_i$ si può scrivere come combinazione dei rimanenti.
+\end{prop}
+\begin{proof}
+  \label{proof:spaziovect1}
+  è necessario dimostrare due implicazioni:
+  \begin{enumerate}
+  \item Se $v_i$ è combinazione di $v_1,\dots,v_{n-1}, v_{i+1},\dots,v_n$ allora bastano $v_1,\dots,v_{n-1}, v_{i+1},\dots,v_n$ per generare $V$.
+  \item Se $v_1,\dots,v_{n-1}, v_{i+1},\dots,v_n$ sono generatori di $V$ allora $V_i$ si scrive come loro combinazione lineare.
+  \end{enumerate}
+  Bisona osservare che la seconda implicazione è ovvia, in quanto dire che $v_1,\dots,v_{n-1}, v_{i+1},\dots,v_n$ sono generatori di $V$ significa che ogni vettori di $V$ si scrive come loro combinazione lineare, e questo sarà in particolare vero per $v_i$.\\
+  Per dimostrare invece la prima implicazione, bisogna supporre che $v_i$ si scriva come combinazione degli altri vettori di $\{v_1,\dots,v_n\}$, ovvero che esistano dei coefficienti $a_1,\dots,a_{i-1},a_{i+1},\dots,a_n\in \mathds{K}$ tali che
+  \begin{equation}
+    \label{eq:proofspaziovect1}
+    v_1=a_1v_1+\dots+a_{i-1}v_{i-1}+a_{i+1}v_{i+1} +\dots+a_nv_n
+  \end{equation}
+  e per cercare di dimostrare che $v_1,\dots,v_{n-1}, v_{i+1},\dots,v_n$ generano $V$, ovvere ogni $v\in V$ si scrive come loro cambinazione lineare. Sapendo che tutti i vetotri $v_1,\dots,v_n$ (compreso $v_i$) generano $V$, ovvero che ogni vettore $v$ dello spazio $V$ si scrive come loro combinazione lineare:
+  \begin{equation}
+    \label{eq:proofspaziovect2}
+    v=c_1v_1+\cdots+c_{i-1}v_{i-1}+c_iv_i+\cdot+c_nv_n
+  \end{equation}
+  Ma allora, sostituendo la (\ref{eq:proofspaziovect1}) nella (\ref{eq:proofspaziovect2}), si ottiene
+  \begin{equation}
+    \label{eq:proofspaziovect3}
+    v=c_1v_1+\cdots+c_{i-1}v_{i-1}+c_i(a_1v_1+\cdots+a_{i-1}v_{i-1}+a_{i+1}v_{i+1} +\cdots+a_nv_n)+\cdots+c_nv_n
+  \end{equation}
+  ovvero, facendo i conti e mettendo in evidenza i vettori,
+  \begin{equation}
+    \label{eq:proofspaziovect4}
+    v=(c_1+c_ia_1)v_1+\cdots + (c_{i-1}+c_ia_{i-1})v_{i-1}+(c_{i+1}+c_ia_{i+1})v_{i+1}+\cdots+(c_n+c_ia_n)v_n
+  \end{equation}
+  e cui bisogna vedere che ogni $v$ dello spazio si riesce a scrivere come combinazione di\\
+  $v_1,\dots,v_{i-1},v_{i+1}m\dots,v_n$: questo dimostra che bastano tali vettori a generare lo spazio.
+\end{proof}
 \end{document}

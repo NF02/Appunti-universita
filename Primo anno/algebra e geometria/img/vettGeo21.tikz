@@ -1,0 +1,60 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 0) {};
+		\node [style=none] (1) at (1, 4) {};
+		\node [style=none] (2) at (1.25, 1) {};
+		\node [style=none] (3) at (1.75, 3) {};
+		\node [style=none] (4) at (4.25, 1) {};
+		\node [style=none] (5) at (4.75, 3) {};
+		\node [style=none] (6) at (8, 4) {};
+		\node [style=none] (7) at (7, 0) {};
+		\node [style=none] (8) at (2, 9) {};
+		\node [style=none] (9) at (5.5, 11) {};
+		\node [style=none] (10) at (10, 4) {};
+		\node [style=none] (11) at (9, 0) {};
+		\node [style=none] (12) at (16, 4) {};
+		\node [style=none] (13) at (15, 0) {};
+		\node [style=none] (14) at (11, 3) {};
+		\node [style=none] (15) at (10.5, 1) {};
+		\node [style=none] (16) at (14.5, 3) {};
+		\node [style=none] (17) at (14, 1) {};
+		\node [style=none] (18) at (12.75, 1) {};
+		\node [style=none] (19) at (10.75, 2) {};
+		\node [style=none] (20) at (10.25, 2.25) {$P_2$};
+		\node [style=none] (21) at (12.5, 0.5) {$P_1$};
+		\node [style=none] (22) at (10.25, 0.75) {$O$};
+		\node [style=none] (23) at (14.75, 3.25) {$P$};
+		\node [style=none] (24) at (15.5, 3.75) {$p$};
+		\node [style=none] (25) at (7.5, 3.75) {$p$};
+		\node [style=none] (26) at (1.75, 3.5) {$P_2$};
+		\node [style=none] (27) at (4, 0.5) {$P_1$};
+		\node [style=none] (28) at (0.75, 0.75) {$O$};
+		\node [style=none] (29) at (6, 11) {$P$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (0.center) to (1.center);
+		\draw [style=Rightarrow] (2.center) to (3.center);
+		\draw [style=Rightarrow] (2.center) to (4.center);
+		\draw [style=campitura] (4.center) to (5.center);
+		\draw [style=campitura] (3.center) to (5.center);
+		\draw [style=campitura] (2.center) to (5.center);
+		\draw [in=180, out=0] (1.center) to (6.center);
+		\draw (0.center) to (7.center);
+		\draw (7.center) to (6.center);
+		\draw [style=Rightarrow] (2.center) to (8.center);
+		\draw [style=campitura] (5.center) to (9.center);
+		\draw [style=campitura] (8.center) to (9.center);
+		\draw [style=Rightarrow] (2.center) to (9.center);
+		\draw [style=Rightarrow] (15.center) to (19.center);
+		\draw [style=Rightarrow] (15.center) to (18.center);
+		\draw (12.center) to (13.center);
+		\draw (11.center) to (13.center);
+		\draw (11.center) to (10.center);
+		\draw (10.center) to (12.center);
+		\draw [style=campitura] (19.center) to (14.center);
+		\draw [style=campitura] (14.center) to (16.center);
+		\draw [style=campitura] (16.center) to (17.center);
+		\draw [style=campitura] (17.center) to (18.center);
+		\draw [style=Rightarrow] (15.center) to (16.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
