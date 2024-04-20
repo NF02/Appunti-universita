@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 5) {};
+		\node [style=none] (1) at (0, 1.75) {};
+		\node [style=none] (2) at (-5, 1.75) {};
+		\node [style=none] (3) at (-7, 4) {};
+		\node [style=none] (4) at (-6.25, 2.25) {$f_3$};
+		\node [style=none] (5) at (-2.5, 1.5) {$f_2$};
+		\node [style=none] (6) at (0.75, 3.25) {$f_1$};
+		\node [style=none] (7) at (-3, 5) {$F_{tot}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=Rightarrow] (0.center) to (1.center);
+		\draw [style=Rightarrow] (1.center) to (2.center);
+		\draw [style=Rightarrow] (2.center) to (3.center);
+		\draw [style=Rightarrow] (0.center) to (3.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
