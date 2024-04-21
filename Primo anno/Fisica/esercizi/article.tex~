@@ -82,9 +82,48 @@
   \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
   \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
 
-\title{<++>}
-\author{<++>}
+\title{Esercizi}
+\author{Nicola Ferru}
 \begin{document}
 \maketitle
+\begin{enumerate}
+\item In motociclista inizialmente vieggia per 3 minuti verso sud con una velocità di 20m/s. Nei successivi 2 minuti dirige verso ovest 25m/s poi un minuto a nord-overst per 30 m/s.
+  \begin{itemize}
+  \item il vettore spostamento totale;
+  \item la velocià scalare media;
+  \item il vetotre velocità media. si utilizzi un sistema di riferimento con assi x con positivo verso Est.
+  \end{itemize}
+  \begin{eqnarray}
+    \label{eq:esercizio1}
+    t_1=3.00min \to 180s & t_2=2.00min \to 120s & t_3=1.00min \to 60s\\
+    v_1= 20m/s & v_2=25m/s & v_3=30m/s
+  \end{eqnarray}
+  Visto che per ricavare la $f_{tot}$ è prima necessario ricavare le singole distanze percorse bisognerà utilizzare la formula partendo da quella della velocità:
+  \begin{equation*}
+    v=\frac{s}{t}\to s=v\cdot t
+  \end{equation*}
+  
+  \begin{eqnarray*}
+    s_1=v_1\cdot t_1=3600m\\
+    s_2=v_2\cdot t_2=3000m\\
+    s_3=v_3\cdot t_3=1800m & s_3x = 18800\cdot \cos(45)=1272.78m
+  \end{eqnarray*}
+  Adesso sarà possibile calcolare lo spostamento totale in $x$ e $y$
+  \begin{eqnarray*}
+    \begin{cases}
+      s_{tot}x= 52+s_3x=3000m+1272.73m=4272.79m \\
+      s_{tot}y= s_1-s_3y= 3600m=2327.21m
+    \end{cases}
+  \end{eqnarray*}
+  Ora, sarà possibile calcolare lo spazio totale
+  \begin{eqnarray*}
+    \vec{s}_{tot}=\vec{s}_{tot}x+\vec{s}_{tot}y\\
+    s_{tot}=\sqrt{s_{tot}x^2+s_{tot}y^2}=4855.45m
+  \end{eqnarray*}
+  dopo aver fatto il calcolo dello spazio, adesso è necessario calcolare la velocità media:
+  \begin{equation*}
+    v_m=\frac{\Delta s}{\Delta t}=\frac{4855.46m}{(180+120+60)s}=13.52m/s
+  \end{equation*}
+\end{enumerate}
 
 \end{document}

@@ -94,6 +94,7 @@
 % stili grafici
 \usepackage{tikzit}
 \input{img/sstyle.tikzstyles}
+\input{img/stile.tikzstyles}
 
 \begin{document}
 \maketitle
@@ -411,6 +412,67 @@ Forza che si origina quando due campi a contatto diretto sono fatti souegare uno
     \tan(\alpha)=\frac{h}{d}
   \end{equation*}
 \end{multicols}
+
+\clearpage
+\section{Moto Parabolico (Moto del proiettile)}
+\label{sec:motoparabolico}
+
+\begin{defi}
+  Un \textbf{moto parabolico} è il moto di un corpo che, partendo con una certa velocità iniziale e un certo angolo, percorre una traiettoria parabolica sotto l'azione della sola accelerazione di gravità.
+\end{defi}
+\begin{figure}[ht!]
+  \centering
+  \resizebox{4cm}{!}{
+    \input{img/motopar.tikz}
+  }
+  \caption{Moto parabolico}
+  \label{fig:motopar}
+\end{figure}
+Per ricavare i componenti di $V_0$, si utilizza la trigonometria, infatti, mettendo tutto in forma sistemica il risultato è il seguente:
+\begin{equation}
+  \label{eq:componentixymotopar}
+  \begin{cases}
+    v_{0x}=v_0\cos(\alpha)\\
+    v_{0y}=v_0\sin(\alpha)
+  \end{cases}
+\end{equation}
+Per questo mtivo per ottenere la velocità può essere utilizzato il teorema di pitagora:
+\begin{equation*}
+  v=\sqrt{v_{0x}^2+v_{0y}^2}
+\end{equation*}
+Tramite $v_{0x}^2$ e $v_{0y}^2$ è possibile essere anche utilizzato per ricavare la tangente:
+\begin{equation*}
+  \tan(\alpha)=\frac{v_{0x}}{v_{0y}}
+\end{equation*}
+L'equazione parametrica base invece è definita da due cordinete (\textit{x} e \textit{y}):
+\begin{equation}
+  \label{eq:eqbasemotopar}
+  \begin{cases}
+    x=x_0+v_{0x}t\\
+    y=-\frac{1}{2}gt^2+v_{0y}t+y_0
+  \end{cases}
+\end{equation}
+Per ricavare il tempo, sarà invece necessario:
+\begin{equation}
+  \label{eq:tempomotopar}
+  t=\frac{v_0\sin(\alpha)\pm \sqrt{v_0^2\sin^2(\alpha)+2gy_0}}{g}
+\end{equation}
+
+\subsection{Traiettoria del moto parabolico}
+\label{sec:traietmotopar}
+
+Per calcolare la traiettoria è necessario mettere il tempo $t$ e lo spazio $y$ è necessario:
+\begin{eqnarray}
+  \label{eq:traietdelmotopar}
+  \begin{cases}
+    t=\frac{x-x_0}{v_{0x}}\\
+    y=-\frac{1}{2}gt^2+v_{0y}t+y_0
+  \end{cases} & \text{(Oppure in forma esplicita)} & \begin{cases}
+    t=\frac{x-x_0}{v_{0x}}\\
+    y=-\frac{1}{2}g\left(\frac{x-x_0}{v_{0x}}\right)^2+v_{0y}\left(\frac{x-x_0}{v_{0x}}\right)+y_0
+  \end{cases}
+\end{eqnarray}
+
 \chapter{Dinamica}
 \label{chap:Dinamica}
 
