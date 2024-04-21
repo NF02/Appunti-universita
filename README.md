@@ -12,9 +12,6 @@ Il Repo è strutturato in modo lineare e ovviamente è suddifiviso per materie e
 ### modelli utilizzati per realizzare questi documenti
 I template utilizzati sono disponibili nel mio repo ```LaTeX-Model```, per accedere a tale repo cliccare <a href="https://github.com/NF02/LaTeX-model">qui</a>
 
-### Vuoi maggiori in sul LaTeX o vuoi discutere
-Ci sono attive due discussioni su reddit:
-- [In quali casi è comodo l'utilizzo del LaTeX, ecco alcuni suggerimenti per migliorare il proprio workflow e non impazzire dietro ad inutili rogne](https://www.reddit.com/r/Universitaly/comments/11gz44w/in_quali_casi_%C3%A8_comodo_lutilizzo_del_latex_ecco/)
 
 ### Se mi vuoi supportare offrendomi un Caffè
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A3CDMP9)
