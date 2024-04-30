@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.3.30)  20 APR 2024 11:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.4.21)  23 APR 2024 21:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1690,7 +1690,7 @@ your preamble.
 \openout2 = `./title/titlepage.aux'.
 
 (./title/titlepage.tex
-<./title/logo_CA.jpg, id=260, 142.8537pt x 143.3355pt>
+<./title/logo_CA.jpg, id=276, 142.8537pt x 143.3355pt>
 File: ./title/logo_CA.jpg Graphic file (type jpg)
 <use ./title/logo_CA.jpg>
 Package pdftex.def Info: ./title/logo_CA.jpg  used on input line 6.
@@ -1870,20 +1870,7 @@ File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ] (./img/esincap.tikz) (./img/formPDU.tikz))
 [29
 
-]
-
-./reti.tex:151: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151     \end{description}
-                           
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[30
+] [30
 
 ]
 Capitolo 2.
@@ -1907,17 +1894,17 @@ Package rerunfilecheck Warning: File `reti.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `reti.out':
-(rerunfilecheck)             Before: B8BF0D1ED02C5F4C72B47B63738F1D50;11438
-(rerunfilecheck)             After:  07673AC8399AA8ECCE3B5B8BEFC2EA6C;11583.
+(rerunfilecheck)             Before: F005886D5E02785B25BE29741D7BED13;11818
+(rerunfilecheck)             After:  B5908046B4DCB316ACB8024954A44D0D;11988.
  ) 
 Here is how much of TeX's memory you used:
- 62687 strings out of 474116
- 1543157 string characters out of 5750249
+ 62701 strings out of 474116
+ 1543318 string characters out of 5750249
  2373038 words of memory out of 5000000
- 83786 multiletter control sequences out of 15000+600000
+ 83795 multiletter control sequences out of 15000+600000
  584822 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,93p,719b,1637s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,15n,93p,815b,1637s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
 t, replaced by a fixed one
@@ -1979,10 +1966,10 @@ fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/
 texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/font
 s/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/
 cm-super/sftt1000.pfb>
-Output written on reti.pdf (31 pages, 929106 bytes).
+Output written on reti.pdf (31 pages, 933609 bytes).
 PDF statistics:
- 807 PDF objects out of 1000 (max. 8388607)
- 714 compressed objects within 8 object streams
- 234 named destinations out of 1000 (max. 500000)
- 522 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 829 PDF objects out of 1000 (max. 8388607)
+ 736 compressed objects within 8 object streams
+ 239 named destinations out of 1000 (max. 500000)
+ 554 words of extra memory for PDF output out of 10000 (max. 10000000)
 

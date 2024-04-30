@@ -147,8 +147,6 @@
   \item È presente un nodo intermedio che implementa i protocoli di entrambe le sottoreti
   \end{itemize}
 \item Due possibili approcci: strato di internetworking e traduzione di protocollo
-  \begin{description}
-    \end{description}
 \end{itemize}
 \subsubsection{Strato di internetworking}
 \label{sec:stratodiinter}
@@ -172,5 +170,29 @@
 \label{chap:dispositividirete}
 
 Per ottenere una cooretta comunicazione è necessario avere una infrastruttura alle spalle, essa è composta da diversi device ``dispositivi'' che si occupano della mediazione/commutazione (\texttt{modem}), della divisione in reti e instradamento (\texttt{router}) e del indirizzamento interno alla stessa rete (\texttt{switch e hub}). Questi dispositivi lavorano su livelli del modello TCP/IP differenti, e anche su più di uno dei suddetti.
+
+\section{Modem}
+\label{sec:modem}
+I modem si occupano di traspormare di mediare da una rete telefonica ad una internet, infatti, esso collega un terminale ad una linea telefonica. Questa tipologia di dispositivi lavorano a livello fisico del modello OSI, occupandosi strettamente di mediare il canale di comunicazione a lato fisico con discribuzioni di tensioni e modulazioni di segnali. Questa categoria di dispositivi è sempre meno diffusa non essendo più presenti in molte parti del territorio le reti telefoniche analogiche, in cui questo tipo di device svolgevano il loro compito.
+
+\section{Router}
+\label{sec:router}
+
+I Router sono dispositvi che dividono ed instradano le comunicazioni, lavorano sul livello di rete, fruttando la tabella di routing che viene a crearsi una volta che gli indirizzi sono stati assegnati ai corrispettivi host e da quel punto in poi sarà possibile scambiare pacchetti tra reti diverse, ad esempio, ho un Cisco 2691 che monta un modulo fastEthernet da 2 porte, in questo caso sarà possibile creare o due reti autonome come \texttt{192.168.1.0/24} e \texttt{192.168.2.0/24} che possono avere ognuna 254 host, oppure, se non è necessario avere tutti questi host basterà solamente suddividere in due parti l'indirizzo ip \texttt{192.168.1.0} in due parti, con una subnet \texttt{255.255.255.128} e si ottengono due reti da \textbf{126} host per singala sottorete.
+
+\section{Hub}
+\label{sec:hub}
+
+Gli Hub sono dispositivi che si occupano di dupplicare su tutte le porte il segnale trasmesso da una singola porta, questo avviene tramite un meccanosmo molto banale, infatti, con questo tipo di dispositivo non sono possibili le trasmissioni multiple da parte degli host connessi e oltre tutto la sicurezza non è proprio al top visto che comunque con uno sniffer sarà possibile analizzare il pacchetto, anche se scartato dal sistema perché non destinati al host in questione. Visto che si tratta di un dispositvivo molto basico anche questo lavora a livello fisico del modello OSI.
+
+\section{Switch}
+\label{sec:switch}
+
+Gli switch sono dei dispositivi che usando una tabella dei \texttt{Mac address}, per poter stabilire da chi parte il pacchetto e anche a chi è destinato, in modo da evitare che esso venga inoltrato a tutti, oltre tutto può sprasmettere più di un pacchetto alla volta. Questa categoria di dispositivi utilizza il livello Datalink.
+
+\section{Bridge}
+\label{sec:bridge}
+Il Bridge è un dispositivo che collega come dice lo stesso nome due reti locali, anche questo devivice lavora a livello Datalink.
+
 
 \end{document}

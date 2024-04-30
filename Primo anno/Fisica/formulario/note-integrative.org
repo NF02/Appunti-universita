@@ -1,4 +1,2 @@
 * materiale assente da integrare
-- Legge oraria (*moto retilineo uniforme*)
-- Moto balistico ()
-- Oscillatore Armonico e armonico smorzato
+- 
