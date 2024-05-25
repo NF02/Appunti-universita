@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.4.21)  30 APR 2024 21:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.4.21)  6 MAY 2024 18:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1283,7 +1283,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 226.
 
-[9]
+[9] [10]
 Package epstopdf Info: Source file: <img/scalare.eps>
 (epstopdf)                    date: 2024-02-17 21:08:30
 (epstopdf)                    size: 46127 bytes
@@ -1292,61 +1292,61 @@ Package epstopdf Info: Source file: <img/scalare.eps>
 (epstopdf)                    size: 5889 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/scalare-eps-converted-
 to.pdf img/scalare.eps>
-(epstopdf)             \includegraphics on input line 371.
+(epstopdf)             \includegraphics on input line 408.
 Package epstopdf Info: Output file is already uptodate.
-<img/scalare-eps-converted-to.pdf, id=545, 90.3375pt x 80.3pt>
+<img/scalare-eps-converted-to.pdf, id=586, 90.3375pt x 80.3pt>
 File: img/scalare-eps-converted-to.pdf Graphic file (type pdf)
 <use img/scalare-eps-converted-to.pdf>
-Package pdftex.def Info: img/scalare-eps-converted-to.pdf  used on input line 3
-71.
+Package pdftex.def Info: img/scalare-eps-converted-to.pdf  used on input line 4
+08.
 (pdftex.def)             Requested size: 90.33727pt x 80.29979pt.
- [10]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 393.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 393.
+(hyperref)                removing `math shift' on input line 430.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 430.
+
+[11 <./img/scalare-eps-converted-to.pdf>]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 433.
+(Font)              using `T1/cmr/m/scsl' instead on input line 470.
 
-[11 <./img/scalare-eps-converted-to.pdf>] [12] (./img/motopar.tikz) [13
+[12] (./img/motopar.tikz) [13
 
-]
-[14
+] [14
 
 ]
 Capitolo 2.
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 552.
+(Font)              using `T1/cmr/m/scsl' instead on input line 589.
 
 [15]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 589.
+(Font)              using `T1/cmr/m/scsl' instead on input line 626.
 
 [16]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 725.
+(Font)              using `T1/cmr/m/scsl' instead on input line 762.
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 737--739
+Underfull \hbox (badness 10000) in paragraph at lines 774--776
 
  []
 
 [18] [19] [20] [21]
 
-LaTeX Warning: Command \textdownarrow invalid in math mode on input line 1039.
+LaTeX Warning: Command \textdownarrow invalid in math mode on input line 1076.
 
 [22] [23] [24] [25] [26]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 1366.
+(Font)              using `T1/cmr/m/scsl' instead on input line 1403.
 
 [27] [28
 
@@ -1361,7 +1361,7 @@ Overfull \vbox (8.84552pt too high) has occurred while \output is active []
 
 [29] (./img/onde.tikz) [30]
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 1
-520.
+557.
 
 (/usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
@@ -1380,13 +1380,13 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `formulario.out' has not changed.
-(rerunfilecheck)             Checksum: 321DB7C5780B5D95DDE289FF1F79E381;16847.
+(rerunfilecheck)             Checksum: 16C8DC432FF920557485919FA5CFE04F;17513.
  ) 
 Here is how much of TeX's memory you used:
- 32004 strings out of 474116
- 599189 string characters out of 5750249
+ 32028 strings out of 474116
+ 599643 string characters out of 5750249
  1944187 words of memory out of 5000000
- 53414 multiletter control sequences out of 15000+600000
+ 53429 multiletter control sequences out of 15000+600000
  592258 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,16n,99p,611b,740s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1418,10 +1418,10 @@ c/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm
 1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsc1000.pfb></usr/
 share/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dis
 t/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on formulario.pdf (33 pages, 522972 bytes).
+Output written on formulario.pdf (33 pages, 524758 bytes).
 PDF statistics:
- 1053 PDF objects out of 1200 (max. 8388607)
- 945 compressed objects within 10 object streams
- 333 named destinations out of 1000 (max. 500000)
- 738 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1079 PDF objects out of 1200 (max. 8388607)
+ 971 compressed objects within 10 object streams
+ 342 named destinations out of 1000 (max. 500000)
+ 770 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass{report}
 
 \usepackage[utf8]{inputenc}
 \usepackage{titlesec}
@@ -31,7 +31,7 @@
 \usepackage{amssymb}
 \usepackage{mathrsfs}
 \usepackage{textcomp}
-
+\usepackage{tasks}
 \usepackage{listings}
 \usepackage{color}
 
@@ -96,7 +96,7 @@
   \begin{eqnarray}
     \label{eq:esercizio1}
     t_1=3.00min \to 180
-  
+  \end{eqnarray}
   \begin{eqnarray*}
     s_1=v_1\cdot t_1=3600m\\
     s_2=v_2\cdot t_2=3000m\\
@@ -146,7 +146,147 @@
 \subsubsection{Soluzione}
 \label{sec:sol3}
 
+    \item Un punto materiale che si muove in senso orario una circonferenza di 2.5m, ad una accelerazione di $15m/s^2$ e conosciuamo un angolo $\beta = 30^o$.
+    \begin{itemize}
+    \item Determinale accelerazione centripeta;
+    \item Modulo della velocità;
+    \item Accelerazione tangenziale.
+    \end{itemize}
+    
+\subsubsection{soluzione}
+\label{sec:sol4}
 
+    Determiniamo l'accelerazione cintripeta
+    \begin{equation*}
+      ac=a_{tot} \cdot \cos 30 = 13m/s^2
+    \end{equation*}
+    Ricaviamo il modulo della velocità:
+    \begin{equation*}
+      a_c=\frac{V^2}{\not{r}} *\not{r} \to v=\sqrt{a_c\cdot r} = 5.7m/s
+    \end{equation*}
+    Determiniamo l'accelerazione tangenziale:
+    \begin{equation*}
+      a_t=a\cdot \sin 30 = 7.5m/s^2
+    \end{equation*}
+    
+  \item La ruota panoramica di un luna park ha un raggio di $15m$ e compie ogni minuto $5$ giri attorno al proprio asse
+    orizzontale.
+    \begin{tasks}
+      \task Qual è il suo periodo di rotazione?
+      \task Qual è il modulo la direzione e verso dell’accelerazione centripeta cui è sottoposto un passeggero nel punto più alto?
+      \task Qual è il modulo direzione e verso dell’accelerazione centripeta quando il passeggero è nel punto più basso?
+    \end{tasks}
+    
+\subsubsection{Soluzione}
+\label{sec:sol5}
+\begin{equation*}
+  \begin{matrix}
+    r=15m & f=5\frac{giri}{m}\\
+    T=\frac{1}{f} \to \frac{1}{\frac{60}{5}}= 12s & a_c=\frac{V^2}{r}= 4.06m/s^2\to \underbrace{v=\omega*r}_{\omega=\frac{2\pi}{T}=0.52rad/s}=7.8m/s 
+  \end{matrix}
+\end{equation*}
+\item Un cannone posizionato su un monte alto $1km$ spara un proiettile con un angolo di $35^o$ rispetto all’orizzontale. Il proiettile cade sulla vicina valle ad una distanza orizzontale $d=3km$. A quale velocità iniziale è stato sparato il proiettile? Qual è il tempo di volo?
+
+\subsubsection{Soluzione}
+\label{sec:sol6}
+
+\begin{equation*}
+  \begin{matrix}
+    \theta=35^o & d=3km \to d=3000m & h=1km \to 1000m
+  \end{matrix}
+\end{equation*}
+partendo da suddetti dati possiamo utilizzare la seguente formula parametrica:
+\begin{eqnarray*}
+  \begin{cases}
+    x=x_0+v_{0x}t\\
+    y=-\frac{1}{2}gt^2+v_{0y}t+y_0
+  \end{cases}\to
+  \begin{cases}
+    3000m = V_0\cos \theta \cdot t\\
+    0=1000m - \frac{1}{2} gt^2+v_0\sin\theta\cdot t
+  \end{cases}\to
+  v_0=\frac{x}{\cos\theta \cdot t}\\
+  \to
+  \begin{cases}
+    0=y_0-\frac{1}{2}gt_2+\left(\frac{x}{\cos \theta\cdot \not{t}}\right)\cdot \sin \theta \cdot \not{t}
+  \end{cases}
+  \begin{cases}
+    ...\\
+    t=\sqrt{\left(y_0+\frac{x}{\cos\theta}\cdot \sin\theta\right)\frac{2}{g}}=25.14s
+  \end{cases} \\
+  \to \begin{cases}
+    v_0=\frac{x}{\cos\cdot t} = 151.71m/s
+  \end{cases}
+\end{eqnarray*}
+\item Una mazza da baseball colpisce una palla. Prima dell'impatto la palla va alla velocità $v_1$ di modulo $12m/s$ e angolo rispetto all'asse $x$ di $\theta_1=35^o$. Dopo ha velocità $v_2$ di modulo $10m/s$ e direzione perpendicolare all'asse $x$. L'asse $x$. L'evento dura $2ms$. 
+\paragraph{Determinare}
+
+\begin{tasks}
+  \task l'intensità;
+  \task la direzione della forza media che la mazza applica alla palla.
+\end{tasks}
+
+\subsubsection{Soluzione}
+\label{sec:sol6}
+
+\begin{equation*}
+  \begin{matrix}
+    v_1=12m/s & v_2=10m/s & \theta_1=30^o\\
+    t=2\times 10^{-3}m/s
+  \end{matrix}
+\end{equation*}
+Visto che il testo non esprime una massa, supponiamo che essa sia di 0.15kg.\\
+Dopo aver supposto la massa sarà necessario ricavare i componenti di $v_0$:
+\begin{eqnarray*}
+  v_1x=v_1\cdot \cos \theta_1 = 9.83m/s\\
+  v_1y=v_1\cdot \sin \theta_2 = 6.8m/s
+\end{eqnarray*}
+Mentre nel caso di $v_2$ sappiamo che risulta parallelo a $y$, quindi il risultato è:
+\begin{eqnarray*}
+  v_2x=0 (\perp x)\\
+  v_2y=10
+\end{eqnarray*}
+quindi, andando a definire la quantità di moto:
+\begin{eqnarray*}
+  p=m\cdot v\\
+  p_1=m\cdot v_1\\
+  p_1x=m\cdot v_{1x} \to 1.47kg\cdot m/s\\
+  p_1y=m\cdot v_{1y} \to 1.03kg\cdot m/s
+\end{eqnarray*}
+Quindi essendo la componente $x$ nell'istante finale nulla, la componente la suddetta componente dell'instante finale sarà altrettanto:
+\begin{eqnarray*}
+  p2=m\cdot v_2\\
+  p2_x=0\\
+  p2_y=m\cdot v_{2y}=1.5kg\cdot m/s
+\end{eqnarray*}
+Variazione della quantità di moto:
+\begin{eqnarray*}
+  \Delta p=p2-p1\\
+  \Delta p_x=\underbrace{\not{p_2x}}_{0}-p_1x=-p1x=-1.47kg\cdot m/s \\
+  \Delta p_y=p_2y-p_1y= 0.2 kg\cdot m/s
+\end{eqnarray*}
+Forza media:
+\begin{eqnarray*}
+  F_m=\frac{\Delta p}{\Delta t}
+  \begin{cases}
+    F_x=\frac{\Delta p_x}{\Delta t}=-711.9N\\
+    F_y=\frac{\Delta p_y}{\Delta t}=226.2N
+  \end{cases}
+\end{eqnarray*}
+Impostato questo sistema possiamo evincere che la componente $F_m$ è una somma sotto radice:
+\begin{eqnarray*}
+  F_m=\sqrt{F_x^2+F_y^2} \cong 746.99N
+\end{eqnarray*}
+Angolo (di rezione) $F_m$:
+\begin{eqnarray*}
+  \tan \phi = \frac{F_y}{F_x}\cong  - 0.3177 \\
+  \phi = \tan^{-1}\left(- 0.3177\right) \cong - 17.6^o
+\end{eqnarray*}
+\item
+  \begin{eqnarray*}
+    F_{\parallel}=F_{p1}\cdot \sin \theta = 67.57N\\
+    F_{\perp}
+  \end{eqnarray*}
+  Definire, componete per pendicolare, forza d'attrito (statica e dinamica), per valutare l'accelerazione devo consideraare tutti i componenti che agiscono nel moto (parallela, componente di attrito)
 \end{enumerate}
-
 \end{document}
