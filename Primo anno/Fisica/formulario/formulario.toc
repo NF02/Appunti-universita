@@ -155,3 +155,6 @@
 \contentsline {subsection}{\numberline {3.3.3}Dipendenza dalla velocità del erogatore}{33}{subsection.3.3.3}%
 \contentsline {subsubsection}{Avvicinamento punto di riferimento}{33}{subsubsection*.64}%
 \contentsline {subsubsection}{Allontanamento punto di riferimento}{33}{subsubsection*.65}%
+\contentsline {chapter}{\numberline {4}Informazioni Utili}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Valori utili}{35}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Unità di misura}{35}{section.4.2}%
