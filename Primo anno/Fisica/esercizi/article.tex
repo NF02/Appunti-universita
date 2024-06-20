@@ -288,5 +288,59 @@ Angolo (di rezione) $F_m$:
     F_{\perp}
   \end{eqnarray*}
   Definire, componete per pendicolare, forza d'attrito (statica e dinamica), per valutare l'accelerazione devo consideraare tutti i componenti che agiscono nel moto (parallela, componente di attrito)
+\item Un cannone posizionato su un monte alto 1km spara un proiettile con un
+  proiettile cade sulla vicina valle ad una distanza orizzontale $d=3km$. A quale
+  velocità iniziale è stato sparato il proiettile? Qual è il tempo di volo?
+  
+\subsubsection{Soluzione}
+\label{sec:sol8}
+
+\begin{equation*}
+  \begin{matrix}
+    y_0=1000m & d=3000m & \theta=35^o
+  \end{matrix}
+\end{equation*}
+Primo passo è quello di definire le due equazioni del moto parabolico:
+\begin{eqnarray*}
+  \begin{cases}
+    x=\underbrace{v_0\cos(\Theta)}_{v_0x}\cdot t\\
+    y=h+\underbrace{v_0\sin\Theta}_{v_0y}-\frac{1}{2}gt^2
+  \end{cases} \to
+  \begin{cases}
+    3000=v_0\cos\theta\cdot t\\
+    0=1000+v_0\sin\theta t-\frac{1}{2}gt^2
+  \end{cases}\to
+  \begin{cases}
+    t=\frac{3000}{v_0\cos\theta}=\\
+    0=1000+v_0\sin\theta\cdot \frac{3000}{\not{v_0}\cos\theta}
+    -\frac{1}{2}g\frac{3000^2}{v_0^2\cos^2\theta}
+  \end{cases}\\
+  \to
+  \begin{cases}
+    +\frac{1}{2}g\frac{3000^2}{\cos^2\theta}=1000+\tan\theta\cdot 3000 \to \frac{1}{2}g\frac{3000^2}{\cos^2\theta}=(1000+\tan \theta\cdot 3000)v_0^2
+  \end{cases}\\
+  \to
+  \begin{cases}
+    v_0^2=\sqrt{\frac{1}{2}g\frac{3000^2}{\cos^2\theta}\cdot \frac{1}{1000+3000\tan\theta}}=142.66\frac{M}{s}
+  \end{cases}\\
+  \begin{cases}
+    t=\frac{3000}{v_0\cos\theta}=25.14s
+  \end{cases}
+\end{eqnarray*}
+\item Un disco di massa $M=2kg$ perconferenza di raggio $r=20cm$ sul piavo privo di
+  un tavolo e sostiene una mazza $M=3kg$ appesa ad un filo che possa attraverso un
+  foro al centro del cerchio. Trovare a quale velocità deve muoversi $m$ per
+  trattenere a riposo $M$.
+  
+\subsubsection{Soluzione}
+\label{sec:sol10}
+\begin{eqnarray*}
+  m=2kg & r=20cm =0.2m & M=3kg
+\end{eqnarray*}
+\begin{eqnarray*}
+  T=F_c\to T=F_{PM}\to F_{pm}=F_c\\
+  M\cdot g=n\cdot \frac{v^2}{r}\\
+  v=\sqrt{\frac{M\cdot g\cdot r}{m}}=1.71\frac{m}{s}
+\end{eqnarray*}
 \end{enumerate}
 \end{document}
