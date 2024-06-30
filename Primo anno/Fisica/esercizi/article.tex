@@ -342,5 +342,45 @@ Primo passo è quello di definire le due equazioni del moto parabolico:
   M\cdot g=n\cdot \frac{v^2}{r}\\
   v=\sqrt{\frac{M\cdot g\cdot r}{m}}=1.71\frac{m}{s}
 \end{eqnarray*}
+\item Una molla può esssere compressa di 2 cm da una forza di 270 N. Un bllcco di massa $m=12kg$, inizialmente fermo in cima ad un piano inclinato privo di attrito che forma un angolo di $30^o$ con il piano orizzontale, viene lasciato andare. Il blocco si ferma dopo aver compresso la molla di 5.5cm.
+  \begin{tasks}
+    \task in questo momento di quanto si è spostato lungo il piano inclinato?
+    \task Qual'è la valocità del blocco quando arriva a toccare la molla?
+  \end{tasks}
+  
+\subsubsection{Soluzione}
+\label{sec:sol11}
+\begin{eqnarray*}
+  m=12kg & x_0=2cm\to 0.02cm & \alpha=30^o\\
+  & x_1=5.5cm \to 0.055m 
+\end{eqnarray*}
+In questa situazione è il caso di applicare il principio di energia potenziale,
+infatti, essendo una situazione composita, con la presenta di un piano inclinato e
+di una molla è conveniente per via della legge della conservazione del energia.
+\begin{eqnarray*}
+  Ug=mgh\\
+  h=l\sin30^o
+\end{eqnarray*}
+dopo aver stimato questi dati, andiamo a definire l'enegia potenziale elastica:
+\begin{eqnarray*}
+  Ue=\frac{1}{2}kx_1^2
+\end{eqnarray*}
+\begin{eqnarray*}
+  F=kx\\
+  k=\frac{F}{x}=\frac{270N}{0.02m}=13500N/m
+\end{eqnarray*}
+quindi una volta aver ricavato k possiamo tornatre al espressione $Ue$, facendo un ugualianza $Ug=Ue$, perché l'energia potenziale si trasparma in energia elastica. Sostituiamo le corrispettive espressioni con i parametri visti prima:
+\begin{eqnarray*}
+  mgh=\frac{1}{2}kx_1^2\to mg(l\sin30^o)=\frac{1}{2}(13500N/m)(0.055m)^2=mgl\sin30^o=\frac{1}{2}kx^2\\
+  l=\frac{1}{2}x^2k\cdot \frac{1}{mg\sin 30} =0.347m
+\end{eqnarray*}
+mentre, il secondo punto lo si può svolgere nel seguente modo, andando a sotituire
+all'interno della formula di $Ug$\footnote{formula dell'energia potenziale
+  gravitazionale}, il valore di distanza $l$:
+\begin{eqnarray*}
+  Ug_2=mg\Delta h & \Delta h= (l-x)\sin30 & k=\frac{1}{2}mv^2\\
+  mg(l-x)\sin 30 = \frac{1}{2}mv^2 & v=\sqrt{mg(l-x)\sin 30\cdot\frac{1}{\frac{1}{2}m}}=1.69\frac{m}{s}
+\end{eqnarray*}
+
 \end{enumerate}
 \end{document}

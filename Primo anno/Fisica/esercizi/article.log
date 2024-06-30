@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/VoidLinux) (preloaded format=pdflatex 2024.6.19)  19 JUN 2024 20:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/VoidLinux) (preloaded format=pdflatex 2024.6.19)  28 JUN 2024 18:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1184,7 +1184,7 @@ Overfull \hbox (39.73593pt too wide) in alignment at lines 304--329
  [][][] []
  []
 
-[5] (./article.aux)
+[5] [6] (./article.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1192,28 +1192,34 @@ Package rerunfilecheck Info: File `article.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28667 strings out of 476025
- 517382 string characters out of 5796500
- 1868388 words of memory out of 5000000
- 48563 multiletter control sequences out of 15000+600000
- 524698 words of font info for 74 fonts, out of 8000000 for 9000
+ 28680 strings out of 476025
+ 517510 string characters out of 5796500
+ 1869388 words of memory out of 5000000
+ 48567 multiletter control sequences out of 15000+600000
+ 526996 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,19n,89p,411b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
-bx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></us
-r/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-d
-ist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on article.pdf (6 pages, 175012 bytes).
+ 84i,19n,89p,411b,718s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx
+1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/
+share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dis
+t/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
+sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
+Output written on article.pdf (7 pages, 223563 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
- 31 named destinations out of 1000 (max. 500000)
+ 167 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
