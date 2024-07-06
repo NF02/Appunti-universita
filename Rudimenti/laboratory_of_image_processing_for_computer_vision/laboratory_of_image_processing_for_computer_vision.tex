@@ -27,10 +27,11 @@
 \usepackage{tikz}
 \usepackage{tikz-qtree}
 \usepackage{subfig}
-\usepackage{xcolor}
+\usepackage[rgb]{xcolor}
 \usepackage{amssymb}
 \usepackage{mathrsfs}
 \usepackage{textcomp}
+\usepackage{verbatim}
 
 \usepackage{listings}
 \usepackage{color}
@@ -138,7 +139,13 @@ colonne, quindi:
 \end{equation*}
 Una gamma cromatica abbastanza sostanziosa da poter rappresentare in modo
 sufficientemente fedele qualunque oggetto reale.
-
+\begin{figure}[ht!]
+  \centering
+  \resizebox{8cm}{!}{
+  \input{img/scale.tikz}}
+  \caption{Scala di colori RGB}
+  \label{fig:rgb}
+\end{figure}
 \subsubsection{Altri per rappresentare il colore}
 \label{sec:altcolorr}
 
@@ -150,7 +157,13 @@ di codifica, tra i quali:
 \item \textbf{CMYK}: Ciano, Magenta, Giallo, Nero (\textit{Sistema di
     stampa}).
 \end{itemize}
-
+\begin{nota}
+  Nel caso del sistema CMYK quando tutti i colori vengono sommati si
+  ottiene il nero, questo fu fatto per un ottica produttiva delle
+  stampanti, la scelta di colori ciano, magenta e giallo insieme
+  fanno il nero, motivo per la quale molti fotocopiatori riescono
+  a lavorare anche con il toner nero quasi esaurito.
+\end{nota}
 \subsection{I pixel}
 \label{sec:pixel}
 
@@ -487,6 +500,28 @@ anche la sua frequenza o di scale di grigio in base alla situazione.
 Un altro caso di utilizzo è la verifica del contrasto\footnote{Il
   contrasto è la differenza tra una porzioni d'immagine e il suo
 sfondo, più esso è altro maggiore la parte in questione sarà risaltata}
-di una immagine.
+di una immagine. Ad esempio, prendedo la foto di un gatto:
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[height=3cm]{img/gatto.jpg}
+  \caption{Gatto}
+  \label{fig:gatto}
+\end{figure}
 
+Il suo istogramma sarà composto, nel seguente modo, ricordano che la
+gamma dei colori va da 0 a 255 come espresso in (\ref{sec:rgbcolor}),
+la scala del grafico sarà proprio quella.
+\clearpage
+\begin{figure}[ht!]
+  \centering
+  \resizebox{15cm}{!}{
+  \input{img/histogram-gatto.pgf}}
+  \caption{Istogramma del immagine Gatto}
+  \label{fig:gatto}
+\end{figure}
+
+In questo caso il massimo picco viene raggiunto tra i 150 e i 200, per
+comprendere di che colori si tratta basta guardare la figura
+\ref{fig:rgb}, in cui si vede chiaramente che in questa immagine sono
+presente molto verde e blu.
 \end{document}
