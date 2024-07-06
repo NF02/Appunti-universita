@@ -1,0 +1,23 @@
+﻿\usetikzlibrary{graphs}
+
+% Node styles
+\tikzset{
+% Two node styles for game trees: solid and hollow
+solid node/.style={circle,draw,inner sep=1.5,fill=black},
+hollow node/.style={circle,draw,inner sep=1.5}
+}
+
+\begin{tikzpicture} [scale=1,font=\footnotesize]
+\tikzstyle{level 1}=[sibling distance=20mm] 
+\tikzstyle{level 2}=[sibling distance=20mm] 
+\tikzstyle{level 3}=[sibling distance=40mm] 
+\node(0)[hollow node]{0}
+child{ node(1)[hollow node][left]{1}
+child{ node(3)[hollow node][left]{3}
+child{  node(5)[hollow node][left]{5}}}
+child{ node(4)[hollow node][right]{4}}}
+child{ node(2)[hollow node][right]{2}};
+
+\draw[solid](1)to(2);
+\draw[solid](3)to(4);
+\end{tikzpicture}

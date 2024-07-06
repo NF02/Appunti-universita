@@ -1,0 +1,29 @@
+﻿\usetikzlibrary{graphs}
+
+% Node styles
+\tikzset{
+% Two node styles for game trees: solid and hollow
+solid node/.style={circle,draw,inner sep=2,fill=black},
+hollow node/.style={circle,draw,inner sep=2},
+rect hollow node/.style={rectangle,draw,inner sep=2},
+rect solid node/.style={rectangle,draw, inner sep=2, fill=gray}
+}
+
+\begin{tikzpicture} [scale=1,font=\footnotesize]
+\draw (0,2) -- (4,2);
+\draw (2,0) -- (2,4);
+\draw (2,1) -- (4,1);
+\draw (3,0) -- (3,4);
+\draw (0,3) -- (4,3);
+\draw (1,2) -- (1,4);
+\draw (1,2) -- (1,4);
+\draw (1.5,3) -- (1.5,4);
+\draw (2,3.5) -- (1,3.5);
+
+\draw[brown, very thick] (0,0) rectangle (4,4);
+\draw node[rect solid node] at (1.75,3.74) {E};
+\draw node[rect solid node] at (1.25,3.25) {C};
+\draw node[rect solid node] at (2.5,2.5) {A};
+\draw node[rect solid node] at (3.5,1.5) {B};
+\draw node[rect solid node] at (2.5,0.5) {D};
+\end{tikzpicture}

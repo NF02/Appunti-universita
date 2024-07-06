@@ -1,0 +1,40 @@
+﻿\usetikzlibrary{graphs}
+
+% Node styles
+\tikzset{
+% Two node styles for game trees: solid and hollow
+solid node/.style={circle,draw,inner sep=2,fill=black},
+hollow node/.style={circle,draw,inner sep=2},
+rect hollow node/.style={rectangle,draw,inner sep=2},
+rect solid node/.style={rectangle,draw, inner sep=2, fill=gray}
+}
+
+\begin{tikzpicture} [scale=1,font=\footnotesize]
+\tikzstyle{level 1}=[sibling distance=25mm] 
+\tikzstyle{level 2}=[sibling distance=7mm] 
+\tikzstyle{level 3}=[sibling distance=6mm] 
+%radice
+\node(0)[hollow node]{}
+child{node(1)[hollow node]{}
+child{node(9)[rect hollow node]{}}
+child{node(10)[hollow node]{}
+child{node(13)[rect hollow node]{}}
+child{node(14)[rect solid node]{E}}
+child{node(15)[rect solid node]{C}}
+child{node(16)[rect hollow node]{}}}
+child{node(17)[rect hollow node]{}}
+child{node(12)[rect hollow node]{}}
+}
+child{node(2)[hollow node]{}
+child{node(5)[rect hollow node]{}}
+child{node(6)[rect hollow node]{}}
+child{node(7)[rect solid node]{A}}
+child{node(8)[rect hollow node]{}}}
+child{node(3)[rect hollow node]{}}
+child{node(4)[hollow node]{}
+child{node(14)[rect hollow node]{}}
+child{node(15)[rect solid node]{B}}
+child{node(16)[rect hollow node]{}}
+child{node(17)[rect solid node]{D}}};
+
+\end{tikzpicture}

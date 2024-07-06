@@ -1,0 +1,68 @@
+﻿\usetikzlibrary{graphs}
+
+% Node styles
+\tikzset{
+% Two node styles for game trees: solid and hollow
+solid node/.style={circle,draw,inner sep=1.5,fill=black},
+hollow node/.style={circle,draw,inner sep=1.5}
+}
+
+\begin{tikzpicture} [scale=1,font=\footnotesize]
+\tikzstyle{level 1}=[sibling distance=50mm] 
+\tikzstyle{level 2}=[sibling distance=25mm] 
+\tikzstyle{level 3}=[sibling distance=6mm] 
+%radice
+\node(0)[solid node]{}
+% braccio destro
+child{ node(1)[solid node][left]{}
+child{ node(2)[solid node][left]{}
+child{node(17)[solid node][left]{}}
+child{node(18)[solid node][left]{}}
+child{ node(3)[solid node][right]{}
+edge from parent node[left]{livello 2}}
+child{ node(12)[solid node][left]{}}
+edge from parent node[left]{Livello 1}}
+child{ node(4)[solid node][right]{}
+child{node(10)[solid node][left]{}}
+child{node(11)[solid node][left]{}}
+child{node(15)[solid node][right]{}}
+child{node(16)[solid node][right]{}}}
+edge from parent node[left]{Livello 0}}
+% braccio sinistro 2
+child{ node(34)[solid node][right]{} 
+child {node(35)[solid node][left]{}
+child{node(36)[solid node][left]{}}
+child{node(37)[solid node][left]{}}
+child{node(38)[solid node][right]{}}
+child{node(39)[solid node][right]{}}}
+child{node(40)[solid node][left]{}
+child{node(41)[solid node][left]{}}
+child{node(42)[solid node][left]{}}
+child{node(43)[solid node][right]{}}
+child{node(44)[solid node][right]{}}}}
+% braccio destro
+child{ node(5)[solid node][right]{} 
+child {node(6)[solid node][left]{}
+child{node(7)[solid node][left]{}}
+child{node(8)[solid node][left]{}}
+child{node(19)[solid node][right]{}}
+child{node(20)[solid node][right]{}}}
+child{node(9)[solid node][left]{}
+child{node(13)[solid node][left]{}}
+child{node(14)[solid node][left]{}}
+child{node(21)[solid node][right]{}}
+child{node(22)[solid node][right]{}}}}
+% braccio destro 2
+child{ node(23)[solid node][right]{} 
+child {node(24)[solid node][left]{}
+child{node(25)[solid node][left]{}}
+child{node(26)[solid node][left]{}}
+child{node(27)[solid node][right]{}}
+child{node(28)[solid node][right]{}}}
+child{node(29)[solid node][left]{}
+child{node(30)[solid node][left]{}}
+child{node(31)[solid node][left]{}}
+child{node(32)[solid node][right]{}}
+child{node(33)[solid node][right]{}}}};
+
+\end{tikzpicture}

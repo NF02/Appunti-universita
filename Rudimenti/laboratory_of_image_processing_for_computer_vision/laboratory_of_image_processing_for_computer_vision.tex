@@ -1,0 +1,492 @@
+\documentclass{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{easylist}
+\usepackage{hanging}
+\usepackage{hyperref}
+\usepackage[a4paper,top=2.5cm,bottom=1.8cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{blindtext}
+\usepackage{tipa}
+\usepackage{epigraph}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{pbox}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{textcomp}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  firstnumber=1000,                % start line enumeration with line 1000
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\linespread{1.2} % l'interlinea
+
+\frenchspacing
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+\usepackage{floatflt,epsfig}
+
+\usepackage{multicol}
+\newcommand\yellowbigsqcup[1][\displaystyle]{%
+  \fboxrule0pt
+  \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
+  \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
+
+\newtheorem{nota}{Nota}
+\newtheorem{descrizione}{Descrizione}
+\newtheorem{notab}{Nota bene}
+
+\title{Laboratory of image processing for computer vision}
+\author{Nicola Ferru}
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{Introduzione}
+\label{chap:Intro}
+
+\section{Argomenti}
+\label{sec:argomento}
+Prendendo un immagine come una funzione $f(x,y)$, quindi sul fronte di
+sviluppo sarà possibile costruire funzioni e soluzioni per poter
+lavorare sulle stesse.
+
+\section{Cosa bisogna sapere sulla rapresentazione raster delle immagini}
+\label{sec:raster}
+
+Le immagini raster o a rappresentazioni di pixel, sono la tipoligia di
+immagine più utilizzate per la rappresentazione e l'elaborazione grafica,
+visto che comunque nel contesto comune si rappresentano delle situazioni
+più o mano complesse tipicamente di applicazione reale. Per rendere
+efficiente la matrice si usano due sistemi:
+\begin{itemize}
+\item \textbf{RGB}: Red, Green, Blue (\textit{{\color{red}Rosso}, {\color{green}Verde} e {\color{blue}blue}}), con questo
+  sistema è possibile costruire qualunque gradiente colore in modo
+  estremamente preciso (valori compreso tra 0 e 255 per tre valori\footnote{Un sistema di rappresentazione dei colori ad 8bit});
+\item \textbf{Graylevel}: a Gradienti di grigio (valore compreso tra 0 a
+  255 da nero a bianco).
+\end{itemize}
+\subsubsection{Colori RGB}
+\label{sec:rgbcolor}
+\begin{table}[ht!]
+  \centering
+  \begin{tabular}{lccc}
+    \textbf{Colore}& \textbf{R} & \textbf{G} & \textbf{B}\\\hline
+    Nero & 0 & 0 & 0\\
+    Bianco & 255 & 255 & 255\\
+    {\color{red}Rosso} & 255 & 0 & 0\\
+    {\color{yellow}Giallo} & 255 & 255 & 0\\
+    {\color{gray}Grigio} & 127 & 127 & 127\\\hline
+  \end{tabular}
+  \caption{Colori RGB}
+  \label{tab:rgb}
+\end{table}
+E visto che si tratta di un sistema di rappresentazione a 8 bit per 3
+colonne, quindi:
+\begin{equation*}
+  2^{3\cdot 8} =2^{24} = 16.777.216 \text{ colori}
+\end{equation*}
+Una gamma cromatica abbastanza sostanziosa da poter rappresentare in modo
+sufficientemente fedele qualunque oggetto reale.
+
+\subsubsection{Altri per rappresentare il colore}
+\label{sec:altcolorr}
+
+Oltre al sistema di rappresentazione del colore RGB esistoo altri sistemi
+di codifica, tra i quali:
+\begin{itemize}
+\item \textbf{HSL}: Hue, Saturazione, Luce;
+\item \textbf{HSV}: Hue, Saturazione, Valore;
+\item \textbf{CMYK}: Ciano, Magenta, Giallo, Nero (\textit{Sistema di
+    stampa}).
+\end{itemize}
+
+\subsection{I pixel}
+\label{sec:pixel}
+
+I \textit{pixel} sono il sistema di rappresentazione dell'immagine,
+rappresentano l'informazione unitaria, infatti, all'interno del singolo
+pixel può esser contenuto solo un valore (\texttt{un colore}), essendo
+quadrati per poter rappresentare un immagine che presenta delle forme
+stondate con una buona qualità sarà necessaria una matrice di una
+dimensione abbondante.
+\subsection{La scalabilità di una immagine}
+\label{sec:scala}
+Uno dei punti che bisogna sempre considarare è proprio la scala e
+la scalabilità di una immagine, infatti, non esiste una
+dimensione\footnote{Dimensione della matrice di pixel} corratta per ogni
+situazione, infatti, dipende tutto dal caso di utilizzo, non a caso è
+necessaria fare una valutazione e considerare diversi fattori:
+\begin{itemize}
+\item \textbf{Dimensione}: il numero di pixel necessari al comporre
+  l'immagine, ad esempio un icona \textit{64x64px} oppure
+  \textit{128x128px} è perfetta per l'utilizzo desktop, ma magari non è
+  idonea per una esposizione fotografica o per un analisi
+  biometrica\footnote{un lettore di impronte digitale sta sul
+    500x250px, ovviamente dipende dalla tipologia di sensore}.
+\item \textbf{Peso}: Il peso dell'immagine è significativa pensando
+  all'ambito, il fatto stesso che l'immagine abbia un canale alpha o
+  meno cambia il peso nella codifica, assieme al numero di livelli che
+  la compongono. 
+\item \textbf{Gamma cromatica}: La gamma cromatica è la fedeltà nella
+  trasposizione dei colori che un formato riesce ad avere rispetto al
+  caso reale e dipende anche dalla paletta cromatica che la codicica di
+  suddetto formato possieda. Questo parametro è utile soprattutto nel
+  settore fotografico e anche per tutti quei casi in cui è necessario
+  un alto livello di dettaglio.
+\end{itemize}
+\begin{nota}
+  La questione della gamma cromatica dipende tanto dal formato, infatti,
+  a lato informatico esistono diversi formati per la rappresentazione
+  delle immagini, non compressi (\textbf{\color{red}raw}) a quelli
+  compressi (\textbf{\color{blue}quelli Lossy e quelli Lossless}).
+  \begin{description}
+  \item[Lossy] Il contesto di utilizzo in cui la fedeltà e qualità della
+    rappresentazione non è il punto saliente. Tipicamente cerca di
+    rimuovere con criterio alcune sfumature cromatiche che l'occhio umano
+    in primo achitto non nota. (Utile per la condivisione online)
+  \item[Lossless] Anche se conpresso cerca di mantenere il più possibile
+    la qualità e fedeltà all'immagine non compressa. (Utile anche in
+    contesti di editing fotografico)
+  \end{description}
+  Sapendo questo sarà già possibile muoversi al meglio in questo mondo.
+\end{nota}
+
+\section{Pareidolia e illusioni visive}
+\label{sec:pareidolia}
+Per pareidolia o illusione subconscia, intendiamo il modo in cui il
+nostro cervello identifichi all'interno di un oggetto, un immagine o
+altro, un volto o una forma familiare, questo perché il cervello umano
+è pensato per identificare quello che è famigliare per una questione
+pratica ed evolutiva.
+
+\section{Ambiti in cui può essere utilizzata l'elaborazione digitale
+  delle immagini?}
+\label{sec:ambito}
+Quello dell'elaborazione digitale delle immagini può essere utilizzato in
+tantissimi settori diversi, da quello biomedico a quello areonautico e
+areospaziale, all'automotive, etc. Per questi motivi è sempre più
+centrale nel mondo ingegneristico e militare l'adozione di tali sistemi.
+Ma facendo un esempio concreto, un sensore di frenata che riconoscra il
+pedone e consenta una frenata più efficace, in anticipo rispetto ai
+comuni riflessi umani.
+
+\chapter{Proprietà delle immagini digitali}
+\label{chap:propdelimmdig}
+
+L'immagine digitale è un metodo per rappresentare di un qualcosa di
+reale, e va a rappresentarlo con una matrice di pixel.
+
+\section{Creazione di una immagine digitale}
+\label{sec:creadiunimgdig}
+
+\begin{description}
+\item[Sampling] il processo che consiste nella downscaling dell'immagine
+  o nella rimozione di pixel (\textit{pratica che fa pardere
+    delle info});
+  \begin{itemize}
+  \item \textit{Lineare}: va a scalare tutta l'area dell'immagine in
+    modo lineare e uniforme.
+  \item \textit{Adattivo}: va a fare uno sampling in base all'importanza
+    delle aree.
+  \end{itemize}
+\item[Quantizzazione] il processo che che va a motificare la profondità
+  del colore
+  \begin{itemize}
+  \item Viene utilizzato per l'analisi dell'immagine e anche per le
+    immagini personali.
+  \item Problemi da risolvere: Memorizzazione e trasferimento.
+  \end{itemize}
+\end{description}
+E su questi principi sono la base dell'elaborazione dell'immagine
+digitale e del campionamento.
+
+\subsection{Tipo di immagine}
+\label{sec:tipodiimm}
+\begin{itemize}
+\item Numero di livello di intensità;
+\item Numero di piani dell'immagine:
+  \begin{itemize}
+  \item Immagine binaria: è un immagine composta unicamente da bianco e
+    nero;
+  \item A livelli di grigio: è un'immagine che funziona a sfumature di
+    grigio;
+  \item A colori: sono composte da sfumature RGB che vanno da 0 a 255
+    per creare una paletta cromatica accettabile (\ref{sec:raster}).
+  \end{itemize}
+\end{itemize}
+Per generare le tipoligie di immagini si utilizzano dei canali:
+\begin{table}[ht!]
+  \centering
+  \begin{tabular}{lrc}
+    \textbf{Tipologie}&\textbf{Numero di canali}& \textbf{Dimensione}
+    \\\hline
+    bianco e nero & 1 &(1bit)\\
+    Immagini a livelli di grigio & 1 &(8bit)\\
+    Immagini a colori & 3 &(8bit)\\\hline
+  \end{tabular}
+  
+  \caption{Numero di canali per le tipoligie di immagine}
+  \label{tab:numcanimg}
+\end{table}
+
+\subsection{Rappresentazione di immagine}
+\label{sec:raprimg}
+\begin{itemize}
+\item \textbf{Iconic Images}: Immagini che contengono i dati originali
+  con l'intensità dei singoli pixel;
+\item \textbf{Segmented images}: Immagini in cui i pixel sono divisi in
+  gruppi in base all'appartenenza o meno agli oggetti;
+\item \textbf{Geometric representations}: conoscenza attuale delle forme;
+\item \textbf{Relational models}: presentare la conoscenza sugli oggetti
+  e sulle relazioni con altri oggetti nell'immagine.
+\end{itemize}
+
+\section{Strutture dati}
+\label{sec:strutdati}
+Le strutture dati, sono le entità matematiche che consentono di
+ragruppare più di un valore all'interno dello stesso insieme, per poter
+più facilmente gestire, ordinare, ed elaborare il contenuto. Cosa
+non possibile con variabili primitive\footnote{È una variabile che può
+  contenere solo una tipologia singolarmente, da esse si possono
+  creare le così dette \lstinline|struct| e anche delle strutture dati.}.
+\subsection{Matrice}
+\label{sec:matrice}
+\begin{itemize}
+\item La struttura dati più comune per rappresentare le immagini;
+\item Gli elementi dell'array sono numeri interi;
+\item Le caratteristiche spaziali sono implicitamente disponibili.
+\end{itemize}
+\begin{equation}
+  \label{eq:matrice}
+  \begin{array}{c|ccccccc}
+      & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\\hline
+    1 & 1 & 2 & 1 & 3 & 1 & 1 & 1 \\
+    2 & 2 & 1 & 1 & 1 & 2 & 3 & 4 \\
+    3 & 1 & 2 & 1 & 1 & 1 & 1 & 4 \\
+    4 & 1 & 2 & 2 & 2 & 1 & 3 & 1 \\
+    5 & 1 & 2 & 2 & 2 & 1 & 1 & 4 \\
+    6 & 2 & 2 & 2 & 1 & 1 & 1 & 1 \\
+    7 & 1 & 4 & 1 & 1 & 1 & 1 & 1
+  \end{array}
+\end{equation}
+
+\subsection{Vettore}
+\label{sec:vettore}
+
+\begin{itemize}
+\item Molto comune per estrarre e archiviare informazioni dall'immagine;
+\item Gli esempi di array sono in genere numeri interi;
+\item Anche in questo caso il suo contenuto è accessibile attraverso
+  informazioni implicite;
+\item Gli array non sono altro che array bidimensionali.
+\end{itemize}
+\begin{equation}
+  \label{eq:vettore}
+  \begin{array}{ccccc}
+    0&1&2&3&4\\\hline
+    2&2&1&1&4\\\hline
+  \end{array}
+\end{equation}
+\begin{nota}
+  A lato logico all'interno di quasi tutti i linguaggi di
+  programmazione, sia i vettori che le matrici fanno parte dello stesso
+  tipo di struttura dati, i così detti Array, che possono avere
+  \texttt{N} dimensioni. Tipicamente per scorrere suddette strutture si
+  utilizzano delle variabili definite ``contatori'', indicate con le
+  lettere: \texttt{i,j,k,h} assegnate per comodità visto che stanno in
+  un area della tastiera vicina al posizionamento delle mani.
+\end{nota}
+
+\subsection{Topologie}
+\label{sec:topologie}
+Sono una categoria di strutture dati che possono servire ad indicare
+logicamente le relazioni. Esse vengono utilizzate anche nel ambito
+del processing delle immagini per distrivere le singole relazioni,
+ne esistono di diversa tipologie:
+\begin{itemize}
+\item Grafo: tipologia ad albero utilizzato in tutto quello che prevede
+  stati o connessioni;
+\item Insiemi: permettono di stabilire appertenenze a ordini gerarchici.
+\end{itemize}
+\begin{figure}[ht!]
+  \centering
+  \input{./img/grafo.tikz}
+  \caption{Grafo}
+  \label{fig:grafo}
+\end{figure}
+Mentre, nel caso dell'insieme la situazione è la seguente:
+\begin{figure}[ht!]
+  \centering
+  \resizebox{8cm}{!}{
+  \input{./img/insieme.tikz}}
+  \caption{Insieme}
+  \label{fig:insieme}
+\end{figure}
+\begin{nota}
+  In entrambi i casi, la situazione è molto leggibile e si capisce
+  anche la relazione in base al livello oppure al sotto insieme a cui
+  il valore appartiene.
+\end{nota}
+
+\subsection{Gerarchico}
+\label{sec:hierarchical}
+\begin{itemize}
+\item Sono nati per alleggerire il calcolo di operazioni molto complesse,
+  ad esempio suddividendo i calcoli tra più computer;
+\item Dividendo l'immagine in blocchi
+\item Spesso non è così semplice dividere i compiti tra più computer
+\item Le informazioni presenti in un blocco possono essere utili per
+  elaborare quello adiacente
+\item Non tutti i blocchi immagine devono essere elaborati allo stesso
+  modo
+\end{itemize}
+
+\subsection{Piramidale (pyramids)}
+\label{sec:pyramid}
+
+\subsubsection{M-pyramids}
+\label{sec:mpyram}
+\begin{itemize}
+\item Sono una sequenza di immagini con risoluzioni diverse;
+\item Utilizzato quando è necessario lavorare con risoluzioni diverse
+  contemporaneamente
+\item Ovviamente un array di grado inferiore contiene 4 volte meno dati
+  e può essere elaborato circa 4 volte più velocemente
+\end{itemize}
+Ed esempio, è possibile vedere come nella matrice $I_3$ sia una matrice
+8x8, mentre, la matrice $I_2$ è una matrice 4x4, nella matrice $I_1$ è
+un 2x2 e $I_0$ è una cella singola. 
+\begin{eqnarray}
+  \label{eq:mpyram}
+  I_3=
+  \begin{pmatrix}
+    2 & 4 & 8 & 0 & 0 & 2 & 6 & 3\\
+    3 & 0 & 0 & 1 & 1 & 3 & 6 & 4\\
+    2 & 2 & 0 & 1 & 1 & 4 & 6 & 3\\
+    3 & 2 & 1 & 1 & 1 & 2 & 6 & 3\\
+    4 & 3 & 1 & 1 & 2 & 3 & 6 & 3\\
+    4 & 4 & 2 & 1 & 2 & 4 & 7 & 5\\
+    5 & 4 & 2 & 1 & 1 & 4 & 7 & 5\\
+    5 & 5 & 1 & 0 & 0 & 2 & 7 & 5
+  \end{pmatrix} &
+  I_2=\begin{pmatrix}
+    2 & 2 & 2 & 5\\
+    2 & 1 & 2 & 5\\
+    4 & 1 & 3 & 5\\
+    5 & 1 & 2 & 6
+  \end{pmatrix} & I_1=
+  \begin{pmatrix}
+    2 & 4\\
+    3 & 4
+  \end{pmatrix} I_0=
+  \begin{pmatrix}
+    3
+  \end{pmatrix}
+\end{eqnarray}
+\begin{nota}
+  Il rapporto tra un immagine e l'altra è un rapporto ad esponenziale di
+  con base 2, infatti $I_3$ è un $2^3$, mentre, $I_0$ è un $2^0$. 
+\end{nota}
+\subsubsection{T-Pyramid}
+\label{sec:treepy}
+\begin{figure}[ht!]
+  \centering
+  \resizebox{15cm}{!}{
+  \input{./img/t-pyr.tikz}}
+  \caption{Esempio di albero piramidale}
+  \label{fig:alberopir}
+\end{figure}
+Da questo grafico è possibile dedurre che:
+\begin{itemize}
+\item Viene utilizzato per dividere gerarchicamente l'immagine in regioni
+  adiacenti;
+\item Queste regioni possono essere rappresentate da un albero;
+\item Ogni nodo di questo albero ha 4 figli.
+\end{itemize}
+\clearpage
+\subsubsection{Quad-tree}
+\label{sec:quad-tree}
+\begin{figure}[ht!]
+  \centering
+  \input{./img/pyr2.tikz}
+  \caption{Quad-tree}
+  \label{fig:qtree1}
+\end{figure}
+In questo modello partiamo da una rappresentazione inscritta in un
+quadrato, che contiene al suo interno determinati valori, più il valore
+è contenuto all'interno di un sotto quadrato più sarà in un livello
+superiore\footnote{Gli alberi si leggono dall'alto verso il basso, quindi
+  il livello sarà più alto più sarà in basso.}.
+\begin{figure}[ht!]
+  \centering
+  \input{./img/pyr1.tikz}
+  \caption{Quad-tree}
+  \label{fig:qtree2}
+\end{figure}
+\begin{itemize}
+\item Deriva da una modiﬁca della T-pyramid
+\item Non crea figli per ogni nodo ma solo quando i figli sono diversi
+\end{itemize}
+
+\subsection{Histogram (Istogramma)}
+\label{sec:histogram}
+L'istogramma nel processo di elaborazione dell'immagine, viene utilizzato
+per verificare la presenta delle corrispettive tonalità di colore e
+anche la sua frequenza o di scale di grigio in base alla situazione.
+Un altro caso di utilizzo è la verifica del contrasto\footnote{Il
+  contrasto è la differenza tra una porzioni d'immagine e il suo
+sfondo, più esso è altro maggiore la parte in questione sarà risaltata}
+di una immagine.
+
+\end{document}
