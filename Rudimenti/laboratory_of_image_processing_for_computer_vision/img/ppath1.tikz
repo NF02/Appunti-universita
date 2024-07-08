@@ -1,0 +1,14 @@
+﻿% Author: Nicola Ferru <ask dot nfvblog at outlook dot it>
+\begin{tikzpicture}
+	\draw[step=1.0,black,thin] (0.5,0.5) grid (13.5,13.5);
+	\draw[fill] (3,3) -- (4,3) -- (4,5) -- (8,5) -- (8,8) -- (9,8) -- (9,12) -- (8,12) -- (8,9) -- (7,9) -- (7,6) -- (3,6)-- cycle;
+	\node at (8.5,12.5) {B};
+	\node at (3.5,2.5) {A};
+	\draw[step=1.0,black,thin] (14.5,0.5) grid (28.5,13.5);
+	\draw[fill] (16,3) -- (17,3) -- (17,7) -- (18,7) -- (18,10) -- (23,10) -- (23, 8) -- (24,8) -- (24, 10) -- (23, 10) -- (23,11) -- (18,11) -- (18,10) -- (17,10)
+		-- (17,7) -- (16,7);
+ 	\node at (23.5,7.5) {B};
+	\node at (16.5,2.5) {A};
+	\node at (6.5, 0) {{\Large 4-path}};
+	\node at (22, 0) {{\Large 8-path}};
+\end{tikzpicture}

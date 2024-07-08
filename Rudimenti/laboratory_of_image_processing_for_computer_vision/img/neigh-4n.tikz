@@ -1,0 +1,6 @@
+﻿% author: Nicola Ferru <ask dot nfvblog at outlook dot it>
+
+\begin{tikzpicture}
+	\draw (-1,0) -- (0,0) -- (0,1) -- (1,1) -- (1,0) -- (2,0) -- (2,-1) -- (1,-1) -- (1,-2) -- (0,-2) -- (0,-1) -- (-1,-1) -- cycle;
+	\draw[fill] (0,0) -- (0,-1) -- (1,-1) -- (1,0) -- cycle;
+\end{tikzpicture}

@@ -33,6 +33,11 @@
 \usepackage{textcomp}
 \usepackage{verbatim}
 
+% algoritmi pseudo
+\usepackage[]{algorithm2e}
+
+\usepackage{pgfplots}
+
 \usepackage{listings}
 \usepackage{color}
 
@@ -83,163 +88,295 @@
   \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
   \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
 
-\newtheorem{nota}{Nota}
-\newtheorem{descrizione}{Descrizione}
-\newtheorem{notab}{Nota bene}
+\newtheorem{nota}{Nota}[section]
+\newtheorem{descrizione}{Descrizione}[section]
+\newtheorem{notab}{Nota bene}[section]
+\newtheorem{esempio}{Esempio}[section]
+\newtheorem{defi}{Definizione}[section]
 
 \title{Laboratory of image processing for computer vision}
 \author{Nicola Ferru}
 \begin{document}
 \maketitle
 \tableofcontents
-
-\chapter{Introduzione}
-\label{chap:Intro}
-
-\section{Argomenti}
-\label{sec:argomento}
-Prendendo un immagine come una funzione $f(x,y)$, quindi sul fronte di
-sviluppo sarà possibile costruire funzioni e soluzioni per poter
-lavorare sulle stesse.
-
-\section{Cosa bisogna sapere sulla rapresentazione raster delle immagini}
-\label{sec:raster}
-
-Le immagini raster o a rappresentazioni di pixel, sono la tipoligia di
-immagine più utilizzate per la rappresentazione e l'elaborazione grafica,
-visto che comunque nel contesto comune si rappresentano delle situazioni
-più o mano complesse tipicamente di applicazione reale. Per rendere
-efficiente la matrice si usano due sistemi:
-\begin{itemize}
-\item \textbf{RGB}: Red, Green, Blue (\textit{{\color{red}Rosso}, {\color{green}Verde} e {\color{blue}blue}}), con questo
-  sistema è possibile costruire qualunque gradiente colore in modo
-  estremamente preciso (valori compreso tra 0 e 255 per tre valori\footnote{Un sistema di rappresentazione dei colori ad 8bit});
-\item \textbf{Graylevel}: a Gradienti di grigio (valore compreso tra 0 a
-  255 da nero a bianco).
-\end{itemize}
-\subsubsection{Colori RGB}
-\label{sec:rgbcolor}
-\begin{table}[ht!]
-  \centering
-  \begin{tabular}{lccc}
-    \textbf{Colore}& \textbf{R} & \textbf{G} & \textbf{B}\\\hline
-    Nero & 0 & 0 & 0\\
-    Bianco & 255 & 255 & 255\\
-    {\color{red}Rosso} & 255 & 0 & 0\\
-    {\color{yellow}Giallo} & 255 & 255 & 0\\
-    {\color{gray}Grigio} & 127 & 127 & 127\\\hline
-  \end{tabular}
-  \caption{Colori RGB}
-  \label{tab:rgb}
-\end{table}
-E visto che si tratta di un sistema di rappresentazione a 8 bit per 3
-colonne, quindi:
-\begin{equation*}
-  2^{3\cdot 8} =2^{24} = 16.777.216 \text{ colori}
-\end{equation*}
-Una gamma cromatica abbastanza sostanziosa da poter rappresentare in modo
-sufficientemente fedele qualunque oggetto reale.
-\begin{figure}[ht!]
-  \centering
-  \resizebox{8cm}{!}{
-  \input{img/scale.tikz}}
-  \caption{Scala di colori RGB}
-  \label{fig:rgb}
-\end{figure}
-\subsubsection{Altri per rappresentare il colore}
-\label{sec:altcolorr}
-
-Oltre al sistema di rappresentazione del colore RGB esistoo altri sistemi
-di codifica, tra i quali:
-\begin{itemize}
-\item \textbf{HSL}: Hue, Saturazione, Luce;
-\item \textbf{HSV}: Hue, Saturazione, Valore;
-\item \textbf{CMYK}: Ciano, Magenta, Giallo, Nero (\textit{Sistema di
-    stampa}).
-\end{itemize}
-\begin{nota}
-  Nel caso del sistema CMYK quando tutti i colori vengono sommati si
-  ottiene il nero, questo fu fatto per un ottica produttiva delle
-  stampanti, la scelta di colori ciano, magenta e giallo insieme
-  fanno il nero, motivo per la quale molti fotocopiatori riescono
-  a lavorare anche con il toner nero quasi esaurito.
-\end{nota}
-\subsection{I pixel}
-\label{sec:pixel}
-
-I \textit{pixel} sono il sistema di rappresentazione dell'immagine,
-rappresentano l'informazione unitaria, infatti, all'interno del singolo
-pixel può esser contenuto solo un valore (\texttt{un colore}), essendo
-quadrati per poter rappresentare un immagine che presenta delle forme
-stondate con una buona qualità sarà necessaria una matrice di una
-dimensione abbondante.
-\subsection{La scalabilità di una immagine}
-\label{sec:scala}
-Uno dei punti che bisogna sempre considarare è proprio la scala e
-la scalabilità di una immagine, infatti, non esiste una
-dimensione\footnote{Dimensione della matrice di pixel} corratta per ogni
-situazione, infatti, dipende tutto dal caso di utilizzo, non a caso è
-necessaria fare una valutazione e considerare diversi fattori:
-\begin{itemize}
-\item \textbf{Dimensione}: il numero di pixel necessari al comporre
-  l'immagine, ad esempio un icona \textit{64x64px} oppure
-  \textit{128x128px} è perfetta per l'utilizzo desktop, ma magari non è
-  idonea per una esposizione fotografica o per un analisi
-  biometrica\footnote{un lettore di impronte digitale sta sul
-    500x250px, ovviamente dipende dalla tipologia di sensore}.
-\item \textbf{Peso}: Il peso dell'immagine è significativa pensando
-  all'ambito, il fatto stesso che l'immagine abbia un canale alpha o
-  meno cambia il peso nella codifica, assieme al numero di livelli che
-  la compongono. 
-\item \textbf{Gamma cromatica}: La gamma cromatica è la fedeltà nella
-  trasposizione dei colori che un formato riesce ad avere rispetto al
-  caso reale e dipende anche dalla paletta cromatica che la codicica di
-  suddetto formato possieda. Questo parametro è utile soprattutto nel
-  settore fotografico e anche per tutti quei casi in cui è necessario
-  un alto livello di dettaglio.
-\end{itemize}
-\begin{nota}
-  La questione della gamma cromatica dipende tanto dal formato, infatti,
-  a lato informatico esistono diversi formati per la rappresentazione
-  delle immagini, non compressi (\textbf{\color{red}raw}) a quelli
-  compressi (\textbf{\color{blue}quelli Lossy e quelli Lossless}).
-  \begin{description}
-  \item[Lossy] Il contesto di utilizzo in cui la fedeltà e qualità della
-    rappresentazione non è il punto saliente. Tipicamente cerca di
-    rimuovere con criterio alcune sfumature cromatiche che l'occhio umano
-    in primo achitto non nota. (Utile per la condivisione online)
-  \item[Lossless] Anche se conpresso cerca di mantenere il più possibile
-    la qualità e fedeltà all'immagine non compressa. (Utile anche in
-    contesti di editing fotografico)
-  \end{description}
-  Sapendo questo sarà già possibile muoversi al meglio in questo mondo.
-\end{nota}
-
-\section{Pareidolia e illusioni visive}
-\label{sec:pareidolia}
-Per pareidolia o illusione subconscia, intendiamo il modo in cui il
-nostro cervello identifichi all'interno di un oggetto, un immagine o
-altro, un volto o una forma familiare, questo perché il cervello umano
-è pensato per identificare quello che è famigliare per una questione
-pratica ed evolutiva.
-
-\section{Ambiti in cui può essere utilizzata l'elaborazione digitale
-  delle immagini?}
-\label{sec:ambito}
-Quello dell'elaborazione digitale delle immagini può essere utilizzato in
-tantissimi settori diversi, da quello biomedico a quello areonautico e
-areospaziale, all'automotive, etc. Per questi motivi è sempre più
-centrale nel mondo ingegneristico e militare l'adozione di tali sistemi.
-Ma facendo un esempio concreto, un sensore di frenata che riconoscra il
-pedone e consenta una frenata più efficace, in anticipo rispetto ai
-comuni riflessi umani.
-
+\input{pag/intro.tex}
 \chapter{Proprietà delle immagini digitali}
 \label{chap:propdelimmdig}
 
 L'immagine digitale è un metodo per rappresentare di un qualcosa di
 reale, e va a rappresentarlo con una matrice di pixel.
 
+Le relazioni tra pixel (su intensità o livelli di grigio/coordinate
+spaziali)
+\begin{itemize}
+\item misura della distanza (\textit{somiglianza}) tra i pixel;
+\item vicini di un pixel; 
+\item relazione di adiacenza;y
+\item rapporto di connettività;
+\end{itemize}
+La distanza tra i punti con coordinate $(i,j)$ e $(k,l)$
+\begin{itemize}
+\item La distanza euclidea è definita da
+  \begin{equation}
+    \label{eq:propdelimmdig}
+    D_E=[(i,j), (k,l)]= \sqrt{(i-k)^2+(j-l)^2}
+  \end{equation}
+  e la matrice risulta composta in questo modo con un $r=1$:
+  \begin{equation*}
+    \begin{array}[ht!]{ccccccc}
+      \hline
+      &&&3&&&\\
+      & \sqrt{8} & \sqrt{5} & 2 & \sqrt{5} & \sqrt{8}\\
+      & \sqrt{5} & \sqrt{2} & \textbf{1} & \sqrt{5} & \sqrt{2}\\
+      3 & 2 & \textbf{1} & \textbf{0} & \textbf{1} & 2 & 3\\
+      & \sqrt{5} & \sqrt{2} & \textbf{1} & \sqrt{5} & \sqrt{2}\\
+      & \sqrt{8} & \sqrt{5} & 2 & \sqrt{5} & \sqrt{8}\\
+      &&&3&&&\\\hline
+    \end{array}
+  \end{equation*}
+\item City Block (o Manhattan)
+  \begin{equation}
+    \label{eq:cityblock}
+    D_4[(i,j), (k,l)]=\abs{i-k}+\abs{j-l}
+  \end{equation}
+  e la trasposizione in matrice è la seguente con un $r=1$:
+    \begin{equation*}
+      \begin{array}[ht!]{ccccccc}
+        \hline
+        &&&3&&&\\
+        &&3 & 2 & 3 &&\\
+        &3& 2 & \textbf{1} & 2&3& \\
+        3 & 2 & \textbf{1} & \textbf{0} & \textbf{1} & 2 & 3\\
+        &3& 2 & \textbf{1} & 2&3& \\
+        &&3 & 2 & 3 &&\\
+        &&&3&&&\\\hline
+      \end{array}
+    \end{equation*}
+\item Chessboard
+  \begin{equation}
+    \label{eq:chessboard}
+    D_8=[(i,j), (k,l)]=\max\left(\abs{i-k}+\abs{j-l}\right)
+  \end{equation}
+  e la trasposizione in matrice è la seguente con un $r=1$:
+    \begin{equation*}
+    \begin{array}[ht!]{ccccccc}
+      \hline
+      3 & 3 & 3 & 3 & 3 & 3 & 3\\
+      3 & 2 & 2 & 2 & 2 & 2 & 3\\
+      3 & 2 & \textbf{1} & \textbf{1} & \textbf{1} & 2 & 3\\
+      3 & 2 & \textbf{1} & \textbf{0} & \textbf{1} & 2 & 3\\
+      3 & 2 & \textbf{1} & \textbf{1} & \textbf{1} & 2 & 3\\
+      3 & 2 & 2 & 2 & 2 & 2 & 3\\
+      3 & 3 & 3 & 3 & 3 & 3 & 3\\\hline
+    \end{array}
+  \end{equation*}
+\item Rappresentazione di curve non semplice nel piano digitale
+  \begin{itemize}
+  \item Cerchio di raggio $r$, tutti i pixel che si trovano a una
+    $distanza \leq r$
+  \item Se $r=2$
+    \begin{eqnarray*}
+      \begin{array}[ht!]{ccccccc}
+        \hline
+        &&&3&&&\\
+        & \sqrt{8} & \sqrt{5} & 2 & \sqrt{5} & \sqrt{8}\\
+        & \sqrt{5} & \sqrt{2} & \textbf{1} & \sqrt{5} & \sqrt{2}\\
+        3 & 2 & \textbf{1} & \textbf{0} & \textbf{1} & 2 & 3\\
+        & \sqrt{5} & \sqrt{2} & \textbf{1} & \sqrt{5} & \sqrt{2}\\
+        & \sqrt{8} & \sqrt{5} & 2 & \sqrt{5} & \sqrt{8}\\
+        &&&3&&&\\\hline
+      \end{array} &
+                          \begin{array}[ht!]{ccccccc}
+        \hline
+        &&&3&&&\\
+        &&3 & \textbf{2} & 3 &&\\
+        &3& \textbf{2} & \textbf{1} & \textbf{2} & 3& \\
+        3 & \textbf{2} & \textbf{1} & \textbf{0} & \textbf{1} & \textbf{2} & 3\\
+        &3&\textbf{2} & \textbf{1} & \textbf{2}&3& \\
+        &&3 &\textbf{2} & 3 &&\\
+        &&&3&&&\\\hline
+    \end{array} & \begin{array}[ht!]{ccccccc}
+      \hline
+      3 & 3 & 3 & 3 & 3 & 3 & 3\\
+      3 & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} & 3\\
+      3 & \textbf{2} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{2} & 3\\
+      3 & \textbf{2} & \textbf{1} & \textbf{0} & \textbf{1} & \textbf{2} & 3\\
+      3 & \textbf{2} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{2} & 3\\
+      3 & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} & 3\\
+      3 & 3 & 3 & 3 & 3 & 3 & 3\\\hline
+    \end{array}
+    \end{eqnarray*}
+  \item Se $r=3$
+    \begin{eqnarray*}
+      \begin{array}[ht!]{ccccccc}
+        \hline
+        &&&3&&&\\
+        & \sqrt{8} & \sqrt{5} & 2 & \sqrt{5} & \sqrt{8}\\
+        & \sqrt{5} & \sqrt{2} & 1 & \sqrt{5} & \sqrt{2}\\
+        3 & 2 & 1 & 0 & 1 & 2 & 3\\
+        & \sqrt{5} & \sqrt{2} & 1 & \sqrt{5} & \sqrt{2}\\
+        & \sqrt{8} & \sqrt{5} & 2 & \sqrt{5} & \sqrt{8}\\
+        &&&3&&&\\\hline
+      \end{array} &
+                    \begin{array}[ht!]{ccccccc}
+                      \hline
+                      &&&3&&&\\
+                      & & 3 & 2 & 3 &&\\
+                      &3& 2 & 1 & 2 & 3& \\
+                      3 & 2 & 1 & 0 & 1 & 2 & 3\\
+                      &3& 2 & 1 & 2 &3& \\
+                      &&3 & 2 & 3 &&\\
+                      &&&3&&&\\\hline
+                    \end{array} & \begin{array}[ht!]{ccccccc}
+                      \hline
+                      3 & 3 & 3 & 3 & 3 & 3 & 3\\
+                      3 & 2 & 2 & 2 & 2 & 2 & 3\\
+                      3 & 2 & 1 & 1 & 1 & 2 & 3\\
+                      3 & 2 & 1 & 0 & 1 & 2 & 3\\
+                      3 & 2 & 1 & 1 & 1 & 2 & 3\\
+                      3 & 2 & 2 & 2 & 2 & 2 & 3\\
+                      3 & 3 & 3 & 3 & 3 & 3 & 3\\\hline
+                    \end{array}
+    \end{eqnarray*}
+  \end{itemize}
+\end{itemize}
+\begin{nota}
+  Nel ultimo caso tutta l'aria disponibile è selezionata.
+\end{nota}
+
+\section{Neighborhood}
+\label{sec:neiborhood}
+
+\begin{defi}
+  Il Neighborhood (l'intorno) sono quelle tecniche di elaborazione delle
+  immagini in cui il valore risultante per un pixel alle coordinate
+  $(x_1,y_1)$ -- è una funzione del valore del pixel originale in quel
+  punto così come del valore del pixel originale di alcuni dei suoi
+  vicinato. Il modo in cui i valori l'intorno e il valore del pixel di
+  riferimento vengono combinati per produrre il risultato può variare
+  in modo significativo tra i diversi algoritmi.
+\end{defi}
+\clearpage
+\begin{itemize}
+\item Proprietà locali per ogni due pixel
+  \begin{itemize}
+  \item 4-neighbors (\texttt{4 pixel vicini});
+    \begin{itemize}
+    \item $D_4 = 1$ (Distanza d'intorno);
+    \item $(i+1, j), (i-1, j), (i, j+1), (i, j-1)$
+    \end{itemize}
+  \item Pixel adiacenti a $(i, j)$:
+    \begin{figure}[ht!]
+      \centering
+      \input{img/neigh-4n.tikz}
+      \caption{Intorno 4-neighbors}
+      \label{fig:4-neigh}
+    \end{figure}
+  \item 8-neighbors (\texttt{8 pixel vicini});
+    \begin{itemize}
+    \item $D_8 = 1$ (Distanza d'intorno);
+    \item $(i+1, j), (i-1, j), (i, j+1), (i, j-1), (i+1, j+1),
+      (i+1, j-1), (i-1, j+1), (i-1, j-1)$
+    \end{itemize}
+  \item Pixel adiacenti a $(i, j)$:
+    \begin{figure}[ht!]
+      \centering
+      \input{img/neigh-8n.tikz}
+      \caption{Intorno 8-neighbors}
+      \label{fig:8-neigh}
+    \end{figure}    
+  \end{itemize}
+\end{itemize}
+
+\subsection{Adjacency (Adiacenza)}
+\label{sec:adjacency}
+
+Strettamente legato al concetto di vicinato: due pixel si dicono
+adiacenti se esistono vicini (\emph{o meglio vicini}) tali che i loro
+valori di intensità soddisfano alcuni specifici criteri di similarità.
+\begin{itemize}
+\item Adiacenza tra i pixel:
+  \begin{itemize}
+  \item Un insieme di pixel è connesso se sono adiacenti
+  \item Sono adiacenti se la loro distanza è uguale a 1
+    \begin{itemize}
+    \item 4-adiacenza quando $D_4 = 1$
+    \item 8-adiacenza quando $D_8 = 1$
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\subsection{Path between pixels}
+\label{sec:pathbetpixels}
+
+Prendendo 2 pixel (A,B) è possibile stimare una distanza, quella è la
+path:
+\begin{itemize}
+\item La sequenza di pixel distinti $S_i$ con $i =1,\dots,n$
+\item Dove:
+  \begin{itemize}
+  \item $S_1 = A$ e $S_n = B$
+  \item $S_i$ e $S_{i-1}$ sono adiacenti per $1\leq i\leq n$
+  \end{itemize}
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{14cm}{!}{
+    \input{img/ppath1.tikz}}
+    \caption{Patch between pixels}
+    \label{fig:pathpix}
+  \end{figure}
+\item Percorso chiuso
+  \begin{itemize}
+  \item Se il primo e l'ultimo pixel sono vicini
+  \end{itemize}
+\item Ambiguità nelle curve chiuse
+  \begin{itemize}
+  \item Nel piano reale una curva divide l'interno e l'esterno
+  \item Nel piano digitale esiste tale separazione!?
+  \end{itemize}
+\end{itemize}
+
+\subsection{Connectivity}
+\label{sec:conct}
+\begin{itemize}
+\item Due pixel $A$ e $B$ sono collegati se c'è un percorso tra di loro.
+\item Dati i pixel $A$, $B$ e $C$
+  \begin{itemize}
+  \item \textbf{Riflessività}: $A$ è collegato ad $A$
+  \item \textbf{Commutatività}: se $A$ è connesso a $B$ allora $B$ è
+    connesso ad $A$
+  \item \textbf{Transitivity}: if $A$ is connected to $B$ and $B$ is
+    connected to $C$ then $A$ is connected to $C$
+  \end{itemize}
+\end{itemize}
+
+\subsection{Region}
+\label{sec:region}
+
+\begin{defi}
+  La regione dell'immagine è un metodo in cui un'immagine digitale viene
+  suddivisa in vari sottogruppi chiamati segmenti di immagine, che
+  aiutano a ridurre la complessità dell'immagine per semplificarne
+  l'elaborazione o l'analisi. In altre parole, la segmentazione implica
+  l'assegnazione di etichette ai pixel. A tutti gli elementi
+  dell'immagine o ai pixel appartenenti alla stessa categoria è
+  assegnata un'etichetta comune.
+\end{defi}
+
+\subsection{Edge}
+\label{sec:edge}
+
+Edge è una proprietà locale di un pixel e delle sue immediate vicinanze;
+mentre il confine è un concetto globale associato ad una regione e
+forma un percorso chiuso, il bordo esprime le proprietà locali di una
+funzione immagine:
+\begin{itemize}
+\item Tutti i pixel del bordo sono anche bordi
+\end{itemize}
+I bordi sono importanti per il sistema visivo umano, poiché costituiscono informazioni di base per il riconoscimento
+\begin{itemize}
+\item Punti di cambiamento improvviso dei livelli di grigio, discontinuità di intensità
+\end{itemize}
 \section{Creazione di una immagine digitale}
 \label{sec:creadiunimgdig}
 
@@ -467,7 +604,7 @@ Da questo grafico è possibile dedurre che:
 \item Queste regioni possono essere rappresentate da un albero;
 \item Ogni nodo di questo albero ha 4 figli.
 \end{itemize}
-\clearpage
+
 \subsubsection{Quad-tree}
 \label{sec:quad-tree}
 \begin{figure}[ht!]
@@ -491,7 +628,7 @@ superiore\footnote{Gli alberi si leggono dall'alto verso il basso, quindi
 \item Deriva da una modiﬁca della T-pyramid
 \item Non crea figli per ogni nodo ma solo quando i figli sono diversi
 \end{itemize}
-
+\clearpage
 \subsection{Histogram (Istogramma)}
 \label{sec:histogram}
 L'istogramma nel processo di elaborazione dell'immagine, viene utilizzato
@@ -511,7 +648,6 @@ di una immagine. Ad esempio, prendedo la foto di un gatto:
 Il suo istogramma sarà composto, nel seguente modo, ricordano che la
 gamma dei colori va da 0 a 255 come espresso in (\ref{sec:rgbcolor}),
 la scala del grafico sarà proprio quella.
-\clearpage
 \begin{figure}[ht!]
   \centering
   \resizebox{15cm}{!}{
@@ -524,4 +660,298 @@ In questo caso il massimo picco viene raggiunto tra i 150 e i 200, per
 comprendere di che colori si tratta basta guardare la figura
 \ref{fig:rgb}, in cui si vede chiaramente che in questa immagine sono
 presente molto verde e blu.
+
+\subsubsection{Calcolare un Istogramma}
+\label{sec:calc-isto}
+L'algoritmo con cui si genera l'istogramma è il seguente:
+\begin{itemize}
+\item Data l'immagine $I$ con $N$ righe e $M$ colonne, e $L$ livelli di
+  grigio crea un vettore $H$ di dimensione $L$
+\item Assegnare tutti i valori di $H$ al valore 0
+\item Per ogni riga $n$ di $I$ che va da $1$ a $N$
+  \begin{itemize}
+  \item Per ogni colonna $m$ di $I$ che va da 1 a $M$
+    \begin{itemize}
+    \item prendi il valore $I(m,n)$,
+    \item incrementare H(I(m,n)) di 1
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+In poche parole, il vettore verrà utilizzato per contare quante volte un
+valore è frequente all'interno dell'immagine.
+\begin{esempio}
+  Un immagine con una gamma di Grigi $L=5$ con una dimensione di 7x7, darà
+  questo risultato:
+  \begin{eqnarray}
+    \label{eq:calc-isto}
+    I = \begin{array}{c|ccccccc}
+      & 1 & 2 & 3 & 4 & 3 & 2 & 1 \\\hline
+      1 & 1 & 2 & 1 & 3 & 1 & 1 & 1 \\
+      2 & 2 & 1 & 1 & 1 & 2 & 3 & 4 \\
+      3 & 1 & 2 & 1 & 1 & 1 & 1 & 4 \\
+      4 & 1 & 2 & 2 & 2 & 1 & 3 & 1 \\
+      4 & 1 & 2 & 2 & 2 & 1 & 1 & 4 \\
+      4 & 2 & 2 & 2 & 1 & 1 & 1 & 1 \\
+      3 & 1 & 4 & 1 & 1 & 1 & 1 & 0
+    \end{array} &
+                  H = \begin{bmatrix}
+                    0 & 1 & 2 & 3 & 4\\ 
+                    1 & 31 & 15 & 7 & 8
+                  \end{bmatrix}
+  \end{eqnarray}
+  Da questo si deduce che:
+  \begin{itemize}
+  \item Il valore 0 è presente 1 volta;
+  \item Il valore 1 è presente 31 volte;
+  \item Il valore 2 è presente 15 volte;
+  \item Il valore 3 è presente 7 volte;
+  \item Il valore 4 è presente 8 volte.
+  \end{itemize}
+  Con questo è possibile generare l'istogramma:
+  \begin{figure}[ht!]
+    \centering
+    \begin{tikzpicture}
+      \begin{axis}[ybar interval, ymax=55,ymin=0, minor y tick num = 3]
+        \addplot coordinates { (0, 1) (1, 31) (2, 15) (3, 7) (4, 8) (5,0) };
+      \end{axis}
+    \end{tikzpicture}
+    \caption{Istogramma risultante}
+    \label{fig:calc-isto}
+  \end{figure}
+\end{esempio}
+
+\subsection{Contrasto}
+\label{sec:contrasto}
+
+È uno dei parametri fondamentali per valutare la qualità di un'immagine.
+Il contrasto elevato consente di osservare anche i più piccoli dettagli,
+rendendoli distinguibili dallo sfondo, come accennato al inizio del
+paragrafo.
+
+\subsubsection{Operazioni sull'istogramma}
+\label{sec:op-isto-cont}
+\begin{itemize}
+\item Operare sull'istogramma significa generare un nuovo istogramma partendo da quello originale;
+\item The consequences fall back into the original image;
+  \begin{itemize}
+  \item sostituire i pixel $f[i,j]$ con i nuovi pixel $h(f[i,j])$
+  \end{itemize}
+\end{itemize}
+
+\subsection{Contrast Stretching}
+\label{sec:contrStrect}
+
+Il Contrast Stretching e un operazione ``\texttt{Normalizzazione}'', è una
+semplice tecnica di miglioramento dell'immagine che tenta di migliorare
+il contrasto in un'immagine ``allungando'' l'intervallo di valori di
+intensità in essa contenuti per coprire un intervallo di valori
+desiderato, ad esempio l'intervallo completo di valori di pixel
+consentito dal tipo di immagine in questione. Si differenzia
+dall'equalizzazione dell'istogramma più sofisticata in quanto può
+applicare solo una funzione di ridimensionamento lineare ai valori dei
+pixel dell'immagine. Di conseguenza il ``miglioramento'' è meno drastico.
+(La maggior parte delle implementazioni accetta un'immagine a livello di
+grigio come input e produce un'altra immagine a livello di grigio come
+output.)
+\begin{itemize}
+\item Necessario quando l'istogramma è contratto
+\item L'istogramma è semplicemente ``tirato'' in questo modo
+  \begin{itemize}
+  \item Il minimo dell'istogramma originale coincide con il valore 0
+  \item Il massimo dell'istogramma originale coincide con il valore 255
+  \end{itemize}
+\item Il risultato influisce anche sull'immagine in cui si può osservare
+  un aumento significativo del contrasto.
+\end{itemize}
+
+\subsection{Contrast expansion}
+\label{sec:cont-exp}
+\begin{defi}
+  Il contrast expansion (L'aumento del contrasto) è una trasformazione
+  di una rappresentazione sensoriale che si traduce in una
+  rappresentazione di output in cui le regioni di transizione
+  (ad esempio i ``bordi'') vengono enfatizzate selettivamente.
+  I meccanismi che mediano l'aumento del contrasto nei diversi sistemi
+  sono diversi e dipendono in modo critico dall'ampiezza della funzione
+  di aumento del contrasto e dalla modalità della rappresentazione.
+\end{defi}
+\begin{equation}
+  \label{eq:cont-exp}
+  P_{out} = (P_{in} -G_{in})\cdot \left(\frac{255}{G_{max} - G_{in}}\right)
+\end{equation}
+Prima di applicare questo operatore è necessario calcolare il valore di intensità minimo ($G_{min}$) e massimo ($G_{max}$) presente nell'immagine in input.
+\begin{esempio}
+  Una immagine con una scala di grigi $L=10$, andando a fare l'aumento o
+  espanzione del contrasto la situazione è la seguente:
+  \begin{eqnarray}
+    \label{eq:cont-exp2}
+    Pin =
+    \begin{vmatrix}
+      3 & 4 & 5 \\
+      5 & 4 & 3 \\
+      3 & 4 & 4 \\
+      4 & 4 & 4
+    \end{vmatrix}, & H =
+    \begin{vmatrix}
+      0 & 0 & 0 & 3 & 7 & 1 & 0 & 0 & 0 & 0  
+    \end{vmatrix}
+  \end{eqnarray}
+  Rappresentato in grafico l'istogramma è:
+  \begin{figure}[ht!]
+    \centering
+    \begin{tikzpicture}
+      \begin{axis}[ybar interval, ymax=20,ymin=0, minor y tick num = 3]
+        \addplot coordinates { (0, 0) (1, 0) (2, 0) (3, 3) (4, 7) (5, 1) (6,0) (7,0) (8,0) (9,0) (10,0)};
+      \end{axis}
+    \end{tikzpicture}
+    \caption{Istogramma risultante}
+    \label{fig:calc-isto}
+  \end{figure}
+  Pardendo da questa situazione bisognerà applicare le seguenti operazioni:
+  \begin{algorithm}
+    min $\gets 3$\;
+    max $\gets 5$\;
+    dif $\gets max-min$\;
+    L $\gets 10$\;
+    pout $\gets (x-min)\cdot((L-1)/(dif))$\;
+    pout $\gets (x-3)\cdot(9/2)$\;
+    \caption{Contrast expansion}
+  \end{algorithm}
+  
+  E dopo aver svolto queste operazioni la matrice $pout$ sarà:
+  \begin{eqnarray}
+    \label{eq:cont-exp3}
+    pout =
+    \begin{vmatrix}
+      0 & 4 & 8 \\
+      8 & 4 & 0 \\
+      0 & 4 & 4 \\
+      4 & 4 & 4
+    \end{vmatrix}, & H=
+                     \begin{vmatrix}
+                       3 & 0 & 0 & 0 & 7 & 0 & 0 & 0 & 1 & 0 
+                     \end{vmatrix}
+  \end{eqnarray}
+  Il nuovo grafico quindi è abbastanza diverso:
+  \begin{figure}[ht!]
+    \centering
+    \begin{tikzpicture}
+      \begin{axis}[ybar interval, ymax=20,ymin=0, minor y tick num = 3]
+        \addplot coordinates { (0, 3) (1, 0) (2, 0) (3, 0) (4, 7) (5, 0) (6,0) (7,0) (8,1) (9,0) (10,0)};
+      \end{axis}
+    \end{tikzpicture}
+    \caption{Istogramma risultante}
+    \label{fig:calc-isto}
+  \end{figure}
+  
+  Fatto questo il contrasto è aumentato barecche perché a differenza tra
+  i valori presenti è maggiore.
+\end{esempio}
+
+\subsection{Equazione istogramma}
+\label{sec:eq-histo}
+
+L'equalizzazione dell'istogramma tenta di distribuire equamente i livelli
+di grigio:
+\begin{itemize}
+\item Allo stesso modo, l'istogramma viene allungato, cercando però di
+  mantenere una proporzione tra i livelli di intensità
+\end{itemize}
+\begin{equation}
+  \label{eq:eq-histo}
+  P_{out}=\frac{255}{M\cdot N} = \sum\limits_{k=0}^{P_{in}}H(k)
+\end{equation}
+dove $M, N$ sono rispettivamente il numero di righe e il numero di
+colonne dell'immagine in input.
+
+\chapter{Filtri nel dominio spaziale e della frequenza}
+\label{chap:filtri}
+
+\section{Qualità dell'immagine}
+\label{sec:qualità}
+
+La qualità dell'immagine dipende da diversi fattori, dimensione,
+gamma cromatica, contrasto, rumore presente, anche messa a fuoco,
+artefatti, esposizione, etc.
+
+Ovviamente esistono anche fattori soggettivi che sono legati al caso di
+utilizzo.
+\begin{nota}
+  La qualità dell'immagine va definita anche in base al dispositivo
+  in cui deve essere riprodotto, infatti, nel caso in cui l'immagine
+  venga riprodotta su uno schermo con una risoluzione di 1280x720px LCD
+  TN, non ha senso l'immagine abbia una risoluzione in Full HD 1080p,
+  quanto meno in 4K.
+\end{nota}
+\subsubsection{Qualità dello strumento di acquisizione}
+\label{sec:strumentodistampa}
+
+Uno dei punti da sottolineare è che la qualità dello strumento di
+acquisizione è importante, a lato commerciale una prassi solita da parte
+dei produttori è il soffermarsi sulla risoluzione della fotocamera, cosa
+che va contestualizzato, infatti, un altro fattore che va considerato è
+la qualità dei fotodiodi, motivi per cui macchine professionali hanno
+magari un 24.1 megapixel contro i 200 megapixel o più
+dichiarati da uno smartphone, questo perché la dimensione del pannello
+è diversa e quindi anche il rumore e la resa cromatica sarà sicuramente
+migliore.
+
+\section{Nitidezza}
+\label{sec:nitidezza}
+
+\begin{itemize}
+\item Capacità di un sistema di presentare i dettagli più fini di
+  un'immagine.
+\item Valutato dalla risoluzione spaziale dell'immagine.
+\end{itemize}
+
+\subsection{Contrasto}
+\label{sec:contrasto}
+
+Possibilità di distinguere dettagli dell'immagine con bassa differenza
+di luminosità rispetto allo sfondo (fondo). Capacità di un sistema di
+imaging di essere sensibile a piccole variazioni dell'intensità della
+radiazione incidente sugli elementi del sensore e di visualizzare tali
+variazioni.
+
+\subsection{Noise (rumore)}
+\label{sec:noise}
+L'immagine può degradarsi:
+\begin{itemize}
+\item Nelle varie fasi di acquisizione;
+\item Durante la lavorazione;
+\item Durante la trasmissione.
+\end{itemize}
+Tale degrado è solitamente chiamato rumore.
+\begin{itemize}
+\item È possibile stimare il livello di degrado
+\item I metodi quantitativi misurano la qualità di un'immagine
+  confrontandola con un'immagine di riferimento (\emph{immagine
+    modello}).
+\item Di solito, come immagini modello vengono scelte immagini ben
+  calibrate, in cui sia le condizioni radiometriche che quelle
+  geometriche sono ben note.
+\item In alternativa, in alcune applicazioni, possono essere utilizzate
+  solo immagini di modelli sintetici.
+\end{itemize}
+
+\subsubsection{Rumore adittivo}
+\label{sec:rumadit}
+
+Esempio di immagini con diversa distribuzione del rumore. Entrambe le
+immagini in figura hanno un valore medio di 128 e una deviazione
+standard di 32 (25\%).
+\begin{itemize}
+\item Rumore gaussiano (noto anche come rumore normale);
+  \begin{itemize}
+  \item Replica la forma della curva gaussiana.
+  \item It is a good approximation of the noise in CCD acquisition
+    sensors.
+  \end{itemize}
+\item Il rumore influisce su ogni livello di grigio.
+  \begin{itemize}
+  \item Ha un picco al valore di 128.
+  \item La differenza media da 128 è 25 (std).
+  \end{itemize}
+\end{itemize}
 \end{document}

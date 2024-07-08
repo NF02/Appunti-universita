@@ -10,16 +10,35 @@
 \contentsline {section}{\numberline {1.3}Pareidolia e illusioni visive}{4}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Ambiti in cui può essere utilizzata l'elaborazione digitale delle immagini?}{4}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Proprietà delle immagini digitali}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Creazione di una immagine digitale}{5}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Tipo di immagine}{5}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Rappresentazione di immagine}{6}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Strutture dati}{6}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Matrice}{6}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Vettore}{6}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Topologie}{7}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Gerarchico}{7}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Piramidale (pyramids)}{8}{subsection.2.2.5}%
-\contentsline {subsubsection}{M-pyramids}{8}{subsubsection*.9}%
-\contentsline {subsubsection}{T-Pyramid}{8}{subsubsection*.10}%
-\contentsline {subsubsection}{Quad-tree}{9}{subsubsection*.12}%
-\contentsline {subsection}{\numberline {2.2.6}Histogram (Istogramma)}{9}{subsection.2.2.6}%
+\contentsline {section}{\numberline {2.1}Neighborhood}{6}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Adjacency (Adiacenza)}{7}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Path between pixels}{7}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Connectivity}{8}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Region}{8}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Edge}{8}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}Creazione di una immagine digitale}{9}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Tipo di immagine}{9}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Rappresentazione di immagine}{9}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Strutture dati}{9}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Matrice}{10}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Vettore}{10}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Topologie}{10}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Gerarchico}{10}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Piramidale (pyramids)}{11}{subsection.2.3.5}%
+\contentsline {subsubsection}{M-pyramids}{11}{subsubsection*.12}%
+\contentsline {subsubsection}{T-Pyramid}{12}{subsubsection*.13}%
+\contentsline {subsubsection}{Quad-tree}{12}{subsubsection*.15}%
+\contentsline {subsection}{\numberline {2.3.6}Histogram (Istogramma)}{14}{subsection.2.3.6}%
+\contentsline {subsubsection}{Calcolare un Istogramma}{14}{subsubsection*.20}%
+\contentsline {subsection}{\numberline {2.3.7}Contrasto}{15}{subsection.2.3.7}%
+\contentsline {subsubsection}{Operazioni sull'istogramma}{16}{subsubsection*.22}%
+\contentsline {subsection}{\numberline {2.3.8}Contrast Stretching}{16}{subsection.2.3.8}%
+\contentsline {subsection}{\numberline {2.3.9}Contrast expansion}{16}{subsection.2.3.9}%
+\contentsline {subsection}{\numberline {2.3.10}Equazione istogramma}{18}{subsection.2.3.10}%
+\contentsline {chapter}{\numberline {3}Filtri nel dominio spaziale e della frequenza}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Qualità dell'immagine}{19}{section.3.1}%
+\contentsline {subsubsection}{Qualità dello strumento di acquisizione}{19}{subsubsection*.26}%
+\contentsline {section}{\numberline {3.2}Nitidezza}{19}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Contrasto}{19}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Noise (rumore)}{19}{subsection.3.2.2}%
+\contentsline {subsubsection}{Rumore adittivo}{20}{subsubsection*.27}%

@@ -1,0 +1,12 @@
+﻿% author: Nicola Ferru <ask dot nfvblog at outlook dot it>
+
+\begin{tikzpicture}
+	% bordo esterno
+	\draw (-1,0) -- (-1,1) -- (0,1);
+	\draw (1,1) -- (2,1) -- (2,0);
+	\draw (2,-1) -- (2,-2) -- (1,-2);
+	\draw (-1,-1) -- (-1,-2) -- (1,-2);
+	% bordo interno +
+	\draw (-1,0) -- (0,0) -- (0,1) -- (1,1) -- (1,0) -- (2,0) -- (2,-1) -- (1,-1) -- (1,-2) -- (0,-2) -- (0,-1) -- (-1,-1) -- cycle;
+	\draw[fill] (0,0) -- (0,-1) -- (1,-1) -- (1,0) -- cycle;
+\end{tikzpicture}

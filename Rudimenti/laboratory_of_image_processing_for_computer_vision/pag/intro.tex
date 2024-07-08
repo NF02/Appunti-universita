@@ -1,0 +1,140 @@
+\chapter{Introduzione}
+\label{chap:Intro}
+
+\section{Argomenti}
+\label{sec:argomento}
+Prendendo un immagine come una funzione $f(x,y)$, quindi sul fronte di
+sviluppo sarà possibile costruire funzioni e soluzioni per poter
+lavorare sulle stesse.
+
+\section{Cosa bisogna sapere sulla rapresentazione raster delle immagini}
+\label{sec:raster}
+
+Le immagini raster o a rappresentazioni di pixel, sono la tipoligia di
+immagine più utilizzate per la rappresentazione e l'elaborazione grafica,
+visto che comunque nel contesto comune si rappresentano delle situazioni
+più o mano complesse tipicamente di applicazione reale. Per rendere
+efficiente la matrice si usano due sistemi:
+\begin{itemize}
+\item \textbf{RGB}: Red, Green, Blue (\textit{{\color{red}Rosso}, {\color{green}Verde} e {\color{blue}blue}}), con questo
+  sistema è possibile costruire qualunque gradiente colore in modo
+  estremamente preciso (valori compreso tra 0 e 255 per tre valori\footnote{Un sistema di rappresentazione dei colori ad 8bit});
+\item \textbf{Graylevel}: a Gradienti di grigio (valore compreso tra 0 a
+  255 da nero a bianco).
+\end{itemize}
+\subsubsection{Colori RGB}
+\label{sec:rgbcolor}
+\begin{table}[ht!]
+  \centering
+  \begin{tabular}{lccc}
+    \textbf{Colore}& \textbf{R} & \textbf{G} & \textbf{B}\\\hline
+    Nero & 0 & 0 & 0\\
+    Bianco & 255 & 255 & 255\\
+    {\color{red}Rosso} & 255 & 0 & 0\\
+    {\color{yellow}Giallo} & 255 & 255 & 0\\
+    {\color{gray}Grigio} & 127 & 127 & 127\\\hline
+  \end{tabular}
+  \caption{Colori RGB}
+  \label{tab:rgb}
+\end{table}
+E visto che si tratta di un sistema di rappresentazione a 8 bit per 3
+colonne, quindi:
+\begin{equation*}
+  2^{3\cdot 8} =2^{24} = 16.777.216 \text{ colori}
+\end{equation*}
+Una gamma cromatica abbastanza sostanziosa da poter rappresentare in modo
+sufficientemente fedele qualunque oggetto reale.
+\begin{figure}[ht!]
+  \centering
+  \resizebox{8cm}{!}{
+  \input{img/scale.tikz}}
+  \caption{Scala di colori RGB}
+  \label{fig:rgb}
+\end{figure}
+\subsubsection{Altri per rappresentare il colore}
+\label{sec:altcolorr}
+
+Oltre al sistema di rappresentazione del colore RGB esistoo altri sistemi
+di codifica, tra i quali:
+\begin{itemize}
+\item \textbf{HSL}: Hue, Saturazione, Luce;
+\item \textbf{HSV}: Hue, Saturazione, Valore;
+\item \textbf{CMYK}: Ciano, Magenta, Giallo, Nero (\textit{Sistema di
+    stampa}).
+\end{itemize}
+\begin{nota}
+  Nel caso del sistema CMYK quando tutti i colori vengono sommati si
+  ottiene il nero, questo fu fatto per un ottica produttiva delle
+  stampanti, la scelta di colori ciano, magenta e giallo insieme
+  fanno il nero, motivo per la quale molti fotocopiatori riescono
+  a lavorare anche con il toner nero quasi esaurito.
+\end{nota}
+\subsection{I pixel}
+\label{sec:pixel}
+
+I \textit{pixel} sono il sistema di rappresentazione dell'immagine,
+rappresentano l'informazione unitaria, infatti, all'interno del singolo
+pixel può esser contenuto solo un valore (\texttt{un colore}), essendo
+quadrati per poter rappresentare un immagine che presenta delle forme
+stondate con una buona qualità sarà necessaria una matrice di una
+dimensione abbondante.
+\subsection{La scalabilità di una immagine}
+\label{sec:scala}
+Uno dei punti che bisogna sempre considarare è proprio la scala e
+la scalabilità di una immagine, infatti, non esiste una
+dimensione\footnote{Dimensione della matrice di pixel} corratta per ogni
+situazione, infatti, dipende tutto dal caso di utilizzo, non a caso è
+necessaria fare una valutazione e considerare diversi fattori:
+\begin{itemize}
+\item \textbf{Dimensione}: il numero di pixel necessari al comporre
+  l'immagine, ad esempio un icona \textit{64x64px} oppure
+  \textit{128x128px} è perfetta per l'utilizzo desktop, ma magari non è
+  idonea per una esposizione fotografica o per un analisi
+  biometrica\footnote{un lettore di impronte digitale sta sul
+    500x250px, ovviamente dipende dalla tipologia di sensore}.
+\item \textbf{Peso}: Il peso dell'immagine è significativa pensando
+  all'ambito, il fatto stesso che l'immagine abbia un canale alpha o
+  meno cambia il peso nella codifica, assieme al numero di livelli che
+  la compongono. 
+\item \textbf{Gamma cromatica}: La gamma cromatica è la fedeltà nella
+  trasposizione dei colori che un formato riesce ad avere rispetto al
+  caso reale e dipende anche dalla paletta cromatica che la codicica di
+  suddetto formato possieda. Questo parametro è utile soprattutto nel
+  settore fotografico e anche per tutti quei casi in cui è necessario
+  un alto livello di dettaglio.
+\end{itemize}
+\begin{nota}
+  La questione della gamma cromatica dipende tanto dal formato, infatti,
+  a lato informatico esistono diversi formati per la rappresentazione
+  delle immagini, non compressi (\textbf{\color{red}raw}) a quelli
+  compressi (\textbf{\color{blue}quelli Lossy e quelli Lossless}).
+  \begin{description}
+  \item[Lossy] Il contesto di utilizzo in cui la fedeltà e qualità della
+    rappresentazione non è il punto saliente. Tipicamente cerca di
+    rimuovere con criterio alcune sfumature cromatiche che l'occhio umano
+    in primo achitto non nota. (Utile per la condivisione online)
+  \item[Lossless] Anche se conpresso cerca di mantenere il più possibile
+    la qualità e fedeltà all'immagine non compressa. (Utile anche in
+    contesti di editing fotografico)
+  \end{description}
+  Sapendo questo sarà già possibile muoversi al meglio in questo mondo.
+\end{nota}
+
+\section{Pareidolia e illusioni visive}
+\label{sec:pareidolia}
+Per pareidolia o illusione subconscia, intendiamo il modo in cui il
+nostro cervello identifichi all'interno di un oggetto, un immagine o
+altro, un volto o una forma familiare, questo perché il cervello umano
+è pensato per identificare quello che è famigliare per una questione
+pratica ed evolutiva.
+
+\section{Ambiti in cui può essere utilizzata l'elaborazione digitale
+  delle immagini?}
+\label{sec:ambito}
+Quello dell'elaborazione digitale delle immagini può essere utilizzato in
+tantissimi settori diversi, da quello biomedico a quello areonautico e
+areospaziale, all'automotive, etc. Per questi motivi è sempre più
+centrale nel mondo ingegneristico e militare l'adozione di tali sistemi.
+Ma facendo un esempio concreto, un sensore di frenata che riconoscra il
+pedone e consenta una frenata più efficace, in anticipo rispetto ai
+comuni riflessi umani.
