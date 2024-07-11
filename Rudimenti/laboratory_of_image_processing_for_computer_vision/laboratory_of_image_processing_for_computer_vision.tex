@@ -320,7 +320,7 @@ path:
   \end{itemize}
   \begin{figure}[ht!]
     \centering
-    \resizebox{14cm}{!}{
+    \resizebox{8cm}{!}{
     \input{img/ppath1.tikz}}
     \caption{Patch between pixels}
     \label{fig:pathpix}
@@ -334,6 +334,13 @@ path:
   \item Nel piano reale una curva divide l'interno e l'esterno
   \item Nel piano digitale esiste tale separazione!?
   \end{itemize}
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{8cm}{!}{
+    \input{img/ppath2.tikz}}
+    \caption{Patch between pixels curva chiuse}
+    \label{fig:pathpix2}
+  \end{figure}
 \end{itemize}
 
 \subsection{Connectivity}
@@ -365,7 +372,13 @@ path:
 
 \subsection{Edge}
 \label{sec:edge}
-
+\begin{figure}[ht!]
+  \centering
+  \resizebox{5cm}{!}{
+    \input{img/edge.tikz}}
+  \caption{Edge}
+  \label{fig:edge}
+\end{figure}
 Edge è una proprietà locale di un pixel e delle sue immediate vicinanze;
 mentre il confine è un concetto globale associato ad una regione e
 forma un percorso chiuso, il bordo esprime le proprietà locali di una
@@ -377,6 +390,67 @@ I bordi sono importanti per il sistema visivo umano, poiché costituiscono infor
 \begin{itemize}
 \item Punti di cambiamento improvviso dei livelli di grigio, discontinuità di intensità
 \end{itemize}
+
+\subsection{Convex hull}
+\label{sec:convex}
+Il convex hull è la regione più piccola che contiene l'oggetto, in
+modo tale che due punti qualsiasi della regione possono essere collegati
+da una linea retta, tutti i punti della quale appartengono alla regione.
+\begin{figure}[ht!]
+  \centering
+  \resizebox{5cm}{!}{
+    \input{img/complex.tikz}}
+  \caption{Convex hull}
+  \label{fig:convex}
+\end{figure}
+
+\subsection{Area, perimetro}
+\label{sec:areaeper}
+
+\begin{itemize}
+\item L'\textbf{Area} è la somma dei pixel dell'oggetto.
+\item Il \textbf{Perimetro} è la somma dei pixel appartenenti al confine
+\end{itemize}
+\clearpage
+\begin{figure}[ht!]
+  \centering
+  \resizebox{10cm}{!}{
+    \input{img/area.tikz}}
+  \caption{Area e perimetro}
+  \label{fig:areaper}
+\end{figure}
+
+\subsection{Tipologia di operazioni}
+\label{sec:tipop}
+There is a variety of ways to classify and characterize image operations
+\begin{itemize}
+\item In base alla relazione input/output
+\item In base al risultato atteso di questa operazione
+\item In base al tipo di operazione 
+\item In base al costo di tale operazione 
+\item In base al dominio di applicazione
+\end{itemize}
+Generalmente le operazioni sono classificate come \textbf{puntuali},
+\textbf{locali} o \textbf{globali}. Il valore di uscita ad una
+coordinata specifica dipende:
+
+\begin{itemize}
+\item \textbf{Punto}: solo sul valore di input alla stessa coordinata.
+\item \textbf{Locale}: sui valori di input nell'intorno di quella stessa
+  coordinata. 
+\item \textbf{Globale}: su tutti i valori nell'immagine di input.
+\end{itemize}
+
+\subsubsection{Operazioni a punto}
+\label{sec:opapunto}
+
+Il valore di output su una coordinata specifica dipende solo dal valore di input su quella stessa coordinata
+\begin{itemize}
+\item tipicamente si tratta di operazioni elementari su ciascun pixel
+\item pertanto possono includere solo trasformazioni di intensità
+\end{itemize}
+Un esempio di questo tipo di operazioni è proprio il negativo di
+immagine.
 \section{Creazione di una immagine digitale}
 \label{sec:creadiunimgdig}
 

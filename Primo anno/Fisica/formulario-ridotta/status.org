@@ -1,0 +1,12 @@
+#+author: Nicola Ferru
+#+title: Status del formulario
+
+Il formulario è composto da:
+- [X] Cinematica
+- [X] Dinamica
+- [-] Enegia e lavoro
+- [-] Corpi rigidi e quantità di moto
+- [-] Dinamica rotazionale
+- [-] Oscillazioni
+- [-] Onde
+- [-] Termodinamica
