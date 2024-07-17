@@ -152,13 +152,7 @@ Formula per calcolare la Velocità finale:
   \label{eq:vf}
   V_f=v_0+a\cdot t
 \end{equation}
-di cui le singole variabili hanno il seguente significato:
-\begin{itemize}
-\item $v_0$ è la velocità di partenza;
-\item $a$ è l'accelerazione;
-\item $t$ è il periodo di tempo.
-\end{itemize}
-Mentre il sistem base del moto uniformemente accelerato è:
+
 \begin{equation}
   \label{eq:motouniaccformbase}
   \begin{cases}
@@ -176,18 +170,10 @@ o, in forma splicita
 \end{equation}
 \subsection{Segmento percorso $s$ dopo il tempo $t$}
 \label{sec:segPDTempt}
-Per il parloco del segmento percorso $s$, se prendiamo come riferimento la perte dopo il tepo $t$, dobbiamo utilizzare:
 \begin{equation}
   \label{eq:segperdopot}
   s=s_0+v_0\cdot t \pm \frac{a}{2}\cdot t^2
 \end{equation}
-Il segno dipende dal sistema di riferimento -- Le veriabili in gioco sono le seguenti:
-\begin{itemize}
-\item $s_0$ il segmento nel momento iniziale;
-\item $v_0$ la velocità nel momento iniziale;
-\item $a$ accelerazione;
-\item $t$ il periodo di tempo.
-\end{itemize}
 
 \subsection{Velocità}
 \label{sec:velmotouniformacc}
@@ -195,12 +181,6 @@ Il segno dipende dal sistema di riferimento -- Le veriabili in gioco sono le seg
   \label{eq:velmotouniformacc}
   v=v_i+a(t-t_i)
 \end{eqnarray}
-
-\begin{description}
-\item[$v_i=$] velocità iniziale;
-\item[$t_i=$] Tempo iniziale;
-\item[$a=$] Accelerazione.
-\end{description}
 
 \subsection{Equazione senza il tempo}
 \label{sec:eqsenzailtempo}
@@ -215,16 +195,8 @@ Il segno dipende dal sistema di riferimento -- Le veriabili in gioco sono le seg
   \label{eq:altezzadicaduta}
   h=h_0+v_0\cdot t \pm \frac{g}{2}\cdot t^2
 \end{equation}
-Il segno dipende dal sistema di riferimento -- le variabili in gioco sono:
-\begin{itemize}
-\item $h_0$ altezza nel momento iniziale;
-\item $v_0$ la velocità nel momento iniziale;
-\item $t$ il periodo di tempo;
-\item $g$ forza peso.
-\end{itemize}
 
 \subsection{Caduta da $h_0$ con velocità iniziale nulla}
-Le formule correlate ad un grave che cade da un altezza $h_0$ con una velocità $v_0=0$, sono le seguenti:
 \label{sec:cadutadahconvelzero}
 \begin{multicols}{2}
   \subsubsection{Tempo di caduta}
@@ -240,7 +212,6 @@ Le formule correlate ad un grave che cade da un altezza $h_0$ con una velocità 
     V_f=\sqrt{2gh}
   \end{equation}
 \end{multicols}
-Visto che la velocità conosciutà è quella iniziale che è nulla, all'interno delle formule sono presenti solamente l'altezza $h_0$ e la forza peso $g$.
 
 \subsection{Lancio verso l'alto}
 \label{sec:lancioversolalto}
@@ -259,11 +230,6 @@ Nel caso del lancio verso l'alto sono presenti queste due formule:
     t_h=\frac{V_0}{g}
   \end{equation}
 \end{multicols}
-In questo caso le variabile che entrano in gioco sono:
-\begin{itemize}
-\item La velocità $V_0$;
-\item La forza peso $g$.
-\end{itemize}
 
 \section{Moto circolare uniforme}
 \label{sec:motCircUni}
@@ -285,7 +251,7 @@ In questo caso le variabile che entrano in gioco sono:
       \omega = \frac{\Delta \alpha}{\Delta t}
     \end{equation}
   \end{multicols}
-  $\Delta\alpha =$ angolo spezzato al centro
+
 
 \subsection{Energia cinetica totale}
 \label{sec:encintot}
@@ -327,7 +293,6 @@ In questo caso le variabile che entrano in gioco sono:
     t=\frac{1}{f}
   \end{equation}
 \end{multicols}
-Dato che le due formule danno due valori uno opposto all'altro possiamo dire senza ombra di dubbio che:
 \begin{equation}
   \label{eq:equalscrcrnt}
   \boxed{F_{CP}=-F_{CF}}
@@ -345,7 +310,6 @@ Dato che le due formule danno due valori uno opposto all'altro possiamo dire sen
     \frac{dv}{dt} 
   \end{vmatrix}\to a_t=\alpha r
 \end{equation}
-di cui alfa è $\alpha =\frac{\omega_f-\omega_i}{t_f-t_i}$, e da questo determiniamo che essa sia l'accelerazione angolare.
 
 \subsection{Leggi orarie}
 \label{sec:leggiorariecircacc}
@@ -372,17 +336,10 @@ di cui alfa è $\alpha =\frac{\omega_f-\omega_i}{t_f-t_i}$, e da questo determin
 
 \section{Somma dei vettori}
 \label{sec:sommavect}
-La somma dei vettori segue il seguente cruterio:
 \begin{equation}
   \label{eq:sommavect}
   \abs{\vec{v}}=\sqrt{\abs{v_1}^2+\abs{v_2}^2+2\abs{v_1}\abs{v_2}+\log \alpha}
 \end{equation}
-La posizione e direzione di un vettore sono fondamentali per capire come essi agiscano. I tre casi più comuni sono:
-\begin{description}
-\item[Ortogonali] $\abs{v}=\sqrt{\abs{v_1}^2+\abs{v_2}^2}$
-\item[Stessa direzione, vorso concorde] $\abs{v}=\abs{v_1}+\abs{v_2}$
-\item[Stessa direzione, verso opposto] $\abs{v}=\abs{v_1}-\abs{v_2}$
-\end{description}
 
 \section{Prodotto tra vettori}
 \label{sec:prodottotravect}
@@ -394,13 +351,7 @@ La posizione e direzione di un vettore sono fondamentali per capire come essi ag
   \label{eq:scalare}
   a\cdot b=a\cdot\abs{b_p}
 \end{equation}
-Di cui $\abs{b_p}$ è il componente di $b//ad\text{ }a$
-\begin{figure}[ht!]
-  \centering
-  \includegraphics{img/scalare.eps}
-  \caption{prodotto vettoriale scalare}
-  \label{fig:prodvectscal}
-\end{figure}
+
 \begin{equation}
   \label{eq:scalare2}
   a\cdot b= a\cdot b\cdot \cos \alpha
@@ -425,11 +376,6 @@ di cui, $a_n$ è componente di $a \bot a b$.
   \label{eq:veldopuntemptacvar}
   v=v_0+\int^t_{t_0}a(t)dt
 \end{equation}
-In questo caso ci le variabili in gioco sono:
-\begin{itemize}
-\item $t_0\to$ interno iniziale;
-\item $v_0\to$ velocità iniziale.
-\end{itemize}
 
 
 \subsection{Forza di attrito}
@@ -449,12 +395,6 @@ In questo caso ci le variabili in gioco sono:
     f_k=\mu_kN
   \end{equation}
 \end{multicols}
-Forza che si origina quando due campi a contatto diretto sono fatti souegare uno con l'altro.
-\begin{itemize}
-\item $N=$ forza normale esercitata dal piano (\textit{appena alla forza peso})
-\item $\mu_s=$ Coefficiente di attrito statico;
-\item $\mu_s=$ Coefficiente di attrito dimamico.
-\end{itemize}
 
 \section{Piano inclinato}
 \label{sec:pianoinclinato}
@@ -471,7 +411,6 @@ Forza che si origina quando due campi a contatto diretto sono fatti souegare uno
   \begin{equation*}
     a_x=g\cdot \sin(\alpha)
   \end{equation*}
-  in cui $g$ è la forza di gravità, mentre, $\alpha$ è l'angolo del piano.
   
   \subsubsection{Angolo d'altezza e lunghezza}
   \label{sec:angolodaltelung}
@@ -503,15 +442,12 @@ Forza che si origina quando due campi a contatto diretto sono fatti souegare uno
     v_{0y}=v_0\sin(\alpha)
   \end{cases}
 \end{equation}
-Per questo mtivo per ottenere la velocità può essere utilizzato il teorema di pitagora:
 \begin{equation*}
   v=\sqrt{v_{0x}^2+v_{0y}^2}
 \end{equation*}
-Tramite $v_{0x}^2$ e $v_{0y}^2$ è possibile essere anche utilizzato per ricavare la tangente:
 \begin{equation*}
   \tan(\alpha)=\frac{v_{0x}}{v_{0y}}
 \end{equation*}
-L'equazione parametrica base invece è definita da due cordinete (\textit{x} e \textit{y}):
 \begin{equation}
   \label{eq:eqbasemotopar}
   \begin{cases}
@@ -519,7 +455,6 @@ L'equazione parametrica base invece è definita da due cordinete (\textit{x} e \
     y=-\frac{1}{2}gt^2+v_{0y}t+y_0
   \end{cases}
 \end{equation}
-Per ricavare il tempo, sarà invece necessario:
 \begin{equation}
   \label{eq:tempomotopar}
   t=\frac{v_0\sin(\alpha)\pm \sqrt{v_0^2\sin^2(\alpha)+2gy_0}}{g}
@@ -528,7 +463,6 @@ Per ricavare il tempo, sarà invece necessario:
 \subsection{Traiettoria del moto parabolico}
 \label{sec:traietmotopar}
 
-Per calcolare la traiettoria è necessario mettere il tempo $t$ e lo spazio $y$ è necessario:
 \begin{eqnarray}
   \label{eq:traietdelmotopar}
   \begin{cases}
@@ -549,23 +483,10 @@ Per calcolare la traiettoria è necessario mettere il tempo $t$ e lo spazio $y$ 
 \subsection{Forza costante}
 \label{sec:forcostlav}
 
-\begin{defi}
-  Il lavoro è il prodotto scalare tra la forza applicata ad un corpo e l spostamento compiuto da essa.
-  \begin{equation}
-    \label{eq:lavoro}
-    L=(F\cdot \cos \alpha) \Delta s
-  \end{equation}
-  \begin{itemize}
-  \item $F=$ modulo del vettore forza;
-  \item $\Delta s=$ spostamento lungo un asse;
-  \item $\alpha=$ angolo tra forza e spostamento.
-  \end{itemize}
-  quello che mai moltiplicano allo spostamento è {\color{red}la componente del vettore forza \textsc{parallela allo spostamento}}, dunque:
-  \begin{eqnarray*}
-    \text{>se } \alpha = 0, \Rightarrow L = F\cdot \Delta s & \text{\color{red}Forza parallela a spostameto}\\
-    \text{>se } \alpha = 90^o, \Rightarrow L = 0 & \text{\color{red}Forza perpendicolare a spostamento} 
-  \end{eqnarray*}
-\end{defi}
+\begin{equation}
+  \label{eq:lavoro}
+  L=(F\cdot \cos \alpha) \Delta s
+\end{equation}
 
 \subsection{Forza variabile}
 \label{sec:forzavarlav}
@@ -573,10 +494,6 @@ Per calcolare la traiettoria è necessario mettere il tempo $t$ e lo spazio $y$ 
   \label{eq:forzavarlav}
   L_{1,2}=\int_{x_1}^{x_2}F(x)dx
 \end{equation}
-\begin{description}
-\item[$x_{1,2}$ =] delimitano lo spazio entro cui vogliamo conoscere il lavoro compiuto da $F(x)$. 
-\end{description}
-Il lavoro compiuto da una forza è uguale all'asse sotto al grafico $F(x)-x$
 
 \subsubsection{Unità di misura}
 \label{sec:joule}
@@ -593,9 +510,6 @@ Il lavoro compiuto da una forza è uguale all'asse sotto al grafico $F(x)-x$
   \label{eq:lavista}
   dL=(F\cdot \cos \alpha)ds
 \end{equation}
-\begin{description}
-\item[$ds=$] spostamento infinitesimo
-\end{description}
 
 \section{Potenza}
 \label{sec:potenza}
@@ -615,18 +529,7 @@ Il lavoro compiuto da una forza è uguale all'asse sotto al grafico $F(x)-x$
     P=\frac{dL}{dt}
   \end{equation}
 \end{multicols}
-\begin{itemize}
-\item Se la pontenza è costante:
-  \begin{equation}
-    \label{eq:potconst}
-    L=P\Delta t
-  \end{equation}
-\item Unità di misura:
-  \begin{equation}
-    \label{eq:unitadimisura}
-    \frac{1 Joule}{1s}=1W
-  \end{equation}
-\end{itemize}
+
 
 \section{Energia cinetica}
 \label{sec:energiacin}
@@ -634,11 +537,6 @@ Il lavoro compiuto da una forza è uguale all'asse sotto al grafico $F(x)-x$
   \label{eq:energiacin}
   k=\frac{1}{2} mv^2
 \end{equation}
-\begin{itemize}
-\item $m=$ massa;
-\item $v=$ velocità.
-\end{itemize}
-
 \subsection{Teorema Lavoro-Energia}
 \label{sec:teoLavEn}
 
@@ -646,47 +544,6 @@ Il lavoro compiuto da una forza è uguale all'asse sotto al grafico $F(x)-x$
   \label{eq:teoLavEn}
   L=k-k_0
 \end{equation}
-\begin{description}
-\item[$L=$] lavoro totale della forza \textsc{Risultante}
-\item[$k=$] Energia cinetica finale
-\item[$k_0=$] Energia cinetica iniziale
-\end{description}
-Il lavoro svolto da una forza in una particella è uguale alla sua variazione di energia cinetica.
-\begin{itemize}
-\item Questo teorema permette di traciare il lavoro anche quando la forza non varia solo in modulo, \textsc{senza nessun integrale}. 
-\end{itemize}
-
-\subsection{Forze conservative e non conservative}
-\label{sec:forconsenon}
-\begin{itemize}
-\item Conservative
-  \begin{itemize}
-  \item Durante il moto si conserva l'energia meccanica
-  \item Il lavoro dipende solo dalla spostamento totale
-  \item Il lavoro nello spostare un corpo lungo oercirsi kuberi è 0
-  \end{itemize}
-\item Non conservative
-  \begin{itemize}
-  \item Durante il moto \textsc{Non} si conserva l'energia meccanica;
-  \item Il lavoro dipende dal percorso;
-  \item Il lavoro dipende anche dal percorso effettuato. 
-  \end{itemize}
-\end{itemize}
-I sostanza, una forza è conservativa se:
-\begin{itemize}
-\item Il lavoro da essa eseguito nello spostare un corpo dipede solo dallo spostamento totale, \textsc{Non} dal percorso.
-\item Il lavoro da esso compiuto nello spostare un corpo lungo una linea chiusa è nullo (l'energia cinetica tarna la stessa di prima)
-  \begin{equation*}
-    L=\Delta k=0
-  \end{equation*}
-\end{itemize}
-
-\subsubsection{Ricora}
-\label{sec:ricLavposandNeg}
-\begin{center}
-  Lavoro Positivo $\Longleftrightarrow$ Aumenta energia cinetica\\
-  Lavoro Negativa $\Longleftrightarrow$ Diminuisce energia cinetica
-\end{center}
 
 \section{Energia Potenziale}
 \label{sec:enpot}
@@ -695,10 +552,6 @@ I sostanza, una forza è conservativa se:
   \label{eq:enpot}
   \Delta k=-\Delta U
 \end{equation}
-\begin{description}
-\item[$\Delta k=$] variazione energia cinetica
-\end{description}
-a una variazione di $k$, ne corrisponderà una in senso apposto di $U$
 \begin{equation}
   \label{eq:differenzak}
   k_x-k_{x_0}=-(U_x-U_{x_0})
@@ -711,10 +564,6 @@ a una variazione di $k$, ne corrisponderà una in senso apposto di $U$
   \label{eq:enmecc}
   E=k+U
 \end{equation}
-\begin{itemize}
-\item $k=$ energia cinetica
-\item $U=$ energia potenziale
-\end{itemize}
 
 \subsection{Legge di conservazione dell'energia meccanica}
 \label{sec:leggconsenmec}
@@ -727,11 +576,9 @@ a una variazione di $k$, ne corrisponderà una in senso apposto di $U$
   \begin{equation*}
     \Delta U=-\int_{x_0}^xF(x)dx
   \end{equation*}
-  l'energia potenziale è una funzione di posizione la cui derivata (\textsc{conbiata di segno}) da la forza.\\
   \begin{equation*}
     F(x)=-\frac{dU(x)}{dx}
   \end{equation*}
-  la forza (\textsc{cambiata di segno}) rappresenta la rapidità con cui l'energia potenziale varie lungo $x$.
 \end{multicols}
 
 \subsection{Energia potenziale gravitazionale}
@@ -741,11 +588,6 @@ a una variazione di $k$, ne corrisponderà una in senso apposto di $U$
   U_y-U_0=mgy\\
   U(y)=mgy
 \end{equation}
-\begin{description}
-\item[$y=$] posizione sull'asse verticale;
-\item[$g=$] $9.8\sfrac{m}{s^2}$ oppure $9.81\sfrac{m}{s^2}$ dipende da diversi fattori
-\item[$m=$] massa
-\end{description}
 \begin{equation*}
   U_y-U_0=\int_y^0F(y)dy=\int_y^0(-mg\cdot y)=mgy
 \end{equation*}
@@ -763,38 +605,16 @@ a una variazione di $k$, ne corrisponderà una in senso apposto di $U$
 \begin{equation*}
   L_{non-cons.}=\Delta{}(k+U)=\Delta{}E
 \end{equation*}
-la presenza di forza non conservative comporta una variazione dell'energia meccanica totale del sistema
-\begin{itemize}
-\item Il teorema lavoro energia può essere scirtto come:
-  \begin{equation*}
-    L_{non-cons.}=\Delta{}k+\sum\Delta{}U
-  \end{equation*}
-\end{itemize}
-\begin{description}
-\item[$\sum\Delta U$] contributo di tutte le forze conservative presenti
-\end{description}
 
 \subsection{Legge di conservazione dell'energia}
 \label{sec:leggconsen}
 
 \subsection{Centro di massa}
 \label{sec:centdimassa}
-
-Coordinata su un solo asse (del centro di massa di un sistem di n particelle)
 \begin{equation}
   \label{eq:centdimassa}
   x_{cm}=\frac{\sum m_ix_i}{\sum m_i}
 \end{equation}
-\begin{itemize}
-\item $\sum m_ix_i=$ sommatoria delle masse di ogni particella moltiplicate per la loro porzione in un asse;
-\item $\sum m_i=$ massa totale del sistema.
-\end{itemize}
-Il centro di massa è del tutto indipendnete dal sistema di coordinate usato, ma dipende solo dalle distanze relative tra le particelle e dalle toro mane.
-\begin{itemize}
-\item È adattabile solo quando si ha $\alpha$ che fare con il moto \textsc{traslatorio};
-\item È una sorta di media pounderata.
-\end{itemize}
-Nel caso di 2 o 3 dimensioni, si calcolano separatamente le coordinate del centro di massa in ogni asse con la stessa formula.
 
 \subsubsection{coordinate centro di massa (carpo esteso e di materia uniforme)}
 \label{sec:coordcentdimassa}
@@ -803,16 +623,10 @@ Nel caso di 2 o 3 dimensioni, si calcolano separatamente le coordinate del centr
   \label{eq:coordcentdimassa}
   x_{cm}=\lim\limits_{\Delta m_i\to 0}= \frac{\sum m_ix_i}{\sum m_i}
 \end{equation}
-\begin{description}
-\item[$m=$] massa totale del corpo
-\end{description}
+
 \begin{equation*}
   x_{cm}=\frac{\int x dm}{\int dm}=\frac{1}{M}\cdot \int x dm
 \end{equation*}
-\textsc{Fai lo stesso calcolo su tutti gli assi presenti}
-\begin{center}
-  Centro di massa = Baricentro
-\end{center}
 
 \subsubsection{Equazione vettoriale del centro di massa}
 \label{sec:eqvettdelcentrodimassa}
@@ -821,10 +635,6 @@ Nel caso di 2 o 3 dimensioni, si calcolano separatamente le coordinate del centr
   \label{eq:eqvettdelcentrodimassa}
   \vec{s}_{cm}=\frac{\int \vec{s}dm}{\int dm}
 \end{equation}
-\begin{description}
-\item[$\vec{s}=$] vettore posizione 
-\end{description}
-Tieni a mente che molti dei carpi che potresti deve trattare sono dettati di assi, punti o piani di {\color{red}simmetria}, uniti per individuare il centro di massa (in quel punto, lungo quella linea, \dots).
 
 \subsubsection{Accelerazione del centro di massa (di un sistema di particelle)}
 \label{sec:accdelcentrodimass}
@@ -832,7 +642,6 @@ Tieni a mente che molti dei carpi che potresti deve trattare sono dettati di ass
   \label{eq:accdelcentrodimass}
   M_{cm_x}=\sum F_i = \sum m_i\frac{dV_{i_x}}{dt}
 \end{equation}
-Il prodotto della massa complessivo del gruppo di particelle per l'accelerazione del centro di massa è uguale alla somma vettariale di tutte le forze che agiscono sul sistema di sistema di porticella (\textsc{incluse quelle interne}).
 
 \subsubsection{Legge del moto traslatorio del centro di massa}
 \label{sec:leggedelmottrasldelcndimassa}
@@ -840,14 +649,6 @@ Il prodotto della massa complessivo del gruppo di particelle per l'accelerazione
   \label{eq:leggedelmottrasldelcndimassa}
   F_{est}=Ma_{cm}
 \end{equation}
-\begin{description}
-\item[$f_{est}=$] risultante forza esterne;
-\item[$M=$] massa totale sistema;
-\item[$a=$] accelerazione centro di massa.
-\end{description}
-\begin{nota}
-  Qualsiasi sia il sistema di particelle e qualsiasi configurazione esso abbia, esso si muoverà sempre secondo questa legge.
-\end{nota}
 
 \subsection{Quantità di moto}
 \label{sec:quantmoto}
@@ -856,39 +657,16 @@ Il prodotto della massa complessivo del gruppo di particelle per l'accelerazione
   \label{eq:quantmoto}
   \vec{P}=mv
 \end{equation}
-Parte a una nuova difinizione per la forza:
 \begin{equation*}
   \vec{F}=\frac{d\vec{P}}{dt}
 \end{equation*}
-$F=ma$ infatti, è utilizzabile solo se la massa è costante.
-\begin{itemize}
-\item La quantità di moto totale di un sistema equivale alla somma \textsc{Vettoriale} di tutte le quantità di moto;
-\item Quantità di moto totale di un sistemaç massa totale $\cdot$ velocità centro di massa:
-  \begin{equation*}
-    P_{Tot}=M\cdot V_{cm}
-  \end{equation*}
-\end{itemize}
-La quantità di moto di un sistem isolato \textsc{si conseva}, in quanto non subisce forze esterne. (viceversa, la quantità di moto può essere variata solo da forze esterne al sistema).
-\begin{itemize}
-\item le quantità di massa della singole particelle possono variare, ma non in totale
-\end{itemize}
+\begin{equation*}
+  P_{Tot}=M\cdot V_{cm}
+\end{equation*}
+
 \begin{equation*}
   \frac{d\vec{P}}{dt}=F_{ext}
 \end{equation*}
-Il tempo di variazione della quantità di moto totale di un sistema di particelle è dato dalla rosiltante di tutte le forze esterne applicate al sistema.
-\begin{eqnarray*}
-  \vec{F}=\frac{d\vec{P}}{dt} & \text{Forza (istantanea)} = \frac{\text{variazione di quantità di moto (infinitesimo)}}{\text{Variare del tempo (infinitesimo)}}
-\end{eqnarray*}
-\paragraph{Enuncia questo se chiede la seconda legge di Newton}
-Condizioni per il moto di un sistema:
-\begin{center}
-  Conservazione energetica \textrightarrow{} 1 (scalabile)\\
-  Conservazione quantità di moto \textrightarrow{} 3 (vettoriale, un equazione per ogni coordinata)
-\end{center}
-
-\paragraph{Forza impulsiva:}
-
-Agisce in tempo brevissimi con un intensità molto elevata, di solito riscontrata negli urti (\textsc{Internità varia nel tempo})
 
 \subsection{Teorema dell'impulso -- quantità di moto}
 \label{sec:teodelimpquantmoto}
@@ -896,23 +674,6 @@ Agisce in tempo brevissimi con un intensità molto elevata, di solito riscontrat
   \label{eq:teoremadelimp}
   \vec{J}=\int_{t_1}^{t_2}F(t) dt=\Delta P
 \end{eqnarray}
-\begin{description}
-\item[$J=$] ``impulso'';
-\item[$\Delta P=$] Variazione quantità di moto.
-\end{description}
-La variazionem di quantità di moto cui è sottoposto un corpo in cui agisce una forza impulsiva è uguale all'inpulso.
-\begin{itemize}
-\item L'impulso è un vettore il cui modulo equivale all'asse sotto al grafico $F(t)-t$
-\item La direzione dov'essere costante.
-\end{itemize}
-
-\subsubsection{Urti}
-\label{sec:urti}
-\begin{description}
-\item[Elastici] L'energia cinetica (totale) si conserva e la quantità di moto si conserva;
-\item[Anaelastici] L'energia cinetica non si conserva e la quantità di moto si conserva;
-\item[Completamente anelastici] corpi rimangorno attaccati
-\end{description}
 
 \subsection{Urto elastico a 2 dimensioni}
 \label{sec:urtela2dim}
@@ -920,18 +681,13 @@ La variazionem di quantità di moto cui è sottoposto un corpo in cui agisce una
   \label{eq:urtela2dim}
   V_1+V_1=V_2+V_2
 \end{equation}
-\begin{nota}
-  la velocità della massa1 resta uguale prima e dopo l'urto esattamente come succede nel caso della massa2.
-\end{nota}
 \begin{equation}
   \label{eq:differenzatravel}
   V_1-V_2=V_2-V_1
 \end{equation}
-Le differenze di velocità di ognuno delle masse prima e dopo l'urto sono uguali e contrarie
 \begin{equation*}
   \frac{1}{2}m_1V_1^2+\frac{1}{2}m_2V_2^2=\frac{1}{2}m_1V_1^2+\frac{1}{2}m_2V_2^2
 \end{equation*}
-Per ottenere le velocità, metti a sistema questa equazione con quella in cima.
 
 \subsubsection{Velocità urto completamente anelastico}
 \label{sec:velurtocompan}
@@ -949,10 +705,6 @@ Per ottenere le velocità, metti a sistema questa equazione con quella in cima.
   \label{eq:angrad}
   \theta = \frac{s}{R}
 \end{equation}
-\begin{description}
-\item[$s=$] arco su cui insiste l'angolo $\theta$
-\item[$R=$] raggio della circonferenza
-\end{description}
 
 \subsection{Velocità angolare media}
 \label{sec:velangmedia}
@@ -960,10 +712,6 @@ Per ottenere le velocità, metti a sistema questa equazione con quella in cima.
   \label{eq:velangmedia}
   <\omega>=\frac{\Delta \theta}{\Delta t}
 \end{equation}
-\begin{description}
-\item[$\Delta \theta$] variazione angolare
-\item[$\Delta t=$] intervallo di tempo
-\end{description}
 
 \subsection{Velocità angolare istantanea}
 \label{sec:velangist}
@@ -980,7 +728,6 @@ Per ottenere le velocità, metti a sistema questa equazione con quella in cima.
   \label{eq:accangmedia}
   \alpha=\frac{\Delta \omega}{\Delta t}
 \end{equation}
-Di cui istantaneo: $\alpha=\lim\limits_{\Delta t\to 0}\frac{\Delta \omega}{\Delta t}=\frac{d\omega}{dt}$
 
 \subsection{Moto con accelerazione angolare costante}
 \label{sec:motconaccelangcost}
@@ -999,9 +746,6 @@ Di cui istantaneo: $\alpha=\lim\limits_{\Delta t\to 0}\frac{\Delta \omega}{\Delt
   \label{eq:vellindipartcorprigid}
   V=r\omega
 \end{equation}
-\begin{description}
-\item[$r=$] distanza da asse di rotazione
-\end{description}
 
 \subsection{Accelerazione lineare di particella parte di un corpo rigido}
 \label{sec:acclindipartcorprigid}
@@ -1009,10 +753,6 @@ Di cui istantaneo: $\alpha=\lim\limits_{\Delta t\to 0}\frac{\Delta \omega}{\Delt
   \label{eq:acclindipartcorprigid}
   a_T=r \alpha
 \end{equation}
-\begin{description}
-\item[$a_T=$] Accelerazione tangente alla traslatoria
-\item[$\alpha=$] accelerazione angolare
-\end{description}
 
 \subsection{Momento di inerzia del corpo rigido}
 \label{sec:mominidelcorporigid}
@@ -1024,10 +764,6 @@ Di cui istantaneo: $\alpha=\lim\limits_{\Delta t\to 0}\frac{\Delta \omega}{\Delt
     I=\int r^2dm
   \end{matrix}
 \end{equation}
-\begin{itemize}
-\item È la sommatoria del prodotto della massa e della porzione rispetto all'asse al quadrato di tutto le particelle del corpo preso in condensazione. {\color{red}Equazione alla massa nel moto rotatorio}
-\item La formula diventa un'integrale per i corpi di materiale informe\footnote{È come dividere il corpo in unità di massa minuscole, duncque è un'integrale di volume}
-\end{itemize}
 
 \subsection{Energia cinetica di un corpo in rotazione}
 \label{sec:encindiuncorinrot}
@@ -1036,7 +772,6 @@ Di cui istantaneo: $\alpha=\lim\limits_{\Delta t\to 0}\frac{\Delta \omega}{\Delt
   \label{eq:encindiuncorinrot}
   K_{tot}=\frac{1}{2}I\omega^2
 \end{equation}
-Somma di tutte le energie cinetiche di tutte le parti di cui è composto il corpo.
 
 \subsection{Momento della forza}
 \label{sec:momdellaforz}
@@ -1048,11 +783,9 @@ Somma di tutte le energie cinetiche di tutte le parti di cui è composto il corp
     r=r F\sin \theta
   \end{matrix}
 \end{equation}
-Prodotto vettoriale tra le forze applicata a un corpo per farlo muovere ($F$) e la distanza dal riferimento $O$, ovvero dall'asse di rotazione del corpo ($r$).
 \begin{equation*}
   \boxed{r=I\alpha}
 \end{equation*}
-Questa forma è data dalla onaloga con $F=ma$.
 
 \subsection{Momento di un particella}
 \label{sec:momdiunpart}
@@ -1074,8 +807,6 @@ Questa forma è data dalla onaloga con $F=ma$.
 
 \subsubsection{Principio di conservazione del momento ongolare}
 \label{sec:princdiconsdelmomang}
-
-Se la risultante dei momenti applicati al sistema di particelle è nulla, ad esempio, in un sistema isolato\dots{}
 \begin{equation*}
   I\omega=\text{costante}
 \end{equation*}
@@ -1083,20 +814,6 @@ Se la risultante dei momenti applicati al sistema di particelle è nulla, ad ese
 \subsection{Momenti di inerzia da ricordare}
 \label{sec:momdiinerziadaric}
 \begin{multicols}{2}
-  \subsubsection{Cilindro pieno}
-  \label{sec:cilpiandove}
-  \begin{description}
-  \item[$l=$] lunghezza
-  \item[$R=$] raggio variazione
-  \item[$m=$] massa
-  \end{description}
-  
-  \subsubsection{Sbarra sottile}
-  \label{sec:sbarrasottile}
-  \begin{description}
-  \item[$l=$] lunghezza
-  \item[$m=$] massa
-  \end{description}
   
   \subsubsection{Rotazione rispetto all'asse del cilindro}
   \label{sec:rotrispalassdelcil}
@@ -1132,11 +849,6 @@ Se la risultante dei momenti applicati al sistema di particelle è nulla, ad ese
     \label{eq:sperapiena}
     I=\frac{2nR^2}{5}
   \end{equation}
-  dove:
-  \begin{description}
-  \item[$R=$] raggio
-  \item[$m=$] massa
-  \end{description}
   
   \subsubsection{Superficie sferica (rispetto a diametro qualunque)}
   \label{sec:supersferica}
@@ -1154,16 +866,6 @@ Se la risultante dei momenti applicati al sistema di particelle è nulla, ad ese
   m\frac{d^{\prime\prime}x}{dt^2}+kx=0
 \end{equation}
 
-\paragraph{Oscillazione armonica}
-
-sistema isolato con una massa e una molla in movimento.
-\begin{itemize}
-\item Trattandosi di una \underline{equazione differenziale}, è risalto da una funzione.
-\item Per ogni fenomeno governato da questa equazione, il eriodo di oscillazione dipejnde solo dalla massa m e dalla costante elastica k
-  \begin{equation*}
-    T=2\pi\sqrt{\frac{m}{k}}
-  \end{equation*}
-\end{itemize}
 
 \subsection{Oscillatore armonico}
 \label{sec:oscarm}
@@ -1176,11 +878,6 @@ sistema isolato con una massa e una molla in movimento.
   \label{eq:leggedihook}
   F=-kx
 \end{equation}
-\begin{description}
-\item[$x=$] ollungamento (in moti) o deformazione;
-\item[$k=$] costante elastica, dipende dalle caratteristiche della molla.
-\end{description}
-La forza elastica è sempre opposta alla deformazione
 
 \subsection{Energia potenziale}
 \label{sec:enpotenz}
@@ -1188,14 +885,6 @@ La forza elastica è sempre opposta alla deformazione
   \label{eq:enpotenz}
   U=\frac{1}{2}kx^2
 \end{equation}
-\begin{itemize}
-\item L'oscillatore ormonico è un sistema consecutivo, dunque \underline{l'energia meccanica si consecutivo}
-\item L'energia potenziale è minima nella posizione di equilibrio stabile
-  \begin{equation}
-    \label{eq:enpotenz2}
-    x=0
-  \end{equation}
-\end{itemize}
 
 \subsection{Legge del moto armonico}
 \label{sec:leggdelmotarmo}
@@ -1204,17 +893,10 @@ La forza elastica è sempre opposta alla deformazione
   \label{eq:leggdelmotarmo}
   x(t)=A\cdot \cos(\omega t+\delta)
 \end{equation}
-\begin{description}
-\item[$A=$] ampiezza massima, dipende dall'oscillazione impieno all'inizio del moto;
-\item[$\delta=$] costante di forza, dipende dalla velocità iniziale della massa;
-\item[$\omega=$] pulsazione/frequenza angolare, ha le dimensioni di una velocità angolare.
-\end{description}
-Questa è la funzione che riserve l'equazione differenziale di prima
 \begin{equation}
   \label{eq:leggedelmotarmo2}
   (\omega t+\delta)=\text{fase del moto}
 \end{equation}
-Siccome la funzione coseno è limitata tra -1 e 1 (compressi), la posizione $x(t)$ sarà limitata tra $-A$ e $A$
 \begin{equation*}
   -1<\cos x \leq 1 \Longrightarrow -A\leq x(t)\leq A
 \end{equation*}
@@ -1232,14 +914,10 @@ Siccome la funzione coseno è limitata tra -1 e 1 (compressi), la posizione $x(t
   \end{equation*}
   È misurato in Hz
 \end{multicols}
-Queste definizioni vengono dall'equazione differenziale.
 
 \subsubsection{Pulsazione}
 \label{sec:pulsazione}
 
-\begin{defi}
-  La pulsazione in Fisica è una grandezza che misura la velocità con cui viene effettuata l'oscillazione completa.
-\end{defi}
 \begin{eqnarray}
   \label{eq:pulsazione}
   \omega=\frac{2\pi}{T}; \omega=2\pi f
@@ -1283,14 +961,12 @@ Queste definizioni vengono dall'equazione differenziale.
     k=\frac{1}{2}mv^2=\underbrace{\frac{1}{2}k}_{\omega^2\cdot m}A^2\sin^2(\omega t*\delta) & \omega=\frac{k}{m}
   \end{matrix}
 \end{equation}
-Valore massimo $k$: $\frac{1}{2}kA^2$ -- ma $\omega=2\pi f$ può dipendere anche dalla frequenza quindi è calcolabile anche con la formula ripotata ad inizio riga.
 \begin{multicols}{2}
   \subsubsection{Energia potenziale}
   \label{sec:enpotmotoarm}
   \begin{equation*}
     U=\frac{1}{2}kA^2\cos^2(\omega t +\delta)
   \end{equation*}
-  Valore massimo $U$: $\frac{1}{2}kA^2$
   
   \subsubsection{energia meccanica}
   \label{sec:enmecmotoarm}
@@ -1347,12 +1023,6 @@ dove:
   \label{eq:leggedelmotoarmforz2}
   G=\sqrt{m^2(\omega^{\prime\prime}-\omega^2)^2+b^2\omega^{\prime\prime2}} &e& \alpha=\arccos\left(\frac{b\omega^{\prime\prime}}{G}\right)
 \end{eqnarray}
-\begin{description}
-\item[$\omega^{\prime\prime}=$] frequenza imposta dalla forza;
-\item[$\omega=$] frequenza propria del sistema, dipende da $k$ e $m$
-\item[$b=$] coefficiente d'attrito del sistema
-\item[$\alpha=$] forza iniziale
-\end{description}
 
 \chapter{Pendoli}
 \label{chap:pendoli}
@@ -1366,10 +1036,6 @@ dove:
   \label{eq:pensem}
   T=2\pi\sqrt{\frac{l}{g}}
 \end{equation}
-\begin{description}
-\item[$l=$] Lunghezza fune;
-\item[$g=$] gravità.
-\end{description}
 
 \subsection{Componente attiva della forza peso}
 \label{sec:componenteattdelforzapeso}
@@ -1381,9 +1047,7 @@ dove:
     \frac{mg}{L}
   \end{pmatrix}x
 \end{equation}
-\begin{description}
-\item[$x=$] spostamente del moto armonico
-\end{description}
+
 \section{Pendolo di torsione}
 \label{sec:penditors}
 
@@ -1415,32 +1079,10 @@ dove:
     T=2\pi\sqrt{\frac{I}{x}}
   \end{equation}
 \end{multicols}
-\begin{itemize}
-\item \textsc{Analoga al caso lineare!}
-\item $I=$ momento di inerzia
-\item $x=$ costante di torsione {\color{red}(dipende dalle proprietà del filo)}
-\end{itemize}
 
 \subsection{Onde}
 \label{sec:onde}
-\begin{figure}[ht!]
-  \centering
-  \input{img/onde.tikz}
-  \caption{tipologie di onde}
-  \label{fig:tiponde}
-\end{figure}
 
-\paragraph{Propagazione:}
-Le onde si dividono anche in piane (si propagano in una direzione) e sferiche (si propagano in tutte le dimensioni) -- lontano della sorgente passano essere considerate piene.
-
-\subsubsection{Dimensioni}
-\label{sec:ondim}
-\begin{itemize}
-\item Unidimensionali;
-\item Bidimensionali;
-\item Tridimensionali.
-\end{itemize}
-Dipende dalla dimensione del mezzo.
 
 \subsection{Equazione di onda sinusoidale}
 \label{sec:eqsin}
@@ -1465,11 +1107,6 @@ Dove:
     k=\frac{2\pi}{T}
   \end{equation}  
 \end{multicols}
-\begin{description}
-\item[$T=$] periodo, tempo necessario a una fase qualsiasi per percorrere $1\lambda$
-\item[$\lambda=$] distanza tra due punti con una stessa \underline{fase};
-\item[$\psi=$] ``angolo di fase'', dipende dalla posizione in $y$ per $x=0$ e $t=0$.
-\end{description}
 
 \subsubsection{Equazione per la teoria}
 \label{sec:teoonde}
@@ -1490,50 +1127,30 @@ Dove:
   \end{matrix}
   $
 \end{itemize}
-\begin{multicols}{2}
-  \subsubsection{Velocità di fase}
-  \label{sec:velfase}
-  \begin{equation}
-    \label{eq:velfase}
-    V=\frac{\lambda}{T}
-  \end{equation}
-  \begin{nota}
-    La velocità di fase è la velocità di una qualsiasi fase dell'onda ({\color{red}ovvero la sua velocità di propagazione})
-  \end{nota}
-\end{multicols}
-di cui:
+
+\subsubsection{Velocità di fase}
+\label{sec:velfase}
+\begin{equation}
+  \label{eq:velfase}
+  V=\frac{\lambda}{T}
+\end{equation}
+
 \begin{equation*}
   \lambda=VT=\frac{V}{f}
 \end{equation*}
-In ogni punto $x_0$, l'equazione $y(t)$ diventa l'equazione di un moto armonico di periodo $T=\frac{2\pi}{\omega}$
-\begin{multicols}{2}
-  \begin{equation*}
-    V=\sqrt{\frac{F}{\mu}}
-  \end{equation*}
-  \begin{nota}
-    Nell'esempio di una corda:
-    \begin{description}
-    \item[$F=$] forza con cui la tendono $\left[n<T^{-2}\right]$
-    \item[$\mu=$] massa dell'unità di lunquezza della corda $\left[LT^{-1}\right]$
-    \end{description}
-  \end{nota}
-\end{multicols}
-La velocità di propagazione di un'onda dipende dalle proprietà fisiche del mezo
+
 
 \subsection{Potenza}
 \label{sec:potenza}
 
-In questo caso {\color{red}non è costante}, dato che varia la potenza della sorgente del moto ondulatorio.
 \begin{equation}
   \label{eq:potenza}
   <P>= 2\pi^2y_m^2f^2\mu V
 \end{equation}
-La potenza trasmessa attraversa una superficie unitaria ortogonale alla direzione di proporzione dell'onda è detta {\color{red}intensità dell'onde (I)}
 
 \subsection{Serie di Fourer}
 \label{sec:fourer}
 
-Qualsiasi onda periodico, per il principio disovrapposizione, può esserescomposta come una somma di ``componenti ormoniche'', ovvero componenti sinusoidali
 \begin{equation}
   \label{eq:fourer}
   \begin{matrix}
@@ -1559,10 +1176,7 @@ data dalla massa di onda incidente e onda rilessa.
   \label{eq:freqnot}
   f=\underbrace{\frac{n}{2l}}_\lambda\underbrace{\sqrt{\frac{F}{\mu}}}_{v}
 \end{equation}
-Questa formula proviene da $f=\frac{v}{\lambda}$.
-\begin{description}
-\item[$n \in \mathds{N}$] numero intero di $\frac{\lambda}{2}$ presenti in una conda di lunghezza $l$
-\end{description}
+
 \begin{equation}
   \label{eq:freqnot2}
   \begin{matrix}
@@ -1583,15 +1197,6 @@ Frequenza udibile dall'uomo: $20Hz\to 20.000Hz$
   \label{eq:veldiprop}
   V=\sqrt{\frac{B}{\sigma_0}}
 \end{equation}
-\begin{description}
-\item[$\omega=$] sigma
-  \begin{equation*}
-    B=-\frac{V\Delta P}{\Delta V}
-  \end{equation*}
-\item[$\sigma_0=$] è la densità del fluido indisturbato;
-\item[$B=$] Modulo di compressione del corpo;
-\item[$\Delta P$=] variazione di pressione sul corpo.
-\end{description}
 
 \subsection{Equazione di un'onda sonora}
 \label{sec:ondson}
@@ -1600,18 +1205,10 @@ Frequenza udibile dall'uomo: $20Hz\to 20.000Hz$
   \label{eq:ondson}
   y=y_m\cos(kx-\omega t)
 \end{equation}
-\textit{$y$ è uno spostamento} \textsc{Longitudinale!} -- dove:
 \begin{eqnarray}
   \label{eq:ondson2}
   k=\frac{2\pi}{\lambda} & \omega = \frac{2\pi}{T}
 \end{eqnarray}
-\begin{nota}
-  l'onda di spostamento è sfasato di $90^o$ rispetto all'onda di pressione\\
-  dati un $t$ e una $x$:
-  \begin{center}
-    Spostamento massimo $\Leftrightarrow$ Pressione nulla
-  \end{center}
-\end{nota}
 
 \subsubsection{Variazione di pressione del mezzo (rispetto a un punto $P_0$)}
 \label{sec:vardipresdelmezzo}
@@ -1657,7 +1254,6 @@ dove $P$ è l'ampiezza di pressione:
   \label{eq:avvidipdalvel}
   v_s=343\frac{m}{s}
 \end{equation}
-Per $v_s$ si intende la velocità effettiva del suono, una costante definita.
 \subsubsection{Avvicinamento punto di riferimento}
 \label{sec:avvi}
 
@@ -1673,39 +1269,5 @@ Per $v_s$ si intende la velocità effettiva del suono, una costante definita.
   \label{eq:allpuntodiriferimento}
   f_2=\frac{v_2}{v_s+v_e}\cdot f
 \end{equation}
-\begin{description}
-\item[$v_e=$] Velocità del erogatore;
-\item[$f=$] Frequenza effettiva del suono in uscita dal erogatore.
-\end{description}
-
-\chapter{Informazioni Utili}
-\label{chap:infoUtili}
-
-\section{Valori utili}
-\label{sec:valutili}
-
-\begin{table}[ht!]
-  \centering
-  \begin{tabular}{cll}
-    \textbf{Nome costante} & \textbf{Descrizione} & \textbf{Valore} \\\hline
-    c&Velocità della luce& $3\cdot 10^2m/s$\\\hline
-    h&Costante di plank & $6.6\cdot 10^{-34}J\cdot s$\\\hline
-    $e^-$ & Carica di elettrone & $1.6\cdot 10^{-19}C$\\\hline
-    $\varepsilon_0$ & Costante dielettrica nel vuoto & $8.8\cdot 10^{-7}F/m$\\\hline
-    $\mu_0$ & Perm. Magnetica nel vuoto & $4\pi \cdot 10^{-7}N/A^2$\\\hline
-  \end{tabular}
-  \caption{Valori utili}
-  \label{tab:valutili}
-\end{table}
-
-\section{Unità di misura}
-\label{sec:unitadimisura}
-\begin{eqnarray*}
-  \label{eq:unitadimisura}
-  Volt=\frac{J}{C} & V=\frac{kg\cdot m^2}{s^3\cdot A}\\
-  Farad=\frac{C}{V} & F=\frac{s^4\cdot A^2}{m^2\cdot kg}\\
-  Ohm=\frac{Volt}{ampere} & \Omega = \frac{\Delta V}{i}\\
-\end{eqnarray*}
-
 
 \end{document}

@@ -1,16 +1,16 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.7.14)  16 JUL 2024 20:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.7.14)  17 JUL 2024 21:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**formulario.tex
-(./formulario.tex
+**formulario-reti.tex
+(./formulario-reti.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
-(/usr/share/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+(/usr/share/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count188
 \c@chapter=\count189
@@ -865,64 +865,28 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(/usr/share/texmf-dist/tex/latex/xfrac/xfrac.sty
-Package: xfrac 2024-02-13 Split-level fractions
-
-(/usr/share/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
-(/usr/share/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate-2023-10-10.sty
-(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-02-20 L3 programming layer (loader) 
-
-(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count374
-\l__pdf_internal_box=\box75
-))
-Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen333
-\l__xtemplate_tmp_int=\count375
-\l__xtemplate_tmp_muskip=\muskip18
-\l__xtemplate_tmp_skip=\skip94
-))
-\l__xfrac_slash_box=\box76
-\l__xfrac_tmp_box=\box77
-\l__xfrac_denominator_bot_sep_dim=\dimen334
-\l__xfrac_numerator_bot_sep_dim=\dimen335
-\l__xfrac_numerator_top_sep_dim=\dimen336
-\l__xfrac_slash_left_sep_dim=\dimen337
-\l__xfrac_slash_right_sep_dim=\dimen338
-\l__xfrac_slash_left_muskip=\muskip19
-\l__xfrac_slash_right_muskip=\muskip20
-
-Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
-(xtemplate)             line 98.
-
-)
-(/usr/share/texmf-dist/tex/latex/doublestroke/dsfont.sty
-Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
-)
 (/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count376
-\lst@gtempboxa=\box78
+\lst@mode=\count374
+\lst@gtempboxa=\box75
 \lst@token=\toks48
-\lst@length=\count377
-\lst@currlwidth=\dimen339
-\lst@column=\count378
-\lst@pos=\count379
-\lst@lostspace=\dimen340
-\lst@width=\dimen341
-\lst@newlines=\count380
-\lst@lineno=\count381
-\lst@maxwidth=\dimen342
+\lst@length=\count375
+\lst@currlwidth=\dimen333
+\lst@column=\count376
+\lst@pos=\count377
+\lst@lostspace=\dimen334
+\lst@width=\dimen335
+\lst@newlines=\count378
+\lst@lineno=\count379
+\lst@maxwidth=\dimen336
 
 (/usr/share/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
 )
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
-\c@lstnumber=\count382
-\lst@skipnumbers=\count383
-\lst@framebox=\box79
+\c@lstnumber=\count380
+\lst@skipnumbers=\count381
+\lst@framebox=\box76
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/02/21 1.10 listings configuration
@@ -934,55 +898,58 @@ File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
 (/usr/share/texmf-dist/tex/latex/floatflt/floatflt.sty
 Package: floatflt 1997/07/16 v. 1.31
-\c@OptionTest=\count384
-\figbox=\box80
-\tabbox=\box81
-\pagebox=\box82
-\ffigcount=\count385
-\ftabcount=\count386
-\fftest=\count387
-\hangcount=\count388
-\nosuccesstryfig=\count389
-\nosuccesstrytab=\count390
-\figgutter=\dimen343
-\tabgutter=\dimen344
-\htdone=\dimen345
-\pageht=\dimen346
-\startpageht=\dimen347
-\tabbredd=\dimen348
-\floatfltwidth=\dimen349
-\fltitemwidth=\dimen350
+\c@OptionTest=\count382
+\figbox=\box77
+\tabbox=\box78
+\pagebox=\box79
+\ffigcount=\count383
+\ftabcount=\count384
+\fftest=\count385
+\hangcount=\count386
+\nosuccesstryfig=\count387
+\nosuccesstrytab=\count388
+\figgutter=\dimen337
+\tabgutter=\dimen338
+\htdone=\dimen339
+\pageht=\dimen340
+\startpageht=\dimen341
+\tabbredd=\dimen342
+\floatfltwidth=\dimen343
+\fltitemwidth=\dimen344
 \outputpretest=\toks49
 )
 (/usr/share/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen351
-\epsfysize=\dimen352
+\epsfxsize=\dimen345
+\epsfysize=\dimen346
 )
 (/usr/share/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count391
-\mult@box=\box83
-\multicol@leftmargin=\dimen353
-\c@unbalance=\count392
-\c@collectmore=\count393
-\doublecol@number=\count394
-\multicoltolerance=\count395
-\multicolpretolerance=\count396
-\full@width=\dimen354
-\page@free=\dimen355
-\premulticols=\dimen356
-\postmulticols=\dimen357
-\multicolsep=\skip95
-\multicolbaselineskip=\skip96
-\partial@page=\box84
-\last@line=\box85
-\mc@boxedresult=\box86
-\maxbalancingoverflow=\dimen358
-\mult@rightbox=\box87
-\mult@grightbox=\box88
-\mult@firstbox=\box89
-\mult@gfirstbox=\box90
+\c@tracingmulticols=\count389
+\mult@box=\box80
+\multicol@leftmargin=\dimen347
+\c@unbalance=\count390
+\c@collectmore=\count391
+\doublecol@number=\count392
+\multicoltolerance=\count393
+\multicolpretolerance=\count394
+\full@width=\dimen348
+\page@free=\dimen349
+\premulticols=\dimen350
+\postmulticols=\dimen351
+\multicolsep=\skip94
+\multicolbaselineskip=\skip95
+\partial@page=\box81
+\last@line=\box82
+\mc@boxedresult=\box83
+\maxbalancingoverflow=\dimen352
+\mult@rightbox=\box84
+\mult@grightbox=\box85
+\mult@firstbox=\box86
+\mult@gfirstbox=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
 \@tempa=\box91
 \@tempa=\box92
 \@tempa=\box93
@@ -1016,149 +983,54 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \@tempa=\box121
 \@tempa=\box122
 \@tempa=\box123
-\@tempa=\box124
-\@tempa=\box125
-\@tempa=\box126
-\c@minrows=\count397
-\c@columnbadness=\count398
-\c@finalcolumnbadness=\count399
-\last@try=\dimen359
-\multicolovershoot=\dimen360
-\multicolundershoot=\dimen361
-\mult@nat@firstbox=\box127
-\colbreak@box=\box128
-\mc@col@check@num=\count400
+\c@minrows=\count395
+\c@columnbadness=\count396
+\c@finalcolumnbadness=\count397
+\last@try=\dimen353
+\multicolovershoot=\dimen354
+\multicolundershoot=\dimen355
+\mult@nat@firstbox=\box124
+\colbreak@box=\box125
+\mc@col@check@num=\count398
 )
-\c@defi=\count401
-\c@nota=\count402
- (./tikzit.sty
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-backgrounds.code.tex
-File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@layerbox@background=\box129
-\pgf@layerboxsaved@background=\box130
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count399
+\l__pdf_internal_box=\box126
 )
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-arrows.code.tex
-File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(./formulario-reti.aux)
+\openout1 = `formulario-reti.aux'.
 
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen362
-))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.code.tex
-File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geomet
-ric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.c
-ode.tex
-File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.symbols.code.tex
-File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbol
-s.code.tex
-File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.arrows.code.tex
-File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows
-.code.tex
-File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.callouts.code.tex
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callou
-ts.code.tex))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multip
-art.code.tex
-File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodepartlowerbox=\box131
-\pgfnodeparttwobox=\box132
-\pgfnodepartthreebox=\box133
-\pgfnodepartfourbox=\box134
-\pgfnodeparttwentybox=\box135
-\pgfnodepartnineteenbox=\box136
-\pgfnodeparteighteenbox=\box137
-\pgfnodepartseventeenbox=\box138
-\pgfnodepartsixteenbox=\box139
-\pgfnodepartfifteenbox=\box140
-\pgfnodepartfourteenbox=\box141
-\pgfnodepartthirteenbox=\box142
-\pgfnodeparttwelvebox=\box143
-\pgfnodepartelevenbox=\box144
-\pgfnodeparttenbox=\box145
-\pgfnodepartninebox=\box146
-\pgfnodeparteightbox=\box147
-\pgfnodepartsevenbox=\box148
-\pgfnodepartsixbox=\box149
-\pgfnodepartfivebox=\box150
-)))
-\pgf@layerbox@edgelayer=\box151
-\pgf@layerboxsaved@edgelayer=\box152
-\pgf@layerbox@nodelayer=\box153
-\pgf@layerboxsaved@nodelayer=\box154
-) (./img/sstyle.tikzstyles) (./img/stile.tikzstyles)
-(./formulario.aux
-
-LaTeX Warning: Label `sec:potenza' multiply defined.
-
-
-LaTeX Warning: Label `eq:unitadimisura' multiply defined.
-
-)
-\openout1 = `formulario.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 99.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 99
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 87.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 87
 .
  (/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 99.
-Package hyperref Info: Link coloring OFF on input line 99.
- (./formulario.out)
-(./formulario.out)
+LaTeX Font Info:    ... okay on input line 87.
+Package hyperref Info: Link coloring OFF on input line 87.
+
+(./formulario-reti.out) (./formulario-reti.out)
 \@outlinefile=\write4
-\openout4 = `formulario.out'.
+\openout4 = `formulario-reti.out'.
 
 
 *geometry* driver: auto-detecting
@@ -1168,45 +1040,45 @@ Package hyperref Info: Link coloring OFF on input line 99.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=483.69687pt
-* \textheight=731.23584pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-45.43198pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
 * \headheight=12.0pt
-* \headsep=18.06749pt
+* \headsep=25.0pt
 * \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count403
-\scratchdimen=\dimen363
-\scratchbox=\box155
-\nofMPsegments=\count404
-\nofMParguments=\count405
+\scratchcounter=\count400
+\scratchdimen=\dimen356
+\scratchbox=\box127
+\nofMPsegments=\count401
+\nofMParguments=\count402
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count406
-\MPscratchDim=\dimen364
-\MPnumerator=\count407
-\makeMPintoPDFobject=\count408
+\MPscratchCnt=\count403
+\MPscratchDim=\dimen357
+\MPnumerator=\count404
+\makeMPintoPDFobject=\count405
 \everyMPtoPDFconversion=\toks51
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1217,171 +1089,83 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \it@ocap on input line 99.
-LaTeX Info: Redefining \it@ccap on input line 99.
+LaTeX Info: Redefining \it@ocap on input line 87.
+LaTeX Info: Redefining \it@ccap on input line 87.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count409
-LaTeX Font Info:    Trying to load font information for U+msa on input line 101
-.
+\c@lstlisting=\count406
+LaTeX Font Info:    Trying to load font information for U+msa on input line 89.
+
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 101
-.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 89.
+
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
-1.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 89
+.
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
-
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
-/enc/dvips/cm-super/cm-super-t1.enc}] [2
-
-] (./formulario.toc [3] [4])
-\tf@toc=\write5
-\openout5 = `formulario.toc'.
-
- [5] [6
-
-]
+/enc/dvips/cm-super/cm-super-t1.enc}]
 Capitolo 1.
-[7]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 171.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.111 \end{document}
+                     [1
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 171.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 171.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 171.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 199.
-
-[8] [9]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 373.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 373.
-
-[10] [11
-
-] [12
-
-]
-Capitolo 2.
-[13] [14] [15]
-
-LaTeX Warning: Command \textdownarrow invalid in math mode on input line 763.
-
-[16] [17] [18] [19] [20
-
-]
-Capitolo 3.
-[21]
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 1
-121.
- (/usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
-File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [22{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [23] (.
-/formulario.aux)
+] (./formulario-reti.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 
 
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 3.25pt have occurred.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
-LaTeX Warning: There were multiply-defined labels.
-
-
-Package rerunfilecheck Warning: File `formulario.out' has changed.
+Package rerunfilecheck Warning: File `formulario-reti.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `formulario.out':
-(rerunfilecheck)             Before: 0B56BAE3501933A7D2C6D65820CC24CD;17907
-(rerunfilecheck)             After:  1789E62FF8215AB4D7B149051DA34374;17254.
+Package rerunfilecheck Info: Checksums for `formulario-reti.out':
+(rerunfilecheck)             Before: B2247C86370120BFFD262DA531B498B1;172
+(rerunfilecheck)             After:  689EB16D1B426A1A4A4A4E9476589E32;357.
  ) 
 Here is how much of TeX's memory you used:
- 31664 strings out of 474116
- 593538 string characters out of 5750249
- 1944187 words of memory out of 5000000
- 53124 multiletter control sequences out of 15000+600000
- 587245 words of font info for 122 fonts, out of 8000000 for 9000
+ 27884 strings out of 474116
+ 493418 string characters out of 5750249
+ 1929187 words of memory out of 5000000
+ 49733 multiletter control sequences out of 15000+600000
+ 574012 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,16n,99p,611b,617s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
-replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.2.3.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
-share/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-
-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type
-1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
-er/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb
-></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/te
-xmf-dist/fonts/type1/public/cm-super/sfcc0700.pfb></usr/share/texmf-dist/fonts/
-type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm
--super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728
-.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb>
-Output written on formulario.pdf (23 pages, 348075 bytes).
+ 84i,6n,93p,419b,484s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public
+/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1
+440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist
+/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
+frm1728.pfb>
+Output written on formulario-reti.pdf (2 pages, 110680 bytes).
 PDF statistics:
- 955 PDF objects out of 1000 (max. 8388607)
- 876 compressed objects within 9 object streams
- 298 named destinations out of 1000 (max. 500000)
- 789 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 85 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
