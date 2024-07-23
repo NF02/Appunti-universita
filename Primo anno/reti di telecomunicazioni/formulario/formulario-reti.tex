@@ -89,10 +89,10 @@
 
 \chapter{Topologie}
 \label{chap:topologie}
-N = Nodi
+N = Nodi 
 \section{Stella}
 \label{sec:stella}
-
+Più diffuso nelle reti LAN
 \begin{equation}
   \label{eq:stella}
   R=N-1
@@ -100,12 +100,54 @@ N = Nodi
 
 \section{Maglie}
 \label{sec:maglie}
-
+Tutti i nodi sono collegati tra di loro
 \subsection{Completa}
 \label{sec:maglie-comp}
 \begin{equation}
   \label{eq:maglie-comp}
   R=\frac{N(N-1)}{2}
+\end{equation}
+
+\subsection{Non completa}
+\label{sec:noncompleta}
+
+
+\section{Topologia ad anello}
+\label{sec:topologiaanello}
+
+\begin{equation}
+  \label{eq:anello}
+  R=N
+\end{equation}
+
+\section{Topologia a bus e broadcast}
+\label{sec:topbusebrod}
+
+\subsection{Bus}
+\label{sec:bus}
+
+\begin{equation}
+  \label{eq:topbus}
+  R=N-1
+\end{equation}
+
+\subsection{Broadcast}
+\label{sec:broadcast}
+\begin{equation}
+  \label{eq:broadcast}
+  R=1
+\end{equation}
+
+\chapter{Formule utili}
+\label{chap:formuleutili}
+
+\section{Tempo complessivo}
+\label{sec:temp-compl}
+Il tempo totale che impiaga una trasmissione a percorrere la rete da una parte
+all'altra (end-to-end). 
+\begin{equation}
+  \label{eq:temp-comp}
+  T=\frac{L_{UI}}{R}
 \end{equation}
 
 \end{document}

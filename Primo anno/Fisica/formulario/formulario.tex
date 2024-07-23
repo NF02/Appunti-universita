@@ -281,7 +281,7 @@ In questo caso le variabile che entrano in gioco sono:
     \label{sec:velang}
     \begin{equation}
       \label{eq:velang}
-      \omega=\sfrac{2\pi_{rad}}{T}=2\pi\cdot v
+      \omega=\sfrac{2\pi_{rad}}{T}=2\pi\cdot f
     \end{equation}
     \begin{equation}
       \label{eq:Velang}
@@ -291,6 +291,18 @@ In questo caso le variabile che entrano in gioco sono:
   $\Delta\alpha =$ angolo spezzato al centro
 \end{defi}
 
+\subsubsection{Sostituzioni e formule inverse}
+\label{sec:sostform}
+
+\begin{eqnarray}
+  \label{eq:sostform}
+  a_c=\omega^2r; & v=\frac{2\pi \cdot r}{T};
+  & \omega=\frac{v}{r}\\
+  r=\frac{V\cdot T}{2\cdot\pi}; & r=\frac{V}{\omega};
+  & r=\frac{v^2}{a_c}\\
+  r=\frac{a_c}{\omega^2}; & T=\frac{2\pi r}{v};
+  & T=\frac{2\pi}{\omega}\\
+\end{eqnarray}
 \subsection{Energia cinetica totale}
 \label{sec:encintot}
 
@@ -328,7 +340,7 @@ In questo caso le variabile che entrano in gioco sono:
   \label{sec:periodocentuni}
   \begin{equation}
     \label{eq:periodocentuni}
-    t=\frac{1}{f}
+    T=\frac{1}{f}
   \end{equation}
 \end{multicols}
 Dato che le due formule danno due valori uno opposto all'altro possiamo dire senza ombra di dubbio che:
@@ -535,7 +547,7 @@ Per questo mtivo per ottenere la velocità può essere utilizzato il teorema di 
 \end{equation*}
 Tramite $v_{0x}^2$ e $v_{0y}^2$ è possibile essere anche utilizzato per ricavare la tangente:
 \begin{equation*}
-  \tan(\alpha)=\frac{v_{0x}}{v_{0y}}
+  \tan(\alpha)=\frac{v_{0y}}{v_{0x}}
 \end{equation*}
 L'equazione parametrica base invece è definita da due cordinete (\textit{x} e \textit{y}):
 \begin{equation}
@@ -879,7 +891,7 @@ Nel caso di 2 o 3 dimensioni, si calcolano separatamente le coordinate del centr
 \end{description}
 Tieni a mente che molti dei carpi che potresti deve trattare sono dettati di assi, punti o piani di {\color{red}simmetria}, uniti per individuare il centro di massa (in quel punto, lungo quella linea, \dots).
 
-\subsubsection{Accelerazione del centro di massa (di un sistema di particelle)}
+\subsubsection{Accelerazione el centro di massa (di un sistema di particelle)}
 \label{sec:accdelcentrodimass}
 \begin{equation}
   \label{eq:accdelcentrodimass}
@@ -1204,7 +1216,7 @@ Se la risultante dei momenti applicati al sistema di particelle è nulla, ad ese
   \end{equation}
 \end{multicols}
 
-\section{Equazione del moto di un oscillazione armonico}
+\section{Equazione del moto di un oscillazione armonico (moto armonico)}
 \label{sec:eqdelmotodiunoscarm}
 
 \begin{equation}

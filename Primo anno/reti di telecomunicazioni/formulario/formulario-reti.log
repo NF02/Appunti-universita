@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.7.14)  17 JUL 2024 21:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.7.14)  19 JUL 2024 13:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1124,8 +1124,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.111 \end{document}
-                     [1
+l.141 \chapter
+              {Formule utili} [1
+
+]
+Capitolo 2.
+[2
 
 ] (./formulario-reti.aux)
  ***********
@@ -1142,30 +1146,30 @@ Package rerunfilecheck Warning: File `formulario-reti.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `formulario-reti.out':
-(rerunfilecheck)             Before: B2247C86370120BFFD262DA531B498B1;172
-(rerunfilecheck)             After:  689EB16D1B426A1A4A4A4E9476589E32;357.
+(rerunfilecheck)             Before: 47D5509CE0D7971F8FD9282A2916CF35;1274
+(rerunfilecheck)             After:  41C7F86327A36E96CBFCC8EB050FA32E;1274.
  ) 
 Here is how much of TeX's memory you used:
- 27884 strings out of 474116
- 493418 string characters out of 5750249
- 1929187 words of memory out of 5000000
- 49733 multiletter control sequences out of 15000+600000
+ 27916 strings out of 474116
+ 493869 string characters out of 5750249
+ 1932187 words of memory out of 5000000
+ 49753 multiletter control sequences out of 15000+600000
  574012 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,6n,93p,419b,484s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public
-/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1
-440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist
-/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
-frm1728.pfb>
-Output written on formulario-reti.pdf (2 pages, 110680 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1
+200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist
+/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
+frm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
+Output written on formulario-reti.pdf (3 pages, 134509 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 135 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
