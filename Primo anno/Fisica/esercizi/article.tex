@@ -425,6 +425,63 @@ Anche questa funzione potrebbe essere qualla che descrive il quesito.
 
 Possiamo affermare che la forza si oppone al movimento, per l'equazione
 $x_2t$, in quanto il segno dell'accelerazione è meno. Questo è sintomo
-che la funzione sia opposta al movimento. 
+che la funzione sia opposta al movimento.
+\item (Onde sinosoidali)
+  \begin{tasks}
+    \task Ricavare un'equazione che descriva un'onda trasversale sinusoidali
+    \task Qual è la velocità massama di un punto della corda?
+    \task Calcolare la velocità di propagazione dell'onda.
+  \end{tasks}
+\subsubsection{Soluzione}
+\label{sec:sol13}
+
+\begin{eqnarray*}
+  \lambda=0.15m & f=150Hz & A=47cm =0.47m
+\end{eqnarray*}
+\begin{tasks}
+  \task $z(x,t)=A\sin(Kx+\omega t + \phi)$
+  \begin{itemize}
+  \item $k=\frac{2\pi}{\lambda}=41.89\frac{1}{m}$ ($N^o$ d'onda)
+  \item $\omega=2\pi f=300\pi\cong 942.d8 \frac{rad}{s}$
+  \end{itemize}
+  $\to{} z_1(x,t)=0.47\sin(41.89x+300\pi t)$
+  \task $Vz=\frac{dz}{dt}= A\omega \cos (kx+\omega t)$
+  \begin{eqnarray*}
+    v_{z_1max}=A\omega=0.47\cdot 300\pi = 443.22 m/s
+  \end{eqnarray*}
+  \task $z_2(x,t)=0.47\sin(41.89x-300\pi t)$
+  \begin{eqnarray*}
+    z(x,t)= z_1(x,t)+z_2(x,t)=\\
+    =0.47\sin(41.89x+300\pi t)+0.47\sin(41.89x-300\pi t)=\\
+    =0.47[2\sin (41.89x) \cos (300\pi t)]=\\
+    =0.94\sin(41.89x)\cos(300\pi t)
+  \end{eqnarray*}
+  \task $v$ propagazione
+  \begin{eqnarray*}
+    v=\lambda f = 0.15\cdot 150=22.5\frac{m}{s}
+  \end{eqnarray*}
+\end{tasks}
+\item Un uomo colpisce con un martello una lunga barra di alluminio a una
+  estremità. Una donna, all'altra estremità con l'orecchio vicino alla barra,
+  sente il suono del colpo due volte (una attraverso l'aria e una attraverso la
+  barra), con un intervallo di 0.12s. Sapendo la velocità del suono nella barra è
+  15 volte maggiore rispetto a quella in aria, quanto è lungo la barra?
+  
+\subsubsection{Soluzione}
+\label{sec:sol14}
+
+  \begin{eqnarray*}
+    \Delta t= 0.12s\\
+    V_0=15\dot V_a\\
+    L=?
+  \end{eqnarray*}
+  \begin{eqnarray*}
+    V=\frac{s}{t}=v_a=\frac{L}{t_a} & t_a=\frac{L}{V_a} & t_b=\frac{L}{v_b}
+                                                          =\frac{L}{V_a}\\
+    \Delta t=t_a-t_b\\
+    \Delta t=\frac{L}{v_a}-\frac{v}{v_b}=\frac{L}{v_a}-\frac{L}{15\cdot v_a}=\frac{L}{v+a}\left(1-\frac{1}{15}\right)\\
+    v_a=343m/s\\
+    L=\frac{\Delta t\cdot v_a}{\left(1-\frac{1}{15}\right)}= 44.1m
+  \end{eqnarray*}
 \end{enumerate}
 \end{document}
