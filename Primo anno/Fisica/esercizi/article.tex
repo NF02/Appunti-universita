@@ -460,7 +460,7 @@ che la funzione sia opposta al movimento.
   \begin{eqnarray*}
     v=\lambda f = 0.15\cdot 150=22.5\frac{m}{s}
   \end{eqnarray*}
-\end{tasks}
+\end{tasks} 
 \item Un uomo colpisce con un martello una lunga barra di alluminio a una
   estremità. Una donna, all'altra estremità con l'orecchio vicino alla barra,
   sente il suono del colpo due volte (una attraverso l'aria e una attraverso la
@@ -483,5 +483,215 @@ che la funzione sia opposta al movimento.
     v_a=343m/s\\
     L=\frac{\Delta t\cdot v_a}{\left(1-\frac{1}{15}\right)}= 44.1m
   \end{eqnarray*}
+\item (piano inclinato) Un ragazzo trattiene una cassa di massa $m=15kg$ su di un pendio inclinato di
+  $45^o$ applicando una forza $\vec{F}$.
+  \begin{tasks}
+  \task Trascurando l'attrito, quanto vale la forza che esercita il ragazzo?
+  \task Se il ragazzo lascia andare la cassa, che arriva alla base del piano inclinato ad una velocità
+    $v=4.5m/s$, quanto è lungo il tragitto percorso?
+  \end{tasks}
+  
+\subsubsection{Soluzione}
+\label{sec:sol15}
+\begin{tasks}
+  \task Scegliendo un sistema di opportuno, in cui l'asse delle $x$ è parallelo alla superficie del
+  piano
+inclinato e l'asse delle $y$ è perpendicolare ad essa.
+
+Le forze che agiscono, oltre alla forza $\vec{F}$ esercitata dal ragazzo, sono la reazione vincolare
+$\vec{N}$ esercitata del piano inclinato e la forza peso $\vec{P}$ della cassa.
+
+La forza peso $\vec{P}$ deve essere scomposta nelle componenti $P_\parallel$ e $P_\bot$, ovvero le
+proiettile di $\vec{P}$ lungo gli assi $x$ ed $y$, rispettivamente, rispetto al riferimento.
+
+Dal momento che il corpo rimane fermo, la risultante $\vec{R}$ delle forza può essere uguagliato a 0:
+\begin{equation*}
+  \vec{F}+\vec{P}+\vec{N}=0
+\end{equation*}
+Esplicitiamo i segni e dividiamo l'equazione, una lungo l'asse $x$ ed una lungo l'asse $y$, ricordando
+che prendiamo il segno $+$ se il vettore ha lo stesso verso dell'asse $x$ o $y$ ed il segno $-$ se ha
+verso ha verso opposto:
+\begin{equation*}
+  \begin{matrix}
+    (x):&F-P_\parallel =0\\
+    (y):&N-P_\bot=0
+  \end{matrix}
+\end{equation*}
+Esplicitiamo le espressioni di $P_\parallel$ e $P_\bot$
+\begin{equation*}
+  \begin{matrix}
+    (x): & F-mg\cdot \sin(45^o)=0\\
+    (y): & N-mg\cdot \cos(45^o)=0
+  \end{matrix}
+\end{equation*}
+Sfruttando l'equazione lungo l'asse ($x$) otteniamo:
+\begin{equation*}
+  F=mg\cdot \sin(45^o)=104N
+\end{equation*}
+dove $g=9.81m/s^2$ è l'accelerazione gravitazionale.
+\task Se il ragazzo andare la cassa, la lunguezza del tragitto percorso si può ottenere dalla relazione:
+\begin{equation*}
+  v^2_{fin} -v_{ini}^2=2a\Delta x
+\end{equation*}
+dove $\Delta x$ è la lungheza del tragitto percorso ed $a$ l'accelerazione della cassa.
+
+Nel momento in cui la cassa inizia a scendere, la casse è soggetta alla sola componente $P_\parallel$
+della forza peso:
+\begin{equation*}
+  mg\cdot \sin \theta=ma
+\end{equation*}
+da cui:
+\begin{equation*}
+  \Delta x=\frac{v^2_{fin}-v_{ini}^2}{1.5m}
+\end{equation*}
+\end{tasks}
+\item Una cassa di massa $m=10kg$ viene lanciata dalla base di un angolo $\theta=30^o$ con una velocità
+  $v_0=5.0m/s$ diretta verso l'alto. Sia $\mu_d=0.2$ il coefficiente di attrito dinamnico.
+  \begin{tasks}
+    \task Quanto vale la lunghezza del tratto percorso dalla cassa prima di fermarsi.
+  \end{tasks}
+  
+\subsubsection{Soluzione}
+\label{sec:sol16}
+
+Scegliamo un sistema di riferimento opportuno, in cui l'asse delle $x$ è parallelo alla superficie del
+piano inclinato e l'asse delle $y$ è perpendicolare ad essa.
+
+Le forze che agiscono sono la forza di attrito $\vec{F}_a$, la reazione vincolare $\vec{N}$ esercitata
+dal piano inclunato e la forza peso $\vec{P}$ della cassa.
+
+La forza peso $\vec{P}$ deve essere scomposta nelle componenti $P_\parallel$ e $P_\bot$, ovvero le
+proiezioni di $\vec{P}$ lungo gli assi $x$ ed $y$.
+
+La risultante $\vec{R}$ delle forze è:
+\begin{equation*}
+  \vec{F}_a+\vec{P}+\vec{N}=m\vec{a}
+\end{equation*}
+Esplicitiamo i segni e dividiamo l'equazioni, una lungo l'asse $x$ ed una lungo l'asse $y$, ricordando
+che prendiamo il segno $+$ se il vettore ha lo stesso verso dell'asse $x$ o $y$ ed il segno $-$ se ha
+verso opposto
+\begin{equation*}
+  \begin{matrix}
+    (x): & -F_a -P_\parallel=ma\\
+    (y): & N-P_\bot =0
+  \end{matrix}
+\end{equation*}
+dove $a$ compore solo lungo $x$ perché il corpo si muove solo lungo questo asse.
+
+Esplicitiamo le espressioni di $F_a,P_\parallel$ e $P_\bot$ e mettiamo a sistema:
+\begin{equation*}
+  \begin{cases}
+    -\mu_dN-mg\sin\theta=ma\\
+    N-mg\cos\theta=0
+  \end{cases}
+\end{equation*}
+Sostituiamo l’espressione di $N$ nell’equazione lungo $x$:
+\begin{equation*}
+  \begin{cases}
+    -\mu_dg\cdot\cos\theta-g\cdot\sin\theta=a\\
+    N=mg\cdot \cos\theta
+  \end{cases}
+\end{equation*}
+da cui:
+\begin{equation*}
+  a=-6.6m/s^2
+\end{equation*}
+La lunghezza $L$ del tratto che la cassa riesce a percorrere prima di fermarsi $(v_{fin}=0m/s)$ si
+ottiene dalla relazione:
+\begin{equation*}
+  v_{fin}^2-v_0^2=2aL
+\end{equation*}
+da cui:
+\begin{equation*}
+  L=\frac{-v_0^2}{2a}=1.9m
+\end{equation*}
+\item Una cassa di peso $400kg$ è lanciata con velocità $14.5m/s$ dalla cima di un piano inclinato
+  liscio lungo $L=1.0m$ che forma un angolo di $\theta$ rispetto al piano orizzontale. dopo un
+  tempo $t=1.5s$ la cassa arriva ala base del piano inclinato a velocità $v=m/s$.
+  \begin{tasks}
+    \task Quanto vale l'angolo $\theta$?
+  \end{tasks}
+  
+\subsubsection{Soluzione}
+\label{sec:sol17}
+
+Scegliendo un sistema di riferimento opportuno, in cui l'asse delle $x$ è parallelo alla superficie del
+$y$ è parallelo alla superficie del piano inclinato e l'asse delle $y$ è perpendicolare ad esso
+
+Le forze che agiscono sono la reazione vincolare $\vec{N}$ esercitata dal piano inclinato e la forza
+peso $\vec{P}$ della cassa.
+
+La forza peso $\vec{P}$ deve essere scomposta nelle componenti $P_\parallel$ e $P_\bot$, ovvero le
+proiezioni di $\vec{P}$ lungo gli assi $x$ ed $y$, del nostro sistema riferimento.
+
+La risultante $\vec{R}$ delle forza è:
+\begin{equation*}
+  \vec{P}+\vec{N}=m\vec{a}
+\end{equation*}
+Esplicitiamo i segni e dividiamo l'equazione in due equazioni, una lungo l'asse $x$ ed una lungo l'asse
+$y$, ricordando che prendiamo il segno $+$ se il vettore ha lo stesso verso dell'asse $x$ o $y$ ed il
+segno $-$ se ha verso opposto
+\begin{equation*}
+  \begin{matrix}
+    (x): & P_\parallel=ma\\
+    (y): & N-P_\bot= 0
+  \end{matrix}
+\end{equation*}
+dove $a$ compare solo nell'equazione lungo $x$ perché il corpo si muove solo lungo questo asse.
+
+Esplicitiamo le espressioni $P_\parallel$ e $P_\bot$ e le si mette a sistema:
+\begin{eqnarray*}
+  \begin{cases}
+    mg\cdot \sin\theta=ma\\
+    N-mg\cdot\cos\theta=0
+  \end{cases} &
+                \begin{cases}
+                  g\cdot \sin\theta = a\\
+                  N=mg\cdot \cos\theta
+                \end{cases}
+\end{eqnarray*}
+La cassa si muove di moto uniformemente accelerato. È possibile ricavare l'espressione di $a$ dalla
+relazione:
+\begin{eqnarray*}
+  v=v_0+at\\
+  a=\frac{v-v_0}{t}=1.53m/s^2
+\end{eqnarray*}
+Dall'espressione:
+\begin{eqnarray*}
+  g\cdot \sin\theta=a
+\end{eqnarray*}
+e si ottiene:
+\begin{eqnarray*}
+  \theta=\sin^{-1}\left(\frac{a}{g}\right)=9.0^o
+\end{eqnarray*}
+\item Due casse di masse $m_1=4.5kg$ ed $m_2=2.3kg$ sono collegate da una fune ideale. La massa $m_2$
+  scivola senza attrito su un piano inclinato di $\theta=45^o$
+  \begin{tasks}
+    \task Calcola l'accelerazione $a$ delle due casse
+  \end{tasks}
+  
+\subsubsection{soluzione}
+\label{sec:sol18}
+La forza peso $\vec{P}$ per la cassa $m_2$ è stata scomposta nei suoi componenti $P_\parallel$ e $P_\bot$.
+
+Considerando la risultante delle forze (ovvero la somma di tutte le forze) lungo l'asse $x$ e lungo
+l'asse $y$ per la cassa di massa $m_2$:
+\begin{eqnarray*}
+  \begin{cases}
+    T-P_\parallel=m_2a_2\\
+    N-P_\bot=0
+  \end{cases}
+\end{eqnarray*}
+dove bisogna ricordare che la cassa si sta muovendo solo lungo l'asse $x$ ovvero rimane sempre a contato
+con il piano senza mai staccarsi, per cui $a_y=0$ e $a_x=a$.
+
+Per la cassa $m_1$ invece il moto avviene solo lungo l'asse $y$, quindi:
+\begin{equation*}
+  -T+P=m_1a_1
+\end{equation*}
+in questo caso $a_1=a_2=a$ e le tensioni ai capi della fune sono identiche dal momento che si tratta
+di una fune ideale. Ricordando che $P_\parallel=m_2g\sin\theta$:
 \end{enumerate}
+
+
 \end{document}
