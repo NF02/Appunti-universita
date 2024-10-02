@@ -136,575 +136,1042 @@
 Le modalità di utilizzo e distribuzione sono scritte nel file \href{https://github.com/NF02/Appunti-universita/blob/main/LICENSE}{LICENSE}.
 \input{pag/vettcoordegeo.tex}
 
-\section{Lunghezze e angoli}
-\label{sec:lungeang}
+\chapter{Sistemi di equazioni lineari e matrici}
+\label{chap:eqlinematrici}
 
-Lavorare in coordiante rispetto a una base ci permette di tradurre numericamente costruzioni geometriche con i vettori e risolvere in modo più semplice problimi relativi ai vettori. Questo è quero qualunque sia la base scelta, tuttavia a seconda del problema specifico da risolvere, alcune basi possono essere più convenienti di altre, e in particolare quando si vuole rispondere, lavorando in coordinate, alle domande seguenti: ``Quel'è la lunghezza di un vettore dato? quel'è l'angolo tra due vettori dati?\\
-In tal caso, le basi più convenienti da usare, come visto, sono quelle formate da (due nel caso del piano, tre nel caso dello spazio) vettori ctra loro ortogonali e di lunghezza 1 (\textit{rispetto a un'unità di misura scelta}). Tali basi si chiamano \textit{ortonormale}.\\
-Infatti, considerando una tale base nel piano
-\begin{figure}[ht!]
-  \centering
-  \resizebox{3cm}{!}{
-      \input{img/vettGeo10.tikz}
-    }
-  \caption{Base del piano}
-  \label{fig:basedelpiano}
-\end{figure}\\
-Ora, considerando un vettore $\vec{OP}$, di quale sono note le coordinate rispetto a tale base sono date da $(x_1,x_2)$ (ovvero, per definizione di coordinate, $\vec{OP}=x_1\vec{OP}_1+x_2\vec{OP}_2$): è possibile calcolare la lunghezza del vettore $\vec{OP}$ a partire dalle coordinate? Per rispondere a tale domanda, bisogna considerare le seguenti figure, nel quale è rappresentata la decomposizione $\vec{OP}=x_1\vec{OP}_1+x_2\vec{OP}_2$
-\begin{figure}[ht!]
-  \centering
-  \resizebox{4cm}{!}{
-      \input{img/vettGeo11.tikz}
-    }
-  \caption{Base del piano con il vettore $\vec{OP}$}
-  \label{fig:basedelpianoConVettOP}
-\end{figure}\\
-Dal momento che si è selto i vettori di base perpendicolari, quando si proietta $P$ sulla retta $r_1$ che contiene $\vec{OP}_1$ sequendo la direzione $\vec{OP}_2$, tale proiezione incontra $r_1$ con un angolo di $90^o$, e si viene quindi a formare un triangolo rettangolo (evidenziato nel figura \ref{fig:basedelpianoConVettOP}) avente come ipotenusa proprio $\vec{OP}$ e al quele possiamo quindi applicare il teorema di Pitagora per calcolare la lunghezza di $\vec{OP}$, che denoterà $\abs{\vec{OP}}$. \\
-A quasto scopo, c'e da notare che il cateto orizzontale di tale triangolo è dato dal vettore $x_1\vec{OP}_1$, e quindi la sua lunghezza è data dal prodotto di $x_!$ per la lunghezza di $\vec{OP}_1$: ma avendo scelto i vettori di base di lunghezza unitaria, questo implica che la lunghezza di tale cateto sia semplicemente $x_1$; per quello che riguarda il cateto verticale, esso per costruzione ha la stessa lunghezza del vettore $x_2\vec{OP}_2$, ovvero $x_2$ (in quanto $\vec{OP}_2$ ha lunqhezza 1). Quindi il teorema di Pitagora dice che $\abs{\vec{OP}}^2=\sqrt{x_1^2+x_2^2}$,
+Per definire rigorosamente cosa si intenda per equazione lineare
+(o equazione di $1^o$ grado) e scrivere il generico esempio di
+equazione lineare, si trova prima una notazione conveniente per
+denotare tali equazioni.\\
+Infatti, per non avere limitazioni sul numero delle incognite,
+non è possibile continuare a indicarle con le lettere
+dell'alfabeto $x,y,z,etc.$, che sono in numero limitato, ma
+verrà utilizzata sempre la stessa lettera, tradizionalmente
+la $x$ con degli indicatori numerici che consentono di
+quale incognita si tratta: $x_1,x_2,\dots,x_n$ con, dove $n$ è
+un numero naturale. Facendo un esempio di strutturate in questo
+modo, si otterrà una situazione di questo tipo
 \begin{equation}
-  \label{eq:teoremadiPitapplicatoaAbsOP}
-  \abs{\vec{OP}}=\abs{x}=\sqrt{x_1^2+x_2^2}
+  \label{eq:eqlinematrici1}
+  a_1x_1+a_2x_2+\cdots+a_nx_n=b
 \end{equation}
-che rappresenta la formula cercata, che ci dà la lunghezza di $\vec{OP}$ in funzione delle sue coordinate.\\
-Si nota che nei ragionamenti svolti sono fontamentali per la scelta di una base fatta di vettori ortogonali (questo ha fatto comparire un triangolo rettangolo a cui viene applicato il teorema di Pitagora) e di lunghezza 1 (che ha permesso di esprimere le lunghezze dei cateti in funzione delle sole coordinate). \\
-Dopo aver trattato del piano, adesso è necessario trattare lo spazio nella sua costruzione, infatti lo spazio trigonometrico è composto da una terna di vettori: $\vec{OP}_1,\vec{OP}_2,\vec{OP}_3$ appartenenti all'insieme $V_O^3$ dei vettori applicati nello spazio tridimensionale:
-\begin{figure}[ht!]
-  \centering
-    \resizebox{4cm}{!}{
-      \input{img/vettGeo12.tikz}
-    }
-  \caption{Costruzione grafica base spazio}
-  \label{fig:costbasespazio}
-\end{figure}\\
-Supponendo ora di avere un vettore $\vec{OP}$ e di volerne calcolare la lunghezza, si denota $\abs{\vec{OP}}$, in fuzione delle sue coordinate $x_1,x_2,x_3$ rispetto alla base $B$ scelta. Per definizione di coordintate, $\vec{OP}$ si decompone come somma $\vec{OP}=x_1\vec{OP}_1+x_2\vec{OP}_2+x_3\vec{OP}_3$, come in figura \ref{fig:basedelspazioConVettOP}.
-\begin{figure}[ht!]
-  \centering
-  \resizebox{4cm}{!}{
-      \input{img/vettGeo13.tikz}
-    }
-  \caption{Base dello spazio con il vettore $\vec{OP}$}
-  \label{fig:basedelspazioConVettOP}
-\end{figure}\\
-La decomposizione è stata ottenuta graficamente come segue: prima si proietta $P$ perpendicolarmente sul piano su cui stanno $P_1$ e $P_2$ ottenendo il punto $Q$ (l'angolo in $Q$ quindi è retto, come messo in evidenza nella figura) e si ottiene un rettangolo, come campitura in grigio nella figura, che dice che $\vec{OP}=\vec{OQ}+x_3\vec{OP}_3$; poi dal momento che $\vec{OQ}$ giace sul piano di $P_!$ e $P_2$ lo si può decomporre come $\vec{OQ}=x_1\vec{OP}_1+x_2\vec{OP}_2$ (sempre sul piano retti in quanto $\vec{OP}_1$ e $\vec{OP}_2$ sono perpendicolari), e quindi $\vec{OP}=\vec{OQ}+x_3\vec{OP}_3=x_1\vec{OP}_1+x_2\vec{OP}_2+x_3\vec{OP}_3$ come visto sopra.\\
-Ora, essendo $\vec{OP}$ l'ipotenusa del triangolo $OPQ$ rettangolo in $Q$, per il teorema di Pitagora si avrà
-\begin{equation}
-  \label{eq:teopitapplicatinellospazio}
-  \abs{OP}^2=\abs{OQ}^2+\abs{PQ}^2
-\end{equation}
-Ma da una parte, il segmento $PQ$, essendo un lato del rettangolo ombreggiato in figura, è lungo esattamente quanto il vettore $x_3\vec{OP_3}$, ovvere $x_3$ (in quanto $\vec{OP}$ ha lunghezza 1); dall'altra, $OQ$ è la diagonale del rettangolo che ha come lati i vettori $x_1\vec{OP}_1$ e $x_2\vec{OP}_2$ di lunghezza rispettivamente $x_1$ e $x_2$ (in quanto $\vec{OP}_1$ e $\vec{OP}_2$ hanno lunghezza 1), quindi sempre per il teorema di Pitagora si ha $\abs{OP}^2=x_1^2+x_2^2+x_3^2$, ovvero, se per la terna $x=(x_1,x_2,x_3)$ si utilizza la notazione $\abs{x}=\sqrt{x_1^2+x_2^2+x_3^2}$,
-\begin{equation}
-  \label{eq:teopitapplicatinellospazio2}
-  \abs{\vec{OP}}=\abs{x}=\sqrt{x_1^2+x_2^2+x_3^2}
-\end{equation}
-che è la formula cercata, angolora della (\ref{eq:teoremadiPitapplicatoaAbsOP}), per la lunghezza di un vettore geometrico $\vec{OP}$ dello spazio in funzione delle sue coordinate rispetto alla base scelta.\\
-Ora, bisogna porsi il problema di calcolare l'angolo tra due vettori non nulli $\vec{OP}, \vec{OQ}\in V_O^3$ una volta note le loro coordinate rispetto a una base ortonormale. Supponendo che tali coordinate siano rispettivamente ($x_1,x_2,x_3$) e ($y_1,y_2,y_3$).
-\begin{figure}[ht!]
-  \centering
-  \resizebox{4cm}{!}{
-      \input{img/vettGeo14.tikz}
-    }
-  \caption{Triangolo OPQ}
-  \label{fig:triangoloOPQ1}
-\end{figure}\\
-Per un risultato di trigonometria, l'angolo $\theta$ tra $\vec{OP}$ e $\vec{OQ}$ è collegato alla lunghezza dei segmenti $OP,OQ,PQ$ dalla formuala\footnote{Si tratta di una sorta di ``teorema di Pitagora per triangoli qualunque'': infatti, se il trangolo è rettangolo in $O$, ovvero $\theta=\frac{\pi}{2}$, allora $\cos\theta=0$ e la formula si riduce a $\abs{\vec{PQ}}^2=\abs{OQ}+\abs{OQ}^2$, il classico teorema di Pitagora.}
-\begin{equation}
-  \label{eq:teopitapplicatinellospazio3}
-  \abs{\vec{PQ}}^2+\abs{OP}^2+\abs{OQ}^2-2\cos\theta\abs{OP}\cdot\abs{OQ}
-\end{equation}
-Ora, per la (\ref{eq:teopitapplicatinellospazio2}), si ha $\abs{OP}=\sqrt{x_1^2+x_2^2+x_3^2}$ e $\abs{OQ}=\sqrt{y_1^2+y_2^2+y_3^2}$: per ricavare l'angolo $\theta$ tramte la formuala (\ref{eq:teopitapplicatinellospazio3}) resta da calcolare la lunghezza $\abs{PQ}$. Dal momento che la formuala (\ref{eq:teopitapplicatinellospazio2}) consente di calcolare la lunghezza solo dei vettori applicati in $O$, sarà possibile tracciare il seguente disegno
-\begin{figure}[ht!]
-  \centering
-  \resizebox{4cm}{!}{
-      \input{img/vettGeo15.tikz}
-    }
-  \caption{Triangolo OPQ e OQR}
-  \label{fig:triangoloOPQeOQR}
-\end{figure}\\
-Il vettore $\vec{OR}$ parallelo al segmento $PQ$ e avente la sua stessa lunghezza, ovvero $\abs{PQ}=\abs{\vec{OR}}$.\\
-Ora, essendo $\vec{OR}$ parallelo a $PQ$ e della stessa lunghezza, il quadrilattero di vertici $O,R,P,Q$ è un parallelogramma che ha $\vec{OR}$ e $\vec{OP}$ come lati e $\vec{OQ}$ come diagonale: quindi, dalla definizione di somma tra vettori applicati, si ha $\vec{OQ}=\vec{OR}+\vec{OP}$, ovvero $\vec{OR}=\vec{OQ}-\vec{OP}$.\\
-Per le proprietà telle coordinate viste nell'Osservazione \ref{oss:coordinate2}, le coordinate di $\vec{OR}=\vec{OQ}-\vec{OP}$ sono date dalle coordinate di $\vec{OQ}$ meno le coordinate di $\vec{OP}$, ovvero $(y_1-x_1,y_2-x_2,y_3-x_3)$, e quindi, dalla (\ref{eq:teoremadiPitapplicatoaAbsOP}) si ha finalmente
-\begin{equation}
-  \label{eq:teopitapplicatinellospazio3}
-  \abs{PQ}=\abs{\vec{OR}}=\sqrt{(y_1-x_1)^2+(y_2-x_2)^2+(y_3-x_3)^2}
-\end{equation}
-La formula (\ref{eq:teopitapplicatinellospazio2}) diventa allora
-\begin{equation}
-  \label{eq:teopitapplicatinellospazio4}
-  \begin{matrix}
-    (y_1-x_1)^2+(y_2-x_2)^2+(y_3-x_3)^2=y^2_1-x^2_1+y^2_2-x^2_2+y^2_3-x^2_3\\
-    -2\cos\theta\sqrt{x^2_1+x^2_2+x^2_3}\cdot\sqrt{y^2_1+y^2_2+y^2_3}
-  \end{matrix}  
-\end{equation}
-Poiché il primo membro, per la formula del quadrato di binomio\footnote{Lo sviluppo del quadrato di binomio è $(a\pm{}b)^2=a^2+b^2\pm2ab$}, è uguale a
-\begin{equation*}
-  x^2_1+y^2_1-2x_1y_1+x^2_2+y^2_2-2x_2y_2+x^2_3+y^2_3-2x_3y_3
-\end{equation*}
-semplificando con i quadrati a secondo membro rimane:
-\begin{equation}
-  \label{eq:teopitapplicatinellospazio5}
-  -2x_1y_1+-2x_2y_2-2x_3y_3=-2\cos\theta\sqrt{x^2_1+x^2_2+x^2_3}\cdot\sqrt{y^2_1+y^2_2+y^2_3}
-\end{equation}
-ovvero, ricavando $\cos\theta$,
-\begin{equation}
-  \label{eq:teopitapplicatinellospazio6}
-  \cos\theta = \frac{x_1y_1+x_2y_2+x_3y_3}{\sqrt{x^2_1+x^2_2+x^2_3}\cdot\sqrt{y^2_1+y^2_2+y^2_3}}
-\end{equation} 
-che è finalmente la formula cercata che esprime l'angolo tra due vettori in funzione delle loro coordinate rispetto alla base data.\\
-Con un calcolo analogo nel piano (dove non cambia nulla delle costruzioni fatte e dei passaggi svolti, salvo il fatto che abbiamo due coordinate anziché tre) si ottiene la formula analoga
-\begin{equation}
-  \label{eq:teopitapplicatinellospazio7}
-  \cos\theta = \frac{x_1y_1+x_2y_2}{\sqrt{x^2_1+x^2_2}\cdot\sqrt{y^2_1+y^2_2}}
-\end{equation}
-\begin{oss}
-  \label{oss:teopitapplicatinellospazio}
-  Una volta ricavato il valore del coseno dell'angolo mediante la formula (\ref{eq:teopitapplicatinellospazio6}) [la (\ref{eq:teopitapplicatinellospazio7}) nel caso del piano], all'interno dell'intervallo $\left[0,2\pi\right]$ avremo in generale \textit{due} possibili valori di $\theta$ corrispondenti: ad esempio, se $\cos\theta=\frac{1}{2}$ allora $\theta=\frac{\pi}{3}$ oppure $\theta=2\pi -\frac{\pi}{3}=\frac{5}{3}\pi$. Questo riflette il fatto geometroco ovvio, illutrato dall'immagine
-  \begin{figure}[ht!]
-    \centering
-    \resizebox{3cm}{!}{
-      \input{img/vettGeo16.tikz}
-    }
-    \caption{Angolo $\theta$ in base al suo valore}
-    \label{fig:angolotheta}
-  \end{figure}\\
-  che due vettori individuano due angoli, uno minore o uguale a $\pi$ e un altro maggiore o uguale a $\pi$. Per risolvere questa ambiguità, quando si parla di angolo tracciare due vettori d'ora in poi verrà inteso quello minore o uguale di $\pi$ (il cosiddetto \textit{angolo convesso}).
-\end{oss}
-\begin{es}
-  Considerando ad esempio i vettori $\vec{OP}$ e $\vec{OQ}$ che rispetto a una terna ortonormale $\vec{OP}_1,\vec{OP}_2,\vec{OP}_3$ hanno coordintate rispettivamente (1,0,1) e (1,-1,0) (in base alla definizione di coordinate, sono quindi $\vec{OP}=1\vec{OP}_1+0\vec{OP}_2+1\vec{OP}_3=\vec{OP}_1+\vec{OP}_3$ e $\vec{OQ}=1\vec{OP}_1+(-1)\vec{OP}_2+0\vec{OP}_3=\vec{OP}_1-\vec{OP}_2$). Allora l'angolo tra $\vec{OP}$ e $\vec{OQ}$, in base alla formula (\ref{eq:teopitapplicatinellospazio5}), è dato da
-  \begin{equation*}
-   \cos \theta=\frac{1\cdot1+0\cdot(-1)+1\cdot 0}{\sqrt{1^2+0^2+1^2}\cdot\sqrt{1^2+(-1)^2+0^2}}=\frac{1}{\sqrt{2}\sqrt{2}}=\frac{1}{2}
-  \end{equation*}
-  ovvero, dalla trigonometria, $\theta=\frac{\pi}{3}$ (in gradi, $60^o$)\\
-  Le formule (\ref{eq:teopitapplicatinellospazio6}) e (\ref{eq:teopitapplicatinellospazio7}) ci forniscono anche un criterioper verificare in coordinate se due vettori sono perpendicolari: infati, l'angolo $\theta$ è $\frac{\pi}{2}$ (ovvero 90 gradi) se e solo se $\cos\theta =0$, il che può essere vero solo se i numeratori della  (\ref{eq:teopitapplicatinellospazio6}) e della (\ref{eq:teopitapplicatinellospazio7}) sono nulli.\\
-  Ad esempio, nello spazio, abbiamo che due vettori $\vec{OP}\equiv(x_1,x_2,x_3)$ e $\vec{OQ}\equiv(y_1,y_2,y_3)$ sono perpendicolari se e solo se si verifica
+dove $b,a_1,a_2,\dots,a_n$ sono elementi di un campo
+(solitamente, il campo dei numeri reali o quello dei complessi)
+che svolgono il ruolo rispettivamente di termine noto e
+coefficienti delle incognite (per ogni incognita $x_i$, bisogna
+denotare il suo coefficiente con una lettera, $a_i$ con lo stesso
+indice dell'incognita).\\
+Dare una soluzione dell'equazione (\ref{eq:eqlinematrici1})
+significa trovare degli elementi del campo, ovvero dei numeri,
+che sostituiti alle incognite rendano l'ugualianza vera.\\
+Ad esempio, nell'equazione lineare in due incognite $x_1-x_2=1$
+a coefficienti nel campo dei reali $\mathds{R}$, ponendo $x_1=2$
+e $x_2=1$ si ottiene l'ugualianza vera $2-1=1$, mentre ad esempio
+ponendo $x_1=1$ e $x_2=2$ si ottiene $1-2=1$ che è falsa.\\
+Da questo semplice esempio si vede come dare una soluzione
+dell'equazione $x_1-x_2=1$ significa non solo dare \textit{due}
+valori numerici, da sostituire alle due incognite
+dell'equazione, ma è necessario precisare quale valore vada
+sostituito alla prima incognita e quale alla seconda, ovvero
+specificare in quale ordine stiamo prendendo questi due
+elementi.
+
+La soluzione data di tale equazione può essere pensata e scritta
+come una \textit{coppia ordinata} di numeri, che è possibile
+denotare in (\ref{eq:eqlinematrici1}). La coppia (2,1) è una
+soluzione dell'equazione $x_1-x_2=1$, mentre la caoppia (1,2) non
+lo è.\\
+Analogamente, per un'equazione con 3 incognite, una sua
+soluzione sarà data da una terna ordinata (3,2,1) è una sua
+soluzione, in quanto sostituendo $x_1=3,x_2=2,x_3=1$ si ottiene
+l'uguaglianza vera $3-2+1=2$; la terna (2,1,3) invece, non è una
+sua soluzione.
+
+In generale, per equazioni con $n$ incognite si dovrebbe
+utilizzare $n$-uple ordinate $(v_1,v_2,\dots,v_n)$: possiamo
+allora dare la seguente:
+\begin{defi}
+  \label{defi:eqlinematrici1}
+  Data un'equazione lineare $a_1x_1+a_2x_2+\cdots+a_nx_n=b$ in
+  $n$ incognita a coefficienti in un campo $\mathds{K}$, si dice
+  \textit{soluzione} dell'equazione una $n$-upla ordinata
+  $(v_1,v_2,\dots,v_n)$ di elementi di $\mathds{K}$ tale che
+  sostituendo $v_1$ al posto di $x_1,v_2$ al posto di $x_2$ etc.
+  fino a $x_n$ l'equazione risulta verificata (ovvero
+  l'ugualianza $a_1v_1+a_2v_2+\cdots+a_nv_n=b$ risulta vera).
+\end{defi}
+Ora, un \textit{sistema di equazioni lineari} è semplicemente un
+insieme di equazioni lineari.\\
+Per scrivere un generio tale sistema, per risolvere un problema
+di notazione simile a quello affrontato quando è stato scritta
+la generica equazione lineare, ovvero è necessaria una notazione
+efficace per indicare i diversi coefficienti delle incognite
+delle incognite nelle diverse equazioni del sistema.\\
+A questo scopo, nell'espressione della generica equazione
+lineare $a_1x_1+a_2x_2+\cdots+a_nx_n=b$, la seconda $a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n=b_2$ e così via.\\
+Allora, il generico sistema di equazioni lineari con $n$
+incognite e $m$ equazioni (il numero di incognite può anche
+essere diverso dal numero di equazioni, perciò li si indica con
+due lettere diverse) sarà
+\begin{eqnarray}
+  \label{eq:eqlinematrici2}
+  \begin{pmatrix}
+    a_{11} & a_{12} & \cdots & a_{1n}\\
+    a_{21} & a_{22} & \cdots & a_{2n}\\
+    \vdots & \vdots & & \vdots\\
+    a_{m1} &a_{m2} & &a_{mn}
+  \end{pmatrix}
+  \begin{pmatrix}
+    x_1\\
+    x_2\\
+    \vdots\\
+    x_n
+  \end{pmatrix}=
+  \begin{pmatrix}
+    b_1\\
+    b_2\\
+    \vdots\\
+    b_m
+  \end{pmatrix}, & \text{oppure,} &
+                  \begin{cases}
+                    a_{11}x_1 + a_{12}x_2+\cdots+a_{1n}x_n=b_1\\
+                    a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n=b_2\\
+                    \vdots\\
+                    a_{m1}x_2+\cdots+a_{mn}x_n=b_m
+                  \end{cases}
+\end{eqnarray}
+In (\ref{eq:eqlinematrici2}) è presente la soluzione dell'equazione,
+sia in forma matriciale $Ax=b$ che in forma sistemica -- Visto ciò è
+possibile dare la seguente
+\begin{defi}
+  \label{defi:eqlinematrici2}
+  Una soluzione del sistema (\ref{eq:eqlinematrici2}) è una $n$-uple
+  $(v_1,v_2\dots,v_n) \in \mathds{K}^n$ che è soluzione comune di tutte le
+  equazioni del sistema.
+
+  nel prossimo paragrafo varrà affrontato un algoritmo che consente di
+  determinare tutte le soluzione di un sistema. In particolare, si
+  scoprirà che possono verificarsi solo le seguenti tre
+  possibilità\footnote{Questo è un fatto caratteristico delle equazioni
+    lineari: per una generica equazione possono verificarsi anche altri
+    casi, ad esempio l'equazione $x^2=9$ ha due soluzione, $x=3$ e
+    $x=-3$.}:
+  \begin{itemize}
+  \item il sistema non ha nessuna soluzione
+  \item il sistema ha una sola soluzione
+  \item il sistema ha infinite soluzioni
+  \end{itemize}
+  Prima di entrare nei dettagli, è necessario vedere un esempio di
+  ciascuna di queste possibilità, con l'obiettivo di iniziare a capire le
+  ragioni per cui essere possono verificarsi.
+
+  Non è difficile essibire un esempio di sistema con infinite soluzioni.
+  Ad esempio, considerando il seguente sistema formato da una sola
+  equazione in due incognite
+  \begin{eqnarray*}
+    \begin{cases}
+      x_1+x_2=0.
+    \end{cases} 
+  \end{eqnarray*}
+  Una soluzione del sistema è una coppia di numeri reali tali che la
+  loro somma dà come risultato zero: questo significa che i numeri
+  devono essere uno l'opposto dell'altro, e quindi scelto un qualunque
+  $t\in \mathds{R}$, la coppia $(t,-t)$ è una soluzione: le soluzioni
+  sono quindi infinite, tante quanti i numeri reali.\\
+  Fatto ciò è possibile alla $x_1+x_2=0$ un'altra condizione, ottenendo
+  quindi un sistema di due equazioni, ad esempio
+  \begin{eqnarray}
+    \label{eq:eqlinematrici3}
+    \begin{cases}
+      x_1+x_2=0 \\
+      x_1+x_2=0
+    \end{cases} 
+  \end{eqnarray}
+  Le soluzioni del sistema sono quindi le coppie che soddisfano non solo
+  la prima equazione, cioè come detto tette quelle del tipo $(t,-t)$, ma
+  anche la seconda, che afferma semplicemente che $x_1=x_2$, cioè i due
+  elementi della coppia devono essere non solo opposti ma ache uguali tra
+  loro. Ma l'unico numero reale uguale al suo opposto è lo zero, e quindi
+  il sistema ha come unica soluzione la coppia (0,0). Questo esempio
+  suggerisce che in generale più equazioni ci sono in un sistema,
+  maggiori sono i vincoli che imponendo sulle incognite e quindi meno
+  $n$-uple ci saranno che soddisfano tutte le condizioni siano sufficienti
+  a ottenere una sola soluzione.
+
+  Tuttavia, è facile fare un altro esempio che mostra che questa prima
+  impressione non è del tutto esatta: considerando il sistema
+  \begin{eqnarray}
+    \label{eq:eqlinematrici4}
+    \begin{cases}
+      x_1+x_2=0 \\
+      2x_1+2x_2=0
+    \end{cases}
+  \end{eqnarray}
+  Ora, è immediato vedere che le soluzioni $(t,-t)$ della prima equazionde
+  soddisfano tutte anche la seconda, quindi il sistema continua ad avere
+  le infinite soluzioni $(t,-t)$. Quest accade perché la seconda equazione
+  è in realtà del tutto equivalente alla prima [mettendo in evidenza il
+  2, si può riscrivere $2x_1+2x_2=0$ come $2(x_1+x_2)=0$, ovvero,
+  dividendo per 2, proprio la prima equazione] e non aggiunge nessun
+  nuovo vincolo sulle incognite: si tratta di un'equazione superflua, la
+  cui presenza o meno non cambia l'insieme delle soluzioni.\\
+  Le equazioni superflue presenti in un sistema possono essere tuttavia
+  molto meno evidenti che nel caso appena visto. Ad esempio, consideriando
+  il sitema di due equazioni in tre incognite
+  \begin{eqnarray}
+    \label{eq:eqlinematrici5}
+    \begin{cases}
+      x_1+x_2+x_3=1\\
+      2x_1+x_2+3x_3=2
+    \end{cases}
+  \end{eqnarray}
+  Una qualunque terna $(x_1,x_2,x_3)$ che verifica le due equazioni
+  soddisfa necessariamente anche l'ugualianza che si ottiene sommandole
+  membro a membro, ovvero
+  \begin{eqnarray*}
+    (x_1+x_2+x_3) + (2x_1+x_2+3x_3) = 1+2
+  \end{eqnarray*}
+  cioè, svolgendo i conti,
+  \begin{eqnarray*}
+    3x_1+2x_2+4x_3=3
+  \end{eqnarray*}
+  Essendo tale equazione una conseguenza delle prime due, aggiungerla al
+  sistema non modifica l'insieme delle soluzioni: in altre parole, il
+  sistema
+  \begin{eqnarray}
+    \label{eq:eqlinematrici6}
+    \begin{cases}
+      x_1+x_2+x_3=1\\
+      2x_1+x_2+3x_3=2\\
+      3x_1+2x_2+4x_3=3
+    \end{cases}
+  \end{eqnarray}
+  contiene un'equazione superflua, dipendente dalla altre, certamente meno
+  evidente a pria vista che nel caso del sistema
+  (\ref{eq:eqlinematrici4}).
+
+  Naturalmente, equazioni superflue possono essere ottenute anche con
+  combinazioni più complicate della somma delle prime due equazioni, ad
+  esempio sempre in riferimento al sistema (\ref{eq:eqlinematrici5}), una
+  terna che soddisfi le due equazioni necessariamente soddisfa anche
+  l'ugualianza
   \begin{equation}
-    \label{eq:teopitapplicatinellospazio8}
-    x_1y_1+x_2y_2+x_3y_3=0
+    \label{eq:eqlinematrici7}
+    5(x_1+x_2+x_3)+(-3)(2x_1+x_2+3x_3)=5\cdot +(-3)\cdot 2
   \end{equation}
-  Ad esempio, i due vettori di coordinate (1,2,1) e (3,1,-5) sono perpendicolari in quanto
+  cioè, svolgendo i conti,
   \begin{equation*}
-    1\cdot 2+2\cdot 1+1\cdot (-5)=3+2-5=0
+    -x_1+2x_2-4x_3=-1
+  \end{equation*}
+  ovvero anche nel sistema
+  \begin{equation}
+    \label{eq:eqlinematrici8}
+    \begin{cases}
+      x_1+x_2+x_3=1\\
+      2x_1+x_2+3x_3=2\\
+      -x_1+2x_2-4x_3=-1
+    \end{cases}
+  \end{equation}
+  la terza equazione è superflua, in un modo forse ancora meno evidente.
+
+  Per quello che riguarda i sistemi senza soluzioni, è abbastanza semplice
+  esivirne uno. Ad esempio, il sistema di due equazioni in due incognite
+  seguente
+  \begin{equation*}
+    x_1+x_2=0\\
+    x_1+x_2=1
+  \end{equation*}
+  è evidentemente privo di soluzioni, in questo se la somma di due numeri
+  è uguale a 0 non può certamentet nello stesso tempo essere uguale a 1.
+  In altre parole, le due equazioni del sono tra loro incompatibili,
+  ovvero esprimono condizioni contraddittorie.
+  Per questo motivo, un sistema che non ha soluzioni si dice
+  \textit{incompatibile} (e per contro, si dirà \textit{compatibile} un
+  sistema che ha almeno una soluzione).
+  Per questo motivo, un sistema che non ha soluzioni si dice
+  \textit{incompatibile} (e per contro, si dirà \textit{compatibile} un
+  sistema che ha almeno una soluzione).
+  Analogamente a quanto fatto sopra per le equazioni superflue, si possono
+  costruire esempi di sistemi in cui l'incompatibilità di una equazione
+  con le altre non e così evidente come nel semplice sistema precedente.
+  Ad esempio, prendiamo sempre come punto di partenza il sistema
+  (\ref{eq:eqlinematrici5}). Come visto sopra, una terna che soddisfi le
+  due equazioni membro a membro.
+
+  Ma allora, se modifichiamo solo il termine noto di quest'ultima
+  uguaglianza, si ottiene una che è incompanibile con le altre due:
+  ad esempio, il sistema
+  \begin{eqnarray}
+    \label{eq:eqlinematrici9}
+    \begin{cases}
+      x_1+x_2+x_3=1\\
+      2x_1+x_2+3x_3=2\\
+      3x_1+2x_2+4x_3=5
+    \end{cases}
+  \end{eqnarray}
+  non ha soluzioni, perché per una qualunque terna che soddisfi le prime
+  due equaioni si deve avere che $3x_1+2x_2+4x_3$ è uguale a 3, e non a 5.
+\end{defi}
+\begin{oss}
+  \label{oss:eqlinematrici1}
+  Un sistema di equazioni in cui i termini noti siano tutti uguali a zero
+  (un tale sistema si dice \textit{omogeneo}) ha sempre almeno la
+  soluzione $(0,0,\dots,0)$, in quanto ponendo tutte le incognite uguali
+  a zeo si ottengono uguaglianza vere. Quindi i sistemi omogenei sono
+  sempre compatibili. Vedremo più avanti (Proposizione \ref{}) altre
+  importanti caratteristiche dei sistemi omogenei che li distinguono dai
+  sistemi non omogenei.
+\end{oss}
+
+\section{Matrice di un sistema lineare}
+\label{sec:matricediunsistlineare}
+
+Per conoscere un sistema è necessario conoscere, equazione per equazione,
+quali sono i coefficienti che moltiplicano ogni singola incognita e i
+termini noti. Quindi, se, dato un sistema, si scrive una tabella di
+numeri disposti in righe e in colonne in modo che in ogni riga ci siano
+i coefficienti delle incognite di una certa equazione (ordinati secondo
+l'ordine scelto delle incognite) e il termine noto, tale tabella conterrà
+tutte le informazioni che servono sul sistema
+\begin{equation}
+  \label{eq:matricediunsistlineare1}
+  \begin{cases}
+    x_1+3x_2=5\\
+    2x_1-x_2=4
+  \end{cases}
+\end{equation}
+può essere rappresentato dalla tabella
+\begin{equation}
+  \label{eq:matricediunsistlineare2}
+  \begin{bmatrix}
+    1 & 3 & 5\\
+    2 & -1 & 4
+  \end{bmatrix}
+\end{equation}
+questa viene chiamata in gergo, \textit{matrice completa del sistema}.
+\begin{defi}
+  \label{defi:matrice1}
+  Una matrice A ad elementi reali è una tabella di numeri reali, detti le
+  sue \textit{entrate}
+  \begin{equation*}
+    A=
+    \begin{pmatrix}
+      a_{11} & a_{12} & \dots & a_{1n}\\
+      a_{21} & a_{22} & \dots & a_{2n}\\
+      \vdots & \vdots & \vdots & \vdots\\
+      a_{m1} & a_{m2} & \dots & a_{1n}\\
+    \end{pmatrix}
+  \end{equation*}
+  scritti su righe e colonne: se la matrice ha $m$ righe e $n$ colonne,
+  si dice che $A$ ha dimensione $m \times n$ oppure si può affermare che
+  sia di tipo $m \times n$ o si può anche dire che appartiene a
+  $\mathds{R}^{m \times n}$. Se la matrice è ad elementi complessi, si può
+  affermare che $A$ appartiene a $\mathds{C}^{m \times n}$.
+
+  Indicando gli elementi della matrice con $a_{ij}$ oppure $(A)_{ij}$
+  utilizzando due indici in basso, dove $i$ è l'\textit{indice di riga}
+  (dice in quale riga si trova e va da 1 a $m$) e $j$ è \textit{l'indice
+    di colonna} (dice in quale colonna si trova e va da 1 a $n$). Si dice
+  anche che $a_{ij}$ è l'entrata di posto $ij$.
+\end{defi}
+\begin{es}
+  \label{es:matrice1}
+  \textit{Matrice} con 3 righe e 4 colonne
+  \begin{equation*}
+    \begin{vmatrix}
+      6 & -2 & \pi & 0\\
+      10 & 3 & 0 & -1\\
+      4 & \sqrt{2} & -3 & 1
+    \end{vmatrix} \in \mathds{R}^{3 \times 4}
   \end{equation*}
 \end{es}
-\begin{oss}
-  \label{oss:teopitapplicatinellospazio2}
-  In base al criterio (\ref{eq:teopitapplicatinellospazio8}), il vettore nullo $\vec{OO}$ risulta essere perpendicolare a qualunque altro vettore $\vec{OP}$, in quanto le sue coordinate sono $(0,0,0)$ e, qualunque siano le cordinate $(x_1,x_2,x_3)$ di $\vec{OP}$ si ottiene $x_1\cdot0+x_2\cdot 0+ x_3\cdot 0=0$.\\
-  Tuttavia, si noti che le formule (\ref{eq:teopitapplicatinellospazio6}) e (\ref{eq:teopitapplicatinellospazio7}) sono applicabili per calcolrare un angolo solo se nessuno dei vettori è nulla, altrimenti una delle due radici a denominatore verrebbe $\sqrt{0^2+0^2+0^2}=0$, e come è noto non è possibile dividere per zero.\\
-  Il numeratore che compare nella (\ref{eq:teopitapplicatinellospazio6}), o nella (\ref{eq:teopitapplicatinellospazio7}) nel caso del piano, può essere interpretato come una nuova operazione, una sorta di prodotto che date due terne (due coppie nel caso del piano) di numero reali, dà come risultato un numero reale: si denota $x=(x_1,x_2,x_3)$ e $y=(y_1,y_2,y_3)$\footnote{nel caso del piano, $x=(x_1,x_2)$ e $y=(y_1,y_2)$}, è possibile porre:
-  \begin{equation}
-    \label{eq:teopitapplicatinellospazio9}
-    x\cdot y:=x_1y_1+x_2y_2+x_3y_3
-  \end{equation}
-  mentre, nel caso del piano sarà:
+\begin{defi}
+  \label{defi:matrice2}
+  Per \textbf{trasposta} della matrice $A\in \mathds{R}^{3\times 4}$ si
+  intende, la matrice che si indica con $A^T\in \mathds{R}^{3\times 4}$ che
+  si ottiene da $A$ scambiando ordinatamente le righe con le colonne
   \begin{equation*}
-    x\cdot y:=x_1y_1+x_2y_2
+    (A^T)_{ij}=a_{ji}
   \end{equation*}
-  La (\ref{eq:teopitapplicatinellospazio9}) è un esempio di \textit{prodotto scalare}, una nozione che vedremo più in generale in una dei prossimi capitoli (il nome viene dal fatto che si tratta di un'operazione il cui risultato è un numero reale, e come detto sopra nel contesto dei vettori i numeri reali si chiamano anche scalari).\\
-  Si noti che anche le formule (\ref{eq:teoremadiPitapplicatoaAbsOP}) e (\ref{eq:teopitapplicatinellospazio}) per calcolare in coordinate della lunghezza di un vettore (rispettivamente nel piano e nello spazio) possono essere espresse in termini del prodotto scalare: infatti, ad esempio per la (\ref{eq:teopitapplicatinellospazio2}) si ha, facendo riferimento alla (\ref{eq:teopitapplicatinellospazio9}),
+\end{defi}
+\begin{es}
+  \label{es:matrice2}
+  Perndendo una matrice $A \in \mathds{R}^{2\times3}$, si otterrà un
+  $A^T\in \mathds{R}^{3\times2}$
+  \begin{eqnarray*}
+    A=
+    \begin{bmatrix}
+      1 & -1 & 2\\
+      2 & 0 & 3
+    \end{bmatrix}, & A^T=
+                     \begin{bmatrix}
+                       1 & 2  \\
+                       -1 & 0 \\
+                       2 & 3
+                     \end{bmatrix}
+  \end{eqnarray*}
+  (che appare come se fosse stata specchiata e ruotata di $90^o$)
+\end{es}
+\begin{defi}
+  \label{defi:matrice3}
+  Per \textbf{sottomatrice} $B\in\mathds{R}^{p\times q}$ di una matrice
+  $\mathds{R}^{m \times n}$ si intende, la matrice in cui elementi
+  appartengono a $p$ righe e $q$ colonne di $A$.
+\end{defi}
+\begin{es}
+  \label{es:matrice3}
   \begin{equation*}
-    \sqrt{x_1^2+x_2^2+x_3^2}=\sqrt{x_1\cdot x_1+x_2\cdot x_2+x_3\cdot x_3}=\sqrt{x\cdot x}
+    \begin{bmatrix}
+      6 & \pi & 0\\
+      10 & 0 & -1
+    \end{bmatrix}
+  \end{equation*}
+  è una sottomatrice della matrice dell'Esempio \ref{es:matrice1}
+  scegliendo prima e seconda riga e prima, terza e quarta colonna.
+\end{es}
+\begin{oss}
+  \label{oss:matrice1}
+  se una matrice ha una sola dimensione ($n\times 1$) vengono definiti
+  anche vettori.
+\end{oss}
+\begin{defi}
+  \label{defi:matrice4}
+  Una matrice di tipo $n\times n$, anche chiamata \textit{matrice
+    quadrata} ed il numero $n$ prende il nome di \textit{ordine} della
+  matrice. Gli elementi $a_{11},a_{12},\cdots,a_{nn}$ costituiscono la
+  \textit{diagonale principale} della matrice.
+
+  Una sottomatrice quadrata di $A\in\mathds{R}^{m\times n}$ viene anche
+  definita \textbf{minore estratto da} $A$. Se $A\in\mathds{R}^{m\times n}$
+  è quadrata, il \textbf{minore complementare} dell'elemento $a_{ij}$ di
+  $A$ è il minore di ordine $n-1$ che si ottiene cancellando da A la
+  riga e la colonna a cui appartiene $a_{ij}$ (cancellando riga $i$ e
+  colonna $j$).\\
+  Nell'ambito delle \textbf{matrici quadrate}, hanno particolare
+  importanza i seguenti tipi matrici:
+  \begin{itemize}
+  \item \textit{simmetrica} se $a_{ij}=a_{ji}$, cioè $A=A^T$;
+    \begin{es}
+      \label{es:matrice4-1}
+      \begin{equation*}
+        \begin{bmatrix}
+          3 & 7 & -1 & 2\\
+          7 & -2 & 0 & 10\\
+          -1 & 0 & -12 & 1\\
+          2 & 10 & 1 & 6 
+        \end{bmatrix}
+      \end{equation*}
+    \end{es}
+  \item \textit{antisimmetrica} se $a_{ij}=-a_{ji}$; si noti che gli
+    elementi della diagonale principale devono essere nulli, perché deve
+    valere $a_{ii}=-a_{ii}$ ma se un numero reale è uguale al suo opposto
+    deve essere per forza 0;
+    \begin{es}
+      \label{es:matrice4-2}
+      \begin{equation*}
+        \begin{bmatrix}
+          \mathbf{0} & 7 & -2\\
+          -7 & \mathbf{0} & 1\\
+          2 & -1 & \mathbf{0}
+        \end{bmatrix}
+      \end{equation*}
+    \end{es}
+  \item \textit{triangolare superiore} se $a_{in}=0$ per $i>j$;
+    \begin{es}
+      \label{es:matrice4-3}
+      \begin{eqnarray*}
+        \begin{bmatrix}
+          3 & 7 & -2\\
+          \mathbf{\color{blue}0} & 11 & 1\\
+          \mathbf{\color{blue}0} & \mathbf{\color{blue}0} & -5
+        \end{bmatrix} & a_{21} = a_{31} = a_{32} = 0
+      \end{eqnarray*}
+    \end{es}
+  \item \textit{triangolare inferiore} se $a_{ij}=0$ per $i<j$;
+    \begin{es}
+      \label{es:matrice4-4}
+      \begin{eqnarray*}
+        \begin{bmatrix}
+          3 & \mathbf{\color{blue}0} & \mathbf{\color{blue}0}\\
+          -7 & 5 & \mathbf{\color{blue}0}\\
+          12 & -1 & 4
+        \end{bmatrix} & a_{12}=a_{13}=a_{23}=0
+      \end{eqnarray*}
+    \end{es}
+  \item \textit{diagonale} se $a_{ij}=0$ per $i\neq j$.
+    \begin{es}
+      \label{es:matrice4-5}
+      \begin{equation*}
+        \begin{bmatrix}
+          4 & 0 & 0\\
+          0 & -2 & 0\\
+          0 & 0 & 9
+        \end{bmatrix}
+      \end{equation*}
+      In particolare, se gli elementi diagonali sono uguali a 1, tale
+      matrice si chiama \textbf{matrice identità} e si indica col simbolo
+      $I$ (o $I_n$ se si vuole evidenziare il suo ordine)
+      \begin{equation*}
+        I_4=
+        \begin{bmatrix}
+          1 & 0 & 0 & 0\\
+          0 & 1 & 0 & 0\\
+          0 & 0 & 1 & 0\\
+          0 & 0 & 0 & 1
+        \end{bmatrix}
+      \end{equation*}
+      \begin{lstlisting}[caption=generare una matrice identità in GNU/Octave]
+        > eye(4)
+        ans =
+        
+        Diagonal Matrix
+
+        1   0   0   0
+        0   1   0   0
+        0   0   1   0
+        0   0   0   1
+      \end{lstlisting}
+    \end{es}
+  \end{itemize}
+\end{defi}
+\begin{defi}
+  \label{defi:matrice5}
+  La \textbf{traccia} di una matrice quadrata $A$ è il numero dato dalla
+  somma degli elementi sulla diagonale
+  \begin{equation*}
+    \mathrm{tr}(A)=a_{11}+a_{22}+\cdots+a_{nn}.
+  \end{equation*}
+\end{defi}
+\begin{es}
+  La traccia della matrice dell'Esempio \ref{es:matrice4-1} è
+  $\mathrm{tr}(A)=3-2-12-6=-5$.
+\end{es}
+Considerando una matrice rettangolare $A\in\mathds{R}^{m\times n}$.
+\begin{defi}
+  \label{defi:matrice6}
+  Una matrice viene detta \textbf{a gradini} se dalla prima all'ultima
+  riga, il primo elemento non nullo di ogni riga compare con un indice di
+  colonna sempre più grande. Il primo elemento non nullo di ogni riga è
+  chiamato \textit{pivot}.
+  \begin{es}
+    \label{es:matrice6-1}
+    \begin{equation*}
+      \begin{bmatrix}
+        7 & 1 & 1 & 3 \\
+        0 & 4 & 3 & 5 \\
+        0 & 0 & 0 & 6
+      \end{bmatrix}
+    \end{equation*}
+    è una matrice a gradini. I suoi \textit{pivot} sono 7 nella prima
+    seconda, 4 nella seconda, 6 nella terza, nell'ordine, sulla prima,
+    seconda e quarta colonna (indice di colonna viene incrementato più si
+    scende nella matrice).
+  \end{es}
+  \begin{es}
+    \label{es:matrice6-2}
+    \begin{equation*}
+      \begin{bmatrix}
+        7 & 1 & 1 & 3 \\
+        0 & 4 & 3 & 5 \\
+        0 & 2 & 0 & 6
+      \end{bmatrix}
+    \end{equation*}
+    non è a gradini. Il primo elemento non nullo della terza riga sta
+    nella stessa colonna del primo elemento nullo della seconda riga.
+  \end{es}
+  \begin{es}
+    \label{es:matrice6-3}
+    \begin{equation*}
+      \begin{bmatrix}
+        7 & 1 & 1 & 3 \\
+        0 & 0 & 3 & 5 \\
+        0 & 2 & 0 & 6
+      \end{bmatrix}
+    \end{equation*}
+    non è a gradini. Il primo elemento non nullo della riga sta in una
+    colonna di indice più piccolo del primo elemento non nullo della
+    seconda riga.
+  \end{es}
+  \begin{es}
+    \label{es:matrice6-4}
+    Altri esempi di matrici a gradini sono le diagonali e le matrici
+    triangolari superiori con gli elementi sulla diagonale principale
+    diversi da zero.
+  \end{es}
+\end{defi}
+
+\section{Operazioni tra matrici}
+\label{sec:opmatrici}
+
+\subsection{Somma di matrici}
+\label{sec:somdimatrici}
+
+Siano $A$ e $B$, due matrici dello stesso tipo $m\times n$. Gli elementi
+della matrice $A+B$, anche detta \textbf{somma} di $A$ e $B$, si ottengono
+sommando elementi aventi lo stesso posto in $A$ e $B$, cioè
+\begin{eqnarray*}
+  (A+B)_{ij}=a_{ij}+b_{ij} & i=1,\cdots,m, & j=1,\cdots,n.
+\end{eqnarray*}
+\begin{es}
+  \label{es:sommatrice1}
+  \begin{eqnarray*}
+    A=
+    \begin{bmatrix}
+      \frac{7}{10} & -1 & \frac{1}{4}\\
+      0 & 3 & \frac{1}{2}
+    \end{bmatrix}, & B=
+                    \begin{bmatrix}
+                      0 & \frac{1}{2} & \frac{3}{4}\\
+                      -2 & 1 & \frac{1}{2}
+                    \end{bmatrix}, & A+B=
+                                    \begin{bmatrix}
+                                      \frac{7}{10} & -\frac{1}{2} & 1\\
+                                      -2 & 4 & 1
+                                    \end{bmatrix}
+  \end{eqnarray*}
+\end{es}
+
+\paragraph{Proprietà:}
+
+siano $A,B,C\in \mathds{R}^{m\times n}$, valgono le seguenti
+\begin{description}
+\item[Proprietà commutativa] $A+B=B+A$
+\item[Proprietà associativa] $(A+B)+C=A+(B+C)$
+\item[La matrice nulla $O$] (formata da tutti zeri) è tale che
+  $A+O=O+A=A$ 
+\item[La matrice di $-A$] (opposta di $A$) i cui elementi sono gli opposti
+  dei relativi elementi di $A$ è tale che $A+(-A)=O$
+\end{description}
+La \textbf{differenza} tra matrice dello stesso tipo è definita da
+\begin{equation*}
+  A-B=A+(-B)
+\end{equation*}
+
+\subsection{Prodotto di uno scalare per una matrice}
+\label{sec:prodmatrice}
+
+Sia $A\in \mathds{R}^{m\times n}$ e $\lambda \in \mathds{R}$. Il
+\textbf{prodotto} di $\lambda$ per $A$ è la matrice $\lambda A$ i quali
+elementi sono ottenuti moltiplicando per $\lambda$ i corrispondenti
+elementi di $A$, cioè
+\begin{eqnarray*}
+  (\lambda A)_{ij}=\lambda a_{ij} & i = 1,\dots,m, & j=1,\dots,n.
+\end{eqnarray*}
+\begin{es}
+  \label{es:prodmatrice1}
+  \begin{equation*}
+    3
+    \begin{bmatrix}
+      -2 & 1 & 0\\
+      4 & -1 & 2
+    \end{bmatrix} =
+    \begin{bmatrix}
+      -6 & 3 & 0\\
+      12 & -3 & 6
+    \end{bmatrix}
+  \end{equation*}
+  
+\end{es}
+
+\paragraph{Proprietà}
+
+siano $A,B\in \mathds{R}^{m\times n}$ e $\lambda, \mu \in \mathds{R}$, valgono le
+seguenti
+\begin{enumerate}
+\item $\lambda (A+B)=\lambda A+\lambda B$
+\item $(\lambda + \mu)A=\lambda A+\mu A$
+\item $\lambda (\mu A)=(\lambda\mu) A$
+\item $1A=A$
+\end{enumerate}
+\begin{oss}
+  \label{oss:prodmatrice1}
+  L'insieme delle matrici di tipo $m\times n$ dotato delle operazioni di
+  somma di matrici e prodotto di uno scalare per una matrice è uno
+  spazio vettoriale.
+\end{oss}
+
+\subsection{Prodotto di matrici (righe per colonne)}
+\label{sec:prodmtxrigcol}
+
+Siano $A\in \mathds{R}^{m\times n}$ e $B\in \mathds{R}^{n\times p}$ (il numero di
+colonne in $A$ coincidono con il numero di righe in $B$) il \textbf{prodotto} delle
+matrici $A$ e $B$ è la matrici
+\begin{equation*}
+  AB\in \mathds{R}^{m\times p}
+\end{equation*}
+il cui elemento generico è dato da
+\begin{eqnarray}
+  \label{eq:prodmtxrigcol1}
+  (AB)_{ij}=\sum_{k=1}^na_{ik}b_{kj} & i=1,\cdots,m; & j = 1,\cdots,p
+\end{eqnarray}
+cioè la matrice prodotta ha numero di righe pari a quello della matrice di sinistra
+e numero di colonne pari a quello della matrice di destra, e il suo generico elemento
+è la somma dei prodotti degli elementi della riga di posto $i$ nella matrice $A$ per
+i corrispondenti elementi della colonna di posto $j$ nella matrice B.
+Ecco come diventa la formula (\ref{eq:prodmtxrigcol1}) se $A\in \mathds{R}^{2\times3}$
+e $B\in \mathds{3\times 2}$, andando a scrivre gli elementi della matrice prodotto:
+\begin{eqnarray}
+  \label{eq:prodmtxrigcol2}
+  \underbrace{\begin{bmatrix}
+    a_{11} & a_{12} & a_{13}\\
+    a_{21} & a_{22} & a_{23}
+  \end{bmatrix}}_{A}
+  \underbrace{\begin{bmatrix}
+    b_{11} & b_{12} \\
+    b_{21} & b_{22} \\
+    b_{31} & b_{32}
+  \end{bmatrix}}_{B}=
+  \underbrace{\begin{bmatrix}
+    c_{11} & c_{12}\\
+    c_{21} & c_{22} 
+  \end{bmatrix}}_{AB} &
+                  \begin{matrix}
+                    c_{11}=a_{11}b_{11} + a_{12}b_{21} + a_{13} b_{31}\\
+                    c_{12}=a_{11}b_{12} + a_{12}b_{22} + a_{13} b_{32}\\
+                    c_{21}=a_{23}b_{11} + a_{22}b_{21} + a_{23} b_{31}\\
+                    c_{22}=a_{21}b_{12} + a_{22}b_{22} + a_{23} b_{32}
+                  \end{matrix}
+\end{eqnarray}
+\begin{es}
+  \label{es:prodmtxrigcol1}
+  Prodotto tra una matrice $A$ di tupo $2\times 3$ una $B$ di tipo $3\times 2$
+  \begin{eqnarray*}
+    AB=
+    \begin{bmatrix}
+      4 & 5 & 3 \\
+      2 & 3 & 1
+    \end{bmatrix}\cdot
+    \begin{bmatrix}
+      2 & 3 \\
+      4 & 1 \\
+      9 & 2
+    \end{bmatrix} =
+    \begin{bmatrix}
+      4\cdot 2 + 5 \cdot 3 + 3\cdot 9 & 4 \cdot 3 + 5 \cdot 1 + 3 \cdot 2\\
+      2\cdot 2 + 5 \cdot 4 + 3\cdot 9 & 4 \cdot 2 + 3 \cdot 3 + 1 \cdot 3
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+      55 & 23\\
+      25 & 11
+    \end{bmatrix}
+  \end{eqnarray*}
+  La matrice prodotto è di tipo $2\times 2$. Riportando questa operazione su
+  GNU/Octave:
+  \begin{lstlisting}[caption=moltiplicazione riga per colonna]
+    A = [ 4 5 3; 2 3 1 ];
+    B = [ 2 3; 4 1; 9 2 ];
+    C=A*B;
+    disp (C);
+  \end{lstlisting}
+\end{es}
+\begin{oss}
+  \label{oss:prodmtxrigcol1}
+  Se ha senseo calcolare $AB$, in generale non può avere senso calcolare $BA$.
+  Nell'Esempio \ref{es:prodmtxrigcol1} ha senso calcolare $BA$. 
+\end{oss}
+\begin{oss}
+  \label{oss:prodmtxrigcol2}
+  Anche se entrambi i prodotti possono si possono eseguire, come avviene ad
+  esempio $A$ e $B$ sono quadrate dello stesso ordine, in genere
+  \begin{equation*}
+    AB\neq BA
+  \end{equation*}
+  da questo si deduce che il prodotto tra matrici non gode della proprietà
+  commutativa.
+\end{oss}
+\begin{es}
+  \label{es:prodmtxrigcol2}
+  \begin{eqnarray*}
+    \begin{bmatrix}
+      2 & -1\\
+      3 & \frac{5}{4}
+    \end{bmatrix}
+    \begin{bmatrix}
+      1 & 0 \\
+      2 & -4
+    \end{bmatrix}=
+    \begin{bmatrix}
+      0 & 4\\
+      \frac{11}{2} & -5
+    \end{bmatrix}\\
+    \begin{bmatrix}
+      1 & 0 \\
+      2 & -4
+    \end{bmatrix}
+    \begin{bmatrix}
+      2 & -1 \\
+      3 & \frac{5}{4}
+    \end{bmatrix}=
+    \begin{bmatrix}
+      2 & -1 \\
+      -8 & -7
+    \end{bmatrix}
+  \end{eqnarray*}
+  Si può dimostrare se $AB=BA$, qualunque sia la matrice $A$ di ordine $n$, allora
+  $B=\lambda I_n$.
+  
+  \paragraph{Proprietà} purché le operazioni indicate abbiano senso (\textit{in base
+    alle dimostrazioni delle matrici}), valgono le sequenti
+  \begin{enumerate}
+  \item $A(B+C)=AB+AC$, $(A+B)C=AC+BC$
+  \item $A(BC)=(AB)C$
+  \item $A(\lambda B)=\lambda (AB)$, $(\lambda A)B=\lambda(AB)$
+  \end{enumerate}
+\end{es}
+\begin{oss}
+  \label{oss:prodmtxrigcol2}
+  Nel prodotto tra matrici non vale la \textit{legge di annullamento del
+    prodotto}\footnote{Se due numeri $a$ e $b$ danno prodotto zero $ab=0$, allora
+    almeno uno dei fattori è zero.}. Quindi si può ottenere la matrice nulla $AB=O$
+  anche se $A$ e $B$ non sono matrici nulle. per esempio
+  \begin{equation*}
+    \begin{bmatrix}
+      0 & 1 \\
+      0 & 0
+    \end{bmatrix}\cdot
+    \begin{bmatrix}
+      1 & 0 \\
+      0 & 0
+    \end{bmatrix} =
+    \begin{bmatrix}
+      0 & 0 \\
+      0 & 0
+    \end{bmatrix}
   \end{equation*}
 \end{oss}
-Il prodotto scalre rappresenta qundi una sorta di ``strumento di misura'' tramite il quale si esprimono le misure della lunghezza e degli angoli tra vettori quando si lavora in coordinate: quindi, per manipolare espressioni che riquardano lunquezza e angolo e, come verrà fatto in capitoli successivi, ricavare le formule che coinvolgono in qualche modo queste nozioni (ad esempio, riflessioni, proiezioni ortogonali, etc.) è necessario conoscerne le proprietà algebriche.\\
-Le proprietà più importanti, limitando al cso di $\mathds{R}^3$ (tali proprietà saranno valide anche nel caso di $\mathds{R}^2$, dove si ricavano nello stesso modo e l'unica differenza è che nelle formule non compare la terza componente)
-\begin{enumerate}
-\item Il prodotto scalare gode della proprietà commutativa: infatti, si verifica immediatamente che
+\begin{oss}
+  \label{oss:prodmtxrigcol3}
+  Se la matrice $A$ è quadrata, ha senso $A^2=AA, A^3=AAA, A^P=AA\cdot{}A$, detta
+  \textit{potenza p-esima} della matrice A. Inoltre se $I_n$ è la matrice identità di
+  ordine $n$, vale $AI_n=I_nA=A$.
+\end{oss}
+\begin{prop}
+  \label{prop:prodmtxrigcol1}
+  Siano $A\in\mathds{R}^{m\times n}$ e $B\in \mathds{R}^{m\times p}$, Allora vale
   \begin{equation*}
-    x\cdot y:=x_1y_1+x_2y_2+x_3y_3=y_1x_1+y_2x_2+y_3x_3=y\cdot x
+    (AB)^T=B^TA^T
   \end{equation*}
-\item Come visto nel pagrafo precedente che se due vettori geometrici $\vec{OP}$ e $\vec{OQ}$ nello spazio hanno coordinate date rispettivamente da due terne $x=(x_1,x_2,x_3)$ e $y=(y_1,y_2,y_3)$, allora la loro somma $\vec{OP}+\vec{OQ}$ ha coordinate dalla terna $(x_1+y_1,x_2+y_2,x_3+y_3)$ che si ottiene sommando le rispettive componenti delle due terne: questo definisce un'operazione di somma tra le $x$ e $y$, che prodotto scalare gode delle proprietà distributiva rispetto rispetto a tale somma, ovvero date tre terne $x=(x_1,x_2,x_3),y=(y_1,y_2,y_3),z=(z_1,z_2,z_3)$ valgono le
-  \begin{eqnarray}
-    \label{eq:teopitapplicatinellospazio10}
-    x\cdot (y+z)=x\cdot y+x\cdot z, & (x+y)\cdot z=x\cdot z+y\cdot z
-  \end{eqnarray}
-  rispettivamente proprietà distributiva a destra e a sinistra.\\
-  Infatti, essendo $y+z=(y_1+z_1,y_2+z_2, y_3+z_3)$, dalla (\ref{eq:teopitapplicatinellospazio9}) si ha
+  \begin{proof}
+    \begin{eqnarray*}
+      ((AB)^T)_{ij}=(AB)_{ji}=\sum_{k=1}^na_{jk}b_{kj}\\
+      (B^TA^T)=\sum_{k=1}^n(B^T)_{jk} (A^T)_{kj}=\sum_{k=1}^nb_{kj}a_{jk}
+    \end{eqnarray*}
+    e le due espressioni sono uguali perché prodotto di due scalari è communtativo.
+  \end{proof}
+\end{prop}
+
+\section{Il determinante}
+\label{sec:determinante}
+
+Data una matrice quadrata di ordine $n$ a entrate in un campo $\mathds{K}$ (che può
+essere $\mathds{R}$ o $\mathds{C}$)
+\begin{equation*}
+  A=
+  \begin{bmatrix}
+    a_{11} & a_{12} & \dots & a_{1n}\\
+    a_{21} & a_{22} & \dots & a_{2n}\\
+    \vdots & \vdots & \vdots& \vdots\\
+    a_{n1} & a_{n2} & \dots & a_{nn}
+  \end{bmatrix}
+\end{equation*}
+ad essa si associa un numero appartenente a $\mathds{K}$, detto \textbf{determinante}
+della metrice, che è funzione delle sue entrate
+\begin{equation*}
+  \det(A)=
+  \begin{bmatrix}
+    a_{11} & a_{12} & \dots & a_{1n}\\
+    a_{21} & a_{22} & \dots & a_{2n}\\
+    \vdots & \vdots & \vdots& \vdots\\
+    a_{n1} & a_{n2} & \dots & a_{nn}
+  \end{bmatrix}
+\end{equation*}
+Se la matrice ha ordine $n\leq 3$, il suo determinente è così definito:
+\begin{itemize}
+\item per $n=1$, $\det(A)$ coincide con l'unico elemento della matrice;
+\item per $n=2$, si pone
   \begin{equation*}
-    x\cdot (y+z)=x_1(y_1+z_1)+x_2(y_2+z_2)+x_3(y_3+z_3)=
+    \det(A)=
+    \begin{pmatrix}
+      a_{11} &a_{12}\\
+      a_{21} & a_{22}
+    \end{pmatrix}= a_{11}a_{22}-a_{12}a_{21}
   \end{equation*}
-  usando per ciascuno dei tre addendi la proprietà distributiva del prodotto di numeri reali rispetto alla somma
+\item per $n=3$, si pone
+  \begin{eqnarray*}
+    \det(A)=
+    \begin{pmatrix}
+      a_{11} & a_{12} & a_{13}\\
+      a_{21} & a_{22} & a_{23}\\
+      a_{31} & a_{32} & a_{33}
+    \end{pmatrix}= a_{11}
+    \begin{bmatrix}
+      a_{22} & a_{23}\\
+      a_{32} & a_{33}
+    \end{bmatrix} - a_{12}
+    \begin{bmatrix}
+      a_{21} & a_{23}\\
+      a_{31} & a_{33}
+    \end{bmatrix}+
+    a_{13}
+    \begin{bmatrix}
+      a_{21} & a_{22}\\
+      a_{31} & a_{32}
+    \end{bmatrix}\\
+    = a_{11}(a_{22}a_{33}-a_{23}a_{32})-a_{12}(a_{21}a_{33}-a_{23}a_{31})+a_{13}
+    (a_{21}a_{32}-a_{22}a_{31})
+  \end{eqnarray*}
+\end{itemize}
+Per estendere la definizione di determinante al caso $n$ generale, è necessaria una
+premessa sulle permutazioni.
+
+\section{Permutazioni}
+\label{sec:perm}
+
+Dato l'insieme $\{1,2,\cdots, n\}$ dei numeri naturali compresi tra 1 e n, una
+funzione da questo insieme in se stesso associa ad ogni elemento di $\{1,2,\dots,n\}$
+un immagine, scelta sempre all'interno di $\{1,2,\cdots,n\}$. Se le immagini sono
+tutte diverse zenza ripetizioni, queste saranno ancora tutti gli elementi
+$1,2,\dots,n$ semplicemente disposti in un altro ordine, ovvero permutati. Si tratta
+allor di \textbf{permutazione di $n$ elementi}.
+\begin{es}
+  \label{es:perm1}
+  Le seguenti rappresentano permutazioni di 4 elementi:
+  \begin{eqnarray*}
+    1 \to 1 && 1 \to 3\\
+    2 \to 3 && 2 \to 4\\
+    3 \to 2 && 3 \to 2\\
+    4 \to 4 && 4 \to 1
+  \end{eqnarray*}
+  L'insieme delle permutazioni di $n$ eleemnti si denota $S_n$. Per ogni $n$, tale
+  insieme contiene esattamente $n!:= n(n-1)(n-2)\cdots 2 \cdot 1$ (cioè $n$
+  fattoriale) permutazioni: ad esempio per $n=2$ si ottiene $2\cdot 1=2$ permutazioni
+  possibili, ovvero
   \begin{equation*}
     \begin{matrix}
-      =x_1y_1+x_1z_1+x_2y_2+x_2z_2+x_3y_3+x_3z_3=x_1y_1+x_2y_2+x_3y_3+x_1z_1+x_2z_2+x_3z_3=\\
-      x\cdot y+x\cdot z
+      1\to 1 && 1\to 2\\
+      2\to 2 && 2\to 1
     \end{matrix}
   \end{equation*}
-  come si voleva.\\
-  Allo stesso modo (omettiamo quindi i dettagli) si verifica che vale anche la proprietà distributiva a sinistra, ovvero la seconda delle (\ref{eq:teopitapplicatinellospazio10}).
-\item Visto nel paragrafo precedente che se un vettore geometrico $\vec{OP}$ nello spazio ha coordinate date dalla terna $x=(x_1,x_2,x_3)$, allora il prodotto $c\vec{OP}$ del vettore per un numero $c\in \mathds{R}$ ha coordinate date della terna $x$ per $c$: posto $cx=(cx_1,cx_2,cx_3)$, ci chiediamo come si comporta il prodotto scalare rispetto a questa operazione (che quindi non è nient'altro per un vettore), ovvero cosa se date due terne $x=(x_1,x_2,x_3)$ e $y=(y_1,y_2,y_3)$ e un numero $c\in \mathds{R}$ eseguiamo i prodotti scalare $(cx)\cdot y$ oppure $x\cdot (cx)$. Si verifica facilmente che si ha
-  \begin{eqnarray}
-    \label{eq:teopitapplicatinellospazio11}
-    (cx)\cdot y=c(x\cdot y), & x\cdot (cy)=c(x\cdot y)
-  \end{eqnarray}
-  Infatti, essendo $cx=(cx_1,cx_2,cx_3)$, per la (\ref{eq:teopitapplicatinellospazio9}) si ha
+  Tra le permutazioni, vi è sempre anche quella che associa a ogni elemento se stesso,
+  detta \textit{permutazione identica}.
+\end{es}
+Per $n=3$ si ottiene invece $3! = 3\cdot 2\cdot 1 = 6$ permutazioni possibili,
+ovvero
+\begin{equation*}
+  \begin{matrix}
+    p_1 & p_2 & p_3 & p_4 & p_5 & p_6\\
+    1 \to 1 & 1 \to 2 & 1 \to 1 & 1 \to 3 & 1 \to 2 & 1 \to 3 \\
+    2 \to 2 & 2 \to 1 & 2 \to 3 & 2 \to 2 & 2 \to 3 & 2 \to 1 \\
+    3 \to 3 & 3 \to 3 & 3 \to 2 & 3 \to 1 & 3 \to 1 & 3 \to 2
+  \end{matrix}
+\end{equation*}
+Si noti che $p_2$, $p_3$ e $p_4$ scambiano tra loro due elementi fisso il terzo
+($p_2$ scambia tra loro 1 e 2, $p_3$ scambia loro 2 e 3, $p_4$ scambia tra loro 1 e
+3): in genere, una permutazione di questo tipo, che scambia tra loro due elementi
+lasciando fissi tutti gli altri elementi presentata nell'esempio \ref{es:perm},
+(scambia tra loro 2 e 3 lasciando fissi 1 e 4), mentre la seconda non lo è. Benché
+non tutte le permutazioni sieno trasposizioni, qualunque realizzata eseguendo può
+esssere ottenuta come composizione di trasposizioni, ovvero può essere permutazione
+può essere ottenuta come composizioni di trasposizioni, ovvero può essere realizzata
+eseguendo una sequenza di trasposizioni. Ad esempio, la permutazione $p_5$ di sopra,
+che non è una trasposizione, può tuttavia essere ottenuta scambiando prima 1 e 2, e
+poi 1 e 3, cioè componentdo 2 trasposizioni:
+\begin{equation*}
+  \begin{matrix}
+    1 \to 2 \to 2\\
+    2 \to 1 \to 3\\
+    3 \to 3 \to 1
+  \end{matrix}
+\end{equation*}
+In genere, se il numero di trasposizioni che servono per ottenere una permutazione
+$p$ è pari, si dice che $p$ è una \textbf{permutazione pari}, se invece, il numero
+di trasposizioni che servono per ottenere $p$ è dispari, si dice che $p$ sia una
+\textbf{permutazione dispari}. Ad esempio, $p_5$ è una permutazione pari, in quanto
+è stato ottenuto componendo 2 trasposizioni.
+\begin{oss}
+  \label{oss:perm1}
+  Se una permutazione è già essa una trasposizione, allora essa è dispari (1 è un
+  numero dispari).
+\end{oss}
+\begin{oss}
+  \label{oss:perm2}
+  Possono esserci più modi diversi di decomporre una permutazione come composizione
+  di trasposizioni, ad esempio, la permutazione identica può essere vista o come
+  risultato di $0$, oppure come risultato di 2 trasposizioni
   \begin{equation*}
-    (cx)\cdot y=cx_1y_1+cx_2y_2+cx_3y_3=
+    \begin{matrix}
+      1 \to 2 \to 1\\
+      2 \to 1 \to 2\\
+      3 \to 3 \to 3
+    \end{matrix}
   \end{equation*}
-  mettendo in evidenza $c$ che compare in tutti e tre gli addendi
-  \begin{equation*}
-    =c(x_1y_1+x_2y_2+x_3y_3)=c(x\cdot y)
-  \end{equation*}
-  come volevamo. Allo stesso modo (omettiamo quindi i dettagli) si verifica la seconda delle (\ref{eq:teopitapplicatinellospazio11}).
-\end{enumerate}
-Vediamo ora che in $\mathds{R}^3$ è possibile introdurre anche un'altra operazione molto utile in geometria ma anche in altre ma anche in altre applicazioni (soprattutto in fisica), il \textit{prodotto vettoriale}, che date due terne di numeri reali dà come risultato non uno scalare (come nel caso del prodotto scalare) ma una nuova terna (che rappresenta in cordinate un nuovo vettore, da cui il nome). La definizione è la seguente: se $x=(x_1,x_2,x_3)$ e $y=(y_1,y_2,y_3)$ allora si pone
-\begin{equation}
-  \label{eq:teopitapplicatinellospazio12}
-  x\wedge y := (x_2y_3-x_3y_2,x_2y_1-x_1y_3,x_1y_2-x_2y_1)
-\end{equation}
-Ad esempio, se $x=(1,2,3)$ e $y=(2,5,-1)$ si ha
-\begin{equation*}
-  x\wedge y := (2\cdot (-1)-3\cdot 5, 3\cdot 2-1,1\cdot 5-2\cdot 2) = (-17,7,1)
-\end{equation*}
-Il motivo di questa particolare definizione è che si vuole che la terna $x \wedge y$ rappresenti (in coordinate rispetto a una base ortonormale) un vettore che è perpendicolare sia al vettore rappresentato da $x$ che a quello rappresentato da $y$.\\
-Per verificare che effevamente è così, basta usare il criterio di perpendicolarità visto nella (\ref{eq:teopitapplicatinellospazio8}), cioè moltiplicare le rispettive componenti di $x$ e $x\wedge y$ (la prima con la prima, la seconda con la seconda, la terza con la terza) e sommare:
-\begin{eqnarray*}
-  x_1(x_2y_3-x_3y_2)+x_2(x_3y_1-x_1y_3)+x_3(x_1y_2-x_2y_1)=\\
-  x_1x_2y_3-x_1x_3y_2-x_2x_1y_3+x_3x_1y_2-x_3x_2y_1=0
-\end{eqnarray*}
-in quanto come si vede facilmente tutti i termini si semplificano.\\
-Analogamente, per verificare che anche il vettore di coordiante $y$ è perpendicolare al vettore rappresentato dal prodotto vettoriale $x\wedge y$:
-\begin{eqnarray*}
-  y_1(x_2y_3-x_3y_2)+y_2(x_3y_1-x_1y_3)+y_3(x_1y_2-x_2y_1)=\\
-  y_1x_2y_3-y_1x_3y_2-y_2x_1y_3+y_3x_1y_2-y_3x_2y_1=0
-\end{eqnarray*}
-come si voleva.\\
-Come abbiamo già fatto per il prodotto scalare, vediamo le più importanti proprietà algebriche dell'operazione di prodotto vettoriale: iniziamo con il segnalare subito che esso \textit{non} è commutativo, ma si ha
-\begin{equation*}
-  x\wedge y=-y\wedge x
-\end{equation*}
-ovvero quando combiamo l'ordine dei fattori il risultato cambia di segno (ovvero otteniamo una terna con le componenti di segno opposto). Ad esempio, per i due vettori $x=(1,2,3)$ e $y=(2,5,-1)$ per cui sopra abbiamo già calcolato $x\wedge y=(-17,7,1)$, si ha
-\begin{equation*}
-  y\wedge x=(5\cdot 3+(-1)\cdot 2, -1\cdot 3, 2\cdot 3-5\cdot 1)=(17, -7, -1).
-\end{equation*}
-Ancora, nella manipolazione di espressioni e formule che coinvolgono il prodotto vettoriale è necessario fare attenzione al fatto che esso \textit{non} è neanche associativo, cioè in generale si ha
-\begin{equation*}
-  x\wedge (y\wedge z)\neq (x\wedge y) \wedge z
-\end{equation*}
-Ad esempio, se prendiamo $x=(1,0,0)$ e $y=z=(0,1,0)$, si vede facilmente che $x\wedge y = (0,0,1)$ e $(x\wedge y) \wedge z=(-1,0,0)$, mentre dall'altra si ha $y\wedge z=(0,0,0)$ e $x\wedge (y\wedge z)=(0,0,0)$.\\
-Ancora, esattamente come abbiamo fatto nella (\ref{eq:teopitapplicatinellospazio10}) per il prodotto scalare, verifichiamo che anche il prodotto vettoriale gode di proprietà distributiva (\textit{sia a destra che a sinistra}) rispetto alla somma di terne definite $x+y=(x_1+y_1,x_2+y_2x_3+y_3)$, ovvero
-\begin{eqnarray}
-  \label{eq:teopitapplicatinellospazio13}
-  x\wedge (y+z)=x\wedge y +x \wedge z, & (x+y)\wedge z= x\wedge z+y\wedge z
-\end{eqnarray}
-Ad esempio, verificando la prima (la seconda è analoga): essendo $y+x=(y_1+z_1,y_2+z_2,y_3+z_3)$, per definizione di prodotto vettoriale si ha
-\begin{eqnarray*}
-  x\wedge (y+z)= [x_2\cdot(y_3+z_3)-x_3\cdot(y_2+z_2),x_3\cdot(y_1+z_1)
-  -x_1\cdot (y_3+z_3),x_1\cdot(y_2+z_2)\\-x_2(y_1+z_1)]=
-\end{eqnarray*}
-Svolgendo i calcoli per ognuna delle tre componenti
-\begin{eqnarray*}
-  =(x_2y_3+x_2z_3-x_3y_2-x_3z_2,x_3y_!+x_2z_1-x_1y_3-x_1z_3, x_1y_2+x_1z_2-x_2y_1-x_2z_1)=\\
-  (x_2y_3-x_3y_2,x_3y_1-x_1y_3,x_1y_2-x_2y_1)+(x_2z_3-x_3z_2,x_3z_1-x_1z_3,x_1z_2-x_2z_1)
-\end{eqnarray*}
-ovvero proprio $x\wedge y+x\wedge z$, come voluto. Infine, si verifica che vale un'analoga della (\ref{eq:teopitapplicatinellospazio11}) anche per il prodotto vettoriale, ovvero
-\begin{eqnarray}
-  \label{eq:teopitapplicatinellospazio14}
-  x\wedge (cy)=c(x\wedge y), & (cx)\wedge y =c(x\wedge y)
-\end{eqnarray}
-Ad esempio, si verifica la prima (la seconda è analoga): essendo $cy=(cy_!,cy_2,cy_3)$, per definizione di prodotto vettoriale si ha
-\begin{eqnarray*}
-  x\wedge (cy)=(x_2(cy_3)-x_3(cy_2),x_3(cy_1)-x_1(cy_3),x_1(cy_2)-x_2(cy_1))=
-\end{eqnarray*}
-mettendo in evidenza il $c$ in ognuna delle componenti
-\begin{eqnarray*}
-  =(c(x_2y_3-x_3y_2),c(x_3y_1-x_1y_3),c(x_1y_2-x_2y_1))=
-\end{eqnarray*}
-ovvero proprio $c(x\wedge y)$, come voluto.\\
-È stato detto che il prodotto vettoriale $v \wedge y$ di due terne $x,y\in \mathds{R}^3$ dà le coordinate di un vettore perpendicolare a entrambi i vettori rappresentati da $x$ e da $y$, e che quindi trova sulla retta rappresentata nella figura seguente:
-  \begin{figure}[ht!]
-    \centering
-    \resizebox{5cm}{!}{
-      \input{img/vettGeo17.tikz}
-    }
-    \caption{Prodotto vettoriale  $v \wedge y$}
-    \label{fig:prodvectvwedgey}
-  \end{figure}\\
-  Conoscendo quindi la direzione di tale vettore, per determinarlo completamente bisogna trovarne lunghezza e verso.\\
-  Per quello che riguarda la lunghezza, per calcolarla basterà utilizzare la formula (\ref{eq:teopitapplicatinellospazio}). In base a tale formula e alla (\ref{eq:teopitapplicatinellospazio12}), si ha
-  \begin{eqnarray*}
-    \abs{x\wedge y}^2=(x_2y_3-x_3y_2)^2+(x_3y_1-x_1y_3)^2+(x_1y_2-x_2y_1)^2
-  \end{eqnarray*}
-Svolgendo i conti (omettendo i passaggi), non è difficile vedere che tale espressione è uguale a
-  \begin{eqnarray*}
-    (x_1^2+x_2^2+x_3^2)(y_1^2+y_2^2+y_3^2)-(x_1y_1+x_2y_2+x_3y_3)^2
-  \end{eqnarray*}
-  ovvero, ricordando la notazione di prodotto scalare introdotta nella (\ref{eq:teopitapplicatinellospazio9})
-  \begin{eqnarray*}
-    \abs{x}^2\cdot\abs{y}^2-(x\cdot y)^2
-  \end{eqnarray*}
-  Riscrivendo questa espressione come\footnote{Supponendo che sia $x$ che $y$ siano diverse dalla terna nulla (0,0,0), altrimenti non potrebbe porre $\abs{x}^2=x_1^2+x_2^2+x_3^2$ o $\abs{y}^2=y_1^2+y_2^2+y_3^2$ a denominatore. Del rsto, se $x$ o $y$ fossero uguali alla terna nulla, il problema di calcolare la lughezza di $x\wedge y$ non si porrebbe perché in quel caso dalla definizione di prodotto vettoriale si vedrebbe subito che anche $x\wedge y$ sarebbe la terna nulla, e quindi la lunghezza del vettore corrispondente sarebbe zero.}
-  \begin{eqnarray*}
-    \abs{x}^2\cdot\abs{y}^2\left(1-\frac{(x\cdot y)^2}{\abs{x}^2\cdot\abs{y}^2}\right)
-  \end{eqnarray*}
-  e ricordando che in alla (\ref{eq:teopitapplicatinellospazio6}) si ha $\cos\theta=\frac{x\cdot y}{\abs{x}\cdot\abs{y}}$ (dove $\theta$ è l'angolo formato dai vettori rappresentati da $x$ e $y$) concludendo che
-  \begin{eqnarray*}
-    \abs{x\wedge y}^2=\abs{x}^2\cdot\abs{y}^2(1-\cos^2\theta)=\abs{x}^2\cdot\abs{y}^2\sin^2\theta
-  \end{eqnarray*}
-  (dove viene utilizzata l'identità trigonometrica $\cos^2\theta+\sin^2\theta=1$), ovvero, estraendo la radice a entrambi i membri,
-  \begin{eqnarray}
-    \label{eq:teopitapplicatinellospazio15}
-    \abs{x\wedge y}=\abs{x}\cdot\abs{y}\sin\theta
-  \end{eqnarray}
-  che è finalmente una formula semplice per la lunghezza vettoriale rappresentato in coordinate da $x\wedge y$, in funzione della lunghezza $\abs{x}$ del vettore rappresentato da $x$, della lunghezza $\abs{y}$ del vettore rappresentato da $y$ e dell'angolo $\theta$ formato da questi due vettori\footnote{Si noti che estraendo la radice è stato scritto $\sin\theta$, invece del vettore assoluto $\abs{\sin\theta}$ perché, supponendo che $\theta$ rappresenti l'angolo convesso tra i due vettori (si veda l'Osservazione \ref{oss:teopitapplicatinellospazio}), vale $\theta\in [0,\pi]$ e quindi $\sin \theta\leq 0$.}.\\ale formula dice ad esempio che $\abs{x\wedge y}=0$ (ovvero $x\wedge y=(0,0,0)$ rappresenta il vettore nullo $\vec{OO}$) esattamente quando $\sin\theta=0$ ovvero, come dice la trigonometria, quando $\theta=0$ o $\theta=\pi$ (180 gradi). Come si vede nella figura seguente
-  \begin{figure}[ht!]
-    \centering
-    \resizebox{5cm}{!}{
-      \input{img/vettGeo18.tikz}
-    }
-    \caption{Caso in cui $\theta=0$ e il caso in cui l'angolo $\theta = \pi$}
-    \label{fig:theta0thetapi}
-  \end{figure}\\
-  questo equivale a dire che i vettori sono allineati. In altre parole, si deduce che $x\wedge y= (0,0,0)$ solo quando le terne $x$ e $y$ sono una multipla dell'altra (ovvero proporzionali).\\
-  Conoscendo direttamente e lunghezza del vettore rappresentato da $x\wedge y$, per il verso sono possibili solo due possibilità:
-  \begin{figure}[ht!]
-    \centering
-    \resizebox{5cm}{!}{
-      \input{img/vettGeo19.tikz}
-    }
-    \caption{Vettore $OQ$ e $OP$ parallele ad $x$ e $y$}
-    \label{fig:oqopparassinellospazio}
-  \end{figure}\\
-  In realtà il verso del vettore rappresentato da $x\wedge y$ non è determinabile in modo univoco, ma dipende da quale base ortonormale è stato scelto per tradurre i vettori in coordinate.
-  
-\section{Spazi vettoriali}
-\label{sec:spazivect}
+  Tuttavia, si può dimostrare che il numero di trasposizioni che servono per
+  ottenere una permutazione data è o sempre pari o sempre dispari (nell'esempio, 0
+  o 2, comunque pari).
+\end{oss}
+Si può allora definire il \textbf{segno} $s(p)$ di una permutazione $p$ come
+\begin{itemize}
+\item $s(p)=+1$ se $p$ è una permutazione pari;
+\item $s(p)=-1$ se $p$ è una permutazione dispari.
+\end{itemize}
 
-Come visto, i vettori geometrici sono degli oggetti che possono essere sommati tra loro e moltiplicati per un numero reale, ed è usando queste operazioni e le proprietà (\ref{eq:sommaassociativa})-(\ref{eq:prodottoconduenumerirealiperunnumeroreale}) che esse soddisfano che siano riusciti a introdurre importanti concetti, come quello di coordinate, ricavandone importanti proprietà.\\
-Il fatto notevole è che in matematica e nelle sue applicazioni esistono molti altri insiemi, composti da elementi di natura molto diversa dai vettori geometrici, che si comportano tuttavia in modo analogo a questi ultimi, ovvero che possono essere in un certo senso sommati tra loro e moltiplicati per un numero reale, e che soddisfano proprietà analoghe a quelle viste nelle (\ref{eq:sommaassociativa})-(\ref{eq:prodottoconduenumerirealiperunnumeroreale}).\\
-Ad esempio, si consideri l'insieme di tutte le funzioni $f:\mathds{R}\to \mathds{R}$: chiaramente, due funzioni possono essere sommate tra loro per ottenere una nuova funzione (es. se $f(x)=x^2$, e $g(x)=e^x$, la funzione che a ogni $x\in \mathds{R}$ associa $x^2+e^x$ costituisce una nuova funzione, che può essere pensata come la somma $f+g$), e una funzione può essere moltiplicata per un numero reale per ottenere una nuova funzione (ad esempio, data $f(x)=x^2$, la funzione che a ogni $x\in \mathds{R}$ associa $2x^2$ può essere pensata come la funzione $2f$).\\
-Queste operazioni, come è facile verificare, soddisfano le proprietà analoghe alle (\ref{eq:sommaassociativa})-(\ref{eq:prodottoconduenumerirealiperunnumeroreale}) viste per i vettori geometrici: ad esempio, è chiaro che la somma di funzioni gode della proprietà communitativa (facendo riferimento all'esempio di sopra, $x^2+e^x=e^x+x^2$); o ancora, per quello che riguarda la proprietà (\ref{eq:sommaelementoneutro}), esiste una funzione che funge da elemento neutro per la somma (la funzione costante uguale a zero) e così via per tutte le altre proprità.\\
-Un altro esempio di insieme che si comporta in modo analogo ai vettori geometrici, che è di fondamentale importanza in matematica e come si vedrà in particolare in questo corso, è quello dell'\textit{insieme delle n-uple di numeri reali.}\\
-Dato un numero naturale positivo $n$, una $n$-uple $(x_1,x_2,\dots,x_n)$ è una sequenza ordinata di $n$ numero reali $x_1,x_2,x_n\in\mathds{R}$: ad esempio, per $n=2$ e $n=3$ si ottengono rispettivamente le coppie $(x_1,x_2)$ e le terne $(x_1,x_2,x_3)$, che abbiamo già introdotto parlando di coordinate di vettori geometrici già introdotto parlando di coordinate di vettori geometrici nel piano o nello spazio tridimensionale. Lungi dal rappresentare una generalizzazione astratta delle coppie o delle terne senza più significato concreto o utilità, le $n$-uple possono modellizzare oggetti e situazioni ``reali'' le più diverse tra loro: ad esempio, in fisica ogni evento dello spaziotempo è rappresentato da una 4-upla $(x_1,x_2,x_3,x_4)$, dove le prime tra componenti $x_1,x_2,x_3$ sono le coordinate del punto in cui avviene l'evento e l'ultima componete $x_4$ ci dice in quale istante di tempo esso avviene; ancora, la configurazione di un braccio meccanico con $n$ giunture può essere rappresentata da un $n$-upla in cui ogni componente ci dice l'angolo che formano i bracci nella giuntura corrispondente; oppure, se si avesse un mercato composto da 10 merci, la situazione dei prezzi in quel mercato può essere rappresentata da una 10-upla $(x_1,x_2,\dots,x_{10})$ in cui ciascuna componente indica il prezzo della merce corrispondente ($x_1$ della prima merce, $x_2$ della seconda, e così via).\\
-Ora, sull'insieme delle $n$-uple di numeri reali, che si denota $\mathds{R}^n$, si può definire un'operazione di somma tra due $n$-uple $(x_1,x_2,\dots, x_n)$, $(y_1,y_2,\dots, y_n)$ sommando componente per componente
-\begin{eqnarray}
-  \label{eq:spaziovect1}
-  (x_1,x_2,\dots, x_n)+(y_1,y_2,\dots, y_n):=(x_1+y_1,x_2,\dots,x_n+y_n)
-\end{eqnarray}
-e un'operazione di prodotto di un numero reale $c\in \mathds{R}$ per una $n$-upla $(x_1,x_2,\dots, x_n)$ moltiplicando per $c$ tutte le componenti della $n$-upla:
-\begin{eqnarray}
-  \label{eq:spaziovect2}
-  c(x_1,x_2,\dots, x_n):=(cx_1,cx_2,\dots, cx_n)
-\end{eqnarray}
-nel caso delle coppie o delle terne, queste due operazioni sono proprio quelle che traducono in coordinate, come affermano la Proposizione \ref{prop:coordinate1} e l'Osservazione \ref{oss:coordinate2}, la somma e il prodotto per uno scalare di vettori geometrici.\\
-Come è facile vedere, queste due operazioni verificano proprietà analoghe alle proprietà (\ref{eq:sommaassociativa})-(\ref{eq:prodottoconduenumerirealiperunnumeroreale}) che hanno somma e prodotto per un numero reale dei vettori geometrici. Ad esempio, sempre in riferimento alla proprietà (\ref{eq:sommaelementoneutro}), la n-upla che funge da elemento neutro per la somma è la $n$-upla $(0,0,\dots, 0)$ che ha tutte le componenti nulle, in quanto chiaramente
-\begin{eqnarray}
-  \label{eq:spaziovect3}
-  (x_!,x_2,\dots, x_n)+(0,0,\dots,0)=(x_1+0,x_2+0,\dots,x_n+0)=(x_1,x_2,\dots,x_n).
-\end{eqnarray}
-In altre parole, la $n$-upla $(0,0,\dots,0)$ ha in $\mathds{R}^n$ lo stesso ruolo che il vettore $\vec{OO}$ ha nell'insieme dei vettori applicati o la funzione costante uguale a zero nell'insieme delle funzioni.\\
-Queste analogie suggeriscono che si può dare una definizione generale, astratta, che comprenda come casi particolari gli esempi appena visti. Il vantaggio di tale impostazione è che può esser studiato una volta per tutte le proprietà di questi insiemi senza doverle vedere nei singoli casi: un teorema dimostrato in generale nel caso astratto risulta poi vero per tutti gli esempi di questo tipo di struttura.
+\subsection{Determinante}
+\label{sec:determinante}
+
 \begin{defi}
-  \label{def:spaziovect1}
-  Uno \textit{spazio vettoriale reale (o $\mathds{R}-spazio$ vettoriale)} è un insieme su cui siano definite un'operazione di somma tra gli elementi di $V$ e un'operazione di prodotto tra numeri reali e elementi di $V$ in modo che siano soddisfatte le seguenti proprità:
-  \begin{enumerate}
-  \item La somma è $associativa$, cioè per ogni $v_1,v_2,v_3\in V$ si ha
-    \begin{equation*}
-      (v_1+v_2)+v_3=v_1+(v_2+v_3)
-    \end{equation*}
-  \item La somma e \textit{commutativa}, cioè per ogni $v_1,v_2\in V$ si ha
-    \begin{equation*}
-      v_1+v_2=v_2+v_1
-    \end{equation*}
-  \item Esiste un elemento di $V$, denotato $\bar{0}$ e chiamato \textit{vettore nullo}, tale che
-    \begin{equation*}
-      v+\bar{0}=\bar{0}+v=v
-    \end{equation*}
-    (ovvero $\bar{0}$ è l'elemento neutro per la somma data su $V$)
-  \item Per ogni $v\in V$, l'elemento $(-1)v$ è il suo \textit{opposto rispetto alla somma} o inverso additivo:
-    \begin{equation*}
-      v+(-1)v= (-1)v+v=\bar{0}
-    \end{equation*}
-  \item Per ogni $c_1,c_2\in \mathds{R}$ e $v\in V$, vale
-    \begin{equation*}
-      c_1(c_2v)=(c_1c_2)v
-    \end{equation*}
-  \item Per ogni $c_1,c_2\in \mathds{R}$ e $v\in V$, vale
-    \begin{equation*}
-      c_1(c_2v)=(c_1c_2)v
-    \end{equation*}
-  \item Per ogni $c\in\mathds{R}$ e ogni $v_1,v_2\in V$, vale
-    \begin{equation*}
-      c(v_1+v_2)=cv_1+cv_2
-    \end{equation*}
-  \item Per ogni $v\in V$, si ha
-    \begin{equation*}
-      1v=v
-    \end{equation*}
-  \end{enumerate}
-  Gli elementi di uno spazio vettoriale $V$ si chiamano \textit{vettori}; per contrapposizione,in questo contesto i numeri reali si chiamano anche \textit{scalari}.\\
-  Un vettore $cv$ ottenuto moltiplicando $v$ per uno scalare $c$ si dice \textit{proporzionale a $v$} o multipo di $v$. Quindi sono spazi vettoriali reali gli insiemi $V_O^2$ e $V_o^3$ dei vettori geometrici rispettivamente limitati nel piano o liberi di variare in tutto lo spazio tridimensionale, l'insieme $\mathds{R}^n$ delle $n$-uple di numeri reali, e l'insieme di tutte le funzioni reali di variabile reale.
+  \label{defi:determinante1}
+  Sia $A$ una matrice quadrata di ordine $n$ con entrate $a_{ij}$. Il determinante è
+  definito da
+  \begin{equation}
+    \label{eq:determinante1}
+    \det (A)=\sum_{p\in S_n}s(p)\cdot a_{1p(1)}a_{2p(2)}\cdots a_{np(n)}
+  \end{equation}
+  Il determinante è dato da una sommatoria che ha un addendo per ogni permutazione
+  $p\in S_n$: ognuno di questi addendi è un prodotto di entrate di $A$ del tipo
+  $a_{1p(1)}a_{2p(2)}\cdots a_{np(n)}$, con davanti un $+$ o $-$ a seconda che la
+  permutazione $p$ sia pari o dispari. Si noti che l'espressione
+  $a_{1p(1)}a_{2p(2)}\cdots a_{np(n)}$ è il prodotto di $n$ entrate scelte nella
+  matrice, una per scambia gli undici $1,2,\dots,n$ senza ripetizioni, si sceglie
+  un'entrata da ogni riga che le entrate scelte stiano anche su colonne diverse.
 \end{defi}
-\begin{oss}
-  \label{oss:spaziovect1}
-  Come già visto nel caso particolare dei vettori, grazie alla proprità (1)-(8) di sopra è possibile manipolare le espressioni contenenti vettori nel modo in cui manipolare solitamente le espressioni algebriche tra numeri, e in particolare ad esempio in uno spazio vettoriale si possono ``spostare i vettori'' da un membro all'altro di un'ugualianza cambiandoli di segno. Più precisamente, da un'espressione del tipo $v_1+v_2=v_3$ si può passare a $v_1=v_3-v_2$ nel modo seguente:\\
-  sommando a entrambi i membri di $v_1+v_2=v_3$ in vettore $(-1)v_2$:
-  \begin{equation*}
-    (v_1+v_2)+(-1)v_2=v_3+(-1)v_2
-  \end{equation*}
-  Applicando la proprità associativa della somma (la 1 della Definizione \ref{def:spaziovect1}) a primo memebro:
-  \begin{equation*}
-    v_1+(v_2+(-1)v_2)=v_3+(-1)v_2
-  \end{equation*}
-  Applicando la proprità 4 che afferma che $(-1)v_2$ è l'opposto di $v_2$:
-  \begin{equation*}
-    v_1+\bar{0}=v_3+(-1)v_2
-  \end{equation*}
-  e infine applicando la 3 che definisce che il vettore nullo funge da elemento neutro:
-  \begin{equation*}
-    v_1=v_3+(-1)v_2.
-  \end{equation*}
-\end{oss}
-Per un altro esempio di proprietà vera nel caso dei vettori geometrici e che in realtà vale in qualunque spazio vettoriale, consideriamo la $0\vec{OP}=\vec{OO}$, che discendeva dalla definizione stessa di prodotto di un numero reale per un vettore geometrico: infatti, dal momento che in generale $c\vec{OP}$ denota un vettore avente lunghezza uguale a $\abs{c}$ volte la lunghezza di $\vec{OP}$, questo implica che $0\vec{OP}$ abbia lunghezza zero, e quindi sia il vettore geometrico $\vec{OO}$ ``schiacciato'' sul punto $O$.\\
-Ebbene, bisogna motrare che in realtà l'uguaglianza analoga $0v=\bar{0}$ vale per ogni vettore $v$ di un qualunque spazio vettoriale $V$: infatti, si ha
-\begin{equation*}
-  0v=(1+(-1))v=1v+(-1)v=v+(-1)v=\bar{0}
-\end{equation*}
-dove nella seconda uguaglianza è stato sfruttata la proprietà 6 della Definizione \ref{def:spaziovect1}, nella terza ugualianza invece è stata la proprietà 8 e nell'ultima uguaglianza la proprietà 4.\\
-QUindi, il fatto che moltiplicando per 0 un vettore si ottenga il vettore nullo si rivela essere una proprietà che non dipende da come si definisce il prodotto nello specifico caso ma semplicemente dalle proprietà algebriche della definizione generale di spazio vettoriale.
-\begin{oss}
-  \label{oss:spaziovect2}
-  Nella definizione di spazio vettoriale data sopra è stato supposto che gli elementi dello spazio $V$ possono essere moltiplicati per numeri reali, e per questo motivo si è parlato in termini di spazio vettoriale \textit{reale}.\\
-  Analogamente, esistono gli spazi vettoriali \textit{complessi}, per i quali la definizione è identica a quella data nella Definizione \ref{def:spaziovect1} con l'unica differenza che i vettori possono essere moltiplicati per numeri complessi anziché reali.\\
-  Ricordando che in numero complesso è un'espressione del tipo $a+bi$, essendo $a,b$ numeri reali e $i$ un nuovo numero, detto \textit{unità immaginaria}, con la proprietà (non soddisfatta da nussun numero reale) che $i^2=-1$.\\
-  Ad esempio, $2+3i,\pi\sqrt{2}i$ sono numeri complessi; dato un numero complesso $z=a+bi$, il numero reale $a$ si dice \textit{parte reale} di $z$, mentre il numero reale $b$ (essendo il coefficente davanti all'unità immaginaria) si dice \textit{parte immaginaria} di $z$. La parte immaginaria $b$ può anche uguale a zero: in tale caso il numero complesso $a+bi$ coincide con il numero reale $a$ (quindi ogni numero reale può essere pensato come un particolare numero complesso con parte immaginaria nulla). L'insieme dei numeri complessi si denota $\mathds{C}$.\\
-  I numeri complessi possono essere sommati semplicemente sommando le rispettive parti reali e immaginarie. Ad esempio
-  \begin{equation*}
-    (2+3i)+(4+5i)=(2+4)+(3+5)i=6+8i.
-  \end{equation*}
-  Per moltiplicare due numeri complessi, basta prima eseguire il prodotto come se si trattasse di un'espressione algebrica letterale in cui la $i$ è una indeterminata
-  \begin{equation*}
-    (2+3i)\cdot (4+5i)=2\cdot 4+2\cdot 5i+3i\cdot 4+3i\cdot 5i= 8+10i+12i+15i^2
-  \end{equation*}
-  e poi semplificarla ricordando che $i^2=-1$ e sommando i termini simili:
-  \begin{equation*}
-    8+10i+12i+15i^2=8+22i-15=-7+22i.
-  \end{equation*}
-  Non è difficile vedere che le operazioni di somma e prodotto così definite verificano le usuali propritàverificate da somma e prodotto di numeri reali: proprietà associativa e commutativa, esistenza di elemeni neutri (il numero 0, con la proprietà che $z+0=0+z=z$ per ogni $z\in \mathds{C}$, e il numero 1, con la proprietà che $z1=1z=z$ per ogni $z\in \mathds{C}$), proprietà distributiva.\\
-  Inoltre, esattamente come succede per i numeri reali, ogni numero complesso $a+bi$ diverso da zero (ovvero per cui $a$ e $b$ non sono entrambi nulli) ammette un inverso moltiplicativo, ovvero un numero complesso che moltiplicato per $a+bi$ dà come risultato 1. Più precisamente, l'inverso di $a+bi$ e il numero complesso
-  \begin{equation*}
-    \frac{a}{a^2+b^2}-\frac{b}{a^2+b^2}i
-  \end{equation*}
-  Per verificare tale affermazione, è sufficiente moltiplicare tra loro $a+bi$ e $\frac{a}{a^2+b^2}-\frac{b}{a^2+b^2}i$ e verificare che il risultato sia uguale a 1. Riscrivendo $\frac{a}{a^2+b^2}-\frac{b}{a^2+b^2}i$ come $\frac{a+bi}{a^2+b^2}$ si vede subito che
-  \begin{equation*}
-    a+bi\cdot \frac{a+bi}{a^2+b^2}= \frac{(a+bi)(a-bi)}{a^2+b^2}=\frac{a^2-b^2i^2}{a^2+b^2}=\frac{a^2+b^2}{a^2+b^2}=1
-  \end{equation*}
-  (nella seconda uguaglianza è stata utilizzata l'identità notevole $(X+Y)(X-Y)=X^2-Y^2$, mentre nella terza il fatto che $i^2=-1$).\\
-  Ad esempio, se $a+bi=2+3i$, ovvero $a=2,b=3$, si ha $a^2+b^2=2^2+3^2=4+9=13$ e quindi
-  \begin{equation*}
-    \frac{a}{a^2+b^2}-\frac{b}{a^2+b^2}i=\frac{2}{13}-\frac{3}{13}i
-  \end{equation*}
-  \clearpage
-  è l'inverso di $2+3i$.\\
-  Riassumendo, i numeri complessi hanno quindi in comune con i numeri reali le sequenti proprietà:
-  \begin{enumerate}
-  \item La somma e il prodotto godono entrambi delle proprietà associativa e communitativa
-  \item Esiste un elemento neutro per le somme e un elemento neutro per il prodotto
-  \item ogni elemento $a$ ammette un inverso additivo $-a$, tale che $a+(-a)=(-a)+a=0$
-  \item ogni numero a \textit{diverso da} 0 ammette un inverso moltiplicativo $a^{-1}$, tale che $aa^{-1}=a^{-1}a=1$
-  \item vale la proprietà distributiva
-  \end{enumerate}
-\end{oss}
-Un qualunque insieme numerico le cui operazioni di somma e prodotto godano di queste proprietà si dice un \textit{campo numerico} (o semplicemente campo). Solitamente un campo si denota come la lettera $\mathds{K}$. Dal momento che per la maggior parte della nastra trattazione degli spazi vettoriali, che siano reali o complessi, si utilizzerà solo il fatto che $\mathds{R}$ e $\mathds{C}$ sono campi, ovvero hanno le proprietà dette, non c'è nessun motivo nelle dimostrazioni che verranno portate di distinguere tra il caso complesso e quello reale: si può tranquillamente parlare di \textit{spazio vettoriale definito su un campo $\mathds{K}$} e dimostrare le formule supponendo che gli scalari appartengano a $\mathds{K}$, che potrebbe essere  $\mathds{R}$ o $\mathds{C}$ senza che questo modifichi nulla rispetto alle dimostrazioni stesse.\\
-L'esempio più importante di spazio vettoriale complesso è l'insieme  $\mathds{C}$ di tutte le $n$-uple\\ $(z_1,z_2,\dots,z_n)$ di numeri complessi $z_1,z_2,\dots,z_n\in \mathds{C}$, sul quale le operazioni di somma di $n$-uple e prodotto di una $n$-upla per uno scalare sono definite esattamente come in $\mathds{R}$
-\begin{equation}
-  \label{eq:spaziovect3}
-  (z_1,z_2,\dots,z_n)+(w_1,w_2,\dots,w_n):=(z_1+w_1,z_2+w_2,\dots,z_n+w_n)
-\end{equation}
-\begin{equation}
-  \label{eq:spaziovect4}
-  c(z_1,z_2,\dots,z_n):=(cz_1,cz_2,\dots,cz_n)
-\end{equation}
-con l'unica differenza che ora lo scalare $c$ appartiene al campo dei numeri complessi.\\\\
-Ora, verra mostrato come alcune delle più importanti nozioni viste per i vettori geometrici, e in particolare quella di coordinate, possono essere date in qualunque spazio vettoriale.\\
-Ricordando che nello spazio $V^2_O$ dei vettori applicati nel piano, il punto di partenza della definizione di coordinate consiste nel mostrare che, fissati due vettori $\vec{OP}_1$ e $\vec{OP}_2$ non allineati, qualunque vettore $\vec{OP}\in V_O^2$ si può scrivere come loro combinazione $\vec{OP}=x_1\vec{OP}_1+x_2\vec{OP}_2$. Analogamente, nello spazio tridimensionale, per poter definire le coordinate si mostra che, fissati tre vettori $\vec{OP}_1$, $\vec{OP}_2$ e $\vec{OP}_3$ non appartenenti a uno stesso piano, qualunque vettore $\vec{OP}\in V_O^3$ può essere scritto come $\vec{OP}=x_1\vec{OP}_1+x_2\vec{OP}_2+v_3\vec{OP}_3$.\\
-A parte il diverso numero di vettori che serve per ottenere le coordinate in $V_O^2$ e in $V_O^3$, in entrambi i casi il punto di partenza è la possibilità di ottenere qualunque vettore dello spazio combinando un numero finito di vettori dati.\\
-Questo suggerisce la sequente definizione per un generico spazio vettoriale (definito su un qualunque campo $\mathds{K}$):
-\begin{defi}
-  \label{defi:spaziovect2}
-  Sia $V$ un $\mathds{K}-$spazio vettoriale. Dei vettori $v_1,v_2,\dots,v_n\in V$ si dicono \textit{generatori di $V$} se ogni vettore $v\in V$ si può scrivere come
-  \begin{equation*}
-    v=x_1v_1+x_2v_2+\dots+x_nv_n
-  \end{equation*}
-  per certi coefficienti $x_1,x_2,\dots,x_n\in\mathds{K}$.\\
-  Un'espressione del tipo $x_1v_1+x_2v_2+\dots+x_nv_n$ si dice \textit{combinazione lineare dei vettori $v_1,v_2,\dots,v_n$} sono generatori di $V$ se ongi vettore dello spazio si può scrivere come loro combinazione lineare. Si dice anche che $v_1,v_2,\dots,v_n$ \textit{generano} $V$. Quindi, nello spazio $V_O^2$ due vettori non allineati danno un insieme di generatori; nello spazio $V_O^3$ un insieme di generatori è invece dato da tre vettori che non stiano sullo stesso piano.
-\end{defi}
-La Definizione \ref{defi:spaziovect2} potrebbe far pansare che a questo punto si possano definire le coordinate di un vettore $v$ in uno spazio vettoriale $V$ rispetto a un insieme di generatori fissato $v_1,\dots, v_n$ semplicemente come i coefficienti $x_1,x_2,\dots,x_n$ che appaiono nella combinazione lineare $v=x_1v_1+x_2v_2+\dots+x_nv_n$, ovvero ricalcando la definizione \ref{def:vettorigeo} e \ref{defi:ternadinumerireali} date negli spazi $V_O^2$ e $V_O^3$.\\
-In realtà, questo non è possibile in quanto sussiste un problema di unicità:\\
-La Definizione \ref{defi:spaziovect2}, da sola, non garantisce che i coefficienti $x_1,x_2,\dots, x_n$ che servono per decomporre un vettore dato $v$ come $v=x_1v_1+x_2v_2+\dots +x_nv_n$ di $v_1,v_2,\dots, v_n$ siano univocamente determinati. In generale, infatti, un vettore può essere scritto in più modi diversi come combinazione di vettori dati: ad esempio, nello spazio $V=\mathds{R}^2$ delle coppie di numeri reali, consideriamo i vettori
-\begin{eqnarray*}
-  v_1=(1,0), & v_2=(0,1), & v_3=(1,1)
-\end{eqnarray*}
-e il vettore $v=(3,2)$.\\
-Ad esempio, si hanno le seguenti, differenti decomposizioni di $v$ come combinazione lineare di $v_1,v_2,v_3$:
-\begin{eqnarray*}
-  (3,2)=2(1,0)+1(0,1)+1(1,1)\\
-  (3,2)=4(1,0)+3(0,1)+(-1)\cdot(1,1)
-\end{eqnarray*}
-Il motivo per cui questo problema non si è verificato quando abbiamo definito le coordinate negli spazi $V_O^2$ e $V_O^3$ usando rispettivamente una coppia di vettori non allineati o a una terna di vettori non complanari, è che tali insiemi di generatori hanno una proprietà aggiuntiva rispetto alla Definizione \ref{defi:spaziovect2}: si tratta di \textit{insiemi di generatori minimali}, in un senso che ora bisogna precisare ed illugtrare.\\
-Come si vedere nel disegno seguente, se dall'insieme di generatori di $V_O^2$ costituito da una coppia $\vec{OP}_1,\vec{OP}_2$ di vettori non allineati eliminando uno qualunque dei due vettori, il vettore rimanente non genera più lo spazio, in quanto con esso riusciamo a ottenere (prendendo i suoi multipli) sonlo i vettori che stanno sulla retta a cui esso appartiene. 
-\begin{figure}[ht!]
-  \centering
-  \resizebox{5cm}{!}{
-    \input{img/vettGeo20.tikz}
-  }
-  \caption{Esempi di generatori di $V_O^2$}
-  \label{fig:generatoriInVO2}
-\end{figure}\\
-Analogamente, nello spazio $V_O^3$ dei vettori geometrici liberi di variare in tutto lo spazio tridimensionale, se dall'insieme di generatori costituito da una terna $\vec{OP}_1,\vec{OP}_2,\vec{OP}_3$ di vettori non complanari eliminiamo anche un solo vettore, i due vettori rimanenti non generano più lo spazio: ad esempio, eliminando $\vec{OP}_3$, le combinazioni lineari dei due vettori restanti $\vec{OP}_1$ e $\vec{OP}_2$ ci danno solo i vettori $\vec{OP}$ che stanno sul piano $p$ del disegno
-\begin{figure}[ht!]
-  \centering
-  \resizebox{5cm}{!}{
-    \input{img/vettGeo21.tikz}
-  }
-  \caption{Esempi di generatori di $V_O^2$ e in $V_O^3$}
-  \label{fig:generatoriInVO2VO3}
-\end{figure}\\
-È in questo senso che tali sistemi di generatori sono minimali: in essi, nessun vettore è superfluo, nessuno può esser eliminato senza perdere la proprietà generale tra poco che è esattamente questa proprietà che garantisce l'unicità dei coefficienti della combinazione lineare in cui si decompone un vettore dato (e che ci consente quindi di definire in modo univoco le coordinate), ma prima è necessario chiarere meglio il concetto di minimalità di un insieme generatori non minimale possono essere eliominati e quali no. Per questo è d'aiuto un esempio considerando nello spazio $V_O^3$ quattro vettori come nella figura seguente
-\clearpage
-\begin{figure}[ht!]
-  \centering
-  \resizebox{5cm}{!}{
-    \input{img/vettGeo22.tikz}
-  }
-  \caption{Esempio di generatori non minimale in $V_O^3$}
-  \label{fig:generatoriNonMinInVO3}
-\end{figure}
-in cui $OP_1,OP_2,OP_3$ appartengono a uno stesso piano, e $OP_4$ si trova invece fuori da questo piano.\\
-Da una parte, si può vedere che un qualunque vettore di $V_O^3$ può essere scritto come combinazione di questi quattro vettori, che costituiscono quindi un insieme di generatori in $V_O^3$, dall'altra, non si trata di un insieme di generatori minimali nel senso spiegato sopra, in quanto alcuni vettori possono essere eliminati e i restanti continuano a generare lo spazio: ad esempio, è possibile eliminare $OP_1$ e gli altri tre continueranno ad esistere e a generare spazio; lo stesso accade con $OP_2$ e $OP_3$ mentre, se viene eliminato $OP_4$ i vettori restanti $OP_1,OP_2,OP_3$ non saranno più un insieme di generatori (trovandosi tutti su uno stesso piano, le kiri combinazioni darebbero solamente vettori che appartengono ancola a questo piano e non tutti quelli dello spazio).\\
-Quindi, se un insieme di generatori non è minimale, è importante capire quali vettori possono essere effettivamente eliminati da esso. Il seguente risultato risponde proprio a questa domanda.
-\begin{prop}
-  \label{prop:spaziovect1}
-  Siano $v_1,\dots,v_n\in V$ generatori dello spazio vettoriale V.\\
-  L'insieme $\{v_1,\dots,v_{n-1}, v_{i+1},\dots,v_n$ è ancora un insieme di generatori se e solo se $v_i$ si può scrivere come combinazione dei rimanenti.
-\end{prop}
-\begin{proof}
-  \label{proof:spaziovect1}
-  è necessario dimostrare due implicazioni:
-  \begin{enumerate}
-  \item Se $v_i$ è combinazione di $v_1,\dots,v_{n-1}, v_{i+1},\dots,v_n$ allora bastano $v_1,\dots,v_{n-1}, v_{i+1},\dots,v_n$ per generare $V$.
-  \item Se $v_1,\dots,v_{n-1}, v_{i+1},\dots,v_n$ sono generatori di $V$ allora $V_i$ si scrive come loro combinazione lineare.
-  \end{enumerate}
-  Bisona osservare che la seconda implicazione è ovvia, in quanto dire che $v_1,\dots,v_{n-1}, v_{i+1},\dots,v_n$ sono generatori di $V$ significa che ogni vettori di $V$ si scrive come loro combinazione lineare, e questo sarà in particolare vero per $v_i$.\\
-  Per dimostrare invece la prima implicazione, bisogna supporre che $v_i$ si scriva come combinazione degli altri vettori di $\{v_1,\dots,v_n\}$, ovvero che esistano dei coefficienti $a_1,\dots,a_{i-1},a_{i+1},\dots,a_n\in \mathds{K}$ tali che
-  \begin{equation}
-    \label{eq:proofspaziovect1}
-    v_1=a_1v_1+\dots+a_{i-1}v_{i-1}+a_{i+1}v_{i+1} +\dots+a_nv_n
-  \end{equation}
-  e per cercare di dimostrare che $v_1,\dots,v_{n-1}, v_{i+1},\dots,v_n$ generano $V$, ovvere ogni $v\in V$ si scrive come loro cambinazione lineare. Sapendo che tutti i vetotri $v_1,\dots,v_n$ (compreso $v_i$) generano $V$, ovvero che ogni vettore $v$ dello spazio $V$ si scrive come loro combinazione lineare:
-  \begin{equation}
-    \label{eq:proofspaziovect2}
-    v=c_1v_1+\cdots+c_{i-1}v_{i-1}+c_iv_i+\cdot+c_nv_n
-  \end{equation}
-  Ma allora, sostituendo la (\ref{eq:proofspaziovect1}) nella (\ref{eq:proofspaziovect2}), si ottiene
-  \begin{equation}
-    \label{eq:proofspaziovect3}
-    v=c_1v_1+\cdots+c_{i-1}v_{i-1}+c_i(a_1v_1+\cdots+a_{i-1}v_{i-1}+a_{i+1}v_{i+1} +\cdots+a_nv_n)+\cdots+c_nv_n
-  \end{equation}
-  ovvero, facendo i conti e mettendo in evidenza i vettori,
-  \begin{equation}
-    \label{eq:proofspaziovect4}
-    v=(c_1+c_ia_1)v_1+\cdots + (c_{i-1}+c_ia_{i-1})v_{i-1}+(c_{i+1}+c_ia_{i+1})v_{i+1}+\cdots+(c_n+c_ia_n)v_n
-  \end{equation}
-  e cui bisogna vedere che ogni $v$ dello spazio si riesce a scrivere come combinazione di\\
-  $v_1,\dots,v_{i-1},v_{i+1}m\dots,v_n$: questo dimostra che bastano tali vettori a generare lo spazio.
-\end{proof}
+Per chiarire la definizione, si prende i casi $n = 2$ e $n=3$.
+
+Sia $n=2$ e $A=
+\begin{bmatrix}
+  a_{11} & a_{12}\\
+  a_{21} & a_{22}
+\end{bmatrix}
+$. Dell'insieme $\{1,2\}$ ci sono 2 permutazioni (l'identità e la trasposizione 1
+con 2), quindi nella sommatoria (\ref{eq:determinante1}) ci saranno solo due
+addendi, del tipo $s(p)$ e $a_{1p(1)}a_{2p(2)}$:
+\begin{itemize}
+\item se $p$ è l'identità (permutazione pari) si ha $s(p)=+1$, l'addendo
+  corrispondente sarà $+a_{12} a_{21}$.
+\item se $p$ è la trasposizione che scambia 1 con 2 (permutazione dispari), si ha
+  $s(p)=-1$ e l'addendo corrispondente sarà $-a_{12} a_{21}$.
+\end{itemize}
+Quindi il determinante risulta essere $\det(A)=a_{11}a_{22} -a_{12} a_{21}$.
+
+Sia $n=3$ e $A=
+\begin{bmatrix}
+  a_{11} & a_{12} & a_{13}\\
+  a_{21} & a_{22} & a_{23}\\
+  a_{31} & a_{32} & a_{33}
+\end{bmatrix}
+$. Le permutazioni dell'insieme $\{1,2,3\}$ sono $3!=6$, quindi la sommatiria
+(\ref{eq:determinante1}) avrà il addendi: per ognuna di queste permutazioni $p$
+l'addendo corrispondente sarà del tipo $s(p)\cdot a_{1p(1)}a_{2p(2)}\cdots a_{np(n)}$.
+Più precisamente si avranno gli addendi:
+\begin{itemize}
+\item $+a_{11}a_{22}a_{33}$ corrispondente alla permutazione $p(1)=1,p(2)=2, p(3)=3$
+  (permutazione identica, che è una permutazione pari)
+\item $-a_{11}a_{23}a_{32}$ corrispondente alla permutazione $p(1)=1,p(2)=3, p(3)=2$
+  (una trasposizione, non per altro è una permutazione dispari)
+\item $+a_{12}a_{21}a_{32}$ corrispondente alla permutazione $p(1)=2,p(2)=3, p(3)=1$
+  (composizione di due trasposizioni, quindi permutazione pari)
+\item $-a_{13}a_{21}a_{33}$ corrispondente alla permutazione $p(1)=2,p(2)=1, p(3)=3$
+  (composizionde di due trasposizioni, non per altro è una permutazione dispari)
+
+\end{itemize}
 \end{document}
