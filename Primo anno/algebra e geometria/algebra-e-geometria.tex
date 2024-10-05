@@ -59,6 +59,7 @@
 \usepackage{amsthm}
 \usepackage{wasysym}
 \usepackage{dsfont}
+\usepackage{thmtools}
 
 % impostazioni grafici
 \usepackage{tikzit}
@@ -124,6 +125,7 @@
 \theoremstyle{plain}
 \newtheorem{nota}{Nota}[section]
 \newtheorem{prop}{Proposizione}[section]
+\newtheorem{pro}{Proprietà}[section]
 
 \title{Algebra e geometria}
 \author{Nicola Ferru}
@@ -1172,6 +1174,714 @@ Più precisamente si avranno gli addendi:
   (composizione di due trasposizioni, quindi permutazione pari)
 \item $-a_{13}a_{21}a_{33}$ corrispondente alla permutazione $p(1)=2,p(2)=1, p(3)=3$
   (composizionde di due trasposizioni, non per altro è una permutazione dispari)
-
+\item $+a_{13}a_{21}a_{32}$ corrispondente ala permutazione
+  $p(1)=3,p(2)=1,p(3)=2$ (è una composizione di due trasposizioni, quindi
+  una permutazione pari)
+\item $-a_{13}a_{22}a_{31}$ corrisponde alla permutazione $p(1)=3, p(2)=2, p(3)=1$ (una trasposizione, quindi una permutazione dispari).
 \end{itemize}
+Quindi il determinante risulta essere
+\begin{equation*}
+  \det(A)=a_{11}a_{22}a_{33}-a_{11}a_{23}a_{32}+a_{12}a_{21}a_{32}-a_{13}a_{21}a_{33}+a_{13}a_{21}a_{32}-a_{13}a_{22}a_{31}
+\end{equation*}
+È necessario introdurre un metodo per calcolare il determiannte,
+alternativo alla definizione, il cui utilizzo diretto richiederebbe di
+scrivere una sommatoria che per una matrice di ordine $n$ a $n!$ addendi,
+tanti quanti le permutazioni di $n$ elementi (si pensi che già per $n=4$
+abbiamo $4!=24$ addendi). Allo scopo di calcolare il determinante,
+verrà utilizzata la \textit{formula di Laplace}.
+
+\subsection{Formula di Laplace}
+\label{sec:formlaplace}
+\begin{oss}
+  \label{oss:formlaplace}
+  Per calcolare il prodotto vettoriale tra due vettori $x$ e $y$ non è
+  necessario studiare a emoria la formula, perché si può ricavare
+  calcolando il determinante di una matrice $3\times 3$. Tale matrice si
+  costruisce in questo modo:
+  \begin{itemize}
+  \item nella prima riga bisogna disporre le lettere $i,j,k$, che indicano
+    i versori della base canonica in $\mathds{R}^3$;
+  \item nella seconda riga le coordinate del vettore $x$;
+  \item nella terza riga le coordinate del vettore $y$.
+  \end{itemize}
+  Calcolando il determinante (sviluppando Laplace secndo la prima riga),
+  si ottiene
+  \begin{equation*}
+    \begin{bmatrix}
+      \mathbf{i} & \mathbf{j} &\mathbf{k}\\
+      x_1 & x_2 & x_3\\
+      y_1 & y_2 & y_3
+    \end{bmatrix}=(x_2y_3-x_3y_2)\mathbf{i}-(x_1y_3-x_3y_1)\mathbf{j}
+    +(x_1y_2-x_2y_1)\mathbf{k}
+  \end{equation*}
+  che sono proprio le coordinate del vettore $x\wedge y=
+  \begin{bmatrix}
+    x_2y_3-x_3y_2\\
+    x_1y_3-x_3y_1\\
+    x_1y_2-x_2y_1
+  \end{bmatrix}
+  $
+\end{oss}
+
+\subsection{Proprietà del determinante}
+\label{sec:prodeldet}
+\begin{pro}
+  \label{pro:prodeldet1}
+  Il determiannte di una matrice è uguale a quello della sua trasposta
+  \begin{equation*}
+    \det(A)=\det(A^T)
+  \end{equation*}
+\end{pro}
+\begin{es}
+  \label{es:prodeldet1}
+  \begin{eqnarray*}
+    \begin{pmatrix}
+      -2 & 3 & 1\\
+      0 & 1 & -3\\
+      1 & -3 & 5
+    \end{pmatrix}=-2
+    \begin{pmatrix}
+      1 &-3\\
+      2 & 5
+    \end{pmatrix}= -2(5+6)=-22\\
+    \begin{pmatrix}
+      -2 & 0 & 0\\
+      3 & 1 & 2 \\
+      1 & -3 & 5
+    \end{pmatrix}= -2
+    \begin{pmatrix}
+      1 & 2\\
+      -3 & 5
+    \end{pmatrix}=-2(5+6)=-22
+  \end{eqnarray*}
+\end{es}
+\begin{pro}
+  \label{pro:prodeldet2}
+  Il determinante di una matrice triangolare (inferiore o superiore) è
+  uguale al prodotto degli elementi della diagonale principale
+  \begin{equation*}
+    \begin{pmatrix}
+      a_{11} & a_{12} & \cdots & a_{1n}\\
+      0 & a_{22} & \cdots & a_{2n}\\
+      \vdots & \vdots & \vdots & \vdots\\
+      0 & 0 & \cdots & a_{nn}
+    \end{pmatrix}=a_{11}a_{22}\dots a_{nn}
+  \end{equation*}
+  Il perticolare, anche il determiannte di una matrice diagonale è uguale
+  al prodotto degli elementi della diagonale principale.
+\end{pro}
+\begin{es}
+  \label{es:prodeldet2}
+  \begin{equation*}
+    \begin{bmatrix}
+      2 & 16 & -50\\
+      0 & 1 & 2022\\
+      0 & 0 & -5
+    \end{bmatrix}=-10
+  \end{equation*}
+\end{es}
+\begin{pro}
+  \label{pro:prodeldet3}
+  Se gli elementi di una riga o di una collona sono moltiplicati per uno
+  stesso numero $c\in\mathds{R}$, il determinante dato da $c\det (A)$
+  \begin{equation*}
+    \begin{bmatrix}
+      ca_{11}& ca_{12} & ca_{13}\\
+      a_{21} & a_{22} & a_{23}\\
+      a_{31} & a_{32} & a_{33}
+    \end{bmatrix}=c
+    \begin{bmatrix}
+      a_{11} & a_{12} & a_{13}\\
+      a_{21} & a_{22} & a_{23}\\
+      a_{31} & a_{32} & a_{33}
+    \end{bmatrix}
+  \end{equation*}
+\end{pro}
+\begin{es}
+  \label{es:prodeldet3}
+  \begin{equation*}
+    \det(A)=
+    \begin{bmatrix}
+      1 & 0 & 0\\
+      2 & 3 & 5\\
+      6 & 1 & 2
+    \end{bmatrix}=1
+    \begin{bmatrix}
+      3 & 5\\
+      1 & 2
+    \end{bmatrix}=6-5=1
+  \end{equation*}
+  Se viene moltiplicata la prima colonna per 2
+  \begin{equation*}
+    \begin{bmatrix}
+      2 & 0 & 0\\
+      4 & 3 & 5\\
+      12 & 1 & 2
+    \end{bmatrix}=2
+    \begin{bmatrix}
+      3 & 5\\
+      1 & 2
+    \end{bmatrix}=2(6-5)=2 =2\det(A)
+  \end{equation*}
+\end{es}
+\begin{pro}
+  \label{pro:prodeldet4}
+  Se gli elementi di una riga o di una colonna sono somma di due
+  addendi, il determinante è la somma dei determinanti delle due matrici
+  che si ottengono da $A$ sostiduendo agli elementi della colonna in
+  questione i primi o i secondi addendi (e lasciando fissi gli altri)
+  \begin{equation*}
+    \begin{pmatrix}
+      a_{11}& a_{12} + b_{12} & a_{13}\\
+      a_{21}& a_{22} + b_{22} & a_{23}\\
+      a_{31}& a_{32} + b_{32} & a_{33}
+    \end{pmatrix}=
+    \begin{pmatrix}
+      a_{11} & a_{12} & a_{13}\\
+      a_{21} & a_{22} & a_{23}\\
+      a_{31} & a_{32} & a_{33}
+    \end{pmatrix}
+    +
+    \begin{pmatrix}
+      a_{11} & a_{12} & a_{13}\\
+      a_{21} & a_{22} & a_{23}\\
+      a_{31} & a_{32} & a_{33}
+    \end{pmatrix}
+  \end{equation*}
+\end{pro}
+\begin{es}
+  \begin{equation*}
+    \begin{pmatrix}
+      1 & 5\\
+      -2 & 7
+    \end{pmatrix}=
+    \begin{pmatrix}
+      1 & 2\\
+      -2 & 6
+    \end{pmatrix}+
+    \begin{pmatrix}
+      1 & 3 \\
+      -2 & 1
+    \end{pmatrix}
+  \end{equation*}
+  Gli elementi della seconda colonna sono somma di due addendi. Il
+  determinante a sinitra è 17. Mentre a destra $10+7$.
+\end{es}
+\begin{pro}
+  \label{pro:prodeldet5}
+  Scambiando fra loro due righe o due colonne di una matrice, il
+  corrispondente cambia di segno.
+\end{pro}
+\begin{es}
+  \label{es:prodeldet5}
+  \begin{equation*}
+    \begin{pmatrix}
+      1 & 0 & 0\\
+      2 & 3 & 5\\
+      6 & 1 & 2
+    \end{pmatrix}=1
+    \begin{pmatrix}
+      3 & 5\\
+      1 & 2
+    \end{pmatrix}= 6-5=1
+  \end{equation*}
+  Scambio seconda e terza riga
+  \begin{equation*}
+    \begin{pmatrix}
+      1 & 0 & 0 \\
+      6 & 1 & 2 \\
+      2 & 3 & 5
+    \end{pmatrix}=1
+    \begin{pmatrix}
+      1 & 2\\
+      3 & 5
+    \end{pmatrix}=5-6=-1
+  \end{equation*}
+\end{es}
+\begin{pro}
+  \ref{pro:prodeldet6}
+  Il determinante di una matrice con due righe o due colonne uguali
+  è nullo. Infatti lo scambio di tali righe (o colonne) non altera il
+  determinante, ma per la Proprietà \ref{pro:prodeldet5} deve essere
+  $\det (A)=-\det(A)$, quindi $\det(A)=0$.
+\end{pro}
+\begin{pro}
+  \ref{pro:prodeldet7}
+  Se agli elementi di una riga si sommano gli elementi di un'altro riga
+  moltiplicata per un numero, il determinante non cambia. In particolare
+  se $n=3$
+  \begin{equation*}
+    A=
+    \begin{bmatrix}
+      a_{11} & a_{12} & a_{13}\\
+      a_{21} & a_{22} & a_{23}\\
+      a_{31} & a_{32} & a_{33}
+    \end{bmatrix}
+  \end{equation*}
+  Se per esempio alla seconda riga sommiamo la terza riga moltiplicata per
+  un numero $c$, si ottiene la matrice
+  \begin{equation*}
+    A^\prime =
+    \begin{bmatrix}
+      a_{11} & a_{12} & a_{13}\\
+      a_{21}+ca_{31} & a_{22}+ca_{32} & a_{23}+ca_{33}\\
+      a_{31} & a_{32} & a_{33}
+    \end{bmatrix}
+  \end{equation*}
+  Quindi, applicacndo prima la Proprietà \ref{pro:prodeldet4} poi la
+  Proprietà \ref{pro:prodeldet3}, si ottiene
+  \begin{equation*}
+    \det(A^\prime)=
+    \begin{bmatrix}
+      a_{11} & a_{12} & a_{13}\\
+      a_{21} & a_{22} & a_{23}\\
+      a_{31} & a_{32} & a_{33}
+    \end{bmatrix} +
+    \begin{bmatrix}
+      a_{11} & a_{12} & a_{13}\\
+      ca_{21} & ca_{22} & ca_{23}\\
+      a_{31} & a_{32} & a_{33}
+    \end{bmatrix}=\det(A)+c\begin{bmatrix}
+      a_{11} & a_{12} & a_{13}\\
+      a_{21} & a_{22} & a_{23}\\
+      a_{31} & a_{32} & a_{33}
+    \end{bmatrix}=\det(A)
+  \end{equation*}
+  tenuto conto che il determinante di una matrice con due righe uguali è
+  nullo.
+\end{pro}
+\begin{pro}
+  \label{pro:prodeldet8}
+  Se sono nulli tutti gli elementi di una riga o di una colonna,
+  $\det(A)=0$.
+\end{pro}
+\begin{es}
+  \label{es:prodeldet6}
+  Sviluppando la formula di Laplace sulla riga con tutti zeri, si vede
+  che $\det(A)=0$
+  \begin{equation*}
+    \begin{bmatrix}
+      1 & 2 & 3\\
+      0 & 0 & 0\\
+      -2 & 1 & -3
+    \end{bmatrix} = -0
+    \begin{bmatrix}
+      2 & 3\\
+      1 & -3
+    \end{bmatrix}+ 0
+    \begin{bmatrix}
+      1 & 3\\
+      -2 & -3
+    \end{bmatrix}-0
+    \begin{bmatrix}
+      1 & 2 \\
+      -2 & 1
+    \end{bmatrix}= 0
+  \end{equation*}
+\end{es}
+\begin{pro}
+  \label{pro:prodeldet9}
+  Il determinate di una matrice è nullo se e solo se una sue riga
+  (o colonna) è combinazione lineare delle altre righe (o colonne).
+  Segue dalle precedenti proprietà, infatti, supponendo che la terza riga
+  sia combinazione lineare delle altre due
+  \begin{eqnarray*}
+    \begin{bmatrix}
+      a_{11} & a_{12} & a_{13}\\
+      a_{21} & a_{22} & a_{23}\\
+      c_1a_{11}+c_2a_{21} & c_1a_{12}+c_2a_{22} & c_1a_{13}+c_2a_{23}
+    \end{bmatrix}=\\
+    \begin{bmatrix}
+       a_{11} & a_{12} & a_{13}\\
+      a_{21} & a_{22} & a_{23}\\
+      c_1a_{11} & c_1a_{12} & c_1a_{13}
+    \end{bmatrix}+\begin{bmatrix}
+      a_{11} & a_{12} & a_{13}\\
+      a_{21} & a_{22} & a_{23}\\
+      c_2a_{21} & c_2a_{22} & c_2a_{23}
+    \end{bmatrix}=\\c_1\cdot
+    \begin{bmatrix}
+      a_{11} & a_{12} & a_{13}\\
+      a_{21} & a_{22} & a_{23}\\
+      a_{31} & a_{32} & a_{33}\\
+    \end{bmatrix}+c_2\cdot \begin{bmatrix}
+      a_{11} & a_{12} & a_{13}\\
+      a_{21} & a_{22} & a_{23}\\
+      a_{31} & a_{32} & a_{33}\\
+    \end{bmatrix}=0
+  \end{eqnarray*}
+  in quanto ci sono due righe uguali.
+\end{pro}
+\begin{es}
+  \label{es:prodeldet8}
+  Calcolatore il determinante della matrice, cercando di applicare le
+  proprietà, in modo da semplificare il calcolo
+  \begin{eqnarray*}
+    \begin{bmatrix}
+      ad+4 & c+7 & 4b+5 & 5a\\
+      2b+1 & bc + 1 & b + 1 & a\\
+      3d - 4 & -2d + 6 & bd+2 & 2a\\
+      -2c & 3c & c & ac
+    \end{bmatrix} & a,b,c,d \in \mathds{R}
+  \end{eqnarray*}
+\end{es}
+\begin{proof}[Soluzione]
+  \label{sol:prodeldet1}
+  bisogna ricondursi al calcolo del determinante di una matrice
+  triangolare
+  \begin{equation*}
+    abc^2
+    \begin{bmatrix}
+      ad & 1 & 4 & 5\\
+      0 & b & 1 & 1 \\
+      0 & 0 & d & 2\\
+      0 & 0 & 0 & 1
+    \end{bmatrix}=a^2b^2c^2d^2
+  \end{equation*}
+\end{proof}
+Il concetto di matrice è di fondamentale importanza e compatirà in molti
+contesti in questo corso. Nel contesto dei sistemi di equazioni lineari,
+non solo la matrice completa costituisce una ``\emph{fotografia}'' fedele
+di un sistemi e contiene tutte le informazioni necessarie a determinarlo,
+ma sarà anche l'oggetto sul ci si focalizzerà all'interno del percorso.\\
+Per motivi che verranno speficicati in seguito, sarà importante prendere
+in considerazione anche la matrice che contiene solo i coefficienti delle
+incognite, senza l'ultima colonna formata dai termini noti: si ottiene
+così la cosiddetta \textit{matrice dei coefficienti del sistema}. Ad
+esempio, la matrice dei coefficienti del sistema
+(\ref{eq:matricediunsistlineare1}) è
+\begin{equation}
+  \label{eq:determinante2}
+  \begin{pmatrix}
+    1 & 3\\
+    2 & -1
+  \end{pmatrix}
+\end{equation}
+Ora, rappresentare un sistema mediante la sua matrice completa consente
+di identiicare ogni sua equazione con una $n$-upla: la generica equazione,
+diciarando la $i$-esima
+\begin{equation}
+  \label{eq:determinante3}
+  a_{i1}x_1+a_{i2}x_2+\cdots+a_{in}x_n=b_i
+\end{equation}
+è rappresentata nella matrice completa dall'$i$-esima riga $R_i$
+\begin{equation*}
+  \begin{pmatrix}
+    a_{i1} & a_{i2} & \cdots & a_{in} &b_i 
+  \end{pmatrix}
+\end{equation*}
+e questa riga può a sua volta essere pensata come la $n+1$-upla
+$\begin{pmatrix}
+    a_{i1} & a_{i2} & \cdots & a_{in} &b_i 
+\end{pmatrix}\in \mathds{K}^{n+1}$ (dove $\mathds{K}$ è campo dei
+coefficienti delle equazioni). Queste corrispondenza è tale che qualunque
+delle equazioni del sistema, corrisponde a una combinazione lineare delle
+righe corrispondenti, viste come elementi di $\mathds{K}^{n+1}$, si
+ottiene
+\begin{equation*}
+  c(a_{i1}x_1+a_{i2}x_2+\cdots+a_{in}x_n)=cb_{i}
+\end{equation*}
+ovvero, svolgendo i conti a primo membro, la nuova equazione
+\begin{equation*}
+  ca_{i1}x_1+ca_{i2}x_2+\cdots+ca_{in}x_n=cb_i
+\end{equation*}
+e tale equazione corrisponde alla $(x+1)-$upla
+\begin{equation*}
+  cR_i=(ca_{i1},ca_{i1_2},\cdots,ca_{in},cb_i)
+\end{equation*}
+ottenuta moltiplicando la $(n+1)-$uple
+$R_i=(a_{i1},a_{i1_2},\cdots,a_{in},b_1)$ (che rappresenta l'equazione
+originale) per $c$.\\
+Allo stesso modo, se si sommano membro a membro l'equazione
+(\ref{eq:determinante3}) per un'altra equazione
+$a_{j1}x_1+a_{j2}+\cdots+a_{jn}x_{n}=b_j$ del sistema, si ottiene
+\begin{equation*}
+  a_{i1}x_1+a_{i2}+\cdots+a_{in}x_{n}+a_{j1}x_1+a_{j2}+\cdots+a_{jn}x_{n}
+  =b_i+b_j
+\end{equation*}
+ovvero, raccoglendo gli addendi che contengono la stessa incognita, messa
+in evidenza,
+\begin{equation*}
+  (a_{i1}+a_{j1})x_1+(a_{i2}+a_{j2})x_2+\cdots+(a_{in}+a_{jn})x_n=b_i+b_j
+\end{equation*}
+si ottiene una nuova equazione rappresentata dalla $n+1$-upla
+\begin{equation*}
+  R_i+R_j=(a_{i1}+a_{j1},a_{i2}+a_{j2},\cdots,a_{in}+a_{jn}b_i+b_j)
+\end{equation*}
+che si ottiene sommando le $n+1-$uple
+$R_i=(a_{j1},a_{j2},\cdots,a_{jn},b_j)$ che rappresentavano le due
+equazioni originali. Quindi, eseguendo più in generale una combinazione di
+due o più equazioni di un sistema, rappresentate dalle righe
+$R_1,R_2,\dots,R_m\in \mathds{K}^{n+1}$, l'equazione ottenuta
+corrisponderà corrisponderà a una combinazione
+\begin{equation*}
+  c_1R_1+c_2R_2+\cdots+c_{in}R_{in}
+\end{equation*}
+delle righe corrispondenti.\\
+Ad esempio, nel sistema (\ref{eq:eqlinematrici5}), se come visto in
+(\ref{eq:eqlinematrici7}) moltiplicando (membro a membro) la prima
+equazione per 5 e poi bisogna sommare alla seconda moltiplicata per $-3$,
+ottenendo la nuova equazione $-x_2+2x_2+4x_3=-1$. Nella matrice completa
+\begin{equation}
+  \label{eq:determinante4}
+  \begin{bmatrix}
+    1 & 1 & 1 & 1\\
+    2 & 1 & 3 & 2
+  \end{bmatrix}
+\end{equation}
+l'operazione corrispondente non è nient'altro che la combinazione lineare
+\begin{equation*}
+  5R_1+(-3)R_2=5(1,1,1,1)+(-3)(2,1,3,2)=(-1,2,-4,-1)
+\end{equation*}
+delle sue due righe (viste come elementi di $\mathds{R}^4$).\\
+Inoltre, se una terna $(x_1,x_2,x_3)$ soddisfa il sistema
+(\ref{eq:eqlinematrici5}), essa soddisferà anche l'equazione
+$-x_1+2x_2-4x_3=-1$, e in generale soddisferà tutte le possibile equazioni
+che si corrispondono alle combinazioni lineari delle righe $R_1$ e $R_2$
+della matrice completa.\\
+In generale, dato un sistema di $m$ equazioni in $n$ incognite, con
+matrice completa avente come righe $R_1,R_2,\dots,R_m$, una $n-$upla
+$(x_1,x_2,\cdots,x_n)$ che soddisfa il sistema verifica anche tutte le
+equazioni corrispondenti alle $(n+1)-$uple del tipo
+$c_1R_1+c_2R_2+\cdots+c_mR_m$, ovvero quelle appartenenti al sottospazio
+\begin{equation*}
+  (R_1,R_2,\cdots,R_m)
+\end{equation*}
+generato dalle righe $R_1,R_2,\cdots,R_m$ (viste come elementi di
+$\mathds{K}^{n+1}$), in quanto per definizione tale sottospazio è formato
+proprio da tutte le combinazioni lineari $c_1R_1+c_2R_2+\cdots+c_mR_m$.\\
+Da queste osservazioni si può dedurre il seguente riguente risultato, che
+ci fornisce un criterio sufficiente perché due sistemi siano
+\textit{equivalenti}, ovvero abbiano le stesse soluzioni:
+\begin{prop}
+  \label{prop:determinante1}
+  Siano dati due sistemi di equazioni lineari in $n$ incognite, il
+  primo con matrice completa formata dalle righe $R_1,R_2,\cdots,R_m$ e
+  il secondo con matrice complate formata dalle righe
+  $R_1,R_2,\cdots,R_i$. Se
+  \begin{equation*}
+    (R_1,R_2,\cdots,R_m)=(\bar{R_1},\bar{R_2},\cdots,\bar{R}_i)
+  \end{equation*}
+  allora i due sistemi sono equivalenti.
+\end{prop}
+\begin{proof}
+  Se una $n-$upla $x=(x_1,x_2,\dots,x_n)$ è una soluzione del primo
+  sistema, allora essa verifica tutte le sue equazioni, rappresentate
+  dalle righe $R_1,R_2,\dots,R_m$ della sua matrice completa,
+  rappresentate dalle sua matrice completa. Come osservato sopra, essa
+  verifica allora anche tutte le equazioni corrispondenti alle
+  $(n+1)$-upla uguale a $(\bar{R}_1,\bar{R}_2,\dots,\bar{R}_4)$, come
+  affermato nell'ipotesi, $x$ verifica quindi tutte quindi tutte
+  le equazioni corrispondenti alle $(n+1)-$uple del sottospazio
+  $\left\langle \bar{R}_1,\bar{R}_2\dots,\bar{R}_4
+\right\rangle$, e in
+  particolare\footnote{All'interno del sottospazio $(v_1,v_2,\dots,v_n)$
+    generato da un insieme di vettori e costituito come da tutte le
+    combinazioni lineari $c_1v_1+c_2v_2+\dots+c_nv_n$ ci sono sempre
+    anche i vettori $v_1,v_2,\dots,v_n$m stessi, in quanto ciascuno di
+    loro può essere espresso come combinazione lineare:
+    $v_1=1v_1+0v_2+\cdots+0v_n$, $v_2=0v_1+1v_2+\cdots+0v_n$, e così via.}
+  $\bar{R}_1,\bar{R}_2,\dots,\bar{R}_4$, stesse, che rappresentano le
+  equazioni del secondo sistema: quindi $x$ è soluzione anche del secondo
+  sistema.\\
+  Viceversa\footnote{Dimostrare che i due sistemi hanno le stesse
+    soluzioni significa dimostrare che l'insieme delle soluzioni del
+    primo è uguale all'insieme delle soluzioni del secondo, ovvero (come
+    previsto dalla definizione di ugualianza di insiemi) che ogni
+    $n$-upla che è soluzione del primo sistema è soluzione anche del
+    secondo, e viceversa ogni $n$-upla soluzione del secondo sistema è
+    anche soluzione del prima.}, se una $n$-upla $x=(x_1,x_2,\dots,x_n)$
+  è una soluzione del secondo sistema, allora essa verifica tutte le sue
+  equazioni, Quindi essa verifica allora anche tutte le equazioni
+  corrispondenti alla $(n+1)-$uple contenute nel sottospazio $\left\langle
+    \bar{R}_1,\bar{R}_2,\dots,R_t
+  \right\rangle$. Essendo tale sottospazio uguale a $\left\langle
+    R_1,R_2,\dots,R_m
+  \right\rangle$, e in particolare $R_1,R_2,\dots,R_m$ stesse, che
+  rappresentano le equazioni del primo sistema: quindi $x$ è soluzione
+  anche del primo sistema.
+\end{proof}
+I metodo che useremo per risolvere un sistema, consiste proprio nel
+trasformare il sistema dato in un sistema equivalente più semplice, nel
+quale verranno eliminate tutte le equazioni superflue (che si ottengoo
+come combinazione delle altre).
+
+\section{L'algoritmo di eliminazione di Gauss-Jordan (o di riduzione a gradini)}
+\label{sec:gauss-jordan}
+Il metodo che vedremo ora per risolvere un qualunque sistema con $m$
+equazioni lineari in $n$ incognite può essere spiegato come una
+generalizzazione dei metodi tradizionalmente usati per la risoluzione dei
+sistemi di due equazioni in due incognite. Per ricordare quali sono
+questi metodi, prendiamo ad esempio il sistema
+\begin{equation}
+  \label{eq:gauss-jorda1}
+  \begin{cases}
+    x_1+x_2=0\\
+    -x_1+x_2=1
+  \end{cases}
+\end{equation}
+Solitamente, per risolvere tale sistema si ricava una delle incognite in
+funzioni dell'altra usando una delle due equazioni, ad esempio dalla prima
+equazione si trova $x_1=-x_2$, e si sostituisce l'espressione così
+ottenuta nell'altra equazione:
+\begin{equation*}
+  -(-x_2)+x_2=1
+\end{equation*}
+ovvero
+\begin{equation*}
+  2x_2=1
+\end{equation*}
+In questo modo, è stato \emph{eliminato} la prima incognita dalla seconda
+equazione che è diventata una semplice equazione di primo grado con una
+sola incognita, che ha come soluzione $x_2=\frac{1}{2}$. A questo punto,
+per ricavare $x_1$ basta sostituire il valore ottenuto di $x_2$ nella
+prima equazione, ovvero
+\begin{equation*}
+  x_1+\frac{1}{2}=0 \to x_1=-\frac{1}{2}.
+\end{equation*}
+Quello che ha permesso di semplificare il sistema è stato quindi aver
+ridotto il numero di incognite presenti in una delle equazioni. Allo
+stesso risultato si può arrivare, equivalentemente, ad esempio sommando
+membro a membro le due equazioni se $x_1+x_2=0$ e $-x_1+x_2=1$ allora
+\begin{equation*}
+  (x_1+x_2)+(-x_1+x_2)=0+1
+\end{equation*}
+ovvero, facendo i conti, si ottiene come sopra $2x_2=1$.\\
+Questo secondo metodo, apparentemente più artificioso, in realtà si rivela
+più semplice se si lavora sulla matrice completa del sistema invece, che
+sulle equazioni. Infatti, la matrice completa del sistema
+(\ref{eq:gauss-jorda1}) è
+\begin{equation}
+  \label{eq:gauss-jorda2}
+  \begin{pmatrix}
+    1 & 1 & 0\\
+    -1 & 1 & 1
+  \end{pmatrix}
+\end{equation}
+Sommare membro a membro le due equazioni equivale a sommare tra loro le
+due: sostituendo poi tale somma alla seconda riga originale si ottiene,
+senza dover maneggiare le incognite e dover fare sostituzioni o
+semplificazioni.
+\begin{equation}
+  \label{eq:gauss-jorda3}
+  \begin{pmatrix}
+    1 & 1 & 0\\
+    0 & 2 & 1
+  \end{pmatrix}
+\end{equation}
+che corrisponde proprio al sitema ridotto
+\begin{equation*}
+  \begin{cases}
+    x_1+x_2=0\\
+    2x_2=1
+  \end{cases}
+\end{equation*}
+risolvibile come visot sopra risolvendo prima l'equazione con una sola
+incognita.\\
+Questo stesso procedimento di eliminazione di incognite, realizzato
+lavorando sulle righe della matrice completa, funziona in realtà per
+risolvere qualunque sistema, qualunque sia il numero di equazioni e il
+numero di incognite. Più precisamente, l'obbiettivo è avere il minor
+numero numero di incognite possibile per garantire un risultato.\\
+Se, per definire un criterio, si segne di eliminarle di seguito l'odine
+$x_1,x_2,\dots, x_n$, questo significa che le righe della matrice completa
+inizino con un numero sempre maggiore di zero.
+\begin{equation*}
+  \begin{pmatrix}
+    1 & 1 & 1 & 1\\
+    0 & 2 & 3 & 2\\
+    0 & 0 & 4 & 5
+  \end{pmatrix}
+\end{equation*}
+nella quale le righe iniziano con un numero sempre maggiore di zeri, ha
+come sistema corrispondente
+\begin{equation*}
+  \begin{cases}
+    x_1+x_2+x_3=1\\
+    2x_2+2x_3=2\\
+    4x_3=5
+  \end{cases}
+\end{equation*}
+che ha la proprietà desiderata che le sue equazioni presentano un numero
+decrescente di incognite.
+Dopo questo è possibile rare la seguente
+\begin{defi}
+  \label{defi:gauss-jorda1}
+  Una matrice si dice a gradini se, andando dalla prima all'ultima,
+  ogni riga inizia con un numero sempre maggiore di zeri.\\
+  Il primo elemento non nullo in ogni riga di una matrice a gradini si
+  chiama \textit{pivot}.
+\end{defi}
+In altre parole, una matrice è a gradini se in ogni riga il primo elemento
+non nullo compare con un indice di colonna sempre più grande. Ad esempio,
+delle matrici seguenti
+\begin{eqnarray*}
+  \begin{pmatrix}
+    7 & 1 & 1 & 3\\
+    0 & 4 & 3 & 5\\
+    0 & 0 & 0 & 6
+  \end{pmatrix}, &
+                   \begin{pmatrix}
+                     7 & 1 & 1 & 3\\
+                     0 & 1 & 3 & 5\\
+                     0 & 2 & 0 & 6
+                   \end{pmatrix}, &
+                                   \begin{pmatrix}
+                                     7 & 1 & 1 & 3\\
+                                     0 & 0 & 3 & 5\\
+                                     0 & 4 & 0 & 6
+                                   \end{pmatrix}
+\end{eqnarray*}
+la prima è a gradini gradini perché i suoi pivot (7 nella prima riga,
+4 nella seconda e 6 nella terza) si trovano, nell'ordine, sulla prima,
+seconda e quarta colonna (indice di colonna sempre più grande), mentre
+le altre no (nella seconda, il primo elemento non nullo della terza riga
+sta nella stessa colonna del primo elemento non nullo della seconda riga;
+nella terza matrice, il primo elemento non nullo della terza riga sta in
+una colonna di indice più piccolo del primo elemento non nullo della
+seconda riga). Un sistema si dice a gradini se la sua matrice completa è
+una matrice a gradini.\\
+Il procedimento che desscritto qui di seguito è chiamato \textit{metodo
+  di riduzione a gradini} o, dal momento che consiste nell'eliminare
+incognite, \textit{metodo di eliminazione di Gauss-Jordan}.\\
+Il procedimento di riduione a gradoni, oltre a semplificare il sistema, fa
+emergere anche le eventuali incompatibilità e le eventuali equazioni
+superflue presenti nel sistema.\\
+Per trasformare un sistema in un sistema a gradini, trasformeremo la sua
+matrice completa in una matrice a gradini tramite le seguenti operazioni
+slle sue righe, dette \textit{operazioni elementari di primo, secondo
+  terzo tipo}:
+\begin{description}
+\item[primo tipo] Scambiare tra loro due righe della matrice (
+  $R_i \leftrightarrow R_j$)
+\item[secondo tipo] Moltiplicare una riga della matrice per un
+  coefficiente non nullo ($R_i\to cR_i$, con $c\neq 0$)
+\item[terzo tipo] Sommare a una riga della matrice un'altra riga
+  moltiplicata per un mumero qualunque ($R_i=R_i+dR_j$)
+\end{description}
+Il fatto importante è che tali operazioni, che modificano le righe,
+corrispondono a modificare le equazioni del sistema \textit{in modo però
+  da non combiare l'insieme delle soluzioni,} come dimostra il seguente
+risultato, corollario delle Proposizione \ref{prop:determinante1}:
+\begin{prop}
+  \label{prop:determinante2}
+  Se viene effettuate operazioni elementari di primo, secondo e terzo
+  tipo sulla matrice completa di un sistema, la matrice trasformeta è la
+  matrice completa di un sistema \textit{equivalente} a quello iniziale
+  (ovvero avente le stesse soluzioni del sistema iniziale).
+\end{prop}
+Dopo questo, verrà illustrato come mediante l'uso delle tre operazioni
+elementari, ogni sistema possa essere trasformato in un sistema a gradini:
+sia
+\begin{equation}
+  \label{eq:gauss-jorda4}
+  A=
+  \begin{pmatrix}
+    a_{11} & a_{12} & \cdots & a_{1n} & b_1\\
+    a_{21} & a_{22} & \cdots & a_{2n} & b_2\\
+    a_{31} & a_{32} & \cdots & a_{3n} & b_3\\
+    \vdots & \vdots & \vdots & \vdots\\
+    a_{m1} & a_{m2} & \cdots & a_{mn} & b_m
+  \end{pmatrix}
+\end{equation}
 \end{document}
