@@ -1884,4 +1884,301 @@ sia
     a_{m1} & a_{m2} & \cdots & a_{mn} & b_m
   \end{pmatrix}
 \end{equation}
+La matrice completa del generico sistema (\ref{eq:eqlinematrici2}).\\
+L'algoritmo inizia come segue: se la prima entrata $a_{11}$ della prima
+riga è uguale a zero, le si scambia tra loro nelle due righe (applicando
+quindi un'operazione elementare del primo tipo) in modo da garantire che
+la nuova entrata $a_{11}$ sia diversa da zero. Fatto ciò, si applica alla
+matrice (\ref{eq:gauss-jorda4}) le seguenti operazioni elementari (del
+terzo tipo) sulle righe $R_2,\dots,R_m$ dalla seconda all'ultima:
+\begin{equation*}
+  \begin{matrix}
+    R_2\to R_2-\frac{a_{21}}{a_{11}}R_1\\
+    R_{3}\to R_3-\frac{a_{31}}{a_{11}}R_1\\
+    \vdots\\
+    R_{m}\to R_m-\frac{a_{m1}}{a_{11}}R_1
+  \end{matrix}
+\end{equation*}
+(si noti che le operazioni si possono applicare proprio perché
+$a_{11}\neq 0$). Queste trasformazioni rendono sicuramente uguale a zero
+la prima entrata di ogni riga dalla secomnda in poi, e eventualmente
+potrebbero aver annullato anche altre entrate, ovvero trasformano la
+matrice (\ref{eq:gauss-jorda4}) in una matrice seguente tipo
+\begin{equation}
+  \label{eq:gauss-jorda5}
+  \begin{pmatrix}
+    a_{11} & \dots & \dots & \dots & \dots & a_{1n} & b_1\\
+    0 & \dots & 0 & a_{2k}^\prime & \dots & a_{2n}^\prime & b_2^\prime\\
+    0 & \dots & 0 & a_{3k}^\prime & \dots & a_{3n}^\prime & b_3^\prime\\
+           & \cdots\\
+    0 & \dots & 0 & a_{mk}^\prime & \dots & a_{mn}^\prime & b_m^\prime
+  \end{pmatrix}
+\end{equation}
+si può supporre che la siconda rica sia quella che inizia con il minor
+numero di zeri, con $a_{2k}^\prime\neq 0$. A questo punto, si ripete quanto
+fatto nella prima parte della trasformazione, applicando stavolta alle
+righe dalla terza in poi le trasformazioni elementari del terzo tipo
+\begin{equation*}
+  \begin{matrix}
+    R_3\to R_3-\frac{a^\prime_{3k}}{a_{2k}^\prime}R_2\\
+    \vdots\\
+    R_m\to R_m-\frac{a^\prime_{mk}}{a_{2k}^\prime}R_2\\
+  \end{matrix}
+\end{equation*}
+che sono tali da annullare la prima entrata non nulla dalla terza riga in
+poi, ovvero da trasformare la matrice in una matrice del tipo
+\begin{equation}
+  \label{eq:gauss-jorda6}
+  \begin{pmatrix}
+    a_{11} & \dots & \dots & \dots & \dots & a_{1n} & b_1\\
+    0 & \dots & 0 & a_{2k}^\prime & \dots & a_{2n}^\prime & b_2^\prime\\
+    0 & \dots & 0 & 0 & \dots & a_{3n}^{\prime\prime} & b_3^{\prime\prime} \\
+           &\dots\\
+    0 & \dots & 0 & 0 & \dots & a_{mn}^{\prime\prime} & b_{m}^{\prime\prime}
+  \end{pmatrix}
+\end{equation}
+In questo modo si può trasformare la matrice del sitema in una matrice
+ogni riga inizia con un numero sempre maggiore di zeri, ovvero nella
+matrice a gradini voluta, e il sistema corrispondente sarà equivalente al
+sistema iniziale in quanto la trasmissione è stata effettuata con
+operazioni elementari. Il modo migliore di capire questo procedimento è
+con un esempio.
+\begin{es}
+  \label{es:gauss-jorda1}
+  Sia
+  \begin{equation}
+    \label{eq:gauss-jorda1-1}
+    \begin{cases}
+      x_1+x_2+x_3=1\\
+      -x_1+x_2-x_3=0\\
+      -x_1+x_2+x_3=-3
+    \end{cases}
+  \end{equation}
+  il sistema con matrice completa
+  \begin{equation}
+    \label{eq:gauss-jorda1-2}
+    \left(
+      \begin{array}{ccc|c}
+        1 & 1 & 1 & 1\\
+        -1 & 1 & -3 & 0\\
+        -1 & 1 & 1 & -3
+      \end{array}\right)
+  \end{equation}
+  Ora, è possibile trasformare tale matrice in una matrice a gradini
+  usando le operazioni elementari, in modo da ottenere un sistema a
+  gradini equavalente al sistema (\ref{eq:gauss-jorda1-1}).\\ Ricordando
+  che, in base alla definizione di matrice a gradini, visto che il primo
+  elemento $a_{11}$ della prima riga è diverso da zero, e sta nella prima
+  colonna, i primi elementi diversi da zero della seconda e della terza
+  riga non possono essere anche loro nella prima colonna: in altre parole,
+  è mecessario trasformare la matrice in modo che $a_{21}$ e $a_{31}$
+  siano uguali a zero.\\
+  Ottenendo sicuramente lo scopo se si applicano anche le operazioni
+  elementari del terzo tipo $R_2\to R_2+R_1$ e $R_3\to R_3+R_1$: infatti,
+  \begin{eqnarray*}
+    \left(
+      \begin{array}{ccc|c}
+        1 & 1 & 1 & 1\\
+        -1 & 1 & -3 & 0\\
+        -1 & 1 & 1 & -3
+      \end{array}\right)& \overrightarrow{
+        \begin{matrix}
+          R_2\to R_2+R_1\\
+          R_3\to R_3+R_1
+        \end{matrix}
+      }& \left(
+        \begin{array}{ccc|c}
+          1 & 1 & 1 & 1\\
+          0 & 2 & -2 & 1\\
+          0 & 2 & 2 & -2
+        \end{array}\right)
+  \end{eqnarray*}
+  La matrice trasformata non è ancora una matrice a gradini in quanto il
+  primo elemento non nullo della terza riga si trova in corrispondenza
+  della stessa colonna (la seconda) del primo elemento non nullo nella
+  seconda riga: è decessario che $a_{32} = 0$ (diventi nullo). A questo
+  scopo, basta applicare l'operazione elementare $R_3\to R_3-R_2$:
+  così facendo si ottiene
+  \begin{eqnarray*}
+    \left(
+        \begin{array}{ccc|c}
+          1 & 1 & 1 & 1\\
+          0 & 2 & -2 & 1\\
+          0 & 2 & 2 & -2
+        \end{array}\right) & \overrightarrow{
+                             R_3\to R_3-R_2} &
+                                               \left(
+        \begin{array}{ccc|c}
+          1 & 1 & 1 & 1\\
+          0 & 2 & -2 & 1\\
+          0 & 0 & 4 & -3
+        \end{array}\right)
+  \end{eqnarray*}
+  E alla fine di questo processo si otterà come sistema:
+  \begin{equation}
+    \label{eq:gauss-jorda1-3}
+    \begin{cases}
+      x_1+x_2+x_3=1\\
+      2x_2+2x_3=1\\
+      4x_3=-3
+    \end{cases}
+  \end{equation}
+  corrispondente alla matrice trasformata è, equivalente al sistema
+  originale (\ref{eq:gauss-jorda1-1}), quindi trovando la sua risoluzione
+  trovando la soluzione del sistema (\ref{eq:gauss-jorda1-1}).
+  \begin{equation*}
+    2x_2-2x_3=1\to 2x_2=1+2x_3=1+2\left(-\frac{3}{4}\right)=1-\frac{3}{2}
+    =-\frac{1}{2} \to x_2=-\frac{1}{4}
+  \end{equation*}
+  e analogamente, sostituendo i valori di $x_2$ e $x_3$ così ottenuti
+  nella prima equazione si trova
+  \begin{equation*}
+    x_1+x_2+x_3=1\to x_1=1-x_2-x_3= 1 - \left(-\frac{1}{4}\right)-\left(-
+      \frac{3}{4}\right)=2
+  \end{equation*}
+  Avendo quindi la terna $
+  \begin{pmatrix}
+    2, & -\frac{1}{4}, & -\frac{3}{4}
+  \end{pmatrix}
+  $ è l'unica soluzione del sistema (\ref{eq:gauss-jorda1-3}), ovvero
+  del sistema iniziale (\ref{eq:gauss-jorda1-1}).
+\end{es}
+La riduzione a gradini non solo semplifica il sitema grazie alla
+eliminazione di incognite, ma mette anche in evidenza eventuali
+``equazioni superflue'' e incompatibilità tra le equazioni.
+\begin{es}
+  \label{es:gauss-jorda2}
+  Considerando il sistema
+  \begin{equation}
+    \label{eq:gauss-jorda2-1}
+    \begin{cases}
+      x_1+x_2+x_3=1\\
+      x_1-x_2-x_3=0\\
+      x_1+3x_2+3x_3=1
+    \end{cases}
+  \end{equation}
+  che ha come matrice completa
+  \begin{equation}
+    \label{eq:gauss-jorda2-2}
+    \left(\begin{array}{ccc|c}
+      1 & 1 & 1 & 1   \\
+      1 & -1 & -1 & 0 \\
+      1 & 3 & 3 & 1
+    \end{array}\right)
+  \end{equation}
+  Come fatto per il sistema precedente, trasformando tale matrice in una
+  matrice a gradini mediante operazioni elementari.
+  \begin{eqnarray*}
+    \left(\begin{array}{ccc|c}
+      1 & 1 & 1 & 1   \\
+      1 & -1 & -1 & 0 \\
+      1 & 3 & 3 & 1
+    \end{array}\right)& \overrightarrow{
+        \begin{matrix}
+          R_2\to R_2+R_1\\
+          R_3\to R_3+R_1
+        \end{matrix}
+      }& \left(\begin{array}{ccc|c}
+        1 & 1 & 1 & 1   \\
+        1 & -2 & -2 & -1 \\
+        0 & 2 & 2 & 0
+      \end{array}\right)\\
+    \left(\begin{array}{ccc|c}
+        1 & 1 & 1 & 1   \\
+        1 & -2 & -2 & -1 \\
+        0 & 2 & 2 & 0
+      \end{array}\right) & \overrightarrow{
+                             R_3\to R_3-R_2} &
+                              \left(\begin{array}{ccc|c}
+                                1 & 1 & 1 & 1   \\
+                                0 & -2 & -2 & -1 \\
+                                0 & 0 & 0 & -1
+                              \end{array}\right)
+  \end{eqnarray*}
+  Notare che la terza riga dalla matrice trasformata corrisponde
+  all'equazione $0x_1+0x_2+0x_3=-1$, ovvero $0=-1$: poiché questa
+  uguaglianza è falza, non esiste nessuna terna che soddisfi le tre
+  condizioni del sistema ridotto corrispondente, ovvero tale sistema non
+  ha soluzioni. Questo, in virtù dell'equivalenza tra il sistema originale
+  e quello ridotto, questo indica che il sistema di partenza non ha
+  soluzioni, ovvero è incompatibile.\\
+  Evidentemente tra le equazioni del sistema di partenza vi era una
+  incompatibilità non evidente che il procedimento di riduzione a gradini
+  ha fatto emergere: infatti, se si moltiplica membro a membro la prima
+  equazione per 2 e si sottrae la seconda equazione si ottiene
+  \begin{eqnarray*}
+    2(x_1+x_2+x_3)-(x_1-x_2-x_3)=2\cdot 1 - 0
+  \end{eqnarray*}
+  ovvero, svolgendo i calcoli, $x_1+3x_2+3x_3=2$. Quasta condizione, che è
+  conseguenza delle prime due equazioni ed è quindi soddisfatta da
+  qualunque terna le soddisfi, è chiaramente incompatibile con la terza
+  equazione; il procedimento di riduzione a gradini ha messo alla luce
+  questa incompatibilità trasformandola nell'incompatibilità evidente
+  $0=-1$.\\
+  Considerando ora come ultimo esempio il sistema
+  \begin{equation}
+    \label{eq:gauss-jorda2-3}
+    \begin{cases}
+      x_1+x_2+3x_3=1\\
+      x_1-2x_2+x_3=0\\
+      x_1-5x_2-x_3=-1
+    \end{cases}
+  \end{equation}
+  che ha come matrice completa
+  \begin{equation}
+    \label{eq:gauss-jorda2-4}
+    \left(
+      \begin{array}{ccc|c}
+        1 & 1 & 3 & 1\\
+        1 & -2 & 1 & 0\\
+        1 & -5 & -1 & -1
+      \end{array}\right)
+    \end{equation}
+    Applicando operazioni elementari per ridurre a gradini,
+    \begin{eqnarray}
+      \label{eq:gauss-jorda2-4}
+      \left(
+      \begin{array}{ccc|c}
+        1 & 1 & 3 & 1\\
+        1 & -2 & 1 & 0\\
+        1 & -5 & -1 & -1
+      \end{array}\right) & \overrightarrow{
+        \begin{matrix}
+          R_2\to R_2+R_1\\
+          R_3\to R_3+R_1
+        \end{matrix}
+      }& \left(
+      \begin{array}{ccc|c}
+        1 & 1 & 3 & 1\\
+        0 & -3 & -2 & -1\\
+        0 & -6 & -4 & -2
+      \end{array}\right)\\
+       \left(
+       \begin{array}{ccc|c}
+         1 & 1 & 3 & 1\\
+         0 & -3 & -2 & -1\\
+         0 & -6 & -4 & -2
+       \end{array}\right) & \overrightarrow{
+                             R_3\to R_3-R_2} &
+                              \left(
+      \begin{array}{ccc|c}
+        1 & 1 & 3 & 1\\
+        0 & -3 & -2 & -1\\
+        0 & 0 & 0 & 0
+      \end{array}\right)
+    \end{eqnarray}
+    In questo caso avviene un qualcosa di particolare, infatti, la terza
+    equazione del sistema si annulla come, si evince dalla
+    $0x_1+0x_2+0x_3 = 0$, ovvero $0 = 0$.\\
+    Quindi trasformando da matrice a sistema
+    \begin{equation}
+      \label{eq:gauss-jorda2-5}
+      \begin{cases}
+        x_1+x_2+3x_3=1\\
+        -3x_2-2x_3=-1
+      \end{cases}
+    \end{equation}
+    Benché non sia rimasta un'equazione con una sola incognita come nel
+    primo sistema appena risolto, 
+\end{es}
 \end{document}
