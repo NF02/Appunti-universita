@@ -121,6 +121,7 @@
 \theoremstyle{definition}
 \newtheorem{defi}{Definizione}[section]
 \newtheorem{es}{Esempio}[section]
+\newtheorem{teo}{Teorema}[section]
 \newtheorem{oss}{Osservazione}[section]
 \theoremstyle{plain}
 \newtheorem{nota}{Nota}[section]
@@ -2179,6 +2180,523 @@ eliminazione di incognite, ma mette anche in evidenza eventuali
       \end{cases}
     \end{equation}
     Benché non sia rimasta un'equazione con una sola incognita come nel
-    primo sistema appena risolto, 
+    primo sistema appena risolto, è possibile comunque progedere
+    nel seguente modo:\\
+    Bisogna ricavare $x_2$ dalla seconda equazione:
+    \begin{equation}
+      \label{eq:gauss-jorda2-6}
+      -3x_2-2x_3=-1\to -3x_2=2x_3-1=-\frac{2}{3}x_3+\frac{1}{3}
+    \end{equation}
+    e sostituendo l'espressione ottenuta nella prima equazione per
+    ricavare $x_1$:
+    \begin{equation}
+      \label{eq:gauss-jorda2-7}
+      x_1+x_2+3x_3=1\to x_1=1-x_2-x_3=1-\left(9\frac{2}{3}x_3+\frac{1}{3}
+        \right)-3x_3=\frac{2}{3}-\frac{7}{3}x_3.
+    \end{equation}
+    Ora, qualunque valore $t\in \mathds{R}$ assegnando a $x_3$, la
+    (\ref{eq:gauss-jorda2-6}) e la (\ref{eq:gauss-jorda2-7}) dice che se
+    si pone $x_2=-\frac{2}{3}t+\frac{1}{3}$ e
+    $x_1=\frac{2}{3}-\frac{7}{3}t$, le equazioni del sistema saranno
+    soddisfatte, ovvero si otterrà una soluzione. Espresso in altri
+    termini, le soluzioni del sistema sono esattamente tutte le terne
+    del tipo $\left(\frac{2}{3}-\frac{7}{3}t, -\frac{2}{3}t+\frac{1}{3},t
+    \right)$ al variare di $t\in \mathds{R}$: il sistema ha quindi
+    infinite soluzioni.\\
+    Più precisamente, dal momento che le infinite
+    soluzioni del sistema dipendono da un solo parametro libero $t$, si
+    dice che il sistema ha ``infinito alla uno'' (si scrive $\infty^1$)
+    soluzioni.
 \end{es}
+In genere, è possibile dare la seguente
+\begin{defi}
+  \label{defi:gauss-jorda1}
+  Un sistema di equazioni lineari ha $\infty^k$ soluzioni se
+  l'espressione generale della sua soluzione dipende da $k$ parametri
+  liberi.
+\end{defi}
+Nell'ultimo esempio esposto, la riduzione ha eliminato delle tre
+equazioni del sistema riducendola all'identità $0=0$. In effetti, non è
+difficile vedere che la terza equazione $x_1-5x_2-x_3=-1$ era un'equazione
+``superflua'', o più precisamente dipendente dalle altre due: come si
+vede nella matrice completa (\ref{eq:gauss-jorda2-4}), la terza riga, che
+la rappresenta, è combinazione delle altre due:
+\begin{equation*}
+  (1,-5,-1,-1)=-(1,1,3,1)+2(1,-2,1,0)
+\end{equation*}
+In effetti, non è difficile vedere che una matrice a gradini, escluse le
+righe nulle, non ha più righe dipendenti (e quindi le equazioni non
+nulle di un sistema ridotto a gradini sono sicuramente indipendenti):
+\begin{prop}
+  \label{prop:gauss-jorda1}
+  Le righe non nulle di una matrice ridotta a gradini sono
+  linearmente indipendenti
+\end{prop}
+\begin{proof}
+  Per definizione di matrice a gradini le sue righe saranno del tipo
+  \begin{eqnarray*}
+    R_1=(a_{11},\dots), & a_{11}\neq0\\
+    R_2=(0,\dots, 0, a_{2k},\dots,), & a_{2k}\neq 0\\
+    R_3=(0,\dots,0,0,\dots,0,a_{3j},\dots,), & a_{3j}\neq 0\\
+    \vdots
+  \end{eqnarray*}
+  con $k>1,j>k$ etc, ovvero in ogni riga il primo elemento non nullo
+  compare via via con secondo indice sempre più grande.\\
+  Ora, per dimostrare che tali righe sono indipendenti basta supporre che
+  tali righe sono indipendenti basta supporre che
+  \begin{equation}
+    \label{eq:gauss-jorda3}
+    c_1(a_{11},\dots)+c_2(0,\dots,0,a_{2k},\dots,)+c_3(0,\dots,0,0,\dots,
+    0,a_{3j},\dots,)+\dots=(0,\dots,0)
+  \end{equation}
+  e dimostrare che i coefficinti $c_1,c_2,c_3$, etc. Devono essere
+  necessariamente tutte nulli.\\
+  Andando a guardare cosa significa l'uguaglianza (\ref{eq:gauss-jorda3})
+  vedendo che nella prima entrata rimane solo $c_1a_{11}=0$: ma, essendo
+  per ipotesi $a_{11}\neq 0$, necessariamente deve essere $c_1=0$. Quindi,
+  la (\ref{eq:gauss-jorda3}) si riduce a
+  \begin{equation}
+    \label{eq:guess-jorda4}
+    c_2(0,\dots,0,a_{2k},\dots,)+c_3(0,\dots,0,0,\dots,a_{3j},\dots,)+
+    \dots= (0,\dots,0)
+  \end{equation}
+  Ora, guardando la $k$-esima entrata di questa relazione (cioè la prima
+  diversa da zero nella seconda riga): dal momento che tutte le righe
+  successive alla seconda hanno la prima entrata diversa da zero con
+  indice più alto, si ottiene $c_2a_{2k}=0$, che, essendo $a_{2k}\neq 0$,
+  dice che $c_2=0$.\\
+  Dunque la (\ref{eq:guess-jorda4}) si riduce a
+  \begin{equation*}
+    c_3(0,\dots,0,9,\dots,a_{3j},\dots,)+\dots=(0,\dots,0)
+  \end{equation*}
+  e, continuando a ragionare in questo modo, si vedranno tutti i
+  coefficenti $c_i$ si devono annullare, e quindi non può esistere una
+  combinazione lineare delle righe uguale al vettore nullo e con
+  coefficienti non tutti nulli, ovvero le righe sono indipendenti.
+\end{proof}
+\begin{oss}
+  \label{oss:guess-jorda1}
+  Quando si effettua delle operazioni elementari sulle righe di una
+  matrice, si può considerare anche le trasformazioni del tipo $R_i\to
+  cR_i+dR_{j}$, purché il coefficiente $c$ per cui bisogna moltiplicare
+  la riga $R_i$ in modo che sostituendo non sia zero: infatti, benché
+  tale traormazione non sia una delle tre operazioni elementari, essa
+  può essere pensata come il risultato dell'applicando alla riga $R_i$
+  l'operazione elementare del secondo tipo $R_i\to cR_i$ (con $c\neq 0$
+  come previsto) e poi applicando alla nuova riga $cR_i$ così ottenuta
+  l'operazione elementatre del terzo tipo $cR_i=cR_i+dR_j$.
+\end{oss}
+Il procedimento di riduzione a gradini, che è stato utilizzato come
+strumento di risoluzione di un sistema, in realtà è sostanzialmente un
+motodo che stabilisce se dei vettori sono indipendenti. Infatti, più
+precisamente, si riscontrano i seguenti fatti:
+\begin{enumerate}
+\item Il procedimento non modifica lo spazio generato dalle righe, ovvero
+  se $R_1,R_2,\dots,R_m$ sono le righe della matrice iniziale, e
+  $\bar{R}_1,\bar{R}_2,\dots,\bar{R}_m$ sono le righe della matrice
+  trasformata, allora $(R_1,R_2,\dots,R_m)=(\bar{R}_1,\bar{R}_2,\dots,
+  \bar{R}_m)$;
+\item le righe non nulle alla fine del procedimento formano un insieme di
+  vettori indipendenti.
+\end{enumerate}
+Quindi, se le righe non nulle dopo la riduzione sono le prime $l$, ovvero
+$\bar{R}_1,\bar{R}_2,\dots,R_i$, dal fatto che queste sono indipendenti
+deducendo che consituiscono una base del sottospazio da loro generato, e
+quindi
+\begin{equation*}
+  \dim(\bar{R_1},\bar{R_2},\bar{R_i})=l;
+\end{equation*}
+ma poiché il sottospazio generato non cambia, si può concludere che
+\begin{equation*}
+  \dim(R_1,R_2,R_m)=l.
+\end{equation*}
+Il numero di righe non nulle rimaste dopo la riduzione a gradini ci dà
+quindi la dimensione dello spazio generato dalle righe iniziali: in uno
+spazio di dimensione $l$ ci sono al massimo $l$ vettori indipendenti, e
+le restanti di righe non nulle rimaste dopo la riduzione dimostra che
+quante righe indipendenti  aveva la matrice prima della riduzione. Questa
+informazione, giustifica la seguente
+\begin{defi}
+  \label{defi:gauss-jorda2}
+  Il massimo numero di righe indipendenti di una matrice $A$ si
+  chiama il \textit{rango per righe} di $A$.\\
+  Quindi la riduzione a gradini definisce un modo per calcolare la
+  dimensione di uno spazio e per definizione di uno spazio e per
+  verificare se delle $n$-uple date siano indipendenti.\\
+  Ad esempio, considerando le seguenti 4-uple
+  \begin{equation}
+    \label{eq:gauss-jorda2-1}
+    \begin{matrix}
+      (1,1,2,1,), & (1,2,1,0), & (1,-1,4,3), & (2,1,1,0)
+    \end{matrix} 
+  \end{equation}
+  vedendo di determinare se esse siano o meno indipendenti. Disponendo
+  4-uple a formare le righe di una matrice
+  \begin{equation*}
+    \begin{bmatrix}
+      1 & 1 & 2 & 1\\
+      1 & 2 & 1 & 0\\
+      1 & -1 & 4 & 3\\
+      2 & 1 & 1 & 0
+    \end{bmatrix}
+  \end{equation*}
+  riduciendo a gradini seguendo il procedimeto di eliminazione (come
+  definito nei paragrafi precedenti)
+  \begin{equation}
+    \label{eq:gauss-jorda2-2}
+    \begin{matrix}
+      \begin{bmatrix}
+        1 & 1 & 2 & 1\\
+        1 & 2 & 1 & 0\\
+        1 & -1 & 4 & 3\\
+        2 & 1 & 1 & 0
+      \end{bmatrix}
+      \overrightarrow{
+      \begin{matrix}
+        R_2\to R_2-R_1\\
+        R_3\to R_3-R_1\\
+        R_4\to R_4-2R_1
+      \end{matrix}
+      }
+      \begin{bmatrix}
+        1 & 1 & 2 & 1\\
+        0 & 1 & -1 & -1\\
+        0 & -2 & 2 & 2\\
+        0 & -1 & -3 & -2
+      \end{bmatrix}
+      \overrightarrow{
+      \begin{matrix}
+        R_3\to R_3+2R_2\\
+        R_4\to R_4+R_2
+      \end{matrix}
+      }
+      \begin{bmatrix}
+        1 & 1 & 2 & 1\\
+        0 & 1 & -1 & -1\\
+        0 & 0 & 0 & 0\\
+        0 & 0 & -4 & -3
+      \end{bmatrix}\\
+      \overrightarrow{
+      R_4\leftrightarrow R_3}
+      \begin{bmatrix}
+        1 & 1 & 2 & 1\\
+        0 & 1 & -1 & -1 \\
+        0 & 0 & -4 & -3\\
+        0 & 0 & 0 & 0
+      \end{bmatrix}
+    \end{matrix}
+  \end{equation}
+  l'ultimo scambio di righe è stato necessario per portare la matrice
+  nella forma a gradini.\\
+  Dopo la riduzione sono la riduzione sono rimaste 3 righe nulle, ovvero
+  il rango della matrice è 3: nell'insieme iniziale vi erano allora 3
+  righe indipendenti e una quarta dipendente dalle altre (quindi le
+  4-uple non erano linearmente indipendenti).\\
+  In particolare, è possibile affermare che il vettore da escludere se
+  si vuole estrarre un insieme di vettori indipendenti dai quattro
+  vettori dati era il terzo, \textit{corrispondente alla riga annullata
+    dalla riduzione}. Infatti, per arrivare all'annullamento di tale riga
+  in primo luogo è stato eseguito $R_2\to R_2-R_1$ e $R_3\to R_3-R_1$, e
+  poi sommando alla (ottenuta) terza riga $R_3-R_1$ la (ottenuta) seconda
+  riga $R_2-R_1$ moltiplicata per 2, ovvero
+  \begin{equation*}
+    (R_3-R_1)+2(R_2-R_1)=0
+  \end{equation*}
+  Svolgendo i conti, questa uguaglianza dice che $R_3-3R_1+2R_2=0$, ovvero
+  \begin{equation*}
+    R_3=3R_1-2R_2
+  \end{equation*}
+  che conferma che la terza riga è scrivibile come combinazione delle
+  altre. Il fatto appena illustrato in questo è vero in genere: se una
+  riga si annula in seguito all'algoritmo di riduzione a gradini allora
+  essa era esprimibile come combinazione delle altre. Infatti, nel corso
+  delle riduzione a gradini bisogna trasformare da prima tutte tutte le
+  righe dalla seconda in poi combinandole con la prima
+  \begin{equation*}
+    \begin{matrix}
+      R_2\to R_2+c_2R_1, & R_3\to R_3+c_3R_1,\dots,R_m \to R_m+c_mR_1
+    \end{matrix}
+  \end{equation*}
+  Ne secondo passaggio, ogni riga così trasformata viene combinata con la
+  seconda riga:
+  \begin{equation*}
+    R_k\to (R_k+c_kR_1)+c_k^\prime(R_2+c_2R_!)=R_k+(c_kc^\prime_kc_2)R_1
+    +c_k^\prime R_2
+  \end{equation*}
+  e così via: a ogni passaggio la riga $R_k$ viene combinata con una in
+  più delle righe precedenti, fino a che o non bisogna più modificarlo
+  perché si inizia ad utilizzarla per ridurre le successive, oppure essa
+  si annulla: in tal caso si arriva quindi a una relazione del tipo:
+  \begin{equation*}
+    R_k+d_1R_1+d_2R_2+\dots+d_jR_j=0
+  \end{equation*}
+  ovvero $R_k=-d_1R_1-d_2R_2-\dots-d_jR_j$, che dice che la riga $R_k$ che
+  si è annullata era combinazione lineare delle altre righe.
+\end{defi}
+\begin{oss}
+  \label{oss:gauss-jorda3}
+  l'affermazione secondo cui le righe che si annullano sono combinazione
+  lineare delle altre è vera quando si segue l'algoritmo di riduzione
+  a gradini, ma in generale se una riga si annulla dopo una serie
+  qualunque di operazioni elementari non è detto che sia combinazione
+  lineare delle altre. Ad esempio, si consideri la seguente sequenza di
+  operazioni elementari (che non segue i passi dell'algoritmo di
+  riduzione a gradini)
+  \begin{eqnarray*}
+    \begin{bmatrix}
+      1 & 0\\
+      2 & 0\\
+      0 & 1
+    \end{bmatrix} \overrightarrow{
+      R_3\to R_3+R_1
+    }
+    \begin{bmatrix}
+      1 & 0 \\
+      2 & 0 \\
+      1 & 1
+    \end{bmatrix}
+    \overrightarrow{R_2\to R_2+R_3}
+    \begin{bmatrix}
+      1 & 0\\
+      3 & 1\\
+      1 & 1
+    \end{bmatrix}\overrightarrow{R_3\to R_3-R_2}
+    \begin{bmatrix}
+      1 & 0 \\
+      3 & 1 \\
+      -2 & 0
+    \end{bmatrix}\\
+    \overrightarrow{R_3\to R_3+2R_1}
+    \begin{bmatrix}
+      1 & 0\\
+      3 & 1\\
+      0 & 0
+    \end{bmatrix}
+  \end{eqnarray*}
+  a seguito della quale la terza riga si anulla, pur non essendo
+  combinazione lineare delle altre: non c'è nessun modo di esprimere
+  (0,1) come combinazione di (1,0) e (2,0)\footnote{si noti che non sono
+    stati fatti scambi di riga}.\\
+  La Definizione \ref{defi:gauss-jorda2} suggerisce che si può definire
+  anche il \textit{rango per colonne} di una matrice come il numero
+  massimo di colonne linearmente indipendenti\footnote{ovvero la
+    dimensione dello spazio generato dalle colonne}. Tuttavia vale la
+  seguente
+\end{oss}
+\begin{prop}
+  \label{prop:gauss-jorda2}
+  Per una qualunque matrice, il rango per righe coincide con il
+  rango per colonne.\\
+  Non dimostrando la proposizione \ref{prop:gauss-jorda2}, ma è possibile
+  illustrarla con un semplice esempio: nella matrice
+  \begin{equation*}
+    \begin{bmatrix}
+      1 & 1 & 1\\
+      2 & 2 & 2\\
+      3 & 4 & 5
+    \end{bmatrix}
+  \end{equation*}
+  la seconda riga $R_2$ è evidentemente dipendente dalle altre, in quanto
+  $R_2=2R_1$ (se si volesse far apparire anche la terza riga in questa
+  relazione di dipendenza, si potra scrivere $R_2=2R_1+0R_3$).
+  Per il risultato appena citato, allora anche una delle colonne della
+  matrice deve essere dipendente dalle altre: in effetti, si ha
+  \begin{equation*}
+    \begin{bmatrix}
+      1 \\
+      2\\
+      5
+    \end{bmatrix}=2 \cdot
+    \begin{bmatrix}
+      1 \\
+      2\\
+      4
+    \end{bmatrix}-
+    \begin{bmatrix}
+      1\\
+      2\\
+      3
+    \end{bmatrix},
+  \end{equation*}
+  che era molto meno evidente della relazione di dipendenza esistente tra
+  righe. Come ulteriore esempio, si considerino le stesse $4-$uple viste
+  sopra in (\ref{eq:gauss-jorda2-1}): grazie all'uguaglianza del rango
+  del rango per righe e per colonne, in effetti i vettori possono essere
+  disposti sia in colona che in riga, l'importante è scegliere se tutti
+  i vettori devono essere disposti in un o nell'altro modo.
+  \begin{equation*}
+    \begin{bmatrix}
+      1 & 1 & 1 & 2\\
+      1 & 2 & -1 & 1 \\
+      2 & 1 & 4 & 1 \\
+      1 & 0 & 3 & 0
+    \end{bmatrix}
+  \end{equation*}
+\end{prop}
+Il rango per righe di questa matrice, che possono essere calcolate con il
+procedimento di riduzione a gradini, è quindi uguale al rango per colone
+della precedente, ovvero deve sempre essere uguale a 3. Infatti
+\begin{equation}
+  \label{eq:guess-jorda5}
+  \begin{matrix}
+    \begin{bmatrix}
+      1 & 1 & 1& 2\\
+      1 & 2 & -1 & 1\\
+      2 & 1 & 4 & 1\\
+      1 & 0 & 3 & 0
+    \end{bmatrix}
+    \overrightarrow{
+    \begin{matrix}
+      R_2\to R_2- R_1\\
+      R_3\to R_3-2R_1\\
+      R_3\to R_4-R_1
+    \end{matrix}
+    }
+    \begin{bmatrix}
+      1 & 1 & 1 & 2\\
+      0 & 1 & -2 & -1 \\
+      0 & -1 & 2 & -3\\
+      0 & -1 & 2 & -2
+    \end{bmatrix}
+    \overrightarrow{
+    \begin{matrix}
+      R_3\to R_3+R_2\\
+      R_4\to R_4+R_2
+    \end{matrix}
+    }
+    \begin{bmatrix}
+      1 & 1 & 1 & 2\\
+      0 & 1 & -2 & -1\\
+      0 & 0 & 0 & -4\\
+      0 & 0 & 0 & -3
+    \end{bmatrix}\\
+    \overrightarrow{
+    R_4\leftrightarrow 4R_4-3R_3}
+    \begin{bmatrix}
+      1 & 1 & 1 & 2\\
+      0 & 1 & -2 & -1\\
+      0 & 0 & 0 & -4\\
+      0 & 0 & 0 & 0
+    \end{bmatrix}
+  \end{matrix}
+\end{equation}
+Come previsto dall'uguaglianza del rango per righe o per colonne, come
+ottenuto che il rango della matrice è 3.\\
+Si noti che, in questo caso, a dire quale vettore è combinazione degli
+altri è la posizione dei pivot nella matrice ridotta: poiché questi si
+trovano in prima, seconda e quarta colonna, i vettori da tenere sono il
+primo, il secondi e il quarto, mentre il terzo è da ecludere (come già
+sapendo dalla riduzione fatta sui vettori disposti in riga).\\
+Infatti, se si segue la riduzione guardando solo le prime due colonne,
+dove si trovano i primi due pivot, si vede che il rango delle matrice è
+2, il che dice che i primi due vettori sono indipendenti tra loro; se
+si guarda cosa succede solo alle prime tre colonne, si può notare che
+il rango è ancora d2 (in quanto la teza colonna non contiene pivot) e
+questo dice che il terzo vettore era allora combinazione dei primi due:
+è solo aggiungendo la quarta colonna, dove si trova il terzo pivot, che
+si ottiene una matrice di rango 3, il che significa che è il quarto
+vettore, contrariamente al terzo, ad essere indipendente dai primi due.\\
+Facendo uso della nozione di rango, possono riassumere tutto quello che
+è ormai noto sulla risolubilià di un sistema e sul numero delle sue
+soluzioni nel seguente risultato, detto \textit{teorema di
+  Rouché-Capelli}.
+\begin{teo}
+  \label{teo:gauss-jordan1}
+  Un sistema di $m$ equazioni lineari in $n$ incognite è compatibile se
+  e solo se il rango della matrice dei coefficienti dei coefficienti è
+  uguale al rango della matrice completa, e in tal caso il sistema ha
+  $\infty^{n-j}$ soluzioni (dove $r$ denota il rango della matrice). In
+  particolare, il sistema ha un'unica soluzione se e solo se $r=n$.
+\end{teo}
+\begin{proof}
+  Come noto, un sistema è incompatibile se e solo se in seguito alla
+  riduzione a gradini compaiono righe del tipo $
+  \left(\begin{array}{ccc|c}
+    0&\dots&0&b
+  \end{array}\right)
+  $ con $b\neq 0$.\\
+  Ma questo equivale a dire che nella matrice dei coefficienti si è
+  annullata una riga in più che nella matrice completa, ovvero il rango
+  (che, ricordando, è il numero di righe non nulle dopo la riduzione)
+  della matrice dei coefficienti è diverso (in particolare, minore) del
+  rango della matrice completa. Questo dimostra la prima affermazione del
+  teorema.\\
+  Per quello che riguarda la seconda affermazione, si sà che una volta
+  ridotto il sistema si recava la matrice incognita che compare in ogni
+  equazione non nulla in funzione delle rimanenti. Se il rango della
+  matrice è $r$, ci sono proprio $r$ righe non nulle e quindi si
+  ricavanti, che sono $n-r$ e fungono da parametri liberi. Quindi la
+  soluzione generale si scrive in funzione di $n-r$ parametri, ovvero il
+  sistema ha $\infty^{n-r}$ soluzioni.\\
+  L'ultima affermazione del teorema discende dal fatto che la soluzione è
+  unica quando non dipende da nessun paramentro libero, ovvero $n-r=0.$
+\end{proof}
+\begin{oss}
+  \label{oss:guess-jorda2}
+  So noti che il teorema affema che hanno un'unica soluzione i sistemi
+  (compatibile) in cui il numero di incognite è ugual al numero di
+  equazioni a patto che queste ultime siano indipendenti.\\\\
+  Prima di vedere alcune applicazioni geometriche di tutte la teoria
+  dei sistemi e della riduzione vista, concludendo questa parte con due
+  importanti risultati che mostrano come i sistemi omogenei hanno delle
+  importanti caratteristiche che li distinguono dai sitemi in genrale:
+\end{oss}
+\begin{prop}
+  \label{prop:gauss-jorda3}
+  Dato un sistema omogeneo di $m$ equazioni in $n$ incognite a
+  coefficienti in un campo $\mathds{K}$, valgono le seguenti:
+  \begin{enumerate}
+  \item se $s=(s_1,\dots,s_n)$ e $s^\prime=(s_1^\prime,\dots,s_n^\prime)$
+    sono soluzioni del sistema, lo è anche $s+s^\prime=(s_1+s_1^\prime,
+    \dots,s_n+s_n^\prime)$;
+  \item se $s=(s_1,\dots,s_n)$ è una soluzone del sistema e $c\in
+    \mathds{K}$, allora lo è anche $cs=(cs_1,\dots,cs_n)$
+  \end{enumerate}
+  In altre parole, l'insieme delle soluzioni di un sistema omogeneo in
+  $n$ incognite è un sottospazio vettoriale di $\mathds{K}^n$.
+\end{prop}
+\begin{proof}
+  Sia $a_{j1}x_1+\cdots+a_{jn}x_n=0$ la generica equazione del sistema. Il
+  fatto che $s=(s_1,\dots,s_n)$ e $s^\prime=(s_1^\prime,\dots,s_n^\prime)$
+  sono soluzioni del sistema significa che $a_{j1}s_1+\cdots+a_{jn}s_n=0$
+  e $a_{j1}s_{1}^\prime+\cdots+a_{jn}s_n^\prime=0$. Ma allora
+  \begin{equation}
+    \label{eq:gauss-jorda3-1}
+    \begin{matrix}
+      a_{j1} (s_1+s^\prime_1) +\cdots+a_{jn}(s_n+s_n^\prime)=a_{j1}s_1^\prime+
+      \cdots+a_{jn} s_n+a_{jn}s_n^\prime=\\
+      =a_{j1}s_1+\cdots+a_{jn}s_1^\prime+a_{j1}s_1^\prime+\cdots+a_{jn}s_n^\prime=0+0=0
+    \end{matrix}
+  \end{equation}
+  ovvero anche $s+s^\prime=(s_1+s_1^\prime,\dots,s_n+s_n^\prime)$ è
+  soluzione: questo dimostra il primo punto.
+  Per dimostrare il secondo punto invece, bisogna supporre che
+  $s=(s_1,\dots,s_n)$ sia soluzione del sistama, ovvero
+  $a_{j1}s_1+\cdots+a_{jn}s_n=0$ per la generica equazione, e bisogna
+  osserve che
+  \begin{equation}
+    \label{eq:gauss-jorda3-2}
+    a_{j1}cs_1+\cdots+a_{jn}cs_n=c(a_{j1}s_1+\cdots+a_{jn}s_n)=c\cdot0=0
+  \end{equation}
+  ovvero anche $cs=(cs_1,\cdots,cs_n)$ è soluzione, come affermato
+  nel secondo punto.
+\end{proof}
+Nel caso di sistemi non omogenei, ovvero quelli che hanno almeno
+un'equazione $a_{j1}s_1+\cdots+a_{jn}x_n=b_j$ con $b_j\neq 0$, i passaggi
+visti sopra non sono più applicabili in questi casi: ad esempio, il
+calcolo (\ref{eq:gauss-jorda3-1}) diventerebbe
+\begin{equation*}
+  \begin{matrix}
+    a_{j1}(s_1+s_1^\prime)+\cdots+a_{jn}(s_n+s_n^\prime)=a_{j1}s_1+a_{j1}
+    s_1^\prime+\cdots+a_{jn}s_n+a_{jn}s_n^\prime=\\
+    =a_{j1}s_1+\cdots+a_{jn}s_1^\prime+\cdots+a_{jn}s_n^\prime=b_j+b_j=2b_j
+  \end{matrix}
+\end{equation*}
+e quindi $s+s^\prime=(s_1+s_1^\prime,\dots, s_n+s_n^\prime)$ non risolve più
+l'equazione $a_{j1}x_1+\cdots+a_{jn}x_n=b$ ma l'equazione $a_{j1}x_1+\cdots
++a_{jn}b_n=cb_j$ (di nuovo, chiamate diversa se $b_j=0$).\\
+Quindi per i sistemi non omogenei non è possibile affermare che l'insieme
+delle soluzioni `e un sottospazio vettoriale; tuttavia, vale il seguente
+risultato che descrive comunque la struttura dell'insieme delle sue
+soluzioni:
 \end{document}

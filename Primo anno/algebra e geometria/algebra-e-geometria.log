@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 Gentoo Linux) (preloaded format=pdflatex 2024.9.1)  7 OCT 2024 21:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 Gentoo Linux) (preloaded format=pdflatex 2024.9.1)  16 OCT 2024 02:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1541,10 +1541,11 @@ Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 )
 \c@defi=\count447
 \c@es=\count448
-\c@oss=\count449
-\c@nota=\count450
-\c@prop=\count451
-\c@pro=\count452
+\c@teo=\count449
+\c@oss=\count450
+\c@nota=\count451
+\c@prop=\count452
+\c@pro=\count453
 
 (./algebra-e-geometria.aux
 
@@ -1562,34 +1563,46 @@ LaTeX Warning: Label `sec:determinante' multiply defined.
 
 LaTeX Warning: Label `eq:gauss-jorda2-4' multiply defined.
 
+
+LaTeX Warning: Label `defi:gauss-jorda1' multiply defined.
+
+
+LaTeX Warning: Label `eq:gauss-jorda3' multiply defined.
+
+
+LaTeX Warning: Label `eq:gauss-jorda2-1' multiply defined.
+
+
+LaTeX Warning: Label `eq:gauss-jorda2-2' multiply defined.
+
 )
 \openout1 = `algebra-e-geometria.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 132.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 133.
 LaTeX Font Info:    Trying to load font information for T3+cmr on input line 13
-2.
+3.
  (/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    ... okay on input line 133.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1625,9 +1638,9 @@ LaTeX Font Info:    ... okay on input line 132.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \it@ocap on input line 132.
-LaTeX Info: Redefining \it@ccap on input line 132.
-Package hyperref Info: Link coloring ON on input line 132.
+LaTeX Info: Redefining \it@ocap on input line 133.
+LaTeX Info: Redefining \it@ccap on input line 133.
+Package hyperref Info: Link coloring ON on input line 133.
 (./algebra-e-geometria.out) (./algebra-e-geometria.out)
 \@outlinefile=\write4
 \openout4 = `algebra-e-geometria.out'.
@@ -1635,16 +1648,16 @@ Package hyperref Info: Link coloring ON on input line 132.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count453
+\scratchcounter=\count454
 \scratchdimen=\dimen420
 \scratchbox=\box170
-\nofMPsegments=\count454
-\nofMParguments=\count455
+\nofMPsegments=\count455
+\nofMParguments=\count456
 \everyMPshowfont=\toks71
-\MPscratchCnt=\count456
+\MPscratchCnt=\count457
 \MPscratchDim=\dimen421
-\MPnumerator=\count457
-\makeMPintoPDFobject=\count458
+\MPnumerator=\count458
+\makeMPintoPDFobject=\count459
 \everyMPtoPDFconversion=\toks72
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1660,7 +1673,7 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count459
+\c@lstlisting=\count460
 
 Package exsheets Info: Loading custom configurations file
 (exsheets)             `exsheets_configurations.cfg'.
@@ -1670,7 +1683,7 @@ Package exsheets Info: Loading custom configurations file
 File: exsheets_configurations.cfg 
 )
 Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 132.
+alian.trsl' found. on input line 133.
 
 (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-eng
 lish.trsl
@@ -1678,33 +1691,33 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 132.
+or `english'. on input line 133.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 132.
+ on input line 133.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 134
+LaTeX Font Info:    Trying to load font information for U+msa on input line 135
 .
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 134
+LaTeX Font Info:    Trying to load font information for U+msb on input line 135
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 13
-4.
+5.
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 13
-4.
+5.
 
 (/usr/share/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
@@ -1769,29 +1782,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 759--766
 Capitolo 2.
 [27] [28{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
-LaTeX Warning: Reference `' on page 29 undefined on input line 423.
+LaTeX Warning: Reference `' on page 29 undefined on input line 424.
 
 [29] [30]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 625.
+nput line 626.
  [31] [32]
 Missing character: There is no 3 in font dsrom10!
 Missing character: There is no 2 in font dsrom10!
 [33] [34]
 
-LaTeX Warning: Reference `es:perm' on page 35 undefined on input line 1074.
+LaTeX Warning: Reference `es:perm' on page 35 undefined on input line 1075.
 
 [35] [36]
 Package hyperref Info: bookmark level for unknown pro defaults to 0 on input li
-ne 1229.
+ne 1230.
  [37]
 
 LaTeX Warning: Reference `pro:prodeldet6' on page 38 undefined on input line 14
-02.
+03.
 
 
 LaTeX Warning: Reference `pro:prodeldet7' on page 38 undefined on input line 14
-09.
+10.
 
 [38] [39] [40]
 Overfull \hbox (14.17905pt too wide) has occurred while \output is active
@@ -1811,7 +1824,27 @@ Overfull \hbox (14.17905pt too wide) has occurred while \output is active
 NE A GRADINI) \T1/cmr/m/n/10 45
  []
 
-[45] (./algebra-e-geometria.aux)
+[45] [46]
+Overfull \hbox (14.17905pt too wide) has occurred while \output is active
+\T1/cmr/m/sl/10 2.5.  L'ALGORITMO DI ELIMINAZIONE DI GAUSS-JORDAN (O DI RIDUZIO
+NE A GRADINI) \T1/cmr/m/n/10 47
+ []
+
+[47] [48]
+Package hyperref Info: bookmark level for unknown teo defaults to 0 on input li
+ne 2604.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2636--2643
+
+ []
+
+
+Overfull \hbox (14.17905pt too wide) has occurred while \output is active
+\T1/cmr/m/sl/10 2.5.  L'ALGORITMO DI ELIMINAZIONE DI GAUSS-JORDAN (O DI RIDUZIO
+NE A GRADINI) \T1/cmr/m/n/10 49
+ []
+
+[49] [50] (./algebra-e-geometria.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1827,13 +1860,21 @@ Package rerunfilecheck Info: File `algebra-e-geometria.out' has not changed.
 (rerunfilecheck)             Checksum: 72C4E150E486E63EA59EE47828611F0B;3241.
  ) 
 Here is how much of TeX's memory you used:
- 64056 strings out of 476171
- 1562807 string characters out of 5795805
- 2542733 words of memory out of 5000000
- 84653 multiletter control sequences out of 15000+600000
+ 64128 strings out of 476171
+ 1563837 string characters out of 5795805
+ 2542732 words of memory out of 5000000
+ 84687 multiletter control sequences out of 15000+600000
  585727 words of font info for 113 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,19n,93p,1480b,2096s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
+t, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
 t, replaced by a fixed one
@@ -1900,10 +1941,10 @@ hare/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist
 /fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/pu
 blic/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
 fti1000.pfb>
-Output written on algebra-e-geometria.pdf (45 pages, 645448 bytes).
+Output written on algebra-e-geometria.pdf (50 pages, 670977 bytes).
 PDF statistics:
- 971 PDF objects out of 1000 (max. 8388607)
- 851 compressed objects within 9 object streams
- 379 named destinations out of 1000 (max. 500000)
+ 1045 PDF objects out of 1200 (max. 8388607)
+ 919 compressed objects within 10 object streams
+ 417 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
