@@ -22,3 +22,4 @@
 \contentsline {subsection}{\numberline {2.4.2}Formula di Laplace}{37}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Proprietà del determinante}{37}{subsection.2.4.3}%
 \contentsline {section}{\numberline {2.5}L'algoritmo di eliminazione di Gauss-Jordan (o di riduzione a gradini)}{41}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Qualche applicazione geometrica}{52}{section.2.6}%

@@ -420,10 +420,9 @@ possibile dare la seguente
   Un sistema di equazioni in cui i termini noti siano tutti uguali a zero
   (un tale sistema si dice \textit{omogeneo}) ha sempre almeno la
   soluzione $(0,0,\dots,0)$, in quanto ponendo tutte le incognite uguali
-  a zeo si ottengono uguaglianza vere. Quindi i sistemi omogenei sono
-  sempre compatibili. Vedremo più avanti (Proposizione \ref{}) altre
-  importanti caratteristiche dei sistemi omogenei che li distinguono dai
-  sistemi non omogenei.
+  a zero si ottengono uguaglianza vere. Quindi i sistemi omogenei sono
+  sempre compatibili. Vedremo più avanti altre importanti caratteristiche
+  dei sistemi omogenei che li distinguono dai sistemi non omogenei.
 \end{oss}
 
 \section{Matrice di un sistema lineare}
@@ -647,7 +646,7 @@ questa viene chiamata in gergo, \textit{matrice completa del sistema}.
 \end{defi}
 \begin{es}
   La traccia della matrice dell'Esempio \ref{es:matrice4-1} è
-  $\mathrm{tr}(A)=3-2-12-6=-5$.
+  $\mathrm{tr}(A)=3-2-12+6=-5$.
 \end{es}
 Considerando una matrice rettangolare $A\in\mathds{R}^{m\times n}$.
 \begin{defi}
@@ -2696,7 +2695,256 @@ e quindi $s+s^\prime=(s_1+s_1^\prime,\dots, s_n+s_n^\prime)$ non risolve più
 l'equazione $a_{j1}x_1+\cdots+a_{jn}x_n=b$ ma l'equazione $a_{j1}x_1+\cdots
 +a_{jn}b_n=cb_j$ (di nuovo, chiamate diversa se $b_j=0$).\\
 Quindi per i sistemi non omogenei non è possibile affermare che l'insieme
-delle soluzioni `e un sottospazio vettoriale; tuttavia, vale il seguente
+delle soluzioni è un sottospazio vettoriale; tuttavia, vale il seguente
 risultato che descrive comunque la struttura dell'insieme delle sue
 soluzioni:
-\end{document}
+\begin{prop}
+  \label{prop:gauss-jorda4}
+  Dato un sistem non omegeneo di $m$ equazioni in $n$ incognite a
+  coefficienti in un compo $\mathds{K}$, l'insieme delle sue soluzioni
+  si ottiene sommando a una sua soluzione particolare le soluzioni del
+  \textit{sistema omogeneo associato}\footnote{ovvero il sistema che si
+  ottiene ponendo tutti i termini noti uguali a zero}.
+\end{prop}
+\begin{proof}
+  Sia $s=(s_1,\cdots, s_n)$ una soluzione particolare del sistema non
+  omogeneo e\\ $(w_1,\dots,w_n)$ una soluzione del sistema omogeneo
+  associato. Questo significa che $a_{j1}s_1+\cdots+a_{jn}s_n=b_j$ e
+  che $a_{j1}w_1+\cdots+a_{jn}w_{n}=0$. Ma allora
+  \begin{eqnarray*}
+    a_{j1}(s_1+w_1)+\cdots+a+a_{jn}(s_n+w_n)=a_{j1}s_1+a_{j1}w_1+\cdots+a_{jn}s_n+a_{jn}w_n=\\
+    =a_{j1}s_1+\cdots+a_{jn}w_n+a_{jn}s_n+a_{j1}w_1+\cdots+a_{jn}w_n+b_j+0=b_j
+  \end{eqnarray*}
+  ovvero anche $s+w=(s_1+w_1,\cdots,s_n+w_n)$ è soluzione del sistema non
+  omogeneo: questo mostra che sicuramente sommando a una soluzione
+  particolare del sistema una soluzionedel suo sistema omogeneo associato
+  si ottiene ancora una soluzione del sistema (non omogeneo): per concludere
+  la dimostrazione, bisogna mostrare che in questo modo si ottengono
+  \textbf{tutte} le soluzioni del sistema non omogeneo.
+  \begin{eqnarray*}
+    a_{j1}(s_1^\prime-s_1)+\cdots+a_{jn}(s_n^\prime-s_n)=a_{j1}s_1^\prime-a_{j1}s_1+\cdots+a_{jn}s_n^\prime
+    -a_{jn}s_n=\\
+    =a_{j1}s_1^\prime=\cdots+a_{jn}s_n^\prime-(a_{j1}s_1+\cdots+a_{jn}s_n)=b_j-b_j=0
+  \end{eqnarray*}
+  Questo mostra che $s^\prime-s+(s_1^\prime-s_1,\cdots,s_n^\prime s_n)$ è una
+  soluzione del sistema omogeneo associato: poiché chiaramente
+  $s^\prime=s+(^\prime-s)$, questo dice che qualunque soluzione $s^\prime$ del
+  sistama (non omogeneo) si può scrivere come somma della soluzione particolare
+  $s$ fissata fin dall'inizio più una soluzione del sistema omogeneo associato,
+  come voluto.
+\end{proof}
+\begin{es}
+  \label{es:gauss-jordan4}
+  Si consideri il sistema omogeneo seguente:
+  \begin{equation}
+    \label{eq:gauss-jordan4-1}
+    \begin{cases}
+      x_1+x_2+x_3+x_4=0\\
+      2x_1+x_2+x_3+x_4=0
+    \end{cases}
+  \end{equation}
+  Con un solo passaggio
+  \begin{equation*}
+    \begin{vmatrix}
+      1 & 1 & 1 & 1\\
+      2 & 1 & 1 & -1
+    \end{vmatrix}\overrightarrow{R_2\to R_2-2R_1}
+    \begin{vmatrix}
+      1 & 1 & 1 & 1\\
+      0 & -1 & -1 & -3
+    \end{vmatrix}
+  \end{equation*}
+  riducendo a gradini la sua matrice\footnote{Si noti che sono stati riportati
+    i termini noti: infatti, essendo questi \textbf{tutti} uguali a zero,
+    qualunque operazione elementare applicando alle righe rimarranno uguali a
+    zero, quindi non è necessario scriverli.} e lo riducendo al sistema a gradini
+  equivalente
+  \begin{equation*}
+    \begin{cases}
+      x_1+x_2+x_3+x_4=0\\
+      -x_2-x_3-3x_4=0
+    \end{cases}
+  \end{equation*}
+  che è possibile risolvere dal basso: posto $x_3=t$ e $x_4=s$, la seconda
+  equazione darà $x_2=-t-3s$, e sostituendo nella prima si otterrà la seguente
+  equazione
+  \begin{equation*}
+    x_1=-x_2-x_3-x_4=t+3s-t-s=2s.
+  \end{equation*}
+  Le soluzioni del sistema sono quindi tutte e sole le 4-uple della tipologia:
+  \begin{eqnarray*}
+    (2s,-t-3s,t,s), & t,s\in \mathds{R}.
+  \end{eqnarray*}
+  e l'insieme di tali 4-uple costituisca un sottospazio vettoriale (di $\mathds{R}^4$)
+  si può mettere in evidenza riscrivendo la soluzione generale nella forma seguente:
+  \begin{eqnarray*}
+    (2s,-t-3s,t,s)=t(0,-1,1,0)+s(2,-3,0,1)
+  \end{eqnarray*}
+  uguaglianza dalla quale si vede che la generica soluzione è combinazione lineare
+  dei vettori\\ $(0,-1,1,0)$ e $(2,-3,0,1)$: in altre parole, l'insieme delle soluzioni
+  coincide con il sotto sistema
+  \begin{eqnarray*}
+    \left<(0,-1,1,0),(2,-3,0,1)\right>
+  \end{eqnarray*}
+  generato da tali vettori.
+\end{es}
+Per un esempio di sistema non omogeneo, si consideri ad esempio il sistema
+\begin{eqnarray*}
+  x_1+x_2+x_3+x_4=3\\
+  2x_1+x_2+x_3-x_4=5
+\end{eqnarray*}
+che ha copme sistema omogeneo associato proprio il \ref{eq:gauss-jordan4-1} appena
+risolto. Anche qui, con un solo passaggio
+\begin{eqnarray*}
+  \begin{vmatrix}
+    1 & 1 & 1 & 1 & 3\\
+    2 & 1 & 1 & -1 & 5
+  \end{vmatrix}\overrightarrow{R_2\to R_2-2R_1}
+  \begin{vmatrix}
+    1 & 1 & 1 & 1 & 3\\
+    0 & -1 & -1 & -3 & -1
+  \end{vmatrix}
+\end{eqnarray*}
+riducendo a gradini la sua matrice completa trasformandolo nel sistema a gradini equivalente
+$
+\begin{cases}
+  x_1+x_2+x_3+x_4=3\\
+  -x_2-x_3-3x_4=-1
+\end{cases}
+$, che è possibile risolvere dal basso: posto $x_3=t$ e $x_4=s$, la seconda equazione darà
+$x_2=1-t-3s$, e sostituendo nella prima si ottiene $x_1=3-x_2-x_3-x_4=3-1+t+3s-t-s=2+2s$.
+Le soluzioni del sistema sono quindi tutte e sole le $4-$uple del tipo $(2+2s, t-t-3s,t,s)$,
+al variare di $t,s\in \mathds{R}$. Allora, si vede che tale soluzione generale può essere
+decomposta come
+\begin{eqnarray*}
+  (2+2s,1-t-3s,t,s)=(2,1,0,0)+(2s,-t-3s,t,s)
+\end{eqnarray*}
+ovverom come previsto dalla Proposizione \ref{prop:gauss-jorda4}, come somma della soluzione
+particolare $(2,1,0,0)$\footnote{quella che si ottiene ponendo $t=s=0$} più le 4-uple del tipo
+(2s,-t-3s,t,s), che sono proprio le soluzioni del suo sitema omogeneo associato
+(\ref{eq:gauss-jordan4-1}).\\
+Per una questione di pura logica è giusto ripescare un concetto dalle rimembranze del esame
+di Matematica Analisi 1, con la seguente
+\begin{oss}
+  \label{oss:gauss-jordan2}
+  I teoremi appena visti hanno un analogo con quello che succede nel caso delle equazioni
+  differenziali lineari, ovvero le equazioni del tipo
+  \begin{eqnarray*}
+    y^{(n)}+a_1y^{(n-1)}+\cdots+a_ny=f(t)
+  \end{eqnarray*}
+  Infatti, anche per tali equazioni si dimostra che la soluzione generale si trava
+  sommando una soluzione particolare a una soluzione dell'equazione omogenea associata
+  $y^{(n)}+a_1y^{(n-1)}+\cdots+a_ny=0$, il cui insieme delle soluzioni è, esattamente come
+  accade per i sistemi omogenei, un sottospazio vettoriale\footnote{In questo caso dello
+    spazio delle funzioni}.\\
+  Ad esempio, l'equazione $y^{\prime\prime}+y=t^2$ ha come soluzione generale
+  $y(t)=c_1\cos t+ c_2\sin t+t^2-2$, dove è facile vedere che $t^2-2$ è una sua soluzione
+  particolare, mentre $c_1\cos t +c_2\sin t$ è, al variare di $c_1,c_2\in \mathds{R}$, la
+  soluzione generale dell'equazione omogenea associata $y^{\prime\prime}+y=0$ (quindi, l'insieme
+  delle soluzioni di tale equazione omogenea è il sottospazio vettoriale generato dalle
+  funzioni $\cos t$ e $\sin t$).\\
+  Esattamente come nel caso dei sistemi, quindi, si riesce a esprimere tutte le (infinite) soluzioni
+  di un'equazione semplicemente usando una soluzione particolare e due soluzioni (indipendenti)
+  dell'equazione omogenea.
+\end{oss}
+In genere, in uno spazio vettoriale V, un sottoinsieme $S\subseteq V$ ottenuto sommando un vettore
+fissato $v^0$ a tutti i vettori di un sottospazio vettoriale $W$ dato (scrivendo in forma $S=v^0+W$)
+si chiama anche \textit{sottospazio affine}.\\
+Quindi, avendo dimostrato che l'insieme delle soluzioni di un sistema non omogeneo compatibile di
+$m$ equazioni in $n$ incognite e coefficienti in $\mathds{K}$ è in sottospazio affine di $K^n$.
+Un altro esempio di sotospazio affine, è quello dato dall'insieme $S$ dei vettori $\vec{OP}\in V^3_O$
+il cui secondo estremo $P$ appartiene a un piano $\pi^\prime$ fissato \textit{non} passante per $O$.\\
+Infatti, bisogna constatare (come da figura) che, fissato un vettore $\vec{OP}_0\in S$, qualunque altro
+$\vec{OP}\in S$ si può scrivere come somma di $\vec{OP}_0$ e di un vettore $\vec{OQ}$ che giace sul
+piano $\pi$ parallelo a $\pi^\prime$ e passante per $O$, ovvero $S=\vec{OP}_0+W$, dove $W$ è l'insieme
+dei vettori giacciono su $\pi$ (che, come si evince, è un sottospazio vettoriale).
+\begin{figure}[ht!]
+  \centering
+  \input{img/mtx1.tikz}
+  \caption{Dimostrazione grafica di $S=\vec{OP}_0+W$}
+  \label{fig:OP0piuW}
+\end{figure}
+
+Con un ragionamento e un disegno analogo, si può vedere che l'insieme dei vettori $\vec{OP}$ il cui
+secondo estremo $P$ sta su una retta non passante per $O$ è un sottospazio affine.\\
+Ispirati da questi esempi, si dice spesso che un sottospazio affine è \textit{il traslato di un
+  sottospazio vettoriale}.
+
+\section{Qualche applicazione geometrica}
+\label{sec:qualcheappgeo}
+
+È il caso di esporre alcuni problemi geometrici che possono essere risolti grazie al procedimento
+di riduzione a gradini e al concetto di rango.\\
+Ad esempio, considerando due rette $r$ e $r^\prime$ di equazioni cartesiane
+\begin{eqnarray}
+  \label{eq:qualcheappgeo1}
+  r:
+  \begin{cases}
+    x+y+z=2\\
+    2x-y+z=5
+  \end{cases}, & r^\prime:
+  \begin{cases}
+    x-y-2z=-2\\
+    x+3y+2z=2
+  \end{cases}
+\end{eqnarray}
+e supponendo di velor determinare se ese hanno punti in comune. Dal momento che i punti di una retta
+espressa in equazioni cartesiane sono proprio le soluzioni del sistema formato dalle due equazioni,
+i punti comuni alle due rette sono dati dalle soluzioni comuni a tutte e quattro le equazioni delle
+due rette, ovvero le soluzioni del sistema
+\begin{equation}
+  \label{eq:qualcheappgeo2}
+  r:
+  \begin{cases}
+    x+y+x=2\\
+    2x-y+z=5\\
+    x-y-2z=-2\\
+    x+3y+2z=2
+  \end{cases}
+\end{equation}
+Riducendo la matrice completa si ottine
+\begin{eqnarray*}
+  \left(
+  \begin{array}[ht!]{ccc|c}
+    1 & 1 & 1 & 2\\
+    2 & -1 & 1 & 5\\
+    1 & -1 & -2 & -2\\
+    1 & 3 & 2 & 2
+  \end{array}\right)
+  \overrightarrow{
+  \begin{matrix}
+    R_2\to R_2-2R_1\\
+    R_3\to R_3-R_1\\
+    R_4\to R_4-R_1
+  \end{matrix}
+  }\left(
+  \begin{array}[ht!]{ccc|c}
+    1 & 1 & 1 & 2\\
+    0 & -3 & -1 & 1\\
+    0 & -2 & -3 & -4\\
+    0 & 2 & 1 & 0
+  \end{array}\right)\\ \overrightarrow{
+  \begin{matrix}
+    R_3\to 3R_3-2R_2\\
+    R_4\to 3R_4+2R_2
+  \end{matrix}
+  }\left(
+  \begin{array}[ht!]{ccc|c}
+    1 & 1 & 1 & 2\\
+    0 & -3 & -1 & 1\\
+    0 & 0 & -7 & -14\\
+    0 & 0 & 1 & 2
+  \end{array}\right)\overrightarrow{R_4\to7R_4+R_3}
+  \left(
+  \begin{array}[ht!]{ccc|c}
+    1 & 1 & 1 & 2\\
+    0 & -3 & -1 & 1\\
+    0 & 0 & -7 & -14\\
+    0 & 0 & 0 & 0
+  \end{array}
+  \right)
+\end{eqnarray*}
+Quindi il sistema è compatibile e, essendosi annullata una riga, la matrice
+ha rango 3, quindi avendo 3 incognite in base a quanto detto nel Teorema \ref{teo:gauss-jordan1}
+è presente solo una soluzione, viene trovata risolvendo il sistema 
+\end{document} 
