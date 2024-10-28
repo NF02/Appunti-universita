@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 Gentoo Linux) (preloaded format=pdflatex 2024.8.19)  28 OCT 2024 19:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 Gentoo Linux) (preloaded format=pdflatex 2024.9.1)  28 OCT 2024 20:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1868,13 +1868,17 @@ Package rerunfilecheck Info: File `algebra-e-geometria.out' has not changed.
 (rerunfilecheck)             Checksum: 0DA52075B0C7240E30FD5D6D6F933DE5;3457.
  ) 
 Here is how much of TeX's memory you used:
- 64257 strings out of 476171
- 1566046 string characters out of 5795804
+ 64265 strings out of 476171
+ 1566154 string characters out of 5795805
  2541733 words of memory out of 5000000
- 84778 multiletter control sequences out of 15000+600000
+ 84785 multiletter control sequences out of 15000+600000
  586816 words of font info for 115 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,19n,93p,1480b,2096s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+pdfTeX warning (dest): name{Hfootnote.17} has been referenced but does not exis
+t, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not exis
 t, replaced by a fixed one
@@ -1966,10 +1970,10 @@ hare/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist
 blic/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
 fsl1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></u
 sr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on algebra-e-geometria.pdf (54 pages, 728077 bytes).
+Output written on algebra-e-geometria.pdf (54 pages, 730022 bytes).
 PDF statistics:
- 1108 PDF objects out of 1200 (max. 8388607)
- 974 compressed objects within 10 object streams
- 440 named destinations out of 1000 (max. 500000)
+ 1110 PDF objects out of 1200 (max. 8388607)
+ 976 compressed objects within 10 object streams
+ 441 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
