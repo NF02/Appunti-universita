@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 Gentoo Linux) (preloaded format=pdflatex 2024.9.1)  14 OCT 2024 19:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 Gentoo Linux) (preloaded format=pdflatex 2024.8.19)  28 OCT 2024 13:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -548,7 +548,7 @@ l.13       \input{img/vettGeo.tikz}
  
 Here is how much of TeX's memory you used:
  35 strings out of 476171
- 633 string characters out of 5795805
+ 633 string characters out of 5795804
  1922975 words of memory out of 5000000
  22137 multiletter control sequences out of 15000+600000
  558723 words of font info for 38 fonts, out of 8000000 for 9000

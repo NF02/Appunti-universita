@@ -1,0 +1,9 @@
+﻿\begin{tikzpicture}
+	\draw (0,0) -- (4,0) -- (5,2) -- (1,2) -- cycle;
+	\draw[fill=white] (-.5,1.7) -- (3.5,1.7) -- (4.5,3.5) -- (.5,3.5) -- cycle;
+	\draw (1,1) -- (4,1);
+	\draw (1.5,1.7) -- (2.5,3.5);
+
+	\node (r) at (4.3,1) {$r$};
+	\node (rp) at (2.2,2.4) {$r^\prime$};
+\end{tikzpicture}

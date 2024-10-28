@@ -1,3 +1,0 @@
-﻿\begin{tikzpicture}
-	\draw (0,0) -- (5,0) -- (6,4) -- cycle;
-\end{tikzpicture}

@@ -2946,5 +2946,99 @@ Riducendo la matrice completa si ottine
 \end{eqnarray*}
 Quindi il sistema è compatibile e, essendosi annullata una riga, la matrice
 ha rango 3, quindi avendo 3 incognite in base a quanto detto nel Teorema \ref{teo:gauss-jordan1}
-è presente solo una soluzione, viene trovata risolvendo il sistema 
+è presente solo una soluzione, viene trovata risolvendo il sistema ridotto corrispondente
+\begin{equation*}
+  \begin{cases}
+    x+y+z=2\\
+    -3y-z=1\\
+    -7z=-14
+  \end{cases}
+\end{equation*}
+Dall'ultima equazione si ottiene $z=2$, che sostituito nella seconda dà
+\begin{equation*}
+  -3y=z+1=2+1=3
+\end{equation*}
+Quindi l'unica soluzione del sistema è data dalla terna $(1,-1,2)$, che sono le coordinate
+del punto in cui si incontrano le due rette.
+Supponendo invece che le rette siano
+\begin{eqnarray}
+  \label{eq:qualcheappgeo3}
+  r:
+  \begin{cases}
+    x+y+z=0\\
+    2x+y+-z=1
+  \end{cases}, & r^\prime:
+                 \begin{cases}
+                   2x-y=3\\
+                   x+y-z=1
+                 \end{cases}
+\end{eqnarray}
+e supponendo anche di voler determinare se esse hanno punti in comune. Come sopra, si mette insieme
+le quattro equazioni e si riduce la matrice completa del sistema così ottenuto:
+\begin{equation}
+  \label{eq:qualcheappgeo4}
+  \begin{matrix}
+    \left(
+    \begin{array}{ccc|c}
+      1 & 1 & 2 & 0\\
+      2 & 1 & -1 & 1\\
+      2 & -1 & 0 & 3\\
+      1 & 1 & -1 & 1
+    \end{array}\right)\overrightarrow{
+    \begin{matrix}
+      R_2\to R_2-2R_1\\
+      R_3\to R_3-2R_1\\
+      R_4\to R_4-R_1
+    \end{matrix}
+    }\left(
+    \begin{array}{ccc|c}
+      1 & 1 & 1 & 0\\
+      0 & -1 & -3 & 1\\
+      0 & -3 & -2 & 3\\
+      0 & 0 & -2 & 1
+    \end{array}\right) \overrightarrow{R_3\to R_3-3R_2}\\
+    \left(
+    \begin{array}{ccc|c}
+      1 & 1 & 1 & 0\\
+      0 & -1 & -3 & 1\\
+      0 & 0 & 7 & 0\\
+      0 & 0 & -2 & 1
+    \end{array}
+    \right) \overrightarrow{R_4\to7R_4+2R_3}
+    \left(\begin{array}{ccc|c}
+      1 & 1 & 1 & 0\\
+      0 & -1 & -3 & 1\\
+      0 & 0 & 7 & 0\\
+      0 & 0 & 0 & 7
+    \end{array}\right)
+\end{matrix}
+\end{equation}
+Essendo il sistema incompatibile (l'ultima riga corrisponde all'uguaglianza falsa $0=7$) è possibile
+dedurre che le due rette non hanno punti in comune.\\
+Ora, mentre nel piano due rette non hanno punti in comune sono neccessariamente parallele, nello spazio
+tridimensionale questo non è più vero: come si vede nella seguente figura, grazie alla dimensione extra
+rispetto al piano, possono trovarsi su piani paralleli e quindi non incontrarsi pur avendo la stessa
+direzione.
+\clearpage
+\begin{figure}[ht!]
+  \centering
+  \input{./img/mtx2.tikz}
+  \caption{Rette su piani paralleli}
+  \label{fig:rettpar}
+\end{figure}
+
+In tal caso si dice che le rette sono \textit{sghembe}. Adesso è il caso di vedere come sia possibile
+determinare se le rette sono \textit{sghembe} oppure \texttt{parallele} senza fare ulteriori conti, 
+ma sfruttando la riduzione già svolta. Infatti, le due rette che non hanno punti in comune sono
+parallele se e solo se quando le si trasla parallelamente a se stesse sull'origine esse risultano
+coincidere (ovvero hanno infiniti punti in comune), mentre sono sghembe se e solo se quando le
+si trasla parallelamente a se stesse sull'origine esse hanno in comune un solo punto, l'origine stessa:
+\begin{figure}[ht!]
+  \centering
+  \input{./img/mtx3.tikz}
+  \caption{Differenza tra parallele e sghembe}
+  \label{fig:retteparesghembe}
+\end{figure}
+
+
 \end{document} 
