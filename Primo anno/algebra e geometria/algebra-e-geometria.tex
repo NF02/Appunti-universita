@@ -3043,7 +3043,7 @@ adesso è il caso di trattare il problema di capire se le due rette hanno
 la stessa direzione nel problema di determinare un'intersezione (tra le
 rette traslate). Ora, per traslare una retta espressa in equazioni
 cartesiane, parallelamente a se stessa, basta modificare i termini noti
-delle equazioni lasciando invariati i primi membri\footnote{Infatto,
+delle equazioni lasciando invariati i primi membri\footnote{Infatti,
   modificando solo il noto dell'equazione $ax+by+cz=d$ di un piano si
   ottiene un piano parallelo in quanto non si avrà cambiato la normale al
   piano, data dalla terna $(a,b,c)$. Poiché una retta è intersezione di due
@@ -3054,5 +3054,404 @@ se si va apporre i termini noti uguali a zero (in quanto in tal caso le
 le equazioni risultato soddisfatte dalla terna $x=0,y=0,z=0$, che sono le
 coordinate dell'origine, il che significa che la retta traslata è
 proprio quella che passa per l'origine).
-
+Nel caso delle equazioni delle due rette $r$ e $r^\prime$ data da (\ref{eq:qualcheappgeo3}), le rette
+trasla sull'origine sono rappresentate dalle equazioni
+\begin{eqnarray}
+  \label{eq:eq:qualcheappgeo5}
+  \begin{cases}
+    x+y+z=0\\
+    2x+y-z=0
+  \end{cases}, &
+                 \begin{cases}
+                   2x+y=0\\
+                   x+y+z=0
+                 \end{cases}
+\end{eqnarray}
+Per determinare se tali rette traslate hanno infiniti punti in comune o uno solo, ovvero come visto
+sopra, se le rette di partenza erano rispettivamente parallele o sghembe, bisogna risolvere il sistema
+che si ottiene mettendo insieme le quattro equazioni,
+\begin{equation*}
+  \begin{cases}
+    x+y+z=0\\
+    2x+y-z=0\\
+    2x+y=0\\
+    x+y+z=0
+  \end{cases},
+\end{equation*}
+che ha come matrice associata
+\begin{equation*}
+  \left(
+    \begin{array}{ccc|c}
+      1 &  1 &  1 & 0\\
+      2 &  1 & -1 & 0\\
+      2 & -1 &  0 & 0\\
+      1 &  1 & -1 & 0
+    \end{array}
+  \right)
+\end{equation*}
+Ora, per ridurre a gradini questa matrice verranno applicato esattamente le stesse operazioni usate
+per ridurre la (\ref{eq:qualcheappgeo4}), che differisce da essa solo per il fatto di avere tutti i
+termini noti uguali a zero: l'unica differenza sarà che i termini noti rimarranno sempre nulli qualunque
+operazione elementare è necessario applicare, e quindi, senza dover riscrivere il processo prima visto,
+sapendo che si arriverà alla stessa matrice ridotta ma con l'ultima colonna (quuella dei termini noti)
+tutta nulla, ovvero
+\begin{equation*}
+  \left(
+    \begin{array}{ccc|c}
+      1 &  1 &  1 & 0\\
+      0 & -1 & -3 & 0\\
+      0 &  0 &  7 & 0\\
+      0 &  0 &  0 & 0
+    \end{array}
+  \right)
+\end{equation*}
+Guardando questa matrice, che rappresenta ora un sistema compatibile con 3 incognite e rango 3, si
+conclude che traslando le rette sull'origine si avrà solo una soluzione (l'origine stessa) e quindi le
+rette di partenza non erano parallele.\\
+Adesso, è il caso di vedere cosa potrebbe capitare se le rette sono pallele, prendendo il seguente
+esempio
+\begin{eqnarray}
+  \label{eq:qualcheappgeo6}
+  r:
+  \begin{cases}
+    x+y+z=1\\
+    x-y+2z=0
+  \end{cases}, & r^\prime:
+                 \begin{cases}
+                   2x+3z=3\\
+                   x+3y=-3
+                 \end{cases}
+\end{eqnarray}
+Allo scopo di controllare se le rette hanno punti in comune, come visto nel caso precedente, è
+necessario andare a costituire un singolo sistema composto dai due sistemi di partenza $r$ e $r^\prime$,
+il risultato sarà il seguente:
+\begin{equation*}
+    r_{tot}:
+  \begin{cases}
+    x+y+z=1\\
+    x-y+2z=0\\
+    2x+3z=3\\
+    x+3y=-3
+  \end{cases}
+\end{equation*}
+Da questo è possibile dedurre che la matrice completa di questo sistema sarà:
+\begin{equation}
+  \label{eq:qualcheappgeo7}
+\begin{matrix}
+  \left(
+    \begin{array}{ccc|c}
+      1 & 1 & 1 & 1\\
+      1 & -1 & 2 & 0\\
+      2 & 0 & 3 & 3\\
+      1 & 3 & 0 & -3
+    \end{array}\right)
+  \overrightarrow{
+     \begin{matrix}
+       R_2\to R_2-R_1\\
+       R_3\to R_3-2R_1\\
+       R_4\to R_4-R_1
+     \end{matrix}
+   }
+ \left(
+   \begin{array}{ccc|c}
+     1 & 1 & 1 & 1 \\
+     1  & -2 & 1 & -1 \\
+     0  & -2 & 1 & 1 \\
+     0 & 2 & -1 & -4
+   \end{array}
+ \right) \overrightarrow{
+   \begin{matrix}
+     R_3\to R_3-R_2\\
+     R_4\to R_4+R_2
+   \end{matrix}
+}\\
+\left(
+  \begin{array}{ccc|c}
+    1 & 1 & 1 & 1 \\
+    1 & -2 & 1 & -1 \\
+    0 & 0 & 0 & 2 \\
+    0 & 0 & 0 & -5
+  \end{array}
+  \right)\overrightarrow{R_4\to 2R_4+5R_3}\left(
+  \begin{array}{ccc|c}
+    1 & 1 & 1 & 1 \\
+    1 & -2 & 1 & -1\\
+    0 & 0 & 0 & 2\\
+    0 & 0 & 0 & 0
+  \end{array}\right)
+  \end{matrix}
+\end{equation}
+COme si vede, da una partte le rette non hanno punti in comune in quanto la teza riga corrisponde
+all'uguaglianza falsa $0 = 2$; dall'altra parte, il sistema formato dalle due rette traslate
+sull'origine, ovvero con termini noti nulli, avrebbe come matrice ridotta la stessa matrice ottenuta
+ora ma con l'ultima colonna composta da zeri, ovvero
+\begin{equation*}
+  \left(
+    \begin{array}{ccc|c}
+      1 & 1 & 1 & 0 \\
+      1 & -2 & 1 & 0\\
+      0 & 0 & 0 & 0\\
+      0 & 0 & 0 & 0
+    \end{array}
+  \right)
+\end{equation*}
+Che rappresenta la matrice di un sistema ridotto compatibile con 3 incognite e rango 2, quindi infinite
+soluzioni: questo rsignifica che le due rette, traslate sull'origine, hanno infiniti punti in comune,
+ovvero coincidono, e quindi le due rette di partenza, prima della traslazione, erano parallele.
+\begin{oss}
+  \label{oss:qualcheappgeo3}
+Per rette date in equazioni parametriche verificate se esse sono parallele o meno è immediata, in quento
+come già definito in precedenza, nel equazioni parametriche
+\begin{equation*}
+  \begin{cases}
+    x=x_0+lt\\
+    y=y_0+mt\\
+    z=z_0+nt
+  \end{cases}
+\end{equation*}
+un vettore che rappresenta la direzione della retta è dato dalla terna $(l,m,n)$ dei coefficenti di
+$t$ (questo è scrivibile maticamente anche in forma $\frac{l}{l^\prime}=\frac{m}{m^\prime}=
+\frac{n}{n^\prime}$): basta quindi confrontare i due vettori così ottenuti per ognuna delle due rette,
+che avranno la stessa direzione se tali vettori sono proporzionali. Nel caso in cui le rette siano date
+in equazioni cartesiane, si può passare alle parametriche semplicmente risolvendo i sistemi dati dalle
+cartesiane stesse. Ad esempio, per le rette viste sopra in (\ref{eq:qualcheappgeo6}), riducendo la
+matrice completa delle cartesiane di $r$ si ottiene
+\begin{equation*}
+  \left(
+    \begin{array}{ccc|c}
+      1 & 1 & 1 & 1 \\
+      1 & -1 & 2 & 0
+    \end{array}
+  \right)\overrightarrow{R_2\to R_2-R_1}
+\left(
+  \begin{array}{ccc|c}
+    1 & 1 & 1 & 1 \\
+      0 & -2 & 1 & -1
+  \end{array}
+\right)
+\end{equation*}
+ovvero il sistema ridotto $
+\begin{cases}
+  x+y+z=1\\
+  -2y+z=-1
+\end{cases}
+$, da cui ponendo $z=t$ si ricava $-2y=-1-t$ (ovvero $y=\frac{1}{2}+\frac{1}{2}t$) e $x=1-y-z=
+1-\left(\frac{1}{2}+\frac{1}{2}t\right)-t=\frac{1}{2}-\frac{3}{2}t$ quindi $r$ ha equazioni parametriche
+  \begin{equation}
+    \label{eq:qualcheappgeo8}
+    \begin{cases}
+      x=\frac{1}{2}-\frac{3}{2}t\\
+      y=\frac{1}{2}+\frac{1}{2}t\\
+      z=t
+    \end{cases}
+  \end{equation}
+  Analogamente, riduzione la matrice completa delle cartesiane di $r^\prime$ ottenendo
+  \begin{equation*}
+    \left(
+      \begin{array}{ccc|c}
+        2 & 0 & 3 & 3 \\
+        1 & 3 & 0 & -3
+      \end{array}
+    \right)\overrightarrow{R_2\to2R_2-R_1}\left(
+      \begin{array}{ccc|c}
+        2 & 0 & 3 & 1 \\
+        0 & 6 & -3 & -9
+      \end{array}
+    \right)
+  \end{equation*}
+  ovvero il sistema ridotto $
+  \begin{cases}
+    2x+3z=3\\
+    6y-3z=-9
+  \end{cases}
+  $, da cui ponendo $z = t$ si ricava $6y=-9+3t$ (ovvero $-\frac{3}{2}+\frac{1}{2}t$) e $2x=3-3z=3-3t$,
+  ovvero $x=\frac{3}{2}-\frac{3}{2}t$: quindi $r$ ha equazioni parametriche
+  \begin{equation}
+    \label{eq:qualcheappgeo9}
+    \begin{cases}
+      x=\frac{3}{2}-\frac{3}{2}t\\
+      y=-\frac{3}{2}+\frac{1}{2}t\\
+      z=t
+    \end{cases}
+  \end{equation}
+  Confrontando i coefficienti di $t$ nelle parametriche (\ref{eq:qualcheappgeo8}) e
+  (\ref{eq:qualcheappgeo9}), si vede che le rette hanno entrambe direzione rappresentata dal vettore
+  di coordinate $\left(-\frac{3}{2},\frac{1}{2},1\right)$, e quindi sono parallele\footnote{Si
+    noti che le rette hanno la stessa direzione, che non esclude il caso in cui esse siano parallele
+    coincidenti, ovvero che le equazioni cartesiane date rappresentassero in realtà la stessa retta.}.
+\end{oss}
+\begin{oss}
+  \label{oss:qualcheappgeo4}
+  Nel caso in cui si ovglia fare il passaggio inverso, ovvero passare da parametriche a cartesiane, nel
+  caso della retta basta ricavare il parametro $t$ da una delle espressioni che compongono le
+  parametriche e sostituirlo nelle altre. Ad esempio, se la retta ha equazioni parametriche
+  \begin{equation*}
+    \begin{cases}
+      x=1-t\\
+      y=2+t\\
+      z=1-3t
+    \end{cases}
+  \end{equation*}
+  si può ricavare $t=1-x$ dalla prima che, sostituita nelle altre, da $y=2+(1-x)=3-x$ e
+  $1-3 (1-x)=-2+3x$. allora è anche possibile affermare che la retta ha equazioni cartesiane
+  \begin{equation*}
+    \begin{cases}
+      x=1+t+s\\
+      y=2+t-s\\
+      z=3-2t-s
+    \end{cases}
+  \end{equation*}
+  si può ricavare $t=x-1-s$ dalla prima che, sostituita nelle altre, dà $y=2+(x-1-s)-s=1+x-2s$ e
+  $z=3-2(x-1-s)-s=5-2x+s$; ricavano poi $s$ da questa seconda espressione, ovvero $s=z+2x+s$; ricavano
+  poi $s$ da questa seconda espressione, ovvero $s=z+2x-5$, è possibile sostituire nell'altra
+  ottenendo $y=1+x-2(z+2x-5)=11-3x-2z$, ovvero $3x+y+2z=11$, che è l'equazione cartesiana del piano.
+  Nel capicolo successivo verrà illustrato un metodo più elegante e efficiente per arrivare allo stesso
+  risultato.\\
+  Un altro problema geometrico che può essere risolto con l'aiuto delle tecniche viste a proposito della
+  risoluzione dei sistemi è il seguente: supponendo di avere una retta data in equazioni cartesiane
+  \begin{eqnarray}
+    \label{eq:qualcheappgeo10}
+    \begin{cases}
+      Ax+By+Cz=D\\
+      A^\prime x+B^\prime y+C^\prime z =D^\prime
+    \end{cases}
+  \end{eqnarray}
+  Come visto nel capitolo precedente quando si tratta di ricavare tali equazioni, la
+  (\ref{eq:qualcheappgeo10}) sta semplicemente dicendo che la retta data è intersezione del piano dato
+  dall'equazione cartesiana $Ax+By+Cz=D$ e dal piano di equazione cartesiana $Ax+By+Cz=D$ e dal piano
+  di equazione cartesiana $A^\prime x+B^\prime y+C^\prime z =D^\prime$: le due equazioni che compongono
+  le cartesiane sono quindi le equazioni di due particolari piani che contengono la retta.
+  Per determinare tutti i piani che contengiono la retta, bisogna esporre la seguente
+\end{oss}
+\begin{prop}
+  \label{prop:qualcheappgeo4}
+  La generica equazione cartesiana del piano che contiene la retta (\ref{eq:qualcheappgeo10}) è data
+  da
+  \begin{equation}
+    \label{eq:qualcheappgeo11}
+    \alpha (Ax+By+Cz-D)+\beta (A^\prime x +B^\prime y + C^\prime-D^\prime)=0
+  \end{equation}
+  al variare di $\alpha,\beta\in \mathds{R}$.
+\end{prop}
+\begin{proof}
+  Bisogna iniziare con l'osservare che se un piano ha equazione della forma (\ref{eq:qualcheappgeo11}),
+  allora esso contiene la reta. Infatti, dire che una retta è contenuta in un piano significa che se
+  un punto appartiene anche al piano: ma se un punto appartiene alla retta, allora le sue coordinate
+  $(x,y,z)$ soddisfano entrambe le equazioni $Ax+By+Cz=D$ e $A^\prime x+B^\prime+C^\prime z=D^\prime$ della
+  retta, e quindi
+  \begin{eqnarray*}
+    \alpha(Ax+By+Cz-D)+\beta(A^\prime x+B^\prime y+C^\prime z-D^\prime) = \alpha \cdot 0+\beta \cdot 0=0
+  \end{eqnarray*}
+  ovvero $(x,y,z)$ soddisfa anche l'equazione (\ref{eq:qualcheappgeo11}), cioè il punto appartiene al
+  piano rappresentato da tale equazione. Questo dimostra che, per ogni $\alpha, \beta\in \mathds{R}$,
+  l'equazione (\ref{eq:qualcheappgeo11}) rappresenta un piano che contiene la retta.
+  Viceversa, bisogna essere sicuri che qualche paiano che contenga la retta può essere rappresentato
+  nella forma (\ref{eq:qualcheappgeo11}). Per vederlo, bisogna osservere che un generico piano di
+  equazione $A^{\prime\prime}x+B^{\prime\prime}y+C^{\prime\prime}=D^{\prime\prime}$ contiene tutta la
+  retta sta anche sul piano, ovvero se e solo se ogni terna che soddisfa le equazioni
+  $Ax+By+Cz=D$ e $A^{\prime}x+B^{\prime}y+C^{\prime}=D^{\prime}$ soddisfa automaticamente anche
+  l'equazione $A^{\prime\prime}x+B^{\prime\prime}y+C^{\prime\prime}=D^{\prime\prime}$ del piano.
+  In altre parole, nel sistema
+  \begin{eqnarray*}
+    \begin{cases}
+      Ax+By+Cz=B\\
+      A^{\prime}x+B^{\prime}y+C^{\prime}=D^{\prime}\\
+      A^{\prime\prime}x+B^{\prime\prime}y+C^{\prime\prime}=D^{\prime\prime}
+    \end{cases}
+  \end{eqnarray*}
+  che si ottiene mettendo insieme tutte le cartesiane, la terza equazione è superfluo ovvero dipendente
+  dalle altre. A livello della matrice completa
+  \begin{eqnarray*}
+    \begin{vmatrix}
+      A & B & C & D\\
+      A^\prime & B^\prime & C^\prime & D^\prime\\
+      A^{\prime\prime} & B^{\prime\prime} & C^{\prime\prime} & D^{\prime\prime}
+    \end{vmatrix}
+  \end{eqnarray*}
+  questo si traduce nel fatto che la terza riga deve essere combinazione lineare delle altre due,
+  ovvero devono esistere $\alpha,\beta\in\mathds{R}$ tali che
+  \begin{eqnarray*}
+    \begin{vmatrix}
+      A^{\prime\prime} & B^{\prime\prime} & C^{\prime\prime} & D^{\prime\prime}
+    \end{vmatrix}=\alpha
+    \begin{vmatrix}
+      A & B & C & D
+    \end{vmatrix} +\beta
+    \begin{vmatrix}
+      A^\prime & B^\prime & C^\prime & D^\prime
+    \end{vmatrix}
+  \end{eqnarray*}
+  ovvero
+  \begin{eqnarray*}
+    \begin{matrix}
+      A^{\prime\prime}=\alpha A +\beta A^\prime, & B^{\prime\prime}=\alpha B+\beta B^\prime,
+      & C^{\prime\prime} =\alpha C + \beta C^\prime, & D^{\prime\prime}=\alpha D+\beta D^\prime
+    \end{matrix}
+  \end{eqnarray*}
+  Quindi l'equazione $A^{\prime\prime}x+B^{\prime\prime}y+C^{\prime\prime}=D^{\prime\prime}$ si riscrive
+  \begin{eqnarray*}
+    (\alpha A+\beta A^\prime)x+(\alpha B+\beta B^\prime)y+(\alpha C+\beta C^\prime)z=\alpha D + \beta
+    D^\prime
+  \end{eqnarray*}
+  che, si vede facilmente svolgendo i conti e confrontando, equivale proprio alla
+  (\ref{eq:qualcheappgeo11}).
+\end{proof}
+\begin{es}
+  \label{es:qualcheappgeo1}
+  Data la retta
+  \begin{equation*}
+    r:
+    \begin{cases}
+      x+y+z=1\\
+      x-y+2z=0
+    \end{cases}
+  \end{equation*}
+  si determini il piano $\pi$ che contiene $r$ e passa per il punto $P_0$ di coordinate $(1,1,1)$.
+  Determinando prima tutti i piani che contengono $r$, che secondo la Proposizione
+  \ref{prop:qualcheappgeo4} sono dati al variare di $\alpha,\beta\in \mathds{R}$ dall'equazione
+  \begin{equation}
+    \label{eq:qualcheappgeo12}
+    \alpha(x+y+z-1) +\beta(x-y+2z)=0.
+  \end{equation}
+  da cui $\alpha=-\beta$. Sostituendo questa relazione nella (\ref{es:qualcheappgeo1}), si ottiene
+  \begin{equation*}
+    -\beta(x+y+z-1)+\beta(x-y+2z)=0
+  \end{equation*}
+  ovvero, svolgendo i calcli,
+  \begin{equation*}
+    -2y+z+1=0.
+  \end{equation*}
+  Al variare del parametro $\beta$, queste equazioni rappresentano tutte lo stesso piano (il piano
+  $\pi$ cercato) in quanto si tratta di equazioni proporzionali, tutte equivalenti: dividendo per
+  il parametro $\beta$ (o, equivalentemente, scegliendo per esempio $\beta=1$), possiamo allora scrivere
+  che $\pi$ ha equazione cartesiana
+  \begin{equation*}
+    -2y+z+1=0.
+  \end{equation*}
+  Se, invece del passaggio per il punto, nel caso in cui si impone per esempio che il piano, oltre a
+  contenere $r$, fosse parallelo a un altro piano, ad esempio quello di equazione cartesiana
+  $x+2y+3z=-1$, bisogna procesere come segue. Come visto nel capitolo precedente, due piani
+  $Ax+By+Cz=D$ e $A^\prime x+B^\prime y+C^\prime z=D^\prime$ sono paralleli se e solo se le terne $(A,B,C)$
+  e $(A^\prime,B^\prime,C^{\prime})$ sono proporzionali, in quanto rappresentano le coordinate di vettori
+  normali (perpendicolari) ai piani. In realtà, paiché c'è la libertà di moltiplicare l'equazione di un
+  piano per qualunque coefficiente senza che il piano venga modificato, si può sempre far che sia
+  $(A,B,C)=(A^\prime,B^\prime,C^\prime)$. Allora, poiché svolgendo i calcoli nella
+  (\ref{eq:qualcheappgeo12}), il generico piano che contiene $r$ è della forma
+  \begin{equation}
+    \label{eq:qualcheappgeo13}
+    (\alpha+\beta)x+(\alpha-\beta)y+(\alpha+2\beta)z-\alpha = 0,
+  \end{equation}
+  la condizione di parallelism,o tra questo piano e il piano di equazione $x+2y+3z=-1$ è
+  \begin{eqnarray*}
+    (\alpha+\beta,\alpha-\beta,\alpha+2\beta)=(1,2,3)
+  \end{eqnarray*}
+  ovvero, trasponendo questo modello in forma sistemica ordinata:
+  \begin{eqnarray*}
+    \begin{cases}
+      \alpha+\beta=1\\
+      \alpha-\beta=2\\
+      \alpha-2\beta=3
+    \end{cases}
+  \end{eqnarray*}
+\end{es}
 \end{document} 
