@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 0) {};
+		\node [style=none] (1) at (0, 6) {};
+		\node [style=none] (2) at (6, 0) {};
+		\node [style=none] (3) at (-4, -4) {};
+		\node [style=none] (4) at (7, 7) {};
+		\node [style=none] (5) at (4, 6) {};
+		\node [style=none] (6) at (6, 4) {};
+		\node [style=none] (7) at (7.25, 7.25) {$r$};
+		\node [style=none] (8) at (0, 6.5) {$f(\vec{OP})$};
+		\node [style=none] (9) at (4, 6.5) {$f(\vec{OQ})$};
+		\node [style=none] (10) at (6.5, 4.25) {Q};
+		\node [style=none] (11) at (6.5, 0) {$R$};
+		\node [style=none] (12) at (0, -0.5) {$O$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (3.center) to (4.center);
+		\draw [style=Rightarrow] (0.center) to (2.center);
+		\draw [style=Rightarrow] (0.center) to (1.center);
+		\draw [style=Rightarrow] (0.center) to (5.center);
+		\draw [style=Rightarrow] (0.center) to (6.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

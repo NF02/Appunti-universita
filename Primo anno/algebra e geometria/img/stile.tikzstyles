@@ -10,8 +10,10 @@
 
 % Edge styles
 \tikzstyle{Leftarrow}=[<-]
+\tikzstyle{Rightarrow}=[->]
+\tikzstyle{Dashedleftarrow}=[<-, dashed]
 \tikzstyle{Dashedrightarrow}=[->, dashed]
 \tikzstyle{DashedLine}=[-, dashed]
-\tikzstyle{Rightarrow}=[->]
 \tikzstyle{campitura}=[draw={rgb,255: red,191; green,191; blue,191}, -]
 \tikzstyle{DashedCampitura}=[-, dashed, draw={rgb,255: red,191; green,191; blue,191}]
+\tikzstyle{ev. line}=[-, draw=red, fill=none]

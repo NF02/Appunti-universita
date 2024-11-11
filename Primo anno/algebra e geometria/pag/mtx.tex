@@ -1700,10 +1700,10 @@ nella terza matrice, il primo elemento non nullo della terza riga sta in
 una colonna di indice più piccolo del primo elemento non nullo della
 seconda riga). Un sistema si dice a gradini se la sua matrice completa è
 una matrice a gradini.\\
-Il procedimento che desscritto qui di seguito è chiamato \textit{metodo
+Il procedimento che descritto qui di seguito è chiamato \textit{metodo
   di riduzione a gradini} o, dal momento che consiste nell'eliminare
 incognite, \textit{metodo di eliminazione di Gauss-Jordan}.\\
-Il procedimento di riduione a gradoni, oltre a semplificare il sistema, fa
+Il procedimento di riduzione a gradoni, oltre a semplificare il sistema, fa
 emergere anche le eventuali incompatibilità e le eventuali equazioni
 superflue presenti nel sistema.\\
 Per trasformare un sistema in un sistema a gradini, trasformeremo la sua
@@ -1716,16 +1716,16 @@ slle sue righe, dette \textit{operazioni elementari di primo, secondo
 \item[secondo tipo] Moltiplicare una riga della matrice per un
   coefficiente non nullo ($R_i\to cR_i$, con $c\neq 0$)
 \item[terzo tipo] Sommare a una riga della matrice un'altra riga
-  moltiplicata per un mumero qualunque ($R_i=R_i+dR_j$)
+  moltiplicata per un numero qualunque ($R_i=R_i+dR_j$)
 \end{description}
 Il fatto importante è che tali operazioni, che modificano le righe,
 corrispondono a modificare le equazioni del sistema \textit{in modo però
-  da non combiare l'insieme delle soluzioni,} come dimostra il seguente
+  da non cambiare l'insieme delle soluzioni,} come dimostra il seguente
 risultato, corollario delle Proposizione \ref{prop:determinante1}:
 \begin{prop}
   \label{prop:determinante2}
-  Se viene effettuate operazioni elementari di primo, secondo e terzo
-  tipo sulla matrice completa di un sistema, la matrice trasformeta è la
+  Se vengono effettuate operazioni elementari di primo, secondo e terzo
+  tipo sulla matrice completa di un sistema, la matrice trasformata è la
   matrice completa di un sistema \textit{equivalente} a quello iniziale
   (ovvero avente le stesse soluzioni del sistema iniziale).
 \end{prop}
@@ -1773,7 +1773,7 @@ matrice (\ref{eq:gauss-jorda4}) in una matrice seguente tipo
     0 & \dots & 0 & a_{mk}^\prime & \dots & a_{mn}^\prime & b_m^\prime
   \end{pmatrix}
 \end{equation}
-si può supporre che la siconda rica sia quella che inizia con il minor
+si può supporre che la seconda riga sia quella che inizia con il minor
 numero di zeri, con $a_{2k}^\prime\neq 0$. A questo punto, si ripete quanto
 fatto nella prima parte della trasformazione, applicando stavolta alle
 righe dalla terza in poi le trasformazioni elementari del terzo tipo
@@ -2107,8 +2107,8 @@ nulle di un sistema ridotto a gradini sono sicuramente indipendenti):
     c_1(a_{11},\dots)+c_2(0,\dots,0,a_{2k},\dots,)+c_3(0,\dots,0,0,\dots,
     0,a_{3j},\dots,)+\dots=(0,\dots,0)
   \end{equation}
-  e dimostrare che i coefficinti $c_1,c_2,c_3$, etc. Devono essere
-  necessariamente tutte nulli.\\
+  e dimostrare che i coefficenti $c_1,c_2,c_3$, etc. Devono essere
+  necessariamente tutti nulli.\\
   Andando a guardare cosa significa l'uguaglianza (\ref{eq:gauss-jorda3})
   vedendo che nella prima entrata rimane solo $c_1a_{11}=0$: ma, essendo
   per ipotesi $a_{11}\neq 0$, necessariamente deve essere $c_1=0$. Quindi,
@@ -2134,15 +2134,15 @@ nulle di un sistema ridotto a gradini sono sicuramente indipendenti):
 \end{proof}
 \begin{oss}
   \label{oss:guess-jorda1}
-  Quando si effettua delle operazioni elementari sulle righe di una
-  matrice, si può considerare anche le trasformazioni del tipo $R_i\to
+  Quando si effettuano delle operazioni elementari sulle righe di una
+  matrice, si possono considerare anche le trasformazioni del tipo $R_i\to
   cR_i+dR_{j}$, purché il coefficiente $c$ per cui bisogna moltiplicare
   la riga $R_i$ in modo che sostituendo non sia zero: infatti, benché
-  tale traormazione non sia una delle tre operazioni elementari, essa
+  tale trasformazione non sia una delle tre operazioni elementari, essa
   può essere pensata come il risultato dell'applicando alla riga $R_i$
   l'operazione elementare del secondo tipo $R_i\to cR_i$ (con $c\neq 0$
   come previsto) e poi applicando alla nuova riga $cR_i$ così ottenuta
-  l'operazione elementatre del terzo tipo $cR_i=cR_i+dR_j$.
+  l'operazione elementare del terzo tipo $cR_i=cR_i+dR_j$.
 \end{oss}
 Il procedimento di riduzione a gradini, che è stato utilizzato come
 strumento di risoluzione di un sistema, in realtà è sostanzialmente un
@@ -2198,7 +2198,7 @@ informazione, giustifica la seguente
       2 & 1 & 1 & 0
     \end{bmatrix}
   \end{equation*}
-  riduciendo a gradini seguendo il procedimeto di eliminazione (come
+  riducendo a gradini seguendo il procedimento di eliminazione (come
   definito nei paragrafi precedenti)
   \begin{equation}
     \label{eq:gauss-jorda2-2}
@@ -2268,7 +2268,7 @@ informazione, giustifica la seguente
   altre. Il fatto appena illustrato in questo è vero in genere: se una
   riga si annula in seguito all'algoritmo di riduzione a gradini allora
   essa era esprimibile come combinazione delle altre. Infatti, nel corso
-  delle riduzione a gradini bisogna trasformare da prima tutte tutte le
+  delle riduzione a gradini bisogna trasformare da prima tutte le
   righe dalla seconda in poi combinandole con la prima
   \begin{equation*}
     \begin{matrix}
@@ -2331,7 +2331,7 @@ informazione, giustifica la seguente
       0 & 0
     \end{bmatrix}
   \end{eqnarray*}
-  a seguito della quale la terza riga si anulla, pur non essendo
+  a seguito della quale la terza riga si annulla, pur non essendo
   combinazione lineare delle altre: non c'è nessun modo di esprimere
   (0,1) come combinazione di (1,0) e (2,0)\footnote{si noti che non sono
     stati fatti scambi di riga}.\\
@@ -2392,7 +2392,7 @@ informazione, giustifica la seguente
   \end{equation*}
 \end{prop}
 Il rango per righe di questa matrice, che possono essere calcolate con il
-procedimento di riduzione a gradini, è quindi uguale al rango per colone
+procedimento di riduzione a gradini, è quindi uguale al rango per colonne
 della precedente, ovvero deve sempre essere uguale a 3. Infatti
 \begin{equation}
   \label{eq:guess-jorda5}
@@ -2480,24 +2480,24 @@ soluzioni nel seguente risultato, detto \textit{teorema di
   rango della matrice completa. Questo dimostra la prima affermazione del
   teorema.\\
   Per quello che riguarda la seconda affermazione, si sà che una volta
-  ridotto il sistema si recava la matrice incognita che compare in ogni
+  ridotto il sistema si ricava la matrice incognita che compare in ogni
   equazione non nulla in funzione delle rimanenti. Se il rango della
   matrice è $r$, ci sono proprio $r$ righe non nulle e quindi si
-  ricavanti, che sono $n-r$ e fungono da parametri liberi. Quindi la
+  ricavano, che sono $n-r$ e fungono da parametri liberi. Quindi la
   soluzione generale si scrive in funzione di $n-r$ parametri, ovvero il
   sistema ha $\infty^{n-r}$ soluzioni.\\
   L'ultima affermazione del teorema discende dal fatto che la soluzione è
-  unica quando non dipende da nessun paramentro libero, ovvero $n-r=0.$
+  unica quando non dipende da nessun parametro libero, ovvero $n-r=0.$
 \end{proof}
 \begin{oss}
   \label{oss:guess-jorda2}
-  So noti che il teorema affema che hanno un'unica soluzione i sistemi
-  (compatibile) in cui il numero di incognite è ugual al numero di
+  Si noti che il teorema afferma che, hanno un'unica soluzione, i sistemi
+  (compatibile) in cui il numero di incognite è uguale al numero di
   equazioni a patto che queste ultime siano indipendenti.\\\\
-  Prima di vedere alcune applicazioni geometriche di tutte la teoria
+  Prima di vedere alcune applicazioni geometriche di tutta la teoria
   dei sistemi e della riduzione vista, concludendo questa parte con due
   importanti risultati che mostrano come i sistemi omogenei hanno delle
-  importanti caratteristiche che li distinguono dai sitemi in genrale:
+  importanti caratteristiche che li distinguono dai sistemi in genrale:
 \end{oss}
 \begin{prop}
   \label{prop:gauss-jorda3}
@@ -2529,9 +2529,9 @@ soluzioni nel seguente risultato, detto \textit{teorema di
   ovvero anche $s+s^\prime=(s_1+s_1^\prime,\dots,s_n+s_n^\prime)$ è
   soluzione: questo dimostra il primo punto.
   Per dimostrare il secondo punto invece, bisogna supporre che
-  $s=(s_1,\dots,s_n)$ sia soluzione del sistama, ovvero
+  $s=(s_1,\dots,s_n)$ sia soluzione del sistema, ovvero
   $a_{j1}s_1+\cdots+a_{jn}s_n=0$ per la generica equazione, e bisogna
-  osserve che
+  osservare che
   \begin{equation}
     \label{eq:gauss-jorda3-2}
     a_{j1}cs_1+\cdots+a_{jn}cs_n=c(a_{j1}s_1+\cdots+a_{jn}s_n)=c\cdot0=0
@@ -2559,7 +2559,7 @@ risultato che descrive comunque la struttura dell'insieme delle sue
 soluzioni:
 \begin{prop}
   \label{prop:gauss-jorda4}
-  Dato un sistem non omegeneo di $m$ equazioni in $n$ incognite a
+  Dato un sistema non omegeneo di $m$ equazioni in $n$ incognite a
   coefficienti in un compo $\mathds{K}$, l'insieme delle sue soluzioni
   si ottiene sommando a una sua soluzione particolare le soluzioni del
   \textit{sistema omogeneo associato}\footnote{ovvero il sistema che si
@@ -2576,7 +2576,7 @@ soluzioni:
   \end{eqnarray*}
   ovvero anche $s+w=(s_1+w_1,\cdots,s_n+w_n)$ è soluzione del sistema non
   omogeneo: questo mostra che sicuramente sommando a una soluzione
-  particolare del sistema una soluzionedel suo sistema omogeneo associato
+  particolare del sistema una soluzione del suo sistema omogeneo associato
   si ottiene ancora una soluzione del sistema (non omogeneo): per concludere
   la dimostrazione, bisogna mostrare che in questo modo si ottengono
   \textbf{tutte} le soluzioni del sistema non omogeneo.
@@ -2588,7 +2588,7 @@ soluzioni:
   Questo mostra che $s^\prime-s+(s_1^\prime-s_1,\cdots,s_n^\prime s_n)$ è una
   soluzione del sistema omogeneo associato: poiché chiaramente
   $s^\prime=s+(^\prime-s)$, questo dice che qualunque soluzione $s^\prime$ del
-  sistama (non omogeneo) si può scrivere come somma della soluzione particolare
+  sistema (non omogeneo) si può scrivere come somma della soluzione particolare
   $s$ fissata fin dall'inizio più una soluzione del sistema omogeneo associato,
   come voluto.
 \end{proof}
@@ -2652,7 +2652,7 @@ Per un esempio di sistema non omogeneo, si consideri ad esempio il sistema
   x_1+x_2+x_3+x_4=3\\
   2x_1+x_2+x_3-x_4=5
 \end{eqnarray*}
-che ha copme sistema omogeneo associato proprio il \ref{eq:gauss-jordan4-1} appena
+che ha come sistema omogeneo associato proprio il \ref{eq:gauss-jordan4-1} appena
 risolto. Anche qui, con un solo passaggio
 \begin{eqnarray*}
   \begin{vmatrix}
@@ -2678,11 +2678,11 @@ decomposta come
 \begin{eqnarray*}
   (2+2s,1-t-3s,t,s)=(2,1,0,0)+(2s,-t-3s,t,s)
 \end{eqnarray*}
-ovverom come previsto dalla Proposizione \ref{prop:gauss-jorda4}, come somma della soluzione
+ovvero come previsto dalla Proposizione \ref{prop:gauss-jorda4}, come somma della soluzione
 particolare $(2,1,0,0)$\footnote{quella che si ottiene ponendo $t=s=0$} più le 4-uple del tipo
-(2s,-t-3s,t,s), che sono proprio le soluzioni del suo sitema omogeneo associato
+(2s,-t-3s,t,s), che sono proprio le soluzioni del suo sistema omogeneo associato
 (\ref{eq:gauss-jordan4-1}).\\
-Per una questione di pura logica è giusto ripescare un concetto dalle rimembranze del esame
+Per una questione di pura logica è giusto ripescare un concetto dalle rimembranze dell'esame
 di Matematica Analisi 1, con la seguente
 \begin{oss}
   \label{oss:gauss-jordan2}
@@ -2691,7 +2691,7 @@ di Matematica Analisi 1, con la seguente
   \begin{eqnarray*}
     y^{(n)}+a_1y^{(n-1)}+\cdots+a_ny=f(t)
   \end{eqnarray*}
-  Infatti, anche per tali equazioni si dimostra che la soluzione generale si trava
+  Infatti, anche per tali equazioni si dimostra che la soluzione generale si trova
   sommando una soluzione particolare a una soluzione dell'equazione omogenea associata
   $y^{(n)}+a_1y^{(n-1)}+\cdots+a_ny=0$, il cui insieme delle soluzioni è, esattamente come
   accade per i sistemi omogenei, un sottospazio vettoriale\footnote{In questo caso dello
@@ -2711,7 +2711,7 @@ fissato $v^0$ a tutti i vettori di un sottospazio vettoriale $W$ dato (scrivendo
 si chiama anche \textit{sottospazio affine}.\\
 Quindi, avendo dimostrato che l'insieme delle soluzioni di un sistema non omogeneo compatibile di
 $m$ equazioni in $n$ incognite e coefficienti in $\mathds{K}$ è in sottospazio affine di $K^n$.
-Un altro esempio di sotospazio affine, è quello dato dall'insieme $S$ dei vettori $\vec{OP}\in V^3_O$
+Un altro esempio di sottospazio affine, è quello dato dall'insieme $S$ dei vettori $\vec{OP}\in V^3_O$
 il cui secondo estremo $P$ appartiene a un piano $\pi^\prime$ fissato \textit{non} passante per $O$.\\
 Infatti, bisogna constatare (come da figura) che, fissato un vettore $\vec{OP}_0\in S$, qualunque altro
 $\vec{OP}\in S$ si può scrivere come somma di $\vec{OP}_0$ e di un vettore $\vec{OQ}$ che giace sul
@@ -2747,7 +2747,7 @@ Ad esempio, considerando due rette $r$ e $r^\prime$ di equazioni cartesiane
     x+3y+2z=2
   \end{cases}
 \end{eqnarray}
-e supponendo di velor determinare se ese hanno punti in comune. Dal momento che i punti di una retta
+e supponendo di velor determinare se esse hanno punti in comune. Dal momento che i punti di una retta
 espressa in equazioni cartesiane sono proprio le soluzioni del sistema formato dalle due equazioni,
 i punti comuni alle due rette sono dati dalle soluzioni comuni a tutte e quattro le equazioni delle
 due rette, ovvero le soluzioni del sistema
@@ -3040,7 +3040,7 @@ Da questo è possibile dedurre che la matrice completa di questo sistema sarà:
   \end{array}\right)
   \end{matrix}
 \end{equation}
-COme si vede, da una partte le rette non hanno punti in comune in quanto la teza riga corrisponde
+Come si vede, da una partte le rette non hanno punti in comune in quanto la teza riga corrisponde
 all'uguaglianza falsa $0 = 2$; dall'altra parte, il sistema formato dalle due rette traslate
 sull'origine, ovvero con termini noti nulli, avrebbe come matrice ridotta la stessa matrice ottenuta
 ora ma con l'ultima colonna composta da zeri, ovvero
@@ -3055,7 +3055,7 @@ ora ma con l'ultima colonna composta da zeri, ovvero
   \right)
 \end{equation*}
 Che rappresenta la matrice di un sistema ridotto compatibile con 3 incognite e rango 2, quindi infinite
-soluzioni: questo rsignifica che le due rette, traslate sull'origine, hanno infiniti punti in comune,
+soluzioni: questo significa che le due rette, traslate sull'origine, hanno infiniti punti in comune,
 ovvero coincidono, e quindi le due rette di partenza, prima della traslazione, erano parallele.
 \begin{oss}
   \label{oss:qualcheappgeo3}
@@ -3072,7 +3072,7 @@ un vettore che rappresenta la direzione della retta è dato dalla terna $(l,m,n)
 $t$ (questo è scrivibile maticamente anche in forma $\frac{l}{l^\prime}=\frac{m}{m^\prime}=
 \frac{n}{n^\prime}$): basta quindi confrontare i due vettori così ottenuti per ognuna delle due rette,
 che avranno la stessa direzione se tali vettori sono proporzionali. Nel caso in cui le rette siano date
-in equazioni cartesiane, si può passare alle parametriche semplicmente risolvendo i sistemi dati dalle
+in equazioni cartesiane, si può passare alle parametriche semplicemente risolvendo i sistemi dati dalle
 cartesiane stesse. Ad esempio, per le rette viste sopra in (\ref{eq:qualcheappgeo6}), riducendo la
 matrice completa delle cartesiane di $r$ si ottiene
 \begin{equation*}
@@ -3141,7 +3141,7 @@ $, da cui ponendo $z=t$ si ricava $-2y=-1-t$ (ovvero $y=\frac{1}{2}+\frac{1}{2}t
 \end{oss}
 \begin{oss}
   \label{oss:qualcheappgeo4}
-  Nel caso in cui si ovglia fare il passaggio inverso, ovvero passare da parametriche a cartesiane, nel
+  Nel caso in cui si voglia fare il passaggio inverso, ovvero passare da parametriche a cartesiane, nel
   caso della retta basta ricavare il parametro $t$ da una delle espressioni che compongono le
   parametriche e sostituirlo nelle altre. Ad esempio, se la retta ha equazioni parametriche
   \begin{equation*}
@@ -3180,7 +3180,7 @@ $, da cui ponendo $z=t$ si ricava $-2y=-1-t$ (ovvero $y=\frac{1}{2}+\frac{1}{2}t
   dall'equazione cartesiana $Ax+By+Cz=D$ e dal piano di equazione cartesiana $Ax+By+Cz=D$ e dal piano
   di equazione cartesiana $A^\prime x+B^\prime y+C^\prime z =D^\prime$: le due equazioni che compongono
   le cartesiane sono quindi le equazioni di due particolari piani che contengono la retta.
-  Per determinare tutti i piani che contengiono la retta, bisogna esporre la seguente
+  Per determinare tutti i piani che contengono la retta, bisogna esporre la seguente
 \end{oss}
 \begin{prop}
   \label{prop:qualcheappgeo4}
@@ -3194,7 +3194,7 @@ $, da cui ponendo $z=t$ si ricava $-2y=-1-t$ (ovvero $y=\frac{1}{2}+\frac{1}{2}t
 \end{prop}
 \begin{proof}
   Bisogna iniziare con l'osservare che se un piano ha equazione della forma (\ref{eq:qualcheappgeo11}),
-  allora esso contiene la reta. Infatti, dire che una retta è contenuta in un piano significa che se
+  allora esso contiene la retta. Infatti, dire che una retta è contenuta in un piano significa che se
   un punto appartiene anche al piano: ma se un punto appartiene alla retta, allora le sue coordinate
   $(x,y,z)$ soddisfano entrambe le equazioni $Ax+By+Cz=D$ e $A^\prime x+B^\prime+C^\prime z=D^\prime$ della
   retta, e quindi
@@ -3204,7 +3204,7 @@ $, da cui ponendo $z=t$ si ricava $-2y=-1-t$ (ovvero $y=\frac{1}{2}+\frac{1}{2}t
   ovvero $(x,y,z)$ soddisfa anche l'equazione (\ref{eq:qualcheappgeo11}), cioè il punto appartiene al
   piano rappresentato da tale equazione. Questo dimostra che, per ogni $\alpha, \beta\in \mathds{R}$,
   l'equazione (\ref{eq:qualcheappgeo11}) rappresenta un piano che contiene la retta.
-  Viceversa, bisogna essere sicuri che qualche paiano che contenga la retta può essere rappresentato
+  Viceversa, bisogna essere sicuri che qualche piano che contenga la retta può essere rappresentato
   nella forma (\ref{eq:qualcheappgeo11}). Per vederlo, bisogna osservere che un generico piano di
   equazione $A^{\prime\prime}x+B^{\prime\prime}y+C^{\prime\prime}=D^{\prime\prime}$ contiene tutta la
   retta sta anche sul piano, ovvero se e solo se ogni terna che soddisfa le equazioni
@@ -3506,7 +3506,7 @@ indipendenti tali $n$-uple mediante una semplice riduzione a gradini.
   rispetto alla base di partenza $OP_1,OP_2,OP_3$ e determinare
   equivalentamente se esse sono indipendenti in $\mathds{R}$.
   \clearpage
-  Costruendo la matrie che ha tali terne come righe
+  Costruendo la matrice che ha tali terne come righe
   \begin{eqnarray*}
     \begin{bmatrix}
       1 & 2 & 3\\

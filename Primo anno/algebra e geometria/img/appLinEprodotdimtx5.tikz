@@ -1,0 +1,34 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0.25, 1.75) {};
+		\node [style=none] (1) at (1.75, 0) {};
+		\node [style=none] (2) at (3.75, 0.75) {};
+		\node [style=none] (3) at (1.75, 2.75) {};
+		\node [style=none] (4) at (0, 4.25) {};
+		\node [style=none] (5) at (4.25, -1) {};
+		\node [style=none] (6) at (6, 0) {};
+		\node [style=none] (13) at (0, 4.75) {$f(\vec{OP})+f(\vec{OP}^\prime)=f(\vec{OP}+\vec{OP}^\prime)$};
+		\node [style=none] (14) at (3.75, 1.25) {$P^\prime$};
+		\node [style=none] (15) at (4.25, -1.5) {$P$};
+		\node [style=none] (16) at (7.25, 0) {$\vec{OP}+\vec{OP}^\prime$};
+		\node [style=none] (17) at (1.25, -0.25) {$O$};
+		\node [style=none] (18) at (2.5, 3) {$f(\vec{OP})$};
+		\node [style=none] (19) at (-0.75, 1.75) {$f\vec{OP}^\prime$};
+		\node [style=none] (20) at (-0.25, -2.25) {};
+		\node [style=none] (21) at (6, 5) {};
+		\node [style=none] (22) at (6.25, 5.25) {$r$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=Rightarrow] (1.center) to (3.center);
+		\draw [style=Rightarrow] (1.center) to (0.center);
+		\draw [style=Rightarrow] (1.center) to (4.center);
+		\draw [style=DashedLine] (0.center) to (4.center);
+		\draw [style=DashedLine] (4.center) to (3.center);
+		\draw [style=Rightarrow] (1.center) to (6.center);
+		\draw [style=Rightarrow] (1.center) to (2.center);
+		\draw [style=Rightarrow] (1.center) to (5.center);
+		\draw [style=DashedLine] (2.center) to (6.center);
+		\draw [style=DashedLine] (6.center) to (5.center);
+		\draw (20.center) to (21.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

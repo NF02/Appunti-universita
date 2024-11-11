@@ -153,7 +153,7 @@ associa a ogni $x\in X$ un ben preciso elemento di $Y$, detto
 \textit{immagine di $x$} e denotato $f(x)$.
 Tipicamente vengono trattate le funzioni $f:V\to W$ in cui dominio e
 codominio sono, corrispettivamente, $V$ e $W$, spazi vettoriali su un
-certo campo $\mathds{K}$, e in particolare si andrà a studiare quelloche
+certo campo $\mathds{K}$, e in particolare si andrà a studiare quello che
 soddisfa la seguente
 \begin{defi}
   \label{defi:applindefes}
@@ -166,7 +166,7 @@ soddisfa la seguente
   \end{equation}
   \begin{equation}
     \label{eq:applindefes2}
-    f(cv)=cf(v) \text{ per ongi $v\in V$ e ongi scalare } c\in\mathds{K}
+    f(cv)=cf(v) \text{ per ogni $v\in V$ e ogni scalare } c\in\mathds{K}
   \end{equation}
   Limitarsi, alla funzione lineare può essere molto restrittivo: ad
   esempio, si può vedere che se\footnote{Sapendo che $\mathds{R}^n$ è uno
@@ -178,5 +178,274 @@ soddisfa la seguente
   che tra le applicazioni lineari vi sono funzioni di grande importanzia
   e utilità in geometria e nelle sue applicazioni:
 \end{defi}
+\begin{es}
+  \label{es:applindefes1}
+  Dato lo spazio $V_O^2$ dei vettori geometrici applicati nel piano,
+  considerando la funzione $f:V_O^2\to V_O^2$ che associa a ongi vettore
+  $\vec{OP}$ il vettore che si ottiene ruotado $\vec{OP}$ di un angolo
+  $\theta$ fissato in senso antiorario attorno all'origine $O$, come
+  nella figura seguente
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{4cm}{!}{\input{img/appLinEprodotdimtx1.tikz}}
+    \caption{Funzione $f:V_O^2\to V_O^2$ associata ai vettori $\vec{OP}$ e $\vec{OP}$}
+    \label{fig:applindefes1}
+  \end{figure}
+  
+  Come si vede nella figura seguente, dati due vettori $\vec{OP}$ e
+  $\vec{OP}^\prime$, sommarli e poi ruotare il vettore risultante oppure
+  prima ruotarli e poi sommare i vettori ruotati è equivalente, ovvero
+  \clearpage
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{7cm}{!}{\input{./img/appLinEprodotdimtx2.tikz}}
+    \caption{Cosa accade se si ruota e sommano i vettori $\vec{OP}$ e $\vec{OP}^\prime$}
+    \label{fig:applindefes2}
+  \end{figure}
+  Quindi vale la formula, già acclarata
+  \begin{equation}
+    \label{eq:applindefes3}
+    f(\vec{OP})+f(\vec{OP}^\prime)=f(\vec{OP}+\vec{OP}^\prime)
+  \end{equation}
+  che dice che questa funzione soddisfa la proprietà
+  (\ref{eq:applindefes1}). Analoramente, dato un vettore $\vec{OP}$ e un
+  numero reale $c$, moltiplicare il vettore per $c$ e poi ruotarlo oppure
+  prima ruotarlo e poi moltiplicarlo per $c$ è equivalente:
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{5cm}{!}{\input{./img/appLinEprodotdimtx3.tikz}}
+    \caption{Moltiplicazione tra il vettore $\vec{OP}$ e un numero reale $c$}
+    \label{fig:applindefes3}
+  \end{figure}
+  
+  Quindi si ha, l'equivalenza:
+  \begin{equation}
+    \label{eq:applindefes4}
+    f(c\vec{OP})=cf(\vec{OP})
+  \end{equation}
+  che afferma, in modo abbastanza esplicito che, questa funzione anche
+  la proprietà (\ref{eq:applindefes2}) della Definizione
+  \ref{defi:applindefes}. E si conclude quindi, che le rotazioni attorno
+  a $O$ sono applicazioni lineari dallo spazio vettoriale $V_O^2$ in se
+  stesso.\\
+  È possibile raggiungere la stessa conclusione anche per altre importanti
+  trasformazioni geometriche; ad esempio, si consideri la riflessione
+  rispetto a una retta $r$ passante per $O$, che manda ogni vettore
+  $\vec{OP}\in V_O^2$ nel vettore sommetrico rispetto alla retta, come
+  da figura
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{5cm}{!}{\input{./img/appLinEprodotdimtx4.tikz}}
+    \caption{Metodo alternativo per dimostrare la funzione
+      \ref{fig:applindefes1} mediante retta}
+    \label{fig:applindefes4}
+  \end{figure}
+
+  Allora, Come già fatto per le rotazioni, si nota che, dati due vettori
+  $\vec{OP}$ e $\vec{OP}^\prime$, sommarli e poi riflettere il vettore
+  risultante oppure prima rifletterli e poi sommare i vettori riflessi è
+  equivalente
+  \clearpage
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{7cm}{!}{\input{./img/appLinEprodotdimtx5.tikz}}
+    \caption{Metodo alternativo per dimostrare la funzione
+      \ref{fig:applindefes2} mediante retta}
+    \label{fig:applindefes5}
+  \end{figure}
+  e quindi anche in questo caso si otterà una formula identica alla
+  \ref{eq:applindefes3}. Dato un vettore $\vec{OP}$ e un numero reale c,
+  moltiplicare il vettore per $c$ e poi rifletterlo oppure prima
+  rifletterlo e poi moltiplicarlo per $c$ è equivalente
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{7cm}{!}{\input{./img/appLinEprodotdimtx6.tikz}}
+    \caption{Metodo alternativo per dimostrare la funzione \ref{fig:applindefes3} mediante retta}
+    \label{fig:applindefes6}
+  \end{figure}
+
+  quindi, la formula è identica alla \ref{eq:applindefes4}, quindi
+  è possibile concludere che anche la riflessione rispetto a una retta che
+  passa per $O$, avendo le proprietà (\ref{eq:applindefes1}) e
+  (\ref{eq:applindefes2}) richieste nella Definizione
+  \ref{defi:applindefes}, è un'applicazione lineare $f:V_O^2\to V_O^2$.\\
+  Come terzo esempio di applicazione lineare $V_O^2\to V_O^2$ bisogna
+  citare la proiezione ortogonale, che proietta ortogonalmente i vettori
+  su una retta fissata passante per $O$.
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{8cm}{!}{\input{./img/appLinEprodotdimtx7.tikz}}
+    \caption{Retta con vettori proiettanti ortogonalmente per $O$}
+    \label{fig:applindefes7}
+  \end{figure}
+
+  per la quale non è difficile vedere che valgono anche le proprietà
+  (\ref{eq:applindefes1}) e (\ref{eq:applindefes2}).
+  Analogamente a quanto visto per rotazioni, riflessioni e proiezioni nel
+  piano, anche le corrispondenti trasformazioni $V_O^3\to V_O^3$ dello
+  spazio tridimensionale $V_O^3$ sono applicazioni lineari; più
+  precisamente, si può motrare che soddisfano le proprietà
+  (\ref{eq:applindefes1}) e (\ref{eq:applindefes2}) della Definizione
+  \ref{defi:applindefes} la rotazione di un angolo fissato $\theta$
+  attorno a una retta data passante per $O$ (detta anche \emph{asse della
+    rotazione}).
+  \clearpage
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{3cm}{!}{\input{./img/appLinEprodotdimtx8.tikz}}
+    \caption{La rotazione di un angolo fissato $\theta$ (asse della rotazione)}
+    \label{fig:applindefes8}
+  \end{figure}
+  la riflessione rispetto a un piano passante per $O$
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{4cm}{!}{\input{./img/appLinEprodotdimtx9.tikz}}
+    \caption{Riflessione rispetto a un piano passante per $O$}
+    \label{fig:applindefes9}
+  \end{figure}
+  
+  e la proiezione ortogonale su un piano passante per l'origine $O$:
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{5cm}{!}{\input{./img/appLinEprodotdimtx10.tikz}}
+    \caption{Proiezione ortogonale su un piano passante per l'origine $O$}
+    \label{fig:applindefes10}
+  \end{figure}
+\end{es}
+
+\section{Matrice associata a un'applicazione lineare}
+\label{sec:mtxAsaplin}
+
+Una delle caratteristiche fondamentali di un'applicazione lineare
+$f:V\to W$ è che, se gli spazi $V$ e $W$ hanno dimensione finita, allora
+$f$ può essere rappresentata da una matrice.\\
+I Dettagli: sia $f:V\to W$ un'applicazione lineare, e siano
+$B_V=\{v_1,v_2,\dots,v_n\}$ e $B_W=\{w_1,w_2,\dots,w_m\}$ basi di $V$ e
+$W$ rispettivamente. Allora, ogni vettore $v\to V$ può essere identificato
+con un $n$-uple $(x_1,x_2,\dots,x_n)$, quella delle sue coordinate
+rispetto alla base $B_V$, ovvero
+\begin{equation}
+  \label{eq:mtxAsaplin1}
+  v=x_1v_1+x_2v_2+\cdots+x_nv_n),
+\end{equation}
+e analogamente ogni vettore $w\in W$ può essere identificato con una
+$m$-upla $(y_1,y_2,\dots,y_m)$, quella delle sue coordinate rispetto alla
+base $B_W$, ovvero
+\begin{equation}
+  \label{eq:mtxAsaplin2}
+  w=y_1w_1+y_2w_2+\cdots+y_mw_m.
+\end{equation}
+Con queste identificazioni, la $f$ può essere pensata come una funzione
+$\mathds{K}^n\to\mathds{m}$ che associa a ogni $n$-uple una $m$-upla.
+
+L'obbiettivo a questo punto, è quello di esplicitare la funzione, a tale
+scopo, sia $(x_1,\dots,x_n)$ la $n$-upla delle coordinate di un vettore
+$v\in V$, ovvero come visto riportato prima, nella formula
+(\ref{eq:mtxAsaplin1}). Allora la sua immagine $f(v)$ sarà
+\begin{equation}
+  \label{eq:mtxAsaplin3}
+  f(v)=f(x_1v_1+\cdots+x_nv_n)=f(x_1v_1)+\cdots+f(x_nv_n)=x_1f(v_1)+\cdots+
+  x_nf(v_n).
+\end{equation}
+Ora, ciascuno dei vettori $f(v_1),f(v_2),\dots,f(v_n)$ che compare nella
+(\ref{eq:mtxAsaplin3}) appartiene al codominio $W$ della funzione, e
+quindi potrà essere espresso come combinazione lineare dei vettori
+$w_1,\dots,w_m$ della base $B_W$ fissata per $W$:
+\begin{eqnarray}
+  \label{eq:mtxAsaplin4}
+  f(v_1)=a_{11}w_1+a_{21}w_2+\cdots+a_{m1}w_{m}
+\end{eqnarray}
+\begin{equation*}
+  \vdots
+\end{equation*}
+\begin{equation}
+  \label{eq:mtxAsaplin5}
+  f(v_n)=a_{1n}w_1+a_{2n}w_2+\cdots+a_{nm}w_m
+\end{equation}
+Ora, sostituendo queste espressioni nella (\ref{eq:mtxAsaplin2}) si
+ottiene
+\begin{equation}
+  \label{eq:mtxAsaplin6}
+  \begin{matrix}
+    f(v)=x_1(a_{11}w_1+a_{21}w_2+\cdots+a_{m1}w_m)+\cdots+x_n(a_{1n}w_1
+    +a_{2n}w_2+\cdots+a_{mn}w_m)=\\
+    =(a_{11}x_1+\cdots+a_{1n}x_n)w_1+\cdots+(a_{m1}x_1+\cdots+a_{mn}x_n)w_m
+  \end{matrix}
+\end{equation}
+Questa uguaglianza sta dicendo che le coordinate del vettore $f(v)$
+respetto alla base $B_W=\{w_1,w_2,\dots,w_m\}$ sono date da
+$a_{11}x_1+\cdots+a_{1n}x_n,\dots,a_{m1}x_1+\cdots+a_{mn}x_n$ e quindi che,
+tradotta in coordinate, la nostra applicazione lineare può essere
+identificata con la funzione $\mathds{K}^n\to\mathds{K}^m$ che associa a
+ogni $n$-upla $(x_1,\dots,x_n)$ la $m$-upla formata dai coefficienti che
+appaiono nella (\ref{eq:mtxAsaplin6}), ovvero
+\begin{equation}
+  \label{eq:mtxAsaplin7}
+  \begin{bmatrix}
+    x_1\\
+    x_2\\
+    \vdots\\
+    x_n
+  \end{bmatrix}\to
+  \begin{bmatrix}
+    a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n\\
+    a_{21}x_1+a_{21}x_2+\cdots+a_{2n}x_n\\
+    \vdots\\
+    a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_n
+  \end{bmatrix}
+\end{equation}
+I coefficienti che compaiono nella \ref{eq:mtxAsaplin7} formano una
+matrice con $m$ righe e $n$ colonne
+\begin{equation*}
+  A=
+  \begin{bmatrix}
+    a_{11} & a_{12} & \cdots & a_{1n}\\
+    a_{21} & a_{22} & \cdots & a_{2n}\\
+           & \vdots\\
+    a_{m1} & a_{m2} & \cdots & a_{mn}
+  \end{bmatrix}
+\end{equation*}
+la \emph{matrice associata all'applicazione lineare rispetto alle basi}
+$B_V$ e $B_W$. In base alle
+(\ref{eq:mtxAsaplin6}),\dots,(\ref{eq:mtxAsaplin7}) tale matrice può
+essere definita come \emph{la matrice ha sulle colonne le coordinate dei
+  vettori\\ $f(v_1),\dots,f(v_n)$}\footnote{Ovvero le immagini dei vettori
+  della base $B_v$ fissato nel dominio} \emph{rispetto alla base $B_W$
+  fissata nel codominio}. Si denota che $M_{B_w B_v}(f)$ la matrice
+associata a un'applicazione lineare $f:V\to W$ rispetto alle basi $B_V$
+e $B_W$. Se dominio e codominio dell'applicazione coincidono, ovvero ha
+una funzione lineare $f:V\to V$ (tali applicazioni si dicono
+\emph{endomorfismi}), allora è possibile fissare la stessa base $B_V$
+sia nel dominio che nel codominio, e calcolare la matrice associata
+$M_{B_w B_v} (f)$: in tal caso, per brevità la si denota semplicamente
+$M_{B_v} (f)$. In generale, data $A$, si richiamerà la \emph{funzione
+  determinante $A$ la funzione definita dalla \ref{eq:mtxAsaplin7}}, e
+la si denota come $L_A$.
+
+La matrice associata a un'applicazione lineare dà tutte le informazioni
+necessarie sull'applicazione, e usando gli strumenti imparati nei capitoli
+precedenti (rango, determinante) sarà possibile denotare molte proprietà
+della funzione data. Ma prima di splorare questo aspetto è giusto, fare un
+esempio  di quello fin'ora esposto.
+\begin{es}
+  \label{es:mtxAsaplin1}
+  Questo esempio sarà esposto per punti per un semplice fattore di
+  comodità, quindi\dots
+  \begin{enumerate}
+  \item Sia $f:V_O^2\to V_O^2$ la rotazione attorno a $O$ di un angolo
+    fissato $\theta$, come già esposto nei paragrafi precedenti.\\
+    Per calcolare la matrice associata, bisogna fissare una base $B$
+    formata da due vettori $v_1=\vec{OP}_1$ e $v_2=\vec{OP}_2$ della
+    stessa lunghezza e perpendicolari tra loro, come da figura
+    \begin{figure}[ht!]
+      \centering
+      \resizebox{8cm}{!}{\input{./img/mtxAsaplin1.tikz}}
+      \caption{Base $B$ formata da due vettori $v_1$ e $v_2$ formati da $\vec{OP}$}
+      \label{fig:mtxAsaplin1}
+    \end{figure}
+    e si determina la matrice $M_B(f)$.
+    
+  \end{enumerate}
+\end{es}
 
 \end{document} 

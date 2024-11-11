@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 0) {};
+		\node [style=none] (1) at (0, 4) {};
+		\node [style=none] (2) at (4, 0) {};
+		\node [style=none] (3) at (0, 1.5) {};
+		\node [style=none] (4) at (1.5, 0) {};
+		\node [style=none] (5) at (0, 0.5) {};
+		\node [style=none] (6) at (0.5, 0) {};
+		\node [style=none] (7) at (0, 2.5) {};
+		\node [style=none] (8) at (2.25, 0) {};
+		\node [style=none] (9) at (1.5, -0.5) {$P$};
+		\node [style=none] (10) at (-0.5, 1.5) {$f(\vec{OP})$};
+		\node [style=none] (11) at (4, -0.5) {$c\vec{OP}$};
+		\node [style=none] (12) at (0, 4.5) {$f(c\vec{OP})=cf(\vec{OP})$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=Rightarrow] (0.center) to (4.center);
+		\draw [style=Rightarrow] (4.center) to (2.center);
+		\draw [style=Rightarrow] (0.center) to (3.center);
+		\draw [style=Rightarrow] (3.center) to (1.center);
+		\draw [style=Rightarrow, bend right=45, looseness=1.25] (6.center) to (5.center);
+		\draw [style=Rightarrow, bend right=45] (8.center) to (7.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

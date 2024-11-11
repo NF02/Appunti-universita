@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (3, 6) {};
+		\node [style=none] (1) at (3, 0) {};
+		\node [style=none] (2) at (3, 2) {};
+		\node [style=none] (3) at (4.5, 4) {};
+		\node [style=none] (4) at (1.5, 4) {};
+		\node [style=none] (5) at (3.5, 4.5) {};
+		\node [style=none] (6) at (3.25, 2) {$O$};
+		\node [style=none] (7) at (3.5, 5) {$f(\vec{OP})$};
+		\node [style=none] (8) at (5, 4) {$P$};
+		\node [style=none] (9) at (3.25, 6) {$r$};
+		\node [style=none] (10) at (3.75, 3) {};
+		\node [style=none] (11) at (3.25, 3.25) {};
+		\node [style=none] (12) at (3.5, 3) {$\theta$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (0.center) to (1.center);
+		\draw [style=Rightarrow] (2.center) to (3.center);
+		\draw [style=ev. line, bend left=45] (4.center) to (3.center);
+		\draw [style=ev. line, bend right=45] (4.center) to (3.center);
+		\draw [style=Rightarrow] (2.center) to (5.center);
+		\draw [style=Rightarrow, bend left=45] (11.center) to (10.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
