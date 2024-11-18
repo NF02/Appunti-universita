@@ -427,6 +427,7 @@ necessarie sull'applicazione, e usando gli strumenti imparati nei capitoli
 precedenti (rango, determinante) sarà possibile denotare molte proprietà
 della funzione data. Ma prima di esplorare questo aspetto è giusto, fare un
 esempio di quello finora esposto.
+\clearpage
 \begin{es}
   \label{es:mtxAsaplin1}
   Questo esempio sarà esposto per punti per un semplice fattore di
@@ -443,8 +444,57 @@ esempio di quello finora esposto.
       \caption{Base $B$ formata da due vettori $v_1$ e $v_2$ formati da $\vec{OP}$}
       \label{fig:mtxAsaplin1}
     \end{figure}
-    e si determina la matrice $M_B(f)$.
-    
+    e si determina la matrice $M_B(f)$.\\
+    A questo scopo, come afferma la definizione di matrice associata, bisogna
+    trovare le coordinate di $f(v_1)$ e $f(v_2)$ rispetto a $B$, ovvero esprimere
+    $f(\vec{OP}_1)$ e $f(\vec{OP}_2)$ come combinazone lineare $x_1\vec{OP}_1+
+    x_2\vec{OP}_2$ dei vettori della base $B$. Partendo con $f(\vec{OP}_1)$: come
+    si vede dalla figura
+    \begin{figure}[ht!]
+      \centering
+      \resizebox{8cm}{!}{\input{./img/mtxAsaplin2.tikz}}
+      \caption{Sviluppo di $f(\vec{OP}_1)$}
+      \label{fig:mtxAsaplin2}
+    \end{figure}
+
+    si ha quindi $f\left(\vec{OP}_1\right)=\vec{OP_1}=\vec{OA_1}+\vec{OB_1}$,
+    essendo $A_1$ e $B_1$ le proiezioni ortogonali di $R_1$ sui vettori di
+    base. Ora, chiaramente $\vec{OA}_1=x_1\vec{OP}_1$ e $\vec{OB_1}=x_2\vec{OP}_2$,
+    dove $x_1$ è dato dal rapporto $\frac{\abs{\vec{OA}_1}}{\abs{\vec{OP}_1}}$ tra
+    la lunghezza di $\vec{OA}_1$ e quella di $\vec{OP_2}$. Ma essendo la lunghezza
+    di $\vec{OP_1}$ uguale alla lunghezza di $\vec{OR}_1=f(\vec{OP}_1)$, è possibile
+    affermare che $x_1$ è uguale al rapporto tra la lunghezza del cateto $\vec{OA}_1$
+    e quella dell'ipotenusa $\vec{OP}_1$ del triangolo rettangolo $OR_1A_1$, ovvero,
+    $x_1=\cos\theta$.\\
+    In modo analogo, poiché $\vec{OP}_2$ ha la stessa lunghezza di $\vec{OP_1}$ e
+    quindi di $\vec{OR}_1$, ha la stessa lunghezza del segmento $A_1R_1$, si ha
+    che
+    \clearpage
+    \begin{eqnarray*}
+      x_2=\frac{\abs{\vec{OB}_1}}{\abs{\vec{OP_2}}}=\frac{\abs{A_1R_1}}{\abs{OR_1}},
+    \end{eqnarray*}
+    ovvero, $x=\sin\theta$. Riassumento,
+    \begin{eqnarray}
+      \label{eq:mtxAsaplin8}
+      f(\vec{OP_1})=\vec{OR}_1=\vec{OA}_1+\vec{OB_1}=\cos{\theta}\vec{OP_1}+\sin\theta
+      \vec{OP}_2
+    \end{eqnarray}
+    Per svolgere $f(\vec{OP_2})$, basterà fare l'analogo ragionamento
+    \begin{figure}[ht!]
+      \centering
+      \resizebox{8cm}{!}{\input{./img/mtxAsaplin3.tikz}}
+      \caption{Sviluppo di $f(\vec{OP}_2)$}
+      \label{fig:mtxAsaplin3}
+    \end{figure}
+
+    si ha $f(\vec{OP_2})=\vec{OP}_2=\vec{OA_2}+\vec{OB_2}$. chiaramente,
+    $\vec{OA_2}=-x_1\vec{OP}_1$, dove $x_1$ è dato dal rapporto $\frac{\abs{\vec{OA}_2}}
+    {\abs{\vec{OP}_1}}$ tra la lunghezza di $\vec{OA}_2$ e quella di $\vec{OP}_1$ e
+    $\vec{OB_2}=x_2\vec{OP_2}$, dove $x_2$ è dato dal rapporto $\frac{\abs{\vec{OB}_2}}
+    {\abs{\vec{OP_2}}}$ tra la lunghezza di $\vec{OB}_2$ e quindi $\vec{OR_2}=f(\vec{OP_2})$,
+    mentre, la lunghezza di $\vec{OA_2}$ è uguale alla lunghezza del segmento $R_2B_2$, è
+    possibile affermare che $x_1$ è uguale al rapporto tra la lunghezza del cateto $R_2B_2$
+    e quella dell'ipotenusa $OR_2$ del triangolo rettangolo $OR_2B_2$, ovvero, $x_1=\sin\theta$.
   \end{enumerate}
 \end{es}
 

@@ -1,0 +1,33 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 4) {};
+		\node [style=none] (1) at (0, 0) {};
+		\node [style=none] (2) at (-4, 0) {};
+		\node [style=none] (3) at (4, 0) {};
+		\node [style=none] (4) at (-4, 4) {};
+		\node [style=none] (5) at (-5, 0) {};
+		\node [style=none] (6) at (0, 5) {};
+		\node [style=none] (7) at (-4.75, 4) {$R_2$};
+		\node [style=none] (8) at (-0.75, 0.75) {};
+		\node [style=none] (9) at (0, 1) {};
+		\node [style=none] (10) at (-4, 0) {};
+		\node [style=none] (11) at (-0.5, 1.25) {$\theta$};
+		\node [style=none] (12) at (0.5, 4) {$B_2$};
+		\node [style=none] (13) at (0.5, 5) {$P_2$};
+		\node [style=none] (14) at (-4, -0.5) {$A_2$};
+		\node [style=none] (15) at (0, -0.5) {$O$};
+		\node [style=none] (16) at (4, -0.5) {$P_1$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=Rightarrow] (1.center) to (0.center);
+		\draw [style=Rightarrow] (0.center) to (6.center);
+		\draw [style=Rightarrow] (1.center) to (2.center);
+		\draw [style=Rightarrow] (1.center) to (3.center);
+		\draw [style=Rightarrow] (1.center) to (4.center);
+		\draw [style=DashedLine] (4.center) to (0.center);
+		\draw [style=DashedLine] (2.center) to (4.center);
+		\draw [bend left=15] (4.center) to (6.center);
+		\draw [bend left=345, looseness=1.25] (9.center) to (8.center);
+		\draw (10.center) to (5.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
