@@ -494,7 +494,39 @@ esempio di quello finora esposto.
     {\abs{\vec{OP_2}}}$ tra la lunghezza di $\vec{OB}_2$ e quindi $\vec{OR_2}=f(\vec{OP_2})$,
     mentre, la lunghezza di $\vec{OA_2}$ è uguale alla lunghezza del segmento $R_2B_2$, è
     possibile affermare che $x_1$ è uguale al rapporto tra la lunghezza del cateto $R_2B_2$
-    e quella dell'ipotenusa $OR_2$ del triangolo rettangolo $OR_2B_2$, ovvero, $x_1=\sin\theta$.
+    e quella dell'ipotenusa $OR_2$ del triangolo rettangolo $OR_2B_2$, ovvero, $x_2=\cos\theta$.
+    
+    Analogamente, poiché $\vec{OP}_2$ ha la stessa lunghezza di
+    $\vec{OR}_2$, si ha che $x_2=\frac{\abs{\vec{OB}_2}}
+    {\abs{\vec{OP}_2}}$, che è il rapporto tra il cateto e l'ipotenusa
+    del triangola rettangolo $OB_2R_2$, ovvero, $x_2=\cos\theta$.
+
+    Riassumendo,
+    \begin{equation}
+      \label{eq:mtxAsaplin9}
+      f(\vec{OP_1})=\vec{OR}_2=\vec{OA_1}+\vec{OB}_1=\sin\theta
+      \vec{OP}_1+\cos\theta\vec{OP}_2
+    \end{equation}
+    Quindi, (\ref{eq:mtxAsaplin8}) e (\ref{eq:mtxAsaplin9}) dicono
+    che la matrice associata a $f$ rispotto a $B$ avrà sulla prima
+    colonna $(\cos\theta, \sin\theta)$ e sulla seconda colonna
+    $(-\sin \theta, \cos\theta)$, ovvero
+    \begin{equation}
+      \label{eq:mtxAsaplin10}
+      M_B(f)=
+      \begin{vmatrix}
+        \cos\theta & -\sin\theta\\
+        \sin\theta & \cos \theta
+      \end{vmatrix}
+    \end{equation}
+    In base a quanto visto nella (\ref{eq:mtxAsaplin7}), si ottiene
+    allora che la rotazione, in cordinate, si traduce in funzione di
+    $f:\mathds{R}^2\to\mathds{R}^2$ data da
+    \begin{equation}
+      \label{eq:mtxAsaplin11}
+      (x_1,x_2)\to (\cos\theta{}x_1-\sin\theta{}x_2,\sin\theta{}x_1
+      +\cos\theta{}x_2)
+    \end{equation}
   \end{enumerate}
 \end{es}
 
