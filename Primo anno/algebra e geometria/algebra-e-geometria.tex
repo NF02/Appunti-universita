@@ -527,7 +527,184 @@ esempio di quello finora esposto.
       (x_1,x_2)\to (\cos\theta{}x_1-\sin\theta{}x_2,\sin\theta{}x_1
       +\cos\theta{}x_2)
     \end{equation}
+    Ad esempio, scegliendo un angolo $\theta=\frac{\pi}{4}$ e si
+    sostituisce in (\ref{eq:mtxAsaplin10}) e (\ref{eq:mtxAsaplin11}),
+    considerando che $\cos\frac{\pi}{4}=\sin\frac{\pi}{4}=\frac{\sqrt{2}}{2}$,
+    si ottengono corrispettivamente;
+    \begin{eqnarray}
+      \label{eq:mtxAsaplin12}
+      M_B(f)=
+      \begin{pmatrix}
+        \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2}\\
+        \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}
+      \end{pmatrix} & e & (x_1,x_2)\to
+                          \begin{pmatrix}
+                            \frac{\sqrt{2}}{2}x_1-\frac{\sqrt{2}}{2}x_2,
+                            \frac{\sqrt{2}}{2}x_1+\frac{\sqrt{2}}{2}x_2
+                          \end{pmatrix}
+    \end{eqnarray}
+    Per illustrare come questa semplice funzione $\mathds{R}^2\to \mathds{R}^2$
+    rappresenti effettivamente la rotazione di $\frac{\pi}{4}$, è il caso di
+    utilizzare un esempio, prenendo il vettore $v=v_1+v_2$, che come si vede
+    dalla figura seguente, coincide con la diagonale del quadrato che ha $v_1$ e
+    $v_2$ come lati:
+    \clearpage
+    \begin{figure}[ht!]
+      \centering
+      \resizebox{5cm}{!}{\input{./img/mtxAsaplin4.tikz}}
+      \caption{Quadrato composto da $v_1$ e $v_2$}
+      \label{fig:mtxAsaplin4}
+    \end{figure}
+    Tale vettore ha quindi come coordinate rispettoa $B$ la coppia $(x_1,x_2)=(1,1)$.
+    In base alla (\ref{eq:mtxAsaplin12}), le coordinate di $f(v)$ rispetto a $B$ sono
+    quindi date da
+    \begin{equation*}
+      \begin{pmatrix}
+        \frac{\sqrt{2}}{2}\cdot 1 - \frac{\sqrt{2}}{2} \cdot 1,
+        \frac{\sqrt{2}}{2} \cdot 1 + \frac{\sqrt{2}}{2}\cdot 1
+      \end{pmatrix}
+      =(0,\sqrt{2})
+    \end{equation*}
+    ovvero deve essere $f(v)=0v_1+\sqrt{2}v_2=\vec{2}v_2$.
+
+    In effetti, tale risultato ottenuto analiticamente in coordinate è confermato
+    dall'analisi grafica, che dice: il vettore $f(v)$ che si ottiene ruotando la
+    sua lunghezza è proprio $\sqrt{2}$ volte la lunghezza di $v_2$:
+    \begin{figure}[ht!]
+      \centering
+      \resizebox{5cm}{!}{\input{./img/mtxAsaplin5.tikz}}
+      \caption{Quadrato composto da $v_1$ e $v_2$: analisi grafica}
+      \label{fig:mtxAsaplin4-1}
+    \end{figure}
+    
+    e con questo il primo punto è concluso.
+  \item Sia $V=V_O^2$ lo spazio vettoriale dei vettori applicati in un punto $O$
+    nel piano e sia $V_O^2\to V_O^2$ la proiezione ortogonale su una retta fissata
+    $r$ passante per $O$ (in modo similare in quanto visto nella Figura \ref{fig:applindefes6}).
+
+    Per calcolarne la matrice associata $M_B(f)$, si fissa una base $B=\{v_1,v_2\}$ di $V_O^2$
+    come nella seguente figura
+    \begin{figure}[ht!]
+      \centering
+      \resizebox{5cm}{!}{\input{./img/mtxAsaplin6.tikz}}
+      \caption{Calcolo della matrice associata $M_B(f)$ con $B=\{v_1,v_2\}$ di $V_O^2$}
+      \label{fig:mtxAsaplin5}
+    \end{figure}
+
+    Poi, bisogna proiettare $v_1$ ortogonalmente su $r$, ottenendo un vettore $v$ che
+    sta sulla retta ed è lungo come metà dela diametro del quadrato in cui lati sono
+    $v_1$ e $v_2$: essendo tale diagonale, per definizione di somma tra vettori,
+    coincidente con $v_1+v_2$, quindi si ha che $f(v_1)=\frac{1}{2}(v_1+v_2)=
+    \frac{1}{2}v_1+\frac{1}{2}v_2$; analogamente, come si vede dalla figura, anche
+    proiettando $v_2$ sulla retta si ottiene lo stesso vettore $v$, quindi si ha
+    anche $f(v_2)=\frac{1}{2}(v_1+v_2)=\frac{1}{2}v_1+\frac{1}{2}v_2$.
+    \begin{figure}[ht!]
+      \centering
+      \resizebox{5cm}{!}{\input{./img/mtxAsaplin7.tikz}}
+      \caption{Proiezione $v_1$ e $v_2$ nella forma $v_1+v_2$ }
+      \label{fig:mtxAsaplin6}
+    \end{figure}
+    
+    Si vede quindi che le coordinate di $f(v_1)$ rispetto a $B$ sono $\left(\frac{1}{2},
+      \frac{1}{2}\right)$, e anche le coordiante di $f(v_2)$ rispetto a $B$ sono
+    $\left(\frac{1}{2},\frac{1}{2}\right)$: disponendo tali coordinate rispettivamente
+    sulla prima e sulla seconda colonna, come previsto dalla definizione di matrice associata,
+    si ottiene
+    \begin{equation*}
+      M_B(f)=
+      \begin{pmatrix}
+        \frac{1}{2} & \frac{1}{2}\\
+        \frac{1}{2} & \frac{1}{2}
+      \end{pmatrix}
+    \end{equation*}
+    e la funzione $\mathds{R}^2 \to \mathds{R}^2$, corrisponde a
+    \begin{equation}
+      \label{eq:mtxAsaplin13}
+      (x_1,x_2)\to
+      \begin{pmatrix}
+        \frac{1}{2}x_1+\frac{1}{2}x_2, \frac{1}{2}x_1+\frac{1}{2}x_2
+      \end{pmatrix}
+    \end{equation}
+    Quindi dà una rappresentazione in coordinate della proiezione.
+
+    Ad esempio, il vettore $v=-v_1+v_2$, che ha coordinate $(-1,1)$ rispetto
+    a $B$, viene mandata in base alla (\ref{eq:mtxAsaplin13}) nel vettore di
+    coordinate
+    \begin{eqnarray*}
+      \begin{pmatrix}
+        \frac{1}{2}\cdot (-1)+\frac{1}{2}\cdot 1, \frac{1}{2}\cdot(-1)+\frac{1}{2}\cdot 1
+      \end{pmatrix}=(0,0)
+    \end{eqnarray*}
+    ovvero nel vettore nullo $\vec{OO}$. infatti, Come si vede nella figura seguente, tale vettore
+    appartiene alla retta passante per $O$ e ortogonale a $r$, e i vettori che giacciono su questa
+    retta vengono chiaramente proiettati sul vettore nullo $\vec{OO}$.
+    \begin{figure}[ht!]
+      \centering
+      \resizebox{5cm}{!}{\input{./img/mtxAsaplin8.tikz}}
+      \caption{proiezione di $-v_1+v_2$ e del vettore nullo $\vec{OO}$}
+      \label{fig:mtxAsaplin7}
+    \end{figure}
+  \item Come ultimo esempio, si prende $f:V_O^2\to V_O^2$ la riflessione rispetto a una retta
+    fissata $r$ passate per $O$, ovvero l'endomorfismo che associa ogni vettore $\vec{OP}$ il
+    suo simmetrico rispetto a $r$.
+
+    Per calcolarne la matrice associata $M_B(f)$, considerando la stessa base $B=\{v_1,v_2\}$
+    usata nell'esempio precedente
+    \clearpage
+    \begin{figure}[ht!]
+      \centering
+      \resizebox{5cm}{!}{\input{./img/mtxAsaplin6.tikz}}
+      \caption{Calcolo della matrice associata $M_B(f)$ con $B=\{v_1,v_2\}$ di $V_O^2$}
+      \label{fig:mtxAsaplin8}
+    \end{figure}
+    e si nota che quando si riflette $v_1$ rispetto a $r$ ottenendo $v_2$, ovvero $f(v_1)=v_2$,
+    e analogamente quando si riflette $v_2$ rispetto a $r$, ottenendo $v_1$, ovvero $f(v_2)=v_1$.
+
+    Quindi, riscrivendo $f(v_1)=v_2$ come $f(v_1)=0v_1+1v_2$ si vede che le coordinate di $f(v_2)$
+    rispetto a $B$ sono $(1,0)$: disponendo tali coordinate in colonna, come previsto dalla
+    definizione di matrice associata, si ottiene
+    \begin{eqnarray*}
+      M_B(f)=
+      \begin{pmatrix}
+        0 & 1 \\
+        1 & 0
+      \end{pmatrix}
+    \end{eqnarray*}
+    Se, dato sempre lo stesso endomorfismo, consideriando invece la base $B^\prime=\{v_1^\prime,
+    v_2^\prime\}$ come da figura
+    \begin{figure}[ht!]
+      \centering
+      \resizebox{5cm}{!}{\input{./img/mtxAsaplin9.tikz}}
+      \caption{Esempio di endomosfismo con $B^\prime=\{v_1^\prime,v_2^\prime\}$}
+      \label{fig:mtxAsaplin9}
+    \end{figure}
+
+    allora si ha che $f(v_1^\prime)=v_1^\prime$ e $f(v_2^\prime)=-v_2^\prime$, cioè $f(v_1^\prime)
+    =1v_1^\prime+0v_2^\prime$ e $f(v_2)=0v_1^\prime+(-1)v_2^\prime$ e quindi
+    \begin{eqnarray*}
+      M_{B^\prime}(f)=
+      \begin{pmatrix}
+        1 & 0 \\
+        0 & -1
+      \end{pmatrix}
+    \end{eqnarray*}
+    Questo esempio illustra il fatto oovvio che la matrice associata dipende dalla scelta delle
+    basi.
   \end{enumerate}
 \end{es}
+
+\section{Iniettività e suriettività di applicazioni lineari}
+\label{sec:inietesuriet}
+
+Il primo problema che verrà affrontato sulle applicazionio lineari è determinare quanto
+una tale funzione è iniettiva, suriettiva o biiettiva.
+
+\subsection{Richiemi generali}
+\label{sec:richgen}
+
+Ricordando che una funzione $f:A\to B$ tra due insiemi $A$ e $B$ si dice \emph{suriettiva}
+se ogni elemento del codominio $B$ risulta essere immagine di qualche elemento di $A$,
+ovvero, se per ogni $b\in B$ esiste un $a\in A$ tale che $f(a)=b$. Ad esempio, delle
+funzioni rappresentate nel seguente disegno, la prima non è suriettiva, la seconda invece sì.
 
 \end{document} 

@@ -1,0 +1,353 @@
+\documentclass{book}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.0cm,right=3.0cm]{geometry}
+
+%\documentclass[pdftex,10pt,a4paper]{book}
+%\usepackage[paperwidth=19cm,
+%paperheight=26cm, outer=2cm, 
+%top=1.5cm, bottom=1.5cm]{ geometry}
+
+\usepackage[english,italian]{babel} %l'ultima lingua è quella che legge per i titoli
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc,url}
+\usepackage{titlesec}
+\usepackage{easylist}
+\usepackage{hanging}
+
+\usepackage[pdftex,colorlinks]{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,
+	urlcolor=cyan,
+}
+\usepackage{hypcap}
+\usepackage{blindtext}
+\usepackage{tipa}
+\usepackage{epigraph}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pbox}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{textcomp}
+\usepackage{circuitikz}
+\usepackage{pifont}
+\usepackage{imakeidx}
+\usepackage{verbatim}
+\usepackage{dsfont}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{upgreek}
+\usepackage{tasks}
+\usepackage{exsheets}
+\usepackage{pgfplots}
+\usepackage{amsthm}
+\usepackage{wasysym}
+
+
+\usepackage{showframe}
+\renewcommand\ShowFrameLinethickness{0.15pt}
+%\renewcommand*\ShowFrameColor{\color{red}}
+
+%\usepackage{showkeys} %serve per mostrare le etichette "tag" o target, va tolta per la versione definitiva;
+
+\SetupExSheets[question]{type=exam}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  firstnumber=1000,                % start line enumeration with line 1000
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\frenchspacing
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+\usepackage{floatflt,epsfig}
+
+\usepackage{multicol}
+\newcommand\yellowbigsqcup[1][\displaystyle]{%
+  \fboxrule0pt
+  \ifx#1\textstyle\fboxsep-0.6pt\else\fboxsep-1.25pt\fi
+  \mathrel{\fcolorbox{white}{yellow}{$#1\bigsqcup$}}}
+
+\newtheorem{es}[section]{Esercizio}
+\title{Equazioni lineari: basi e proprietà}
+\author{Nicola Ferru}
+\begin{document}
+\maketitle
+In questo documento sono presenti, alcune nozioni ed esercizi necessari a comprendere
+come svolgere le equazioni lineari in funzione di $x$ e anche di $a$.
+\begin{es}
+  \label{es:esercizio1}
+  Svolgere la seguente equazione lineare, andando a ricavare il valore di $x$
+  \begin{equation}
+    \label{eq:esercizio1}
+    ax-a+3=2(a-x)
+  \end{equation}
+  ora, analizzando questa equazione, la cosa più immediata da fare è partire da $a$,
+  quindi, il primo passaggio da fare è quello di applicare la proprietà distributiva
+  per moltiplicare 2 per $a-x$:
+  \begin{eqnarray*}
+    ax-a+3=2a-2x
+  \end{eqnarray*}
+  poi sarà possibile sottrarre $2a$ da entrami i lati:
+  \begin{eqnarray*}
+    ax-a+3-2a=-2x
+  \end{eqnarray*}
+  dopo aver fatto questo, sarà possibile combinare $a$ e $-2a$ per ottenere $-3a$.
+  \begin{eqnarray*}
+    ax-3a+3=-2x
+  \end{eqnarray*}
+  A questo punto, bisogna sottrarre 3 da entrambi i lati
+  \begin{eqnarray*}
+    ax-3a=-2x-3
+  \end{eqnarray*}
+  Bisogna combinare tutti i termini contenenti $a$.
+  \begin{eqnarray*}
+    (x-3)a=-2x-3
+  \end{eqnarray*}
+  dopo aver raggruppato per $a$, bisogna dividere entrambi i lati
+  per $x-3$.
+  \begin{eqnarray*}
+    \frac{(x-3)a}{x-3}=\frac{-2x-3}{x-3}
+  \end{eqnarray*}
+  e in fine è possibile ricavare la formula per ricavare $a$, andando a dividere
+  $-2x-3$ per $x-3$.
+  \begin{eqnarray*}
+    a=\frac{2x+3}{x-3}
+  \end{eqnarray*}
+  Dopo, aver ricavato questa parte (e aver capito che $x\neq 3$), sarà possibile andare a
+  svolgere le operazioni per poter ricavare il teorico valore di $x$. Quindi ripartendo da
+  l'equazione (\ref{eq:esercizio1}). bisognerà come nel primo caso, applicare la
+  proprietà distributiva per moltiplicare 2 per $a-x$, ottenendo quindi, la
+  medesima situazione di prima:
+  \begin{eqnarray*}
+    ax-a+3=2a-2x
+  \end{eqnarray*}
+  poi, si aggiunge $2x$ a entrambi i lati
+  \begin{eqnarray*}
+    ax-a+3+2x=2a
+  \end{eqnarray*}
+  bisogna, aggiungere $a$ da entrambi i lati
+  \begin{eqnarray*}
+    ax+3+2x=2a+a
+  \end{eqnarray*}
+  poi bisogna cambianare $2a$ e $a$ per ottenere $3a$.
+  \begin{eqnarray*}
+    ax+3+2x=3a
+  \end{eqnarray*}
+  a questo punto, è possibile sottrarre 3 da entrambi i lati:
+  \begin{eqnarray*}
+    ax+2x=3a-3
+  \end{eqnarray*}
+  Combinando tutti i termini contenenti $x$
+  \begin{eqnarray*}
+    (a+2)x=3a-3
+  \end{eqnarray*}
+  e quindi bisogna dividere da entrambi i lati per $a+2$
+  \begin{eqnarray*}
+    \frac{(a+2)x}{a+2}=\frac{3a-3}{a+2}
+  \end{eqnarray*}
+  Bisogna dividere per $a+2$ annullando la moltiplicazione per $a+2$.
+  \begin{eqnarray*}
+    x=\frac{3a-3}{a+2}
+  \end{eqnarray*}
+  Poi per concludere la situazione basta dividere $-3+3a$ per $a+2$
+  \begin{eqnarray*}
+    x=\frac{3(a-1)}{a+2}
+  \end{eqnarray*}
+  e quindi, $a\neq -2$. Da questi fattori si comprende che questa equazione
+  sia impossibile.
+\end{es}
+\clearpage
+\begin{es}
+  \label{es:esercizio2}
+  Svolgere la seguente equazione lineare, per ricavare, il valore di $a$ e di $x$
+  \begin{equation}
+    \label{eq:esercizio2}
+    a^2(x-2)=3(ax-6)
+  \end{equation}
+  In questo caso la prima cosa da fare è quella di utilizzare la proprietà distributiva,
+  per moltiplicare $a^2$ per $x-2$.
+  \begin{eqnarray*}
+    a^2x-2a^2=3(ax-6)
+  \end{eqnarray*}
+  e poi è necessario fare lo stesso dall'altro lato, utilizzando la medesima proprietà
+  con 3 e $ax-6$, ottenendo un $3ax-18$, quindi
+  \begin{eqnarray*}
+    a^2x-2a^2=3ax-18
+  \end{eqnarray*}
+  fatto questo, basterà sottrarre $3ax$ da entrambi i lati per $a^2-3a$
+  \begin{eqnarray*}
+    \frac{(a^2-3a)x}{2a^2-18}=\frac{2a^2-18}{a^2-3a}
+  \end{eqnarray*}
+  uno dei passaggi successivi, è quello di dividere per $a^2-3a$ annullando la
+  moltiplicazione per $a^2-3a$
+  \begin{eqnarray*}
+    x=\frac{2a^2-18}{a^2-3a}
+  \end{eqnarray*}
+  e poi alla fine $2a^2-18$ per $a^2-3a$.
+  \begin{eqnarray*}
+    x=2+\frac{6}{a}
+  \end{eqnarray*}
+  Ora, questa può anche essere scritta in quest'altra forma
+  \begin{eqnarray*}
+    x=\frac{2(a+3)}{a}
+  \end{eqnarray*}
+  da questa è possibile dedurre che $a=0$ e $a=3$, ora vedendo la natura dell'equazione
+  si denota che sia indeterminata e anche impossibile, perché $a\neq 0 \wedge a\neq 3$.
+\end{es}
+\begin{es}
+  \label{es:esercizio3}
+  Svolgere la seguente operazione, per ricavare $b$
+  \begin{equation}
+    \label{eq:esercizio3}
+    b[(b+x)-2]=b^2+bx
+  \end{equation}
+  basterà sostituire, quindi per $b$
+  \begin{eqnarray*}
+    b(x+b)
+  \end{eqnarray*}
+  quindi visto che in questo caso si ottiene:
+  \begin{eqnarray*}
+    \begin{cases}
+      b=0\\
+      x=b
+    \end{cases}
+  \end{eqnarray*}
+  in questo caso si tratta di una equazione indeterminata e anche impossibile,
+  perché $b\neq0$
+\end{es}
+\begin{es}
+  Svolgere la seguente equazione, per ricavare $k$ e $x$
+  \begin{equation}
+    \label{eq:esercizio4}
+    7(kx+x-1)=k(3x-1)-5-x
+  \end{equation}
+  Visto che comunque bisogna partire da qualche punto è il caso di partire da $k$,
+  in questo caso bisogna, utilizzare la proprietà distributiva per moltiplicare
+  7 per $kx+x-1$
+  \begin{eqnarray*}
+    7kx+7x-7=k(3x-1)-5-x
+  \end{eqnarray*}
+  bisogna fare la stessa cosa dall'altro lato, moltiplicando $k$ per $3x-1$
+  \begin{eqnarray*}
+    7kx+7x-7=3kx-k-5-x
+  \end{eqnarray*}
+  poi a questo punto, bisogna sottrarre per $3kx$ da entrambi i lati e poi bisogna
+  aggiungere $k$
+  \begin{eqnarray*}
+    7kx+7x-7-3kx=-k-5-x
+  \end{eqnarray*}
+  poi dopo aver spostato alla sinistra del ugualianza, adesso è il caso
+  di sottrarre $-3kx$ a $7kx$:
+  \begin{eqnarray*}
+    4kx+7x-7=-k-5-x
+  \end{eqnarray*}
+  ora, bisogna comunque spostare a sinistra la variabile $k$, per fare questo
+  basterà sommare per $k$ da ambo i lati
+  \begin{eqnarray*}
+    4kx-7+k=-5-x-7x
+  \end{eqnarray*}
+  ora basterà spostare a destra $7x$, andando a sottrarlo da ambo i lati
+  \begin{eqnarray*}
+    4kx-7+k=-5-x-7x
+  \end{eqnarray*}
+  dopo aver spostato $7x$, lo si sottrae a $-x$ ottenendo un $-8x$
+  \begin{eqnarray*}
+    4kx+k-7=-5-8x
+  \end{eqnarray*}
+  ora per togliere di mezzo il $-5$ e il $-7$ in un solo passaggio, basterà
+  sommare $7$ da ambo i lati
+  \begin{eqnarray*}
+    4kx+k = 2-8x
+  \end{eqnarray*}
+  a questo punto a sinistra si può raggruppare per $k$
+  \begin{eqnarray*}
+    (4x+1)k=2-8x
+  \end{eqnarray*}
+  poi si divide tutto per $4x+1$
+  \begin{eqnarray*}
+    \frac{(4x+1)k}{4x+1}=\frac{2-8x}{4x+1}
+  \end{eqnarray*}
+  e alla fine si divide per $2-8x$ per $4x+1$.
+  \begin{eqnarray*}
+    k=\frac{2(1-4x)}{4x+1}
+  \end{eqnarray*}
+  Adesso, è il caso di trovare la $x$, quindi partendo dalla consueta base (\ref{eq:esercizio4},
+  è possibile andare ad applicare la proprietà distributiva per moltiplicare 7 per $kx+x-1$ e anche
+  k per $3x-1$
+  \begin{eqnarray*}
+    7kx+7x-1=3kx-k-5-x
+  \end{eqnarray*}
+  poi è possibile sottrarre $3kx$ a $7kx$ e poi si può anche aggiungere $x$ da ambo i lati per poter
+  spostare $x$ a sinistra dell'ugualianza
+  \begin{eqnarray*}
+    4kx+7x-7+x=-k-x
+  \end{eqnarray*}
+  dopo questo, basta semplicemente, andare a combinare $7x$ e $x$ per poter ottenere $8x$ e poi si
+  aggiunge $7$ da ambo i lati per poterlo spostare a destra dell'ugualianza, per poi andare a sommarlo
+  a $-5$
+  \begin{eqnarray*}
+    4kx+8x=-k+2
+  \end{eqnarray*}
+  poi è possibile mettere in evvidenza $x$
+  \begin{eqnarray*}
+    (4k+8)x=2-k
+  \end{eqnarray*}
+  poi si va a dividere tutto per $4k+8$ per annullare la moltiplicazione per $4k+8$
+  \begin{eqnarray*}
+    x=\frac{2-k}{4k+8}
+  \end{eqnarray*}
+  a questo punto è possibile mettere in evvidenza 4
+  \begin{eqnarray*}
+    x=\frac{2-k}{4(k+2)}
+  \end{eqnarray*}
+  quindi visto il contesto, è logico che questa equazione sia impossibile, avendo come casi di esistenza
+  $k\neq 0$ e $x\neq -\frac{1}{4}$.
+\end{es}
+
+\end{document}

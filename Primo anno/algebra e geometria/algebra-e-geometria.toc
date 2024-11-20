@@ -29,3 +29,5 @@
 \contentsline {chapter}{\numberline {3}Applicazioni lineari e prodotti di matrici}{63}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Applicazioni lineari: definizione ed esempi}{63}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Matrice associata a un'applicazione lineare}{66}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Iniettività e suriettività di applicazioni lineari}{72}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Richiemi generali}{72}{subsection.3.3.1}%

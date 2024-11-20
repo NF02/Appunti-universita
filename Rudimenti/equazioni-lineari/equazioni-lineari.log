@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 Gentoo Linux) (preloaded format=pdflatex 2024.8.19)  20 NOV 2024 12:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 Gentoo Linux) (preloaded format=pdflatex 2024.8.19)  20 NOV 2024 22:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**algebra-e-geometria.tex
-(./algebra-e-geometria.tex
+**equazioni-lineari.tex
+(./equazioni-lineari.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texmf-dist/tex/latex/base/book.cls
@@ -1379,230 +1379,73 @@ Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
 )
-(/usr/share/texmf-dist/tex/latex/thmtools/thmtools.sty
-Package: thmtools 2023/05/04 v0.76
-\thmt@toks=\toks67
-\c@thmt@dummyctr=\count439
-
-(/usr/share/texmf-dist/tex/latex/thmtools/thm-patch.sty
-Package: thm-patch 2023/05/04 v0.76
-
-(/usr/share/texmf-dist/tex/latex/thmtools/parseargs.sty
-Package: parseargs 2023/05/04 v0.76
-\@parsespec=\toks68
-))
-(/usr/share/texmf-dist/tex/latex/thmtools/thm-kv.sty
-Package: thm-kv 2023/05/04 v0.76
-Package thm-kv Info: Theorem names will be uppercased on input line 42.
-Package thm-kv Info: kvsetkeys patch (v1.16 or later) on input line 158.
-)
-(/usr/share/texmf-dist/tex/latex/thmtools/thm-autoref.sty
-Package: thm-autoref 2023/05/04 v0.76
-
-(/usr/share/texmf-dist/tex/latex/thmtools/aliasctr.sty
-Package: aliasctr 2023/05/04 v0.76
-))
-(/usr/share/texmf-dist/tex/latex/thmtools/thm-listof.sty
-Package: thm-listof 2023/05/04 v0.76
-)
-(/usr/share/texmf-dist/tex/latex/thmtools/thm-restate.sty
-Package: thm-restate 2023/05/04 v0.76
-)
-(/usr/share/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
-Package: thm-amsthm 2023/05/04 v0.76
-\thmt@style@headstyle=\toks69
-)) (./tikzit.sty
-(/usr/share/texmf-site/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-backgrounds.code.tex
-File: tikzlibrarybackgrounds.code.tex 2024/02/09 v3.1.10 (3.1.10)
-\pgf@layerbox@background=\box141
-\pgf@layerboxsaved@background=\box142
-)
-(/usr/share/texmf-site/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-arrows.code.tex
-File: tikzlibraryarrows.code.tex 2024/02/09 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-site/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2024/02/09 v3.1.10 (3.1.10)
-\arrowsize=\dimen406
-))
-(/usr/share/texmf-site/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.code.tex
-File: tikzlibraryshapes.code.tex 2024/02/09 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-site/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2024/02/09 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-site/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geomet
-ric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2024/02/09 v3.1.10 (3.1.10)
-))
-(/usr/share/texmf-site/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2024/02/09 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-site/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.c
-ode.tex
-File: pgflibraryshapes.misc.code.tex 2024/02/09 v3.1.10 (3.1.10)
-))
-(/usr/share/texmf-site/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.symbols.code.tex
-File: tikzlibraryshapes.symbols.code.tex 2024/02/09 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-site/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbol
-s.code.tex
-File: pgflibraryshapes.symbols.code.tex 2024/02/09 v3.1.10 (3.1.10)
-))
-(/usr/share/texmf-site/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.arrows.code.tex
-File: tikzlibraryshapes.arrows.code.tex 2024/02/09 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-site/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows
-.code.tex
-File: pgflibraryshapes.arrows.code.tex 2024/02/09 v3.1.10 (3.1.10)
-))
-(/usr/share/texmf-site/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.callouts.code.tex
-(/usr/share/texmf-site/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callou
-ts.code.tex))
-(/usr/share/texmf-site/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2024/02/09 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-site/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multip
-art.code.tex
-File: pgflibraryshapes.multipart.code.tex 2024/02/09 v3.1.10 (3.1.10)
-\pgfnodepartlowerbox=\box143
-\pgfnodeparttwobox=\box144
-\pgfnodepartthreebox=\box145
-\pgfnodepartfourbox=\box146
-\pgfnodeparttwentybox=\box147
-\pgfnodepartnineteenbox=\box148
-\pgfnodeparteighteenbox=\box149
-\pgfnodepartseventeenbox=\box150
-\pgfnodepartsixteenbox=\box151
-\pgfnodepartfifteenbox=\box152
-\pgfnodepartfourteenbox=\box153
-\pgfnodepartthirteenbox=\box154
-\pgfnodeparttwelvebox=\box155
-\pgfnodepartelevenbox=\box156
-\pgfnodeparttenbox=\box157
-\pgfnodepartninebox=\box158
-\pgfnodeparteightbox=\box159
-\pgfnodepartsevenbox=\box160
-\pgfnodepartsixbox=\box161
-\pgfnodepartfivebox=\box162
-)))
-\pgf@layerbox@edgelayer=\box163
-\pgf@layerboxsaved@edgelayer=\box164
-\pgf@layerbox@nodelayer=\box165
-\pgf@layerboxsaved@nodelayer=\box166
-) (./img/stile.tikzstyles)
 (/usr/share/texmf-dist/tex/latex/eso-pic/showframe.sty
 Package: showframe 2020/10/14 v0.1j showframe (new impl., RN)
 
 (/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen407
-\ESO@tempdimb=\dimen408
+\ESO@tempdima=\dimen406
+\ESO@tempdimb=\dimen407
 )
-\SF@tempdima=\dimen409
+\SF@tempdima=\dimen408
 )
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 (/usr/share/texmf-dist/tex/latex/floatflt/floatflt.sty
 Package: floatflt 1997/07/16 v. 1.31
-\c@OptionTest=\count440
-\figbox=\box167
-\tabbox=\box168
-\pagebox=\box169
-\ffigcount=\count441
-\ftabcount=\count442
-\fftest=\count443
-\hangcount=\count444
-\nosuccesstryfig=\count445
-\nosuccesstrytab=\count446
-\figgutter=\dimen410
-\tabgutter=\dimen411
-\htdone=\dimen412
-\pageht=\dimen413
-\startpageht=\dimen414
-\tabbredd=\dimen415
-\floatfltwidth=\dimen416
-\fltitemwidth=\dimen417
-\outputpretest=\toks70
+\c@OptionTest=\count439
+\figbox=\box141
+\tabbox=\box142
+\pagebox=\box143
+\ffigcount=\count440
+\ftabcount=\count441
+\fftest=\count442
+\hangcount=\count443
+\nosuccesstryfig=\count444
+\nosuccesstrytab=\count445
+\figgutter=\dimen409
+\tabgutter=\dimen410
+\htdone=\dimen411
+\pageht=\dimen412
+\startpageht=\dimen413
+\tabbredd=\dimen414
+\floatfltwidth=\dimen415
+\fltitemwidth=\dimen416
+\outputpretest=\toks67
 )
 (/usr/share/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen418
-\epsfysize=\dimen419
-)
-\c@defi=\count447
-\c@es=\count448
-\c@teo=\count449
-\c@oss=\count450
-\c@nota=\count451
-\c@prop=\count452
-\c@pro=\count453
+\epsfxsize=\dimen417
+\epsfysize=\dimen418
+) (./equazioni-lineari.aux)
+\openout1 = `equazioni-lineari.aux'.
 
-(./algebra-e-geometria.aux
-
-LaTeX Warning: Label `eq:teopitapplicatinellospazio3' multiply defined.
-
-
-LaTeX Warning: Label `eq:spaziovect3' multiply defined.
-
-
-LaTeX Warning: Label `oss:prodmtxrigcol2' multiply defined.
-
-
-LaTeX Warning: Label `sec:determinante' multiply defined.
-
-
-LaTeX Warning: Label `eq:gauss-jorda2-4' multiply defined.
-
-
-LaTeX Warning: Label `defi:gauss-jorda1' multiply defined.
-
-
-LaTeX Warning: Label `eq:gauss-jorda3' multiply defined.
-
-
-LaTeX Warning: Label `eq:gauss-jorda2-1' multiply defined.
-
-
-LaTeX Warning: Label `eq:gauss-jorda2-2' multiply defined.
-
-)
-\openout1 = `algebra-e-geometria.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 133.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 13
-3.
- (/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 119.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 11
+9.
+(/usr/share/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    ... okay on input line 119.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1612,13 +1455,13 @@ LaTeX Font Info:    ... okay on input line 133.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* h-part:(L,W,R)=(56.9055pt, 455.24411pt, 85.35826pt)
 * v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=426.79135pt
+* \textwidth=455.24411pt
 * \textheight=731.23584pt
-* \oddsidemargin=13.08827pt
+* \oddsidemargin=-15.36449pt
 * \evensidemargin=13.08827pt
 * \topmargin=-45.43198pt
 * \headheight=12.0pt
@@ -1638,27 +1481,27 @@ LaTeX Font Info:    ... okay on input line 133.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \it@ocap on input line 133.
-LaTeX Info: Redefining \it@ccap on input line 133.
-Package hyperref Info: Link coloring ON on input line 133.
-(./algebra-e-geometria.out) (./algebra-e-geometria.out)
+LaTeX Info: Redefining \it@ocap on input line 119.
+LaTeX Info: Redefining \it@ccap on input line 119.
+Package hyperref Info: Link coloring ON on input line 119.
+(./equazioni-lineari.out) (./equazioni-lineari.out)
 \@outlinefile=\write4
-\openout4 = `algebra-e-geometria.out'.
+\openout4 = `equazioni-lineari.out'.
 
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count454
-\scratchdimen=\dimen420
-\scratchbox=\box170
-\nofMPsegments=\count455
-\nofMParguments=\count456
-\everyMPshowfont=\toks71
-\MPscratchCnt=\count457
-\MPscratchDim=\dimen421
-\MPnumerator=\count458
-\makeMPintoPDFobject=\count459
-\everyMPtoPDFconversion=\toks72
+\scratchcounter=\count446
+\scratchdimen=\dimen419
+\scratchbox=\box144
+\nofMPsegments=\count447
+\nofMParguments=\count448
+\everyMPshowfont=\toks68
+\MPscratchCnt=\count449
+\MPscratchDim=\dimen420
+\MPnumerator=\count450
+\makeMPintoPDFobject=\count451
+\everyMPtoPDFconversion=\toks69
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1673,7 +1516,7 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count460
+\c@lstlisting=\count452
 
 Package exsheets Info: Loading custom configurations file
 (exsheets)             `exsheets_configurations.cfg'.
@@ -1683,7 +1526,7 @@ Package exsheets Info: Loading custom configurations file
 File: exsheets_configurations.cfg 
 )
 Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 133.
+alian.trsl' found. on input line 119.
 
 (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-eng
 lish.trsl
@@ -1691,33 +1534,33 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 133.
+or `english'. on input line 119.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 133.
+ on input line 119.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 135
+LaTeX Font Info:    Trying to load font information for U+msa on input line 121
 .
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 135
+LaTeX Font Info:    Trying to load font information for U+msb on input line 121
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 13
-5.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 12
+1.
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 13
-5.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 12
+1.
 
 (/usr/share/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
@@ -1725,314 +1568,37 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
-/enc/dvips/cm-super/cm-super-t1.enc}] [2
+/enc/dvips/cm-super/cm-super-t1.enc}] [2] [3
 
-] (./algebra-e-geometria.toc)
-\tf@toc=\write5
-\openout5 = `algebra-e-geometria.toc'.
-
- (./pag/vettcoordegeo.tex [3]
-[4
-
-]
-Capitolo 1.
-Package hyperref Info: bookmark level for unknown defi defaults to 0 on input l
-ine 8.
-(./img/vettGeo.tikz)
-Package hyperref Info: bookmark level for unknown nota defaults to 0 on input l
-ine 21.
-Package hyperref Info: bookmark level for unknown es defaults to 0 on input lin
-e 28.
- (./img/vettGeo2.tikz) [5] (./img/vettGeo3.tikz)
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 5
-4.
-
-(/usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
-File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) (./img/vettGeo4.tikz)
-[6]
-Package hyperref Info: bookmark level for unknown oss defaults to 0 on input li
-ne 116.
- (./img/vettGeo5.tikz) (./img/vettGeo6.tikz) [7] [8]
-
-LaTeX Warning: Reference `' on page 9 undefined on input line 176.
-
-(./img/vettGeo7.tikz)
-Package hyperref Info: bookmark level for unknown prop defaults to 0 on input l
-ine 195.
- [9] (./img/vettGeo8.tikz) (./img/vettGeo9.tikz) [10]
-(./img/vettGeo10.tikz) (./img/vettGeo11.tikz) [11] (./img/vettGeo12.tikz)
-(./img/vettGeo13.tikz) [12] (./img/vettGeo14.tikz) (./img/vettGeo15.tikz)
-[13] (./img/vettGeo16.tikz) [14] [15] [16] (./img/vettGeo17.tikz) [17]
-(./img/vettGeo18.tikz) (./img/vettGeo19.tikz) [18] [19] [20] [21] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 758--765
-
- []
-
-[23
-
-] (./img/vettGeo20.tikz) (./img/vettGeo21.tikz) (./img/vettGeo22.tikz)
-[24]) (./pag/mtx.tex [25] [26
-
-]
-Capitolo 2.
-[27] [28{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-[29] [30]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 484.
- [31] [32]
-Missing character: There is no 3 in font dsrom10!
-Missing character: There is no 2 in font dsrom10!
-[33] [34]
-
-LaTeX Warning: Reference `es:perm' on page 35 undefined on input line 933.
-
-[35] [36]
-Package hyperref Info: bookmark level for unknown pro defaults to 0 on input li
-ne 1088.
- [37]
-
-LaTeX Warning: Reference `pro:prodeldet6' on page 38 undefined on input line 12
-61.
-
-
-LaTeX Warning: Reference `pro:prodeldet7' on page 38 undefined on input line 12
-68.
-
-[38] [39] [40]
-Overfull \hbox (14.17905pt too wide) has occurred while \output is active
-\T1/cmr/m/sl/10 2.5.  L'ALGORITMO DI ELIMINAZIONE DI GAUSS-JORDAN (O DI RIDUZIO
-NE A GRADINI) \T1/cmr/m/n/10 41
- []
-
-[41] [42]
-Overfull \hbox (14.17905pt too wide) has occurred while \output is active
-\T1/cmr/m/sl/10 2.5.  L'ALGORITMO DI ELIMINAZIONE DI GAUSS-JORDAN (O DI RIDUZIO
-NE A GRADINI) \T1/cmr/m/n/10 43
- []
-
-[43] [44]
-Overfull \hbox (14.17905pt too wide) has occurred while \output is active
-\T1/cmr/m/sl/10 2.5.  L'ALGORITMO DI ELIMINAZIONE DI GAUSS-JORDAN (O DI RIDUZIO
-NE A GRADINI) \T1/cmr/m/n/10 45
- []
-
-[45] [46]
-Overfull \hbox (14.17905pt too wide) has occurred while \output is active
-\T1/cmr/m/sl/10 2.5.  L'ALGORITMO DI ELIMINAZIONE DI GAUSS-JORDAN (O DI RIDUZIO
-NE A GRADINI) \T1/cmr/m/n/10 47
- []
-
-[47] [48]
-Package hyperref Info: bookmark level for unknown teo defaults to 0 on input li
-ne 2462.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2494--2501
-
- []
-
-
-Overfull \hbox (14.17905pt too wide) has occurred while \output is active
-\T1/cmr/m/sl/10 2.5.  L'ALGORITMO DI ELIMINAZIONE DI GAUSS-JORDAN (O DI RIDUZIO
-NE A GRADINI) \T1/cmr/m/n/10 49
- []
-
-[49] [50]
-Overfull \hbox (14.17905pt too wide) has occurred while \output is active
-\T1/cmr/m/sl/10 2.5.  L'ALGORITMO DI ELIMINAZIONE DI GAUSS-JORDAN (O DI RIDUZIO
-NE A GRADINI) \T1/cmr/m/n/10 51
- []
-
-[51] (./img/mtx1.tikz) [52] [53] (./img/mtx2.tikz)
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-890.
-
-(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) (./img/mtx3.tikz) [54
-
-]
-[55] [56] [57] [58]
-Overfull \hbox (2.34961pt too wide) in alignment at lines 3413--3445
- [][][] []
- []
-
-[59] [60
-
-]) [61] [62
-
-]
-Capitolo 3.
-(./img/appLinEprodotdimtx1.tikz) [63] (./img/appLinEprodotdimtx2.tikz)
-(./img/appLinEprodotdimtx3.tikz) (./img/appLinEprodotdimtx4.tikz) [64
-
-]
-(./img/appLinEprodotdimtx5.tikz) (./img/appLinEprodotdimtx6.tikz)
-(./img/appLinEprodotdimtx7.tikz) [65
-
-] (./img/appLinEprodotdimtx8.tikz)
-(./img/appLinEprodotdimtx9.tikz) (./img/appLinEprodotdimtx10.tikz)
-Missing character: There is no m in font dsrom10!
-[66
-
-] [67] (./img/mtxAsaplin1.tikz) (./img/mtxAsaplin2.tikz) [68
-
-]
-(./img/mtxAsaplin3.tikz) [69
-
-] (./img/mtxAsaplin4.tikz) (./img/mtxAsaplin5.tikz) (./img/mtxAsaplin6.tikz) (.
-/img/mtxAsaplin7.tikz) [70
-
-] (./img/mtxAsaplin8.tikz) [71] (./img/mtxAsaplin6.tikz) (./img/mtxAsaplin9.tik
-z) [72
-
-]
-(./algebra-e-geometria.aux)
+] [4] (./equazioni-lineari.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-
-Package rerunfilecheck Warning: File `algebra-e-geometria.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `algebra-e-geometria.out':
-(rerunfilecheck)             Before: 7CC2CF0634419F7BA101588AC17155A0;5255
-(rerunfilecheck)             After:  699A4299CFB1CBADC0750ABCECF8E7EA;5405.
+Package rerunfilecheck Info: File `equazioni-lineari.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 64646 strings out of 476171
- 1573844 string characters out of 5795804
- 2542741 words of memory out of 5000000
- 84995 multiletter control sequences out of 15000+600000
- 586816 words of font info for 115 fonts, out of 8000000 for 9000
+ 58899 strings out of 476171
+ 1449628 string characters out of 5795804
+ 2350236 words of memory out of 5000000
+ 80045 multiletter control sequences out of 15000+600000
+ 574548 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,19n,93p,1480b,2096s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-pdfTeX warning (dest): name{Hfootnote.21} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.20} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.19} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.18} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.17} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
-, replaced by a fixed one
-
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/doublestroke/dsrom8.pfb></usr/share/texmf-dist/fonts/type1/public/c
-m-super/sfbx0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx100
-0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/f
-onts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfr
-m0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr
-/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-di
-st/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/
-public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
-/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><
-/usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texm
-f-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/cm-super/sftt1000.pfb>
-Output written on algebra-e-geometria.pdf (72 pages, 829290 bytes).
+ 84i,15n,93p,732b,891s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist
+/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
+fti1000.pfb>
+Output written on equazioni-lineari.pdf (4 pages, 143770 bytes).
 PDF statistics:
- 1407 PDF objects out of 1440 (max. 8388607)
- 1245 compressed objects within 13 object streams
- 550 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 92 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

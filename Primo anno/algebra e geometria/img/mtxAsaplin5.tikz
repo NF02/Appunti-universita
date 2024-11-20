@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 5) {};
+		\node [style=none] (1) at (0, 0) {};
+		\node [style=none] (2) at (5, 0) {};
+		\node [style=none] (3) at (5, 5) {};
+		\node [style=none] (4) at (6, 5) {$v_1+v_2=v$};
+		\node [style=none] (5) at (5, -0.5) {$v_1$};
+		\node [style=none] (6) at (0, -0.5) {$O$};
+		\node [style=none] (7) at (-0.5, 5) {$v_2$};
+		\node [style=none] (8) at (0, 7) {};
+		\node [style=none] (9) at (-0.5, 7.25) {$f(v)$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=DashedLine] (0.center) to (3.center);
+		\draw [style=DashedLine] (3.center) to (2.center);
+		\draw [style=Rightarrow] (1.center) to (0.center);
+		\draw [style=Rightarrow] (1.center) to (2.center);
+		\draw [style=Rightarrow] (1.center) to (3.center);
+		\draw [style=Rightarrow] (0.center) to (8.center);
+		\draw [bend left=15] (8.center) to (3.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

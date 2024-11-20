@@ -1,0 +1,39 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-5, 5) {};
+		\node [style=none] (1) at (-5, 0) {};
+		\node [style=none] (2) at (0, 5) {};
+		\node [style=none] (3) at (0, 0) {};
+		\node [style=none] (4) at (5, 0) {};
+		\node [style=none] (5) at (5, -5) {};
+		\node [style=none] (6) at (7, -7) {};
+		\node [style=none] (7) at (9, -9) {};
+		\node [style=none] (8) at (-7, 7) {};
+		\node [style=none] (9) at (-9, 9) {};
+		\node [style=none] (10) at (-10, 10) {};
+		\node [style=none] (11) at (10, -10) {};
+		\node [style=none] (12) at (-7, -7) {};
+		\node [style=none] (13) at (8, 8) {};
+		\node [style=none] (14) at (0, -0.5) {$O$};
+		\node [style=none] (15) at (8.25, 7.5) {$r$};
+		\node [style=none] (16) at (0.5, 5) {$v_2$};
+		\node [style=none] (17) at (-4.5, 5.5) {$-v_1+v_2$};
+		\node [style=none] (18) at (5, -0.5) {$v_1$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (12.center) to (13.center);
+		\draw [style=Rightarrow] (3.center) to (0.center);
+		\draw [style=Rightarrow] (0.center) to (8.center);
+		\draw [style=Rightarrow] (8.center) to (9.center);
+		\draw [style=Rightarrow] (3.center) to (5.center);
+		\draw [style=Rightarrow] (5.center) to (6.center);
+		\draw [style=Rightarrow] (6.center) to (7.center);
+		\draw (7.center) to (11.center);
+		\draw (9.center) to (10.center);
+		\draw [style=Rightarrow] (3.center) to (2.center);
+		\draw [style=Rightarrow] (3.center) to (1.center);
+		\draw [style=Rightarrow] (3.center) to (4.center);
+		\draw [style=DashedLine] (1.center) to (0.center);
+		\draw [style=DashedLine] (0.center) to (2.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
