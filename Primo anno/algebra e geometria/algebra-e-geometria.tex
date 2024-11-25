@@ -706,5 +706,52 @@ Ricordando che una funzione $f:A\to B$ tra due insiemi $A$ e $B$ si dice \emph{s
 se ogni elemento del codominio $B$ risulta essere immagine di qualche elemento di $A$,
 ovvero, se per ogni $b\in B$ esiste un $a\in A$ tale che $f(a)=b$. Ad esempio, delle
 funzioni rappresentate nel seguente disegno, la prima non è suriettiva, la seconda invece sì.
+\clearpage
+\begin{figure}[ht!]
+  \centering
+  \resizebox{10cm}{!}{\input{./img/inieEsurie1.tikz}}
+  \caption{esempio di surietività}
+  \label{fig:ricgendelfab}
+\end{figure}
+Un modo alternativo di dire che una funzione è suriettiva, è proprio quello di fare riferimento
+alla cosiddetta \textit{immagine} $I_m(f)$ di $f$: per definizione, l'immagine di una funzione
+$f:A\to B$ è il sotoinsieme di $B$ costituito da tutti gli elementi che sono immagine di qualche
+elemento di $A$\footnote{In riferimento alle figure, quegli elemnti (raggiunti da una freccia che
+  proviene da $A^{\prime\prime}$)}, ovvero
+\begin{eqnarray*}
+  I_m(f)=\{b\in B\text{ | }b=f(a) \text{ per qualche } a\in A\}
+\end{eqnarray*}
+Ad esempio, la funzione a sinistra nella figura precedente ha $I_m(f)=\{a,b\}$, mentre la funzione
+a destra $I_m(f)=\{a,b,c\}$: una funzione è suriettiva esattamente quando $I_m(f)=B$, ovvero l'immagine
+coincide con tutto il codominio\footnote{dire $I_m(f)=B$ significa effetti dire che ogni elemento di
+  $B$ è immagine di elemento di $A$}.\\
+Una funzione $f:A\to B$ si dice invece \textit{iniettiva} se non succede che due elementi diversi di $A$
+abbiano la stessa immagine\footnote{in formula, $f$ è iniettiva se $a_1\neq a_2\Rightarrow
+  f(a_1)\neq f(a_1)$ o equivalentemente $a_1= a_2\Rightarrow f(a_1)= f(a_1)$}. Ad esempio, delle funzioni
+rappresentate nella seguente figura, la prima non è iniettiva\footnote{in quanto nonostante $1\neq 2$
+  si ha $f(1)=f(2)=a$}, la seconda sì.
+\begin{figure}[ht!]
+  \centering
+  \resizebox{10cm}{!}{\input{./img/inieEsurie2.tikz}}
+  \caption{esempio di iniettività}
+  \label{fig:ricgendelfab2}
+\end{figure}
 
-\end{document} 
+La nozione di iniettività può essere riformulata tramite il concetto di \textit{controimmagine}: dato
+un elemento $b$ del codominio $B$, la sua controimmagine, denotata $f^{-1}(b)$, è l'insieme di tutti gli
+elementi di $A$ che hanno $b$ come immagne, ovvero
+\begin{eqnarray*}
+  f^{-1}(b)=\{a\in A \text{ | } f(a)=b\}
+\end{eqnarray*}
+Dal momento che una funzione è iniettiva quando non esistono due elementi diversi che la stessa immagine,
+dire che tutte le controimmagine che non siano vuote\footnote{se la funzione non è suriettiva, ci
+  saranno elementi $b\in B$ tali che non esiste nessun $a\in A$ con $f(a)=b$, e quindi la cui
+  controimmagine $f^{-1}(b)$ non ha elementi.} hanno un solo elemento.\\
+Ad esempio per la funzione nella figura precedente si ha $f^{-1}(a)=\{1,2\},f^{-1}(d)=\diameter,
+f^{-1}(c)=\{3\}$: essa non è iniettiva in quanto la controimmagine di $a$ ha due elementi. Per la
+funzione a destra, invece, si ha $f^{-1}(a)=\{1\},f^{-1}(b)=\{2\}, f^{-1}(c)=\{3\},f^{-1}(d)=\diameter$:
+essa è iniettiva in quanto le controimmagini non vuote hanno tutte un solo elemento. Infine, una funzione
+si dice invece \textit{biiettiva} se è sia iniettiva che suriettiva. Ad esempio, la funzione
+rappresentata nella seguente figura è biettiva.
+
+\end{document}

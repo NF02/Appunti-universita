@@ -1,0 +1,35 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (2, 4) {};
+		\node [style=none] (1) at (2, 0) {};
+		\node [style=none] (2) at (6.5, 4) {};
+		\node [style=none] (3) at (6.5, 0) {};
+		\node [style=dot] (4) at (2, 3) {};
+		\node [style=dot] (5) at (2, 2) {};
+		\node [style=dot] (6) at (2, 1) {};
+		\node [style=dot] (7) at (6.5, 3) {};
+		\node [style=dot] (8) at (6.5, 2) {};
+		\node [style=dot] (9) at (6.5, 1) {};
+		\node [style=none] (10) at (2, -0.5) {A};
+		\node [style=none] (11) at (6.5, -0.5) {B};
+		\node [style=none] (12) at (2.5, -0.5) {};
+		\node [style=none] (13) at (6, -0.5) {};
+		\node [style=none] (14) at (4.25, -1) {$f$};
+		\node [style=none] (15) at (1.5, 3) {1};
+		\node [style=none] (16) at (1.5, 2) {2};
+		\node [style=none] (17) at (1.5, 1) {3};
+		\node [style=none] (18) at (7, 3) {$a$};
+		\node [style=none] (19) at (7, 2) {$b$};
+		\node [style=none] (20) at (7, 1) {$c$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [bend right=90, looseness=1.25] (0.center) to (1.center);
+		\draw [bend left=90, looseness=1.25] (0.center) to (1.center);
+		\draw [bend right=90, looseness=1.25] (2.center) to (3.center);
+		\draw [bend left=90, looseness=1.25] (2.center) to (3.center);
+		\draw [style=Rightarrow, bend left] (4) to (7);
+		\draw [style=Rightarrow, bend left] (5) to (8);
+		\draw [style=Rightarrow, bend left] (6) to (9);
+		\draw [style=Rightarrow] (12.center) to (13.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
