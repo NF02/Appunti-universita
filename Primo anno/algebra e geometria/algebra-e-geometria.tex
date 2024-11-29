@@ -752,6 +752,202 @@ f^{-1}(c)=\{3\}$: essa non è iniettiva in quanto la controimmagine di $a$ ha du
 funzione a destra, invece, si ha $f^{-1}(a)=\{1\},f^{-1}(b)=\{2\}, f^{-1}(c)=\{3\},f^{-1}(d)=\diameter$:
 essa è iniettiva in quanto le controimmagini non vuote hanno tutte un solo elemento. Infine, una funzione
 si dice invece \textit{biiettiva} se è sia iniettiva che suriettiva. Ad esempio, la funzione
-rappresentata nella seguente figura è biettiva.
+rappresentata nella seguente figura è biiettiva.
+\clearpage
+\begin{figure}[ht!]
+  \centering
+  \resizebox{10cm}{!}{\input{./img/inieEsurie3.tikz}}
+  \caption{caso di biiettività}
+  \label{fig:ricgendelfab3}
+\end{figure}
 
+\subsection{Suriettività di applicazioni lineari}
+\label{sec:suriappllin}
+avendo detto che una funzione $f:A\to B$ è suriettiva se e solo se per
+ogni elemento $b\in B$ esiste un $a\in A$ tale che $f(a)=b$, ovvero
+equivalentemente se e solo se la sua immagine $I_m(f)$ coincide con tutto
+il codominio. Quindi, per capire se un'applicazione è suriettiva,
+bisogna determinare l'insieme $I_m(f)$.\\
+Nel csaso di un'applicazione lineare $f:V\to W$, vale la seguente
+importante
+\begin{prop}
+  \label{prop:suriappllin1}
+  Sia $f:V\to W$ un'applicazione lineare. Allora $I_m(f)$ è un
+  sottospazio vettoriale di $W$.
+\end{prop}
+\begin{proof}
+  Bisogna verificare che $I_m(f)$ è chiuso rispetto alla somma e al
+  prodotto per scalari. Per la prima proprietà bisogni prevedere $w,
+  w^\prime\in I_m(f)$ e vedere se $w+w^\prime\in I_m(f)$ , per definizione
+  di $I_m(f)$ e vedere se $w,w^\prime\in I_m(f)$. Ora, se
+  $w,w^\prime\in I_m(f)$, per definizione di $I_m(f)$ significa che
+  esistono un vettore $v\in V$ tale che $w=f(v)$ e un vettore
+  $v^\prime\in V$ tale $w^\prime=f(v^\prime)$. Ma allora, sfruttando il
+  fatto che $f$ è lineare, si ha
+  \begin{eqnarray*}
+    w+w^\prime=f(v)+f(v^\prime)=f(v+v^\prime)
+  \end{eqnarray*}
+  che afferma, anche che $w+w^\prime$ è immagine un elemento del dominio
+  (cioè $v+v^\prime$) e quindi $w+w^\prime\in I_m(f)$.
+  Per la chiusura rispetto al prodotto per scalari, bisogna verificare
+  che se $w\in I_m(f)$ $c\in \mathds{K}$, allora $cw\in I_m(f)$. Ma, come
+  prima, se $w\imn I_m(f)$ allora per definizione di $I_m(f)$ esiste un
+  vettore $w=f(v)$, e quindi, usando sempre il fatto che $f$ e lineare,
+  \begin{eqnarray*}
+    cw=cf(v)=f(cv)
+  \end{eqnarray*}
+  che ci dice anche $cw$ è immagine di un elemento del dominio (cioè
+  $cv$) e quindi $cw\in I_m(f)$.
+\end{proof}
+Il fatto che $I_m(f)$ sia un sottospazio vettoriale ci dice che per
+dterminarla è possibile trovare un sistema di generatori o una base.
+Questo si fa facilmente grazie alla seguente
+\begin{prop}
+  \label{prop:suriappllin2}
+  Sia $f:V\to W$ un'applicazione lineare e siano $v_1,\dots, v_n$
+  generatori di $V$. Allora le immagini $f(v_1),\dots,f(v_n)$ generano
+  $I_m(f)$\footnote{in simboli, $I_m(f)=(f(v_1),\dots,f(v_n))$}
+\end{prop}
+\begin{proof}
+  Per definizione di generatori, bisogna verificare che ogni vettore
+  $w\in I_m(f)$ si può scrivere come combinazione lineare dei vettori
+  $f(v_1),\dots,f(v_n)$. Si sa che un vettore $w\in I_m(f)$ è tale che
+  $w=f(v)$ per qualche vettore $v\in V.$ Ma essendo per ipotesi $v_1,
+  \dots,v_n$ generatori di $V$, il vettore $v$ potrà essere scritto come
+  loro combinazione lineare $v=x_1v_2+\cdots+x_nv_n$. Quindi, sfruttando
+  la linearità di $f$ si ha
+  \begin{eqnarray*}
+    w=f(v)=f(x_1v_1+\cdots+x_nv_n)=x_1f(v_1)+\cdot+x_nf(v_n)
+  \end{eqnarray*}
+  che dimostra proprio che $w$ si scrive come combinazione lineare di
+  $f(v_1),\dots,f(v_n)$.
+\end{proof}
+A questo punto, per definire se un'applicazione lineare $f:V\to W$ è
+suriettiva, basta scegliere dei generatori $v_1,\dots,v_n$ di $V$,
+prendere le loro immagini $f(v_1),\dots,f(v_n)$ che, formano un insieme
+di generatori di $I_m(f)$, e poi estrarre da quest'ultima insieme una
+base eliminando gli eventuali vettori che sono dipendenti dai rimanenti:
+contando i vettori della base ottenuta, si saprà la dimensione di
+$I_m(f)$ e quindi $f$ sarà se e solo se\footnote{Questa affermazione è
+  giustificata dal fatto, che non è stato possibile dimostrare, che se
+  $S$ è un sottospazio vettoriale di uno spazio vettoriale $V$, allora
+  $\dim (V)$ e le dimensioni ccoincidono se e solo se $S=V$.}
+$\dim(I_m(f))=\dim(W)$.\\
+È il caso di vedere come tale criterio di suriettività si rivela
+particolarmente utile e di semplice applicazione nel caso
+dell'applicazione nel caso dell'applicazione lineare $L_A:\mathds{K}^n
+\to \mathds{K}^m$ determinata da un matrice $A$, ovvero della forma data
+dalla (\ref{eq:mtxAsaplin7}). Ora, se come generatore del dominio
+$V=\mathds{K}^n$ si scelgono i vettori della base canonica $v_1=
+(1,0,\dots,0),v_2=(0,1,\dots,0),v_n=(0,0,\dots,1)$, dalla
+(\ref{eq:mtxAsaplin7}) si ha
+\begin{eqnarray*}
+  f(v_1)=L_A
+  \begin{pmatrix}
+    1\\
+    0\\
+    \vdots\\
+    0
+  \end{pmatrix}=
+  \begin{pmatrix}
+    a_{11}\\
+    a_{21}\\
+    \vdots\\
+    a_{m1}
+  \end{pmatrix},f(v_2)=L_A
+  \begin{pmatrix}
+    0\\
+    1\\
+    \vdots\\
+    a_{m2}
+  \end{pmatrix},\dots,f(v_n)=L_A
+  \begin{pmatrix}
+    0\\
+    0\\
+    \vdots\\
+    1
+  \end{pmatrix}=
+  \begin{pmatrix}
+    a_{1n}\\
+    a_{2n}\\
+    \vdots\\
+    a_{mn}
+  \end{pmatrix}
+\end{eqnarray*}
+cioè $f(v_1),f(v_2),\dots,f(v_n)$ sono le colonne $C_1,C_2,\dots,C_n$
+della matrice $A$ che determina l'applicazione. Quindi, in base alla
+Proposizione \ref{prop:suriappllin2}, si ha $I_m(f)=(C_1,C_2,\dots,C_n)$
+e la funzione è suriettiva se e solo se $\dim(C_1,C_2,\dots,C_n)=
+\dim(\mathds{K}^m)=m$. Ma poiché la dimensione del sottospazio generato
+dalle colonne di una matrice è per definizione il suo rango, è possibile
+concludere che \textit{un'applicazione del tipo (\ref{eq:mtxAsaplin7})
+  è suriettiva se e solo se il rango di $A$ uguale a $m$}.
+
+\subsection{Iniettività di applicazioni lineari}
+\label{sec:iniediappllin}
+
+Mentre, nel caso della suriettività si è visto che per verificare se una
+funzione $f$ è suriettiva basta controllare un solo sottoinsieme del
+codominio\footnote{l'immagine $I_m(f)$}, in generale per verificare se
+$f$ e iniettiva bisogna controllare tutte le controimmagini degli
+elementi del codominio e verificare che queste, quando non sono vuote,
+hanno un solo elemento.\\
+Ora, per una generica funzione $f:A\to B$ le controimmagine degli
+elementi di $B$ sono sottoinsimi del tutto indipendenti tra loro: come
+nella seguente figura
+\begin{figure}[ht!]
+  \centering
+  \resizebox{8cm}{!}{\input{./img/inieEsurie4.tikz}}
+  \caption{Iniettiità di applicazioni lineari}
+  \label{fig:iniediappllin}
+\end{figure}
+
+può accadere che un elemento abbia controimmagine costituita da un solo
+elemento ma altri abbiano controimmagine costituita da più elementi.\\
+Mentre, le applicazione linari hanno il particolare comportamento per cui
+le controimmagini degli elementi di $B$, se non solo vuote, o sono
+\textit{tutte} costituite da un solo elemento o hanno \textit{tutti} più
+di un elemento: quindi basta controllare una sola controimmagine non vuota
+come sono fatte tutte le altre. Più precisamente si ha la sequente
+\begin{prop}
+  \label{prop:iniediappllin1}
+  Sia $f:V\to W$ un'applicazione lineare. Allora valgono i seguenti fatti:
+  \begin{enumerate}
+  \item la controimmagine $f^{-1}(\bar{0})=\{v\in V \text{ | }
+    f(v)=\bar{0}\}$ del vettore nullo di $W$ è un sottospazio vettoriale
+    di un sottospazio vettoriale $V$ (detto \textit{nucleo di} $f$ e
+    denotato $N(f)$)
+  \item per ogni $w_0\in W$, la controimmagine $f^{-1}(w_0)$, se non è
+    vuota, è sottospazio affine di $V$, e più precisamente
+    \begin{eqnarray*}
+      f^{-1}(w_0)=v_0N(f)=\{v_0+n \text{ | } n\in N(f)\}
+    \end{eqnarray*}
+    dove $v_0$ è un qualunque elemento fissato di $f^{-1}(w_0)$.
+  \end{enumerate}
+\end{prop}
+\begin{proof}
+  Per dimostrare il primo punto, bisogna osservare che il nucleo di $f$
+  non è mai vuoto, in quanto il vettore nullo di $V$ è sicuramente tale
+  che $f(\bar{0})=\bar{0}$: infatti, è possibile concepire il vettore
+  nullo $\bar{0}$ di $V$ come $0v$ e quindi, sfruttando la linearità di
+  $f$, si ha $f(\bar{0})=f(0v)=0f(v)=\bar{0}$.
+  È il momento di dimostrare $N(f)$ è chiuso rispetto alla somma e al
+  prodotto per scalari. Siano $v,v^\prime$ due vettori di $N(f)$, cioè
+  $f(v)=\bar{0}$ e $f(v^\prime)=\bar{0}$. Allora, essendo $f$ lineare,
+  \begin{eqnarray*}
+    f(v+v^\prime)=f(v)+f(v^\prime)=\bar{0}+\bar{0}=\bar{0}
+  \end{eqnarray*}
+  e quindi anche $v+v^\prime\in N(f)$: questo si dice che $N(f)$ è chiuso
+  rispetto alla somma. Dati invece un vettore $v$ del
+  nucleo\footnote{quindi $f(v)=\bar{0}$} e uno scalare $c\in \mathds{K}$,
+  allora, sempre per la linearità di $f$,
+  \begin{eqnarray*}
+    f(cv)=cf(v)=c\bar{0}=\bar{0}
+  \end{eqnarray*}
+  ovvero $cv\in N(f)$: questo dice che $N(f)$ è chiuso rispetto al
+  prodotto per scalari. Con questo il punto 1 è stato dimostrato.\\
+  Per dimostrare il secondo punto, ovvero l'uguaglianza $v_0+N(f)=
+  f^{-1}(w_0)$, bisogna dimostrare che ogni elemento di $v_0+N(f)$ sta
+  nella controimmagine $f^{-1}(w_0)$ di $w_0$ (ovvero $v_0+N$)
+\end{proof}
 \end{document}
