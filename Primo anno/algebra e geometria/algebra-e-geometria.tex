@@ -1106,4 +1106,39 @@ contemporaneamente iniettiva e suriettiva o nessuna della due: basta mostrare ch
 proprietà e automaticamente varrà anche l'altra.\\
 Ora, supponendo di aver determinato grazie ai risultati precedenti che un'applicazione lineare
 $f$ data è biiettiva.
+
+\section{Composizione di applicazioni, inversa e prodotto di matrici}
+\label{sec:Compinveeproddimatrici}
+
+Ricordiamo che, data una funzione $f:X\to Y$ tra due insiemi, questa si
+dice \textit{invertibile} se esiste una funzione $g:Y\to X$ (detta
+appunto l'inversa di $f$) tale che
+\begin{equation}
+  \label{eq:Compinveeproddimatrici1}
+  f \circ g=id_{y}, \text{ } g\circ f=id_{x}
+\end{equation}
+e si denota che con \textit{id} la funzione che manda ogni elemento in se
+stesso\footnote{Più precisamente, $id_{x}$ è la funzione $X\to X$ che
+  manda ogni elemento di $x$ in se stesso e $id_{y}$ denota la funzione
+  $Y\to Y$ che manda ogni elemento di $Y$ in se stesso.} e con il simbolo
+$\circ$ la composizione di funzioni, ovvero l'operazione che consiste
+nell'applicare prima una fuzione e poi l'altra: più precisamente,
+ricordiando che ogni volta che si hanno due funzioni $f:X\to Y$ e
+$g:Y\to Z$, tali che \textit{il codominio della prima coincida con il
+  della seconda,} allora, per ogni elemento che $Y$ è anche, per ogni
+elemento $x\in X$, si può applicare prima $f$ ottenendo $f(x)\in Y$,
+e poi dal momento che $Y$ è anche il dominio della $g$ si può applicare
+la $g$ a $f(x)$. In questo modo si ottiene una nuova funzione che
+associa a ogni elemento di $X$ un elemento di $Z$:
+\begin{equation*}
+  \underset{x\to g(f(x))}{f:X\to Z}
+\end{equation*}
+Quindi, le (\ref{eq:Compinveeproddimatrici1}) significano che una
+funzione $f:X\to Y$ è invertibile se esiste una funzione $g:Y\to X$
+tale $g(f(x))=x$ $x\in X$ e $f(g(y))=y$ per ogni $y\in Y$.\\
+Ora, si può vedere che le uniche funzioni di $f$ invertibili sono
+quelle biiettive. Ad esempio, considerando $X=\{1,2,3\}$, $Y=\{a,b,c\}$
+e la funzione $f:X\to Y$ biiettiva, che ha come inversa la funzione
+$g:Y\in X$ rappresentata nella figura:
+
 \end{document}

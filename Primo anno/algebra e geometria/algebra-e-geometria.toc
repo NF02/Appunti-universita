@@ -33,3 +33,4 @@
 \contentsline {subsection}{\numberline {3.3.1}Richiemi generali}{72}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Suriettività di applicazioni lineari}{74}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Iniettività di applicazioni lineari}{75}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.6}Composizione di applicazioni, inversa e prodotto di matrici}{79}{section.3.6}%
