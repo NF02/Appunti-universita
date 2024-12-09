@@ -1140,5 +1140,434 @@ Ora, si può vedere che le uniche funzioni di $f$ invertibili sono
 quelle biiettive. Ad esempio, considerando $X=\{1,2,3\}$, $Y=\{a,b,c\}$
 e la funzione $f:X\to Y$ biiettiva, che ha come inversa la funzione
 $g:Y\in X$ rappresentata nella figura:
+\begin{figure}[ht!]
+  \centering
+  \resizebox{15cm}{!}{\input{./img/invEprodMatrice.tikz}}
+  \caption{Funzione $f$ inversa di $X=\{1,2,3\}$ e $Y=\{a,b,c\}$}
+  \label{fig:Compinveeproddimatrici1}
+\end{figure}
 
+Infatti, come si vede fin da subito, si ha
+\begin{equation*}
+  \begin{matrix}
+    (g\circ f)(1)=g(f(1))=g(a)=1\\
+    (g\circ f)(2)=g(f(2))=g(b)=2\\
+    (g\circ f(3)=g(f(3))=g(c)=3
+  \end{matrix}
+\end{equation*}
+ovvero $g\circ f:\{1,2,3\} \to \{1,2,3\}$ è la funzione che manda ogni elemento dell'insieme
+$X=\{1,2,3\}$ in se stesso (ovvero la funzione identica $id_{X}$ di X) e analogamente
+\begin{equation*}
+  \begin{matrix}
+    (g\circ f)(a)=g(f(a))=g(1)=a\\
+    (g\circ f)(b)=g(f(b))=g(2)=b\\
+    (g\circ f(c)=g(f(c))=g(3)=c
+  \end{matrix}
+\end{equation*}
+ovvero $g\circ f:\{a,b,c\} \to \{a,b,c\}$ è la funzione che manda ogni elemento dell'insieme
+$Y=\{a,b,c\}$ in se stesso (cioè la funzione identica $id_Y$). Per giusticare l'affermazione che le
+funzioni biiettiva sono \textit{le sole} a essere invertibili, considerando ad esempio la funzione
+$f$ rappresentata nella seguente figura, che è iniettiva ma non suriettiva
+\clearpage
+\begin{figure}[ht!]
+  \centering
+  \resizebox{15cm}{!}{\input{./img/invEprodMatrice.tikz}}
+  \caption{Funzione $f$ non invertibile di $X=\{1,2,3\}$ e $Y=\{a,b,c,d\}$}
+  \label{fig:Compinveeproddimatrici2}
+\end{figure}
+Si vede subito che $g\circ f$ è una funzione identica di $\{1,2,3\}$, ma $f\circ g$ non è una funzione identica
+di $\{a,b,c,d\}$ in quanto pur avendo
+\begin{equation*}
+  \begin{matrix}
+    (g\circ f)(1)=g(f(1))=g(a)=1\\
+    (g\circ f)(2)=g(f(2))=g(b)=2\\
+    (g\circ f(3)=g(f(3))=g(c)=3
+  \end{matrix}
+\end{equation*}
+non si ha, invece,
+\begin{equation*}
+  \begin{matrix}
+    (g\circ f)(a)=g(f(a))=g(1)=a\\
+    (g\circ f)(b)=g(f(b))=g(2)=b\\
+    (g\circ f(c)=g(f(c))=g(3)=c
+  \end{matrix}
+\end{equation*}
+Come si evince, dalla Figura \ref{fig:Compinveeproddimatrici2}, è presente un equivalenza in più che rimanda
+ad un elemento già puntato del gruppo $X$, $f(g(d))=f(1)=a$ ovvero $f\circ g$ non manda $d$ in se stesso.
+
+Si osservi che non c'è alcun modo di modificare $g$ in modo che $f\circ g$ mandi ogni elemento di $\{a,b,c,d\}$ in
+se stesso: qualunque valore venga assegnato a $d$ non sarà mai $f(g(d))=d$, perché $g(d)$ dovrebbe essere un elemento
+mandato da $f$ di $d$, ma non esiste nssun elemento di $\{1,2,3\}$ che viene mandato da $f$ in $d$.\\
+Espresso in altri termini, il modo per cui l'uguaglianza $f\circ g=id$ non può mai essere verificata è la non
+surietività d $f$. Si dice che $f$ ha un'\textit{inversa sinistra}\footnote{cioè $g\circ f=id$ è verificato} ma non
+ammette un'\textit{inversa destra} (cioè la $f\circ g=id$ non può valere per nessuna $g$). Analogamente, si prendano
+$f:\{1,2,3\}\to \{a,b\}$ e $g:\{a,b\}\to \{1,2,3\}$ definite come dalla figura seguente
+\begin{figure}[ht!]
+  \centering
+  \resizebox{15cm}{!}{\input{./img/invEprodMatrice3.tikz}}
+  \caption{Funzione $f$ non invertibile di $X=\{1,2,3\}$ e $Y=\{a,b\}$}
+\label{fig:Compinveeproddimatrici3}
+\end{figure}
+
+Anllora, si vede fin da subito che $f\circ g$ è una funzione identica di $\{a,b\}$, ma $g\circ f$ non è la funzione
+identica di $\{1,2,3\}$ in quanto pur essendo $g(f(1))=g(a)=1$ e $g(f(2))=g(b)=2$, si ha oltre tutto un $g(f(b))=g(b)=2$,
+ovvero $g\circ f$ non manda 3 in se stesso.\\
+Si osservi che anche qui non c'è alcun modo di modificare $g$: se si avesse posto $g(b)=23$ si otterrebbe
+$g(f(3))=g(b)=3$ ma stavolta sarebbe stato $g(f(2))=g(b)=3$ saranno uguali e non potranno mai essere il
+primo 2 e il secondo 3. In altri termini, il motivo per cui non esiste un'inversa sinistra di $f$ è dovuto
+alla non iniettività di $f$: la $f$ ha un'inversa sinistra.
+
+\begin{es}
+  \label{es:Compinveeproddimatrici1}
+  La funzione $f:\mathds{R}\to \mathds{R}$ data da $f(x)=x^2$, non essendo nè iniettiva\footnote{due numeri uno
+    l'opposto dell'altro hanno lo stesso quadrato} nè suiettiva\footnote{i numeri negativi non sono quadrati di nessun
+    numero reale} non ha né inversa sinistra né inversa a destra. In efetti, la candidata ad essere inversa di $f$,
+  la radice quadrata $g(x)=\sqrt{x}$, da una parte non soddisfatta $g(f(x))=x$ se $x$ è negativa perché in tal caso
+  $g(x^2)=\sqrt{x^2}=\abs{x}$, e $\abs{x}\neq x$ se essa è negativa $(\abs{-2}=+2\neq -2)$; dall'stra parte $f(g(y))=y$
+  non ha senso se $y$ è negativo in quanto in tal caso $g(y)=\sqrt{y}$ non è neanche un numero reale. Per eliminare i
+  due problemi (e rendere $g$ l'inversa di $f$) bisogna togliere i numeri negativi sia dal dominio che dal codominio di
+  $f$, ovvero restringerla a una funzione $f:\mathds{R}_{\geq 0}\to \mathds{R}_{\geq0}$, dove $\mathds{R}_{\geq 0}$ denota
+  l'insieme dei numeri non negativi: ma così facendo in effetti si fa proprio in modo che diventi una funzione
+  biiettiva\footnote{non ci sono due elementi del dominio con lo stesso quadrato, e ogni elemento del codominio è
+    quadrato di qualcosa}.
+\end{es}
+Ora, come spiegato sopra, si pone il problema di calcolare, se esiste, l'inversa di un applicazione lineare data. Prima
+di fare ciò, dal momento che l'inversa è definita tramite la composizione, bisogna vedere cosa succede quando si compongono
+due applicazioni lineari. In particolare, poiché ogni applicazione lineare può essere sempre tradotta in una formuala della
+tipologia (\ref{eq:mtxAsaplin7}), e adesso sarà possibile osservare cosa succede quando si compongono due applicazioni di
+questo tipo. Più nello specifico:
+\begin{eqnarray}
+  \label{eq:Compinveeproddimatrici1}
+  \begin{matrix}
+    V\to W\\
+    \dim(V)=n\\
+    \dim(W)=m\\
+    L_A:\mathds{K}^n\to\mathds{K}^m
+  \end{matrix} & f
+                 \begin{pmatrix}
+                   x_1\\
+                   x_2\\
+                   \vdots\\
+                   x_n
+                 \end{pmatrix}=
+                 \begin{pmatrix}
+                   a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n\\
+                   a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n\\
+                   \vdots\\
+                   a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_n
+                 \end{pmatrix}
+\end{eqnarray}
+Quindi dopo aver adattato la formula (\ref{eq:mtxAsaplin7}) alla $f=L_A:\mathds{K}^n\to \mathds{K}^m$, bisogna adattarla
+alla $g=L_A:\mathds{K}^p\to \mathds{K}^n$
+\begin{eqnarray}
+  \label{eq:Compinveeproddimatrici2}
+  \begin{matrix}
+    Z\to V\\
+    \dim(Z)=P\\
+    L_B=\mathds{K}^P\to \mathds{K}^n
+  \end{matrix}
+  & g
+  \begin{pmatrix}
+    y_1\\
+    y_2\\
+    \cdots\\
+    x_n
+  \end{pmatrix}=
+  \begin{pmatrix}
+    b_{11}y_1+a_{12}y_2+\cdots +a_{1n}x_n\\
+    b_{21}y_2+a_{22}y_2+\cdots+ a_{2n}x_n\\
+    \cdots\\
+    a_{m1}x_1+a_{m2}x_2+\cdots+ a_{mn}x_n
+  \end{pmatrix}
+\end{eqnarray}
+Quindi, in sostanza, è possibile dire che:
+\begin{eqnarray*}
+  f\circ g: & \mathds{K}^P\overset{\color{red}g}{\to} \mathds{K}^n\overset{\color{red}f}{\to}
+              \mathds{K}^m & A \text{ matrice $m\times n$ associata ad } f\\
+            & y\to g(y)\to f(g(y)) &  B \text{ matrice $n\times p$ associata ad } g\\
+  &&  AB \text{ matrice $m\times p$ associata ad } f\circ g
+\end{eqnarray*}
+In base a quanto appena visto, la composizione $f\circ g$ può essere calcolata in quanto il codominio di
+$g$, ovvero $\mathds{K}^n$, è anche il dominio di $f$, Si ha, quindi
+\begin{equation}
+  \label{eq:Compinveeproddimatrici3}
+  \begin{matrix}
+    (f\circ g)
+    \begin{pmatrix}
+      y_1\\
+      y_2\\
+      \vdots\\
+      y_p
+    \end{pmatrix}=f
+    \begin{pmatrix}
+      b_{11}y_1+b_{12}y_2+\cdots+b_{1p}y_p\\
+      b_{21}y_1+b_{22}y_2+\cdots+b_{2p}y_p\\
+      \cdots\\
+      b_{n1}y_1+b_{n2}y_2+\cdots+b_{np}y_p
+    \end{pmatrix}=\\
+    =\begin{pmatrix}
+      a_{11}(b_{11}y_1+b_{12}y_2+\cdots+b_{1p}y_p)+\cdots+a_{1n}(b_{11}y_1+b_{12}y_2+\cdots+b_{np}y_p)\\
+      a_{21}(b_{11}y_1+b_{12}y_2+\cdots+b_{1p}y_p)+\cdots+a_{2n}(b_{11}y_1+b_{12}y_2+\cdots+b_{np}y_p)\\
+      \vdots\\
+      a_{m1}(b_{11}y_1+b_{12}y_2+\cdots+b_{1p}y_p)+\cdots+a_{mn}(b_{11}y_1+b_{12}y_2+\cdots+b_{np}y_p)\\
+    \end{pmatrix}=
+  \end{matrix}
+\end{equation}
+La prossima cosa da fare è raggruppare per $y_1,y_2,\dots,y_p$, ottenendo quindi:
+\begin{eqnarray*}
+  =\begin{pmatrix}
+    (a_{11}b_{11}+\cdots+a_{1n}b_{n1})y_1+(a_{11}b_{12}+\cdots+a_{1n}b_{n2})y_2
+    +\cdots+(a_{11}b_{1p}+\cdots+a_{1n}b_{np})y_p\\
+    (a_{21}b_{11}+\cdots+a_{1n}b_{n1})y_1+(a_{21}b_{12}+\cdots+a_{1n}b_{n2})y_2
+    +\cdots+(a_{21}b_{1p}+\cdots+a_{2n}b_{np})y_p\\
+    \vdots\\
+    (a_{m1}b_{11}+\cdots+a_{mn}b_{n1})y_1+(a_{m1}b_{12}+\cdots+a_{mn}b_{n2})y_2
+    +\cdots+(a_{m1}b_{1p}+\cdots+a_{mn}b_{np})y_p
+  \end{pmatrix}
+\end{eqnarray*}
+Da quest'ultima espressione, è possibile vedere che la composizione $f\circ g$ è ancora una funzione
+del tipo (\ref{eq:mtxAsaplin7}), cioè determinata da una matrice $C$, e più precisamente
+\begin{equation}
+  \label{eq:Compinveeproddimatrici4}
+  C=
+  \left(
+    \begin{array}{cccc}
+      a_{11}b_{11}+\cdots+a_{1n}b_{n1}& a_{11}b_{12}+\cdots+a_{1n}b_{n2}& \cdots & a_{11}b_{1p}+\cdots+a_{1n}
+                                                                                   b_{np}\\
+      a_{21}b_{11}+\cdots+a_{2n}b_{n1} & a_{21}b_{12}+\cdots+a_{2n}b_{n2}& \cdots & a_{21}b_{1p}+\cdots+a_{2n}
+                                                                                    b_{np}\\
+                                      & \vdots\\
+      a_{m1}b_{11}+\cdots+a_{mn}b_{n1} & a_{m1}b_{12}+\cdots+a_{mn}b_{n2} & \cdots & a_{m1}b_{1n}+\cdots+a_{mn}
+                                                                                     b_{np}
+    \end{array}
+  \right)
+\end{equation}
+Ora, si può notare che le entrate $c_{ij}$ di tale matrice sono tutte espressioni del tipo
+\begin{equation}
+  \label{eq:Compinveeproddimatrici5}
+  c_{ij}=a_{i1}b_{1j}+\cdots+a_{in} b_{nj}
+\end{equation}
+In parte, è stato definito il prodotto di due matrici $A$ e $B$ in modo che la matrice $C=AB$ ottenuta sia
+la matrice che determina la composizione $L_A\circ L_B$ delle funzioni determinate da $A$ e $B$.\\
+Ricordando che la composizione $L_A\circ L_B$ delle due funzioni $L_A$ e $L_B$ può essere fatta solo sotto
+opportune condizioni\footnote{il codominio di $L_B:\mathds{K}^p\to\mathds{K}^n$ deve essere uguale al dominio
+  di $L_A:\mathds{K}^n\to K^m$} si osserva di conseguenza che anche il prodotto di due matrice può essere
+fatto solo sotto opportune condizioni: più precisamente, dal momento che la matrice di $L_A$ ha $m$ righe
+e $n$ colonne, mentre la matrice $B$ di $L_B$ ha $n$ righe e $p$ colonne, vediamo che si possono moltiplicare
+tra loro due matrici $A$ e $B$ (in quest'ordine) se e solo se \textit{il numero di colonne di $A$ è uguale
+  al numero di righe di $B$}.
+\begin{es}
+  \label{es:Compinveeproddimatrici2}
+  Come visto nella (\ref{eq:mtxAsaplin10}), la matrice associata alle rotazione $f$ di angolo $\theta$ in
+  senso antiorario attorno a $O$ rispetto a una base ortonormale di $V_O^2$ è $A=
+  \begin{pmatrix}
+    \cos \theta & -\sin\theta\\
+    \sin \theta & \cos\theta
+  \end{pmatrix}
+  $: la funzione $L_A:\mathds{R}^2\to \mathds{R}^2$ determinata da $A$, che manda $(x_1,x_2)$ in
+  $(\cos\theta x_1-\sin\theta x_2, \sin\theta x_1+\cos\theta x_2)$, è la traduzione in coordinate di $f$.\\
+  Analogamente, se $g$ denota la rotazione di angolo $\phi$, la traduzione in coordinate di $g$ sarà data
+  della funzione $L_B$ determinata dalla matrice $B=
+  \begin{pmatrix}
+    \cos \phi & -\sin\phi\\
+    \sin \phi & \cos \phi
+  \end{pmatrix}
+  $. Dal momento che il prodotto di matrici dà la composizione delle applicazioni corrispondenti, se
+  si moltiplicano $A$ e $B$ è possibile ottenere la matrice che rappresenta in coordinate la composizione
+  delle due rotazioni: infatti
+  \begin{equation*}
+    \begin{matrix}
+      AB=\begin{pmatrix}
+      \cos \theta & -\sin\theta\\
+      \sin \theta & \cos\theta
+    \end{pmatrix} \begin{pmatrix}
+      \cos \phi & -\sin\phi\\
+      \sin \phi & \cos \phi
+    \end{pmatrix}=\begin{pmatrix}
+      \cos \theta \cos \phi -\sin\theta\sin\phi & -\cos\theta\sin\phi-\sin\theta \cos \phi\\
+      \sin \theta\cos \phi +\cos\theta\sin\phi & -\sin\theta\sin\phi +\cos\theta \cos \phi
+    \end{pmatrix}\\
+      =
+      \begin{pmatrix}
+        \cos(\theta+\phi) & -\sin(\theta+\phi)\\
+        \sin(\theta+\phi) & \cos(\theta+\phi)
+      \end{pmatrix}
+    \end{matrix}
+  \end{equation*}
+  che è ancora una matrice di rotazione ma relativa al angolo $\theta+\phi$: questo era prevedibile
+  in quanto la composizione non fa altro che applicare una rotazione di angolo $\phi$ seguita da una rotazione
+  di angolo $\theta$.
+\end{es}
+\begin{oss}
+  \label{oss:Compinveeproddimatrici1}
+  Il motivo della non commutatività in generale del prodotto di due matrici $A$ e $B$ è che, tale prodotto
+  rappresenta la composizione delle applicazioni $L_A$ e $L_B$ corrispondenti, e la composizione di funzioni
+  non gode in generale della proprietà commutativa: ad esempio, date le due funzioni
+  \begin{eqnarray*}
+    f:\mathds{R}\to \mathds{R},\text{ } f(x)=x+1, & g: \mathds{R}\to\mathds{R}, \text{ } g(x)=x^2
+  \end{eqnarray*}
+  si ha $f(g(x))=f(x^2)=x^2+1$, mentre, $g(f(x))=g(x+1)=(x+1)^2$, e quindi $f\circ g\neq g\neq f$. Per un
+  esempio geometrico, si considerino la funzione $f:V_O^2\to V_O^2$ che ruota ogni vettore del piano applicato
+  in $O$ di 90 gradi in senso antiorario, e la funzione $g:V_O^2\to V_O^2$che rifletta ogni vettore attorno a
+  una retta $r$ passante per $O$: allora, come si vede nella seguente figura, applicare prima la rotazione $f$
+  e poi la riflessione $g$ oppure viceversa porta in generale a risultati diversi (ovvero $f\circ g\neq
+  g\circ f$)
+  \begin{figure}[ht!]
+    \centering
+    \resizebox{9cm}{!}{\input{./img/invEprodMatrice4.tikz}}
+    \caption{situazione di disegueglianza tra $f\circ g$ e $g\circ f$}
+    \label{fig:Compinveeproddimatrici4}
+  \end{figure}
+\end{oss}
+\begin{oss}
+  \label{oss:Compinveeproddimatrici2}
+  l'associatività del prodotto di matrici si spiega facilmente ricordando che tale prodotto rappresenta la
+  composizione delle funzioni corrispondenti, ovvero $(AB)C$ rappresenta $L_A\circ (L_B\circ L_C)$. Ma è facile
+  vedere che la composizione di funzioni gode della proprietà associativa: infatti, applicando $(L_A\circ
+  L_B)\circ h$ a $x$ si ottiene $(f\circ g)(h(x))=f(g(h(x)))$, e analogamente applicando $f\circ(g\circ h)$ a
+  $x$ ottenendo sempre $f((g\circ h)(x))=f(g(h(x)))$, ovvero $(f\circ g)\circ h=f\circ (g\circ h)$.
+\end{oss}
+Ora, se il prodotto di matrici ammetta un elemento neutro che svolga la stesso ruolo che svolge il numero $1$
+per il prodotto tra numeri, per cui si ha $a\cdot 1=1\cdot a =a$ per ogni numero $a$. La risposta è
+affermativa: più precisamente, per ogni $n$ considerando la matrice con $n$ righe e $n$ colonne seguente
+\begin{equation}
+  \label{eq:Compinveeproddimatrici6}
+  \begin{pmatrix}
+    1 & 0 & \dots & 0\\
+    0 & 1 & \dots & 0\\
+      && \vdots\\
+    0 & 0 & \dots & 1
+  \end{pmatrix}
+\end{equation}
+ovvero la matrice che ha $1$ nelle entrate con stesso indice di riga e di colonne ($a_{11},a_{22}$, etc.) e 0
+in tutte le altre entrate. Tale matrice si chiama \textit{matrice identica di ordine $n$} e si denota $I_n$.
+Ad esempio,
+\begin{eqnarray*}
+  I_2=
+  \begin{pmatrix}
+    1 & 0\\
+    0 & 1
+  \end{pmatrix}, & I_3=
+                   \begin{pmatrix}
+                     1 & 0 & 0\\
+                     0 & 1 & 0\\
+                     0 & 0 & 1
+                   \end{pmatrix}.
+\end{eqnarray*}
+\begin{oss}
+  \label{oss:Compinveeproddimatrici3}
+  In genere, data una matrice quadrata di ordine $n$, le entrate $a_{11},a_{22},\dots,a_{nn}$ che hanno stesso
+  indice di riga e di colonna formano la cosiddetta \textit{diagonale della matrice}. La matrice identica
+  $I_n$ può essere quindi descritta come la matrice che ha $1$ sulla diagonale e $0$ nelle altre entrate.
+  Le entrate di $I_n$ si denotano solitamente con il simbolo $\delta_{ij}$, detto \textit{delta di
+    Kronecker}, che vale quindi $1$ se $i=j$ e 0 se $i\neq j$.\\
+  Ora,si può verificare che, per ogni $A\in M_{m,n}(\mathds{K})$ si ha
+  \begin{eqnarray*}
+    AI_n=A, & I_mA=A
+  \end{eqnarray*}
+  l'ordine della matrice identica cambia perché deve essere tale che si possa svolgere il prodotto e quindi
+  la quindi la matrice identica svolge esattamente il ruolo di elemento neutro per il prodotto righe per
+  colonne. Ad esempio,
+  \begin{eqnarray*}
+    \begin{pmatrix}
+      1 & 2 & 3\\
+      4 & 5 & 6 
+    \end{pmatrix}
+    \begin{pmatrix}
+      1 & 0 & 0\\
+      0 & 1 & 0\\
+      0 & 0 & 1
+    \end{pmatrix}=
+    \begin{pmatrix}
+      1 & 2 & 3\\
+      4 & 5 & 6
+    \end{pmatrix}\\
+    \begin{pmatrix}
+      1 & 0 \\
+      0 & 1
+    \end{pmatrix}
+    \begin{pmatrix}
+      1 & 2 & 3\\
+      4 & 5 & 6 
+    \end{pmatrix}=
+    \begin{pmatrix}
+      1 & 2 & 3\\
+      4 & 5 & 6
+    \end{pmatrix}
+  \end{eqnarray*}
+\end{oss}
+\begin{oss}
+  \label{oss:Compinveeproddimatrici4}
+  Si noti che la matrice identica $I_n$ non è nient'altro che la matrice che determina la funzione identica
+  $id_{\mathds{K}^n}:\mathds{K}^n\to\mathds{K}^n$ che manda ogni elemento in se stesso: infatti,
+  \begin{equation}
+    \label{eq:Compinveeproddimatrici7}
+    id_{\mathds{K}^n}
+    \begin{pmatrix}
+      x_1\\
+      x_2\\
+      \vdots\\
+      x_n
+    \end{pmatrix}=
+    \begin{pmatrix}
+      x_1\\
+      x_2\\
+      \vdots\\
+      x_n 
+    \end{pmatrix}=
+    \begin{pmatrix}
+      1x_1+0x_2+\cdots+0x_n\\
+      0x_1+1x_2+\cdots+0x_n\\
+      \vdots\\
+      0x_1+0x_2+\cdots+1x_n
+    \end{pmatrix}
+  \end{equation}
+  Questo spiega perché tale matrice sia l'elemento neutro per il prodotto, in quanto il prodotto tra matrici
+  rappresenta la composizione delle applicazioni corrispondenti e la funzione identica è esattamente
+  l'elemento neutro per la composizione.
+\end{oss}
+Continuando con l'analogia con il prodotto tra numeri, è il caso ora di esaminare la questione
+\textit{dell'esistenza dell'inverso}: nell'insieme dei numeri reali $\mathds{R}$ per ogni numero $a$ diverso
+d zero esiste un numero $b$ tale che $ab=ba=1$, detto appunto inverso di $a$ (e denotato $a^{-1}$).
+Nel caso delle matrici, quindi per capire se data una matrice $A\in M_{m,n}(\mathds{K})$ esiste una
+matrice\footnote{La scelta del numero di righe e colonne di $B$ è obbligata se poter eseguire sia il
+  prodotto $AB$ che quello $BA$. Una matrice invertibile si può anche chiamare \textsc{Non Singolare}, mentre,
+  una matrice non invertibile si può anche chiamare \textsc{Singolare}} $B\in M_{n,m}(\mathds{K})$ tale che
+$AB=I_m$ e $BA=I_n$. Tuttavia, se una tale $B$ esiste, dal momento che il prodotto di $A$ e $B$ corrisponde alla
+composizione delle applicazioni lineari $L_A:\mathds{K}^n\to\mathds{K}^m$ e $L_B:\mathds{K}^m\to\mathds{K}^n$
+mentre la matrice identica corrisponde alla funzione identica, si ha $L_A\circ L_B=id$ e $L_B\circ L_A=id$,
+ovvero la funzione $L_A$ deve essere invertibile. Riassumendo, come mostrato, il problema dell'inverso si
+pone solo per matrici che hanno stesso numero di righe e colonne, ovvero solo se $A\in M_{n,n}(\mathds{K})$.
+Tali matrici si dicono \emph{quadrate} e il numero $n$ comune di righe e colonne si dice \textit{ordine delle
+  matrice}. Per semplicità, l'insieme $M_{n,n}(\mathds{K})$ si denota $M_n(\mathds{K})$. 
+\begin{defi}
+  \label{defi:Compinveeproddimatrici1}
+  Una matrice $A\in M_n(\mathds{K})$ quadrata d ordine $n$ si dice \textit{invertibile} se esiste una matrice
+  $B\in M_n(\mathds{K})$ tale che
+  \begin{eqnarray}
+    \label{eq:Compinveeproddimatrici8}
+    AB=I_n, & BA=I_n
+  \end{eqnarray}
+  In tal caso, $B$ si chiama \textit{matrice inversa di} $A$ e si denota $A^{-1}$. Bisogna, dimostrare il
+  seguente risultato, contrariamente a quello che accade nel campo dei campo dei numeri reali dove l'unico
+  numero non invertibile è lo zero, nell'insieme delle matrici, anche limitandosi alle sole matrici quadrate,
+  ci sono molte matrici non invertibili:
+\end{defi}
+\begin{teo}
+  \label{teo:Compinveeproddimatrici1}
+  Una matrice $A\in M_n(\mathds{K})$ è invertibile se e solo se il rango di $A$ è uguale a $n$.
+\end{teo}
+\begin{proof}
+  Come ricordato poco fa nella Definizione \ref{defi:Compinveeproddimatrici1}, l'invertibilità di $A$, ovvero
+  l'esistenza di una matrice $B$ tale che $AB=BA=I_n$, equivale a dire $L_A\circ L_B=L_B\circ L_A=id$, ovvero
+  che $L_A$ è invertibile\footnote{Per essere rigorosi, $L_A\circ L_B=L_B\circ L_A=id$ implica chiaramente che
+    $L_A$ sia invertibile, ma viceversa il fatto che $L_A$ sia invertibile implica solo che esista una
+    funzione $g$ tale che $g\circ L_A=L_A\circ g=id$ che a priori non si sa se è della forma $g=L_B$ per
+    qualche matrice $B$. In realtà, si può dimostrare che $g$ deve necessariamente essere implica che esista
+    una matrice $B$ per cui $L_A\circ L_B=L_B\circ L_A=id$ (e quindi $AB=BA=I_n$).} e quindi biiettiva. Quindi
+  ci basta dimostrare che $L_A$ è biiettiva se e solo se il rango di $A$ è $n$. Una un funzione lineare in cui
+  dominio e codominio abbiano la stessa dimensione (e $L_A:\mathds{K}^n\to \mathds{K}^n$ verifica questa
+  condizione) è iniettiva se e solo se è suriettiva, ovvero basta una delle due proprietà per avere anche
+  l'altra
+\end{proof}
 \end{document}
