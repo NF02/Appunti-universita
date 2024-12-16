@@ -1867,7 +1867,140 @@ che ridurre i due sistemi alla forma
                    x_2=\frac{1}{3}
                  \end{cases}
 \end{eqnarray*}
-e cioè far comparire direttamente le soluzioni cercate (che sono
-proprio le colonne della matrice inversa).
+e cioè far comparire direttamente le soluzioni cercate (\emph{che sono
+proprio le colonne della matrice inversa}).
 
+Un altro esempio:
+\begin{equation*}
+  A=
+  \begin{pmatrix}
+    1 & 1 & 2\\
+    -1 & 1 & 0\\
+    2 & 1 & 1
+  \end{pmatrix}.
+\end{equation*}
+La prima cosa da fare è quella di trasformare $(A|I_n)$ in una matrice a gradini, come
+prima andando ad affiancare la matrice per la sua identità:
+\begin{eqnarray*}
+  (A|I_n)=\left(
+  \begin{array}{ccc|ccc}
+    1 & 1 & 2 & 1 & 0 & 0\\
+    -1 & 1 & 0 & 0 & 1 & 0\\
+    2 & 1 & 1 & 0 & 0 & 1
+  \end{array}
+  \right)\underset{
+  \begin{matrix}
+    R_2\to R_2 +R_1\\
+    R_3\to R_3-2R_1
+  \end{matrix}
+  }{\to}\left(
+  \begin{array}{ccc|ccc}
+    1 & 1 & 2 & 1 & 0 & 0\\
+    0 & 2 & 2 & 1 & 1 & 0\\
+    0 & -1 & -3 & -2 & 0 & 1
+  \end{array}
+  \right)\\
+  \underset{R_3\to 2R_3+R_2}{\to}
+  \left(
+  \begin{array}{ccc|ccc}
+    1 & 1 & 2 & 1& 0&0\\
+    0 & 2 & 2 & 1 & 1 & 0\\
+    0 & 0 & -4 & -3 & 1 & 2
+  \end{array}
+  \right)
+\end{eqnarray*}
+Il fatto che non si sia annullata nessuna riga nel blocco di sinistra dice che la matrice $A$ è
+invertibile.
+
+Ora, come spiagato sompra, bisogna far comparire zeri sopra la diagonale, effettuando una sorta di
+riduzione a gradini ``all'incontrario'', dal basso verso l'alto e destra verso sinistra\footnote{
+  in ogni passaggio, bisogna mettere in evidenza in grassetto i nuovi zeri che si fanno comparire}
+\begin{eqnarray*}
+  \left(
+  \begin{array}{ccc|ccc}
+    1 & 1 & 2 & 1 & 0 & 0\\
+    0 & 2 & 2 & 1 & 1 & 0\\
+    0 & 0 & -4 & -3 & 1 & 2
+  \end{array}\right) \underset{
+  \begin{matrix}
+    R_2\to R_2+R_3\\
+    R_1\to 3R_1+R_3
+  \end{matrix}
+  }{\to}\left(
+  \begin{array}{ccc|ccc}
+    2 &2 & 0 & -1 & 1 & 2 \\
+      0 & 4 &0 &-1 &3 &2 \\
+      0 & 0 & -4 & -3 & 1&2
+  \end{array}
+  \right)\\
+  \underset{
+  R_1\to R_1-R_2
+  }{\to}\left(
+  \begin{array}{ccc|ccc}
+    4 & 0 & 0 & -1 & -1 & 2 \\
+    0 & 4 & 0 & -1 & 3 & 2 \\
+    0 & 0 & -4 & -3 & 1 & 2 
+  \end{array}
+  \right)
+\end{eqnarray*}
+Infine, si divide ogni riga per l'elemento sulla diagonale applicando operazioni elementari
+del secondo tipo
+\begin{eqnarray*}
+  \left(
+  \begin{array}{ccc|ccc}
+    4 & 0 & 0 & -1 & -1 & 2 \\
+    0 & 4 & 0 & -1 & 3 & 2 \\
+    0 & 0 & -4 & -3 & 1 & 2 
+  \end{array}
+  \right)\underset{
+  \begin{matrix}
+    R_1\to \frac{1}{4}R_1\\
+    R_1\to \frac{1}{4}R_2\\
+    R_3\to -\frac{1}{4}R_3
+  \end{matrix}
+  }{\to} \left(
+  \begin{array}{ccc|ccc}
+    1 & 0 & 0 & -\frac{1}{4} &-\frac{1}{4}&\frac{1}{2}\\
+    0 & 1 & 0 & -\frac{1}{4} & \frac{3}{4} & \frac{1}{2}\\
+    0 & 0 & 1 & \frac{3}{4} & -\frac{1}{4} & -\frac{1}{2}
+  \end{array}
+  \right)
+\end{eqnarray*}
+Quindi
+\begin{equation*}
+  A^{-1}=
+  \begin{pmatrix}
+    -\frac{1}{4} & -\frac{1}{4} & \frac{1}{2}\\
+    -\frac{1}{4} & \frac{3}{4} & \frac{1}{2}\\
+    \frac{3}{4} & -\frac{1}{4} & -\frac{1}{2}
+  \end{pmatrix}.
+\end{equation*}
+Un modo alternativo per calcolare l'inversa di una matrice invertibile, basato sul determinante e sulla
+notizoa di cofattore. Come visto nel Teorema \ref{teo:Compinveeproddimatrici1} che una matrice $A$ di
+ordine $n$ è invertibile se e solo se il suo rango è $n$. Ma questo equivale ad avere $\det (A)\neq 0$.
+Quindi, è necessario dimostrare la seguente
+\begin{prop}
+  \label{prop:Compinveeproddimatrici3}
+  Sia $A\in M_n(\mathds{K})$ una matrice invertibile (ovvero con $\det(A)\neq 0$). Allora la sua
+  inversa $A^{-1}$ è data da
+  \begin{equation}
+    \label{eq:Compinveeproddimatrici17}
+    A^{-1}=\frac{1}{\det(A)}
+    \begin{pmatrix}
+      C_{11} & C_{21} & \dots & C_{n1}\\
+      C_{12} & C_{22} & \dots & C_{n2}\\
+             & \vdots\\
+      C_{1n} & C_{2n} &\dots & C_{nn}
+    \end{pmatrix}
+  \end{equation}
+  dove $C_{ij}$ indica il cofattore di $a_{ij}$, e $\frac{1}{\det(A)}$ davanti alla matrice dei cofattori
+  significa che ogni entrata di tale matrice deve essere moltiplicata per $\frac{1}{\det(A)}$.
+\end{prop}
+\begin{oss}
+  \label{oss:Compinveeproddimatrici4}
+  A proposito delle disposizione dei cofattori nella (\ref{eq:Compinveeproddimatrici17}), si notiche i
+  cofattori delle entrate della prima \textit{riga} di $A$ sono nella prima \textit{colonna} della
+  (\ref{eq:Compinveeproddimatrici17}), i cofattori delle entrate della seconda \textit{riga} di $A$
+  sono nella seconda \textit{colonna} della (\ref{eq:Compinveeproddimatrici17}), e così via.
+\end{oss}
 \end{document}

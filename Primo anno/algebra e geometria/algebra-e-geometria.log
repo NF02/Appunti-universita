@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 Gentoo Linux) (preloaded format=pdflatex 2024.9.1)  10 DEC 2024 01:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 Gentoo Linux) (preloaded format=pdflatex 2024.12.2)  16 DEC 2024 18:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -55,7 +55,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 Package: babel 2024/02/07 v24.2 The Babel package
 \babel@savecnt=\count199
 \U@D=\dimen149
-\l@unhyphenated=\language6
+\l@unhyphenated=\language8
 
 (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
@@ -1587,6 +1587,9 @@ LaTeX Warning: Label `eq:gauss-jorda2-2' multiply defined.
 
 LaTeX Warning: Label `eq:Compinveeproddimatrici1' multiply defined.
 
+
+LaTeX Warning: Label `oss:Compinveeproddimatrici4' multiply defined.
+
 )
 \openout1 = `algebra-e-geometria.aux'.
 
@@ -1917,7 +1920,7 @@ Overfull \hbox (13.37427pt too wide) in alignment at lines 1317--1327
  [][][] []
  []
 
-[81] (./img/invEprodMatrice4.tikz) [82] [83] [84] [85] [86]
+[81] (./img/invEprodMatrice4.tikz) [82] [83] [84] [85] [86] [87]
 (./algebra-e-geometria.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1934,13 +1937,17 @@ Package rerunfilecheck Info: File `algebra-e-geometria.out' has not changed.
 (rerunfilecheck)             Checksum: D1437A11D1FFB8346E1DF3A9447F7D04;6279.
  ) 
 Here is how much of TeX's memory you used:
- 65483 strings out of 476171
- 1588319 string characters out of 5795805
- 2550324 words of memory out of 5000000
- 85688 multiletter control sequences out of 15000+600000
+ 65492 strings out of 476146
+ 1588477 string characters out of 5794784
+ 2550421 words of memory out of 5000000
+ 85697 multiletter control sequences out of 15000+600000
  589866 words of font info for 120 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,19n,93p,1480b,2154s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+pdfTeX warning (dest): name{Hfootnote.47} has been referenced but does not exis
+t, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.46} has been referenced but does not exis
 t, replaced by a fixed one
@@ -2158,10 +2165,10 @@ uper/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0800.p
 fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/
 texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/font
 s/type1/public/wasy-type1/wasy10.pfb>
-Output written on algebra-e-geometria.pdf (86 pages, 989151 bytes).
+Output written on algebra-e-geometria.pdf (87 pages, 995226 bytes).
 PDF statistics:
- 1682 PDF objects out of 1728 (max. 8388607)
- 1494 compressed objects within 15 object streams
- 656 named destinations out of 1000 (max. 500000)
+ 1699 PDF objects out of 1728 (max. 8388607)
+ 1509 compressed objects within 16 object streams
+ 663 named destinations out of 1000 (max. 500000)
  245 words of extra memory for PDF output out of 10000 (max. 10000000)
 
