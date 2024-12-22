@@ -142,4 +142,9 @@ Le modalità di utilizzo e distribuzione sono scritte nel file \href{https://git
 \input{pag/vettcoordegeo.tex}
 \input{pag/mtx.tex}
 \input{pag/applineproddimatrici.tex}
+
+\chapter{Autovalori e autovettori}
+\label{chap:autovaleautovect}
+
+
 \end{document}
