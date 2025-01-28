@@ -138,13 +138,41 @@
 
 \subsubsection{Prefazione}
 \label{sec:pref}
-Le modalità di utilizzo e distribuzione sono scritte nel file \href{https://github.com/NF02/Appunti-universita/blob/main/LICENSE}{LICENSE}.
+Le modalità di utilizzo e distribuzione sono scritte nel file
+\href{https://github.com/NF02/Appunti-universita/blob/main/LICENSE}{LICENSE}.
 \input{pag/vettcoordegeo.tex}
 \input{pag/mtx.tex}
 \input{pag/applineproddimatrici.tex}
 
 \chapter{Autovalori e autovettori}
 \label{chap:autovaleautovect}
+In questo capitolo verranno introdotti e spiegati gli autovalore e gli autovettori, una parte
+fondamentale del programma di Algebra e geometria, più nello specifico si tratta di una nozione
+legata all'applicazione pratica.
 
+\section{Definizioni, esempi e applicazioni}
+\label{sec:defesappautovecteval}
+\begin{defi}
+  \label{def:defesappautovecteval1}
+  Sia $V$ un $\mathds{K}$-spazio vettoriale e $f:V\to V$ un endomorfismo\footnote{Ricordando che si
+    dicono endomorfismi le applicazioni lineari in cui dominio e codominio sono uguali}. un vettore
+  $V\neq \bar{0}$ di $V$ si dice \textit{autovettore di $f$} se si ha
+  \begin{equation}
+    \label{eq:defesappautovecteval1-1}
+    f(v)=\lambda v
+  \end{equation}
+  per qualche $\lambda\in\mathds{K}$. Il coefficiente numerico $\lambda$ si dice \textit{autovalore
+    relativo all'autovettore $v$}.
+\end{defi}
+In altri termini, un autovettore è un vettore non nullo che viene mandato dalla funzione in un suo
+multiplo. Notando che questo è sempre banalmente vero per il vettore nullo $\bar{0}$, in quanto come
+già trattato, se $f$ è lineare allora $f(\bar{0})=\bar{0}$, e quindi l'uguaglianza $f(\bar{0})=
+\lambda\bar{0}$ è verificata sempre per qualunque endomorfismo e qualunque scalare $\lambda$.
+\begin{es}
+  \label{es:defesappautovecteval1}
+  Sia $V=V^2_O$ lo spazio dei vettori geometrici applicati in un punto $O$ del piano e sia $f:V_{O}^2$
+  la riflessione rispetto a una retta $r$ che passa per $O$. Quando si riflette un vettore $v=\vec{OP}$
+  perpendicolare alla retta $r$, il vettore viene mandato nel suo opposto
+\end{es}
 
 \end{document}

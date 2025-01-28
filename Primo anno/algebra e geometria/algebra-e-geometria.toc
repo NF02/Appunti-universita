@@ -35,3 +35,5 @@
 \contentsline {subsection}{\numberline {3.3.3}Iniettività di applicazioni lineari}{73}{subsection.3.3.3}%
 \contentsline {section}{\numberline {3.6}Composizione di applicazioni, inversa e prodotto di matrici}{77}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}Ultime proprietà della matrice inversa}{89}{subsection.3.6.1}%
+\contentsline {chapter}{\numberline {4}Autovalori e autovettori}{91}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Definizioni, esempi e applicazioni}{91}{section.4.1}%

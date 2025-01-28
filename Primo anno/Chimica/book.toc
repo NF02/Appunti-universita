@@ -1,4 +1,8 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {part}{I\hspace {1em}Esercizi}{5}{part.1}%
-\contentsline {chapter}{\numberline {1}Esercizi Stechiometria}{7}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Stechiometria}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Bilanciamento di un'equazione chimica}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Metodo per tentativi successivi}{5}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Resa o rendimento di una reazione}{7}{section.1.2}%
+\contentsline {part}{I\hspace {1em}Esercizi}{11}{part.1}%
+\contentsline {chapter}{\numberline {2}Esercizi Stechiometria}{13}{chapter.2}%

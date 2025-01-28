@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 Gentoo Linux) (preloaded format=pdflatex 2024.12.18)  22 DEC 2024 23:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 Gentoo Linux) (preloaded format=pdflatex 2024.12.18)  22 DEC 2024 23:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1938,7 +1938,11 @@ Overfull \hbox (13.37427pt too wide) in alignment at lines 1175--1185
 [79] (./img/invEprodMatrice4.tikz) [80] [81] [82] [83] [84] [85] [86
 
 ] [87]
-[88]) [89] (./algebra-e-geometria.aux)
+[88]) [89] [90
+
+]
+Capitolo 4.
+[91] (./algebra-e-geometria.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1951,16 +1955,20 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `algebra-e-geometria.out' has not changed.
-(rerunfilecheck)             Checksum: 2E8BEC339FFA1C2F3F93436896CC0958;6546.
+(rerunfilecheck)             Checksum: 2CE46F5F7DED50269BDBF66C379A7D01;6950.
  ) 
 Here is how much of TeX's memory you used:
- 65574 strings out of 476146
- 1590318 string characters out of 5794783
+ 65591 strings out of 476146
+ 1590596 string characters out of 5794783
  2550940 words of memory out of 5000000
- 85747 multiletter control sequences out of 15000+600000
+ 85754 multiletter control sequences out of 15000+600000
  589866 words of font info for 120 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,19n,93p,1480b,2117s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+pdfTeX warning (dest): name{Hfootnote.49} has been referenced but does not exis
+t, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.48} has been referenced but does not exis
 t, replaced by a fixed one
@@ -2186,10 +2194,10 @@ uper/sfsl1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0800.p
 fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/
 texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/font
 s/type1/public/wasy-type1/wasy10.pfb>
-Output written on algebra-e-geometria.pdf (89 pages, 1014043 bytes).
+Output written on algebra-e-geometria.pdf (91 pages, 1017614 bytes).
 PDF statistics:
- 1753 PDF objects out of 2073 (max. 8388607)
- 1561 compressed objects within 16 object streams
- 689 named destinations out of 1000 (max. 500000)
- 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1781 PDF objects out of 2073 (max. 8388607)
+ 1587 compressed objects within 16 object streams
+ 699 named destinations out of 1000 (max. 500000)
+ 269 words of extra memory for PDF output out of 10000 (max. 10000000)
 
